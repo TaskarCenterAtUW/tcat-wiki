@@ -1,0 +1,4 @@
+site_name: TCAT Wiki
+site_url: https://taskarcenteratuw.github.io/tcat-wiki/
+theme:
+  name: material
