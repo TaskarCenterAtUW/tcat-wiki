@@ -34,14 +34,14 @@ Included below is the installation process required for setup.
 
         [`pip install "mkdocs-material[imaging]"`]
 
-   2. Install MSYS2 ([MSYS2](https://www.msys2.org/))
+   3. Install MSYS2 ([MSYS2](https://www.msys2.org/))
 
       1. In UCRT64 terminal:
         
-        1. Install cairo:
+          1. Install cairo:
 
-            [`pacman -S mingw-w64-ucrt-x86_64-cairo`]
+              [`pacman -S mingw-w64-ucrt-x86_64-cairo`]
 
-        2. Install pngquant:
+          2. Install pngquant:
 
-            [`pacman -S mingw-w64-ucrt-x86_64-pngquant`]
+              [`pacman -S mingw-w64-ucrt-x86_64-pngquant`]
