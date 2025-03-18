@@ -1,6 +1,39 @@
 site_name: TCAT Wiki
 site_url: https://taskarcenteratuw.github.io/tcat-wiki/
+repo_name: TCAT Wiki on GitHub
+repo_url: https://github.com/TaskarCenterAtUW/tcat-wiki
 theme:
   name: material
+  features:
+    - navigation.instant
+    - navigation.instant.progress
+    - navigation.tracking
+    - navigation.tabs
+    - navigation.sections
+    - navigation.path
+    - navigation.indexes
+    - navigation.top
+  icon:
+    repo: fontawesome/brands/github
 plugins:
+  - search
   - social
+nav:
+  - Home:
+    - index.md
+  - TDEI:
+    - tdei/index.md
+    - Core:
+      - tdei/core/index.md
+    - Producers:
+      - tdei/producers/index.md
+      - Workspaces:
+        - tdei/producers/workspaces/index.md
+      - GoInfoGame:
+        - tdei/producers/goinfogame/index.md
+    - Consumers:
+      - tdei/consumers/index.md
+      - AccessMap:
+        - tdei/consumers/accessmap/index.md
+      - TDEI Walkshed:
+        - tdei/consumers/walkshed/index.md
