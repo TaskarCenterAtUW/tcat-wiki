@@ -4,9 +4,9 @@ This repository contains the files used to create the [TCAT Wiki](https://taskar
 
 Included below is the installation process required for setup.
 
-# TCAT Wiki Setup Guide
+## Installation and Setup
 
-## Legend
+### Legend
 
 1. Keyboard shortcut to press | Action
 
@@ -16,11 +16,11 @@ Included below is the installation process required for setup.
 
     [`someCommand --arguments \<path>`]
 
-## Installation Instructions
+### Prerequisites
 
-1. Install VS Code ([Visual Studio Code](https://code.visualstudio.com/))
+1. Install [Visual Studio Code](https://code.visualstudio.com/)
 
-   1. Install YAML plugin ([YAML - Visual Studio Marketplace](https://marketplace.visualstudio.com/items?itemName=redhat.vscode-yaml))
+   1. Install [YAML plugin](https://marketplace.visualstudio.com/items?itemName=redhat.vscode-yaml)
 
 2. Install mkdocs-material
 
@@ -34,7 +34,7 @@ Included below is the installation process required for setup.
 
         [`pip install "mkdocs-material[imaging]"`]
 
-   3. Install MSYS2 ([MSYS2](https://www.msys2.org/))
+   3. Install [MSYS2](https://www.msys2.org/)
 
       1. In UCRT64 terminal:
         
@@ -45,3 +45,15 @@ Included below is the installation process required for setup.
           2. Install pngquant:
 
               [`pacman -S mingw-w64-ucrt-x86_64-pngquant`]
+
+      2. Add to PATH:
+
+        [`pacman -S mingw-w64-ucrt-x86_64-cairo`]
+
+### Setup
+
+1. Using VS Code, clone [`https://github.com/TaskarCenterAtUW/tcat-wiki`]
+
+## Editing Instructions
+
+Refer to the documentation for [Material for MkDocs](https://squidfunk.github.io/mkdocs-material/) and the [MkDocs User Guide](https://www.mkdocs.org/user-guide/).
