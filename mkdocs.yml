@@ -5,6 +5,11 @@ repo_url: https://github.com/TaskarCenterAtUW/tcat-wiki
 theme:
   name: material
   palette:
+    # Palette toggle for automatic mode
+    - media: "(prefers-color-scheme)"
+      toggle:
+        icon: material/weather-sunny
+        name: Switch to light mode
     # Palette toggle for light mode
     - media: "(prefers-color-scheme: light)"
       scheme: default
@@ -15,8 +20,8 @@ theme:
     - media: "(prefers-color-scheme: dark)"
       scheme: slate
       toggle:
-        icon: material/weather-sunny
-        name: Switch to light mode
+        icon: material/brightness-auto
+        name: Switch to system preference mode
   features:
     - navigation.instant
     - navigation.instant.progress
