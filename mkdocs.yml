@@ -4,6 +4,8 @@ repo_name: TCAT Wiki on GitHub
 repo_url: https://github.com/TaskarCenterAtUW/tcat-wiki
 theme:
   name: material
+  font:
+    text: Open Sans
   palette:
     # Palette toggle for automatic mode
     - media: "(prefers-color-scheme)"
