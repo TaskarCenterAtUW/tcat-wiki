@@ -10,11 +10,11 @@ Included below is the installation process required for setup.
 
 1. Keyboard shortcut to press | Action
 
-    (`Shift`+`C`) | Copy
+   (`Shift`+`C`) | Copy
 
 2. Command to enter into terminal
 
-    [`someCommand --arguments \<path>`]
+   [`someCommand --arguments \<path>`]
 
 ### Prerequisites
 
@@ -26,29 +26,29 @@ Included below is the installation process required for setup.
 
    1. In Powershell terminal:
 
-        [`pip install mkdocs-material`]
+      [`pip install mkdocs-material`]
 
 3. Install image processing dependencies
 
    1. In Powershell terminal:
 
-        [`pip install "mkdocs-material[imaging]"`]
+      [`pip install "mkdocs-material[imaging]"`]
 
-   3. Install [MSYS2](https://www.msys2.org/)
+   2. Install [MSYS2](https://www.msys2.org/)
 
       1. In UCRT64 terminal:
-        
-          1. Install cairo:
 
-              [`pacman -S mingw-w64-ucrt-x86_64-cairo`]
+         1. Install cairo:
 
-          2. Install pngquant:
+            [`pacman -S mingw-w64-ucrt-x86_64-cairo`]
 
-              [`pacman -S mingw-w64-ucrt-x86_64-pngquant`]
+         2. Install pngquant:
+
+            [`pacman -S mingw-w64-ucrt-x86_64-pngquant`]
 
       2. Add to PATH:
 
-        [`pacman -S mingw-w64-ucrt-x86_64-cairo`]
+      [`pacman -S mingw-w64-ucrt-x86_64-cairo`]
 
 ### Setup
 
