@@ -38,6 +38,7 @@ theme:
 plugins:
   - search
   - social
+  - privacy
 nav:
   - Home:
       - index.md
