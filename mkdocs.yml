@@ -4,6 +4,17 @@ repo_name: TCAT Wiki on GitHub
 repo_url: https://github.com/TaskarCenterAtUW/tcat-wiki
 theme:
   name: material
+  palette:
+    # Palette toggle for light mode
+    - scheme: default
+      toggle:
+        icon: material/weather-night
+        name: Switch to dark mode
+    # Palette toggle for dark mode
+    - scheme: slate
+      toggle:
+        icon: material/weather-sunny
+        name: Switch to light mode
   features:
     - navigation.instant
     - navigation.instant.progress
@@ -20,20 +31,20 @@ plugins:
   - social
 nav:
   - Home:
-    - index.md
+      - index.md
   - TDEI:
-    - tdei/index.md
-    - Core:
-      - tdei/core/index.md
-    - Producers:
-      - tdei/producers/index.md
-      - Workspaces:
-        - tdei/producers/workspaces/index.md
-      - GoInfoGame:
-        - tdei/producers/goinfogame/index.md
-    - Consumers:
-      - tdei/consumers/index.md
-      - AccessMap:
-        - tdei/consumers/accessmap/index.md
-      - TDEI Walkshed:
-        - tdei/consumers/walkshed/index.md
+      - tdei/index.md
+      - Core:
+          - tdei/core/index.md
+      - Producers:
+          - tdei/producers/index.md
+          - Workspaces:
+              - tdei/producers/workspaces/index.md
+          - GoInfoGame:
+              - tdei/producers/goinfogame/index.md
+      - Consumers:
+          - tdei/consumers/index.md
+          - AccessMap:
+              - tdei/consumers/accessmap/index.md
+          - TDEI Walkshed:
+              - tdei/consumers/walkshed/index.md
