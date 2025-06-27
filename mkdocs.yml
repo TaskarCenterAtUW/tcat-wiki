@@ -6,6 +6,8 @@ theme:
   name: material
   font:
     text: Open Sans
+  language: en
+  direction: ltr
   palette:
     # Palette toggle for automatic mode
     - media: "(prefers-color-scheme)"
