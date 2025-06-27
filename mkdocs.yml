@@ -44,6 +44,7 @@ theme:
     - navigation.top
     - navigation.footer
     - header.autohide
+    - content.tooltips
   icon:
     repo: fontawesome/brands/github
 extra_css:
@@ -69,6 +70,14 @@ extra:
     - name: TCAT on FaceBook
       icon: fontawesome/brands/facebook
       link: https://www.facebook.com/TaskarCenter
+markdown_extensions:
+  - abbr
+  - attr_list
+  - pymdownx.snippets:
+      auto_append:
+        - includes/abbreviations.md
+watch:
+  - includes
 nav:
   - Home:
       - index.md
