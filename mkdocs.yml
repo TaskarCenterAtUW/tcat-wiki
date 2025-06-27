@@ -97,3 +97,5 @@ nav:
               - tdei/consumers/accessmap/index.md
           - TDEI Walkshed:
               - tdei/consumers/walkshed/index.md
+  - OpenSidewalks:
+      - opensidewalks/index.md
