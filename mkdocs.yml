@@ -2,6 +2,7 @@ site_name: TCAT Wiki
 site_url: https://taskarcenteratuw.github.io/tcat-wiki/
 repo_name: TCAT Wiki on GitHub
 repo_url: https://github.com/TaskarCenterAtUW/tcat-wiki
+copyright: Copyright &copy; 2025 Taskar Center for Accessibe Technology
 theme:
   name: material
   font:
@@ -41,6 +42,8 @@ theme:
     - navigation.path
     - navigation.indexes
     - navigation.top
+    - navigation.footer
+    - header.autohide
   icon:
     repo: fontawesome/brands/github
 extra_css:
@@ -49,6 +52,23 @@ plugins:
   - search
   - social
   - privacy
+extra:
+  social:
+    - name: TCAT on GitHub
+      icon: fontawesome/brands/github
+      link: https://github.com/TaskarCenterAtUW/
+    - name: TCAT on LinkedIn
+      icon: fontawesome/brands/linkedin
+      link: https://www.linkedin.com/company/taskar-center-for-accessible-technology
+    - name: TCAT on YouTube
+      icon: fontawesome/brands/youtube
+      link: https://www.youtube.com/@taskarcenterstransportatio734
+    - name: TCAT on X
+      icon: fontawesome/brands/x-twitter
+      link: https://x.com/TaskarCenter
+    - name: TCAT on FaceBook
+      icon: fontawesome/brands/facebook
+      link: https://www.facebook.com/TaskarCenter
 nav:
   - Home:
       - index.md
