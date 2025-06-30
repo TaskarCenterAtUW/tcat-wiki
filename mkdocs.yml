@@ -9,6 +9,7 @@ theme:
     text: Open Sans
   language: en
   direction: ltr
+  favicon: resources/images/favicon/tcat/favicon.svg
   palette:
     # Palette toggle for automatic mode
     - media: "(prefers-color-scheme)"
