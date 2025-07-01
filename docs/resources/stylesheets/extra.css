@@ -7,3 +7,16 @@
 [data-md-color-scheme="slate"] {
   --md-hue: 260;
 }
+
+.md-header__button.md-logo {
+  margin-top: 1em;
+  margin-bottom: 0em;
+  padding-top: 1em;
+  padding-bottom: 0em;
+}
+
+.md-header__button.md-logo
+  img {
+  height: 33%;
+  width: 33%;
+}

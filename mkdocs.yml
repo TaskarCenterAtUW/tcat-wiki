@@ -10,6 +10,7 @@ theme:
   language: en
   direction: ltr
   favicon: resources/images/favicon/tcat/favicon.svg
+  logo: resources/images/logo/tcat/logo-light.png
   palette:
     # Palette toggle for automatic mode
     - media: "(prefers-color-scheme)"
