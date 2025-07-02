@@ -1,3 +1,3 @@
 # TDEI Walkshed
 
-TDEI Walksheds ([https://walkshed.tdei.us/](https://walkshed.tdei.us/)) 
+[TDEI Walkshed](https://walkshed.tdei.us/) is a tool for analyzing pedestrian infrastructure and access to amenities.

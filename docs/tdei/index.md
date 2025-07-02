@@ -6,8 +6,8 @@ Reliable data is essential for decision-making. TDEI addresses gaps in transport
 
 - **Enhance data standards** to include information relevant to all travelers and transit stakeholders.
 - **Provide tools and data infrastructure** reducing barriers for data stewards to collect, vet, maintain and use traveler-centric transportation data at scale.
-- **Demonstrate our work** through p**ilot data collections** with private and public partners, and **demonstration projects** that make use of our data.
+- **Demonstrate our work** through **pilot data collections** with private and public partners, and **demonstration projects** that make use of our data.
 
-With the support of the **Transportation Data Exchange Initiative** (TDEI), the OpenSidewalks project and its suite of tools—including AccessMap Multimodal—provide detailed insights into sidewalk connectivity and pedestrian networks. These resources equip individuals, civic organizations, and government agencies with the data needed to support informed mobility planning and decision-making.
+With the support of the **Transportation Data Exchange Initiative** (TDEI), the OpenSidewalks project and its suite of tools—including AccessMap—provide detailed insights into sidewalk connectivity and pedestrian networks. These resources equip individuals, civic organizations, and government agencies with the data needed to support informed mobility planning and decision-making.
 
 TDEI is a project sponsored by the [ITS4US Deployment Program](https://www.its.dot.gov/its4us/index.htm), focused on improving frameworks for transportation services and infrastructure. By developing open-source data collection tools, digital infrastructure, and governance models, TDEI enables seamless public-private data exchange and interoperability.
