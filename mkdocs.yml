@@ -83,7 +83,9 @@ watch:
 nav:
   - Home: index.md
   - About: about/tcat.md
-  - Guides: guides-list/index.md
+  - Guides: 
+      - guides/index.md
+      - Track Recording: guides/track-recording.md
   - OpenSidewalks:
       - opensidewalks/index.md
       - OSW Guides:
