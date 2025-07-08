@@ -1,3 +1,7 @@
+---
+title: TDEI
+---
+
 # TDEI
 
 The **Transportation Data Exchange Initiative** (TDEI) is focused on developing a shared, standardized framework for transportation data, enabling seamless integration across mobility systems. This project aims to provide mobility benefits for travelers and service providers by collecting and providing infrastructure to sustainably support open data about sidewalks, transit paths, and on-demand transit services. Through supporting the collection, maintenance, and exchange of detailed data on pedestrian pathways, transit networks, and on-demand services, TDEI lays the groundwork for more effective transportation planning and innovation.

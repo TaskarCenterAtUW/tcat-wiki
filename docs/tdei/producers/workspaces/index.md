@@ -1,3 +1,7 @@
+---
+title: Workspaces
+---
+
 # Workspaces
 
 Workspaces Platform

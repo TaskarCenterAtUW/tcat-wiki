@@ -1,3 +1,7 @@
+---
+title: OSW in OSM
+---
+
 # OpenSidewalks in OpenStreetMap
 
 [OpenSidewalks](#opensidewalks) is an open data project by the [Taskar Center for Accessible Technology](#tcat) at the University of Washington in Seattle. The project heavily relies on the OpenStreetMap infrastructure, mapping standards and volunteer community.
