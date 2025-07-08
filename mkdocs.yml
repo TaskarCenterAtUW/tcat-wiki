@@ -37,6 +37,8 @@ theme:
       primary: custom
       accent: custom
   features:
+    - content.code.copy
+    - content.tooltips
     - navigation.instant
     - navigation.instant.progress
     - navigation.tracking
@@ -47,7 +49,6 @@ theme:
     - navigation.top
     - navigation.footer
     - header.autohide
-    - content.tooltips
   icon:
     repo: fontawesome/brands/github
 extra_css:
@@ -75,12 +76,21 @@ extra:
       link: https://www.facebook.com/TaskarCenter
 markdown_extensions:
   - abbr
+  - admonition
   - attr_list
+  - md_in_html
+  - pymdownx.blocks.caption
+  - pymdownx.details
+  - pymdownx.highlight:
+      anchor_linenums: true
+      line_spans: __span
+      pygments_lang_class: true
+      use_pygments: true
+  - pymdownx.inlinehilite
+  - pymdownx.keys
   - pymdownx.snippets:
       auto_append:
         - includes/abbreviations.md
-  - admonition
-  - pymdownx.details
   - pymdownx.superfences
 watch:
   - includes
