@@ -8,11 +8,11 @@ OpenSidewalks ([OSW](https://sidewalks.washington.edu/)) is an initiative led by
 
 OpenSidewalks seeks to provide a specification that is not only compatible with OpenStreetMap but is a comprehensive and accessibility-forward specification for mapping sidewalks and related pedestrian infrastructure features.
 
-## [OpenSidewalks Schema](#osw-schema)
+## [OpenSidewalks Schema]()
 
 The [OpenSidewalks Schema](https://github.com/OpenSidewalks/OpenSidewalks-Schema) is a proposed open pedestrian transportation network data standard which draws from and is intended to be largely compatible with OpenStreetMap data.
 
-## OpenSidewalks Tasking Manager
+## [OpenSidewalks Tasking Manager]()
 
 The [OpenSidewalks Tasking Manager](https://tasks.sidewalks.washington.edu/explore) is a [Tasking Manager](https://wiki.openstreetmap.org/wiki/Tasking_Manager) instance for coordinating contributions to OSM following OSW guidelines, and is open to all OSM users.
 

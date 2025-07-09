@@ -6,6 +6,7 @@ copyright: Copyright &copy; 2025 Taskar Center for Accessible Technology
 site_description: Wiki containing information and guides related to the work of the Taskar Center for Accessible Technology (TCAT) at the University of Washington (UW).
 theme:
   name: material
+  custom_dir: overrides
   font:
     text: Open Sans
   language: en
@@ -94,10 +95,11 @@ markdown_extensions:
   - pymdownx.superfences
 watch:
   - includes
+  - overrides
 nav:
   - Home: index.md
   - About: about/tcat.md
-  - Guides: 
+  - Guides:
       - guides/index.md
       - Track Recording: guides/track-recording.md
   - OpenSidewalks:

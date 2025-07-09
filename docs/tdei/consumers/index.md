@@ -6,10 +6,10 @@ title: Data Consumers
 
 Transportation Data Exchange Initiative Data Consuming Applications
 
-## [AccessMap](accessmap/index.md)
+## [AccessMap]()
 
 Accessibility-forward customizable router.
 
-## [Walkshed](walkshed/index.md)
+## [Walkshed]()
 
 Walkshed analysis tool.
