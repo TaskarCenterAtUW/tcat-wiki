@@ -1,0 +1,22 @@
+:root
+  > * {
+  --md-primary-fg-color: #4b2e83;
+  --md-accent-fg-color: #c5b4e3;
+}
+
+[data-md-color-scheme="slate"] {
+  --md-hue: 260;
+}
+
+.md-header__button.md-logo {
+  margin-top: 0rem;
+  margin-bottom: 0rem;
+  padding-top: 1rem;
+  padding-bottom: 0rem;
+}
+
+.md-header__button.md-logo
+  img {
+  height: 25%;
+  width: 25%;
+}
