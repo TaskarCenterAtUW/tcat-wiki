@@ -6,14 +6,14 @@ title: Data Producers
 
 Transportation Data Exchange Initiative Data Producing Applications
 
-## [Workspaces]()
+## [Workspaces](workspaces/index.md)
 
 Platform providing dataset editing functionality.
 
-### [Rapid]()
+### [Rapid](workspaces/rapid/index.md)
 
-Embedded in-browser desktop editor.
+Embedded in-browser web editor.
 
-### [AVIV ScoutRoute]()
+### [AVIV ScoutRoute](workspaces/aviv-scoutroute/index.md)
 
-Mobile application for both Android and iOS.
+Mobile applications for both Android and iOS.
