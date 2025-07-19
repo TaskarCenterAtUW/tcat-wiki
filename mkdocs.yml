@@ -119,5 +119,12 @@ nav:
           - tdei/producers/index.md
           - Workspaces:
               - tdei/producers/workspaces/index.md
-              - AVIV ScoutRoute: tdei/producers/workspaces/aviv-scoutroute/index.md
+              - AVIV ScoutRoute: 
+                - tdei/producers/workspaces/aviv-scoutroute/index.md
+                - Long Form Quest Definition:
+                  - tdei/producers/workspaces/aviv-scoutroute/long-form/index.md
+                  - Guides: 
+                    - tdei/producers/workspaces/aviv-scoutroute/long-form/guides/index.md
+                    - tdei/producers/workspaces/aviv-scoutroute/long-form/guides/element-query.md
+                - AVIV ScoutRoute Guides: tdei/producers/workspaces/aviv-scoutroute/guides/index.md
               - Rapid: tdei/producers/workspaces/rapid/index.md

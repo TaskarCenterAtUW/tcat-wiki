@@ -13,3 +13,11 @@ The OpenSidewalks in OpenStreetMap ("OSW in OSM") guide provides information on 
 ## [Track Recording](track-recording.md)
 
 Guide to creating track recordings using mobile apps.
+
+## [Element Query Documentation](../tdei/producers/workspaces/aviv-scoutroute/long-form/guides/element-query.md)
+
+Guide to formatting the element query for Long Form Quest Definitions.
+
+## [Element Type Icon](../tdei/producers/workspaces/aviv-scoutroute/long-form/guides/element-type-icon.md)
+
+Guide to picking a supported element type icon.
