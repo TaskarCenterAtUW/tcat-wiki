@@ -3,7 +3,7 @@ site_url: https://taskarcenteratuw.github.io/tcat-wiki/
 repo_name: TCAT Wiki on GitHub
 repo_url: https://github.com/TaskarCenterAtUW/tcat-wiki
 copyright: Copyright &copy; 2025 Taskar Center for Accessible Technology
-site_description: Wiki containing information and guides related to the work of the Taskar Center for Accessible Technology (TCAT) at the University of Washington (UW).
+site_description: Information and guides related to the Taskar Center for Accessible Technology (TCAT) at the University of Washington
 theme:
   name: material
   custom_dir: overrides
@@ -108,6 +108,7 @@ nav:
           - opensidewalks/guides/index.md
           - OSW in OSM: opensidewalks/guides/osw-in-osm.md
       - OSW Schema: opensidewalks/schema/index.md
+      - OSW Tasking Manager: opensidewalks/tasking-manager/index.md
   - TDEI:
       - tdei/index.md
       - TDEI Core: tdei/tdei-core/index.md
@@ -125,6 +126,7 @@ nav:
                   - tdei/producers/workspaces/aviv-scoutroute/long-form/index.md
                   - Guides: 
                     - tdei/producers/workspaces/aviv-scoutroute/long-form/guides/index.md
+                    - tdei/producers/workspaces/aviv-scoutroute/long-form/guides/element-type-icon.md
                     - tdei/producers/workspaces/aviv-scoutroute/long-form/guides/element-query.md
                 - AVIV ScoutRoute Guides: tdei/producers/workspaces/aviv-scoutroute/guides/index.md
               - Rapid: tdei/producers/workspaces/rapid/index.md
