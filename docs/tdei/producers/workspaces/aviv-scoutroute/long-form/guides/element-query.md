@@ -1,8 +1,8 @@
 ---
-title: Element Query Documentation
+title: Element Query Guide
 ---
 
-# Element Query Documentation
+# Element Query Guide
 
 The `quest_query` attribute of a GoInfoGame long form quest definition is constructed in a similar way to an OverPass API query, with some modifications.
 

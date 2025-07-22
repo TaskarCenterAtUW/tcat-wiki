@@ -120,8 +120,14 @@ nav:
           - tdei/producers/index.md
           - Workspaces:
               - tdei/producers/workspaces/index.md
+              - Guides:
+                - tdei/producers/workspaces/guides/index.md
+                - tdei/producers/workspaces/guides/workspaces-export.md
               - AVIV ScoutRoute: 
                 - tdei/producers/workspaces/aviv-scoutroute/index.md
+                - Guides:
+                  - tdei/producers/workspaces/aviv-scoutroute/guides/index.md
+                  - tdei/producers/workspaces/aviv-scoutroute/guides/user-manual.md
                 - Long Form Quest Definition:
                   - tdei/producers/workspaces/aviv-scoutroute/long-form/index.md
                   - Guides: 
