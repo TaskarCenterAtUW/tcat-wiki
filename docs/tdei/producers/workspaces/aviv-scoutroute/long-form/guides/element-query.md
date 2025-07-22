@@ -1,5 +1,5 @@
 ---
-title: Long Form Quest Definition Element Query Documentation
+title: Element Query Documentation
 ---
 
 # Element Query Documentation
