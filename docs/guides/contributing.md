@@ -8,7 +8,9 @@ This guide explains how to contribute to the TCAT Wiki.
 
 Note that, while external contributions are welcome, this guide is primarily intended for use by TCAT/GS staff.
 
-For a list of all guides on the TCAT Wiki, refer to the [Guides List](index.md).
+_For a list of all guides on the TCAT Wiki, refer to the [Guides List](index.md)._
+
+---
 
 ## Full Installation and Setup (Windows 10/11)
 

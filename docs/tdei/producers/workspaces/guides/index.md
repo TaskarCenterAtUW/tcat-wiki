@@ -6,7 +6,9 @@ title: Workspaces Guides
 
 Guides for Workspaces.
 
-For a list of all guides on the TCAT Wiki, refer to the [Guides List](../../../../guides/index.md).
+_For a list of all guides on the TCAT Wiki, refer to the [Guides List](../../../../guides/index.md)._
+
+---
 
 ## [Workspaces Export Guide](workspaces-export.md)
 

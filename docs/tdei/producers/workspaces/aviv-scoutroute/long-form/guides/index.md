@@ -6,7 +6,9 @@ title: Long Form Quest Definition Guides
 
 Guides related to the Long Form Quest Definitions used in AVIV ScoutRoute.
 
-For a list of all guides on the TCAT Wiki, refer to the [Guides List](../../../../../../guides/index.md).
+_For a list of all guides on the TCAT Wiki, refer to the [Guides List](../../../../../../guides/index.md)._
+
+---
 
 ## [Element Query Documentation](element-query.md)
 

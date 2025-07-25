@@ -4,6 +4,12 @@ title: Element Query Guide
 
 # Element Query Guide
 
+This guide explains how to format the element query selector for use in AVIV ScoutRoute Long Form Quest Definitions.
+
+_For a list of all guides on the TCAT Wiki, refer to the [Guides List](../../../../../../guides/index.md)._
+
+---
+
 The `quest_query` attribute of an AVIV ScoutRoute long form quest definition is constructed in a similar way to an OverPass API query, with some modifications.
 
 For example, to get all ways, simply enter the query: `ways`

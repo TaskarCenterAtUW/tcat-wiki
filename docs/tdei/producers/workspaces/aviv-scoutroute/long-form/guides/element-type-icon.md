@@ -6,6 +6,10 @@ title: Element Type Icon Guide
 
 This guide explains how to assign the correct value for the `element_type_icon` key in the Long Form Quest Definition JSON file used by AVIV ScoutRoute.
 
+_For a list of all guides on the TCAT Wiki, refer to the [Guides List](../../../../../../guides/index.md)._
+
+---
+
 These icons help the mobile app display appropriate quest icons for each element type (like sidewalks, crossings, kerbs, etc.).
 
 ## Instructions

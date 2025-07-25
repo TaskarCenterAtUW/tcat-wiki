@@ -4,7 +4,13 @@ title: OSW in OSM
 
 # OpenSidewalks in OpenStreetMap
 
-[OpenSidewalks](../index.md) is an open data project by the [Taskar Center for Accessible Technology](../../about/tcat.md) at the University of Washington in Seattle. The project heavily relies on the OpenStreetMap infrastructure, mapping standards and volunteer community.
+This guide explains how to make edits to OpenStreetMap following and supporting the OpenSidewalks schema.
+
+_For a list of all guides on the TCAT Wiki, refer to the [Guides List](../../guides/index.md)._
+
+---
+
+[OpenSidewalks](../index.md) is an open data project by the [Taskar Center for Accessible Technology](../../about/tcat.md) at the University of Washington in Seattle. The project heavily relies on the OpenStreetMap infrastructure, mapping standards, and volunteer community.
 
 ## Welcome
 
