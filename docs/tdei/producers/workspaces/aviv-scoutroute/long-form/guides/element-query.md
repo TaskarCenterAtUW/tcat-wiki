@@ -4,7 +4,7 @@ title: Element Query Guide
 
 # Element Query Guide
 
-The `quest_query` attribute of a GoInfoGame long form quest definition is constructed in a similar way to an OverPass API query, with some modifications.
+The `quest_query` attribute of an AVIV ScoutRoute long form quest definition is constructed in a similar way to an OverPass API query, with some modifications.
 
 For example, to get all ways, simply enter the query: `ways`
 
