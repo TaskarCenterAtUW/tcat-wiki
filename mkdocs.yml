@@ -100,6 +100,7 @@ nav:
   - Home: index.md
   - Guides:
       - guides/index.md
+      - Contributing: guides/contributing.md
       - Track Recording: guides/track-recording.md
   - OpenSidewalks:
       - opensidewalks/index.md

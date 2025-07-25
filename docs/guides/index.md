@@ -36,6 +36,10 @@ Guide to picking an element type icon for Long Form Quest Definitions.
 
 ## Miscellaneous
 
+### [Contributing](contributing.md)
+
+Guide to contributing to the TCAT Wiki.
+
 ### [Track Recording](track-recording.md)
 
 Guide to creating track recordings using mobile apps.
