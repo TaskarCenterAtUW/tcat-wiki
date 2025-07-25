@@ -98,7 +98,6 @@ watch:
   - overrides
 nav:
   - Home: index.md
-  - About: about/tcat.md
   - Guides:
       - guides/index.md
       - Track Recording: guides/track-recording.md
