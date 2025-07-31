@@ -13,6 +13,7 @@
 *[FTA]: Federal Transit Administration
 *[GIG]: GoInfoGame
 *[GIS]: Geographic Information System
+*[GS]: Gaussian Solutions
 *[GTFS]: General Transit Feed Specification
 *[ML]: Machine Learning
 *[NACTO]: National Association of City Transportation Officials
