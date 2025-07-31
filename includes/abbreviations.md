@@ -15,6 +15,7 @@
 *[GIS]: Geographic Information System
 *[GS]: Gaussian Solutions
 *[GTFS]: General Transit Feed Specification
+*[JOSM]: Java OpenStreetMap Editor
 *[ML]: Machine Learning
 *[NACTO]: National Association of City Transportation Officials
 *[NHTSA]: National Highway Traffic Safety Administration
