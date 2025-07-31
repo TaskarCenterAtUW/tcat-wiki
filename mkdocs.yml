@@ -123,6 +123,7 @@ nav:
               - Guides:
                 - tdei/producers/workspaces/guides/index.md
                 - tdei/producers/workspaces/guides/workspaces-export.md
+                - tdei/producers/workspaces/guides/workspaces-josm.md
               - AVIV ScoutRoute: 
                 - tdei/producers/workspaces/aviv-scoutroute/index.md
                 - Guides:
