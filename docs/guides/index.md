@@ -18,6 +18,10 @@ The OpenSidewalks in OpenStreetMap ("OSW in OSM") guide provides information on 
 
 Guide to directly exporting datasets from Workspaces.
 
+### [Workspaces JOSM Settings Guide](../tdei/producers/workspaces/josm/guides/workspaces-josm.md)
+
+Guide to JOSM settings to enable editing Workspaces.
+
 ## [AVIV ScoutRoute Guides](../tdei/producers/workspaces/aviv-scoutroute/guides/index.md)
 
 ### [AVIV ScoutRoute User Manual](../tdei/producers/workspaces/aviv-scoutroute/guides/user-manual.md)

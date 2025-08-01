@@ -16,4 +16,8 @@ AVIV ScoutRoute (formerly [GoInfoGame](https://tcat.cs.washington.edu/goinfogame
 
 ### [Rapid](rapid/index.md)
 
-Rapid is an extended version of the OpenStreetMap iD editor. A modified version of Rapid is embedded in Workspaces and can be used to edit data in open workspaces.
+[Rapid](https://rapideditor.org/) is an extended version of the OpenStreetMap iD editor. A modified version of Rapid is embedded in Workspaces and can be used to edit data in open workspaces.
+
+### [JOSM](josm/index.md)
+
+The [Java OpenStreetMap Editor](https://josm.openstreetmap.de/) (JOSM) is a powerful OpenStreetMap editor for advanced users.

@@ -46,7 +46,7 @@ _For a list of all guides on the TCAT Wiki, refer to the [Guides List](../../../
 
 #### Option 1: Workspace Export Utility *(Recommended!)*
 
-1. Download the [Workspaces Export Script](https://github.com/TaskarCenterAtUW/tdei-tools/blob/main/utilities/workspace-export.ps1) from the [TDEI Tools](https://github.com/TaskarCenterAtUW/tdei-tools) repository.
+1. Download the [Workspaces Export Script](https://github.com/TaskarCenterAtUW/tdei-tools/blob/main/utilities/workspaces-export.ps1) from the [TDEI Tools](https://github.com/TaskarCenterAtUW/tdei-tools) repository.
 
 2. Run the script and follow the instructions.
 
