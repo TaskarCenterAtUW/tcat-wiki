@@ -121,19 +121,23 @@ nav:
           - Workspaces:
               - tdei/producers/workspaces/index.md
               - Guides:
-                - tdei/producers/workspaces/guides/index.md
-                - tdei/producers/workspaces/guides/workspaces-export.md
-                - tdei/producers/workspaces/guides/workspaces-josm.md
-              - AVIV ScoutRoute: 
-                - tdei/producers/workspaces/aviv-scoutroute/index.md
-                - Guides:
-                  - tdei/producers/workspaces/aviv-scoutroute/guides/index.md
-                  - tdei/producers/workspaces/aviv-scoutroute/guides/user-manual.md
-                - Long Form Quest Definition:
-                  - tdei/producers/workspaces/aviv-scoutroute/long-form/index.md
-                  - Guides: 
-                    - tdei/producers/workspaces/aviv-scoutroute/long-form/guides/index.md
-                    - tdei/producers/workspaces/aviv-scoutroute/long-form/guides/element-type-icon.md
-                    - tdei/producers/workspaces/aviv-scoutroute/long-form/guides/element-query.md
-                - AVIV ScoutRoute Guides: tdei/producers/workspaces/aviv-scoutroute/guides/index.md
+                  - tdei/producers/workspaces/guides/index.md
+                  - tdei/producers/workspaces/guides/workspaces-export.md
+              - AVIV ScoutRoute:
+                  - tdei/producers/workspaces/aviv-scoutroute/index.md
+                  - Guides:
+                      - tdei/producers/workspaces/aviv-scoutroute/guides/index.md
+                      - tdei/producers/workspaces/aviv-scoutroute/guides/user-manual.md
+                  - Long Form Quest Definition:
+                      - tdei/producers/workspaces/aviv-scoutroute/long-form/index.md
+                      - Guides:
+                          - tdei/producers/workspaces/aviv-scoutroute/long-form/guides/index.md
+                          - tdei/producers/workspaces/aviv-scoutroute/long-form/guides/element-type-icon.md
+                          - tdei/producers/workspaces/aviv-scoutroute/long-form/guides/element-query.md
+                  - AVIV ScoutRoute Guides: tdei/producers/workspaces/aviv-scoutroute/guides/index.md
               - Rapid: tdei/producers/workspaces/rapid/index.md
+              - JOSM:
+                  - tdei/producers/workspaces/josm/index.md
+                  - Guides:
+                      - tdei/producers/workspaces/josm/guides/index.md
+                      - tdei/producers/workspaces/josm/guides/workspaces-josm.md
