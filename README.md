@@ -4,4 +4,4 @@ This repository contains the files used to create the [TCAT Wiki](https://taskar
 
 ## Contributing
 
-Interested in contributing? Refer to the [Contributing guide](docs/guides/contributing.md) for more information.
+Interested in contributing? Refer to the [Contributing guide](https://taskarcenteratuw.github.io/tcat-wiki/guides/contributing/) [(local)](docs/guides/contributing.md) for more information.
