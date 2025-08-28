@@ -55,9 +55,13 @@ theme:
 extra_css:
   - resources/stylesheets/extra.css
 plugins:
+  - meta
+  - privacy
   - search
   - social
-  - privacy
+  - tags:
+      tags_allowed:
+        - Guide
 extra:
   social:
     - name: TCAT on GitHub
