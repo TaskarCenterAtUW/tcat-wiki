@@ -10,7 +10,7 @@ _For a list of all guides on the TCAT Wiki, refer to the [Guides List](../../gui
 
 ---
 
-[OpenSidewalks](../index.md) is an open data project by the [Taskar Center for Accessible Technology](../../about/tcat.md) at the University of Washington in Seattle. The project heavily relies on the OpenStreetMap infrastructure, mapping standards, and volunteer community.
+[OpenSidewalks](../index.md) is an open data project by the [Taskar Center for Accessible Technology](../../index.md) at the University of Washington in Seattle. The project heavily relies on the OpenStreetMap infrastructure, mapping standards, and volunteer community.
 
 ## Welcome
 
