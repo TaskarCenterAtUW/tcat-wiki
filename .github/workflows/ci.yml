@@ -26,10 +26,9 @@ jobs:
         with:
           python-version: 3.x
       - run: sudo apt-get remove --purge man-db
-      - run: echo "cache_id=$(date --utc '+%V')" >> $GITHUB_ENV
       - uses: actions/cache@v4
         with:
-          key: mkdocs-material-${{ env.cache_id }}
+          key: mkdocs-material-${{ hashFiles('mkdocs.yml', 'requirements.txt') }}-${{ github.sha }}
           path: .cache
           restore-keys:
             |
