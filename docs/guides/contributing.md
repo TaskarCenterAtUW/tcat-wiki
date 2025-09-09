@@ -39,7 +39,13 @@ This section of the guide explains how to set up a Windows environment for contr
 
       [`pip install mkdocs-material`]
 
-3. Install image processing dependencies
+3. Install plugins
+
+   1. In PowerShell terminal:
+
+      [`pip install mkdocs-git-revision-date-localized-plugin`]
+
+4. Install image processing dependencies
 
    1. In Powershell terminal:
 
