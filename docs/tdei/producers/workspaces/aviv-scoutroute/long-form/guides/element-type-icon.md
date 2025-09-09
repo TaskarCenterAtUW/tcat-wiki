@@ -20,7 +20,7 @@ These icons help the mobile app display appropriate quest icons for each element
    1. Once you've located a suitable icon, click on it.
    2. Copy the exact icon name (e.g., sidewalk, car_charger_capacity).
 4. Add It to Your Quest Definition
-   1. Insert the icon name as the value for the the `element_type_icon` key.
+   1. Insert the icon name as the value for the `element_type_icon` key.
    2. Make sure to not include any file extension (like .png or .svg)
 
 ## Example:

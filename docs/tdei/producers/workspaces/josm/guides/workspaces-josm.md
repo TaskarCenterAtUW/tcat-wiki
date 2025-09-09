@@ -4,7 +4,7 @@ title: Workspaces JOSM Settings Guide
 
 # Workspaces JOSM Settings Guide
 
-This guide explains how use the [Workspaces JOSM Settings Script](https://github.com/TaskarCenterAtUW/tdei-tools/blob/main/utilities/workspaces-josm.ps1) from [TDEI Tools](https://github.com/TaskarCenterAtUW/tdei-tools/) to set up JOSM to enable editing of Workspaces.
+This guide explains how to use the [Workspaces JOSM Settings Script](https://github.com/TaskarCenterAtUW/tdei-tools/blob/main/utilities/workspaces-josm.ps1) from [TDEI Tools](https://github.com/TaskarCenterAtUW/tdei-tools/) to set up JOSM to enable editing of Workspaces.
 
 _For a list of all guides on the TCAT Wiki, refer to the [Guides List](../../../../../guides/index.md)._
 
@@ -61,7 +61,7 @@ Note: You must have a [TDEI Portal](https://portal.tdei.us/) account.
 
    ![Screenshot of the "Remove token" button in the JOSM Preferences menu.](../../../../../resources/images/workspaces-josm/josm-remove-token.png)
 
-   4. Uncheck _"User the default OSM server URL"_
+   4. Uncheck _"Use the default OSM server URL"_
    5. Paste in the generated URL from the script
    6. Select _"Use Basic Authentication"_
    7. Paste in the generated Access Token in the _"OSM username"_ field
