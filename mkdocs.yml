@@ -108,40 +108,45 @@ nav:
       - Track Recording: guides/track-recording.md
   - OpenSidewalks:
       - opensidewalks/index.md
-      - OSW Guides:
+      - Guides:
           - opensidewalks/guides/index.md
           - OSW in OSM: opensidewalks/guides/osw-in-osm.md
-      - OSW Schema: opensidewalks/schema/index.md
-      - OSW Tasking Manager: opensidewalks/tasking-manager/index.md
+      - Schema:
+          - opensidewalks/schema/index.md
+      - Tasking Manager:
+          - opensidewalks/tasking-manager/index.md
   - TDEI:
       - tdei/index.md
-      - TDEI Core: tdei/tdei-core/index.md
       - Consumers:
           - tdei/consumers/index.md
-          - AccessMap: tdei/consumers/accessmap/index.md
-          - Walkshed: tdei/consumers/walkshed/index.md
+          - AccessMap:
+              - tdei/consumers/accessmap/index.md
+          - Walkshed:
+              - tdei/consumers/walkshed/index.md
       - Producers:
           - tdei/producers/index.md
           - Workspaces:
               - tdei/producers/workspaces/index.md
-              - Guides:
-                  - tdei/producers/workspaces/guides/index.md
-                  - tdei/producers/workspaces/guides/workspaces-export.md
               - AVIV ScoutRoute:
                   - tdei/producers/workspaces/aviv-scoutroute/index.md
                   - Guides:
                       - tdei/producers/workspaces/aviv-scoutroute/guides/index.md
-                      - tdei/producers/workspaces/aviv-scoutroute/guides/user-manual.md
-                  - Long Form Quest Definition:
+                      - AVIV ScoutRoute User Manual: tdei/producers/workspaces/aviv-scoutroute/guides/user-manual.md
+                  - Long Form:
                       - tdei/producers/workspaces/aviv-scoutroute/long-form/index.md
                       - Guides:
                           - tdei/producers/workspaces/aviv-scoutroute/long-form/guides/index.md
-                          - tdei/producers/workspaces/aviv-scoutroute/long-form/guides/element-type-icon.md
-                          - tdei/producers/workspaces/aviv-scoutroute/long-form/guides/element-query.md
-                  - AVIV ScoutRoute Guides: tdei/producers/workspaces/aviv-scoutroute/guides/index.md
-              - Rapid: tdei/producers/workspaces/rapid/index.md
+                          - Element Query Guide: tdei/producers/workspaces/aviv-scoutroute/long-form/guides/element-query.md
+                          - Element Type Icon Guide: tdei/producers/workspaces/aviv-scoutroute/long-form/guides/element-type-icon.md
+              - Guides:
+                  - tdei/producers/workspaces/guides/index.md
+                  - Workspaces Export Guide: tdei/producers/workspaces/guides/workspaces-export.md
               - JOSM:
                   - tdei/producers/workspaces/josm/index.md
                   - Guides:
                       - tdei/producers/workspaces/josm/guides/index.md
-                      - tdei/producers/workspaces/josm/guides/workspaces-josm.md
+                      - Workspaces JOSM Settings Guide: tdei/producers/workspaces/josm/guides/workspaces-josm.md
+              - Rapid:
+                  - tdei/producers/workspaces/rapid/index.md
+      - TDEI Core:
+          - tdei/tdei-core/index.md
