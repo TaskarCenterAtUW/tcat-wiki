@@ -65,6 +65,9 @@ plugins:
   - git-revision-date-localized:
       enable_creation_date: true
       timezone: America/Los_Angeles
+  - git-committers:
+      repository: TaskarCenterAtUW/tcat-wiki
+      branch: main
 extra:
   social:
     - name: TCAT on GitHub
