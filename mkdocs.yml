@@ -116,8 +116,9 @@ nav:
       - opensidewalks/index.md
       - Guides:
           - opensidewalks/guides/index.md
+          - Core Edges in OSW: opensidewalks/guides/core-edges-in-osw.md
+          - Custom Points in OSW: opensidewalks/guides/custom-points-in-osw.md
           - OSW in OSM: opensidewalks/guides/osw-in-osm.md
-          - Custom Points: opensidewalks/guides/custom-points.md
       - Schema:
           - opensidewalks/schema/index.md
       - Tasking Manager:
