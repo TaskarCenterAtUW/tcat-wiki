@@ -24,14 +24,43 @@
 
 param(
     [Parameter(HelpMessage = "Path to the documentation directory")]
-    [string]$docsPath = "..\docs",
+    [string]$docsPath = "",
     
     [Parameter(HelpMessage = "Show verbose output")]
-    [switch]$verboseOutput
+    [switch]$verboseOutput,
+    
+    [Parameter(HelpMessage = "Check external links")]
+    [switch]$external,
+    
+    [Parameter(HelpMessage = "Check internal links")]
+    [switch]$internal
 )
+
+# If neither -external nor -internal is specified, default to both
+if (-not $external -and -not $internal) {
+    $external = $true
+    $internal = $true
+}
+
+# Auto-detect docs path if not specified
+if (-not $docsPath) {
+    # Check if we're in the util directory
+    if (Test-Path "..\docs") {
+        $docsPath = "..\docs"
+    }
+    # Check if we're in the repository root
+    elseif (Test-Path "docs") {
+        $docsPath = "docs"
+    }
+    else {
+        Write-Host "Error: Cannot auto-detect docs directory. Please specify -docsPath parameter." -ForegroundColor Red
+        exit 1
+    }
+}
 
 Write-Host "TCAT Wiki Link Validation" -ForegroundColor Cyan
 Write-Host "=========================" -ForegroundColor Cyan
+Write-Host "Checking: $(if ($internal) { 'Internal' } else { '' })$(if ($internal -and $external) { ' and ' } else { '' })$(if ($external) { 'External' } else { '' }) links"
 Write-Host ""
 
 # Check if docs directory exists
@@ -170,48 +199,54 @@ foreach ($file in $markdownFiles) {
         $linkUrl = $link.Groups[2].Value
         
         if (Test-ExternalUrl -url $linkUrl) {
-            # Collect external URLs for later testing
-            $externalUrls[$linkUrl] = $true
+            # Collect external URLs for later testing if external checking is enabled
+            if ($external) {
+                $externalUrls[$linkUrl] = $true
+            }
         }
         else {
-            # Test internal link
-            if (-not (Test-InternalLink -filePath $file.FullName -linkUrl $linkUrl)) {
-                $brokenInternalLinks += @{
-                    file = $relativePath
-                    text = $linkText
-                    url  = $linkUrl
+            # Test internal link only if internal checking is enabled
+            if ($internal) {
+                if (-not (Test-InternalLink -filePath $file.FullName -linkUrl $linkUrl)) {
+                    $brokenInternalLinks += @{
+                        file = $relativePath
+                        text = $linkText
+                        url  = $linkUrl
+                    }
+                    Write-Host "  [X] Broken internal link: [$linkText]($linkUrl)" -ForegroundColor Red
                 }
-                Write-Host "  [X] Broken internal link: [$linkText]($linkUrl)" -ForegroundColor Red
             }
         }
     }
 }
 
-# Test external URLs
-Write-Host ""
-Write-Host "Validating $($externalUrls.Count) unique external URLs..." -ForegroundColor Cyan
+# Test external URLs only if external checking is enabled
+if ($external) {
+    Write-Host ""
+    Write-Host "Validating $($externalUrls.Count) unique external URLs..." -ForegroundColor Cyan
 
-foreach ($url in $externalUrls.Keys | Sort-Object) {
-    if ($verboseOutput) {
-        Write-Host "Testing: $url" -ForegroundColor Gray
-    }
-    
-    $result = Test-ExternalUrlValid -url $url
-    
-    if (-not $result.valid) {
-        $brokenExternalLinks += @{
-            url    = $url
-            status = $result.status
-        }
-        Write-Host "  [X] Failed: $($result.status)" -ForegroundColor Red
-    }
-    else {
+    foreach ($url in $externalUrls.Keys | Sort-Object) {
         if ($verboseOutput) {
-            Write-Host "  [OK] OK: $($result.status)" -ForegroundColor Green
+            Write-Host "Testing: $url" -ForegroundColor Gray
         }
+        
+        $result = Test-ExternalUrlValid -url $url
+        
+        if (-not $result.valid) {
+            $brokenExternalLinks += @{
+                url    = $url
+                status = $result.status
+            }
+            Write-Host "  [X] Failed: $($result.status)" -ForegroundColor Red
+        }
+        else {
+            if ($verboseOutput) {
+                Write-Host "  [OK] OK: $($result.status)" -ForegroundColor Green
+            }
+        }
+        
+        Start-Sleep -Milliseconds 500  # Be nice to servers
     }
-    
-    Start-Sleep -Milliseconds 500  # Be nice to servers
 }
 
 # Summary Report
@@ -219,10 +254,14 @@ Write-Host ""
 Write-Host "VALIDATION SUMMARY" -ForegroundColor Cyan
 Write-Host "==================" -ForegroundColor Cyan
 Write-Host "Total markdown files: $($markdownFiles.Count)"
-Write-Host "Broken internal links: $($brokenInternalLinks.Count)"
-Write-Host "Broken external links: $($brokenExternalLinks.Count)"
+if ($internal) {
+    Write-Host "Broken internal links: $($brokenInternalLinks.Count)"
+}
+if ($external) {
+    Write-Host "Broken external links: $($brokenExternalLinks.Count)"
+}
 
-if ($brokenInternalLinks.Count -gt 0) {
+if ($internal -and $brokenInternalLinks.Count -gt 0) {
     Write-Host ""
     Write-Host "[X] BROKEN INTERNAL LINKS ($($brokenInternalLinks.Count)):" -ForegroundColor Red
     foreach ($item in $brokenInternalLinks) {
@@ -232,7 +271,7 @@ if ($brokenInternalLinks.Count -gt 0) {
     }
 }
 
-if ($brokenExternalLinks.Count -gt 0) {
+if ($external -and $brokenExternalLinks.Count -gt 0) {
     Write-Host ""
     Write-Host "[X] BROKEN EXTERNAL LINKS ($($brokenExternalLinks.Count)):" -ForegroundColor Red
     foreach ($item in $brokenExternalLinks) {
@@ -242,13 +281,18 @@ if ($brokenExternalLinks.Count -gt 0) {
     }
 }
 
-if ($brokenInternalLinks.Count -eq 0 -and $brokenExternalLinks.Count -eq 0) {
+# Calculate total broken links based on what was checked
+$totalBroken = 0
+if ($internal) { $totalBroken += $brokenInternalLinks.Count }
+if ($external) { $totalBroken += $brokenExternalLinks.Count }
+
+if ($totalBroken -eq 0) {
     Write-Host ""
-    Write-Host "[OK] ALL LINKS VALID! No broken links found." -ForegroundColor Green
+    Write-Host "[OK] ALL CHECKED LINKS VALID! No broken links found." -ForegroundColor Green
 }
 
-# Exit with error code if any links are broken
-if ($brokenInternalLinks.Count -gt 0 -or $brokenExternalLinks.Count -gt 0) {
+# Exit with error code if any checked links are broken
+if ($totalBroken -gt 0) {
     exit 1
 }
 else {
