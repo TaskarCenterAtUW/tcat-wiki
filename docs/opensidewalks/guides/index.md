@@ -10,14 +10,14 @@ _For a list of all guides on the TCAT Wiki, refer to the [Guides List](../../gui
 
 ---
 
-## [OpenSidewalks in OpenStreetMap](osw-in-osm.md)
+### [Core Edges in OSW](core-edges-in-osw.md)
 
-The OpenSidewalks in OpenStreetMap ("OSW in OSM") guide provides information on how to make edits to OSM that are in line with the OpenSidewalks schema and further the goals of the OpenSidewalks project.
+Sidewalk centerlines are linear GIS features representing the middle path of sidewalk infrastructure. These datasets are commonly maintained by city transportation departments and typically include attributes like:
 
-## [Custom Points in OSW](custom-points-in-osw.md)
+### [Custom Points in OSW](custom-points-in-osw.md)
 
-The Custom Points in OSW guide shows how to add custom non-routable point features (like bus stops) to an OpenSidewalks dataset using the Custom Points entity type.
+Custom Points in OpenSidewalks are user-defined non-routable point features that extend the schema beyond the predefined Core Entities and Adjacent Entities point types. While OpenSidewalks includes many built-in point types like fire hydrants, benches, and street lamps, Custom Points let you add any custom feature!
 
-## [Core Edges in OSW](core-edges-in-osw.md)
+### [OSW in OSM](osw-in-osm.md)
 
-The Core Edges in OSW guide shows how to add an existing sidewalk centerline dataset into an OpenSidewalks dataset using the Core Edges entity type.
+This guide explains how to make edits to OpenStreetMap following and supporting the OpenSidewalks schema.
