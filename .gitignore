@@ -1,4 +1,5 @@
+.claude/
 local-storage/
 tcat-wiki.code-workspace
-settings.local.json
 CLAUDE.md
+*.wip
