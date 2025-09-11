@@ -69,11 +69,11 @@ This section of the guide explains how to set up a Windows environment for contr
 
       2. Add to PATH:
 
-         [`C:\msys64\ucrt64\bin`]
+         `C:\msys64\ucrt64\bin`
 
 ### Setup
 
-1. Using VS Code, clone [`https://github.com/TaskarCenterAtUW/tcat-wiki`]
+1. Using VS Code, clone `https://github.com/TaskarCenterAtUW/tcat-wiki`
 
 ## Editing Instructions
 
