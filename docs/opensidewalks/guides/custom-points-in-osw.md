@@ -6,7 +6,7 @@ title: Custom Points in OSW
 
 This guide shows how to add custom non-routable point features (like bus stops) to an OpenSidewalks dataset using the Custom Points entity type.
 
-_For a list of all guides on the TCAT Wiki, refer to the [Guides List](../../guides/index.md)._
+_For a list of all guides on the TCAT Wiki, refer to the [Guides List](../../guides-list/index.md)._
 
 ## What are Custom Points?
 

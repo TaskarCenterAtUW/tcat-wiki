@@ -108,8 +108,8 @@ watch:
   - overrides
 nav:
   - Home: index.md
-  - Guides:
-      - guides/index.md
+  - Guides List:
+      - guides-list/index.md
   - Misc:
       - Guides:
           - misc/guides/index.md

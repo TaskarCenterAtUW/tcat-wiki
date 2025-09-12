@@ -6,7 +6,7 @@ title: OpenSidewalks Guides
 
 Guides, tutorials, and user manuals related to OpenSidewalks and produced by TCAT and/or its partners are listed below.
 
-_For a list of all guides on the TCAT Wiki, refer to the [Guides List](../../guides/index.md)._
+_For a list of all guides on the TCAT Wiki, refer to the [Guides List](../../guides-list/index.md)._
 
 ---
 

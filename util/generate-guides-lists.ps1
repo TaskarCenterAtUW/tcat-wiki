@@ -33,8 +33,8 @@ function Get-RelativePathToGuidesIndex {
     # Split the path after docs/
     $pathParts = $relativePath -split '/' | Where-Object { $_ -ne '' }
     
-    # Special case: if we're in docs/guides, link to self
-    if ($pathParts.Count -eq 1 -and $pathParts[0] -eq 'guides') {
+    # Special case: if we're in docs/guides-list, link to self
+    if ($pathParts.Count -eq 1 -and $pathParts[0] -eq 'guides-list') {
         return 'index.md'
     }
     
@@ -43,11 +43,11 @@ function Get-RelativePathToGuidesIndex {
     $levelsToGoBack = $pathParts.Count
     
     if ($levelsToGoBack -eq 1) {
-        # We're in docs/guides
+        # We're in docs/guides-list
         return 'index.md'
     }
     else {
-        $backPath = ('../' * $levelsToGoBack) + 'guides/index.md'
+        $backPath = ('../' * $levelsToGoBack) + 'guides-list/index.md'
         return $backPath
     }
 }
@@ -160,7 +160,7 @@ function New-GuidesList {
     
     # Create appropriate title based on directory structure
     $sectionTitle = switch -Regex ($GuidesPath) {
-        'docs[/\\]guides$' { "Guides List" }
+        'docs[/\\]guides-list$' { "Guides List" }
         'misc[/\\]guides$' { "Miscellaneous Guides" }
         'opensidewalks[/\\]guides$' { "OpenSidewalks Guides" }
         'workspaces[/\\]guides$' { "Workspaces Guides" }
@@ -181,7 +181,7 @@ function New-GuidesList {
     
     # Add description based on the guides directory
     switch -Regex ($GuidesPath) {
-        'docs[/\\]guides$' { 
+        'docs[/\\]guides-list$' { 
             $content += "Guides, tutorials, and user manuals produced by TCAT and/or its partners are listed below."
         }
         'opensidewalks[/\\]guides$' { 
@@ -204,7 +204,7 @@ function New-GuidesList {
     }
     
     # Add back-reference to main guides list (except for main guides index)
-    if ($GuidesPath -notmatch 'docs[/\\]guides$') {
+    if ($GuidesPath -notmatch 'docs[/\\]guides-list$') {
         $content += ""
         $guidesIndexPath = Get-RelativePathToGuidesIndex -CurrentPath $GuidesPath
         $content += "_For a list of all guides on the TCAT Wiki, refer to the [Guides List]($guidesIndexPath)._"
@@ -284,8 +284,8 @@ $masterContent += ""
 $masterContent += "Guides, tutorials, and user manuals produced by TCAT and/or its partners are listed below."
 $masterContent += ""
 
-# Process each guides directory (excluding the main docs/guides)
-foreach ($guidesDir in $guidesDirectories | Where-Object { $_.FullName -notmatch 'docs[/\\]guides$' }) {
+# Process each guides directory (excluding the main docs/guides-list)
+foreach ($guidesDir in $guidesDirectories | Where-Object { $_.FullName -notmatch 'docs[/\\]guides-list$' }) {
     $indexPath = Join-Path $guidesDir.FullName "index.md"
     
     if (Test-Path $indexPath) {
@@ -317,7 +317,7 @@ foreach ($guidesDir in $guidesDirectories | Where-Object { $_.FullName -notmatch
                 }
             }
             
-            # Calculate relative path from docs/guides to this guides directory
+            # Calculate relative path from docs/guides-list to this guides directory
             $guidesPath = $guidesDir.FullName -replace '[/\\]', '/'
             if ($guidesPath -match 'docs/(.*)') {
                 $relativePath = "../$($matches[1])/index.md"
@@ -359,7 +359,7 @@ foreach ($guidesDir in $guidesDirectories | Where-Object { $_.FullName -notmatch
                             if ($line -match '^###\s+\[([^\]]+)\]\(([^)]+)\)') {
                                 $guideTitle = $matches[1]
                                 $guideFile = $matches[2]
-                                # Convert relative path to be relative from docs/guides
+                                # Convert relative path to be relative from docs/guides-list
                                 $adjustedPath = "../$guidesBasePath/guides/$guideFile"
                                 $masterContent += "### [$guideTitle]($adjustedPath)"
                             }
@@ -386,7 +386,7 @@ foreach ($guidesDir in $guidesDirectories | Where-Object { $_.FullName -notmatch
 # No longer need miscellaneous section - misc guides are now in docs/misc/guides/
 
 # Write the master guides index
-$masterIndexPath = Join-Path "docs" "guides" "index.md"
+$masterIndexPath = Join-Path "docs" "guides-list" "index.md"
 $masterContent | Set-Content -Path $masterIndexPath -Encoding UTF8
 
 Write-Host "  Generated master guides index with content from $($guidesDirectories.Count - 1) sub-directories"
