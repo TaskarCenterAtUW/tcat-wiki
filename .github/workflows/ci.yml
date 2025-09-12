@@ -17,6 +17,8 @@ jobs:
             |
             docs
             includes
+            overrides
+            mkdocs.yml
       - name: Configure Git Credentials
         run:
           |
