@@ -1,5 +1,7 @@
 ---
 title: Core Edges in OSW
+tags: 
+  - OSW 0.3
 ---
 
 # Core Edges in OSW

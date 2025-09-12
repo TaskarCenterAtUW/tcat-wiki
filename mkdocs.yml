@@ -62,6 +62,8 @@ plugins:
   - tags:
       tags_allowed:
         - Guide
+        - OSW 0.2
+        - OSW 0.3
   - git-revision-date-localized:
       enable_creation_date: true
       timezone: America/Los_Angeles

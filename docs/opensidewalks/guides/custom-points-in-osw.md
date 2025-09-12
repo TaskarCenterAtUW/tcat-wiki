@@ -1,5 +1,7 @@
 ---
 title: Custom Points in OSW
+tags: 
+  - OSW 0.3
 ---
 
 # Custom Points in OSW
