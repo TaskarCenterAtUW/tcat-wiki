@@ -7,7 +7,6 @@
     Scans the docs directory structure and generates a YAML navigation tree 
     that can be inserted into mkdocs.yml. Uses frontmatter titles when available,
     otherwise derives titles from filenames and directory names.
-D
 .PARAMETER docsPath
     Path to the documentation directory to scan (default: "docs")
 
