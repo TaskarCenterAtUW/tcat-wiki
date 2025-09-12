@@ -6,16 +6,12 @@ title: Guides List
 
 Guides, tutorials, and user manuals produced by TCAT and/or its partners are listed below.
 
-## [Miscellaneous Guides](../misc/guides/index.md)
+## [About Guides](../about/guides/index.md)
 
 
-### [Contributing](../misc/guides/contributing.md)
+### [Contributing](../about/guides/CONTRIBUTING.md)
 
 This guide explains how to contribute to the TCAT Wiki.
-
-### [Track Recording](../misc/guides/track-recording.md)
-
-This guide explains how to use mobile applications to record GPS tracks.
 
 ## [OpenSidewalks Guides](../opensidewalks/guides/index.md)
 
@@ -46,6 +42,13 @@ _Coming soon!_
 
 
 _Coming soon!_
+
+## [Imagery Capture Guides](../tdei/producers/imagery-capture/guides/index.md)
+
+
+### [Track Recording](../tdei/producers/imagery-capture/guides/track-recording.md)
+
+This guide explains how to use mobile applications to record GPS tracks.
 
 ## [Workspaces Guides](../tdei/producers/workspaces/guides/index.md)
 

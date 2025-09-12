@@ -154,20 +154,32 @@ function New-GuidesList {
         return
     }
     
-    # Determine the directory name for the title
-    $dirName = Split-Path $GuidesPath -Leaf
+    # Get the parent path for building descriptions
     $parentPath = Split-Path $GuidesPath -Parent
     
     # Create appropriate title based on directory structure
     $sectionTitle = switch -Regex ($GuidesPath) {
         'docs[/\\]guides-list$' { "Guides List" }
-        'misc[/\\]guides$' { "Miscellaneous Guides" }
-        'opensidewalks[/\\]guides$' { "OpenSidewalks Guides" }
-        'workspaces[/\\]guides$' { "Workspaces Guides" }
-        'aviv-scoutroute[/\\]guides$' { "AVIV ScoutRoute Guides" }
         'aviv-scoutroute[/\\]long-form[/\\]guides$' { "Long Form Quest Definition Guides" }
-        'josm[/\\]guides$' { "JOSM Guides" }
-        default { "$($dirName.Substring(0,1).ToUpper())$($dirName.Substring(1)) Guides" }
+        default { 
+            # Get parent directory name and convert to title case
+            $parentDirName = Split-Path (Split-Path $GuidesPath -Parent) -Leaf
+            
+            # Handle special cases for better formatting
+            $titleName = switch ($parentDirName) {
+                'opensidewalks' { 'OpenSidewalks' }
+                'aviv-scoutroute' { 'AVIV ScoutRoute' }
+                'josm' { 'JOSM' }
+                'accessmap' { 'AccessMap' }
+                default { 
+                    # Convert kebab-case to Title Case
+                    ($parentDirName -split '-' | ForEach-Object { 
+                        $_.Substring(0, 1).ToUpper() + $_.Substring(1).ToLower() 
+                    }) -join ' '
+                }
+            }
+            "$titleName Guides"
+        }
     }
     
     # Build content
@@ -243,14 +255,23 @@ function New-GuidesList {
 # Main script execution
 Write-Host "Searching for guides directories in docs..."
 
-# Verify docs directory exists
-if (-not (Test-Path "docs" -PathType Container)) {
-    Write-Error "docs directory not found. Please run this script from the repository root."
+# Auto-detect docs path
+$docsPath = ""
+# Check if we're in the util directory
+if (Test-Path "..\docs") {
+    $docsPath = "..\docs"
+}
+# Check if we're in the repository root
+elseif (Test-Path "docs") {
+    $docsPath = "docs"
+}
+else {
+    Write-Error "docs directory not found. Please run this script from the repository root or util directory."
     exit 1
 }
 
 # Find all directories named "guides" under docs
-$guidesDirectories = Get-ChildItem -Path "docs" -Recurse -Directory -ErrorAction Stop | 
+$guidesDirectories = Get-ChildItem -Path $docsPath -Recurse -Directory -ErrorAction Stop | 
 Where-Object { $_.Name -eq "guides" }
 
 if ($guidesDirectories.Count -eq 0) {
@@ -386,7 +407,7 @@ foreach ($guidesDir in $guidesDirectories | Where-Object { $_.FullName -notmatch
 # No longer need miscellaneous section - misc guides are now in docs/misc/guides/
 
 # Write the master guides index
-$masterIndexPath = Join-Path "docs" "guides-list" "index.md"
+$masterIndexPath = Join-Path $docsPath "guides-list" "index.md"
 $masterContent | Set-Content -Path $masterIndexPath -Encoding UTF8
 
 Write-Host "  Generated master guides index with content from $($guidesDirectories.Count - 1) sub-directories"

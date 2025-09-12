@@ -108,13 +108,13 @@ watch:
   - overrides
 nav:
   - Home: index.md
+  - About:
+      - about/index.md
+      - Guides:
+          - about/guides/index.md
+          - Contributing: about/guides/CONTRIBUTING.md
   - Guides List:
       - guides-list/index.md
-  - Misc:
-      - Guides:
-          - misc/guides/index.md
-          - Contributing: misc/guides/contributing.md
-          - Track Recording: misc/guides/track-recording.md
   - OpenSidewalks:
       - opensidewalks/index.md
       - Guides:
@@ -142,6 +142,11 @@ nav:
                   - tdei/consumers/walkshed/guides/index.md
       - Producers:
           - tdei/producers/index.md
+          - Imagery Capture:
+              - tdei/producers/imagery-capture/index.md
+              - Guides:
+                  - tdei/producers/imagery-capture/guides/index.md
+                  - Track Recording: tdei/producers/imagery-capture/guides/track-recording.md
           - Workspaces:
               - tdei/producers/workspaces/index.md
               - AVIV ScoutRoute:
