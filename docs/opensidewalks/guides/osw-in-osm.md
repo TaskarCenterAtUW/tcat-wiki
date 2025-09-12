@@ -6,7 +6,7 @@ title: OSW in OSM
 
 This guide explains how to make edits to OpenStreetMap following and supporting the OpenSidewalks schema.
 
-_For a list of all guides on the TCAT Wiki, refer to the [Guides List](../../guides/index.md)._
+_For a list of all guides on the TCAT Wiki, refer to the [Guides List](../../guides-list/index.md)._
 
 ---
 

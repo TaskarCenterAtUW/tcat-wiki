@@ -62,6 +62,14 @@ plugins:
   - tags:
       tags_allowed:
         - Guide
+        - OSW 0.2
+        - OSW 0.3
+  - git-revision-date-localized:
+      enable_creation_date: true
+      timezone: America/Los_Angeles
+  - git-committers:
+      repository: TaskarCenterAtUW/tcat-wiki
+      branch: main
 extra:
   social:
     - name: TCAT on GitHub
@@ -102,46 +110,69 @@ watch:
   - overrides
 nav:
   - Home: index.md
-  - Guides:
-      - guides/index.md
-      - Contributing: guides/contributing.md
-      - Track Recording: guides/track-recording.md
+  - About:
+      - about/index.md
+      - Guides:
+          - about/guides/index.md
+          - Contributing: about/guides/CONTRIBUTING.md
+  - Guides List:
+      - guides-list/index.md
   - OpenSidewalks:
       - opensidewalks/index.md
-      - OSW Guides:
+      - Guides:
           - opensidewalks/guides/index.md
+          - Core Edges in OSW: opensidewalks/guides/core-edges-in-osw.md
+          - Custom Points in OSW: opensidewalks/guides/custom-points-in-osw.md
           - OSW in OSM: opensidewalks/guides/osw-in-osm.md
-      - OSW Schema: opensidewalks/schema/index.md
-      - OSW Tasking Manager: opensidewalks/tasking-manager/index.md
+      - Schema:
+          - opensidewalks/schema/index.md
+      - Tasking Manager:
+          - opensidewalks/tasking-manager/index.md
+          - Guides:
+              - opensidewalks/tasking-manager/guides/index.md
   - TDEI:
       - tdei/index.md
-      - TDEI Core: tdei/tdei-core/index.md
       - Consumers:
           - tdei/consumers/index.md
-          - AccessMap: tdei/consumers/accessmap/index.md
-          - Walkshed: tdei/consumers/walkshed/index.md
+          - AccessMap:
+              - tdei/consumers/accessmap/index.md
+              - Guides:
+                  - tdei/consumers/accessmap/guides/index.md
+          - Walkshed:
+              - tdei/consumers/walkshed/index.md
+              - Guides:
+                  - tdei/consumers/walkshed/guides/index.md
       - Producers:
           - tdei/producers/index.md
+          - Imagery Capture:
+              - tdei/producers/imagery-capture/index.md
+              - Guides:
+                  - tdei/producers/imagery-capture/guides/index.md
+                  - Track Recording: tdei/producers/imagery-capture/guides/track-recording.md
           - Workspaces:
               - tdei/producers/workspaces/index.md
-              - Guides:
-                  - tdei/producers/workspaces/guides/index.md
-                  - tdei/producers/workspaces/guides/workspaces-export.md
               - AVIV ScoutRoute:
                   - tdei/producers/workspaces/aviv-scoutroute/index.md
                   - Guides:
                       - tdei/producers/workspaces/aviv-scoutroute/guides/index.md
-                      - tdei/producers/workspaces/aviv-scoutroute/guides/user-manual.md
-                  - Long Form Quest Definition:
+                      - AVIV ScoutRoute User Manual: tdei/producers/workspaces/aviv-scoutroute/guides/user-manual.md
+                  - Long Form:
                       - tdei/producers/workspaces/aviv-scoutroute/long-form/index.md
                       - Guides:
                           - tdei/producers/workspaces/aviv-scoutroute/long-form/guides/index.md
-                          - tdei/producers/workspaces/aviv-scoutroute/long-form/guides/element-type-icon.md
-                          - tdei/producers/workspaces/aviv-scoutroute/long-form/guides/element-query.md
-                  - AVIV ScoutRoute Guides: tdei/producers/workspaces/aviv-scoutroute/guides/index.md
-              - Rapid: tdei/producers/workspaces/rapid/index.md
+                          - Element Query Guide: tdei/producers/workspaces/aviv-scoutroute/long-form/guides/element-query.md
+                          - Element Type Icon Guide: tdei/producers/workspaces/aviv-scoutroute/long-form/guides/element-type-icon.md
+              - Guides:
+                  - tdei/producers/workspaces/guides/index.md
+                  - Workspaces Export Guide: tdei/producers/workspaces/guides/workspaces-export.md
               - JOSM:
                   - tdei/producers/workspaces/josm/index.md
                   - Guides:
                       - tdei/producers/workspaces/josm/guides/index.md
-                      - tdei/producers/workspaces/josm/guides/workspaces-josm.md
+                      - Workspaces JOSM Settings Guide: tdei/producers/workspaces/josm/guides/workspaces-josm.md
+              - Rapid:
+                  - tdei/producers/workspaces/rapid/index.md
+                  - Guides:
+                      - tdei/producers/workspaces/rapid/guides/index.md
+      - TDEI Core:
+          - tdei/tdei-core/index.md

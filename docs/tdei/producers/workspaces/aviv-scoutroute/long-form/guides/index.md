@@ -4,16 +4,16 @@ title: Long Form Quest Definition Guides
 
 # Long Form Quest Definition Guides
 
-Guides related to the Long Form Quest Definitions used in AVIV ScoutRoute.
+Guides for [Long Form Quest Definitions](../index.md).
 
-_For a list of all guides on the TCAT Wiki, refer to the [Guides List](../../../../../../guides/index.md)._
+_For a list of all guides on the TCAT Wiki, refer to the [Guides List](../../../../../../guides-list/index.md)._
 
 ---
 
-## [Element Query Documentation](element-query.md)
+### [Element Query Guide](element-query.md)
 
-Guide to formatting the element query for Long Form Quest Definitions.
+This guide explains how to format the element query selector for use in AVIV ScoutRoute Long Form Quest Definitions.
 
-## [Element Type Icon](element-type-icon.md)
+### [Element Type Icon Guide](element-type-icon.md)
 
-Guide to picking a supported element type icon.
+This guide explains how to assign the correct value for the `element_type_icon` key in the Long Form Quest Definition JSON file used by AVIV ScoutRoute.

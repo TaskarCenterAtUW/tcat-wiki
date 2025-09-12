@@ -6,7 +6,7 @@ title: Element Type Icon Guide
 
 This guide explains how to assign the correct value for the `element_type_icon` key in the Long Form Quest Definition JSON file used by AVIV ScoutRoute.
 
-_For a list of all guides on the TCAT Wiki, refer to the [Guides List](../../../../../../guides/index.md)._
+_For a list of all guides on the TCAT Wiki, refer to the [Guides List](../../../../../../guides-list/index.md)._
 
 ---
 
@@ -20,7 +20,7 @@ These icons help the mobile app display appropriate quest icons for each element
    1. Once you've located a suitable icon, click on it.
    2. Copy the exact icon name (e.g., sidewalk, car_charger_capacity).
 4. Add It to Your Quest Definition
-   1. Insert the icon name as the value for the the `element_type_icon` key.
+   1. Insert the icon name as the value for the `element_type_icon` key.
    2. Make sure to not include any file extension (like .png or .svg)
 
 ## Example:
