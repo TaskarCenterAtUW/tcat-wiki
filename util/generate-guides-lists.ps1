@@ -1,5 +1,4 @@
 #!/usr/bin/env pwsh
-
 <#
 .SYNOPSIS
     Generates index.md files for all guides directories in the docs folder.
@@ -162,6 +161,7 @@ function New-GuidesList {
     # Create appropriate title based on directory structure
     $sectionTitle = switch -Regex ($GuidesPath) {
         'docs[/\\]guides$' { "Guides List" }
+        'misc[/\\]guides$' { "Miscellaneous Guides" }
         'opensidewalks[/\\]guides$' { "OpenSidewalks Guides" }
         'workspaces[/\\]guides$' { "Workspaces Guides" }
         'aviv-scoutroute[/\\]guides$' { "AVIV ScoutRoute Guides" }
@@ -270,5 +270,126 @@ foreach ($guidesDir in $guidesDirectories) {
     New-GuidesList -GuidesPath $guidesDir.FullName
     Write-Host ""
 }
+
+# Generate master guides index by aggregating all other guides directories
+Write-Host "Generating master guides index..."
+
+$masterContent = @()
+$masterContent += "---"
+$masterContent += "title: Guides List"
+$masterContent += "---"
+$masterContent += ""
+$masterContent += "# Guides List"
+$masterContent += ""
+$masterContent += "Guides, tutorials, and user manuals produced by TCAT and/or its partners are listed below."
+$masterContent += ""
+
+# Process each guides directory (excluding the main docs/guides)
+foreach ($guidesDir in $guidesDirectories | Where-Object { $_.FullName -notmatch 'docs[/\\]guides$' }) {
+    $indexPath = Join-Path $guidesDir.FullName "index.md"
+    
+    if (Test-Path $indexPath) {
+        Write-Host "  Aggregating: $($guidesDir.FullName)"
+        
+        try {
+            $content = Get-Content $indexPath -ErrorAction Stop
+            $inFrontMatter = $false
+            $foundTitle = $false
+            $sectionTitle = ""
+            $relativePath = ""
+            
+            # Extract section title and calculate relative path
+            foreach ($line in $content) {
+                if ($line -eq '---') {
+                    $inFrontMatter = -not $inFrontMatter
+                    continue
+                }
+                if ($inFrontMatter -and $line -match '^title:\s*(.+)$') {
+                    $sectionTitle = $matches[1].Trim()
+                    continue
+                }
+                if (-not $inFrontMatter -and -not $foundTitle -and $line -match '^#\s+(.+)$') {
+                    if (-not $sectionTitle) {
+                        $sectionTitle = $matches[1].Trim()
+                    }
+                    $foundTitle = $true
+                    break
+                }
+            }
+            
+            # Calculate relative path from docs/guides to this guides directory
+            $guidesPath = $guidesDir.FullName -replace '[/\\]', '/'
+            if ($guidesPath -match 'docs/(.*)') {
+                $relativePath = "../$($matches[1])/index.md"
+            }
+            
+            # Add section header
+            if ($sectionTitle -and $relativePath) {
+                $masterContent += "## [$sectionTitle]($relativePath)"
+                $masterContent += ""
+                
+                # Extract and add individual guide entries  
+                $guidesBasePath = ($guidesPath -replace '.*docs/', '') -replace '/guides$', ''
+                $frontMatterCount = 0
+                $afterContentSeparator = $false
+                
+                foreach ($line in $content) {
+                    # Count front matter separators (first two ---)
+                    if ($line -eq '---') {
+                        $frontMatterCount++
+                        if ($frontMatterCount -eq 3) {
+                            # This is the content separator, start capturing after this
+                            $afterContentSeparator = $true
+                            continue
+                        }
+                        if ($frontMatterCount -le 2) {
+                            continue  # Skip front matter
+                        }
+                    }
+                    
+                    # Skip content until we reach the separator
+                    if ($frontMatterCount -lt 3) {
+                        continue
+                    }
+                    
+                    # Process guide entries after the separator
+                    if ($afterContentSeparator) {
+                        if ($line.Trim() -ne '') {
+                            # Adjust relative paths for guide links
+                            if ($line -match '^###\s+\[([^\]]+)\]\(([^)]+)\)') {
+                                $guideTitle = $matches[1]
+                                $guideFile = $matches[2]
+                                # Convert relative path to be relative from docs/guides
+                                $adjustedPath = "../$guidesBasePath/guides/$guideFile"
+                                $masterContent += "### [$guideTitle]($adjustedPath)"
+                            }
+                            else {
+                                $masterContent += $line
+                            }
+                        }
+                        else {
+                            # Preserve empty lines
+                            $masterContent += $line
+                        }
+                    }
+                }
+                
+                $masterContent += ""
+            }
+        }
+        catch {
+            Write-Warning "Could not process: $indexPath - $_"
+        }
+    }
+}
+
+# No longer need miscellaneous section - misc guides are now in docs/misc/guides/
+
+# Write the master guides index
+$masterIndexPath = Join-Path "docs" "guides" "index.md"
+$masterContent | Set-Content -Path $masterIndexPath -Encoding UTF8
+
+Write-Host "  Generated master guides index with content from $($guidesDirectories.Count - 1) sub-directories"
+Write-Host ""
 
 Write-Host "Guide list generation complete!"

@@ -1,4 +1,4 @@
-#!/usr/bin/env powershell
+#!/usr/bin/env pwsh
 <#
 .SYNOPSIS
     Generates MkDocs navigation structure from docs directory
@@ -35,7 +35,7 @@ D
 
 param(
     [Parameter(HelpMessage = "Path to the documentation directory")]
-    [string]$docsPath = "..\docs",
+    [string]$docsPath = "",
     
     [Parameter(HelpMessage = "Output file path for generated navigation")]
     [string]$outputFile = "",
@@ -44,7 +44,7 @@ param(
     [switch]$updateMkdocs,
     
     [Parameter(HelpMessage = "Path to mkdocs.yml file")]
-    [string]$mkdocsPath = "..\mkdocs.yml"
+    [string]$mkdocsPath = ""
 )
 
 # Function to extract title from markdown frontmatter
@@ -172,6 +172,39 @@ function Build-DirectoryNav {
     }
     
     return $items
+}
+
+# Auto-detect paths if not specified
+if (-not $docsPath) {
+    # Check if we're in the util directory
+    if (Test-Path "..\docs") {
+        $docsPath = "..\docs"
+    }
+    # Check if we're in the repository root
+    elseif (Test-Path "docs") {
+        $docsPath = "docs"
+    }
+    else {
+        Write-Host "Error: Cannot auto-detect docs directory. Please specify -docsPath parameter." -ForegroundColor Red
+        Write-Host "Searched for: ..\docs, docs" -ForegroundColor Yellow
+        exit 1
+    }
+}
+
+if (-not $mkdocsPath) {
+    # Check if we're in the util directory
+    if (Test-Path "..\mkdocs.yml") {
+        $mkdocsPath = "..\mkdocs.yml"
+    }
+    # Check if we're in the repository root
+    elseif (Test-Path "mkdocs.yml") {
+        $mkdocsPath = "mkdocs.yml"
+    }
+    else {
+        Write-Host "Error: Cannot auto-detect mkdocs.yml file. Please specify -mkdocsPath parameter." -ForegroundColor Red
+        Write-Host "Searched for: ..\mkdocs.yml, mkdocs.yml" -ForegroundColor Yellow
+        exit 1
+    }
 }
 
 # Main execution

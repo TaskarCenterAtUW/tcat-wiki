@@ -1,4 +1,4 @@
-#!/usr/bin/env powershell
+#!/usr/bin/env pwsh
 <#
 .SYNOPSIS
     Link validation script for TCAT Wiki documentation
