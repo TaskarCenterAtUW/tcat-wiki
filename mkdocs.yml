@@ -110,8 +110,11 @@ nav:
   - Home: index.md
   - Guides:
       - guides/index.md
-      - Contributing: guides/contributing.md
-      - Track Recording: guides/track-recording.md
+  - Misc:
+      - Guides:
+          - misc/guides/index.md
+          - Contributing: misc/guides/contributing.md
+          - Track Recording: misc/guides/track-recording.md
   - OpenSidewalks:
       - opensidewalks/index.md
       - Guides:
@@ -123,14 +126,20 @@ nav:
           - opensidewalks/schema/index.md
       - Tasking Manager:
           - opensidewalks/tasking-manager/index.md
+          - Guides:
+              - opensidewalks/tasking-manager/guides/index.md
   - TDEI:
       - tdei/index.md
       - Consumers:
           - tdei/consumers/index.md
           - AccessMap:
               - tdei/consumers/accessmap/index.md
+              - Guides:
+                  - tdei/consumers/accessmap/guides/index.md
           - Walkshed:
               - tdei/consumers/walkshed/index.md
+              - Guides:
+                  - tdei/consumers/walkshed/guides/index.md
       - Producers:
           - tdei/producers/index.md
           - Workspaces:
@@ -156,5 +165,7 @@ nav:
                       - Workspaces JOSM Settings Guide: tdei/producers/workspaces/josm/guides/workspaces-josm.md
               - Rapid:
                   - tdei/producers/workspaces/rapid/index.md
+                  - Guides:
+                      - tdei/producers/workspaces/rapid/guides/index.md
       - TDEI Core:
           - tdei/tdei-core/index.md

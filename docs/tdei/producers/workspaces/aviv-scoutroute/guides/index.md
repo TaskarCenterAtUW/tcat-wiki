@@ -12,4 +12,4 @@ _For a list of all guides on the TCAT Wiki, refer to the [Guides List](../../../
 
 ### [AVIV ScoutRoute User Manual](user-manual.md)
 
-Coming soon!
+This guide explains how to install and use the AVIV ScoutRoute mobile app.

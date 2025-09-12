@@ -4,7 +4,7 @@ title: Core Edges in OSW
 
 # Core Edges in OSW
 
-_This guide shows how to convert existing sidewalk centerline datasets into OpenSidewalks (OSW) format for upload to the Transportation Data Exchange Initiative (TDEI)._
+This guide shows how to convert existing sidewalk centerline datasets into OpenSidewalks (OSW) format for upload to the Transportation Data Exchange Initiative (TDEI).
 
 _For a list of all guides on the TCAT Wiki, refer to the [Guides List](../../guides/index.md)._
 
