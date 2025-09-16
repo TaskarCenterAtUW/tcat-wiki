@@ -14,4 +14,26 @@ Reliable data is essential for decision-making. TDEI addresses gaps in transport
 
 With the support of the **Transportation Data Exchange Initiative** (TDEI), the OpenSidewalks project and its suite of tools—including AccessMap—provide detailed insights into sidewalk connectivity and pedestrian networks. These resources equip individuals, civic organizations, and government agencies with the data needed to support informed mobility planning and decision-making.
 
-TDEI is a project sponsored by the [ITS4US Deployment Program](https://www.its.dot.gov/its4us/index.htm), focused on improving frameworks for transportation services and infrastructure. By developing open-source data collection tools, digital infrastructure, and governance models, TDEI enables seamless public-private data exchange and interoperability.
+_TDEI is a project sponsored by the [ITS4US Deployment Program](https://www.its.dot.gov/its4us/index.htm), focused on improving frameworks for transportation services and infrastructure. By developing open-source data collection tools, digital infrastructure, and governance models, TDEI enables seamless public-private data exchange and interoperability._
+
+## User Registration and Access
+
+All TDEI users register through the same process and receive an API key and access credentials. Users are differentiated by their assigned roles and permissions.
+
+API keys are used to retrieve data from TDEI. Access credentials are used to log into the portal, retrieve/recover API keys, and upload data.
+
+Users can access their API keys through the TDEI portal using their credentials. If an API key is lost, users can generate a new one through the same portal.
+
+## Roles
+
+### Data Consumer
+
+A data consumer is a user who will read data from the TDEI. Any person can register with the TDEI to be a data consumer.
+
+### Data Generator
+
+A data generator is a user who will contribute data to the TDEI.
+
+### Point of Contact
+
+Each Project Group must have a designated Point of Contact (PoC). They have the authority to approve access for data generators for that Project Group. The purpose of the PoC is to ensure that staff from the related agency, company, or group with the proper authority are approving access for data generators.
