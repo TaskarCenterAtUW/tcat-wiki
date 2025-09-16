@@ -54,7 +54,7 @@ function Get-MarkdownTitle {
         $content = Get-Content $filePath -Raw -Encoding UTF8
         
         # Check for YAML frontmatter
-        if ($content -match '^---\r?\n(.*?)\r?\n---') {
+        if ($content -match '(?s)^---\r?\n(.*?)\r?\n---') {
             $frontmatter = $matches[1]
             if ($frontmatter -match 'title:\s*(.+)') {
                 return $matches[1].Trim().Trim('"').Trim("'")
