@@ -31,7 +31,9 @@ This guide explains how to make edits to OpenStreetMap following and supporting 
 ## [Tasking Manager Guides](../opensidewalks/tasking-manager/guides/index.md)
 
 
-_Coming soon!_
+### [Task Polygon Automation Guide](../opensidewalks/tasking-manager/guides/task-polygon-automation.md)
+
+This guide shows the steps for an automated workflow that generates task polygons for use in Tasking Manager.
 
 ## [AccessMap Guides](../tdei/consumers/accessmap/guides/index.md)
 

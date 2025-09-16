@@ -130,6 +130,7 @@ nav:
           - opensidewalks/tasking-manager/index.md
           - Guides:
               - opensidewalks/tasking-manager/guides/index.md
+              - Task Polygon Automation Guide: opensidewalks/tasking-manager/guides/task-polygon-automation.md
   - TDEI:
       - tdei/index.md
       - Consumers:
