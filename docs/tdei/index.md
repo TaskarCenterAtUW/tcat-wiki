@@ -20,9 +20,7 @@ _TDEI is a project sponsored by the [ITS4US Deployment Program](https://www.its.
 
 All TDEI users register through the same process and receive an API key and access credentials. Users are differentiated by their assigned roles and permissions.
 
-API keys are used to retrieve data from TDEI. Access credentials are used to log into the portal, retrieve/recover API keys, and upload data.
-
-Users can access their API keys through the TDEI portal using their credentials. If an API key is lost, users can generate a new one through the same portal.
+API keys are used to retrieve data from TDEI. Access credentials are used to log into the portal, retrieve or regenerate API keys, and upload data.
 
 ## Roles
 
@@ -30,10 +28,22 @@ Users can access their API keys through the TDEI portal using their credentials.
 
 A data consumer is a user who will read data from the TDEI. Any person can register with the TDEI to be a data consumer.
 
+### Point of Contact
+
+Each Project Group must have a designated Point of Contact (PoC). They have the authority to approve access for data generators for that Project Group. The purpose of the PoC is to ensure that staff from the related agency, company, or group with the proper authority are approving access for data generators.
+
 ### Data Generator
 
 A data generator is a user who will contribute data to the TDEI.
 
-### Point of Contact
+#### Flex Data Generator
 
-Each Project Group must have a designated Point of Contact (PoC). They have the authority to approve access for data generators for that Project Group. The purpose of the PoC is to ensure that staff from the related agency, company, or group with the proper authority are approving access for data generators.
+The `flex-data-generator` role allows a user to create GTFS Flex data.
+
+#### Pathways Data Generator
+
+The `pathways-data-generator` role allows a user to create GTFS Pathways data.
+
+#### OpenSidewalks Data Generator
+
+The `osw-data-generator` role allows a user to upload OpenSidewalks data.
