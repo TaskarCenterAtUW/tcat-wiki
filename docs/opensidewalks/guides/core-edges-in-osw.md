@@ -87,8 +87,6 @@ Most city GIS datasets use local coordinate systems (Seattle uses EPSG:2926 - NA
 
 **Transform coordinates before conversion:**
 - Use GIS software (QGIS, ArcGIS) or GDAL utilities
-- Command: `ogr2ogr -t_srs EPSG:4326 output.geojson input.geojson`
-- Verify longitude comes first in coordinate pairs: `[lng, lat]`
 
 ### Step 2: Map Fields to OSW Structure
 
@@ -164,87 +162,18 @@ Build the complete OSW dataset:
 
 ## Conversion Tools and Scripts
 
-_The following are examples, not intended to be used directly._
+As some processing of the existing data is usually necessary, consider creating Python scripts or using [ogr2ogr](https://gdal.org/en/stable/programs/ogr2ogr.html) to make the necessary changes.
 
-### Option 1: Python with GeoPandas
+_The following is an example, not intended to be used directly!_
 
-```python
-import geopandas as gpd
-import json
-from datetime import datetime
-
-# Read source data and reproject to WGS84
-gdf = gpd.read_file("seattle_sidewalks.geojson")
-gdf_wgs84 = gdf.to_crs("EPSG:4326")
-
-# Convert to OSW format
-features = []
-for idx, row in gdf_wgs84.iterrows():
-    # Create unique ID
-    unit_id = row['UNITID'].replace('-', '_').lower()
-    
-    # Map surface type
-    surface_map = {'PCC': 'concrete', 'AC': 'asphalt', 'UIMPRV': 'unpaved'}
-    surface = surface_map.get(row['SURFTYPE'], 'unknown')
-    
-    # Convert width to meters
-    width_meters = row['SW_WIDTH'] * 0.0254 if row['SW_WIDTH'] else None
-    
-    properties = {
-        "_id": f"sidewalk_{unit_id}",
-        "highway": "footway",
-        "footway": "sidewalk"
-    }
-    
-    if width_meters:
-        properties["width"] = round(width_meters, 2)
-    if surface != 'unknown':
-        properties["surface"] = surface
-        
-    # Add custom fields with ext: prefix
-    properties["ext:unit_id"] = row['UNITID']
-    properties["ext:description"] = row['UNITDESC']
-    properties["ext:condition"] = row['CONDITION']
-    
-    feature = {
-        "type": "Feature",
-        "geometry": json.loads(gpd.GeoSeries([row['geometry']]).to_json())['features'][0]['geometry'],
-        "properties": properties
-    }
-    features.append(feature)
-
-# Create final dataset
-osw_data = {
-    "$schema": "https://sidewalks.washington.edu/opensidewalks/0.3/schema.json",
-    "type": "FeatureCollection",
-    "dataSource": {
-        "name": "Seattle Department of Transportation",
-        "license": "Open Data Commons Attribution License"
-    },
-    "dataTimestamp": datetime.utcnow().isoformat() + "Z",
-    "features": features
-}
-
-# Save to file
-with open("seattle_sidewalks_osw.geojson", 'w') as f:
-    json.dump(osw_data, f, indent=2)
-```
-
-### Option 2: GDAL/OGR Command Line
+### Example: GDAL/OGR Command Line
 
 ```bash
 # Reproject to WGS84
-ogr2ogr -t_srs EPSG:4326 sidewalks_wgs84.geojson input_sidewalks.geojson
+ogr2ogr -s_srs EPSG:2926 -t_srs EPSG:4326 sidewalks_epsg4326.geojson sidewalks_epsg2926.geojson
 
 # Use ogr2ogr with SQL to transform fields
-ogr2ogr -f GeoJSON output.geojson input.geojson \
-  -sql "SELECT UNITID as ext_unit_id, UNITDESC as ext_description,
-             'footway' as highway, 'sidewalk' as footway,
-             SW_WIDTH * 0.0254 as width,
-             CASE WHEN SURFTYPE = 'PCC' THEN 'concrete'
-                  WHEN SURFTYPE = 'AC' THEN 'asphalt' 
-                  ELSE 'unknown' END as surface
-        FROM input_layer"
+ogr2ogr -f GeoJSON output.geojson sidewalks_epsg4326.geojson -sql "SELECT UNITID as ext_unit_id, UNITDESC as ext_description, 'footway' as highway, 'sidewalk' as footway, SW_WIDTH * 0.0254 as width, CASE WHEN SURFTYPE = 'PCC' THEN 'concrete' WHEN SURFTYPE = 'AC' THEN 'asphalt' ELSE 'unknown' END as surface FROM input_layer"
 ```
 
 ## Validation and Quality Assurance
