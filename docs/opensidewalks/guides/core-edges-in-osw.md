@@ -83,9 +83,10 @@ We want to convert each sidewalk centerline into an OpenSidewalks footway that l
 
 ### Step 1: Coordinate System Transformation
 
-Most city GIS datasets use local coordinate systems (Seattle uses EPSG:2926 - NAD83 / Washington South). OSW requires WGS84 decimal degrees (EPSG:4326).
+Most city GIS datasets use local coordinate systems. Seattle uses EPSG:2926 - NAD83 / Washington South. OSW requires WGS84 decimal degrees (EPSG:4326).
 
 **Transform coordinates before conversion:**
+
 - Use GIS software (QGIS, ArcGIS) or GDAL utilities
 
 ### Step 2: Map Fields to OSW Structure
@@ -106,6 +107,7 @@ Create a mapping between your dataset fields and OSW properties:
 | `LAST_VERIFY_DATE`       | `ext:last_verify_date` | Convert to ISO 8601 format                         |
 
 **Required OSW Core Entity Fields:**
+
 - `_id`: Unique identifier (string, letters/numbers/underscores)
 - `geometry`: LineString coordinates in WGS84
 - `highway=footway` + `footway=sidewalk`: Sidewalk Core Entity tag
