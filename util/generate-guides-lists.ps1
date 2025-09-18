@@ -1,7 +1,15 @@
 #!/usr/bin/env pwsh
+# This script is designed to be run in a PowerShell environment.
+
+# Name: TCAT Wiki - Guides Lists Generator
+# Version: 1.0.1
+# Date: 2025-09-17
+# Author: Amy Bordenave, Taskar Center for Accessible Technology, University of Washington
+# License: CC-BY-ND 4.0 International
+
 <#
 .SYNOPSIS
-    Generates index.md files for all guides directories in the docs folder.
+    Generates index.md files for all guides directories
 
 .DESCRIPTION
     This script recursively searches through the docs directory for any subdirectory 
@@ -144,7 +152,7 @@ function New-GuidesList {
     
     Write-Host "Processing guides directory: $GuidesPath"
     
-    # Get all .md files except index.md
+    # Get all .md files except main index.md
     $mdFiles = Get-ChildItem -Path $GuidesPath -Filter "*.md" | 
     Where-Object { $_.Name -ne "index.md" } |
     Sort-Object Name
@@ -403,8 +411,6 @@ foreach ($guidesDir in $guidesDirectories | Where-Object { $_.FullName -notmatch
         }
     }
 }
-
-# No longer need miscellaneous section - misc guides are now in docs/misc/guides/
 
 # Write the master guides index
 $masterIndexPath = Join-Path $docsPath "guides-list" "index.md"

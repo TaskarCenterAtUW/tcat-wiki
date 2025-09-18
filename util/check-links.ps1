@@ -1,11 +1,19 @@
 #!/usr/bin/env pwsh
+# This script is designed to be run in a PowerShell environment.
+
+# Name: TCAT Wiki - Link Checker
+# Version: 1.0.1
+# Date: 2025-09-17
+# Author: Amy Bordenave, Taskar Center for Accessible Technology, University of Washington
+# License: CC-BY-ND 4.0 International
+
 <#
 .SYNOPSIS
-    Link validation script for TCAT Wiki documentation
+    Link validation script for the TCAT Wiki
 
 .DESCRIPTION
     Checks all .md files in the specified directory for broken internal and external links.
-    Returns exit code 0 if all links are valid, 1 if any links are broken.
+    Returns exit code 0 if all links are valid, 1 if any links are broken or there is an error.
 
 .PARAMETER docsPath
     Path to the documentation directory to scan (default: "docs")
@@ -13,17 +21,23 @@
 .PARAMETER verboseOutput
     Show verbose output during validation
 
-.EXAMPLE
-    .\check-links.ps1
-    Validates links in the default "docs" directory
+.PARAMETER internal
+    Check internal relative links
+
+.PARAMETER external
+    Check external absolute links
 
 .EXAMPLE
-    .\check-links.ps1 -docsPath "documentation" -verboseOutput
-    Validates links in "documentation" directory with verbose output
+    .\check-links.ps1
+    Validates both internal and external links in the default "docs" directory
+
+.EXAMPLE
+    .\check-links.ps1 -verboseOutput -internal
+    Validates only internal relative links, with verbose output
 #>
 
 param(
-    [Parameter(HelpMessage = "Path to the documentation directory")]
+    [Parameter(HelpMessage = "Path to the docs directory")]
     [string]$docsPath = "",
     
     [Parameter(HelpMessage = "Show verbose output")]
@@ -79,9 +93,9 @@ if ($markdownFiles.Count -eq 0) {
 Write-Host "Found $($markdownFiles.Count) markdown files to validate" -ForegroundColor Green
 Write-Host ""
 
-$brokenInternalLinks = @()
-$brokenExternalLinks = @()
 $externalUrls = @{}
+$brokenExternalLinks = @()
+$brokenInternalLinks = @()
 
 # Function to extract links from markdown content
 function Get-MarkdownLinks {
@@ -133,7 +147,7 @@ function Test-InternalLink {
 function Test-ExternalUrlValid {
     param([string]$url)
     
-    # Skip known problematic domains that block automated requests
+    # Skip domains that block automated requests or are known to always fail
     $skipDomains = @(
         "*visualstudio.com*"
     )
@@ -142,7 +156,7 @@ function Test-ExternalUrlValid {
         if ($url -like $domain) {
             return @{
                 valid  = $true
-                status = "Skipped (known to block automated requests)"
+                status = "Skipped (known to block automated requests or always fail)"
             }
         }
     }

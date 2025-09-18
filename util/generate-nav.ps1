@@ -1,4 +1,12 @@
 #!/usr/bin/env pwsh
+# This script is designed to be run in a PowerShell environment.
+
+# Name: TCAT Wiki - Navigation Section Generator
+# Version: 1.0.1
+# Date: 2025-09-17
+# Author: Amy Bordenave, Taskar Center for Accessible Technology, University of Washington
+# License: CC-BY-ND 4.0 International
+
 <#
 .SYNOPSIS
     Generates MkDocs navigation structure from docs directory
@@ -7,25 +15,19 @@
     Scans the docs directory structure and generates a YAML navigation tree 
     that can be inserted into mkdocs.yml. Uses frontmatter titles when available,
     otherwise derives titles from filenames and directory names.
+
 .PARAMETER docsPath
     Path to the documentation directory to scan (default: "docs")
-
-.PARAMETER outputFile
-    Output file path for the generated navigation YAML (default: console output)
-
-.PARAMETER updateMkdocs
-    Update the mkdocs.yml file directly by replacing the nav section
 
 .PARAMETER mkdocsPath
     Path to the mkdocs.yml file (default: "../mkdocs.yml")
 
+.PARAMETER updateMkdocs
+    Update the mkdocs.yml file directly by replacing the nav section
+
 .EXAMPLE
     .\generate-nav.ps1
     Generates navigation and outputs to console
-
-.EXAMPLE
-    .\generate-nav.ps1 -outputFile "nav.yml"
-    Generates navigation and saves to nav.yml
 
 .EXAMPLE
     .\generate-nav.ps1 -updateMkdocs
@@ -35,9 +37,6 @@
 param(
     [Parameter(HelpMessage = "Path to the documentation directory")]
     [string]$docsPath = "",
-    
-    [Parameter(HelpMessage = "Output file path for generated navigation")]
-    [string]$outputFile = "",
     
     [Parameter(HelpMessage = "Update mkdocs.yml directly")]
     [switch]$updateMkdocs,
@@ -118,7 +117,7 @@ function Build-DirectoryNav {
     )
     
     $items = @()
-    $indent = "  " * $indentLevel
+    $indent = "    " * $indentLevel
     
     # Get directory name and relative path
     $dirInfo = Get-Item $dirPath
@@ -139,7 +138,7 @@ function Build-DirectoryNav {
     
     # Add index.md first if it exists
     if ($hasIndex) {
-        $subItems += "$indent  - $relativePath/index.md"
+        $subItems += "$indent    - $relativePath/index.md"
     }
     
     # Add other files in this directory
@@ -149,7 +148,7 @@ function Build-DirectoryNav {
         if (-not $fileTitle) {
             $fileTitle = ConvertTo-Title $file.BaseName
         }
-        $subItems += "$indent  - $($fileTitle): $fileRelativePath"
+        $subItems += "$indent    - $($fileTitle): $fileRelativePath"
     }
     
     # Add subdirectories
@@ -245,7 +244,7 @@ foreach ($file in $rootFiles) {
 
 # Generate final navigation YAML with proper indentation
 $indentedNavItems = $navItems | ForEach-Object { "  $_" }
-$navYaml = "nav:" + [Environment]::NewLine + ($indentedNavItems -join [Environment]::NewLine)
+$navYaml = "nav:" + [Environment]::NewLine + ($indentedNavItems -join [Environment]::NewLine) + [Environment]::NewLine
 
 # Output results
 if ($updateMkdocs) {
@@ -303,11 +302,6 @@ if ($updateMkdocs) {
     # Write updated content
     Set-Content -Path $mkdocsPath -Value $newContent -Encoding UTF8 -NoNewline
     Write-Host "Successfully updated mkdocs.yml navigation section" -ForegroundColor Green
-}
-elseif ($outputFile) {
-    # Save to output file
-    Set-Content -Path $outputFile -Value $navYaml -Encoding UTF8
-    Write-Host "Navigation saved to: $outputFile" -ForegroundColor Green
 }
 else {
     # Output to console
