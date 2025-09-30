@@ -1,8 +1,8 @@
 ---
-title: Tdei Core Guides
+title: TDEI Core Guides
 ---
 
-# Tdei Core Guides
+# TDEI Core Guides
 
 Guides for [TDEI Core](../index.md).
 

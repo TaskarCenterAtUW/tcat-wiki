@@ -179,6 +179,7 @@ function New-GuidesList {
 				'aviv-scoutroute' { 'AVIV ScoutRoute' }
 				'josm' { 'JOSM' }
 				'accessmap' { 'AccessMap' }
+				'tdei-core' { 'TDEI Core' }
 				default { 
 					# Convert kebab-case to Title Case
 					($parentDirName -split '-' | ForEach-Object { 
