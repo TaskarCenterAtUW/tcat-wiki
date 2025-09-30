@@ -1,5 +1,5 @@
 ---
-title: TTDEI Account Registration
+title: TDEI Account Registration
 ---
 
 # TDEI Account Registration

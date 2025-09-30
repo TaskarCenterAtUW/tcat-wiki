@@ -10,6 +10,6 @@ _For a list of all guides on the TCAT Wiki, refer to the [Guides List](../../../
 
 ---
 
-### [TTDEI Account Registration](tdei-account-registration.md)
+### [TDEI Account Registration](tdei-account-registration.md)
 
 This guide explains how to register for a TDEI account using the TDEI Portal.
