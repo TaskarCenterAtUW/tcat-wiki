@@ -89,3 +89,10 @@ This guide explains how to use the [Workspaces JOSM Settings Script](https://git
 
 _Coming soon!_
 
+## [Tdei Core Guides](../tdei/tdei-core/guides/index.md)
+
+
+### [TTDEI Account Registration](../tdei/tdei-core/guides/tdei-account-registration.md)
+
+This guide explains how to register for a TDEI account using the TDEI Portal.
+

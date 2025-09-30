@@ -177,3 +177,6 @@ nav:
                       - tdei/producers/workspaces/rapid/guides/index.md
       - TDEI Core:
           - tdei/tdei-core/index.md
+          - Guides:
+              - tdei/tdei-core/guides/index.md
+              - TTDEI Account Registration: tdei/tdei-core/guides/tdei-account-registration.md
