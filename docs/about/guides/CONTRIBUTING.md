@@ -32,6 +32,7 @@ This section of the guide explains how to set up a Windows environment for contr
 
    1. Install [YAML](https://marketplace.visualstudio.com/items?itemName=redhat.vscode-yaml) plugin
    2. Install [Markdown All in One](https://marketplace.visualstudio.com/items?itemName=yzhang.markdown-all-in-one) plugin
+   3. Install [EditorConfig for VS Code](https://marketplace.visualstudio.com/items?itemName=EditorConfig.EditorConfig)
 
 2. Install mkdocs-material
 
@@ -45,7 +46,7 @@ This section of the guide explains how to set up a Windows environment for contr
 
       [`pip install mkdocs-git-revision-date-localized-plugin`]
 
-   1. In PowerShell terminal:
+   2. In PowerShell terminal:
 
       [`pip install mkdocs-git-committers-plugin-2`]
 
