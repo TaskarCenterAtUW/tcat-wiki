@@ -6,7 +6,7 @@ title: Contributing
 
 This guide explains how to contribute to the TCAT Wiki.
 
-Note that, while external contributions are welcome, this guide is primarily intended for use by TCAT/GS staff.
+Note that, while minor external contributions are welcome, this guide is primarily intended for use by TCAT/GS staff.
 
 _For a list of all guides on the TCAT Wiki, refer to the [Guides List](index.md)._
 
