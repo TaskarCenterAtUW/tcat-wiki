@@ -2,6 +2,8 @@
 title: Contributing
 ---
 
+<!-- @format -->
+
 # Contributing
 
 This guide explains how to contribute to the TCAT Wiki.
@@ -20,57 +22,57 @@ This section of the guide explains how to set up a Windows environment for contr
 
 1. Keyboard shortcut to press | Action
 
-   (`Shift`+`C`) | Copy
+    (`Shift`+`C`) | Copy
 
 2. Command to enter into terminal
 
-   [`someCommand --arguments \<path>`]
+    [`someCommand --arguments \<path>`]
 
 ### Prerequisites
 
 1. Install [Visual Studio Code](https://code.visualstudio.com/)
 
-   1. Install [YAML](https://marketplace.visualstudio.com/items?itemName=redhat.vscode-yaml) plugin
-   2. Install [Markdown All in One](https://marketplace.visualstudio.com/items?itemName=yzhang.markdown-all-in-one) plugin
-   3. Install [EditorConfig for VS Code](https://marketplace.visualstudio.com/items?itemName=EditorConfig.EditorConfig)
+    1. Install [YAML](https://marketplace.visualstudio.com/items?itemName=redhat.vscode-yaml) plugin
+    2. Install [Markdown All in One](https://marketplace.visualstudio.com/items?itemName=yzhang.markdown-all-in-one) plugin
+    3. Install [EditorConfig for VS Code](https://marketplace.visualstudio.com/items?itemName=EditorConfig.EditorConfig)
 
 2. Install mkdocs-material
 
-   1. In Powershell terminal:
+    1. In Powershell terminal:
 
-      [`pip install mkdocs-material`]
+        [`pip install mkdocs-material`]
 
 3. Install plugins
 
-   1. In PowerShell terminal:
+    1. In PowerShell terminal:
 
-      [`pip install mkdocs-git-revision-date-localized-plugin`]
+        [`pip install mkdocs-git-revision-date-localized-plugin`]
 
-   2. In PowerShell terminal:
+    2. In PowerShell terminal:
 
-      [`pip install mkdocs-git-committers-plugin-2`]
+        [`pip install mkdocs-git-committers-plugin-2`]
 
 4. Install image processing dependencies
 
-   1. In Powershell terminal:
+    1. In Powershell terminal:
 
-      [`pip install "mkdocs-material[imaging]"`]
+        [`pip install "mkdocs-material[imaging]"`]
 
-   2. Install [MSYS2](https://www.msys2.org/)
+    2. Install [MSYS2](https://www.msys2.org/)
 
-      1. In UCRT64 terminal:
+        1. In UCRT64 terminal:
 
-         1. Install cairo:
+            1. Install cairo:
 
-            [`pacman -S mingw-w64-ucrt-x86_64-cairo`]
+                [`pacman -S mingw-w64-ucrt-x86_64-cairo`]
 
-         2. Install pngquant:
+            2. Install pngquant:
 
-            [`pacman -S mingw-w64-ucrt-x86_64-pngquant`]
+                [`pacman -S mingw-w64-ucrt-x86_64-pngquant`]
 
-      2. Add to PATH:
+        2. Add to PATH:
 
-         `C:\msys64\ucrt64\bin`
+            `C:\msys64\ucrt64\bin`
 
 ### Setup
 
