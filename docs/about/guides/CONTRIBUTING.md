@@ -81,3 +81,40 @@ This section of the guide explains how to set up a Windows environment for contr
 ## Editing Instructions
 
 Refer to the documentation for [Material for MkDocs](https://squidfunk.github.io/mkdocs-material/) and the [MkDocs User Guide](https://www.mkdocs.org/user-guide/).
+
+### Screenshots
+
+For creating screenshots with a consistent style, Firefox DevTools is to be used.
+
+1. Open Firefox DevTools
+
+    (`F12`)
+
+2. Open Responsive Design View
+
+    (`Ctrl`+`Shift`+`M`)
+
+3. Add custom device profiles:
+
+    1. Name: `[Screenshot] Web - Portrait`
+
+        1. Size: `671`x`1196`
+
+        2. Device Pixel Ratio: `1`
+
+        3. User Agent String: `Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:131.0) Gecko/20100101 Firefox/131.0`
+
+    2. Name: `[Screenshot] Web - Landscape`
+
+        1. Size: `1196`x`671`
+
+        2. Device Pixel Ratio: `1`
+
+        3. User Agent String: `Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:131.0) Gecko/20100101 Firefox/131.0`
+
+4. Resulting screenshots will fit exactly within the 2px outside border present in the following screenshot templates:
+
+    1. [Screenshot (Landscape)](../../../resources/images/template/screenshot-landscape.png)
+    2. [Screenshot (Portrait)](../../../resources/images/template/screenshot-portrait.png)
+
+5. It is recommended to remove embedded metadata, such as with the use of [ExifToolGUI](https://exiftool.org/gui/).
