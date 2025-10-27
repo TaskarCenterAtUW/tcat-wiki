@@ -2,6 +2,8 @@
 title: OSW in OSM
 ---
 
+<!-- @format -->
+
 # OpenSidewalks in OpenStreetMap
 
 This guide explains how to make edits to OpenStreetMap following and supporting the OpenSidewalks schema.
@@ -10,7 +12,15 @@ _For a list of all guides on the TCAT Wiki, refer to the [Guides List](../../gui
 
 ---
 
-[OpenSidewalks](../index.md) is an open data project by the [Taskar Center for Accessible Technology](../../index.md) at the University of Washington in Seattle. The project heavily relies on the OpenStreetMap infrastructure, mapping standards, and volunteer community.
+## Acknowledgments
+
+[OpenSidewalks](../index.md) is an open data project by the [Taskar Center for Accessible Technology](../../index.md) at the University of Washington in Seattle, WA, US. The project relies on the OpenStreetMap (OSM) ecosystem.
+
+This Mapping Guide was developed with the support of the United States Departmemt of Transportation (USDOT) ITS4US program, the Washington State Department of Transportation (WSDOT), and the Microsoft AI for Accessibility program.
+
+_Contributors to this document include: Anat Caspi, Mario Sanchez, Jimmy Phuong, Nick Bolten, Cole Anderson, Olivia Quesada, Clifford Snow, Jessica Hamilton, Amy Bordenave, and Maddie Gugger._
+
+© Taskar Center for Accessible Technology, 2025
 
 ## Welcome
 

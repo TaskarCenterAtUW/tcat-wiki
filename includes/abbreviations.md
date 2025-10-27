@@ -14,11 +14,13 @@
 *[CSE]: Computer Science and Engineering
 *[CSUN]: California State University, Northridge
 *[DEM]: Digital Elevation Model
+*[DESA]: Department of Economic and Social Affairs
 *[DOT]: Department of Transportation
 *[DSM]: Digital Surface Model
 *[FDE]: Fundamental Data Elements
 *[FHWA]: Federal Highway Administration
 *[FTA]: Federal Transit Administration
+*[G3ict]: Global Initiative for Inclusive Information and Communication Technologies
 *[GATIS]: General Active Transportation Infrastructure Specification
 *[GPS]: Global Positioning System
 *[GIG]: GoInfoGame
@@ -58,8 +60,12 @@
 *[TSP]: Transportation Service Provider
 *[TTS]: Text-to-Speech
 *[TxDOT]: Texas Department of Transporation
+*[UN]: United Nations
+*[UNDESA]: United Nations Department of Economic and Social Affairs
+*[US]: United States
 *[USDOT]: United States Department of Transportation
 *[USGS]: United States Geological Survey
 *[UW]: University of Washington
+*[WA]: Washington (state)
 *[WSDOT]: Washington State Department of Transportation
 *[XML]: Extensible Markup Language
