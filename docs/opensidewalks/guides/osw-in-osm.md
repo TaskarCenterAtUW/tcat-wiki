@@ -2,6 +2,8 @@
 title: OSW in OSM
 ---
 
+<!-- @format -->
+
 # OpenSidewalks in OpenStreetMap
 
 This guide explains how to make edits to OpenStreetMap following and supporting the OpenSidewalks schema.

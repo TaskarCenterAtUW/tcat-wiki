@@ -2,6 +2,8 @@
 title: Long Form Quest Definitions
 ---
 
+<!-- @format -->
+
 # Long Form Quest Definition
 
 Long Form Quest Definitions are JSON files that define the quests used by AVIV ScoutRoute.

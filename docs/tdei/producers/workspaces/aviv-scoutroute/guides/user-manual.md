@@ -2,6 +2,8 @@
 title: AVIV ScoutRoute User Manual
 ---
 
+<!-- @format -->
+
 # AVIV ScoutRoute User Manual
 
 This guide explains how to install and use the AVIV ScoutRoute mobile app.
