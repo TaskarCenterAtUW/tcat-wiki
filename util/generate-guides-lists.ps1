@@ -2,8 +2,8 @@
 # This script is designed to be run in a PowerShell environment.
 
 # Name: TCAT Wiki - Guides Lists Generator
-# Version: 1.0.2
-# Date: 2025-09-30
+# Version: 1.0.3
+# Date: 2025-10-29
 # Author: Amy Bordenave, Taskar Center for Accessible Technology, University of Washington
 # License: CC-BY-ND 4.0 International
 
