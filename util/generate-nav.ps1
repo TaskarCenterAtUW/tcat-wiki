@@ -2,48 +2,24 @@
 # This script is designed to be run in a PowerShell environment.
 
 # Name: TCAT Wiki - Navigation Section Generator
-# Version: 1.0.2
-# Date: 2025-09-30
+# Version: 2.0.0
+# Date: 2025-10-29
 # Author: Amy Bordenave, Taskar Center for Accessible Technology, University of Washington
 # License: CC-BY-ND 4.0 International
 
 <#
 .SYNOPSIS
-	Generates MkDocs navigation structure from docs directory
+	Generates and updates MkDocs navigation structure in mkdocs.yml
 
 .DESCRIPTION
-	Scans the docs directory structure and generates a YAML navigation tree 
-	that can be inserted into mkdocs.yml. Uses frontmatter titles when available,
-	otherwise derives titles from filenames and directory names.
-
-.PARAMETER docsPath
-	Path to the documentation directory to scan (default: "docs")
-
-.PARAMETER mkdocsPath
-	Path to the mkdocs.yml file (default: "../mkdocs.yml")
-
-.PARAMETER updateMkdocs
-	Update the mkdocs.yml file directly by replacing the nav section
+	Scans the docs directory structure and updates the navigation section 
+	in mkdocs.yml. Uses frontmatter titles when available, otherwise derives 
+	titles from filenames and directory names.
 
 .EXAMPLE
 	.\generate-nav.ps1
-	Generates navigation and outputs to console
-
-.EXAMPLE
-	.\generate-nav.ps1 -updateMkdocs
-	Updates mkdocs.yml directly with generated navigation
+	Generates navigation and updates mkdocs.yml directly
 #>
-
-param(
-    [Parameter(HelpMessage = "Path to the documentation directory")]
-    [string]$docsPath = "",
-	
-    [Parameter(HelpMessage = "Update mkdocs.yml directly")]
-    [switch]$updateMkdocs,
-	
-    [Parameter(HelpMessage = "Path to mkdocs.yml file")]
-    [string]$mkdocsPath = ""
-)
 
 # Function to extract title from markdown frontmatter
 function Get-MarkdownTitle {
@@ -172,45 +148,21 @@ function Build-DirectoryNav {
     return $items
 }
 
-# Auto-detect paths if not specified
-if (-not $docsPath) {
-    # Check if we're in the util directory
-    if (Test-Path "..\docs") {
-        $docsPath = "..\docs"
-    }
-    # Check if we're in the repository root
-    elseif (Test-Path "docs") {
-        $docsPath = "docs"
-    }
-    else {
-        Write-Host "Error: Cannot auto-detect docs directory. Please specify -docsPath parameter." -ForegroundColor Red
-        Write-Host "Searched for: ..\docs, docs" -ForegroundColor Yellow
-        exit 1
-    }
-}
-
-if (-not $mkdocsPath) {
-    # Check if we're in the util directory
-    if (Test-Path "..\mkdocs.yml") {
-        $mkdocsPath = "..\mkdocs.yml"
-    }
-    # Check if we're in the repository root
-    elseif (Test-Path "mkdocs.yml") {
-        $mkdocsPath = "mkdocs.yml"
-    }
-    else {
-        Write-Host "Error: Cannot auto-detect mkdocs.yml file. Please specify -mkdocsPath parameter." -ForegroundColor Red
-        Write-Host "Searched for: ..\mkdocs.yml, mkdocs.yml" -ForegroundColor Yellow
-        exit 1
-    }
-}
+# Detect paths from current working directory
+$docsPath = if (Test-Path "..\docs") { "..\docs" } else { "docs" }
+$mkdocsPath = if (Test-Path "..\mkdocs.yml") { "..\mkdocs.yml" } else { "mkdocs.yml" }
 
 # Main execution
 Write-Host "Generating MkDocs navigation from '$docsPath'..." -ForegroundColor Cyan
 
-# Check if docs directory exists
+# Validate paths
 if (-not (Test-Path $docsPath)) {
     Write-Host "Error: Docs directory '$docsPath' not found!" -ForegroundColor Red
+    exit 1
+}
+
+if (-not (Test-Path $mkdocsPath)) {
+    Write-Host "Error: mkdocs.yml not found at '$mkdocsPath'!" -ForegroundColor Red
     exit 1
 }
 
@@ -232,7 +184,7 @@ foreach ($dir in $rootDirectories) {
     $navItems += $subNav
 }
 
-# Process any root-level markdown files (excluding index.md which was handled above)
+# Process any root-level markdown files (excluding index.md)
 $rootFiles = Get-ChildItem -Path $docsPath -File -Filter "*.md" | Where-Object { $_.Name -ne 'index.md' } | Sort-Object Name
 foreach ($file in $rootFiles) {
     $fileTitle = Get-MarkdownTitle $file.FullName
@@ -246,65 +198,53 @@ foreach ($file in $rootFiles) {
 $indentedNavItems = $navItems | ForEach-Object { "  $_" }
 $navYaml = "nav:" + [Environment]::NewLine + ($indentedNavItems -join [Environment]::NewLine) + [Environment]::NewLine
 
-# Output results
-if ($updateMkdocs) {
-    # Update mkdocs.yml directly
-    if (-not (Test-Path $mkdocsPath)) {
-        Write-Host "Error: mkdocs.yml not found!" -ForegroundColor Red
-        exit 1
+# Update mkdocs.yml directly
+Write-Host "Updating mkdocs.yml..." -ForegroundColor Cyan
+
+# Read current mkdocs.yml
+$content = Get-Content $mkdocsPath -Raw -Encoding UTF8
+
+# Split content into lines for easier processing
+$lines = $content -split "`r?`n"
+$navStartIndex = -1
+$navEndIndex = -1
+
+# Find nav section
+for ($i = 0; $i -lt $lines.Count; $i++) {
+    if ($lines[$i] -match '^nav:') {
+        $navStartIndex = $i
+        break
     }
-	
-    # Read current mkdocs.yml
-    $content = Get-Content $mkdocsPath -Raw -Encoding UTF8
-	
-    # Replace nav section
-    # Split content into lines for easier processing
-    $lines = $content -split "`r?`n"
-    $navStartIndex = -1
-    $navEndIndex = -1
-	
-    # Find nav section
-    for ($i = 0; $i -lt $lines.Count; $i++) {
-        if ($lines[$i] -match '^nav:') {
-            $navStartIndex = $i
-            break
-        }
-    }
-	
-    if ($navStartIndex -eq -1) {
-        Write-Host "Error: Could not find nav section in mkdocs.yml" -ForegroundColor Red
-        exit 1
-    }
-	
-    # Find end of nav section (next top-level key or end of file)
-    for ($i = $navStartIndex + 1; $i -lt $lines.Count; $i++) {
-        if ($lines[$i] -match '^[a-zA-Z]') {
-            $navEndIndex = $i - 1
-            break
-        }
-    }
-	
-    if ($navEndIndex -eq -1) {
-        $navEndIndex = $lines.Count - 1
-    }
-	
-    # Build new content
-    $beforeNav = $lines[0..($navStartIndex - 1)] -join [Environment]::NewLine
-    $afterNav = if ($navEndIndex + 1 -lt $lines.Count) { 
-        [Environment]::NewLine + ($lines[($navEndIndex + 1)..($lines.Count - 1)] -join [Environment]::NewLine)
-    }
-    else { 
-        "" 
-    }
-	
-    $newContent = $beforeNav + [Environment]::NewLine + $navYaml + $afterNav
-	
-    # Write updated content
-    Set-Content -Path $mkdocsPath -Value $newContent -Encoding UTF8 -NoNewline
-    Write-Host "Successfully updated mkdocs.yml navigation section" -ForegroundColor Green
 }
-else {
-    # Output to console
-    Write-Host ""
-    Write-Host $navYaml
+
+if ($navStartIndex -eq -1) {
+    Write-Host "Error: Could not find nav section in mkdocs.yml" -ForegroundColor Red
+    exit 1
 }
+
+# Find end of nav section (next top-level key or end of file)
+for ($i = $navStartIndex + 1; $i -lt $lines.Count; $i++) {
+    if ($lines[$i] -match '^[a-zA-Z]') {
+        $navEndIndex = $i - 1
+        break
+    }
+}
+
+if ($navEndIndex -eq -1) {
+    $navEndIndex = $lines.Count - 1
+}
+
+# Build new content
+$beforeNav = $lines[0..($navStartIndex - 1)] -join [Environment]::NewLine
+$afterNav = if ($navEndIndex + 1 -lt $lines.Count) { 
+    [Environment]::NewLine + ($lines[($navEndIndex + 1)..($lines.Count - 1)] -join [Environment]::NewLine)
+}
+else { 
+    "" 
+}
+
+$newContent = $beforeNav + [Environment]::NewLine + $navYaml + $afterNav
+
+# Write updated content
+Set-Content -Path $mkdocsPath -Value $newContent -Encoding UTF8 -NoNewline
+Write-Host "Successfully updated mkdocs.yml navigation section" -ForegroundColor Green
