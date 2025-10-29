@@ -48,6 +48,20 @@ function Get-MarkdownTitle {
     return $null
 }
 
+# Function to sanitize title for safe YAML output
+function Protect-YamlTitle {
+    param([string]$title)
+	
+    # If title contains special YAML characters, wrap in quotes and escape internal quotes
+    if ($title -match '[:#\[\]&\*\?!|>''"-]|^\s|:\s') {
+        # Escape any double quotes in the title
+        $title = $title -replace '"', '\"'
+        return "`"$title`""
+    }
+	
+    return $title
+}
+
 # Function to convert filename/dirname to title
 function ConvertTo-Title {
     param([string]$name)
@@ -124,6 +138,7 @@ function Build-DirectoryNav {
         if (-not $fileTitle) {
             $fileTitle = ConvertTo-Title $file.BaseName
         }
+        $fileTitle = Protect-YamlTitle $fileTitle
         $subItems += "$indent    - $($fileTitle): $fileRelativePath"
     }
 	
@@ -135,6 +150,7 @@ function Build-DirectoryNav {
 	
     # Build final structure
     if ($subItems.Count -gt 0) {
+        $dirTitle = Protect-YamlTitle $dirTitle
         $items += "$indent- $dirTitle`:"
         $items += $subItems
     }
@@ -142,6 +158,7 @@ function Build-DirectoryNav {
         # Directory with only index, no subitems
         $indexTitle = Get-MarkdownTitle $indexFile
         if (-not $indexTitle) { $indexTitle = $dirTitle }
+        $indexTitle = Protect-YamlTitle $indexTitle
         $items += "$indent- $($indexTitle): $relativePath/index.md"
     }
 	
@@ -174,6 +191,7 @@ $rootIndex = Join-Path $docsPath "index.md"
 if (Test-Path $rootIndex) {
     $homeTitle = Get-MarkdownTitle $rootIndex
     if (-not $homeTitle) { $homeTitle = "Home" }
+    $homeTitle = Protect-YamlTitle $homeTitle
     $navItems += "- $($homeTitle): index.md"
 }
 
@@ -191,6 +209,7 @@ foreach ($file in $rootFiles) {
     if (-not $fileTitle) {
         $fileTitle = ConvertTo-Title $file.BaseName
     }
+    $fileTitle = Protect-YamlTitle $fileTitle
     $navItems += "- $($fileTitle): $($file.Name)"
 }
 
