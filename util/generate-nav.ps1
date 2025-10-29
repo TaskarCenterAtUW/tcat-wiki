@@ -9,25 +9,25 @@
 
 <#
 .SYNOPSIS
-	Generates and updates MkDocs navigation structure in mkdocs.yml
+    Generates and updates the MkDocs nav structure in mkdocs.yml
 
 .DESCRIPTION
-	Scans the docs directory structure and updates the navigation section 
-	in mkdocs.yml. Uses frontmatter titles when available, otherwise derives 
-	titles from filenames and directory names.
+    Scans the docs directory structure and updates the navigation section 
+    in mkdocs.yml. Uses frontmatter titles when available, otherwise derives 
+    titles from filenames and directory names.
 
 .EXAMPLE
-	.\generate-nav.ps1
-	Generates navigation and updates mkdocs.yml directly
+    .\generate-nav.ps1
+    Generates navigation section and updates mkdocs.yml
 #>
 
 # Function to extract title from markdown frontmatter
 function Get-MarkdownTitle {
     param([string]$filePath)
-	
+    
     try {
         $content = Get-Content $filePath -Raw -Encoding UTF8
-		
+        
         # Check for YAML frontmatter
         if ($content -match '(?s)^---\r?\n(.*?)\r?\n---') {
             $frontmatter = $matches[1]
@@ -35,7 +35,7 @@ function Get-MarkdownTitle {
                 return $matches[1].Trim().Trim('"').Trim("'")
             }
         }
-		
+        
         # Fallback to first heading
         if ($content -match '^#\s+(.+)') {
             return $matches[1].Trim()
@@ -44,31 +44,31 @@ function Get-MarkdownTitle {
     catch {
         Write-Warning "Could not read file: $filePath"
     }
-	
+    
     return $null
 }
 
 # Function to sanitize title for safe YAML output
 function Protect-YamlTitle {
     param([string]$title)
-	
+    
     # If title contains special YAML characters, wrap in quotes and escape internal quotes
     if ($title -match '[:#\[\]&\*\?!|>''"-]|^\s|:\s') {
         # Escape any double quotes in the title
         $title = $title -replace '"', '\"'
         return "`"$title`""
     }
-	
+    
     return $title
 }
 
 # Function to convert filename/dirname to title
 function ConvertTo-Title {
     param([string]$name)
-	
+    
     # Remove file extension
     $name = [System.IO.Path]::GetFileNameWithoutExtension($name)
-	
+    
     # Handle special cases
     $titleMap = @{
         'osw'             = 'OSW'
@@ -81,7 +81,7 @@ function ConvertTo-Title {
         'tdei-core'       = 'TDEI Core'
         'index'           = ''
     }
-	
+    
     if ($titleMap.ContainsKey($name.ToLower())) {
         $result = $titleMap[$name.ToLower()]
         if ($result) { 
@@ -91,11 +91,11 @@ function ConvertTo-Title {
             return $null 
         }
     }
-	
+    
     # Convert kebab-case and snake_case to Title Case
     $result = $name -replace '[-_]', ' '
     $result = (Get-Culture).TextInfo.ToTitleCase($result.ToLower())
-	
+    
     return $result
 }
 
@@ -105,32 +105,32 @@ function Build-DirectoryNav {
         [string]$dirPath,
         [int]$indentLevel = 0
     )
-	
+    
     $items = @()
     $indent = "    " * $indentLevel
-	
+    
     # Get directory name and relative path
     $dirInfo = Get-Item $dirPath
     $dirName = $dirInfo.Name
     $relativePath = $dirPath.Substring((Resolve-Path $docsPath).Path.Length + 1) -replace '\\', '/'
     $dirTitle = ConvertTo-Title $dirName
-	
+    
     # Check for index.md
     $indexFile = Join-Path $dirPath "index.md"
     $hasIndex = Test-Path $indexFile
-	
+    
     # Get subdirectories and files
     $subDirs = Get-ChildItem -Path $dirPath -Directory | Sort-Object Name
     $mdFiles = Get-ChildItem -Path $dirPath -File -Filter "*.md" | Where-Object { $_.Name -ne 'index.md' } | Sort-Object Name
-	
+    
     # Create subitems list
     $subItems = @()
-	
+    
     # Add index.md first if it exists
     if ($hasIndex) {
         $subItems += "$indent    - $relativePath/index.md"
     }
-	
+    
     # Add other files in this directory
     foreach ($file in $mdFiles) {
         $fileRelativePath = $file.FullName.Substring((Resolve-Path $docsPath).Path.Length + 1) -replace '\\', '/'
@@ -141,13 +141,13 @@ function Build-DirectoryNav {
         $fileTitle = Protect-YamlTitle $fileTitle
         $subItems += "$indent    - $($fileTitle): $fileRelativePath"
     }
-	
+    
     # Add subdirectories
     foreach ($subDir in $subDirs) {
         $subDirItems = Build-DirectoryNav -dirPath $subDir.FullName -indentLevel ($indentLevel + 1)
         $subItems += $subDirItems
     }
-	
+    
     # Build final structure
     if ($subItems.Count -gt 0) {
         $dirTitle = Protect-YamlTitle $dirTitle
@@ -161,27 +161,26 @@ function Build-DirectoryNav {
         $indexTitle = Protect-YamlTitle $indexTitle
         $items += "$indent- $($indexTitle): $relativePath/index.md"
     }
-	
+    
     return $items
 }
 
+# Verify we're in the util directory by checking the current working directory name
+$currentDirName = Split-Path -Leaf (Get-Location)
+
+if ($currentDirName -ne "util") {
+    Write-Host "Error: This script must be run from the util/ directory" -ForegroundColor Red
+    Write-Host "Current location: $(Get-Location)" -ForegroundColor Yellow
+    exit 1
+}
+
 # Detect paths from current working directory
-$docsPath = if (Test-Path "..\docs") { "..\docs" } else { "docs" }
-$mkdocsPath = if (Test-Path "..\mkdocs.yml") { "..\mkdocs.yml" } else { "mkdocs.yml" }
+# (Script only runs from util/, so paths are always relative to parent)
+$docsPath = "..\docs"
+$mkdocsPath = "..\mkdocs.yml"
 
 # Main execution
 Write-Host "Generating MkDocs navigation from '$docsPath'..." -ForegroundColor Cyan
-
-# Validate paths
-if (-not (Test-Path $docsPath)) {
-    Write-Host "Error: Docs directory '$docsPath' not found!" -ForegroundColor Red
-    exit 1
-}
-
-if (-not (Test-Path $mkdocsPath)) {
-    Write-Host "Error: mkdocs.yml not found at '$mkdocsPath'!" -ForegroundColor Red
-    exit 1
-}
 
 # Build navigation tree
 $navItems = @()
@@ -251,6 +250,19 @@ for ($i = $navStartIndex + 1; $i -lt $lines.Count; $i++) {
 
 if ($navEndIndex -eq -1) {
     $navEndIndex = $lines.Count - 1
+}
+
+# Extract current nav section for comparison
+$currentNavSection = ($lines[$navStartIndex..$navEndIndex] -join [Environment]::NewLine) + [Environment]::NewLine
+
+# Normalize both strings for comparison (remove trailing whitespace variations)
+$currentNavNormalized = $currentNavSection -replace '\s+$', ''
+$navYamlNormalized = $navYaml -replace '\s+$', ''
+
+# Compare with generated nav
+if ($currentNavNormalized -eq $navYamlNormalized) {
+    Write-Host "Navigation section is already up to date. No changes needed." -ForegroundColor Green
+    exit 0
 }
 
 # Build new content
