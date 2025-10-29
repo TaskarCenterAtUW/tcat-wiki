@@ -9,43 +9,43 @@
 
 <#
 .SYNOPSIS
-	Link validation script for the TCAT Wiki
+    Link validation script for the TCAT Wiki
 
 .DESCRIPTION
-	Checks all .md files in the specified directory for broken internal and external links.
-	Returns exit code 0 if all links are valid, 1 if any links are broken or there is an error.
+    Checks all .md files in the specified directory for broken internal and external links.
+    Returns exit code 0 if all links are valid, 1 if any links are broken or there is an error.
 
 .PARAMETER docsPath
-	Path to the documentation directory to scan (default: "docs")
+    Path to the documentation directory to scan (default: "docs")
 
 .PARAMETER verboseOutput
-	Show verbose output during validation
+    Show verbose output during validation
 
 .PARAMETER internal
-	Check internal relative links
+    Check internal relative links
 
 .PARAMETER external
-	Check external absolute links
+    Check external absolute links
 
 .EXAMPLE
-	.\check-links.ps1
-	Validates both internal and external links in the default "docs" directory
+    .\check-links.ps1
+    Validates both internal and external links in the default "docs" directory
 
 .EXAMPLE
-	.\check-links.ps1 -verboseOutput -internal
-	Validates only internal relative links, with verbose output
+    .\check-links.ps1 -verboseOutput -internal
+    Validates only internal relative links, with verbose output
 #>
 
 param(
     [Parameter(HelpMessage = "Path to the docs directory")]
     [string]$docsPath = "",
-	
+    
     [Parameter(HelpMessage = "Show verbose output")]
     [switch]$verboseOutput,
-	
+    
     [Parameter(HelpMessage = "Check external links")]
     [switch]$external,
-	
+    
     [Parameter(HelpMessage = "Check internal links")]
     [switch]$internal
 )
@@ -100,14 +100,14 @@ $brokenInternalLinks = @()
 # Function to extract links from markdown content
 function Get-MarkdownLinks {
     param([string]$content)
-	
+    
     # Match [text](url) pattern
     $linkPattern = '\[([^\]]*)\]\(([^)]+)\)'
     $imagePattern = '!\[([^\]]*)\]\(([^)]+)\)'
-	
+    
     $links = [regex]::Matches($content, $linkPattern)
     $images = [regex]::Matches($content, $imagePattern)
-	
+    
     return ($links + $images)
 }
 
@@ -123,35 +123,35 @@ function Test-InternalLink {
         [string]$filePath,
         [string]$linkUrl
     )
-	
+    
     # Skip fragment-only links
     if ($linkUrl.StartsWith("#")) {
         return $true
     }
-	
+    
     # Remove fragment from URL
     $cleanUrl = $linkUrl.Split('#')[0]
     if (-not $cleanUrl) {
         return $true
     }
-	
+    
     # Resolve relative path
     $baseDir = Split-Path $filePath -Parent
     $targetPath = Join-Path $baseDir $cleanUrl
     $resolvedPath = [System.IO.Path]::GetFullPath($targetPath)
-	
+    
     return Test-Path $resolvedPath
 }
 
 # Function to test external URL
 function Test-ExternalUrlValid {
     param([string]$url)
-	
+    
     # Skip domains that block automated requests or are known to always fail
     $skipDomains = @(
         "*visualstudio.com*"
     )
-	
+    
     foreach ($domain in $skipDomains) {
         if ($url -like $domain) {
             return @{
@@ -160,7 +160,7 @@ function Test-ExternalUrlValid {
             }
         }
     }
-	
+    
     try {
         # Use HEAD request first, fallback to GET if needed
         try {
@@ -183,7 +183,7 @@ function Test-ExternalUrlValid {
         else {
             $_.Exception.Message
         }
-		
+        
         return @{
             valid  = $false
             status = $errorMessage
@@ -197,7 +197,7 @@ foreach ($file in $markdownFiles) {
     if ($verboseOutput) {
         Write-Host "Validating: $relativePath" -ForegroundColor Yellow
     }
-	
+    
     try {
         $content = Get-Content $file.FullName -Raw -Encoding UTF8
     }
@@ -205,13 +205,13 @@ foreach ($file in $markdownFiles) {
         Write-Host "  ERROR reading file: $($_.Exception.Message)" -ForegroundColor Red
         continue
     }
-	
+    
     $links = Get-MarkdownLinks -content $content
-	
+    
     foreach ($link in $links) {
         $linkText = $link.Groups[1].Value
         $linkUrl = $link.Groups[2].Value
-		
+        
         if (Test-ExternalUrl -url $linkUrl) {
             # Collect external URLs for later testing if external checking is enabled
             if ($external) {
@@ -243,9 +243,9 @@ if ($external) {
         if ($verboseOutput) {
             Write-Host "Testing: $url" -ForegroundColor Gray
         }
-		
+        
         $result = Test-ExternalUrlValid -url $url
-		
+        
         if (-not $result.valid) {
             $brokenExternalLinks += @{
                 url    = $url
@@ -258,7 +258,7 @@ if ($external) {
                 Write-Host "  [OK] OK: $($result.status)" -ForegroundColor Green
             }
         }
-		
+        
         Start-Sleep -Milliseconds 500  # Be nice to servers
     }
 }

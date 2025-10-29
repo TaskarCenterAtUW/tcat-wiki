@@ -9,15 +9,15 @@
 
 <#
 .SYNOPSIS
-	Generates index.md files for all guides directories
+    Generates index.md files for all guides directories
 
 .DESCRIPTION
-	This script recursively searches through the docs directory for any subdirectory 
-	named "guides" and generates an index.md file containing a list of all .md files
-	in that directory (excluding index.md itself).
+    This script recursively searches through the docs directory for any subdirectory 
+    named "guides" and generates an index.md file containing a list of all .md files
+    in that directory (excluding index.md itself).
 
 .EXAMPLE
-	.\generate-guides-lists.ps1
+    .\generate-guides-lists.ps1
 #>
 
 function Get-RelativePathToGuidesIndex {
@@ -25,10 +25,10 @@ function Get-RelativePathToGuidesIndex {
         [Parameter(Mandatory = $true)]
         [string]$CurrentPath
     )
-	
+    
     # Normalize path separators  
     $normalizedPath = $CurrentPath -replace '[/\\]', '/'
-	
+    
     # Remove any leading path components before 'docs'
     if ($normalizedPath -match 'docs/(.*)') {
         $relativePath = $matches[1]  # Everything after docs/
@@ -37,19 +37,19 @@ function Get-RelativePathToGuidesIndex {
         Write-Warning "Could not find 'docs' directory in path: $CurrentPath"
         return '../../guides/index.md'  # Fallback
     }
-	
+    
     # Split the path after docs/
     $pathParts = $relativePath -split '/' | Where-Object { $_ -ne '' }
-	
+    
     # Special case: if we're in docs/guides-list, link to self
     if ($pathParts.Count -eq 1 -and $pathParts[0] -eq 'guides-list') {
         return 'index.md'
     }
-	
+    
     # Calculate how many levels to go back from current guides directory to docs
     # We need to go back pathParts.Count levels to get to docs root
     $levelsToGoBack = $pathParts.Count
-	
+    
     if ($levelsToGoBack -eq 1) {
         # We're in docs/guides-list
         return 'index.md'
@@ -66,15 +66,15 @@ function Get-GuideInfo {
         [ValidateScript({ Test-Path $_ -PathType Leaf })]
         [string]$FilePath
     )
-	
+    
     $result = @{
         Title       = ""
         Description = ""
     }
-	
+    
     try {
         $content = Get-Content $FilePath -ErrorAction Stop
-		
+        
         # Look for YAML front matter title first
         $inFrontMatter = $false
         foreach ($line in $content) {
@@ -87,7 +87,7 @@ function Get-GuideInfo {
                 break
             }
         }
-		
+        
         # If no title found in front matter, look for H1
         if (-not $result.Title) {
             foreach ($line in $content) {
@@ -97,7 +97,7 @@ function Get-GuideInfo {
                 }
             }
         }
-		
+        
         # Extract description (first paragraph after H1)
         $foundH1 = $false
         $foundEmptyAfterH1 = $false
@@ -109,13 +109,13 @@ function Get-GuideInfo {
                 continue
             }
             if ($inFrontMatterDesc) { continue }
-			
+            
             # Find H1 header
             if (-not $foundH1 -and $line -match '^#\s+') {
                 $foundH1 = $true
                 continue
             }
-			
+            
             # After H1, look for first non-empty line
             if ($foundH1) {
                 if ($line.Trim() -eq "") {
@@ -134,12 +134,12 @@ function Get-GuideInfo {
         Write-Warning "Could not read file: $FilePath - $_"
         return $result
     }
-	
+    
     # Fallback to filename without extension if no title found
     if (-not $result.Title) {
         $result.Title = [System.IO.Path]::GetFileNameWithoutExtension($FilePath)
     }
-	
+    
     return $result
 }
 
@@ -149,22 +149,22 @@ function New-GuidesList {
         [ValidateScript({ Test-Path $_ -PathType Container })]
         [string]$GuidesPath
     )
-	
+    
     Write-Host "Processing guides directory: $GuidesPath"
-	
+    
     # Get all .md files except main index.md
     $mdFiles = Get-ChildItem -Path $GuidesPath -Filter "*.md" | 
     Where-Object { $_.Name -ne "index.md" } |
     Sort-Object Name
-	
+    
     if ($mdFiles.Count -eq 0) {
         Write-Host "  No guides found (excluding index.md)"
         return
     }
-	
+    
     # Get the parent path for building descriptions
     $parentPath = Split-Path $GuidesPath -Parent
-	
+    
     # Create appropriate title based on directory structure
     $sectionTitle = switch -Regex ($GuidesPath) {
         'docs[/\\]guides-list$' { "Guides List" }
@@ -172,7 +172,7 @@ function New-GuidesList {
         default { 
             # Get parent directory name and convert to title case
             $parentDirName = Split-Path (Split-Path $GuidesPath -Parent) -Leaf
-			
+            
             # Handle special cases for better formatting
             $titleName = switch ($parentDirName) {
                 'opensidewalks' { 'OpenSidewalks' }
@@ -190,7 +190,7 @@ function New-GuidesList {
             "$titleName Guides"
         }
     }
-	
+    
     # Build content
     $content = @()
     $content += "---"
@@ -199,7 +199,7 @@ function New-GuidesList {
     $content += ""
     $content += "# $sectionTitle"
     $content += ""
-	
+    
     # Add description based on the guides directory
     switch -Regex ($GuidesPath) {
         'docs[/\\]guides-list$' { 
@@ -223,41 +223,41 @@ function New-GuidesList {
             }
         }
     }
-	
+    
     # Add back-reference to main guides list (except for main guides index)
     if ($GuidesPath -notmatch 'docs[/\\]guides-list$') {
         $content += ""
         $guidesIndexPath = Get-RelativePathToGuidesIndex -CurrentPath $GuidesPath
         $content += "_For a list of all guides on the TCAT Wiki, refer to the [Guides List]($guidesIndexPath)._"
     }
-	
+    
     $content += ""
     $content += "---"
     $content += ""
-	
+    
     # Add each guide
     for ($i = 0; $i -lt $mdFiles.Count; $i++) {
         $file = $mdFiles[$i]
         $guideInfo = Get-GuideInfo -FilePath $file.FullName
         $fileName = $file.Name
-		
+        
         $content += "### [$($guideInfo.Title)]($fileName)"
         $content += ""
-		
+        
         if ($guideInfo.Description) {
             $content += $guideInfo.Description
         }
-		
+        
         # Only add empty line if not the last item
         if ($i -lt ($mdFiles.Count - 1)) {
             $content += ""
         }
     }
-	
+    
     # Write the index.md file
     $indexPath = Join-Path $GuidesPath "index.md"
     $content | Set-Content -Path $indexPath -Encoding UTF8
-	
+    
     Write-Host "  Generated index.md with $($mdFiles.Count) guides"
 }
 
@@ -317,17 +317,17 @@ $masterContent += ""
 # Process each guides directory (excluding the main docs/guides-list)
 foreach ($guidesDir in $guidesDirectories | Where-Object { $_.FullName -notmatch 'docs[/\\]guides-list$' }) {
     $indexPath = Join-Path $guidesDir.FullName "index.md"
-	
+    
     if (Test-Path $indexPath) {
         Write-Host "  Aggregating: $($guidesDir.FullName)"
-		
+        
         try {
             $content = Get-Content $indexPath -ErrorAction Stop
             $inFrontMatter = $false
             $foundTitle = $false
             $sectionTitle = ""
             $relativePath = ""
-			
+            
             # Extract section title and calculate relative path
             foreach ($line in $content) {
                 if ($line -eq '---') {
@@ -346,23 +346,23 @@ foreach ($guidesDir in $guidesDirectories | Where-Object { $_.FullName -notmatch
                     break
                 }
             }
-			
+            
             # Calculate relative path from docs/guides-list to this guides directory
             $guidesPath = $guidesDir.FullName -replace '[/\\]', '/'
             if ($guidesPath -match 'docs/(.*)') {
                 $relativePath = "../$($matches[1])/index.md"
             }
-			
+            
             # Add section header
             if ($sectionTitle -and $relativePath) {
                 $masterContent += "## [$sectionTitle]($relativePath)"
                 $masterContent += ""
-				
+                
                 # Extract and add individual guide entries  
                 $guidesBasePath = ($guidesPath -replace '.*docs/', '') -replace '/guides$', ''
                 $frontMatterCount = 0
                 $afterContentSeparator = $false
-				
+                
                 foreach ($line in $content) {
                     # Count front matter separators (first two ---)
                     if ($line -eq '---') {
@@ -376,12 +376,12 @@ foreach ($guidesDir in $guidesDirectories | Where-Object { $_.FullName -notmatch
                             continue  # Skip front matter
                         }
                     }
-					
+                    
                     # Skip content until we reach the separator
                     if ($frontMatterCount -lt 3) {
                         continue
                     }
-					
+                    
                     # Process guide entries after the separator
                     if ($afterContentSeparator) {
                         if ($line.Trim() -ne '') {
@@ -403,7 +403,7 @@ foreach ($guidesDir in $guidesDirectories | Where-Object { $_.FullName -notmatch
                         }
                     }
                 }
-				
+                
                 $masterContent += ""
             }
         }
