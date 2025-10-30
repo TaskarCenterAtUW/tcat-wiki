@@ -21,18 +21,21 @@ Work in progress! Resolve "FIXME"s before merge.
   - [Installation](#installation)
     - [Apple iPhone Users](#apple-iphone-users)
     - [Android Users](#android-users)
+  - [Using AVIV ScoutRoute](#using-aviv-scoutroute)
+  - [Next Steps](#next-steps)
+  - [Additional Resources](#additional-resources)
 
 ## Introduction
 
 This document enables users to try out AVIV ScoutRoute (in conjunction with a workspace) where one can answer quests. After reading this document, users should be able to install AVIV ScoutRoute, as well as view and complete quests in the app.
 
-AVIV ScoutRoute is a volunteerism game for crowdsourcing pedestrian and accessibility information, and is an adaptation of the [StreetComplete](https://github.com/westnordost/StreetComplete) project. Users see an overhead map view, with easy-to-tap icons representing ‘quests’. Quests are simple surveys for missing labels in an [OpenStreetMap](https://www.openstreemap.org/)\-style workspace; for example, a given quest may ask the user to say whether the sidewalk they are using is made of concrete, asphalt, or another material.
+AVIV ScoutRoute is a volunteerism game for crowdsourcing pedestrian and accessibility information, and is an adaptation of the [StreetComplete](https://github.com/westnordost/StreetComplete) project. Users see an overhead map view, with easy-to-select icons representing ‘quests’. Quests are simple surveys for missing labels in an [OpenStreetMap](https://www.openstreemap.org/)\-style workspace; for example, a given quest may ask the user to say whether the sidewalk they are using is made of concrete, asphalt, or another material.
 
 Note that AVIV ScoutRoute was rebranded from the original "GoInfoGame" / "GiG" branding, and some materials have not yet been updated to reflect this.
 
 ## Installation
 
-Based on the mobile device you use, please follow the instructions below to install AVIV ScoutRoute.
+Depending on the type of mobile device you use, follow the instructions below to install AVIV ScoutRoute.
 
 ### Apple iPhone Users
 
@@ -42,44 +45,44 @@ Based on the mobile device you use, please follow the instructions below to inst
 
 1. Visit [https://portal.tdei.us/](https://portal.tdei.us/)
 
-2. Tap **“Register Now”**
+2. Select **"Register Now"**
 
-3. Complete the form and press **“Create Account”**
+3. Complete the form and select **"Create Account"**
 
     _Password requirements: Minimum of 8 characters in length; requires at least one lower case letter, one upper case letter, one special character, and a number._
 
-![TDEI Portal login page, "Register Now" highlighted](../../../../../resources/images/tdei-portal/login-highlight-register-now.png){ width="300" } ![TDEI Portal register page](../../../../../resources/images/tdei-portal/register.png){ width="300" }
+![TDEI Portal login page, "Register Now" highlighted](../../../../../resources/images/tdei-portal/login-highlight-register-now.png){ width="400" } ![TDEI Portal register page](../../../../../resources/images/tdei-portal/register.png){ width="400" }
 
 **Step 3:** Install AVIV ScoutRoute\!
 
 1. Using Safari, visit: [https://testflight.apple.com/join/hpzSaUdQ](https://testflight.apple.com/join/hpzSaUdQ)
 
-![FIXME: Image3]()
-![FIXME: Image4]()
+![FIXME]()
+![FIXME]()
 
-1. Tap the **"View in App Store"** button under the "Step 1" section
+1. Select the **"View in App Store"** button under the "Step 1" section
 
-2. Install Testflight via the App Store
+2. Install TestFlight via the App Store
 
 **Note:** TestFlight, once installed, shows a "Ready to Test" screen and has a "Redeem" button which, when pressed, opens a "Redeem Code" popup which asks for a TestFlight Invitation Code. **Disregard this and return to Safari to continue.**
 
-4. Return to Safari and tap **"View in TestFlight"** under the "Step 2" section
+4. Return to Safari and select **"View in TestFlight"** under the "Step 2" section
 
-![FIXME: Image5]()
+![TestFlight Install](../../../../../resources/images/aviv-scoutroute/ios/testflight-install.png){ width="400" } ![TestFlight Open](../../../../../resources/images/aviv-scoutroute/ios/testflight-open.png){ width="400" }
 
-5. Tap **"Install"**
-6. Tap **"Open"**
+1. Select **"Install"**
+2. Select **"Open"**
 
-![FIXME: Image6]()
+![TestFlight Continue](../../../../../resources/images/aviv-scoutroute/ios/testflight-continue.png){ width="400" } ![TestFlight Share Feedback](../../../../../resources/images/aviv-scoutroute/ios/testflight-share-feedback.png){ width="400" }
 
-7. Tap **"Next"**
-8. Tap **"Start Testing"**
+1. Select **"Continue"**
+2. Select **"Continue"**
 
 **Step 4:** Login to the AVIV ScoutRoute mobile application using your TDEI Account
 
 If prompted to select an **Environment**, select **"Production"**
 
-![FIXME: Image7]()
+![FIXME]()
 
 **Step 5:** Reach out to your project's point of contact and provide them with your name and Apple Account. They will add you to the appropriate Project Group and assign your role.
 
@@ -91,10 +94,64 @@ If prompted to select an **Environment**, select **"Production"**
 
 1. Visit [https://portal.tdei.us/](https://portal.tdei.us/)
 
-2. Click “Register Now”
+2. Click "Register Now"
 
-3. Complete the form and press “Create Account”
+3. Complete the form and press "Create Account"
 
     _Password requirements: Minimum of 8 characters in length; requires at least one lower case letter, one upper case letter, one special character, and a number._
 
 ![TDEI Portal login page, "Register Now" highlighted](../../../../../resources/images/tdei-portal/login-highlight-register-now.png){ width="300" } ![TDEI Portal register page](../../../../../resources/images/tdei-portal/register.png){ width="300" }
+
+**Step 3:** Install AVIV ScoutRoute\!
+
+1. Accept the Tester Invitation
+
+    1. You'll receive an email invite or direct link from either your project's point of contact or the developer team
+
+        1. External (non-TCAT) users should use the following invite link:  
+           [https://appdistribution.firebase.dev/i/63d3d906e42fb64d](https://appdistribution.firebase.dev/i/63d3d906e42fb64d)
+
+    2. On your mobile device, click on the link and it will open in your default browser
+
+    3. Sign in with your Google Account (must match the invite email)
+
+    4. Select "Accept Invitation" to join the tester group
+
+2. Install the Firebase App Tester App
+
+    1. Download the Firebase App Tester application from the in-browser prompt that appears once the invite is accepted, or navigate to [appdistribution.firebase.google.com](http://appdistribution.firebase.google.com)
+
+    2. Install Firebase App Tester
+
+    3. Open the app
+
+    4. Sign in with the same Google Account used in Part 1 above
+
+    5. A list of available apps will be displayed
+
+3. Download AVIV ScoutRoute
+
+    1. In the App Tester app, find the AVIV ScoutRoute app under "My Apps"
+
+    2. Select "Download" to install
+
+    3. Follow any on-screen instructions and grant any necessary permissions
+
+**Step 4:** Login to the AVIV ScoutRoute mobile application using your TDEI Account
+
+If prompted to select an **Environment**, select **"Production"**
+
+![FIXME]()
+
+**Step 5:** Reach out to your project's point of contact and provide them with your name and email address. They will add you to the appropriate Project Group and assign your role.
+
+## Using AVIV ScoutRoute
+
+## Next Steps
+
+You should now be ready to complete quests in AVIV ScoutRoute\! Please reach out to the UW team if you have questions or concerns that have not been answered in this document.
+
+## Additional Resources
+
+-   [AVIV ScoutRoute iOS Release Notes](https://docs.google.com/document/d/1i9FUVdXElJ8zUk3BTvbW8AOQ-lYz_6Q6c1p8wZXYZxc/edit?usp=sharing)
+-   [AVIV ScoutRoute Android Release Notes](https://docs.google.com/document/d/1jaiyNtAOCKeUVBqjmLveI78g4yhWH222DLg7Ev4VO5g/edit?usp=sharing)
