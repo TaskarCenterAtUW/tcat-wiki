@@ -17,12 +17,12 @@ Work in progress! Resolve "FIXME"s before merge.
 ---
 
 - [AVIV ScoutRoute User Manual](#aviv-scoutroute-user-manual)
-  - [1 Introduction](#1-introduction)
-  - [2 Installation](#2-installation)
-    - [2.1: Apple iPhone Users](#21-apple-iphone-users)
-    - [2.2: Android Users](#22-android-users)
+  - [Introduction](#introduction)
+  - [Installation](#installation)
+    - [Apple iPhone Users](#apple-iphone-users)
+    - [Android Users](#android-users)
 
-## 1 Introduction
+## Introduction
 
 This document enables users to try out AVIV ScoutRoute (in conjunction with a workspace) where one can answer quests. After reading this document, users should be able to install AVIV ScoutRoute, as well as view and complete quests in the app.
 
@@ -30,11 +30,11 @@ AVIV ScoutRoute is a volunteerism game for crowdsourcing pedestrian and accessib
 
 Note that AVIV ScoutRoute was rebranded from the original "GoInfoGame" / "GiG" branding, and some materials have not yet been updated to reflect this.
 
-## 2 Installation
+## Installation
 
 Based on the mobile device you use, please follow the instructions below to install AVIV ScoutRoute.
 
-### 2.1: Apple iPhone Users
+### Apple iPhone Users
 
 **Step 1:** Make sure you have an Apple Account (formerly called an "Apple ID"). This is the email address associated with your iPhone and all Apple services.
 
@@ -48,7 +48,7 @@ Based on the mobile device you use, please follow the instructions below to inst
 
     _Password requirements: Minimum of 8 characters in length; requires at least one lower case letter, one upper case letter, one special character, and a number._
 
-![FIXME: Resize image, add alt text](../../../../../resources/images/tdei-portal/login.png) ![FIXME: Resize image, add alt text](../../../../../resources/images/tdei-portal/register.png)
+![TDEI Portal login page, "Register Now" highlighted](../../../../../resources/images/tdei-portal/login-highlight-register-now.png){ width="300" } ![TDEI Portal register page](../../../../../resources/images/tdei-portal/register.png){ width="300" }
 
 **Step 3:** Install AVIV ScoutRoute\!
 
@@ -83,7 +83,7 @@ If prompted to select an **Environment**, select **"Production"**
 
 **Step 5:** Reach out to your project's point of contact and provide them with your name and Apple Account. They will add you to the appropriate Project Group and assign your role.
 
-### 2.2: Android Users
+### Android Users
 
 **Step 1:** Make sure you have reliable access to an Email account.
 
@@ -97,4 +97,4 @@ If prompted to select an **Environment**, select **"Production"**
 
     _Password requirements: Minimum of 8 characters in length; requires at least one lower case letter, one upper case letter, one special character, and a number._
 
-![FIXME: Resize image, add alt text](../../../../../resources/images/tdei-portal/login.png) ![FIXME: Resize image, add alt text](../../../../../resources/images/tdei-portal/register.png)
+![TDEI Portal login page, "Register Now" highlighted](../../../../../resources/images/tdei-portal/login-highlight-register-now.png){ width="300" } ![TDEI Portal register page](../../../../../resources/images/tdei-portal/register.png){ width="300" }
