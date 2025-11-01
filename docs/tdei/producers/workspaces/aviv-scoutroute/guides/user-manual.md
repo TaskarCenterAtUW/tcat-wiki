@@ -51,13 +51,13 @@ Depending on the type of mobile device you use, follow the instructions below to
 
     _Password requirements: Minimum of 8 characters in length; requires at least one lower case letter, one upper case letter, one special character, and a number._
 
-![TDEI Portal login page, "Register Now" highlighted](../../../../../resources/images/tdei-portal/login-highlight-register-now.png){ width="400" } ![TDEI Portal register page](../../../../../resources/images/tdei-portal/register.png){ width="400" }
+![TDEI Portal login page, "Register Now" highlighted](../../../../../resources/images/tdei-portal/login-h-register-now.png){ width="400" } ![TDEI Portal register page](../../../../../resources/images/tdei-portal/register.png){ width="400" }
 
 **Step 3:** Install AVIV ScoutRoute\!
 
 1. Using Safari, visit: [https://testflight.apple.com/join/hpzSaUdQ](https://testflight.apple.com/join/hpzSaUdQ)
 
-![Safari Get TestFlight](../../../../../resources/images/aviv-scoutroute/ios/safari-get-testflight-highlight-view-in-app-store.png){ width="400" } ![Safari Open in TestFlight](../../../../../resources/images/aviv-scoutroute/ios/safari-view-asr-beta-highlight-view-in-testflight.png){ width="400" }
+![Safari Get TestFlight](../../../../../resources/images/aviv-scoutroute/ios/safari-get-testflight-h-view-in-app-store.png){ width="400" } ![Safari Open in TestFlight](../../../../../resources/images/aviv-scoutroute/ios/safari-view-asr-beta-h-view-in-testflight.png){ width="400" }
 
 1. Select the **"View in App Store"** button under the "Step 1" section
 
@@ -67,12 +67,12 @@ Depending on the type of mobile device you use, follow the instructions below to
 
 4. Return to Safari and select **"View in TestFlight"** under the "Step 2" section
 
-![TestFlight Install](../../../../../resources/images/aviv-scoutroute/ios/testflight-before-install-highlight-install.png){ width="400" } ![TestFlight Open](../../../../../resources/images/aviv-scoutroute/ios/testflight-after-install-highlight-open.png){ width="400" }
+![TestFlight Install](../../../../../resources/images/aviv-scoutroute/ios/testflight-before-install-h-install.png){ width="400" } ![TestFlight Open](../../../../../resources/images/aviv-scoutroute/ios/testflight-after-install-h-open.png){ width="400" }
 
 1. Select **"Install"**
 2. Select **"Open"**
 
-![TestFlight From the Developer Continue](../../../../../resources/images/aviv-scoutroute/ios/testflight-from-the-developer-highlight-continue.png){ width="400" } ![TestFlight Share Feedback Continue](../../../../../resources/images/aviv-scoutroute/ios/testflight-share-feedback-highlight-continue.png){ width="400" }
+![TestFlight From the Developer Continue](../../../../../resources/images/aviv-scoutroute/ios/testflight-from-the-developer-h-continue.png){ width="400" } ![TestFlight Share Feedback Continue](../../../../../resources/images/aviv-scoutroute/ios/testflight-share-feedback-h-continue.png){ width="400" }
 
 1. Select **"Continue"**
 2. Select **"Continue"**
@@ -97,7 +97,7 @@ Depending on the type of mobile device you use, follow the instructions below to
 
     _Password requirements: Minimum of 8 characters in length; requires at least one lower case letter, one upper case letter, one special character, and a number._
 
-![TDEI Portal login page, "Register Now" highlighted](../../../../../resources/images/tdei-portal/login-highlight-register-now.png){ width="400" } ![TDEI Portal register page](../../../../../resources/images/tdei-portal/register.png){ width="400" }
+![TDEI Portal login page, "Register Now" highlighted](../../../../../resources/images/tdei-portal/login-h-register-now.png){ width="400" } ![TDEI Portal register page](../../../../../resources/images/tdei-portal/register.png){ width="400" }
 
 **Step 3:** Install AVIV ScoutRoute\!
 

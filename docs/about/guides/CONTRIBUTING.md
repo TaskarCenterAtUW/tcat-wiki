@@ -160,8 +160,8 @@ For creating image annotations with a consistent style, follow these guidelines.
 
     4. Example:
 
-        ![alt text](../../resources/images/tdei-portal/login-highlight-forgot-password.png){ loading=lazy }
+        ![alt text](../../resources/images/tdei-portal/login-h-forgot-password.png){ loading=lazy }
 
-    5. Naming convention: For images with highlights, append `-highlight-$highlightedFeature`
+    5. Naming convention: For images with highlights, append `-h-$highlightedFeature`
 
-        1. Example: `login.png` → `login-highlight-forgot-password.png`
+        1. Example: `login.png` → `login-h-forgot-password.png`
