@@ -1,8 +1,10 @@
 ---
 title: Core Edges in OSW
-tags: 
-  - OSW 0.3
+tags:
+    - OSW 0.3
 ---
+
+<!-- @format -->
 
 # Core Edges in OSW
 
@@ -14,10 +16,10 @@ _For a list of all guides on the TCAT Wiki, refer to the [Guides List](../../gui
 
 Sidewalk centerlines are linear GIS features representing the middle path of sidewalk infrastructure. These datasets are commonly maintained by city transportation departments and typically include attributes like:
 
-- **Width information**: Sidewalk dimensions and measurements
-- **Surface conditions**: Material type and maintenance status
-- **Location data**: Street names, sides, and block segments
-- **Maintenance records**: Installation dates and inspection history
+-   **Width information**: Sidewalk dimensions and measurements
+-   **Surface conditions**: Material type and maintenance status
+-   **Location data**: Street names, sides, and block segments
+-   **Maintenance records**: Installation dates and inspection history
 
 Converting these datasets to OSW format enables pedestrian routing, accessibility analysis, and integration with other transportation data through TDEI.
 
@@ -31,24 +33,27 @@ Seattle's sidewalk dataset contains LineString features with detailed attributes
 
 ```json
 {
-  "type": "Feature",
-  "id": 22276849,
-  "geometry": {
-    "type": "LineString",
-    "coordinates": [[1270173.15, 221881.27], [1270372.84, 221876.92]]
-  },
-  "properties": {
-    "OBJECTID": 22276849,
-    "UNITID": "SDW-35269",
-    "UNITDESC": "S KING ST BETWEEN 1ST AVE S AND OCCIDENTAL W AVE S, N SIDE",
-    "SW_WIDTH": 124,
-    "CONDITION": "POOR", 
-    "SURFTYPE": "PCC",
-    "SIDE": "N",
-    "PRIMARYCROSSSLOPE": 5.3,
-    "INSTALL_DATE": null,
-    "LAST_VERIFY_DATE": "Fri, 23 Jun 2017 00:00:00 GMT"
-  }
+    "type": "Feature",
+    "id": 22276849,
+    "geometry": {
+        "type": "LineString",
+        "coordinates": [
+            [1270173.15, 221881.27],
+            [1270372.84, 221876.92]
+        ]
+    },
+    "properties": {
+        "OBJECTID": 22276849,
+        "UNITID": "SDW-35269",
+        "UNITDESC": "S KING ST BETWEEN 1ST AVE S AND OCCIDENTAL W AVE S, N SIDE",
+        "SW_WIDTH": 124,
+        "CONDITION": "POOR",
+        "SURFTYPE": "PCC",
+        "SIDE": "N",
+        "PRIMARYCROSSSLOPE": 5.3,
+        "INSTALL_DATE": null,
+        "LAST_VERIFY_DATE": "Fri, 23 Jun 2017 00:00:00 GMT"
+    }
 }
 ```
 
@@ -58,24 +63,27 @@ We want to convert each sidewalk centerline into an OpenSidewalks footway that l
 
 ```json
 {
-  "type": "Feature",
-  "geometry": {
-    "type": "LineString", 
-    "coordinates": [[-122.3321, 47.6062], [-122.3325, 47.6065]]
-  },
-  "properties": {
-    "_id": "sidewalk_sdw_35269",
-    "highway": "footway",
-    "footway": "sidewalk",
-    "width": 3.78,
-    "surface": "concrete",
-    "ext:unit_id": "SDW-35269",
-    "ext:description": "S KING ST BETWEEN 1ST AVE S AND OCCIDENTAL W AVE S, N SIDE",
-    "ext:condition": "POOR",
-    "ext:side": "N",
-    "ext:cross_slope": 5.3,
-    "ext:last_verify_date": "2017-06-23"
-  }
+    "type": "Feature",
+    "geometry": {
+        "type": "LineString",
+        "coordinates": [
+            [-122.3321, 47.6062],
+            [-122.3325, 47.6065]
+        ]
+    },
+    "properties": {
+        "_id": "sidewalk_sdw_35269",
+        "highway": "footway",
+        "footway": "sidewalk",
+        "width": 3.78,
+        "surface": "concrete",
+        "ext:unit_id": "SDW-35269",
+        "ext:description": "S KING ST BETWEEN 1ST AVE S AND OCCIDENTAL W AVE S, N SIDE",
+        "ext:condition": "POOR",
+        "ext:side": "N",
+        "ext:cross_slope": 5.3,
+        "ext:last_verify_date": "2017-06-23"
+    }
 }
 ```
 
@@ -87,37 +95,37 @@ Most city GIS datasets use local coordinate systems. Seattle uses EPSG:2926 - NA
 
 **Transform coordinates before conversion:**
 
-- Use GIS software (QGIS, ArcGIS) or GDAL utilities
+-   Use GIS software (QGIS, ArcGIS) or GDAL utilities
 
 ### Step 2: Map Fields to OSW Structure
 
 Create a mapping between your dataset fields and OSW properties:
 
-| Source Field             | Goes in OSW as         | Notes                                              |
-|--------------------------|------------------------|----------------------------------------------------|
-| `<geometry coordinates>` | `geometry.coordinates` | Must be EPSG:4326 (WGS84)                          |
-| `UNITID`                 | `_id`                  | Create unique OSW ID (e.g., "sidewalk_" + unit_id) |
-| `UNITID`                 | `ext:unit_id`          | Keep original ID for reference                     |
-| `UNITDESC`               | `ext:description`      | Preserve location description                      |
-| `SW_WIDTH`               | `width`                | Convert to meters if in different units            |
-| `SURFTYPE`               | `surface`              | Map to OSW surface values (see Step 3)             |
-| `CONDITION`              | `ext:condition`        | Preserve condition assessment                      |
-| `SIDE`                   | `ext:side`             | Road side (N/S/E/W)                                |
-| `PRIMARYCROSSSLOPE`      | `ext:cross_slope`      | Cross slope percentage                             |
-| `LAST_VERIFY_DATE`       | `ext:last_verify_date` | Convert to ISO 8601 format                         |
+| Source Field             | Goes in OSW as         | Notes                                               |
+| ------------------------ | ---------------------- | --------------------------------------------------- |
+| `<geometry coordinates>` | `geometry.coordinates` | Must be EPSG:4326 (WGS84)                           |
+| `UNITID`                 | `_id`                  | Create unique OSW ID (e.g., "sidewalk\_" + unit_id) |
+| `UNITID`                 | `ext:unit_id`          | Keep original ID for reference                      |
+| `UNITDESC`               | `ext:description`      | Preserve location description                       |
+| `SW_WIDTH`               | `width`                | Convert to meters if in different units             |
+| `SURFTYPE`               | `surface`              | Map to OSW surface values (see Step 3)              |
+| `CONDITION`              | `ext:condition`        | Preserve condition assessment                       |
+| `SIDE`                   | `ext:side`             | Road side (N/S/E/W)                                 |
+| `PRIMARYCROSSSLOPE`      | `ext:cross_slope`      | Cross slope percentage                              |
+| `LAST_VERIFY_DATE`       | `ext:last_verify_date` | Convert to ISO 8601 format                          |
 
 **Required OSW Core Entity Fields:**
 
-- `_id`: Unique identifier (string, letters/numbers/underscores)
-- `geometry`: LineString coordinates in WGS84
-- `highway=footway` + `footway=sidewalk`: Sidewalk Core Entity tag
+-   `_id`: Unique identifier (string, letters/numbers/underscores)
+-   `geometry`: LineString coordinates in WGS84
+-   `highway=footway` + `footway=sidewalk`: Sidewalk Core Entity tag
 
 ### Step 3: Standardize Surface Types
 
 Map your dataset's surface codes to OSW-compatible values:
 
 | Source Code | OSW Surface Value | Description              |
-|-------------|-------------------|--------------------------|
+| ----------- | ----------------- | ------------------------ |
 | `PCC`       | `concrete`        | Portland cement concrete |
 | `AC`        | `asphalt`         | Asphalt concrete         |
 | `UIMPRV`    | `unpaved`         | Unimproved/dirt surface  |
@@ -133,32 +141,35 @@ Build the complete OSW dataset:
 
 ```json
 {
-  "$schema": "https://sidewalks.washington.edu/opensidewalks/0.3/schema.json",
-  "type": "FeatureCollection",
-  "dataSource": {
-    "name": "Seattle Department of Transportation",
-    "license": "Open Data Commons Attribution License"
-  },
-  "dataTimestamp": "2025-09-10T00:00:00Z",
-  "features": [
-    {
-      "type": "Feature",
-      "geometry": {
-        "type": "LineString",
-        "coordinates": [[-122.3321, 47.6062], [-122.3325, 47.6065]]
-      },
-      "properties": {
-        "_id": "sidewalk_sdw_35269",
-        "highway": "footway",
-        "footway": "sidewalk",
-        "width": 3.78,
-        "surface": "concrete",
-        "ext:unit_id": "SDW-35269",
-        "ext:description": "S KING ST BETWEEN 1ST AVE S AND OCCIDENTAL W AVE S, N SIDE",
-        "ext:condition": "POOR"
-      }
-    }
-  ]
+    "$schema": "https://sidewalks.washington.edu/opensidewalks/0.3/schema.json",
+    "type": "FeatureCollection",
+    "dataSource": {
+        "name": "Seattle Department of Transportation",
+        "license": "Open Data Commons Attribution License"
+    },
+    "dataTimestamp": "2025-09-10T00:00:00Z",
+    "features": [
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "LineString",
+                "coordinates": [
+                    [-122.3321, 47.6062],
+                    [-122.3325, 47.6065]
+                ]
+            },
+            "properties": {
+                "_id": "sidewalk_sdw_35269",
+                "highway": "footway",
+                "footway": "sidewalk",
+                "width": 3.78,
+                "surface": "concrete",
+                "ext:unit_id": "SDW-35269",
+                "ext:description": "S KING ST BETWEEN 1ST AVE S AND OCCIDENTAL W AVE S, N SIDE",
+                "ext:condition": "POOR"
+            }
+        }
+    ]
 }
 ```
 
@@ -190,7 +201,7 @@ ogr2ogr -f GeoJSON output.geojson sidewalks_epsg4326.geojson -sql "SELECT UNITID
 ### Common Issues and Fixes
 
 | Problem                         | Solution                                      |
-|---------------------------------|-----------------------------------------------|
+| ------------------------------- | --------------------------------------------- |
 | Coordinates in wrong projection | Use `ogr2ogr` or GIS reprojection tools       |
 | Duplicate IDs                   | Add prefixes or suffixes to ensure uniqueness |
 | Missing width data              | Omit width property                           |
@@ -199,27 +210,28 @@ ogr2ogr -f GeoJSON output.geojson sidewalks_epsg4326.geojson -sql "SELECT UNITID
 
 ### Validation Tools
 
-- **GeoJSON validation**: Use geojson.io or offline validators
-- **OSW schema validation**: Check against OpenSidewalks schema
-- **Visual inspection**: Load in QGIS or web mapping tools
-- **Attribute completeness**: Verify required and optional fields
+-   **GeoJSON validation**: Use geojson.io or offline validators
+-   **OSW schema validation**: Check against OpenSidewalks schema
+-   **Visual inspection**: Load in QGIS or web mapping tools
+-   **Attribute completeness**: Verify required and optional fields
 
 ## Integration with TDEI
 
 ### Best Practices for TDEI Upload
 
-- **Regular updates**: Plan for periodic data refreshes
-- **Quality documentation**: Document data collection methods and accuracy
-- **Contact information**: Provide maintainer contact for data issues
+-   **Regular updates**: Plan for periodic data refreshes
+-   **Quality documentation**: Document data collection methods and accuracy
+-   **Contact information**: Provide maintainer contact for data issues
 
 ## Advanced Considerations
 
 ### Handling Complex Geometries
 
 Some sidewalk centerlines may include:
-- **Multi-segment paths**: Keep as single LineString if continuous
-- **Branching sidewalks**: Split into separate features at intersections
-- **Curved sections**: Maintain vertex density for accurate representation
+
+-   **Multi-segment paths**: Keep as single LineString if continuous
+-   **Branching sidewalks**: Split into separate features at intersections
+-   **Curved sections**: Maintain vertex density for accurate representation
 
 ### Accessibility Attributes
 
@@ -229,7 +241,7 @@ Enhance OSW data with additional accessibility information:
 "properties": {
   "_id": "sidewalk_001",
   "highway": "footway",
-  "footway": "sidewalk", 
+  "footway": "sidewalk",
   "incline": "2%",
   "ext:condition": "good",
   "ext:cross_slope": 1.8,

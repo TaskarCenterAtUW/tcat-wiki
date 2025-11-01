@@ -2,6 +2,8 @@
 title: Track Recording
 ---
 
+<!-- @format -->
+
 # Track Recording
 
 This guide explains how to use mobile applications to record GPS tracks.

@@ -2,6 +2,8 @@
 title: OpenSidewalks
 ---
 
+<!-- @format -->
+
 # OpenSidewalks
 
 OpenSidewalks ([OSW](https://sidewalks.washington.edu/)) is an initiative led by the Taskar Center for Accessible Technology (TCAT) at the University of Washington (UW).

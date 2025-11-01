@@ -2,6 +2,8 @@
 title: Workspaces
 ---
 
+<!-- @format -->
+
 # Workspaces
 
 Workspaces Platform

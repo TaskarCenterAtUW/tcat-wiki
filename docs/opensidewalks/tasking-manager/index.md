@@ -2,6 +2,8 @@
 title: OpenSidewalks Tasking Manager
 ---
 
+<!-- @format -->
+
 # OpenSidewalks Tasking Manager
 
 The [OpenSidewalks Tasking Manager](https://tasks.sidewalks.washington.edu/explore) is a [Tasking Manager](https://wiki.openstreetmap.org/wiki/Tasking_Manager) instance for coordinating contributions to OSM following OSW guidelines and is open to all OSM users.

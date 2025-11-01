@@ -2,6 +2,8 @@
 title: About
 ---
 
+<!-- @format -->
+
 # About
 
 The TCAT Wiki is built using [Material for MkDocs](https://squidfunk.github.io/mkdocs-material/).
