@@ -57,8 +57,7 @@ Depending on the type of mobile device you use, follow the instructions below to
 
 1. Using Safari, visit: [https://testflight.apple.com/join/hpzSaUdQ](https://testflight.apple.com/join/hpzSaUdQ)
 
-![FIXME]()
-![FIXME]()
+![Safari Get TestFlight](../../../../../resources/images/aviv-scoutroute/ios/safari-get-testflight-highlight-view-in-app-store.png){ width="400" } ![Safari Open in TestFlight](../../../../../resources/images/aviv-scoutroute/ios/safari-view-asr-beta-highlight-view-in-testflight.png){ width="400" }
 
 1. Select the **"View in App Store"** button under the "Step 1" section
 
@@ -68,23 +67,21 @@ Depending on the type of mobile device you use, follow the instructions below to
 
 4. Return to Safari and select **"View in TestFlight"** under the "Step 2" section
 
-![TestFlight Install](../../../../../resources/images/aviv-scoutroute/ios/testflight-install.png){ width="400" } ![TestFlight Open](../../../../../resources/images/aviv-scoutroute/ios/testflight-open.png){ width="400" }
+![TestFlight Install](../../../../../resources/images/aviv-scoutroute/ios/testflight-before-install-highlight-install.png){ width="400" } ![TestFlight Open](../../../../../resources/images/aviv-scoutroute/ios/testflight-after-install-highlight-open.png){ width="400" }
 
 1. Select **"Install"**
 2. Select **"Open"**
 
-![TestFlight Continue](../../../../../resources/images/aviv-scoutroute/ios/testflight-continue.png){ width="400" } ![TestFlight Share Feedback](../../../../../resources/images/aviv-scoutroute/ios/testflight-share-feedback.png){ width="400" }
+![TestFlight From the Developer Continue](../../../../../resources/images/aviv-scoutroute/ios/testflight-from-the-developer-highlight-continue.png){ width="400" } ![TestFlight Share Feedback Continue](../../../../../resources/images/aviv-scoutroute/ios/testflight-share-feedback-highlight-continue.png){ width="400" }
 
 1. Select **"Continue"**
 2. Select **"Continue"**
 
 **Step 4:** Login to the AVIV ScoutRoute mobile application using your TDEI Account
 
-If prompted to select an **Environment**, select **"Production"**
+![AVIV ScoutRoute iOS Login](../../../../../resources/images/aviv-scoutroute/ios/login.png)
 
-![FIXME]()
-
-**Step 5:** Reach out to your project's point of contact and provide them with your name and Apple Account. They will add you to the appropriate Project Group and assign your role.
+**Step 5:** Reach out to your project's point of contact and provide them with your name and Apple Account email address. They will add you to the appropriate Project Group and assign your role.
 
 ### Android Users
 
@@ -100,7 +97,7 @@ If prompted to select an **Environment**, select **"Production"**
 
     _Password requirements: Minimum of 8 characters in length; requires at least one lower case letter, one upper case letter, one special character, and a number._
 
-![TDEI Portal login page, "Register Now" highlighted](../../../../../resources/images/tdei-portal/login-highlight-register-now.png){ width="300" } ![TDEI Portal register page](../../../../../resources/images/tdei-portal/register.png){ width="300" }
+![TDEI Portal login page, "Register Now" highlighted](../../../../../resources/images/tdei-portal/login-highlight-register-now.png){ width="400" } ![TDEI Portal register page](../../../../../resources/images/tdei-portal/register.png){ width="400" }
 
 **Step 3:** Install AVIV ScoutRoute\!
 
@@ -138,8 +135,6 @@ If prompted to select an **Environment**, select **"Production"**
     3. Follow any on-screen instructions and grant any necessary permissions
 
 **Step 4:** Login to the AVIV ScoutRoute mobile application using your TDEI Account
-
-If prompted to select an **Environment**, select **"Production"**
 
 ![FIXME]()
 
