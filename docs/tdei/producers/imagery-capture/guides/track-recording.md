@@ -1,6 +1,11 @@
 ---
 title: Track Recording
+tags:
+    - External
+    - User
 ---
+
+<!-- @format -->
 
 # Track Recording
 

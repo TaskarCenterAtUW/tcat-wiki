@@ -1,6 +1,11 @@
 ---
 title: Element Query Guide
+tags:
+    - External
+    - Developer
 ---
+
+<!-- @format -->
 
 # Element Query Guide
 
@@ -17,7 +22,7 @@ For example, to get all ways, simply enter the query: `ways`
 ## Cheatsheet for element filter syntax
 
 | Expression                   | [matches] returns `true` if element...                                                                                    |
-|:-----------------------------|:--------------------------------------------------------------------------------------------------------------------------|
+| :--------------------------- | :------------------------------------------------------------------------------------------------------------------------ |
 | `shop`                       | has a tag with key `shop`                                                                                                 |
 | `!shop`                      | doesn't have a tag with key `shop`                                                                                        |
 | `shop = car`                 | has a tag with key `shop` whose value is `car`                                                                            |
@@ -45,7 +50,7 @@ Note that regexes have to match the whole string, i.e. `~shop\|craft` does not m
 ## Equivalent expressions
 
 | Expression                  | Equivalent Expression                                    |
-|:----------------------------|:---------------------------------------------------------|
+| :-------------------------- | :------------------------------------------------------- |
 | `shop and shop = boat`      | `shop = boat`                                            |
 | `!shop or shop != boat`     | `shop != boat`                                           |
 | `shop = car or shop = boat` | `shop ~ car\|boat`                                       |
@@ -57,8 +62,8 @@ The queries can be combined with parenthesis and can also be used for matching w
 
 ## Example queries:
 
-- Get all sidewalks: `ways with (footway=sidewalk)`
+-   Get all sidewalks: `ways with (footway=sidewalk)`
 
-- Get all sidewalks without a surface tag: `ways with (footway=sidewalk and !surface)`
+-   Get all sidewalks without a surface tag: `ways with (footway=sidewalk and !surface)`
 
-- Get all kerbs without a tactile_paving tag: `nodes with (barrier=kerb and !tactile_paving)`
+-   Get all kerbs without a tactile_paving tag: `nodes with (barrier=kerb and !tactile_paving)`

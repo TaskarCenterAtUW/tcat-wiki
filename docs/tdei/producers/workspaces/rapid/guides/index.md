@@ -2,6 +2,8 @@
 title: Rapid Guides
 ---
 
+<!-- @format -->
+
 # Rapid Guides
 
 Guides for [Rapid](../index.md).
