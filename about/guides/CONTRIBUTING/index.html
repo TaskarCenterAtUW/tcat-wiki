@@ -20,7 +20,7 @@
       
       
       <link rel="icon" href="../../../resources/images/favicon/tcat/favicon.svg">
-      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.6.22">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.6.23">
     
     
       
@@ -666,11 +666,44 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
+  <a href="#images" class="md-nav__link">
+    <span class="md-ellipsis">
+      Images
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Images">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
   <a href="#screenshots" class="md-nav__link">
     <span class="md-ellipsis">
       Screenshots
     </span>
   </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#image-annotations" class="md-nav__link">
+    <span class="md-ellipsis">
+      Image Annotations
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#qr-codes" class="md-nav__link">
+    <span class="md-ellipsis">
+      QR Codes
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
   
 </li>
         
@@ -2859,11 +2892,44 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
+  <a href="#images" class="md-nav__link">
+    <span class="md-ellipsis">
+      Images
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Images">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
   <a href="#screenshots" class="md-nav__link">
     <span class="md-ellipsis">
       Screenshots
     </span>
   </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#image-annotations" class="md-nav__link">
+    <span class="md-ellipsis">
+      Image Annotations
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#qr-codes" class="md-nav__link">
+    <span class="md-ellipsis">
+      QR Codes
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
   
 </li>
         
@@ -2891,7 +2957,19 @@
       
       
       
+        <span class="md-tag">Developer</span>
+      
+    
+      
+      
+      
         <span class="md-tag">Guide</span>
+      
+    
+      
+      
+      
+        <span class="md-tag">Internal</span>
       
     
   </nav>
@@ -2926,9 +3004,15 @@
 <li>
 <p>Install <a href="https://code.visualstudio.com/">Visual Studio Code</a></p>
 <ol>
-<li>Install <a href="https://marketplace.visualstudio.com/items?itemName=redhat.vscode-yaml">YAML</a> plugin</li>
-<li>Install <a href="https://marketplace.visualstudio.com/items?itemName=yzhang.markdown-all-in-one">Markdown All in One</a> plugin</li>
-<li>Install <a href="https://marketplace.visualstudio.com/items?itemName=EditorConfig.EditorConfig">EditorConfig for VS Code</a></li>
+<li>
+<p>Install <a href="https://marketplace.visualstudio.com/items?itemName=redhat.vscode-yaml">YAML</a> plugin</p>
+</li>
+<li>
+<p>Install <a href="https://marketplace.visualstudio.com/items?itemName=yzhang.markdown-all-in-one">Markdown All in One</a> plugin</p>
+</li>
+<li>
+<p>Install <a href="https://marketplace.visualstudio.com/items?itemName=EditorConfig.EditorConfig">EditorConfig for VS Code</a></p>
+</li>
 </ol>
 </li>
 <li>
@@ -2991,7 +3075,19 @@
 </ol>
 <h2 id="editing-instructions">Editing Instructions</h2>
 <p>Refer to the documentation for <a href="https://squidfunk.github.io/mkdocs-material/">Material for MkDocs</a> and the <a href="https://www.mkdocs.org/user-guide/">MkDocs User Guide</a>.</p>
-<h3 id="screenshots">Screenshots</h3>
+<h3 id="images">Images</h3>
+<p>Where possible, follow these guidelines for images:</p>
+<ol>
+<li>
+<p>Format: 24-bit <code>.png</code></p>
+</li>
+<li>
+<p>Resizing: Scale images using <code>{ width="123" }</code>:</p>
+<p><code>![alt text](image.png){ width="300" }</code></p>
+</li>
+</ol>
+<p>Refer to <a href="https://squidfunk.github.io/mkdocs-material/reference/images/">Material for MkDocs: Images</a> and <a href="https://squidfunk.github.io/mkdocs-material/setup/extensions/python-markdown/#attribute-lists">Material for MkDocs: Attribute Lists</a> for more information.</p>
+<h4 id="screenshots">Screenshots</h4>
 <p>For creating screenshots with a consistent style, Firefox DevTools is to be used.</p>
 <ol>
 <li>
@@ -3038,13 +3134,73 @@
 <li>
 <p>Resulting screenshots will fit exactly within the 2px outside border present in the following screenshot templates:</p>
 <ol>
-<li><a href="../../../resources/images/template/screenshot-landscape.png">Screenshot (Landscape)</a></li>
-<li><a href="../../../resources/images/template/screenshot-portrait.png">Screenshot (Portrait)</a></li>
+<li>
+<p><a href="../../../resources/images/template/screenshot-landscape.png">Screenshot (Landscape)</a></p>
+</li>
+<li>
+<p><a href="../../../resources/images/template/screenshot-portrait.png">Screenshot (Portrait)</a></p>
+</li>
 </ol>
 </li>
 <li>
-<p>It is recommended to remove embedded metadata, such as with the use of <a href="https://exiftool.org/gui/">ExifToolGUI</a>.</p>
+<p>It is recommended to remove all embedded metadata, such as with the use of <a href="https://exiftool.org/gui/">ExifToolGUI</a>.</p>
 </li>
+</ol>
+<h4 id="image-annotations">Image Annotations</h4>
+<p>For creating image annotations with a consistent style, follow these guidelines.</p>
+<ol>
+<li>
+<p>Highlight box</p>
+<ol>
+<li>
+<p>Use: Indicating an area of focus in an image.</p>
+</li>
+<li>
+<p>Style</p>
+<ol>
+<li>
+<p>Padding: <code>2px</code> distance from highlighted selection</p>
+</li>
+<li>
+<p>Outline</p>
+<ol>
+<li>
+<p>Width: <code>1px</code></p>
+</li>
+<li>
+<p>Color: <code>#4B2E83</code> ("Husky "Purple")</p>
+</li>
+</ol>
+</li>
+<li>
+<p>Fill</p>
+<ol>
+<li>
+<p>Color: <code>#FFC700</code> ("Spirit Gold")</p>
+</li>
+<li>
+<p>Opacity: <code>0.25</code></p>
+</li>
+</ol>
+</li>
+</ol>
+</li>
+<li>
+<p>Example:</p>
+<p><img alt="alt text" loading="lazy" src="../../../resources/images/tdei-portal/login-h-forgot-password.png" /></p>
+</li>
+<li>
+<p>Naming convention: For images with highlights, append <code>-h-$highlightedFeature</code></p>
+<ol>
+<li>Example: <code>login.png</code> → <code>login-h-forgot-password.png</code></li>
+</ol>
+</li>
+</ol>
+</li>
+</ol>
+<h4 id="qr-codes">QR Codes</h4>
+<ol>
+<li>Create QR codes using <a href="https://github.com/nayuki/QR-Code-generator">Project Nayuki's QR Code generator library</a>.</li>
 </ol>
 
 
@@ -3068,7 +3224,7 @@
     <span class="md-icon" title="Last update">
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21 13.1c-.1 0-.3.1-.4.2l-1 1 2.1 2.1 1-1c.2-.2.2-.6 0-.8l-1.3-1.3c-.1-.1-.2-.2-.4-.2m-1.9 1.8-6.1 6V23h2.1l6.1-6.1zM12.5 7v5.2l4 2.4-1 1L11 13V7zM11 21.9c-5.1-.5-9-4.8-9-9.9C2 6.5 6.5 2 12 2c5.3 0 9.6 4.1 10 9.3-.3-.1-.6-.2-1-.2s-.7.1-1 .2C19.6 7.2 16.2 4 12 4c-4.4 0-8 3.6-8 8 0 4.1 3.1 7.5 7.1 7.9l-.1.2z"/></svg>
     </span>
-    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date" title="October 24, 2025 13:56:18 PDT">October 24, 2025</span>
+    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date" title="November 3, 2025 22:17:20 PST">November 3, 2025</span>
   </span>
 
     
