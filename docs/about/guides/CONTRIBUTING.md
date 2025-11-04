@@ -165,3 +165,7 @@ For creating image annotations with a consistent style, follow these guidelines.
     5. Naming convention: For images with highlights, append `-h-$highlightedFeature`
 
         1. Example: `login.png` → `login-h-forgot-password.png`
+
+#### QR Codes
+
+1. Create QR codes using [Project Nayuki's QR Code generator library](https://github.com/nayuki/QR-Code-generator).
