@@ -1,5 +1,8 @@
 ---
 title: OSW in OSM
+tags:
+    - External
+    - User
 ---
 
 <!-- @format -->

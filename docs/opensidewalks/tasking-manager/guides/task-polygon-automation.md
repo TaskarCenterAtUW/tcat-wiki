@@ -1,6 +1,11 @@
 ---
 title: Task Polygon Automation Guide
+tags:
+    - Internal
+    - Developer
 ---
+
+<!-- @format -->
 
 # Task Polygon Automation Guide
 
@@ -14,9 +19,9 @@ This guide outlines the step-by-step process for automating task polygon generat
 
 ## Prerequisites
 
-- `poetry shell` environment activated
-- `osmium` command-line tool installed
-- `osw task` command available
+-   `poetry shell` environment activated
+-   `osmium` command-line tool installed
+-   `osw task` command available
 
 ## Process Overview
 
@@ -25,6 +30,7 @@ This guide outlines the step-by-step process for automating task polygon generat
 **Action:** Create the `staging_directory` in `/projects/osw/opensidewalks_cli/`
 
 **Command:**
+
 ```bash
 mkdir staging_directory
 ```
@@ -34,6 +40,7 @@ mkdir staging_directory
 **Action:** Create a folder for each **state** within the staging directory.
 
 **Directory structure:**
+
 ```
 staging_directory/
 └── <state>/
@@ -44,6 +51,7 @@ staging_directory/
 **Action:** Create a subfolder for each **county** within each state folder.
 
 **Directory structure:**
+
 ```
 staging_directory/
 └── <state>/
@@ -55,6 +63,7 @@ staging_directory/
 **Action:** Create a subfolder for each **community** within each county folder.
 
 **Directory structure:**
+
 ```
 staging_directory/
 └── <state>/
@@ -67,6 +76,7 @@ staging_directory/
 **Action:** Create **working subfolders** (`data_sources`, `intermediate_data`, `output`) for each community.
 
 **Directory structure:**
+
 ```
 staging_directory/
 └── <state>/
@@ -82,6 +92,7 @@ staging_directory/
 **Action:** Obtain an **OSM PBF file** for each state and store it in the `/<state>/` folder.
 
 **File location:**
+
 ```
 /<state>/<state>-latest.osm.pbf
 ```
@@ -91,6 +102,7 @@ staging_directory/
 **Action:** Obtain the **GeoJSON data for the bbox** of each community target mapping area and store it in the corresponding `intermediate_data` subfolder.
 
 **File location:**
+
 ```
 /<state>/<county>/<community>/intermediate_data/<community>.geojson
 ```
@@ -100,11 +112,13 @@ staging_directory/
 **Action:** For each `<community>`, run `osmium extract` to trim the state `osm.pbf` file to the target mapping area.
 
 **Command:**
+
 ```bash
 osmium extract -p <path-to-geojson> <path-to-pbf> -o <path-to-new-pbf>
 ```
 
 **Example:**
+
 ```bash
 osmium extract -p ../<state>/<county>/<community>/intermediate_data/<community>.geojson ../<state>/<state>-latest.osm.pbf -o ../<state>/<county>/<community>/data_sources/<community>.osm.pbf
 ```
@@ -116,11 +130,13 @@ osmium extract -p ../<state>/<county>/<community>/intermediate_data/<community>.
 **Action:** For each `<community>`, run `osw task` to generate the task polygon files (`crossing_tasks.geojson` and `sidewalk_tasks.geojson`) corresponding to the target mapping area.
 
 **Command:**
+
 ```bash
 osw task <path-to-pbf> <path-to-geojson> <output-path>
 ```
 
 **Example:**
+
 ```bash
 osw task ../<state>/<county>/<community>/data_sources/<community>.osm.pbf ../<state>/<county>/<community>/intermediate_data/<community>.geojson .../<state>/<county>/<community>/output
 ```
@@ -130,6 +146,7 @@ osw task ../<state>/<county>/<community>/data_sources/<community>.osm.pbf ../<st
 **Action:** For each `<community>`, rename the `crossing_tasks.geojson` and `sidewalks_tasks.geojson` files in the `../<community>/output` directory to more easily identify them as they are uploaded into the Tasking Manager.
 
 **Rename pattern:**
+
 ```bash
 mv ../<community>/output/crossing_tasks.geojson ../<community>/output/<community>_crossing_tasks.geojson
 mv ../<community>/output/sidewalk_tasks.geojson ../<community>/output/<community>_sidewalk_tasks.geojson

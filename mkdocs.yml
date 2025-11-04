@@ -61,6 +61,10 @@ plugins:
   - social
   - tags:
       tags_allowed:
+        - Internal
+        - External
+        - Developer
+        - User
         - Guide
         - OSW 0.2
         - OSW 0.3

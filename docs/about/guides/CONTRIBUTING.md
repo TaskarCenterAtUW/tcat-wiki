@@ -1,5 +1,8 @@
 ---
 title: Contributing
+tags:
+    - Internal
+    - Developer
 ---
 
 <!-- @format -->
@@ -33,7 +36,9 @@ This section of the guide explains how to set up a Windows environment for contr
 1. Install [Visual Studio Code](https://code.visualstudio.com/)
 
     1. Install [YAML](https://marketplace.visualstudio.com/items?itemName=redhat.vscode-yaml) plugin
+
     2. Install [Markdown All in One](https://marketplace.visualstudio.com/items?itemName=yzhang.markdown-all-in-one) plugin
+
     3. Install [EditorConfig for VS Code](https://marketplace.visualstudio.com/items?itemName=EditorConfig.EditorConfig)
 
 2. Install mkdocs-material
@@ -82,7 +87,19 @@ This section of the guide explains how to set up a Windows environment for contr
 
 Refer to the documentation for [Material for MkDocs](https://squidfunk.github.io/mkdocs-material/) and the [MkDocs User Guide](https://www.mkdocs.org/user-guide/).
 
-### Screenshots
+### Images
+
+Where possible, follow these guidelines for images:
+
+1. Format: 24-bit `.png`
+
+2. Resizing: Scale images using `{ width="123" }`:
+
+    `![alt text](image.png){ width="300" }`
+
+Refer to [Material for MkDocs: Images](https://squidfunk.github.io/mkdocs-material/reference/images/) and [Material for MkDocs: Attribute Lists](https://squidfunk.github.io/mkdocs-material/setup/extensions/python-markdown/#attribute-lists) for more information.
+
+#### Screenshots
 
 For creating screenshots with a consistent style, Firefox DevTools is to be used.
 
@@ -114,7 +131,44 @@ For creating screenshots with a consistent style, Firefox DevTools is to be used
 
 4. Resulting screenshots will fit exactly within the 2px outside border present in the following screenshot templates:
 
-    1. [Screenshot (Landscape)](../../../resources/images/template/screenshot-landscape.png)
-    2. [Screenshot (Portrait)](../../../resources/images/template/screenshot-portrait.png)
+    1. [Screenshot (Landscape)](../../resources/images/template/screenshot-landscape.png)
 
-5. It is recommended to remove embedded metadata, such as with the use of [ExifToolGUI](https://exiftool.org/gui/).
+    2. [Screenshot (Portrait)](../../resources/images/template/screenshot-portrait.png)
+
+5. It is recommended to remove all embedded metadata, such as with the use of [ExifToolGUI](https://exiftool.org/gui/).
+
+#### Image Annotations
+
+For creating image annotations with a consistent style, follow these guidelines.
+
+1. Highlight box
+
+    2. Use: Indicating an area of focus in an image.
+
+    3. Style
+
+        1. Padding: `2px` distance from highlighted selection
+
+        2. Outline
+
+            1. Width: `1px`
+
+            2. Color: `#4B2E83` ("Husky "Purple")
+
+        3. Fill
+
+            1. Color: `#FFC700` ("Spirit Gold")
+
+            2. Opacity: `0.25`
+
+    4. Example:
+
+        ![alt text](../../resources/images/tdei-portal/login-h-forgot-password.png){ loading=lazy }
+
+    5. Naming convention: For images with highlights, append `-h-$highlightedFeature`
+
+        1. Example: `login.png` → `login-h-forgot-password.png`
+
+#### QR Codes
+
+1. Create QR codes using [Project Nayuki's QR Code generator library](https://github.com/nayuki/QR-Code-generator).

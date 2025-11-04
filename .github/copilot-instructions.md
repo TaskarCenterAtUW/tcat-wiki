@@ -76,6 +76,8 @@ tags:
 ---
 ```
 
+**Tags**: Tags, restricted to the allowed tags listed in `mkdocs.yml`, are used for categorizing pages. The intended audience is tagged across two axes: Internal-vs-External and Developer-vs-User. Note that "External" implies that it is suitable for "Internal" audience as well, and that "User" implies that it is suitable for "Developer" audience as well. These are explicitly _not_ access restrictions; external users can access all content.
+
 **Note**: The `"    - Guide"` tag does not need to be added to guides, as that tag is inherited from the `.meta.yml` file in that directory.
 
 **Exception**: `docs/index.md` has title commented out to prevent "TCAT Wiki - TCAT Wiki" duplication.
