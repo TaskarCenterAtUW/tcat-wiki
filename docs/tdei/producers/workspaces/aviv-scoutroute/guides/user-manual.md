@@ -12,16 +12,11 @@ _For a list of all guides on the TCAT Wiki, refer to the [Guides List](../../../
 
 ---
 
-Work in progress! Resolve "FIXME"s before merge.
-
----
-
 - [AVIV ScoutRoute User Manual](#aviv-scoutroute-user-manual)
   - [Introduction](#introduction)
   - [Installation](#installation)
     - [Apple iPhone Users](#apple-iphone-users)
     - [Android Users](#android-users)
-  - [Using AVIV ScoutRoute](#using-aviv-scoutroute)
   - [Next Steps](#next-steps)
   - [Additional Resources](#additional-resources)
 
@@ -53,9 +48,13 @@ Depending on the type of mobile device you use, follow the instructions below to
 
 ![TDEI Portal login page, "Register Now" highlighted](../../../../../resources/images/tdei-portal/login-h-register-now.png){ width="400" } ![TDEI Portal register page](../../../../../resources/images/tdei-portal/register.png){ width="400" }
 
-**Step 3:** Install AVIV ScoutRoute\!
+**Step 3:** Install AVIV ScoutRoute!
 
 1. Using Safari, visit: [https://testflight.apple.com/join/hpzSaUdQ](https://testflight.apple.com/join/hpzSaUdQ)
+
+Alternatively, scan the QR code below:
+
+![QR Code TestFlight AVIV ScoutRoute Invite](../../../../../resources/images/aviv-scoutroute/ios/qr-testflight-asr-invite.png){ width="200" }
 
 ![Safari Get TestFlight](../../../../../resources/images/aviv-scoutroute/ios/safari-get-testflight-h-view-in-app-store.png){ width="400" } ![Safari Open in TestFlight](../../../../../resources/images/aviv-scoutroute/ios/safari-view-asr-beta-h-view-in-testflight.png){ width="400" }
 
@@ -79,7 +78,7 @@ Depending on the type of mobile device you use, follow the instructions below to
 
 **Step 4:** Login to the AVIV ScoutRoute mobile application using your TDEI Account
 
-![AVIV ScoutRoute iOS Login](../../../../../resources/images/aviv-scoutroute/ios/login.png)
+![AVIV ScoutRoute iOS Login](../../../../../resources/images/aviv-scoutroute/ios/login.png){ width="400" }
 
 **Step 5:** Reach out to your project's point of contact and provide them with your name and Apple Account email address. They will add you to the appropriate Project Group and assign your role.
 
@@ -99,14 +98,18 @@ Depending on the type of mobile device you use, follow the instructions below to
 
 ![TDEI Portal login page, "Register Now" highlighted](../../../../../resources/images/tdei-portal/login-h-register-now.png){ width="400" } ![TDEI Portal register page](../../../../../resources/images/tdei-portal/register.png){ width="400" }
 
-**Step 3:** Install AVIV ScoutRoute\!
+**Step 3:** Install AVIV ScoutRoute!
 
 1. Accept the Tester Invitation
 
     1. You'll receive an email invite or direct link from either your project's point of contact or the developer team
 
-        1. External (non-TCAT) users should use the following invite link:  
+        1. External (non-TCAT) users should use the following invite link:
            [https://appdistribution.firebase.dev/i/63d3d906e42fb64d](https://appdistribution.firebase.dev/i/63d3d906e42fb64d)
+
+            Alternatively, scan the QR code below:
+
+            ![QR Code Firebase AVIV ScoutRoute Invite](../../../../../resources/images/aviv-scoutroute/android/qr-firebase-asr-invite.png){ width="200" }
 
     2. On your mobile device, click on the link and it will open in your default browser
 
@@ -114,9 +117,11 @@ Depending on the type of mobile device you use, follow the instructions below to
 
     4. Select "Accept Invitation" to join the tester group
 
+![Firefox Firebase AVIV ScoutRoute Invite Sign Up](../../../../../resources/images/aviv-scoutroute/android/firefox-firebase-asr-invite-sign-up.png){ width="400" } ![Firefox Firebase AVIV ScoutRoute Invite Success](../../../../../resources/images/aviv-scoutroute/android/firefox-firebase-asr-invite-success.png){ width="400" }
+
 2. Install the Firebase App Tester App
 
-    1. Download the Firebase App Tester application from the in-browser prompt that appears once the invite is accepted, or navigate to [appdistribution.firebase.google.com](http://appdistribution.firebase.google.com)
+    1. Download the Firebase App Tester application from the email that is sent once the invite is accepted, or navigate to [appdistribution.firebase.google.com](http://appdistribution.firebase.google.com)
 
     2. Install Firebase App Tester
 
@@ -134,17 +139,17 @@ Depending on the type of mobile device you use, follow the instructions below to
 
     3. Follow any on-screen instructions and grant any necessary permissions
 
+![AVIV ScoutRoute Android Permissions Location](../../../../../resources/images/aviv-scoutroute/android/permission-location.png){ width="400" } ![AVIV ScoutRoute Android Permissions Notifications](../../../../../resources/images/aviv-scoutroute/android/permission-notifications.png){ width="400" }
+
 **Step 4:** Login to the AVIV ScoutRoute mobile application using your TDEI Account
 
-![FIXME]()
+![AVIV ScoutRoute Android Login](../../../../../resources/images/aviv-scoutroute/android/login.png){ width="400" }
 
 **Step 5:** Reach out to your project's point of contact and provide them with your name and email address. They will add you to the appropriate Project Group and assign your role.
 
-## Using AVIV ScoutRoute
-
 ## Next Steps
 
-You should now be ready to complete quests in AVIV ScoutRoute\! Please reach out to the UW team if you have questions or concerns that have not been answered in this document.
+You should now be ready to complete quests in AVIV ScoutRoute! Please reach out to the UW team if you have questions or concerns that have not been answered in this document.
 
 ## Additional Resources
 
