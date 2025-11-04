@@ -1,5 +1,8 @@
 ---
 title: AVIV ScoutRoute User Manual
+tags:
+    - External
+    - User
 ---
 
 <!-- @format -->

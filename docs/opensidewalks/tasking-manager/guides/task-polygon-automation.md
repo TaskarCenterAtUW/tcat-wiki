@@ -1,5 +1,8 @@
 ---
 title: Task Polygon Automation Guide
+tags:
+    - Internal
+    - Developer
 ---
 
 <!-- @format -->

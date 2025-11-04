@@ -1,5 +1,8 @@
 ---
 title: Element Type Icon Guide
+tags:
+    - External
+    - Developer
 ---
 
 <!-- @format -->

@@ -1,5 +1,8 @@
 ---
 title: Workspaces Export Guide
+tags:
+    - Internal
+    - Developer
 ---
 
 <!-- @format -->

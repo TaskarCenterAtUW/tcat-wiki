@@ -1,5 +1,8 @@
 ---
 title: Workspaces JOSM Settings Guide
+tags:
+    - Internal
+    - Developer
 ---
 
 <!-- @format -->

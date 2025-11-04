@@ -1,5 +1,8 @@
 ---
 title: Element Query Guide
+tags:
+    - External
+    - Developer
 ---
 
 <!-- @format -->

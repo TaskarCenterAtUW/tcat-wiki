@@ -1,5 +1,8 @@
 ---
 title: Contributing
+tags:
+    - Internal
+    - Developer
 ---
 
 <!-- @format -->
