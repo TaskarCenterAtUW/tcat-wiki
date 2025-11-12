@@ -17,3 +17,8 @@ This guide explains how to format the element query selector for use in AVIV Sco
 ### [Element Type Icon Guide](element-type-icon.md)
 
 This guide explains how to assign the correct value for the `element_type_icon` key in the Long Form Quest Definition JSON file used by AVIV ScoutRoute.
+
+### [Long Form Quests Guide](quests-guide.md)
+
+This guide explains how to create a Workspace from the TDEI Portal, configure it for AVIV ScoutRoute, and define Long Form Quests for field data collection.  
+It also includes examples of the Long Form JSON structure, Custom Imagery configuration, and references for schema setup.
