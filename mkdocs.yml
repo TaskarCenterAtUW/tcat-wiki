@@ -58,7 +58,9 @@ plugins:
   - meta
   - privacy
   - search
-  - social
+  - social:
+      cards_layout_options:
+        logo: docs\resources\images\logo\tcat\logo-social.png
   - tags:
       tags_allowed:
         - Internal
@@ -68,6 +70,7 @@ plugins:
         - Guide
         - OSW 0.2
         - OSW 0.3
+        - OSW 0.4
   - git-revision-date-localized:
       enable_creation_date: true
       timezone: America/Los_Angeles
