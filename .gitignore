@@ -1,3 +1,4 @@
+.venv/
 local-storage/
 tcat-wiki.code-workspace
 *.wip

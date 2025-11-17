@@ -11,7 +11,7 @@
 ### Single-Source Documentation Site
 
 -   **Framework**: Material for MkDocs (`mkdocs.yml` orchestrates everything)
--   **Content**: Markdown files in `/docs` structured by topic (opensidewalks, tdei, about, guides-list)
+-   **Content**: Markdown files in `/docs` structured by topic
 -   **Navigation**: Auto-generated from directory structure via PowerShell scripts
 -   **Custom Extensions**: YAML frontmatter titles, abbreviations auto-linking, custom CSS theming
 
@@ -37,18 +37,31 @@ docs/
 
 ### Build & Preview Local Site
 
+This project uses a Python virtual environment (`.venv/`) for dependency isolation.
+
 ```powershell
-pip install mkdocs-material mkdocs-git-revision-date-localized-plugin mkdocs-git-committers-plugin-2
-pip install "mkdocs-material[imaging]"  # For image optimization
-mkdocs serve                            # http://localhost:8000
+# First time only: create and activate virtual environment
+python -m venv .venv
+.\.venv\Scripts\Activate.ps1
+
+# Install dependencies from requirements.txt
+pip install -r requirements.txt
+
+# Run the local development server
+mkdocs serve  # http://localhost:8000
+
+# Deactivate when done
+deactivate
 ```
+
+**Note**: The `.venv/` directory is excluded from git and should not be committed.
 
 ### Regenerate Navigation After Adding Files
 
 ```powershell
 cd util
 .\generate-guides-lists.ps1        # Auto-generates index.md in guides/ directories
-.\generate-nav.ps1 -updateMkdocs   # Updates mkdocs.yml nav section directly
+.\generate-nav.ps1                 # Updates mkdocs.yml nav section directly
 ```
 
 **Why**: Navigation structure and guide indices aren't hand-maintained. These scripts parse `/docs` structure, extract frontmatter titles, and generate the Markdown files accordingly. Generation of the nav section of `mkdocs.yml` is done afterwards to ensure all files are included.
@@ -119,6 +132,18 @@ tags:
 3. **Links**: Reference guides-list and use relative paths
 4. **Regenerate Navigation**: Run `.\generate-nav.ps1 -updateMkdocs` from `util/`
 5. **Verify Build**: Run `mkdocs serve` locally before committing
+
+## Assistant Role
+
+**For Guide Content**: The human editor is responsible for writing the substantive content of guides. The AI assistant's role is to:
+
+-   Help with **formatting and structure** (headings, lists, code blocks, links)
+-   **Review and suggest improvements** to clarity, tone, and organization
+-   **Check logic and consistency** across the documentation
+-   **Ensure compliance** with project conventions (frontmatter, tags, abbreviations, etc.)
+-   **Proofread** for grammar and spelling
+
+**The assistant should NOT write the core guide content itself!** Guides must reflect the knowledge and perspective of subject matter experts and domain authors.
 
 ## Key Files for Reference
 
