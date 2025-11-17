@@ -79,8 +79,7 @@ This guide explains how to assign the correct value for the `element_type_icon` 
 
 ### [Long Form Quests Guide](../tdei/producers/workspaces/aviv-scoutroute/long-form/guides/quests-guide.md)
 
-This guide explains how to create a Workspace from the TDEI Portal, configure it for AVIV ScoutRoute, and define Long Form Quests for field data collection.  
-It also includes examples of the Long Form JSON structure, Custom Imagery configuration, and references for schema setup.
+This guide explains how to create a Workspace from the TDEI Portal, configure it for AVIV ScoutRoute, and define Long Form Quests for field data collection.
 
 ## [JOSM Guides](../tdei/producers/workspaces/josm/guides/index.md)
 
