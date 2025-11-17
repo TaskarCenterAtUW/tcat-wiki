@@ -17,9 +17,9 @@ _For a list of all guides on the TCAT Wiki, refer to the [Guides List](index.md)
 
 ---
 
-## Full Installation and Setup (Windows 10/11)
+## Getting Started (Windows 10/11)
 
-This section of the guide explains how to set up a Windows environment for contributing to the TCAT Wiki.
+This section of the guide explains how to set up a Windows environment for contributing to the TCAT Wiki for the first time.
 
 ### Legend
 
@@ -31,57 +31,74 @@ This section of the guide explains how to set up a Windows environment for contr
 
     [`someCommand --arguments \<path>`]
 
-### Prerequisites
+### Installation and Setup
 
 1. Install [Visual Studio Code](https://code.visualstudio.com/)
 
-    1. Install [YAML](https://marketplace.visualstudio.com/items?itemName=redhat.vscode-yaml) plugin
+    1. Install VS Code Extensions
 
-    2. Install [Markdown All in One](https://marketplace.visualstudio.com/items?itemName=yzhang.markdown-all-in-one) plugin
+        1. [EditorConfig for VS Code](https://marketplace.visualstudio.com/items?itemName=EditorConfig.EditorConfig)
 
-    3. Install [EditorConfig for VS Code](https://marketplace.visualstudio.com/items?itemName=EditorConfig.EditorConfig)
+        2. [Prettier](https://marketplace.visualstudio.com/items?itemName=esbenp.prettier-vscode)
 
-2. Install mkdocs-material
+        3. [Markdown All in One](https://marketplace.visualstudio.com/items?itemName=yzhang.markdown-all-in-one)
 
-    1. In Powershell terminal:
+        4. [YAML](https://marketplace.visualstudio.com/items?itemName=redhat.vscode-yaml)
 
-        [`pip install mkdocs-material`]
+2. Clone the repository
 
-3. Install plugins
+    ```powershell
+    git clone https://github.com/TaskarCenterAtUW/tcat-wiki
+    cd tcat-wiki
+    ```
 
-    1. In PowerShell terminal:
+3. Install [Python](https://www.python.org/downloads/)
 
-        [`pip install mkdocs-git-revision-date-localized-plugin`]
+4. Set up Python virtual environment
 
-    2. In PowerShell terminal:
+    1. Create the virtual environment
 
-        [`pip install mkdocs-git-committers-plugin-2`]
+        ```powershell
+        python -m venv .venv
+        ```
 
-4. Install image processing dependencies
+    2. Activate the virtual environment
 
-    1. In Powershell terminal:
+        ```powershell
+        .\.venv\Scripts\Activate.ps1
+        ```
 
-        [`pip install "mkdocs-material[imaging]"`]
+    3. Install dependencies
 
-    2. Install [MSYS2](https://www.msys2.org/)
+        ```powershell
+        pip install -r requirements.txt
+        ```
+
+5. (Optional) Install image processing dependencies for image optimization
+
+    Only needed if you plan to optimize or process images in the documentation.
+
+    1. Install [MSYS2](https://www.msys2.org/)
 
         1. In UCRT64 terminal:
 
             1. Install cairo:
 
-                [`pacman -S mingw-w64-ucrt-x86_64-cairo`]
+                ```powershell
+                pacman -S mingw-w64-ucrt-x86_64-cairo
+                ```
 
             2. Install pngquant:
 
-                [`pacman -S mingw-w64-ucrt-x86_64-pngquant`]
+                ```powershell
+                pacman -S mingw-w64-ucrt-x86_64-pngquant
+                ```
 
         2. Add to PATH:
 
             `C:\msys64\ucrt64\bin`
 
-### Setup
-
-1. Using VS Code, clone `https://github.com/TaskarCenterAtUW/tcat-wiki`
+            (Restart your terminal or system for PATH changes to take effect)
 
 ## Editing Instructions
 
@@ -95,7 +112,9 @@ Where possible, follow these guidelines for images:
 
 2. Resizing: Scale images using `{ width="123" }`:
 
-    `![alt text](image.png){ width="300" }`
+    ```markdown
+    ![alt text](image.png){ width="300" }
+    ```
 
 Refer to [Material for MkDocs: Images](https://squidfunk.github.io/mkdocs-material/reference/images/) and [Material for MkDocs: Attribute Lists](https://squidfunk.github.io/mkdocs-material/setup/extensions/python-markdown/#attribute-lists) for more information.
 
