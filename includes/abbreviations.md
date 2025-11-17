@@ -9,7 +9,7 @@
 *[ARNOLD]: All Road Network of Linear Referenced Data
 *[ASR]: AVIV ScoutRoute
 *[ATTRI]: Accessible Transportation Technologies Research Initiative
-*[AVIV]: Access. Validation. Improvement. Verification.
+*[AVIV]: Accessibility Verification, Improved Validation.
 *[AVIV SR]: AVIV ScoutRoute
 *[BRT]: Bus Rapid Transit
 *[BTS]: Bureau of Transportation Statistics
