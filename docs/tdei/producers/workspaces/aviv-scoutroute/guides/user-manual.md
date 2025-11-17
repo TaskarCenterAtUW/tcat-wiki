@@ -20,6 +20,20 @@ _For a list of all guides on the TCAT Wiki, refer to the [Guides List](../../../
   - [Installation](#installation)
     - [Apple iPhone Users](#apple-iphone-users)
     - [Android Users](#android-users)
+  - [Using AVIV ScoutRoute](#using-aviv-scoutroute)
+    - [Background and Basic App Assumptions](#background-and-basic-app-assumptions)
+    - [Viewing and Answering Quests](#viewing-and-answering-quests)
+    - [Complete a Quest in the App](#complete-a-quest-in-the-app)
+    - [Quest Types and How to Answer Them](#quest-types-and-how-to-answer-them)
+  - [App Settings \& Feature Controls](#app-settings--feature-controls)
+    - [Settings Menu](#settings-menu)
+      - [User Profile](#user-profile)
+      - [Manage Quests](#manage-quests)
+      - [Download Data](#download-data)
+      - [Switch Workspace](#switch-workspace)
+    - [Hidden Elements](#hidden-elements)
+    - [Imagery Layer Control](#imagery-layer-control)
+    - [Undo Changes](#undo-changes)
   - [Next Steps](#next-steps)
   - [Additional Resources](#additional-resources)
 
@@ -149,6 +163,164 @@ Alternatively, scan the QR code below:
 ![AVIV ScoutRoute Android Login](../../../../../resources/images/aviv-scoutroute/android/login.png){ width="400" }
 
 **Step 5:** Reach out to your project's point of contact and provide them with your name and email address. They will add you to the appropriate Project Group and assign your role.
+
+## Using AVIV ScoutRoute
+### Background and Basic App Assumptions
+
+| Description | Screenshot |
+| :----------- | :----------: |
+| The app is primarily designed for use in a typical urban setting. It doesn't directly assume as structured a block setting as shown in the picture, but there is a vocabulary used for the main components:<br><br> • **ROAD INTERSECTIONS** are the areas where car roads intersect and **CROSSINGS** provide pedestrians the affordance to get across a car path.<br><br> • **CROSSINGS** are the designated pedestrian paths between **CURBs**. CROSSINGS are spaces shared with cars on the road.<br><br> • Between intersections are **BLOCKs**, where a road has one or two **SIDEWALKs** (defined as sidepaths to the road intended for pedestrians).<br><br> • Consequently, the app does have some embedded assumptions that are made about sidewalks being easily identifiable along a BLOCK between two intersections. Some of the questions you'll be asked in the survey about the SIDEWALKS assume you can easily walk the length of the sidewalk and count elements like light poles, driveways, and potholes. | ![App Usage](../../../../../resources/images/aviv-scoutroute/user-manual/app-usage-1.jpg){ width="600" } |
+| Icons on the screen will show where there are opportunities to fill in surveys or quests. There are three types of quests: **Sidewalk**, **Half-Crossing**, and **Curb**.<br><br>In the image of the intersection, you can see three different icon types. Intersections are the most contentious environments for pedestrians. Most of our questions and surveys will focus on the crossings and curb areas. Here we define and provide images to explain what we mean by some of the terms. | ![Quest Icons](../../../../../resources/images/aviv-scoutroute/user-manual/icons-1.png){ width="600"} |
+| The **Sidewalk quest icon** depicts a path separating two areas filled with different colors — grey and blue. In the image, it is circled in bright green. The **Sidewalk quest survey** covers the entire stretch of the pedestrian sidepath along the road, from one intersection to the other.<br><br>The **Half-crossing quest icon** shows a white pedestrian on a blue background (circled in light blue). The **Half-Crossing quest** pertains to the part of the crossing that intersects with one direction of traffic. When asked about signalization, provide the answer relevant to the direction of traffic at that half-crossing.<br><br>The **Curb quest icon** displays a white wheelchair outline on a blue background (circled in pink). The **Curb quest survey** pertains to the curb point along the sidewalk. When we use the term *corner*, we mean the pedestrian area where two sidewalks intersect (shown filled in white). | ![Quest Examples](../../../../../resources/images/aviv-scoutroute/user-manual/sidewalk-icon.png){ width="800" height= "500"} |
+| Transportation planners use many types of remedies to improve safety and access for pedestrians.<br><br>Two such improvements are:<br><br> • **Pedestrian refuge islands** — designated pedestrian spaces dividing a crossing, allowing pedestrians to stand safely mid-street.<br> • **Curb extensions (curb bulbs)** — areas where the curb extends into the street, shortening crossings, calming traffic, and creating more pedestrian space.<br><br>These features make pedestrians more visible and crossings safer. | ![Refuge Island](../../../../../resources/images/aviv-scoutroute/user-manual/pedestrian-island.jpg){ width="600" } ![Curb Extension](../../../../../resources/images/aviv-scoutroute/user-manual/curb-extension.jpg){ width="600" } |
+
+### Viewing and Answering Quests
+| Step | Screenshot |
+| :---- | :----: |
+| **Open the AVIV ScoutRoute app** on your mobile device. | ![Open App](../../../../../resources/images/aviv-scoutroute/user-manual/open-app.png){ width="600"} |
+| On the **home screen**, select the workspace you would like to work in.<br>If you are unsure which workspace to choose, please reach out to the UW team. | ![Select Workspace](../../../../../resources/images/aviv-scoutroute/user-manual/select-workspace.png){ width="600"} |
+| The app will now display **available quests** in the area around you.<br>A quest in AVIV ScoutRoute is a small piece of information to gather about the built environment. | ![View Quests](../../../../../resources/images/aviv-scoutroute/user-manual/view-quests.png){ width="600" } |
+| Each quest type is represented by a **circular icon**.<br>You can explore available quests by tapping on the icons to bring up details of what you need to find.<br>Quests can require different types of information, like entering a number, choosing from a list of options, or taking a measurement.<br>Tapping on the “X” icon in the upper right will close this quest. | ![Quest Details](../../../../../resources/images/aviv-scoutroute/user-manual/quest-details.png){ width="600" } |
+| To keep the background map easy to see, **quest icons stack up**.<br>To see every available quest, make sure you **zoom in**! | ![Zoom In](../../../../../resources/images/aviv-scoutroute/user-manual/zoom-in.png){ width="600" } |
+
+### Complete a Quest in the App
+
+| Step | Screenshot |
+| :---- | :----: |
+| To complete a quest, first **tap on the icon** of the quest you want to do. <br>Provide the requested information by entering it or making a selection. | ![Select Quest](../../../../../resources/images/aviv-scoutroute/user-manual/select-quest.png){ width="600"} |
+| Once you’ve **double-checked** the data you entered, tap the **“Submit”** button to send the information. | ![Submit Quest](../../../../../resources/images/aviv-scoutroute/user-manual/submit-quest.png){ width="600" } |
+
+### Quest Types and How to Answer Them 
+
+While completing quests in the AVIV ScoutRoute app, you will encounter different types of questions depending on what kind of information needs to be collected.  
+Each question type requires a different form of input — such as choosing an option, selecting multiple options, entering a number, or typing free-form text.
+
+The examples below show how to identify and respond to each quest type.
+
+| Quest Type | Screenshot |
+| :---- | :----: |
+| **1. Exclusive Choice (Single Select)** <br><br>• Choose only one answer that best represents your observation.<br>• Tap an image or button to select — it will be highlighted with a **pink border**.<br>• Tap again to change your selection.<br><br>**Example:** “What is this sidewalk’s surface type?” | ![Single Select](../../../../../resources/images/aviv-scoutroute/user-manual/single-select.png){width="600"} |
+| **2. Numeric Entry** <br><br>• Enter a numeric value using the on-screen keypad.<br>• Follow the unit specified in the question (e.g., inches, feet).<br><br>**Example:** “How wide is this sidewalk, in inches?” | ![Numeric Entry](../../../../../resources/images/aviv-scoutroute/user-manual/numeric-entry.png){ width="600" } |
+| **3. Multi-Select Choice** <br><br>• Select one or more applicable options for the same question.<br>• Each selected option will be outlined in **pink**.<br>• Tap again to deselect if needed.<br><br>**Example:** “What types of obstructions are present along this sidewalk?” | ![Multi Select](../../../../../resources/images/aviv-scoutroute/user-manual/multi-select.png){ width="600" } |
+| **4. Free Form Text** <br><br>• Some questions require a short description explaining your choice.<br>• Maximum character limit: **250 characters**.<br><br>**Example:** After selecting “Other” for surface type, describe what the material is (e.g., “interlocking tiles”, “rubber mat”, etc.). | ![Free Form Text](../../../../../resources/images/aviv-scoutroute/user-manual/free-form.png){ width="600" } |
+| **5. Group Quest Selection** <br><br>• Select one or more applicable options.<br>• Each selected option will change to a **purple checkmark**.<br>• Tap “Answer Quests” to apply the same responses to all selected segments.<br>• Tap again to deselect if needed.<br><br>**Example:** “What types of obstructions are present along this sidewalk?” | ![Group Quest](../../../../../resources/images/aviv-scoutroute/user-manual/group-quest.png){ width="600" } |
+
+Once all required questions are answered, tap **Submit**.  
+Your responses are saved, and that quest will no longer be shown on the map (it disappears from the available quests list).
+
+## App Settings & Feature Controls
+
+This section explains all the in-app buttons, settings, and user options available from the workspace view.  
+Each subsection below includes screenshots for clarity.
+
+---
+
+### Settings Menu
+
+![Settings Menu](../../../../../resources/images/aviv-scoutroute/user-manual/settings-menu.png){ width="400" }
+
+Tap the **Settings (gear icon)** in the top bar to open the workspace menu.
+
+This menu includes the following options:
+
+| Option | Description |
+| :---- | :---- |
+| **User Profile** | Displays the logged-in user’s details, including name, email, and login preferences. |
+| **Manage Quests** | Lets users choose which map features (e.g., Sidewalks, Crossings, Curbs) to survey and manage visibility of hidden elements. |
+| **Download Data** | Downloads map data for the visible area in the workspace. |
+| **Switch Workspace** | Returns to the list of available workspaces. |
+
+---
+
+#### User Profile
+
+| | |
+| :---- | :----: |
+| ![User Profile 1](../../../../../resources/images/aviv-scoutroute/user-manual/user-profile-1.png){ width="600" } | ![User Profile 2](../../../../../resources/images/aviv-scoutroute/user-manual/user-profile-2.png){ width="600" } |
+
+**Displays:**
+- User Name & Email  
+- Login Preferences (e.g., Face ID toggle)  
+- Logout Button  
+
+This section allows you to manage authentication or sign out from the app.
+
+---
+
+#### Manage Quests
+
+|  |  |
+| :---- | :----: |
+| ![Manage Quests 1](../../../../../resources/images/aviv-scoutroute/user-manual/manage-quests-1.png){ width="600" } | ![Manage Quests 2](../../../../../resources/images/aviv-scoutroute/user-manual/manage-quests-2.png){ width="600" } |
+
+Allows users to select which types of map features they want to survey.  
+Available feature types include:
+- **Sidewalks**  
+- **Crossings**  
+- **Kerbs**
+
+You can toggle these features on or off to control their visibility on the map.
+
+---
+
+#### Download Data
+
+| |  |
+| :---- | :----: |
+| ![Download Data 1](../../../../../resources/images/aviv-scoutroute/user-manual/download-data-1.png){ width="600" } | ![Download Data 2](../../../../../resources/images/aviv-scoutroute/user-manual/download-data-2.png){ width="600" } |
+
+Downloads all visible map features (such as sidewalks, crossings, and kerbs) within the highlighted area shown on the screen.  
+The shaded boundary indicates the **exact region** of data that will be downloaded.
+
+#### Switch Workspace 
+
+| | |
+| :---- | :----: |
+| ![Switch Workspace 1](../../../../../resources/images/aviv-scoutroute/user-manual/switch-workspace.png){ width="600" } | ![Switch Workspace 2](../../../../../resources/images/aviv-scoutroute/user-manual/select-workspace.png){ width="600" } |
+
+- Opens the list of all available **Workspaces** linked to your account.  
+- Allows you to quickly switch between different projects or datasets without logging out.  
+- Useful when working across multiple areas or dataset versions — for example, moving from *Kondapur Dataset* to *Snohomish City Dataset*.
+
+---
+
+### Hidden Elements
+
+|  |  |
+| :---- | :----: |
+| ![Hidden Elements 1](../../../../../resources/images/aviv-scoutroute/user-manual/hide-elements-1.png){ width="600" } | ![Hidden Elements 2](../../../../../resources/images/aviv-scoutroute/user-manual/hide-elements-2.png){ width="600" } |
+
+To temporarily remove a feature from the map, tap **“Hide this”** from the element details view.
+
+The **Hidden Elements** section lists all map elements hidden manually.  
+Users can:
+- Unhide individual elements, or  
+- Tap **“Unhide All”** to restore everything at once.
+
+---
+
+### Imagery Layer Control
+
+![Imagery Layers](../../../../../resources/images/aviv-scoutroute/user-manual/imagery-layer.png){ width="400" }
+
+Tap the **Layers** icon to view and select from available **Custom Imagery** sources.  
+These can include:
+- Satellite imagery  
+- Street maps  
+- Basemap alternatives configured from the workspace settings.
+
+---
+
+### Undo Changes
+
+| | |  |
+| :---- | :----: | :---- |
+| ![Undo Changes 1](../../../../../resources/images/aviv-scoutroute/user-manual/undo-changes-1.png){ width="600" } | ![Undo Changes 2](../../../../../resources/images/aviv-scoutroute/user-manual/undo-changes-2.png){ width="600" } | ![Undo Changes 3](../../../../../resources/images/aviv-scoutroute/user-manual/undo-changes-3.png){ width="600" } |
+
+When the **Undo** button is tapped, it opens a panel listing all edits made by the user.
+
+Each entry shows the **element ID** and modified keys.  
+Users can **tap to review changes** and select **Revert** to undo specific edits.
 
 ## Next Steps
 
