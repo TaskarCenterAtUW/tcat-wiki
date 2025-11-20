@@ -170,7 +170,10 @@ nav:
                           - tdei/producers/workspaces/aviv-scoutroute/long-form/guides/index.md
                           - Element Query Guide: tdei/producers/workspaces/aviv-scoutroute/long-form/guides/element-query.md
                           - Element Type Icon Guide: tdei/producers/workspaces/aviv-scoutroute/long-form/guides/element-type-icon.md
-                          - Long Form Quests Guide: tdei/producers/workspaces/aviv-scoutroute/long-form/guides/quests-guide.md
+                          - Long Form Quests – Overview: tdei/producers/workspaces/aviv-scoutroute/long-form/guides/long-form-overview.md
+                          - Creating a Workspace: tdei/producers/workspaces/aviv-scoutroute/long-form/guides/creating-workspace.md
+                          - Adding Long Form Quests: tdei/producers/workspaces/aviv-scoutroute/long-form/guides/adding-longform-quests.md
+                          - Configuring Custom Imagery: tdei/producers/workspaces/aviv-scoutroute/long-form/guides/configuring-custom-imagery.md
               - Guides:
                   - tdei/producers/workspaces/guides/index.md
                   - Workspaces Export Guide: tdei/producers/workspaces/guides/workspaces-export.md

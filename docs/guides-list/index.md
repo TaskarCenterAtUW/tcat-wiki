@@ -77,9 +77,22 @@ This guide explains how to format the element query selector for use in AVIV Sco
 
 This guide explains how to assign the correct value for the `element_type_icon` key in the Long Form Quest Definition JSON file used by AVIV ScoutRoute.
 
-### [Long Form Quests Guide](../tdei/producers/workspaces/aviv-scoutroute/long-form/guides/quests-guide.md)
+### [Long Form Quests – Overview](../tdei/producers/workspaces/aviv-scoutroute/long-form/guides/long-form-overview.md)
 
-This guide explains how to create a Workspace from the TDEI Portal, configure it for AVIV ScoutRoute, and define Long Form Quests for field data collection.
+A high-level overview of Long Form Quests and links to the related setup guides.
+
+### [Create a Workspace in TDEI Portal](../tdei/producers/workspaces/aviv-scoutroute/long-form/guides/creating-workspace.md)
+
+This guide explains how to create a Workspace from the TDEI Portal and verify it in Workspaces.
+
+### [Add Long Form Quest Definitions to a Workspace](../tdei/producers/workspaces/aviv-scoutroute/long-form/guides/adding-longform-quests.md)
+
+This guide explains how to attach Long Form Quest Definition JSON (v3.0.0) to a Workspace, either inline or via external URL.
+
+### [Configure Custom Imagery](../tdei/producers/workspaces/aviv-scoutroute/long-form/guides/configuring-custom-imagery.md)
+
+This guide explains how to configure Custom Imagery sources (e.g., satellite layers) for use in AVIV ScoutRoute.
+
 
 ## [JOSM Guides](../tdei/producers/workspaces/josm/guides/index.md)
 
