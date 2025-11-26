@@ -139,7 +139,7 @@ nav:
           - opensidewalks/schema/index.md
           - Core Edges in OSW: opensidewalks/schema/core-edges-in-osw.md
           - Custom Points in OSW: opensidewalks/schema/custom-points-in-osw.md
-          - OSW in OSM: opensidewalks/schema/osw-in-osm.md
+          - OpenSidewalks in OpenStreetMap: opensidewalks/schema/osw-in-osm.md
       - Tasking Manager:
           - opensidewalks/tasking-manager/index.md
           - Task Polygon Automation Guide: opensidewalks/tasking-manager/task-polygon-automation.md

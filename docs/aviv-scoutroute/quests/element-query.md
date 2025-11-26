@@ -10,7 +10,7 @@ tags:
 
 # Element Query Guide
 
-This guide explains how to format the element query selector for use in AVIV ScoutRoute Long Form Quest Definitions.
+This guide explains how to format the element query selector for use in an AVIV ScoutRoute Long Form Quest Definition.
 
 _For a list of all guides on the TCAT Wiki, refer to the [Guides List](../../guides-list/index.md)._
 
