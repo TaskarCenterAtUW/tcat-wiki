@@ -1,6 +1,7 @@
 ---
 title: Contributing
 tags:
+    - Guide
     - Internal
     - Developer
 ---
@@ -13,7 +14,7 @@ This guide explains how to contribute to the TCAT Wiki.
 
 Note that, while minor external contributions are welcome, this guide is primarily intended for use by TCAT/GS staff.
 
-_For a list of all guides on the TCAT Wiki, refer to the [Guides List](index.md)._
+_For a list of all guides on the TCAT Wiki, refer to the [Guides List](..\guides-list\index.md)._
 
 ---
 
@@ -150,9 +151,9 @@ For creating screenshots with a consistent style, Firefox DevTools is to be used
 
 4. Resulting screenshots will fit exactly within the 2px outside border present in the following screenshot templates:
 
-    1. [Screenshot (Landscape)](../../resources/images/template/screenshot-landscape.png)
+    1. [Screenshot (Landscape)](../resources/images/template/screenshot-landscape.png)
 
-    2. [Screenshot (Portrait)](../../resources/images/template/screenshot-portrait.png)
+    2. [Screenshot (Portrait)](../resources/images/template/screenshot-portrait.png)
 
 5. It is recommended to remove all embedded metadata, such as with the use of [ExifToolGUI](https://exiftool.org/gui/).
 
@@ -182,7 +183,7 @@ For creating image annotations with a consistent style, follow these guidelines.
 
     4. Example:
 
-        ![alt text](../../resources/images/tdei-portal/login-h-forgot-password.png){ loading=lazy }
+        ![Screenshot of TDEI Portal Login page with "Forgot Password?" highlighted.](../resources/images/tdei-portal/login-h-forgot-password.png){ loading=lazy }
 
     5. Naming convention: For images with highlights, append `-h-$highlightedFeature`
 
