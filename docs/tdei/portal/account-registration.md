@@ -1,5 +1,5 @@
 ---
-title: TDEI Account Registration Guide
+title: TDEI Portal Account Registration Guide
 tags:
     - Guide
     - Internal
@@ -10,7 +10,7 @@ tags:
 
 <!-- @format -->
 
-# TDEI Account Registration Guide
+# TDEI Portal Account Registration Guide
 
 This guide explains how to register for a TDEI account using the TDEI Portal.
 

@@ -20,7 +20,7 @@ _Coming soon!_
 
 ## [AVIV ScoutRoute](../aviv-scoutroute/index.md) Guides
 
-### [AVIV ScoutRoute User Manual](../tdei/producers/workspaces/aviv-scoutroute/guides/user-manual.md)
+### [AVIV ScoutRoute User Manual](../aviv-scoutroute/user-manual.md)
 
 This guide explains how to install and use the AVIV ScoutRoute mobile app.
 
@@ -34,7 +34,7 @@ This guide explains how to assign the correct value for the `element_type_icon` 
 
 This guide explains how to format the element query selector for use in AVIV ScoutRoute Long Form Quest Definitions.
 
-## [JOSM](..josm/index.md) Guides
+## [JOSM](../josm/index.md) Guides
 
 ### [Workspaces JOSM Settings Guide](../josm/workspaces-josm-settings.md)
 
@@ -70,7 +70,7 @@ _Coming soon!_
 
 ### [TDEI Portal](../tdei/portal/index.md) Guides
 
-#### [TDEI Account Registration Guide](../tdei/tdei-core/guides/tdei-account-registration.md)
+#### [TDEI Account Registration Guide](../tdei/portal/account-registration.md)
 
 This guide explains how to register for a TDEI account using the TDEI Portal.
 

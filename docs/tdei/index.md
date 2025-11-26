@@ -24,7 +24,7 @@ All TDEI users register through the same process and receive an API key and acce
 
 API keys are used to retrieve data from TDEI. Access credentials are used to log into the portal, retrieve or regenerate API keys, and upload data.
 
-Refer to the [TDEI Portal Account Registration Guide](portal/register.md) for instructions on registering for a TDEI account.
+Refer to the [TDEI Portal Account Registration Guide](portal/account-registration.md) for instructions on registering for a TDEI account.
 
 ## Roles
 
