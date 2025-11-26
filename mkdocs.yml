@@ -119,9 +119,6 @@ watch:
   - overrides
 nav:
   - Home: index.md
-  - About:
-      - about/index.md
-      - Contributing: about/CONTRIBUTING.md
   - AccessMap:
       - accessmap/index.md
   - AVIV ScoutRoute:
@@ -160,3 +157,4 @@ nav:
   - Workspaces:
       - workspaces/index.md
       - Workspace Export Guide: workspaces/workspace-export.md
+  - Contributing: CONTRIBUTING.md

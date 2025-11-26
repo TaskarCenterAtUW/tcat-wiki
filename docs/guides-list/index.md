@@ -8,12 +8,6 @@ title: Guides List
 
 Guides, tutorials, and user manuals produced by TCAT and/or its partners are listed below.
 
-## [About](../about/index.md) Guides
-
-### [Contributing](../about/CONTRIBUTING.md)
-
-This guide explains how to contribute to the TCAT Wiki.
-
 ## [AccessMap](../accessmap/index.md) Guides
 
 _Coming soon!_
@@ -87,3 +81,9 @@ _Coming soon!_
 ### [Workspace Export Guide](../workspaces/workspace-export.md)
 
 This guide explains how to directly export a dataset in `.osm` format from Workspaces.
+
+## TCAT Wiki Guides
+
+### [Contributing](../CONTRIBUTING.md)
+
+This guide explains how to contribute to the TCAT Wiki.
