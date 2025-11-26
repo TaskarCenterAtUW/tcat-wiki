@@ -20,6 +20,3 @@ The [OpenSidewalks Tasking Manager](https://tasks.sidewalks.washington.edu/explo
 
 Additional details about this organized editing activity can be found on the [Organised Editing/Activities/OpenSidewalks](https://wiki.openstreetmap.org/wiki/Organised_Editing/Activities/OpenSidewalks) page on the OSM Wiki.
 
-## [Guides](guides/index.md)
-
-Guides for OpenSidewalks.

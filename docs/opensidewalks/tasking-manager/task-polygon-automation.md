@@ -1,6 +1,7 @@
 ---
 title: Task Polygon Automation Guide
 tags:
+    - Guide
     - Internal
     - Developer
 ---
@@ -11,7 +12,7 @@ tags:
 
 This guide shows the steps for an automated workflow that generates task polygons for use in Tasking Manager.
 
-_For a list of all guides on the TCAT Wiki, refer to the [Guides List](../../../guides-list/index.md)._
+_For a list of all guides on the TCAT Wiki, refer to the [Guides List](../../guides-list/index.md)._
 
 # Task Polygon Automation Process
 

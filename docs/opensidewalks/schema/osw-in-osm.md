@@ -1,6 +1,7 @@
 ---
 title: OSW in OSM
 tags:
+    - Guide
     - External
     - User
 ---

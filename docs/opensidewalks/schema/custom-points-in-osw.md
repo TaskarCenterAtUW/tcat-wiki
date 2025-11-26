@@ -1,6 +1,7 @@
 ---
 title: Custom Points in OSW
 tags:
+    - Guide
     - External
     - Developer
     - OSW 0.3
