@@ -1,0 +1,27 @@
+---
+title: Long Form Quest Definitions
+---
+
+<!-- @format -->
+
+# Long Form Quest Definition
+
+Long Form Quest Definitions are JSON files that define the quests used by AVIV ScoutRoute.
+
+## Schema
+
+The Long Form Quest Definition JSON Schema is available on [GitHub](https://github.com/TaskarCenterAtUW/asr-quests/blob/main/schema/schema.json).
+
+## Guides
+
+Guides for Long Form Quest Definitions.
+
+_For a list of all guides on the TCAT Wiki, refer to the [Guides List](../../guides-list/index.md)._
+
+### [Element Query Guide](element-query.md)
+
+This guide explains how to format the element query selector for use in AVIV ScoutRoute Long Form Quest Definitions.
+
+### [Element Type Icon Guide](element-type-icon.md)
+
+This guide explains how to assign the correct value for the `element_type_icon` key in the Long Form Quest Definition JSON file used by AVIV ScoutRoute.

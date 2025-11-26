@@ -1,6 +1,7 @@
 ---
 title: Element Type Icon Guide
 tags:
+    - Guide
     - External
     - Developer
 ---
@@ -11,7 +12,7 @@ tags:
 
 This guide explains how to assign the correct value for the `element_type_icon` key in the Long Form Quest Definition JSON file used by AVIV ScoutRoute.
 
-_For a list of all guides on the TCAT Wiki, refer to the [Guides List](../../../../../../guides-list/index.md)._
+_For a list of all guides on the TCAT Wiki, refer to the [Guides List](../../guides-list/index.md)._
 
 ---
 

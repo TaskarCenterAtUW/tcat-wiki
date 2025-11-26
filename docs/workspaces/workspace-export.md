@@ -1,17 +1,18 @@
 ---
-title: Workspaces Export Guide
+title: Workspace Export Guide
 tags:
+    - Guide
     - Internal
     - Developer
 ---
 
 <!-- @format -->
 
-# Workspaces Export Guide
+# Workspace Export Guide
 
 This guide explains how to directly export a dataset in `.osm` format from Workspaces.
 
-_For a list of all guides on the TCAT Wiki, refer to the [Guides List](../../../../guides-list/index.md)._
+_For a list of all guides on the TCAT Wiki, refer to the [Guides List](../guides-list/index.md)._
 
 ---
 
@@ -39,7 +40,7 @@ _For a list of all guides on the TCAT Wiki, refer to the [Guides List](../../../
 
 1. Log in and navigate to the Dashboard section of your environment's TDEI Portal
 
-![Screenshot of the Dashboard section of the TDEI Portal, with a highlight on the Copy button next to the My API Key box.](../../../../resources/images/tdei-portal/dashboard-h-api-key-copy.png)
+![Screenshot of the Dashboard section of the TDEI Portal, with a highlight on the Copy button next to the My API Key box.](../resources/images/tdei-portal/dashboard-h-api-key-copy.png)
 
 ### 3. Find the Workspace ID
 
