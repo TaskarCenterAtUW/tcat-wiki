@@ -130,7 +130,7 @@ tags:
 1. **Create**: Add `.md` file in appropriate `/docs/[topic]/` subtree
 2. **Frontmatter**: Include `title:` and `tags:` if it's a guide
 3. **Links**: Reference guides-list and use relative paths
-4. **Regenerate Navigation**: Run `.\generate-nav.ps1 -updateMkdocs` from `util/`
+4. **Regenerate Navigation**: Run `.\generate-nav.ps1` from `util/`
 5. **Verify Build**: Run `mkdocs serve` locally before committing
 
 ## Assistant Role
