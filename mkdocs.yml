@@ -152,7 +152,7 @@ nav:
       - tdei/index.md
       - Portal:
           - tdei/portal/index.md
-          - TDEI Account Registration Guide: tdei/portal/account-registration.md
+          - TDEI Portal Account Registration Guide: tdei/portal/account-registration.md
       - TDEI Core:
           - tdei/tdei-core/index.md
   - TDEI Walkshed:
