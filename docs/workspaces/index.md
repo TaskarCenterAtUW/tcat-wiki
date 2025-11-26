@@ -26,6 +26,10 @@ The [Java OpenStreetMap Editor](https://josm.openstreetmap.de/) (JOSM) is a powe
 
 ## Guides
 
+Workspaces Guides
+
+_For a list of all guides on the TCAT Wiki, refer to the [Guides List](../guides-list/index.md)._
+
 ### [Workspace Export Guide](workspace-export.md)
 
 This guide explains how to directly export a dataset in `.osm` format from Workspaces.

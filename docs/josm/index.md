@@ -10,7 +10,7 @@ The [Java OpenStreetMap Editor](https://josm.openstreetmap.de/) (JOSM) is a powe
 
 ## Guides
 
-Guides for JOSM.
+JOSM Guides
 
 _For a list of all guides on the TCAT Wiki, refer to the [Guides List](../guides-list/index.md)._
 

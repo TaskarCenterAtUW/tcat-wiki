@@ -1,5 +1,5 @@
 ---
-title: OSW in OSM
+title: OpenSidewalks in OpenStreetMap
 tags:
     - Guide
     - External

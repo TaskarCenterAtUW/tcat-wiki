@@ -1,5 +1,5 @@
 ---
-title: OSW Schema
+title: OpenSidewalks Schema
 ---
 
 <!-- @format -->
@@ -10,7 +10,7 @@ The [OpenSidewalks Schema](https://github.com/OpenSidewalks/OpenSidewalks-Schema
 
 ## Guides
 
-Guides for the OpenSidewalks Schema.
+OpenSidewalks Schema Guides
 
 _For a list of all guides on the TCAT Wiki, refer to the [Guides List](../../guides-list/index.md)._
 

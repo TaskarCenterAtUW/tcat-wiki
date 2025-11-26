@@ -10,7 +10,7 @@ AVIV ScoutRoute ([GitHub](https://github.com/OpenSidewalks/GoInfoGame)), formerl
 
 ## Guides
 
-Guides for AVIV ScoutRoute.
+AVIV ScoutRoute Guides
 
 _For a list of all guides on the TCAT Wiki, refer to the [Guides List](../guides-list/index.md)._
 

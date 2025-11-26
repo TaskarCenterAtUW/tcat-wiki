@@ -12,7 +12,7 @@ Additional details about this organized editing activity can be found on the [Or
 
 ## Guides
 
-Guides for the Tasking Manager.
+OpenSidewalks Tasking Manager Guides
 
 _For a list of all guides on the TCAT Wiki, refer to the [Guides List](../../guides-list/index.md)._
 
