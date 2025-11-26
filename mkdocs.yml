@@ -121,71 +121,42 @@ nav:
   - Home: index.md
   - About:
       - about/index.md
-      - Guides:
-          - about/guides/index.md
-          - Contributing: about/guides/CONTRIBUTING.md
+      - Contributing: about/CONTRIBUTING.md
+  - AccessMap:
+      - accessmap/index.md
+  - AVIV ScoutRoute:
+      - aviv-scoutroute/index.md
+      - AVIV ScoutRoute User Manual: aviv-scoutroute/user-manual.md
+      - Quests:
+          - aviv-scoutroute/quests/index.md
+          - Element Query Guide: aviv-scoutroute/quests/element-query.md
+          - Element Type Icon Guide: aviv-scoutroute/quests/element-type-icon.md
   - Guides List:
       - guides-list/index.md
+  - JOSM:
+      - josm/index.md
+      - Workspaces JOSM Settings Guide: josm/workspaces-josm-settings.md
   - OpenSidewalks:
       - opensidewalks/index.md
-      - Guides:
-          - opensidewalks/guides/index.md
-          - Core Edges in OSW: opensidewalks/guides/core-edges-in-osw.md
-          - Custom Points in OSW: opensidewalks/guides/custom-points-in-osw.md
-          - OSW in OSM: opensidewalks/guides/osw-in-osm.md
       - Schema:
           - opensidewalks/schema/index.md
+          - Core Edges in OSW: opensidewalks/schema/core-edges-in-osw.md
+          - Custom Points in OSW: opensidewalks/schema/custom-points-in-osw.md
+          - OSW in OSM: opensidewalks/schema/osw-in-osm.md
       - Tasking Manager:
           - opensidewalks/tasking-manager/index.md
-          - Guides:
-              - opensidewalks/tasking-manager/guides/index.md
-              - Task Polygon Automation Guide: opensidewalks/tasking-manager/guides/task-polygon-automation.md
+          - Task Polygon Automation Guide: opensidewalks/tasking-manager/task-polygon-automation.md
+  - Rapid:
+      - rapid/index.md
   - TDEI:
       - tdei/index.md
-      - Consumers:
-          - tdei/consumers/index.md
-          - AccessMap:
-              - tdei/consumers/accessmap/index.md
-              - Guides:
-                  - tdei/consumers/accessmap/guides/index.md
-          - Walkshed:
-              - tdei/consumers/walkshed/index.md
-              - Guides:
-                  - tdei/consumers/walkshed/guides/index.md
-      - Producers:
-          - tdei/producers/index.md
-          - Imagery Capture:
-              - tdei/producers/imagery-capture/index.md
-              - Guides:
-                  - tdei/producers/imagery-capture/guides/index.md
-                  - Track Recording: tdei/producers/imagery-capture/guides/track-recording.md
-          - Workspaces:
-              - tdei/producers/workspaces/index.md
-              - AVIV ScoutRoute:
-                  - tdei/producers/workspaces/aviv-scoutroute/index.md
-                  - Guides:
-                      - tdei/producers/workspaces/aviv-scoutroute/guides/index.md
-                      - AVIV ScoutRoute User Manual: tdei/producers/workspaces/aviv-scoutroute/guides/user-manual.md
-                  - Long Form:
-                      - tdei/producers/workspaces/aviv-scoutroute/long-form/index.md
-                      - Guides:
-                          - tdei/producers/workspaces/aviv-scoutroute/long-form/guides/index.md
-                          - Element Query Guide: tdei/producers/workspaces/aviv-scoutroute/long-form/guides/element-query.md
-                          - Element Type Icon Guide: tdei/producers/workspaces/aviv-scoutroute/long-form/guides/element-type-icon.md
-              - Guides:
-                  - tdei/producers/workspaces/guides/index.md
-                  - Workspaces Export Guide: tdei/producers/workspaces/guides/workspaces-export.md
-              - JOSM:
-                  - tdei/producers/workspaces/josm/index.md
-                  - Guides:
-                      - tdei/producers/workspaces/josm/guides/index.md
-                      - Workspaces JOSM Settings Guide: tdei/producers/workspaces/josm/guides/workspaces-josm.md
-              - Rapid:
-                  - tdei/producers/workspaces/rapid/index.md
-                  - Guides:
-                      - tdei/producers/workspaces/rapid/guides/index.md
+      - Portal:
+          - tdei/portal/index.md
+          - TDEI Account Registration Guide: tdei/portal/account-registration.md
       - TDEI Core:
           - tdei/tdei-core/index.md
-          - Guides:
-              - tdei/tdei-core/guides/index.md
-              - TDEI Account Registration: tdei/tdei-core/guides/tdei-account-registration.md
+  - TDEI Walkshed:
+      - tdei-walkshed/index.md
+  - Workspaces:
+      - workspaces/index.md
+      - Workspace Export Guide: workspaces/workspace-export.md
