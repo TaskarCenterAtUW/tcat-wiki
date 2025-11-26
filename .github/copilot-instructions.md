@@ -104,7 +104,7 @@ tags:
 ### Organization
 
 -   **opensidewalks**: OpenSidewalks schema explorer and guides, Tasking Manager guides
--   **tdei/consumers**: Documentation and guides for data consumers, including AccessMap and the Walkshed tool
+-   **tdei/consumers**: Documentation and guides for data consumers, including AccessMap and the TDEI Walkshed tool
 -   **tdei/producers**: Documentation and guides for data producers, including Workspaces editing tools such as AVIV ScoutRoute, Rapid, and JOSM
 -   **resources**: No content - stores images and stylesheets
 -   **local-storage/**: Directory ignored by git, used as a storage target for temporary local files

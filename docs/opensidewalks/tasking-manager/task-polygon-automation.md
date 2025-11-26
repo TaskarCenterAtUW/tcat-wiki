@@ -14,19 +14,19 @@ This guide shows the steps for an automated workflow that generates task polygon
 
 _For a list of all guides on the TCAT Wiki, refer to the [Guides List](../../guides-list/index.md)._
 
-# Task Polygon Automation Process
+## Task Polygon Automation Process
 
 This guide outlines the step-by-step process for automating task polygon generation for OpenSidewalks communities.
 
-## Prerequisites
+### Prerequisites
 
 -   `poetry shell` environment activated
 -   `osmium` command-line tool installed
 -   `osw task` command available
 
-## Process Overview
+### Process Overview
 
-### Step 1: Initialize Staging Directory
+#### Step 1: Initialize Staging Directory
 
 **Action:** Create the `staging_directory` in `/projects/osw/opensidewalks_cli/`
 
@@ -36,7 +36,7 @@ This guide outlines the step-by-step process for automating task polygon generat
 mkdir staging_directory
 ```
 
-### Step 2: Create State Structure
+#### Step 2: Create State Structure
 
 **Action:** Create a folder for each **state** within the staging directory.
 
@@ -47,7 +47,7 @@ staging_directory/
 └── <state>/
 ```
 
-### Step 3: Create County Structure
+#### Step 3: Create County Structure
 
 **Action:** Create a subfolder for each **county** within each state folder.
 
@@ -59,7 +59,7 @@ staging_directory/
     └── <county>/
 ```
 
-### Step 4: Create Community Structure
+#### Step 4: Create Community Structure
 
 **Action:** Create a subfolder for each **community** within each county folder.
 
@@ -72,7 +72,7 @@ staging_directory/
         └── <community>/
 ```
 
-### Step 5: Create Working Subfolders
+#### Step 5: Create Working Subfolders
 
 **Action:** Create **working subfolders** (`data_sources`, `intermediate_data`, `output`) for each community.
 
@@ -88,7 +88,7 @@ staging_directory/
             └── output/
 ```
 
-### Step 6: Obtain OSM PBF Files
+#### Step 6: Obtain OSM PBF Files
 
 **Action:** Obtain an **OSM PBF file** for each state and store it in the `/<state>/` folder.
 
@@ -98,7 +98,7 @@ staging_directory/
 /<state>/<state>-latest.osm.pbf
 ```
 
-### Step 7: Obtain Community Target Data
+#### Step 7: Obtain Community Target Data
 
 **Action:** Obtain the **GeoJSON data for the bbox** of each community target mapping area and store it in the corresponding `intermediate_data` subfolder.
 
@@ -108,7 +108,7 @@ staging_directory/
 /<state>/<county>/<community>/intermediate_data/<community>.geojson
 ```
 
-### Step 8: Extract Community Data with Osmium
+#### Step 8: Extract Community Data with Osmium
 
 **Action:** For each `<community>`, run `osmium extract` to trim the state `osm.pbf` file to the target mapping area.
 
@@ -126,7 +126,7 @@ osmium extract -p ../<state>/<county>/<community>/intermediate_data/<community>.
 
 **Important:** This command must be run from the `../opensidewalks_cli/staging_directory/` directory!
 
-### Step 9: Generate Task Polygons with OSW Task
+#### Step 9: Generate Task Polygons with OSW Task
 
 **Action:** For each `<community>`, run `osw task` to generate the task polygon files (`crossing_tasks.geojson` and `sidewalk_tasks.geojson`) corresponding to the target mapping area.
 
@@ -142,7 +142,7 @@ osw task <path-to-pbf> <path-to-geojson> <output-path>
 osw task ../<state>/<county>/<community>/data_sources/<community>.osm.pbf ../<state>/<county>/<community>/intermediate_data/<community>.geojson .../<state>/<county>/<community>/output
 ```
 
-### Step 10: Rename Output Files
+#### Step 10: Rename Output Files
 
 **Action:** For each `<community>`, rename the `crossing_tasks.geojson` and `sidewalks_tasks.geojson` files in the `../<community>/output` directory to more easily identify them as they are uploaded into the Tasking Manager.
 

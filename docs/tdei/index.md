@@ -60,7 +60,7 @@ Transportation Data Exchange Initiative Data Consuming Applications
 
 Accessibility-forward customizable router.
 
-### [TDEI Walkshed](../walkshed/index.md)
+### [TDEI Walkshed](../tdei-walkshed/index.md)
 
 Tool for analyzing pedestrian infrastructure and access to amenities.
 
