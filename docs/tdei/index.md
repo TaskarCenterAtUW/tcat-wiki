@@ -49,3 +49,15 @@ The `pathways-data-generator` role allows a user to create GTFS Pathways data.
 #### OpenSidewalks Data Generator
 
 The `osw-data-generator` role allows a user to upload OpenSidewalks data.
+
+## TDEI Data Consuming Applications
+
+Transportation Data Exchange Initiative Data Consuming Applications
+
+### [AccessMap](../accessmap/index.md)
+
+Accessibility-forward customizable router.
+
+### [TDEI Walkshed](../walkshed/index.md)
+
+Tool for analyzing pedestrian infrastructure and access to amenities.
