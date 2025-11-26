@@ -145,6 +145,8 @@ tags:
 
 **The assistant should NOT write the core guide content itself!** Guides must reflect the knowledge and perspective of subject matter experts and domain authors.
 
+Planning documents, temporary files, and the like should be saved into local-storage/ by default, unless otherwise instructed.
+
 ## Key Files for Reference
 
 -   `mkdocs.yml`: Main config; nav section auto-updated by scripts
