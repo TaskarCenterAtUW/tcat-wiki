@@ -76,7 +76,7 @@ function ConvertTo-Title {
         'josm'            = 'JOSM'
         'aviv-scoutroute' = 'AVIV ScoutRoute'
         'accessmap'       = 'AccessMap'
-        'walkshed'        = 'Walkshed'
+        'tdei-walkshed'   = 'TDEI Walkshed'
         'opensidewalks'   = 'OpenSidewalks'
         'tdei-core'       = 'TDEI Core'
         'index'           = ''

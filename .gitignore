@@ -1,4 +1,4 @@
 .venv/
 local-storage/
+.DS_Store
 tcat-wiki.code-workspace
-*.wip
