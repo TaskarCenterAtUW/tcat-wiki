@@ -20,13 +20,13 @@ This guide explains how to install and use the AVIV ScoutRoute mobile app.
 
 ### [Long Form Quest Definition](../aviv-scoutroute/quests/index.md) Guides
 
+#### [Element Query Guide](../aviv-scoutroute/quests/element-query.md)
+
+This guide explains how to format the element query selector for use in an AVIV ScoutRoute Long Form Quest Definition.
+
 #### [Element Type Icon Guide](../aviv-scoutroute/quests/element-type-icon.md)
 
 This guide explains how to assign the correct value for the `element_type_icon` key in the Long Form Quest Definition JSON file used by AVIV ScoutRoute.
-
-#### [Element Query Guide](../aviv-scoutroute/quests/element-query.md)
-
-This guide explains how to format the element query selector for use in AVIV ScoutRoute Long Form Quest Definitions.
 
 ## [JOSM](../josm/index.md) Guides
 
@@ -46,33 +46,33 @@ This guide shows how to convert existing sidewalk centerline datasets into OpenS
 
 This guide shows how to add custom non-routable point features (like bus stops) to an OpenSidewalks dataset using the Custom Points entity type.
 
-#### [OSW in OSM](../opensidewalks/schema/osw-in-osm.md)
+#### [OpenSidewalks in OpenStreetMap](../opensidewalks/schema/osw-in-osm.md)
 
 This guide explains how to make edits to OpenStreetMap following and supporting the OpenSidewalks schema.
 
-### [Tasking Manager](../opensidewalks/tasking-manager/index.md) Guides
+### [OpenSidewalks Tasking Manager](../opensidewalks/tasking-manager/index.md) Guides
 
 #### [Task Polygon Automation Guide](../opensidewalks/tasking-manager/task-polygon-automation.md)
 
 This guide shows the steps for an automated workflow that generates task polygons for use in Tasking Manager.
 
-## [Rapid](../rapid/index.md) Guides
+## [Rapid Editor](../rapid/index.md) Guides
 
 _Coming soon!_
 
 ## [TDEI](../tdei/index.md) Guides
 
-### [TDEI Portal](../tdei/portal/index.md) Guides
-
-#### [TDEI Account Registration Guide](../tdei/portal/account-registration.md)
-
-This guide explains how to register for a TDEI account using the TDEI Portal.
-
-### [TDEI Core](../tdei/portal/index.md) Guides
+## [TDEI Walkshed](../tdei-walkshed/index.md) Guides
 
 _Coming soon!_
 
-## [TDEI Walkshed](../tdei-walkshed/index.md) Guides
+### [TDEI Portal](../tdei/portal/index.md) Guides
+
+#### [TDEI Portal Account Registration Guide](../tdei/portal/account-registration.md)
+
+This guide explains how to register for a TDEI account using the TDEI Portal.
+
+### [TDEI Core](../tdei/tdei-core/index.md) Guides
 
 _Coming soon!_
 
@@ -87,3 +87,4 @@ This guide explains how to directly export a dataset in `.osm` format from Works
 ### [Contributing](../CONTRIBUTING.md)
 
 This guide explains how to contribute to the TCAT Wiki.
+
