@@ -2,8 +2,8 @@
 # This script is designed to be run in a PowerShell environment.
 
 # Name: TCAT Wiki - Link Checker
-# Version: 1.0.3
-# Date: 2025-10-29
+# Version: 2.0.0
+# Date: 2025-11-26
 # Author: Amy Bordenave, Taskar Center for Accessible Technology, University of Washington
 # License: CC-BY-ND 4.0 International
 
@@ -12,14 +12,7 @@
     Link validation script for the TCAT Wiki
 
 .DESCRIPTION
-    Checks all .md files in the specified directory for broken internal and external links.
-    Returns exit code 0 if all links are valid, 1 if any links are broken or there is an error.
-
-.PARAMETER docsPath
-    Path to the documentation directory to scan (default: "docs")
-
-.PARAMETER verboseOutput
-    Show verbose output during validation
+    Checks all .md files in the docs directory for broken internal and external links.
 
 .PARAMETER internal
     Check internal relative links
@@ -29,20 +22,14 @@
 
 .EXAMPLE
     .\check-links.ps1
-    Validates both internal and external links in the default "docs" directory
+    Validates both internal and external links
 
 .EXAMPLE
-    .\check-links.ps1 -verboseOutput -internal
-    Validates only internal relative links, with verbose output
+    .\check-links.ps1 -internal
+    Validates only internal relative links
 #>
 
 param(
-    [Parameter(HelpMessage = "Path to the docs directory")]
-    [string]$docsPath = "",
-    
-    [Parameter(HelpMessage = "Show verbose output")]
-    [switch]$verboseOutput,
-    
     [Parameter(HelpMessage = "Check external links")]
     [switch]$external,
     
@@ -56,21 +43,8 @@ if (-not $external -and -not $internal) {
     $internal = $true
 }
 
-# Auto-detect docs path if not specified
-if (-not $docsPath) {
-    # Check if we're in the util directory
-    if (Test-Path "..\docs") {
-        $docsPath = "..\docs"
-    }
-    # Check if we're in the repository root
-    elseif (Test-Path "docs") {
-        $docsPath = "docs"
-    }
-    else {
-        Write-Host "Error: Cannot auto-detect docs directory. Please specify -docsPath parameter." -ForegroundColor Red
-        exit 1
-    }
-}
+# Set docs path
+$docsPath = "..\docs"
 
 Write-Host "TCAT Wiki Link Validation" -ForegroundColor Cyan
 Write-Host "=========================" -ForegroundColor Cyan
@@ -94,6 +68,7 @@ Write-Host "Found $($markdownFiles.Count) markdown files to validate" -Foregroun
 Write-Host ""
 
 $externalUrls = @{}
+$externalUrlCache = @{}
 $brokenExternalLinks = @()
 $brokenInternalLinks = @()
 
@@ -101,12 +76,17 @@ $brokenInternalLinks = @()
 function Get-MarkdownLinks {
     param([string]$content)
     
+    # Remove code blocks (``` ... ```) to avoid extracting links from code examples
+    $contentWithoutCodeBlocks = $content -replace '```[\s\S]*?```', ''
+    # Remove inline code (` ... `) to avoid extracting links from code
+    $contentWithoutInlineCode = $contentWithoutCodeBlocks -replace '`[^`]*`', ''
+    
     # Match [text](url) pattern
     $linkPattern = '\[([^\]]*)\]\(([^)]+)\)'
     $imagePattern = '!\[([^\]]*)\]\(([^)]+)\)'
     
-    $links = [regex]::Matches($content, $linkPattern)
-    $images = [regex]::Matches($content, $imagePattern)
+    $links = [regex]::Matches($contentWithoutInlineCode, $linkPattern)
+    $images = [regex]::Matches($contentWithoutInlineCode, $imagePattern)
     
     return ($links + $images)
 }
@@ -156,19 +136,24 @@ function Test-ExternalUrlValid {
         if ($url -like $domain) {
             return @{
                 valid  = $true
-                status = "Skipped (known to block automated requests or always fail)"
+                status = "Skipped URL listed in skipDomains filter."
             }
         }
     }
     
     try {
+        # Prepare headers with User-Agent to identify as a bot
+        $headers = @{
+            'User-Agent' = 'TCAT-Wiki-LinkChecker/2.0.0 (+https://github.com/TaskarCenterAtUW/tcat-wiki)'
+        }
+        
         # Use HEAD request first, fallback to GET if needed
         try {
-            $response = Invoke-WebRequest -Uri $url -Method Head -TimeoutSec 10 -UseBasicParsing -ErrorAction Stop
+            $response = Invoke-WebRequest -Uri $url -Method Head -TimeoutSec 5 -UseBasicParsing -Headers $headers -ErrorAction Stop
         }
         catch {
             # Some servers don't support HEAD, try GET
-            $response = Invoke-WebRequest -Uri $url -Method Get -TimeoutSec 10 -UseBasicParsing -ErrorAction Stop
+            $response = Invoke-WebRequest -Uri $url -Method Get -TimeoutSec 5 -UseBasicParsing -Headers $headers -ErrorAction Stop
         }
         return @{
             valid  = $response.StatusCode -lt 400
@@ -194,9 +179,7 @@ function Test-ExternalUrlValid {
 # Process each markdown file
 foreach ($file in $markdownFiles) {
     $relativePath = $file.FullName.Substring((Get-Location).Path.Length + 1)
-    if ($verboseOutput) {
-        Write-Host "Validating: $relativePath" -ForegroundColor Yellow
-    }
+    Write-Host "Validating: $relativePath" -ForegroundColor Yellow
     
     try {
         $content = Get-Content $file.FullName -Raw -Encoding UTF8
@@ -240,11 +223,16 @@ if ($external) {
     Write-Host "Validating $($externalUrls.Count) unique external URLs..." -ForegroundColor Cyan
 
     foreach ($url in $externalUrls.Keys | Sort-Object) {
-        if ($verboseOutput) {
-            Write-Host "Testing: $url" -ForegroundColor Gray
-        }
+        Write-Host "Testing: $url" -ForegroundColor Gray
         
-        $result = Test-ExternalUrlValid -url $url
+        # Check cache first
+        if ($externalUrlCache.ContainsKey($url)) {
+            $result = $externalUrlCache[$url]
+        }
+        else {
+            $result = Test-ExternalUrlValid -url $url
+            $externalUrlCache[$url] = $result
+        }
         
         if (-not $result.valid) {
             $brokenExternalLinks += @{
@@ -254,12 +242,10 @@ if ($external) {
             Write-Host "  [X] Failed: $($result.status)" -ForegroundColor Red
         }
         else {
-            if ($verboseOutput) {
-                Write-Host "  [OK] OK: $($result.status)" -ForegroundColor Green
-            }
+            Write-Host "  [OK] OK: $($result.status)" -ForegroundColor Green
         }
         
-        Start-Sleep -Milliseconds 500  # Be nice to servers
+        Start-Sleep -Milliseconds 100  # Be nice to servers
     }
 }
 
