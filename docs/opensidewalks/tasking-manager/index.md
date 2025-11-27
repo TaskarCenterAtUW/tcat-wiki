@@ -10,6 +10,12 @@ The [OpenSidewalks Tasking Manager](https://tasks.sidewalks.washington.edu/explo
 
 Additional details about this organized editing activity can be found on the [Organised Editing/Activities/OpenSidewalks](https://wiki.openstreetmap.org/wiki/Organised_Editing/Activities/OpenSidewalks) page on the OSM Wiki.
 
-## [Guides](guides/index.md)
+## Guides
 
-Guides for the Tasking Manager.
+OpenSidewalks Tasking Manager Guides
+
+_For a list of all guides on the TCAT Wiki, refer to the [Guides List](../../guides-list/index.md)._
+
+### [Task Polygon Automation Guide](task-polygon-automation.md)
+
+This guide shows the steps for an automated workflow that generates task polygons for use in Tasking Manager.

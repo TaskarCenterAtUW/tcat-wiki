@@ -24,6 +24,8 @@ All TDEI users register through the same process and receive an API key and acce
 
 API keys are used to retrieve data from TDEI. Access credentials are used to log into the portal, retrieve or regenerate API keys, and upload data.
 
+Refer to the [TDEI Portal Account Registration Guide](portal/account-registration.md) for instructions on registering for a TDEI account.
+
 ## Roles
 
 ### Data Consumer
@@ -49,3 +51,35 @@ The `pathways-data-generator` role allows a user to create GTFS Pathways data.
 #### OpenSidewalks Data Generator
 
 The `osw-data-generator` role allows a user to upload OpenSidewalks data.
+
+## TDEI Data Consuming Applications
+
+Transportation Data Exchange Initiative Data Consuming Applications
+
+### [AccessMap](../accessmap/index.md)
+
+Accessibility-forward customizable router.
+
+### [TDEI Walkshed](../tdei-walkshed/index.md)
+
+Tool for analyzing pedestrian infrastructure and access to amenities.
+
+## TDEI Data Producing Applications
+
+Transportation Data Exchange Initiative Data Producing Applications
+
+### [Workspaces](../workspaces/index.md)
+
+Platform providing dataset editing functionality.
+
+### [Rapid](../rapid/index.md)
+
+Embedded in-browser web editor.
+
+### [AVIV ScoutRoute](../aviv-scoutroute/index.md)
+
+Mobile applications for both Android and iOS.
+
+### [JOSM](../josm/index.md)
+
+Desktop application for advanced editing.
