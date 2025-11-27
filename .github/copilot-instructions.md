@@ -21,12 +21,13 @@
 docs/
   [topic]/
     index.md              # Topic overview
-    guides/
-      index.md            # Auto-generated guide index
-      specific-guide.md   # Actual guides
+    specific-guide.md     # Guides alongside topic overview
+    subtopic/
+      index.md            # Subtopic overview
+      specific-guide.md   # Guides within subtopic
 ```
 
-**Key insight**: Directory hierarchy directly maps to navigation structure. Nested `guides/` directories are special - use `generate-guides-lists.ps1` to auto-generate index files listing all guides in that directory.
+**Key insight**: Directory hierarchy directly maps to navigation structure. Guides are stored directly in their topic directories (not in nested `guides/` subdirectories). Use `generate-guides-lists.ps1` to auto-generate index files and `generate-nav.ps1` to update the mkdocs.yml navigation structure.
 
 ### Abbreviations System
 
@@ -77,6 +78,12 @@ cd util
 
 ## Project-Specific Conventions
 
+### Markdown Conventions
+
+1. **Guide Link**: Every guide should reference the Guides List (`docs/guides-list/index.md`) via a relative path
+2. **Tags**: Use `tags: [Guide, OSW 0.3]` for filtering; supported tags: "Guide", "OSW 0.2", "OSW 0.3", "OSW 0.4"
+3. **Abbreviations**: Wrap acronyms normally (e.g., "OSW", "TDEI", "JOSM"); abbreviations plugin auto-links them
+
 ### Frontmatter Title Pattern
 
 Always include frontmatter titles to override auto-generated names:
@@ -85,28 +92,26 @@ Always include frontmatter titles to override auto-generated names:
 ---
 title: Actual Display Title
 tags:
+    - Guide
     - OSW 0.3
 ---
 ```
 
 **Tags**: Tags, restricted to the allowed tags listed in `mkdocs.yml`, are used for categorizing pages. The intended audience is tagged across two axes: Internal-vs-External and Developer-vs-User. Note that "External" implies that it is suitable for "Internal" audience as well, and that "User" implies that it is suitable for "Developer" audience as well. These are explicitly _not_ access restrictions; external users can access all content.
 
-**Note**: The `"    - Guide"` tag does not need to be added to guides, as that tag is inherited from the `.meta.yml` file in that directory.
-
-**Exception**: `docs/index.md` has title commented out to prevent "TCAT Wiki - TCAT Wiki" duplication.
-
-### Markdown Conventions
-
-1. **Guide Link**: Every guide should reference the [Guides List](../docs/guides-list/index.md) via a relative path
-2. **Tags**: Use `tags: [Guide, OSW 0.3]` for filtering; supported tags: "Guide", "OSW 0.2", "OSW 0.3", "OSW 0.4"
-3. **Abbreviations**: Wrap acronyms normally (e.g., "OSW", "TDEI"); abbreviations plugin auto-links them
+**Exception**: `docs/index.md` has its title commented out to prevent "TCAT Wiki - TCAT Wiki" duplication.
 
 ### Organization
 
--   **opensidewalks**: OpenSidewalks schema explorer and guides, Tasking Manager guides
--   **tdei/consumers**: Documentation and guides for data consumers, including AccessMap and the TDEI Walkshed tool
--   **tdei/producers**: Documentation and guides for data producers, including Workspaces editing tools such as AVIV ScoutRoute, Rapid, and JOSM
--   **resources**: No content - stores images and stylesheets
+-   **accessmap**: AccessMap documentation and guides
+-   **aviv-scoutroute**: AVIV ScoutRoute mobile app user manual and quest definition guides
+-   **josm**: JOSM configuration guides for Workspaces editing
+-   **opensidewalks**: OpenSidewalks schema guides (organized in `schema/` and `tasking-manager/` subtopics)
+-   **rapid**: Rapid editor documentation
+-   **tdei**: TDEI platform documentation (organized in `portal/` and `tdei-core/` subtopics)
+-   **tdei-walkshed**: TDEI Walkshed tool documentation
+-   **workspaces**: Workspaces editing platform guides
+-   **resources**: Images and stylesheets (no content pages)
 -   **local-storage/**: Directory ignored by git, used as a storage target for temporary local files
 -   **util**: Utilities and scripts to make editing this Wiki easier
 
@@ -128,7 +133,7 @@ tags:
 ## When Adding New Content
 
 1. **Create**: Add `.md` file in appropriate `/docs/[topic]/` subtree
-2. **Frontmatter**: Include `title:` and `tags:` if it's a guide
+2. **Frontmatter**: Include `title:`, and `tags:` if it's a guide
 3. **Links**: Reference guides-list and use relative paths
 4. **Regenerate Navigation**: Run `.\generate-nav.ps1` from `util/`
 5. **Verify Build**: Run `mkdocs serve` locally before committing
@@ -152,6 +157,6 @@ Planning documents, temporary files, and the like should be saved into local-sto
 -   `mkdocs.yml`: Main config; nav section auto-updated by scripts
 -   `util/generate-nav.ps1`: Builds YAML navigation tree from file structure
 -   `util/generate-guides-lists.ps1`: Creates guide index markdown files
--   `util/check-links.ps1`: PowerShell validation (not standard CI integration)
+-   `util/check-links.ps1`: PowerShell validation of links (not standard CI integration)
 -   `/includes/abbreviations.md`: Global acronym definitions
 -   `/resources/stylesheets/extra.css`: Theming
