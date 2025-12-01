@@ -42,6 +42,7 @@
 *[GTFS]: General Transit Feed Specification
 *[GTFS-Flex]: General Transit Feed Specification, Flex Extension
 *[GTFS-Pathways]: General Transit Feed Specification, Pathways Extension
+*[HAWK]: High-Intensity Activated Crosswalk Beacon
 *[HOT]: Humanitarian OpenStreetMap Team
 *[HOV]: High Occupancy Vehicle
 *[HxGN]: Hexagon (aerial imagery provider)
@@ -71,6 +72,7 @@
 *[OSM]: OpenStreetMap
 *[OSW]: OpenSidewalks
 *[OTP]: OpenThePaths
+*[PED XING]: Pedestrian Crossing
 *[PII]: Personally Identifiable Information
 *[POI]: Point of Interest
 *[PROWAG]: Public Right-of-Way Accessibility Guidelines
