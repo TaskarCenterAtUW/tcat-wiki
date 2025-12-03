@@ -82,6 +82,12 @@ _Coming soon!_
 
 This guide explains how to directly export a dataset in `.osm` format from Workspaces.
 
+### [Workspaces User Manual](../workspaces/user-manual/index.md) Guides
+
+#### [Workspace Settings](../workspaces/user-manual/workspace-settings.md)
+
+This guide explains how to use the Workspaces platform to configure Workspace Settings.
+
 ## TCAT Wiki Guides
 
 ### [Contributing](../CONTRIBUTING.md)

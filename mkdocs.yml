@@ -157,4 +157,7 @@ nav:
   - Workspaces:
       - workspaces/index.md
       - Workspace Export Guide: workspaces/workspace-export.md
+      - User Manual:
+          - workspaces/user-manual/index.md
+          - Workspace Settings: workspaces/user-manual/workspace-settings.md
   - Contributing: CONTRIBUTING.md
