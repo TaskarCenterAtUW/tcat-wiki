@@ -127,7 +127,7 @@ If you're creating a topic index page that has no direct guides but should still
 title: User Manual
 tags:
     - Guide
-# include-in-guides-list: true
+# include-in-guides-lists: true
 ---
 ```
 

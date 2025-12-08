@@ -112,14 +112,14 @@ tags:
 ---
 ```
 
-**Including Topic Index in Guide Lists**: By default, only topic directories that contain guides (after filtering by `skip-in-guides-lists`) appear in the main guides list. To include a topic index that has no direct guides (e.g., because all guides are skipped or nested), add a `# include-in-guides-list: true` comment to its index.md frontmatter:
+**Including Topic Index in Guide Lists**: By default, only topic directories that contain guides (after filtering by `skip-in-guides-lists`) appear in the main guides list. To include a topic index that has no direct guides (e.g., because all guides are skipped or nested), add a `# include-in-guides-lists: true` comment to its index.md frontmatter:
 
 ```yaml
 ---
 title: User Manual
 tags:
     - Guide
-# include-in-guides-list: true
+# include-in-guides-lists: true
 ---
 ```
 

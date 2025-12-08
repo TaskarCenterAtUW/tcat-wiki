@@ -28,7 +28,7 @@
     
     Special frontmatter flags (YAML comments, invisible on built pages):
     - # skip-in-guides-lists: true - Exclude a guide from guides lists
-    - # include-in-guides-list: true - Force include a topic index in guides lists
+    - # include-in-guides-lists: true - Force include a topic index in guides lists
 
 .EXAMPLE
     .\generate-guides-lists.ps1
@@ -111,8 +111,8 @@ function Get-IncludeInGuidesList {
     try {
         $content = Get-Content $IndexPath -Raw -ErrorAction Stop
         
-        # Check for include-in-guides-list flag in frontmatter (YAML comment, invisible on page)
-        if ($content -match '(?s)^---\r?\n(.*?)\r?\n---' -and $matches[1] -match '# include-in-guides-list:\s*true') {
+        # Check for include-in-guides-lists flag in frontmatter (YAML comment, invisible on page)
+        if ($content -match '(?s)^---\r?\n(.*?)\r?\n---' -and $matches[1] -match '# include-in-guides-lists:\s*true') {
             return $true
         }
     }
@@ -331,7 +331,7 @@ foreach ($dir in $directoriesToProcess) {
     
     # Include in guides list if:
     # 1. It has guides, OR
-    # 2. It's explicitly marked with include-in-guides-list: true, OR
+    # 2. It's explicitly marked with include-in-guides-lists: true, OR
     # 3. It has child directories (infer from structure)
     if (-not $hasGuides -and -not $includeInList -and -not $hasChildDirs) {
         continue
