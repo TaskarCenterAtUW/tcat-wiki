@@ -101,6 +101,28 @@ tags:
 
 **Exception**: `docs/index.md` has its title commented out to prevent "TCAT Wiki - TCAT Wiki" duplication.
 
+**Excluding Guides from Guide Lists**: If a guide file should not appear in the generated guides lists (e.g., supplementary guides in subfolders), add a `# skip-in-guides-lists: true` comment to the frontmatter. This YAML comment is invisible on the built page but tells `generate-guides-lists.ps1` to exclude the file:
+
+```yaml
+---
+title: Supplementary Guide
+tags:
+    - Guide
+# skip-in-guides-lists: true
+---
+```
+
+**Including Topic Index in Guide Lists**: By default, only topic directories that contain guides (after filtering by `skip-in-guides-lists`) appear in the main guides list. To include a topic index that has no direct guides (e.g., because all guides are skipped or nested), add a `# include-in-guides-list: true` comment to its index.md frontmatter:
+
+```yaml
+---
+title: User Manual
+tags:
+    - Guide
+# include-in-guides-list: true
+---
+```
+
 ### Organization
 
 -   **accessmap**: AccessMap documentation and guides
