@@ -105,6 +105,32 @@ This section of the guide explains how to set up a Windows environment for contr
 
 Refer to the documentation for [Material for MkDocs](https://squidfunk.github.io/mkdocs-material/) and the [MkDocs User Guide](https://www.mkdocs.org/user-guide/).
 
+### Guide Files
+
+If you're creating a guide file that should not appear in the auto-generated guides lists (for example, a supplementary guide nested within a subfolder), add the following hidden flag to your frontmatter:
+
+```yaml
+---
+title: Your Guide Title
+tags:
+    - Guide
+# skip-in-guides-lists: true
+---
+```
+
+The `# skip-in-guides-lists: true` comment is a YAML comment that won't appear on the built page but tells the `generate-guides-lists.ps1` script to exclude this file from the guides list generation.
+
+If you're creating a topic index page that has no direct guides but should still appear in the main guides list (e.g., user manuals with nested subfolders), add the following flag to its frontmatter:
+
+```yaml
+---
+title: User Manual
+tags:
+    - Guide
+# include-in-guides-list: true
+---
+```
+
 ### Images
 
 Where possible, follow these guidelines for images:
