@@ -107,29 +107,31 @@ Refer to the documentation for [Material for MkDocs](https://squidfunk.github.io
 
 ### Guide Files
 
-If you're creating a guide file that should not appear in the auto-generated guides lists (for example, a supplementary guide nested within a subfolder), add the following hidden flag to your frontmatter:
+By default, guides appear in both their parent page's guides section and in the main guides list. You can control this using frontmatter flags (YAML comments, invisible on the built page).
+
+To exclude a guide from its parent's guides section:
 
 ```yaml
 ---
 title: Your Guide Title
 tags:
     - Guide
-# skip-in-guides-lists: true
+# exclude-from-parent-guides-list
 ---
 ```
 
-The `# skip-in-guides-lists: true` comment is a YAML comment that won't appear on the built page but tells the `generate-guides-lists.ps1` script to exclude this file from the guides list generation.
-
-If you're creating a topic index page that has no direct guides but should still appear in the main guides list (e.g., user manuals with nested subfolders), add the following flag to its frontmatter:
+To exclude a guide from the main guides list:
 
 ```yaml
 ---
-title: User Manual
+title: Your Guide Title
 tags:
     - Guide
-# include-in-guides-lists: true
+# exclude-from-main-guides-list
 ---
 ```
+
+Both flags can be used together to exclude a guide from all guides lists.
 
 ### Images
 

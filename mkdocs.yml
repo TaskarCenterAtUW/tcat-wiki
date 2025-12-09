@@ -70,6 +70,7 @@ plugins:
         - Developer
         - User
         - Guide
+        - User Manual
         - OSW 0.2
         - OSW 0.3
         - OSW 0.4
@@ -121,13 +122,16 @@ nav:
   - Home: index.md
   - AccessMap:
       - accessmap/index.md
+      - User Manual:
+          - accessmap/user-manual/index.md
   - AVIV ScoutRoute:
       - aviv-scoutroute/index.md
-      - AVIV ScoutRoute User Manual: aviv-scoutroute/user-manual.md
       - Quests:
           - aviv-scoutroute/quests/index.md
           - Element Query Guide: aviv-scoutroute/quests/element-query.md
           - Element Type Icon Guide: aviv-scoutroute/quests/element-type-icon.md
+      - User Manual:
+          - aviv-scoutroute/user-manual/index.md
   - Guides List:
       - guides-list/index.md
   - JOSM:
@@ -143,6 +147,8 @@ nav:
       - Tasking Manager:
           - opensidewalks/tasking-manager/index.md
           - Task Polygon Automation Guide: opensidewalks/tasking-manager/task-polygon-automation.md
+          - User Manual:
+              - opensidewalks/tasking-manager/user-manual/index.md
   - Rapid:
       - rapid/index.md
   - TDEI:
@@ -150,14 +156,21 @@ nav:
       - Portal:
           - tdei/portal/index.md
           - TDEI Portal Account Registration Guide: tdei/portal/account-registration.md
+          - User Manual:
+              - tdei/portal/user-manual/index.md
       - TDEI Core:
           - tdei/tdei-core/index.md
   - TDEI Walkshed:
       - tdei-walkshed/index.md
+      - User Manual:
+          - tdei-walkshed/user-manual/index.md
+  - TDEI Workspaces:
+      - tdei-workspaces/index.md
+      - Workspace Export Guide: tdei-workspaces/workspace-export.md
+      - User Manual:
+          - tdei-workspaces/user-manual/index.md
+          - Workspace Settings: tdei-workspaces/user-manual/workspace-settings.md
   - Workspaces:
-      - workspaces/index.md
-      - Workspace Export Guide: workspaces/workspace-export.md
       - User Manual:
           - workspaces/user-manual/index.md
-          - Workspace Settings: workspaces/user-manual/workspace-settings.md
   - Contributing: CONTRIBUTING.md

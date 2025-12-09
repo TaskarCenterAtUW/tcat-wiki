@@ -80,8 +80,10 @@ cd util
 
 ### Markdown Conventions
 
-1. **Guide Link**: Every guide should reference the Guides List (`docs/guides-list/index.md`) via a relative path
-2. **Tags**: Use `tags: [Guide, OSW 0.3]` for filtering; supported tags: "Guide", "OSW 0.2", "OSW 0.3", "OSW 0.4"
+1. **Guide Tags**:
+    - Use `- Guide` tag for regular guide pages
+    - Use `- User Manual` tag for user manual index files (e.g., `user-manual/index.md`)
+2. **Other Tags**: Use additional tags for filtering; supported tags: "OSW 0.2", "OSW 0.3", "OSW 0.4", "Internal", "External", "Developer", "User"
 3. **Abbreviations**: Wrap acronyms normally (e.g., "OSW", "TDEI", "JOSM"); abbreviations plugin auto-links them
 
 ### Frontmatter Title Pattern
@@ -94,34 +96,58 @@ title: Actual Display Title
 tags:
     - Guide
     - OSW 0.3
+    - External
+    - User
 ---
 ```
 
-**Tags**: Tags, restricted to the allowed tags listed in `mkdocs.yml`, are used for categorizing pages. The intended audience is tagged across two axes: Internal-vs-External and Developer-vs-User. Note that "External" implies that it is suitable for "Internal" audience as well, and that "User" implies that it is suitable for "Developer" audience as well. These are explicitly _not_ access restrictions; external users can access all content.
+Or for user manuals:
+
+```yaml
+---
+title: Product User Manual
+tags:
+    - User Manual
+    - External
+    - User
+---
+```
+
+**Tags**: Tags are used for categorizing pages. The audience is tagged across two axes: Internal-vs-External and Developer-vs-User. "External" implies suitability for "Internal" audiences as well, and "User" implies suitability for "Developer" audiences as well. These are explicitly _not_ access restrictions; all content is accessible to all users.
 
 **Exception**: `docs/index.md` has its title commented out to prevent "TCAT Wiki - TCAT Wiki" duplication.
 
-**Excluding Guides from Guide Lists**: If a guide file should not appear in the generated guides lists (e.g., supplementary guides in subfolders), add a `# skip-in-guides-lists: true` comment to the frontmatter. This YAML comment is invisible on the built page but tells `generate-guides-lists.ps1` to exclude the file:
+**Excluding Guides from Guides Lists**: By default, guides appear in both their parent page's guides list and in the main guides list. You can control where each guide appears using frontmatter flags (YAML comments, invisible on the built page):
+
+To exclude a guide from its parent's guides section:
 
 ```yaml
 ---
-title: Supplementary Guide
+title: Your Guide Title
 tags:
     - Guide
-# skip-in-guides-lists: true
+# exclude-from-parent-guides-list
 ---
 ```
 
-**Including Topic Index in Guide Lists**: By default, only topic directories that contain guides (after filtering by `skip-in-guides-lists`) appear in the main guides list. To include a topic index that has no direct guides (e.g., because all guides are skipped or nested), add a `# include-in-guides-lists: true` comment to its index.md frontmatter:
+To exclude a guide from the main guides list:
 
 ```yaml
 ---
-title: User Manual
+title: Your Guide Title
 tags:
     - Guide
-# include-in-guides-lists: true
+# exclude-from-main-guides-list
 ---
 ```
+
+Both flags can be used together to exclude a guide from all guides lists.
+
+**User Manuals**: Pages tagged with `- User Manual` are treated as guides but handled specially:
+
+-   They appear as single entries in parent guides sections (not as section headers)
+-   In the main guides list, only the user manual itself appears, not its subpages
+-   Their subpages (e.g., `workspace-settings.md`) appear only in the user manual's own `## Guides` section
 
 ### Organization
 

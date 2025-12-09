@@ -2,7 +2,7 @@
 # This script is designed to be run in a PowerShell environment.
 
 # Name: TCAT Wiki - Guides Lists Generator
-# Version: 3.0.0
+# Version: 4.0.0
 # Date: 2025-12-08
 # Author: Amy Bordenave, Taskar Center for Accessible Technology, University of Washington
 # License: CC-BY-ND 4.0 International
@@ -14,25 +14,40 @@
 .DESCRIPTION
     This script performs two phases:
     
-    PHASE 1: Recursively scans docs/ (except resources/) for .md files with "- Guide" in frontmatter.
-    For each guide file found, it injects a "## Guides" section into the parent directory's index.md
-    with the guide title, filename link, and full description.
+    PHASE 1: For each directory with index.md, creates a "## Guides" section listing:
+    - Direct guides in that directory
+    - Subsections for subdirectories with their guides
     
-    PHASE 2: Generates the main guides-list/index.md by collecting all guides from directories
-    and organizing them with the correct hierarchy. Directories with no guides receive an 
-    "_Coming soon!_" placeholder (unless they have child directories).
+    PHASE 2: Generates the main guides-list/index.md with hierarchical structure
+    across all topics.
     
-    Guide files must:
-    - Have "- Guide" tag in the frontmatter
-    - Include a description between the "# Title" line and "_For a list of all guides..._" line
+    Guide files must have "- Guide" tag in frontmatter.
+    User manual index files should have "- User Manual" tag (implies Guide).
     
     Special frontmatter flags (YAML comments, invisible on built pages):
-    - # skip-in-guides-lists: true - Exclude a guide from guides lists
-    - # include-in-guides-lists: true - Force include a topic index in guides lists
+    - # exclude-from-parent-guides-list - Exclude from parent directory guides sections
+    - # exclude-from-main-guides-list - Exclude from main guides list
+    
+    User Manual handling:
+    - Detected by "- User Manual" tag on index.md
+    - Don't get " Guides" suffix in section headers
+    - In main guides list: only the user manual itself appears, not its subpages
 
 .EXAMPLE
     .\generate-guides-lists.ps1
 #>
+
+# ==============================================================================
+# CONSTANTS
+# ==============================================================================
+
+$CRLF = "`r`n"
+$EXCLUDE_PARENT_FLAG = "exclude-from-parent-guides-list"
+$EXCLUDE_MAIN_FLAG = "exclude-from-main-guides-list"
+
+# ==============================================================================
+# HELPER FUNCTIONS
+# ==============================================================================
 
 function Get-GuideInfo {
     param(
@@ -41,23 +56,33 @@ function Get-GuideInfo {
     )
     
     $result = @{
-        Title          = ""
-        Description    = ""
-        IsGuide        = $false
-        SkipGuidesList = $false
+        Title             = ""
+        Description       = ""
+        IsGuide           = $false
+        IsUserManual      = $false
+        ExcludeFromParent = $false
+        ExcludeFromMain   = $false
     }
     
     try {
         $content = Get-Content $FilePath -Raw -ErrorAction Stop
         
-        # Check for "- Guide" tag in frontmatter
-        if ($content -match '(?s)^---\r?\n(.*?)\r?\n---' -and $matches[1] -match '- Guide') {
-            $result.IsGuide = $true
-        }
-        
-        # Check for skip-in-guides-lists flag in frontmatter
-        if ($content -match '(?s)^---\r?\n(.*?)\r?\n---' -and $matches[1] -match '# skip-in-guides-lists:\s*true') {
-            $result.SkipGuidesList = $true
+        # Check for "- Guide" or "- User Manual" tag in frontmatter
+        if ($content -match '(?s)^---\r?\n(.*?)\r?\n---') {
+            $frontmatter = $matches[1]
+            if ($frontmatter -match '- Guide') {
+                $result.IsGuide = $true
+            }
+            if ($frontmatter -match '- User Manual') {
+                $result.IsUserManual = $true
+                $result.IsGuide = $true  # User manuals are also guides
+            }
+            if ($frontmatter -match "# $EXCLUDE_PARENT_FLAG") {
+                $result.ExcludeFromParent = $true
+            }
+            if ($frontmatter -match "# $EXCLUDE_MAIN_FLAG") {
+                $result.ExcludeFromMain = $true
+            }
         }
         
         # Extract title from frontmatter
@@ -65,11 +90,10 @@ function Get-GuideInfo {
             $result.Title = $matches[1].Trim()
         }
         
-        # Extract description: everything between "# Title" and "_For a list of all guides..._"
-        # Use multiline mode to find the H1 header anywhere in the document
-        if ($content -match '(?s)(?:^|\r?\n)#\s+.+?(?:\r?\n)(.*?)(?:\r?\n_For a list of all guides)') {
+        # Extract description: everything between "# Title" and "_For a list of all guides"
+        # Use lookahead to stop at first occurrence
+        if ($content -match '(?s)(?:^|\r?\n)#\s+.+?(?:\r?\n)(.*?)(?=\r?\n_For a list of all guides)') {
             $descRaw = $matches[1].Trim()
-            # Clean up: remove leading/trailing whitespace but preserve internal structure
             $descRaw = $descRaw -replace '^[\s\r\n]+|[\s\r\n]+$', ''
             $result.Description = $descRaw
         }
@@ -81,7 +105,7 @@ function Get-GuideInfo {
     return $result
 }
 
-function Get-IndexTitleFromFile {
+function Get-DirectoryTitle {
     param(
         [Parameter(Mandatory = $true)]
         [string]$IndexPath
@@ -90,7 +114,6 @@ function Get-IndexTitleFromFile {
     try {
         $content = Get-Content $IndexPath -Raw -ErrorAction Stop
         
-        # Extract title from frontmatter
         if ($content -match 'title:\s*(.+?)(?:\r?\n|$)') {
             return $matches[1].Trim()
         }
@@ -102,284 +125,396 @@ function Get-IndexTitleFromFile {
     return ""
 }
 
-function Get-IncludeInGuidesList {
+function Test-IsUserManualDirectory {
     param(
         [Parameter(Mandatory = $true)]
-        [string]$IndexPath
+        [string]$Directory
     )
     
-    try {
-        $content = Get-Content $IndexPath -Raw -ErrorAction Stop
-        
-        # Check for include-in-guides-lists flag in frontmatter (YAML comment, invisible on page)
-        if ($content -match '(?s)^---\r?\n(.*?)\r?\n---' -and $matches[1] -match '# include-in-guides-lists:\s*true') {
-            return $true
-        }
+    $indexPath = Join-Path $Directory "index.md"
+    if (Test-Path $indexPath -PathType Leaf) {
+        $guideInfo = Get-GuideInfo -FilePath $indexPath
+        return $guideInfo.IsUserManual
     }
-    catch {
-        Write-Warning "Could not read include flag from: $IndexPath"
-    }
-    
     return $false
 }
 
-function Get-RelativePathFromGuidesList {
+function Get-RelativeMarkdownPath {
     param(
         [Parameter(Mandatory = $true)]
-        [string]$TargetIndexPath,
+        [string]$FromPath,
         
         [Parameter(Mandatory = $true)]
-        [string]$DocsPath
+        [string]$ToPath
     )
     
-    # Calculate relative path from docs/guides-list/ to target index.md
-    $guidesListPath = Join-Path $DocsPath "guides-list"
-    $targetPath = $TargetIndexPath
-    
-    $relative = [System.IO.Path]::GetRelativePath($guidesListPath, $targetPath) -replace '\\', '/'
-    return $relative
+    $relativePath = [System.IO.Path]::GetRelativePath($FromPath, $ToPath)
+    return $relativePath -replace '\\', '/'
 }
+
+function Get-GuidesInDirectory {
+    param(
+        [Parameter(Mandatory = $true)]
+        [string]$Directory,
+        
+        [Parameter(Mandatory = $true)]
+        [bool]$ExcludeOwnIndex,
+        
+        [Parameter(Mandatory = $true)]
+        [string]$ExcludeFlag
+    )
+    
+    $indexPath = Join-Path $Directory "index.md"
+    $guides = @()
+    
+    Get-ChildItem -Path $Directory -Filter "*.md" -File | ForEach-Object {
+        # Skip if it's the directory's own index.md and we're excluding it
+        if ($ExcludeOwnIndex -and $_.FullName -eq $indexPath) {
+            return
+        }
+        
+        $guideInfo = Get-GuideInfo -FilePath $_.FullName
+        
+        # Include if it's a guide and not excluded by the flag
+        $isExcluded = if ($ExcludeFlag -eq $EXCLUDE_PARENT_FLAG) { 
+            $guideInfo.ExcludeFromParent 
+        }
+        else { 
+            $guideInfo.ExcludeFromMain 
+        }
+        
+        if ($guideInfo.IsGuide -and -not $isExcluded) {
+            $guides += $_
+        }
+    }
+    
+    return $guides | Sort-Object FullName
+}
+
+function Get-Subdirectories {
+    param(
+        [Parameter(Mandatory = $true)]
+        [string]$Directory
+    )
+    
+    $subdirs = @()
+    
+    Get-ChildItem -Path $Directory -Directory | ForEach-Object {
+        if ($_.Name -eq "resources") {
+            return
+        }
+        
+        $indexPath = Join-Path $_.FullName "index.md"
+        if (Test-Path $indexPath -PathType Leaf) {
+            $subdirs += $_
+        }
+    }
+    
+    return $subdirs | Sort-Object FullName
+}
+
+function Build-GuideEntry {
+    param(
+        [Parameter(Mandatory = $true)]
+        [System.IO.FileInfo]$GuideFile,
+        
+        [Parameter(Mandatory = $true)]
+        [string]$FromPath,
+        
+        [Parameter(Mandatory = $true)]
+        [string]$HeaderLevel
+    )
+    
+    $guideInfo = Get-GuideInfo -FilePath $GuideFile.FullName
+    $relativePath = Get-RelativeMarkdownPath -FromPath $FromPath -ToPath $GuideFile.FullName
+    
+    $entry = "$HeaderLevel [$($guideInfo.Title)]($relativePath)$CRLF"
+    
+    if ($guideInfo.Description) {
+        $entry += "$CRLF$($guideInfo.Description)$CRLF"
+    }
+    
+    return $entry
+}
+
+function Build-SectionHeader {
+    param(
+        [Parameter(Mandatory = $true)]
+        [string]$Title,
+        
+        [Parameter(Mandatory = $true)]
+        [string]$IndexPath,
+        
+        [Parameter(Mandatory = $true)]
+        [string]$FromPath,
+        
+        [Parameter(Mandatory = $true)]
+        [string]$HeaderLevel,
+        
+        [Parameter(Mandatory = $true)]
+        [bool]$IsUserManual
+    )
+    
+    $relativePath = Get-RelativeMarkdownPath -FromPath $FromPath -ToPath $IndexPath
+    # User manuals don't get " Guides" suffix
+    $displayTitle = if ($IsUserManual) { $Title } else { "$Title Guides" }
+    
+    return "$HeaderLevel [$displayTitle]($relativePath)$CRLF$CRLF"
+}
+
+function Get-TcatWikiSection {
+    return "## TCAT Wiki Guides$CRLF$CRLF### [Contributing](../CONTRIBUTING.md)$CRLF$CRLF" +
+    "This guide explains how to contribute to the TCAT Wiki.$CRLF"
+}
+
+# ==============================================================================
+# MAIN FUNCTIONS
+# ==============================================================================
 
 function Update-ParentGuidesSection {
     param(
         [Parameter(Mandatory = $true)]
-        [string]$ParentIndexPath,
+        [System.IO.DirectoryInfo]$Directory
+    )
+    
+    $indexPath = Join-Path $Directory.FullName "index.md"
+    $parentDir = $Directory.FullName
+    
+    # Get direct guides
+    $directGuides = Get-GuidesInDirectory -Directory $parentDir -ExcludeOwnIndex $true -ExcludeFlag $EXCLUDE_PARENT_FLAG
+    
+    # Get subdirectories
+    $subdirs = Get-Subdirectories -Directory $parentDir
+    
+    # Check if there's anything to add
+    $hasContent = $false
+    if ($directGuides.Count -gt 0) {
+        $hasContent = $true
+    }
+    else {
+        # Check if any subdir has guides or is a user manual
+        foreach ($subdir in $subdirs) {
+            if (Test-IsUserManualDirectory -Directory $subdir.FullName) {
+                $hasContent = $true
+                break
+            }
+            $subdirGuides = Get-GuidesInDirectory -Directory $subdir.FullName -ExcludeOwnIndex $true -ExcludeFlag $EXCLUDE_PARENT_FLAG
+            if ($subdirGuides.Count -gt 0) {
+                $hasContent = $true
+                break
+            }
+        }
+    }
+    
+    if (-not $hasContent) {
+        return
+    }
+    
+    # Build guides section
+    $pageTitle = Get-DirectoryTitle -IndexPath $indexPath
+    $dirDepth = ($indexPath -replace [regex]::Escape($script:docsPath), '' -split '\\' | Where-Object { $_ -ne '' }).Count - 1
+    $relPathToGuidesList = ('../' * $dirDepth) + 'guides-list/index.md'
+    
+    $guidesSection = "$CRLF$CRLF## Guides$CRLF$CRLF"
+    $guidesSection += "$pageTitle Guides$CRLF$CRLF"
+    $guidesSection += "_For a list of all guides on the TCAT Wiki, refer to the [Guides List]($relPathToGuidesList)._$CRLF$CRLF"
+    
+    # Add direct guides
+    foreach ($guide in $directGuides) {
+        $guidesSection += Build-GuideEntry -GuideFile $guide -FromPath $parentDir -HeaderLevel "###"
+        $guidesSection += $CRLF
+    }
+    
+    # Add subdirectory subsections
+    foreach ($subdir in $subdirs) {
+        $subdirIndexPath = Join-Path $subdir.FullName "index.md"
+        $subdirTitle = Get-DirectoryTitle -IndexPath $subdirIndexPath
+        $isUserManual = Test-IsUserManualDirectory -Directory $subdir.FullName
         
+        if ($isUserManual) {
+            # User manual: show as a single guide entry (no child guides listed)
+            $guidesSection += Build-GuideEntry -GuideFile (Get-Item $subdirIndexPath) -FromPath $parentDir -HeaderLevel "###"
+            $guidesSection += $CRLF
+        }
+        else {
+            # Regular directory: show section header with child guides
+            $subdirGuides = Get-GuidesInDirectory -Directory $subdir.FullName -ExcludeOwnIndex $true -ExcludeFlag $EXCLUDE_PARENT_FLAG
+            
+            if ($subdirGuides.Count -eq 0) {
+                continue
+            }
+            
+            $guidesSection += Build-SectionHeader -Title $subdirTitle -IndexPath $subdirIndexPath -FromPath $parentDir -HeaderLevel "###" -IsUserManual $false
+            
+            foreach ($guide in $subdirGuides) {
+                $guidesSection += Build-GuideEntry -GuideFile $guide -FromPath $parentDir -HeaderLevel "####"
+                $guidesSection += $CRLF
+            }
+        }
+    }
+    
+    # Read existing content and replace ## Guides section
+    $content = Get-Content $indexPath -Raw -ErrorAction Stop
+    $content = $content -replace '(?s)\r?\n\r?\n## Guides\r?\n.*$', ''
+    $content = $content.TrimEnd() + $guidesSection.TrimEnd()
+    
+    Set-Content -Path $indexPath -Value $content -Encoding UTF8
+    
+    $dirName = $Directory.Name
+    Write-Host "  ✓ Updated: $dirName"
+}
+
+function Build-MainGuidesList {
+    param(
         [Parameter(Mandatory = $true)]
-        [object[]]$GuideFiles,
+        [array]$AllDirectories,
         
         [Parameter(Mandatory = $true)]
         [string]$DocsPath
     )
     
-    if ($GuideFiles.Count -eq 0) {
-        return $false
-    }
+    # Start with header
+    $content = "---${CRLF}title: Guides List${CRLF}---${CRLF}${CRLF}<!-- @format -->${CRLF}${CRLF}"
+    $content += "# Guides List${CRLF}${CRLF}"
+    $content += "Guides, tutorials, and user manuals produced by TCAT and/or its partners are listed below.${CRLF}${CRLF}"
     
-    $dirName = Split-Path $ParentIndexPath -Parent | Split-Path -Leaf
-    Write-Host "  Updating: $dirName"
+    $guidesListPath = Join-Path $DocsPath "guides-list"
     
-    try {
-        $content = Get-Content $ParentIndexPath -Raw -ErrorAction Stop
-        
-        # Use Windows-style line endings (CRLF)
-        $lineEnding = "`r`n"
-        
-        # Get the title from this file's frontmatter
-        $pageTitle = Get-IndexTitleFromFile -IndexPath $ParentIndexPath
-        
-        # Calculate how many directory levels up from this file to the docs root
-        # Then add the path to guides-list
-        $dirDepth = ($ParentIndexPath -replace [regex]::Escape($docsPath), '' -split '\\' | Where-Object { $_ -ne '' }).Count - 1
-        $relPathToGuidesList = ('../' * $dirDepth) + 'guides-list/index.md'
-        
-        # Remove existing "## Guides" section if it exists (everything from "## Guides" to end)
-        $content = $content -replace '(?s)\r?\n\r?\n## Guides\r?\n.*$', ''
-        
-        # Build new Guides section at the end (with blank lines before and after header)
-        $guidesSection = "$lineEnding$lineEnding## Guides$lineEnding$lineEnding"
-        $guidesSection += "$pageTitle Guides$lineEnding$lineEnding"
-        $guidesSection += "_For a list of all guides on the TCAT Wiki, refer to the [Guides List]($relPathToGuidesList)._$lineEnding$lineEnding"
-        
-        for ($i = 0; $i -lt $GuideFiles.Count; $i++) {
-            $file = $GuideFiles[$i]
-            $guideInfo = Get-GuideInfo -FilePath $file.FullName
-            
-            # Calculate relative path from parent index.md to this guide file
-            $parentDir = Split-Path $ParentIndexPath -Parent
-            $relPathToGuide = [System.IO.Path]::GetRelativePath($parentDir, $file.FullName) -replace '\\', '/'
-            
-            $guidesSection += "### [$($guideInfo.Title)]($relPathToGuide)$lineEnding"
-            if ($guideInfo.Description) {
-                $guidesSection += "$lineEnding$($guideInfo.Description)$lineEnding"
-            }
-            
-            if ($i -lt ($GuideFiles.Count - 1)) {
-                $guidesSection += "$lineEnding"
-            }
+    # Process each directory
+    foreach ($dir in $AllDirectories) {
+        # Skip guides-list itself
+        if ($dir.FullName -match 'guides-list$') {
+            continue
         }
         
-        # Append Guides section to end of file (trim trailing newlines then add single newline)
-        $content = $content.TrimEnd() + $guidesSection.TrimEnd()
+        # Check if this directory is a user manual
+        $indexPath = Join-Path $dir.FullName "index.md"
+        $isUserManual = Test-IsUserManualDirectory -Directory $dir.FullName
         
-        Set-Content -Path $ParentIndexPath -Value $content -Encoding UTF8
-        Write-Host "    ✓ Updated with $($GuideFiles.Count) guide(s)"
-        return $true
+        # For user manuals: only show the index.md itself (not child pages)
+        # For regular directories: show all guides except the index.md
+        if ($isUserManual) {
+            $indexInfo = Get-GuideInfo -FilePath $indexPath
+            if (-not $indexInfo.IsGuide -or $indexInfo.ExcludeFromMain) {
+                continue
+            }
+            
+            $dirTitle = Get-DirectoryTitle -IndexPath $indexPath
+            $depthFromDocs = ($dir.FullName -replace [regex]::Escape($DocsPath), '' -split '\\' | Where-Object { $_ -ne '' } | Measure-Object).Count
+            $headerLevel = '#' * ($depthFromDocs + 1)
+            
+            # Add user manual as a single guide entry (no section header, just the guide)
+            $content += Build-GuideEntry -GuideFile (Get-Item $indexPath) -FromPath $guidesListPath -HeaderLevel $headerLevel
+            $content += $CRLF
+        }
+        else {
+            # Regular directory: get guides excluding own index.md
+            $guides = Get-GuidesInDirectory -Directory $dir.FullName -ExcludeOwnIndex $true -ExcludeFlag $EXCLUDE_MAIN_FLAG
+            
+            if ($guides.Count -eq 0) {
+                continue
+            }
+            
+            $dirTitle = Get-DirectoryTitle -IndexPath $indexPath
+            $depthFromDocs = ($dir.FullName -replace [regex]::Escape($DocsPath), '' -split '\\' | Where-Object { $_ -ne '' } | Measure-Object).Count
+            $headerLevel = '#' * ($depthFromDocs + 1)
+            
+            # Add section header
+            $content += Build-SectionHeader -Title $dirTitle -IndexPath $indexPath -FromPath $guidesListPath -HeaderLevel $headerLevel -IsUserManual $false
+            
+            # Add guides
+            foreach ($guide in $guides) {
+                $guideHeaderLevel = '#' * ($depthFromDocs + 2)
+                $content += Build-GuideEntry -GuideFile $guide -FromPath $guidesListPath -HeaderLevel $guideHeaderLevel
+                $content += $CRLF
+            }
+        }
     }
-    catch {
-        Write-Warning "  Could not update $ParentIndexPath - $_"
-        return $false
-    }
+    
+    # Add TCAT Wiki section
+    $content += Get-TcatWikiSection
+    
+    return $content
 }
-
 
 # ==============================================================================
 # MAIN SCRIPT
 # ==============================================================================
 
 Write-Host ""
-Write-Host "TCAT Wiki - Guides Lists Generator v3.0.0"
+Write-Host "TCAT Wiki - Guides Lists Generator v4.0.0"
 Write-Host "==========================================="
 Write-Host ""
 
-# Auto-detect docs path
-$docsPath = ""
+# Find docs path
+$script:docsPath = ""
 if (Test-Path "..\docs") {
-    $docsPath = Resolve-Path "..\docs"
+    $script:docsPath = Resolve-Path "..\docs"
 }
 elseif (Test-Path "docs") {
-    $docsPath = Resolve-Path "docs"
+    $script:docsPath = Resolve-Path "docs"
 }
 else {
     Write-Error "docs directory not found. Please run this script from the repository root or util directory."
     exit 1
 }
 
-Write-Host "Scanning: $docsPath"
+Write-Host "Scanning: $script:docsPath"
+Write-Host ""
+
+# Get all directories with index.md
+$allDirectories = Get-ChildItem -Path $script:docsPath -Recurse -Directory -ErrorAction Stop |
+Where-Object { $_.Name -ne "resources" } |
+ForEach-Object {
+    $indexPath = Join-Path $_.FullName "index.md"
+    if (Test-Path $indexPath -PathType Leaf) {
+        $_
+    }
+} | Sort-Object FullName
+
+Write-Host "Found $($allDirectories.Count) directories with index.md files"
 Write-Host ""
 
 # ==============================================================================
-# PHASE 1: Update parent index.md files with Guides sections
+# PHASE 1: Update parent guides sections
 # ==============================================================================
 
 Write-Host "PHASE 1: Updating parent directory index.md files"
 Write-Host "---------------------------------------------------"
 Write-Host ""
 
-# Find all directories with index.md (recursively, excluding resources)
-$directoriesToProcess = Get-ChildItem -Path $docsPath -Recurse -Directory -ErrorAction Stop |
-Where-Object { $_.Name -ne "resources" -and $_.Name -ne ".git" } |
-ForEach-Object {
-    $indexPath = Join-Path $_.FullName "index.md"
-    if (Test-Path $indexPath -PathType Leaf) {
-        $_ | Add-Member -NotePropertyName "IndexPath" -NotePropertyValue $indexPath -PassThru
+foreach ($dir in $allDirectories) {
+    try {
+        Update-ParentGuidesSection -Directory $dir
     }
-} | Sort-Object FullName
-
-Write-Host "Found $($directoriesToProcess.Count) directories with index.md files"
-Write-Host ""
-
-$updatedCount = 0
-
-foreach ($dir in $directoriesToProcess) {
-    # Find all .md files in this directory and its subdirectories that have "- Guide" tag
-    # Exclude only the parent directory's own index.md, but include nested index.md files
-    $guideFiles = @(Get-ChildItem -Path $dir.FullName -Filter "*.md" -File -Recurse |
-        Where-Object { $_.FullName -ne $dir.IndexPath } |
-        ForEach-Object {
-            $guideInfo = Get-GuideInfo -FilePath $_.FullName
-            if ($guideInfo.IsGuide -and -not $guideInfo.SkipGuidesList) { $_ }
-        } | Sort-Object FullName)
-    
-    if ($guideFiles.Count -gt 0) {
-        if (Update-ParentGuidesSection -ParentIndexPath $dir.IndexPath -GuideFiles $guideFiles -DocsPath $docsPath) {
-            $updatedCount++
-        }
+    catch {
+        Write-Error "Failed processing $($dir.FullName): $_"
+        exit 1
     }
 }
 
 Write-Host ""
-Write-Host "Updated $updatedCount directories with guide sections"
-Write-Host ""
 
 # ==============================================================================
-# PHASE 2: Generate main guides-list/index.md
+# PHASE 2: Generate main guides list
 # ==============================================================================
 
 Write-Host "PHASE 2: Generating main guides-list/index.md"
 Write-Host "-----------------------------------------------"
 Write-Host ""
 
-# Build the main guides list by processing all directories
-$mainContent = "---`r`ntitle: Guides List`r`n---`r`n`r`n<!-- @format -->`r`n`r`n# Guides List`r`n`r`nGuides, tutorials, and user manuals produced by TCAT and/or its partners are listed below.`r`n`r`n"
-
-# Process each directory and add its guides or "Coming soon!"
-$processedCount = 0
-foreach ($dir in $directoriesToProcess) {
-    # Skip guides-list itself
-    if ($dir.FullName -match 'guides-list$') {
-        continue
-    }
-    
-    # Get the title from this directory's index.md
-    $indexTitle = Get-IndexTitleFromFile -IndexPath $dir.IndexPath
-    if (-not $indexTitle) {
-        continue
-    }
-    
-    # Calculate relative path from guides-list to this index.md
-    $relPath = Get-RelativePathFromGuidesList -TargetIndexPath $dir.IndexPath -DocsPath $docsPath
-    
-    # Calculate depth for header level (## for root, ### for 1 level deep, etc.)
-    $depthFromDocs = ($dir.FullName -replace [regex]::Escape($docsPath), '' -split '\\' | Where-Object { $_ -ne '' } | Measure-Object).Count
-    $headerLevel = '#' * ($depthFromDocs + 1)  # +1 because we want ## minimum
-    
-    # Find all guides in this directory and its subdirectories, excluding any with skip-in-guides-lists flag
-    # Exclude only this directory's own index.md, but include nested index.md files
-    $guideFiles = @(Get-ChildItem -Path $dir.FullName -Filter "*.md" -File -Recurse |
-        Where-Object { $_.FullName -ne $dir.IndexPath } |
-        ForEach-Object {
-            $guideInfo = Get-GuideInfo -FilePath $_.FullName
-            if ($guideInfo.IsGuide -and -not $guideInfo.SkipGuidesList) { $_ }
-        } | Sort-Object FullName)
-    
-    # Determine if this directory should be included in the guides list
-    $includeInList = Get-IncludeInGuidesList -IndexPath $dir.IndexPath
-    $hasGuides = $guideFiles.Count -gt 0
-    $hasChildDirs = @(Get-ChildItem -Path $dir.FullName -Directory -ErrorAction SilentlyContinue | 
-        Where-Object { $_.Name -ne "resources" -and $_.Name -ne ".git" }).Count -gt 0
-    
-    # Include in guides list if:
-    # 1. It has guides, OR
-    # 2. It's explicitly marked with include-in-guides-lists: true, OR
-    # 3. It has child directories (infer from structure)
-    if (-not $hasGuides -and -not $includeInList -and -not $hasChildDirs) {
-        continue
-    }
-    
-    # Add section header
-    $mainContent += "$headerLevel [$indexTitle]($relPath) Guides`r`n`r`n"
-    
-    if ($guideFiles.Count -eq 0) {
-        # No guides in this directory - show "Coming soon!" only for leaf directories
-        if (-not $hasChildDirs) {
-            $mainContent += "_Coming soon!_`r`n`r`n"
-        }
-    }
-    else {
-        # Add all guides with descriptions
-        foreach ($guide in $guideFiles) {
-            $guideInfo = Get-GuideInfo -FilePath $guide.FullName
-            # Calculate relative path from guides-list to this guide file
-            $guideFullPath = $guide.FullName
-            $guideRelPath = [System.IO.Path]::GetRelativePath((Join-Path $docsPath "guides-list"), $guideFullPath) -replace '\\', '/'
-            
-            # Determine header level for guide (one level deeper than section)
-            $guideHeaderLevel = '#' * ($depthFromDocs + 2)
-            
-            $mainContent += "$guideHeaderLevel [$($guideInfo.Title)]($guideRelPath)`r`n"
-            if ($guideInfo.Description) {
-                $mainContent += "`r`n$($guideInfo.Description)`r`n"
-            }
-            $mainContent += "`r`n"
-        }
-    }
-    
-    $processedCount++
+try {
+    $mainContent = Build-MainGuidesList -AllDirectories $allDirectories -DocsPath $script:docsPath
+    $guidesListPath = Join-Path $script:docsPath "guides-list\index.md"
+    Set-Content -Path $guidesListPath -Value $mainContent -Encoding UTF8
+    Write-Host "✓ Generated main guides list"
+}
+catch {
+    Write-Error "Failed generating main guides list: $_"
+    exit 1
 }
 
-# Add TCAT Wiki Guides section
-$mainContent += "## TCAT Wiki Guides`r`n`r`n"
-$mainContent += "### [Contributing](../CONTRIBUTING.md)`r`n`r`n"
-$mainContent += "This guide explains how to contribute to the TCAT Wiki."
-
-# Write main guides list
-$mainIndexPath = Join-Path $docsPath "guides-list" "index.md"
-Set-Content -Path $mainIndexPath -Value $mainContent -Encoding UTF8
-
-Write-Host "✓ Generated main guides list from $processedCount directories"
 Write-Host ""
-
 Write-Host "==========================================="
 Write-Host "Guides list generation complete!"
 Write-Host ""

@@ -14,8 +14,6 @@ This guide explains how to use the Workspaces platform to configure Workspace Se
 
 _For a list of all guides on the TCAT Wiki, refer to the [Guides List](../../guides-list/index.md)._
 
----
-
 ## Workspace Settings
 
 ![Screenshot of the Workspace Settings page in Workspaces.](../../resources/images/workspaces/user-manual/workspace-settings/workspace-settings.png){ width="400" }

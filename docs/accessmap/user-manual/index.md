@@ -1,5 +1,5 @@
 ---
-title: Workspaces User Manual
+title: AccessMap User Manual
 tags:
     - User Manual
     - External
@@ -8,10 +8,12 @@ tags:
 
 <!-- @format -->
 
-# Workspaces User Manual
+# AccessMap User Manual
 
-This guide explains how to use the Workspaces platform.
+This guide explains how to use the AccessMap platform.
 
 _For a list of all guides on the TCAT Wiki, refer to the [Guides List](../../guides-list/index.md)._
 
 ---
+
+_Coming soon!_
