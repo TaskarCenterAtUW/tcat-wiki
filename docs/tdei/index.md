@@ -68,7 +68,7 @@ Tool for analyzing pedestrian infrastructure and access to amenities.
 
 Transportation Data Exchange Initiative Data Producing Applications
 
-### [Workspaces](../workspaces/index.md)
+### [Workspaces](../tdei-workspaces/index.md)
 
 Platform providing dataset editing functionality.
 
@@ -83,3 +83,15 @@ Mobile applications for both Android and iOS.
 ### [JOSM](../josm/index.md)
 
 Desktop application for advanced editing.
+
+## Guides
+
+TDEI Guides
+
+_For a list of all guides on the TCAT Wiki, refer to the [Guides List](../guides-list/index.md)._
+
+### [TDEI Portal Guides](portal/index.md)
+
+#### [TDEI Portal Account Registration Guide](portal/account-registration.md)
+
+This guide explains how to register for a TDEI account using the TDEI Portal.

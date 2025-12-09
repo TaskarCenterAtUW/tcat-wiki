@@ -2,9 +2,7 @@
 title: TDEI Portal Account Registration Guide
 tags:
     - Guide
-    - Internal
     - External
-    - Developer
     - User
 ---
 

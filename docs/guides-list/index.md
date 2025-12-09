@@ -8,17 +8,11 @@ title: Guides List
 
 Guides, tutorials, and user manuals produced by TCAT and/or its partners are listed below.
 
-## [AccessMap](../accessmap/index.md) Guides
+### [AccessMap User Manual](../accessmap/user-manual/index.md)
 
-_Coming soon!_
+This guide explains how to use the AccessMap platform.
 
-## [AVIV ScoutRoute](../aviv-scoutroute/index.md) Guides
-
-### [AVIV ScoutRoute User Manual](../aviv-scoutroute/user-manual.md)
-
-This guide explains how to install and use the AVIV ScoutRoute mobile app.
-
-### [Long Form Quest Definition](../aviv-scoutroute/quests/index.md) Guides
+### [Long Form Quest Definition Guides](../aviv-scoutroute/quests/index.md)
 
 #### [Element Query Guide](../aviv-scoutroute/quests/element-query.md)
 
@@ -28,15 +22,17 @@ This guide explains how to format the element query selector for use in an AVIV 
 
 This guide explains how to assign the correct value for the `element_type_icon` key in the Long Form Quest Definition JSON file used by AVIV ScoutRoute.
 
-## [JOSM](../josm/index.md) Guides
+### [AVIV ScoutRoute User Manual](../aviv-scoutroute/user-manual/index.md)
+
+This guide explains how to install and use the AVIV ScoutRoute mobile app.
+
+## [JOSM Guides](../josm/index.md)
 
 ### [Workspaces JOSM Settings Guide](../josm/workspaces-josm-settings.md)
 
 This guide explains how to use the [Workspaces JOSM Settings Script](https://github.com/TaskarCenterAtUW/tdei-tools/blob/main/utilities/workspaces-josm.ps1) from [TDEI Tools](https://github.com/TaskarCenterAtUW/tdei-tools/) to set up JOSM to enable editing of Workspaces.
 
-## [OpenSidewalks](../opensidewalks/index.md) Guides
-
-### [OpenSidewalks Schema](../opensidewalks/schema/index.md) Guides
+### [OpenSidewalks Schema Guides](../opensidewalks/schema/index.md)
 
 #### [Core Edges in OSW](../opensidewalks/schema/core-edges-in-osw.md)
 
@@ -50,37 +46,43 @@ This guide shows how to add custom non-routable point features (like bus stops) 
 
 This guide explains how to make edits to OpenStreetMap following and supporting the OpenSidewalks schema.
 
-### [OpenSidewalks Tasking Manager](../opensidewalks/tasking-manager/index.md) Guides
+### [OpenSidewalks Tasking Manager Guides](../opensidewalks/tasking-manager/index.md)
 
 #### [Task Polygon Automation Guide](../opensidewalks/tasking-manager/task-polygon-automation.md)
 
 This guide shows the steps for an automated workflow that generates task polygons for use in Tasking Manager.
 
-## [Rapid Editor](../rapid/index.md) Guides
+#### [Tasking Manager User Manual](../opensidewalks/tasking-manager/user-manual/index.md)
 
-_Coming soon!_
+This guide explains how to use the Tasking Manager platform.
 
-## [TDEI](../tdei/index.md) Guides
+### [TDEI Walkshed User Manual](../tdei-walkshed/user-manual/index.md)
 
-## [TDEI Walkshed](../tdei-walkshed/index.md) Guides
+This guide explains how to use the TDEI Walkshed platform.
 
-_Coming soon!_
+## [Workspaces Guides](../tdei-workspaces/index.md)
 
-### [TDEI Portal](../tdei/portal/index.md) Guides
+### [Workspace Export Guide](../tdei-workspaces/workspace-export.md)
+
+This guide explains how to directly export a dataset in `.osm` format from TDEI Workspaces.
+
+### [Workspaces User Manual](../tdei-workspaces/user-manual/index.md)
+
+This guide explains how to use the Workspaces platform.
+
+### [TDEI Portal Guides](../tdei/portal/index.md)
 
 #### [TDEI Portal Account Registration Guide](../tdei/portal/account-registration.md)
 
 This guide explains how to register for a TDEI account using the TDEI Portal.
 
-### [TDEI Core](../tdei/tdei-core/index.md) Guides
+#### [TDEI Portal User Manual](../tdei/portal/user-manual/index.md)
 
-_Coming soon!_
+This guide explains how to use the TDEI Portal platform.
 
-## [Workspaces](../workspaces/index.md) Guides
+### [Workspaces User Manual](../workspaces/user-manual/index.md)
 
-### [Workspace Export Guide](../workspaces/workspace-export.md)
-
-This guide explains how to directly export a dataset in `.osm` format from Workspaces.
+This guide explains how to use the Workspaces platform.
 
 ## TCAT Wiki Guides
 

@@ -10,7 +10,7 @@ tags:
 
 # Workspace Export Guide
 
-This guide explains how to directly export a dataset in `.osm` format from Workspaces.
+This guide explains how to directly export a dataset in `.osm` format from TDEI Workspaces.
 
 _For a list of all guides on the TCAT Wiki, refer to the [Guides List](../guides-list/index.md)._
 

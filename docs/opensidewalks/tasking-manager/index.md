@@ -19,3 +19,7 @@ _For a list of all guides on the TCAT Wiki, refer to the [Guides List](../../gui
 ### [Task Polygon Automation Guide](task-polygon-automation.md)
 
 This guide shows the steps for an automated workflow that generates task polygons for use in Tasking Manager.
+
+### [Tasking Manager User Manual](user-manual/index.md)
+
+This guide explains how to use the Tasking Manager platform.

@@ -15,6 +15,8 @@ This guide shows how to add custom non-routable point features (like bus stops) 
 
 _For a list of all guides on the TCAT Wiki, refer to the [Guides List](../../guides-list/index.md)._
 
+---
+
 ## What are Custom Points?
 
 Custom Points in OpenSidewalks are user-defined non-routable point features that extend the schema beyond the predefined Core Entities and Adjacent Entities point types. While OpenSidewalks includes many built-in point types like fire hydrants, benches, and street lamps, Custom Points let you add any custom feature!

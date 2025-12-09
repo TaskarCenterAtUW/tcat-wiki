@@ -15,6 +15,8 @@ This guide shows how to convert existing sidewalk centerline datasets into OpenS
 
 _For a list of all guides on the TCAT Wiki, refer to the [Guides List](../../guides-list/index.md)._
 
+---
+
 ## What Are Sidewalk Centerlines?
 
 Sidewalk centerlines are linear GIS features representing the middle path of sidewalk infrastructure. These datasets are commonly maintained by city transportation departments and typically include attributes like:

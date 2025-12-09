@@ -105,6 +105,34 @@ This section of the guide explains how to set up a Windows environment for contr
 
 Refer to the documentation for [Material for MkDocs](https://squidfunk.github.io/mkdocs-material/) and the [MkDocs User Guide](https://www.mkdocs.org/user-guide/).
 
+### Guide Files
+
+By default, guides appear in both their parent page's guides section and in the main guides list. You can control this using frontmatter flags (YAML comments, invisible on the built page).
+
+To exclude a guide from its parent's guides section:
+
+```yaml
+---
+title: Your Guide Title
+tags:
+    - Guide
+# exclude-from-parent-guides-list
+---
+```
+
+To exclude a guide from the main guides list:
+
+```yaml
+---
+title: Your Guide Title
+tags:
+    - Guide
+# exclude-from-main-guides-list
+---
+```
+
+Both flags can be used together to exclude a guide from all guides lists.
+
 ### Images
 
 Where possible, follow these guidelines for images:

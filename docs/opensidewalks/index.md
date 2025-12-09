@@ -19,3 +19,29 @@ The [OpenSidewalks Schema](https://github.com/OpenSidewalks/OpenSidewalks-Schema
 The [OpenSidewalks Tasking Manager](https://tasks.sidewalks.washington.edu/explore) is a [Tasking Manager](https://wiki.openstreetmap.org/wiki/Tasking_Manager) instance for coordinating contributions to OSM following OSW guidelines, and is open to all OSM users.
 
 Additional details about this organized editing activity can be found on the [Organised Editing/Activities/OpenSidewalks](https://wiki.openstreetmap.org/wiki/Organised_Editing/Activities/OpenSidewalks) page on the OSM Wiki.
+
+## Guides
+
+OpenSidewalks Guides
+
+_For a list of all guides on the TCAT Wiki, refer to the [Guides List](../guides-list/index.md)._
+
+### [OpenSidewalks Schema Guides](schema/index.md)
+
+#### [Core Edges in OSW](schema/core-edges-in-osw.md)
+
+This guide shows how to convert existing sidewalk centerline datasets into OpenSidewalks (OSW) format for upload to the Transportation Data Exchange Initiative (TDEI).
+
+#### [Custom Points in OSW](schema/custom-points-in-osw.md)
+
+This guide shows how to add custom non-routable point features (like bus stops) to an OpenSidewalks dataset using the Custom Points entity type.
+
+#### [OpenSidewalks in OpenStreetMap](schema/osw-in-osm.md)
+
+This guide explains how to make edits to OpenStreetMap following and supporting the OpenSidewalks schema.
+
+### [OpenSidewalks Tasking Manager Guides](tasking-manager/index.md)
+
+#### [Task Polygon Automation Guide](tasking-manager/task-polygon-automation.md)
+
+This guide shows the steps for an automated workflow that generates task polygons for use in Tasking Manager.
