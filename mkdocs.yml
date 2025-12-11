@@ -170,7 +170,4 @@ nav:
       - User Manual:
           - tdei-workspaces/user-manual/index.md
           - Workspace Settings: tdei-workspaces/user-manual/workspace-settings.md
-  - Workspaces:
-      - User Manual:
-          - workspaces/user-manual/index.md
   - Contributing: CONTRIBUTING.md
