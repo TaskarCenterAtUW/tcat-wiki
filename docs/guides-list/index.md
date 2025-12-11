@@ -80,10 +80,6 @@ This guide explains how to register for a TDEI account using the TDEI Portal.
 
 This guide explains how to use the TDEI Portal platform.
 
-### [Workspaces User Manual](../workspaces/user-manual/index.md)
-
-This guide explains how to use the Workspaces platform.
-
 ## TCAT Wiki Guides
 
 ### [Contributing](../CONTRIBUTING.md)
