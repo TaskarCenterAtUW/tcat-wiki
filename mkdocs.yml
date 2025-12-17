@@ -137,6 +137,8 @@ nav:
   - JOSM:
       - josm/index.md
       - Workspaces JOSM Settings Guide: josm/workspaces-josm-settings.md
+      - User Manual:
+          - josm/user-manual/index.md
   - OpenSidewalks:
       - opensidewalks/index.md
       - Schema:
@@ -151,23 +153,25 @@ nav:
               - opensidewalks/tasking-manager/user-manual/index.md
   - Rapid:
       - rapid/index.md
+      - User Manual:
+          - rapid/user-manual/index.md
   - TDEI:
       - tdei/index.md
       - Portal:
           - tdei/portal/index.md
-          - TDEI Portal Account Registration Guide: tdei/portal/account-registration.md
           - User Manual:
               - tdei/portal/user-manual/index.md
+              - TDEI Portal Account Registration Guide: tdei/portal/user-manual/account-registration.md
       - TDEI Core:
           - tdei/tdei-core/index.md
-  - TDEI Walkshed:
-      - tdei-walkshed/index.md
+  - Walksheds:
+      - walksheds/index.md
       - User Manual:
-          - tdei-walkshed/user-manual/index.md
-  - TDEI Workspaces:
-      - tdei-workspaces/index.md
-      - Workspace Export Guide: tdei-workspaces/workspace-export.md
+          - walksheds/user-manual/index.md
+  - Workspaces:
+      - workspaces/index.md
+      - Workspace Export Guide: workspaces/workspace-export.md
       - User Manual:
-          - tdei-workspaces/user-manual/index.md
-          - Workspace Settings: tdei-workspaces/user-manual/workspace-settings.md
+          - workspaces/user-manual/index.md
+          - Workspace Settings: workspaces/user-manual/workspace-settings.md
   - Contributing: CONTRIBUTING.md
