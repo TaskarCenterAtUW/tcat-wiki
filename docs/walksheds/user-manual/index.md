@@ -1,5 +1,5 @@
 ---
-title: TDEI Walkshed User Manual
+title: Walksheds User Manual
 tags:
     - User Manual
     - External
@@ -8,9 +8,9 @@ tags:
 
 <!-- @format -->
 
-# TDEI Walkshed User Manual
+# Walksheds User Manual
 
-This guide explains how to use the TDEI Walkshed platform.
+This user manual explains how to use the TDEI Walksheds platform.
 
 _For a list of all guides on the TCAT Wiki, refer to the [Guides List](../../guides-list/index.md)._
 
