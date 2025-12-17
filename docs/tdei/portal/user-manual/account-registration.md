@@ -12,7 +12,7 @@ tags:
 
 This guide explains how to register for a TDEI account using the TDEI Portal.
 
-_For a list of all guides on the TCAT Wiki, refer to the [Guides List](../../guides-list/index.md)._
+_For a list of all guides on the TCAT Wiki, refer to the [Guides List](../../../guides-list/index.md)._
 
 ---
 
@@ -28,4 +28,4 @@ _For a list of all guides on the TCAT Wiki, refer to the [Guides List](../../gui
 
     _Password requirements: Minimum of 8 characters in length; requires at least one lower case letter, one upper case letter, one special character, and a number._
 
-![TDEI Portal login page, "Register Now" highlighted](../../resources/images/tdei-portal/login-h-register-now.png){ width="400" } ![TDEI Portal register page](../../resources/images/tdei-portal/register.png){ width="400" }
+![TDEI Portal login page, "Register Now" highlighted](../../../resources/images/tdei-portal/login-h-register-now.png){ width="400" } ![TDEI Portal register page](../../../resources/images/tdei-portal/register.png){ width="400" }
