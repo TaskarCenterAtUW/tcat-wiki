@@ -10,17 +10,15 @@ tags:
 
 # Workspaces User Manual
 
-This guide explains how to use the Workspaces platform.
+This user manual explains how to use the TDEI Workspaces platform.
 
 _For a list of all guides on the TCAT Wiki, refer to the [Guides List](../../guides-list/index.md)._
 
 ---
 
-## Guides
+## Table of Contents
 
-Workspaces User Manual Guides
-
-_For a list of all guides on the TCAT Wiki, refer to the [Guides List](../../guides-list/index.md)._
+Workspaces User Manual Table of Contents
 
 ### [Workspace Settings](workspace-settings.md)
 

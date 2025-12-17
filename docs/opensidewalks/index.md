@@ -20,13 +20,15 @@ The [OpenSidewalks Tasking Manager](https://tasks.sidewalks.washington.edu/explo
 
 Additional details about this organized editing activity can be found on the [Organised Editing/Activities/OpenSidewalks](https://wiki.openstreetmap.org/wiki/Organised_Editing/Activities/OpenSidewalks) page on the OSM Wiki.
 
+---
+
 ## Guides
 
 OpenSidewalks Guides
 
 _For a list of all guides on the TCAT Wiki, refer to the [Guides List](../guides-list/index.md)._
 
-### [OpenSidewalks Schema Guides](schema/index.md)
+### [OpenSidewalks Schema](schema/index.md) Guides
 
 #### [Core Edges in OSW](schema/core-edges-in-osw.md)
 
@@ -40,7 +42,11 @@ This guide shows how to add custom non-routable point features (like bus stops) 
 
 This guide explains how to make edits to OpenStreetMap following and supporting the OpenSidewalks schema.
 
-### [OpenSidewalks Tasking Manager Guides](tasking-manager/index.md)
+### [OpenSidewalks Tasking Manager](tasking-manager/index.md) Guides
+
+#### [Tasking Manager User Manual](tasking-manager/user-manual/index.md)
+
+This user manual explains how to use the Tasking Manager platform.
 
 #### [Task Polygon Automation Guide](tasking-manager/task-polygon-automation.md)
 

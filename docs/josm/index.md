@@ -8,11 +8,17 @@ title: JOSM
 
 The [Java OpenStreetMap Editor](https://josm.openstreetmap.de/) (JOSM) is a powerful OpenStreetMap editor for advanced users.
 
+---
+
 ## Guides
 
 JOSM Guides
 
 _For a list of all guides on the TCAT Wiki, refer to the [Guides List](../guides-list/index.md)._
+
+### [JOSM User Manual](user-manual/index.md)
+
+This user manual explains how to use the JOSM editor.
 
 ### [Workspaces JOSM Settings Guide](workspaces-josm-settings.md)
 

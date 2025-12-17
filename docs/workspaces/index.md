@@ -6,7 +6,7 @@ title: Workspaces
 
 # Workspaces
 
-Workspaces Platform
+[Workspaces](https://workspaces.sidewalks.washington.edu/) (officially, "TDEI Workspaces") is a web platform for editing TDEI datasets.
 
 ## Editors
 
@@ -24,16 +24,18 @@ AVIV ScoutRoute (formerly [GoInfoGame](https://tcat.cs.washington.edu/goinfogame
 
 The [Java OpenStreetMap Editor](https://josm.openstreetmap.de/) (JOSM) is a powerful OpenStreetMap editor for advanced users.
 
+---
+
 ## Guides
 
 Workspaces Guides
 
 _For a list of all guides on the TCAT Wiki, refer to the [Guides List](../guides-list/index.md)._
 
-### [Workspace Export Guide](workspace-export.md)
-
-This guide explains how to directly export a dataset in `.osm` format from TDEI Workspaces.
-
 ### [Workspaces User Manual](user-manual/index.md)
 
-This guide explains how to use the Workspaces platform.
+This user manual explains how to use the TDEI Workspaces platform.
+
+### [Workspace Export Guide](workspace-export.md)
+
+This guide explains how to directly export a dataset in `.osm` format from Workspaces.

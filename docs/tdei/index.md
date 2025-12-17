@@ -24,7 +24,7 @@ All TDEI users register through the same process and receive an API key and acce
 
 API keys are used to retrieve data from TDEI. Access credentials are used to log into the portal, retrieve or regenerate API keys, and upload data.
 
-Refer to the [TDEI Portal Account Registration Guide](portal/account-registration.md) for instructions on registering for a TDEI account.
+Refer to the [TDEI Portal Account Registration Guide](portal/user-manual/account-registration.md) for instructions on registering for a TDEI account.
 
 ## Roles
 
@@ -60,7 +60,7 @@ Transportation Data Exchange Initiative Data Consuming Applications
 
 Accessibility-forward customizable router.
 
-### [TDEI Walkshed](../tdei-walkshed/index.md)
+### [TDEI Walksheds](../walksheds/index.md)
 
 Tool for analyzing pedestrian infrastructure and access to amenities.
 
@@ -68,7 +68,7 @@ Tool for analyzing pedestrian infrastructure and access to amenities.
 
 Transportation Data Exchange Initiative Data Producing Applications
 
-### [Workspaces](../tdei-workspaces/index.md)
+### [TDEI Workspaces](../workspaces/index.md)
 
 Platform providing dataset editing functionality.
 
@@ -84,14 +84,16 @@ Mobile applications for both Android and iOS.
 
 Desktop application for advanced editing.
 
+---
+
 ## Guides
 
 TDEI Guides
 
 _For a list of all guides on the TCAT Wiki, refer to the [Guides List](../guides-list/index.md)._
 
-### [TDEI Portal Guides](portal/index.md)
+### [TDEI Portal](portal/index.md) Guides
 
-#### [TDEI Portal Account Registration Guide](portal/account-registration.md)
+#### [TDEI Portal User Manual](portal/user-manual/index.md)
 
-This guide explains how to register for a TDEI account using the TDEI Portal.
+This user manual explains how to use the TDEI Portal platform.

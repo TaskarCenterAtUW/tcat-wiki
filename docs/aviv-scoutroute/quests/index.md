@@ -12,6 +12,8 @@ A Long Form Quest Definition is a JSON file that defines the quests used in AVIV
 
 The Long Form Quest Definition JSON Schema is available on [GitHub](https://github.com/TaskarCenterAtUW/asr-quests/blob/main/schema/schema.json).
 
+---
+
 ## Guides
 
 Long Form Quest Definition Guides
