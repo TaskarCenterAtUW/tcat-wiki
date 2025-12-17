@@ -10,19 +10,11 @@ tags:
 
 # AVIV ScoutRoute User Manual
 
-This guide explains how to install and use the AVIV ScoutRoute mobile app.
+This user manual explains how to install and use the AVIV ScoutRoute mobile app.
 
 _For a list of all guides on the TCAT Wiki, refer to the [Guides List](../../guides-list/index.md)._
 
 ---
-
-- [AVIV ScoutRoute User Manual](#aviv-scoutroute-user-manual)
-  - [Introduction](#introduction)
-  - [Installation](#installation)
-    - [Apple iPhone Users](#apple-iphone-users)
-    - [Android Users](#android-users)
-  - [Next Steps](#next-steps)
-  - [Additional Resources](#additional-resources)
 
 ## Introduction
 

@@ -19,12 +19,14 @@ The **Taskar Center for Accessible Technology** ([TCAT](https://tcat.cs.washingt
 
 The TCAT Wiki is built using [Material for MkDocs](https://squidfunk.github.io/mkdocs-material/).
 
-### TCAT Wiki Guides
+---
+
+## TCAT Wiki Guides
 
 Guides related to the TCAT Wiki itself.
 
 _For a list of all guides on the TCAT Wiki, refer to the [Guides List](guides-list/index.md)._
 
-#### [Contributing](CONTRIBUTING.md)
+### [Contributing](CONTRIBUTING.md)
 
 This guide explains how to contribute to the TCAT Wiki.
