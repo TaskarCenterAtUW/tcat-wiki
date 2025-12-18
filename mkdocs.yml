@@ -1,6 +1,7 @@
 # @format
 
 site_name: TCAT Wiki
+version: 0.9.0
 site_url: https://taskarcenteratuw.github.io/tcat-wiki/
 repo_name: TCAT Wiki on GitHub
 repo_url: https://github.com/TaskarCenterAtUW/tcat-wiki

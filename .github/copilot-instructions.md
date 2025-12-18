@@ -34,6 +34,64 @@ docs/
 -   `/includes/abbreviations.md` auto-links acronyms site-wide (e.g., OSW, TDEI, JOSM)
 -   Add new acronyms here; they're automatically inserted into all `.md` files via MkDocs snippets plugin
 
+## Version Control & Workflow
+
+This project follows standardized version control conventions:
+
+### Semantic Versioning
+
+The TCAT Wiki uses [Semantic Versioning](https://semver.org/) (MAJOR.MINOR.PATCH):
+
+-   **Major (X.0.0)**:
+    -   Core: New major features or upgrades
+    -   Docs: Changes to structure/navigation that break external links
+-   **Minor (0.X.0)**:
+    -   Core: Significant changes to core features
+    -   Docs: New documentation or major reworks
+-   **Patch (0.0.X)**:
+    -   Core: Minor fixes, fixing typos, completing chores
+    -   Docs: Small updates, fixing typos, adding images
+
+The version number is stored in the `version` field in `mkdocs.yml`.
+
+### Conventional Commits
+
+Commits follow [Conventional Commits](https://www.conventionalcommits.org/) with scoping:
+
+-   `feat(scope): description` - Core features or Docs content
+-   `fix(scope): description` - Core patches or Docs corrections
+
+Examples:
+
+```
+feat(core-plugins): add abbreviations plugin
+feat(docs-accessmap): add user manual page
+fix(core-util): fix nav generator logic
+fix(docs-walksheds): fix typo
+```
+
+### Branch Naming
+
+Follow GitHub flow with structured branch names:
+
+**Format**: `type/scope/<work-item-number>-short-description`
+
+**Examples**:
+
+```
+feat/core-plugins/1234-add-abbreviations-plugin
+feat/docs-accessmap/1024-add-user-manual-page
+fix/core-util/9876-fix-nav-generator-logic
+fix/docs-walksheds/2048-fix-typo
+```
+
+### Pull Request & Release Process
+
+1. Create a feature branch following the naming convention
+2. Make commits using conventional commit format
+3. Open a pull request to `main`
+4. Upon merge to `main`, releases are automated
+
 ## Critical Developer Workflows
 
 ### Build & Preview Local Site
