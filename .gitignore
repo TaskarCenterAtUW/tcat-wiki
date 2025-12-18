@@ -1,3 +1,4 @@
+.cache/
 .venv/
 local-storage/
 .DS_Store
