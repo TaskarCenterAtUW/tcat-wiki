@@ -302,5 +302,3 @@ toggle.name = "Switch to light mode"
 #[[project.extra.social]]
 #icon = "fontawesome/brands/github"
 #link = "https://github.com/user/repo"
-
-
