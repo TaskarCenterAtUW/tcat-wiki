@@ -104,6 +104,8 @@ This section of the guide explains how to set up a Windows environment for contr
 
         4. [YAML](https://marketplace.visualstudio.com/items?itemName=redhat.vscode-yaml)
 
+        5. [Even Better TOML](https://marketplace.visualstudio.com/items?itemName=tamasfe.even-better-toml)
+
 2. Clone the repository
 
     ```powershell
