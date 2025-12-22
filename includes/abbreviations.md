@@ -55,6 +55,8 @@
 *[LRTP]: Long-Range Transportation Plan
 *[MIRE]: Model Inventory of Roadway Elements
 *[ML]: Machine Learning
+*[MNY]: Mappy New Year
+*[MNY26]: Mappy New Year 2026
 *[MOU]: Memorandum of Understanding
 *[MPO]: Metropolitan Planning Organization
 *[MUTCD]: Manual on Uniform Traffic Control Devices
@@ -70,6 +72,7 @@
 *[OSM]: OpenStreetMap
 *[OSW]: OpenSidewalks
 *[OTP]: OpenThePaths
+*[OTP26]: OpenThePaths 2026
 *[PED XING]: Pedestrian Crossing
 *[PII]: Personally Identifiable Information
 *[POI]: Point of Interest
