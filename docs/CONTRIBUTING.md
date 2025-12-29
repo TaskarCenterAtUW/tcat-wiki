@@ -227,7 +227,7 @@ For creating screenshots with a consistent style, Firefox DevTools is to be used
 
         2. Device Pixel Ratio: `1`
 
-        3. User Agent String: `Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:131.0) Gecko/20100101 Firefox/131.0`
+        3. User Agent String: `Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:140.0) Gecko/20100101 Firefox/140.0`
 
     2. Name: `[Screenshot] Web - Landscape`
 
@@ -235,7 +235,7 @@ For creating screenshots with a consistent style, Firefox DevTools is to be used
 
         2. Device Pixel Ratio: `1`
 
-        3. User Agent String: `Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:131.0) Gecko/20100101 Firefox/131.0`
+        3. User Agent String: `Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:140.0) Gecko/20100101 Firefox/140.0`
 
 4. Resulting screenshots will fit exactly within the 2px outside border present in the following screenshot templates:
 
