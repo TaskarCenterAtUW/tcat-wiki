@@ -2,7 +2,7 @@
 # This script is designed to be run in a PowerShell environment.
 
 # Name: TCAT Wiki - Link Checker
-# Version: 3.2.0
+# Version: 3.2.1
 # Date: 2025-12-31
 # Author: Amy Bordenave, Taskar Center for Accessible Technology, University of Washington
 # License: CC-BY-ND 4.0 International
@@ -155,14 +155,13 @@ function Test-ExternalUrlValid {
     try {
         # Prepare headers with User-Agent to identify as a bot
         $headers = @{
-            'User-Agent' = 'TCAT-Wiki-LinkChecker/3.2.0 (+https://github.com/TaskarCenterAtUW/tcat-wiki)'
+            'User-Agent' = 'TCAT-Wiki-LinkChecker/3.2.1 (+https://github.com/TaskarCenterAtUW/tcat-wiki)'
         }
         
         # Use HEAD request first, fallback to GET if needed
         try {
             $response = Invoke-WebRequest -Uri $url -Method Head -TimeoutSec 5 -UseBasicParsing -Headers $headers -ErrorAction Stop
-        }
-        catch {
+        } catch {
             # Some servers don't support HEAD, try GET
             $response = Invoke-WebRequest -Uri $url -Method Get -TimeoutSec 5 -UseBasicParsing -Headers $headers -ErrorAction Stop
         }
@@ -170,13 +169,11 @@ function Test-ExternalUrlValid {
             valid  = $response.StatusCode -lt 400
             status = $response.StatusCode
         }
-    }
-    catch {
+    } catch {
         # Extract more meaningful error messages
         $errorMessage = if ($_.Exception.Response.StatusCode) {
             "HTTP $($_.Exception.Response.StatusCode.value__): $($_.Exception.Response.StatusDescription)"
-        }
-        else {
+        } else {
             $_.Exception.Message
         }
         
@@ -194,8 +191,7 @@ foreach ($file in $markdownFiles) {
     
     try {
         $content = Get-Content $file.FullName -Raw -Encoding UTF8
-    }
-    catch {
+    } catch {
         Write-Host "  ERROR reading file: $($_.Exception.Message)" -ForegroundColor Red
         continue
     }
@@ -211,8 +207,7 @@ foreach ($file in $markdownFiles) {
             if ($external) {
                 $externalUrls[$linkUrl] = $true
             }
-        }
-        else {
+        } else {
             # Test internal link only if internal checking is enabled
             if ($internal) {
                 if (-not (Test-InternalLink -filePath $file.FullName -linkUrl $linkUrl)) {
@@ -239,8 +234,7 @@ if ($external) {
         # Check cache first
         if ($externalUrlCache.ContainsKey($url)) {
             $result = $externalUrlCache[$url]
-        }
-        else {
+        } else {
             $result = Test-ExternalUrlValid -url $url
             $externalUrlCache[$url] = $result
         }
@@ -251,8 +245,7 @@ if ($external) {
                 status = $result.status
             }
             Write-Host "  [X] Failed: $($result.status)" -ForegroundColor Red
-        }
-        else {
+        } else {
             Write-Host "  [OK] OK: $($result.status)" -ForegroundColor Green
         }
         
@@ -305,7 +298,6 @@ if ($totalBroken -eq 0) {
 # Exit with error code if any checked links are broken
 if ($totalBroken -gt 0) {
     exit 1
-}
-else {
+} else {
     exit 0
 }

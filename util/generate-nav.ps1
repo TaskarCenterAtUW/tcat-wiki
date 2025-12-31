@@ -2,7 +2,7 @@
 # This script is designed to be run in a PowerShell environment.
 
 # Name: TCAT Wiki - Navigation Section Generator
-# Version: 3.0.0
+# Version: 3.0.1
 # Date: 2025-12-31
 # Author: Amy Bordenave, Taskar Center for Accessible Technology, University of Washington
 # License: CC-BY-ND 4.0 International
@@ -74,8 +74,7 @@ function Get-MarkdownTitle {
         if ($content -match '^#\s+(.+)') {
             return $matches[1].Trim()
         }
-    }
-    catch {
+    } catch {
         # Silently return null for missing or unreadable files
     }
     
@@ -166,8 +165,7 @@ function ConvertTo-Title {
         $result = $titleMap[$name.ToLower()]
         if ($result) { 
             return $result 
-        }
-        else { 
+        } else { 
             return $null 
         }
     }
@@ -233,11 +231,11 @@ function Build-DirectoryNav {
     
     # Get subdirectories and files (excluding resources directory)
     $subDirs = Get-ChildItem -Path $dirPath -Directory | 
-    Where-Object { $_.Name -ne 'resources' } | 
-    Sort-Object Name
+        Where-Object { $_.Name -ne 'resources' } | 
+        Sort-Object Name
     $mdFiles = Get-ChildItem -Path $dirPath -File -Filter "*.md" | 
-    Where-Object { $_.Name -ne 'index.md' } | 
-    Sort-Object Name
+        Where-Object { $_.Name -ne 'index.md' } | 
+        Sort-Object Name
     
     # Build subitems - each item is a hashtable with Type and properties
     # Type: "simple" (single line item), "nested" (multiline subdirectory structure)
@@ -268,8 +266,7 @@ function Build-DirectoryNav {
         for ($k = 0; $k -lt $subDirItems.Count; $k++) {
             if ($k -eq $subDirItems.Count - 1) {
                 $cleanedLines += $subDirItems[$k].TrimEnd(',')
-            }
-            else {
+            } else {
                 $cleanedLines += $subDirItems[$k]
             }
         }
@@ -285,8 +282,7 @@ function Build-DirectoryNav {
             $singleItem = $subItemsList[0]
             # Collapsed arrays have spaces inside brackets: [ "value" ]
             $items += "$indent{$escapedDirTitle = [ $($singleItem.Content) ]},"
-        }
-        else {
+        } else {
             # Multiple items or nested: multiline format
             $items += "$indent{$escapedDirTitle = ["
             
@@ -297,8 +293,7 @@ function Build-DirectoryNav {
                 
                 if ($subItem.Type -eq "simple") {
                     $items += "$($subItem.Indent)$($subItem.Content)$comma"
-                }
-                else {
+                } else {
                     # Nested item - multiple lines
                     $nestedLines = $subItem.Lines
                     for ($j = 0; $j -lt $nestedLines.Count; $j++) {
@@ -306,8 +301,7 @@ function Build-DirectoryNav {
                         # Add comma only to the last line of this nested block if it's not the last item overall
                         if ($j -eq $nestedLines.Count - 1) {
                             $items += "$line$comma"
-                        }
-                        else {
+                        } else {
                             $items += $line
                         }
                     }
@@ -362,8 +356,8 @@ function Build-NavigationToml {
     # Process root level directories (excluding resources and guides-list which is auto-generated)
     $excludedDirs = @('resources', 'guides-list', 'local-storage')
     $rootDirectories = Get-ChildItem -Path $docsBasePath -Directory | 
-    Where-Object { $_.Name -notin $excludedDirs } |
-    Sort-Object Name
+        Where-Object { $_.Name -notin $excludedDirs } |
+        Sort-Object Name
     
     foreach ($dir in $rootDirectories) {
         $subNav = @(Build-DirectoryNav -dirPath $dir.FullName -indentLevel 1 -docsBasePath $docsBasePath)
@@ -373,8 +367,7 @@ function Build-NavigationToml {
         for ($k = 0; $k -lt $subNav.Count; $k++) {
             if ($k -eq $subNav.Count - 1) {
                 $cleanedLines += $subNav[$k].TrimEnd(',')
-            }
-            else {
+            } else {
                 $cleanedLines += $subNav[$k]
             }
         }
@@ -395,8 +388,8 @@ function Build-NavigationToml {
     
     # Process any root-level markdown files (excluding index.md)
     $rootFiles = Get-ChildItem -Path $docsBasePath -File -Filter "*.md" | 
-    Where-Object { $_.Name -ne 'index.md' } | 
-    Sort-Object Name
+        Where-Object { $_.Name -ne 'index.md' } | 
+        Sort-Object Name
     
     foreach ($file in $rootFiles) {
         $fileTitle = Get-MarkdownTitle $file.FullName
@@ -418,16 +411,14 @@ function Build-NavigationToml {
         
         if ($item.Type -eq "simple") {
             $navItems += "$($item.Content)$comma"
-        }
-        else {
+        } else {
             # Block item - multiple lines, add comma only to last line
             $blockLines = $item.Lines
             for ($j = 0; $j -lt $blockLines.Count; $j++) {
                 $line = $blockLines[$j]
                 if ($j -eq $blockLines.Count - 1) {
                     $navItems += "$line$comma"
-                }
-                else {
+                } else {
                     $navItems += $line
                 }
             }
@@ -493,8 +484,7 @@ function Update-ZensicalNav {
         $newContent = $content -replace $navPattern, $newNavContent
         Set-Content -Path $zensicalFilePath -Value $newContent -Encoding UTF8 -NoNewline
         return $true
-    }
-    else {
+    } else {
         # Nav section doesn't exist - need to add it after [project] section comments
         # Find the end of the initial [project] comment block or after site_description
         
@@ -504,15 +494,13 @@ function Update-ZensicalNav {
             # Insert after the nav comment block
             $insertPoint = $content.IndexOf($matches[0]) + $matches[0].Length
             $newContent = $content.Insert($insertPoint, $newNavContent + [Environment]::NewLine + [Environment]::NewLine)
-        }
-        else {
+        } else {
             # Insert before [project.theme] if it exists
             $themePattern = '(?m)^\[project\.theme\]'
             if ($content -match $themePattern) {
                 $insertPoint = $content.IndexOf($matches[0])
                 $newContent = $content.Insert($insertPoint, $newNavContent + [Environment]::NewLine + [Environment]::NewLine)
-            }
-            else {
+            } else {
                 # Append to end of file
                 $newContent = $content.TrimEnd() + [Environment]::NewLine + [Environment]::NewLine + $newNavContent + [Environment]::NewLine
             }
@@ -565,12 +553,10 @@ try {
     
     if ($changed) {
         Write-Host "Successfully updated zensical.toml navigation section" -ForegroundColor Green
-    }
-    else {
+    } else {
         Write-Host "Navigation section is already up to date. No changes needed." -ForegroundColor Green
     }
-}
-catch {
+} catch {
     Write-Host "Error updating zensical.toml: $_" -ForegroundColor Red
     exit 1
 }

@@ -2,7 +2,7 @@
 #Requires -Modules @{ ModuleName='Pester'; ModuleVersion='5.0.0' }
 
 # Name: TCAT Wiki - Link Checker Tests
-# Version: 1.0.0
+# Version: 1.0.1
 # Date: 2025-12-31
 # Author: Amy Bordenave, Taskar Center for Accessible Technology, University of Washington
 # License: CC-BY-ND 4.0 International
@@ -37,8 +37,7 @@ BeforeAll {
     if ($scriptContent -match '(?sm)(function Get-MarkdownLinks \{.+?^\})') {
         $sb = [ScriptBlock]::Create($matches[1])
         . $sb
-    }
-    else {
+    } else {
         throw "Could not find Get-MarkdownLinks function in check-links.ps1"
     }
     
@@ -46,8 +45,7 @@ BeforeAll {
     if ($scriptContent -match '(?sm)(function Test-ExternalUrl \{.+?^\})') {
         $sb = [ScriptBlock]::Create($matches[1])
         . $sb
-    }
-    else {
+    } else {
         throw "Could not find Test-ExternalUrl function in check-links.ps1"
     }
     
@@ -55,8 +53,7 @@ BeforeAll {
     if ($scriptContent -match '(?sm)(function Test-InternalLink \{.+?^    return Test-Path \$resolvedPath\r?\n\})') {
         $sb = [ScriptBlock]::Create($matches[1])
         . $sb
-    }
-    else {
+    } else {
         throw "Could not find Test-InternalLink function in check-links.ps1"
     }
     
@@ -65,8 +62,7 @@ BeforeAll {
     if ($scriptContent -match '(?sm)(function Test-ExternalUrlValid \{.+?^        \}\r?\n        \r?\n        return @\{[\s\S]+?^\})') {
         $sb = [ScriptBlock]::Create($matches[1])
         . $sb
-    }
-    else {
+    } else {
         throw "Could not find Test-ExternalUrlValid function in check-links.ps1"
     }
 }
