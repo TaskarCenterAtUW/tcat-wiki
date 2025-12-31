@@ -2,8 +2,8 @@
 # This script is designed to be run in a PowerShell environment.
 
 # Name: TCAT Wiki - Link Checker
-# Version: 2.0.0
-# Date: 2025-11-26
+# Version: 3.0.0
+# Date: 2025-12-31
 # Author: Amy Bordenave, Taskar Center for Accessible Technology, University of Washington
 # License: CC-BY-ND 4.0 International
 
@@ -41,6 +41,15 @@ param(
 if (-not $external -and -not $internal) {
     $external = $true
     $internal = $true
+}
+
+# Verify we're in the util directory
+$currentDirName = Split-Path -Leaf (Get-Location)
+
+if ($currentDirName -ne "util") {
+    Write-Host "Error: This script must be run from the util/ directory" -ForegroundColor Red
+    Write-Host "Current location: $(Get-Location)" -ForegroundColor Yellow
+    exit 1
 }
 
 # Set docs path
