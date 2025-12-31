@@ -4,13 +4,13 @@
 
 ## Project Overview
 
-**TCAT Wiki** is a Material for MkDocs-based documentation site for the Taskar Center for Accessible Technology (TCAT). It hosts information, guides, and resources related to TCAT's transportation accessibility projects: **OpenSidewalks** (OSW), **Transportation Data Exchange Initiative** (TDEI), and **AccessMap**.
+**TCAT Wiki** is a Zensical-based documentation site for the Taskar Center for Accessible Technology (TCAT). It hosts information, guides, and resources related to TCAT's transportation accessibility projects: **OpenSidewalks** (OSW), the **Transportation Data Exchange Initiative** (TDEI), and **AccessMap**, among others.
 
 ## Architecture & Key Concepts
 
 ### Single-Source Documentation Site
 
--   **Framework**: Material for MkDocs (`mkdocs.yml` orchestrates everything)
+-   **Framework**: Zensical (`zensical.toml` orchestrates everything)
 -   **Content**: Markdown files in `/docs` structured by topic
 -   **Navigation**: Auto-generated from directory structure via PowerShell scripts
 -   **Custom Extensions**: YAML frontmatter titles, abbreviations auto-linking, custom CSS theming
@@ -27,12 +27,12 @@ docs/
       specific-guide.md   # Guides within subtopic
 ```
 
-**Key insight**: Directory hierarchy directly maps to navigation structure. Guides are stored directly in their topic directories (not in nested `guides/` subdirectories). Use `generate-guides-lists.ps1` to auto-generate index files and `generate-nav.ps1` to update the mkdocs.yml navigation structure.
+**Key insight**: Directory hierarchy directly maps to navigation structure. Guides are stored directly in their topic directories (not in nested `guides/` subdirectories). Use `generate-guides-lists.ps1` to auto-generate index files and `generate-nav.ps1` to update the `zensical.toml` navigation structure.
 
 ### Abbreviations System
 
 -   `/includes/abbreviations.md` auto-links acronyms site-wide (e.g., OSW, TDEI, JOSM)
--   Add new acronyms here; they're automatically inserted into all `.md` files via MkDocs snippets plugin
+-   Add new acronyms here; they're automatically inserted into all `.md` files via the Zensical snippets plugin
 
 ## Version Control & Workflow
 
@@ -52,7 +52,7 @@ The TCAT Wiki uses [Semantic Versioning](https://semver.org/) (MAJOR.MINOR.PATCH
     -   Core: Minor fixes, fixing typos, completing chores
     -   Docs: Small updates, fixing typos, adding images
 
-The version number is stored in the `version` field in `mkdocs.yml`.
+The version number is stored in the `version` field in `zensical.toml`.
 
 ### Conventional Commits
 
@@ -107,7 +107,7 @@ python -m venv .venv
 pip install -r requirements.txt
 
 # Run the local development server
-mkdocs serve  # http://localhost:8000
+zensical serve  # http://localhost:8000
 
 # Deactivate when done
 deactivate
@@ -120,10 +120,10 @@ deactivate
 ```powershell
 cd util
 .\generate-guides-lists.ps1        # Auto-generates index.md in guides/ directories
-.\generate-nav.ps1                 # Updates mkdocs.yml nav section directly
+.\generate-nav.ps1                 # Updates zensical.toml nav section directly
 ```
 
-**Why**: Navigation structure and guide indices aren't hand-maintained. These scripts parse `/docs` structure, extract frontmatter titles, and generate the Markdown files accordingly. Generation of the nav section of `mkdocs.yml` is done afterwards to ensure all files are included.
+**Why**: Navigation structure and guide indices aren't hand-maintained. These scripts parse `/docs` structure, extract frontmatter titles, and generate the Markdown files accordingly. Generation of the nav section of `zensical.toml` is done afterwards to ensure all files are included.
 
 ### Validate Links
 
@@ -223,18 +223,10 @@ Both flags can be used together to exclude a guide from all guides lists.
 
 ## Integration Points & Dependencies
 
-### Material for MkDocs Plugins Active
-
--   `git-revision-date-localized`: Shows creation/modification dates (UTC-7)
--   `git-committers`: Displays last editor info
--   `social`: Tags for social sharing
--   `search`, `tags`, `meta`, `privacy`
--   Markdown extensions: `pymdownx.snippets`, `pymdownx.superfences`, `admonition`, `attr_list`
-
 ### Customizations
 
 -   **Theme**: Custom CSS in `/resources/stylesheets/` (ensure file exists before editing)
--   **Overrides**: `/overrides/partials/` extends Material defaults (head.html, extra.html)
+-   **Overrides**: `/overrides/partials/` extends Zensical templates (head.html, extra.html)
 
 ## When Adding New Content
 
@@ -242,7 +234,7 @@ Both flags can be used together to exclude a guide from all guides lists.
 2. **Frontmatter**: Include `title:`, and `tags:` if it's a guide
 3. **Links**: Reference guides-list and use relative paths
 4. **Regenerate Navigation**: Run `.\generate-nav.ps1` from `util/`
-5. **Verify Build**: Run `mkdocs serve` locally before committing
+5. **Verify Build**: Run `zensical serve` locally before committing
 
 ## Assistant Role
 
@@ -258,9 +250,15 @@ Both flags can be used together to exclude a guide from all guides lists.
 
 Planning documents, temporary files, and the like should be saved into local-storage/ by default, unless otherwise instructed.
 
-## Key Files for Reference
+## Resources
 
--   `mkdocs.yml`: Main config; nav section auto-updated by scripts
+### Zensical Documentation
+
+Refer to the official Zensical documentation, which is hosted online at https://zensical.org/, as an authoritative source.
+
+### Key Files for Reference
+
+-   `zensical.toml`: Main config; nav section auto-updated by scripts
 -   `util/generate-nav.ps1`: Builds YAML navigation tree from file structure
 -   `util/generate-guides-lists.ps1`: Creates guide index markdown files
 -   `util/check-links.ps1`: PowerShell validation of links (not standard CI integration)
