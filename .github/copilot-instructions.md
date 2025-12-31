@@ -134,6 +134,19 @@ cd util
 .\check-links.ps1 -external         # External only
 ```
 
+### Run Pester Tests
+
+Utility scripts have Pester test suites for validation:
+
+```powershell
+cd util
+Invoke-Pester .\generate-nav.Tests.ps1 -Output Minimal    # Test nav generator
+Invoke-Pester .\check-links.Tests.ps1 -Output Minimal     # Test link checker
+Invoke-Pester .\check-links.Tests.ps1 -ExcludeTag "Network" -Output Minimal  # Skip network tests
+```
+
+**Note**: Pester v5+ is required. Install with: `Install-Module -Name Pester -Force -SkipPublisherCheck`
+
 ## Project-Specific Conventions
 
 ### Markdown Conventions
@@ -259,8 +272,10 @@ Refer to the official Zensical documentation, which is hosted online at https://
 ### Key Files for Reference
 
 -   `zensical.toml`: Main config; nav section auto-updated by scripts
--   `util/generate-nav.ps1`: Builds YAML navigation tree from file structure
+-   `util/generate-nav.ps1`: Builds TOML navigation tree from file structure
+-   `util/generate-nav.Tests.ps1`: Pester tests for nav generator (45 tests)
 -   `util/generate-guides-lists.ps1`: Creates guide index markdown files
 -   `util/check-links.ps1`: PowerShell validation of links (not standard CI integration)
+-   `util/check-links.Tests.ps1`: Pester tests for link checker (43 tests)
 -   `/includes/abbreviations.md`: Global acronym definitions
 -   `/resources/stylesheets/extra.css`: Theming
