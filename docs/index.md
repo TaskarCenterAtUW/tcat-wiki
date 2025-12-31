@@ -17,7 +17,7 @@ The **Taskar Center for Accessible Technology** ([TCAT](https://tcat.cs.washingt
 
 ## About TCAT Wiki
 
-The TCAT Wiki is built using [Material for MkDocs](https://squidfunk.github.io/mkdocs-material/).
+The TCAT Wiki is built using [Zensical](https://zensical.org/).
 
 ---
 
