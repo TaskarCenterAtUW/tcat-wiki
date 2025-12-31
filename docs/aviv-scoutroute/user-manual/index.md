@@ -117,7 +117,7 @@ Alternatively, scan the QR code below:
 
 1. Install the Firebase App Tester App
 
-    1. Download the Firebase App Tester application from the email that is sent once the invite is accepted, or navigate to [appdistribution.firebase.google.com](http://appdistribution.firebase.google.com)
+    1. Download the Firebase App Tester application from the email that is sent once the invite is accepted, or navigate to [appdistribution.firebase.google.com](https://appdistribution.firebase.google.com)
 
     2. Install Firebase App Tester
 
