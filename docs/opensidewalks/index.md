@@ -14,9 +14,11 @@ OpenSidewalks seeks to provide a specification that is not only compatible with 
 
 The [OpenSidewalks Schema](https://github.com/OpenSidewalks/OpenSidewalks-Schema) is a proposed open pedestrian transportation network data standard which draws from and is intended to be largely compatible with OpenStreetMap data.
 
-## [OpenSidewalks Tasking Manager](tasking-manager/index.md)
+## [OSW on the OSM US Tasking Manager](tasking-manager/index.md)
 
-The [OpenSidewalks Tasking Manager](https://tasks.sidewalks.washington.edu/explore) is a [Tasking Manager](https://wiki.openstreetmap.org/wiki/Tasking_Manager) instance for coordinating contributions to OSM following OSW guidelines, and is open to all OSM users.
+The [OpenStreetMap US Tasking Manager](https://tasks.openstreetmap.us/) is a [Tasking Manager](https://wiki.openstreetmap.org/wiki/Tasking_Manager) instance for coordinating contributions to OSM and is open to all OSM users.
+
+TCAT operates the [OpenSidewalks organization](https://tasks.openstreetmap.us/organisations/8/) on the OSM US Tasking Manager and coordinates both community mapping projects and TCAT-directed organized editing following [OpenSidewalks in OpenStreetMap](schema\osw-in-osm.md) guidelines.
 
 Additional details about this organized editing activity can be found on the [Organised Editing/Activities/OpenSidewalks](https://wiki.openstreetmap.org/wiki/Organised_Editing/Activities/OpenSidewalks) page on the OSM Wiki.
 
@@ -42,7 +44,7 @@ This guide shows how to add custom non-routable point features (like bus stops) 
 
 This guide explains how to make edits to OpenStreetMap following and supporting the OpenSidewalks schema.
 
-### [OpenSidewalks Tasking Manager](tasking-manager/index.md) Guides
+### [OSM on the OSM US Tasking Manager](tasking-manager/index.md) Guides
 
 #### [Tasking Manager User Manual](tasking-manager/user-manual/index.md)
 
