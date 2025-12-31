@@ -11,18 +11,13 @@ charset = utf-8
 indent_style = space
 indent_size = 4
 
-# Markdown files
-[*.md]
+# JSON files
+[*.json]
 indent_style = space
 indent_size = 4
 
-# YAML files
-[*.yml]
-indent_style = space
-indent_size = 2
-
-# JSON files
-[*.json]
+# Markdown files
+[*.md]
 indent_style = space
 indent_size = 4
 
@@ -35,3 +30,13 @@ indent_size = 4
 [*.py]
 indent_style = space
 indent_size = 4
+
+# TOML files
+[*.toml]
+indent_style = space
+indent_size = 4
+
+# YAML files
+[*.yml]
+indent_style = space
+indent_size = 2
