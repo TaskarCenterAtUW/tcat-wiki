@@ -153,7 +153,7 @@ function Test-ExternalUrlValid {
     try {
         # Prepare headers with User-Agent to identify as a bot
         $headers = @{
-            'User-Agent' = 'TCAT-Wiki-LinkChecker/2.0.0 (+https://github.com/TaskarCenterAtUW/tcat-wiki)'
+            'User-Agent' = 'TCAT-Wiki-LinkChecker/3.0.0 (+https://github.com/TaskarCenterAtUW/tcat-wiki)'
         }
         
         # Use HEAD request first, fallback to GET if needed
