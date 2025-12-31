@@ -36,7 +36,7 @@ The TCAT Wiki uses [Semantic Versioning](https://semver.org/) (MAJOR.MINOR.PATCH
     -   Core: Minor fixes, fixing typos, completing chores
     -   Docs: Small updates, fixing typos, adding images
 
-The version number is stored in the `version` field in `mkdocs.yml`.
+The version number is stored in the `version` field in `zensical.toml`.
 
 ### Conventional Commits
 
@@ -120,7 +120,7 @@ This section of the guide explains how to set up a Windows environment for contr
     1. Create the virtual environment
 
         ```powershell
-        python -m venv .venv
+        python3 -m venv .venv
         ```
 
     2. Activate the virtual environment
@@ -129,41 +129,15 @@ This section of the guide explains how to set up a Windows environment for contr
         .\.venv\Scripts\Activate.ps1
         ```
 
-    3. Install dependencies
+ 5. Install requirements
 
-        ```powershell
-        pip install -r requirements.txt
-        ```
-
-5. (Optional) Install image processing dependencies for image optimization
-
-    Only needed if you plan to optimize or process images in the documentation.
-
-    1. Install [MSYS2](https://www.msys2.org/)
-
-        1. In UCRT64 terminal:
-
-            1. Install cairo:
-
-                ```powershell
-                pacman -S mingw-w64-ucrt-x86_64-cairo
-                ```
-
-            2. Install pngquant:
-
-                ```powershell
-                pacman -S mingw-w64-ucrt-x86_64-pngquant
-                ```
-
-        2. Add to PATH:
-
-            `C:\msys64\ucrt64\bin`
-
-            (Restart your terminal or system for PATH changes to take effect)
+    ```powershell
+    pip install -r requirements.txt
+    ```
 
 ## Editing Instructions
 
-Refer to the documentation for [Material for MkDocs](https://squidfunk.github.io/mkdocs-material/) and the [MkDocs User Guide](https://www.mkdocs.org/user-guide/).
+Refer to the documentation for [Zensical](https://zensical.org/docs/).
 
 ### Guide Files
 
@@ -205,7 +179,7 @@ Where possible, follow these guidelines for images:
     ![alt text](image.png){ width="300" }
     ```
 
-Refer to [Material for MkDocs: Images](https://squidfunk.github.io/mkdocs-material/reference/images/) and [Material for MkDocs: Attribute Lists](https://squidfunk.github.io/mkdocs-material/setup/extensions/python-markdown/#attribute-lists) for more information.
+Refer to [Zensical: Images](https://zensical.org/docs/authoring/images/) for more information.
 
 #### Screenshots
 
