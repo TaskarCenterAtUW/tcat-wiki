@@ -131,7 +131,7 @@ cd util
 cd util
 .\check-links.ps1                   # Check internal + external links
 .\check-links.ps1 -internal         # Internal only
-.\check-links.ps1 -verboseOutput    # Detailed output
+.\check-links.ps1 -external         # External only
 ```
 
 ## Project-Specific Conventions
