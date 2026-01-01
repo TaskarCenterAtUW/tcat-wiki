@@ -251,7 +251,7 @@ code = "Atkinson Hyperlegible Mono"
 # - https://zensical.org/docs/authoring/icons-emojis/#search
 # ----------------------------------------------------------------------------
 [project.theme.icon]
-logo = "resources/images/logo/tcat/logo-light.png"
+#logo = "resources/images/logo/tcat/logo-light.png"
 #repo = "lucide/smile"
 
 # ----------------------------------------------------------------------------
