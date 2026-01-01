@@ -4,6 +4,12 @@
         <loc>https://taskarcenteratuw.github.io/tcat-wiki/</loc>
       </url>
       <url>
+        <loc>https://taskarcenteratuw.github.io/tcat-wiki/CONTRIBUTING/</loc>
+      </url>
+      <url>
+        <loc>https://taskarcenteratuw.github.io/tcat-wiki/markdown/</loc>
+      </url>
+      <url>
         <loc>https://taskarcenteratuw.github.io/tcat-wiki/accessmap/</loc>
       </url>
       <url>
@@ -98,8 +104,5 @@
       </url>
       <url>
         <loc>https://taskarcenteratuw.github.io/tcat-wiki/workspaces/user-manual/workspace-settings/</loc>
-      </url>
-      <url>
-        <loc>https://taskarcenteratuw.github.io/tcat-wiki/CONTRIBUTING/</loc>
       </url>
 </urlset>
