@@ -91,7 +91,7 @@ Start with your GTFS `stops.txt` file. You'll need these key fields:
 Create a mapping between your GTFS fields and OSW Custom Point properties:
 
 | GTFS Field             | Goes in OSW as         | Notes                                               |
-| ---------------------- | ---------------------- | --------------------------------------------------- |
+|------------------------|------------------------|-----------------------------------------------------|
 | `stop_lon`, `stop_lat` | `geometry.coordinates` | Longitude first, then latitude                      |
 | `stop_id`              | `_id`                  | Create unique OSW ID (e.g., "bus_stop\_" + stop_id) |
 | `stop_id`              | `ext:stop_id`          | Keep original ID for reference                      |
@@ -185,7 +185,7 @@ Before using your Custom Points, verify:
 ### Common Issues and Fixes
 
 | Problem              | Solution                                        |
-| -------------------- | ----------------------------------------------- |
+|----------------------|-------------------------------------------------|
 | Coordinates reversed | Longitude should be first: `[lng, lat]`         |
 | Missing `_id` field  | Add unique identifier to each feature           |
 | Invalid JSON         | Use a JSON validator to find syntax errors      |
