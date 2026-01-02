@@ -2,8 +2,8 @@
 # This script is designed to be run in a PowerShell environment.
 
 # Name: TCAT Wiki - Guides Lists Generator
-# Version: 5.0.1
-# Date: 2025-12-16
+# Version: 5.1.0
+# Date: 2026-01-02
 # Author: Amy Bordenave, Taskar Center for Accessible Technology, University of Washington
 # License: CC-BY-ND 4.0 International
 
@@ -12,7 +12,7 @@
     Generates guide sections in parent index.md files and maintains the main Guides List
 
 .DESCRIPTION
-    This script performs two phases:
+    This script performs two phases for the Zensical-based TCAT Wiki documentation site:
     
     PHASE 1: For each directory with index.md, creates a "## Guides" section
     (or "## Table of Contents" for user manual pages) listing:
@@ -51,6 +51,7 @@ $CRLF = "`r`n"
 $EXCLUDE_PARENT_FLAG = "exclude-from-parent-guides-list"
 $EXCLUDE_MAIN_FLAG = "exclude-from-main-guides-list"
 
+#region Helper Functions
 # ==============================================================================
 # HELPER FUNCTIONS
 # ==============================================================================
@@ -351,6 +352,11 @@ function Get-TcatWikiSection {
     <#
     .SYNOPSIS
         Returns the static TCAT Wiki section content for the main guides list
+    .DESCRIPTION
+        Generates the TCAT Wiki section that appears at the end of the main guides list,
+        containing links to wiki-level documentation like CONTRIBUTING.md.
+    .OUTPUTS
+        String containing the markdown content for the TCAT Wiki section
     #>
     return "## TCAT Wiki Guides$CRLF$CRLF### [Contributing](../CONTRIBUTING.md)$CRLF$CRLF" +
     "This guide explains how to contribute to the TCAT Wiki.$CRLF"
@@ -424,6 +430,9 @@ function Get-AllGuidesAtLevel {
     return $sorted
 }
 
+#endregion Helper Functions
+
+#region Main Functions
 # ==============================================================================
 # MAIN FUNCTIONS
 # ==============================================================================
@@ -795,12 +804,14 @@ function Build-MainGuidesList {
     return $script:content
 }
 
+#endregion Main Functions
+
 # ==============================================================================
 # MAIN SCRIPT
 # ==============================================================================
 
 Write-Host ""
-Write-Host "TCAT Wiki - Guides Lists Generator v5.0.0"
+Write-Host "TCAT Wiki - Guides Lists Generator v5.1.0"
 Write-Host "==========================================="
 Write-Host ""
 
