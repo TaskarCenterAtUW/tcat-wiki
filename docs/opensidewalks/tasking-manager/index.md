@@ -16,7 +16,7 @@ Additional details about this organized editing activity can be found on the [Or
 
 ## Guides
 
-OpenSidewalks Tasking Manager Guides
+OSW on the OSM US Tasking Manager Guides
 
 _For a list of all guides on the TCAT Wiki, refer to the [Guides List](../../guides-list/index.md)._
 

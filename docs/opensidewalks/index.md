@@ -44,7 +44,7 @@ This guide shows how to add custom non-routable point features (like bus stops) 
 
 This guide explains how to make edits to OpenStreetMap following and supporting the OpenSidewalks schema.
 
-### [OSM on the OSM US Tasking Manager](tasking-manager/index.md) Guides
+### [OSW on the OSM US Tasking Manager](tasking-manager/index.md) Guides
 
 #### [Tasking Manager User Manual](tasking-manager/user-manual/index.md)
 
