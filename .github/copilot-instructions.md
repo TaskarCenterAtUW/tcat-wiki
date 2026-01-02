@@ -140,9 +140,10 @@ Utility scripts have Pester test suites for validation:
 
 ```powershell
 cd util
-Invoke-Pester .\generate-nav.Tests.ps1 -Output Minimal    # Test nav generator
-Invoke-Pester .\check-links.Tests.ps1 -Output Minimal     # Test link checker
-Invoke-Pester .\check-links.Tests.ps1 -ExcludeTag "Network" -Output Minimal  # Skip network tests
+Invoke-Pester .\generate-nav.Tests.ps1 -Output Minimal # Test nav generator
+Invoke-Pester .\check-links.Tests.ps1 -Output Minimal # Test link checker
+Invoke-Pester .\check-links.Tests.ps1 -ExcludeTag "Network" -Output Minimal # Skip network tests
+Invoke-Pester .\generate-guides-lists.Tests.ps1 -Output Minimal # Test guides lists generator
 ```
 
 **Note**: Pester v5+ is required. Install with: `Install-Module -Name Pester -Force -SkipPublisherCheck`
