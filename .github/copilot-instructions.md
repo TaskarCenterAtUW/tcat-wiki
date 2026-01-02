@@ -134,16 +134,34 @@ cd util
 .\check-links.ps1 -external         # External only
 ```
 
+### Run All Utilities
+
+The `run-utils.ps1` script provides an automated workflow to validate and run all utilities:
+
+```powershell
+cd util
+.\run-utils.ps1                     # Run all tests, then all utilities
+.\run-utils.ps1 -TestsOnly          # Run only Pester tests
+.\run-utils.ps1 -SkipLinkCheck      # Skip link checker in Phase 2
+.\run-utils.ps1 -SkipTests          # Skip tests (not recommended)
+```
+
+**Why**: This script ensures all utilities are tested before running, then executes them in the correct order: `generate-guides-lists.ps1` → `generate-nav.ps1` → `check-links.ps1`. It's the recommended way to update the entire documentation structure.
+
 ### Run Pester Tests
 
 Utility scripts have Pester test suites for validation:
 
 ```powershell
 cd util
+.\run-utils.ps1 -TestsOnly           # Run all tests (recommended)
+
+# Or run individual test files:
+Invoke-Pester .\run-utils.Tests.ps1 -Output Minimal # Test utility runner
+Invoke-Pester .\generate-guides-lists.Tests.ps1 -Output Minimal # Test guides lists generator
 Invoke-Pester .\generate-nav.Tests.ps1 -Output Minimal # Test nav generator
 Invoke-Pester .\check-links.Tests.ps1 -Output Minimal # Test link checker
 Invoke-Pester .\check-links.Tests.ps1 -ExcludeTag "Network" -Output Minimal # Skip network tests
-Invoke-Pester .\generate-guides-lists.Tests.ps1 -Output Minimal # Test guides lists generator
 ```
 
 **Note**: Pester v5+ is required. Install with: `Install-Module -Name Pester -Force -SkipPublisherCheck`
@@ -273,10 +291,13 @@ Refer to the official Zensical documentation, which is hosted online at https://
 ### Key Files for Reference
 
 -   `zensical.toml`: Main config; nav section auto-updated by scripts
--   `util/generate-nav.ps1`: Builds TOML navigation tree from file structure
--   `util/generate-nav.Tests.ps1`: Pester tests for nav generator (45 tests)
+-   `util/run-utils.ps1`: Master utility runner - tests and runs all utilities in sequence
+-   `util/run-utils.Tests.ps1`: Pester tests for utility runner
 -   `util/generate-guides-lists.ps1`: Creates guide index markdown files
+-   `util/generate-guides-lists.Tests.ps1`: Pester tests for guides lists generator
+-   `util/generate-nav.ps1`: Builds TOML navigation tree from file structure
+-   `util/generate-nav.Tests.ps1`: Pester tests for nav generator
 -   `util/check-links.ps1`: PowerShell validation of links (not standard CI integration)
--   `util/check-links.Tests.ps1`: Pester tests for link checker (43 tests)
+-   `util/check-links.Tests.ps1`: Pester tests for link checker
 -   `/includes/abbreviations.md`: Global acronym definitions
 -   `/resources/stylesheets/extra.css`: Theming
