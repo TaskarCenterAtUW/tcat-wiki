@@ -141,6 +141,7 @@ function Test-ExternalUrlValid {
         "*visualstudio.com*"
         "*docs.google.com*"
         "*firebase*"
+        "*osm.workspaces-stage.sidewalks.washington.edu/api*"
     )
     
     foreach ($domain in $skipDomains) {
