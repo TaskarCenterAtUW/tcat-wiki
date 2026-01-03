@@ -326,6 +326,5 @@ nav = [
 		]}
 	]},
 	{"Guides List" = "guides-list/index.md"},
-	{"Contributing" = "CONTRIBUTING.md"},
-	{"Markdown" = "markdown.md"}
+	{"Contributing" = "CONTRIBUTING.md"}
 ]
