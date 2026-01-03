@@ -2,8 +2,8 @@
 # This script is designed to be run in a PowerShell environment.
 
 # Name: TCAT Wiki - Guides Lists Generator
-# Version: 5.0.0
-# Date: 2025-12-16
+# Version: 5.1.0
+# Date: 2026-01-02
 # Author: Amy Bordenave, Taskar Center for Accessible Technology, University of Washington
 # License: CC-BY-ND 4.0 International
 
@@ -12,7 +12,7 @@
     Generates guide sections in parent index.md files and maintains the main Guides List
 
 .DESCRIPTION
-    This script performs two phases:
+    This script performs two phases for the Zensical-based TCAT Wiki documentation site:
     
     PHASE 1: For each directory with index.md, creates a "## Guides" section
     (or "## Table of Contents" for user manual pages) listing:
@@ -51,6 +51,7 @@ $CRLF = "`r`n"
 $EXCLUDE_PARENT_FLAG = "exclude-from-parent-guides-list"
 $EXCLUDE_MAIN_FLAG = "exclude-from-main-guides-list"
 
+#region Helper Functions
 # ==============================================================================
 # HELPER FUNCTIONS
 # ==============================================================================
@@ -114,8 +115,7 @@ function Get-GuideInfo {
             $descRaw = $descRaw -replace '^[\s\r\n]+|[\s\r\n]+$', ''
             $result.Description = $descRaw
         }
-    }
-    catch {
+    } catch {
         Write-Warning "Could not read file: $FilePath - $_"
     }
     
@@ -140,8 +140,7 @@ function Get-DirectoryTitle {
         if ($content -match 'title:\s*(.+?)(?:\r?\n|$)') {
             return $matches[1].Trim()
         }
-    }
-    catch {
+    } catch {
         Write-Warning "Could not read title from: $IndexPath"
     }
     
@@ -225,16 +224,14 @@ function Get-GuidesInDirectory {
         # Include if it's a guide and not excluded by the flag
         $isExcluded = if ($ExcludeFlag -eq $EXCLUDE_PARENT_FLAG) { 
             $guideInfo.ExcludeFromParent 
-        }
-        else { 
+        } else { 
             $guideInfo.ExcludeFromMain 
         }
         
         if ($guideInfo.IsGuide -and -not $isExcluded) {
             if ($guideInfo.IsUserManual) {
                 [void]$userManuals.Add($_)
-            }
-            else {
+            } else {
                 [void]$regularGuides.Add($_)
             }
         }
@@ -274,8 +271,7 @@ function Get-Subdirectories {
         if (Test-Path $indexPath -PathType Leaf) {
             if (Test-IsUserManualDirectory -Directory $_.FullName) {
                 [void]$userManualDirs.Add($_)
-            }
-            else {
+            } else {
                 [void]$regularDirs.Add($_)
             }
         }
@@ -356,6 +352,11 @@ function Get-TcatWikiSection {
     <#
     .SYNOPSIS
         Returns the static TCAT Wiki section content for the main guides list
+    .DESCRIPTION
+        Generates the TCAT Wiki section that appears at the end of the main guides list,
+        containing links to wiki-level documentation like CONTRIBUTING.md.
+    .OUTPUTS
+        String containing the markdown content for the TCAT Wiki section
     #>
     return "## TCAT Wiki Guides$CRLF$CRLF### [Contributing](../CONTRIBUTING.md)$CRLF$CRLF" +
     "This guide explains how to contribute to the TCAT Wiki.$CRLF"
@@ -396,8 +397,7 @@ function Get-AllGuidesAtLevel {
                 
                 $isExcluded = if ($ExcludeFlag -eq $EXCLUDE_PARENT_FLAG) { 
                     $guideInfo.ExcludeFromParent 
-                }
-                else { 
+                } else { 
                     $guideInfo.ExcludeFromMain 
                 }
                 
@@ -430,6 +430,9 @@ function Get-AllGuidesAtLevel {
     return $sorted
 }
 
+#endregion Helper Functions
+
+#region Main Functions
 # ==============================================================================
 # MAIN FUNCTIONS
 # ==============================================================================
@@ -499,8 +502,7 @@ function Update-ParentGuidesSection {
             # User manual: show as a single guide entry (no child guides listed)
             $guidesSection += Build-GuideEntry -GuideFile (Get-Item $entry.Path) -FromPath $parentDir -HeaderLevel "###"
             $guidesSection += $CRLF
-        }
-        else {
+        } else {
             # Regular guide file
             $guidesSection += Build-GuideEntry -GuideFile $entry.File -FromPath $parentDir -HeaderLevel "###"
             $guidesSection += $CRLF
@@ -530,8 +532,7 @@ function Update-ParentGuidesSection {
         foreach ($subdirEntry in $subdirEntries) {
             if ($subdirEntry.Type -eq 'UserManual') {
                 $guidesSection += Build-GuideEntry -GuideFile (Get-Item $subdirEntry.Path) -FromPath $parentDir -HeaderLevel "####"
-            }
-            else {
+            } else {
                 $guidesSection += Build-GuideEntry -GuideFile $subdirEntry.File -FromPath $parentDir -HeaderLevel "####"
             }
             $guidesSection += $CRLF
@@ -632,8 +633,7 @@ function Build-MainGuidesList {
                     $hasGuides = $true
                     break
                 }
-            }
-            else {
+            } else {
                 $guides = Get-GuidesInDirectory -Directory $dir.FullName -ExcludeOwnIndex $true -ExcludeFlag $EXCLUDE_MAIN_FLAG
                 if ($guides.Count -gt 0) {
                     $hasGuides = $true
@@ -681,8 +681,7 @@ function Build-MainGuidesList {
                     if ($Depth -gt 1) {
                         [void]$userManualDirs.Add($child)
                     }
-                }
-                else {
+                } else {
                     [void]$regularDirs.Add($child)
                 }
             }
@@ -805,12 +804,14 @@ function Build-MainGuidesList {
     return $script:content
 }
 
+#endregion Main Functions
+
 # ==============================================================================
 # MAIN SCRIPT
 # ==============================================================================
 
 Write-Host ""
-Write-Host "TCAT Wiki - Guides Lists Generator v5.0.0"
+Write-Host "TCAT Wiki - Guides Lists Generator v5.1.0"
 Write-Host "==========================================="
 Write-Host ""
 
@@ -818,11 +819,9 @@ Write-Host ""
 $script:docsPath = ""
 if (Test-Path "..\docs") {
     $script:docsPath = Resolve-Path "..\docs"
-}
-elseif (Test-Path "docs") {
+} elseif (Test-Path "docs") {
     $script:docsPath = Resolve-Path "docs"
-}
-else {
+} else {
     Write-Error "docs directory not found. Please run this script from the repository root or util directory."
     exit 1
 }
@@ -832,13 +831,13 @@ Write-Host ""
 
 # Get all directories with index.md
 $allDirectories = Get-ChildItem -Path $script:docsPath -Recurse -Directory -ErrorAction Stop |
-Where-Object { $_.Name -ne "resources" } |
-ForEach-Object {
-    $indexPath = Join-Path $_.FullName "index.md"
-    if (Test-Path $indexPath -PathType Leaf) {
-        $_
-    }
-} | Sort-Object FullName
+    Where-Object { $_.Name -ne "resources" } |
+    ForEach-Object {
+        $indexPath = Join-Path $_.FullName "index.md"
+        if (Test-Path $indexPath -PathType Leaf) {
+            $_
+        }
+    } | Sort-Object FullName
 
 Write-Host "Found $($allDirectories.Count) directories with index.md files"
 Write-Host ""
@@ -854,8 +853,7 @@ Write-Host ""
 foreach ($dir in $allDirectories) {
     try {
         Update-ParentGuidesSection -Directory $dir
-    }
-    catch {
+    } catch {
         Write-Error "Failed processing $($dir.FullName): $_"
         exit 1
     }
@@ -876,8 +874,7 @@ try {
     $guidesListPath = Join-Path $script:docsPath "guides-list\index.md"
     Set-Content -Path $guidesListPath -Value $mainContent -Encoding UTF8
     Write-Host "✓ Generated main guides list"
-}
-catch {
+} catch {
     Write-Error "Failed generating main guides list: $_"
     exit 1
 }

@@ -1,12 +1,14 @@
 ---
-title: OpenSidewalks Tasking Manager
+title: OSW on the OSM US Tasking Manager
 ---
 
 <!-- @format -->
 
-# OpenSidewalks Tasking Manager
+# OSW on the OSM US Tasking Manager
 
-The [OpenSidewalks Tasking Manager](https://tasks.sidewalks.washington.edu/explore) is a [Tasking Manager](https://wiki.openstreetmap.org/wiki/Tasking_Manager) instance for coordinating contributions to OSM following OSW guidelines and is open to all OSM users.
+The [OpenStreetMap US Tasking Manager](https://tasks.openstreetmap.us/) is a [Tasking Manager](https://wiki.openstreetmap.org/wiki/Tasking_Manager) instance for coordinating contributions to OSM and is open to all OSM users.
+
+TCAT operates the [OpenSidewalks organization](https://tasks.openstreetmap.us/organisations/8/) on the OSM US Tasking Manager and coordinates both community mapping projects and TCAT-directed organized editing following [OpenSidewalks in OpenStreetMap](..\schema\osw-in-osm.md) guidelines.
 
 Additional details about this organized editing activity can be found on the [Organised Editing/Activities/OpenSidewalks](https://wiki.openstreetmap.org/wiki/Organised_Editing/Activities/OpenSidewalks) page on the OSM Wiki.
 
@@ -14,7 +16,7 @@ Additional details about this organized editing activity can be found on the [Or
 
 ## Guides
 
-OpenSidewalks Tasking Manager Guides
+OSW on the OSM US Tasking Manager Guides
 
 _For a list of all guides on the TCAT Wiki, refer to the [Guides List](../../guides-list/index.md)._
 

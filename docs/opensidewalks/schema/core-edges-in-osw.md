@@ -107,7 +107,7 @@ Most city GIS datasets use local coordinate systems. Seattle uses EPSG:2926 - NA
 Create a mapping between your dataset fields and OSW properties:
 
 | Source Field             | Goes in OSW as         | Notes                                               |
-| ------------------------ | ---------------------- | --------------------------------------------------- |
+|--------------------------|------------------------|-----------------------------------------------------|
 | `<geometry coordinates>` | `geometry.coordinates` | Must be EPSG:4326 (WGS84)                           |
 | `UNITID`                 | `_id`                  | Create unique OSW ID (e.g., "sidewalk\_" + unit_id) |
 | `UNITID`                 | `ext:unit_id`          | Keep original ID for reference                      |
@@ -130,7 +130,7 @@ Create a mapping between your dataset fields and OSW properties:
 Map your dataset's surface codes to OSW-compatible values:
 
 | Source Code | OSW Surface Value | Description              |
-| ----------- | ----------------- | ------------------------ |
+|-------------|-------------------|--------------------------|
 | `PCC`       | `concrete`        | Portland cement concrete |
 | `AC`        | `asphalt`         | Asphalt concrete         |
 | `UIMPRV`    | `unpaved`         | Unimproved/dirt surface  |
@@ -206,7 +206,7 @@ ogr2ogr -f GeoJSON output.geojson sidewalks_epsg4326.geojson -sql "SELECT UNITID
 ### Common Issues and Fixes
 
 | Problem                         | Solution                                      |
-| ------------------------------- | --------------------------------------------- |
+|---------------------------------|-----------------------------------------------|
 | Coordinates in wrong projection | Use `ogr2ogr` or GIS reprojection tools       |
 | Duplicate IDs                   | Add prefixes or suffixes to ensure uniqueness |
 | Missing width data              | Omit width property                           |

@@ -117,7 +117,7 @@ Alternatively, scan the QR code below:
 
 1. Install the Firebase App Tester App
 
-    1. Download the Firebase App Tester application from the email that is sent once the invite is accepted, or navigate to [appdistribution.firebase.google.com](http://appdistribution.firebase.google.com)
+    1. Download the Firebase App Tester application from the email that is sent once the invite is accepted, or navigate to [appdistribution.firebase.google.com](https://appdistribution.firebase.google.com)
 
     2. Install Firebase App Tester
 
@@ -149,5 +149,5 @@ You should now be ready to complete quests in AVIV ScoutRoute! Please reach out 
 
 ## Additional Resources
 
--   [AVIV ScoutRoute iOS Release Notes](https://docs.google.com/document/d/1i9FUVdXElJ8zUk3BTvbW8AOQ-lYz_6Q6c1p8wZXYZxc/edit?usp=sharing)
--   [AVIV ScoutRoute Android Release Notes](https://docs.google.com/document/d/1jaiyNtAOCKeUVBqjmLveI78g4yhWH222DLg7Ev4VO5g/edit?usp=sharing)
+-   [AVIV ScoutRoute iOS Release Notes](https://docs.google.com/document/d/1i9FUVdXElJ8zUk3BTvbW8AOQ-lYz_6Q6c1p8wZXYZxc/view?usp=sharing)
+-   [AVIV ScoutRoute Android Release Notes](https://docs.google.com/document/d/1jaiyNtAOCKeUVBqjmLveI78g4yhWH222DLg7Ev4VO5g/view?usp=sharing)

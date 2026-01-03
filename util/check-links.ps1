@@ -2,8 +2,8 @@
 # This script is designed to be run in a PowerShell environment.
 
 # Name: TCAT Wiki - Link Checker
-# Version: 2.0.0
-# Date: 2025-11-26
+# Version: 3.3.0
+# Date: 2026-01-02
 # Author: Amy Bordenave, Taskar Center for Accessible Technology, University of Washington
 # License: CC-BY-ND 4.0 International
 
@@ -43,6 +43,15 @@ if (-not $external -and -not $internal) {
     $internal = $true
 }
 
+# Verify we're in the util directory
+$currentDirName = Split-Path -Leaf (Get-Location)
+
+if ($currentDirName -ne "util") {
+    Write-Host "Error: This script must be run from the util/ directory" -ForegroundColor Red
+    Write-Host "Current location: $(Get-Location)" -ForegroundColor Yellow
+    exit 1
+}
+
 # Set docs path
 $docsPath = "..\docs"
 
@@ -71,6 +80,8 @@ $externalUrls = @{}
 $externalUrlCache = @{}
 $brokenExternalLinks = @()
 $brokenInternalLinks = @()
+
+#region Helper Functions
 
 # Function to extract links from markdown content
 function Get-MarkdownLinks {
@@ -130,6 +141,9 @@ function Test-ExternalUrlValid {
     # Skip domains that block automated requests or are known to always fail
     $skipDomains = @(
         "*visualstudio.com*"
+        "*docs.google.com*"
+        "*firebase*"
+        "*osm.workspaces-stage.sidewalks.washington.edu/api*"
     )
     
     foreach ($domain in $skipDomains) {
@@ -144,37 +158,41 @@ function Test-ExternalUrlValid {
     try {
         # Prepare headers with User-Agent to identify as a bot
         $headers = @{
-            'User-Agent' = 'TCAT-Wiki-LinkChecker/2.0.0 (+https://github.com/TaskarCenterAtUW/tcat-wiki)'
+            'User-Agent' = 'TCAT-Wiki-LinkChecker/3.3.0 (+https://github.com/TaskarCenterAtUW/tcat-wiki)'
         }
         
         # Use HEAD request first, fallback to GET if needed
         try {
             $response = Invoke-WebRequest -Uri $url -Method Head -TimeoutSec 5 -UseBasicParsing -Headers $headers -ErrorAction Stop
-        }
-        catch {
+        } catch {
             # Some servers don't support HEAD, try GET
             $response = Invoke-WebRequest -Uri $url -Method Get -TimeoutSec 5 -UseBasicParsing -Headers $headers -ErrorAction Stop
         }
         return @{
-            valid  = $response.StatusCode -lt 400
-            status = $response.StatusCode
+            valid     = $response.StatusCode -lt 400
+            status    = $response.StatusCode
+            isTimeout = $false
         }
-    }
-    catch {
+    } catch {
         # Extract more meaningful error messages
         $errorMessage = if ($_.Exception.Response.StatusCode) {
             "HTTP $($_.Exception.Response.StatusCode.value__): $($_.Exception.Response.StatusDescription)"
-        }
-        else {
+        } else {
             $_.Exception.Message
         }
         
+        # Check if this is a timeout error
+        $isTimeout = $errorMessage -match 'Timeout|timed out|HttpClient\.Timeout'
+        
         return @{
-            valid  = $false
-            status = $errorMessage
+            valid     = $false
+            status    = $errorMessage
+            isTimeout = $isTimeout
         }
     }
 }
+
+#endregion Helper Functions
 
 # Process each markdown file
 foreach ($file in $markdownFiles) {
@@ -183,8 +201,7 @@ foreach ($file in $markdownFiles) {
     
     try {
         $content = Get-Content $file.FullName -Raw -Encoding UTF8
-    }
-    catch {
+    } catch {
         Write-Host "  ERROR reading file: $($_.Exception.Message)" -ForegroundColor Red
         continue
     }
@@ -200,8 +217,7 @@ foreach ($file in $markdownFiles) {
             if ($external) {
                 $externalUrls[$linkUrl] = $true
             }
-        }
-        else {
+        } else {
             # Test internal link only if internal checking is enabled
             if ($internal) {
                 if (-not (Test-InternalLink -filePath $file.FullName -linkUrl $linkUrl)) {
@@ -218,6 +234,7 @@ foreach ($file in $markdownFiles) {
 }
 
 # Test external URLs only if external checking is enabled
+$timeoutWarnings = @()
 if ($external) {
     Write-Host ""
     Write-Host "Validating $($externalUrls.Count) unique external URLs..." -ForegroundColor Cyan
@@ -228,20 +245,28 @@ if ($external) {
         # Check cache first
         if ($externalUrlCache.ContainsKey($url)) {
             $result = $externalUrlCache[$url]
-        }
-        else {
+        } else {
             $result = Test-ExternalUrlValid -url $url
             $externalUrlCache[$url] = $result
         }
         
         if (-not $result.valid) {
-            $brokenExternalLinks += @{
-                url    = $url
-                status = $result.status
+            if ($result.isTimeout) {
+                # Timeout - track as warning, not failure
+                $timeoutWarnings += @{
+                    url    = $url
+                    status = $result.status
+                }
+                Write-Host "  [!] Timeout: $($result.status)" -ForegroundColor Yellow
+            } else {
+                # Actual broken link
+                $brokenExternalLinks += @{
+                    url    = $url
+                    status = $result.status
+                }
+                Write-Host "  [X] Failed: $($result.status)" -ForegroundColor Red
             }
-            Write-Host "  [X] Failed: $($result.status)" -ForegroundColor Red
-        }
-        else {
+        } else {
             Write-Host "  [OK] OK: $($result.status)" -ForegroundColor Green
         }
         
@@ -259,6 +284,9 @@ if ($internal) {
 }
 if ($external) {
     Write-Host "Broken external links: $($brokenExternalLinks.Count)"
+    if ($timeoutWarnings.Count -gt 0) {
+        Write-Host "Timeout warnings: $($timeoutWarnings.Count)" -ForegroundColor Yellow
+    }
 }
 
 if ($internal -and $brokenInternalLinks.Count -gt 0) {
@@ -281,7 +309,18 @@ if ($external -and $brokenExternalLinks.Count -gt 0) {
     }
 }
 
-# Calculate total broken links based on what was checked
+if ($external -and $timeoutWarnings.Count -gt 0) {
+    Write-Host ""
+    Write-Host "[!] TIMEOUT WARNINGS ($($timeoutWarnings.Count)):" -ForegroundColor Yellow
+    Write-Host "    These URLs timed out but may still be valid. They do not cause the link check to fail." -ForegroundColor Gray
+    foreach ($item in $timeoutWarnings) {
+        Write-Host "  URL: $($item.url)" -ForegroundColor White
+        Write-Host "  Issue: $($item.status)" -ForegroundColor Yellow
+        Write-Host ""
+    }
+}
+
+# Calculate total broken links based on what was checked (timeouts don't count as broken)
 $totalBroken = 0
 if ($internal) { $totalBroken += $brokenInternalLinks.Count }
 if ($external) { $totalBroken += $brokenExternalLinks.Count }
@@ -294,7 +333,6 @@ if ($totalBroken -eq 0) {
 # Exit with error code if any checked links are broken
 if ($totalBroken -gt 0) {
     exit 1
-}
-else {
+} else {
     exit 0
 }

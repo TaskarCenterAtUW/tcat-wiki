@@ -2,7 +2,7 @@
 
 # TCAT Wiki
 
-This repository contains the files used to create the [TCAT Wiki](https://taskarcenteratuw.github.io/tcat-wiki/) using [Material for MkDocs](https://squidfunk.github.io/mkdocs-material/).
+This repository contains the files used to create the [TCAT Wiki](https://taskarcenteratuw.github.io/tcat-wiki/) using [Zensical](https://zensical.org/).
 
 ## Contributing
 
