@@ -128,7 +128,7 @@ exit 0
         }
         
         It "Should return true" {
-            $result = Invoke-UtilityScript -ScriptPath $successScript
+            $result = Invoke-UtilityScript -ScriptPath $successScript -Silent
             $result | Should -Be $true
         }
     }
@@ -143,14 +143,14 @@ exit 1
         }
         
         It "Should return false" {
-            $result = Invoke-UtilityScript -ScriptPath $failScript
+            $result = Invoke-UtilityScript -ScriptPath $failScript -Silent
             $result | Should -Be $false
         }
     }
     
     Context "When script does not exist" {
         It "Should return false and not throw" {
-            $result = Invoke-UtilityScript -ScriptPath "C:\nonexistent\script.ps1" -ErrorAction SilentlyContinue
+            $result = Invoke-UtilityScript -ScriptPath "C:\nonexistent\script.ps1" -ErrorAction SilentlyContinue -Silent
             $result | Should -Be $false
         }
     }
@@ -162,7 +162,7 @@ exit 1
         }
         
         It "Should accept description parameter" {
-            { Invoke-UtilityScript -ScriptPath $descScript -Description "Test description" } | Should -Not -Throw
+            { Invoke-UtilityScript -ScriptPath $descScript -Description "Test description" -Silent } | Should -Not -Throw
         }
     }
 }
@@ -254,7 +254,7 @@ Describe "Edge Cases" {
         }
         
         It "Should return true when script completes without explicit exit" {
-            $result = Invoke-UtilityScript -ScriptPath $noExitScript
+            $result = Invoke-UtilityScript -ScriptPath $noExitScript -Silent
             $result | Should -Be $true
         }
     }
@@ -269,7 +269,7 @@ Write-Host "But continuing..."
         }
         
         It "Should return true if script completes despite Write-Error" {
-            $result = Invoke-UtilityScript -ScriptPath $errorScript -ErrorAction SilentlyContinue
+            $result = Invoke-UtilityScript -ScriptPath $errorScript -ErrorAction SilentlyContinue -Silent
             $result | Should -Be $true
         }
     }

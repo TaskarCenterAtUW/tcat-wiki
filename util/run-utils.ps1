@@ -153,35 +153,50 @@ function Invoke-UtilityScript {
         [string]$ScriptPath,
         
         [Parameter(Mandatory = $false)]
-        [string]$Description = ""
+        [string]$Description = "",
+        
+        [Parameter(Mandatory = $false)]
+        [switch]$Silent
     )
     
     $scriptName = Split-Path -Leaf $ScriptPath
     
-    if ($Description) {
-        Write-Host "  $Description" -ForegroundColor Cyan
+    if (-not $Silent) {
+        if ($Description) {
+            Write-Host "  $Description" -ForegroundColor Cyan
+        }
+        Write-Host "  Running: $scriptName" -ForegroundColor Cyan
+        Write-Host ""
     }
-    Write-Host "  Running: $scriptName" -ForegroundColor Cyan
-    Write-Host ""
     
     # Reset LASTEXITCODE before running
     $global:LASTEXITCODE = 0
     
     try {
-        & $ScriptPath
+        if ($Silent) {
+            & $ScriptPath *> $null
+        } else {
+            & $ScriptPath
+        }
         
         if ($LASTEXITCODE -ne 0) {
-            Write-Host ""
-            Write-Host "  ✗ FAILED: $scriptName exited with code $LASTEXITCODE" -ForegroundColor Red
+            if (-not $Silent) {
+                Write-Host ""
+                Write-Host "  ✗ FAILED: $scriptName exited with code $LASTEXITCODE" -ForegroundColor Red
+            }
             return $false
         }
         
-        Write-Host ""
-        Write-Host "  ✓ COMPLETED: $scriptName" -ForegroundColor Green
+        if (-not $Silent) {
+            Write-Host ""
+            Write-Host "  ✓ COMPLETED: $scriptName" -ForegroundColor Green
+        }
         return $true
     } catch {
-        Write-Host ""
-        Write-Host "  ✗ ERROR: $scriptName - $_" -ForegroundColor Red
+        if (-not $Silent) {
+            Write-Host ""
+            Write-Host "  ✗ ERROR: $scriptName - $_" -ForegroundColor Red
+        }
         return $false
     }
 }

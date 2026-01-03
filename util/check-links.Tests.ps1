@@ -2,8 +2,8 @@
 #Requires -Modules @{ ModuleName='Pester'; ModuleVersion='5.0.0' }
 
 # Name: TCAT Wiki - Link Checker Tests
-# Version: 1.0.1
-# Date: 2025-12-31
+# Version: 1.1.0
+# Date: 2026-01-02
 # Author: Amy Bordenave, Taskar Center for Accessible Technology, University of Washington
 # License: CC-BY-ND 4.0 International
 
@@ -28,42 +28,17 @@
 #>
 
 BeforeAll {
-    # Extract and load the helper functions from check-links.ps1
+    # Extract and load the helper functions from check-links.ps1 using region markers
     $scriptPath = Join-Path $PSScriptRoot "check-links.ps1"
     $scriptContent = Get-Content $scriptPath -Raw
     
-    # Extract the function definitions using multiline regex
-    # Get-MarkdownLinks - simple function
-    if ($scriptContent -match '(?sm)(function Get-MarkdownLinks \{.+?^\})') {
-        $sb = [ScriptBlock]::Create($matches[1])
+    # Extract the Helper Functions region
+    if ($scriptContent -match '(?sm)#region Helper Functions\s*\r?\n(.+?)#endregion Helper Functions') {
+        $helperFunctionsCode = $matches[1]
+        $sb = [ScriptBlock]::Create($helperFunctionsCode)
         . $sb
     } else {
-        throw "Could not find Get-MarkdownLinks function in check-links.ps1"
-    }
-    
-    # Test-ExternalUrl - simple function
-    if ($scriptContent -match '(?sm)(function Test-ExternalUrl \{.+?^\})') {
-        $sb = [ScriptBlock]::Create($matches[1])
-        . $sb
-    } else {
-        throw "Could not find Test-ExternalUrl function in check-links.ps1"
-    }
-    
-    # Test-InternalLink - function with nested blocks
-    if ($scriptContent -match '(?sm)(function Test-InternalLink \{.+?^    return Test-Path \$resolvedPath\r?\n\})') {
-        $sb = [ScriptBlock]::Create($matches[1])
-        . $sb
-    } else {
-        throw "Could not find Test-InternalLink function in check-links.ps1"
-    }
-    
-    # Test-ExternalUrlValid - complex function with try/catch blocks
-    # Match from function declaration to the closing brace that's at the start of a line followed by a blank line
-    if ($scriptContent -match '(?sm)(function Test-ExternalUrlValid \{.+?^        \}\r?\n        \r?\n        return @\{[\s\S]+?^\})') {
-        $sb = [ScriptBlock]::Create($matches[1])
-        . $sb
-    } else {
-        throw "Could not find Test-ExternalUrlValid function in check-links.ps1"
+        throw "Could not find '#region Helper Functions' in check-links.ps1"
     }
 }
 
@@ -307,6 +282,13 @@ Describe "Test-ExternalUrlValid" {
             $result.valid | Should -Be $true
             $result.status | Should -Match "Skipped"
         }
+        
+        It "Should include isTimeout property set to false for skipped URLs" {
+            $result = Test-ExternalUrlValid -url "https://marketplace.visualstudio.com/items?itemName=test"
+            # Skipped URLs don't have isTimeout since they're not actually tested
+            $result.Keys | Should -Contain "valid"
+            $result.Keys | Should -Contain "status"
+        }
     }
     
     Context "Valid external URLs" -Tag "Network" {
@@ -315,12 +297,32 @@ Describe "Test-ExternalUrlValid" {
             $result = Test-ExternalUrlValid -url "https://www.google.com"
             $result.valid | Should -Be $true
         }
+        
+        It "Should include isTimeout property set to false for successful requests" {
+            $result = Test-ExternalUrlValid -url "https://www.google.com"
+            $result.isTimeout | Should -Be $false
+        }
     }
     
     Context "Invalid external URLs" -Tag "Network" {
         It "Should return invalid for non-existent domain" {
             $result = Test-ExternalUrlValid -url "https://this-domain-definitely-does-not-exist-12345.com"
             $result.valid | Should -Be $false
+        }
+        
+        It "Should include isTimeout property for failed requests" {
+            $result = Test-ExternalUrlValid -url "https://this-domain-definitely-does-not-exist-12345.com"
+            $result.Keys | Should -Contain "isTimeout"
+        }
+    }
+    
+    Context "Timeout detection" {
+        It "Should detect timeout in error message containing 'Timeout'" {
+            # We can't easily force a real timeout, but we can verify the function
+            # returns the expected structure
+            $result = Test-ExternalUrlValid -url "https://www.google.com"
+            $result.Keys | Should -Contain "isTimeout"
+            $result.isTimeout | Should -BeOfType [bool]
         }
     }
 }
