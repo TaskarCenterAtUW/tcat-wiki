@@ -36,7 +36,7 @@
     Run only Phase 1 (Pester tests) without running the utilities.
 
 .PARAMETER SkipLinkCheck
-    Skip the link checker in Phase 2. Useful for quick iterations.
+    Skip external link checking in Phase 2 (internal links are still checked). Useful for quick iterations.
 
 .EXAMPLE
     .\run-utils.ps1
@@ -52,7 +52,7 @@
 
 .EXAMPLE
     .\run-utils.ps1 -SkipLinkCheck
-    Runs tests and utilities, but skips the link checker.
+    Runs tests and utilities, but skips external link checking (internal links still checked).
 #>
 
 param(
@@ -290,17 +290,27 @@ if (-not $TestsOnly) {
     
     Write-Host ""
     
-    # 3. Check links (optional)
-    if (-not $SkipLinkCheck) {
-        $linkCheckScript = Join-Path $utilPath "check-links.ps1"
-        if (-not (Invoke-UtilityScript -ScriptPath $linkCheckScript -Description "Step 3/3: Checking links")) {
+    # 3. Check links
+    $linkCheckScript = Join-Path $utilPath "check-links.ps1"
+    if ($SkipLinkCheck) {
+        # Only check internal links when -SkipLinkCheck is used
+        Write-Host "  Step 3/3: Checking internal links only (-SkipLinkCheck)" -ForegroundColor Cyan
+        Write-Host ""
+        & $linkCheckScript -internal
+        if ($LASTEXITCODE -ne 0) {
             Write-Host ""
             Write-Host "==========================================="
             Write-Host "PHASE 2 FAILED at Step 3" -ForegroundColor Red
             exit 1
         }
     } else {
-        Write-Host "  Step 3/3: Skipping link check (-SkipLinkCheck)" -ForegroundColor Yellow
+        # Check both internal and external links
+        if (-not (Invoke-UtilityScript -ScriptPath $linkCheckScript -Description "Step 3/3: Checking all links")) {
+            Write-Host ""
+            Write-Host "==========================================="
+            Write-Host "PHASE 2 FAILED at Step 3" -ForegroundColor Red
+            exit 1
+        }
     }
     
     Write-Host ""
