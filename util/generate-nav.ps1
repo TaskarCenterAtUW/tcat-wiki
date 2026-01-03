@@ -2,8 +2,8 @@
 # This script is designed to be run in a PowerShell environment.
 
 # Name: TCAT Wiki - Navigation Section Generator
-# Version: 3.0.1
-# Date: 2025-12-31
+# Version: 3.1.0
+# Date: 2026-01-02
 # Author: Amy Bordenave, Taskar Center for Accessible Technology, University of Washington
 # License: CC-BY-ND 4.0 International
 
@@ -32,6 +32,23 @@
 #>
 
 #region Helper Functions
+
+# Define the title map at script scope for use across functions
+$script:titleMap = @{
+    'osw'             = 'OSW'
+    'tdei'            = 'TDEI'
+    'josm'            = 'JOSM'
+    'aviv-scoutroute' = 'AVIV ScoutRoute'
+    'accessmap'       = 'AccessMap'
+    'walksheds'       = 'Walksheds'
+    'tdei-walkshed'   = 'TDEI Walkshed'
+    'tdei-workspaces' = 'TDEI Workspaces'
+    'opensidewalks'   = 'OpenSidewalks'
+    'tdei-core'       = 'TDEI Core'
+    'rapid'           = 'Rapid'
+    'workspaces'      = 'Workspaces'
+    'index'           = ''
+}
 
 <#
 .SYNOPSIS
@@ -146,23 +163,9 @@ function ConvertTo-Title {
     # Remove file extension
     $name = [System.IO.Path]::GetFileNameWithoutExtension($name)
     
-    # Handle special cases - known project names and acronyms
-    $titleMap = @{
-        'osw'             = 'OSW'
-        'tdei'            = 'TDEI'
-        'josm'            = 'JOSM'
-        'aviv-scoutroute' = 'AVIV ScoutRoute'
-        'accessmap'       = 'AccessMap'
-        'walksheds'       = 'Walksheds'
-        'tdei-walkshed'   = 'TDEI Walkshed'
-        'tdei-workspaces' = 'TDEI Workspaces'
-        'opensidewalks'   = 'OpenSidewalks'
-        'tdei-core'       = 'TDEI Core'
-        'index'           = ''
-    }
-    
-    if ($titleMap.ContainsKey($name.ToLower())) {
-        $result = $titleMap[$name.ToLower()]
+    # Check titleMap for known project names and acronyms
+    if ($script:titleMap.ContainsKey($name.ToLower())) {
+        $result = $script:titleMap[$name.ToLower()]
         if ($result) { 
             return $result 
         } else { 
@@ -175,6 +178,57 @@ function ConvertTo-Title {
     $result = (Get-Culture).TextInfo.ToTitleCase($result.ToLower())
     
     return $result
+}
+
+<#
+.SYNOPSIS
+    Gets the preferred title for a file or directory, respecting the titleMap.
+
+.DESCRIPTION
+    Checks the titleMap first for known project names and acronyms.
+    If no match, falls back to frontmatter title, then to derived title.
+
+.PARAMETER filePath
+    The full path to the file to get the title for.
+
+.PARAMETER baseName
+    The base name (directory or file name without extension) to check against titleMap.
+
+.OUTPUTS
+    System.String. The preferred title for the file or directory.
+
+.EXAMPLE
+    Get-PreferredTitle -filePath "C:\docs\accessmap\index.md" -baseName "accessmap"
+    Returns "AccessMap" (from titleMap, even if frontmatter says something else)
+#>
+function Get-PreferredTitle {
+    [CmdletBinding()]
+    [OutputType([string])]
+    param(
+        [Parameter(Mandatory = $true)]
+        [string]$filePath,
+        
+        [Parameter(Mandatory = $true)]
+        [string]$baseName
+    )
+    
+    # Check titleMap first (always prefer known special cases)
+    $baseNameLower = $baseName.ToLower()
+    if ($script:titleMap.ContainsKey($baseNameLower)) {
+        $mappedTitle = $script:titleMap[$baseNameLower]
+        if ($mappedTitle) {
+            return $mappedTitle
+        }
+    }
+    
+    # Fall back to frontmatter title
+    $frontmatterTitle = Get-MarkdownTitle -filePath $filePath
+    if ($frontmatterTitle) {
+        return $frontmatterTitle
+    }
+    
+    # Finally, derive from name
+    return ConvertTo-Title -name $baseName
 }
 
 <#
@@ -249,10 +303,7 @@ function Build-DirectoryNav {
     # Add other files in this directory
     foreach ($file in $mdFiles) {
         $fileRelativePath = $file.FullName.Substring($resolvedDocsPath.Length + 1) -replace '\\', '/'
-        $fileTitle = Get-MarkdownTitle $file.FullName
-        if (-not $fileTitle) {
-            $fileTitle = ConvertTo-Title $file.BaseName
-        }
+        $fileTitle = Get-PreferredTitle -filePath $file.FullName -baseName $file.BaseName
         $escapedTitle = Protect-TomlString $fileTitle
         $subItemsList += @{ Type = "simple"; Content = "{$escapedTitle = `"$fileRelativePath`"}"; Indent = $childIndent }
     }
@@ -347,7 +398,7 @@ function Build-NavigationToml {
     # Handle root index.md specially
     $rootIndex = Join-Path $docsBasePath "index.md"
     if (Test-Path $rootIndex) {
-        $homeTitle = Get-MarkdownTitle $rootIndex
+        $homeTitle = Get-PreferredTitle -filePath $rootIndex -baseName "index"
         if (-not $homeTitle) { $homeTitle = "Home" }
         $escapedTitle = Protect-TomlString $homeTitle
         $navItemsList += @{ Type = "simple"; Content = "`t{$escapedTitle = `"index.md`"}" }
@@ -379,7 +430,7 @@ function Build-NavigationToml {
     if (Test-Path $guidesListPath) {
         $guidesIndex = Join-Path $guidesListPath "index.md"
         if (Test-Path $guidesIndex) {
-            $guidesTitle = Get-MarkdownTitle $guidesIndex
+            $guidesTitle = Get-PreferredTitle -filePath $guidesIndex -baseName "guides-list"
             if (-not $guidesTitle) { $guidesTitle = "Guides List" }
             $escapedTitle = Protect-TomlString $guidesTitle
             $navItemsList += @{ Type = "simple"; Content = "`t{$escapedTitle = `"guides-list/index.md`"}" }
@@ -392,10 +443,7 @@ function Build-NavigationToml {
         Sort-Object Name
     
     foreach ($file in $rootFiles) {
-        $fileTitle = Get-MarkdownTitle $file.FullName
-        if (-not $fileTitle) {
-            $fileTitle = ConvertTo-Title $file.BaseName
-        }
+        $fileTitle = Get-PreferredTitle -filePath $file.FullName -baseName $file.BaseName
         $escapedTitle = Protect-TomlString $fileTitle
         $navItemsList += @{ Type = "simple"; Content = "`t{$escapedTitle = `"$($file.Name)`"}" }
     }
