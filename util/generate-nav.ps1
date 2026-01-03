@@ -269,8 +269,8 @@ function Build-DirectoryNav {
     )
     
     $items = @()
-    $indent = "`t" * $indentLevel
-    $childIndent = "`t" * ($indentLevel + 1)
+    $indent = "    " * $indentLevel
+    $childIndent = "    " * ($indentLevel + 1)
     
     # Get directory name and relative path
     $dirInfo = Get-Item $dirPath
@@ -401,7 +401,7 @@ function Build-NavigationToml {
         $homeTitle = Get-PreferredTitle -filePath $rootIndex -baseName "index"
         if (-not $homeTitle) { $homeTitle = "Home" }
         $escapedTitle = Protect-TomlString $homeTitle
-        $navItemsList += @{ Type = "simple"; Content = "`t{$escapedTitle = `"index.md`"}" }
+        $navItemsList += @{ Type = "simple"; Content = "    {$escapedTitle = `"index.md`"}" }
     }
     
     # Process root level directories (excluding resources and guides-list which is auto-generated)
@@ -433,7 +433,7 @@ function Build-NavigationToml {
             $guidesTitle = Get-PreferredTitle -filePath $guidesIndex -baseName "guides-list"
             if (-not $guidesTitle) { $guidesTitle = "Guides List" }
             $escapedTitle = Protect-TomlString $guidesTitle
-            $navItemsList += @{ Type = "simple"; Content = "`t{$escapedTitle = `"guides-list/index.md`"}" }
+            $navItemsList += @{ Type = "simple"; Content = "    {$escapedTitle = `"guides-list/index.md`"}" }
         }
     }
     
@@ -445,7 +445,7 @@ function Build-NavigationToml {
     foreach ($file in $rootFiles) {
         $fileTitle = Get-PreferredTitle -filePath $file.FullName -baseName $file.BaseName
         $escapedTitle = Protect-TomlString $fileTitle
-        $navItemsList += @{ Type = "simple"; Content = "`t{$escapedTitle = `"$($file.Name)`"}" }
+        $navItemsList += @{ Type = "simple"; Content = "    {$escapedTitle = `"$($file.Name)`"}" }
     }
     
     # Build final output with proper comma placement (no trailing comma on last item)
