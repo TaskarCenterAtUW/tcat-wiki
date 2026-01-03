@@ -23,6 +23,7 @@ const titleMapSource = {
     workspaces: "Workspaces",
     "guides list": "Guides List",
     "user manual": "User Manual",
+    "tcat wiki": "TCAT Wiki",
 };
 
 /**
