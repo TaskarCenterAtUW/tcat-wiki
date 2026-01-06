@@ -46,35 +46,23 @@ Depending on the type of mobile device you use, follow the instructions below to
 
 **Step 3:** Install AVIV ScoutRoute!
 
-1. Using Safari, visit: [https://testflight.apple.com/join/hpzSaUdQ](https://testflight.apple.com/join/hpzSaUdQ)
+1. Open [AVIV ScoutRoute on the Apple App Store](https://apps.apple.com/us/app/aviv-scoutroute/id6749523895).
 
 Alternatively, scan the QR code below:
 
-![QR Code TestFlight AVIV ScoutRoute Invite](../../resources/images/aviv-scoutroute/ios/qr-testflight-asr-invite.png){ width="200" }
+![QR Code Apple App Store AVIV ScoutRoute](../../resources/images/aviv-scoutroute/ios/qr-asr-app-store.png){ width="200" }
 
-![Safari Get TestFlight](../../resources/images/aviv-scoutroute/ios/safari-get-testflight-h-view-in-app-store.png){ width="400" } ![Safari Open in TestFlight](../../resources/images/aviv-scoutroute/ios/safari-view-asr-beta-h-view-in-testflight.png){ width="400" }
+1. Select "Get"
 
-1. Select the **"View in App Store"** button under the "Step 1" section
+2. Select "Install"
 
-2. Install TestFlight via the App Store
+3. Select "Open"
 
-**Note:** TestFlight, once installed, shows a "Ready to Test" screen and has a "Redeem" button which, when pressed, opens a "Redeem Code" popup which asks for a TestFlight Invitation Code. **Disregard this and return to Safari to continue.**
-
-4. Return to Safari and select **"View in TestFlight"** under the "Step 2" section
-
-![TestFlight Install](../../resources/images/aviv-scoutroute/ios/testflight-before-install-h-install.png){ width="400" } ![TestFlight Open](../../resources/images/aviv-scoutroute/ios/testflight-after-install-h-open.png){ width="400" }
-
-1. Select **"Install"**
-2. Select **"Open"**
-
-![TestFlight From the Developer Continue](../../resources/images/aviv-scoutroute/ios/testflight-from-the-developer-h-continue.png){ width="400" } ![TestFlight Share Feedback Continue](../../resources/images/aviv-scoutroute/ios/testflight-share-feedback-h-continue.png){ width="400" }
-
-1. Select **"Continue"**
-2. Select **"Continue"**
+![AVIV ScoutRoute Apple App Store Get](../../resources/images/aviv-scoutroute/ios/app-store-get.png){ width="400" } ![AVIV ScoutRoute Apple App Store Install](../../resources/images/aviv-scoutroute/ios/app-store-install.png){ width="400" }
 
 **Step 4:** Login to the AVIV ScoutRoute mobile application using your TDEI Account
 
-![AVIV ScoutRoute iOS Login](../../resources/images/aviv-scoutroute/ios/login.png){ width="400" }
+![AVIV ScoutRoute Apple App Store Open](../../resources/images/aviv-scoutroute/ios/app-store-open.png){ width="400" } ![AVIV ScoutRoute iOS Login](../../resources/images/aviv-scoutroute/ios/login.png){ width="400" }
 
 **Step 5:** Reach out to your project's point of contact and provide them with your name and Apple Account email address. They will add you to the appropriate Project Group and assign your role.
 
@@ -86,7 +74,7 @@ Alternatively, scan the QR code below:
 
 1. Visit [https://portal.tdei.us/](https://portal.tdei.us/)
 
-2. Click "Register Now"
+2. Select "Register Now"
 
 3. Complete the form and press "Create Account"
 
@@ -107,7 +95,7 @@ Alternatively, scan the QR code below:
 
             ![QR Code Firebase AVIV ScoutRoute Invite](../../resources/images/aviv-scoutroute/android/qr-firebase-asr-invite.png){ width="200" }
 
-    2. On your mobile device, click on the link and it will open in your default browser
+    2. On your mobile device, select the link and it will open in your default browser
 
     3. Sign in with your Google Account (must match the invite email)
 
