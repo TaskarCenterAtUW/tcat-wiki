@@ -1,7 +1,7 @@
 [project]
 
 # Site version
-version = "1.2.0"
+version = "1.3.0"
 
 # The site_name is shown in the page header and the browser window title
 # Read more: https://zensical.org/docs/setup/basics/#site_name
@@ -329,6 +329,7 @@ nav = [
         ]},
         {"Tasking Manager" = [
             "opensidewalks/tasking-manager/index.md",
+            {"Tasking Manager Project List" = "opensidewalks/tasking-manager/project-list.md"},
             {"Task Polygon Automation Guide" = "opensidewalks/tasking-manager/task-polygon-automation.md"},
             {"User Manual" = [ "opensidewalks/tasking-manager/user-manual/index.md" ]}
         ]}
