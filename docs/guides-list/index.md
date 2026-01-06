@@ -60,7 +60,7 @@ This guide explains how to make edits to OpenStreetMap following and supporting 
 
 #### [Tasking Manager User Manual](../opensidewalks/tasking-manager/user-manual/index.md)
 
-This user manual explains how to use the Tasking Manager platform.
+This user manual explains how to use the [OSM US Tasking Manager](https://tasks.openstreetmap.us/) platform.
 
 #### [Task Polygon Automation Guide](../opensidewalks/tasking-manager/task-polygon-automation.md)
 
