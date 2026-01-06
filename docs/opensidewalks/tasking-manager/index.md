@@ -22,7 +22,7 @@ _For a list of all guides on the TCAT Wiki, refer to the [Guides List](../../gui
 
 ### [Tasking Manager User Manual](user-manual/index.md)
 
-This user manual explains how to use the Tasking Manager platform.
+This user manual explains how to use the [OSM US Tasking Manager](https://tasks.openstreetmap.us/) platform.
 
 ### [Task Polygon Automation Guide](task-polygon-automation.md)
 
