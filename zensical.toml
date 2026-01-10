@@ -1,7 +1,7 @@
 [project]
 
 # Site version
-version = "1.3.0"
+version = "1.4.0"
 
 # The site_name is shown in the page header and the browser window title
 # Read more: https://zensical.org/docs/setup/basics/#site_name
@@ -314,6 +314,7 @@ nav = [
         ]},
         {"User Manual" = [ "aviv-scoutroute/user-manual/index.md" ]}
     ]},
+    {"Events" = [ "events/index.md" ]},
     {"JOSM" = [
         "josm/index.md",
         {"Workspaces JOSM Settings Guide" = "josm/workspaces-josm-settings.md"},
