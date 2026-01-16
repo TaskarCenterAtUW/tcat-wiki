@@ -285,6 +285,9 @@ link = "https://www.youtube.com/@taskarcenterstransportatio734"
 [[project.extra.social]]
 icon = "fontawesome/brands/facebook"
 link = "https://www.facebook.com/TaskarCenter"
+[[project.extra.social]]
+icon = "fontawesome/brands/instagram"
+link = "https://www.instagram.com/TaskarCenter/"
 
 # ----------------------------------------------------------------------------
 # Navigation
