@@ -28,6 +28,18 @@ _Content will be added as it becomes available._
 
 ---
 
+### Nondrivers Alliance: Clark County Walk/Roll Event
+
+**Time:** January 20th, 2026 | 12:00 PM PT - 4:30 PM PT
+
+**Location:** Vancouver, WA
+
+**Related Content:**
+
+Visit the [Clark County Walk/Roll Event](nda-vancouver/index.md) page to access resources and more information!
+
+---
+
 ### OpenThePaths 2026
 
 **Time:** February 26th & 27th, 2026 | 9:00 AM PT – 4:00 PM PT
