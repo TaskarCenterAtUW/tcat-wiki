@@ -283,9 +283,6 @@ link = "https://www.linkedin.com/company/taskar-center-for-accessible-technology
 icon = "fontawesome/brands/youtube"
 link = "https://www.youtube.com/@taskarcenterstransportatio734"
 [[project.extra.social]]
-icon = "fontawesome/brands/x-twitter"
-link = "https://x.com/TaskarCenter"
-[[project.extra.social]]
 icon = "fontawesome/brands/facebook"
 link = "https://www.facebook.com/TaskarCenter"
 
