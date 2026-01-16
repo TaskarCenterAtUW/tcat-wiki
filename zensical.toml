@@ -1,7 +1,7 @@
 [project]
 
 # Site version
-version = "1.4.0"
+version = "1.5.0"
 
 # The site_name is shown in the page header and the browser window title
 # Read more: https://zensical.org/docs/setup/basics/#site_name
@@ -283,11 +283,11 @@ link = "https://www.linkedin.com/company/taskar-center-for-accessible-technology
 icon = "fontawesome/brands/youtube"
 link = "https://www.youtube.com/@taskarcenterstransportatio734"
 [[project.extra.social]]
-icon = "fontawesome/brands/x-twitter"
-link = "https://x.com/TaskarCenter"
-[[project.extra.social]]
 icon = "fontawesome/brands/facebook"
 link = "https://www.facebook.com/TaskarCenter"
+[[project.extra.social]]
+icon = "fontawesome/brands/instagram"
+link = "https://www.instagram.com/TaskarCenter/"
 
 # ----------------------------------------------------------------------------
 # Navigation
