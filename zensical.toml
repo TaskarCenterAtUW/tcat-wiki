@@ -298,7 +298,6 @@ link = "https://www.instagram.com/TaskarCenter/"
 # can be defined using TOML syntax.
 # Read more: https://zensical.org/docs/setup/navigation/
 # ----------------------------------------------------------------------------
-
 nav = [
     {"Home" = "index.md"},
     {"AccessMap" = [
@@ -314,7 +313,14 @@ nav = [
         ]},
         {"User Manual" = [ "aviv-scoutroute/user-manual/index.md" ]}
     ]},
-    {"Events" = [ "events/index.md" ]},
+    {"Events" = [
+        "events/index.md",
+        {"Nda Vancouver" = [
+            "events/nda-vancouver/index.md",
+            {"AccessMap" = "events/nda-vancouver/accessmap.md"},
+            {"AVIV ScoutRoute" = "events/nda-vancouver/aviv-scoutroute.md"}
+        ]}
+    ]},
     {"JOSM" = [
         "josm/index.md",
         {"Workspaces JOSM Settings Guide" = "josm/workspaces-josm-settings.md"},
