@@ -180,6 +180,31 @@ tags:
         }
     }
     
+    Context "When exclude flags are incorrectly formatted as tags (array items)" {
+        It "Should NOT detect exclusion when flags are array items instead of YAML comments" {
+            $testFile = Join-Path $TestDrive "wrong-format-test.md"
+            @"
+---
+title: Incorrectly Formatted Exclusions
+tags:
+    - Guide
+    - exclude-from-parent-guides-list
+    - exclude-from-main-guides-list
+---
+
+# Incorrectly Formatted Exclusions
+
+This guide has exclusion flags as array items, which is incorrect.
+"@ | Set-Content -Path $testFile -Encoding UTF8
+
+            $result = Get-GuideInfo -FilePath $testFile
+            $result.IsGuide | Should -Be $true
+            # These should be FALSE because the format is wrong (array items instead of YAML comments)
+            $result.ExcludeFromParent | Should -Be $false -Because "exclude flags must be YAML comments (# flag), not array items (- flag)"
+            $result.ExcludeFromMain | Should -Be $false -Because "exclude flags must be YAML comments (# flag), not array items (- flag)"
+        }
+    }
+    
     Context "When file does not exist" {
         It "Should return default values without throwing" {
             $result = Get-GuideInfo -FilePath "C:\nonexistent\file.md" -WarningAction SilentlyContinue
