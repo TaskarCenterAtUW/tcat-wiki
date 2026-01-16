@@ -61,6 +61,7 @@
 *[NACTO]: National Association of City Transportation Officials
 *[NCHRP]: National Cooperative Highway Research Program
 *[NC-BPAID]: National Collaboration on Bicycle, Pedestrian, and Accessibility Infrastructure Data
+*[NDA]: Nondrivers Alliance
 *[NEMT]: Non-Emergency Medical Transportation
 *[NHS]: National Highway System
 *[NHTSA]: National Highway Traffic Safety Administration
