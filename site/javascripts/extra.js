@@ -25,6 +25,7 @@ const titleMapSource = {
     "user manual": "User Manual",
     "tcat wiki": "TCAT Wiki",
     "nda vancouver": "Clark County Walk/Roll Event",
+    ios: "iOS",
 };
 
 /**
