@@ -245,6 +245,28 @@ Describe "Test-InternalLink" {
         }
     }
     
+    Context "Special URL schemes" {
+        It "Should return true for mailto: links (skip validation)" {
+            $sourcePath = Join-Path $TestDocsPath "index.md"
+            Test-InternalLink -filePath $sourcePath -linkUrl "mailto:user@example.com" | Should -Be $true
+        }
+        
+        It "Should return true for tel: links (skip validation)" {
+            $sourcePath = Join-Path $TestDocsPath "index.md"
+            Test-InternalLink -filePath $sourcePath -linkUrl "tel:+1234567890" | Should -Be $true
+        }
+        
+        It "Should return true for javascript: links (skip validation)" {
+            $sourcePath = Join-Path $TestDocsPath "index.md"
+            Test-InternalLink -filePath $sourcePath -linkUrl "javascript:void(0)" | Should -Be $true
+        }
+        
+        It "Should return true for ftp: links (skip validation)" {
+            $sourcePath = Join-Path $TestDocsPath "index.md"
+            Test-InternalLink -filePath $sourcePath -linkUrl "ftp://ftp.example.com/file.txt" | Should -Be $true
+        }
+    }
+    
     Context "Links with fragments" {
         It "Should validate file ignoring fragment" {
             $sourcePath = Join-Path $TestDocsPath "index.md"

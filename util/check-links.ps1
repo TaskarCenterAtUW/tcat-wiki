@@ -120,6 +120,11 @@ function Test-InternalLink {
         return $true
     }
     
+    # Skip special URL schemes (mailto, tel, etc.)
+    if ($linkUrl -match '^(mailto|tel|javascript|ftp|file):') {
+        return $true
+    }
+    
     # Remove fragment from URL
     $cleanUrl = $linkUrl.Split('#')[0]
     if (-not $cleanUrl) {
