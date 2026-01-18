@@ -24,22 +24,31 @@ This section covers the installation of the AVIV ScoutRoute mobile app for both 
 
 1. First, scan the QR code below or open the following link:
 
-[https://portal.tdei.us/register?code=NDAV26HIJ](https://portal.tdei.us/register?code=NDAV26HIJ)
+    [https://portal.tdei.us/register?code=NDAV26HIJ](https://portal.tdei.us/register?code=NDAV26HIJ)
 
-![QR Code: https://portal.tdei.us/register?code=NDAV26HIJ](../../resources/images/tdei-portal/qr-codes/NDAV26HIJ-nda-vancouver-dark.png#only-dark){ width="400" }
-![QR Code: https://portal.tdei.us/register?code=NDAV26HIJ](../../resources/images/tdei-portal/qr-codes/NDAV26HIJ-nda-vancouver-light.png#only-light){ width="400" }
+    ![QR Code: https://portal.tdei.us/register?code=NDAV26HIJ](../../resources/images/tdei-portal/qr-codes/NDAV26HIJ-nda-vancouver-dark.png#only-dark){ width="200" }
 
-_Note: If you already have a TDEI Portal account, skip the next step. Instead, scroll to the bottom of the page and select "**Sign in**"_
+    ![QR Code: https://portal.tdei.us/register?code=NDAV26HIJ](../../resources/images/tdei-portal/qr-codes/NDAV26HIJ-nda-vancouver-light.png#only-light){ width="200" }
+
+    _Note: If you already have a TDEI Portal account, skip the next step. Instead, scroll to the bottom of the page and select "**Sign in**"_
 
 2. Next, register for a TDEI Portal account by entering your information into the signup form
 
-You must enter a **First Name**, **Email Id**, and **Password**, then agree to the **Terms and Conditions**. All other fields are optional.
+    You must enter a **First Name**, **Email Id**, and **Password**, then agree to the **Terms and Conditions**. All other fields are optional.
 
-_Password requirements: Minimum of 8 characters in length; requires at least one lower case letter, one upper case letter, one special character, and a number._
+    _Password requirements: Minimum of 8 characters in length; requires at least one lower case letter, one upper case letter, one special character, and a number._
 
-After entering your information, select "**Create Account**"
+    After entering your information, select "**Create Account**"
 
-3. After successfully creating your account, you will advance to a page that says "Sign-In Complete. Click Continue to proceed." Select the "**Continue**" button.
+    ![Android TDEI Portal referral register top](../../resources/images/events/nda-vancouver/android/01-referral-register-top-dark.png#only-dark){ width="200" }
+    ![iOS TDEI Portal referral register top](../../resources/images/events/nda-vancouver/ios/03-referral-register-top-light.png#only-light){ width="200" }
+    ![Android TDEI Portal referral register bottom](../../resources/images/events/nda-vancouver/android/02-referral-register-bottom-dark.png#only-dark){ width="200" }
+    ![iOS TDEI Portal referral register bottom](../../resources/images/events/nda-vancouver/ios/04-referral-register-bottom-light.png#only-light){ width="200" }
+
+3. After successfully creating your account, you will advance to a page that says "_Registration Complete. Click Continue to proceed._" Select the "**Continue**" button.
+
+    ![Android TDEI Portal referral registration complete](../../resources/images/events/nda-vancouver/android/03-registration-complete-dark.png#only-dark){ width="200" }
+    ![iOS TDEI Portal referral registration complete](../../resources/images/events/nda-vancouver/ios/07-registration-complete-light.png#only-light){ width="200" }
 
 ### Step 2: Install
 
@@ -49,9 +58,15 @@ Installation instructions are different for Android and iOS users. If you use an
 
 1. On the next screen, titled "_Continue in our App_", select "**Install Android App**"
 
+    ![Android TDEI Portal continue in our app](../../resources/images/events/nda-vancouver/android/04-continue-in-our-app-dark.png){ width="200" }
+
 2. This will open a new page: "_Firebase App Distribution_". Enter your Email and then select the "**Sign up**" button.
 
+    ![Android Firebase sign up](../../resources/images/events/nda-vancouver/android/05-firebase-sign-up-dark.png){ width="200" }
+
 3. After entering your Email, the page should update to say "**You're in!**"
+
+    ![Android Firebase sign up success](../../resources/images/events/nda-vancouver/android/06-firebase-sign-up-success-dark.png){ width="200" }
 
 4. Within the next few minutes, you should receive an email titled "**Confirm your email to test AVIV ScoutRoute for Android**".
 
@@ -61,23 +76,40 @@ Installation instructions are different for Android and iOS users. If you use an
 
 2. Select "**Get started**"
 
+    ![Android email top](../../resources/images/events/nda-vancouver/android/07-email-top-dark.png){ width="200" }
+    ![Android email bottom](../../resources/images/events/nda-vancouver/android/08-email-bottom-dark.png){ width="200" }
+
 3. **Sign in** with your Google account.
 
 4. Check the checkbox then select "**Accept invitation**"
+
+    ![Android Firebase accept invitation](../../resources/images/events/nda-vancouver/android/09-accept-dark.png){ width="200" }
 
 **Download and install**
 
 1. Select "**Download**" (_not "Download App Tester"!_)
 
+    ![Android Firebase download](../../resources/images/events/nda-vancouver/android/10-download-dark.png){ width="200" }
+
 2. A popup will appear, saying "_Download file? (136 MB) app.apk_". Select "**Download**"
+
+    ![Android Firebase download apk](../../resources/images/events/nda-vancouver/android/11-download-apk-dark.png){ width="200" }
 
 3. Once downloaded, a popup will appear, saying "_Install this app? AVIV ScoutRoute_". Select "**Install**"
 
+    ![Android AVIV ScoutRoute install](../../resources/images/events/nda-vancouver/android/13-install-dark.png){ width="200" }
+
 4. Once installed, a popup will appear, saying "_App installed: AVIV ScoutRoute_". Select "**Open**"
+
+    ![Android AVIV ScoutRoute open](../../resources/images/events/nda-vancouver/android/14-open-dark.png){ width="200" }
 
 5. Once opened, a popup will appear, saying "_Allow AVIV ScoutRoute to access this device's location?_" Select "**Precise**" and "**While using the app**"
 
+    ![Android AVIV ScoutRoute allow location](../../resources/images/events/nda-vancouver/android/15-location-dark.png){ width="200" }
+
 6. Once allowed, a final popup will appear, saying "_Allow AVIV ScoutRoute to send you notifications?_" Select "**Allow**"
+
+    ![Android AVIV ScoutRoute allow notifications](../../resources/images/events/nda-vancouver/android/16-notifications-dark.png){ width="200" }
 
 You are now ready to start using AVIV ScoutRoute! Skip ahead to the [Usage](#usage) section.
 
@@ -85,15 +117,25 @@ You are now ready to start using AVIV ScoutRoute! Skip ahead to the [Usage](#usa
 
 1. On the next screen, titled "_Continue in our App_", select "**Install iOS App**"
 
+    ![iOS TDEI Portal continue in our app install](../../resources/images/events/nda-vancouver/ios/09-continue-in-our-app-install-light.png){ width="200" }
+
 2. An "_Open in "App Store"?_" popup will appear. Select "**Open**"
+
+    ![iOS TDEI Portal open in app store](../../resources/images/events/nda-vancouver/ios/10-open-in-app-store-light.png){ width="200" }
 
 3. The Apple App Store app will open to the **AVIV ScoutRoute** page.
 
 4. Select the "**Download**" button.
 
+    ![iOS App Store AVIV ScoutRoute download](../../resources/images/events/nda-vancouver/ios/11-app-store-download-dark.png){ width="200" }
+
 5. Once the download and installation is complete, select the "**Open**" button.
 
+    ![iOS App Store AVIV ScoutRoute open](../../resources/images/events/nda-vancouver/ios/12-app-store-open-dark.png){ width="200" }
+
 6. When prompted to "_Allow "AVIV ScoutRoute" to use your location?_", ensure "**Precise: On**" is selected and then select the "**Allow While Using App**" button.
+
+    ![iOS AVIV ScoutRoute allow location](../../resources/images/events/nda-vancouver/ios/13-allow-location-light.png){ width="200" }
 
 You are now ready to start using AVIV ScoutRoute!
 
