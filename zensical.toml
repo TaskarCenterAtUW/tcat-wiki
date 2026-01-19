@@ -315,6 +315,11 @@ nav = [
     ]},
     {"Events" = [
         "events/index.md",
+        {"Mny26" = [
+            "events/mny26/index.md",
+            {"Mapping Guide" = "events/mny26/mapping-guide.md"},
+            {"Validation Guide" = "events/mny26/validation-guide.md"}
+        ]},
         {"Nda Vancouver" = [
             "events/nda-vancouver/index.md",
             {"AccessMap" = "events/nda-vancouver/accessmap.md"},

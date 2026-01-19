@@ -55,6 +55,7 @@
 *[LRTP]: Long-Range Transportation Plan
 *[MIRE]: Model Inventory of Roadway Elements
 *[ML]: Machine Learning
+*[MNY26]: Mappy New Year 2026
 *[MOU]: Memorandum of Understanding
 *[MPO]: Metropolitan Planning Organization
 *[MUTCD]: Manual on Uniform Traffic Control Devices
