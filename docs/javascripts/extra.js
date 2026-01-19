@@ -26,6 +26,7 @@ const titleMapSource = {
     "tcat wiki": "TCAT Wiki",
     "nda vancouver": "Clark County Walk/Roll Event",
     ios: "iOS",
+    mny26: "Mappy New Year 2026",
 };
 
 /**
