@@ -324,6 +324,11 @@ nav = [
             "events/nda-vancouver/index.md",
             {"AccessMap" = "events/nda-vancouver/accessmap.md"},
             {"AVIV ScoutRoute" = "events/nda-vancouver/aviv-scoutroute.md"}
+        ]},
+        {"Olympia Connected" = [
+            "events/olympia-connected/index.md",
+            {"Mapping Guide" = "events/olympia-connected/mapping-guide.md"},
+            {"Validation Guide" = "events/olympia-connected/validation-guide.md"}
         ]}
     ]},
     {"JOSM" = [
