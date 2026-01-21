@@ -27,6 +27,7 @@ const titleMapSource = {
     "nda vancouver": "Clark County Walk/Roll Event",
     ios: "iOS",
     mny26: "Mappy New Year 2026",
+    "olympia connected": "Olympia, Connected",
 };
 
 /**

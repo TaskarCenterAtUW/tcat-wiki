@@ -59,7 +59,7 @@ For a general overview of the full walking route, you can also view the [route o
 
 ## Real-Time Navigation
 
-During the walk/roll event, you have to opportunity to use AccessMap for step-by-step navigation:
+During the walk/roll event, you have the opportunity to use AccessMap for step-by-step navigation:
 
 1. **Enable location services** on your device when prompted
 

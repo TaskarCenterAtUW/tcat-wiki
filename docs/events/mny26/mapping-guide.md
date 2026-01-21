@@ -1,5 +1,5 @@
 ---
-title: "Mapping Guide"
+title: Mapping Guide
 tags:
     - Guide
     - External
@@ -197,7 +197,7 @@ Optionally, the short sidewalk **connector** segments between sidewalk centerlin
     `#osmus-tasks-1017 | Tacoma, WA, US: Pedestrian Infrastructure | #OpenSidewalks #MappyNewYear2026`
 
 3. Click **Upload**
-4. In the Tasking Manager panel on the right, mark the task status: "_Is this task completely mapped?_"
+4. In the Tasking Manager panel on the right, mark the task status by answering: "_Is this task completely mapped?_"
     - Select **Yes** if you finished adding all of the essentials in the area
     - Select **No** if more mapping is needed.
 5. Click **Submit task**

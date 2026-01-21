@@ -1,5 +1,5 @@
 ---
-title: "Validation Guide"
+title: Validation Guide
 tags:
     - Guide
     - External
