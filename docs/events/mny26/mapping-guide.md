@@ -1,5 +1,5 @@
 ---
-title: "Mapping Guide"
+title: Mapping Guide
 tags:
     - Guide
     - External
