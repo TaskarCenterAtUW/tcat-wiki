@@ -27,7 +27,7 @@ We'll cover this in the intro, but if you'd like a head start, before the event:
 
 1. **Create** an OpenStreetMap account at [openstreetmap.org](https://www.openstreetmap.org/user/new) if you don't already have one.
 2. **Log in** to the OSM US Tasking Manager at [tasks.openstreetmap.us](https://tasks.openstreetmap.us) using your OSM account.
-3. **Join** the OpenSidewalks Mappers Team by visiting [tasks.openstreetmap.us/teams/27/membership/](https://tasks.openstreetmap.us/teams/27/membership/) and selecting **Join team** at the bottom right.
+3. **Join** the OpenSidewalks Mappers Team by visiting [tasks.openstreetmap.us/teams/27/membership](https://tasks.openstreetmap.us/teams/27/membership) and selecting **Join team** at the bottom right.
 4. **Review** the [Mapping Guide](mapping-guide.md) to familiarize yourself with the tagging schema
 
 ## Resources

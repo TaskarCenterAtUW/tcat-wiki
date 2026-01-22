@@ -6,7 +6,7 @@ title: Clark County Walk/Roll Event
 
 # Clark County Walk/Roll Event
 
-The Clark County Walk/Roll Event is an in-person pedestrian accessibility audit led by the [Nondrivers Alliance](https://nondrivers.org/) (NDA) in coordination with the Taskar Center for Accessible Technology (TCAT).
+The **Clark County Walk/Roll Event** is an in-person pedestrian accessibility audit led by the [Nondrivers Alliance](https://nondrivers.org/) (NDA) in coordination with the Taskar Center for Accessible Technology (TCAT).
 
 ## Event Details
 
