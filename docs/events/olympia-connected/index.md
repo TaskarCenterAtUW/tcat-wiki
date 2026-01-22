@@ -41,6 +41,7 @@ We'll use the Rapid editor, a user-friendly, web-based tool that runs right in y
 **Event Start Time:** Thursday, February 12th, 2026 | 6:00 PM PT - 8:00 PM PT
 
 **Introduction to MaptimeSEA/Code of Conduct** (10 minutes)
+
 We'll introduce MaptimeSEA and TCAT, highlight upcoming mapping events, and review community expectations and the code of conduct.
 
 **Introduction to OpenStreetMap and Pedestrian Accessibility Mapping** (15 minutes)
@@ -57,6 +58,7 @@ We'll introduce MaptimeSEA and TCAT, highlight upcoming mapping events, and revi
 - Basic editing workflow and saving your changes
 
 **Hands-On Mapping Session** (60 minutes)
+
 We'll work through mapping tasks together:
 
 - **Mapping Crossings and Curbs** - Identify and map crossings and curbs from aerial and street-level imagery
