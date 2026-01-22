@@ -12,7 +12,7 @@ tags:
 
 # Mapping Guide
 
-This guide covers how to map pedestrian infrastructure for the Mappy New Year 2026 event.
+This guide covers how to map pedestrian infrastructure for the [Mappy New Year 2026](index.md) event.
 
 ---
 
@@ -20,13 +20,15 @@ This guide covers how to map pedestrian infrastructure for the Mappy New Year 20
 
 - **Project**: [#1017 - Tacoma, WA, US: Pedestrian Infrastructure | #OpenSidewalks](https://tasks.openstreetmap.us/projects/1017)
 
+---
+
 ## Getting Started
 
 ### 1. Log In to the Tasking Manager
 
 1. **Create an OpenStreetMap account** at [openstreetmap.org](https://www.openstreetmap.org/user/new) if you don't already have one.
 2. **Log in to the OSM US Tasking Manager** at [tasks.openstreetmap.us](https://tasks.openstreetmap.us) using your OSM account.
-3. **Join the OpenSidewalks Mappers Team** by visiting [tasks.openstreetmap.us/teams/27/membership/](https://tasks.openstreetmap.us/teams/27/membership/) and selecting **Join team** at the bottom right.
+3. **Join the OpenSidewalks Mappers Team** by visiting [tasks.openstreetmap.us/teams/27/membership](https://tasks.openstreetmap.us/teams/27/membership) and selecting **Join team** at the bottom right.
 4. **Navigate to the Tacoma project** by opening [tasks.openstreetmap.us/projects/1017](https://tasks.openstreetmap.us/projects/1017)
 
 ### 2. Select a Task

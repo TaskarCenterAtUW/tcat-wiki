@@ -12,7 +12,7 @@ tags:
 
 # Validation Guide
 
-This guide covers how to validate mapped pedestrian infrastructure tasks in the OSM US Tasking Manager for the Mappy New Year 2026 event.
+This guide covers how to validate mapped pedestrian infrastructure tasks in the OSM US Tasking Manager for the [Mappy New Year 2026](index.md) event.
 
 ---
 
