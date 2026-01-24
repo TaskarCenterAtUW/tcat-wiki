@@ -2,8 +2,8 @@
 #Requires -Modules @{ ModuleName='Pester'; ModuleVersion='5.0.0' }
 
 # Name: TCAT Wiki - Guides Lists Generator Tests
-# Version: 1.0.0
-# Date: 2026-01-02
+# Version: 2.0.0
+# Date: 2026-01-24
 # Author: Amy Bordenave, Taskar Center for Accessible Technology, University of Washington
 # License: CC-BY-ND 4.0 International
 
@@ -31,12 +31,12 @@ BeforeAll {
     # Extract and load the helper functions from generate-guides-lists.ps1
     $scriptPath = Join-Path $PSScriptRoot "generate-guides-lists.ps1"
     $scriptContent = Get-Content $scriptPath -Raw
-    
+
     # Set up required constants that the functions depend on
     $script:CRLF = "`r`n"
     $script:EXCLUDE_PARENT_FLAG = "exclude-from-parent-guides-list"
     $script:EXCLUDE_MAIN_FLAG = "exclude-from-main-guides-list"
-    
+
     # Extract the helper functions region and execute it
     if ($scriptContent -match '(?s)#region Helper Functions(.+?)#endregion Helper Functions') {
         $functionBlock = $matches[1]
@@ -74,7 +74,7 @@ This is a test guide.
             $result.Title | Should -Be "Test Guide"
         }
     }
-    
+
     Context "When file has User Manual tag in frontmatter" {
         It "Should detect file as both guide and user manual" {
             $testFile = Join-Path $TestDrive "user-manual-test.md"
@@ -97,7 +97,7 @@ This is a test user manual.
             $result.Title | Should -Be "Test User Manual"
         }
     }
-    
+
     Context "When file has no Guide or User Manual tag" {
         It "Should not detect file as a guide" {
             $testFile = Join-Path $TestDrive "not-guide-test.md"
@@ -116,7 +116,7 @@ This is not a guide.
             $result.IsUserManual | Should -Be $false
         }
     }
-    
+
     Context "When file has exclude-from-parent-guides-list flag" {
         It "Should set ExcludeFromParent to true" {
             $testFile = Join-Path $TestDrive "exclude-parent-test.md"
@@ -137,7 +137,7 @@ tags:
             $result.ExcludeFromMain | Should -Be $false
         }
     }
-    
+
     Context "When file has exclude-from-main-guides-list flag" {
         It "Should set ExcludeFromMain to true" {
             $testFile = Join-Path $TestDrive "exclude-main-test.md"
@@ -158,7 +158,7 @@ tags:
             $result.ExcludeFromMain | Should -Be $true
         }
     }
-    
+
     Context "When file has both exclude flags" {
         It "Should set both exclusion flags to true" {
             $testFile = Join-Path $TestDrive "exclude-both-test.md"
@@ -179,7 +179,7 @@ tags:
             $result.ExcludeFromMain | Should -Be $true
         }
     }
-    
+
     Context "When exclude flags are incorrectly formatted as tags (array items)" {
         It "Should NOT detect exclusion when flags are array items instead of YAML comments" {
             $testFile = Join-Path $TestDrive "wrong-format-test.md"
@@ -204,7 +204,7 @@ This guide has exclusion flags as array items, which is incorrect.
             $result.ExcludeFromMain | Should -Be $false -Because "exclude flags must be YAML comments (# flag), not array items (- flag)"
         }
     }
-    
+
     Context "When file does not exist" {
         It "Should return default values without throwing" {
             $result = Get-GuideInfo -FilePath "C:\nonexistent\file.md" -WarningAction SilentlyContinue
@@ -212,7 +212,7 @@ This guide has exclusion flags as array items, which is incorrect.
             $result.Title | Should -BeNullOrEmpty
         }
     }
-    
+
     Context "When extracting description" {
         It "Should extract description between heading and Guides List reference" {
             $testFile = Join-Path $TestDrive "description-test.md"
@@ -223,7 +223,7 @@ tags:
     - Guide
 ---
 
-# Guide With Description
+## Guide With Description
 
 This is the description text that should be extracted.
 
@@ -258,7 +258,7 @@ title: Directory Title
             $result | Should -Be "Directory Title"
         }
     }
-    
+
     Context "When index.md has no frontmatter" {
         It "Should return empty string" {
             $testDir = Join-Path $TestDrive "no-title-dir"
@@ -274,7 +274,7 @@ Content without frontmatter.
             $result | Should -BeNullOrEmpty
         }
     }
-    
+
     Context "When file does not exist" {
         It "Should return empty string and not throw" {
             $result = Get-DirectoryTitle -IndexPath "C:\nonexistent\index.md" -WarningAction SilentlyContinue
@@ -305,7 +305,7 @@ tags:
             $result | Should -Be $true
         }
     }
-    
+
     Context "When directory contains regular index.md" {
         It "Should return false" {
             $testDir = Join-Path $TestDrive "regular-dir"
@@ -321,7 +321,7 @@ title: Regular Section
             $result | Should -Be $false
         }
     }
-    
+
     Context "When directory has no index.md" {
         It "Should return false" {
             $testDir = Join-Path $TestDrive "no-index-dir"
@@ -341,23 +341,23 @@ Describe "Get-RelativeMarkdownPath" {
     It "Should return relative path with forward slashes" {
         $fromPath = "C:\docs\section"
         $toPath = "C:\docs\section\page.md"
-        
+
         $result = Get-RelativeMarkdownPath -FromPath $fromPath -ToPath $toPath
         $result | Should -Be "page.md"
     }
-    
+
     It "Should handle parent directory navigation" {
         $fromPath = "C:\docs\section\subsection"
         $toPath = "C:\docs\other\page.md"
-        
+
         $result = Get-RelativeMarkdownPath -FromPath $fromPath -ToPath $toPath
         $result | Should -Be "../../other/page.md"
     }
-    
+
     It "Should convert backslashes to forward slashes" {
         $fromPath = "C:\docs"
         $toPath = "C:\docs\section\subsection\page.md"
-        
+
         $result = Get-RelativeMarkdownPath -FromPath $fromPath -ToPath $toPath
         $result | Should -Not -Match '\\'
         $result | Should -Match '/'
@@ -372,14 +372,14 @@ Describe "Get-GuidesInDirectory" {
     BeforeAll {
         $script:guidesTestDir = Join-Path $TestDrive "guides-test-dir"
         New-Item -Path $guidesTestDir -ItemType Directory -Force | Out-Null
-        
+
         # Create index.md (not a guide)
         @"
 ---
 title: Section Index
 ---
 "@ | Set-Content -Path (Join-Path $guidesTestDir "index.md") -Encoding UTF8
-        
+
         # Create a regular guide
         @"
 ---
@@ -388,7 +388,7 @@ tags:
     - Guide
 ---
 "@ | Set-Content -Path (Join-Path $guidesTestDir "alpha-guide.md") -Encoding UTF8
-        
+
         # Create another regular guide
         @"
 ---
@@ -397,7 +397,7 @@ tags:
     - Guide
 ---
 "@ | Set-Content -Path (Join-Path $guidesTestDir "beta-guide.md") -Encoding UTF8
-        
+
         # Create a non-guide file
         @"
 ---
@@ -405,35 +405,35 @@ title: Regular Page
 ---
 "@ | Set-Content -Path (Join-Path $guidesTestDir "not-a-guide.md") -Encoding UTF8
     }
-    
+
     Context "When excluding own index" {
         It "Should not include index.md in results" {
             $result = Get-GuidesInDirectory -Directory $guidesTestDir -ExcludeOwnIndex $true -ExcludeFlag $EXCLUDE_PARENT_FLAG
             $result | Where-Object { $_.Name -eq "index.md" } | Should -BeNullOrEmpty
         }
-        
+
         It "Should include guide files" {
             $result = Get-GuidesInDirectory -Directory $guidesTestDir -ExcludeOwnIndex $true -ExcludeFlag $EXCLUDE_PARENT_FLAG
             $result.Count | Should -Be 2
         }
-        
+
         It "Should not include non-guide files" {
             $result = Get-GuidesInDirectory -Directory $guidesTestDir -ExcludeOwnIndex $true -ExcludeFlag $EXCLUDE_PARENT_FLAG
             $result | Where-Object { $_.Name -eq "not-a-guide.md" } | Should -BeNullOrEmpty
         }
-        
+
         It "Should return guides sorted alphabetically" {
             $result = Get-GuidesInDirectory -Directory $guidesTestDir -ExcludeOwnIndex $true -ExcludeFlag $EXCLUDE_PARENT_FLAG
             $result[0].Name | Should -Be "alpha-guide.md"
             $result[1].Name | Should -Be "beta-guide.md"
         }
     }
-    
+
     Context "When directory has user manual guides" {
         BeforeAll {
             $script:umGuidesDir = Join-Path $TestDrive "um-guides-dir"
             New-Item -Path $umGuidesDir -ItemType Directory -Force | Out-Null
-            
+
             # Create index.md with User Manual tag
             @"
 ---
@@ -442,7 +442,7 @@ tags:
     - User Manual
 ---
 "@ | Set-Content -Path (Join-Path $umGuidesDir "index.md") -Encoding UTF8
-            
+
             # Create a regular guide in the user manual directory
             @"
 ---
@@ -452,7 +452,7 @@ tags:
 ---
 "@ | Set-Content -Path (Join-Path $umGuidesDir "um-sub-guide.md") -Encoding UTF8
         }
-        
+
         It "Should return user manuals before regular guides" {
             # This test verifies the sorting behavior with a user manual index
             $result = Get-GuidesInDirectory -Directory $umGuidesDir -ExcludeOwnIndex $false -ExcludeFlag $EXCLUDE_PARENT_FLAG
@@ -470,7 +470,7 @@ Describe "Get-Subdirectories" {
     BeforeAll {
         $script:subdirTestRoot = Join-Path $TestDrive "subdir-test-root"
         New-Item -Path $subdirTestRoot -ItemType Directory -Force | Out-Null
-        
+
         # Create regular subdirectory with index.md
         $regularDir = Join-Path $subdirTestRoot "regular-section"
         New-Item -Path $regularDir -ItemType Directory -Force | Out-Null
@@ -479,7 +479,7 @@ Describe "Get-Subdirectories" {
 title: Regular Section
 ---
 "@ | Set-Content -Path (Join-Path $regularDir "index.md") -Encoding UTF8
-        
+
         # Create user manual subdirectory
         $umDir = Join-Path $subdirTestRoot "user-manual"
         New-Item -Path $umDir -ItemType Directory -Force | Out-Null
@@ -490,7 +490,7 @@ tags:
     - User Manual
 ---
 "@ | Set-Content -Path (Join-Path $umDir "index.md") -Encoding UTF8
-        
+
         # Create resources directory (should be excluded)
         $resourcesDir = Join-Path $subdirTestRoot "resources"
         New-Item -Path $resourcesDir -ItemType Directory -Force | Out-Null
@@ -499,27 +499,27 @@ tags:
 title: Resources
 ---
 "@ | Set-Content -Path (Join-Path $resourcesDir "index.md") -Encoding UTF8
-        
+
         # Create subdirectory without index.md (should be excluded)
         $noIndexDir = Join-Path $subdirTestRoot "no-index"
         New-Item -Path $noIndexDir -ItemType Directory -Force | Out-Null
     }
-    
+
     It "Should exclude resources directory" {
         $result = Get-Subdirectories -Directory $subdirTestRoot
         $result | Where-Object { $_.Name -eq "resources" } | Should -BeNullOrEmpty
     }
-    
+
     It "Should exclude directories without index.md" {
         $result = Get-Subdirectories -Directory $subdirTestRoot
         $result | Where-Object { $_.Name -eq "no-index" } | Should -BeNullOrEmpty
     }
-    
+
     It "Should include directories with index.md" {
         $result = Get-Subdirectories -Directory $subdirTestRoot
         $result.Count | Should -Be 2
     }
-    
+
     It "Should return user manual directories before regular directories" {
         $result = Get-Subdirectories -Directory $subdirTestRoot
         $result[0].Name | Should -Be "user-manual"
@@ -535,7 +535,7 @@ Describe "Build-GuideEntry" {
     BeforeAll {
         $script:entryTestDir = Join-Path $TestDrive "entry-test-dir"
         New-Item -Path $entryTestDir -ItemType Directory -Force | Out-Null
-        
+
         @"
 ---
 title: Test Entry Guide
@@ -543,33 +543,33 @@ tags:
     - Guide
 ---
 
-# Test Entry Guide
+## Test Entry Guide
 
 This is the description.
 
 _For a list of all guides
 "@ | Set-Content -Path (Join-Path $entryTestDir "test-guide.md") -Encoding UTF8
     }
-    
+
     It "Should generate header with link" {
         $guideFile = Get-Item (Join-Path $entryTestDir "test-guide.md")
-        $result = Build-GuideEntry -GuideFile $guideFile -FromPath $entryTestDir -HeaderLevel "###"
-        $result | Should -Match '### \[Test Entry Guide\]\(test-guide\.md\)'
+        $result = Build-GuideEntry -GuideFile $guideFile -FromPath $entryTestDir -HeaderLevel "####"
+        $result | Should -Match '#### \[Test Entry Guide\]\(test-guide\.md\)'
     }
-    
+
     It "Should include description if available" {
         $guideFile = Get-Item (Join-Path $entryTestDir "test-guide.md")
-        $result = Build-GuideEntry -GuideFile $guideFile -FromPath $entryTestDir -HeaderLevel "###"
+        $result = Build-GuideEntry -GuideFile $guideFile -FromPath $entryTestDir -HeaderLevel "####"
         $result | Should -Match 'This is the description\.'
     }
-    
+
     It "Should use the specified header level" {
         $guideFile = Get-Item (Join-Path $entryTestDir "test-guide.md")
-        $resultH3 = Build-GuideEntry -GuideFile $guideFile -FromPath $entryTestDir -HeaderLevel "###"
         $resultH4 = Build-GuideEntry -GuideFile $guideFile -FromPath $entryTestDir -HeaderLevel "####"
-        
-        $resultH3 | Should -Match '^### '
+        $resultH5 = Build-GuideEntry -GuideFile $guideFile -FromPath $entryTestDir -HeaderLevel "#####"
+
         $resultH4 | Should -Match '^#### '
+        $resultH5 | Should -Match '^##### '
     }
 }
 
@@ -581,31 +581,31 @@ Describe "Build-SectionHeader" {
     BeforeAll {
         $script:sectionTestDir = Join-Path $TestDrive "section-test-dir"
         New-Item -Path $sectionTestDir -ItemType Directory -Force | Out-Null
-        
+
         @"
 ---
 title: Test Section
 ---
 "@ | Set-Content -Path (Join-Path $sectionTestDir "index.md") -Encoding UTF8
     }
-    
+
     It "Should generate header with link and Guides suffix for non-user-manual" {
         $indexPath = Join-Path $sectionTestDir "index.md"
-        $result = Build-SectionHeader -Title "Test Section" -IndexPath $indexPath -FromPath $TestDrive -HeaderLevel "###" -IsUserManual $false
-        $result | Should -Match '### \[Test Section\]\(.+\) Guides'
+        $result = Build-SectionHeader -Title "Test Section" -IndexPath $indexPath -FromPath $TestDrive -HeaderLevel "####" -IsUserManual $false
+        $result | Should -Match '#### \[Test Section\]\(.+\) Guides'
     }
-    
+
     It "Should not include Guides suffix for user manual" {
         $indexPath = Join-Path $sectionTestDir "index.md"
-        $result = Build-SectionHeader -Title "Test Section" -IndexPath $indexPath -FromPath $TestDrive -HeaderLevel "###" -IsUserManual $true
-        $result | Should -Match '### \[Test Section\]\(.+\)\s*$'
+        $result = Build-SectionHeader -Title "Test Section" -IndexPath $indexPath -FromPath $TestDrive -HeaderLevel "####" -IsUserManual $true
+        $result | Should -Match '#### \[Test Section\]\(.+\)\s*$'
         $result | Should -Not -Match 'Guides'
     }
-    
+
     It "Should use the specified header level" {
         $indexPath = Join-Path $sectionTestDir "index.md"
-        $result = Build-SectionHeader -Title "Test Section" -IndexPath $indexPath -FromPath $TestDrive -HeaderLevel "##" -IsUserManual $false
-        $result | Should -Match '^## '
+        $result = Build-SectionHeader -Title "Test Section" -IndexPath $indexPath -FromPath $TestDrive -HeaderLevel "###" -IsUserManual $false
+        $result | Should -Match '^### '
     }
 }
 
@@ -616,14 +616,14 @@ title: Test Section
 Describe "Get-TcatWikiSection" {
     It "Should return TCAT Wiki section header" {
         $result = Get-TcatWikiSection
-        $result | Should -Match '## TCAT Wiki Guides'
+        $result | Should -Match '### TCAT Wiki Guides'
     }
-    
+
     It "Should include Contributing link" {
         $result = Get-TcatWikiSection
         $result | Should -Match '\[Contributing\]\(\.\./CONTRIBUTING\.md\)'
     }
-    
+
     It "Should include description for Contributing" {
         $result = Get-TcatWikiSection
         $result | Should -Match 'how to contribute to the TCAT Wiki'
@@ -638,14 +638,14 @@ Describe "Get-AllGuidesAtLevel" {
     BeforeAll {
         $script:allGuidesTestDir = Join-Path $TestDrive "all-guides-test"
         New-Item -Path $allGuidesTestDir -ItemType Directory -Force | Out-Null
-        
+
         # Create index.md
         @"
 ---
 title: All Guides Section
 ---
 "@ | Set-Content -Path (Join-Path $allGuidesTestDir "index.md") -Encoding UTF8
-        
+
         # Create regular guide
         @"
 ---
@@ -654,7 +654,7 @@ tags:
     - Guide
 ---
 "@ | Set-Content -Path (Join-Path $allGuidesTestDir "regular-guide.md") -Encoding UTF8
-        
+
         # Create user manual subdirectory
         $umSubdir = Join-Path $allGuidesTestDir "user-manual"
         New-Item -Path $umSubdir -ItemType Directory -Force | Out-Null
@@ -665,24 +665,24 @@ tags:
     - User Manual
 ---
 "@ | Set-Content -Path (Join-Path $umSubdir "index.md") -Encoding UTF8
-        
+
         # Get subdirectories for testing
         $script:testSubdirs = @(Get-Item $umSubdir)
     }
-    
+
     It "Should return user manuals before regular guides" {
         $result = Get-AllGuidesAtLevel -Directory $allGuidesTestDir -ExcludeFlag $EXCLUDE_PARENT_FLAG -Subdirectories $testSubdirs
         $result[0].Type | Should -Be 'UserManual'
         $result[1].Type | Should -Be 'Guide'
     }
-    
+
     It "Should include Path property for all entries" {
         $result = Get-AllGuidesAtLevel -Directory $allGuidesTestDir -ExcludeFlag $EXCLUDE_PARENT_FLAG -Subdirectories $testSubdirs
         $result | ForEach-Object {
             $_.Path | Should -Not -BeNullOrEmpty
         }
     }
-    
+
     It "Should include Info property for all entries" {
         $result = Get-AllGuidesAtLevel -Directory $allGuidesTestDir -ExcludeFlag $EXCLUDE_PARENT_FLAG -Subdirectories $testSubdirs
         $result | ForEach-Object {
@@ -700,7 +700,7 @@ Describe "Integration Tests" -Tag "Integration" {
         # Create a complete test documentation structure
         $script:integrationRoot = Join-Path $TestDrive "integration-docs"
         New-Item -Path $integrationRoot -ItemType Directory -Force | Out-Null
-        
+
         # Create guides-list directory
         $guidesListDir = Join-Path $integrationRoot "guides-list"
         New-Item -Path $guidesListDir -ItemType Directory -Force | Out-Null
@@ -709,7 +709,7 @@ Describe "Integration Tests" -Tag "Integration" {
 title: Guides List
 ---
 "@ | Set-Content -Path (Join-Path $guidesListDir "index.md") -Encoding UTF8
-        
+
         # Create a topic directory with user manual and guides
         $topicDir = Join-Path $integrationRoot "test-topic"
         New-Item -Path $topicDir -ItemType Directory -Force | Out-Null
@@ -722,7 +722,7 @@ title: Test Topic
 
 This is a test topic.
 "@ | Set-Content -Path (Join-Path $topicDir "index.md") -Encoding UTF8
-        
+
         # Create a guide in the topic
         @"
 ---
@@ -735,7 +735,7 @@ tags:
 
 This guide is about the topic.
 "@ | Set-Content -Path (Join-Path $topicDir "topic-guide.md") -Encoding UTF8
-        
+
         # Create user manual subdirectory
         $umDir = Join-Path $topicDir "user-manual"
         New-Item -Path $umDir -ItemType Directory -Force | Out-Null
@@ -750,7 +750,7 @@ tags:
 
 This is the user manual.
 "@ | Set-Content -Path (Join-Path $umDir "index.md") -Encoding UTF8
-        
+
         # Create a guide in the user manual
         @"
 ---
@@ -764,14 +764,14 @@ tags:
 This is a chapter.
 "@ | Set-Content -Path (Join-Path $umDir "chapter.md") -Encoding UTF8
     }
-    
+
     Context "Directory structure parsing" {
         It "Should correctly identify all directories with index.md" {
-            $allDirs = Get-ChildItem -Path $integrationRoot -Recurse -Directory | 
+            $allDirs = Get-ChildItem -Path $integrationRoot -Recurse -Directory |
                 Where-Object { Test-Path (Join-Path $_.FullName "index.md") }
             $allDirs.Count | Should -Be 3  # guides-list, test-topic, user-manual
         }
-        
+
         It "Should identify user manual directory correctly" {
             $topicDir = Join-Path $integrationRoot "test-topic"
             $umDir = Join-Path $topicDir "user-manual"
@@ -779,13 +779,13 @@ This is a chapter.
             Test-IsUserManualDirectory -Directory $topicDir | Should -Be $false
         }
     }
-    
+
     Context "Guides ordering" {
         It "Should place user manuals before regular guides in Get-AllGuidesAtLevel" {
             $topicDir = Join-Path $integrationRoot "test-topic"
             $subdirs = Get-Subdirectories -Directory $topicDir
             $entries = Get-AllGuidesAtLevel -Directory $topicDir -ExcludeFlag $EXCLUDE_PARENT_FLAG -Subdirectories $subdirs
-            
+
             # First entry should be user manual (from subdirectory)
             $entries[0].Type | Should -Be 'UserManual'
             # Second entry should be regular guide
@@ -808,12 +808,12 @@ Describe "Edge Cases" {
 title: Empty Section
 ---
 "@ | Set-Content -Path (Join-Path $emptyDir "index.md") -Encoding UTF8
-            
+
             $result = Get-GuidesInDirectory -Directory $emptyDir -ExcludeOwnIndex $true -ExcludeFlag $EXCLUDE_PARENT_FLAG
             $result | Should -BeNullOrEmpty
         }
     }
-    
+
     Context "Special characters in titles" {
         It "Should handle titles with colons" {
             $testFile = Join-Path $TestDrive "colon-title.md"
@@ -828,7 +828,7 @@ tags:
             $result = Get-GuideInfo -FilePath $testFile
             $result.Title | Should -Be '"Guide: With Colon"'
         }
-        
+
         It "Should handle titles with quotes" {
             $testFile = Join-Path $TestDrive "quote-title.md"
             @"
@@ -843,7 +843,7 @@ tags:
             $result.Title | Should -Match 'Quotes'
         }
     }
-    
+
     Context "Multiple tags" {
         It "Should handle files with multiple tags including Guide" {
             $testFile = Join-Path $TestDrive "multi-tag.md"
@@ -862,7 +862,7 @@ tags:
             $result.IsGuide | Should -Be $true
         }
     }
-    
+
     Context "CRLF vs LF line endings" {
         It "Should handle LF line endings" {
             $testFile = Join-Path $TestDrive "lf-endings.md"
@@ -872,7 +872,7 @@ tags:
             $result.IsGuide | Should -Be $true
             $result.Title | Should -Be "LF Guide"
         }
-        
+
         It "Should handle CRLF line endings" {
             $testFile = Join-Path $TestDrive "crlf-endings.md"
             "---`r`ntitle: CRLF Guide`r`ntags:`r`n    - Guide`r`n---`r`n`r`n# CRLF Guide" | Set-Content -Path $testFile -NoNewline -Encoding UTF8
