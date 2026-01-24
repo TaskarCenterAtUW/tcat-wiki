@@ -137,7 +137,7 @@ Sidewalks are pedestrian paths along streets.
 |--------------|--------------|----------------------------------------|
 | **Sidewalk** | "Sidewalk"   | `highway=footway` + `footway=sidewalk` |
 
-### Additional Sidewalk Tags
+#### Additional Sidewalk Tags
 
 | Tag       | Values                 | Description      |
 |-----------|------------------------|------------------|
