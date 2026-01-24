@@ -247,20 +247,14 @@ emoji_index = "zensical.extensions.emoji.twemoji"
 [project.markdown_extensions.pymdownx.keys]
 [project.markdown_extensions.pymdownx.mark]
 [project.markdown_extensions.pymdownx.smartsymbols]
+[project.markdown_extensions.pymdownx.snippets]
+auto_append = [ "includes/abbreviations.md" ]
 [project.markdown_extensions.pymdownx.superfences]
 [project.markdown_extensions.pymdownx.tabbed]
 alternate_style = true
 [project.markdown_extensions.pymdownx.tasklist]
 custom_checkbox = true
 [project.markdown_extensions.pymdownx.tilde]
-
-#markdown_extensions = [
-#    "abbr",
-#    "pymdownx.snippets"
-#]
-
-#[project.markdown_extensions.pymdownx.snippets]
-#auto_append = [ "includes/abbreviations.md" ]
 
 # ----------------------------------------------------------------------------
 # In the "palette" subsection you can configure options for the color scheme.
