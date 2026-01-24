@@ -8,7 +8,7 @@ tags:
 
 <!-- @format -->
 
-# OpenSidewalks in OpenStreetMap
+## OpenSidewalks in OpenStreetMap
 
 This guide explains how to make edits to OpenStreetMap following and supporting the OpenSidewalks schema.
 
@@ -18,7 +18,7 @@ _For a list of all guides on the TCAT Wiki, refer to the [Guides List](../../gui
 
 [OpenSidewalks](../index.md) is an open data project by the [Taskar Center for Accessible Technology](../../index.md) at the University of Washington in Seattle. The project heavily relies on the OpenStreetMap infrastructure, mapping standards, and volunteer community.
 
-## Welcome
+### Welcome
 
 [OpenSidewalks](../index.md) (OSW) is a project that engages wide audiences in the important work of collaborative open source mapping of pedestrian pathways and related features. Our mission is to create a tooling ecosystem that supports the consistent, standardized collection of data about the pedestrian environment. This open and shared data can then be used to enable pedestrian routing applications, inform infrastructure planning, and advocate for improved walkability, accessibility, and quality of life for all.
 

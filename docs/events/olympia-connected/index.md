@@ -4,29 +4,29 @@ title: Olympia, Connected
 
 <!-- @format -->
 
-# Olympia, Connected
+## Olympia, Connected
 
 The **Olympia, Connected: Mapping for Mobility in OpenStreetMap** event is an in-person mapping event led by [MaptimeSEA](https://maptimesea.github.io/) in coordination with the [Taskar Center for Accessible Technology](https://tcat.cs.washington.edu/) (TCAT) to focus on improving pedestrian infrastructure and accessibility data in **Olympia, WA**.
 
-## Resources
+### Resources
 
-### Mapping Guide
+#### Mapping Guide
 
 Visit the [Mapping Guide](mapping-guide.md) for guidance on how to map pedestrian infrastructure for the Olympia, Connected event.
 
-### Validation Guide
+#### Validation Guide
 
 Visit the [Validation Guide](validation-guide.md) for directions on how to validate mapped pedestrian infrastructure tasks in the OSM US Tasking Manager for the Olympia, Connected event.
 
-## Project
+### Project
 
 We'll be mapping pedestrian infrastructure in Olympia, WA using the OSM US Tasking Manager:
 
 **[#1083 - Olympia, WA, US: Pedestrian Infrastructure | #OpenSidewalks](https://tasks.openstreetmap.us/projects/1083)**
 
-## Event Details
+### Event Details
 
-### Event Summary
+#### Event Summary
 
 Join us for a collaborative in-person mapping event where we'll work together to remotely map pedestrian infrastructure in Olympia, Washington, and contribute that data to OpenStreetMap! We'll gather in-person at Seattle University and use the browser-based Rapid editor to add sidewalks, crossings, curbs, and other features that impact pedestrian mobility, especially those who are blind/low-vision or people who are using wheelchairs, walkers, or other mobility devices.
 
@@ -36,7 +36,7 @@ We'll use the Rapid editor, a user-friendly, web-based tool that runs right in y
 
 **Organizers:** [MaptimeSEA](https://maptimesea.github.io/), [TCAT](https://tcat.cs.washington.edu/)
 
-### Agenda
+#### Agenda
 
 **Event Start Time:** Thursday, February 12th, 2026 | 6:00 PM PT - 8:00 PM PT
 
@@ -78,7 +78,7 @@ We'll work through mapping tasks together:
 - A computer mouse (recommended for easier mapping)
 - Anything you need to stay comfortable for a 2-hour session
 
-### Where to Go
+#### Where to Go
 
 **Location:** HRDG 143, inside the John and Judy Harding Building (HRDG) on Seattle University's campus
 
@@ -86,7 +86,7 @@ We'll work through mapping tasks together:
 
 **Entrance:** The building is located at the intersection of E Columbia St and 13th Ave. Please arrive at the entrance along E Columbia St (coordinates: [47.6092, -122.3159](https://maps.app.goo.gl/ADLcL1BLiwAuwpZS8)) so we can let you in if necessary.
 
-### Getting There & Parking
+#### Getting There & Parking
 
 **Paid Parking:** Public paid parking is available at [Swedish Cherry Hill Campus Parking](https://maps.app.goo.gl/8RXufz1U93Qmn4bE9). The entrance to this garage is located on 16th Ave, between Cherry St and Jefferson St.
 
@@ -96,7 +96,7 @@ If you're driving, please plan a little extra time to park and walk over so you 
 
 **Public Transport:** Seattle University is accessible via several public transport modes. If you are taking the Link light rail, consider stopping at [Capitol Hill Station](https://maps.app.goo.gl/1gnH9uFjG1SoFgxv6) then taking the Seattle Streetcar south to [Broadway & Marion](https://maps.app.goo.gl/2JqF9XasXfacTJJY9) - the HRDG building is about a 10-minute walk to the east.
 
-### How to Prepare
+#### How to Prepare
 
 **Create an OpenStreetMap Account:** If you don't already have one, please create a free OSM account on [openstreetmap.org](https://www.openstreetmap.org/user/new) before the event. You'll need this to save your edits.
 
@@ -109,7 +109,7 @@ If you're driving, please plan a little extra time to park and walk over so you 
 
 Don't worry if you can't complete the prep work - we'll help everyone get set up at the beginning of the event!
 
-### Who Should Attend
+#### Who Should Attend
 
 This event is designed primarily for beginner and intermediate mappers. Whether you're:
 
@@ -121,7 +121,7 @@ This event is designed primarily for beginner and intermediate mappers. Whether 
 
 You'll walk away with practical mapping skills and the knowledge that you've contributed to making our built environment more accessible for everyone. **No prior mapping experience required!**
 
-### Instructor
+#### Instructor
 
 **Amy Bordenave** is a Mapping Program Specialist for the Taskar Center for Accessible Technology (TCAT) at the University of Washington. In her role at TCAT over the past year, Amy has focused on expanding pedestrian accessibility mapping efforts and building community around accessible transportation data.
 

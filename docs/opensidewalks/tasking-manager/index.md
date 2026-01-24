@@ -4,7 +4,7 @@ title: OSW on the OSM US Tasking Manager
 
 <!-- @format -->
 
-# OSW on the OSM US Tasking Manager
+## OSW on the OSM US Tasking Manager
 
 The [OpenStreetMap US Tasking Manager](https://tasks.openstreetmap.us/) is a [Tasking Manager](https://wiki.openstreetmap.org/wiki/Tasking_Manager) instance for coordinating contributions to OSM and is open to all OSM users.
 
@@ -14,16 +14,16 @@ Additional details about this organized editing activity can be found on the [Or
 
 ---
 
-## Guides
+### Guides
 
 OSW on the OSM US Tasking Manager Guides
 
 _For a list of all guides on the TCAT Wiki, refer to the [Guides List](../../guides-list/index.md)._
 
-### [Tasking Manager User Manual](user-manual/index.md)
+#### [Tasking Manager User Manual](user-manual/index.md)
 
 This user manual explains how to use the [OSM US Tasking Manager](https://tasks.openstreetmap.us/) platform.
 
-### [Task Polygon Automation Guide](task-polygon-automation.md)
+#### [Task Polygon Automation Guide](task-polygon-automation.md)
 
 This guide shows the steps for an automated workflow that generates task polygons for use in Tasking Manager.

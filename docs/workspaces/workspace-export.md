@@ -8,7 +8,7 @@ tags:
 
 <!-- @format -->
 
-# Workspace Export Guide
+## Workspace Export Guide
 
 This guide explains how to directly export a dataset in `.osm` format from Workspaces.
 
@@ -16,7 +16,7 @@ _For a list of all guides on the TCAT Wiki, refer to the [Guides List](../guides
 
 ---
 
-## Legend
+### Legend
 
 1. Keyboard shortcut to press | Action
 
@@ -26,9 +26,9 @@ _For a list of all guides on the TCAT Wiki, refer to the [Guides List](../guides
 
     [`someCommand --arguments <path>`]
 
-## Instructions
+### Instructions
 
-### 1. Determine your environment
+#### 1. Determine your environment
 
 1. Prod: [portal.tdei.us](https://portal.tdei.us/) + [workspaces.sidewalks.washington.edu](https://workspaces.sidewalks.washington.edu/)
 
@@ -36,30 +36,29 @@ _For a list of all guides on the TCAT Wiki, refer to the [Guides List](../guides
 
 3. Dev: [portal-dev.tdei.us](https://portal-dev.tdei.us/login) + [workspaces-dev.sidewalks.washington.edu](https://workspaces-dev.sidewalks.washington.edu/)
 
-### 2. Find your API key
+#### 2. Find your API key
 
 1. Log in and navigate to the Dashboard section of your environment's TDEI Portal
 
 ![Screenshot of the Dashboard section of the TDEI Portal, with a highlight on the Copy button next to the My API Key box.](../resources/images/tdei-portal/dashboard-h-api-key-copy.png)
 
-### 3. Find the Workspace ID
+#### 3. Find the Workspace ID
 
 1. Extract the ID from the Workspace link, in this case `332`:
 
     [https://workspaces-stage.sidewalks.washington.edu/workspace/**332**/edit](https://workspaces-stage.sidewalks.washington.edu/workspace/332/edit)
 
-### 4. Export the Workspace
+#### 4. Export the Workspace
 
-#### Option 1: Workspace Export Utility _(Recommended!)_
+##### Option 1: Workspace Export Utility _(Recommended!)_
 
 1. Download the [Workspaces Export Script](https://github.com/TaskarCenterAtUW/tdei-tools/blob/main/utilities/workspaces-export.ps1) from the [TDEI Tools](https://github.com/TaskarCenterAtUW/tdei-tools) repository.
 
 2. Run the script and follow the instructions.
 
-#### Option 2: Manually Query the Workspaces API
+##### Option 2: Manually Query the Workspaces API
 
 1. Find the dataset's bbox
-
     1. In your browser, substitute the target Workspace ID and open:
 
         Example URL:

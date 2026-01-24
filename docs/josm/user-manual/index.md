@@ -8,7 +8,7 @@ tags:
 
 <!-- @format -->
 
-# JOSM User Manual
+## JOSM User Manual
 
 This user manual explains how to use the JOSM editor.
 

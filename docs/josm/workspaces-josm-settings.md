@@ -8,7 +8,7 @@ tags:
 
 <!-- @format -->
 
-# Workspaces JOSM Settings Guide
+## Workspaces JOSM Settings Guide
 
 This guide explains how to use the [Workspaces JOSM Settings Script](https://github.com/TaskarCenterAtUW/tdei-tools/blob/main/utilities/workspaces-josm.ps1) from [TDEI Tools](https://github.com/TaskarCenterAtUW/tdei-tools/) to set up JOSM to enable editing of Workspaces.
 
@@ -16,11 +16,11 @@ _For a list of all guides on the TCAT Wiki, refer to the [Guides List](../guides
 
 ---
 
-## Instructions
+### Instructions
 
 Note: You must have a [TDEI Portal](https://portal.tdei.us/) account.
 
-### 1. Download and run the helper script
+#### 1. Download and run the helper script
 
 1. Download the [Workspaces JOSM Settings Script](https://github.com/TaskarCenterAtUW/tdei-tools/blob/main/utilities/workspaces-josm.ps1) from [TDEI Tools](https://github.com/TaskarCenterAtUW/tdei-tools/).
 2. Run the script by right clicking and selecting "Run with PowerShell"
@@ -29,7 +29,7 @@ Note: You must have a [TDEI Portal](https://portal.tdei.us/) account.
 
 Now, follow the script's instructions and enter the requested information:
 
-### 2. Determine your environment
+#### 2. Determine your environment
 
 1. Prod: [portal.tdei.us](https://portal.tdei.us/) + [workspaces.sidewalks.washington.edu](https://workspaces.sidewalks.washington.edu/)
 
@@ -37,23 +37,23 @@ Now, follow the script's instructions and enter the requested information:
 
 3. Dev: [portal-dev.tdei.us](https://portal-dev.tdei.us/login) + [workspaces-dev.sidewalks.washington.edu](https://workspaces-dev.sidewalks.washington.edu/)
 
-### 3. Enter your TDEI credentials
+#### 3. Enter your TDEI credentials
 
 1. Enter the credentials for the account you use to sign into both the [TDEI Portal](https://portal.tdei.us/) and [Workspaces](https://workspaces.sidewalks.washington.edu/).
 
-### 4. Find your Workspace ID
+#### 4. Find your Workspace ID
 
 1. Extract the ID from the Workspace link, in this case `125`:
 
 `https://workspaces.sidewalks.washington.edu/workspace/125/settings`
 
-### 5. Generate JOSM Settings
+#### 5. Generate JOSM Settings
 
 1. After entering the Workspace ID, the script will authenticate you and output two strings:
 
 ![Screenshot of the downloaded Workspaces JOSM Settings Script, after right clicking to pop up a menu containing the "Run with PowerShell" option.](../resources/images/workspaces-josm/workspaces-josm.png)
 
-### 6. Apply JOSM Settings
+#### 6. Apply JOSM Settings
 
 1. Open JOSM's "Preferences" Menu
 
