@@ -91,6 +91,8 @@
     
       <link rel="stylesheet" href="../../../stylesheets/extra.css">
     
+      <link rel="stylesheet" href="https://unpkg.com/katex@0/dist/katex.min.css">
+    
     <script>__md_scope=new URL("../../..",location),__md_hash=e=>[...e].reduce(((e,t)=>(e<<5)-e+t.charCodeAt(0)),0),__md_get=(e,t=localStorage,a=__md_scope)=>JSON.parse(t.getItem(a.pathname+"."+e)),__md_set=(e,t,a=localStorage,_=__md_scope)=>{try{a.setItem(_.pathname+"."+e,JSON.stringify(t))}catch(e){}},document.documentElement.setAttribute("data-platform",navigator.platform)</script>
     
       
@@ -227,7 +229,7 @@
       <a href="../../.." class="md-tabs__link">
         
   
-  TCAT Wiki
+  Index
 
       </a>
     </li>
@@ -462,9 +464,7 @@
   
 
 
-  
-
-<nav class="md-nav md-nav--primary md-nav--lifted md-nav--integrated" aria-label="Navigation" data-md-level="0">
+<nav class="md-nav md-nav--primary md-nav--lifted" aria-label="Navigation" data-md-level="0">
   <label class="md-nav__title" for="__drawer">
     <a href="../../.." title="TCAT Wiki" class="md-nav__button md-logo" aria-label="TCAT Wiki" data-md-component="logo">
       
@@ -491,7 +491,7 @@
   <span class="md-ellipsis">
     
   
-    TCAT Wiki
+    Index
   
 
     
@@ -1857,8 +1857,6 @@
       <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
       
       
-        
-      
       
         <label class="md-nav__link md-nav__link--active" for="__toc">
           
@@ -1898,20 +1896,32 @@
         
 
 
-<nav class="md-nav md-nav--secondary" aria-label="On this page">
+  
+
+<nav class="md-nav md-nav--secondary" aria-label="On this page:">
   
   
-  
-    
   
   
     <label class="md-nav__title" for="__toc">
       <span class="md-nav__icon md-icon"></span>
-      On this page
+      On this page:
     </label>
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
+  <a href="#core-edges-in-osw" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Core Edges in OSW
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Core Edges in OSW">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
   <a href="#what-are-sidewalk-centerlines" class="md-nav__link">
     <span class="md-ellipsis">
       
@@ -1921,8 +1931,8 @@
   </a>
   
 </li>
-      
-        <li class="md-nav__item">
+        
+          <li class="md-nav__item">
   <a href="#case-study-seattle-sidewalk-centerlines-to-osw" class="md-nav__link">
     <span class="md-ellipsis">
       
@@ -1960,8 +1970,8 @@
     </nav>
   
 </li>
-      
-        <li class="md-nav__item">
+        
+          <li class="md-nav__item">
   <a href="#step-by-step-conversion-process" class="md-nav__link">
     <span class="md-ellipsis">
       
@@ -2032,8 +2042,8 @@
     </nav>
   
 </li>
-      
-        <li class="md-nav__item">
+        
+          <li class="md-nav__item">
   <a href="#conversion-tools-and-scripts" class="md-nav__link">
     <span class="md-ellipsis">
       
@@ -2060,8 +2070,8 @@
     </nav>
   
 </li>
-      
-        <li class="md-nav__item">
+        
+          <li class="md-nav__item">
   <a href="#validation-and-quality-assurance" class="md-nav__link">
     <span class="md-ellipsis">
       
@@ -2110,8 +2120,8 @@
     </nav>
   
 </li>
-      
-        <li class="md-nav__item">
+        
+          <li class="md-nav__item">
   <a href="#integration-with-tdei" class="md-nav__link">
     <span class="md-ellipsis">
       
@@ -2138,8 +2148,8 @@
     </nav>
   
 </li>
-      
-        <li class="md-nav__item">
+        
+          <li class="md-nav__item">
   <a href="#advanced-considerations" class="md-nav__link">
     <span class="md-ellipsis">
       
@@ -2170,6 +2180,11 @@
       
     </span>
   </a>
+  
+</li>
+        
+      </ul>
+    </nav>
   
 </li>
         
@@ -3308,6 +3323,317 @@
               </div>
             
             
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+  
+
+<nav class="md-nav md-nav--secondary" aria-label="On this page:">
+  
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      On this page:
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#core-edges-in-osw" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Core Edges in OSW
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Core Edges in OSW">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#what-are-sidewalk-centerlines" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        What Are Sidewalk Centerlines?
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#case-study-seattle-sidewalk-centerlines-to-osw" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Case Study: Seattle Sidewalk Centerlines to OSW
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Case Study: Seattle Sidewalk Centerlines to OSW">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#understanding-the-source-data" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Understanding the Source Data
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#the-target-osw-footway-edges" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        The Target: OSW Footway Edges
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#step-by-step-conversion-process" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Step-by-Step Conversion Process
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Step-by-Step Conversion Process">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#step-1-coordinate-system-transformation" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Step 1: Coordinate System Transformation
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#step-2-map-fields-to-osw-structure" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Step 2: Map Fields to OSW Structure
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#step-3-standardize-surface-types" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Step 3: Standardize Surface Types
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#step-4-handle-width-measurements" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Step 4: Handle Width Measurements
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#step-5-create-the-geojson-structure" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Step 5: Create the GeoJSON Structure
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#conversion-tools-and-scripts" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Conversion Tools and Scripts
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Conversion Tools and Scripts">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#example-gdalogr-command-line" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Example: GDAL/OGR Command Line
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#validation-and-quality-assurance" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Validation and Quality Assurance
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Validation and Quality Assurance">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#data-quality-checks" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Data Quality Checks
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#common-issues-and-fixes" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Common Issues and Fixes
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#validation-tools" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Validation Tools
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#integration-with-tdei" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Integration with TDEI
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Integration with TDEI">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#best-practices-for-tdei-upload" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Best Practices for TDEI Upload
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#advanced-considerations" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Advanced Considerations
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Advanced Considerations">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#handling-complex-geometries" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Handling Complex Geometries
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#accessibility-attributes" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Accessibility Attributes
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
           
           
             <div class="md-content" data-md-component="content">
@@ -3329,7 +3655,7 @@
       <a href="../../.." class="md-path__link">
         
   <span class="md-ellipsis">
-    TCAT Wiki
+    Index
   </span>
 
       </a>
@@ -3382,89 +3708,91 @@
                 
                   
 
+  <h1>Core Edges in OSW</h1>
+
 <!-- @format -->
 
-<h1 id="core-edges-in-osw">Core Edges in OSW<a class="headerlink" href="#core-edges-in-osw" title="Permanent link">&para;</a></h1>
-<p>This guide shows how to convert existing sidewalk centerline datasets into OpenSidewalks (OSW) format for upload to the Transportation Data Exchange Initiative (TDEI).</p>
-<p><em>For a list of all guides on the TCAT Wiki, refer to the <a href="../../../guides-list/">Guides List</a>.</em></p>
+<h2 id="core-edges-in-osw">Core Edges in <abbr title="OpenSidewalks">OSW</abbr><a class="headerlink" href="#core-edges-in-osw" title="Anchor link to this section">⚓︎</a></h2>
+<p>This guide shows how to convert existing sidewalk centerline datasets into OpenSidewalks (<abbr title="OpenSidewalks">OSW</abbr>) format for upload to the Transportation Data Exchange Initiative (<abbr title="Transportation Data Exchange Initiative">TDEI</abbr>).</p>
+<p><em>For a list of all guides on the <abbr title="Taskar Center for Accessible Technology">TCAT</abbr> Wiki, refer to the <a href="../../../guides-list/">Guides List</a>.</em></p>
 <hr />
-<h2 id="what-are-sidewalk-centerlines">What Are Sidewalk Centerlines?<a class="headerlink" href="#what-are-sidewalk-centerlines" title="Permanent link">&para;</a></h2>
-<p>Sidewalk centerlines are linear GIS features representing the middle path of sidewalk infrastructure. These datasets are commonly maintained by city transportation departments and typically include attributes like:</p>
+<h3 id="what-are-sidewalk-centerlines">What Are Sidewalk Centerlines?<a class="headerlink" href="#what-are-sidewalk-centerlines" title="Anchor link to this section">⚓︎</a></h3>
+<p>Sidewalk centerlines are linear <abbr title="Geographic Information System">GIS</abbr> features representing the middle path of sidewalk infrastructure. These datasets are commonly maintained by city transportation departments and typically include attributes like:</p>
 <ul>
 <li><strong>Width information</strong>: Sidewalk dimensions and measurements</li>
 <li><strong>Surface conditions</strong>: Material type and maintenance status</li>
 <li><strong>Location data</strong>: Street names, sides, and block segments</li>
 <li><strong>Maintenance records</strong>: Installation dates and inspection history</li>
 </ul>
-<p>Converting these datasets to OSW format enables pedestrian routing, accessibility analysis, and integration with other transportation data through TDEI.</p>
-<h2 id="case-study-seattle-sidewalk-centerlines-to-osw">Case Study: Seattle Sidewalk Centerlines to OSW<a class="headerlink" href="#case-study-seattle-sidewalk-centerlines-to-osw" title="Permanent link">&para;</a></h2>
-<p>This example demonstrates converting a city's sidewalk centerline dataset to OSW format using Seattle's sidewalk inventory data.</p>
-<h3 id="understanding-the-source-data">Understanding the Source Data<a class="headerlink" href="#understanding-the-source-data" title="Permanent link">&para;</a></h3>
+<p>Converting these datasets to <abbr title="OpenSidewalks">OSW</abbr> format enables pedestrian routing, accessibility analysis, and integration with other transportation data through <abbr title="Transportation Data Exchange Initiative">TDEI</abbr>.</p>
+<h3 id="case-study-seattle-sidewalk-centerlines-to-osw">Case Study: Seattle Sidewalk Centerlines to <abbr title="OpenSidewalks">OSW</abbr><a class="headerlink" href="#case-study-seattle-sidewalk-centerlines-to-osw" title="Anchor link to this section">⚓︎</a></h3>
+<p>This example demonstrates converting a city's sidewalk centerline dataset to <abbr title="OpenSidewalks">OSW</abbr> format using Seattle's sidewalk inventory data.</p>
+<h4 id="understanding-the-source-data">Understanding the Source Data<a class="headerlink" href="#understanding-the-source-data" title="Anchor link to this section">⚓︎</a></h4>
 <p>Seattle's sidewalk dataset contains LineString features with detailed attributes:</p>
-<div class="language-json highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="p">{</span>
-</span><span id="__span-0-2"><a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a><span class="w">    </span><span class="nt">&quot;type&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;Feature&quot;</span><span class="p">,</span>
-</span><span id="__span-0-3"><a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a><span class="w">    </span><span class="nt">&quot;id&quot;</span><span class="p">:</span><span class="w"> </span><span class="mi">22276849</span><span class="p">,</span>
-</span><span id="__span-0-4"><a id="__codelineno-0-4" name="__codelineno-0-4" href="#__codelineno-0-4"></a><span class="w">    </span><span class="nt">&quot;geometry&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
-</span><span id="__span-0-5"><a id="__codelineno-0-5" name="__codelineno-0-5" href="#__codelineno-0-5"></a><span class="w">        </span><span class="nt">&quot;type&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;LineString&quot;</span><span class="p">,</span>
-</span><span id="__span-0-6"><a id="__codelineno-0-6" name="__codelineno-0-6" href="#__codelineno-0-6"></a><span class="w">        </span><span class="nt">&quot;coordinates&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">[</span>
-</span><span id="__span-0-7"><a id="__codelineno-0-7" name="__codelineno-0-7" href="#__codelineno-0-7"></a><span class="w">            </span><span class="p">[</span><span class="mf">1270173.15</span><span class="p">,</span><span class="w"> </span><span class="mf">221881.27</span><span class="p">],</span>
-</span><span id="__span-0-8"><a id="__codelineno-0-8" name="__codelineno-0-8" href="#__codelineno-0-8"></a><span class="w">            </span><span class="p">[</span><span class="mf">1270372.84</span><span class="p">,</span><span class="w"> </span><span class="mf">221876.92</span><span class="p">]</span>
-</span><span id="__span-0-9"><a id="__codelineno-0-9" name="__codelineno-0-9" href="#__codelineno-0-9"></a><span class="w">        </span><span class="p">]</span>
-</span><span id="__span-0-10"><a id="__codelineno-0-10" name="__codelineno-0-10" href="#__codelineno-0-10"></a><span class="w">    </span><span class="p">},</span>
-</span><span id="__span-0-11"><a id="__codelineno-0-11" name="__codelineno-0-11" href="#__codelineno-0-11"></a><span class="w">    </span><span class="nt">&quot;properties&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
-</span><span id="__span-0-12"><a id="__codelineno-0-12" name="__codelineno-0-12" href="#__codelineno-0-12"></a><span class="w">        </span><span class="nt">&quot;OBJECTID&quot;</span><span class="p">:</span><span class="w"> </span><span class="mi">22276849</span><span class="p">,</span>
-</span><span id="__span-0-13"><a id="__codelineno-0-13" name="__codelineno-0-13" href="#__codelineno-0-13"></a><span class="w">        </span><span class="nt">&quot;UNITID&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;SDW-35269&quot;</span><span class="p">,</span>
-</span><span id="__span-0-14"><a id="__codelineno-0-14" name="__codelineno-0-14" href="#__codelineno-0-14"></a><span class="w">        </span><span class="nt">&quot;UNITDESC&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;S KING ST BETWEEN 1ST AVE S AND OCCIDENTAL W AVE S, N SIDE&quot;</span><span class="p">,</span>
-</span><span id="__span-0-15"><a id="__codelineno-0-15" name="__codelineno-0-15" href="#__codelineno-0-15"></a><span class="w">        </span><span class="nt">&quot;SW_WIDTH&quot;</span><span class="p">:</span><span class="w"> </span><span class="mi">124</span><span class="p">,</span>
-</span><span id="__span-0-16"><a id="__codelineno-0-16" name="__codelineno-0-16" href="#__codelineno-0-16"></a><span class="w">        </span><span class="nt">&quot;CONDITION&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;POOR&quot;</span><span class="p">,</span>
-</span><span id="__span-0-17"><a id="__codelineno-0-17" name="__codelineno-0-17" href="#__codelineno-0-17"></a><span class="w">        </span><span class="nt">&quot;SURFTYPE&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;PCC&quot;</span><span class="p">,</span>
-</span><span id="__span-0-18"><a id="__codelineno-0-18" name="__codelineno-0-18" href="#__codelineno-0-18"></a><span class="w">        </span><span class="nt">&quot;SIDE&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;N&quot;</span><span class="p">,</span>
-</span><span id="__span-0-19"><a id="__codelineno-0-19" name="__codelineno-0-19" href="#__codelineno-0-19"></a><span class="w">        </span><span class="nt">&quot;PRIMARYCROSSSLOPE&quot;</span><span class="p">:</span><span class="w"> </span><span class="mf">5.3</span><span class="p">,</span>
-</span><span id="__span-0-20"><a id="__codelineno-0-20" name="__codelineno-0-20" href="#__codelineno-0-20"></a><span class="w">        </span><span class="nt">&quot;INSTALL_DATE&quot;</span><span class="p">:</span><span class="w"> </span><span class="kc">null</span><span class="p">,</span>
-</span><span id="__span-0-21"><a id="__codelineno-0-21" name="__codelineno-0-21" href="#__codelineno-0-21"></a><span class="w">        </span><span class="nt">&quot;LAST_VERIFY_DATE&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;Fri, 23 Jun 2017 00:00:00 GMT&quot;</span>
-</span><span id="__span-0-22"><a id="__codelineno-0-22" name="__codelineno-0-22" href="#__codelineno-0-22"></a><span class="w">    </span><span class="p">}</span>
-</span><span id="__span-0-23"><a id="__codelineno-0-23" name="__codelineno-0-23" href="#__codelineno-0-23"></a><span class="p">}</span>
-</span></code></pre></div>
-<h3 id="the-target-osw-footway-edges">The Target: OSW Footway Edges<a class="headerlink" href="#the-target-osw-footway-edges" title="Permanent link">&para;</a></h3>
+<div class="highlight"><pre><span></span><code><span class="p">{</span>
+<span class="w">    </span><span class="nt">&quot;type&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;Feature&quot;</span><span class="p">,</span>
+<span class="w">    </span><span class="nt">&quot;id&quot;</span><span class="p">:</span><span class="w"> </span><span class="mi">22276849</span><span class="p">,</span>
+<span class="w">    </span><span class="nt">&quot;geometry&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
+<span class="w">        </span><span class="nt">&quot;type&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;LineString&quot;</span><span class="p">,</span>
+<span class="w">        </span><span class="nt">&quot;coordinates&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">[</span>
+<span class="w">            </span><span class="p">[</span><span class="mf">1270173.15</span><span class="p">,</span><span class="w"> </span><span class="mf">221881.27</span><span class="p">],</span>
+<span class="w">            </span><span class="p">[</span><span class="mf">1270372.84</span><span class="p">,</span><span class="w"> </span><span class="mf">221876.92</span><span class="p">]</span>
+<span class="w">        </span><span class="p">]</span>
+<span class="w">    </span><span class="p">},</span>
+<span class="w">    </span><span class="nt">&quot;properties&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
+<span class="w">        </span><span class="nt">&quot;OBJECTID&quot;</span><span class="p">:</span><span class="w"> </span><span class="mi">22276849</span><span class="p">,</span>
+<span class="w">        </span><span class="nt">&quot;UNITID&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;SDW-35269&quot;</span><span class="p">,</span>
+<span class="w">        </span><span class="nt">&quot;UNITDESC&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;S KING ST BETWEEN 1ST AVE S AND OCCIDENTAL W AVE S, N SIDE&quot;</span><span class="p">,</span>
+<span class="w">        </span><span class="nt">&quot;SW_WIDTH&quot;</span><span class="p">:</span><span class="w"> </span><span class="mi">124</span><span class="p">,</span>
+<span class="w">        </span><span class="nt">&quot;CONDITION&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;POOR&quot;</span><span class="p">,</span>
+<span class="w">        </span><span class="nt">&quot;SURFTYPE&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;PCC&quot;</span><span class="p">,</span>
+<span class="w">        </span><span class="nt">&quot;SIDE&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;N&quot;</span><span class="p">,</span>
+<span class="w">        </span><span class="nt">&quot;PRIMARYCROSSSLOPE&quot;</span><span class="p">:</span><span class="w"> </span><span class="mf">5.3</span><span class="p">,</span>
+<span class="w">        </span><span class="nt">&quot;INSTALL_DATE&quot;</span><span class="p">:</span><span class="w"> </span><span class="kc">null</span><span class="p">,</span>
+<span class="w">        </span><span class="nt">&quot;LAST_VERIFY_DATE&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;Fri, 23 Jun 2017 00:00:00 GMT&quot;</span>
+<span class="w">    </span><span class="p">}</span>
+<span class="p">}</span>
+</code></pre></div>
+<h4 id="the-target-osw-footway-edges">The Target: <abbr title="OpenSidewalks">OSW</abbr> Footway Edges<a class="headerlink" href="#the-target-osw-footway-edges" title="Anchor link to this section">⚓︎</a></h4>
 <p>We want to convert each sidewalk centerline into an OpenSidewalks footway that looks like this:</p>
-<div class="language-json highlight"><pre><span></span><code><span id="__span-1-1"><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a><span class="p">{</span>
-</span><span id="__span-1-2"><a id="__codelineno-1-2" name="__codelineno-1-2" href="#__codelineno-1-2"></a><span class="w">    </span><span class="nt">&quot;type&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;Feature&quot;</span><span class="p">,</span>
-</span><span id="__span-1-3"><a id="__codelineno-1-3" name="__codelineno-1-3" href="#__codelineno-1-3"></a><span class="w">    </span><span class="nt">&quot;geometry&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
-</span><span id="__span-1-4"><a id="__codelineno-1-4" name="__codelineno-1-4" href="#__codelineno-1-4"></a><span class="w">        </span><span class="nt">&quot;type&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;LineString&quot;</span><span class="p">,</span>
-</span><span id="__span-1-5"><a id="__codelineno-1-5" name="__codelineno-1-5" href="#__codelineno-1-5"></a><span class="w">        </span><span class="nt">&quot;coordinates&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">[</span>
-</span><span id="__span-1-6"><a id="__codelineno-1-6" name="__codelineno-1-6" href="#__codelineno-1-6"></a><span class="w">            </span><span class="p">[</span><span class="mf">-122.3321</span><span class="p">,</span><span class="w"> </span><span class="mf">47.6062</span><span class="p">],</span>
-</span><span id="__span-1-7"><a id="__codelineno-1-7" name="__codelineno-1-7" href="#__codelineno-1-7"></a><span class="w">            </span><span class="p">[</span><span class="mf">-122.3325</span><span class="p">,</span><span class="w"> </span><span class="mf">47.6065</span><span class="p">]</span>
-</span><span id="__span-1-8"><a id="__codelineno-1-8" name="__codelineno-1-8" href="#__codelineno-1-8"></a><span class="w">        </span><span class="p">]</span>
-</span><span id="__span-1-9"><a id="__codelineno-1-9" name="__codelineno-1-9" href="#__codelineno-1-9"></a><span class="w">    </span><span class="p">},</span>
-</span><span id="__span-1-10"><a id="__codelineno-1-10" name="__codelineno-1-10" href="#__codelineno-1-10"></a><span class="w">    </span><span class="nt">&quot;properties&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
-</span><span id="__span-1-11"><a id="__codelineno-1-11" name="__codelineno-1-11" href="#__codelineno-1-11"></a><span class="w">        </span><span class="nt">&quot;_id&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;sidewalk_sdw_35269&quot;</span><span class="p">,</span>
-</span><span id="__span-1-12"><a id="__codelineno-1-12" name="__codelineno-1-12" href="#__codelineno-1-12"></a><span class="w">        </span><span class="nt">&quot;highway&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;footway&quot;</span><span class="p">,</span>
-</span><span id="__span-1-13"><a id="__codelineno-1-13" name="__codelineno-1-13" href="#__codelineno-1-13"></a><span class="w">        </span><span class="nt">&quot;footway&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;sidewalk&quot;</span><span class="p">,</span>
-</span><span id="__span-1-14"><a id="__codelineno-1-14" name="__codelineno-1-14" href="#__codelineno-1-14"></a><span class="w">        </span><span class="nt">&quot;width&quot;</span><span class="p">:</span><span class="w"> </span><span class="mf">3.78</span><span class="p">,</span>
-</span><span id="__span-1-15"><a id="__codelineno-1-15" name="__codelineno-1-15" href="#__codelineno-1-15"></a><span class="w">        </span><span class="nt">&quot;surface&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;concrete&quot;</span><span class="p">,</span>
-</span><span id="__span-1-16"><a id="__codelineno-1-16" name="__codelineno-1-16" href="#__codelineno-1-16"></a><span class="w">        </span><span class="nt">&quot;ext:unit_id&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;SDW-35269&quot;</span><span class="p">,</span>
-</span><span id="__span-1-17"><a id="__codelineno-1-17" name="__codelineno-1-17" href="#__codelineno-1-17"></a><span class="w">        </span><span class="nt">&quot;ext:description&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;S KING ST BETWEEN 1ST AVE S AND OCCIDENTAL W AVE S, N SIDE&quot;</span><span class="p">,</span>
-</span><span id="__span-1-18"><a id="__codelineno-1-18" name="__codelineno-1-18" href="#__codelineno-1-18"></a><span class="w">        </span><span class="nt">&quot;ext:condition&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;POOR&quot;</span><span class="p">,</span>
-</span><span id="__span-1-19"><a id="__codelineno-1-19" name="__codelineno-1-19" href="#__codelineno-1-19"></a><span class="w">        </span><span class="nt">&quot;ext:side&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;N&quot;</span><span class="p">,</span>
-</span><span id="__span-1-20"><a id="__codelineno-1-20" name="__codelineno-1-20" href="#__codelineno-1-20"></a><span class="w">        </span><span class="nt">&quot;ext:cross_slope&quot;</span><span class="p">:</span><span class="w"> </span><span class="mf">5.3</span><span class="p">,</span>
-</span><span id="__span-1-21"><a id="__codelineno-1-21" name="__codelineno-1-21" href="#__codelineno-1-21"></a><span class="w">        </span><span class="nt">&quot;ext:last_verify_date&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;2017-06-23&quot;</span>
-</span><span id="__span-1-22"><a id="__codelineno-1-22" name="__codelineno-1-22" href="#__codelineno-1-22"></a><span class="w">    </span><span class="p">}</span>
-</span><span id="__span-1-23"><a id="__codelineno-1-23" name="__codelineno-1-23" href="#__codelineno-1-23"></a><span class="p">}</span>
-</span></code></pre></div>
-<h2 id="step-by-step-conversion-process">Step-by-Step Conversion Process<a class="headerlink" href="#step-by-step-conversion-process" title="Permanent link">&para;</a></h2>
-<h3 id="step-1-coordinate-system-transformation">Step 1: Coordinate System Transformation<a class="headerlink" href="#step-1-coordinate-system-transformation" title="Permanent link">&para;</a></h3>
-<p>Most city GIS datasets use local coordinate systems. Seattle uses EPSG:2926 - NAD83 / Washington South. OSW requires WGS84 decimal degrees (EPSG:4326).</p>
+<div class="highlight"><pre><span></span><code><span class="p">{</span>
+<span class="w">    </span><span class="nt">&quot;type&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;Feature&quot;</span><span class="p">,</span>
+<span class="w">    </span><span class="nt">&quot;geometry&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
+<span class="w">        </span><span class="nt">&quot;type&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;LineString&quot;</span><span class="p">,</span>
+<span class="w">        </span><span class="nt">&quot;coordinates&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">[</span>
+<span class="w">            </span><span class="p">[</span><span class="mf">-122.3321</span><span class="p">,</span><span class="w"> </span><span class="mf">47.6062</span><span class="p">],</span>
+<span class="w">            </span><span class="p">[</span><span class="mf">-122.3325</span><span class="p">,</span><span class="w"> </span><span class="mf">47.6065</span><span class="p">]</span>
+<span class="w">        </span><span class="p">]</span>
+<span class="w">    </span><span class="p">},</span>
+<span class="w">    </span><span class="nt">&quot;properties&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
+<span class="w">        </span><span class="nt">&quot;_id&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;sidewalk_sdw_35269&quot;</span><span class="p">,</span>
+<span class="w">        </span><span class="nt">&quot;highway&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;footway&quot;</span><span class="p">,</span>
+<span class="w">        </span><span class="nt">&quot;footway&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;sidewalk&quot;</span><span class="p">,</span>
+<span class="w">        </span><span class="nt">&quot;width&quot;</span><span class="p">:</span><span class="w"> </span><span class="mf">3.78</span><span class="p">,</span>
+<span class="w">        </span><span class="nt">&quot;surface&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;concrete&quot;</span><span class="p">,</span>
+<span class="w">        </span><span class="nt">&quot;ext:unit_id&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;SDW-35269&quot;</span><span class="p">,</span>
+<span class="w">        </span><span class="nt">&quot;ext:description&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;S KING ST BETWEEN 1ST AVE S AND OCCIDENTAL W AVE S, N SIDE&quot;</span><span class="p">,</span>
+<span class="w">        </span><span class="nt">&quot;ext:condition&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;POOR&quot;</span><span class="p">,</span>
+<span class="w">        </span><span class="nt">&quot;ext:side&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;N&quot;</span><span class="p">,</span>
+<span class="w">        </span><span class="nt">&quot;ext:cross_slope&quot;</span><span class="p">:</span><span class="w"> </span><span class="mf">5.3</span><span class="p">,</span>
+<span class="w">        </span><span class="nt">&quot;ext:last_verify_date&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;2017-06-23&quot;</span>
+<span class="w">    </span><span class="p">}</span>
+<span class="p">}</span>
+</code></pre></div>
+<h3 id="step-by-step-conversion-process">Step-by-Step Conversion Process<a class="headerlink" href="#step-by-step-conversion-process" title="Anchor link to this section">⚓︎</a></h3>
+<h4 id="step-1-coordinate-system-transformation">Step 1: Coordinate System Transformation<a class="headerlink" href="#step-1-coordinate-system-transformation" title="Anchor link to this section">⚓︎</a></h4>
+<p>Most city <abbr title="Geographic Information System">GIS</abbr> datasets use local coordinate systems. Seattle uses EPSG:2926 - NAD83 / Washington South. <abbr title="OpenSidewalks">OSW</abbr> requires WGS84 decimal degrees (EPSG:4326).</p>
 <p><strong>Transform coordinates before conversion:</strong></p>
 <ul>
-<li>Use GIS software (QGIS, ArcGIS) or GDAL utilities</li>
+<li>Use <abbr title="Geographic Information System">GIS</abbr> software (QGIS, ArcGIS) or GDAL utilities</li>
 </ul>
-<h3 id="step-2-map-fields-to-osw-structure">Step 2: Map Fields to OSW Structure<a class="headerlink" href="#step-2-map-fields-to-osw-structure" title="Permanent link">&para;</a></h3>
-<p>Create a mapping between your dataset fields and OSW properties:</p>
+<h4 id="step-2-map-fields-to-osw-structure">Step 2: Map Fields to <abbr title="OpenSidewalks">OSW</abbr> Structure<a class="headerlink" href="#step-2-map-fields-to-osw-structure" title="Anchor link to this section">⚓︎</a></h4>
+<p>Create a mapping between your dataset fields and <abbr title="OpenSidewalks">OSW</abbr> properties:</p>
 <table>
 <thead>
 <tr>
 <th>Source Field</th>
-<th>Goes in OSW as</th>
+<th>Goes in <abbr title="OpenSidewalks">OSW</abbr> as</th>
 <th>Notes</th>
 </tr>
 </thead>
@@ -3477,7 +3805,7 @@
 <tr>
 <td><code>UNITID</code></td>
 <td><code>_id</code></td>
-<td>Create unique OSW ID (e.g., "sidewalk_" + unit_id)</td>
+<td>Create unique <abbr title="OpenSidewalks">OSW</abbr> ID (e.g., "sidewalk_" + unit_id)</td>
 </tr>
 <tr>
 <td><code>UNITID</code></td>
@@ -3497,7 +3825,7 @@
 <tr>
 <td><code>SURFTYPE</code></td>
 <td><code>surface</code></td>
-<td>Map to OSW surface values (see Step 3)</td>
+<td>Map to <abbr title="OpenSidewalks">OSW</abbr> surface values (see Step 3)</td>
 </tr>
 <tr>
 <td><code>CONDITION</code></td>
@@ -3521,19 +3849,19 @@
 </tr>
 </tbody>
 </table>
-<p><strong>Required OSW Core Entity Fields:</strong></p>
+<p><strong>Required <abbr title="OpenSidewalks">OSW</abbr> Core Entity Fields:</strong></p>
 <ul>
 <li><code>_id</code>: Unique identifier (string, letters/numbers/underscores)</li>
 <li><code>geometry</code>: LineString coordinates in WGS84</li>
 <li><code>highway=footway</code> + <code>footway=sidewalk</code>: Sidewalk Core Entity tag</li>
 </ul>
-<h3 id="step-3-standardize-surface-types">Step 3: Standardize Surface Types<a class="headerlink" href="#step-3-standardize-surface-types" title="Permanent link">&para;</a></h3>
-<p>Map your dataset's surface codes to OSW-compatible values:</p>
+<h4 id="step-3-standardize-surface-types">Step 3: Standardize Surface Types<a class="headerlink" href="#step-3-standardize-surface-types" title="Anchor link to this section">⚓︎</a></h4>
+<p>Map your dataset's surface codes to <abbr title="OpenSidewalks">OSW</abbr>-compatible values:</p>
 <table>
 <thead>
 <tr>
 <th>Source Code</th>
-<th>OSW Surface Value</th>
+<th><abbr title="OpenSidewalks">OSW</abbr> Surface Value</th>
 <th>Description</th>
 </tr>
 </thead>
@@ -3560,61 +3888,61 @@
 </tr>
 </tbody>
 </table>
-<h3 id="step-4-handle-width-measurements">Step 4: Handle Width Measurements<a class="headerlink" href="#step-4-handle-width-measurements" title="Permanent link">&para;</a></h3>
+<h4 id="step-4-handle-width-measurements">Step 4: Handle Width Measurements<a class="headerlink" href="#step-4-handle-width-measurements" title="Anchor link to this section">⚓︎</a></h4>
 <p>Convert width measurements to meters and include in the <code>width</code> property.</p>
-<h3 id="step-5-create-the-geojson-structure">Step 5: Create the GeoJSON Structure<a class="headerlink" href="#step-5-create-the-geojson-structure" title="Permanent link">&para;</a></h3>
-<p>Build the complete OSW dataset:</p>
-<div class="language-json highlight"><pre><span></span><code><span id="__span-2-1"><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a><span class="p">{</span>
-</span><span id="__span-2-2"><a id="__codelineno-2-2" name="__codelineno-2-2" href="#__codelineno-2-2"></a><span class="w">    </span><span class="nt">&quot;$schema&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;https://sidewalks.washington.edu/opensidewalks/0.3/schema.json&quot;</span><span class="p">,</span>
-</span><span id="__span-2-3"><a id="__codelineno-2-3" name="__codelineno-2-3" href="#__codelineno-2-3"></a><span class="w">    </span><span class="nt">&quot;type&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;FeatureCollection&quot;</span><span class="p">,</span>
-</span><span id="__span-2-4"><a id="__codelineno-2-4" name="__codelineno-2-4" href="#__codelineno-2-4"></a><span class="w">    </span><span class="nt">&quot;dataSource&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
-</span><span id="__span-2-5"><a id="__codelineno-2-5" name="__codelineno-2-5" href="#__codelineno-2-5"></a><span class="w">        </span><span class="nt">&quot;name&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;Seattle Department of Transportation&quot;</span><span class="p">,</span>
-</span><span id="__span-2-6"><a id="__codelineno-2-6" name="__codelineno-2-6" href="#__codelineno-2-6"></a><span class="w">        </span><span class="nt">&quot;license&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;Open Data Commons Attribution License&quot;</span>
-</span><span id="__span-2-7"><a id="__codelineno-2-7" name="__codelineno-2-7" href="#__codelineno-2-7"></a><span class="w">    </span><span class="p">},</span>
-</span><span id="__span-2-8"><a id="__codelineno-2-8" name="__codelineno-2-8" href="#__codelineno-2-8"></a><span class="w">    </span><span class="nt">&quot;dataTimestamp&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;2025-09-10T00:00:00Z&quot;</span><span class="p">,</span>
-</span><span id="__span-2-9"><a id="__codelineno-2-9" name="__codelineno-2-9" href="#__codelineno-2-9"></a><span class="w">    </span><span class="nt">&quot;features&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">[</span>
-</span><span id="__span-2-10"><a id="__codelineno-2-10" name="__codelineno-2-10" href="#__codelineno-2-10"></a><span class="w">        </span><span class="p">{</span>
-</span><span id="__span-2-11"><a id="__codelineno-2-11" name="__codelineno-2-11" href="#__codelineno-2-11"></a><span class="w">            </span><span class="nt">&quot;type&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;Feature&quot;</span><span class="p">,</span>
-</span><span id="__span-2-12"><a id="__codelineno-2-12" name="__codelineno-2-12" href="#__codelineno-2-12"></a><span class="w">            </span><span class="nt">&quot;geometry&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
-</span><span id="__span-2-13"><a id="__codelineno-2-13" name="__codelineno-2-13" href="#__codelineno-2-13"></a><span class="w">                </span><span class="nt">&quot;type&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;LineString&quot;</span><span class="p">,</span>
-</span><span id="__span-2-14"><a id="__codelineno-2-14" name="__codelineno-2-14" href="#__codelineno-2-14"></a><span class="w">                </span><span class="nt">&quot;coordinates&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">[</span>
-</span><span id="__span-2-15"><a id="__codelineno-2-15" name="__codelineno-2-15" href="#__codelineno-2-15"></a><span class="w">                    </span><span class="p">[</span><span class="mf">-122.3321</span><span class="p">,</span><span class="w"> </span><span class="mf">47.6062</span><span class="p">],</span>
-</span><span id="__span-2-16"><a id="__codelineno-2-16" name="__codelineno-2-16" href="#__codelineno-2-16"></a><span class="w">                    </span><span class="p">[</span><span class="mf">-122.3325</span><span class="p">,</span><span class="w"> </span><span class="mf">47.6065</span><span class="p">]</span>
-</span><span id="__span-2-17"><a id="__codelineno-2-17" name="__codelineno-2-17" href="#__codelineno-2-17"></a><span class="w">                </span><span class="p">]</span>
-</span><span id="__span-2-18"><a id="__codelineno-2-18" name="__codelineno-2-18" href="#__codelineno-2-18"></a><span class="w">            </span><span class="p">},</span>
-</span><span id="__span-2-19"><a id="__codelineno-2-19" name="__codelineno-2-19" href="#__codelineno-2-19"></a><span class="w">            </span><span class="nt">&quot;properties&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
-</span><span id="__span-2-20"><a id="__codelineno-2-20" name="__codelineno-2-20" href="#__codelineno-2-20"></a><span class="w">                </span><span class="nt">&quot;_id&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;sidewalk_sdw_35269&quot;</span><span class="p">,</span>
-</span><span id="__span-2-21"><a id="__codelineno-2-21" name="__codelineno-2-21" href="#__codelineno-2-21"></a><span class="w">                </span><span class="nt">&quot;highway&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;footway&quot;</span><span class="p">,</span>
-</span><span id="__span-2-22"><a id="__codelineno-2-22" name="__codelineno-2-22" href="#__codelineno-2-22"></a><span class="w">                </span><span class="nt">&quot;footway&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;sidewalk&quot;</span><span class="p">,</span>
-</span><span id="__span-2-23"><a id="__codelineno-2-23" name="__codelineno-2-23" href="#__codelineno-2-23"></a><span class="w">                </span><span class="nt">&quot;width&quot;</span><span class="p">:</span><span class="w"> </span><span class="mf">3.78</span><span class="p">,</span>
-</span><span id="__span-2-24"><a id="__codelineno-2-24" name="__codelineno-2-24" href="#__codelineno-2-24"></a><span class="w">                </span><span class="nt">&quot;surface&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;concrete&quot;</span><span class="p">,</span>
-</span><span id="__span-2-25"><a id="__codelineno-2-25" name="__codelineno-2-25" href="#__codelineno-2-25"></a><span class="w">                </span><span class="nt">&quot;ext:unit_id&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;SDW-35269&quot;</span><span class="p">,</span>
-</span><span id="__span-2-26"><a id="__codelineno-2-26" name="__codelineno-2-26" href="#__codelineno-2-26"></a><span class="w">                </span><span class="nt">&quot;ext:description&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;S KING ST BETWEEN 1ST AVE S AND OCCIDENTAL W AVE S, N SIDE&quot;</span><span class="p">,</span>
-</span><span id="__span-2-27"><a id="__codelineno-2-27" name="__codelineno-2-27" href="#__codelineno-2-27"></a><span class="w">                </span><span class="nt">&quot;ext:condition&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;POOR&quot;</span>
-</span><span id="__span-2-28"><a id="__codelineno-2-28" name="__codelineno-2-28" href="#__codelineno-2-28"></a><span class="w">            </span><span class="p">}</span>
-</span><span id="__span-2-29"><a id="__codelineno-2-29" name="__codelineno-2-29" href="#__codelineno-2-29"></a><span class="w">        </span><span class="p">}</span>
-</span><span id="__span-2-30"><a id="__codelineno-2-30" name="__codelineno-2-30" href="#__codelineno-2-30"></a><span class="w">    </span><span class="p">]</span>
-</span><span id="__span-2-31"><a id="__codelineno-2-31" name="__codelineno-2-31" href="#__codelineno-2-31"></a><span class="p">}</span>
-</span></code></pre></div>
-<h2 id="conversion-tools-and-scripts">Conversion Tools and Scripts<a class="headerlink" href="#conversion-tools-and-scripts" title="Permanent link">&para;</a></h2>
+<h4 id="step-5-create-the-geojson-structure">Step 5: Create the GeoJSON Structure<a class="headerlink" href="#step-5-create-the-geojson-structure" title="Anchor link to this section">⚓︎</a></h4>
+<p>Build the complete <abbr title="OpenSidewalks">OSW</abbr> dataset:</p>
+<div class="highlight"><pre><span></span><code><span class="p">{</span>
+<span class="w">    </span><span class="nt">&quot;$schema&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;https://sidewalks.washington.edu/opensidewalks/0.3/schema.json&quot;</span><span class="p">,</span>
+<span class="w">    </span><span class="nt">&quot;type&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;FeatureCollection&quot;</span><span class="p">,</span>
+<span class="w">    </span><span class="nt">&quot;dataSource&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
+<span class="w">        </span><span class="nt">&quot;name&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;Seattle Department of Transportation&quot;</span><span class="p">,</span>
+<span class="w">        </span><span class="nt">&quot;license&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;Open Data Commons Attribution License&quot;</span>
+<span class="w">    </span><span class="p">},</span>
+<span class="w">    </span><span class="nt">&quot;dataTimestamp&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;2025-09-10T00:00:00Z&quot;</span><span class="p">,</span>
+<span class="w">    </span><span class="nt">&quot;features&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">[</span>
+<span class="w">        </span><span class="p">{</span>
+<span class="w">            </span><span class="nt">&quot;type&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;Feature&quot;</span><span class="p">,</span>
+<span class="w">            </span><span class="nt">&quot;geometry&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
+<span class="w">                </span><span class="nt">&quot;type&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;LineString&quot;</span><span class="p">,</span>
+<span class="w">                </span><span class="nt">&quot;coordinates&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">[</span>
+<span class="w">                    </span><span class="p">[</span><span class="mf">-122.3321</span><span class="p">,</span><span class="w"> </span><span class="mf">47.6062</span><span class="p">],</span>
+<span class="w">                    </span><span class="p">[</span><span class="mf">-122.3325</span><span class="p">,</span><span class="w"> </span><span class="mf">47.6065</span><span class="p">]</span>
+<span class="w">                </span><span class="p">]</span>
+<span class="w">            </span><span class="p">},</span>
+<span class="w">            </span><span class="nt">&quot;properties&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
+<span class="w">                </span><span class="nt">&quot;_id&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;sidewalk_sdw_35269&quot;</span><span class="p">,</span>
+<span class="w">                </span><span class="nt">&quot;highway&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;footway&quot;</span><span class="p">,</span>
+<span class="w">                </span><span class="nt">&quot;footway&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;sidewalk&quot;</span><span class="p">,</span>
+<span class="w">                </span><span class="nt">&quot;width&quot;</span><span class="p">:</span><span class="w"> </span><span class="mf">3.78</span><span class="p">,</span>
+<span class="w">                </span><span class="nt">&quot;surface&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;concrete&quot;</span><span class="p">,</span>
+<span class="w">                </span><span class="nt">&quot;ext:unit_id&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;SDW-35269&quot;</span><span class="p">,</span>
+<span class="w">                </span><span class="nt">&quot;ext:description&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;S KING ST BETWEEN 1ST AVE S AND OCCIDENTAL W AVE S, N SIDE&quot;</span><span class="p">,</span>
+<span class="w">                </span><span class="nt">&quot;ext:condition&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;POOR&quot;</span>
+<span class="w">            </span><span class="p">}</span>
+<span class="w">        </span><span class="p">}</span>
+<span class="w">    </span><span class="p">]</span>
+<span class="p">}</span>
+</code></pre></div>
+<h3 id="conversion-tools-and-scripts">Conversion Tools and Scripts<a class="headerlink" href="#conversion-tools-and-scripts" title="Anchor link to this section">⚓︎</a></h3>
 <p>As some processing of the existing data is usually necessary, consider creating Python scripts or using <a href="https://gdal.org/en/stable/programs/ogr2ogr.html">ogr2ogr</a> to make the necessary changes.</p>
 <p><em>The following is an example, not intended to be used directly!</em></p>
-<h3 id="example-gdalogr-command-line">Example: GDAL/OGR Command Line<a class="headerlink" href="#example-gdalogr-command-line" title="Permanent link">&para;</a></h3>
-<div class="language-bash highlight"><pre><span></span><code><span id="__span-3-1"><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a><span class="c1"># Reproject to WGS84</span>
-</span><span id="__span-3-2"><a id="__codelineno-3-2" name="__codelineno-3-2" href="#__codelineno-3-2"></a>ogr2ogr<span class="w"> </span>-s_srs<span class="w"> </span>EPSG:2926<span class="w"> </span>-t_srs<span class="w"> </span>EPSG:4326<span class="w"> </span>sidewalks_epsg4326.geojson<span class="w"> </span>sidewalks_epsg2926.geojson
-</span><span id="__span-3-3"><a id="__codelineno-3-3" name="__codelineno-3-3" href="#__codelineno-3-3"></a>
-</span><span id="__span-3-4"><a id="__codelineno-3-4" name="__codelineno-3-4" href="#__codelineno-3-4"></a><span class="c1"># Use ogr2ogr with SQL to transform fields</span>
-</span><span id="__span-3-5"><a id="__codelineno-3-5" name="__codelineno-3-5" href="#__codelineno-3-5"></a>ogr2ogr<span class="w"> </span>-f<span class="w"> </span>GeoJSON<span class="w"> </span>output.geojson<span class="w"> </span>sidewalks_epsg4326.geojson<span class="w"> </span>-sql<span class="w"> </span><span class="s2">&quot;SELECT UNITID as ext_unit_id, UNITDESC as ext_description, &#39;footway&#39; as highway, &#39;sidewalk&#39; as footway, SW_WIDTH * 0.0254 as width, CASE WHEN SURFTYPE = &#39;PCC&#39; THEN &#39;concrete&#39; WHEN SURFTYPE = &#39;AC&#39; THEN &#39;asphalt&#39; ELSE &#39;unknown&#39; END as surface FROM input_layer&quot;</span>
-</span></code></pre></div>
-<h2 id="validation-and-quality-assurance">Validation and Quality Assurance<a class="headerlink" href="#validation-and-quality-assurance" title="Permanent link">&para;</a></h2>
-<h3 id="data-quality-checks">Data Quality Checks<a class="headerlink" href="#data-quality-checks" title="Permanent link">&para;</a></h3>
+<h4 id="example-gdalogr-command-line">Example: GDAL/OGR Command Line<a class="headerlink" href="#example-gdalogr-command-line" title="Anchor link to this section">⚓︎</a></h4>
+<div class="highlight"><pre><span></span><code><span class="c1"># Reproject to WGS84</span>
+ogr2ogr<span class="w"> </span>-s_srs<span class="w"> </span>EPSG:2926<span class="w"> </span>-t_srs<span class="w"> </span>EPSG:4326<span class="w"> </span>sidewalks_epsg4326.geojson<span class="w"> </span>sidewalks_epsg2926.geojson
+
+<span class="c1"># Use ogr2ogr with SQL to transform fields</span>
+ogr2ogr<span class="w"> </span>-f<span class="w"> </span>GeoJSON<span class="w"> </span>output.geojson<span class="w"> </span>sidewalks_epsg4326.geojson<span class="w"> </span>-sql<span class="w"> </span><span class="s2">&quot;SELECT UNITID as ext_unit_id, UNITDESC as ext_description, &#39;footway&#39; as highway, &#39;sidewalk&#39; as footway, SW_WIDTH * 0.0254 as width, CASE WHEN SURFTYPE = &#39;PCC&#39; THEN &#39;concrete&#39; WHEN SURFTYPE = &#39;AC&#39; THEN &#39;asphalt&#39; ELSE &#39;unknown&#39; END as surface FROM input_layer&quot;</span>
+</code></pre></div>
+<h3 id="validation-and-quality-assurance">Validation and Quality Assurance<a class="headerlink" href="#validation-and-quality-assurance" title="Anchor link to this section">⚓︎</a></h3>
+<h4 id="data-quality-checks">Data Quality Checks<a class="headerlink" href="#data-quality-checks" title="Anchor link to this section">⚓︎</a></h4>
 <ol>
 <li><strong>Coordinate System</strong>: Verify all coordinates are in WGS84 decimal degrees</li>
 <li><strong>Unique IDs</strong>: Ensure all <code>_id</code> values are unique across the dataset</li>
 <li><strong>Required Fields</strong>: Every feature must have <code>_id</code>, <code>highway=footway</code>, and <code>footway=sidewalk</code></li>
 <li><strong>Geometry Validity</strong>: All LineStrings should have at least 2 coordinate pairs</li>
 </ol>
-<h3 id="common-issues-and-fixes">Common Issues and Fixes<a class="headerlink" href="#common-issues-and-fixes" title="Permanent link">&para;</a></h3>
+<h4 id="common-issues-and-fixes">Common Issues and Fixes<a class="headerlink" href="#common-issues-and-fixes" title="Anchor link to this section">⚓︎</a></h4>
 <table>
 <thead>
 <tr>
@@ -3625,7 +3953,7 @@
 <tbody>
 <tr>
 <td>Coordinates in wrong projection</td>
-<td>Use <code>ogr2ogr</code> or GIS reprojection tools</td>
+<td>Use <code>ogr2ogr</code> or <abbr title="Geographic Information System">GIS</abbr> reprojection tools</td>
 </tr>
 <tr>
 <td>Duplicate IDs</td>
@@ -3645,41 +3973,41 @@
 </tr>
 </tbody>
 </table>
-<h3 id="validation-tools">Validation Tools<a class="headerlink" href="#validation-tools" title="Permanent link">&para;</a></h3>
+<h4 id="validation-tools">Validation Tools<a class="headerlink" href="#validation-tools" title="Anchor link to this section">⚓︎</a></h4>
 <ul>
 <li><strong>GeoJSON validation</strong>: Use geojson.io or offline validators</li>
-<li><strong>OSW schema validation</strong>: Check against OpenSidewalks schema</li>
+<li><strong><abbr title="OpenSidewalks">OSW</abbr> schema validation</strong>: Check against OpenSidewalks schema</li>
 <li><strong>Visual inspection</strong>: Load in QGIS or web mapping tools</li>
 <li><strong>Attribute completeness</strong>: Verify required and optional fields</li>
 </ul>
-<h2 id="integration-with-tdei">Integration with TDEI<a class="headerlink" href="#integration-with-tdei" title="Permanent link">&para;</a></h2>
-<h3 id="best-practices-for-tdei-upload">Best Practices for TDEI Upload<a class="headerlink" href="#best-practices-for-tdei-upload" title="Permanent link">&para;</a></h3>
+<h3 id="integration-with-tdei">Integration with <abbr title="Transportation Data Exchange Initiative">TDEI</abbr><a class="headerlink" href="#integration-with-tdei" title="Anchor link to this section">⚓︎</a></h3>
+<h4 id="best-practices-for-tdei-upload">Best Practices for <abbr title="Transportation Data Exchange Initiative">TDEI</abbr> Upload<a class="headerlink" href="#best-practices-for-tdei-upload" title="Anchor link to this section">⚓︎</a></h4>
 <ul>
 <li><strong>Regular updates</strong>: Plan for periodic data refreshes</li>
 <li><strong>Quality documentation</strong>: Document data collection methods and accuracy</li>
 <li><strong>Contact information</strong>: Provide maintainer contact for data issues</li>
 </ul>
-<h2 id="advanced-considerations">Advanced Considerations<a class="headerlink" href="#advanced-considerations" title="Permanent link">&para;</a></h2>
-<h3 id="handling-complex-geometries">Handling Complex Geometries<a class="headerlink" href="#handling-complex-geometries" title="Permanent link">&para;</a></h3>
+<h3 id="advanced-considerations">Advanced Considerations<a class="headerlink" href="#advanced-considerations" title="Anchor link to this section">⚓︎</a></h3>
+<h4 id="handling-complex-geometries">Handling Complex Geometries<a class="headerlink" href="#handling-complex-geometries" title="Anchor link to this section">⚓︎</a></h4>
 <p>Some sidewalk centerlines may include:</p>
 <ul>
 <li><strong>Multi-segment paths</strong>: Keep as single LineString if continuous</li>
 <li><strong>Branching sidewalks</strong>: Split into separate features at intersections</li>
 <li><strong>Curved sections</strong>: Maintain vertex density for accurate representation</li>
 </ul>
-<h3 id="accessibility-attributes">Accessibility Attributes<a class="headerlink" href="#accessibility-attributes" title="Permanent link">&para;</a></h3>
-<p>Enhance OSW data with additional accessibility information:</p>
-<div class="language-json highlight"><pre><span></span><code><span id="__span-4-1"><a id="__codelineno-4-1" name="__codelineno-4-1" href="#__codelineno-4-1"></a><span class="nt">&quot;properties&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
-</span><span id="__span-4-2"><a id="__codelineno-4-2" name="__codelineno-4-2" href="#__codelineno-4-2"></a><span class="w">  </span><span class="nt">&quot;_id&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;sidewalk_001&quot;</span><span class="p">,</span>
-</span><span id="__span-4-3"><a id="__codelineno-4-3" name="__codelineno-4-3" href="#__codelineno-4-3"></a><span class="w">  </span><span class="nt">&quot;highway&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;footway&quot;</span><span class="p">,</span>
-</span><span id="__span-4-4"><a id="__codelineno-4-4" name="__codelineno-4-4" href="#__codelineno-4-4"></a><span class="w">  </span><span class="nt">&quot;footway&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;sidewalk&quot;</span><span class="p">,</span>
-</span><span id="__span-4-5"><a id="__codelineno-4-5" name="__codelineno-4-5" href="#__codelineno-4-5"></a><span class="w">  </span><span class="nt">&quot;incline&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;2%&quot;</span><span class="p">,</span>
-</span><span id="__span-4-6"><a id="__codelineno-4-6" name="__codelineno-4-6" href="#__codelineno-4-6"></a><span class="w">  </span><span class="nt">&quot;ext:condition&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;good&quot;</span><span class="p">,</span>
-</span><span id="__span-4-7"><a id="__codelineno-4-7" name="__codelineno-4-7" href="#__codelineno-4-7"></a><span class="w">  </span><span class="nt">&quot;ext:cross_slope&quot;</span><span class="p">:</span><span class="w"> </span><span class="mf">1.8</span><span class="p">,</span>
-</span><span id="__span-4-8"><a id="__codelineno-4-8" name="__codelineno-4-8" href="#__codelineno-4-8"></a><span class="w">  </span><span class="nt">&quot;ext:ada_compliance&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;yes&quot;</span>
-</span><span id="__span-4-9"><a id="__codelineno-4-9" name="__codelineno-4-9" href="#__codelineno-4-9"></a><span class="p">}</span>
-</span></code></pre></div>
-<p>This comprehensive conversion creates routable pedestrian network data that integrates with transportation analysis tools and supports accessibility planning through the TDEI platform.</p>
+<h4 id="accessibility-attributes">Accessibility Attributes<a class="headerlink" href="#accessibility-attributes" title="Anchor link to this section">⚓︎</a></h4>
+<p>Enhance <abbr title="OpenSidewalks">OSW</abbr> data with additional accessibility information:</p>
+<div class="highlight"><pre><span></span><code><span class="nt">&quot;properties&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
+<span class="w">  </span><span class="nt">&quot;_id&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;sidewalk_001&quot;</span><span class="p">,</span>
+<span class="w">  </span><span class="nt">&quot;highway&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;footway&quot;</span><span class="p">,</span>
+<span class="w">  </span><span class="nt">&quot;footway&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;sidewalk&quot;</span><span class="p">,</span>
+<span class="w">  </span><span class="nt">&quot;incline&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;2%&quot;</span><span class="p">,</span>
+<span class="w">  </span><span class="nt">&quot;ext:condition&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;good&quot;</span><span class="p">,</span>
+<span class="w">  </span><span class="nt">&quot;ext:cross_slope&quot;</span><span class="p">:</span><span class="w"> </span><span class="mf">1.8</span><span class="p">,</span>
+<span class="w">  </span><span class="nt">&quot;ext:ada_compliance&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;yes&quot;</span>
+<span class="p">}</span>
+</code></pre></div>
+<p>This comprehensive conversion creates routable pedestrian network data that integrates with transportation analysis tools and supports accessibility planning through the <abbr title="Transportation Data Exchange Initiative">TDEI</abbr> platform.</p>
 
 
   <nav class="md-tags" >
@@ -3881,12 +4209,18 @@
       
       
       
-      <script id="__config" type="application/json">{"annotate":null,"base":"../../..","features":["announce.dismiss","content.code.annotate","content.code.copy","content.code.select","content.footnote.tooltips","content.tabs.link","content.tooltips","navigation.footer","navigation.indexes","navigation.instant","navigation.instant.prefetch","navigation.instant.progress","navigation.path","navigation.sections","navigation.tabs","navigation.top","navigation.tracking","toc.follow","toc.integrate"],"search":"../../../assets/javascripts/workers/search.e2d2d235.min.js","tags":null,"translations":{"clipboard.copied":"Copied to clipboard","clipboard.copy":"Copy to clipboard","search.result.more.one":"1 more on this page","search.result.more.other":"# more on this page","search.result.none":"No matching documents","search.result.one":"1 matching document","search.result.other":"# matching documents","search.result.placeholder":"Type to start searching","search.result.term.missing":"Missing","select.version":"Select version"},"version":null}</script>
+      <script id="__config" type="application/json">{"annotate":null,"base":"../../..","features":["announce.dismiss","content.code.annotate","content.code.copy","content.code.select","content.footnote.tooltips","content.tabs.link","content.tooltips","navigation.footer","navigation.indexes","navigation.instant","navigation.instant.prefetch","navigation.instant.progress","navigation.path","navigation.sections","navigation.tabs","navigation.top","navigation.tracking","toc.follow"],"search":"../../../assets/javascripts/workers/search.e2d2d235.min.js","tags":null,"translations":{"clipboard.copied":"Copied to clipboard","clipboard.copy":"Copy to clipboard","search.result.more.one":"1 more on this page","search.result.more.other":"# more on this page","search.result.none":"No matching documents","search.result.one":"1 matching document","search.result.other":"# matching documents","search.result.placeholder":"Type to start searching","search.result.term.missing":"Missing","select.version":"Select version"},"version":null}</script>
     
     
       <script src="../../../assets/javascripts/bundle.00c35305.min.js"></script>
       
         <script src="../../../javascripts/extra.js"></script>
+      
+        <script src="../../../javascripts/katex.js"></script>
+      
+        <script src="https://unpkg.com/katex@0/dist/katex.min.js"></script>
+      
+        <script src="https://unpkg.com/katex@0/dist/contrib/auto-render.min.js"></script>
       
     
   </body>

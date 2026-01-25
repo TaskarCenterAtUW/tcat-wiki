@@ -91,6 +91,8 @@
     
       <link rel="stylesheet" href="../stylesheets/extra.css">
     
+      <link rel="stylesheet" href="https://unpkg.com/katex@0/dist/katex.min.css">
+    
     <script>__md_scope=new URL("..",location),__md_hash=e=>[...e].reduce(((e,t)=>(e<<5)-e+t.charCodeAt(0)),0),__md_get=(e,t=localStorage,a=__md_scope)=>JSON.parse(t.getItem(a.pathname+"."+e)),__md_set=(e,t,a=localStorage,_=__md_scope)=>{try{a.setItem(_.pathname+"."+e,JSON.stringify(t))}catch(e){}},document.documentElement.setAttribute("data-platform",navigator.platform)</script>
     
       
@@ -227,7 +229,7 @@
       <a href=".." class="md-tabs__link">
         
   
-  TCAT Wiki
+  Index
 
       </a>
     </li>
@@ -462,9 +464,7 @@
   
 
 
-  
-
-<nav class="md-nav md-nav--primary md-nav--lifted md-nav--integrated" aria-label="Navigation" data-md-level="0">
+<nav class="md-nav md-nav--primary md-nav--lifted" aria-label="Navigation" data-md-level="0">
   <label class="md-nav__title" for="__drawer">
     <a href=".." title="TCAT Wiki" class="md-nav__button md-logo" aria-label="TCAT Wiki" data-md-component="logo">
       
@@ -491,7 +491,7 @@
   <span class="md-ellipsis">
     
   
-    TCAT Wiki
+    Index
   
 
     
@@ -516,8 +516,6 @@
       
       <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
       
-      
-        
       
       
         <label class="md-nav__link md-nav__link--active" for="__toc">
@@ -558,20 +556,32 @@
         
 
 
-<nav class="md-nav md-nav--secondary" aria-label="On this page">
+  
+
+<nav class="md-nav md-nav--secondary" aria-label="On this page:">
   
   
-  
-    
   
   
     <label class="md-nav__title" for="__toc">
       <span class="md-nav__icon md-icon"></span>
-      On this page
+      On this page:
     </label>
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
+  <a href="#contributing" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Contributing
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Contributing">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
   <a href="#version-control-workflow" class="md-nav__link">
     <span class="md-ellipsis">
       
@@ -631,8 +641,8 @@
     </nav>
   
 </li>
-      
-        <li class="md-nav__item">
+        
+          <li class="md-nav__item">
   <a href="#getting-started-windows-1011" class="md-nav__link">
     <span class="md-ellipsis">
       
@@ -670,8 +680,8 @@
     </nav>
   
 </li>
-      
-        <li class="md-nav__item">
+        
+          <li class="md-nav__item">
   <a href="#editing-instructions" class="md-nav__link">
     <span class="md-ellipsis">
       
@@ -748,8 +758,8 @@
     </nav>
   
 </li>
-      
-        <li class="md-nav__item">
+        
+          <li class="md-nav__item">
   <a href="#markdown-guide" class="md-nav__link">
     <span class="md-ellipsis">
       
@@ -879,6 +889,11 @@
       
     </span>
   </a>
+  
+</li>
+        
+      </ul>
+    </nav>
   
 </li>
         
@@ -3344,6 +3359,366 @@
               </div>
             
             
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+  
+
+<nav class="md-nav md-nav--secondary" aria-label="On this page:">
+  
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      On this page:
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#contributing" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Contributing
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Contributing">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#version-control-workflow" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Version Control &amp; Workflow
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Version Control &amp; Workflow">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#semantic-versioning" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Semantic Versioning
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#conventional-commits" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Conventional Commits
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#branch-naming" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Branch Naming
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#pull-request-release-process" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Pull Request &amp; Release Process
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#getting-started-windows-1011" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Getting Started (Windows 10/11)
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Getting Started (Windows 10&#x2f;11)">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#legend" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Legend
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#installation-and-setup" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Installation and Setup
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#editing-instructions" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Editing Instructions
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Editing Instructions">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#guide-files" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Guide Files
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#images" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Images
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Images">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#screenshots" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Screenshots
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#image-annotations" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Image Annotations
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#qr-codes" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        QR Codes
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#markdown-guide" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Markdown Guide
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Markdown Guide">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#headers" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Headers
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#text-formatting" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Text formatting
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#links-and-images" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Links and images
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#lists" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Lists
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#blockquotes" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Blockquotes
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#code-blocks" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Code blocks
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#tables" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Tables
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#horizontal-rule" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Horizontal rule
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#task-lists" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Task lists
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#escaping-characters" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Escaping characters
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#line-breaks" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Line breaks
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
           
           
             <div class="md-content" data-md-component="content">
@@ -3360,17 +3735,19 @@
                 
                   
 
+  <h1>Contributing</h1>
+
 <!-- @format -->
 
-<h1 id="contributing">Contributing<a class="headerlink" href="#contributing" title="Permanent link">&para;</a></h1>
-<p>This guide explains how to contribute to the TCAT Wiki.</p>
-<p>Note that, while minor external contributions are welcome, this guide is primarily intended for use by TCAT/GS staff.</p>
-<p><em>For a list of all guides on the TCAT Wiki, refer to the <a href="../guides-list/">Guides List</a>.</em></p>
+<h2 id="contributing">Contributing<a class="headerlink" href="#contributing" title="Anchor link to this section">⚓︎</a></h2>
+<p>This guide explains how to contribute to the <abbr title="Taskar Center for Accessible Technology">TCAT</abbr> Wiki.</p>
+<p>Note that, while minor external contributions are welcome, this guide is primarily intended for use by <abbr title="Taskar Center for Accessible Technology">TCAT</abbr>/<abbr title="Gaussian Solutions">GS</abbr> staff.</p>
+<p><em>For a list of all guides on the <abbr title="Taskar Center for Accessible Technology">TCAT</abbr> Wiki, refer to the <a href="../guides-list/">Guides List</a>.</em></p>
 <hr />
-<h2 id="version-control-workflow">Version Control &amp; Workflow<a class="headerlink" href="#version-control-workflow" title="Permanent link">&para;</a></h2>
+<h3 id="version-control-workflow">Version Control &amp; Workflow<a class="headerlink" href="#version-control-workflow" title="Anchor link to this section">⚓︎</a></h3>
 <p>This project follows standardized version control conventions:</p>
-<h3 id="semantic-versioning">Semantic Versioning<a class="headerlink" href="#semantic-versioning" title="Permanent link">&para;</a></h3>
-<p>The TCAT Wiki uses <a href="https://semver.org/">Semantic Versioning</a> (MAJOR.MINOR.PATCH):</p>
+<h4 id="semantic-versioning">Semantic Versioning<a class="headerlink" href="#semantic-versioning" title="Anchor link to this section">⚓︎</a></h4>
+<p>The <abbr title="Taskar Center for Accessible Technology">TCAT</abbr> Wiki uses <a href="https://semver.org/">Semantic Versioning</a> (MAJOR.MINOR.PATCH):</p>
 <ul>
 <li><strong>Major (X.0.0)</strong>:<ul>
 <li>Core: New major features or upgrades</li>
@@ -3389,37 +3766,37 @@
 </li>
 </ul>
 <p>The version number is stored in the <code>version</code> field in <code>zensical.toml</code>.</p>
-<h3 id="conventional-commits">Conventional Commits<a class="headerlink" href="#conventional-commits" title="Permanent link">&para;</a></h3>
+<h4 id="conventional-commits">Conventional Commits<a class="headerlink" href="#conventional-commits" title="Anchor link to this section">⚓︎</a></h4>
 <p>Commits follow <a href="https://www.conventionalcommits.org/">Conventional Commits</a> with scoping:</p>
 <ul>
 <li><code>feat(scope): description</code> - Core features or Docs content</li>
 <li><code>fix(scope): description</code> - Core patches or Docs corrections</li>
 </ul>
 <p>Examples:</p>
-<div class="language-text highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a>feat(core-plugins): add abbreviations plugin
-</span><span id="__span-0-2"><a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a>feat(docs-accessmap): add user manual page
-</span><span id="__span-0-3"><a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a>fix(core-util): fix nav generator logic
-</span><span id="__span-0-4"><a id="__codelineno-0-4" name="__codelineno-0-4" href="#__codelineno-0-4"></a>fix(docs-walksheds): fix typo
-</span></code></pre></div>
-<h3 id="branch-naming">Branch Naming<a class="headerlink" href="#branch-naming" title="Permanent link">&para;</a></h3>
+<div class="highlight"><pre><span></span><code>feat(core-plugins): add abbreviations plugin
+feat(docs-accessmap): add user manual page
+fix(core-util): fix nav generator logic
+fix(docs-walksheds): fix typo
+</code></pre></div>
+<h4 id="branch-naming">Branch Naming<a class="headerlink" href="#branch-naming" title="Anchor link to this section">⚓︎</a></h4>
 <p>Follow GitHub flow with structured branch names:</p>
 <p><strong>Format</strong>: <code>type/scope/&lt;work-item-number&gt;-short-description</code></p>
 <p><strong>Examples</strong>:</p>
-<div class="language-text highlight"><pre><span></span><code><span id="__span-1-1"><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a>feat/core-plugins/1234-add-abbreviations-plugin
-</span><span id="__span-1-2"><a id="__codelineno-1-2" name="__codelineno-1-2" href="#__codelineno-1-2"></a>feat/docs-accessmap/1024-add-user-manual-page
-</span><span id="__span-1-3"><a id="__codelineno-1-3" name="__codelineno-1-3" href="#__codelineno-1-3"></a>fix/core-util/9876-fix-nav-generator-logic
-</span><span id="__span-1-4"><a id="__codelineno-1-4" name="__codelineno-1-4" href="#__codelineno-1-4"></a>fix/docs-walksheds/2048-fix-typo
-</span></code></pre></div>
-<h3 id="pull-request-release-process">Pull Request &amp; Release Process<a class="headerlink" href="#pull-request-release-process" title="Permanent link">&para;</a></h3>
+<div class="highlight"><pre><span></span><code>feat/core-plugins/1234-add-abbreviations-plugin
+feat/docs-accessmap/1024-add-user-manual-page
+fix/core-util/9876-fix-nav-generator-logic
+fix/docs-walksheds/2048-fix-typo
+</code></pre></div>
+<h4 id="pull-request-release-process">Pull Request &amp; Release Process<a class="headerlink" href="#pull-request-release-process" title="Anchor link to this section">⚓︎</a></h4>
 <ol>
 <li>Create a feature branch following the naming convention</li>
 <li>Make commits using conventional commit format</li>
 <li>Open a pull request to <code>main</code></li>
 <li>Upon merge to <code>main</code>, releases are automated</li>
 </ol>
-<h2 id="getting-started-windows-1011">Getting Started (Windows 10/11)<a class="headerlink" href="#getting-started-windows-1011" title="Permanent link">&para;</a></h2>
-<p>This section of the guide explains how to set up a Windows environment for contributing to the TCAT Wiki for the first time.</p>
-<h3 id="legend">Legend<a class="headerlink" href="#legend" title="Permanent link">&para;</a></h3>
+<h3 id="getting-started-windows-1011">Getting Started (Windows 10/11)<a class="headerlink" href="#getting-started-windows-1011" title="Anchor link to this section">⚓︎</a></h3>
+<p>This section of the guide explains how to set up a Windows environment for contributing to the <abbr title="Taskar Center for Accessible Technology">TCAT</abbr> Wiki for the first time.</p>
+<h4 id="legend">Legend<a class="headerlink" href="#legend" title="Anchor link to this section">⚓︎</a></h4>
 <ol>
 <li>
 <p>Keyboard shortcut to press | Action</p>
@@ -3430,7 +3807,7 @@
 <p>[<code>someCommand --arguments \&lt;path&gt;</code>]</p>
 </li>
 </ol>
-<h3 id="installation-and-setup">Installation and Setup<a class="headerlink" href="#installation-and-setup" title="Permanent link">&para;</a></h3>
+<h4 id="installation-and-setup">Installation and Setup<a class="headerlink" href="#installation-and-setup" title="Anchor link to this section">⚓︎</a></h4>
 <ol>
 <li>
 <p>Install <a href="https://code.visualstudio.com/">Visual Studio Code</a></p>
@@ -3459,9 +3836,9 @@
 </li>
 <li>
 <p>Clone the repository</p>
-<div class="language-powershell highlight"><pre><span></span><code><span id="__span-2-1"><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a><span class="n">git</span> <span class="n">clone</span> <span class="n">https</span><span class="p">://</span><span class="n">github</span><span class="p">.</span><span class="n">com</span><span class="p">/</span><span class="n">TaskarCenterAtUW</span><span class="p">/</span><span class="n">tcat-wiki</span>
-</span><span id="__span-2-2"><a id="__codelineno-2-2" name="__codelineno-2-2" href="#__codelineno-2-2"></a><span class="nb">cd </span><span class="n">tcat-wiki</span>
-</span></code></pre></div>
+<div class="highlight"><pre><span></span><code><span class="n">git</span> <span class="n">clone</span> <span class="n">https</span><span class="p">://</span><span class="n">github</span><span class="p">.</span><span class="n">com</span><span class="p">/</span><span class="n">TaskarCenterAtUW</span><span class="p">/</span><span class="n">tcat-wiki</span>
+<span class="nb">cd </span><span class="n">tcat-wiki</span>
+</code></pre></div>
 </li>
 <li>
 <p>Install <a href="https://www.python.org/downloads/">Python</a></p>
@@ -3471,44 +3848,44 @@
 <ol>
 <li>
 <p>Create the virtual environment</p>
-<div class="language-powershell highlight"><pre><span></span><code><span id="__span-3-1"><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a><span class="n">python3</span> <span class="n">-m</span> <span class="n">venv</span> <span class="p">.</span><span class="n">venv</span>
-</span></code></pre></div>
+<div class="highlight"><pre><span></span><code><span class="n">python3</span> <span class="n">-m</span> <span class="n">venv</span> <span class="p">.</span><span class="n">venv</span>
+</code></pre></div>
 </li>
 <li>
 <p>Activate the virtual environment</p>
-<div class="language-powershell highlight"><pre><span></span><code><span id="__span-4-1"><a id="__codelineno-4-1" name="__codelineno-4-1" href="#__codelineno-4-1"></a><span class="p">.\.</span><span class="n">venv</span><span class="p">\</span><span class="n">Scripts</span><span class="p">\</span><span class="n">Activate</span><span class="p">.</span><span class="n">ps1</span>
-</span></code></pre></div>
+<div class="highlight"><pre><span></span><code><span class="p">.\.</span><span class="n">venv</span><span class="p">\</span><span class="n">Scripts</span><span class="p">\</span><span class="n">Activate</span><span class="p">.</span><span class="n">ps1</span>
+</code></pre></div>
 </li>
 </ol>
 </li>
 <li>
 <p>Install requirements</p>
-<div class="language-powershell highlight"><pre><span></span><code><span id="__span-5-1"><a id="__codelineno-5-1" name="__codelineno-5-1" href="#__codelineno-5-1"></a><span class="n">pip</span> <span class="n">install</span> <span class="n">-r</span> <span class="n">requirements</span><span class="p">.</span><span class="n">txt</span>
-</span></code></pre></div>
+<div class="highlight"><pre><span></span><code><span class="n">pip</span> <span class="n">install</span> <span class="n">-r</span> <span class="n">requirements</span><span class="p">.</span><span class="n">txt</span>
+</code></pre></div>
 </li>
 </ol>
-<h2 id="editing-instructions">Editing Instructions<a class="headerlink" href="#editing-instructions" title="Permanent link">&para;</a></h2>
+<h3 id="editing-instructions">Editing Instructions<a class="headerlink" href="#editing-instructions" title="Anchor link to this section">⚓︎</a></h3>
 <p>Refer to the documentation for <a href="https://zensical.org/docs/">Zensical</a>.</p>
-<h3 id="guide-files">Guide Files<a class="headerlink" href="#guide-files" title="Permanent link">&para;</a></h3>
+<h4 id="guide-files">Guide Files<a class="headerlink" href="#guide-files" title="Anchor link to this section">⚓︎</a></h4>
 <p>By default, guides appear in both their parent page's guides section and in the main guides list. You can control this using frontmatter flags (YAML comments, invisible on the built page).</p>
 <p>To exclude a guide from its parent's guides section:</p>
-<div class="language-yaml highlight"><pre><span></span><code><span id="__span-6-1"><a id="__codelineno-6-1" name="__codelineno-6-1" href="#__codelineno-6-1"></a><span class="nn">---</span>
-</span><span id="__span-6-2"><a id="__codelineno-6-2" name="__codelineno-6-2" href="#__codelineno-6-2"></a><span class="nt">title</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">Your Guide Title</span>
-</span><span id="__span-6-3"><a id="__codelineno-6-3" name="__codelineno-6-3" href="#__codelineno-6-3"></a><span class="nt">tags</span><span class="p">:</span>
-</span><span id="__span-6-4"><a id="__codelineno-6-4" name="__codelineno-6-4" href="#__codelineno-6-4"></a><span class="w">    </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">Guide</span>
-</span><span id="__span-6-5"><a id="__codelineno-6-5" name="__codelineno-6-5" href="#__codelineno-6-5"></a><span class="c1"># exclude-from-parent-guides-list</span>
-</span><span id="__span-6-6"><a id="__codelineno-6-6" name="__codelineno-6-6" href="#__codelineno-6-6"></a><span class="nn">---</span>
-</span></code></pre></div>
+<div class="highlight"><pre><span></span><code><span class="nn">---</span>
+<span class="nt">title</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">Your Guide Title</span>
+<span class="nt">tags</span><span class="p">:</span>
+<span class="w">    </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">Guide</span>
+<span class="c1"># exclude-from-parent-guides-list</span>
+<span class="nn">---</span>
+</code></pre></div>
 <p>To exclude a guide from the main guides list:</p>
-<div class="language-yaml highlight"><pre><span></span><code><span id="__span-7-1"><a id="__codelineno-7-1" name="__codelineno-7-1" href="#__codelineno-7-1"></a><span class="nn">---</span>
-</span><span id="__span-7-2"><a id="__codelineno-7-2" name="__codelineno-7-2" href="#__codelineno-7-2"></a><span class="nt">title</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">Your Guide Title</span>
-</span><span id="__span-7-3"><a id="__codelineno-7-3" name="__codelineno-7-3" href="#__codelineno-7-3"></a><span class="nt">tags</span><span class="p">:</span>
-</span><span id="__span-7-4"><a id="__codelineno-7-4" name="__codelineno-7-4" href="#__codelineno-7-4"></a><span class="w">    </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">Guide</span>
-</span><span id="__span-7-5"><a id="__codelineno-7-5" name="__codelineno-7-5" href="#__codelineno-7-5"></a><span class="c1"># exclude-from-main-guides-list</span>
-</span><span id="__span-7-6"><a id="__codelineno-7-6" name="__codelineno-7-6" href="#__codelineno-7-6"></a><span class="nn">---</span>
-</span></code></pre></div>
+<div class="highlight"><pre><span></span><code><span class="nn">---</span>
+<span class="nt">title</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">Your Guide Title</span>
+<span class="nt">tags</span><span class="p">:</span>
+<span class="w">    </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">Guide</span>
+<span class="c1"># exclude-from-main-guides-list</span>
+<span class="nn">---</span>
+</code></pre></div>
 <p>Both flags can be used together to exclude a guide from all guides lists.</p>
-<h3 id="images">Images<a class="headerlink" href="#images" title="Permanent link">&para;</a></h3>
+<h4 id="images">Images<a class="headerlink" href="#images" title="Anchor link to this section">⚓︎</a></h4>
 <p>Where possible, follow these guidelines for images:</p>
 <ol>
 <li>
@@ -3516,12 +3893,12 @@
 </li>
 <li>
 <p>Resizing: Scale images using <code>{ width="123" }</code>:</p>
-<div class="language-markdown highlight"><pre><span></span><code><span id="__span-8-1"><a id="__codelineno-8-1" name="__codelineno-8-1" href="#__codelineno-8-1"></a>![<span class="nt">alt text</span>](<span class="na">image.png</span>){ width=&quot;300&quot; }
-</span></code></pre></div>
+<div class="highlight"><pre><span></span><code>![<span class="nt">alt text</span>](<span class="na">image.png</span>){ width=&quot;300&quot; }
+</code></pre></div>
 </li>
 </ol>
 <p>Refer to <a href="https://zensical.org/docs/authoring/images/">Zensical: Images</a> for more information.</p>
-<h4 id="screenshots">Screenshots<a class="headerlink" href="#screenshots" title="Permanent link">&para;</a></h4>
+<h5 id="screenshots">Screenshots<a class="headerlink" href="#screenshots" title="Anchor link to this section">⚓︎</a></h5>
 <p>For creating screenshots with a consistent style, Firefox DevTools is to be used.</p>
 <ol>
 <li>
@@ -3580,7 +3957,7 @@
 <p>It is recommended to remove all embedded metadata, such as with the use of <a href="https://exiftool.org/gui/">ExifToolGUI</a>.</p>
 </li>
 </ol>
-<h4 id="image-annotations">Image Annotations<a class="headerlink" href="#image-annotations" title="Permanent link">&para;</a></h4>
+<h5 id="image-annotations">Image Annotations<a class="headerlink" href="#image-annotations" title="Anchor link to this section">⚓︎</a></h5>
 <p>For creating image annotations with a consistent style, follow these guidelines.</p>
 <ol>
 <li>
@@ -3632,82 +4009,82 @@
 </ol>
 </li>
 </ol>
-<h4 id="qr-codes">QR Codes<a class="headerlink" href="#qr-codes" title="Permanent link">&para;</a></h4>
+<h5 id="qr-codes">QR Codes<a class="headerlink" href="#qr-codes" title="Anchor link to this section">⚓︎</a></h5>
 <ol>
 <li>Create QR codes using <a href="https://github.com/nayuki/QR-Code-generator">Project Nayuki's QR Code generator library</a>.</li>
 </ol>
-<h2 id="markdown-guide">Markdown Guide<a class="headerlink" href="#markdown-guide" title="Permanent link">&para;</a></h2>
-<h3 id="headers">Headers<a class="headerlink" href="#headers" title="Permanent link">&para;</a></h3>
-<div class="language-text highlight"><pre><span></span><code><span id="__span-9-1"><a id="__codelineno-9-1" name="__codelineno-9-1" href="#__codelineno-9-1"></a># H1 Header
-</span><span id="__span-9-2"><a id="__codelineno-9-2" name="__codelineno-9-2" href="#__codelineno-9-2"></a>## H2 Header
-</span><span id="__span-9-3"><a id="__codelineno-9-3" name="__codelineno-9-3" href="#__codelineno-9-3"></a>### H3 Header
-</span><span id="__span-9-4"><a id="__codelineno-9-4" name="__codelineno-9-4" href="#__codelineno-9-4"></a>#### H4 Header
-</span><span id="__span-9-5"><a id="__codelineno-9-5" name="__codelineno-9-5" href="#__codelineno-9-5"></a>##### H5 Header
-</span><span id="__span-9-6"><a id="__codelineno-9-6" name="__codelineno-9-6" href="#__codelineno-9-6"></a>###### H6 Header
-</span></code></pre></div>
-<h3 id="text-formatting">Text formatting<a class="headerlink" href="#text-formatting" title="Permanent link">&para;</a></h3>
-<div class="language-text highlight"><pre><span></span><code><span id="__span-10-1"><a id="__codelineno-10-1" name="__codelineno-10-1" href="#__codelineno-10-1"></a>**bold text**
-</span><span id="__span-10-2"><a id="__codelineno-10-2" name="__codelineno-10-2" href="#__codelineno-10-2"></a>*italic text*
-</span><span id="__span-10-3"><a id="__codelineno-10-3" name="__codelineno-10-3" href="#__codelineno-10-3"></a>***bold and italic***
-</span><span id="__span-10-4"><a id="__codelineno-10-4" name="__codelineno-10-4" href="#__codelineno-10-4"></a>~~strikethrough~~
-</span><span id="__span-10-5"><a id="__codelineno-10-5" name="__codelineno-10-5" href="#__codelineno-10-5"></a>`inline code`
-</span></code></pre></div>
-<h3 id="links-and-images">Links and images<a class="headerlink" href="#links-and-images" title="Permanent link">&para;</a></h3>
-<div class="language-text highlight"><pre><span></span><code><span id="__span-11-1"><a id="__codelineno-11-1" name="__codelineno-11-1" href="#__codelineno-11-1"></a>[Link text](https://example.com)
-</span><span id="__span-11-2"><a id="__codelineno-11-2" name="__codelineno-11-2" href="#__codelineno-11-2"></a>[Link with title](https://example.com &quot;Hover title&quot;)
-</span><span id="__span-11-3"><a id="__codelineno-11-3" name="__codelineno-11-3" href="#__codelineno-11-3"></a>![Alt text](image.jpg)
-</span><span id="__span-11-4"><a id="__codelineno-11-4" name="__codelineno-11-4" href="#__codelineno-11-4"></a>![Image with title](image.jpg &quot;Image title&quot;)
-</span></code></pre></div>
-<h3 id="lists">Lists<a class="headerlink" href="#lists" title="Permanent link">&para;</a></h3>
-<div class="language-text highlight"><pre><span></span><code><span id="__span-12-1"><a id="__codelineno-12-1" name="__codelineno-12-1" href="#__codelineno-12-1"></a>Unordered:
-</span><span id="__span-12-2"><a id="__codelineno-12-2" name="__codelineno-12-2" href="#__codelineno-12-2"></a>- Item 1
-</span><span id="__span-12-3"><a id="__codelineno-12-3" name="__codelineno-12-3" href="#__codelineno-12-3"></a>- Item 2
-</span><span id="__span-12-4"><a id="__codelineno-12-4" name="__codelineno-12-4" href="#__codelineno-12-4"></a>  - Nested item
-</span><span id="__span-12-5"><a id="__codelineno-12-5" name="__codelineno-12-5" href="#__codelineno-12-5"></a>
-</span><span id="__span-12-6"><a id="__codelineno-12-6" name="__codelineno-12-6" href="#__codelineno-12-6"></a>Ordered:
-</span><span id="__span-12-7"><a id="__codelineno-12-7" name="__codelineno-12-7" href="#__codelineno-12-7"></a>1. First item
-</span><span id="__span-12-8"><a id="__codelineno-12-8" name="__codelineno-12-8" href="#__codelineno-12-8"></a>2. Second item
-</span><span id="__span-12-9"><a id="__codelineno-12-9" name="__codelineno-12-9" href="#__codelineno-12-9"></a>3. Third item
-</span></code></pre></div>
-<h3 id="blockquotes">Blockquotes<a class="headerlink" href="#blockquotes" title="Permanent link">&para;</a></h3>
-<div class="language-text highlight"><pre><span></span><code><span id="__span-13-1"><a id="__codelineno-13-1" name="__codelineno-13-1" href="#__codelineno-13-1"></a>&gt; This is a blockquote
-</span><span id="__span-13-2"><a id="__codelineno-13-2" name="__codelineno-13-2" href="#__codelineno-13-2"></a>&gt; Multiple lines
-</span><span id="__span-13-3"><a id="__codelineno-13-3" name="__codelineno-13-3" href="#__codelineno-13-3"></a>&gt;&gt; Nested quote
-</span></code></pre></div>
-<h3 id="code-blocks">Code blocks<a class="headerlink" href="#code-blocks" title="Permanent link">&para;</a></h3>
-<div class="language-text highlight"><pre><span></span><code><span id="__span-14-1"><a id="__codelineno-14-1" name="__codelineno-14-1" href="#__codelineno-14-1"></a>```javascript
-</span><span id="__span-14-2"><a id="__codelineno-14-2" name="__codelineno-14-2" href="#__codelineno-14-2"></a>function hello() {
-</span><span id="__span-14-3"><a id="__codelineno-14-3" name="__codelineno-14-3" href="#__codelineno-14-3"></a>  console.log(&quot;Hello, world!&quot;);
-</span><span id="__span-14-4"><a id="__codelineno-14-4" name="__codelineno-14-4" href="#__codelineno-14-4"></a>}
-</span><span id="__span-14-5"><a id="__codelineno-14-5" name="__codelineno-14-5" href="#__codelineno-14-5"></a>```
-</span></code></pre></div>
-<h3 id="tables">Tables<a class="headerlink" href="#tables" title="Permanent link">&para;</a></h3>
-<div class="language-text highlight"><pre><span></span><code><span id="__span-15-1"><a id="__codelineno-15-1" name="__codelineno-15-1" href="#__codelineno-15-1"></a>| Header 1 | Header 2 | Header 3 |
-</span><span id="__span-15-2"><a id="__codelineno-15-2" name="__codelineno-15-2" href="#__codelineno-15-2"></a>|----------|----------|----------|
-</span><span id="__span-15-3"><a id="__codelineno-15-3" name="__codelineno-15-3" href="#__codelineno-15-3"></a>| Row 1    | Data     | Data     |
-</span><span id="__span-15-4"><a id="__codelineno-15-4" name="__codelineno-15-4" href="#__codelineno-15-4"></a>| Row 2    | Data     | Data     |
-</span></code></pre></div>
-<h3 id="horizontal-rule">Horizontal rule<a class="headerlink" href="#horizontal-rule" title="Permanent link">&para;</a></h3>
-<div class="language-text highlight"><pre><span></span><code><span id="__span-16-1"><a id="__codelineno-16-1" name="__codelineno-16-1" href="#__codelineno-16-1"></a>---
-</span><span id="__span-16-2"><a id="__codelineno-16-2" name="__codelineno-16-2" href="#__codelineno-16-2"></a>or
-</span><span id="__span-16-3"><a id="__codelineno-16-3" name="__codelineno-16-3" href="#__codelineno-16-3"></a>***
-</span><span id="__span-16-4"><a id="__codelineno-16-4" name="__codelineno-16-4" href="#__codelineno-16-4"></a>or
-</span><span id="__span-16-5"><a id="__codelineno-16-5" name="__codelineno-16-5" href="#__codelineno-16-5"></a>___
-</span></code></pre></div>
-<h3 id="task-lists">Task lists<a class="headerlink" href="#task-lists" title="Permanent link">&para;</a></h3>
-<div class="language-text highlight"><pre><span></span><code><span id="__span-17-1"><a id="__codelineno-17-1" name="__codelineno-17-1" href="#__codelineno-17-1"></a>- [x] Completed task
-</span><span id="__span-17-2"><a id="__codelineno-17-2" name="__codelineno-17-2" href="#__codelineno-17-2"></a>- [ ] Incomplete task
-</span><span id="__span-17-3"><a id="__codelineno-17-3" name="__codelineno-17-3" href="#__codelineno-17-3"></a>- [ ] Another task
-</span></code></pre></div>
-<h3 id="escaping-characters">Escaping characters<a class="headerlink" href="#escaping-characters" title="Permanent link">&para;</a></h3>
-<div class="language-text highlight"><pre><span></span><code><span id="__span-18-1"><a id="__codelineno-18-1" name="__codelineno-18-1" href="#__codelineno-18-1"></a>Use backslash to escape: \* \_ \# \`
-</span></code></pre></div>
-<h3 id="line-breaks">Line breaks<a class="headerlink" href="#line-breaks" title="Permanent link">&para;</a></h3>
-<div class="language-text highlight"><pre><span></span><code><span id="__span-19-1"><a id="__codelineno-19-1" name="__codelineno-19-1" href="#__codelineno-19-1"></a>End a line with two spaces
-</span><span id="__span-19-2"><a id="__codelineno-19-2" name="__codelineno-19-2" href="#__codelineno-19-2"></a>to create a line break.
-</span><span id="__span-19-3"><a id="__codelineno-19-3" name="__codelineno-19-3" href="#__codelineno-19-3"></a>
-</span><span id="__span-19-4"><a id="__codelineno-19-4" name="__codelineno-19-4" href="#__codelineno-19-4"></a>Or use a blank line for a new paragraph.
-</span></code></pre></div>
+<h3 id="markdown-guide">Markdown Guide<a class="headerlink" href="#markdown-guide" title="Anchor link to this section">⚓︎</a></h3>
+<h4 id="headers">Headers<a class="headerlink" href="#headers" title="Anchor link to this section">⚓︎</a></h4>
+<div class="highlight"><pre><span></span><code># H1 Header
+## H2 Header
+### H3 Header
+#### H4 Header
+##### H5 Header
+###### H6 Header
+</code></pre></div>
+<h4 id="text-formatting">Text formatting<a class="headerlink" href="#text-formatting" title="Anchor link to this section">⚓︎</a></h4>
+<div class="highlight"><pre><span></span><code>**bold text**
+*italic text*
+***bold and italic***
+~~strikethrough~~
+`inline code`
+</code></pre></div>
+<h4 id="links-and-images">Links and images<a class="headerlink" href="#links-and-images" title="Anchor link to this section">⚓︎</a></h4>
+<div class="highlight"><pre><span></span><code>[Link text](https://example.com)
+[Link with title](https://example.com &quot;Hover title&quot;)
+![Alt text](image.jpg)
+![Image with title](image.jpg &quot;Image title&quot;)
+</code></pre></div>
+<h4 id="lists">Lists<a class="headerlink" href="#lists" title="Anchor link to this section">⚓︎</a></h4>
+<div class="highlight"><pre><span></span><code>Unordered:
+- Item 1
+- Item 2
+  - Nested item
+
+Ordered:
+1. First item
+2. Second item
+3. Third item
+</code></pre></div>
+<h4 id="blockquotes">Blockquotes<a class="headerlink" href="#blockquotes" title="Anchor link to this section">⚓︎</a></h4>
+<div class="highlight"><pre><span></span><code>&gt; This is a blockquote
+&gt; Multiple lines
+&gt;&gt; Nested quote
+</code></pre></div>
+<h4 id="code-blocks">Code blocks<a class="headerlink" href="#code-blocks" title="Anchor link to this section">⚓︎</a></h4>
+<div class="highlight"><pre><span></span><code>```javascript
+function hello() {
+  console.log(&quot;Hello, world!&quot;);
+}
+```
+</code></pre></div>
+<h4 id="tables">Tables<a class="headerlink" href="#tables" title="Anchor link to this section">⚓︎</a></h4>
+<div class="highlight"><pre><span></span><code>| Header 1 | Header 2 | Header 3 |
+|----------|----------|----------|
+| Row 1    | Data     | Data     |
+| Row 2    | Data     | Data     |
+</code></pre></div>
+<h4 id="horizontal-rule">Horizontal rule<a class="headerlink" href="#horizontal-rule" title="Anchor link to this section">⚓︎</a></h4>
+<div class="highlight"><pre><span></span><code>---
+or
+***
+or
+___
+</code></pre></div>
+<h4 id="task-lists">Task lists<a class="headerlink" href="#task-lists" title="Anchor link to this section">⚓︎</a></h4>
+<div class="highlight"><pre><span></span><code>- [x] Completed task
+- [ ] Incomplete task
+- [ ] Another task
+</code></pre></div>
+<h4 id="escaping-characters">Escaping characters<a class="headerlink" href="#escaping-characters" title="Anchor link to this section">⚓︎</a></h4>
+<div class="highlight"><pre><span></span><code>Use backslash to escape: \* \_ \# \`
+</code></pre></div>
+<h4 id="line-breaks">Line breaks<a class="headerlink" href="#line-breaks" title="Anchor link to this section">⚓︎</a></h4>
+<div class="highlight"><pre><span></span><code>End a line with two spaces
+to create a line break.
+
+Or use a blank line for a new paragraph.
+</code></pre></div>
 
 
   <nav class="md-tags" >
@@ -3775,7 +4152,7 @@
       <nav class="md-footer__inner md-grid" aria-label="Footer" >
         
           
-          <a href=".." class="md-footer__link md-footer__link--prev" aria-label="Previous: TCAT Wiki">
+          <a href=".." class="md-footer__link md-footer__link--prev" aria-label="Previous: Index">
             <div class="md-footer__button md-icon">
               
               <svg xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="lucide lucide-arrow-left" viewBox="0 0 24 24"><path d="m12 19-7-7 7-7M19 12H5"/></svg>
@@ -3785,7 +4162,7 @@
                 Previous
               </span>
               <div class="md-ellipsis">
-                TCAT Wiki
+                Index
               </div>
             </div>
           </a>
@@ -3902,12 +4279,18 @@
       
       
       
-      <script id="__config" type="application/json">{"annotate":null,"base":"..","features":["announce.dismiss","content.code.annotate","content.code.copy","content.code.select","content.footnote.tooltips","content.tabs.link","content.tooltips","navigation.footer","navigation.indexes","navigation.instant","navigation.instant.prefetch","navigation.instant.progress","navigation.path","navigation.sections","navigation.tabs","navigation.top","navigation.tracking","toc.follow","toc.integrate"],"search":"../assets/javascripts/workers/search.e2d2d235.min.js","tags":null,"translations":{"clipboard.copied":"Copied to clipboard","clipboard.copy":"Copy to clipboard","search.result.more.one":"1 more on this page","search.result.more.other":"# more on this page","search.result.none":"No matching documents","search.result.one":"1 matching document","search.result.other":"# matching documents","search.result.placeholder":"Type to start searching","search.result.term.missing":"Missing","select.version":"Select version"},"version":null}</script>
+      <script id="__config" type="application/json">{"annotate":null,"base":"..","features":["announce.dismiss","content.code.annotate","content.code.copy","content.code.select","content.footnote.tooltips","content.tabs.link","content.tooltips","navigation.footer","navigation.indexes","navigation.instant","navigation.instant.prefetch","navigation.instant.progress","navigation.path","navigation.sections","navigation.tabs","navigation.top","navigation.tracking","toc.follow"],"search":"../assets/javascripts/workers/search.e2d2d235.min.js","tags":null,"translations":{"clipboard.copied":"Copied to clipboard","clipboard.copy":"Copy to clipboard","search.result.more.one":"1 more on this page","search.result.more.other":"# more on this page","search.result.none":"No matching documents","search.result.one":"1 matching document","search.result.other":"# matching documents","search.result.placeholder":"Type to start searching","search.result.term.missing":"Missing","select.version":"Select version"},"version":null}</script>
     
     
       <script src="../assets/javascripts/bundle.00c35305.min.js"></script>
       
         <script src="../javascripts/extra.js"></script>
+      
+        <script src="../javascripts/katex.js"></script>
+      
+        <script src="https://unpkg.com/katex@0/dist/katex.min.js"></script>
+      
+        <script src="https://unpkg.com/katex@0/dist/contrib/auto-render.min.js"></script>
       
     
   </body>

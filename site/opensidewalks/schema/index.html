@@ -91,6 +91,8 @@
     
       <link rel="stylesheet" href="../../stylesheets/extra.css">
     
+      <link rel="stylesheet" href="https://unpkg.com/katex@0/dist/katex.min.css">
+    
     <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce(((e,t)=>(e<<5)-e+t.charCodeAt(0)),0),__md_get=(e,t=localStorage,a=__md_scope)=>JSON.parse(t.getItem(a.pathname+"."+e)),__md_set=(e,t,a=localStorage,_=__md_scope)=>{try{a.setItem(_.pathname+"."+e,JSON.stringify(t))}catch(e){}},document.documentElement.setAttribute("data-platform",navigator.platform)</script>
     
       
@@ -227,7 +229,7 @@
       <a href="../.." class="md-tabs__link">
         
   
-  TCAT Wiki
+  Index
 
       </a>
     </li>
@@ -462,9 +464,7 @@
   
 
 
-  
-
-<nav class="md-nav md-nav--primary md-nav--lifted md-nav--integrated" aria-label="Navigation" data-md-level="0">
+<nav class="md-nav md-nav--primary md-nav--lifted" aria-label="Navigation" data-md-level="0">
   <label class="md-nav__title" for="__drawer">
     <a href="../.." title="TCAT Wiki" class="md-nav__button md-logo" aria-label="TCAT Wiki" data-md-component="logo">
       
@@ -491,7 +491,7 @@
   <span class="md-ellipsis">
     
   
-    TCAT Wiki
+    Index
   
 
     
@@ -2993,6 +2993,589 @@
               </div>
             
             
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+  
+
+<nav class="md-nav md-nav--secondary" aria-label="On this page:">
+  
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      On this page:
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#opensidewalks-schema" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        OpenSidewalks Schema
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="OpenSidewalks Schema">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#opensidewalks-schema-entities" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        OpenSidewalks Schema Entities
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="OpenSidewalks Schema Entities">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#entity-categories" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Entity Categories
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Entity Categories">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1-core-entities" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1. Core Entities
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="1. Core Entities">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#nodes" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Nodes
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#edges" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Edges
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#zones" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Zones
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2-adjacent-entities" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2. Adjacent Entities
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="2. Adjacent Entities">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#points" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Points
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#lines" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Lines
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#polygons" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Polygons
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#3-custom-entities" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3. Custom Entities
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#entity-attributes" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Entity Attributes
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#entity-type-inference" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Entity Type Inference
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#metadata-fields" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Metadata Fields
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#network-topologies" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Network Topologies
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Network Topologies">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#edges-only-connect-end-to-end" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Edges only connect end-to-end
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#a-road-entity-and-a-crossing-that-intersects-with-it-should-share-a-node" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        A road entity and a crossing that intersects with it should share a Node
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#crossings-do-not-connect-to-sidewalk-centerlines" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Crossings do not connect to sidewalk centerlines
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#curb-interfaces-and-curb-ramps-are-mapped-at-edge-endpoints" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Curb interfaces and curb ramps are mapped at Edge endpoints
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#serialization-formats" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Serialization Formats
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#coordinate-reference-system" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Coordinate Reference System
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#opensidewalks-dataset-metadata" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        OpenSidewalks Dataset Metadata
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#list-of-core-entities" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        List of Core Entities
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="List of Core Entities">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#nodes_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Nodes
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#edges_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Edges
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#zones_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Zones
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#list-of-adjacent-entities" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        List of Adjacent Entities
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="List of Adjacent Entities">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#points_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Points
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Points">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#lines_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Lines
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#polygons_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Polygons
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#list-of-custom-entities" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        List of Custom Entities
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="List of Custom Entities">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#custom-point" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Custom Point
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#custom-line" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Custom Line
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#custom-polygon" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Custom Polygon
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#fields" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Fields
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Fields">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#fields-overview" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Fields Overview
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#list-of-fields" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        List of fields
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#validation" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Validation
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#schema-versions" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Schema Versions
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#guides" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Guides
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Guides">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#core-edges-in-osw" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Core Edges in OSW
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#custom-points-in-osw" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Custom Points in OSW
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#opensidewalks-in-openstreetmap" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        OpenSidewalks in OpenStreetMap
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
           
           
             <div class="md-content" data-md-component="content">
@@ -3014,7 +3597,7 @@
       <a href="../.." class="md-path__link">
         
   <span class="md-ellipsis">
-    TCAT Wiki
+    Index
   </span>
 
       </a>
@@ -3067,21 +3650,932 @@
                 
                   
 
+  <h1>OpenSidewalks Schema</h1>
+
 <!-- @format -->
 
-<h1 id="opensidewalks-schema">OpenSidewalks Schema<a class="headerlink" href="#opensidewalks-schema" title="Permanent link">&para;</a></h1>
-<p>The <a href="https://github.com/OpenSidewalks/OpenSidewalks-Schema">OpenSidewalks Schema</a> is a proposed open pedestrian transportation network data standard which draws from and is intended to be largely compatible with OpenStreetMap data.</p>
+<h2 id="opensidewalks-schema">OpenSidewalks Schema<a class="headerlink" href="#opensidewalks-schema" title="Anchor link to this section">⚓︎</a></h2>
+<p>The <a href="https://github.com/OpenSidewalks/OpenSidewalks-Schema">OpenSidewalks Schema</a> is an open pedestrian transportation network data standard for describing and sharing pedestrian network and pedestrian network-adjacent data. The OpenSidewalks Schema promotes an explicit network (graph) model wherein its primary data entities can be deterministically transformed into graph Edges and graph Nodes.</p>
+<p>Therefore, OpenSidewalks Schema data represents a traversable and graph-analyzable network of (conditional) pedestrian paths like sidewalks, street crossings, some streets, and other paths, as well as metadata representing potential barriers.</p>
+<p>The OpenSidewalks Schema is explicitly a <em>network schema</em>: its primary features are defined and interpreted as elements of a network (or graph), i.e. Nodes and Edges. Therefore, OpenSidewalks Schema data is understood not only as a set of features describing pedestrian infrastructure, but as <em>connected elements</em> of a pedestrian network.</p>
+<p>The OpenSidewalks Schema draws from and is intended to be largely compatible with OpenStreetMap data, though it is possible to create OpenSidewalks Schema data not derived from OpenStreetMap.</p>
+<h3 id="opensidewalks-schema-entities">OpenSidewalks Schema Entities<a class="headerlink" href="#opensidewalks-schema-entities" title="Anchor link to this section">⚓︎</a></h3>
+<p>The OpenSidewalks Schema defines network and non-network data using a set of vector geometrical entity types, each of which has an associated geometry type compatible with either the Point, LineString, or Polygon specification of <a href="https://www.ogc.org/standards/sfa">Simple Feature Access</a>, fields that uniquely define the entity type (in combination), optional topological information, and optional key-value pair <a href="#metadata-fields">metadata fields</a> defined on a per-type basis.</p>
+<h4 id="entity-categories">Entity Categories<a class="headerlink" href="#entity-categories" title="Anchor link to this section">⚓︎</a></h4>
+<p>There are currently two major categories of OpenSidewalks Schema entities: Core Entities and Adjacent Entities.</p>
+<h5 id="1-core-entities">1. Core Entities<a class="headerlink" href="#1-core-entities" title="Anchor link to this section">⚓︎</a></h5>
+<p>Core Entities are the traversable entities which make up the OpenSidewalks pedestrian network.</p>
+<p>There are three types of core entity models:</p>
+<ul>
+<li>Nodes</li>
+<li>Edges</li>
+<li>Zones</li>
+</ul>
+<p>Nodes, Edges, and Zones are geometrical features (<abbr title="Open Geospatial Consortium">OGC</abbr> Points, LineStrings and Polygons, respectively) with network primitives defined such that a network (or graph) can be constructed purely from their metadata. Examples of each entity model:</p>
+<ul>
+<li>Node: a raise curb.</li>
+<li>Edge: a sidewalk.</li>
+<li>Zones: a square or plaza.</li>
+</ul>
+<h6 id="nodes">Nodes<a class="headerlink" href="#nodes" title="Anchor link to this section">⚓︎</a></h6>
+<p>Nodes are Point features (as defined in <a href="https://www.ogc.org/standards/sfa">Simple Feature Access</a>) that also contain metadata to identify them as network (graph) vertices. They must have a unique (within the dataset) <code>_id</code> field. Therefore, the set of network vertices in the dataset could be summarized as a set of these <code>_id</code> field values, consistent with the definition of vertices within a graph in graph theory. As a result of storing these vertex identifiers, Nodes may be placed within a traversable graph using only metadata, not spatial inference.</p>
+<h6 id="edges">Edges<a class="headerlink" href="#edges" title="Anchor link to this section">⚓︎</a></h6>
+<p>Edges are linear features that also contain metadata to identify them as network (graph) Edges. They must have two Node-referencing fields: <code>_u_id</code> and <code>_v_id</code>, which mean "this linear feature begins at the Node with <code>_id</code> of <code>_u_id</code> and ends at the Node with <code>_id</code> of <code>_v_id</code>. Therefore, a network (graph) may be constructed from a set of Nodes and Edges directly from metadata. Outside of the graph representation, Edges must have a unique (within the dataset) <code>_id</code> field.</p>
+<p>Note that Edges are directional features: they start at one Node and end at one Node. The data they represent is directional as well: their geospatial data must start at one location and end at another and Edges often have fields like <code>incline</code> that only have meaning when direction is understood: a positive incline value is uphill while a negative incline value is downhill. However, this does not mean that datasets must be curated with both "forward" (<code>u</code> to <code>v</code>) Edges and "reverse" (<code>v</code> to <code>u</code>) Edges: any "reverse" Edge can be inferred during graph creation.</p>
+<h6 id="zones">Zones<a class="headerlink" href="#zones" title="Anchor link to this section">⚓︎</a></h6>
+<p>Zones are Polygon features that also contain metadata to identify them as network (graph) Edges. They must have a list of Node references: <code>_w_id</code>, which mean "this 2-dimensional Polygon feature consists of a complete graph with every pair of distinct Nodes in <code>_w_id</code> connected by a unique Edge.</p>
+<p>Note that this would yield <span class="arithmatex">\(k(k-1)/2\)</span> Edges for a Zone comprised of <span class="arithmatex">\(k\)</span> Nodes.</p>
+<h5 id="2-adjacent-entities">2. Adjacent Entities<a class="headerlink" href="#2-adjacent-entities" title="Anchor link to this section">⚓︎</a></h5>
+<p>Adjacent Entities are pedestrian network-adjacent entities that help describe the surrounding environment of the pedestrian network and can be used to augment the traversable network with important information. For example, a blind user would benefit from knowing that the footway they are using is adjacent to vegetation on their right side and a lake on their left side, or a park visitor would want to know where benches are located along their walk. Adjacent entities are not required for producing a valid OpenSidewalks dataset.</p>
+<p>There are three types of adjacent entity models:</p>
+<ul>
+<li>Points</li>
+<li>Lines</li>
+<li>Polygons</li>
+</ul>
+<p>Points, Lines, and Polygons are solely geometrical <abbr title="Open Geospatial Consortium">OGC</abbr> features and they lack network metadata: their relationship to other members of the dataset is spatial. Adjacent entities are features relevant to the pedestrian network that are nevertheless not represented as elements of it: they are nearby and useful for producing descriptions, flagging potential barriers, etc.</p>
+<p>Examples of each adjacent entity model:</p>
+<ul>
+<li>Point: a fire hydrant.</li>
+<li>Line: a wall or a fence.</li>
+<li>Polygon: a planter.</li>
+</ul>
+<p>OpenSidewalks schema includes some Adjacent Entities which we found valuable to the pedestrian experience and are readily available through community contributions on OpenStreetMap. Other Custom Entities can also be included in an OpenSidewalks dataset and subsequently spatially merged with the Core Entities defined in the schema.</p>
+<h6 id="points">Points<a class="headerlink" href="#points" title="Anchor link to this section">⚓︎</a></h6>
+<p>Points are features that are geometrically defined by a single latitude-longitude pair: a point on the planet. They are explicitly <strong>not</strong> elements of the pedestrian network definition (i.e. the graph structure described by Nodes and Edges), but they are still highly relevant to the physical pedestrian network. Points may be considered part of the real physical pedestrian network, but aren't appropriate as elements of the network described by the OpenSidewalks Schema. All Points must have a unique <code>_id</code> field.</p>
+<h6 id="lines">Lines<a class="headerlink" href="#lines" title="Anchor link to this section">⚓︎</a></h6>
+<p>Lines are features that are geometrically defined by a series of coordinates forming a LineString. They are explicitly <strong>not</strong> elements of the pedestrian network definition (i.e. the graph structure described by Nodes, Edges and Zones), but they are still highly relevant to the physical pedestrian network. All Lines must have a unique <code>_id</code> field.</p>
+<h6 id="polygons">Polygons<a class="headerlink" href="#polygons" title="Anchor link to this section">⚓︎</a></h6>
+<p>Polygons describe 2-dimensional areas which are adjacent to pedestrian paths. They are explicitly <strong>not</strong> elements of the pedestrian network definition (i.e. the graph structure described by Nodes, Edges and Zones), but they are still highly relevant to the physical pedestrian network. All Polygons must have a unique <code>_id</code> field.</p>
+<h5 id="3-custom-entities">3. Custom Entities<a class="headerlink" href="#3-custom-entities" title="Anchor link to this section">⚓︎</a></h5>
+<p>Custom Entities are user-defined features that extend the OpenSidewalks Schema beyond the predefined Core and Adjacent categories. They enable incorporation of bespoke data layers while maintaining schema consistency. Custom Entities can take one of three geometry types:</p>
+<ul>
+<li><a href="#custom-points">Points</a></li>
+<li><a href="#custom-lines">Lines</a></li>
+<li><a href="#custom-polygons">Polygons</a></li>
+</ul>
+<h4 id="entity-attributes">Entity Attributes<a class="headerlink" href="#entity-attributes" title="Anchor link to this section">⚓︎</a></h4>
+<p>Every entity has a set of defining attributes:</p>
+<ul>
+<li><strong><em>geometry type</em></strong> that define the <abbr title="Open Geospatial Consortium">OGC</abbr> geospatial type of the feature.</li>
+<li><strong><em>identifying fields</em></strong> that must be matched to infer the entity type.</li>
+<li><strong><em>optional fields</em></strong> that describe additional attributes of the entity.</li>
+<li><strong><em>additional fields</em></strong> that describe attributes of the entity which have not been captured by the OpenSidewalks schema. Any <em>additional fields</em> must be prefixed with <code>ext:</code>.</li>
+</ul>
+<h4 id="entity-type-inference">Entity Type Inference<a class="headerlink" href="#entity-type-inference" title="Anchor link to this section">⚓︎</a></h4>
+<p>Intended to closely mirror OpenStreetMap entities, OpenSidewalks Schema entities are identified by their set of attributes. Fields that uniquely identify an entity type are called <em>identifying fields</em>. In most cases, if an entity has all of the <em>identifying fields</em> specified and a matching <em>geometry type</em>, its type is matched. The only exception is for entities whose <em>identifying fields</em> are also a subset of other entities' <em>identifying fields</em>, in which case they are identified by (1) having all of the <em>identifying fields</em> listed and a matching <em>geometry type</em> and also (2) <strong>not</strong> any of the <em>identifying fields</em> of subtypes.</p>
+<h4 id="metadata-fields">Metadata Fields<a class="headerlink" href="#metadata-fields" title="Anchor link to this section">⚓︎</a></h4>
+<p>The optional metadata fields that may be populated for OpenSidewalks Schema entities are largely inspired by and compatible with (reading from) OpenStreetMap data.</p>
+<p>OpenStreetMap-derived fields represent a standardized and constrained interpretation of OpenStreetMap tags that often represent boolean values as yes/no strings, have unclear enumerated value tags, or allow the use of many different units for distances (e.g., a path's width may be described in meters, centimeters, feet, or other units in OpenStreetMap). The standardization of field types is itself inspired by the OpenMapTiles standard, which is optimized for protobuf-based serialization.</p>
+<p>The combination of metadata standardization and network structures make OpenSidewalks data machine-readable and amenable to standardized analysis pipelines.</p>
+<p>Additional information on field types can be found in the overview subsection of the fields section.</p>
+<h4 id="network-topologies">Network Topologies<a class="headerlink" href="#network-topologies" title="Anchor link to this section">⚓︎</a></h4>
+<p>The OpenSidewalks Schema includes network topological rules for the ways in which network-mappable entities can be connected.</p>
+<h5 id="edges-only-connect-end-to-end">Edges only connect end-to-end<a class="headerlink" href="#edges-only-connect-end-to-end" title="Anchor link to this section">⚓︎</a></h5>
+<p>While a graph structure may be inferred from Edges via their endpoints, the use of <code>_u_id</code> and <code>_v_id</code> are preferred. However, Edge entities should still meet end-to-end as they are intended to represent a physically-connected space.</p>
+<p>Similarly, no connection is implied when the linear geometries of Edges cross.</p>
+<h5 id="a-road-entity-and-a-crossing-that-intersects-with-it-should-share-a-node">A road entity and a crossing that intersects with it should share a Node<a class="headerlink" href="#a-road-entity-and-a-crossing-that-intersects-with-it-should-share-a-node" title="Anchor link to this section">⚓︎</a></h5>
+<p>In addition to the above rule about Edge entities connecting end-to-end, it is considered incorrect for a street crossing to intersect with (cross) associated road entities. Instead, both the road and crossing entities should be split such that endpoints are shared.</p>
+<h5 id="crossings-do-not-connect-to-sidewalk-centerlines">Crossings do not connect to sidewalk centerlines<a class="headerlink" href="#crossings-do-not-connect-to-sidewalk-centerlines" title="Anchor link to this section">⚓︎</a></h5>
+<p>The OpenSidewalks Schema defines <a href="#crossing">Crossings</a> as existing only on the street surface and <a href="#sidewalk">Sidewalks</a> as describing only the sidewalk centerline. There must therefore always be space between a Sidewalk and a Crossing. A Sidewalk and Crossing should be connected by a plain <a href="#footway">Footway</a>.</p>
+<h5 id="curb-interfaces-and-curb-ramps-are-mapped-at-edge-endpoints">Curb interfaces and curb ramps are mapped at Edge endpoints<a class="headerlink" href="#curb-interfaces-and-curb-ramps-are-mapped-at-edge-endpoints" title="Anchor link to this section">⚓︎</a></h5>
+<p>Curb Nodes should be mapped directly at the endpoint(s) of one or more Edge(s): they are potential barriers or accessible infrastructure encountered along a path, so they should be available for inspection during network traversals. In other words, they are often important decision points when simulating a pedestrian moving through the network.</p>
+<h4 id="serialization-formats">Serialization Formats<a class="headerlink" href="#serialization-formats" title="Anchor link to this section">⚓︎</a></h4>
+<p>OpenSidewalks data entities are vector geometries with optional topological data along with metadata that defines the entity type and optional <a href="#metadata-fields">metadata fields</a> that are mappable to non-nested key-value pairs. As such, OpenSidewalks Schema data can be (de)serialized into a number of tabular and non-tabular <abbr title="Geographic Information System">GIS</abbr> and graph formats. There exists both a <a href="https://github.com/OpenSidewalks/OpenSidewalks-Schema/blob/main/opensidewalks.schema.json">reference JSON Schema for a GeoJSON serialization</a> codebase for the OpenSidewalks Schema as well as a PostgreSQL schema.</p>
+<h4 id="coordinate-reference-system">Coordinate Reference System<a class="headerlink" href="#coordinate-reference-system" title="Anchor link to this section">⚓︎</a></h4>
+<p>OpenSidewalks uses the World Geodetic System 1984 (WGS-84) coordinate system. WGS-84 is a geographic coordinate reference system (<abbr title="Coordinate Reference System">CRS</abbr>) with longitude and latitude units of decimal degrees.</p>
+<p>In compliance with the RFC 7946 GeoJSON, OpenSidewalks GeoJSON files will not include a <code>"crs":</code> element.</p>
+<h4 id="opensidewalks-dataset-metadata">OpenSidewalks Dataset Metadata<a class="headerlink" href="#opensidewalks-dataset-metadata" title="Anchor link to this section">⚓︎</a></h4>
+<p>Each file in the OpenSidewalks dataset will contain the following metadata fields:</p>
+<ul>
+<li><code>$schema</code> (string, required): this field specifies the <a href="#schema-versions">schema version</a> which the dataset is compliant with and should be used for validation.</li>
+<li><code>dataSource</code> (object, optional): the data source which was used to generate the dataset. This can be OpenStreetMap, aerial imagery, or a dataset provided by an agency or a combination of sources.</li>
+<li><code>region</code> (MultiPolygon, optional): a MultiPolygon capturing the geographical area covered by the OpenSidewalks dataset.</li>
+<li><code>dataTimestamp</code> (date/time, optional): a date/time field stating the freshness of the data used in creating the OpenSidewalks dataset. For example, if aerial imagery was the basis for generating a dataset then the timestamp associated with these images can be used.</li>
+<li><code>pipelineVersion</code> (object, optional): the software and version of the software that was used to generate the dataset.</li>
+</ul>
+<p>The following is a sample snippet demonstrating the use of these metadata fields:</p>
+<div class="highlight"><pre><span></span><code><span class="p">{</span>
+<span class="w">    </span><span class="nt">&quot;$schema&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;https://sidewalks.washington.edu/opensidewalks/0.2/schema.json&quot;</span><span class="p">,</span>
+<span class="w">    </span><span class="nt">&quot;dataSource&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
+<span class="w">        </span><span class="nt">&quot;name&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;OpenStreetMap&quot;</span><span class="p">,</span>
+<span class="w">        </span><span class="nt">&quot;copyright&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;https://www.openstreetmap.org/copyright&quot;</span><span class="p">,</span>
+<span class="w">        </span><span class="nt">&quot;license&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;https://opendatacommons.org/licenses/odbl/1-0/&quot;</span>
+<span class="w">    </span><span class="p">},</span>
+<span class="w">    </span><span class="nt">&quot;region&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
+<span class="w">        </span><span class="nt">&quot;type&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;MultiPolygon&quot;</span><span class="p">,</span>
+<span class="w">        </span><span class="nt">&quot;coordinates&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">[</span>
+<span class="w">            </span><span class="p">[</span>
+<span class="w">                </span><span class="p">[</span>
+<span class="w">                    </span><span class="p">[</span><span class="mf">-122.1369414</span><span class="p">,</span><span class="w"> </span><span class="mf">47.6365011</span><span class="p">],</span>
+<span class="w">                    </span><span class="p">[</span><span class="mf">-122.1431969</span><span class="p">,</span><span class="w"> </span><span class="mf">47.6365115</span><span class="p">],</span>
+<span class="w">                    </span><span class="p">[</span><span class="mf">-122.1431951</span><span class="p">,</span><span class="w"> </span><span class="mf">47.6469514</span><span class="p">],</span>
+<span class="w">                    </span><span class="p">[</span><span class="mf">-122.1430782</span><span class="p">,</span><span class="w"> </span><span class="mf">47.6495122</span><span class="p">],</span>
+<span class="w">                    </span><span class="p">[</span><span class="mf">-122.1429792</span><span class="p">,</span><span class="w"> </span><span class="mf">47.6495373</span><span class="p">]</span>
+<span class="w">                </span><span class="p">]</span>
+<span class="w">            </span><span class="p">]</span>
+<span class="w">        </span><span class="p">]</span>
+<span class="w">    </span><span class="p">},</span>
+<span class="w">    </span><span class="nt">&quot;dataTimestamp&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;2023-08-08T20:22:00Z&quot;</span><span class="p">,</span>
+<span class="w">    </span><span class="nt">&quot;pipelineVersion&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
+<span class="w">        </span><span class="nt">&quot;name&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;OSWDataPipeline&quot;</span><span class="p">,</span>
+<span class="w">        </span><span class="nt">&quot;version&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;0.2-beta&quot;</span><span class="p">,</span>
+<span class="w">        </span><span class="nt">&quot;url&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;https://github.com/TaskarCenterAtUW/OSWDataPipeline/tree/v0.2-beta&quot;</span>
+<span class="w">    </span><span class="p">}</span>
+<span class="p">}</span>
+</code></pre></div>
+<h4 id="list-of-core-entities">List of Core Entities<a class="headerlink" href="#list-of-core-entities" title="Anchor link to this section">⚓︎</a></h4>
+<h5 id="nodes_1">Nodes<a class="headerlink" href="#nodes_1" title="Anchor link to this section">⚓︎</a></h5>
+<p>Nodes are features that are geometrically defined by a single latitude-longitude pair: a point on the planet. They are also defined as a part of a pedestrian network: each Node must define an <code>_id</code> string field, a unique identifier to which Edges and Zones may refer using their <code>_u_id</code>, <code>_v_id</code> or <code>_w_id</code> fields.</p>
+<details class="abstract">
+<summary>Bare Node</summary>
+<p><table class="schema-table">
+<tr><td>Description</td><td>A special case of an abstract Node: this is a network (graph) Node description that does not have any special metadata beyond location and the <code>_id</code> field. A Bare Node exists when two Edges meet at a location that is not one of the other Node types. For example, a single sidewalk may be represented by two <a href="#sidewalk">Sidewalk</a> Edges with different <code>width</code> values, split where the width changes. There is no physical feature within the OpenSidewalks Schema at the location of that split: it is just a Bare Node that connects the two Edges together.<br><br>Another way to interpret a Bare Node is in terms of the Edge definition rules: the Nodes referenced by <code>_u_id</code> and <code>_v_id</code> must exist within the dataset, so we must define Nodes wherever Edges meet regardless of whether that point in space has additional metadata.</td></tr>
+<tr><td>Subtype of</td><td><em>None</em></td></tr>
+<tr><td>Geometry</td><td>Point</td></tr>
+<tr><td>Identifying Fields</td><td>(must have the <code>_id</code> field, like all Nodes)</td></tr>
+<tr><td>Optional Fields</td><td><em>None</em></td></tr>
+</table></p>
+</details>
+<details class="abstract">
+<summary>Generic Curb</summary>
+<p><table class="schema-table">
+<tr><td>Description</td><td>A curb for which a type has not been determined yet or a type could not be determined despite some effort.</td></tr>
+<tr><td>Subtype of</td><td><em>None</em></td></tr>
+<tr><td>Geometry</td><td>Point</td></tr>
+<tr><td>Identifying Fields</td><td><code>barrier=kerb</code></td></tr>
+<tr><td>Optional Fields</td><td><a href="#tactile-paving"><code>tactile_paving</code></a></td></tr>
+</table></p>
+</details>
+<details class="abstract">
+<summary>Raised Curb</summary>
+<p><table class="schema-table">
+<tr><td>Description</td><td>A single, designed vertical displacement that separates two Edges. A common example is the curb that separates a street crossing from a sidewalk. This is mapped at the Node where the two Edges meet - on top of the curb is physically located.</td></tr>
+<tr><td>Subtype of</td><td><a href="#generic-curb">Generic Curb</a></td></tr>
+<tr><td>Geometry</td><td>Point</td></tr>
+<tr><td>Identifying Fields</td><td><code>barrier=kerb</code>, <code>kerb=raised</code></td></tr>
+<tr><td>Optional Fields</td><td>All <a href="#generic-curb">optional fields of generic curb</a></td></tr>
+</table></p>
+</details>
+<details class="abstract">
+<summary>Rolled Curb</summary>
+<p><table class="schema-table">
+<tr><td>Description</td><td>A curb interface with a quarter-circle profile: traversing this curb is like going over half of a bump. Located where two Edges meet, physically at the location of the curb itself.</td></tr>
+<tr><td>Subtype of</td><td><a href="#generic-curb">Generic Curb</a></td></tr>
+<tr><td>Geometry</td><td>Point</td></tr>
+<tr><td>Identifying Fields</td><td><code>barrier=kerb</code>, <code>kerb=rolled</code></td></tr>
+<tr><td>Optional Fields</td><td>All <a href="#generic-curb">optional fields of generic curb</a></td></tr>
+</table></p>
+</details>
+<details class="abstract">
+<summary>Curb Ramp</summary>
+<p><table class="schema-table">
+<tr><td>Description</td><td>A curb ramp (curb cut) mapped as a curb interface. Mapped at the location where the two Edges that it connects meet one another.</td></tr>
+<tr><td>Subtype of</td><td><a href="#generic-curb">Generic Curb</a></td></tr>
+<tr><td>Geometry</td><td>Point</td></tr>
+<tr><td>Identifying Fields</td><td><code>barrier=kerb</code>, <code>kerb=lowered</code></td></tr>
+<tr><td>Optional Fields</td><td>All <a href="#generic-curb">optional fields of generic curb</a></td></tr>
+</table></p>
+</details>
+<details class="abstract">
+<summary>Flush Curb</summary>
+<p><table class="schema-table">
+<tr><td>Description</td><td>An indicator that there is no raised curb interface where two Edges meet - i.e. where someone might expect a curb interface, such as where a crossing and footway meet.</td></tr>
+<tr><td>Subtype of</td><td><a href="#generic-curb">Generic Curb</a></td></tr>
+<tr><td>Geometry</td><td>Point</td></tr>
+<tr><td>Identifying Fields</td><td><code>barrier=kerb</code>, <code>kerb=flush</code></td></tr>
+<tr><td>Optional Fields</td><td>All <a href="#generic-curb">optional fields of generic curb</a></td></tr>
+</table></p>
+</details>
+<h5 id="edges_1">Edges<a class="headerlink" href="#edges_1" title="Anchor link to this section">⚓︎</a></h5>
+<p>Edges are Lines (their serializable geometries are representable by LineStrings) intended to represent pedestrian network connections. Edges are often derived from topological data like that stored in OpenStreetMap. All Edges must have a unique <code>_id</code> field.</p>
+<details class="abstract">
+<summary>Footway (plain)</summary>
+<p><table class="schema-table">
+<tr><td>Description</td><td>The centerline of a dedicated pedestrian path that does not fall into any other subcategories.</td></tr>
+<tr><td>Subtype of</td><td><em>None</em></td></tr>
+<tr><td>Geometry</td><td>LineString</td></tr>
+<tr><td>Identifying Fields</td><td><code>highway=footway</code><br><em>(and no <code>footway=*</code> subtag)</em></td></tr>
+<tr><td>Optional Fields</td><td><a href="#width">width</a><br><a href="#surface">surface</a><br><a href="#incline">incline</a><br><a href="#length">length</a><br><a href="#description">description</a><br><a href="#name">name</a><br><a href="#foot">foot</a></td></tr>
+</table></p>
+</details>
+<details class="abstract">
+<summary>Sidewalk</summary>
+<p><table class="schema-table">
+<tr><td>Description</td><td>The centerline of a sidewalk, a designated pedestrian path to the side of a street.</td></tr>
+<tr><td>Subtype of</td><td><a href="#footway">Footway</a></td></tr>
+<tr><td>Geometry</td><td>LineString</td></tr>
+<tr><td>Identifying Fields</td><td><code>highway=footway</code>, <code>footway=sidewalk</code></td></tr>
+<tr><td>Optional Fields</td><td>All <a href="#footway">optional fields of footway</a><br><a href="#description">description</a></td></tr>
+</table></p>
+</details>
+<details class="abstract">
+<summary>Crossing</summary>
+<p><table class="schema-table">
+<tr><td>Description</td><td>(Part of) the centerline of a pedestrian street crossing. A crossing exists only on the road surface itself, i.e. "from curb to curb".<br><br>Because crossings should be connected to the street network, they should be represented by at least two Edges: one from the first curb interface to the street centerline and one from the street centerline to the second curb interface, e.g..<br><br>Crossings should not be connected directly to sidewalk centerlines, as the sidewalk centerline is never the curb interface. Instead, a short footway should connect the two together.</td></tr>
+<tr><td>Subtype of</td><td><a href="#footway">Footway</a></td></tr>
+<tr><td>Geometry</td><td>LineString</td></tr>
+<tr><td>Identifying Fields</td><td><code>highway=footway</code>, <code>footway=crossing</code></td></tr>
+<tr><td>Optional Fields</td><td>All <a href="#footway">optional fields of footway</a><br><a href="#crossing-markings">crossing:markings</a></td></tr>
+</table></p>
+</details>
+<details class="abstract">
+<summary>Traffic Island</summary>
+<p><table class="schema-table">
+<tr><td>Description</td><td>The centerline of a footway traversing a traffic island. Some complex, long, or busy pedestrian crossings have a built-up "island" to protect pedestrians, splitting up the crossing of the street into two or more crossings. As a pedestrian uses this crossing, they will transition across these Edge elements: sidewalk → footway → crossing → traffic island → crossing → footway → sidewalk.</td></tr>
+<tr><td>Subtype of</td><td><a href="#footway">Footway</a></td></tr>
+<tr><td>Geometry</td><td>LineString</td></tr>
+<tr><td>Identifying Fields</td><td><code>highway=footway</code>, <code>footway=traffic_island</code></td></tr>
+<tr><td>Optional Fields</td><td>All <a href="#footway">optional fields of footway</a></td></tr>
+</table></p>
+</details>
+<details class="abstract">
+<summary>Pedestrian Road</summary>
+<p><table class="schema-table">
+<tr><td>Description</td><td>The centerline of a road or an area mainly or exclusively for pedestrians in which some vehicle traffic may be authorized.</td></tr>
+<tr><td>Subtype of</td><td><em>None</em></td></tr>
+<tr><td>Geometry</td><td>LineString</td></tr>
+<tr><td>Identifying Fields</td><td><code>highway=pedestrian</code></td></tr>
+<tr><td>Optional Fields</td><td><a href="#width">width</a><br><a href="#surface">surface</a><br><a href="#incline">incline</a><br><a href="#length">length</a><br><a href="#description">description</a><br><a href="#name">name</a><br><a href="#foot">foot</a></td></tr>
+</table></p>
+</details>
+<details class="abstract">
+<summary>Steps</summary>
+<p><table class="schema-table">
+<tr><td>Description</td><td>The centerline of a flight of steps on footways and paths.</td></tr>
+<tr><td>Subtype of</td><td><em>None</em></td></tr>
+<tr><td>Geometry</td><td>LineString</td></tr>
+<tr><td>Identifying Fields</td><td><code>highway=steps</code></td></tr>
+<tr><td>Optional Fields</td><td><a href="#width">width</a><br><a href="#surface">surface</a><br><a href="#incline">incline</a><br><a href="#length">length</a><br><a href="#description">description</a><br><a href="#name">name</a><br><a href="#stepcount">step_count</a><br><a href="#climb">climb</a><br><a href="#foot">foot</a></td></tr>
+</table></p>
+</details>
+<details class="abstract">
+<summary>Living Street</summary>
+<p><table class="schema-table">
+<tr><td>Description</td><td>A street designed with the interests of pedestrians and cyclists in mind by providing enriching and experiential spaces.</td></tr>
+<tr><td>Subtype of</td><td><em>None</em></td></tr>
+<tr><td>Geometry</td><td>LineString</td></tr>
+<tr><td>Identifying Fields</td><td><code>highway=living_street</code></td></tr>
+<tr><td>Optional Fields</td><td><a href="#width">width</a><br><a href="#surface">surface</a><br><a href="#incline">incline</a><br><a href="#length">length</a><br><a href="#description">description</a><br><a href="#name">name</a><br><a href="#foot">foot</a></td></tr>
+</table></p>
+</details>
+<details class="abstract">
+<summary>Motor Vehicle Roads</summary>
+<p>While OpenSidewalks schema is centered around the pedestrian experience and accessibility within the pedestrian network, the inclusion of roads as core entities in the schema is justified because:</p>
+<ol>
+<li>In some areas due to the lack of sidewalks, a pedestrian has to use a road to reach their destination.</li>
+<li>Sidewalks and crossings are typically referenced by pedestrians in relation to roads, i.e. "Use the Sidewalk East of Main St.", "Turn left and cross Broadway".</li>
+<li>A pedestrian's safety and environment is greatly impacted by their adjacency to a particular road. For example, a wheelchair user may choose to avoid crossing busy roads for their safety unless they have to.</li>
+</ol>
+<p>In order to simplify the job of OpenSidewalks consuming applications when attempting to route pedestrians, we have included a <a href="#foot">foot</a> field in all Edges and Zones to indicate whether an entity is safe to traverse by a pedestrian. We recommend applications clearly communicate the risk to pedestrians if they route users on entities with missing <a href="#foot">foot</a> field or with <code>foot=no</code>.</p>
+<details class="abstract">
+<summary>Primary Street</summary>
+<p><table class="schema-table">
+<tr><td>Description</td><td>The centerline of a major highway.</td></tr>
+<tr><td>Subtype of</td><td><em>None</em></td></tr>
+<tr><td>Geometry</td><td>LineString</td></tr>
+<tr><td>Identifying Fields</td><td><code>highway=primary</code></td></tr>
+<tr><td>Optional Fields</td><td><a href="#width">width</a><br><a href="#surface">surface</a><br><a href="#incline">incline</a><br><a href="#length">length</a><br><a href="#description">description</a><br><a href="#name">name</a><br><a href="#foot">foot</a></td></tr>
+</table></p>
+</details>
+<details class="abstract">
+<summary>Secondary Street</summary>
+<p><table class="schema-table">
+<tr><td>Description</td><td>The centerline of a secondary highway: not a major highway, but forms a major link in the national route network.</td></tr>
+<tr><td>Subtype of</td><td><em>None</em></td></tr>
+<tr><td>Geometry</td><td>LineString</td></tr>
+<tr><td>Identifying Fields</td><td><code>highway=secondary</code></td></tr>
+<tr><td>Optional Fields</td><td>All <a href="#primary-street">optional fields of a primary street</a>.</td></tr>
+</table></p>
+</details>
+<details class="abstract">
+<summary>Tertiary Street</summary>
+<p><table class="schema-table">
+<tr><td>Description</td><td>A road linking small settlements, or the local centers of a large town or city.</td></tr>
+<tr><td>Subtype of</td><td><em>None</em></td></tr>
+<tr><td>Geometry</td><td>LineString</td></tr>
+<tr><td>Identifying Fields</td><td><code>highway=tertiary</code></td></tr>
+<tr><td>Optional Fields</td><td>All <a href="#primary-street">optional fields of a primary street</a>.</td></tr>
+</table></p>
+</details>
+<details class="abstract">
+<summary>Residential Street</summary>
+<p><table class="schema-table">
+<tr><td>Description</td><td>A residential street.</td></tr>
+<tr><td>Subtype of</td><td><em>None</em></td></tr>
+<tr><td>Geometry</td><td>LineString</td></tr>
+<tr><td>Identifying Fields</td><td><code>highway=residential</code></td></tr>
+<tr><td>Optional Fields</td><td>All <a href="#primary-street">optional fields of a primary street</a>.</td></tr>
+</table></p>
+</details>
+<details class="abstract">
+<summary>Service Road</summary>
+<p><table class="schema-table">
+<tr><td>Description</td><td>A road intended for service use.</td></tr>
+<tr><td>Subtype of</td><td><em>None</em></td></tr>
+<tr><td>Geometry</td><td>LineString</td></tr>
+<tr><td>Identifying Fields</td><td><code>highway=service</code></td></tr>
+<tr><td>Optional Fields</td><td>All <a href="#primary-street">optional fields of a primary street</a>.</td></tr>
+</table></p>
+</details>
+<details class="abstract">
+<summary>Driveway</summary>
+<p><table class="schema-table">
+<tr><td>Description</td><td>The centerline of a driveway. Typically connects a residence or business to another road.</td></tr>
+<tr><td>Subtype of</td><td><a href="#service-road">Service road</a></td></tr>
+<tr><td>Geometry</td><td>LineString</td></tr>
+<tr><td>Identifying Fields</td><td><code>highway=service</code>, <code>service=driveway</code></td></tr>
+<tr><td>Optional Fields</td><td>All <a href="#primary-street">optional fields of a primary street</a>.</td></tr>
+</table></p>
+</details>
+<details class="abstract">
+<summary>Alley</summary>
+<p><table class="schema-table">
+<tr><td>Description</td><td>The centerline of an alley. An alley is usually located between properties and provides access to utilities and private entrances.</td></tr>
+<tr><td>Subtype of</td><td><a href="#service-road">Service road</a></td></tr>
+<tr><td>Geometry</td><td>LineString</td></tr>
+<tr><td>Identifying Fields</td><td><code>highway=service</code>, <code>service=alley</code></td></tr>
+<tr><td>Optional Fields</td><td>All <a href="#primary-street">optional fields of a primary street</a>.</td></tr>
+</table></p>
+</details>
+<details class="abstract">
+<summary>Parking Aisle</summary>
+<p><table class="schema-table">
+<tr><td>Description</td><td>The centerline of a subordinated way in a parking lot: vehicles drive on parking aisles to reach parking spaces in a parking lot.</td></tr>
+<tr><td>Subtype of</td><td><a href="#service-road">Service road</a></td></tr>
+<tr><td>Geometry</td><td>LineString</td></tr>
+<tr><td>Identifying Fields</td><td><code>highway=service</code>, <code>service=parking_aisle</code></td></tr>
+<tr><td>Optional Fields</td><td>All <a href="#primary-street">optional fields of a primary street</a>.</td></tr>
+</table></p>
+</details>
+<details class="abstract">
+<summary>Unclassified Road</summary>
+<p><table class="schema-table">
+<tr><td>Description</td><td>A minor public road, typically at the lowest level of whatever administrative hierarchy is used in that jurisdiction.</td></tr>
+<tr><td>Subtype of</td><td><em>None</em></td></tr>
+<tr><td>Geometry</td><td>LineString</td></tr>
+<tr><td>Identifying Fields</td><td><code>highway=unclassified</code></td></tr>
+<tr><td>Optional Fields</td><td>All <a href="#primary-street">optional fields of a primary street</a>.</td></tr>
+</table></p>
+</details>
+<details class="abstract">
+<summary>Trunk Road</summary>
+<p><table class="schema-table">
+<tr><td>Description</td><td>A high-performance or high-importance road that doesn't meet the requirements for motorway, but is not classified as highway=primary either.</td></tr>
+<tr><td>Subtype of</td><td><em>None</em></td></tr>
+<tr><td>Geometry</td><td>LineString</td></tr>
+<tr><td>Identifying Fields</td><td><code>highway=trunk</code></td></tr>
+<tr><td>Optional Fields</td><td>All <a href="#primary-street">optional fields of a primary street</a>.</td></tr>
+</table></p>
+</details>
+</details>
+<h4 id="zones_1">Zones<a class="headerlink" href="#zones_1" title="Anchor link to this section">⚓︎</a></h4>
+<p>Zones are features that are geometrically defined by a Polygon (a closed ring of coordinates). They are also defined as a part of a pedestrian network: each Zone must define an <code>_id</code> string field, a unique identifier, and a list (<code>_w_id</code>) of Node <code>_id</code>s that define the Zone's boundary.</p>
+<details class="abstract">
+<summary>Pedestrian Zone</summary>
+<p><table class="schema-table">
+<tr><td>Description</td><td>An area where pedestrians can travel freely in all directions.</td></tr>
+<tr><td>Subtype of</td><td><em>None</em></td></tr>
+<tr><td>Geometry</td><td>Polygon</td></tr>
+<tr><td>Identifying Fields</td><td><code>highway=pedestrian</code></td></tr>
+<tr><td>Optional Fields</td><td><a href="#surface">surface</a><br><a href="#description">description</a><br><a href="#name">name</a><br><a href="#foot">foot</a></td></tr>
+</table></p>
+</details>
+<h3 id="list-of-adjacent-entities">List of Adjacent Entities<a class="headerlink" href="#list-of-adjacent-entities" title="Anchor link to this section">⚓︎</a></h3>
+<h4 id="points_1">Points<a class="headerlink" href="#points_1" title="Anchor link to this section">⚓︎</a></h4>
+<p>Points are features that are geometrically defined by a single latitude-longitude pair: a point on the planet. They are explicitly <strong>not</strong> elements of the pedestrian network definition (i.e. the graph structure described by Nodes and Edges), but they are still highly relevant to the physical pedestrian network. All Points must have a unique <code>_id</code> field.</p>
+<details class="abstract">
+<summary>Power Pole</summary>
+<p><table class="schema-table">
+<tr><td>Description</td><td>A power pole. Often made of wood or metal, they hold power lines.</td></tr>
+<tr><td>Subtype of</td><td><em>None</em></td></tr>
+<tr><td>Geometry</td><td>Point</td></tr>
+<tr><td>Identifying Fields</td><td><code>power=pole</code></td></tr>
+<tr><td>Optional Fields</td><td><em>None</em></td></tr>
+</table></p>
+</details>
+<details class="abstract">
+<summary>Fire Hydrant</summary>
+<p><table class="schema-table">
+<tr><td>Description</td><td>A fire hydrant - where fire response teams connect high-pressure hoses.</td></tr>
+<tr><td>Subtype of</td><td><em>None</em></td></tr>
+<tr><td>Geometry</td><td>Point</td></tr>
+<tr><td>Identifying Fields</td><td><code>emergency=fire_hydrant</code></td></tr>
+<tr><td>Optional Fields</td><td><em>None</em></td></tr>
+</table></p>
+</details>
+<details class="abstract">
+<summary>Bench</summary>
+<p><table class="schema-table">
+<tr><td>Description</td><td>A bench - a place for people to sit; allows room for several people.</td></tr>
+<tr><td>Subtype of</td><td><em>None</em></td></tr>
+<tr><td>Geometry</td><td>Point</td></tr>
+<tr><td>Identifying Fields</td><td><code>amenity=bench</code></td></tr>
+<tr><td>Optional Fields</td><td><em>None</em></td></tr>
+</table></p>
+</details>
+<details class="abstract">
+<summary>Bollard</summary>
+<p><table class="schema-table">
+<tr><td>Description</td><td>A bollard - a solid pillar or pillars made of concrete, metal, plastic, etc., and used to control traffic.</td></tr>
+<tr><td>Subtype of</td><td><em>None</em></td></tr>
+<tr><td>Geometry</td><td>Point</td></tr>
+<tr><td>Identifying Fields</td><td><code>barrier=bollard</code></td></tr>
+<tr><td>Optional Fields</td><td><em>None</em></td></tr>
+</table></p>
+</details>
+<details class="abstract">
+<summary>Manhole</summary>
+<p><table class="schema-table">
+<tr><td>Description</td><td>A manhole - a hole with a cover that allows access to an underground service location, just large enough for a human to climb through.</td></tr>
+<tr><td>Subtype of</td><td><em>None</em></td></tr>
+<tr><td>Geometry</td><td>Point</td></tr>
+<tr><td>Identifying Fields</td><td><code>man_made=manhole</code></td></tr>
+<tr><td>Optional Fields</td><td><em>None</em></td></tr>
+</table></p>
+</details>
+<details class="abstract">
+<summary>Street Lamp</summary>
+<p><table class="schema-table">
+<tr><td>Description</td><td>A street lamp - a street light, lamppost, street lamp, light standard, or lamp standard: a raised source of light above a road, which is turned on or lit at night.</td></tr>
+<tr><td>Subtype of</td><td><em>None</em></td></tr>
+<tr><td>Geometry</td><td>Point</td></tr>
+<tr><td>Identifying Fields</td><td><code>highway=street_lamp</code></td></tr>
+<tr><td>Optional Fields</td><td><em>None</em></td></tr>
+</table></p>
+</details>
+<details class="abstract">
+<summary>Waste Basket</summary>
+<p><table class="schema-table">
+<tr><td>Description</td><td>A waste basket - a single small container for depositing garbage that is easily accessible for pedestrians.</td></tr>
+<tr><td>Subtype of</td><td><em>None</em></td></tr>
+<tr><td>Geometry</td><td>Point</td></tr>
+<tr><td>Identifying Fields</td><td><code>amenity=waste_basket</code></td></tr>
+<tr><td>Optional Fields</td><td><em>None</em></td></tr>
+</table></p>
+</details>
+<details class="abstract">
+<summary>Tree</summary>
+<p><table class="schema-table">
+<tr><td>Description</td><td>A tree - a tall, woody plant with branches emanating from a central trunk.</td></tr>
+<tr><td>Subtype of</td><td><em>None</em></td></tr>
+<tr><td>Geometry</td><td>Point</td></tr>
+<tr><td>Identifying Fields</td><td><code>natural=tree</code></td></tr>
+<tr><td>Optional Fields</td><td><a href="#leaf-cycle">leaf_cycle</a><br><a href="#leaf-type">leaf_type</a></td></tr>
+</table></p>
+</details>
+<h5 id="lines_1">Lines<a class="headerlink" href="#lines_1" title="Anchor link to this section">⚓︎</a></h5>
+<p>Lines are features that are geometrically defined by a series of coordinates forming a LineString. They are explicitly <strong>not</strong> elements of the pedestrian network definition (i.e. the graph structure described by Nodes, Edges and Zones), but they are still highly relevant to the physical pedestrian network. All Lines must have a unique <code>_id</code> field.</p>
+<details class="abstract">
+<summary>Fence</summary>
+<p><table class="schema-table">
+<tr><td>Description</td><td>A fence is a freestanding structure designed to restrict or prevent movement across a boundary. It is generally distinguished from a wall by the lightness of its construction.</td></tr>
+<tr><td>Subtype of</td><td><em>None</em></td></tr>
+<tr><td>Geometry</td><td>LineString</td></tr>
+<tr><td>Identifying Fields</td><td><code>barrier=fence</code></td></tr>
+<tr><td>Optional Fields</td><td><a href="#length">length</a></td></tr>
+</table></p>
+</details>
+<details class="abstract">
+<summary>Tree Row</summary>
+<p><table class="schema-table">
+<tr><td>Description</td><td>A tree row is a line of trees often found along roadways, property lines, or at the edges of farms.</td></tr>
+<tr><td>Subtype of</td><td><em>None</em></td></tr>
+<tr><td>Geometry</td><td>LineString</td></tr>
+<tr><td>Identifying Fields</td><td><code>natural=tree_row</code></td></tr>
+<tr><td>Optional Fields</td><td><a href="#leaf-cycle">leaf_cycle</a><br><a href="#leaf-type">leaf_type</a><br><a href="#length">length</a></td></tr>
+</table></p>
+</details>
+<h4 id="polygons_1">Polygons<a class="headerlink" href="#polygons_1" title="Anchor link to this section">⚓︎</a></h4>
+<p>Polygons describe 2-dimensional areas which are adjacent to pedestrian paths. They are explicitly <strong>not</strong> elements of the pedestrian network definition (i.e. the graph structure described by Nodes, Edges and Zones), but they are still highly relevant to the physical pedestrian network. All Polygons must have a unique <code>_id</code> field.</p>
+<details class="abstract">
+<summary>Building</summary>
+<p><table class="schema-table">
+<tr><td>Description</td><td>A building is a man-made structure with a roof, standing more or less permanently in one place.</td></tr>
+<tr><td>Subtype of</td><td><em>None</em></td></tr>
+<tr><td>Geometry</td><td>Polygon</td></tr>
+<tr><td>Identifying Fields</td><td><a href="#building-1">building</a>=*</td></tr>
+<tr><td>Optional Fields</td><td><a href="#name">name</a><br><a href="#opening-hours">opening_hours</a></td></tr>
+</table></p>
+</details>
+<details class="abstract">
+<summary>Wood</summary>
+<p><table class="schema-table">
+<tr><td>Description</td><td>Wood - a tree-covered area</td></tr>
+<tr><td>Subtype of</td><td><em>None</em></td></tr>
+<tr><td>Geometry</td><td>Polygon</td></tr>
+<tr><td>Identifying Fields</td><td><code>natural=wood</code></td></tr>
+<tr><td>Optional Fields</td><td><a href="#leaf-cycle">leaf_cycle</a><br><a href="#leaf-type">leaf_type</a><br><a href="#name">name</a><br><a href="#opening-hours">opening_hours</a></td></tr>
+</table></p>
+</details>
+<h4 id="list-of-custom-entities">List of Custom Entities<a class="headerlink" href="#list-of-custom-entities" title="Anchor link to this section">⚓︎</a></h4>
+<h5 id="custom-point">Custom Point<a class="headerlink" href="#custom-point" title="Anchor link to this section">⚓︎</a></h5>
+<details class="abstract">
+<summary>Custom Point</summary>
+<p><table class="schema-table">
+<tr><td>Description</td><td>A custom point is a user-defined Point feature. It can represent any custom-location marker (e.g., a survey marker).</td></tr>
+<tr><td>Subtype of</td><td><em>None</em></td></tr>
+<tr><td>Geometry</td><td>Point</td></tr>
+<tr><td>Identifying Fields</td><td><em>None</em></td></tr>
+<tr><td>Optional Fields</td><td>Additional fields (ext: prefixed)</td></tr>
+</table></p>
+</details>
+<h5 id="custom-line">Custom Line<a class="headerlink" href="#custom-line" title="Anchor link to this section">⚓︎</a></h5>
+<details class="abstract">
+<summary>Custom Line</summary>
+<p><table class="schema-table">
+<tr><td>Description</td><td>A custom line is a user-defined LineString feature. It can represent any custom path or linear infrastructure (e.g., temporary detour route).</td></tr>
+<tr><td>Subtype of</td><td><em>None</em></td></tr>
+<tr><td>Geometry</td><td>LineString</td></tr>
+<tr><td>Identifying Fields</td><td><em>None</em></td></tr>
+<tr><td>Optional Fields</td><td>Additional fields (ext: prefixed)</td></tr>
+</table></p>
+</details>
+<h5 id="custom-polygon">Custom Polygon<a class="headerlink" href="#custom-polygon" title="Anchor link to this section">⚓︎</a></h5>
+<details class="abstract">
+<summary>Custom Polygon</summary>
+<p><table class="schema-table">
+<tr><td>Description</td><td>A custom polygon is a user-defined Polygon feature. It can represent any custom area or zone (e.g., event footprint).</td></tr>
+<tr><td>Subtype of</td><td><em>None</em></td></tr>
+<tr><td>Geometry</td><td>Polygon</td></tr>
+<tr><td>Identifying Fields</td><td><em>None</em></td></tr>
+<tr><td>Optional Fields</td><td>Additional fields (ext: prefixed)</td></tr>
+</table></p>
+</details>
+<h4 id="fields">Fields<a class="headerlink" href="#fields" title="Anchor link to this section">⚓︎</a></h4>
+<h5 id="fields-overview">Fields Overview<a class="headerlink" href="#fields-overview" title="Anchor link to this section">⚓︎</a></h5>
+<p>OpenSidewalks Schema fields are typed key-value pairs. Keys are always strings and values can be any of a specific set. Value types include:</p>
+<ul>
+<li><code>boolean</code>: <code>true</code> or <code>false</code></li>
+<li><code>text</code>: unlimited length string</li>
+<li><code>enum</code>: a set of enumerated values designated by strings</li>
+<li><code>integer</code>: an integer</li>
+<li><code>numeric</code>: a number, either integer or decimal</li>
+<li><code>opening_hours</code>: serialized as a string, a specialized format for describing when a facility or asset is "open", as in accessible to the public.</li>
+</ul>
+<h4 id="list-of-fields">List of fields<a class="headerlink" href="#list-of-fields" title="Anchor link to this section">⚓︎</a></h4>
+<details class="abstract">
+<summary>description</summary>
+<p><table class="schema-table">
+<tr><td>Description</td><td>This may be a field inferred from other data. A free form text field for describing an Edge, which may be pre-encoded in relevant pedestrian Edges to assist with routing, instructing, or investigation of map features; for example, a description of the sidewalk in relation to a nearby street ("NE of Main St.") or other short (1-3 sentences) textual information not directly available in the schema, such as "this path is muddy when wet." Note that because description data are unstructured, they can only be interpreted individually by people and should not be considered a dumping ground for extra data.</td></tr>
+<tr><td>Value type</td><td>text</td></tr>
+</table></p>
+</details>
+<details class="abstract">
+<summary>name</summary>
+<p><table class="schema-table">
+<tr><td>Description</td><td>The (semi-)official name of an entity. <em>Not</em> a description of the entity. For example, this would be the street name for a street path or a specially-designated name for a famous footpath. <code>name="The [X] trail"</code>, for example.</td></tr>
+<tr><td>Value type</td><td>text</td></tr>
+</table></p>
+</details>
+<details class="abstract">
+<summary>incline</summary>
+<p><table class="schema-table">
+<tr><td>Description</td><td>The estimated incline over a particular path, i.e. slope, i.e. grade, i.e. rise over run. If derived from OpenStreetMap data, this is the maximum incline over the path. If derived from <abbr title="Digital Elevation Model">DEM</abbr> data, it is more likely to be an underestimation. Positive values indicate an uphill climb while negative are downhill. For example, a 45 degree downhill value for incline would be -1.0. For steps, you can use "up" or "down" to indicate the direction of the climb relative to the direction of the Edge.</td></tr>
+<tr><td>Value type</td><td>numeric</td></tr>
+</table></p>
+</details>
+<details class="abstract">
+<summary>surface</summary>
+<p><table class="schema-table">
+<tr><td>Description</td><td>The surface material of the path. Derived directly from the surface tag from OpenStreetMap.</td></tr>
+<tr><td>Value type</td><td>enum</td></tr>
+<tr><td>Enumerated Values</td><td>- <em>asphalt</em><br>- <em>concrete</em><br>- <em>gravel</em><br>- <em>grass</em><br>- <em>paved</em><br>- <em>paving_stones</em><br>- <em>unpaved</em><br>- <em>dirt</em><br>- <em>grass_paver</em></td></tr>
+</table></p>
+</details>
+<details class="abstract">
+<summary>length</summary>
+<p><table class="schema-table">
+<tr><td>Description</td><td>This is the calculated length of the way, in meters, according to the Haversine formula (Great-Circle Distance). This calculation is typically left up to consumers of geometry data, as the geometry is, itself, furnished for geometrical analysis. This is likely how AccessMap should also handle these data, but for now length is precalculated.</td></tr>
+<tr><td>Value type</td><td>numeric</td></tr>
+</table></p>
+</details>
+<details class="abstract">
+<summary>width</summary>
+<p><table class="schema-table">
+<tr><td>Description</td><td>The width of an Edge in meters.</td></tr>
+<tr><td>Value type</td><td>numeric</td></tr>
+</table></p>
+</details>
+<details class="abstract">
+<summary>tactile_paving</summary>
+<p><table class="schema-table">
+<tr><td>Description</td><td>A field for whether a curb has a tactile (textured) surface. Tactile paving is a system of textured ground surface indicators found on footpaths, stairs and public transportation platforms to assist pedestrians who are blind or visually impaired. A tactile paving area has a surface that is easy to detect using a long cane, typically because it is rougher than the surrounding surface area or has an embossed pattern.</td></tr>
+<tr><td>Value type</td><td>enum</td></tr>
+<tr><td>Enumerated Values</td><td>- <em>yes</em><br>- <em>no</em><br>- <em>contrasted</em>: Where there is a tactile paving which contrast is at least 70% the colour of the ground (white if the ground is black and vice-versa).<br>- <em>primitive</em>: Where any water drain or decorative tactile element can be used for orientation accidentally, but no typical tactile ground elements are used.</td></tr>
+</table></p>
+</details>
+<details class="abstract">
+<summary>crossing:markings</summary>
+<p><table class="schema-table">
+<tr><td>Description</td><td>Whether a pedestrian street crossing has ground markings (and, optionally, what type of markings exist). When derived from OpenStreetMap data, the crossing:markings field may be derived not only from the identical <code>crossing:markings</code> tag in OpenStreetMap, but from any unambiguous tags in the problematic <code>crossing=*</code> tag, such as <code>crossing=marked</code> &rarr; <code>crossing:markings=yes</code> and <code>crossing=unmarked</code> &rarr; <code>crossing:markings=no</code>, and <code>crossing=zebra</code> &rarr; <code>crossing:markings=yes</code>.</td></tr>
+<tr><td>Value type</td><td>enum</td></tr>
+<tr><td>Enumerated Values</td><td>- <em>yes</em>: The crossing has surface markings but the type is unspecified.<br>- <em>no</em>: The crossing has no surface markings.<br>- <em>surface</em>: There is a surface change but no distinct markings.<br>- <em>lines</em>: There are only two parallel lines to indicate the outline of the crossing.<br>- <em>lines:paired</em>: The same as <code>crossing:markings=lines</code> but each line is actually two very-close parallel lines (for a total of 4 lines).<br>- <em>dashes</em>: There are only two parallel dashed lines to indicate the outline of the crossing.<br>- <em>dots</em>: There are only two parallel dotted lines (square/round markings with significant distance between them) to indicate the outline of the crossing.<br>- <em>zebra</em>: The crossing is only marked by regularly spaced bars along its length.<br>-zebra:double: The same as <code>crossing:markings=zebra</code> but there are two sets of regularly spaced bars with a small gap between them.<br>- <em>zebra:paired</em>: The same as <code>crossing:markings=zebra</code> but each bar is made up of two smaller bars (i.e. there's a small gap between smaller bars).<br>- <em>zebra:bicolour</em>: The same as <code>crossing:markings=zebra</code> but there are the bars and gaps are made of two alternating colors.<br>- <em>ladder</em>: The same as combining <code>crossing:markings=zebra</code> and <code>crossing:markings=lines</code>: horizontal bars but with linear outlines enclosing the crossing.<br>- <em>skewed</em>: The same as <code>crossing:markings=ladder</code> but the horizontal bars are at a slight diagonal (~30 degree shift) - they're skewed.<br>- <em>ladder:paired</em>: The same as <code>crossing:markings=ladder</code> but the horizontal bars are actually made up of two very-close smaller bars.<br>- <em>rainbow</em>: A crossing with rainbow colors, other than in zebra pattern or lines along the crossing.<br>- <em>lines:rainbow</em>: Rainbow colored lines along the crossing.<br>- <em>zebra:rainbow</em>: A zebra crossing with rainbow colors.<br>- <em>ladder:skewed</em>: Two lines orthogonal to the direction of the roadway with diagonal bars connecting the two lines.<br>- <em>pictograms</em>: Painted pictogram(s) of pedestrian and/or bicycle (with or without arrows)</td></tr>
+</table></p>
+</details>
+<details class="abstract">
+<summary>step_count</summary>
+<p><table class="schema-table">
+<tr><td>Description</td><td>Can be added to indicate the number of steps</td></tr>
+<tr><td>Value type</td><td>integer</td></tr>
+</table></p>
+</details>
+<details class="abstract">
+<summary>climb</summary>
+<p><table class="schema-table">
+<tr><td>Description</td><td>For steps, can be used to indicate the direction of the climb relative to the direction of the Edge</td></tr>
+<tr><td>Value type</td><td>enum</td></tr>
+<tr><td>Enumerated Values</td><td>- <em>up</em>: when a way rises upward <em>in the direction</em> of the Edge.<br>- <em>down</em>: when a way rises upward <em>against the direction</em> of the Edge.</td></tr>
+</table></p>
+</details>
+<details class="abstract">
+<summary>building</summary>
+<p><table class="schema-table">
+<tr><td>Description</td><td>This field is used to mark a given entity as a building</td></tr>
+<tr><td>Value type</td><td>enum</td></tr>
+</table></p>
+<p><strong>Enumerated Values:</strong></p>
+<details class="note">
+<summary>Accommodation</summary>
+<p><table class="schema-table">
+<tr><td>apartments</td><td>A building arranged into individual dwellings, often on separate floors. May also have retail outlets on the ground floor.</td></tr>
+<tr><td>barracks</td><td>Buildings built to house military personnel or laborers.</td></tr>
+<tr><td>bungalow</td><td>A single-storey detached small house, Dacha.</td></tr>
+<tr><td>cabin</td><td>A cabin is a small, roughly built house usually with a wood exterior and typically found in rural areas.</td></tr>
+<tr><td>detached</td><td>A detached house, a free-standing residential building usually housing a single family.</td></tr>
+<tr><td>dormitory</td><td>A shared building intended for college/university students (not a share room for multiple occupants as implied by the term in British English).</td></tr>
+<tr><td>farm</td><td>A residential building on a farm (farmhouse). For other buildings see below building=farm_auxiliary, building=barn, etc.</td></tr>
+<tr><td>ger</td><td>A permanent or seasonal round yurt or ger.</td></tr>
+<tr><td>hotel</td><td>A building designed with separate rooms available for overnight accommodation.</td></tr>
+<tr><td>house</td><td>A dwelling unit inhabited by a single household (a family or small group sharing facilities such as a kitchen). Houses forming half of a semi-detached pair, or one of a row of terraced houses, should share at least two Nodes with joined neighbours, thereby defining the party wall between the properties.</td></tr>
+<tr><td>houseboat</td><td>A boat used primarily as a home.</td></tr>
+<tr><td>residential</td><td>A general tag for a building used primarily for residential purposes. Where additional detail is available consider using 'apartments', 'terrace', 'house', 'detached' or 'semidetached_house'.</td></tr>
+<tr><td>semidetached_house</td><td>A residential house that shares a common wall with another on one side. Typically called a "duplex" in American English.</td></tr>
+<tr><td>static_caravan</td><td>A mobile home (semi)permanently left on a single site.</td></tr>
+<tr><td>stilt_house</td><td>A building raised on piles over the surface of the soil or a body of water.</td></tr>
+<tr><td>terrace</td><td>A single way used to define the outline of a linear row of residential dwellings, each of which normally has its own entrance, which form a terrace ("row-house" or "townhouse" in North American English). Consider defining each dwelling separately using 'house'.</td></tr>
+<tr><td>tree_house</td><td>An accommodation, often designed as a small hut, sometimes also as a room or small apartment. Built on tree posts or on a natural tree. A tree house has no contact with the ground. Access via ladders, stairs or bridgeways.</td></tr>
+<tr><td>trullo</td><td>A stone hut with a conical roof.</td></tr>
+</table></p>
+</details>
+<details class="note">
+<summary>Commercial</summary>
+<p><table class="schema-table">
+<tr><td>commercial</td><td>A building for non-specific commercial activities, not necessarily an office building. Use 'retail' if the building consists primarily of shops.</td></tr>
+<tr><td>industrial</td><td>A building for industrial purposes. Use warehouse if the purpose is known to be primarily for storage/distribution.</td></tr>
+<tr><td>kiosk</td><td>A small one-room retail building.</td></tr>
+<tr><td>office</td><td>An office building.</td></tr>
+<tr><td>retail</td><td>A building primarily used for selling goods that are sold to the public.</td></tr>
+<tr><td>supermarket</td><td>A building constructed to house a self-service large-area store.</td></tr>
+<tr><td>warehouse</td><td>A building primarily intended for the storage or goods or as part of a distribution system.</td></tr>
+</table></p>
+</details>
+<details class="note">
+<summary>Religious</summary>
+<p><table class="schema-table">
+<tr><td>cathedral</td><td>A building that was built as a cathedral.</td></tr>
+<tr><td>chapel</td><td>A building that was built as a chapel.</td></tr>
+<tr><td>church</td><td>A building that was built as a church.</td></tr>
+<tr><td>kingdom_hall</td><td>A building that was built as a Kingdom Hall.</td></tr>
+<tr><td>monastery</td><td>A building constructed as monastery. Often, monasteries consist of several distinct buildings with specific functions.</td></tr>
+<tr><td>mosque</td><td>A building erected as mosque.</td></tr>
+<tr><td>presbytery</td><td>A building where priests live and work.</td></tr>
+<tr><td>religious</td><td>Unspecific building related to religion. Prefer more specific values if possible.</td></tr>
+<tr><td>shrine</td><td>A building that was built as a shrine.</td></tr>
+<tr><td>synagogue</td><td>A building that was built as a synagogue.</td></tr>
+<tr><td>temple</td><td>A building that was built as a temple.</td></tr>
+</table></p>
+</details>
+<details class="note">
+<summary>Civic/amenity</summary>
+<p><table class="schema-table">
+<tr><td>bakehouse</td><td>A building that was built as a bakehouse (i.e. for baking bread).</td></tr>
+<tr><td>bridge</td><td>A building used as a bridge (skyway). To map a gatehouse use building=gatehouse. Don't use this tag just for marking bridges (their outlines).</td></tr>
+<tr><td>civic</td><td>A generic tag for a building created to house some civic amenity, for example community centre, library, toilets, sports centre, swimming pool, townhall etc. See building=public and more specific tags like building=library as well.</td></tr>
+<tr><td>college</td><td>A college building.</td></tr>
+<tr><td>fire_station</td><td>A building constructed as fire station, i.e. to house fire fighting equipment and officers, regardless of current use.</td></tr>
+<tr><td>government</td><td>For government buildings in general, including municipal, provincial and divisional secretaries, government agencies and departments, town halls, (regional) parliaments and court houses.</td></tr>
+<tr><td>gatehouse</td><td>An entry control point building, spanning over a highway that enters a city or compound.</td></tr>
+<tr><td>hospital</td><td>A building erected for a hospital.</td></tr>
+<tr><td>kindergarten</td><td>For any generic kindergarten buildings. Buildings for specific uses (sports halls etc.) should be tagged for their purpose.</td></tr>
+<tr><td>museum</td><td>A building which was designed as a museum.</td></tr>
+<tr><td>public</td><td>A building constructed as accessible to the general public (a town hall, police station, court house, etc.).</td></tr>
+<tr><td>school</td><td>A building erected as school. Buildings for specific uses (sports halls etc.) should be tagged for their purpose.</td></tr>
+<tr><td>toilets</td><td>A toilet block.</td></tr>
+<tr><td>train_station</td><td>A building constructed to be a train station building, including buildings that are abandoned and used nowadays for a different purpose.</td></tr>
+<tr><td>transportation</td><td>A building related to public transport. Note that there is a special tag for train station buildings - building=train_station.</td></tr>
+<tr><td>university</td><td>A university building.</td></tr>
+</table></p>
+</details>
+<details class="note">
+<summary>Agricultural/plant production</summary>
+<p><table class="schema-table">
+<tr><td>barn</td><td>An agricultural building that can be used for storage and as a covered workplace.</td></tr>
+<tr><td>conservatory</td><td>A building or room having glass or tarpaulin roofing and walls used as an indoor garden or a sunroom (winter garden).</td></tr>
+<tr><td>cowshed</td><td>A cowshed (cow barn, cow house) is a building for housing cows, usually found on farms.</td></tr>
+<tr><td>farm_auxiliary</td><td>A building on a farm that is not a dwelling (use 'farm' or 'house' for the farm house).</td></tr>
+<tr><td>greenhouse</td><td>A greenhouse is a glass or plastic covered building used to grow plants.</td></tr>
+<tr><td>slurry_tank</td><td>A circular building built to hold a liquid mix of primarily animal excreta (also known as slurry).</td></tr>
+<tr><td>stable</td><td>A building constructed as a stable for horses.</td></tr>
+<tr><td>sty</td><td>A sty (pigsty, pig ark, pig-shed) is a building for raising domestic pigs, usually found on farms.</td></tr>
+<tr><td>livestock</td><td>A building for housing/rising other livestock (apart from cows, horses or pigs covered above), or when the livestock changes.</td></tr>
+</table></p>
+</details>
+<details class="note">
+<summary>Sports</summary>
+<p><table class="schema-table">
+<tr><td>grandstand</td><td>The main stand, usually roofed, commanding the best view for spectators at racecourses or sports grounds.</td></tr>
+<tr><td>pavilion</td><td>A sports pavilion usually with changing rooms, storage areas and possibly an space for functions &amp; events. Avoid using this term for other structures called pavilions by architects.</td></tr>
+<tr><td>riding_hall</td><td>A building that was built as a riding hall.</td></tr>
+<tr><td>sports_hall</td><td>A building that was built as a sports hall.</td></tr>
+<tr><td>sports_centre</td><td>A building that was built as a sports centre.</td></tr>
+<tr><td>stadium</td><td>A building constructed to be a stadium building, including buildings that are abandoned and used nowadays for a different purpose.</td></tr>
+</table></p>
+</details>
+<details class="note">
+<summary>Storage</summary>
+<p><table class="schema-table">
+<tr><td>allotment_house</td><td>A small outbuilding for short visits in a allotment garden.</td></tr>
+<tr><td>boathouse</td><td>A boathouse is a building used for the storage of boats.</td></tr>
+<tr><td>hangar</td><td>A hangar is a building used for the storage of airplanes, helicopters or space-craft.</td></tr>
+<tr><td>hut</td><td>A hut is a small and crude shelter. Note that this word has two meanings - it may be synonym of building=shed, it may be a residential building of low quality.</td></tr>
+<tr><td>shed</td><td>A shed is a simple, single-storey structure in a back garden or on an allotment that is used for storage, hobbies, or as a workshop.</td></tr>
+</table></p>
+</details>
+<details class="note">
+<summary>Cars</summary>
+<p><table class="schema-table">
+<tr><td>carport</td><td>A carport is a covered structure used to offer limited protection to vehicles, primarily cars, from the elements. Unlike most structures a carport does not have four walls, and usually has one or two.</td></tr>
+<tr><td>garage</td><td>A garage is a building suitable for the storage of one or possibly more motor vehicle or similar. See building=garages for larger shared buildings. For an aircraft garage, see building=hangar.</td></tr>
+<tr><td>garages</td><td>A building that consists of a number of discrete storage spaces for different owners/tenants. See also building=garage.</td></tr>
+<tr><td>parking</td><td>Structure purpose-built for parking cars.</td></tr>
+</table></p>
+</details>
+<details class="note">
+<summary>Power/technical buildings</summary>
+<p><table class="schema-table">
+<tr><td>digester</td><td>A digester is a bioreactor for the production of biogas from biomass.</td></tr>
+<tr><td>service</td><td>Service building usually is a small unmanned building with certain machinery (like pumps or transformers).</td></tr>
+<tr><td>tech_cab</td><td>Small prefabricated cabin structures for the air-conditioned accommodation of different technology.</td></tr>
+<tr><td>transformer_tower</td><td>A transformer tower is a characteristic tall building comprising a distribution transformer and constructed to connect directly to a medium voltage overhead power line. Quite often the power line has since been undergrounded but the building may still serve as a substation.</td></tr>
+<tr><td>water_tower</td><td>A water tower.</td></tr>
+<tr><td>storage_tank</td><td>Storage tanks are containers that hold liquids.</td></tr>
+<tr><td>silo</td><td>A silo is a building for storing bulk materials.</td></tr>
+</table></p>
+</details>
+<details class="note">
+<summary>Other buildings</summary>
+<p><table class="schema-table">
+<tr><td>beach_hut</td><td>A small, usually wooden, and often brightly coloured cabin or shelter above the high tide mark on popular bathing beaches.</td></tr>
+<tr><td>bunker</td><td>A hardened military building.</td></tr>
+<tr><td>castle</td><td>A building constructed as a castle.</td></tr>
+<tr><td>construction</td><td>Used for buildings under construction.</td></tr>
+<tr><td>container</td><td>For a container used as a permanent building. Do not map containers placed temporarily, for example used in shipping or construction.</td></tr>
+<tr><td>guardhouse</td><td>A small building constructed to house guard(s).</td></tr>
+<tr><td>military</td><td>A military building.</td></tr>
+<tr><td>outbuilding</td><td>A less important building near to and on the same piece of land as a larger building.</td></tr>
+<tr><td>pagoda</td><td>A building constructed as a pagoda.</td></tr>
+<tr><td>quonset_hut</td><td>A lightweight prefabricated structure in the shape of a semicircle.</td></tr>
+<tr><td>roof</td><td>A structure that consists of a roof with open sides, such as a rain shelter, and also gas stations.</td></tr>
+<tr><td>ruins</td><td>Frequently used for a house or other building that is abandoned and in poor repair. However, some believe this usage is incorrect, and the tag should only be used for buildings constructed as fake ruins (for example sham ruins in an English landscape garden). See also lifecycle tagging.</td></tr>
+<tr><td>tent</td><td>For a permanently placed tent. Do not map tents placed temporarily.</td></tr>
+<tr><td>tower</td><td>A tower-building.</td></tr>
+<tr><td>windmill</td><td>A building constructed as a traditional windmill, historically used to mill grain with wind power.</td></tr>
+<tr><td>yes</td><td>Use this value where it is not possible to determine a more specific value.</td></tr>
+</table></p>
+</details>
+</details>
+<details class="abstract">
+<summary>opening_hours</summary>
+<p><table class="schema-table">
+<tr><td>Description</td><td>The opening hours of the entity. This may apply to, for example, a path that is inside a building or the building itself. The value is in OpenStreetMap syntax for the <code>opening_hours</code> tag. See <a href="https://wiki.openstreetmap.org/wiki/Key:opening_hours/specification">OpenStreetMap specification</a> on the formatting for this field.</td></tr>
+<tr><td>Value type</td><td>opening_hours</td></tr>
+</table></p>
+</details>
+<details class="abstract">
+<summary>foot</summary>
+<p><table class="schema-table">
+<tr><td>Description</td><td>A field that indicates whether an Edge can be used by pedestrians.</td></tr>
+<tr><td>Value type</td><td>enum</td></tr>
+<tr><td>Enumerated Values</td><td>- <em>yes</em>: Roads and other objects where the public has a legally-enshrined right for access on foot<br>- <em>no</em>: Access on foot or by pedestrians is prohibited.<br>- <em>designated</em>: A preferred or designated route for pedestrians.<br>- <em>permissive</em>: Access by pedestrians is permitted but permission may be withdrawn at any time.<br>- <em>use_sidepath</em>: Use compulsory parallel footpath instead.<br>- <em>private</em>: indicates that walking is not allowed for general public, but the owner may make exceptions at will.<br>- <em>destination</em>: Transit traffic forbidden for pedestrians, non-transit to a local destination allowed.</td></tr>
+</table></p>
+</details>
+<details class="abstract">
+<summary>leaf_cycle</summary>
+<p><table class="schema-table">
+<tr><td>Description</td><td>A field that describes the phenology of leaves.</td></tr>
+<tr><td>Value type</td><td>enum</td></tr>
+<tr><td>Enumerated Values</td><td>- <em>deciduous</em>: Leaves are shed seasonally, typically in autumn.<br>- <em>evergreen</em>: Retains foliage year-round.<br>- <em>mixed</em>: Both deciduous and evergreen trees are present.</td></tr>
+</table></p>
+</details>
+<details class="abstract">
+<summary>leaf_type</summary>
+<p><table class="schema-table">
+<tr><td>Description</td><td>A field that describes the type of leaves.</td></tr>
+<tr><td>Value type</td><td>enum</td></tr>
+<tr><td>Enumerated Values</td><td>- <em>broadleaved</em>: Broad, flat leaves.<br>- <em>leafless</em>: No leaves.<br>- <em>mixed</em>: Multiple trees with different leaf types.<br>- <em>needleleaved</em>: Needle-shaped leaves.</td></tr>
+</table></p>
+</details>
+<h3 id="validation">Validation<a class="headerlink" href="#validation" title="Anchor link to this section">⚓︎</a></h3>
+<p>An OpenSideWalks Schema validator is available as a Python library and as a Job Type in the <abbr title="Transportation Data Exchange Initiative">TDEI</abbr> Portal:</p>
+<ul>
+<li>
+<p>Library:</p>
+<ul>
+<li>
+<p><a href="https://pypi.org/project/python-osw-validation/">PyPI: python-osw-validation</a></p>
+</li>
+<li>
+<p><a href="https://github.com/TaskarCenterAtUW/TDEI-python-lib-osw-validation">GitHub: TaskarCenterAtUW/<abbr title="Transportation Data Exchange Initiative">TDEI</abbr>-python-lib-osw-validation</a></p>
+</li>
+</ul>
+</li>
+<li>
+<p>Service:</p>
+<ul>
+<li>
+<p><a href="https://portal.tdei.us/CreateJob"><abbr title="Transportation Data Exchange Initiative">TDEI</abbr> Portal: Create Job</a>: "<abbr title="OpenSidewalks">OSW</abbr> - Validate" (Dataset-Validate)</p>
+</li>
+<li>
+<p><a href="https://github.com/TaskarCenterAtUW/TDEI-python-osw-validation">GitHub: TaskarCenterAtUW/<abbr title="Transportation Data Exchange Initiative">TDEI</abbr>-python-osw-validation</a></p>
+</li>
+</ul>
+</li>
+</ul>
+<h3 id="schema-versions">Schema Versions<a class="headerlink" href="#schema-versions" title="Anchor link to this section">⚓︎</a></h3>
+<table>
+<thead>
+<tr>
+<th>Version</th>
+<th>Release Date</th>
+<th>Link</th>
+<th>Notes</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>0.1</td>
+<td>2023-08-11</td>
+<td><a href="https://github.com/OpenSidewalks/OpenSidewalks-Schema/tree/32dad18">GitHub</a></td>
+<td>- Minimal initial beta release of schema to unblock development of schema consuming applications</td>
+</tr>
+<tr>
+<td>0.2</td>
+<td>2024-01-30</td>
+<td><a href="https://github.com/OpenSidewalks/OpenSidewalks-Schema/tree/9338af">GitHub</a></td>
+<td>- Add required <code>_id</code> Field to <a href="#edges">Edges</a><br>- Update the documentation with regards to the <a href="#coordinate-reference-system">coordinate reference system</a><br>- Introduce the concept of <a href="#core-entities">Core Entities</a> and <a href="#adjacent-entities">Adjacent Entities</a> (formerly called "Extensions")<br>- Add <a href="#zones">Zones</a> to <a href="#core-entities">Core Entities</a><br>- Add <a href="#lines">Lines</a> and <a href="#polygons">Polygons</a> to <a href="#adjacent-entities">Adjacent Entities</a><br>- Add <a href="#schema-versions">Schema Versions</a> and <a href="#opensidewalks-dataset-metadata">OpenSidewalks Dataset Metadata</a><br>- Add <a href="#pedestrian-zone">Pedestrian Zone</a> to <a href="#zones">Zones</a><br>- Add <a href="#fence">Fence</a> to <a href="#lines">Lines</a><br>- Add <a href="#building">Building</a> to <a href="#polygons">Polygons</a><br>- Add <em>additional fields</em> to <a href="#entity-attributes">Entity Attributes</a><br>- Add <a href="#motor-vehicle-roads">Motor Vehicle Roads</a> to <a href="#edges">Edges</a> with justification<br>- Add <a href="#climb">Climb</a> Field to <a href="#steps">Steps</a> Edge in addition to the existing <a href="#incline">Incline</a> Field<br>- Add <a href="#opening-hours">Opening Hours</a> Field and include it to the existing <a href="#building">Building</a> Fields<br>- Add <a href="#generic-curb">Generic Curb</a> entity to <a href="#nodes">Nodes</a><br>- Add <a href="#foot">Foot</a> Field to all <a href="#edges">Edges</a> and <a href="#zones">Zones</a><br>- Change <a href="#entity-type-inference">Entity Type Inference</a> to include the <em>geometry type</em><br>- Fix lossiness of <a href="#tactile-paving">Tactile Paving</a> Field<br>- Remove <em>crossing</em> Field in favor of <a href="#crossing-markings">crossing:markings</a> Field<br>- Add <a href="#living-street">Living Street</a> to <a href="#edges">Edges</a><br>- Add <em>unclassified road</em> to <a href="#motor-vehicle-roads">Motor Vehicle Roads</a><br>- Add <em>trunk road</em> to <a href="#motor-vehicle-roads">Motor Vehicle Roads</a><br>- Require that the <code>_id</code> Field for all entities has at least one character</td>
+</tr>
+<tr>
+<td>0.3</td>
+<td>2025-06-30</td>
+<td><a href="https://github.com/OpenSidewalks/OpenSidewalks-Schema">GitHub</a></td>
+<td>- Add <a href="#custom-points">Custom Points</a><br>- Add <a href="#custom-lines">Custom Lines</a><br>- Add <a href="#custom-polygons">Custom Polygons</a><br>- Add <a href="#tree">Tree</a> to <a href="#points">Points</a><br>- Add <a href="#tree-row">Tree Row</a> to <a href="#lines">Lines</a><br>- Add <a href="#wood">Wood</a> to <a href="#polygons">Polygons</a><br>- Update documentation to improve clarity with regards to <a href="#adjacent-entities">Adjacent Entities</a> (formerly called "Extensions")</td>
+</tr>
+</tbody>
+</table>
 <hr />
-<h2 id="guides">Guides<a class="headerlink" href="#guides" title="Permanent link">&para;</a></h2>
+<h3 id="guides">Guides<a class="headerlink" href="#guides" title="Anchor link to this section">⚓︎</a></h3>
 <p>OpenSidewalks Schema Guides</p>
-<p><em>For a list of all guides on the TCAT Wiki, refer to the <a href="../../guides-list/">Guides List</a>.</em></p>
-<h3 id="core-edges-in-osw"><a href="core-edges-in-osw/">Core Edges in OSW</a><a class="headerlink" href="#core-edges-in-osw" title="Permanent link">&para;</a></h3>
-<p>This guide shows how to convert existing sidewalk centerline datasets into OpenSidewalks (OSW) format for upload to the Transportation Data Exchange Initiative (TDEI).</p>
-<h3 id="custom-points-in-osw"><a href="custom-points-in-osw/">Custom Points in OSW</a><a class="headerlink" href="#custom-points-in-osw" title="Permanent link">&para;</a></h3>
+<p><em>For a list of all guides on the <abbr title="Taskar Center for Accessible Technology">TCAT</abbr> Wiki, refer to the <a href="../../guides-list/">Guides List</a>.</em></p>
+<h4 id="core-edges-in-osw"><a href="core-edges-in-osw/">Core Edges in <abbr title="OpenSidewalks">OSW</abbr></a><a class="headerlink" href="#core-edges-in-osw" title="Anchor link to this section">⚓︎</a></h4>
+<p>This guide shows how to convert existing sidewalk centerline datasets into OpenSidewalks (<abbr title="OpenSidewalks">OSW</abbr>) format for upload to the Transportation Data Exchange Initiative (<abbr title="Transportation Data Exchange Initiative">TDEI</abbr>).</p>
+<h4 id="custom-points-in-osw"><a href="custom-points-in-osw/">Custom Points in <abbr title="OpenSidewalks">OSW</abbr></a><a class="headerlink" href="#custom-points-in-osw" title="Anchor link to this section">⚓︎</a></h4>
 <p>This guide shows how to add custom non-routable point features (like bus stops) to an OpenSidewalks dataset using the Custom Points entity type.</p>
-<h3 id="opensidewalks-in-openstreetmap"><a href="osw-in-osm/">OpenSidewalks in OpenStreetMap</a><a class="headerlink" href="#opensidewalks-in-openstreetmap" title="Permanent link">&para;</a></h3>
+<h4 id="opensidewalks-in-openstreetmap"><a href="osw-in-osm/">OpenSidewalks in OpenStreetMap</a><a class="headerlink" href="#opensidewalks-in-openstreetmap" title="Anchor link to this section">⚓︎</a></h4>
 <p>This guide explains how to make edits to OpenStreetMap following and supporting the OpenSidewalks schema.</p>
 
+
+  <nav class="md-tags" >
+    
+      
+      
+      
+      
+        <span class="md-tag">Guide</span>
+      
+    
+      
+      
+      
+      
+        <span class="md-tag">External</span>
+      
+    
+      
+      
+      
+      
+        <span class="md-tag">Developer</span>
+      
+    
+      
+      
+      
+      
+        <span class="md-tag">OSW 0.3</span>
+      
+    
+  </nav>
 
 
 
@@ -3250,12 +4744,18 @@
       
       
       
-      <script id="__config" type="application/json">{"annotate":null,"base":"../..","features":["announce.dismiss","content.code.annotate","content.code.copy","content.code.select","content.footnote.tooltips","content.tabs.link","content.tooltips","navigation.footer","navigation.indexes","navigation.instant","navigation.instant.prefetch","navigation.instant.progress","navigation.path","navigation.sections","navigation.tabs","navigation.top","navigation.tracking","toc.follow","toc.integrate"],"search":"../../assets/javascripts/workers/search.e2d2d235.min.js","tags":null,"translations":{"clipboard.copied":"Copied to clipboard","clipboard.copy":"Copy to clipboard","search.result.more.one":"1 more on this page","search.result.more.other":"# more on this page","search.result.none":"No matching documents","search.result.one":"1 matching document","search.result.other":"# matching documents","search.result.placeholder":"Type to start searching","search.result.term.missing":"Missing","select.version":"Select version"},"version":null}</script>
+      <script id="__config" type="application/json">{"annotate":null,"base":"../..","features":["announce.dismiss","content.code.annotate","content.code.copy","content.code.select","content.footnote.tooltips","content.tabs.link","content.tooltips","navigation.footer","navigation.indexes","navigation.instant","navigation.instant.prefetch","navigation.instant.progress","navigation.path","navigation.sections","navigation.tabs","navigation.top","navigation.tracking","toc.follow"],"search":"../../assets/javascripts/workers/search.e2d2d235.min.js","tags":null,"translations":{"clipboard.copied":"Copied to clipboard","clipboard.copy":"Copy to clipboard","search.result.more.one":"1 more on this page","search.result.more.other":"# more on this page","search.result.none":"No matching documents","search.result.one":"1 matching document","search.result.other":"# matching documents","search.result.placeholder":"Type to start searching","search.result.term.missing":"Missing","select.version":"Select version"},"version":null}</script>
     
     
       <script src="../../assets/javascripts/bundle.00c35305.min.js"></script>
       
         <script src="../../javascripts/extra.js"></script>
+      
+        <script src="../../javascripts/katex.js"></script>
+      
+        <script src="https://unpkg.com/katex@0/dist/katex.min.js"></script>
+      
+        <script src="https://unpkg.com/katex@0/dist/contrib/auto-render.min.js"></script>
       
     
   </body>

@@ -91,6 +91,8 @@
     
       <link rel="stylesheet" href="../../../stylesheets/extra.css">
     
+      <link rel="stylesheet" href="https://unpkg.com/katex@0/dist/katex.min.css">
+    
     <script>__md_scope=new URL("../../..",location),__md_hash=e=>[...e].reduce(((e,t)=>(e<<5)-e+t.charCodeAt(0)),0),__md_get=(e,t=localStorage,a=__md_scope)=>JSON.parse(t.getItem(a.pathname+"."+e)),__md_set=(e,t,a=localStorage,_=__md_scope)=>{try{a.setItem(_.pathname+"."+e,JSON.stringify(t))}catch(e){}},document.documentElement.setAttribute("data-platform",navigator.platform)</script>
     
       
@@ -227,7 +229,7 @@
       <a href="../../.." class="md-tabs__link">
         
   
-  TCAT Wiki
+  Index
 
       </a>
     </li>
@@ -462,9 +464,7 @@
   
 
 
-  
-
-<nav class="md-nav md-nav--primary md-nav--lifted md-nav--integrated" aria-label="Navigation" data-md-level="0">
+<nav class="md-nav md-nav--primary md-nav--lifted" aria-label="Navigation" data-md-level="0">
   <label class="md-nav__title" for="__drawer">
     <a href="../../.." title="TCAT Wiki" class="md-nav__button md-logo" aria-label="TCAT Wiki" data-md-component="logo">
       
@@ -491,7 +491,7 @@
   <span class="md-ellipsis">
     
   
-    TCAT Wiki
+    Index
   
 
     
@@ -2053,8 +2053,6 @@
       <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
       
       
-        
-      
       
         <label class="md-nav__link md-nav__link--active" for="__toc">
           
@@ -2094,20 +2092,32 @@
         
 
 
-<nav class="md-nav md-nav--secondary" aria-label="On this page">
+  
+
+<nav class="md-nav md-nav--secondary" aria-label="On this page:">
   
   
-  
-    
   
   
     <label class="md-nav__title" for="__toc">
       <span class="md-nav__icon md-icon"></span>
-      On this page
+      On this page:
     </label>
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
+  <a href="#task-polygon-automation-guide" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Task Polygon Automation Guide
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Task Polygon Automation Guide">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
   <a href="#task-polygon-automation-process" class="md-nav__link">
     <span class="md-ellipsis">
       
@@ -2261,6 +2271,11 @@
     </nav>
   
 </li>
+        
+      </ul>
+    </nav>
+  
+</li>
       
         <li class="md-nav__item">
   <a href="#final-directory-structure" class="md-nav__link">
@@ -2271,9 +2286,10 @@
     </span>
   </a>
   
-</li>
-      
-        <li class="md-nav__item">
+    <nav class="md-nav" aria-label="Final Directory Structure">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
   <a href="#next-steps" class="md-nav__link">
     <span class="md-ellipsis">
       
@@ -2281,6 +2297,11 @@
       
     </span>
   </a>
+  
+</li>
+        
+      </ul>
+    </nav>
   
 </li>
       
@@ -3218,6 +3239,233 @@
               </div>
             
             
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+  
+
+<nav class="md-nav md-nav--secondary" aria-label="On this page:">
+  
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      On this page:
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#task-polygon-automation-guide" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Task Polygon Automation Guide
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Task Polygon Automation Guide">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#task-polygon-automation-process" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Task Polygon Automation Process
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Task Polygon Automation Process">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#prerequisites" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Prerequisites
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#process-overview" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Process Overview
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Process Overview">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#step-1-initialize-staging-directory" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Step 1: Initialize Staging Directory
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#step-2-create-state-structure" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Step 2: Create State Structure
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#step-3-create-county-structure" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Step 3: Create County Structure
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#step-4-create-community-structure" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Step 4: Create Community Structure
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#step-5-create-working-subfolders" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Step 5: Create Working Subfolders
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#step-6-obtain-osm-pbf-files" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Step 6: Obtain OSM PBF Files
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#step-7-obtain-community-target-data" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Step 7: Obtain Community Target Data
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#step-8-extract-community-data-with-osmium" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Step 8: Extract Community Data with Osmium
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#step-9-generate-task-polygons-with-osw-task" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Step 9: Generate Task Polygons with OSW Task
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#step-10-rename-output-files" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Step 10: Rename Output Files
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#final-directory-structure" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Final Directory Structure
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Final Directory Structure">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#next-steps" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Next Steps
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
           
           
             <div class="md-content" data-md-component="content">
@@ -3239,7 +3487,7 @@
       <a href="../../.." class="md-path__link">
         
   <span class="md-ellipsis">
-    TCAT Wiki
+    Index
   </span>
 
       </a>
@@ -3292,109 +3540,111 @@
                 
                   
 
+  <h1>Task Polygon Automation Guide</h1>
+
 <!-- @format -->
 
-<h1 id="task-polygon-automation-guide">Task Polygon Automation Guide<a class="headerlink" href="#task-polygon-automation-guide" title="Permanent link">&para;</a></h1>
+<h2 id="task-polygon-automation-guide">Task Polygon Automation Guide<a class="headerlink" href="#task-polygon-automation-guide" title="Anchor link to this section">⚓︎</a></h2>
 <p>This guide shows the steps for an automated workflow that generates task polygons for use in Tasking Manager.</p>
-<p><em>For a list of all guides on the TCAT Wiki, refer to the <a href="../../../guides-list/">Guides List</a>.</em></p>
+<p><em>For a list of all guides on the <abbr title="Taskar Center for Accessible Technology">TCAT</abbr> Wiki, refer to the <a href="../../../guides-list/">Guides List</a>.</em></p>
 <hr />
-<h2 id="task-polygon-automation-process">Task Polygon Automation Process<a class="headerlink" href="#task-polygon-automation-process" title="Permanent link">&para;</a></h2>
+<h3 id="task-polygon-automation-process">Task Polygon Automation Process<a class="headerlink" href="#task-polygon-automation-process" title="Anchor link to this section">⚓︎</a></h3>
 <p>This guide outlines the step-by-step process for automating task polygon generation for OpenSidewalks communities.</p>
-<h3 id="prerequisites">Prerequisites<a class="headerlink" href="#prerequisites" title="Permanent link">&para;</a></h3>
+<h4 id="prerequisites">Prerequisites<a class="headerlink" href="#prerequisites" title="Anchor link to this section">⚓︎</a></h4>
 <ul>
 <li><code>poetry shell</code> environment activated</li>
 <li><code>osmium</code> command-line tool installed</li>
 <li><code>osw task</code> command available</li>
 </ul>
-<h3 id="process-overview">Process Overview<a class="headerlink" href="#process-overview" title="Permanent link">&para;</a></h3>
-<h4 id="step-1-initialize-staging-directory">Step 1: Initialize Staging Directory<a class="headerlink" href="#step-1-initialize-staging-directory" title="Permanent link">&para;</a></h4>
+<h4 id="process-overview">Process Overview<a class="headerlink" href="#process-overview" title="Anchor link to this section">⚓︎</a></h4>
+<h5 id="step-1-initialize-staging-directory">Step 1: Initialize Staging Directory<a class="headerlink" href="#step-1-initialize-staging-directory" title="Anchor link to this section">⚓︎</a></h5>
 <p><strong>Action:</strong> Create the <code>staging_directory</code> in <code>/projects/osw/opensidewalks_cli/</code></p>
 <p><strong>Command:</strong></p>
-<div class="language-bash highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a>mkdir<span class="w"> </span>staging_directory
-</span></code></pre></div>
-<h4 id="step-2-create-state-structure">Step 2: Create State Structure<a class="headerlink" href="#step-2-create-state-structure" title="Permanent link">&para;</a></h4>
+<div class="highlight"><pre><span></span><code>mkdir<span class="w"> </span>staging_directory
+</code></pre></div>
+<h5 id="step-2-create-state-structure">Step 2: Create State Structure<a class="headerlink" href="#step-2-create-state-structure" title="Anchor link to this section">⚓︎</a></h5>
 <p><strong>Action:</strong> Create a folder for each <strong>state</strong> within the staging directory.</p>
 <p><strong>Directory structure:</strong></p>
-<div class="language-text highlight"><pre><span></span><code><span id="__span-1-1"><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a>staging_directory/
-</span><span id="__span-1-2"><a id="__codelineno-1-2" name="__codelineno-1-2" href="#__codelineno-1-2"></a>└── &lt;state&gt;/
-</span></code></pre></div>
-<h4 id="step-3-create-county-structure">Step 3: Create County Structure<a class="headerlink" href="#step-3-create-county-structure" title="Permanent link">&para;</a></h4>
+<div class="highlight"><pre><span></span><code>staging_directory/
+└── &lt;state&gt;/
+</code></pre></div>
+<h5 id="step-3-create-county-structure">Step 3: Create County Structure<a class="headerlink" href="#step-3-create-county-structure" title="Anchor link to this section">⚓︎</a></h5>
 <p><strong>Action:</strong> Create a subfolder for each <strong>county</strong> within each state folder.</p>
 <p><strong>Directory structure:</strong></p>
-<div class="language-text highlight"><pre><span></span><code><span id="__span-2-1"><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a>staging_directory/
-</span><span id="__span-2-2"><a id="__codelineno-2-2" name="__codelineno-2-2" href="#__codelineno-2-2"></a>└── &lt;state&gt;/
-</span><span id="__span-2-3"><a id="__codelineno-2-3" name="__codelineno-2-3" href="#__codelineno-2-3"></a>    └── &lt;county&gt;/
-</span></code></pre></div>
-<h4 id="step-4-create-community-structure">Step 4: Create Community Structure<a class="headerlink" href="#step-4-create-community-structure" title="Permanent link">&para;</a></h4>
+<div class="highlight"><pre><span></span><code>staging_directory/
+└── &lt;state&gt;/
+    └── &lt;county&gt;/
+</code></pre></div>
+<h5 id="step-4-create-community-structure">Step 4: Create Community Structure<a class="headerlink" href="#step-4-create-community-structure" title="Anchor link to this section">⚓︎</a></h5>
 <p><strong>Action:</strong> Create a subfolder for each <strong>community</strong> within each county folder.</p>
 <p><strong>Directory structure:</strong></p>
-<div class="language-text highlight"><pre><span></span><code><span id="__span-3-1"><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a>staging_directory/
-</span><span id="__span-3-2"><a id="__codelineno-3-2" name="__codelineno-3-2" href="#__codelineno-3-2"></a>└── &lt;state&gt;/
-</span><span id="__span-3-3"><a id="__codelineno-3-3" name="__codelineno-3-3" href="#__codelineno-3-3"></a>    └── &lt;county&gt;/
-</span><span id="__span-3-4"><a id="__codelineno-3-4" name="__codelineno-3-4" href="#__codelineno-3-4"></a>        └── &lt;community&gt;/
-</span></code></pre></div>
-<h4 id="step-5-create-working-subfolders">Step 5: Create Working Subfolders<a class="headerlink" href="#step-5-create-working-subfolders" title="Permanent link">&para;</a></h4>
+<div class="highlight"><pre><span></span><code>staging_directory/
+└── &lt;state&gt;/
+    └── &lt;county&gt;/
+        └── &lt;community&gt;/
+</code></pre></div>
+<h5 id="step-5-create-working-subfolders">Step 5: Create Working Subfolders<a class="headerlink" href="#step-5-create-working-subfolders" title="Anchor link to this section">⚓︎</a></h5>
 <p><strong>Action:</strong> Create <strong>working subfolders</strong> (<code>data_sources</code>, <code>intermediate_data</code>, <code>output</code>) for each community.</p>
 <p><strong>Directory structure:</strong></p>
-<div class="language-text highlight"><pre><span></span><code><span id="__span-4-1"><a id="__codelineno-4-1" name="__codelineno-4-1" href="#__codelineno-4-1"></a>staging_directory/
-</span><span id="__span-4-2"><a id="__codelineno-4-2" name="__codelineno-4-2" href="#__codelineno-4-2"></a>└── &lt;state&gt;/
-</span><span id="__span-4-3"><a id="__codelineno-4-3" name="__codelineno-4-3" href="#__codelineno-4-3"></a>    └── &lt;county&gt;/
-</span><span id="__span-4-4"><a id="__codelineno-4-4" name="__codelineno-4-4" href="#__codelineno-4-4"></a>        └── &lt;community&gt;/
-</span><span id="__span-4-5"><a id="__codelineno-4-5" name="__codelineno-4-5" href="#__codelineno-4-5"></a>            ├── data_sources/
-</span><span id="__span-4-6"><a id="__codelineno-4-6" name="__codelineno-4-6" href="#__codelineno-4-6"></a>            ├── intermediate_data/
-</span><span id="__span-4-7"><a id="__codelineno-4-7" name="__codelineno-4-7" href="#__codelineno-4-7"></a>            └── output/
-</span></code></pre></div>
-<h4 id="step-6-obtain-osm-pbf-files">Step 6: Obtain OSM PBF Files<a class="headerlink" href="#step-6-obtain-osm-pbf-files" title="Permanent link">&para;</a></h4>
-<p><strong>Action:</strong> Obtain an <strong>OSM PBF file</strong> for each state and store it in the <code>/&lt;state&gt;/</code> folder.</p>
+<div class="highlight"><pre><span></span><code>staging_directory/
+└── &lt;state&gt;/
+    └── &lt;county&gt;/
+        └── &lt;community&gt;/
+            ├── data_sources/
+            ├── intermediate_data/
+            └── output/
+</code></pre></div>
+<h5 id="step-6-obtain-osm-pbf-files">Step 6: Obtain <abbr title="OpenStreetMap">OSM</abbr> PBF Files<a class="headerlink" href="#step-6-obtain-osm-pbf-files" title="Anchor link to this section">⚓︎</a></h5>
+<p><strong>Action:</strong> Obtain an <strong><abbr title="OpenStreetMap">OSM</abbr> PBF file</strong> for each state and store it in the <code>/&lt;state&gt;/</code> folder.</p>
 <p><strong>File location:</strong></p>
-<div class="language-text highlight"><pre><span></span><code><span id="__span-5-1"><a id="__codelineno-5-1" name="__codelineno-5-1" href="#__codelineno-5-1"></a>/&lt;state&gt;/&lt;state&gt;-latest.osm.pbf
-</span></code></pre></div>
-<h4 id="step-7-obtain-community-target-data">Step 7: Obtain Community Target Data<a class="headerlink" href="#step-7-obtain-community-target-data" title="Permanent link">&para;</a></h4>
+<div class="highlight"><pre><span></span><code>/&lt;state&gt;/&lt;state&gt;-latest.osm.pbf
+</code></pre></div>
+<h5 id="step-7-obtain-community-target-data">Step 7: Obtain Community Target Data<a class="headerlink" href="#step-7-obtain-community-target-data" title="Anchor link to this section">⚓︎</a></h5>
 <p><strong>Action:</strong> Obtain the <strong>GeoJSON data for the bbox</strong> of each community target mapping area and store it in the corresponding <code>intermediate_data</code> subfolder.</p>
 <p><strong>File location:</strong></p>
-<div class="language-text highlight"><pre><span></span><code><span id="__span-6-1"><a id="__codelineno-6-1" name="__codelineno-6-1" href="#__codelineno-6-1"></a>/&lt;state&gt;/&lt;county&gt;/&lt;community&gt;/intermediate_data/&lt;community&gt;.geojson
-</span></code></pre></div>
-<h4 id="step-8-extract-community-data-with-osmium">Step 8: Extract Community Data with Osmium<a class="headerlink" href="#step-8-extract-community-data-with-osmium" title="Permanent link">&para;</a></h4>
+<div class="highlight"><pre><span></span><code>/&lt;state&gt;/&lt;county&gt;/&lt;community&gt;/intermediate_data/&lt;community&gt;.geojson
+</code></pre></div>
+<h5 id="step-8-extract-community-data-with-osmium">Step 8: Extract Community Data with Osmium<a class="headerlink" href="#step-8-extract-community-data-with-osmium" title="Anchor link to this section">⚓︎</a></h5>
 <p><strong>Action:</strong> For each <code>&lt;community&gt;</code>, run <code>osmium extract</code> to trim the state <code>osm.pbf</code> file to the target mapping area.</p>
 <p><strong>Command:</strong></p>
-<div class="language-bash highlight"><pre><span></span><code><span id="__span-7-1"><a id="__codelineno-7-1" name="__codelineno-7-1" href="#__codelineno-7-1"></a>osmium<span class="w"> </span>extract<span class="w"> </span>-p<span class="w"> </span>&lt;path-to-geojson&gt;<span class="w"> </span>&lt;path-to-pbf&gt;<span class="w"> </span>-o<span class="w"> </span>&lt;path-to-new-pbf&gt;
-</span></code></pre></div>
+<div class="highlight"><pre><span></span><code>osmium<span class="w"> </span>extract<span class="w"> </span>-p<span class="w"> </span>&lt;path-to-geojson&gt;<span class="w"> </span>&lt;path-to-pbf&gt;<span class="w"> </span>-o<span class="w"> </span>&lt;path-to-new-pbf&gt;
+</code></pre></div>
 <p><strong>Example:</strong></p>
-<div class="language-bash highlight"><pre><span></span><code><span id="__span-8-1"><a id="__codelineno-8-1" name="__codelineno-8-1" href="#__codelineno-8-1"></a>osmium<span class="w"> </span>extract<span class="w"> </span>-p<span class="w"> </span>../&lt;state&gt;/&lt;county&gt;/&lt;community&gt;/intermediate_data/&lt;community&gt;.geojson<span class="w"> </span>../&lt;state&gt;/&lt;state&gt;-latest.osm.pbf<span class="w"> </span>-o<span class="w"> </span>../&lt;state&gt;/&lt;county&gt;/&lt;community&gt;/data_sources/&lt;community&gt;.osm.pbf
-</span></code></pre></div>
+<div class="highlight"><pre><span></span><code>osmium<span class="w"> </span>extract<span class="w"> </span>-p<span class="w"> </span>../&lt;state&gt;/&lt;county&gt;/&lt;community&gt;/intermediate_data/&lt;community&gt;.geojson<span class="w"> </span>../&lt;state&gt;/&lt;state&gt;-latest.osm.pbf<span class="w"> </span>-o<span class="w"> </span>../&lt;state&gt;/&lt;county&gt;/&lt;community&gt;/data_sources/&lt;community&gt;.osm.pbf
+</code></pre></div>
 <p><strong>Important:</strong> This command must be run from the <code>../opensidewalks_cli/staging_directory/</code> directory!</p>
-<h4 id="step-9-generate-task-polygons-with-osw-task">Step 9: Generate Task Polygons with OSW Task<a class="headerlink" href="#step-9-generate-task-polygons-with-osw-task" title="Permanent link">&para;</a></h4>
+<h5 id="step-9-generate-task-polygons-with-osw-task">Step 9: Generate Task Polygons with <abbr title="OpenSidewalks">OSW</abbr> Task<a class="headerlink" href="#step-9-generate-task-polygons-with-osw-task" title="Anchor link to this section">⚓︎</a></h5>
 <p><strong>Action:</strong> For each <code>&lt;community&gt;</code>, run <code>osw task</code> to generate the task polygon files (<code>crossing_tasks.geojson</code> and <code>sidewalk_tasks.geojson</code>) corresponding to the target mapping area.</p>
 <p><strong>Command:</strong></p>
-<div class="language-bash highlight"><pre><span></span><code><span id="__span-9-1"><a id="__codelineno-9-1" name="__codelineno-9-1" href="#__codelineno-9-1"></a>osw<span class="w"> </span>task<span class="w"> </span>&lt;path-to-pbf&gt;<span class="w"> </span>&lt;path-to-geojson&gt;<span class="w"> </span>&lt;output-path&gt;
-</span></code></pre></div>
+<div class="highlight"><pre><span></span><code>osw<span class="w"> </span>task<span class="w"> </span>&lt;path-to-pbf&gt;<span class="w"> </span>&lt;path-to-geojson&gt;<span class="w"> </span>&lt;output-path&gt;
+</code></pre></div>
 <p><strong>Example:</strong></p>
-<div class="language-bash highlight"><pre><span></span><code><span id="__span-10-1"><a id="__codelineno-10-1" name="__codelineno-10-1" href="#__codelineno-10-1"></a>osw<span class="w"> </span>task<span class="w"> </span>../&lt;state&gt;/&lt;county&gt;/&lt;community&gt;/data_sources/&lt;community&gt;.osm.pbf<span class="w"> </span>../&lt;state&gt;/&lt;county&gt;/&lt;community&gt;/intermediate_data/&lt;community&gt;.geojson<span class="w"> </span>.../&lt;state&gt;/&lt;county&gt;/&lt;community&gt;/output
-</span></code></pre></div>
-<h4 id="step-10-rename-output-files">Step 10: Rename Output Files<a class="headerlink" href="#step-10-rename-output-files" title="Permanent link">&para;</a></h4>
+<div class="highlight"><pre><span></span><code>osw<span class="w"> </span>task<span class="w"> </span>../&lt;state&gt;/&lt;county&gt;/&lt;community&gt;/data_sources/&lt;community&gt;.osm.pbf<span class="w"> </span>../&lt;state&gt;/&lt;county&gt;/&lt;community&gt;/intermediate_data/&lt;community&gt;.geojson<span class="w"> </span>.../&lt;state&gt;/&lt;county&gt;/&lt;community&gt;/output
+</code></pre></div>
+<h5 id="step-10-rename-output-files">Step 10: Rename Output Files<a class="headerlink" href="#step-10-rename-output-files" title="Anchor link to this section">⚓︎</a></h5>
 <p><strong>Action:</strong> For each <code>&lt;community&gt;</code>, rename the <code>crossing_tasks.geojson</code> and <code>sidewalks_tasks.geojson</code> files in the <code>../&lt;community&gt;/output</code> directory to more easily identify them as they are uploaded into the Tasking Manager.</p>
 <p><strong>Rename pattern:</strong></p>
-<div class="language-bash highlight"><pre><span></span><code><span id="__span-11-1"><a id="__codelineno-11-1" name="__codelineno-11-1" href="#__codelineno-11-1"></a>mv<span class="w"> </span>../&lt;community&gt;/output/crossing_tasks.geojson<span class="w"> </span>../&lt;community&gt;/output/&lt;community&gt;_crossing_tasks.geojson
-</span><span id="__span-11-2"><a id="__codelineno-11-2" name="__codelineno-11-2" href="#__codelineno-11-2"></a>mv<span class="w"> </span>../&lt;community&gt;/output/sidewalk_tasks.geojson<span class="w"> </span>../&lt;community&gt;/output/&lt;community&gt;_sidewalk_tasks.geojson
-</span></code></pre></div>
-<h2 id="final-directory-structure">Final Directory Structure<a class="headerlink" href="#final-directory-structure" title="Permanent link">&para;</a></h2>
+<div class="highlight"><pre><span></span><code>mv<span class="w"> </span>../&lt;community&gt;/output/crossing_tasks.geojson<span class="w"> </span>../&lt;community&gt;/output/&lt;community&gt;_crossing_tasks.geojson
+mv<span class="w"> </span>../&lt;community&gt;/output/sidewalk_tasks.geojson<span class="w"> </span>../&lt;community&gt;/output/&lt;community&gt;_sidewalk_tasks.geojson
+</code></pre></div>
+<h2 id="final-directory-structure">Final Directory Structure<a class="headerlink" href="#final-directory-structure" title="Anchor link to this section">⚓︎</a></h2>
 <p>After completing all steps, your directory structure should look like:</p>
-<div class="language-text highlight"><pre><span></span><code><span id="__span-12-1"><a id="__codelineno-12-1" name="__codelineno-12-1" href="#__codelineno-12-1"></a>staging_directory/
-</span><span id="__span-12-2"><a id="__codelineno-12-2" name="__codelineno-12-2" href="#__codelineno-12-2"></a>├── &lt;state&gt;/
-</span><span id="__span-12-3"><a id="__codelineno-12-3" name="__codelineno-12-3" href="#__codelineno-12-3"></a>│   ├── &lt;state&gt;-latest.osm.pbf
-</span><span id="__span-12-4"><a id="__codelineno-12-4" name="__codelineno-12-4" href="#__codelineno-12-4"></a>│   └── &lt;county&gt;/
-</span><span id="__span-12-5"><a id="__codelineno-12-5" name="__codelineno-12-5" href="#__codelineno-12-5"></a>│       └── &lt;community&gt;/
-</span><span id="__span-12-6"><a id="__codelineno-12-6" name="__codelineno-12-6" href="#__codelineno-12-6"></a>│           ├── data_sources/
-</span><span id="__span-12-7"><a id="__codelineno-12-7" name="__codelineno-12-7" href="#__codelineno-12-7"></a>│           │   └── &lt;community&gt;.osm.pbf
-</span><span id="__span-12-8"><a id="__codelineno-12-8" name="__codelineno-12-8" href="#__codelineno-12-8"></a>│           ├── intermediate_data/
-</span><span id="__span-12-9"><a id="__codelineno-12-9" name="__codelineno-12-9" href="#__codelineno-12-9"></a>│           │   └── &lt;community&gt;.geojson
-</span><span id="__span-12-10"><a id="__codelineno-12-10" name="__codelineno-12-10" href="#__codelineno-12-10"></a>│           └── output/
-</span><span id="__span-12-11"><a id="__codelineno-12-11" name="__codelineno-12-11" href="#__codelineno-12-11"></a>│               ├── &lt;community&gt;_crossing_tasks.geojson
-</span><span id="__span-12-12"><a id="__codelineno-12-12" name="__codelineno-12-12" href="#__codelineno-12-12"></a>│               └── &lt;community&gt;_sidewalk_tasks.geojson
-</span><span id="__span-12-13"><a id="__codelineno-12-13" name="__codelineno-12-13" href="#__codelineno-12-13"></a>│
-</span><span id="__span-12-14"><a id="__codelineno-12-14" name="__codelineno-12-14" href="#__codelineno-12-14"></a>└── [Additional states follow same pattern]
-</span></code></pre></div>
-<h2 id="next-steps">Next Steps<a class="headerlink" href="#next-steps" title="Permanent link">&para;</a></h2>
+<div class="highlight"><pre><span></span><code>staging_directory/
+├── &lt;state&gt;/
+│   ├── &lt;state&gt;-latest.osm.pbf
+│   └── &lt;county&gt;/
+│       └── &lt;community&gt;/
+│           ├── data_sources/
+│           │   └── &lt;community&gt;.osm.pbf
+│           ├── intermediate_data/
+│           │   └── &lt;community&gt;.geojson
+│           └── output/
+│               ├── &lt;community&gt;_crossing_tasks.geojson
+│               └── &lt;community&gt;_sidewalk_tasks.geojson
+│
+└── [Additional states follow same pattern]
+</code></pre></div>
+<h3 id="next-steps">Next Steps<a class="headerlink" href="#next-steps" title="Anchor link to this section">⚓︎</a></h3>
 <p>The generated task polygon files (<code>&lt;community&gt;_crossing_tasks.geojson</code> and <code>&lt;community&gt;_sidewalk_tasks.geojson</code>) are now ready to be uploaded to the Tasking Manager for community mapping activities.</p>
 
 
@@ -3590,12 +3840,18 @@
       
       
       
-      <script id="__config" type="application/json">{"annotate":null,"base":"../../..","features":["announce.dismiss","content.code.annotate","content.code.copy","content.code.select","content.footnote.tooltips","content.tabs.link","content.tooltips","navigation.footer","navigation.indexes","navigation.instant","navigation.instant.prefetch","navigation.instant.progress","navigation.path","navigation.sections","navigation.tabs","navigation.top","navigation.tracking","toc.follow","toc.integrate"],"search":"../../../assets/javascripts/workers/search.e2d2d235.min.js","tags":null,"translations":{"clipboard.copied":"Copied to clipboard","clipboard.copy":"Copy to clipboard","search.result.more.one":"1 more on this page","search.result.more.other":"# more on this page","search.result.none":"No matching documents","search.result.one":"1 matching document","search.result.other":"# matching documents","search.result.placeholder":"Type to start searching","search.result.term.missing":"Missing","select.version":"Select version"},"version":null}</script>
+      <script id="__config" type="application/json">{"annotate":null,"base":"../../..","features":["announce.dismiss","content.code.annotate","content.code.copy","content.code.select","content.footnote.tooltips","content.tabs.link","content.tooltips","navigation.footer","navigation.indexes","navigation.instant","navigation.instant.prefetch","navigation.instant.progress","navigation.path","navigation.sections","navigation.tabs","navigation.top","navigation.tracking","toc.follow"],"search":"../../../assets/javascripts/workers/search.e2d2d235.min.js","tags":null,"translations":{"clipboard.copied":"Copied to clipboard","clipboard.copy":"Copy to clipboard","search.result.more.one":"1 more on this page","search.result.more.other":"# more on this page","search.result.none":"No matching documents","search.result.one":"1 matching document","search.result.other":"# matching documents","search.result.placeholder":"Type to start searching","search.result.term.missing":"Missing","select.version":"Select version"},"version":null}</script>
     
     
       <script src="../../../assets/javascripts/bundle.00c35305.min.js"></script>
       
         <script src="../../../javascripts/extra.js"></script>
+      
+        <script src="../../../javascripts/katex.js"></script>
+      
+        <script src="https://unpkg.com/katex@0/dist/katex.min.js"></script>
+      
+        <script src="https://unpkg.com/katex@0/dist/contrib/auto-render.min.js"></script>
       
     
   </body>

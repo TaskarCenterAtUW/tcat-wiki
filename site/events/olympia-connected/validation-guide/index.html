@@ -91,6 +91,8 @@
     
       <link rel="stylesheet" href="../../../stylesheets/extra.css">
     
+      <link rel="stylesheet" href="https://unpkg.com/katex@0/dist/katex.min.css">
+    
     <script>__md_scope=new URL("../../..",location),__md_hash=e=>[...e].reduce(((e,t)=>(e<<5)-e+t.charCodeAt(0)),0),__md_get=(e,t=localStorage,a=__md_scope)=>JSON.parse(t.getItem(a.pathname+"."+e)),__md_set=(e,t,a=localStorage,_=__md_scope)=>{try{a.setItem(_.pathname+"."+e,JSON.stringify(t))}catch(e){}},document.documentElement.setAttribute("data-platform",navigator.platform)</script>
     
       
@@ -227,7 +229,7 @@
       <a href="../../.." class="md-tabs__link">
         
   
-  TCAT Wiki
+  Index
 
       </a>
     </li>
@@ -462,9 +464,7 @@
   
 
 
-  
-
-<nav class="md-nav md-nav--primary md-nav--lifted md-nav--integrated" aria-label="Navigation" data-md-level="0">
+<nav class="md-nav md-nav--primary md-nav--lifted" aria-label="Navigation" data-md-level="0">
   <label class="md-nav__title" for="__drawer">
     <a href="../../.." title="TCAT Wiki" class="md-nav__button md-logo" aria-label="TCAT Wiki" data-md-component="logo">
       
@@ -491,7 +491,7 @@
   <span class="md-ellipsis">
     
   
-    TCAT Wiki
+    Index
   
 
     
@@ -1431,8 +1431,6 @@
       <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
       
       
-        
-      
       
         <label class="md-nav__link md-nav__link--active" for="__toc">
           
@@ -1472,20 +1470,32 @@
         
 
 
-<nav class="md-nav md-nav--secondary" aria-label="On this page">
+  
+
+<nav class="md-nav md-nav--secondary" aria-label="On this page:">
   
   
-  
-    
   
   
     <label class="md-nav__title" for="__toc">
       <span class="md-nav__icon md-icon"></span>
-      On this page
+      On this page:
     </label>
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
+  <a href="#validation-guide" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Validation Guide
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Validation Guide">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
   <a href="#quick-links" class="md-nav__link">
     <span class="md-ellipsis">
       
@@ -1495,8 +1505,8 @@
   </a>
   
 </li>
-      
-        <li class="md-nav__item">
+        
+          <li class="md-nav__item">
   <a href="#what-is-validation" class="md-nav__link">
     <span class="md-ellipsis">
       
@@ -1506,8 +1516,8 @@
   </a>
   
 </li>
-      
-        <li class="md-nav__item">
+        
+          <li class="md-nav__item">
   <a href="#getting-started" class="md-nav__link">
     <span class="md-ellipsis">
       
@@ -1545,8 +1555,8 @@
     </nav>
   
 </li>
-      
-        <li class="md-nav__item">
+        
+          <li class="md-nav__item">
   <a href="#validation-checklist" class="md-nav__link">
     <span class="md-ellipsis">
       
@@ -1606,8 +1616,8 @@
     </nav>
   
 </li>
-      
-        <li class="md-nav__item">
+        
+          <li class="md-nav__item">
   <a href="#how-to-fix-issues" class="md-nav__link">
     <span class="md-ellipsis">
       
@@ -1656,8 +1666,8 @@
     </nav>
   
 </li>
-      
-        <li class="md-nav__item">
+        
+          <li class="md-nav__item">
   <a href="#completing-validation" class="md-nav__link">
     <span class="md-ellipsis">
       
@@ -1695,8 +1705,8 @@
     </nav>
   
 </li>
-      
-        <li class="md-nav__item">
+        
+          <li class="md-nav__item">
   <a href="#tips-for-validators" class="md-nav__link">
     <span class="md-ellipsis">
       
@@ -1704,6 +1714,11 @@
       
     </span>
   </a>
+  
+</li>
+        
+      </ul>
+    </nav>
   
 </li>
       
@@ -3266,6 +3281,272 @@
               </div>
             
             
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+  
+
+<nav class="md-nav md-nav--secondary" aria-label="On this page:">
+  
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      On this page:
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#validation-guide" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Validation Guide
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Validation Guide">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#quick-links" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Quick Links
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#what-is-validation" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        What is Validation?
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#getting-started" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Getting Started
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Getting Started">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1-find-tasks-ready-for-validation" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1. Find Tasks Ready for Validation
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2-review-task-history" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2. Review Task History
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#validation-checklist" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Validation Checklist
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Validation Checklist">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1-crossings" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1. Crossings
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2-curbs" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2. Curbs
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#3-sidewalks" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3. Sidewalks
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#4-connectors-crossing-links" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        4. Connectors (Crossing Links)
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#how-to-fix-issues" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        How to Fix Issues
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="How to Fix Issues">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#moving-features" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Moving Features
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#adding-missing-tags" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Adding Missing Tags
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#connecting-features" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Connecting Features
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#completing-validation" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Completing Validation
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Completing Validation">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#if-everything-looks-good" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        If Everything Looks Good
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#if-issues-remain" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        If Issues Remain
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#tips-for-validators" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Tips for Validators
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
           
           
             <div class="md-content" data-md-component="content">
@@ -3287,7 +3568,7 @@
       <a href="../../.." class="md-path__link">
         
   <span class="md-ellipsis">
-    TCAT Wiki
+    Index
   </span>
 
       </a>
@@ -3340,18 +3621,20 @@
                 
                   
 
+  <h1>Validation Guide</h1>
+
 <!-- @format -->
 
-<h1 id="validation-guide">Validation Guide<a class="headerlink" href="#validation-guide" title="Permanent link">&para;</a></h1>
-<p>This guide covers how to validate mapped pedestrian infrastructure tasks in the OSM US Tasking Manager for the <a href="../">Olympia, Connected</a> event.</p>
+<h2 id="validation-guide">Validation Guide<a class="headerlink" href="#validation-guide" title="Anchor link to this section">⚓︎</a></h2>
+<p>This guide covers how to validate mapped pedestrian infrastructure tasks in the <abbr title="OpenStreetMap">OSM</abbr> US Tasking Manager for the <a href="../">Olympia, Connected</a> event.</p>
 <hr />
-<h2 id="quick-links">Quick Links<a class="headerlink" href="#quick-links" title="Permanent link">&para;</a></h2>
+<h3 id="quick-links">Quick Links<a class="headerlink" href="#quick-links" title="Anchor link to this section">⚓︎</a></h3>
 <ul>
 <li><strong>Mapping Guide</strong>: <a href="../mapping-guide/">Mapping Guide</a> (review before validating)</li>
 <li><strong>Team</strong>: <a href="https://tasks.openstreetmap.us/teams/26/membership/">#26 - OpenSidewalks - Validators</a></li>
 <li><strong>Project</strong>: <a href="https://tasks.openstreetmap.us/projects/1083">#1083 - Olympia, WA, US: Pedestrian Infrastructure | #OpenSidewalks</a></li>
 </ul>
-<h2 id="what-is-validation">What is Validation?<a class="headerlink" href="#what-is-validation" title="Permanent link">&para;</a></h2>
+<h3 id="what-is-validation">What is Validation?<a class="headerlink" href="#what-is-validation" title="Anchor link to this section">⚓︎</a></h3>
 <p>Validation is the process of reviewing the edits of other contributors and evaluating the mapped features to ensure they are:</p>
 <ol>
 <li><strong>Correctly shaped</strong> - Lines and points placed accurately</li>
@@ -3361,15 +3644,15 @@
 </ol>
 <p>Validators should have some mapping experience and be familiar with the <a href="../mapping-guide/">Mapping Guide</a> before validating others' work.</p>
 <hr />
-<h2 id="getting-started">Getting Started<a class="headerlink" href="#getting-started" title="Permanent link">&para;</a></h2>
-<h3 id="1-find-tasks-ready-for-validation">1. Find Tasks Ready for Validation<a class="headerlink" href="#1-find-tasks-ready-for-validation" title="Permanent link">&para;</a></h3>
+<h3 id="getting-started">Getting Started<a class="headerlink" href="#getting-started" title="Anchor link to this section">⚓︎</a></h3>
+<h4 id="1-find-tasks-ready-for-validation">1. Find Tasks Ready for Validation<a class="headerlink" href="#1-find-tasks-ready-for-validation" title="Anchor link to this section">⚓︎</a></h4>
 <ol>
 <li>Go to the project: <a href="https://tasks.openstreetmap.us/projects/1083">#1083 - Olympia, WA, US: Pedestrian Infrastructure | #OpenSidewalks</a></li>
 <li>Select <strong>Contribute</strong> at the bottom right</li>
 <li>Look for tasks <strong>ready for validation</strong> (blue tiles)</li>
 <li>Select an already-mapped, blue task and click <strong>Validate selected task</strong></li>
 </ol>
-<h3 id="2-review-task-history">2. Review Task History<a class="headerlink" href="#2-review-task-history" title="Permanent link">&para;</a></h3>
+<h4 id="2-review-task-history">2. Review Task History<a class="headerlink" href="#2-review-task-history" title="Anchor link to this section">⚓︎</a></h4>
 <p>Before validating, check the <strong>History</strong> tab to see:</p>
 <ul>
 <li>Who mapped the task</li>
@@ -3377,8 +3660,8 @@
 <li>Previous validation attempts</li>
 </ul>
 <hr />
-<h2 id="validation-checklist">Validation Checklist<a class="headerlink" href="#validation-checklist" title="Permanent link">&para;</a></h2>
-<h3 id="1-crossings">1. Crossings<a class="headerlink" href="#1-crossings" title="Permanent link">&para;</a></h3>
+<h3 id="validation-checklist">Validation Checklist<a class="headerlink" href="#validation-checklist" title="Anchor link to this section">⚓︎</a></h3>
+<h4 id="1-crossings">1. Crossings<a class="headerlink" href="#1-crossings" title="Anchor link to this section">⚓︎</a></h4>
 <ul class="task-list">
 <li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> Crossings are drawn as <strong>lines</strong> across streets</li>
 <li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> Each crossing has <strong>curb nodes</strong> at both ends</li>
@@ -3410,7 +3693,7 @@
 </tr>
 </tbody>
 </table>
-<h3 id="2-curbs">2. Curbs<a class="headerlink" href="#2-curbs" title="Permanent link">&para;</a></h3>
+<h4 id="2-curbs">2. Curbs<a class="headerlink" href="#2-curbs" title="Anchor link to this section">⚓︎</a></h4>
 <ul class="task-list">
 <li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> Curbs are <strong>points</strong> at the edge of the street</li>
 <li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> Curb type matches imagery: <code>kerb=lowered</code>, <code>raised</code>, or <code>flush</code></li>
@@ -3439,7 +3722,7 @@
 </tr>
 </tbody>
 </table>
-<h3 id="3-sidewalks">3. Sidewalks<a class="headerlink" href="#3-sidewalks" title="Permanent link">&para;</a></h3>
+<h4 id="3-sidewalks">3. Sidewalks<a class="headerlink" href="#3-sidewalks" title="Anchor link to this section">⚓︎</a></h4>
 <ul class="task-list">
 <li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> Sidewalks are drawn as <strong>lines</strong> along the center of the path</li>
 <li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> Sidewalks are tagged, at minimum: <code>highway=footway</code> + <code>footway=sidewalk</code></li>
@@ -3464,27 +3747,27 @@
 </tr>
 </tbody>
 </table>
-<h3 id="4-connectors-crossing-links">4. Connectors (Crossing Links)<a class="headerlink" href="#4-connectors-crossing-links" title="Permanent link">&para;</a></h3>
+<h4 id="4-connectors-crossing-links">4. Connectors (Crossing Links)<a class="headerlink" href="#4-connectors-crossing-links" title="Anchor link to this section">⚓︎</a></h4>
 <ul class="task-list">
 <li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> Short lines connect curbs to sidewalk centerlines</li>
 <li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> Connectors are tagged: <code>highway=footway</code> + <code>footway=sidewalk</code> + (optional) <code>crossing_link=yes</code></li>
 <li class="task-list-item"><label class="task-list-control"><input type="checkbox" disabled/><span class="task-list-indicator"></span></label> One end connects to a curb node, the other to the sidewalk centerline</li>
 </ul>
 <hr />
-<h2 id="how-to-fix-issues">How to Fix Issues<a class="headerlink" href="#how-to-fix-issues" title="Permanent link">&para;</a></h2>
-<h3 id="moving-features">Moving Features<a class="headerlink" href="#moving-features" title="Permanent link">&para;</a></h3>
+<h3 id="how-to-fix-issues">How to Fix Issues<a class="headerlink" href="#how-to-fix-issues" title="Anchor link to this section">⚓︎</a></h3>
+<h4 id="moving-features">Moving Features<a class="headerlink" href="#moving-features" title="Anchor link to this section">⚓︎</a></h4>
 <ol>
 <li>Select the feature (node or way)</li>
 <li>Drag it to the correct location</li>
 <li>If you accidentally move something else, press <strong>Ctrl+Z</strong> to undo</li>
 </ol>
-<h3 id="adding-missing-tags">Adding Missing Tags<a class="headerlink" href="#adding-missing-tags" title="Permanent link">&para;</a></h3>
+<h4 id="adding-missing-tags">Adding Missing Tags<a class="headerlink" href="#adding-missing-tags" title="Anchor link to this section">⚓︎</a></h4>
 <ol>
 <li>Select the feature</li>
 <li>In the left panel, search for the correct preset (e.g., "Lowered Curb")</li>
 <li>Alternatively, manually add tags in the expandable "Tags" table section</li>
 </ol>
-<h3 id="connecting-features">Connecting Features<a class="headerlink" href="#connecting-features" title="Permanent link">&para;</a></h3>
+<h4 id="connecting-features">Connecting Features<a class="headerlink" href="#connecting-features" title="Anchor link to this section">⚓︎</a></h4>
 <p>If the editor shows a warning about disconnected features:</p>
 <ol>
 <li>Select the feature</li>
@@ -3493,15 +3776,15 @@
 <li>Add tags (e.g., <code>highway=crossing</code>) as necessary</li>
 </ol>
 <hr />
-<h2 id="completing-validation">Completing Validation<a class="headerlink" href="#completing-validation" title="Permanent link">&para;</a></h2>
-<h3 id="if-everything-looks-good">If Everything Looks Good<a class="headerlink" href="#if-everything-looks-good" title="Permanent link">&para;</a></h3>
+<h3 id="completing-validation">Completing Validation<a class="headerlink" href="#completing-validation" title="Anchor link to this section">⚓︎</a></h3>
+<h4 id="if-everything-looks-good">If Everything Looks Good<a class="headerlink" href="#if-everything-looks-good" title="Anchor link to this section">⚓︎</a></h4>
 <ol>
 <li>Save and upload any minor corrections you made</li>
 <li>In the Tasking Manager panel on the right, answer <strong>Yes</strong> to "<em>Is this task well mapped?</em>"</li>
 <li>Click <strong>Submit task</strong></li>
 </ol>
 <p>The task will turn from blue to green on the map to confirm that it has been validated.</p>
-<h3 id="if-issues-remain">If Issues Remain<a class="headerlink" href="#if-issues-remain" title="Permanent link">&para;</a></h3>
+<h4 id="if-issues-remain">If Issues Remain<a class="headerlink" href="#if-issues-remain" title="Anchor link to this section">⚓︎</a></h4>
 <ol>
 <li>Save and upload any corrections you made</li>
 <li>In the Tasking Manager panel on the right, answer <strong>No</strong> to "<em>Is this task well mapped?</em>"</li>
@@ -3511,7 +3794,7 @@
 <p>The task will return to the mapper for further work.</p>
 <p>Done! <strong>Thank you</strong> so much for contributing to this project. Your contributions directly impact the lives of pedestrians in the area that use OpenStreetMap-based applications to safely navigate their environment.</p>
 <hr />
-<h2 id="tips-for-validators">Tips for Validators<a class="headerlink" href="#tips-for-validators" title="Permanent link">&para;</a></h2>
+<h3 id="tips-for-validators">Tips for Validators<a class="headerlink" href="#tips-for-validators" title="Anchor link to this section">⚓︎</a></h3>
 <ul>
 <li><strong>Use street-level imagery</strong>: Enable Bing Streetside or Mapillary to verify curb types</li>
 <li><strong>Check connectivity</strong>: Make sure features are connected and there are no gaps in the pedestrian network that don't exist on the ground</li>
@@ -3712,12 +3995,18 @@
       
       
       
-      <script id="__config" type="application/json">{"annotate":null,"base":"../../..","features":["announce.dismiss","content.code.annotate","content.code.copy","content.code.select","content.footnote.tooltips","content.tabs.link","content.tooltips","navigation.footer","navigation.indexes","navigation.instant","navigation.instant.prefetch","navigation.instant.progress","navigation.path","navigation.sections","navigation.tabs","navigation.top","navigation.tracking","toc.follow","toc.integrate"],"search":"../../../assets/javascripts/workers/search.e2d2d235.min.js","tags":null,"translations":{"clipboard.copied":"Copied to clipboard","clipboard.copy":"Copy to clipboard","search.result.more.one":"1 more on this page","search.result.more.other":"# more on this page","search.result.none":"No matching documents","search.result.one":"1 matching document","search.result.other":"# matching documents","search.result.placeholder":"Type to start searching","search.result.term.missing":"Missing","select.version":"Select version"},"version":null}</script>
+      <script id="__config" type="application/json">{"annotate":null,"base":"../../..","features":["announce.dismiss","content.code.annotate","content.code.copy","content.code.select","content.footnote.tooltips","content.tabs.link","content.tooltips","navigation.footer","navigation.indexes","navigation.instant","navigation.instant.prefetch","navigation.instant.progress","navigation.path","navigation.sections","navigation.tabs","navigation.top","navigation.tracking","toc.follow"],"search":"../../../assets/javascripts/workers/search.e2d2d235.min.js","tags":null,"translations":{"clipboard.copied":"Copied to clipboard","clipboard.copy":"Copy to clipboard","search.result.more.one":"1 more on this page","search.result.more.other":"# more on this page","search.result.none":"No matching documents","search.result.one":"1 matching document","search.result.other":"# matching documents","search.result.placeholder":"Type to start searching","search.result.term.missing":"Missing","select.version":"Select version"},"version":null}</script>
     
     
       <script src="../../../assets/javascripts/bundle.00c35305.min.js"></script>
       
         <script src="../../../javascripts/extra.js"></script>
+      
+        <script src="../../../javascripts/katex.js"></script>
+      
+        <script src="https://unpkg.com/katex@0/dist/katex.min.js"></script>
+      
+        <script src="https://unpkg.com/katex@0/dist/contrib/auto-render.min.js"></script>
       
     
   </body>

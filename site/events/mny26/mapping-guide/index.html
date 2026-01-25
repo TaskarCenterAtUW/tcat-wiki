@@ -91,6 +91,8 @@
     
       <link rel="stylesheet" href="../../../stylesheets/extra.css">
     
+      <link rel="stylesheet" href="https://unpkg.com/katex@0/dist/katex.min.css">
+    
     <script>__md_scope=new URL("../../..",location),__md_hash=e=>[...e].reduce(((e,t)=>(e<<5)-e+t.charCodeAt(0)),0),__md_get=(e,t=localStorage,a=__md_scope)=>JSON.parse(t.getItem(a.pathname+"."+e)),__md_set=(e,t,a=localStorage,_=__md_scope)=>{try{a.setItem(_.pathname+"."+e,JSON.stringify(t))}catch(e){}},document.documentElement.setAttribute("data-platform",navigator.platform)</script>
     
       
@@ -227,7 +229,7 @@
       <a href="../../.." class="md-tabs__link">
         
   
-  TCAT Wiki
+  Index
 
       </a>
     </li>
@@ -462,9 +464,7 @@
   
 
 
-  
-
-<nav class="md-nav md-nav--primary md-nav--lifted md-nav--integrated" aria-label="Navigation" data-md-level="0">
+<nav class="md-nav md-nav--primary md-nav--lifted" aria-label="Navigation" data-md-level="0">
   <label class="md-nav__title" for="__drawer">
     <a href="../../.." title="TCAT Wiki" class="md-nav__button md-logo" aria-label="TCAT Wiki" data-md-component="logo">
       
@@ -491,7 +491,7 @@
   <span class="md-ellipsis">
     
   
-    TCAT Wiki
+    Index
   
 
     
@@ -1127,8 +1127,6 @@
       <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
       
       
-        
-      
       
         <label class="md-nav__link md-nav__link--active" for="__toc">
           
@@ -1168,20 +1166,32 @@
         
 
 
-<nav class="md-nav md-nav--secondary" aria-label="On this page">
+  
+
+<nav class="md-nav md-nav--secondary" aria-label="On this page:">
   
   
-  
-    
   
   
     <label class="md-nav__title" for="__toc">
       <span class="md-nav__icon md-icon"></span>
-      On this page
+      On this page:
     </label>
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
+  <a href="#mapping-guide" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Mapping Guide
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Mapping Guide">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
   <a href="#quick-links" class="md-nav__link">
     <span class="md-ellipsis">
       
@@ -1191,8 +1201,8 @@
   </a>
   
 </li>
-      
-        <li class="md-nav__item">
+        
+          <li class="md-nav__item">
   <a href="#getting-started" class="md-nav__link">
     <span class="md-ellipsis">
       
@@ -1230,8 +1240,8 @@
     </nav>
   
 </li>
-      
-        <li class="md-nav__item">
+        
+          <li class="md-nav__item">
   <a href="#what-to-map" class="md-nav__link">
     <span class="md-ellipsis">
       
@@ -1258,8 +1268,8 @@
     </nav>
   
 </li>
-      
-        <li class="md-nav__item">
+        
+          <li class="md-nav__item">
   <a href="#mapping-crossings" class="md-nav__link">
     <span class="md-ellipsis">
       
@@ -1319,8 +1329,8 @@
     </nav>
   
 </li>
-      
-        <li class="md-nav__item">
+        
+          <li class="md-nav__item">
   <a href="#mapping-curbs" class="md-nav__link">
     <span class="md-ellipsis">
       
@@ -1369,8 +1379,8 @@
     </nav>
   
 </li>
-      
-        <li class="md-nav__item">
+        
+          <li class="md-nav__item">
   <a href="#mapping-sidewalks" class="md-nav__link">
     <span class="md-ellipsis">
       
@@ -1430,8 +1440,8 @@
     </nav>
   
 </li>
-      
-        <li class="md-nav__item">
+        
+          <li class="md-nav__item">
   <a href="#tagging-crossing-links" class="md-nav__link">
     <span class="md-ellipsis">
       
@@ -1469,8 +1479,8 @@
     </nav>
   
 </li>
-      
-        <li class="md-nav__item">
+        
+          <li class="md-nav__item">
   <a href="#tagging-quick-reference" class="md-nav__link">
     <span class="md-ellipsis">
       
@@ -1508,8 +1518,8 @@
     </nav>
   
 </li>
-      
-        <li class="md-nav__item">
+        
+          <li class="md-nav__item">
   <a href="#saving-your-work" class="md-nav__link">
     <span class="md-ellipsis">
       
@@ -1519,8 +1529,8 @@
   </a>
   
 </li>
-      
-        <li class="md-nav__item">
+        
+          <li class="md-nav__item">
   <a href="#tips" class="md-nav__link">
     <span class="md-ellipsis">
       
@@ -1528,6 +1538,11 @@
       
     </span>
   </a>
+  
+</li>
+        
+      </ul>
+    </nav>
   
 </li>
       
@@ -3394,6 +3409,400 @@
               </div>
             
             
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+  
+
+<nav class="md-nav md-nav--secondary" aria-label="On this page:">
+  
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      On this page:
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#mapping-guide" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Mapping Guide
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Mapping Guide">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#quick-links" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Quick Links
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#getting-started" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Getting Started
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Getting Started">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1-log-in-to-the-tasking-manager" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1. Log In to the Tasking Manager
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2-select-a-task" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2. Select a Task
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#what-to-map" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        What to Map
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="What to Map">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#priority-order" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Priority Order
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#mapping-crossings" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Mapping Crossings
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Mapping Crossings">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#how-to-map" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        How to Map
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#tagging" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Tagging
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#tag-the-crossing-node" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Tag the Crossing Node
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#additional-crossing-tags" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Additional Crossing Tags
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#mapping-curbs" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Mapping Curbs
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Mapping Curbs">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#how-to-map_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        How to Map
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#tagging_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Tagging
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#additional-curb-tags" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Additional Curb Tags
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#mapping-sidewalks" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Mapping Sidewalks
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Mapping Sidewalks">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#how-to-map_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        How to Map
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#tagging_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Tagging
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#additional-sidewalk-tags" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Additional Sidewalk Tags
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#important-rules" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Important Rules
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#tagging-crossing-links" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Tagging Crossing Links
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Tagging Crossing Links">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#how-to-map_3" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        How to Map
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#tagging_3" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Tagging
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#tagging-quick-reference" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Tagging Quick Reference
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Tagging Quick Reference">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#essentials" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Essentials
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#details" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Details
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#saving-your-work" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Saving Your Work
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#tips" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Tips
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
           
           
             <div class="md-content" data-md-component="content">
@@ -3415,7 +3824,7 @@
       <a href="../../.." class="md-path__link">
         
   <span class="md-ellipsis">
-    TCAT Wiki
+    Index
   </span>
 
       </a>
@@ -3468,25 +3877,27 @@
                 
                   
 
+  <h1>Mapping Guide</h1>
+
 <!-- @format -->
 
-<h1 id="mapping-guide">Mapping Guide<a class="headerlink" href="#mapping-guide" title="Permanent link">&para;</a></h1>
+<h2 id="mapping-guide">Mapping Guide<a class="headerlink" href="#mapping-guide" title="Anchor link to this section">⚓︎</a></h2>
 <p>This guide covers how to map pedestrian infrastructure for the <a href="../">Mappy New Year 2026</a> event.</p>
 <hr />
-<h2 id="quick-links">Quick Links<a class="headerlink" href="#quick-links" title="Permanent link">&para;</a></h2>
+<h3 id="quick-links">Quick Links<a class="headerlink" href="#quick-links" title="Anchor link to this section">⚓︎</a></h3>
 <ul>
 <li><strong>Project</strong>: <a href="https://tasks.openstreetmap.us/projects/1017">#1017 - Tacoma, WA, US: Pedestrian Infrastructure | #OpenSidewalks</a></li>
 </ul>
 <hr />
-<h2 id="getting-started">Getting Started<a class="headerlink" href="#getting-started" title="Permanent link">&para;</a></h2>
-<h3 id="1-log-in-to-the-tasking-manager">1. Log In to the Tasking Manager<a class="headerlink" href="#1-log-in-to-the-tasking-manager" title="Permanent link">&para;</a></h3>
+<h3 id="getting-started">Getting Started<a class="headerlink" href="#getting-started" title="Anchor link to this section">⚓︎</a></h3>
+<h4 id="1-log-in-to-the-tasking-manager">1. Log In to the Tasking Manager<a class="headerlink" href="#1-log-in-to-the-tasking-manager" title="Anchor link to this section">⚓︎</a></h4>
 <ol>
 <li><strong>Create an OpenStreetMap account</strong> at <a href="https://www.openstreetmap.org/user/new">openstreetmap.org</a> if you don't already have one.</li>
-<li><strong>Log in to the OSM US Tasking Manager</strong> at <a href="https://tasks.openstreetmap.us">tasks.openstreetmap.us</a> using your OSM account.</li>
+<li><strong>Log in to the <abbr title="OpenStreetMap">OSM</abbr> US Tasking Manager</strong> at <a href="https://tasks.openstreetmap.us">tasks.openstreetmap.us</a> using your <abbr title="OpenStreetMap">OSM</abbr> account.</li>
 <li><strong>Join the OpenSidewalks Mappers Team</strong> by visiting <a href="https://tasks.openstreetmap.us/teams/27/membership">tasks.openstreetmap.us/teams/27/membership</a> and selecting <strong>Join team</strong> at the bottom right.</li>
 <li><strong>Navigate to the Tacoma project</strong> by opening <a href="https://tasks.openstreetmap.us/projects/1017">tasks.openstreetmap.us/projects/1017</a></li>
 </ol>
-<h3 id="2-select-a-task">2. Select a Task<a class="headerlink" href="#2-select-a-task" title="Permanent link">&para;</a></h3>
+<h4 id="2-select-a-task">2. Select a Task<a class="headerlink" href="#2-select-a-task" title="Anchor link to this section">⚓︎</a></h4>
 <ol>
 <li>Select <strong>Contribute</strong> on the bottom right of the project page</li>
 <li><strong>Choose</strong> an available task (white tiles on the map)</li>
@@ -3494,9 +3905,9 @@
 </ol>
 <p>You'll see the iD Editor on the left and task information on the right. The magenta boundary shows your task area.</p>
 <hr />
-<h2 id="what-to-map">What to Map<a class="headerlink" href="#what-to-map" title="Permanent link">&para;</a></h2>
+<h3 id="what-to-map">What to Map<a class="headerlink" href="#what-to-map" title="Anchor link to this section">⚓︎</a></h3>
 <p>We're mapping the <strong>pedestrian network</strong>: sidewalks, crossings, and curbs. These features enable routing applications to provide pedestrian directions.</p>
-<h3 id="priority-order">Priority Order<a class="headerlink" href="#priority-order" title="Permanent link">&para;</a></h3>
+<h4 id="priority-order">Priority Order<a class="headerlink" href="#priority-order" title="Anchor link to this section">⚓︎</a></h4>
 <ol>
 <li>
 <p><strong>Crossings</strong> - Map these first to anchor the network at intersections</p>
@@ -3508,16 +3919,16 @@
 </li>
 </ol>
 <hr />
-<h2 id="mapping-crossings">Mapping Crossings<a class="headerlink" href="#mapping-crossings" title="Permanent link">&para;</a></h2>
+<h3 id="mapping-crossings">Mapping Crossings<a class="headerlink" href="#mapping-crossings" title="Anchor link to this section">⚓︎</a></h3>
 <p>Crossings are paths pedestrians traverse to cross streets.</p>
-<h3 id="how-to-map">How to Map<a class="headerlink" href="#how-to-map" title="Permanent link">&para;</a></h3>
+<h4 id="how-to-map">How to Map<a class="headerlink" href="#how-to-map" title="Anchor link to this section">⚓︎</a></h4>
 <ol>
 <li>Select the <strong>Line</strong> tool</li>
 <li>Click at one edge of the street (curb location)</li>
 <li>Click where your line meets the road centerline (this connects to the road network)</li>
 <li>Double-click at the opposite curb to finish</li>
 </ol>
-<h3 id="tagging">Tagging<a class="headerlink" href="#tagging" title="Permanent link">&para;</a></h3>
+<h4 id="tagging">Tagging<a class="headerlink" href="#tagging" title="Anchor link to this section">⚓︎</a></h4>
 <p>Search for these presets in the iD Editor:</p>
 <table>
 <thead>
@@ -3540,13 +3951,13 @@
 </tr>
 </tbody>
 </table>
-<h3 id="tag-the-crossing-node">Tag the Crossing Node<a class="headerlink" href="#tag-the-crossing-node" title="Permanent link">&para;</a></h3>
+<h4 id="tag-the-crossing-node">Tag the Crossing Node<a class="headerlink" href="#tag-the-crossing-node" title="Anchor link to this section">⚓︎</a></h4>
 <p>The middle point where the crossing intersects the roadway should be tagged:</p>
 <ul>
 <li><code>highway=crossing</code></li>
 <li><code>crossing:markings=yes</code> or <code>crossing:markings=no</code></li>
 </ul>
-<h3 id="additional-crossing-tags">Additional Crossing Tags<a class="headerlink" href="#additional-crossing-tags" title="Permanent link">&para;</a></h3>
+<h4 id="additional-crossing-tags">Additional Crossing Tags<a class="headerlink" href="#additional-crossing-tags" title="Anchor link to this section">⚓︎</a></h4>
 <p>If you'd like to add additional detail that is important for accessibility-focused routing:</p>
 <table>
 <thead>
@@ -3575,11 +3986,11 @@
 </tbody>
 </table>
 <hr />
-<h2 id="mapping-curbs">Mapping Curbs<a class="headerlink" href="#mapping-curbs" title="Permanent link">&para;</a></h2>
+<h3 id="mapping-curbs">Mapping Curbs<a class="headerlink" href="#mapping-curbs" title="Anchor link to this section">⚓︎</a></h3>
 <p>Curbs are points at the edge of the street where crossings begin and end.</p>
-<h3 id="how-to-map_1">How to Map<a class="headerlink" href="#how-to-map_1" title="Permanent link">&para;</a></h3>
+<h4 id="how-to-map_1">How to Map<a class="headerlink" href="#how-to-map_1" title="Anchor link to this section">⚓︎</a></h4>
 <p>The endpoints of your crossing line are curb nodes. Select each endpoint and tag it.</p>
-<h3 id="tagging_1">Tagging<a class="headerlink" href="#tagging_1" title="Permanent link">&para;</a></h3>
+<h4 id="tagging_1">Tagging<a class="headerlink" href="#tagging_1" title="Anchor link to this section">⚓︎</a></h4>
 <table>
 <thead>
 <tr>
@@ -3610,7 +4021,7 @@
 </tr>
 </tbody>
 </table>
-<h3 id="additional-curb-tags">Additional Curb Tags<a class="headerlink" href="#additional-curb-tags" title="Permanent link">&para;</a></h3>
+<h4 id="additional-curb-tags">Additional Curb Tags<a class="headerlink" href="#additional-curb-tags" title="Anchor link to this section">⚓︎</a></h4>
 <table>
 <thead>
 <tr>
@@ -3628,15 +4039,15 @@
 </tbody>
 </table>
 <hr />
-<h2 id="mapping-sidewalks">Mapping Sidewalks<a class="headerlink" href="#mapping-sidewalks" title="Permanent link">&para;</a></h2>
+<h3 id="mapping-sidewalks">Mapping Sidewalks<a class="headerlink" href="#mapping-sidewalks" title="Anchor link to this section">⚓︎</a></h3>
 <p>Sidewalks are pedestrian paths along streets.</p>
-<h3 id="how-to-map_2">How to Map<a class="headerlink" href="#how-to-map_2" title="Permanent link">&para;</a></h3>
+<h4 id="how-to-map_2">How to Map<a class="headerlink" href="#how-to-map_2" title="Anchor link to this section">⚓︎</a></h4>
 <ol>
 <li>Select the <strong>Line</strong> tool</li>
 <li>Draw a line along the <strong>center</strong> of the sidewalk</li>
 <li>Search for "Sidewalk" and select the preset</li>
 </ol>
-<h3 id="tagging_2">Tagging<a class="headerlink" href="#tagging_2" title="Permanent link">&para;</a></h3>
+<h4 id="tagging_2">Tagging<a class="headerlink" href="#tagging_2" title="Anchor link to this section">⚓︎</a></h4>
 <table>
 <thead>
 <tr>
@@ -3653,7 +4064,7 @@
 </tr>
 </tbody>
 </table>
-<h3 id="additional-sidewalk-tags">Additional Sidewalk Tags<a class="headerlink" href="#additional-sidewalk-tags" title="Permanent link">&para;</a></h3>
+<h4 id="additional-sidewalk-tags">Additional Sidewalk Tags<a class="headerlink" href="#additional-sidewalk-tags" title="Anchor link to this section">⚓︎</a></h4>
 <table>
 <thead>
 <tr>
@@ -3670,15 +4081,15 @@
 </tr>
 </tbody>
 </table>
-<h3 id="important-rules">Important Rules<a class="headerlink" href="#important-rules" title="Permanent link">&para;</a></h3>
+<h4 id="important-rules">Important Rules<a class="headerlink" href="#important-rules" title="Anchor link to this section">⚓︎</a></h4>
 <ul>
 <li>Draw sidewalks down the <strong>center</strong> of the path</li>
 <li>Connect sidewalks to service roads (driveways, alleys) where they intersect by adding a node (point) that both ways (lines) share</li>
 </ul>
 <hr />
-<h2 id="tagging-crossing-links">Tagging Crossing Links<a class="headerlink" href="#tagging-crossing-links" title="Permanent link">&para;</a></h2>
+<h3 id="tagging-crossing-links">Tagging Crossing Links<a class="headerlink" href="#tagging-crossing-links" title="Anchor link to this section">⚓︎</a></h3>
 <p>Optionally, the short sidewalk <strong>connector</strong> segments between sidewalk centerlines and curb nodes can be tagged with <code>crossing_link=yes</code> to help identify these features, which often have different properties such as an incline or different surface material.</p>
-<h3 id="how-to-map_3">How to Map<a class="headerlink" href="#how-to-map_3" title="Permanent link">&para;</a></h3>
+<h4 id="how-to-map_3">How to Map<a class="headerlink" href="#how-to-map_3" title="Anchor link to this section">⚓︎</a></h4>
 <ol>
 <li>Select the <strong>Line</strong> tool</li>
 <li>Click on a curb node (at the end of a crossing)</li>
@@ -3687,7 +4098,7 @@
 <li>Search for "Sidewalk" and select the preset</li>
 <li>Add the <code>crossing_link=yes</code> tag</li>
 </ol>
-<h3 id="tagging_3">Tagging<a class="headerlink" href="#tagging_3" title="Permanent link">&para;</a></h3>
+<h4 id="tagging_3">Tagging<a class="headerlink" href="#tagging_3" title="Anchor link to this section">⚓︎</a></h4>
 <table>
 <thead>
 <tr>
@@ -3705,8 +4116,8 @@
 </tbody>
 </table>
 <hr />
-<h2 id="tagging-quick-reference">Tagging Quick Reference<a class="headerlink" href="#tagging-quick-reference" title="Permanent link">&para;</a></h2>
-<h3 id="essentials">Essentials<a class="headerlink" href="#essentials" title="Permanent link">&para;</a></h3>
+<h3 id="tagging-quick-reference">Tagging Quick Reference<a class="headerlink" href="#tagging-quick-reference" title="Anchor link to this section">⚓︎</a></h3>
+<h4 id="essentials">Essentials<a class="headerlink" href="#essentials" title="Anchor link to this section">⚓︎</a></h4>
 <table>
 <thead>
 <tr>
@@ -3733,7 +4144,7 @@
 </tr>
 </tbody>
 </table>
-<h3 id="details">Details<a class="headerlink" href="#details" title="Permanent link">&para;</a></h3>
+<h4 id="details">Details<a class="headerlink" href="#details" title="Anchor link to this section">⚓︎</a></h4>
 <table>
 <thead>
 <tr>
@@ -3761,7 +4172,7 @@
 </tbody>
 </table>
 <hr />
-<h2 id="saving-your-work">Saving Your Work<a class="headerlink" href="#saving-your-work" title="Permanent link">&para;</a></h2>
+<h3 id="saving-your-work">Saving Your Work<a class="headerlink" href="#saving-your-work" title="Anchor link to this section">⚓︎</a></h3>
 <ol>
 <li>Click <strong>Save</strong> in the iD Editor (top right)</li>
 <li>
@@ -3780,7 +4191,7 @@
 </ol>
 <p>Done! <strong>Thank you</strong> so much for contributing to this project. Your contributions directly impact the lives of pedestrians in the area that use OpenStreetMap-based applications to safely navigate their environment.</p>
 <hr />
-<h2 id="tips">Tips<a class="headerlink" href="#tips" title="Permanent link">&para;</a></h2>
+<h3 id="tips">Tips<a class="headerlink" href="#tips" title="Anchor link to this section">⚓︎</a></h3>
 <ul>
 <li><strong>Use street-level imagery</strong>: Open the Map Data panel on the right and, under the Photo Overlays menu, check Bing Streetside or Mapillary layers for street-level imagery, which can be helpful for determining curb types.</li>
 <li><strong>When in doubt, don't guess!</strong> It's better to not include a detail (such as a curb type) when you aren't confident about it - this allows on-the-ground surveyors to add the missing data and prevents routing applications from suggesting a route that isn't actually accessible.</li>
@@ -3981,12 +4392,18 @@
       
       
       
-      <script id="__config" type="application/json">{"annotate":null,"base":"../../..","features":["announce.dismiss","content.code.annotate","content.code.copy","content.code.select","content.footnote.tooltips","content.tabs.link","content.tooltips","navigation.footer","navigation.indexes","navigation.instant","navigation.instant.prefetch","navigation.instant.progress","navigation.path","navigation.sections","navigation.tabs","navigation.top","navigation.tracking","toc.follow","toc.integrate"],"search":"../../../assets/javascripts/workers/search.e2d2d235.min.js","tags":null,"translations":{"clipboard.copied":"Copied to clipboard","clipboard.copy":"Copy to clipboard","search.result.more.one":"1 more on this page","search.result.more.other":"# more on this page","search.result.none":"No matching documents","search.result.one":"1 matching document","search.result.other":"# matching documents","search.result.placeholder":"Type to start searching","search.result.term.missing":"Missing","select.version":"Select version"},"version":null}</script>
+      <script id="__config" type="application/json">{"annotate":null,"base":"../../..","features":["announce.dismiss","content.code.annotate","content.code.copy","content.code.select","content.footnote.tooltips","content.tabs.link","content.tooltips","navigation.footer","navigation.indexes","navigation.instant","navigation.instant.prefetch","navigation.instant.progress","navigation.path","navigation.sections","navigation.tabs","navigation.top","navigation.tracking","toc.follow"],"search":"../../../assets/javascripts/workers/search.e2d2d235.min.js","tags":null,"translations":{"clipboard.copied":"Copied to clipboard","clipboard.copy":"Copy to clipboard","search.result.more.one":"1 more on this page","search.result.more.other":"# more on this page","search.result.none":"No matching documents","search.result.one":"1 matching document","search.result.other":"# matching documents","search.result.placeholder":"Type to start searching","search.result.term.missing":"Missing","select.version":"Select version"},"version":null}</script>
     
     
       <script src="../../../assets/javascripts/bundle.00c35305.min.js"></script>
       
         <script src="../../../javascripts/extra.js"></script>
+      
+        <script src="../../../javascripts/katex.js"></script>
+      
+        <script src="https://unpkg.com/katex@0/dist/katex.min.js"></script>
+      
+        <script src="https://unpkg.com/katex@0/dist/contrib/auto-render.min.js"></script>
       
     
   </body>
