@@ -2,8 +2,8 @@
 # This script is designed to be run in a PowerShell environment.
 
 # Name: TCAT Wiki - Link Checker
-# Version: 3.3.0
-# Date: 2026-01-02
+# Version: 3.3.1
+# Date: 2026-01-26
 # Author: Amy Bordenave, Taskar Center for Accessible Technology, University of Washington
 # License: CC-BY-ND 4.0 International
 
