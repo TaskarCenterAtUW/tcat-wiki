@@ -2,8 +2,8 @@
 #Requires -Modules @{ ModuleName='Pester'; ModuleVersion='5.0.0' }
 
 # Name: TCAT Wiki - Link Checker Tests
-# Version: 1.1.0
-# Date: 2026-01-02
+# Version: 1.1.1
+# Date: 2026-01-26
 # Author: Amy Bordenave, Taskar Center for Accessible Technology, University of Washington
 # License: CC-BY-ND 4.0 International
 
