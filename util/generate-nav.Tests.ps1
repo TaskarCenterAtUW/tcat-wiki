@@ -2,8 +2,8 @@
 #Requires -Modules @{ ModuleName='Pester'; ModuleVersion='5.0.0' }
 
 # Name: TCAT Wiki - Navigation Generator Tests
-# Version: 1.0.1
-# Date: 2025-12-31
+# Version: 1.0.2
+# Date: 2026-01-26
 # Author: Amy Bordenave, Taskar Center for Accessible Technology, University of Washington
 # License: CC-BY-ND 4.0 International
 
@@ -136,55 +136,55 @@ Describe "Protect-TomlString" {
 Describe "ConvertTo-Title" {
     Context "Known acronyms and project names" {
         It "Should return 'OSW' for 'osw'" {
-            ConvertTo-Title -Name "osw" | Should -Be "OSW"
+            ConvertTo-Title -name "osw" | Should -Be "OSW"
         }
 
         It "Should return 'TDEI' for 'tdei'" {
-            ConvertTo-Title -Name "tdei" | Should -Be "TDEI"
+            ConvertTo-Title -name "tdei" | Should -Be "TDEI"
         }
 
         It "Should return 'JOSM' for 'josm'" {
-            ConvertTo-Title -Name "josm" | Should -Be "JOSM"
+            ConvertTo-Title -name "josm" | Should -Be "JOSM"
         }
 
         It "Should return 'OpenSidewalks' for 'opensidewalks'" {
-            ConvertTo-Title -Name "opensidewalks" | Should -Be "OpenSidewalks"
+            ConvertTo-Title -name "opensidewalks" | Should -Be "OpenSidewalks"
         }
 
         It "Should return 'AccessMap' for 'accessmap'" {
-            ConvertTo-Title -Name "accessmap" | Should -Be "AccessMap"
+            ConvertTo-Title -name "accessmap" | Should -Be "AccessMap"
         }
 
         It "Should return 'AVIV ScoutRoute' for 'aviv-scoutroute'" {
-            ConvertTo-Title -Name "aviv-scoutroute" | Should -Be "AVIV ScoutRoute"
+            ConvertTo-Title -name "aviv-scoutroute" | Should -Be "AVIV ScoutRoute"
         }
     }
 
     Context "Index files" {
         It "Should return null for 'index'" {
-            ConvertTo-Title -Name "index" | Should -BeNullOrEmpty
+            ConvertTo-Title -name "index" | Should -BeNullOrEmpty
         }
 
         It "Should return null for 'index.md'" {
-            ConvertTo-Title -Name "index.md" | Should -BeNullOrEmpty
+            ConvertTo-Title -name "index.md" | Should -BeNullOrEmpty
         }
     }
 
     Context "Kebab-case and snake_case names" {
         It "Should convert 'user-manual' to 'User Manual'" {
-            ConvertTo-Title -Name "user-manual" | Should -Be "User Manual"
+            ConvertTo-Title -name "user-manual" | Should -Be "User Manual"
         }
 
         It "Should convert 'my-great-guide' to 'My Great Guide'" {
-            ConvertTo-Title -Name "my-great-guide" | Should -Be "My Great Guide"
+            ConvertTo-Title -name "my-great-guide" | Should -Be "My Great Guide"
         }
 
         It "Should convert 'user_guide' to 'User Guide'" {
-            ConvertTo-Title -Name "user_guide" | Should -Be "User Guide"
+            ConvertTo-Title -name "user_guide" | Should -Be "User Guide"
         }
 
         It "Should strip .md extension before converting" {
-            ConvertTo-Title -Name "my-guide.md" | Should -Be "My Guide"
+            ConvertTo-Title -name "my-guide.md" | Should -Be "My Guide"
         }
     }
 }
