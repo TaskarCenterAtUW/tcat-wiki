@@ -2,8 +2,8 @@
 # This script is designed to be run in a PowerShell environment.
 
 # Name: TCAT Wiki - Utility Runner
-# Version: 1.0.0
-# Date: 2026-01-02
+# Version: 2.0.0
+# Date: 2026-01-26
 # Author: Amy Bordenave, Taskar Center for Accessible Technology, University of Washington
 # License: CC-BY-ND 4.0 International
 
@@ -66,6 +66,39 @@ param(
 # HELPER FUNCTIONS
 # ==============================================================================
 
+function Test-PesterVersion {
+    <#
+    .SYNOPSIS
+        Checks if Pester v5+ is installed
+    .DESCRIPTION
+        Verifies that Pester module version 5.0.0 or higher is available.
+        Returns $true if valid, $false otherwise.
+    .OUTPUTS
+        Boolean indicating whether Pester v5+ is available
+    #>
+    $requiredVersion = [Version]"5.0.0"
+
+    $pesterModule = Get-Module -Name Pester -ListAvailable |
+        Sort-Object Version -Descending |
+        Select-Object -First 1
+
+    if (-not $pesterModule) {
+        Write-Host "  ✗ ERROR: Pester module is not installed." -ForegroundColor Red
+        Write-Host "    Install with: Install-Module -Name Pester -Force -SkipPublisherCheck" -ForegroundColor Yellow
+        return $false
+    }
+
+    if ($pesterModule.Version -lt $requiredVersion) {
+        Write-Host "  ✗ ERROR: Pester v5+ is required. Found v$($pesterModule.Version)" -ForegroundColor Red
+        Write-Host "    Update with: Install-Module -Name Pester -Force -SkipPublisherCheck" -ForegroundColor Yellow
+        return $false
+    }
+
+    # Import the correct version
+    Import-Module Pester -MinimumVersion $requiredVersion -Force
+    return $true
+}
+
 function Get-TestFiles {
     <#
     .SYNOPSIS
@@ -119,7 +152,23 @@ function Invoke-PesterTests {
     foreach ($testFile in $TestFiles) {
         Write-Host "  Running: $($testFile.Name)" -ForegroundColor Cyan
 
-        $result = Invoke-Pester -Path $testFile.FullName -PassThru -Output Minimal
+        try {
+            $config = New-PesterConfiguration
+            $config.Run.Path = $testFile.FullName
+            $config.Run.PassThru = $true
+            $config.Output.Verbosity = 'Minimal'
+            $result = Invoke-Pester -Configuration $config -ErrorAction Stop
+        } catch {
+            Write-Host "    ✗ ERROR: Failed to run Pester - $_" -ForegroundColor Red
+            $allPassed = $false
+            continue
+        }
+
+        if ($null -eq $result) {
+            Write-Host "    ✗ ERROR: Pester returned no result" -ForegroundColor Red
+            $allPassed = $false
+            continue
+        }
 
         $totalTests += $result.TotalCount
         $totalPassed += $result.PassedCount
@@ -232,6 +281,15 @@ if (-not $SkipTests) {
     Write-Host "PHASE 1: Running Pester Tests"
     Write-Host "------------------------------"
     Write-Host ""
+
+    # Check Pester version first
+    if (-not (Test-PesterVersion)) {
+        Write-Host ""
+        Write-Host "==========================================="
+        Write-Host "PHASE 1 FAILED: Pester v5+ is required" -ForegroundColor Red
+        Write-Host ""
+        exit 1
+    }
 
     $testFiles = Get-TestFiles -UtilPath $utilPath
 

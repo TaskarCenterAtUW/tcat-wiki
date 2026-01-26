@@ -2,8 +2,8 @@
 #Requires -Modules @{ ModuleName='Pester'; ModuleVersion='5.0.0' }
 
 # Name: TCAT Wiki - Utility Runner Tests
-# Version: 1.0.0
-# Date: 2026-01-02
+# Version: 2.0.0
+# Date: 2026-01-26
 # Author: Amy Bordenave, Taskar Center for Accessible Technology, University of Washington
 # License: CC-BY-ND 4.0 International
 
@@ -114,6 +114,22 @@ Describe "Get-TestFiles" {
 }
 
 # ==============================================================================
+# TEST-PESTERVERSION TESTS
+# ==============================================================================
+
+Describe "Test-PesterVersion" {
+    It "Should return true when Pester v5+ is available" {
+        # We're running in Pester v5+ (required by this test file), so this should pass
+        $result = Test-PesterVersion
+        $result | Should -Be $true
+    }
+
+    It "Should be a function" {
+        Get-Command Test-PesterVersion -CommandType Function | Should -Not -BeNullOrEmpty
+    }
+}
+
+# ==============================================================================
 # INVOKE-UTILITYSCRIPT TESTS
 # ==============================================================================
 
@@ -192,6 +208,10 @@ Describe "Script Structure" {
 
     It "Should define Invoke-UtilityScript function" {
         $scriptContent | Should -Match 'function Invoke-UtilityScript'
+    }
+
+    It "Should define Test-PesterVersion function" {
+        $scriptContent | Should -Match 'function Test-PesterVersion'
     }
 
     It "Should have SkipTests parameter" {
