@@ -24,7 +24,11 @@ The main TCAT events calendar can be found at [https://tcat.cs.washington.edu/ev
 
 **Location:** In-person: [HRDG 143, Seattle University Harding Building, 1215 E Columbia St, Seattle, WA 98122, US](https://maps.app.goo.gl/C836YuP9ftyKrYyu9)
 
-**TDEI Calendar:** [Olympia, Connected](https://tcat.cs.washington.edu/events/)
+**TDEI Calendar:** [Olympia, Connected](https://tcat.cs.washington.edu/events/in-person-maptimesea-x-tcat-olympia-connected-mapping-for-mobility-in-openstreetmap/)
+
+**Meetup:** [Event #312922643](https://www.meetup.com/maptimesea/events/312922643/)
+
+**OSMCal:** [Event #4456](https://osmcal.org/event/4456/)
 
 **Related Content:**
 
