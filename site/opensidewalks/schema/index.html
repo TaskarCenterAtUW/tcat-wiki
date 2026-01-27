@@ -3026,6 +3026,45 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
+  <a href="#transportation-data-exchange-initiative" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Transportation Data Exchange Initiative
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Transportation Data Exchange Initiative">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#metrics" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Metrics
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#validation" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Validation
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
   <a href="#opensidewalks-schema-entities" class="md-nav__link">
     <span class="md-ellipsis">
       
@@ -3493,17 +3532,6 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#validation" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Validation
-      
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
   <a href="#schema-versions" class="md-nav__link">
     <span class="md-ellipsis">
       
@@ -3659,6 +3687,37 @@
 <p>Therefore, OpenSidewalks Schema data represents a traversable and graph-analyzable network of (conditional) pedestrian paths like sidewalks, street crossings, some streets, and other paths, as well as metadata representing potential barriers.</p>
 <p>The OpenSidewalks Schema is explicitly a <em>network schema</em>: its primary features are defined and interpreted as elements of a network (or graph), i.e. Nodes and Edges. Therefore, OpenSidewalks Schema data is understood not only as a set of features describing pedestrian infrastructure, but as <em>connected elements</em> of a pedestrian network.</p>
 <p>The OpenSidewalks Schema draws from and is intended to be largely compatible with OpenStreetMap data, though it is possible to create OpenSidewalks Schema data not derived from OpenStreetMap.</p>
+<h3 id="transportation-data-exchange-initiative">Transportation Data Exchange Initiative<a class="headerlink" href="#transportation-data-exchange-initiative" title="Anchor link to this section">⚓︎</a></h3>
+<p>Validation, ingestion, and downstream use of the OpenSidewalks Schema are supported by tooling developed and maintained through the <a href="../../tdei/">Transportation Data Exchange Initiative</a> (<a href="https://tdei.cs.washington.edu/"><abbr title="Transportation Data Exchange Initiative">TDEI</abbr></a>).</p>
+<p><abbr title="Transportation Data Exchange Initiative">TDEI</abbr> provides both user-facing interfaces and programmatic APIs that enable schema validation, quality assurance, dataset management, and access for OpenSidewalks-compliant data. These tools support data producers, stewards, and consumers in publishing and using standardized pedestrian infrastructure datasets at scale.</p>
+<h4 id="metrics">Metrics<a class="headerlink" href="#metrics" title="Anchor link to this section">⚓︎</a></h4>
+<p>As of January 2026, the <abbr title="Transportation Data Exchange Initiative">TDEI</abbr> system hosts <strong>over 5600 complete OpenSidewalks-validated and vetted datasets</strong>, representing more than <strong>10.5 million crossings</strong> and almost <strong>400,000 miles of sidewalks</strong>, with ongoing updates and expansion. These datasets have passed schema validation and <abbr title="Transportation Data Exchange Initiative">TDEI</abbr> quality control workflows prior to publication. For current metrics of OpenSidewalks data in the <abbr title="Transportation Data Exchange Initiative">TDEI</abbr>, please refer to the <a href="https://metrics.tdei.us/"><abbr title="Transportation Data Exchange Initiative">TDEI</abbr> Performance Dashboard</a>.</p>
+<h4 id="validation">Validation<a class="headerlink" href="#validation" title="Anchor link to this section">⚓︎</a></h4>
+<p>An OpenSideWalks Schema validator is available as a Python library and as a Job Type in the <abbr title="Transportation Data Exchange Initiative">TDEI</abbr> Portal:</p>
+<ul>
+<li>
+<p>Library:</p>
+<ul>
+<li>
+<p><a href="https://pypi.org/project/python-osw-validation/">PyPI: python-osw-validation</a></p>
+</li>
+<li>
+<p><a href="https://github.com/TaskarCenterAtUW/TDEI-python-lib-osw-validation">GitHub: TaskarCenterAtUW/<abbr title="Transportation Data Exchange Initiative">TDEI</abbr>-python-lib-osw-validation</a></p>
+</li>
+</ul>
+</li>
+<li>
+<p>Service:</p>
+<ul>
+<li>
+<p><a href="https://portal.tdei.us/CreateJob"><abbr title="Transportation Data Exchange Initiative">TDEI</abbr> Portal: Create Job</a>: "<abbr title="OpenSidewalks">OSW</abbr> - Validate" (Dataset-Validate)</p>
+</li>
+<li>
+<p><a href="https://github.com/TaskarCenterAtUW/TDEI-python-osw-validation">GitHub: TaskarCenterAtUW/<abbr title="Transportation Data Exchange Initiative">TDEI</abbr>-python-osw-validation</a></p>
+</li>
+</ul>
+</li>
+</ul>
 <h3 id="opensidewalks-schema-entities">OpenSidewalks Schema Entities<a class="headerlink" href="#opensidewalks-schema-entities" title="Anchor link to this section">⚓︎</a></h3>
 <p>The OpenSidewalks Schema defines network and non-network data using a set of vector geometrical entity types, each of which has an associated geometry type compatible with either the Point, LineString, or Polygon specification of <a href="https://www.ogc.org/standards/sfa">Simple Feature Access</a>, fields that uniquely define the entity type (in combination), optional topological information, and optional key-value pair <a href="#metadata-fields">metadata fields</a> defined on a per-type basis.</p>
 <h4 id="entity-categories">Entity Categories<a class="headerlink" href="#entity-categories" title="Anchor link to this section">⚓︎</a></h4>
@@ -4476,32 +4535,6 @@
 <tr><td>Enumerated Values</td><td>- <em>broadleaved</em>: Broad, flat leaves.<br>- <em>leafless</em>: No leaves.<br>- <em>mixed</em>: Multiple trees with different leaf types.<br>- <em>needleleaved</em>: Needle-shaped leaves.</td></tr>
 </table></p>
 </details>
-<h3 id="validation">Validation<a class="headerlink" href="#validation" title="Anchor link to this section">⚓︎</a></h3>
-<p>An OpenSideWalks Schema validator is available as a Python library and as a Job Type in the <abbr title="Transportation Data Exchange Initiative">TDEI</abbr> Portal:</p>
-<ul>
-<li>
-<p>Library:</p>
-<ul>
-<li>
-<p><a href="https://pypi.org/project/python-osw-validation/">PyPI: python-osw-validation</a></p>
-</li>
-<li>
-<p><a href="https://github.com/TaskarCenterAtUW/TDEI-python-lib-osw-validation">GitHub: TaskarCenterAtUW/<abbr title="Transportation Data Exchange Initiative">TDEI</abbr>-python-lib-osw-validation</a></p>
-</li>
-</ul>
-</li>
-<li>
-<p>Service:</p>
-<ul>
-<li>
-<p><a href="https://portal.tdei.us/CreateJob"><abbr title="Transportation Data Exchange Initiative">TDEI</abbr> Portal: Create Job</a>: "<abbr title="OpenSidewalks">OSW</abbr> - Validate" (Dataset-Validate)</p>
-</li>
-<li>
-<p><a href="https://github.com/TaskarCenterAtUW/TDEI-python-osw-validation">GitHub: TaskarCenterAtUW/<abbr title="Transportation Data Exchange Initiative">TDEI</abbr>-python-osw-validation</a></p>
-</li>
-</ul>
-</li>
-</ul>
 <h3 id="schema-versions">Schema Versions<a class="headerlink" href="#schema-versions" title="Anchor link to this section">⚓︎</a></h3>
 <table>
 <thead>
@@ -4527,9 +4560,9 @@
 </tr>
 <tr>
 <td>0.3</td>
-<td>2025-06-30</td>
+<td>2026-01-27</td>
 <td><a href="https://github.com/OpenSidewalks/OpenSidewalks-Schema">GitHub</a></td>
-<td>- Add <a href="#custom-points">Custom Points</a><br>- Add <a href="#custom-lines">Custom Lines</a><br>- Add <a href="#custom-polygons">Custom Polygons</a><br>- Add <a href="#tree">Tree</a> to <a href="#points">Points</a><br>- Add <a href="#tree-row">Tree Row</a> to <a href="#lines">Lines</a><br>- Add <a href="#wood">Wood</a> to <a href="#polygons">Polygons</a><br>- Update documentation to improve clarity with regards to <a href="#adjacent-entities">Adjacent Entities</a> (formerly called "Extensions")</td>
+<td>- Add <a href="#points-c">Custom Points</a><br>- Add <a href="#lines-c">Custom Lines</a><br>- Add <a href="#polygons-c">Custom Polygons</a><br>- Add <a href="#tree">Tree</a> to <a href="#points">Points</a><br>- Add <a href="#tree-row">Tree Row</a> to <a href="#lines">Lines</a><br>- Add <a href="#wood">Wood</a> to <a href="#polygons">Polygons</a><br>- Add <a href="#leaf-type">Leaf Type</a> Field<br>- Add <a href="#leaf-cycle">Leaf Cycle</a> Field<br>- Update documentation to improve clarity with regards to <a href="#adjacent-entities">Adjacent Entities</a> (formerly called "Extensions")</td>
 </tr>
 </tbody>
 </table>
