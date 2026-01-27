@@ -2,8 +2,8 @@
 # This script is designed to be run in a PowerShell environment.
 
 # Name: TCAT Wiki - Link Checker
-# Version: 3.3.0
-# Date: 2026-01-02
+# Version: 3.3.2
+# Date: 2026-01-26
 # Author: Amy Bordenave, Taskar Center for Accessible Technology, University of Washington
 # License: CC-BY-ND 4.0 International
 
@@ -32,7 +32,7 @@
 param(
     [Parameter(HelpMessage = "Check external links")]
     [switch]$external,
-    
+
     [Parameter(HelpMessage = "Check internal links")]
     [switch]$internal
 )
@@ -86,19 +86,19 @@ $brokenInternalLinks = @()
 # Function to extract links from markdown content
 function Get-MarkdownLinks {
     param([string]$content)
-    
+
     # Remove code blocks (``` ... ```) to avoid extracting links from code examples
     $contentWithoutCodeBlocks = $content -replace '```[\s\S]*?```', ''
     # Remove inline code (` ... `) to avoid extracting links from code
     $contentWithoutInlineCode = $contentWithoutCodeBlocks -replace '`[^`]*`', ''
-    
+
     # Match [text](url) pattern
     $linkPattern = '\[([^\]]*)\]\(([^)]+)\)'
     $imagePattern = '!\[([^\]]*)\]\(([^)]+)\)'
-    
+
     $links = [regex]::Matches($contentWithoutInlineCode, $linkPattern)
     $images = [regex]::Matches($contentWithoutInlineCode, $imagePattern)
-    
+
     return ($links + $images)
 }
 
@@ -114,30 +114,35 @@ function Test-InternalLink {
         [string]$filePath,
         [string]$linkUrl
     )
-    
+
     # Skip fragment-only links
     if ($linkUrl.StartsWith("#")) {
         return $true
     }
-    
+
+    # Skip special URL schemes (mailto, tel, etc.)
+    if ($linkUrl -match '^(mailto|tel|javascript|ftp|file):') {
+        return $true
+    }
+
     # Remove fragment from URL
     $cleanUrl = $linkUrl.Split('#')[0]
     if (-not $cleanUrl) {
         return $true
     }
-    
+
     # Resolve relative path
     $baseDir = Split-Path $filePath -Parent
     $targetPath = Join-Path $baseDir $cleanUrl
     $resolvedPath = [System.IO.Path]::GetFullPath($targetPath)
-    
+
     return Test-Path $resolvedPath
 }
 
 # Function to test external URL
 function Test-ExternalUrlValid {
     param([string]$url)
-    
+
     # Skip domains that block automated requests or are known to always fail
     $skipDomains = @(
         "*visualstudio.com*"
@@ -145,7 +150,7 @@ function Test-ExternalUrlValid {
         "*firebase*"
         "*osm.workspaces-stage.sidewalks.washington.edu/api*"
     )
-    
+
     foreach ($domain in $skipDomains) {
         if ($url -like $domain) {
             return @{
@@ -154,13 +159,13 @@ function Test-ExternalUrlValid {
             }
         }
     }
-    
+
     try {
         # Prepare headers with User-Agent to identify as a bot
         $headers = @{
-            'User-Agent' = 'TCAT-Wiki-LinkChecker/3.3.0 (+https://github.com/TaskarCenterAtUW/tcat-wiki)'
+            'User-Agent' = 'TCAT-Wiki-LinkChecker/3.3.2 (+https://github.com/TaskarCenterAtUW/tcat-wiki)'
         }
-        
+
         # Use HEAD request first, fallback to GET if needed
         try {
             $response = Invoke-WebRequest -Uri $url -Method Head -TimeoutSec 5 -UseBasicParsing -Headers $headers -ErrorAction Stop
@@ -180,10 +185,10 @@ function Test-ExternalUrlValid {
         } else {
             $_.Exception.Message
         }
-        
+
         # Check if this is a timeout error
         $isTimeout = $errorMessage -match 'Timeout|timed out|HttpClient\.Timeout'
-        
+
         return @{
             valid     = $false
             status    = $errorMessage
@@ -198,20 +203,20 @@ function Test-ExternalUrlValid {
 foreach ($file in $markdownFiles) {
     $relativePath = $file.FullName.Substring((Get-Location).Path.Length + 1)
     Write-Host "Validating: $relativePath" -ForegroundColor Yellow
-    
+
     try {
         $content = Get-Content $file.FullName -Raw -Encoding UTF8
     } catch {
         Write-Host "  ERROR reading file: $($_.Exception.Message)" -ForegroundColor Red
         continue
     }
-    
+
     $links = Get-MarkdownLinks -content $content
-    
+
     foreach ($link in $links) {
         $linkText = $link.Groups[1].Value
         $linkUrl = $link.Groups[2].Value
-        
+
         if (Test-ExternalUrl -url $linkUrl) {
             # Collect external URLs for later testing if external checking is enabled
             if ($external) {
@@ -241,7 +246,7 @@ if ($external) {
 
     foreach ($url in $externalUrls.Keys | Sort-Object) {
         Write-Host "Testing: $url" -ForegroundColor Gray
-        
+
         # Check cache first
         if ($externalUrlCache.ContainsKey($url)) {
             $result = $externalUrlCache[$url]
@@ -249,7 +254,7 @@ if ($external) {
             $result = Test-ExternalUrlValid -url $url
             $externalUrlCache[$url] = $result
         }
-        
+
         if (-not $result.valid) {
             if ($result.isTimeout) {
                 # Timeout - track as warning, not failure
@@ -269,7 +274,7 @@ if ($external) {
         } else {
             Write-Host "  [OK] OK: $($result.status)" -ForegroundColor Green
         }
-        
+
         Start-Sleep -Milliseconds 100  # Be nice to servers
     }
 }

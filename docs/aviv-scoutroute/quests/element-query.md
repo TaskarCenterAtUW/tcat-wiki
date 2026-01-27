@@ -8,7 +8,7 @@ tags:
 
 <!-- @format -->
 
-# Element Query Guide
+## Element Query Guide
 
 This guide explains how to format the element query selector for use in an AVIV ScoutRoute Long Form Quest Definition.
 
@@ -20,7 +20,7 @@ The `quest_query` attribute of an AVIV ScoutRoute long form quest definition is 
 
 For example, to get all ways, simply enter the query: `ways`
 
-## Cheatsheet for element filter syntax
+### Cheatsheet for element filter syntax
 
 | Expression                   | [matches] returns `true` if element...                                                                                    |
 |:-----------------------------|:--------------------------------------------------------------------------------------------------------------------------|
@@ -48,7 +48,7 @@ For example, to get all ways, simply enter the query: `ways`
 
 Note that regexes have to match the whole string, i.e. `~shop\|craft` does not match `shop_type`.
 
-## Equivalent expressions
+### Equivalent expressions
 
 | Expression                  | Equivalent Expression                                    |
 |:----------------------------|:---------------------------------------------------------|
@@ -61,10 +61,10 @@ Note that regexes have to match the whole string, i.e. `~shop\|craft` does not m
 
 The queries can be combined with parenthesis and can also be used for matching with multiple tag filters.
 
-## Example queries:
+### Example queries:
 
--   Get all sidewalks: `ways with (footway=sidewalk)`
+- Get all sidewalks: `ways with (footway=sidewalk)`
 
--   Get all sidewalks without a surface tag: `ways with (footway=sidewalk and !surface)`
+- Get all sidewalks without a surface tag: `ways with (footway=sidewalk and !surface)`
 
--   Get all kerbs without a tactile_paving tag: `nodes with (barrier=kerb and !tactile_paving)`
+- Get all kerbs without a tactile_paving tag: `nodes with (barrier=kerb and !tactile_paving)`

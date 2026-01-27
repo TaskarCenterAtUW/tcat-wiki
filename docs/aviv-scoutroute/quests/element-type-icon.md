@@ -8,7 +8,7 @@ tags:
 
 <!-- @format -->
 
-# Element Type Icon Guide
+## Element Type Icon Guide
 
 This guide explains how to assign the correct value for the `element_type_icon` key in the Long Form Quest Definition JSON file used by AVIV ScoutRoute.
 
@@ -18,7 +18,7 @@ _For a list of all guides on the TCAT Wiki, refer to the [Guides List](../../gui
 
 These icons help the mobile app display appropriate quest icons for each element type (like sidewalks, crossings, kerbs, etc.).
 
-## Instructions
+### Instructions
 
 1. Open the [Icon Reference Website](https://provisodevstorage.blob.core.windows.net/projects/gig-element-icons/search.html)
 2. Search for the Appropriate Icon
@@ -30,7 +30,7 @@ These icons help the mobile app display appropriate quest icons for each element
     1. Insert the icon name as the value for the `element_type_icon` key.
     2. Make sure to not include any file extension (like .png or .svg)
 
-## Example:
+### Example:
 
 ```json hl_lines="2"
   "element_type": "Sidewalks",
@@ -39,8 +39,8 @@ These icons help the mobile app display appropriate quest icons for each element
   "quests": [ ... ]
 ```
 
-## How the Mobile App Uses It
+### How the Mobile App Uses It
 
--   The mobile app will parse the element_type_icon field from the JSON.
--   If the value matches an icon available in the app, that icon is shown.
--   If the value is missing or doesn't match, the app will fall back to a default icon.
+- The mobile app will parse the element_type_icon field from the JSON.
+- If the value matches an icon available in the app, that icon is shown.
+- If the value is missing or doesn't match, the app will fall back to a default icon.

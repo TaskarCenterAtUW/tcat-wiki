@@ -24,6 +24,10 @@ const titleMapSource = {
     "guides list": "Guides List",
     "user manual": "User Manual",
     "tcat wiki": "TCAT Wiki",
+    "nda vancouver": "Clark County Walk/Roll Event",
+    ios: "iOS",
+    mny26: "Mappy New Year 2026",
+    "olympia connected": "Olympia, Connected",
 };
 
 /**
@@ -43,11 +47,13 @@ const titleMap = Object.fromEntries(
 
 /**
  * Converts a string to Title Case.
+ * Handles slash-separated words (e.g., "Walk/Roll") correctly.
  * @param {string} str - The string to convert
  * @returns {string} - The string in Title Case
  */
 function toTitleCase(str) {
-    return str.replace(/\w\S*/g, (word) => {
+    // Match word characters, treating / as a word boundary
+    return str.replace(/\w+/g, (word) => {
         return word.charAt(0).toUpperCase() + word.substr(1).toLowerCase();
     });
 }
@@ -75,13 +81,29 @@ function applyTitleCapitalization(text) {
     // Track which parts have been replaced by titleMap entries
     const replacements = [];
 
+    // First, protect any titleMapSource VALUES that appear in the text
+    // (e.g., if text already contains "Clark County Walk/Roll Event" from frontmatter)
+    for (const value of Object.values(titleMapSource)) {
+        // Escape special regex characters in the value
+        const escapedValue = value.replace(/[.*+?^${}()|[\]\\]/g, "\\$&");
+        const regex = new RegExp(escapedValue, "gi");
+        result = result.replace(regex, (match) => {
+            // If the match has correct casing, preserve it; otherwise use the canonical value
+            replacements.push({
+                original: match,
+                replacement: match === value ? value : value,
+            });
+            return `\x00${replacements.length - 1}\x00`;
+        });
+    }
+
+    // Then, match titleMapSource KEYS and replace with their values
     for (const [key, value] of Object.entries(titleMapSource)) {
         // Create regex to match the key with spaces or dashes interchangeably
         const pattern = key.replace(/ /g, "[- ]");
         const regex = new RegExp(`\\b${pattern}\\b`, "gi");
         result = result.replace(regex, (match) => {
             replacements.push({ original: match, replacement: value });
-            // Use a placeholder to protect this from Title Case transformation
             return `\x00${replacements.length - 1}\x00`;
         });
     }

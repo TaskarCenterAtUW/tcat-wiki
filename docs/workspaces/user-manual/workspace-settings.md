@@ -8,7 +8,7 @@ tags:
 
 <!-- @format -->
 
-# Workspace Settings
+## Workspace Settings
 
 This guide explains how to use the Workspaces platform to configure Workspace Settings.
 
@@ -16,15 +16,15 @@ _For a list of all guides on the TCAT Wiki, refer to the [Guides List](../../gui
 
 ---
 
-## Workspace Settings
+### Workspace Settings
 
 ![Screenshot of the Workspace Settings page in Workspaces.](../../resources/images/workspaces/user-manual/workspace-settings/workspace-settings.png){ width="400" }
 
-### General
+#### General
 
 ![Screenshot of the General section of the Workspace Settings page in Workspaces.](../../resources/images/workspaces/user-manual/workspace-settings/general.png){ width="400" }
 
--   **Workspace Title**
+- **Workspace Title**
 
 To rename a Workspace, enter a name into the **"Workspace Title"** text entry box, then select **"Rename"**.
 
@@ -32,11 +32,11 @@ If successful, a toast with the message **"Workspace renamed successfully."** wi
 
 ![Screenshot of the General section of the Workspace Settings page with a name entered in Workspace Title and the Rename button highlighted.](../../resources/images/workspaces/user-manual/workspace-settings/general-h-rename.png){ width="400" } ![Screenshot of the General section of the Workspace Settings page with a name entered in Workspace Title and the Rename Success toast.](../../resources/images/workspaces/user-manual/workspace-settings/general-t-rename.png){ width="400" }
 
-### External Apps
+#### External Apps
 
 ![Screenshot of the External Apps section of the Workspace Settings page in Workspaces.](../../resources/images/workspaces/user-manual/workspace-settings/external-apps.png){ width="400" }
 
--   **Publish**
+- **Publish**
 
 To control the visibility of a Workspace in external apps such as [AVIV ScoutRoute](../../aviv-scoutroute/index.md), select the toggle button next to **"Publish this Workspace for external apps"** then select **"Save"**.
 
@@ -44,7 +44,7 @@ If successful, the message **"Changes saved."** will appear below the **"Save"**
 
 ![Screenshot of the External Apps section of the Workspace Settings page with the Publish toggle highlighted.](../../resources/images/workspaces/user-manual/workspace-settings/external-apps-h-publish.png){ width="400" } ![Screenshot of the External Apps section of the Workspace Settings page with the Save button highlighted.](../../resources/images/workspaces/user-manual/workspace-settings/external-apps-h-save.png){ width="400" }
 
--   **AVIV ScoutRoute Long Form Quest Definitions**
+- **AVIV ScoutRoute Long Form Quest Definitions**
 
 To set the [AVIV ScoutRoute Long Form Quest Definition](../../aviv-scoutroute/quests/index.md) for a Workspace, there are two options available:
 
@@ -70,7 +70,7 @@ Links are provided below the text box to the AVIV ScoutRoute Long Form Quest Def
 
 Note that when loading quest definitions from an external URL, Workspaces does not store the quest definition. Instead, the contents of the specified URL will be fetched at runtime when AVIV ScoutRoute requests the quest definition for that Workspace.
 
--   **Custom Imagery**
+- **Custom Imagery**
 
 To set the Custom Imagery list for a Workspace, enter a Custom Imagery Definition into the **"Imagery JSON Definition"** text entry box.
 
@@ -82,7 +82,7 @@ Once entered using either method, be sure to select **"Save"**. If successful, t
 
 Links are provided below the text box to the AVIV ScoutRoute Custom Imagery Definition [JSON Schema](https://raw.githubusercontent.com/TaskarCenterAtUW/asr-imagery-list/refs/heads/main/schema/schema.json) and an [example](https://raw.githubusercontent.com/TaskarCenterAtUW/asr-imagery-list/refs/heads/main/examples/example.json).
 
--   **Delete Workspace**
+- **Delete Workspace**
 
 **Caution! Deleting a Workspace is permanent and cannot be undone.**
 

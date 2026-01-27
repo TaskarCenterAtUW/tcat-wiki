@@ -8,7 +8,7 @@ tags:
 
 <!-- @format -->
 
-# Walksheds User Manual
+## Walksheds User Manual
 
 This user manual explains how to use the TDEI Walksheds platform.
 

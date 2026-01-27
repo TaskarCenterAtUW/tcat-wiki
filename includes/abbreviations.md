@@ -55,12 +55,14 @@
 *[LRTP]: Long-Range Transportation Plan
 *[MIRE]: Model Inventory of Roadway Elements
 *[ML]: Machine Learning
+*[MNY26]: Mappy New Year 2026
 *[MOU]: Memorandum of Understanding
 *[MPO]: Metropolitan Planning Organization
 *[MUTCD]: Manual on Uniform Traffic Control Devices
 *[NACTO]: National Association of City Transportation Officials
 *[NCHRP]: National Cooperative Highway Research Program
 *[NC-BPAID]: National Collaboration on Bicycle, Pedestrian, and Accessibility Infrastructure Data
+*[NDA]: Nondrivers Alliance
 *[NEMT]: Non-Emergency Medical Transportation
 *[NHS]: National Highway System
 *[NHTSA]: National Highway Traffic Safety Administration
