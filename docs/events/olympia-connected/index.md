@@ -10,6 +10,14 @@ The **Olympia, Connected: Mapping for Mobility in OpenStreetMap** event is an in
 
 ### Resources
 
+#### Event Links
+
+**TDEI Calendar:** [Olympia, Connected](https://tcat.cs.washington.edu/events/in-person-maptimesea-x-tcat-olympia-connected-mapping-for-mobility-in-openstreetmap/)
+
+**Meetup:** [Event #312922643](https://www.meetup.com/maptimesea/events/312922643/)
+
+**OSMCal:** [Event #4456](https://osmcal.org/event/4456/)
+
 #### Mapping Guide
 
 Visit the [Mapping Guide](mapping-guide.md) for guidance on how to map pedestrian infrastructure for the Olympia, Connected event.
