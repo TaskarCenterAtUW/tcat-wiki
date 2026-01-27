@@ -10,17 +10,17 @@ tags:
 
 <!-- @format -->
 
-# AVIV ScoutRoute Guide
+## AVIV ScoutRoute Guide
 
 This page contains information about installing and using the AVIV ScoutRoute mobile application at the [Clark County Walk/Roll Event](index.md).
 
 ---
 
-## Installation
+### Installation
 
 This section covers the installation of the AVIV ScoutRoute mobile app for both Android and iOS users.
 
-### Step 1: Register
+#### Step 1: Register
 
 1. First, scan the QR code below or open the following link:
 
@@ -50,11 +50,11 @@ This section covers the installation of the AVIV ScoutRoute mobile app for both 
     ![Android TDEI Portal referral registration complete](../../resources/images/events/nda-vancouver/android/03-registration-complete-dark.png#only-dark){ width="200" }
     ![iOS TDEI Portal referral registration complete](../../resources/images/events/nda-vancouver/ios/07-registration-complete-light.png#only-light){ width="200" }
 
-### Step 2: Install
+#### Step 2: Install
 
 Installation instructions are different for Android and iOS users. If you use an Apple device, skip ahead to the [iOS](#ios) section.
 
-#### Android
+##### Android
 
 1. On the next screen, titled "_Continue in our App_", select "**Install Android App**"
 
@@ -113,7 +113,7 @@ Installation instructions are different for Android and iOS users. If you use an
 
 You are now ready to start using AVIV ScoutRoute! Skip ahead to the [Usage](#usage) section.
 
-#### iOS (Apple)
+##### iOS (Apple)
 
 1. On the next screen, titled "_Continue in our App_", select "**Install iOS App**"
 
@@ -139,11 +139,11 @@ You are now ready to start using AVIV ScoutRoute! Skip ahead to the [Usage](#usa
 
 You are now ready to start using AVIV ScoutRoute!
 
-## Usage
+### Usage
 
 This section covers the use of the AVIV ScoutRoute mobile application at the Clark County Walk/Roll Event.
 
-### Select the Workspace
+#### Select the Workspace
 
 1. **Open** the AVIV ScoutRoute app on your mobile device
 
@@ -157,7 +157,7 @@ This section covers the use of the AVIV ScoutRoute mobile application at the Cla
 
 4. The app will now display available quests in the Vancouver, WA area!
 
-### Understanding Quests
+#### Understanding Quests
 
 Quests in AVIV ScoutRoute are small pieces of information to gather about the built environment. Each quest type is represented by a circular icon on the map:
 
@@ -171,7 +171,7 @@ Quests in AVIV ScoutRoute are small pieces of information to gather about the bu
 
 **Tip:** Quest icons stack up to keep the map easy to see. Make sure you **zoom in** to see every available quest!
 
-### Finding Quests On Location
+#### Finding Quests On Location
 
 When you are physically present at the event location:
 
@@ -183,7 +183,7 @@ When you are physically present at the event location:
 
 4. Answer the questions based on your direct observations of the environment
 
-### Downloading Data for Remote Access
+#### Downloading Data for Remote Access
 
 _Note: When opening the NDA Vancouver workspace from outside of Vancouver, WA, a message may pop up saying "Download error. Send an error report to the developer?" This is expected, as AVIV ScoutRoute is intended for use during on-the-ground, at-location surveys. Click "**Cancel**" and move the map to the Vancouver, WA area before continuing._
 
@@ -217,7 +217,7 @@ If you want to preview quests remotely (not on-location) or preload data (for ex
 
 Once submitted, the quest will disappear from the map.
 
-### Hiding and Unhiding Elements
+#### Hiding and Unhiding Elements
 
 If you want to temporarily skip a quest:
 
@@ -233,7 +233,7 @@ To restore hidden quests:
 
 3. Tap **"Unhide All"** or select individual elements to restore
 
-### Undoing Changes
+#### Undoing Changes
 
 If you made a mistake:
 
@@ -245,22 +245,22 @@ If you made a mistake:
 
 ---
 
-## Additional Resources
+### Additional Resources
 
-### TCAT Wiki Documentation
+#### TCAT Wiki Documentation
 
 - [AVIV ScoutRoute](../../aviv-scoutroute/index.md) - Overview of AVIV ScoutRoute and related guides
 - [AVIV ScoutRoute User Manual](../../aviv-scoutroute/user-manual/index.md) - Complete installation and usage guide
 - [TDEI](../../tdei/index.md) - Learn more about the Transportation Data Exchange Initiative
 - [OpenSidewalks](../../opensidewalks/index.md) - Learn about the OpenSidewalks data standard
 
-### External Resources
+#### External Resources
 
 - [AVIV ScoutRoute iOS Release Notes](https://docs.google.com/document/d/1i9FUVdXElJ8zUk3BTvbW8AOQ-lYz_6Q6c1p8wZXYZxc/view?usp=sharing)
 - [AVIV ScoutRoute Android Release Notes](https://docs.google.com/document/d/1jaiyNtAOCKeUVBqjmLveI78g4yhWH222DLg7Ev4VO5g/view?usp=sharing)
 
 ---
 
-## Contact
+### Contact
 
 If you encounter any issues or have questions, please contact the TCAT team at [uwtcat@uw.edu](mailto:uwtcat@uw.edu).

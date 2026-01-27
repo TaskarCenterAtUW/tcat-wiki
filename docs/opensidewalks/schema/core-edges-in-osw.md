@@ -9,7 +9,7 @@ tags:
 
 <!-- @format -->
 
-# Core Edges in OSW
+## Core Edges in OSW
 
 This guide shows how to convert existing sidewalk centerline datasets into OpenSidewalks (OSW) format for upload to the Transportation Data Exchange Initiative (TDEI).
 
@@ -17,22 +17,22 @@ _For a list of all guides on the TCAT Wiki, refer to the [Guides List](../../gui
 
 ---
 
-## What Are Sidewalk Centerlines?
+### What Are Sidewalk Centerlines?
 
 Sidewalk centerlines are linear GIS features representing the middle path of sidewalk infrastructure. These datasets are commonly maintained by city transportation departments and typically include attributes like:
 
--   **Width information**: Sidewalk dimensions and measurements
--   **Surface conditions**: Material type and maintenance status
--   **Location data**: Street names, sides, and block segments
--   **Maintenance records**: Installation dates and inspection history
+- **Width information**: Sidewalk dimensions and measurements
+- **Surface conditions**: Material type and maintenance status
+- **Location data**: Street names, sides, and block segments
+- **Maintenance records**: Installation dates and inspection history
 
 Converting these datasets to OSW format enables pedestrian routing, accessibility analysis, and integration with other transportation data through TDEI.
 
-## Case Study: Seattle Sidewalk Centerlines to OSW
+### Case Study: Seattle Sidewalk Centerlines to OSW
 
 This example demonstrates converting a city's sidewalk centerline dataset to OSW format using Seattle's sidewalk inventory data.
 
-### Understanding the Source Data
+#### Understanding the Source Data
 
 Seattle's sidewalk dataset contains LineString features with detailed attributes:
 
@@ -62,7 +62,7 @@ Seattle's sidewalk dataset contains LineString features with detailed attributes
 }
 ```
 
-### The Target: OSW Footway Edges
+#### The Target: OSW Footway Edges
 
 We want to convert each sidewalk centerline into an OpenSidewalks footway that looks like this:
 
@@ -92,17 +92,17 @@ We want to convert each sidewalk centerline into an OpenSidewalks footway that l
 }
 ```
 
-## Step-by-Step Conversion Process
+### Step-by-Step Conversion Process
 
-### Step 1: Coordinate System Transformation
+#### Step 1: Coordinate System Transformation
 
 Most city GIS datasets use local coordinate systems. Seattle uses EPSG:2926 - NAD83 / Washington South. OSW requires WGS84 decimal degrees (EPSG:4326).
 
 **Transform coordinates before conversion:**
 
--   Use GIS software (QGIS, ArcGIS) or GDAL utilities
+- Use GIS software (QGIS, ArcGIS) or GDAL utilities
 
-### Step 2: Map Fields to OSW Structure
+#### Step 2: Map Fields to OSW Structure
 
 Create a mapping between your dataset fields and OSW properties:
 
@@ -121,11 +121,11 @@ Create a mapping between your dataset fields and OSW properties:
 
 **Required OSW Core Entity Fields:**
 
--   `_id`: Unique identifier (string, letters/numbers/underscores)
--   `geometry`: LineString coordinates in WGS84
--   `highway=footway` + `footway=sidewalk`: Sidewalk Core Entity tag
+- `_id`: Unique identifier (string, letters/numbers/underscores)
+- `geometry`: LineString coordinates in WGS84
+- `highway=footway` + `footway=sidewalk`: Sidewalk Core Entity tag
 
-### Step 3: Standardize Surface Types
+#### Step 3: Standardize Surface Types
 
 Map your dataset's surface codes to OSW-compatible values:
 
@@ -136,11 +136,11 @@ Map your dataset's surface codes to OSW-compatible values:
 | `UIMPRV`    | `unpaved`         | Unimproved/dirt surface  |
 | `BR`        | `paving_stones`   | Brick pavers             |
 
-### Step 4: Handle Width Measurements
+#### Step 4: Handle Width Measurements
 
 Convert width measurements to meters and include in the `width` property.
 
-### Step 5: Create the GeoJSON Structure
+#### Step 5: Create the GeoJSON Structure
 
 Build the complete OSW dataset:
 
@@ -178,13 +178,13 @@ Build the complete OSW dataset:
 }
 ```
 
-## Conversion Tools and Scripts
+### Conversion Tools and Scripts
 
 As some processing of the existing data is usually necessary, consider creating Python scripts or using [ogr2ogr](https://gdal.org/en/stable/programs/ogr2ogr.html) to make the necessary changes.
 
 _The following is an example, not intended to be used directly!_
 
-### Example: GDAL/OGR Command Line
+#### Example: GDAL/OGR Command Line
 
 ```bash
 # Reproject to WGS84
@@ -194,16 +194,16 @@ ogr2ogr -s_srs EPSG:2926 -t_srs EPSG:4326 sidewalks_epsg4326.geojson sidewalks_e
 ogr2ogr -f GeoJSON output.geojson sidewalks_epsg4326.geojson -sql "SELECT UNITID as ext_unit_id, UNITDESC as ext_description, 'footway' as highway, 'sidewalk' as footway, SW_WIDTH * 0.0254 as width, CASE WHEN SURFTYPE = 'PCC' THEN 'concrete' WHEN SURFTYPE = 'AC' THEN 'asphalt' ELSE 'unknown' END as surface FROM input_layer"
 ```
 
-## Validation and Quality Assurance
+### Validation and Quality Assurance
 
-### Data Quality Checks
+#### Data Quality Checks
 
 1. **Coordinate System**: Verify all coordinates are in WGS84 decimal degrees
 2. **Unique IDs**: Ensure all `_id` values are unique across the dataset
 3. **Required Fields**: Every feature must have `_id`, `highway=footway`, and `footway=sidewalk`
 4. **Geometry Validity**: All LineStrings should have at least 2 coordinate pairs
 
-### Common Issues and Fixes
+#### Common Issues and Fixes
 
 | Problem                         | Solution                                      |
 |---------------------------------|-----------------------------------------------|
@@ -213,32 +213,32 @@ ogr2ogr -f GeoJSON output.geojson sidewalks_epsg4326.geojson -sql "SELECT UNITID
 | Invalid surface types           | Create comprehensive surface mapping table    |
 | Broken geometry                 | Use `ST_MakeValid()` or geometry repair tools |
 
-### Validation Tools
+#### Validation Tools
 
--   **GeoJSON validation**: Use geojson.io or offline validators
--   **OSW schema validation**: Check against OpenSidewalks schema
--   **Visual inspection**: Load in QGIS or web mapping tools
--   **Attribute completeness**: Verify required and optional fields
+- **GeoJSON validation**: Use geojson.io or offline validators
+- **OSW schema validation**: Check against OpenSidewalks schema
+- **Visual inspection**: Load in QGIS or web mapping tools
+- **Attribute completeness**: Verify required and optional fields
 
-## Integration with TDEI
+### Integration with TDEI
 
-### Best Practices for TDEI Upload
+#### Best Practices for TDEI Upload
 
--   **Regular updates**: Plan for periodic data refreshes
--   **Quality documentation**: Document data collection methods and accuracy
--   **Contact information**: Provide maintainer contact for data issues
+- **Regular updates**: Plan for periodic data refreshes
+- **Quality documentation**: Document data collection methods and accuracy
+- **Contact information**: Provide maintainer contact for data issues
 
-## Advanced Considerations
+### Advanced Considerations
 
-### Handling Complex Geometries
+#### Handling Complex Geometries
 
 Some sidewalk centerlines may include:
 
--   **Multi-segment paths**: Keep as single LineString if continuous
--   **Branching sidewalks**: Split into separate features at intersections
--   **Curved sections**: Maintain vertex density for accurate representation
+- **Multi-segment paths**: Keep as single LineString if continuous
+- **Branching sidewalks**: Split into separate features at intersections
+- **Curved sections**: Maintain vertex density for accurate representation
 
-### Accessibility Attributes
+#### Accessibility Attributes
 
 Enhance OSW data with additional accessibility information:
 

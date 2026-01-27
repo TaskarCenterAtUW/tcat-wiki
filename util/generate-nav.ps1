@@ -2,8 +2,8 @@
 # This script is designed to be run in a PowerShell environment.
 
 # Name: TCAT Wiki - Navigation Section Generator
-# Version: 3.1.0
-# Date: 2026-01-02
+# Version: 3.1.1
+# Date: 2026-01-26
 # Author: Amy Bordenave, Taskar Center for Accessible Technology, University of Washington
 # License: CC-BY-ND 4.0 International
 
@@ -12,8 +12,8 @@
     Generates and updates the Zensical nav structure in zensical.toml
 
 .DESCRIPTION
-    Scans the docs directory structure and updates the navigation section 
-    in zensical.toml using proper TOML array-of-objects syntax. Uses frontmatter 
+    Scans the docs directory structure and updates the navigation section
+    in zensical.toml using proper TOML array-of-objects syntax. Uses frontmatter
     titles when available, otherwise derives titles from filenames and directory names.
 
 .EXAMPLE
@@ -75,10 +75,10 @@ function Get-MarkdownTitle {
         [Parameter(Mandatory = $true)]
         [string]$filePath
     )
-    
+
     try {
         $content = Get-Content $filePath -Raw -Encoding UTF8 -ErrorAction Stop
-        
+
         # Check for YAML frontmatter
         if ($content -match '(?s)^---\r?\n(.*?)\r?\n---') {
             $frontmatter = $matches[1]
@@ -86,7 +86,7 @@ function Get-MarkdownTitle {
                 return $matches[1].Trim().Trim('"').Trim("'")
             }
         }
-        
+
         # Fallback to first heading
         if ($content -match '^#\s+(.+)') {
             return $matches[1].Trim()
@@ -94,7 +94,7 @@ function Get-MarkdownTitle {
     } catch {
         # Silently return null for missing or unreadable files
     }
-    
+
     return $null
 }
 
@@ -123,7 +123,7 @@ function Protect-TomlString {
         [Parameter(Mandatory = $true)]
         [string]$text
     )
-    
+
     # Escape backslashes first (\ -> \\), then quotes (" -> \")
     $escaped = $text -replace '\\', '\\'
     $escaped = $escaped -replace '"', '\"'
@@ -159,24 +159,24 @@ function ConvertTo-Title {
         [Parameter(Mandatory = $true)]
         [string]$name
     )
-    
+
     # Remove file extension
     $name = [System.IO.Path]::GetFileNameWithoutExtension($name)
-    
+
     # Check titleMap for known project names and acronyms
     if ($script:titleMap.ContainsKey($name.ToLower())) {
         $result = $script:titleMap[$name.ToLower()]
-        if ($result) { 
-            return $result 
-        } else { 
-            return $null 
+        if ($result) {
+            return $result
+        } else {
+            return $null
         }
     }
-    
+
     # Convert kebab-case and snake_case to Title Case
     $result = $name -replace '[-_]', ' '
     $result = (Get-Culture).TextInfo.ToTitleCase($result.ToLower())
-    
+
     return $result
 }
 
@@ -207,11 +207,11 @@ function Get-PreferredTitle {
     param(
         [Parameter(Mandatory = $true)]
         [string]$filePath,
-        
+
         [Parameter(Mandatory = $true)]
         [string]$baseName
     )
-    
+
     # Check titleMap first (always prefer known special cases)
     $baseNameLower = $baseName.ToLower()
     if ($script:titleMap.ContainsKey($baseNameLower)) {
@@ -220,13 +220,13 @@ function Get-PreferredTitle {
             return $mappedTitle
         }
     }
-    
+
     # Fall back to frontmatter title
     $frontmatterTitle = Get-MarkdownTitle -filePath $filePath
     if ($frontmatterTitle) {
         return $frontmatterTitle
     }
-    
+
     # Finally, derive from name
     return ConvertTo-Title -name $baseName
 }
@@ -260,46 +260,46 @@ function Build-DirectoryNav {
     param(
         [Parameter(Mandatory = $true)]
         [string]$dirPath,
-        
+
         [Parameter(Mandatory = $false)]
         [int]$indentLevel = 1,
-        
+
         [Parameter(Mandatory = $true)]
         [string]$docsBasePath
     )
-    
+
     $items = @()
     $indent = "    " * $indentLevel
     $childIndent = "    " * ($indentLevel + 1)
-    
+
     # Get directory name and relative path
     $dirInfo = Get-Item $dirPath
     $dirName = $dirInfo.Name
     $resolvedDocsPath = (Resolve-Path $docsBasePath).Path
     $relativePath = $dirPath.Substring($resolvedDocsPath.Length + 1) -replace '\\', '/'
     $dirTitle = ConvertTo-Title $dirName
-    
+
     # Check for index.md
     $indexFile = Join-Path $dirPath "index.md"
     $hasIndex = Test-Path $indexFile
-    
+
     # Get subdirectories and files (excluding resources directory)
-    $subDirs = Get-ChildItem -Path $dirPath -Directory | 
-        Where-Object { $_.Name -ne 'resources' } | 
+    $subDirs = Get-ChildItem -Path $dirPath -Directory |
+        Where-Object { $_.Name -ne 'resources' } |
         Sort-Object Name
-    $mdFiles = Get-ChildItem -Path $dirPath -File -Filter "*.md" | 
-        Where-Object { $_.Name -ne 'index.md' } | 
+    $mdFiles = Get-ChildItem -Path $dirPath -File -Filter "*.md" |
+        Where-Object { $_.Name -ne 'index.md' } |
         Sort-Object Name
-    
+
     # Build subitems - each item is a hashtable with Type and properties
     # Type: "simple" (single line item), "nested" (multiline subdirectory structure)
     $subItemsList = @()
-    
+
     # Add index.md first if it exists (as a plain path for section index)
     if ($hasIndex) {
         $subItemsList += @{ Type = "simple"; Content = "`"$relativePath/index.md`""; Indent = $childIndent }
     }
-    
+
     # Add other files in this directory
     foreach ($file in $mdFiles) {
         $fileRelativePath = $file.FullName.Substring($resolvedDocsPath.Length + 1) -replace '\\', '/'
@@ -307,7 +307,7 @@ function Build-DirectoryNav {
         $escapedTitle = Protect-TomlString $fileTitle
         $subItemsList += @{ Type = "simple"; Content = "{$escapedTitle = `"$fileRelativePath`"}"; Indent = $childIndent }
     }
-    
+
     # Add subdirectories recursively
     foreach ($subDir in $subDirs) {
         $subDirItems = @(Build-DirectoryNav -dirPath $subDir.FullName -indentLevel ($indentLevel + 1) -docsBasePath $docsBasePath)
@@ -323,11 +323,11 @@ function Build-DirectoryNav {
         }
         $subItemsList += @{ Type = "nested"; Lines = $cleanedLines }
     }
-    
+
     # Build final structure with proper comma placement
     if ($subItemsList.Count -gt 0) {
         $escapedDirTitle = Protect-TomlString $dirTitle
-        
+
         # Check if we can collapse to single line (only one simple item)
         if ($subItemsList.Count -eq 1 -and $subItemsList[0].Type -eq "simple") {
             $singleItem = $subItemsList[0]
@@ -336,12 +336,12 @@ function Build-DirectoryNav {
         } else {
             # Multiple items or nested: multiline format
             $items += "$indent{$escapedDirTitle = ["
-            
+
             for ($i = 0; $i -lt $subItemsList.Count; $i++) {
                 $subItem = $subItemsList[$i]
                 $isLast = ($i -eq $subItemsList.Count - 1)
                 $comma = if ($isLast) { "" } else { "," }
-                
+
                 if ($subItem.Type -eq "simple") {
                     $items += "$($subItem.Indent)$($subItem.Content)$comma"
                 } else {
@@ -358,11 +358,11 @@ function Build-DirectoryNav {
                     }
                 }
             }
-            
+
             $items += "$indent]},"
         }
     }
-    
+
     return $items
 }
 
@@ -390,11 +390,11 @@ function Build-NavigationToml {
         [Parameter(Mandatory = $true)]
         [string]$docsBasePath
     )
-    
+
     # Collect all nav items - each item is either a simple line or a multi-line block
     # Type: "simple" = single line, "block" = multi-line directory structure
     $navItemsList = @()
-    
+
     # Handle root index.md specially
     $rootIndex = Join-Path $docsBasePath "index.md"
     if (Test-Path $rootIndex) {
@@ -403,13 +403,13 @@ function Build-NavigationToml {
         $escapedTitle = Protect-TomlString $homeTitle
         $navItemsList += @{ Type = "simple"; Content = "    {$escapedTitle = `"index.md`"}" }
     }
-    
+
     # Process root level directories (excluding resources and guides-list which is auto-generated)
     $excludedDirs = @('resources', 'guides-list', 'local-storage')
-    $rootDirectories = Get-ChildItem -Path $docsBasePath -Directory | 
+    $rootDirectories = Get-ChildItem -Path $docsBasePath -Directory |
         Where-Object { $_.Name -notin $excludedDirs } |
         Sort-Object Name
-    
+
     foreach ($dir in $rootDirectories) {
         $subNav = @(Build-DirectoryNav -dirPath $dir.FullName -indentLevel 1 -docsBasePath $docsBasePath)
         # Treat the entire directory output as a single block
@@ -424,7 +424,7 @@ function Build-NavigationToml {
         }
         $navItemsList += @{ Type = "block"; Lines = $cleanedLines }
     }
-    
+
     # Add guides-list section if it exists (always at the end before root files)
     $guidesListPath = Join-Path $docsBasePath "guides-list"
     if (Test-Path $guidesListPath) {
@@ -436,27 +436,27 @@ function Build-NavigationToml {
             $navItemsList += @{ Type = "simple"; Content = "    {$escapedTitle = `"guides-list/index.md`"}" }
         }
     }
-    
+
     # Process any root-level markdown files (excluding index.md)
-    $rootFiles = Get-ChildItem -Path $docsBasePath -File -Filter "*.md" | 
-        Where-Object { $_.Name -ne 'index.md' } | 
+    $rootFiles = Get-ChildItem -Path $docsBasePath -File -Filter "*.md" |
+        Where-Object { $_.Name -ne 'index.md' } |
         Sort-Object Name
-    
+
     foreach ($file in $rootFiles) {
         $fileTitle = Get-PreferredTitle -filePath $file.FullName -baseName $file.BaseName
         $escapedTitle = Protect-TomlString $fileTitle
         $navItemsList += @{ Type = "simple"; Content = "    {$escapedTitle = `"$($file.Name)`"}" }
     }
-    
+
     # Build final output with proper comma placement (no trailing comma on last item)
     $navItems = @()
     $navItems += "nav = ["
-    
+
     for ($i = 0; $i -lt $navItemsList.Count; $i++) {
         $item = $navItemsList[$i]
         $isLast = ($i -eq $navItemsList.Count - 1)
         $comma = if ($isLast) { "" } else { "," }
-        
+
         if ($item.Type -eq "simple") {
             $navItems += "$($item.Content)$comma"
         } else {
@@ -472,9 +472,9 @@ function Build-NavigationToml {
             }
         }
     }
-    
+
     $navItems += "]"
-    
+
     return ($navItems -join [Environment]::NewLine)
 }
 
@@ -505,29 +505,29 @@ function Update-ZensicalNav {
     param(
         [Parameter(Mandatory = $true)]
         [string]$zensicalFilePath,
-        
+
         [Parameter(Mandatory = $true)]
         [string]$newNavContent
     )
-    
+
     # Read current zensical.toml
     $content = Get-Content $zensicalFilePath -Raw -Encoding UTF8
-    
+
     # Find and replace nav section using regex
     # Match nav = [ ... ] including nested brackets (multiline)
     $navPattern = '(?ms)^nav\s*=\s*\[.*?^\]'
-    
+
     if ($content -match $navPattern) {
         $currentNav = $matches[0]
-        
+
         # Normalize for comparison (remove trailing whitespace)
         $currentNavNormalized = $currentNav -replace '\s+$', ''
         $newNavNormalized = $newNavContent -replace '\s+$', ''
-        
+
         if ($currentNavNormalized -eq $newNavNormalized) {
             return $false  # No changes needed
         }
-        
+
         # Replace the nav section
         $newContent = $content -replace $navPattern, $newNavContent
         Set-Content -Path $zensicalFilePath -Value $newContent -Encoding UTF8 -NoNewline
@@ -535,7 +535,7 @@ function Update-ZensicalNav {
     } else {
         # Nav section doesn't exist - need to add it after [project] section comments
         # Find the end of the initial [project] comment block or after site_description
-        
+
         # Look for a good insertion point - after the nav comment block if it exists
         $navCommentPattern = '(?ms)(#.*nav.*\r?\n(?:#.*\r?\n)*)'
         if ($content -match $navCommentPattern) {
@@ -553,7 +553,7 @@ function Update-ZensicalNav {
                 $newContent = $content.TrimEnd() + [Environment]::NewLine + [Environment]::NewLine + $newNavContent + [Environment]::NewLine
             }
         }
-        
+
         Set-Content -Path $zensicalFilePath -Value $newContent -Encoding UTF8 -NoNewline
         return $true
     }
@@ -598,7 +598,7 @@ Write-Host "Updating zensical.toml..." -ForegroundColor Cyan
 
 try {
     $changed = Update-ZensicalNav -zensicalFilePath $zensicalPath -newNavContent $navToml
-    
+
     if ($changed) {
         Write-Host "Successfully updated zensical.toml navigation section" -ForegroundColor Green
     } else {
@@ -610,4 +610,3 @@ try {
 }
 
 #endregion Main Execution
- 

@@ -4,7 +4,7 @@ title: Events
 
 <!-- @format -->
 
-# Events
+## Events
 
 This page organizes event-related content, such as guides and tutorials.
 
@@ -12,9 +12,9 @@ The main TCAT events calendar can be found at [https://tcat.cs.washington.edu/ev
 
 ---
 
-## Upcoming Events
+### Upcoming Events
 
-### Olympia, Connected
+#### Olympia, Connected
 
 **Name:** Olympia, Connected: Mapping for Mobility in OpenStreetMap
 
@@ -32,7 +32,7 @@ Visit the [Olympia, Connected](olympia-connected/index.md) page to access resour
 
 ---
 
-### OpenThePaths 2026
+#### OpenThePaths 2026
 
 **Name:** OpenThePaths 2026: Connecting People and Places Through Sustainable Access
 
@@ -53,7 +53,7 @@ _Content will be added as it becomes available._
 
 ---
 
-### CSUN 2026
+#### CSUN 2026
 
 **Name:** CSUN Assistive Technology Conference
 
@@ -71,7 +71,7 @@ _Content will be added as it becomes available._
 
 ---
 
-### State of the Map US 2026
+#### State of the Map US 2026
 
 **Name:** State of the Map US 2026
 
@@ -89,9 +89,9 @@ _Content will be added as it becomes available._
 
 ---
 
-## Past Events
+### Past Events
 
-### Mappy New Year 2026
+#### Mappy New Year 2026
 
 **Name:** Mappy New Year 2026
 
@@ -109,7 +109,7 @@ Visit the [Mappy New Year 2026](mny26/index.md) page to access resources and gui
 
 ---
 
-### Clark County Walk/Roll Event
+#### Clark County Walk/Roll Event
 
 **Name:** Clark County Walk/Roll Event
 

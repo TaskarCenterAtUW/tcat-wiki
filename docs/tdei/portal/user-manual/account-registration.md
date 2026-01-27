@@ -8,7 +8,7 @@ tags:
 
 <!-- @format -->
 
-# TDEI Portal Account Registration Guide
+## TDEI Portal Account Registration Guide
 
 This guide explains how to register for a TDEI account using the TDEI Portal.
 

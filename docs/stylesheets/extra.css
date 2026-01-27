@@ -3,3 +3,17 @@
  *
  * @format
  */
+
+/* Schema definition tables */
+.schema-table {
+    width: 100%;
+    table-layout: fixed;
+}
+.schema-table td:first-child {
+    width: 150px;
+    white-space: nowrap;
+    font-weight: bold;
+}
+.schema-table td:last-child {
+    width: auto;
+}

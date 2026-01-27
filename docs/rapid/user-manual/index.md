@@ -8,7 +8,7 @@ tags:
 
 <!-- @format -->
 
-# Rapid User Manual
+## Rapid User Manual
 
 This user manual explains how to use the Rapid editor.
 

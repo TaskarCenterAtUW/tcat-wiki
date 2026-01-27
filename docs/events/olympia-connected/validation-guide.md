@@ -10,19 +10,19 @@ tags:
 
 <!-- @format -->
 
-# Validation Guide
+## Validation Guide
 
 This guide covers how to validate mapped pedestrian infrastructure tasks in the OSM US Tasking Manager for the [Olympia, Connected](index.md) event.
 
 ---
 
-## Quick Links
+### Quick Links
 
 - **Mapping Guide**: [Mapping Guide](mapping-guide.md) (review before validating)
 - **Team**: [#26 - OpenSidewalks - Validators](https://tasks.openstreetmap.us/teams/26/membership/)
 - **Project**: [#1083 - Olympia, WA, US: Pedestrian Infrastructure | #OpenSidewalks](https://tasks.openstreetmap.us/projects/1083)
 
-## What is Validation?
+### What is Validation?
 
 Validation is the process of reviewing the edits of other contributors and evaluating the mapped features to ensure they are:
 
@@ -35,16 +35,16 @@ Validators should have some mapping experience and be familiar with the [Mapping
 
 ---
 
-## Getting Started
+### Getting Started
 
-### 1. Find Tasks Ready for Validation
+#### 1. Find Tasks Ready for Validation
 
 1. Go to the project: [#1083 - Olympia, WA, US: Pedestrian Infrastructure | #OpenSidewalks](https://tasks.openstreetmap.us/projects/1083)
 2. Select **Contribute** at the bottom right
 3. Look for tasks **ready for validation** (blue tiles)
 4. Select an already-mapped, blue task and click **Validate selected task**
 
-### 2. Review Task History
+#### 2. Review Task History
 
 Before validating, check the **History** tab to see:
 
@@ -54,9 +54,9 @@ Before validating, check the **History** tab to see:
 
 ---
 
-## Validation Checklist
+### Validation Checklist
 
-### 1. Crossings
+#### 1. Crossings
 
 - [ ] Crossings are drawn as **lines** across streets
 - [ ] Each crossing has **curb nodes** at both ends
@@ -73,7 +73,7 @@ Before validating, check the **History** tab to see:
 | Missing curb nodes             | Add `barrier=kerb` + `kerb=*` to endpoints   |
 | Wrong marking tag              | Check imagery and update `crossing:markings` |
 
-### 2. Curbs
+#### 2. Curbs
 
 - [ ] Curbs are **points** at the edge of the street
 - [ ] Curb type matches imagery: `kerb=lowered`, `raised`, or `flush`
@@ -87,7 +87,7 @@ Before validating, check the **History** tab to see:
 | Wrong curb type                        | Check street-level imagery if available                                                        |
 | Missing `barrier=kerb`                 | Add the tag to complete the feature                                                            |
 
-### 3. Sidewalks
+#### 3. Sidewalks
 
 - [ ] Sidewalks are drawn as **lines** along the center of the path
 - [ ] Sidewalks are tagged, at minimum: `highway=footway` + `footway=sidewalk`
@@ -100,7 +100,7 @@ Before validating, check the **History** tab to see:
 | Sidewalk not on centerline     | Move nodes to center the line          |
 | Missing connection to driveway | Add a shared node where they intersect |
 
-### 4. Connectors (Crossing Links)
+#### 4. Connectors (Crossing Links)
 
 - [ ] Short lines connect curbs to sidewalk centerlines
 - [ ] Connectors are tagged: `highway=footway` + `footway=sidewalk` + (optional) `crossing_link=yes`
@@ -108,21 +108,21 @@ Before validating, check the **History** tab to see:
 
 ---
 
-## How to Fix Issues
+### How to Fix Issues
 
-### Moving Features
+#### Moving Features
 
 1. Select the feature (node or way)
 2. Drag it to the correct location
 3. If you accidentally move something else, press **Ctrl+Z** to undo
 
-### Adding Missing Tags
+#### Adding Missing Tags
 
 1. Select the feature
 2. In the left panel, search for the correct preset (e.g., "Lowered Curb")
 3. Alternatively, manually add tags in the expandable "Tags" table section
 
-### Connecting Features
+#### Connecting Features
 
 If the editor shows a warning about disconnected features:
 
@@ -133,9 +133,9 @@ If the editor shows a warning about disconnected features:
 
 ---
 
-## Completing Validation
+### Completing Validation
 
-### If Everything Looks Good
+#### If Everything Looks Good
 
 1. Save and upload any minor corrections you made
 2. In the Tasking Manager panel on the right, answer **Yes** to "_Is this task well mapped?_"
@@ -143,7 +143,7 @@ If the editor shows a warning about disconnected features:
 
 The task will turn from blue to green on the map to confirm that it has been validated.
 
-### If Issues Remain
+#### If Issues Remain
 
 1. Save and upload any corrections you made
 2. In the Tasking Manager panel on the right, answer **No** to "_Is this task well mapped?_"
@@ -156,7 +156,7 @@ Done! **Thank you** so much for contributing to this project. Your contributions
 
 ---
 
-## Tips for Validators
+### Tips for Validators
 
 - **Use street-level imagery**: Enable Bing Streetside or Mapillary to verify curb types
 - **Check connectivity**: Make sure features are connected and there are no gaps in the pedestrian network that don't exist on the ground

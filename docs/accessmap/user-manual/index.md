@@ -8,7 +8,7 @@ tags:
 
 <!-- @format -->
 
-# AccessMap User Manual
+## AccessMap User Manual
 
 This user manual explains how to use the AccessMap application.
 

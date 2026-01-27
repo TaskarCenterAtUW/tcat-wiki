@@ -10,28 +10,28 @@ tags:
 
 <!-- @format -->
 
-# Mapping Guide
+## Mapping Guide
 
 This guide covers how to map pedestrian infrastructure for the [Olympia, Connected](index.md) event.
 
 ---
 
-## Quick Links
+### Quick Links
 
 - **Project**: [#1083 - Olympia, WA, US: Pedestrian Infrastructure | #OpenSidewalks](https://tasks.openstreetmap.us/projects/1083)
 
 ---
 
-## Getting Started
+### Getting Started
 
-### 1. Log In to the Tasking Manager
+#### 1. Log In to the Tasking Manager
 
 1. **Create an OpenStreetMap account** at [openstreetmap.org](https://www.openstreetmap.org/user/new) if you don't already have one.
 2. **Log in to the OSM US Tasking Manager** at [tasks.openstreetmap.us](https://tasks.openstreetmap.us) using your OSM account.
 3. **Join the OpenSidewalks Mappers Team** by visiting [tasks.openstreetmap.us/teams/27/membership](https://tasks.openstreetmap.us/teams/27/membership) and selecting **Join team** at the bottom right.
 4. **Navigate to the Olympia project** by opening [tasks.openstreetmap.us/projects/1083](https://tasks.openstreetmap.us/projects/1083)
 
-### 2. Select a Task
+#### 2. Select a Task
 
 1. Select **Contribute** on the bottom right of the project page
 2. **Choose** an available task (white tiles on the map)
@@ -42,11 +42,11 @@ You'll see the Rapid Editor on the left and task information on the right. The m
 
 ---
 
-## What to Map
+### What to Map
 
 We're mapping the **pedestrian network**: sidewalks, crossings, and curbs. These features enable routing applications to provide pedestrian directions.
 
-### Priority Order
+#### Priority Order
 
 1. **Crossings** - Map these first to anchor the network at intersections
 
@@ -58,18 +58,18 @@ We're mapping the **pedestrian network**: sidewalks, crossings, and curbs. These
 
 ---
 
-## Mapping Crossings
+### Mapping Crossings
 
 Crossings are paths pedestrians traverse to cross streets.
 
-### How to Map
+#### How to Map
 
 1. Select the **Line** tool
 2. Click at one edge of the street (curb location)
 3. Click where your line meets the road centerline (this connects to the road network)
 4. Double-click at the opposite curb to finish
 
-### Tagging
+#### Tagging
 
 Search for these presets in the RapiD Editor:
 
@@ -78,14 +78,14 @@ Search for these presets in the RapiD Editor:
 | **Marked** (has painted lines)  | "Marked Crosswalk"  | `highway=footway` + `footway=crossing` + `crossing:markings=yes` |
 | **Unmarked** (no painted lines) | "Unmarked Crossing" | `highway=footway` + `footway=crossing` + `crossing:markings=no`  |
 
-### Tag the Crossing Node
+#### Tag the Crossing Node
 
 The middle point where the crossing intersects the roadway should be tagged:
 
 - `highway=crossing`
 - `crossing:markings=yes` or `crossing:markings=no`
 
-### Additional Crossing Tags
+#### Additional Crossing Tags
 
 If you'd like to add additional detail that is important for accessibility-focused routing:
 
@@ -97,15 +97,15 @@ If you'd like to add additional detail that is important for accessibility-focus
 
 ---
 
-## Mapping Curbs
+### Mapping Curbs
 
 Curbs are points at the edge of the street where crossings begin and end.
 
-### How to Map
+#### How to Map
 
 The endpoints of your crossing line are curb nodes. Select each endpoint and tag it.
 
-### Tagging
+#### Tagging
 
 | Curb Type   | RapiD Preset   | Tags                            | Description            |
 |-------------|----------------|---------------------------------|------------------------|
@@ -113,7 +113,7 @@ The endpoints of your crossing line are curb nodes. Select each endpoint and tag
 | **Raised**  | "Raised Curb"  | `barrier=kerb` + `kerb=raised`  | Standard curb, no ramp |
 | **Flush**   | "Flush Curb"   | `barrier=kerb` + `kerb=flush`   | Level with street      |
 
-### Additional Curb Tags
+#### Additional Curb Tags
 
 | Tag              | Values       | Description                         |
 |------------------|--------------|-------------------------------------|
@@ -121,40 +121,40 @@ The endpoints of your crossing line are curb nodes. Select each endpoint and tag
 
 ---
 
-## Mapping Sidewalks
+### Mapping Sidewalks
 
 Sidewalks are pedestrian paths along streets.
 
-### How to Map
+#### How to Map
 
 1. Select the **Line** tool
 2. Draw a line along the **center** of the sidewalk
 3. Search for "Sidewalk" and select the preset
 
-### Tagging
+#### Tagging
 
 | Feature      | RapiD Preset | Tags                                   |
 |--------------|--------------|----------------------------------------|
 | **Sidewalk** | "Sidewalk"   | `highway=footway` + `footway=sidewalk` |
 
-### Additional Sidewalk Tags
+#### Additional Sidewalk Tags
 
 | Tag       | Values                 | Description      |
 |-----------|------------------------|------------------|
 | `surface` | `concrete` / `asphalt` | Surface material |
 
-### Important Rules
+#### Important Rules
 
 - Draw sidewalks down the **center** of the path
 - Connect sidewalks to service roads (driveways, alleys) where they intersect by adding a node (point) that both ways (lines) share
 
 ---
 
-## Tagging Crossing Links
+### Tagging Crossing Links
 
 Optionally, the short sidewalk **connector** segments between sidewalk centerlines and curb nodes can be tagged with `crossing_link=yes` to help identify these features, which often have different properties such as an incline or different surface material.
 
-### How to Map
+#### How to Map
 
 1. Select the **Line** tool
 2. Click on a curb node (at the end of a crossing)
@@ -163,7 +163,7 @@ Optionally, the short sidewalk **connector** segments between sidewalk centerlin
 5. Search for "Sidewalk" and select the preset
 6. Add the `crossing_link=yes` tag
 
-### Tagging
+#### Tagging
 
 | Feature      | RapiD Preset | Tags                                   |
 |--------------|--------------|----------------------------------------|
@@ -171,9 +171,9 @@ Optionally, the short sidewalk **connector** segments between sidewalk centerlin
 
 ---
 
-## Tagging Quick Reference
+### Tagging Quick Reference
 
-### Essentials
+#### Essentials
 
 | Feature          | Tags                                                                  |
 |------------------|-----------------------------------------------------------------------|
@@ -182,7 +182,7 @@ Optionally, the short sidewalk **connector** segments between sidewalk centerlin
 | Crossing (Point) | `highway=crossing` + `crossing:markings=yes`/`no`                     |
 | Curb (Point)     | `barrier=kerb` + `kerb=lowered`/`raised`                              |
 
-### Details
+#### Details
 
 | Tag                | Applies To           | Values                |
 |--------------------|----------------------|-----------------------|
@@ -192,7 +192,7 @@ Optionally, the short sidewalk **connector** segments between sidewalk centerlin
 
 ---
 
-## Saving Your Work
+### Saving Your Work
 
 1. Click **Save** in the RapiD Editor (top right)
 2. The changeset comment should be automatically filled out:
@@ -209,7 +209,7 @@ Done! **Thank you** so much for contributing to this project. Your contributions
 
 ---
 
-## Tips
+### Tips
 
 - **Use street-level imagery**: Open the Map Data panel on the right and, under the Photo Overlays menu, check Bing Streetside or Mapillary layers for street-level imagery, which can be helpful for determining curb types.
 - **When in doubt, don't guess!** It's better to not include a detail (such as a curb type) when you aren't confident about it - this allows on-the-ground surveyors to add the missing data and prevents routing applications from suggesting a route that isn't actually accessible.

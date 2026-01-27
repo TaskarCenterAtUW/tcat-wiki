@@ -91,6 +91,8 @@
     
       <link rel="stylesheet" href="../../../stylesheets/extra.css">
     
+      <link rel="stylesheet" href="https://unpkg.com/katex@0/dist/katex.min.css">
+    
     <script>__md_scope=new URL("../../..",location),__md_hash=e=>[...e].reduce(((e,t)=>(e<<5)-e+t.charCodeAt(0)),0),__md_get=(e,t=localStorage,a=__md_scope)=>JSON.parse(t.getItem(a.pathname+"."+e)),__md_set=(e,t,a=localStorage,_=__md_scope)=>{try{a.setItem(_.pathname+"."+e,JSON.stringify(t))}catch(e){}},document.documentElement.setAttribute("data-platform",navigator.platform)</script>
     
       
@@ -227,7 +229,7 @@
       <a href="../../.." class="md-tabs__link">
         
   
-  TCAT Wiki
+  Index
 
       </a>
     </li>
@@ -462,9 +464,7 @@
   
 
 
-  
-
-<nav class="md-nav md-nav--primary md-nav--lifted md-nav--integrated" aria-label="Navigation" data-md-level="0">
+<nav class="md-nav md-nav--primary md-nav--lifted" aria-label="Navigation" data-md-level="0">
   <label class="md-nav__title" for="__drawer">
     <a href="../../.." title="TCAT Wiki" class="md-nav__button md-logo" aria-label="TCAT Wiki" data-md-component="logo">
       
@@ -491,7 +491,7 @@
   <span class="md-ellipsis">
     
   
-    TCAT Wiki
+    Index
   
 
     
@@ -842,8 +842,6 @@
       <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
       
       
-        
-      
       
         <label class="md-nav__link md-nav__link--active" for="__toc">
           
@@ -883,20 +881,32 @@
         
 
 
-<nav class="md-nav md-nav--secondary" aria-label="On this page">
+  
+
+<nav class="md-nav md-nav--secondary" aria-label="On this page:">
   
   
-  
-    
   
   
     <label class="md-nav__title" for="__toc">
       <span class="md-nav__icon md-icon"></span>
-      On this page
+      On this page:
     </label>
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
+  <a href="#element-query-guide" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Element Query Guide
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Element Query Guide">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
   <a href="#cheatsheet-for-element-filter-syntax" class="md-nav__link">
     <span class="md-ellipsis">
       
@@ -906,8 +916,8 @@
   </a>
   
 </li>
-      
-        <li class="md-nav__item">
+        
+          <li class="md-nav__item">
   <a href="#equivalent-expressions" class="md-nav__link">
     <span class="md-ellipsis">
       
@@ -917,8 +927,8 @@
   </a>
   
 </li>
-      
-        <li class="md-nav__item">
+        
+          <li class="md-nav__item">
   <a href="#example-queries" class="md-nav__link">
     <span class="md-ellipsis">
       
@@ -926,6 +936,11 @@
       
     </span>
   </a>
+  
+</li>
+        
+      </ul>
+    </nav>
   
 </li>
       
@@ -3074,6 +3089,83 @@
               </div>
             
             
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+  
+
+<nav class="md-nav md-nav--secondary" aria-label="On this page:">
+  
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      On this page:
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#element-query-guide" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Element Query Guide
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Element Query Guide">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#cheatsheet-for-element-filter-syntax" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Cheatsheet for element filter syntax
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#equivalent-expressions" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Equivalent expressions
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#example-queries" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Example queries:
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
           
           
             <div class="md-content" data-md-component="content">
@@ -3095,7 +3187,7 @@
       <a href="../../.." class="md-path__link">
         
   <span class="md-ellipsis">
-    TCAT Wiki
+    Index
   </span>
 
       </a>
@@ -3148,15 +3240,17 @@
                 
                   
 
+  <h1>Element Query Guide</h1>
+
 <!-- @format -->
 
-<h1 id="element-query-guide">Element Query Guide<a class="headerlink" href="#element-query-guide" title="Permanent link">&para;</a></h1>
-<p>This guide explains how to format the element query selector for use in an AVIV ScoutRoute Long Form Quest Definition.</p>
-<p><em>For a list of all guides on the TCAT Wiki, refer to the <a href="../../../guides-list/">Guides List</a>.</em></p>
+<h2 id="element-query-guide">Element Query Guide<a class="headerlink" href="#element-query-guide" title="Anchor link to this section">⚓︎</a></h2>
+<p>This guide explains how to format the element query selector for use in an <abbr title="Accessibility Verification, Improved Validation.">AVIV</abbr> ScoutRoute Long Form Quest Definition.</p>
+<p><em>For a list of all guides on the <abbr title="Taskar Center for Accessible Technology">TCAT</abbr> Wiki, refer to the <a href="../../../guides-list/">Guides List</a>.</em></p>
 <hr />
-<p>The <code>quest_query</code> attribute of an AVIV ScoutRoute long form quest definition is constructed in a similar way to an OverPass API query, with some modifications.</p>
+<p>The <code>quest_query</code> attribute of an <abbr title="Accessibility Verification, Improved Validation.">AVIV</abbr> ScoutRoute long form quest definition is constructed in a similar way to an OverPass <abbr title="Application Programming Interface">API</abbr> query, with some modifications.</p>
 <p>For example, to get all ways, simply enter the query: <code>ways</code></p>
-<h2 id="cheatsheet-for-element-filter-syntax">Cheatsheet for element filter syntax<a class="headerlink" href="#cheatsheet-for-element-filter-syntax" title="Permanent link">&para;</a></h2>
+<h3 id="cheatsheet-for-element-filter-syntax">Cheatsheet for element filter syntax<a class="headerlink" href="#cheatsheet-for-element-filter-syntax" title="Anchor link to this section">⚓︎</a></h3>
 <table>
 <thead>
 <tr>
@@ -3252,7 +3346,7 @@
 </tbody>
 </table>
 <p>Note that regexes have to match the whole string, i.e. <code>~shop\|craft</code> does not match <code>shop_type</code>.</p>
-<h2 id="equivalent-expressions">Equivalent expressions<a class="headerlink" href="#equivalent-expressions" title="Permanent link">&para;</a></h2>
+<h3 id="equivalent-expressions">Equivalent expressions<a class="headerlink" href="#equivalent-expressions" title="Anchor link to this section">⚓︎</a></h3>
 <table>
 <thead>
 <tr>
@@ -3288,7 +3382,7 @@
 </tbody>
 </table>
 <p>The queries can be combined with parenthesis and can also be used for matching with multiple tag filters.</p>
-<h2 id="example-queries">Example queries:<a class="headerlink" href="#example-queries" title="Permanent link">&para;</a></h2>
+<h3 id="example-queries">Example queries:<a class="headerlink" href="#example-queries" title="Anchor link to this section">⚓︎</a></h3>
 <ul>
 <li>
 <p>Get all sidewalks: <code>ways with (footway=sidewalk)</code></p>
@@ -3494,12 +3588,18 @@
       
       
       
-      <script id="__config" type="application/json">{"annotate":null,"base":"../../..","features":["announce.dismiss","content.code.annotate","content.code.copy","content.code.select","content.footnote.tooltips","content.tabs.link","content.tooltips","navigation.footer","navigation.indexes","navigation.instant","navigation.instant.prefetch","navigation.instant.progress","navigation.path","navigation.sections","navigation.tabs","navigation.top","navigation.tracking","toc.follow","toc.integrate"],"search":"../../../assets/javascripts/workers/search.e2d2d235.min.js","tags":null,"translations":{"clipboard.copied":"Copied to clipboard","clipboard.copy":"Copy to clipboard","search.result.more.one":"1 more on this page","search.result.more.other":"# more on this page","search.result.none":"No matching documents","search.result.one":"1 matching document","search.result.other":"# matching documents","search.result.placeholder":"Type to start searching","search.result.term.missing":"Missing","select.version":"Select version"},"version":null}</script>
+      <script id="__config" type="application/json">{"annotate":null,"base":"../../..","features":["announce.dismiss","content.code.annotate","content.code.copy","content.code.select","content.footnote.tooltips","content.tabs.link","content.tooltips","navigation.footer","navigation.indexes","navigation.instant","navigation.instant.prefetch","navigation.instant.progress","navigation.path","navigation.sections","navigation.tabs","navigation.top","navigation.tracking","toc.follow"],"search":"../../../assets/javascripts/workers/search.e2d2d235.min.js","tags":null,"translations":{"clipboard.copied":"Copied to clipboard","clipboard.copy":"Copy to clipboard","search.result.more.one":"1 more on this page","search.result.more.other":"# more on this page","search.result.none":"No matching documents","search.result.one":"1 matching document","search.result.other":"# matching documents","search.result.placeholder":"Type to start searching","search.result.term.missing":"Missing","select.version":"Select version"},"version":null}</script>
     
     
       <script src="../../../assets/javascripts/bundle.00c35305.min.js"></script>
       
         <script src="../../../javascripts/extra.js"></script>
+      
+        <script src="../../../javascripts/katex.js"></script>
+      
+        <script src="https://unpkg.com/katex@0/dist/katex.min.js"></script>
+      
+        <script src="https://unpkg.com/katex@0/dist/contrib/auto-render.min.js"></script>
       
     
   </body>

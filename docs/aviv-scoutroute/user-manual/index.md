@@ -8,7 +8,7 @@ tags:
 
 <!-- @format -->
 
-# AVIV ScoutRoute User Manual
+## AVIV ScoutRoute User Manual
 
 This user manual explains how to install and use the AVIV ScoutRoute mobile app.
 
@@ -16,7 +16,7 @@ _For a list of all guides on the TCAT Wiki, refer to the [Guides List](../../gui
 
 ---
 
-## Introduction
+### Introduction
 
 This document enables users to try out AVIV ScoutRoute (in conjunction with a workspace) where one can answer quests. After reading this document, users should be able to install AVIV ScoutRoute, as well as view and complete quests in the app.
 
@@ -24,11 +24,11 @@ AVIV ScoutRoute is a volunteerism game for crowdsourcing pedestrian and accessib
 
 Note that AVIV ScoutRoute was rebranded from the original "GoInfoGame" / "GiG" branding, and some materials have not yet been updated to reflect this.
 
-## Installation
+### Installation
 
 Depending on the type of mobile device you use, follow the instructions below to install AVIV ScoutRoute.
 
-### Apple iPhone Users
+#### Apple iPhone Users
 
 **Step 1:** Make sure you have an Apple Account (formerly called an "Apple ID"). This is the email address associated with your iPhone and all Apple services.
 
@@ -66,7 +66,7 @@ Alternatively, scan the QR code below:
 
 **Step 5:** Reach out to your project's point of contact and provide them with your name and Apple Account email address. They will add you to the appropriate Project Group and assign your role.
 
-### Android Users
+#### Android Users
 
 **Step 1:** Make sure you have reliable access to an Email account.
 
@@ -85,9 +85,7 @@ Alternatively, scan the QR code below:
 **Step 3:** Install AVIV ScoutRoute!
 
 1. Accept the Tester Invitation
-
     1. You'll receive an email invite or direct link from either your project's point of contact or the developer team
-
         1. External (non-TCAT) users should use the following invite link:
            [https://appdistribution.firebase.dev/i/63d3d906e42fb64d](https://appdistribution.firebase.dev/i/63d3d906e42fb64d)
 
@@ -104,7 +102,6 @@ Alternatively, scan the QR code below:
 ![Firefox Firebase AVIV ScoutRoute Invite Sign Up](../../resources/images/aviv-scoutroute/android/firefox-firebase-asr-invite-sign-up.png){ width="400" } ![Firefox Firebase AVIV ScoutRoute Invite Success](../../resources/images/aviv-scoutroute/android/firefox-firebase-asr-invite-success.png){ width="400" }
 
 1. Install the Firebase App Tester App
-
     1. Download the Firebase App Tester application from the email that is sent once the invite is accepted, or navigate to [appdistribution.firebase.google.com](https://appdistribution.firebase.google.com)
 
     2. Install Firebase App Tester
@@ -116,7 +113,6 @@ Alternatively, scan the QR code below:
     5. A list of available apps will be displayed
 
 2. Download AVIV ScoutRoute
-
     1. In the App Tester app, find the AVIV ScoutRoute app under "My Apps"
 
     2. Select "Download" to install
@@ -131,11 +127,11 @@ Alternatively, scan the QR code below:
 
 **Step 5:** Reach out to your project's point of contact and provide them with your name and email address. They will add you to the appropriate Project Group and assign your role.
 
-## Next Steps
+### Next Steps
 
 You should now be ready to complete quests in AVIV ScoutRoute! Please reach out to the UW team if you have questions or concerns that have not been answered in this document.
 
-## Additional Resources
+### Additional Resources
 
--   [AVIV ScoutRoute iOS Release Notes](https://docs.google.com/document/d/1i9FUVdXElJ8zUk3BTvbW8AOQ-lYz_6Q6c1p8wZXYZxc/view?usp=sharing)
--   [AVIV ScoutRoute Android Release Notes](https://docs.google.com/document/d/1jaiyNtAOCKeUVBqjmLveI78g4yhWH222DLg7Ev4VO5g/view?usp=sharing)
+- [AVIV ScoutRoute iOS Release Notes](https://docs.google.com/document/d/1i9FUVdXElJ8zUk3BTvbW8AOQ-lYz_6Q6c1p8wZXYZxc/view?usp=sharing)
+- [AVIV ScoutRoute Android Release Notes](https://docs.google.com/document/d/1jaiyNtAOCKeUVBqjmLveI78g4yhWH222DLg7Ev4VO5g/view?usp=sharing)
