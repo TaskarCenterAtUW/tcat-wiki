@@ -19,6 +19,30 @@ The OpenSidewalks Schema is explicitly a _network schema_: its primary features 
 
 The OpenSidewalks Schema draws from and is intended to be largely compatible with OpenStreetMap data, though it is possible to create OpenSidewalks Schema data not derived from OpenStreetMap.
 
+### Transportation Data Exchange Initiative
+
+Validation, ingestion, and downstream use of the OpenSidewalks Schema are supported by tooling developed and maintained through the [Transportation Data Exchange Initiative](../../tdei/index.md) ([TDEI](https://tdei.cs.washington.edu/)).
+
+TDEI provides both user-facing interfaces and programmatic APIs that enable schema validation, quality assurance, dataset management, and access for OpenSidewalks-compliant data. These tools support data producers, stewards, and consumers in publishing and using standardized pedestrian infrastructure datasets at scale.
+
+#### Metrics
+
+As of January 2026, the TDEI system hosts **over 5600 complete OpenSidewalks-validated and vetted datasets**, representing more than **10.5 million crossings** and almost **400,000 miles of sidewalks**, with ongoing updates and expansion. These datasets have passed schema validation and TDEI quality control workflows prior to publication. For current metrics of OpenSidewalks data in the TDEI, please refer to the [TDEI Performance Dashboard](https://metrics.tdei.us/).
+
+#### Validation
+
+An OpenSideWalks Schema validator is available as a Python library and as a Job Type in the TDEI Portal:
+
+- Library:
+    - [PyPI: python-osw-validation](https://pypi.org/project/python-osw-validation/)
+
+    - [GitHub: TaskarCenterAtUW/TDEI-python-lib-osw-validation](https://github.com/TaskarCenterAtUW/TDEI-python-lib-osw-validation)
+
+- Service:
+    - [TDEI Portal: Create Job](https://portal.tdei.us/CreateJob): "OSW - Validate" (Dataset-Validate)
+
+    - [GitHub: TaskarCenterAtUW/TDEI-python-osw-validation](https://github.com/TaskarCenterAtUW/TDEI-python-osw-validation)
+
 ### OpenSidewalks Schema Entities
 
 The OpenSidewalks Schema defines network and non-network data using a set of vector geometrical entity types, each of which has an associated geometry type compatible with either the Point, LineString, or Polygon specification of [Simple Feature Access](https://www.ogc.org/standards/sfa), fields that uniquely define the entity type (in combination), optional topological information, and optional key-value pair [metadata fields](#metadata-fields) defined on a per-type basis.
@@ -910,20 +934,6 @@ OpenSidewalks Schema fields are typed key-value pairs. Keys are always strings a
     <tr><td>Value type</td><td>enum</td></tr>
     <tr><td>Enumerated Values</td><td>- <em>broadleaved</em>: Broad, flat leaves.<br>- <em>leafless</em>: No leaves.<br>- <em>mixed</em>: Multiple trees with different leaf types.<br>- <em>needleleaved</em>: Needle-shaped leaves.</td></tr>
     </table>
-
-### Validation
-
-An OpenSideWalks Schema validator is available as a Python library and as a Job Type in the TDEI Portal:
-
-- Library:
-    - [PyPI: python-osw-validation](https://pypi.org/project/python-osw-validation/)
-
-    - [GitHub: TaskarCenterAtUW/TDEI-python-lib-osw-validation](https://github.com/TaskarCenterAtUW/TDEI-python-lib-osw-validation)
-
-- Service:
-    - [TDEI Portal: Create Job](https://portal.tdei.us/CreateJob): "OSW - Validate" (Dataset-Validate)
-
-    - [GitHub: TaskarCenterAtUW/TDEI-python-osw-validation](https://github.com/TaskarCenterAtUW/TDEI-python-osw-validation)
 
 ### Schema Versions
 
