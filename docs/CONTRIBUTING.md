@@ -206,9 +206,9 @@ For creating screenshots with a consistent style, Firefox DevTools is to be used
         3. User Agent String: `Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:140.0) Gecko/20100101 Firefox/140.0`
 
 4. Resulting screenshots will fit exactly within the 2px outside border present in the following screenshot templates:
-    1. [Screenshot (Landscape)](resources/images/template/screenshot-landscape.png)
+    1. [Landscape (Desktop) - templates/images/screenshots/landscape-desktop.png](https://github.com/TaskarCenterAtUW/tcat-wiki/blob/main/templates/images/screenshots/landscape-desktop.png)
 
-    2. [Screenshot (Portrait)](resources/images/template/screenshot-portrait.png)
+    2. [Portrait (Desktop) - templates/images/screenshots/portrait-desktop.png](https://github.com/TaskarCenterAtUW/tcat-wiki/blob/main/templates/images/screenshots/portrait-desktop.png)
 
 5. It is recommended to remove all embedded metadata, such as with the use of [ExifToolGUI](https://exiftool.org/gui/).
 
@@ -217,9 +217,8 @@ For creating screenshots with a consistent style, Firefox DevTools is to be used
 For creating image annotations with a consistent style, follow these guidelines.
 
 1. Highlight box
-    2. Use: Indicating an area of focus in an image.
-
-    3. Style
+    1. Use: Indicating an area of focus in an image.
+    2. Style
         1. Padding: `2px` distance from highlighted selection
 
         2. Outline
@@ -232,11 +231,11 @@ For creating image annotations with a consistent style, follow these guidelines.
 
             2. Opacity: `0.25`
 
-    4. Example:
+    3. Example:
 
         ![Screenshot of TDEI Portal Login page with "Forgot Password?" highlighted.](resources/images/tdei-portal/login-h-forgot-password.png){ loading=lazy }
 
-    5. Naming convention: For images with highlights, append `-h-$highlightedFeature`
+    4. Naming convention: For images with highlights, append `-h-$highlightedFeature`
         1. Example: `login.png` → `login-h-forgot-password.png`
 
 ##### QR Codes
