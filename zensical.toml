@@ -1,7 +1,8 @@
 [project]
 
 # Site version
-version = "2.2.0"
+
+version = "3.2.0"
 
 # The site_name is shown in the page header and the browser window title
 # Read more: https://zensical.org/docs/setup/basics/#site_name
@@ -354,6 +355,7 @@ nav = [
         {"Mny26" = [
             "events/mny26/index.md",
             {"Mapping Guide" = "events/mny26/mapping-guide.md"},
+            {"Event Summary" = "events/mny26/report.md"},
             {"Validation Guide" = "events/mny26/validation-guide.md"}
         ]},
         {"Nda Vancouver" = [
