@@ -1,7 +1,7 @@
 [project]
 
 # Site version
-version = "3.1.0"
+version = "3.2.0"
 
 # The site_name is shown in the page header and the browser window title
 # Read more: https://zensical.org/docs/setup/basics/#site_name
@@ -366,7 +366,8 @@ nav = [
             "events/olympia-connected/index.md",
             {"Mapping Guide" = "events/olympia-connected/mapping-guide.md"},
             {"Validation Guide" = "events/olympia-connected/validation-guide.md"}
-        ]}
+        ]},
+        {"Oswmh" = [ "events/oswmh/index.md" ]}
     ]},
     {"JOSM" = [
         "josm/index.md",
