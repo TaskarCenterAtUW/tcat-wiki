@@ -18,7 +18,7 @@ _For a list of all guides on the TCAT Wiki, refer to the [Guides List](../guides
 
 #### [AVIV ScoutRoute User Manual](user-manual/index.md)
 
-This user manual explains how to install and use the AVIV ScoutRoute mobile app.
+This guide serves as a user manual and documentation reference for the AVIV ScoutRoute mobile app.
 
 #### [Long Form Quest Definition](quests/index.md) Guides
 
