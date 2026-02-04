@@ -18,7 +18,7 @@ This user manual explains how to use the AccessMap application.
 
 #### [AVIV ScoutRoute User Manual](../aviv-scoutroute/user-manual/index.md)
 
-This user manual explains how to install and use the AVIV ScoutRoute mobile app.
+This guide serves as a user manual and documentation reference for the AVIV ScoutRoute mobile app.
 
 #### [Long Form Quest Definition](../aviv-scoutroute/quests/index.md) Guides
 
