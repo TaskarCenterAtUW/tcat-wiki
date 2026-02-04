@@ -28,6 +28,7 @@ const titleMapSource = {
     ios: "iOS",
     mny26: "Mappy New Year 2026",
     "olympia connected": "Olympia, Connected",
+    oswmh: "OpenSidewalks Mappy Hours"
 };
 
 /**
