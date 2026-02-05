@@ -10,10 +10,10 @@
 
 ### Single-Source Documentation Site
 
--   **Framework**: Zensical (`zensical.toml` orchestrates everything)
--   **Content**: Markdown files in `/docs` structured by topic
--   **Navigation**: Auto-generated from directory structure via PowerShell scripts
--   **Custom Extensions**: YAML frontmatter titles, abbreviations auto-linking, custom CSS theming
+- **Framework**: Zensical (`zensical.toml` orchestrates everything)
+- **Content**: Markdown files in `/docs` structured by topic
+- **Navigation**: Auto-generated from directory structure via PowerShell scripts
+- **Custom Extensions**: YAML frontmatter titles, abbreviations auto-linking, custom CSS theming
 
 ### Directory Structure Pattern
 
@@ -31,8 +31,8 @@ docs/
 
 ### Abbreviations System
 
--   `/includes/abbreviations.md` auto-links acronyms site-wide (e.g., OSW, TDEI, JOSM)
--   Add new acronyms here; they're automatically inserted into all `.md` files via the Zensical snippets plugin
+- `/includes/abbreviations.md` auto-links acronyms site-wide (e.g., OSW, TDEI, JOSM)
+- Add new acronyms here; they're automatically inserted into all `.md` files via the Zensical snippets plugin
 
 ## Version Control & Workflow
 
@@ -42,15 +42,15 @@ This project follows standardized version control conventions:
 
 The TCAT Wiki uses [Semantic Versioning](https://semver.org/) (MAJOR.MINOR.PATCH):
 
--   **Major (X.0.0)**:
-    -   Core: New major features or upgrades
-    -   Docs: Changes to structure/navigation that break external links
--   **Minor (0.X.0)**:
-    -   Core: Significant changes to core features
-    -   Docs: New documentation or major reworks
--   **Patch (0.0.X)**:
-    -   Core: Minor fixes, fixing typos, completing chores
-    -   Docs: Small updates, fixing typos, adding images
+- **Major (X.0.0)**:
+    - Core: New major features or upgrades
+    - Docs: Changes to structure/navigation that break external links
+- **Minor (0.X.0)**:
+    - Core: Significant changes to core features
+    - Docs: New documentation or major reworks
+- **Patch (0.0.X)**:
+    - Core: Minor fixes, fixing typos, completing chores
+    - Docs: Small updates, fixing typos, adding images
 
 The version number is stored in the `version` field in `zensical.toml`.
 
@@ -58,8 +58,8 @@ The version number is stored in the `version` field in `zensical.toml`.
 
 Commits follow [Conventional Commits](https://www.conventionalcommits.org/) with scoping:
 
--   `feat(scope): description` - Core features or Docs content
--   `fix(scope): description` - Core patches or Docs corrections
+- `feat(scope): description` - Core features or Docs content
+- `fix(scope): description` - Core patches or Docs corrections
 
 Examples:
 
@@ -94,9 +94,16 @@ fix/docs-walksheds/2048-fix-typo
 
 ## Critical Developer Workflows
 
-### Build & Preview Local Site
+**IMPORTANT**: This project uses a Python virtual environment (`.venv/`) for dependency isolation. **Always activate the virtual environment before running any commands** (including `zensical serve`, utility scripts, etc.):
 
-This project uses a Python virtual environment (`.venv/`) for dependency isolation.
+```powershell
+# Activate the virtual environment (run from repository root)
+.\.venv\Scripts\Activate.ps1
+```
+
+You'll know the venv is activated when you see `(.venv)` at the beginning of your PowerShell prompt.
+
+### Build & Preview Local Site
 
 ```powershell
 # First time only: create and activate virtual environment
@@ -106,7 +113,7 @@ python -m venv .venv
 # Install dependencies from requirements.txt
 pip install -r requirements.txt
 
-# Run the local development server
+# Run the local development server (venv must be activated)
 zensical serve  # http://localhost:8000
 
 # Deactivate when done
@@ -118,6 +125,9 @@ deactivate
 ### Regenerate Navigation After Adding Files
 
 ```powershell
+# Ensure venv is activated first!
+.\.venv\Scripts\Activate.ps1
+
 cd util
 .\generate-guides-lists.ps1        # Auto-generates index.md in guides/ directories
 .\generate-nav.ps1                 # Updates zensical.toml nav section directly
@@ -128,6 +138,9 @@ cd util
 ### Validate Links
 
 ```powershell
+# Ensure venv is activated first!
+.\.venv\Scripts\Activate.ps1
+
 cd util
 .\check-links.ps1                   # Check internal + external links
 .\check-links.ps1 -internal         # Internal only
@@ -139,6 +152,9 @@ cd util
 The `run-utils.ps1` script provides an automated workflow to validate and run all utilities:
 
 ```powershell
+# Ensure venv is activated first!
+.\.venv\Scripts\Activate.ps1
+
 cd util
 .\run-utils.ps1                     # Run all tests, then all utilities
 .\run-utils.ps1 -TestsOnly          # Run only Pester tests
@@ -235,30 +251,30 @@ Both flags can be used together to exclude a guide from all guides lists.
 
 **User Manuals**: Pages tagged with `- User Manual` are treated as guides but handled specially:
 
--   They appear as single entries in parent guides sections (not as section headers)
--   In the main guides list, only the user manual itself appears, not its subpages
--   Their subpages (e.g., `workspace-settings.md`) appear only in the user manual's own `## Guides` section
+- They appear as single entries in parent guides sections (not as section headers)
+- In the main guides list, only the user manual itself appears, not its subpages
+- Their subpages (e.g., `workspace-settings.md`) appear only in the user manual's own `## Guides` section
 
 ### Organization
 
--   **accessmap**: AccessMap documentation and guides
--   **aviv-scoutroute**: AVIV ScoutRoute mobile app user manual and quest definition guides
--   **josm**: JOSM configuration guides for Workspaces editing
--   **opensidewalks**: OpenSidewalks schema guides (organized in `schema/` and `tasking-manager/` subtopics)
--   **rapid**: Rapid editor documentation
--   **tdei**: TDEI platform documentation (organized in `portal/` and `tdei-core/` subtopics)
--   **tdei-walkshed**: TDEI Walkshed tool documentation
--   **workspaces**: Workspaces editing platform guides
--   **resources**: Images and stylesheets (no content pages)
--   **local-storage/**: Directory ignored by git, used as a storage target for temporary local files
--   **util**: Utilities and scripts to make editing this Wiki easier
+- **accessmap**: AccessMap documentation and guides
+- **aviv-scoutroute**: AVIV ScoutRoute mobile app user manual and quest definition guides
+- **josm**: JOSM configuration guides for Workspaces editing
+- **opensidewalks**: OpenSidewalks schema guides (organized in `schema/` and `tasking-manager/` subtopics)
+- **rapid**: Rapid editor documentation
+- **tdei**: TDEI platform documentation (organized in `portal/` and `tdei-core/` subtopics)
+- **tdei-walkshed**: TDEI Walkshed tool documentation
+- **workspaces**: Workspaces editing platform guides
+- **resources**: Images and stylesheets (no content pages)
+- **local-storage/**: Directory ignored by git, used as a storage target for temporary local files
+- **util**: Utilities and scripts to make editing this Wiki easier
 
 ## Integration Points & Dependencies
 
 ### Customizations
 
--   **Theme**: Custom CSS in `/resources/stylesheets/` (ensure file exists before editing)
--   **Overrides**: `/overrides/partials/` extends Zensical templates (head.html, extra.html)
+- **Theme**: Custom CSS in `/resources/stylesheets/` (ensure file exists before editing)
+- **Overrides**: `/overrides/partials/` extends Zensical templates (head.html, extra.html)
 
 ## When Adding New Content
 
@@ -272,11 +288,11 @@ Both flags can be used together to exclude a guide from all guides lists.
 
 **For Guide Content**: The human editor is responsible for writing the substantive content of guides. The AI assistant's role is to:
 
--   Help with **formatting and structure** (headings, lists, code blocks, links)
--   **Review and suggest improvements** to clarity, tone, and organization
--   **Check logic and consistency** across the documentation
--   **Ensure compliance** with project conventions (frontmatter, tags, abbreviations, etc.)
--   **Proofread** for grammar and spelling
+- Help with **formatting and structure** (headings, lists, code blocks, links)
+- **Review and suggest improvements** to clarity, tone, and organization
+- **Check logic and consistency** across the documentation
+- **Ensure compliance** with project conventions (frontmatter, tags, abbreviations, etc.)
+- **Proofread** for grammar and spelling
 
 **The assistant should NOT write the core guide content itself!** Guides must reflect the knowledge and perspective of subject matter experts and domain authors.
 
@@ -290,14 +306,14 @@ Refer to the official Zensical documentation, which is hosted online at https://
 
 ### Key Files for Reference
 
--   `zensical.toml`: Main config; nav section auto-updated by scripts
--   `util/run-utils.ps1`: Master utility runner - tests and runs all utilities in sequence
--   `util/run-utils.Tests.ps1`: Pester tests for utility runner
--   `util/generate-guides-lists.ps1`: Creates guide index markdown files
--   `util/generate-guides-lists.Tests.ps1`: Pester tests for guides lists generator
--   `util/generate-nav.ps1`: Builds TOML navigation tree from file structure
--   `util/generate-nav.Tests.ps1`: Pester tests for nav generator
--   `util/check-links.ps1`: PowerShell validation of links (not standard CI integration)
--   `util/check-links.Tests.ps1`: Pester tests for link checker
--   `/includes/abbreviations.md`: Global acronym definitions
--   `/resources/stylesheets/extra.css`: Theming
+- `zensical.toml`: Main config; nav section auto-updated by scripts
+- `util/run-utils.ps1`: Master utility runner - tests and runs all utilities in sequence
+- `util/run-utils.Tests.ps1`: Pester tests for utility runner
+- `util/generate-guides-lists.ps1`: Creates guide index markdown files
+- `util/generate-guides-lists.Tests.ps1`: Pester tests for guides lists generator
+- `util/generate-nav.ps1`: Builds TOML navigation tree from file structure
+- `util/generate-nav.Tests.ps1`: Pester tests for nav generator
+- `util/check-links.ps1`: PowerShell validation of links (not standard CI integration)
+- `util/check-links.Tests.ps1`: Pester tests for link checker
+- `/includes/abbreviations.md`: Global acronym definitions
+- `/resources/stylesheets/extra.css`: Theming
