@@ -71,6 +71,7 @@
 *[OS-CONNECT]: OpenSidewalks COnsistent Network for accessible Navigation and Equitable Connectivity through Transit
 *[OSM]: OpenStreetMap
 *[OSW]: OpenSidewalks
+*[OSWMH]: OpenSidewalks Mappy Hours
 *[OTP]: OpenThePaths
 *[PED XING]: Pedestrian Crossing
 *[PII]: Personally Identifiable Information
