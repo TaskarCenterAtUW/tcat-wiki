@@ -135,7 +135,7 @@ Select your device type below for installation instructions:
     <!-- IMAGE PLACEHOLDER: Login screen | ../../resources/images/aviv-scoutroute/ios/login-dark.png#only-dark{ width="300" } -->
     <!-- IMAGE PLACEHOLDER: Login screen | ../../resources/images/aviv-scoutroute/ios/login-light.png#only-light{ width="300" } -->
 
-    ### Step 5: Join Your Project Group
+    #### Step 4: Join Your Project Group
 
     If you registered with a referral code, you're already set up - move ahead to [Getting Started](getting-started.md).
 
