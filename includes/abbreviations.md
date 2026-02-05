@@ -29,7 +29,9 @@
 *[DTM]: Digital Terrain Model
 *[FDE]: Fundamental Data Elements
 *[FHWA]: Federal Highway Administration
+*[FNS]: Food and Nutrition Service
 *[FTA]: Federal Transit Administration
+*[FQHC]: Federally Qualified Health Center
 *[GATIS]: General Active Transportation Infrastructure Specification
 *[GIG]: GoInfoGame
 *[GIS]: Geographic Information System
@@ -48,8 +50,10 @@
 *[IRB]: Internal Review Board
 *[ISTEA]: Intermodal Surface Transportation Efficiency Act of 1991
 *[ITS]: Intelligent Transportation System
+*[IXN]: Intersection / Intersection Traversability Metric
 *[JOSM]: Java OpenStreetMap Editor
 *[KPI]: Key Performance Indicator
+*[LFQD]: Long Form Quest Definition
 *[LiDAR]: Light Detection and Ranging
 *[LRS]: Linear Referencing System
 *[LRTP]: Long-Range Transportation Plan
@@ -68,6 +72,7 @@
 *[NHTSA]: National Highway Traffic Safety Administration
 *[NYPL]: New York Public Library
 *[OGC]: Open Geospatial Consortium
+*[ORCA]: One Regional Card for All
 *[OS-CONNECT]: OpenSidewalks COnsistent Network for accessible Navigation and Equitable Connectivity through Transit
 *[OSM]: OpenStreetMap
 *[OSW]: OpenSidewalks
@@ -76,6 +81,7 @@
 *[PED XING]: Pedestrian Crossing
 *[PII]: Personally Identifiable Information
 *[POI]: Point of Interest
+*[POIs]: Points of Interest
 *[PROWAG]: Public Right-of-Way Accessibility Guidelines
 *[PSRC]: Puget Sound Regional Council
 *[PWG]: Pedestrian Working Group
@@ -91,14 +97,17 @@
 *[SCLIO]: Specialized Community-Led Impact Opportunity
 *[SDOT]: Seattle Department of Transportation
 *[SHSP]: Strategic Highway Safety Plan
+*[SNAP]: Supplemental Nutrition Assistance Program
 *[SOV]: Single Occupancy Vehicle
 *[SOW]: Statement of Work
 *[SPS]: Seattle Public Schools
+*[SRTS]: Safe Routes to School
 *[STIP]: State Transportation Improvement Program
 *[SUMC]: Shared User Mobility Conference
 *[SVEA]: Snoqualmie Valley Economic Alliance
 *[TAM]: Transportation Asset Management
 *[TAMP]: Transportation Asset Management Plan
+*[TANF]: Temporary Assistance for Needy Families
 *[TCAT]: Taskar Center for Accessible Technology
 *[TCRP]: Transit Cooperative Research Program
 *[TDEI]: Transportation Data Exchange Initiative
@@ -110,11 +119,14 @@
 *[TRB]: Transportation Research Board
 *[TSP]: Transportation Service Provider / Transportation Safety Planning
 *[TTS]: Text-to-Speech
+*[TVM]: Ticket Vending Machine
 *[TxDOT]: Texas Department of Transportation
 *[UI]: User Interface
+*[USDA]: United States Department of Agriculture
 *[USDOT]: United States Department of Transportation
 *[USGS]: United States Geological Survey
 *[UW]: University of Washington
 *[UX]: User Experience
+*[WIC]: Special Supplemental Nutrition Program for Women, Infants, and Children
 *[WSDOT]: Washington State Department of Transportation
 *[XML]: Extensible Markup Language
