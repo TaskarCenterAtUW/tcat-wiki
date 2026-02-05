@@ -102,7 +102,7 @@ Once you've selected a workspace, you'll see the main map interface:
 | **Screen Reader Mode** | List-based quest view instead of map                                   |
 | **Interface**          | Additional buttons and menus                                           |
 
-For detailed information on each interface feature, refer to the [Map Interface](map-interface) page.
+For detailed information on each interface feature, refer to the [Map Interface](map-interface.md) page.
 
 ---
 
