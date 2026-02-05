@@ -12,6 +12,24 @@ The main TCAT events calendar can be found at [https://tcat.cs.washington.edu/ev
 
 ---
 
+### Recurring Events
+
+#### OpenSidewalks Mappy Hours
+
+**Name:** OpenSidewalks Mappy Hours / TCAT Office Hours
+
+**Organizers:** [TCAT](https://tcat.cs.washington.edu/)
+
+**Time:** Weekly, on Tuesdays | 8:00 AM PT - 10:00 AM PT
+
+**Location:** Virtual: [Zoom](https://washington.zoom.us/j/98269654220)
+
+**Related Content:**
+
+Visit the [OpenSidewalks Mappy Hours](oswmh/index.md) page for more information, points of contact, and FAQ!
+
+---
+
 ### Upcoming Events
 
 #### Olympia, Connected
