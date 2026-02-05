@@ -33,6 +33,7 @@ AVIV ScoutRoute is based on [StreetComplete](https://github.com/westnordost/Stre
 ---
 
 ### Additional Resources
+
 - [AVIV ScoutRoute Android Release Notes](https://docs.google.com/document/d/1jaiyNtAOCKeUVBqjmLveI78g4yhWH222DLg7Ev4VO5g/view?usp=sharing)
 - [AVIV ScoutRoute iOS Release Notes](https://docs.google.com/document/d/1i9FUVdXElJ8zUk3BTvbW8AOQ-lYz_6Q6c1p8wZXYZxc/view?usp=sharing)
 

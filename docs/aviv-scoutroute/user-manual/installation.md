@@ -29,8 +29,8 @@ For additional details, refer to the [TDEI Portal > User Manual > Account Regist
 
 !!! tip "Event Participants"
 
-    If you're participating in a **mapping event**, you likely received a QR code to scan or a referral link. 
-    
+    If you're participating in a **mapping event**, you likely received a QR code to scan or a referral link.
+
     Use that link to register for the fastest, most streamlined setup experience.
 
 ---

@@ -95,12 +95,12 @@ Once you've selected a workspace, you'll see the main map interface:
 <!-- IMAGE PLACEHOLDER: Main map interface | ../../resources/images/aviv-scoutroute/ios/map-interface-dark.png#only-dark{ width="300" } -->
 <!-- IMAGE PLACEHOLDER: Main map interface | ../../resources/images/aviv-scoutroute/ios/map-interface-light.png#only-light{ width="300" } -->
 
-| Element                | Description                                                                                   |
-|:-----------------------|:----------------------------------------------------------------------------------------------|
-| **Map View**           | The central area showing the workspace and background |
-| **Quest Icons**        | Icons on the map representing available quests (data collection tasks)                        |
-| **Screen Reader Mode** | List-based quest view instead of map                                                          |
-| **Interface**            | Additional buttons and menus                                                            |
+| Element                | Description                                                            |
+|:-----------------------|:-----------------------------------------------------------------------|
+| **Map View**           | The central area showing the workspace and background                  |
+| **Quest Icons**        | Icons on the map representing available quests (data collection tasks) |
+| **Screen Reader Mode** | List-based quest view instead of map                                   |
+| **Interface**          | Additional buttons and menus                                           |
 
 For detailed information on each interface feature, refer to the [Map Interface](map-interface) page.
 
