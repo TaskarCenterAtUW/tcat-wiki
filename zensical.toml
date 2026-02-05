@@ -1,7 +1,8 @@
 [project]
 
 # Site version
-version = "3.2.0"
+
+version = "3.3.0"
 
 # The site_name is shown in the page header and the browser window title
 # Read more: https://zensical.org/docs/setup/basics/#site_name
@@ -347,7 +348,15 @@ nav = [
             {"Element Query Guide" = "aviv-scoutroute/quests/element-query.md"},
             {"Element Type Icon Guide" = "aviv-scoutroute/quests/element-type-icon.md"}
         ]},
-        {"User Manual" = [ "aviv-scoutroute/user-manual/index.md" ]}
+        {"User Manual" = [
+            "aviv-scoutroute/user-manual/index.md",
+            {"App Settings" = "aviv-scoutroute/user-manual/app-settings.md"},
+            {"Completing Quests" = "aviv-scoutroute/user-manual/completing-quests.md"},
+            {"Getting Started" = "aviv-scoutroute/user-manual/getting-started.md"},
+            {"Installation" = "aviv-scoutroute/user-manual/installation.md"},
+            {"Map Interface" = "aviv-scoutroute/user-manual/map-interface.md"},
+            {"Quest Types" = "aviv-scoutroute/user-manual/quest-types.md"}
+        ]}
     ]},
     {"Events" = [
         "events/index.md",
