@@ -33,7 +33,7 @@ The AVIV ScoutRoute map displays an overhead view of the workspace area. The app
 
 ---
 
-### Pedestrian Environment Terminology
+### Pedestrian Environment Terminology Basics
 
 Understanding these terms will help you complete quests accurately:
 
@@ -124,6 +124,68 @@ The quest should reappear on the map, allowing you to answer it again with the c
 !!! note
 
     If the Undo menu is not visible, the quest cannot be rolled back through the app - contact your project leader for help with undoing older changes.
+
+---
+
+### Hide Quest
+
+The Hide Quest feature lets you temporarily remove specific quests from view. This is useful when you want to skip certain quests without seeing them repeatedly.
+
+#### Hiding a Quest
+
+1. Tap on a quest icon to open its answer panel
+2. Tap **Hide** (eye icon)
+3. Answer **Yes** to the confirmation pop-up
+4. The quest disappears from the map
+
+#### Restoring Hidden Quests
+
+To restore an **individual** hidden quest:
+
+1. Open the Undo menu
+2. Tap on the quest you want to unhide
+3. Select **Undo**
+
+To restore **all** hidden quests at once:
+
+1. Open the hamburger menu and tap **Settings**
+2. Navigate down to **Advanced**
+3. Tap **Restore hidden quests**
+4. Select **Restore** on the confirmation pop-up
+
+!!! info
+
+    Hidden quests are stored locally on your device. They remain hidden until you choose to restore them.
+
+---
+
+### Imagery Layer Control
+
+The Imagery Layer control lets you switch between different map background sources, if they have been configured for your workspace.
+
+<!-- === "Android" -->
+
+<!-- IMAGE PLACEHOLDER: Imagery layer selector | ../../resources/images/aviv-scoutroute/android/imagery-layer-dark.png#only-dark{ width="300" } -->
+<!-- IMAGE PLACEHOLDER: Imagery layer selector | ../../resources/images/aviv-scoutroute/android/imagery-layer-light.png#only-light{ width="300" } -->
+
+<!-- === "iOS (Apple)" -->
+
+<!-- IMAGE PLACEHOLDER: Imagery layer selector | ../../resources/images/aviv-scoutroute/ios/imagery-layer-dark.png#only-dark{ width="300" } -->
+<!-- IMAGE PLACEHOLDER: Imagery layer selector | ../../resources/images/aviv-scoutroute/ios/imagery-layer-light.png#only-light{ width="300" } -->
+
+**How to access:**
+
+1. Tap the **Layers** icon in the top toolbar
+
+**Available imagery types may include:**
+
+- Satellite imagery
+- Street maps
+- Custom basemaps configured by your project
+
+!!! note
+
+    Available imagery sources depend on what has been configured for your workspace. Contact your project administrator if you need specific imagery options.
 
 ---
 
