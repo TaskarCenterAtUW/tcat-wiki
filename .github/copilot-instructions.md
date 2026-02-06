@@ -223,6 +223,30 @@ tags:
 
 **Exception**: `docs/index.md` has its title commented out to prevent "TCAT Wiki - TCAT Wiki" duplication.
 
+**Custom Page Ordering with nav_order**: By default, pages within a directory are sorted alphabetically. To specify a custom order, add the `nav_order` frontmatter property with an integer value. Pages with `nav_order` are sorted by their value (ascending, lower numbers first), followed by pages without `nav_order` (sorted alphabetically). This ordering is local to each directory and applies consistently across navigation structure, parent guides sections, and the main guides list.
+
+Example of ordered pages in a user manual:
+
+```yaml
+---
+title: Introduction
+tags:
+    - Guide
+nav_order: 1
+---
+```
+
+```yaml
+---
+title: Getting Started
+tags:
+    - Guide
+nav_order: 2
+---
+```
+
+Pages without `nav_order` will appear after all ordered pages, sorted alphabetically.
+
 **Excluding Guides from Guides Lists**: By default, guides appear in both their parent page's guides list and in the main guides list. You can control where each guide appears using frontmatter flags (YAML comments, invisible on the built page):
 
 To exclude a guide from its parent's guides section:
