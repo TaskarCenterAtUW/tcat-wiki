@@ -403,10 +403,14 @@ nav = [
     ]},
     {"OS-CONNECT" = [
         "os-connect/index.md",
+        {"Data Viewer" = [
+            "os-connect/data-viewer/index.md",
+            {"User Manual" = [ "os-connect/data-viewer/user-manual/index.md" ]}
+        ]},
         {"Qa Qc" = [
+            "os-connect/qa-qc/index.md",
             {"User Manual" = [
                 "os-connect/qa-qc/user-manual/index.md",
-                {"Understanding QA/QC Reporting for OS-CONNECT" = "os-connect/qa-qc/user-manual/intro.md"},
                 {"Data Sources and OS-CONNECT QA/QC Report Structure" = "os-connect/qa-qc/user-manual/structure.md"},
                 {"OS-CONNECT QA/QC Report Subsections in Detail" = "os-connect/qa-qc/user-manual/metrics.md"},
                 {"Data Infrastructure for QA/QC Report Generation" = "os-connect/qa-qc/user-manual/infrastructure.md"}
@@ -443,4 +447,3 @@ nav = [
     {"Guides List" = "guides-list/index.md"},
     {"Contributing" = "CONTRIBUTING.md"}
 ]
-

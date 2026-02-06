@@ -16,6 +16,12 @@ OS-CONNECT Guides
 
 _For a list of all guides on the TCAT Wiki, refer to the [Guides List](../guides-list/index.md)._
 
+#### [OS-CONNECT Data Viewer](data-viewer/index.md) Guides
+
+##### [OS-CONNECT Data Viewer User Manual](data-viewer/user-manual/index.md)
+
+This user manual explains how to use the OS-CONNECT Data Viewer.
+
 #### [QA/QC](qa-qc/index.md) Guides
 
 ##### [QA/QC Reports User Manual](qa-qc/user-manual/index.md)
