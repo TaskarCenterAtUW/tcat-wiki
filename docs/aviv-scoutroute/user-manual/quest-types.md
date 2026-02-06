@@ -1,5 +1,6 @@
 ---
 title: Quest Types
+nav_order: 5
 tags:
     - Guide
     - External
