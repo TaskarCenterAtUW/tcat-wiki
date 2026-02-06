@@ -2,8 +2,8 @@
 #Requires -Modules @{ ModuleName='Pester'; ModuleVersion='5.0.0' }
 
 # Name: TCAT Wiki - Utility Runner Tests
-# Version: 2.0.0
-# Date: 2026-01-26
+# Version: 3.0.0
+# Date: 2026-02-06
 # Author: Amy Bordenave, Taskar Center for Accessible Technology, University of Washington
 # License: CC-BY-ND 4.0 International
 
@@ -224,6 +224,14 @@ Describe "Script Structure" {
 
     It "Should have SkipLinkCheck parameter" {
         $scriptContent | Should -Match '\[switch\]\$SkipLinkCheck'
+    }
+
+    It "Should have NoCache parameter" {
+        $scriptContent | Should -Match '\[switch\]\$NoCache'
+    }
+
+    It "Should validate mutual exclusivity of SkipLinkCheck and NoCache" {
+        $scriptContent | Should -Match 'SkipLinkCheck.*NoCache.*cannot be used together'
     }
 
     It "Should reference generate-guides-lists.ps1" {

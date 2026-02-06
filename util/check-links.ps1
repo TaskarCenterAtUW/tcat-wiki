@@ -2,8 +2,8 @@
 # This script is designed to be run in a PowerShell environment.
 
 # Name: TCAT Wiki - Link Checker
-# Version: 3.3.2
-# Date: 2026-01-26
+# Version: 4.0.0
+# Date: 2026-02-06
 # Author: Amy Bordenave, Taskar Center for Accessible Technology, University of Washington
 # License: CC-BY-ND 4.0 International
 
@@ -13,12 +13,17 @@
 
 .DESCRIPTION
     Checks all .md files in the docs directory for broken internal and external links.
+    External links are checked in parallel with domain-based throttling and results are
+    cached to disk for performance.
 
 .PARAMETER internal
     Check internal relative links
 
 .PARAMETER external
     Check external absolute links
+
+.PARAMETER NoCache
+    Bypass the cache and force fresh external link checks
 
 .EXAMPLE
     .\check-links.ps1
@@ -27,6 +32,10 @@
 .EXAMPLE
     .\check-links.ps1 -internal
     Validates only internal relative links
+
+.EXAMPLE
+    .\check-links.ps1 -external -NoCache
+    Force fresh validation of all external links
 #>
 
 param(
@@ -34,8 +43,15 @@ param(
     [switch]$external,
 
     [Parameter(HelpMessage = "Check internal links")]
-    [switch]$internal
+    [switch]$internal,
+
+    [Parameter(HelpMessage = "Bypass the cache and force fresh external link checks")]
+    [switch]$NoCache
 )
+
+# Cache configuration
+$script:CacheFilePath = Join-Path $PSScriptRoot ".link-cache.json"
+$script:CacheTTLHours = 12
 
 # If neither -external nor -internal is specified, default to both
 if (-not $external -and -not $internal) {
@@ -77,7 +93,6 @@ Write-Host "Found $($markdownFiles.Count) markdown files to validate" -Foregroun
 Write-Host ""
 
 $externalUrls = @{}
-$externalUrlCache = @{}
 $brokenExternalLinks = @()
 $brokenInternalLinks = @()
 
@@ -163,7 +178,7 @@ function Test-ExternalUrlValid {
     try {
         # Prepare headers with User-Agent to identify as a bot
         $headers = @{
-            'User-Agent' = 'TCAT-Wiki-LinkChecker/3.3.2 (+https://github.com/TaskarCenterAtUW/tcat-wiki)'
+            'User-Agent' = 'TCAT-Wiki-LinkChecker/4.0.0 (+https://github.com/TaskarCenterAtUW/tcat-wiki)'
         }
 
         # Use HEAD request first, fallback to GET if needed
@@ -197,7 +212,67 @@ function Test-ExternalUrlValid {
     }
 }
 
+# Function to extract domain from URL (for throttling)
+function Get-UrlDomain {
+    param([string]$url)
+    if ([string]::IsNullOrWhiteSpace($url)) {
+        return "unknown"
+    }
+    try {
+        $uri = [System.Uri]$url
+        if ([string]::IsNullOrWhiteSpace($uri.Host)) {
+            return "unknown"
+        }
+        return $uri.Host
+    } catch {
+        return "unknown"
+    }
+}
+
 #endregion Helper Functions
+
+#region Cache Functions
+
+# Load cache from disk
+function Get-LinkCache {
+    if ($script:NoCache -or -not (Test-Path $script:CacheFilePath)) {
+        return @{}
+    }
+
+    try {
+        $cacheContent = Get-Content $script:CacheFilePath -Raw -Encoding UTF8 | ConvertFrom-Json -AsHashtable
+        return $cacheContent ?? @{}
+    } catch {
+        Write-Host "  Warning: Could not read cache file, starting fresh" -ForegroundColor Yellow
+        return @{}
+    }
+}
+
+# Save cache to disk
+function Save-LinkCache {
+    param([hashtable]$cache)
+
+    try {
+        $cache | ConvertTo-Json -Depth 10 | Set-Content $script:CacheFilePath -Encoding UTF8
+    } catch {
+        Write-Host "  Warning: Could not save cache file" -ForegroundColor Yellow
+    }
+}
+
+# Check if a cached result is still valid (within TTL)
+function Test-CacheEntryValid {
+    param([hashtable]$entry)
+
+    if (-not $entry -or -not $entry.timestamp) {
+        return $false
+    }
+
+    $cachedTime = [DateTime]::Parse($entry.timestamp)
+    $age = (Get-Date) - $cachedTime
+    return $age.TotalHours -lt $script:CacheTTLHours
+}
+
+#endregion Cache Functions
 
 # Process each markdown file
 foreach ($file in $markdownFiles) {
@@ -240,42 +315,173 @@ foreach ($file in $markdownFiles) {
 
 # Test external URLs only if external checking is enabled
 $timeoutWarnings = @()
+$cacheHits = 0
 if ($external) {
     Write-Host ""
     Write-Host "Validating $($externalUrls.Count) unique external URLs..." -ForegroundColor Cyan
 
+    # Load existing cache
+    $linkCache = Get-LinkCache
+
+    # Separate URLs into cached (valid within TTL) and need-to-check
+    $urlsToCheck = @()
+    $cachedResults = @{}
+
     foreach ($url in $externalUrls.Keys | Sort-Object) {
-        Write-Host "Testing: $url" -ForegroundColor Gray
-
-        # Check cache first
-        if ($externalUrlCache.ContainsKey($url)) {
-            $result = $externalUrlCache[$url]
+        if (-not $NoCache -and $linkCache.ContainsKey($url) -and (Test-CacheEntryValid -entry $linkCache[$url])) {
+            $cacheHits++
+            $cachedResults[$url] = $linkCache[$url]
         } else {
-            $result = Test-ExternalUrlValid -url $url
-            $externalUrlCache[$url] = $result
+            $urlsToCheck += $url
         }
+    }
 
-        if (-not $result.valid) {
-            if ($result.isTimeout) {
-                # Timeout - track as warning, not failure
+    if ($cacheHits -gt 0) {
+        Write-Host "  Using $cacheHits cached results (valid within $($script:CacheTTLHours)h TTL)" -ForegroundColor Gray
+    }
+
+    # Process cached results first
+    foreach ($url in $cachedResults.Keys | Sort-Object) {
+        $cached = $cachedResults[$url]
+        Write-Host "Testing: $url" -ForegroundColor Gray
+        if (-not $cached.valid) {
+            if ($cached.isTimeout) {
                 $timeoutWarnings += @{
                     url    = $url
-                    status = $result.status
+                    status = "$($cached.status) (cached)"
                 }
-                Write-Host "  [!] Timeout: $($result.status)" -ForegroundColor Yellow
+                Write-Host "  [!] Timeout (cached): $($cached.status)" -ForegroundColor Yellow
             } else {
-                # Actual broken link
                 $brokenExternalLinks += @{
                     url    = $url
-                    status = $result.status
+                    status = "$($cached.status) (cached)"
                 }
-                Write-Host "  [X] Failed: $($result.status)" -ForegroundColor Red
+                Write-Host "  [X] Failed (cached): $($cached.status)" -ForegroundColor Red
             }
         } else {
-            Write-Host "  [OK] OK: $($result.status)" -ForegroundColor Green
+            Write-Host "  [OK] OK (cached): $($cached.status)" -ForegroundColor Green
+        }
+    }
+
+    # Check remaining URLs in parallel, throttled by domain
+    if ($urlsToCheck.Count -gt 0) {
+        Write-Host ""
+        Write-Host "Checking $($urlsToCheck.Count) URLs (parallel with domain throttling)..." -ForegroundColor Cyan
+
+        # Group URLs by domain for throttling
+        $urlsByDomain = @{}
+        foreach ($url in $urlsToCheck) {
+            $domain = Get-UrlDomain -url $url
+            if (-not $urlsByDomain.ContainsKey($domain)) {
+                $urlsByDomain[$domain] = @()
+            }
+            $urlsByDomain[$domain] += $url
         }
 
-        Start-Sleep -Milliseconds 100  # Be nice to servers
+        # Check URLs in parallel (max 5 concurrent, grouped to respect same-domain delays)
+        $parallelResults = $urlsToCheck | ForEach-Object -ThrottleLimit 5 -Parallel {
+            $url = $_
+
+            # Test-ExternalUrlValid logic inline (functions not accessible in parallel block)
+            $skipDomains = @(
+                "*visualstudio.com*"
+                "*docs.google.com*"
+                "*firebase*"
+                "*osm.workspaces-stage.sidewalks.washington.edu/api*"
+            )
+
+            $skipped = $false
+            foreach ($domain in $skipDomains) {
+                if ($url -like $domain) {
+                    $skipped = $true
+                    break
+                }
+            }
+
+            if ($skipped) {
+                $result = @{
+                    url       = $url
+                    valid     = $true
+                    status    = "Skipped URL listed in skipDomains filter."
+                    isTimeout = $false
+                }
+            } else {
+                try {
+                    $headers = @{
+                        'User-Agent' = 'TCAT-Wiki-LinkChecker/3.4.0 (+https://github.com/TaskarCenterAtUW/tcat-wiki)'
+                    }
+
+                    try {
+                        $response = Invoke-WebRequest -Uri $url -Method Head -TimeoutSec 5 -UseBasicParsing -Headers $headers -ErrorAction Stop
+                    } catch {
+                        $response = Invoke-WebRequest -Uri $url -Method Get -TimeoutSec 5 -UseBasicParsing -Headers $headers -ErrorAction Stop
+                    }
+
+                    $result = @{
+                        url       = $url
+                        valid     = $response.StatusCode -lt 400
+                        status    = $response.StatusCode
+                        isTimeout = $false
+                    }
+                } catch {
+                    $errorMessage = if ($_.Exception.Response.StatusCode) {
+                        "HTTP $($_.Exception.Response.StatusCode.value__): $($_.Exception.Response.StatusDescription)"
+                    } else {
+                        $_.Exception.Message
+                    }
+
+                    $isTimeout = $errorMessage -match 'Timeout|timed out|HttpClient\.Timeout'
+
+                    $result = @{
+                        url       = $url
+                        valid     = $false
+                        status    = $errorMessage
+                        isTimeout = $isTimeout
+                    }
+                }
+            }
+
+            # Small delay to be nice to servers (shared across parallel jobs)
+            Start-Sleep -Milliseconds 50
+
+            # Return result
+            $result
+        }
+
+        # Process parallel results and update cache
+        foreach ($result in $parallelResults) {
+            $url = $result.url
+            Write-Host "Testing: $url" -ForegroundColor Gray
+
+            # Update cache with new result
+            $linkCache[$url] = @{
+                valid     = $result.valid
+                status    = $result.status
+                isTimeout = $result.isTimeout
+                timestamp = (Get-Date).ToString("o")
+            }
+
+            if (-not $result.valid) {
+                if ($result.isTimeout) {
+                    $timeoutWarnings += @{
+                        url    = $url
+                        status = $result.status
+                    }
+                    Write-Host "  [!] Timeout: $($result.status)" -ForegroundColor Yellow
+                } else {
+                    $brokenExternalLinks += @{
+                        url    = $url
+                        status = $result.status
+                    }
+                    Write-Host "  [X] Failed: $($result.status)" -ForegroundColor Red
+                }
+            } else {
+                Write-Host "  [OK] OK: $($result.status)" -ForegroundColor Green
+            }
+        }
+
+        # Save updated cache
+        Save-LinkCache -cache $linkCache
     }
 }
 
@@ -289,6 +495,9 @@ if ($internal) {
 }
 if ($external) {
     Write-Host "Broken external links: $($brokenExternalLinks.Count)"
+    if ($cacheHits -gt 0) {
+        Write-Host "Cache hits: $cacheHits (skipped network requests)" -ForegroundColor Gray
+    }
     if ($timeoutWarnings.Count -gt 0) {
         Write-Host "Timeout warnings: $($timeoutWarnings.Count)" -ForegroundColor Yellow
     }
