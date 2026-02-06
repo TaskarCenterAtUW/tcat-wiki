@@ -2,8 +2,8 @@
 # This script is designed to be run in a PowerShell environment.
 
 # Name: TCAT Wiki - Navigation Section Generator
-# Version: 3.1.1
-# Date: 2026-01-26
+# Version: 4.0.0
+# Date: 2026-02-05
 # Author: Amy Bordenave, Taskar Center for Accessible Technology, University of Washington
 # License: CC-BY-ND 4.0 International
 
@@ -48,6 +48,7 @@ $script:titleMap = @{
     'rapid'           = 'Rapid'
     'workspaces'      = 'Workspaces'
     'index'           = ''
+    'os-connect'      = 'OS-CONNECT'
 }
 
 <#
@@ -182,6 +183,49 @@ function ConvertTo-Title {
 
 <#
 .SYNOPSIS
+    Extracts the nav_order from a markdown file's frontmatter.
+
+.DESCRIPTION
+    Reads a markdown file and extracts the nav_order value from YAML frontmatter.
+    Returns $null if no nav_order is found.
+
+.PARAMETER filePath
+    The full path to the markdown file to read.
+
+.OUTPUTS
+    System.Int32 or $null. The nav_order value, or $null if not found.
+
+.EXAMPLE
+    Get-NavOrder -filePath "C:\docs\intro.md"
+    Returns 1 if the file has nav_order: 1 in frontmatter
+#>
+function Get-NavOrder {
+    [CmdletBinding()]
+    [OutputType([int])]
+    param(
+        [Parameter(Mandatory = $true)]
+        [string]$filePath
+    )
+
+    try {
+        $content = Get-Content $filePath -Raw -Encoding UTF8 -ErrorAction Stop
+
+        # Check for YAML frontmatter
+        if ($content -match '(?s)^---\r?\n(.*?)\r?\n---') {
+            $frontmatter = $matches[1]
+            if ($frontmatter -match 'nav_order:\s*(\d+)') {
+                return [int]$matches[1]
+            }
+        }
+    } catch {
+        # Silently return null for missing or unreadable files
+    }
+
+    return $null
+}
+
+<#
+.SYNOPSIS
     Gets the preferred title for a file or directory, respecting the titleMap.
 
 .DESCRIPTION
@@ -284,12 +328,30 @@ function Build-DirectoryNav {
     $hasIndex = Test-Path $indexFile
 
     # Get subdirectories and files (excluding resources directory)
+    # Sort by nav_order first (items with nav_order come before those without), then alphabetically
     $subDirs = Get-ChildItem -Path $dirPath -Directory |
         Where-Object { $_.Name -ne 'resources' } |
-        Sort-Object Name
+        ForEach-Object {
+            $indexPath = Join-Path $_.FullName "index.md"
+            $navOrder = if (Test-Path $indexPath) { Get-NavOrder -filePath $indexPath } else { $null }
+            [PSCustomObject]@{
+                Directory = $_
+                NavOrder  = $navOrder
+            }
+        } |
+        Sort-Object @{Expression = { if ($null -eq $_.NavOrder) { [int]::MaxValue } else { $_.NavOrder } } }, @{Expression = { $_.Directory.Name } } |
+        ForEach-Object { $_.Directory }
     $mdFiles = Get-ChildItem -Path $dirPath -File -Filter "*.md" |
         Where-Object { $_.Name -ne 'index.md' } |
-        Sort-Object Name
+        ForEach-Object {
+            $navOrder = Get-NavOrder -filePath $_.FullName
+            [PSCustomObject]@{
+                File     = $_
+                NavOrder = $navOrder
+            }
+        } |
+        Sort-Object @{Expression = { if ($null -eq $_.NavOrder) { [int]::MaxValue } else { $_.NavOrder } } }, @{Expression = { $_.File.Name } } |
+        ForEach-Object { $_.File }
 
     # Build subitems - each item is a hashtable with Type and properties
     # Type: "simple" (single line item), "nested" (multiline subdirectory structure)

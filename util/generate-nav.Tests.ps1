@@ -2,8 +2,8 @@
 #Requires -Modules @{ ModuleName='Pester'; ModuleVersion='5.0.0' }
 
 # Name: TCAT Wiki - Navigation Generator Tests
-# Version: 1.0.2
-# Date: 2026-01-26
+# Version: 2.0.0
+# Date: 2026-02-05
 # Author: Amy Bordenave, Taskar Center for Accessible Technology, University of Washington
 # License: CC-BY-ND 4.0 International
 
@@ -110,6 +110,63 @@ Content here.
     }
 }
 
+Describe "Get-NavOrder" {
+    Context "When file has nav_order in frontmatter" {
+        It "Should extract nav_order value" {
+            $testFile = Join-Path $TestDrive "test-nav-order.md"
+            @"
+---
+title: Ordered Page
+nav_order: 5
+---
+
+# Content
+"@ | Set-Content -Path $testFile -Encoding UTF8
+
+            $result = Get-NavOrder -filePath $testFile
+            $result | Should -Be 5
+        }
+    }
+
+    Context "When file has no nav_order" {
+        It "Should return null" {
+            $testFile = Join-Path $TestDrive "test-no-nav-order.md"
+            @"
+---
+title: Unordered Page
+---
+
+# Content
+"@ | Set-Content -Path $testFile -Encoding UTF8
+
+            $result = Get-NavOrder -filePath $testFile
+            $result | Should -BeNullOrEmpty
+        }
+    }
+
+    Context "When file has nav_order as first item" {
+        It "Should extract nav_order value" {
+            $testFile = Join-Path $TestDrive "test-nav-first.md"
+            @"
+---
+nav_order: 1
+title: First Page
+---
+"@ | Set-Content -Path $testFile -Encoding UTF8
+
+            $result = Get-NavOrder -filePath $testFile
+            $result | Should -Be 1
+        }
+    }
+
+    Context "When file does not exist" {
+        It "Should return null and not throw" {
+            $result = Get-NavOrder -filePath "C:\nonexistent\file.md"
+            $result | Should -BeNullOrEmpty
+        }
+    }
+}
+
 Describe "Protect-TomlString" {
     It "Should wrap string in quotes" {
         $result = Protect-TomlString -text "Hello World"
@@ -136,55 +193,55 @@ Describe "Protect-TomlString" {
 Describe "ConvertTo-Title" {
     Context "Known acronyms and project names" {
         It "Should return 'OSW' for 'osw'" {
-            ConvertTo-Title -name "osw" | Should -Be "OSW"
+            ConvertTo-Title -Name "osw" | Should -Be "OSW"
         }
 
         It "Should return 'TDEI' for 'tdei'" {
-            ConvertTo-Title -name "tdei" | Should -Be "TDEI"
+            ConvertTo-Title -Name "tdei" | Should -Be "TDEI"
         }
 
         It "Should return 'JOSM' for 'josm'" {
-            ConvertTo-Title -name "josm" | Should -Be "JOSM"
+            ConvertTo-Title -Name "josm" | Should -Be "JOSM"
         }
 
         It "Should return 'OpenSidewalks' for 'opensidewalks'" {
-            ConvertTo-Title -name "opensidewalks" | Should -Be "OpenSidewalks"
+            ConvertTo-Title -Name "opensidewalks" | Should -Be "OpenSidewalks"
         }
 
         It "Should return 'AccessMap' for 'accessmap'" {
-            ConvertTo-Title -name "accessmap" | Should -Be "AccessMap"
+            ConvertTo-Title -Name "accessmap" | Should -Be "AccessMap"
         }
 
         It "Should return 'AVIV ScoutRoute' for 'aviv-scoutroute'" {
-            ConvertTo-Title -name "aviv-scoutroute" | Should -Be "AVIV ScoutRoute"
+            ConvertTo-Title -Name "aviv-scoutroute" | Should -Be "AVIV ScoutRoute"
         }
     }
 
     Context "Index files" {
         It "Should return null for 'index'" {
-            ConvertTo-Title -name "index" | Should -BeNullOrEmpty
+            ConvertTo-Title -Name "index" | Should -BeNullOrEmpty
         }
 
         It "Should return null for 'index.md'" {
-            ConvertTo-Title -name "index.md" | Should -BeNullOrEmpty
+            ConvertTo-Title -Name "index.md" | Should -BeNullOrEmpty
         }
     }
 
     Context "Kebab-case and snake_case names" {
         It "Should convert 'user-manual' to 'User Manual'" {
-            ConvertTo-Title -name "user-manual" | Should -Be "User Manual"
+            ConvertTo-Title -Name "user-manual" | Should -Be "User Manual"
         }
 
         It "Should convert 'my-great-guide' to 'My Great Guide'" {
-            ConvertTo-Title -name "my-great-guide" | Should -Be "My Great Guide"
+            ConvertTo-Title -Name "my-great-guide" | Should -Be "My Great Guide"
         }
 
         It "Should convert 'user_guide' to 'User Guide'" {
-            ConvertTo-Title -name "user_guide" | Should -Be "User Guide"
+            ConvertTo-Title -Name "user_guide" | Should -Be "User Guide"
         }
 
         It "Should strip .md extension before converting" {
-            ConvertTo-Title -name "my-guide.md" | Should -Be "My Guide"
+            ConvertTo-Title -Name "my-guide.md" | Should -Be "My Guide"
         }
     }
 }
@@ -419,6 +476,124 @@ title: Home
 
             $nav = Build-NavigationToml -docsBasePath $resourcesDocs
             $nav | Should -Not -Match 'resources'
+        }
+    }
+
+    Context "When files have nav_order in frontmatter" {
+        It "Should sort files by nav_order, with ordered files before unordered" {
+            $navOrderDocs = Join-Path $TestDrive "nav-order-docs"
+            New-Item -Path $navOrderDocs -ItemType Directory -Force | Out-Null
+
+            @"
+---
+title: Home
+---
+"@ | Set-Content -Path (Join-Path $navOrderDocs "index.md") -Encoding UTF8
+
+            # Create a section with files that have nav_order
+            $sectionPath = Join-Path $navOrderDocs "manual"
+            New-Item -Path $sectionPath -ItemType Directory -Force | Out-Null
+
+            @"
+---
+title: Manual
+---
+"@ | Set-Content -Path (Join-Path $sectionPath "index.md") -Encoding UTF8
+
+            # File without nav_order (should come last)
+            @"
+---
+title: Zebra Page
+---
+"@ | Set-Content -Path (Join-Path $sectionPath "zebra.md") -Encoding UTF8
+
+            # File with nav_order 2
+            @"
+---
+title: Second Page
+nav_order: 2
+---
+"@ | Set-Content -Path (Join-Path $sectionPath "beta.md") -Encoding UTF8
+
+            # File with nav_order 1
+            @"
+---
+title: First Page
+nav_order: 1
+---
+"@ | Set-Content -Path (Join-Path $sectionPath "alpha.md") -Encoding UTF8
+
+            $nav = Build-NavigationToml -docsBasePath $navOrderDocs
+
+            # Extract the order of items in the manual section
+            # The pattern should show alpha (nav_order 1) before beta (nav_order 2) before zebra (no nav_order)
+            $alphaPos = $nav.IndexOf('"First Page"')
+            $betaPos = $nav.IndexOf('"Second Page"')
+            $zebraPos = $nav.IndexOf('"Zebra Page"')
+
+            $alphaPos | Should -BeLessThan $betaPos -Because "nav_order 1 should come before nav_order 2"
+            $betaPos | Should -BeLessThan $zebraPos -Because "files with nav_order should come before files without"
+        }
+
+        It "Should sort subdirectories by nav_order from their index.md" {
+            $subDirOrderDocs = Join-Path $TestDrive "subdir-order-docs"
+            New-Item -Path $subDirOrderDocs -ItemType Directory -Force | Out-Null
+
+            @"
+---
+title: Home
+---
+"@ | Set-Content -Path (Join-Path $subDirOrderDocs "index.md") -Encoding UTF8
+
+            # Create topic with subdirectories having nav_order
+            $topicPath = Join-Path $subDirOrderDocs "topic"
+            New-Item -Path $topicPath -ItemType Directory -Force | Out-Null
+
+            @"
+---
+title: Topic
+---
+"@ | Set-Content -Path (Join-Path $topicPath "index.md") -Encoding UTF8
+
+            # Subdir without nav_order
+            $zdirPath = Join-Path $topicPath "zdir"
+            New-Item -Path $zdirPath -ItemType Directory -Force | Out-Null
+            @"
+---
+title: Zdir Section
+---
+"@ | Set-Content -Path (Join-Path $zdirPath "index.md") -Encoding UTF8
+
+            # Subdir with nav_order 2
+            $bdirPath = Join-Path $topicPath "bdir"
+            New-Item -Path $bdirPath -ItemType Directory -Force | Out-Null
+            @"
+---
+title: Bdir Section
+nav_order: 2
+---
+"@ | Set-Content -Path (Join-Path $bdirPath "index.md") -Encoding UTF8
+
+            # Subdir with nav_order 1
+            $adirPath = Join-Path $topicPath "adir"
+            New-Item -Path $adirPath -ItemType Directory -Force | Out-Null
+            @"
+---
+title: Adir Section
+nav_order: 1
+---
+"@ | Set-Content -Path (Join-Path $adirPath "index.md") -Encoding UTF8
+
+            $nav = Build-NavigationToml -docsBasePath $subDirOrderDocs
+
+            # The order should be adir (nav_order 1), bdir (nav_order 2), zdir (no nav_order)
+            # Note: ConvertTo-Title converts directory names, so we look for "Adir", "Bdir", "Zdir"
+            $adirPos = $nav.IndexOf('"Adir"')
+            $bdirPos = $nav.IndexOf('"Bdir"')
+            $zdirPos = $nav.IndexOf('"Zdir"')
+
+            $adirPos | Should -BeLessThan $bdirPos -Because "nav_order 1 should come before nav_order 2"
+            $bdirPos | Should -BeLessThan $zdirPos -Because "directories with nav_order should come before directories without"
         }
     }
 }
