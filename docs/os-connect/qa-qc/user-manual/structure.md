@@ -216,6 +216,6 @@ Each metric is accompanied by spatial visualizations (e.g., heatmaps, Voronoi ti
 
 ---
 
-Previous section: [Intro: Understanding QA/QC Reporting for OS-CONNECT](intro.md)
+Previous section: [Understanding QA/QC Reporting for OS-CONNECT](index.md)
 
 Next section: [OS-CONNECT QA/QC Report Subsections in Detail](metrics.md)

@@ -2,8 +2,8 @@
 #Requires -Modules @{ ModuleName='Pester'; ModuleVersion='5.0.0' }
 
 # Name: TCAT Wiki - Link Checker Tests
-# Version: 1.1.1
-# Date: 2026-01-26
+# Version: 2.0.0
+# Date: 2026-02-06
 # Author: Amy Bordenave, Taskar Center for Accessible Technology, University of Washington
 # License: CC-BY-ND 4.0 International
 
@@ -39,6 +39,15 @@ BeforeAll {
         . $sb
     } else {
         throw "Could not find '#region Helper Functions' in check-links.ps1"
+    }
+
+    # Extract the Cache Functions region
+    if ($scriptContent -match '(?sm)#region Cache Functions\s*\r?\n(.+?)#endregion Cache Functions') {
+        $cacheFunctionsCode = $matches[1]
+        $sb = [ScriptBlock]::Create($cacheFunctionsCode)
+        . $sb
+    } else {
+        throw "Could not find '#region Cache Functions' in check-links.ps1"
     }
 }
 
@@ -345,6 +354,106 @@ Describe "Test-ExternalUrlValid" {
             $result = Test-ExternalUrlValid -url "https://www.google.com"
             $result.Keys | Should -Contain "isTimeout"
             $result.isTimeout | Should -BeOfType [bool]
+        }
+    }
+}
+
+Describe "Get-UrlDomain" {
+    Context "Valid URLs" {
+        It "Should extract domain from simple URL" {
+            Get-UrlDomain -url "https://example.com" | Should -Be "example.com"
+        }
+
+        It "Should extract domain from URL with path" {
+            Get-UrlDomain -url "https://example.com/path/to/page" | Should -Be "example.com"
+        }
+
+        It "Should extract domain from URL with subdomain" {
+            Get-UrlDomain -url "https://www.example.com/page" | Should -Be "www.example.com"
+        }
+
+        It "Should extract domain from URL with port" {
+            Get-UrlDomain -url "https://example.com:8080/api" | Should -Be "example.com"
+        }
+
+        It "Should extract domain from URL with query string" {
+            Get-UrlDomain -url "https://example.com?query=value" | Should -Be "example.com"
+        }
+    }
+
+    Context "Invalid URLs" {
+        It "Should return 'unknown' for invalid URL" {
+            Get-UrlDomain -url "not-a-valid-url" | Should -Be "unknown"
+        }
+
+        It "Should return 'unknown' for empty string" {
+            Get-UrlDomain -url "" | Should -Be "unknown"
+        }
+    }
+}
+
+Describe "Test-CacheEntryValid" {
+    BeforeAll {
+        # Set up mock cache TTL for testing
+        $script:CacheTTLHours = 12
+    }
+
+    Context "Valid cache entries" {
+        It "Should return true for entry within TTL" {
+            $entry = @{
+                timestamp = (Get-Date).AddHours(-1).ToString("o")
+                valid     = $true
+                status    = 200
+            }
+            Test-CacheEntryValid -entry $entry | Should -Be $true
+        }
+
+        It "Should return true for entry just under TTL" {
+            $entry = @{
+                timestamp = (Get-Date).AddHours(-11).ToString("o")
+                valid     = $true
+                status    = 200
+            }
+            Test-CacheEntryValid -entry $entry | Should -Be $true
+        }
+    }
+
+    Context "Expired cache entries" {
+        It "Should return false for entry over TTL" {
+            $entry = @{
+                timestamp = (Get-Date).AddHours(-13).ToString("o")
+                valid     = $true
+                status    = 200
+            }
+            Test-CacheEntryValid -entry $entry | Should -Be $false
+        }
+
+        It "Should return false for entry from yesterday" {
+            $entry = @{
+                timestamp = (Get-Date).AddDays(-1).ToString("o")
+                valid     = $true
+                status    = 200
+            }
+            Test-CacheEntryValid -entry $entry | Should -Be $false
+        }
+    }
+
+    Context "Invalid cache entries" {
+        It "Should return false for null entry" {
+            Test-CacheEntryValid -entry $null | Should -Be $false
+        }
+
+        It "Should return false for entry without timestamp" {
+            $entry = @{
+                valid  = $true
+                status = 200
+            }
+            Test-CacheEntryValid -entry $entry | Should -Be $false
+        }
+
+        It "Should return false for empty hashtable" {
+            $entry = @{}
+            Test-CacheEntryValid -entry $entry | Should -Be $false
         }
     }
 }

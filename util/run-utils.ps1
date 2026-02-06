@@ -2,8 +2,8 @@
 # This script is designed to be run in a PowerShell environment.
 
 # Name: TCAT Wiki - Utility Runner
-# Version: 2.0.0
-# Date: 2026-01-26
+# Version: 3.0.0
+# Date: 2026-02-06
 # Author: Amy Bordenave, Taskar Center for Accessible Technology, University of Washington
 # License: CC-BY-ND 4.0 International
 
@@ -37,6 +37,11 @@
 
 .PARAMETER SkipLinkCheck
     Skip external link checking in Phase 2 (internal links are still checked). Useful for quick iterations.
+    Mutually exclusive with -NoCache.
+
+.PARAMETER NoCache
+    Force fresh external link checks by bypassing the cache. Passes -NoCache to check-links.ps1.
+    Mutually exclusive with -SkipLinkCheck.
 
 .EXAMPLE
     .\run-utils.ps1
@@ -53,13 +58,26 @@
 .EXAMPLE
     .\run-utils.ps1 -SkipLinkCheck
     Runs tests and utilities, but skips external link checking (internal links still checked).
+
+.EXAMPLE
+    .\run-utils.ps1 -NoCache
+    Runs tests and utilities, forcing fresh external link checks (bypasses cache).
 #>
 
 param(
     [switch]$SkipTests,
     [switch]$TestsOnly,
-    [switch]$SkipLinkCheck
+    [switch]$SkipLinkCheck,
+    [switch]$NoCache
 )
+
+# Validate mutually exclusive parameters
+if ($SkipLinkCheck -and $NoCache) {
+    Write-Host "ERROR: -SkipLinkCheck and -NoCache cannot be used together." -ForegroundColor Red
+    Write-Host "  -SkipLinkCheck: Skips external link checking entirely (only internal links checked)" -ForegroundColor Yellow
+    Write-Host "  -NoCache: Forces fresh external link checks (bypasses cache)" -ForegroundColor Yellow
+    exit 1
+}
 
 #region Helper Functions
 # ==============================================================================
@@ -361,8 +379,19 @@ if (-not $TestsOnly) {
             Write-Host "PHASE 2 FAILED at Step 3" -ForegroundColor Red
             exit 1
         }
+    } elseif ($NoCache) {
+        # Check all links with fresh cache
+        Write-Host "  Step 3/3: Checking all links (-NoCache)" -ForegroundColor Cyan
+        Write-Host ""
+        & $linkCheckScript -NoCache
+        if ($LASTEXITCODE -ne 0) {
+            Write-Host ""
+            Write-Host "==========================================="
+            Write-Host "PHASE 2 FAILED at Step 3" -ForegroundColor Red
+            exit 1
+        }
     } else {
-        # Check both internal and external links
+        # Check both internal and external links (with cache)
         if (-not (Invoke-UtilityScript -ScriptPath $linkCheckScript -Description "Step 3/3: Checking all links")) {
             Write-Host ""
             Write-Host "==========================================="

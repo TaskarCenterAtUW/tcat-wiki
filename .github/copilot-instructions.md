@@ -145,7 +145,10 @@ cd util
 .\check-links.ps1                   # Check internal + external links
 .\check-links.ps1 -internal         # Internal only
 .\check-links.ps1 -external         # External only
+.\check-links.ps1 -external -NoCache # Force fresh external link checks
 ```
+
+**Performance features**: External link results are cached for 12 hours (in `.link-cache.json`) and checked in parallel with domain throttling. Use `-NoCache` to bypass the cache when needed.
 
 ### Run All Utilities
 
@@ -158,9 +161,12 @@ The `run-utils.ps1` script provides an automated workflow to validate and run al
 cd util
 .\run-utils.ps1                     # Run all tests, then all utilities
 .\run-utils.ps1 -TestsOnly          # Run only Pester tests
-.\run-utils.ps1 -SkipLinkCheck      # Skip link checker in Phase 2
+.\run-utils.ps1 -SkipLinkCheck      # Skip external link checker in Phase 2
+.\run-utils.ps1 -NoCache            # Force fresh external link checks (bypass cache)
 .\run-utils.ps1 -SkipTests          # Skip tests (not recommended)
 ```
+
+**Note**: `-SkipLinkCheck` and `-NoCache` are mutually exclusive.
 
 **Why**: This script ensures all utilities are tested before running, then executes them in the correct order: `generate-guides-lists.ps1` → `generate-nav.ps1` → `check-links.ps1`. It's the recommended way to update the entire documentation structure.
 
