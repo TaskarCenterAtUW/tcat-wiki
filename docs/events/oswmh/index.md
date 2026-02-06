@@ -118,7 +118,7 @@ _[Drop-in]_ **Additional Members:** Amara S. ([ascherm@uw.edu](mailto:ascherm@uw
 
 ??? question "How can I reach out to TCAT about AccessMap?"
 
-    Email: [AccessMap Help](mailto:help@accessmap.atlassian.net) (help@accessmap.atlassian.net)
+    Email: [helpdesk@tdei.us](mailto:helpdesk@tdei.us)
 
 #### Specialized Community-Led Impact Opportunity (SCLIO) Grants
 
