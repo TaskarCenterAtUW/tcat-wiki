@@ -66,6 +66,8 @@ This user manual explains how to use the [OSM US Tasking Manager](https://tasks.
 
 This guide shows the steps for an automated workflow that generates task polygons for use in Tasking Manager.
 
+### [OS-CONNECT](../os-connect/index.md)
+
 ### [Rapid Editor](../rapid/index.md)
 
 #### [Rapid User Manual](../rapid/user-manual/index.md)
