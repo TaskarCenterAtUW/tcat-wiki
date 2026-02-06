@@ -2,7 +2,7 @@
 
 # Site version
 
-version = "3.4.0"
+version = "3.4.1"
 
 # The site_name is shown in the page header and the browser window title
 # Read more: https://zensical.org/docs/setup/basics/#site_name
