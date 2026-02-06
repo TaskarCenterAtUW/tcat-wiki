@@ -2,8 +2,8 @@
 #Requires -Modules @{ ModuleName='Pester'; ModuleVersion='5.0.0' }
 
 # Name: TCAT Wiki - Guides Lists Generator Tests
-# Version: 2.0.0
-# Date: 2026-01-24
+# Version: 3.0.0
+# Date: 2026-02-05
 # Author: Amy Bordenave, Taskar Center for Accessible Technology, University of Washington
 # License: CC-BY-ND 4.0 International
 
@@ -156,6 +156,43 @@ tags:
             $result.IsGuide | Should -Be $true
             $result.ExcludeFromParent | Should -Be $false
             $result.ExcludeFromMain | Should -Be $true
+        }
+    }
+
+    Context "When file has nav_order in frontmatter" {
+        It "Should extract nav_order value" {
+            $testFile = Join-Path $TestDrive "nav-order-test.md"
+            @"
+---
+title: Ordered Guide
+tags:
+    - Guide
+nav_order: 3
+---
+
+# Ordered Guide
+"@ | Set-Content -Path $testFile -Encoding UTF8
+
+            $result = Get-GuideInfo -FilePath $testFile
+            $result.NavOrder | Should -Be 3
+        }
+    }
+
+    Context "When file has no nav_order" {
+        It "Should return null for NavOrder" {
+            $testFile = Join-Path $TestDrive "no-nav-order-test.md"
+            @"
+---
+title: Unordered Guide
+tags:
+    - Guide
+---
+
+# Unordered Guide
+"@ | Set-Content -Path $testFile -Encoding UTF8
+
+            $result = Get-GuideInfo -FilePath $testFile
+            $result.NavOrder | Should -BeNullOrEmpty
         }
     }
 
@@ -460,6 +497,57 @@ tags:
             $result[0].Name | Should -Be "index.md"
         }
     }
+
+    Context "When guides have nav_order in frontmatter" {
+        BeforeAll {
+            $script:navOrderGuidesDir = Join-Path $TestDrive "nav-order-guides-dir"
+            New-Item -Path $navOrderGuidesDir -ItemType Directory -Force | Out-Null
+
+            # Create index.md (not a guide)
+            @"
+---
+title: Section Index
+---
+"@ | Set-Content -Path (Join-Path $navOrderGuidesDir "index.md") -Encoding UTF8
+
+            # Create guide without nav_order (should come last)
+            @"
+---
+title: Zebra Guide
+tags:
+    - Guide
+---
+"@ | Set-Content -Path (Join-Path $navOrderGuidesDir "zebra-guide.md") -Encoding UTF8
+
+            # Create guide with nav_order 2
+            @"
+---
+title: Second Guide
+tags:
+    - Guide
+nav_order: 2
+---
+"@ | Set-Content -Path (Join-Path $navOrderGuidesDir "beta-guide.md") -Encoding UTF8
+
+            # Create guide with nav_order 1
+            @"
+---
+title: First Guide
+tags:
+    - Guide
+nav_order: 1
+---
+"@ | Set-Content -Path (Join-Path $navOrderGuidesDir "alpha-guide.md") -Encoding UTF8
+        }
+
+        It "Should sort guides by nav_order, with ordered guides before unordered" {
+            $result = Get-GuidesInDirectory -Directory $navOrderGuidesDir -ExcludeOwnIndex $true -ExcludeFlag $EXCLUDE_PARENT_FLAG
+            $result.Count | Should -Be 3
+            $result[0].Name | Should -Be "alpha-guide.md" -Because "nav_order 1 should come first"
+            $result[1].Name | Should -Be "beta-guide.md" -Because "nav_order 2 should come second"
+            $result[2].Name | Should -Be "zebra-guide.md" -Because "guides without nav_order should come last"
+        }
+    }
 }
 
 # ==============================================================================
@@ -524,6 +612,50 @@ title: Resources
         $result = Get-Subdirectories -Directory $subdirTestRoot
         $result[0].Name | Should -Be "user-manual"
         $result[1].Name | Should -Be "regular-section"
+    }
+}
+
+Describe "Get-Subdirectories nav_order sorting" {
+    BeforeAll {
+        $script:navOrderSubdirRoot = Join-Path $TestDrive "nav-order-subdir-root"
+        New-Item -Path $navOrderSubdirRoot -ItemType Directory -Force | Out-Null
+
+        # Create subdirectory without nav_order (should come last)
+        $zdirPath = Join-Path $navOrderSubdirRoot "zdir"
+        New-Item -Path $zdirPath -ItemType Directory -Force | Out-Null
+        @"
+---
+title: Zdir Section
+---
+"@ | Set-Content -Path (Join-Path $zdirPath "index.md") -Encoding UTF8
+
+        # Create subdirectory with nav_order 2
+        $bdirPath = Join-Path $navOrderSubdirRoot "bdir"
+        New-Item -Path $bdirPath -ItemType Directory -Force | Out-Null
+        @"
+---
+title: Bdir Section
+nav_order: 2
+---
+"@ | Set-Content -Path (Join-Path $bdirPath "index.md") -Encoding UTF8
+
+        # Create subdirectory with nav_order 1
+        $adirPath = Join-Path $navOrderSubdirRoot "adir"
+        New-Item -Path $adirPath -ItemType Directory -Force | Out-Null
+        @"
+---
+title: Adir Section
+nav_order: 1
+---
+"@ | Set-Content -Path (Join-Path $adirPath "index.md") -Encoding UTF8
+    }
+
+    It "Should sort subdirectories by nav_order, with ordered directories before unordered" {
+        $result = Get-Subdirectories -Directory $navOrderSubdirRoot
+        $result.Count | Should -Be 3
+        $result[0].Name | Should -Be "adir" -Because "nav_order 1 should come first"
+        $result[1].Name | Should -Be "bdir" -Because "nav_order 2 should come second"
+        $result[2].Name | Should -Be "zdir" -Because "directories without nav_order should come last"
     }
 }
 

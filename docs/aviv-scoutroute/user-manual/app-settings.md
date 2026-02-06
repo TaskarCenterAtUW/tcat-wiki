@@ -1,5 +1,6 @@
 ---
 title: App Settings
+nav_order: 6
 tags:
     - Guide
     - External

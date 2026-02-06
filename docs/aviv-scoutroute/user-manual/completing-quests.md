@@ -1,5 +1,6 @@
 ---
 title: Completing Quests
+nav_order: 4
 tags:
     - Guide
     - External

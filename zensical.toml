@@ -2,7 +2,7 @@
 
 # Site version
 
-version = "3.3.0"
+version = "3.4.0"
 
 # The site_name is shown in the page header and the browser window title
 # Read more: https://zensical.org/docs/setup/basics/#site_name
@@ -350,12 +350,12 @@ nav = [
         ]},
         {"User Manual" = [
             "aviv-scoutroute/user-manual/index.md",
-            {"App Settings" = "aviv-scoutroute/user-manual/app-settings.md"},
-            {"Completing Quests" = "aviv-scoutroute/user-manual/completing-quests.md"},
-            {"Getting Started" = "aviv-scoutroute/user-manual/getting-started.md"},
             {"Installation" = "aviv-scoutroute/user-manual/installation.md"},
+            {"Getting Started" = "aviv-scoutroute/user-manual/getting-started.md"},
             {"Map Interface" = "aviv-scoutroute/user-manual/map-interface.md"},
-            {"Quest Types" = "aviv-scoutroute/user-manual/quest-types.md"}
+            {"Completing Quests" = "aviv-scoutroute/user-manual/completing-quests.md"},
+            {"Quest Types" = "aviv-scoutroute/user-manual/quest-types.md"},
+            {"App Settings" = "aviv-scoutroute/user-manual/app-settings.md"}
         ]}
     ]},
     {"Events" = [
@@ -398,6 +398,18 @@ nav = [
             {"User Manual" = [ "opensidewalks/tasking-manager/user-manual/index.md" ]}
         ]}
     ]},
+    {"OS-CONNECT" = [
+        "os-connect/index.md",
+        {"Qa Qc" = [
+            {"User Manual" = [
+                "os-connect/qa-qc/user-manual/index.md",
+                {"Understanding QA/QC Reporting for OS-CONNECT" = "os-connect/qa-qc/user-manual/intro.md"},
+                {"Data Sources and OS-CONNECT QA/QC Report Structure" = "os-connect/qa-qc/user-manual/structure.md"},
+                {"OS-CONNECT QA/QC Report Subsections in Detail" = "os-connect/qa-qc/user-manual/metrics.md"},
+                {"Data Infrastructure for QA/QC Report Generation" = "os-connect/qa-qc/user-manual/infrastructure.md"}
+            ]}
+        ]}
+    ]},
     {"Rapid" = [
         "rapid/index.md",
         {"User Manual" = [ "rapid/user-manual/index.md" ]}
@@ -428,3 +440,4 @@ nav = [
     {"Guides List" = "guides-list/index.md"},
     {"Contributing" = "CONTRIBUTING.md"}
 ]
+
