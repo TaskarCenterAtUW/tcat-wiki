@@ -109,6 +109,7 @@
 *[TAMP]: Transportation Asset Management Plan
 *[TANF]: Temporary Assistance for Needy Families
 *[TCAT]: Taskar Center for Accessible Technology
+*[TCAT_WSP_PG]: Taskar Center for Accessible Technology Washington State Proviso Project Group
 *[TCRP]: Transit Cooperative Research Program
 *[TDEI]: Transportation Data Exchange Initiative
 *[TDM]: Transportation Demand Management
