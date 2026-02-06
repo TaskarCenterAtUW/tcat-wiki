@@ -68,6 +68,12 @@ This guide shows the steps for an automated workflow that generates task polygon
 
 ### [OS-CONNECT](../os-connect/index.md)
 
+#### [QA/QC](../os-connect/qa-qc/index.md) Guides
+
+##### [QA/QC Reports User Manual](../os-connect/qa-qc/user-manual/index.md)
+
+This documentation explains the context and goals behind as well as how to read and interpret QA/QC reports for the OS-CONNECT dataset.
+
 ### [Rapid Editor](../rapid/index.md)
 
 #### [Rapid User Manual](../rapid/user-manual/index.md)
