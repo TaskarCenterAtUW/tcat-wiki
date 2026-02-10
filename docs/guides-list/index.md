@@ -68,6 +68,18 @@ This guide shows the steps for an automated workflow that generates task polygon
 
 ### [OS-CONNECT](../os-connect/index.md)
 
+#### [OS-CONNECT Data Viewer](../os-connect/data-viewer/index.md) Guides
+
+##### [OS-CONNECT Data Viewer User Manual](../os-connect/data-viewer/user-manual/index.md)
+
+This user manual explains how to use the OS-CONNECT Data Viewer.
+
+#### [QA/QC](../os-connect/qa-qc/index.md) Guides
+
+##### [QA/QC Reports User Manual](../os-connect/qa-qc/user-manual/index.md)
+
+This documentation explains the context and goals behind as well as how to read and interpret QA/QC reports for the OS-CONNECT dataset.
+
 ### [Rapid Editor](../rapid/index.md)
 
 #### [Rapid User Manual](../rapid/user-manual/index.md)

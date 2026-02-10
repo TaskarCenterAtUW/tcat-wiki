@@ -30,7 +30,8 @@ const titleMapSource = {
     "olympia connected": "Olympia, Connected",
     oswmh: "OpenSidewalks Mappy Hours",
     "os connect": "OS-CONNECT",
-    "qa qc": "QA/QC"
+    "qa qc": "QA/QC",
+    "url": "URL"
 };
 
 /**

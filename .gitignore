@@ -1,5 +1,6 @@
 .cache/
 .venv/
 local-storage/
+util/.link-cache.json
 .DS_Store
 tcat-wiki.code-workspace
