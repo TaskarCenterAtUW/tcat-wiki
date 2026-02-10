@@ -130,4 +130,5 @@
 *[UX]: User Experience
 *[WIC]: Special Supplemental Nutrition Program for Women, Infants, and Children
 *[WSDOT]: Washington State Department of Transportation
+*[WSP]: Washington State Proviso
 *[XML]: Extensible Markup Language
