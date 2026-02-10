@@ -405,7 +405,13 @@ nav = [
         "os-connect/index.md",
         {"Data Viewer" = [
             "os-connect/data-viewer/index.md",
-            {"User Manual" = [ "os-connect/data-viewer/user-manual/index.md" ]}
+            {"User Manual" = [
+                "os-connect/data-viewer/user-manual/index.md",
+                {"Interface Overview" = "os-connect/data-viewer/user-manual/interface.md"},
+                {"Boundaries" = "os-connect/data-viewer/user-manual/boundaries.md"},
+                {"Data" = "os-connect/data-viewer/user-manual/data.md"},
+                {"Feedback" = "os-connect/data-viewer/user-manual/feedback.md"}
+            ]}
         ]},
         {"Qa Qc" = [
             "os-connect/qa-qc/index.md",
