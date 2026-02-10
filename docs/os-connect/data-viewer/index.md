@@ -6,7 +6,7 @@ title: OS-CONNECT Data Viewer
 
 ## OS-CONNECT Data Viewer
 
-The OS-CONNECT Data Viewer facilitates insight into OS-CONNECT data.
+The [OS-CONNECT Data Viewer](https://osconnect-viewer.tdei.us/) facilitates insight into OS-CONNECT data.
 
 ---
 
