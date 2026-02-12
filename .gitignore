@@ -1,5 +1,6 @@
 .cache/
 .venv/
+site/
 local-storage/
 util/.link-cache.json
 .DS_Store
