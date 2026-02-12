@@ -858,7 +858,7 @@ function Build-MainGuidesList {
         Invoke-DirectoryHierarchyProcessing -ParentPath $topicDir.FullName -Depth 1
     }
 
-    return $script:content
+    return $script:content.TrimEnd()
 }
 
 #endregion Main Functions
