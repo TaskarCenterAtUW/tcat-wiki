@@ -31,7 +31,7 @@ const titleMapSource = {
     oswmh: "OpenSidewalks Mappy Hours",
     "os connect": "OS-CONNECT",
     "qa qc": "QA/QC",
-    "url": "URL"
+    url: "URL",
 };
 
 /**

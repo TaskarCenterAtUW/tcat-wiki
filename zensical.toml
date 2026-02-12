@@ -1,8 +1,7 @@
 [project]
 
 # Site version
-
-version = "4.1.0"
+version = "4.2.0"
 
 # The site_name is shown in the page header and the browser window title
 # Read more: https://zensical.org/docs/setup/basics/#site_name
@@ -339,7 +338,7 @@ link = "https://www.instagram.com/TaskarCenter/"
 # Read more: https://zensical.org/docs/setup/navigation/
 # ----------------------------------------------------------------------------
 nav = [
-    {"Home" = "index.md"},
+    {"Welcome" = "index.md"},
     {"AccessMap" = [
         "accessmap/index.md",
         {"User Manual" = [ "accessmap/user-manual/index.md" ]}
@@ -450,6 +449,6 @@ nav = [
             {"Workspace Settings" = "workspaces/user-manual/workspace-settings.md"}
         ]}
     ]},
-    {"Guides List" = "guides-list/index.md"},
-    {"Contributing" = "CONTRIBUTING.md"}
+    {"Guides List" = "guides-list/index.md"}
 ]
+

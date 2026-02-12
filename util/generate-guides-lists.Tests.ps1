@@ -742,27 +742,6 @@ title: Test Section
 }
 
 # ==============================================================================
-# GET-TCATWIKISECTION TESTS
-# ==============================================================================
-
-Describe "Get-TcatWikiSection" {
-    It "Should return TCAT Wiki section header" {
-        $result = Get-TcatWikiSection
-        $result | Should -Match '### TCAT Wiki Guides'
-    }
-
-    It "Should include Contributing link" {
-        $result = Get-TcatWikiSection
-        $result | Should -Match '\[Contributing\]\(\.\./CONTRIBUTING\.md\)'
-    }
-
-    It "Should include description for Contributing" {
-        $result = Get-TcatWikiSection
-        $result | Should -Match 'how to contribute to the TCAT Wiki'
-    }
-}
-
-# ==============================================================================
 # GET-ALLGUIDESATLEVEL TESTS
 # ==============================================================================
 

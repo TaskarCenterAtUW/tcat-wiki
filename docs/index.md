@@ -1,32 +1,37 @@
+---
+title: Welcome
+---
+
 <!-- @format -->
 
-<!-- ---
-Note: `title` is not defined for this page so that the title "TCAT Wiki" is output instead of "TCAT Wiki - TCAT Wiki"
-title: TCAT Wiki
---- -->
+## Welcome to the TCAT Wiki!
 
-## TCAT Wiki
+The [Taskar Center for Accessible Technology](https://tcat.cs.washington.edu/) (TCAT), housed by the [Paul G. Allen School of Computer Science & Engineering](https://www.cs.washington.edu/) (CSE) at the [University of Washington](https://www.washington.edu/) (the UW), develops, translates, and deploys open-source, universally accessible technologies with a focus on pedestrian networks.
 
-Welcome to the TCAT Wiki!
-
-### About Us
-
-#### The Taskar Center
-
-The **Taskar Center for Accessible Technology** ([TCAT](https://tcat.cs.washington.edu/)), housed by the **Paul G. Allen School of Computer Science & Engineering** ([CSE](https://www.cs.washington.edu/)) at the **University of Washington** ([UW](https://www.washington.edu/)), develops, translates, and deploys open source universally accessible technologies, with a focus on benefiting populations with motor limitations or speech impairment.
-
-### About TCAT Wiki
-
-The TCAT Wiki is built using [Zensical](https://zensical.org/).
+This wiki serves as a documentation hub for TCAT-related projects.
 
 ---
 
-### TCAT Wiki Guides
+### Projects
 
-Guides related to the TCAT Wiki itself.
+**[OpenSidewalks](opensidewalks/index.md)** — An open data standard for pedestrian networks.
 
-_For a list of all guides on the TCAT Wiki, refer to the [Guides List](guides-list/index.md)._
+**[TDEI](tdei/index.md)** — The Transportation Data Exchange Initiative: infrastructure for collecting, storing, maintaining, and sharing transportation data.
 
-#### [Contributing](CONTRIBUTING.md)
+**[OS-CONNECT](os-connect/index.md)** — A connected pedestrian network dataset covering 320+ jurisdictions in Washington State.
 
-This guide explains how to contribute to the TCAT Wiki.
+**[Workspaces](workspaces/index.md)** — A platform for creating, editing, and maintaining OSW datasets, using the web-based [Rapid](rapid/index.md) editor or the [AVIV ScoutRoute](aviv-scoutroute/index.md) mobile app.
+
+**[AccessMap](accessmap/index.md)** — Trip planning and customizable accessibility-focused multimodal routing.
+
+**[Walksheds](walksheds/index.md)** — Tool for analyzing pedestrian infrastructure and access to amenities.
+
+**[Events](events/index.md)** — Mapping events and our weekly [Mappy Hours](events/oswmh/index.md).
+
+_Additional TCAT projects can be found [on the TCAT website](https://tcat.cs.washington.edu/current-projects/)._
+
+---
+
+### Resources
+
+- **[Guides List](guides-list/index.md)** — User manuals, tutorials, and technical documentation
