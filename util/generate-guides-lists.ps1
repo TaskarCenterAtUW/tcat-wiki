@@ -363,20 +363,6 @@ function Build-SectionHeader {
     return "$HeaderLevel [$Title]($relativePath)$suffix$CRLF$CRLF"
 }
 
-function Get-TcatWikiSection {
-    <#
-    .SYNOPSIS
-        Returns the static TCAT Wiki section content for the main guides list
-    .DESCRIPTION
-        Generates the TCAT Wiki section that appears at the end of the main guides list,
-        containing links to wiki-level documentation like CONTRIBUTING.md.
-    .OUTPUTS
-        String containing the markdown content for the TCAT Wiki section
-    #>
-    return "### TCAT Wiki Guides$CRLF$CRLF#### [Contributing](https://github.com/TaskarCenterAtUW/tcat-wiki/blob/main/CONTRIBUTING.md)$CRLF$CRLF" +
-    "This guide explains how to contribute to the TCAT Wiki.$CRLF"
-}
-
 function Get-AllGuidesAtLevel {
     <#
     .SYNOPSIS
