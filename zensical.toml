@@ -2,7 +2,7 @@
 
 # Site version
 
-version = "4.0.0"
+version = "4.1.0"
 
 # The site_name is shown in the page header and the browser window title
 # Read more: https://zensical.org/docs/setup/basics/#site_name
