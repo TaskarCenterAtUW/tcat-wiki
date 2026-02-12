@@ -858,9 +858,6 @@ function Build-MainGuidesList {
         Invoke-DirectoryHierarchyProcessing -ParentPath $topicDir.FullName -Depth 1
     }
 
-    # Add TCAT Wiki section
-    $script:content += Get-TcatWikiSection
-
     return $script:content
 }
 

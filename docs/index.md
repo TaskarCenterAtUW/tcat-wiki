@@ -12,21 +12,6 @@ This wiki serves as a documentation hub for TCAT-related projects.
 
 ---
 
-### Getting Started
-
-**New to TCAT projects?** Here's where to start:
-
-| I want to learn about...               | Go to...                                    |
-| -------------------------------------- | ------------------------------------------- |
-| Pedestrian data standards              | [OpenSidewalks](opensidewalks/index.md)     |
-| Washington State sidewalk data         | [OS-CONNECT](os-connect/index.md)           |
-| Editing pedestrian infrastructure data | [Workspaces](workspaces/index.md)           |
-| Collect data in the field              | [AVIV ScoutRoute](aviv-scoutroute/index.md) |
-| Finding accessible routes              | [AccessMap](accessmap/index.md)             |
-| Joining a mapping event                | [Events](events/index.md)                   |
-
----
-
 ### Projects
 
 **[OpenSidewalks](opensidewalks/index.md)** — An open data standard for pedestrian networks.
@@ -39,11 +24,14 @@ This wiki serves as a documentation hub for TCAT-related projects.
 
 **[AccessMap](accessmap/index.md)** — Trip planning and customizable accessibility-focused multimodal routing.
 
-**[Walksheds](accessmap/index.md)** — Tool for analyzing pedestrian infrastructure and access to amenities.
+**[Walksheds](walksheds/index.md)** — Tool for analyzing pedestrian infrastructure and access to amenities.
+
+**[Events](events/index.md)** — Mapping events and our weekly [Mappy Hours](events/oswmh/index.md).
+
+_Additional TCAT projects can be found [on the TCAT website](https://tcat.cs.washington.edu/current-projects/)._
 
 ---
 
 ### Resources
 
-- **[Guides List](guides-list/index.md)** — Full list of user manuals, tutorials, and technical documentation
-- **[Events](events/index.md)** — Mapping events and our weekly [Mappy Hours](events/oswmh/index.md)
+- **[Guides List](guides-list/index.md)** — User manuals, tutorials, and technical documentation
