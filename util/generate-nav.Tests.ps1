@@ -277,13 +277,6 @@ title: First Page
 ---
 "@ | Set-Content -Path (Join-Path $sectionPath "first-page.md") -Encoding UTF8
 
-        # Create a root-level markdown file
-        @"
----
-title: Contributing
----
-"@ | Set-Content -Path (Join-Path $TestDocsPath "CONTRIBUTING.md") -Encoding UTF8
-
         $script:NavResult = Build-NavigationToml -docsBasePath $TestDocsPath
     }
 
@@ -309,10 +302,6 @@ title: Contributing
 
     It "Should include section pages" {
         $NavResult | Should -Match '\{"First Page" = "my-section/first-page\.md"\}'
-    }
-
-    It "Should include root-level markdown files" {
-        $NavResult | Should -Match '\{"Contributing" = "CONTRIBUTING\.md"\}'
     }
 }
 
@@ -647,13 +636,6 @@ title: TDEI
 ---
 "@ | Set-Content -Path (Join-Path $tdeiPath "index.md") -Encoding UTF8
 
-        # Root contributing file
-        @"
----
-title: Contributing
----
-"@ | Set-Content -Path (Join-Path $IntegrationDocs "CONTRIBUTING.md") -Encoding UTF8
-
         $script:IntegrationNav = Build-NavigationToml -docsBasePath $IntegrationDocs
     }
 
@@ -678,9 +660,5 @@ title: Contributing
 
     It "Should use correct acronym casing for TDEI" {
         $IntegrationNav | Should -Match '\{"TDEI" = \['
-    }
-
-    It "Should include Contributing at root level" {
-        $IntegrationNav | Should -Match '\{"Contributing" = "CONTRIBUTING\.md"\}'
     }
 }

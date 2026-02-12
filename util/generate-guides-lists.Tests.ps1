@@ -753,7 +753,7 @@ Describe "Get-TcatWikiSection" {
 
     It "Should include Contributing link" {
         $result = Get-TcatWikiSection
-        $result | Should -Match '\[Contributing\]\(\.\./CONTRIBUTING\.md\)'
+        $result | Should -Match '\[Contributing\]\(https://github\.com/TaskarCenterAtUW/tcat-wiki/blob/main/CONTRIBUTING\.md\)'
     }
 
     It "Should include description for Contributing" {

@@ -373,7 +373,7 @@ function Get-TcatWikiSection {
     .OUTPUTS
         String containing the markdown content for the TCAT Wiki section
     #>
-    return "### TCAT Wiki Guides$CRLF$CRLF#### [Contributing](../CONTRIBUTING.md)$CRLF$CRLF" +
+    return "### TCAT Wiki Guides$CRLF$CRLF#### [Contributing](https://github.com/TaskarCenterAtUW/tcat-wiki/blob/main/CONTRIBUTING.md)$CRLF$CRLF" +
     "This guide explains how to contribute to the TCAT Wiki.$CRLF"
 }
 

@@ -109,10 +109,3 @@ This user manual explains how to use the TDEI Workspaces platform.
 #### [Workspace Export Guide](../workspaces/workspace-export.md)
 
 This guide explains how to directly export a dataset in `.osm` format from Workspaces.
-
-### TCAT Wiki Guides
-
-#### [Contributing](../CONTRIBUTING.md)
-
-This guide explains how to contribute to the TCAT Wiki.
-
