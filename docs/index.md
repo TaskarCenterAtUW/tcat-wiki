@@ -6,7 +6,7 @@ title: Welcome
 
 ## Welcome to the TCAT Wiki!
 
-The [Taskar Center for Accessible Technology](https://tcat.cs.washington.edu/) (TCAT), housed by the [Paul G. Allen School of Computer Science & Engineering](https://www.cs.washington.edu/) (CSE) at the [University of Washington](https://www.washington.edu/) (the UW), develops, translates, and deploys open-source, universally accessible technologies with a focus on pedestrian networks.
+The [Taskar Center for Accessible Technology](https://tcat.cs.washington.edu/) (TCAT), housed by the [Paul G. Allen School of Computer Science & Engineering](https://www.cs.washington.edu/) (CSE) at the [University of Washington](https://www.washington.edu/) (the UW), develops, translates, and deploys open-source, universally accessible technologies with a focus on technology designed for all human experiences, including living with disabilities.
 
 This wiki serves as a documentation hub for TCAT-related projects.
 
