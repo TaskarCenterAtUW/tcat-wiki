@@ -53,9 +53,6 @@ extra_javascript = [
 
 [project.theme]
 
-# change this to "classic" to use the traditional Material for MkDocs look.
-#variant = "classic"
-
 # Zensical allows you to override specific blocks, partials, or whole
 # templates as well as to define your own templates. To do this, uncomment
 # the custom_dir setting below and set it to a directory in which you
@@ -79,6 +76,9 @@ favicon = "resources/images/favicon/tcat/favicon.svg"
 # the documentation for details.
 # Read more: https://zensical.org/docs/setup/language/
 language = "en"
+
+# Logo (default here for dark mode; swapped in light mode by extra.css)
+logo = "resources/images/logo/tcat/logo-light.png"
 
 # Zensical provides a number of feature toggles that change the behavior
 # of the documentation site.
@@ -305,7 +305,6 @@ code = "Atkinson Hyperlegible Mono"
 # ----------------------------------------------------------------------------
 
 [project.theme.icon]
-#logo = "lucide/smile"
 repo = "fontawesome/brands/github"
 
 # ----------------------------------------------------------------------------
