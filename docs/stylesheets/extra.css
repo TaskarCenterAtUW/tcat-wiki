@@ -38,3 +38,8 @@
 .schema-table td:last-child {
     width: auto;
 }
+
+/* Slightly reduce line spacing site-wide. Default is 1.8 */
+.md-typeset {
+    line-height: 1.5;
+}
