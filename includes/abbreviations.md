@@ -9,14 +9,16 @@
 *[ARNOLD]: All Road Network of Linear Referenced Data
 *[ASR]: AVIV ScoutRoute
 *[ATTRI]: Accessible Transportation Technologies Research Initiative
-*[AVIV]: Accessibility Verification, Improved Validation.
+*[AVIV]: Accessibility Verification, Improved Validation
 *[AVIV SR]: AVIV ScoutRoute
 *[BART]: Bay Area Rapid Transit
 *[BLV]: Blind and Low-Vision
 *[BRT]: Bus Rapid Transit
 *[BTS]: Bureau of Transportation Statistics
 *[CC0]: Creative Commons Zero
-*[CDP]: Census-designated Place
+*[CDP]: Census-Designated Place
+*[CALACT]: California Association of Coordinated Transportation
+*[Cal-ITP]: California Integrated Travel Project
 *[CMP]: Congestion Management Process
 *[COE]: College of Engineering
 *[CRS]: Coordinate Reference System
@@ -27,6 +29,7 @@
 *[DSB]: Department of Services for the Blind
 *[DSM]: Digital Surface Model
 *[DTM]: Digital Terrain Model
+*[ETL]: Extract, Transform, Load
 *[FDE]: Fundamental Data Elements
 *[FHWA]: Federal Highway Administration
 *[FNS]: Food and Nutrition Service
@@ -57,8 +60,12 @@
 *[LiDAR]: Light Detection and Ranging
 *[LRS]: Linear Referencing System
 *[LRTP]: Long-Range Transportation Plan
+*[MBTA]: Massachusetts Bay Transportation Authority
+*[MDIP]: Mobility Data Interoperability Principles
+*[MDOT]: Michigan Department of Transportation
 *[MIRE]: Model Inventory of Roadway Elements
 *[ML]: Machine Learning
+*[MnDOT]: Minnesota Department of Transportation
 *[MNY26]: Mappy New Year 2026
 *[MOU]: Memorandum of Understanding
 *[MPO]: Metropolitan Planning Organization
@@ -66,18 +73,25 @@
 *[NACTO]: National Association of City Transportation Officials
 *[NCHRP]: National Cooperative Highway Research Program
 *[NC-BPAID]: National Collaboration on Bicycle, Pedestrian, and Accessibility Infrastructure Data
+*[NCDOT]: North Carolina Department of Transportation
 *[NDA]: Nondrivers Alliance
 *[NEMT]: Non-Emergency Medical Transportation
 *[NHS]: National Highway System
 *[NHTSA]: National Highway Traffic Safety Administration
 *[NYPL]: New York Public Library
+*[ODOT]: Oregon Department of Transportation
 *[OGC]: Open Geospatial Consortium
+*[OMF]: Open Mobility Foundation
 *[ORCA]: One Regional Card for All
 *[OS-CONNECT]: OpenSidewalks COnsistent Network for accessible Navigation and Equitable Connectivity through Transit
 *[OSM]: OpenStreetMap
+*[OSMF]: OpenStreetMap Foundation
+*[OSMUS]: OpenStreetMap US
 *[OSW]: OpenSidewalks
 *[OSWMH]: OpenSidewalks Mappy Hours
-*[OTP]: OpenThePaths
+*[OTP]: OpenThePaths / OpenTripPlanner
+*[OTP25]: OpenThePaths 2025
+*[OTP26]: OpenThePaths 2026
 *[PED XING]: Pedestrian Crossing
 *[PII]: Personally Identifiable Information
 *[POI]: Point of Interest
@@ -90,6 +104,8 @@
 *[RCTO]: Regional Concept for Transportation Operations
 *[ROW]: Right of Way
 *[RRFB]: Rectangular Rapid Flashing Beacon
+*[RSO]: Registered Student Organization
+*[RTD]: Denver Regional Transportation District
 *[RTPO]: Regional Transportation Planning Organization
 *[SAFETEA-LU]: Safe, Accountable, Flexible, Efficient Transportation Equity Act: A Legacy for Users
 *[SAM]: Segment Anything Model
@@ -103,7 +119,7 @@
 *[SPS]: Seattle Public Schools
 *[SRTS]: Safe Routes to School
 *[STIP]: State Transportation Improvement Program
-*[SUMC]: Shared User Mobility Conference
+*[SUMC]: Shared User Mobility Conference / Shared Use Mobility Center
 *[SVEA]: Snoqualmie Valley Economic Alliance
 *[TAM]: Transportation Asset Management
 *[TAMP]: Transportation Asset Management Plan
