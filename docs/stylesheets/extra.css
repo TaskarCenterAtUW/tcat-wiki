@@ -4,6 +4,27 @@
  * @format
  */
 
+/*
+ * TEMPORARY TAB VISIBILITY PATCH
+ * Hide tabs by href. Remove once Zensical has proper modular navigation.
+ * Uncomment lines to hide specific tabs.
+ */
+.md-tabs__item:has(a[href*="/CONTRIBUTING/"]) {
+    display: none;
+}
+.md-tabs__item:has(a[href*="/accessmap/"]) {
+    display: none;
+}
+.md-tabs__item:has(a[href*="/josm/"]) {
+    display: none;
+}
+.md-tabs__item:has(a[href*="/rapid/"]) {
+    display: none;
+}
+.md-tabs__item:has(a[href*="/walksheds/"]) {
+    display: none;
+}
+
 /* Schema definition tables */
 .schema-table {
     width: 100%;
