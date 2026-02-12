@@ -62,3 +62,8 @@
 .md-nav__link {
     padding: 0.35em 0.5em;
 }
+
+/* Swap logo if in light mode */
+[data-md-color-scheme="default"] .md-logo img {
+    content: url("../resources/images/logo/tcat/logo-dark.png");
+}
