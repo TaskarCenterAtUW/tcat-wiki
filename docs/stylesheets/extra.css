@@ -43,3 +43,14 @@
 .md-typeset {
     line-height: 1.5;
 }
+
+/* Hide auto-generated page title (H1), promote H2 to H1 styling */
+.md-typeset h1 {
+    display: none;
+}
+.md-typeset h2 {
+    font-size: 2em;
+    margin: 0 0 0em;
+    font-weight: 600;
+    line-height: 1;
+}
