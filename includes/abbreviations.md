@@ -37,6 +37,7 @@
 *[FTA]: Federal Transit Administration
 *[FQHC]: Federally Qualified Health Center
 *[GATIS]: General Active Transportation Infrastructure Specification
+*[GERS]: Global Entity Reference System
 *[GIG]: GoInfoGame
 *[GIS]: Geographic Information System
 *[GOFS]: General On-Demand Transit Feed Specification
