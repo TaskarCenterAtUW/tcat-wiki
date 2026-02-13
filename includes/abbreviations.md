@@ -9,6 +9,7 @@
 *[ARNOLD]: All Road Network of Linear Referenced Data
 *[ASR]: AVIV ScoutRoute
 *[ATTRI]: Accessible Transportation Technologies Research Initiative
+*[AT-DaWG]: Active Transportation Data Working Group
 *[AVIV]: Accessibility Verification, Improved Validation
 *[AVIV SR]: AVIV ScoutRoute
 *[BART]: Bay Area Rapid Transit
