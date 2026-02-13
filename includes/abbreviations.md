@@ -9,6 +9,7 @@
 *[ARNOLD]: All Road Network of Linear Referenced Data
 *[ASR]: AVIV ScoutRoute
 *[ATTRI]: Accessible Transportation Technologies Research Initiative
+*[AT-DaWG]: Active Transportation Data Working Group
 *[AVIV]: Accessibility Verification, Improved Validation
 *[AVIV SR]: AVIV ScoutRoute
 *[BART]: Bay Area Rapid Transit
@@ -36,6 +37,7 @@
 *[FTA]: Federal Transit Administration
 *[FQHC]: Federally Qualified Health Center
 *[GATIS]: General Active Transportation Infrastructure Specification
+*[GERS]: Global Entity Reference System
 *[GIG]: GoInfoGame
 *[GIS]: Geographic Information System
 *[GOFS]: General On-Demand Transit Feed Specification

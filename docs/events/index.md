@@ -32,28 +32,6 @@ Visit the [OpenSidewalks Mappy Hours](oswmh/index.md) page for more information,
 
 ### Upcoming Events
 
-#### Olympia, Connected
-
-**Name:** Olympia, Connected: Mapping for Mobility in OpenStreetMap
-
-**Organizers:** [MaptimeSEA](https://maptimesea.github.io/), [TCAT](https://tcat.cs.washington.edu/)
-
-**Time:** Thursday, February 12th, 2026 | 6:00 PM PT - 8:00 PM PT
-
-**Location:** In-person: [HRDG 143, Seattle University Harding Building, 1215 E Columbia St, Seattle, WA 98122, US](https://maps.app.goo.gl/C836YuP9ftyKrYyu9)
-
-**TDEI Calendar:** [Olympia, Connected](https://tcat.cs.washington.edu/events/in-person-maptimesea-x-tcat-olympia-connected-mapping-for-mobility-in-openstreetmap/)
-
-**Meetup:** [Event #312922643](https://www.meetup.com/maptimesea/events/312922643/)
-
-**OSMCal:** [Event #4456](https://osmcal.org/event/4456/)
-
-**Related Content:**
-
-Visit the [Olympia, Connected](olympia-connected/index.md) page to access resources and guides!
-
----
-
 #### OpenThePaths 2026
 
 **Name:** OpenThePaths 2026: Connecting People and Places Through Sustainable Access
@@ -113,21 +91,25 @@ _Content will be added as it becomes available._
 
 ### Past Events
 
-#### Mappy New Year 2026
+#### Olympia, Connected
 
-**Name:** Mappy New Year 2026
+**Name:** Olympia, Connected: Mapping for Mobility in OpenStreetMap
 
-**Organizers:** [TCAT](https://tcat.cs.washington.edu/)
+**Organizers:** [MaptimeSEA](https://maptimesea.github.io/), [TCAT](https://tcat.cs.washington.edu/)
 
-**Time:** January 19th, 2026 | 9:00 AM PT - 12:00+ PM PT
+**Time:** Thursday, February 12th, 2026 | 6:00 PM PT - 8:00 PM PT
 
-**Location:** Virtual: Zoom
+**Location:** In-person: [HRDG 143, Seattle University Harding Building, 1215 E Columbia St, Seattle, WA 98122, US](https://maps.app.goo.gl/C836YuP9ftyKrYyu9)
 
-**TDEI Calendar:** [Mappy New Year 2026](https://tcat.cs.washington.edu/events/mappy-new-year-w-tcat/)
+**TDEI Calendar:** [Olympia, Connected](https://tcat.cs.washington.edu/events/in-person-maptimesea-x-tcat-olympia-connected-mapping-for-mobility-in-openstreetmap/)
+
+**Meetup:** [Event #312922643](https://www.meetup.com/maptimesea/events/312922643/)
+
+**OSMCal:** [Event #4456](https://osmcal.org/event/4456/)
 
 **Related Content:**
 
-Visit the [Mappy New Year 2026](mny26/index.md) page to access resources and guides!
+Visit the [Olympia, Connected](olympia-connected/index.md) page to access resources and guides!
 
 ---
 
@@ -144,3 +126,21 @@ Visit the [Mappy New Year 2026](mny26/index.md) page to access resources and gui
 **Related Content:**
 
 Visit the [Clark County Walk/Roll Event](nda-vancouver/index.md) page to access resources and more information!
+
+---
+
+#### Mappy New Year 2026
+
+**Name:** Mappy New Year 2026
+
+**Organizers:** [TCAT](https://tcat.cs.washington.edu/)
+
+**Time:** January 19th, 2026 | 9:00 AM PT - 12:00+ PM PT
+
+**Location:** Virtual: Zoom
+
+**TDEI Calendar:** [Mappy New Year 2026](https://tcat.cs.washington.edu/events/mappy-new-year-w-tcat/)
+
+**Related Content:**
+
+Visit the [Mappy New Year 2026](mny26/index.md) page to access resources and guides!
