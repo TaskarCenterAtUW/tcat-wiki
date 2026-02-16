@@ -78,6 +78,16 @@ abbr[title],
     border-bottom-color: rgba(255, 255, 255, 0.3);
 }
 
+/* Admonition title: vertically center text with icon, prevent icon clipping */
+.md-typeset .admonition-title,
+.md-typeset details summary {
+    line-height: 1.8;
+}
+.md-typeset .admonition-title::before,
+.md-typeset details summary::before {
+    vertical-align: middle;
+}
+
 /* Header title with subtitle */
 .md-header__inner {
     align-items: center;
