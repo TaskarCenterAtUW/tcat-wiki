@@ -39,9 +39,9 @@
     width: auto;
 }
 
-/* Slightly reduce line spacing site-wide. Default is 1.8 */
+/* Reduce line spacing site-wide. Default is 1.8 */
 .md-typeset {
-    line-height: 1.5;
+    line-height: 1.3;
 }
 
 /* Hide auto-generated page title (H1), promote H2 to H1 styling */
