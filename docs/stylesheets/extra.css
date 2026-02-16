@@ -63,6 +63,29 @@
     padding: 0.35em 0.5em;
 }
 
+/* Abbreviation underline styling */
+abbr,
+abbr[title],
+.md-typeset abbr,
+.md-typeset abbr[title] {
+    text-decoration: none !important;
+    text-decoration-line: none !important;
+    text-decoration-style: none !important;
+    border-bottom: none !important;
+    position: relative;
+}
+.md-typeset abbr[title]::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0.05em; /* Change this to adjust dotted line offset */
+    border-bottom: 1px dotted rgba(0, 0, 0, 0.3);
+}
+[data-md-color-scheme="slate"] .md-typeset abbr[title]::after {
+    border-bottom-color: rgba(255, 255, 255, 0.3);
+}
+
 /* Swap logo if in light mode */
 [data-md-color-scheme="default"] .md-logo img {
     content: url("../resources/images/logo/tcat/logo-dark.png");
