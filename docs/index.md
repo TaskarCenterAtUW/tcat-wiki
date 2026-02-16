@@ -66,9 +66,14 @@ If you remember only three things, remember these:
 
 ### What's Your Goal?
 
-??? question "What is OSW / OSW Schema?"
+| If you want to… | Use                                                                                                    |
+|-----------------|--------------------------------------------------------------------------------------------------------|
+| **View**        | [OS-CONNECT Data Viewer](os-connect/data-viewer/index.md) — a view-only map; no GIS required           |
+| **Download**    | [TDEI Portal](tdei/portal/index.md) — manage accounts, API keys, and access controls                   |
+| **Plan**        | [Walksheds](walksheds/index.md) for scenario planning, project proposal evaluation, and prioritization |
+| **Route**       | [AccessMap](accessmap/index.md) — a public routing app, no portal required                             |
 
-    **OpenSidewalks** (OSW) is an initiative led by TCAT to provide a comprehensive, accessibility-forward specification for mapping sidewalks and related pedestrian infrastructure. The **OpenSidewalks Schema** is the open data standard that promotes an explicit network (graph) model. Its primary features are defined as connected Nodes (points) and Edges (lines) representing a traversable, graph-analyzable pedestrian network of sidewalks, street crossings, and other paths, along with data representing potential barriers such as stairs and raised curbs.
+---
 
     [:octicons-arrow-right-24: Learn more](opensidewalks/index.md)
 
