@@ -75,7 +75,24 @@ If you remember only three things, remember these:
 
 ---
 
-    [:octicons-arrow-right-24: Learn more](opensidewalks/index.md)
+### Projects
+
+**[OS-CONNECT](os-connect/index.md)** — Washington State connected pedestrian network dataset.
+
+**[TDEI](tdei/index.md)** — Platform infrastructure for storing, serving, and integrating transportation accessibility data.
+
+**[OpenSidewalks](opensidewalks/index.md)** — The data standard/schema used to represent pedestrian networks as a connected graph.
+
+**[Workspaces](workspaces/index.md)** — Tools for creating and maintaining OSW datasets (via editors like [Rapid](rapid/index.md) and [AVIV ScoutRoute](aviv-scoutroute/index.md)).
+
+**[AccessMap](accessmap/index.md)** — Accessible multimodal routing and trip planning.
+
+**[Walksheds](walksheds/index.md)** — Analysis of access to destinations using the pedestrian network.
+
+**[AVIV ScoutRoute](aviv-scoutroute/index.md)** — Mobile app for adding data into the existing pedestrian map. AVIV ScoutRoute enables everyone to make structured, clear, and direct contributions of surveyed data to enhance it or keep it up to date.
+
+_Additional TCAT projects are listed on the [TCAT website](https://tcat.cs.washington.edu/current-projects/)._
+
 
 ??? question "What is a Connected Network?"
 
