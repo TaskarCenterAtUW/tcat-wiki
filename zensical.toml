@@ -1,11 +1,11 @@
 [project]
 
 # Site version
-version = "4.4.0"
+version = "4.5.0"
 
 # The site_name is shown in the page header and the browser window title
 # Read more: https://zensical.org/docs/setup/basics/#site_name
-site_name = "TCAT Wiki"
+site_name = "The Taskar Center for Accessible Technology"
 
 # The site_description is included in the HTML head and should contain a
 # meaningful description of the site content for use by search engines.
@@ -272,14 +272,14 @@ custom_checkbox = true
 # ----------------------------------------------------------------------------
 
 [[project.theme.palette]]
-scheme = "slate"
-toggle.icon = "lucide/moon"
-toggle.name = "Switch to light mode"
-
-[[project.theme.palette]]
 scheme = "default"
 toggle.icon = "lucide/sun"
 toggle.name = "Switch to dark mode"
+
+[[project.theme.palette]]
+scheme = "slate"
+toggle.icon = "lucide/moon"
+toggle.name = "Switch to light mode"
 
 # ----------------------------------------------------------------------------
 # In the "font" subsection you can configure the fonts used. By default, fonts
