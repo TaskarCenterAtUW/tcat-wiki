@@ -5,7 +5,7 @@ version = "4.4.1"
 
 # The site_name is shown in the page header and the browser window title
 # Read more: https://zensical.org/docs/setup/basics/#site_name
-site_name = "TCAT Wiki"
+site_name = "The Taskar Center for Accessible Technology"
 
 # The site_description is included in the HTML head and should contain a
 # meaningful description of the site content for use by search engines.
