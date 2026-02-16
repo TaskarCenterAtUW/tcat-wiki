@@ -52,19 +52,19 @@ Choose your path: each one starts with the simplest document and then offers dee
 
 ---
 
-### Quick Concepts
+### Key Takeaways
 
-??? question "What is OS-CONNECT?"
+If you remember only three things, remember these:
 
-    **OS-CONNECT** (OpenSidewalks COnsistent Network for accessible Navigation and Equitable Connectivity through Transit) is a comprehensive, high-resolution, connected pedestrian network dataset for Washington State. Created under the directive of the Washington State Legislature, OS-CONNECT provides detailed sidewalk infrastructure data across 320+ cities and counties, supporting Washington's goals around transportation equity, safety, and accessibility.
+**[OS-CONNECT](os-connect/index.md) is the dataset** — It is a connected pedestrian network for Washington State (sidewalks, crossings, curb ramps, and related features) in the [OpenSidewalks schema](opensidewalks/schema/index.md), organized so it can be used for routing and analysis.
 
-    [:octicons-arrow-right-24: Learn more](os-connect/index.md)
+**[TDEI](tdei/index.md) is the platform** — It is where data can be accessed for downloads and APIs, and where tools like [AccessMap](accessmap/index.md), [Walksheds](walksheds/index.md), [AVIV ScoutRoute](aviv-scoutroute/index.md), and [Workspaces](workspaces/index.md) connect to the data.
 
-??? question "What is the TDEI?"
+**[AccessMap](accessmap/index.md) is the router** — It uses OpenSidewalks Schema-formatted data to provide custom accessible pedestrian routing without requiring specialized tools.
 
-    The **Transportation Data Exchange Initiative** (TDEI) is a shared, standardized framework for transportation data that enables seamless integration across mobility systems. The TDEI provides infrastructure for collecting, storing, maintaining, and sharing open data about sidewalks, transit paths, and on-demand transit services, laying the groundwork for more effective transportation planning and innovation.
+---
 
-    [:octicons-arrow-right-24: Learn more](tdei/index.md)
+### What's Your Goal?
 
 ??? question "What is OSW / OSW Schema?"
 
