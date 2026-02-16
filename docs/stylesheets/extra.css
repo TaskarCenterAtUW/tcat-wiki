@@ -113,6 +113,18 @@ abbr[title],
     max-width: 100%;
 }
 
+/* Header TCAT link, inherits text color, no underline */
+.md-header__tcat-link {
+    color: inherit;
+    text-decoration: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.md-header__tcat-link:hover {
+    opacity: 0.85;
+}
+
 /* Swap logo if in light mode */
 [data-md-color-scheme="default"] .md-logo img {
     content: url("../resources/images/logo/tcat/logo-dark.png");
