@@ -78,6 +78,41 @@ abbr[title],
     border-bottom-color: rgba(255, 255, 255, 0.3);
 }
 
+/* Header title with subtitle */
+.md-header__inner {
+    align-items: center;
+}
+.md-header__title--with-subtitle {
+    display: flex;
+    align-items: center;
+}
+.md-header__title--with-subtitle .md-header__ellipsis {
+    display: flex;
+    align-items: center;
+}
+.md-header__title--with-subtitle .md-header__topic:first-child {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.md-header__title--with-subtitle .md-header__topic:first-child .md-ellipsis {
+    line-height: 1.0;
+    letter-spacing: 0em;
+}
+.md-header__subtitle {
+    display: block;
+    font-size: 0.55em;
+    font-weight: 400;
+    letter-spacing: 0.1em;
+    opacity: 0.75;
+    line-height: 1.2;
+    margin-top: 0.1em;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    max-width: 100%;
+}
+
 /* Swap logo if in light mode */
 [data-md-color-scheme="default"] .md-logo img {
     content: url("../resources/images/logo/tcat/logo-dark.png");
