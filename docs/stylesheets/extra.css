@@ -96,7 +96,7 @@ abbr[title],
     justify-content: center;
 }
 .md-header__title--with-subtitle .md-header__topic:first-child .md-ellipsis {
-    line-height: 1.0;
+    line-height: 1.2;
     letter-spacing: 0em;
 }
 .md-header__subtitle {
