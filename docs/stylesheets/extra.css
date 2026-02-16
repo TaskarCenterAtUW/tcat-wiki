@@ -135,6 +135,16 @@ abbr[title],
     opacity: 0.85;
 }
 
+/* Mermaid diagram: larger subgraph labels, emphasize TDEI Core */
+.mermaid .cluster-label {
+    font-size: 1.1rem !important;
+    font-weight: 600 !important;
+}
+.mermaid [id*="tdei"] > .cluster-label {
+    font-size: 1.3rem !important;
+    font-weight: 700 !important;
+}
+
 /* Swap logo if in light mode */
 [data-md-color-scheme="default"] .md-logo img {
     content: url("../resources/images/logo/tcat/logo-dark.png");

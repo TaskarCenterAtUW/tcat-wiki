@@ -10,23 +10,45 @@ This site explains how to use the open-source transportation accessibility **too
 
 ---
 
-### Projects
+### User Journeys (Start Here!)
 
-**[OpenSidewalks](opensidewalks/index.md)** — An open data standard for pedestrian networks.
+Choose your path: each one starts with the simplest document and then offers deeper options.
 
-**[TDEI](tdei/index.md)** — The Transportation Data Exchange Initiative: infrastructure for collecting, storing, maintaining, and sharing transportation data.
+??? abstract "I want to use AccessMap as a resident or advocate"
 
-**[OS-CONNECT](os-connect/index.md)** — A connected pedestrian network dataset covering 320+ jurisdictions in Washington State.
+    Do you want to find accessible, customized pedestrian routing and share it with others?
 
-**[Workspaces](workspaces/index.md)** — A platform for creating, editing, and maintaining OSW datasets, using the web-based [Rapid](rapid/index.md) editor or the [AVIV ScoutRoute](aviv-scoutroute/index.md) mobile app.
+    **Get Started:** _(Coming soon!)_ [Use AccessMap](accessmap/user-manual/index.md)
 
-**[AccessMap](accessmap/index.md)** — Trip planning and customizable accessibility-focused multimodal routing.
+??? abstract "I work for a jurisdiction or agency"
 
-**[Walksheds](walksheds/index.md)** — Tool for analyzing pedestrian infrastructure and access to amenities.
+    Do you want to see what pedestrian infrastructure exists for your area, understand what the numbers mean, and decide what to do next?
 
-**[Events](events/index.md)** — Mapping events and our weekly [Mappy Hours](events/oswmh/index.md).
+    **Get Started:** [View the data](os-connect/data-viewer/user-manual/index.md) and get a [Jurisdiction Snapshot (PDF)](os-connect/qa-qc/user-manual/index.md)
 
-_Additional TCAT projects can be found [on the TCAT website](https://tcat.cs.washington.edu/current-projects/)._
+??? abstract "I'm a planner / analyst (no GIS required)"
+
+    Do you want to use outputs in planning (ADA transition plans, active transportation plans, equity work)?
+
+    **Get Started:** Reading a dashboard snapshot and following the Planning Playbook. _(Coming soon!)_
+
+??? abstract "I'm a legislator / funder / oversight"
+
+    Do you want to verify what was delivered, see statewide progress, and understand what comes next?
+
+    **Get Started:** Read "What we built" and view the statewide summary. _(Coming soon!)_
+
+??? abstract "I'm a developer / researcher"
+
+    Do you want data downloads, APIs, schemas, and examples?
+
+    **Get Started:** Use the Developer Quickstart Guide _(Coming soon!)_ and review the documentation on the [TDEI](tdei/index.md) and [OSW Schema](opensidewalks/index.md)
+
+??? abstract "I want to help improve the data"
+
+    Do you want to help a jurisdiction validate, report issues, or contribute edits?
+
+    **Get Started:** Learn how to report a problem _(Coming soon!)_ and about how updates happen through [Workspaces](workspaces/index.md)
 
 ---
 
