@@ -6,9 +6,7 @@ title: Welcome
 
 ## Welcome to the TCAT Wiki!
 
-The [Taskar Center for Accessible Technology](https://tcat.cs.washington.edu/) (TCAT), housed by the [Paul G. Allen School of Computer Science & Engineering](https://www.cs.washington.edu/) (CSE) at the [University of Washington](https://www.washington.edu/) (the UW), develops, translates, and deploys open-source, universally accessible technologies with a focus on technology designed for all human experiences, including living with disabilities.
-
-This wiki serves as a documentation hub for TCAT-related projects.
+This site explains how to use the open-source transportation accessibility **tools** and **data** developed by the [Taskar Center for Accessible Technology](https://tcat.cs.washington.edu/) (TCAT), especially [OS-CONNECT](os-connect/index.md) (Washington State's connected pedestrian network dataset) and the [TDEI](tdei/index.md) (the infrastructure that stores and serves that data).
 
 ---
 
