@@ -55,14 +55,6 @@
     line-height: 1;
 }
 
-/* Reduce spacing in left sidebar navigation */
-.md-nav__item {
-    padding: 0;
-}
-.md-nav__link {
-    padding: 0.35em 0.5em;
-}
-
 /* Abbreviation underline styling */
 abbr,
 abbr[title],
