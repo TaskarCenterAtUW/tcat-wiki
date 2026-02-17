@@ -83,7 +83,7 @@ QA/QC Reports User Manual Table of Contents
 
 #### [Data Sources and OS-CONNECT QA/QC Report Structure](structure.md)
 
-This document explains the structure of the OS-CONNECT QA/QC reports.
+This document explains the structure of the OS-CONNECT "Jurisdiction Snapshot" QA/QC reports.
 
 #### [OS-CONNECT QA/QC Report Subsections in Detail](metrics.md)
 
