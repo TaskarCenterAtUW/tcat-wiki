@@ -78,6 +78,16 @@ abbr[title],
     border-bottom-color: rgba(255, 255, 255, 0.3);
 }
 
+/* Admonition title: vertically center text with icon, prevent icon clipping */
+.md-typeset .admonition-title,
+.md-typeset details summary {
+    line-height: 1.8;
+}
+.md-typeset .admonition-title::before,
+.md-typeset details summary::before {
+    vertical-align: middle;
+}
+
 /* Header title with subtitle */
 .md-header__inner {
     align-items: center;
@@ -96,7 +106,7 @@ abbr[title],
     justify-content: center;
 }
 .md-header__title--with-subtitle .md-header__topic:first-child .md-ellipsis {
-    line-height: 1.0;
+    line-height: 1.2;
     letter-spacing: 0em;
 }
 .md-header__subtitle {
@@ -113,7 +123,25 @@ abbr[title],
     max-width: 100%;
 }
 
+/* Header TCAT link, inherits text color, no underline */
+.md-header__tcat-link {
+    color: inherit;
+    text-decoration: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.md-header__tcat-link:hover {
+    opacity: 0.85;
+}
+
 /* Swap logo if in light mode */
 [data-md-color-scheme="default"] .md-logo img {
     content: url("../resources/images/logo/tcat/logo-dark.png");
+}
+
+/* TDEI Architecture diagram - force black text */
+#tdei-arch {
+    --md-mermaid-label-fg-color: #000000;
+    --md-mermaid-node-fg-color: #333333;
 }

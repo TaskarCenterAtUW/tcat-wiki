@@ -20,7 +20,7 @@ _TDEI is a project sponsored by the [ITS4US Deployment Program](https://www.its.
 
 ### User Registration and Access
 
-All TDEI users register through the same process and receive an API key and access credentials. Users are differentiated by their assigned roles and permissions.
+All TDEI users register through the same process via the [TDEI Portal](https://portal.tdei.us/) and receive an API key and access credentials. Users are differentiated by their assigned roles and permissions.
 
 API keys are used to retrieve data from TDEI. Access credentials are used to log into the portal, retrieve or regenerate API keys, and upload data.
 
