@@ -121,6 +121,6 @@ _Additional TCAT projects are listed on the [TCAT website](https://tcat.cs.washi
 
 ---
 
-### Resources
+### Guides and User Manuals
 
-- **[Guides List](guides-list/index.md)** — User manuals, tutorials, and technical documentation
+Looking for step-by-step instructions? Start with our full **[Guides List](guides-list/index.md)**.
