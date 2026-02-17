@@ -96,28 +96,32 @@ _Additional TCAT projects are listed on the [TCAT website](https://tcat.cs.washi
 
 ??? question "What is a Connected Network?"
 
-    A **connected network** is a graph of pedestrian infrastructure such as sidewalks, crossings, curb ramps, and other paths where all elements are linked as Nodes, Edges, and Zones forming a complete, traversable network. This is in contrast to disconnected or partial datasets where features exist in isolation.
+### Quick Concepts
+
+New to this? If you are unfamiliar with some of this terminology, start with these short explanations to learn the concepts in less than 5 minutes:
+
+    - **Routing** — A connected network enables turn-by-turn pedestrian navigation and accessibility-focused trip planning (as in [AccessMap](accessmap/index.md)), because every path segment connects to the next.
+    - **Analysis** — Connectivity allows for network-level analyses (such as [walksheds](walksheds/index.md)), enabling gap detection and equity assessments, computations that require understanding how infrastructure elements relate to one another.
+??? question "Points of Interest (POIs)"
+
+    A **point of interest** (POI) is a specific, identifiable location that is relevant to pedestrians or travelers, such as a transit stop, park entrance, business, public facility, or other amenity. In the context of TCAT projects, POIs are used alongside pedestrian network data to analyze access to destinations and services.
+
+
 
     **Why this matters:**
 
     - **Routing** — A connected network enables turn-by-turn pedestrian navigation and accessibility-focused trip planning (as in [AccessMap](accessmap/index.md)), because every path segment connects to the next.
-    - **Analysis** — Connectivity allows for network-level analyses (such as [walksheds](walksheds/index.md)), enabling gap detection and equity assessments, computations that require understanding how infrastructure elements relate to one another.
+    - **Analysis** — Connectivity allows for network-level analyses (such as [walksheds](walksheds/index.md)), enabling gap detection and equity assessments — computations that require understanding how infrastructure elements relate to one another.
 
-??? question "What is a POI?"
 
-    A **Point of Interest** (POI) is a specific, identifiable location that is relevant to pedestrians or travelers, such as a transit stop, park entrance, business, public facility, or other amenity. In the context of TCAT projects, POIs are used alongside pedestrian network data to analyze access to destinations and services.
 
-??? question "What is a Walkshed?"
+    :octicons-arrow-right-24: [Learn more](walksheds/index.md)
 
-    A **walkshed** is the area reachable via a specified mode of transport from a given location within a specified travel time or distance, considering the actual pedestrian network. Unlike a simple radius, a walkshed accounts for real-world path connectivity, barriers, and infrastructure conditions. The [TDEI Walksheds](walksheds/index.md) tool uses pedestrian network data to compute and visualize these areas, enabling analysis of access to amenities and services.
-
-    [:octicons-arrow-right-24: Learn more](walksheds/index.md)
-
-??? question "What is a Routing Profile?"
+??? question "Routing Profiles"
 
     A **routing profile** is a set of preferences and constraints that customize how a pedestrian route is calculated. For example, a routing profile may specify maximum acceptable incline, preference for curb ramps, or avoidance of unpaved surfaces. Tools like [AccessMap](accessmap/index.md) use routing profiles to generate personalized, accessibility-aware directions based on individual needs.
 
-    [:octicons-arrow-right-24: Learn more](accessmap/index.md)
+    :octicons-arrow-right-24: [Learn more](accessmap/index.md)
 
 ---
 
