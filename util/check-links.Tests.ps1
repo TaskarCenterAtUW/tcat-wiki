@@ -2,8 +2,8 @@
 #Requires -Modules @{ ModuleName='Pester'; ModuleVersion='5.0.0' }
 
 # Name: TCAT Wiki - Link Checker Tests
-# Version: 2.0.0
-# Date: 2026-02-06
+# Version: 2.2.0
+# Date: 2026-02-18
 # Author: Amy Bordenave, Taskar Center for Accessible Technology, University of Washington
 # License: CC-BY-ND 4.0 International
 
@@ -512,6 +512,19 @@ Describe "Test-CacheEntryValid" {
                 status    = 200
             }
             Test-CacheEntryValid -entry $entry | Should -Be $false
+        }
+    }
+
+    Context "Timeout cache entries" {
+        It "Should return true for timeout entry within TTL (TTL-valid but retried by caller)" {
+            $entry = @{
+                timestamp = (Get-Date).AddHours(-1).ToString("o")
+                valid     = $false
+                status    = "The request was canceled due to the configured HttpClient.Timeout of 5 seconds elapsing."
+                isTimeout = $true
+            }
+            # Test-CacheEntryValid only checks TTL, so it returns true
+            Test-CacheEntryValid -entry $entry | Should -Be $true
         }
     }
 

@@ -2,8 +2,8 @@
 # This script is designed to be run in a PowerShell environment.
 
 # Name: TCAT Wiki - Link Checker
-# Version: 4.0.0
-# Date: 2026-02-06
+# Version: 4.2.0
+# Date: 2026-02-18
 # Author: Amy Bordenave, Taskar Center for Accessible Technology, University of Washington
 # License: CC-BY-ND 4.0 International
 
@@ -182,7 +182,7 @@ function Test-ExternalUrlValid {
     try {
         # Prepare headers with User-Agent to identify as a bot
         $headers = @{
-            'User-Agent' = 'TCAT-Wiki-LinkChecker/4.0.0 (+https://github.com/TaskarCenterAtUW/tcat-wiki)'
+            'User-Agent' = 'TCAT-Wiki-LinkChecker/4.2.0 (+https://github.com/TaskarCenterAtUW/tcat-wiki)'
         }
 
         # Use HEAD request first, fallback to GET if needed
@@ -332,7 +332,7 @@ if ($external) {
     $cachedResults = @{}
 
     foreach ($url in $externalUrls.Keys | Sort-Object) {
-        if (-not $NoCache -and $linkCache.ContainsKey($url) -and (Test-CacheEntryValid -entry $linkCache[$url])) {
+        if (-not $NoCache -and $linkCache.ContainsKey($url) -and (Test-CacheEntryValid -entry $linkCache[$url]) -and -not $linkCache[$url].isTimeout) {
             $cacheHits++
             $cachedResults[$url] = $linkCache[$url]
         } else {
@@ -344,24 +344,16 @@ if ($external) {
         Write-Host "  Using $cacheHits cached results (valid within $($script:CacheTTLHours)h TTL)" -ForegroundColor Gray
     }
 
-    # Process cached results first
+    # Process cached results first (timeouts are excluded from cache hits and always rechecked)
     foreach ($url in $cachedResults.Keys | Sort-Object) {
         $cached = $cachedResults[$url]
         Write-Host "Testing: $url" -ForegroundColor Gray
         if (-not $cached.valid) {
-            if ($cached.isTimeout) {
-                $timeoutWarnings += @{
-                    url    = $url
-                    status = "$($cached.status) (cached)"
-                }
-                Write-Host "  [!] Timeout (cached): $($cached.status)" -ForegroundColor Yellow
-            } else {
-                $brokenExternalLinks += @{
-                    url    = $url
-                    status = "$($cached.status) (cached)"
-                }
-                Write-Host "  [X] Failed (cached): $($cached.status)" -ForegroundColor Red
+            $brokenExternalLinks += @{
+                url    = $url
+                status = "$($cached.status) (cached)"
             }
+            Write-Host "  [X] Failed (cached): $($cached.status)" -ForegroundColor Red
         } else {
             Write-Host "  [OK] OK (cached): $($cached.status)" -ForegroundColor Green
         }
