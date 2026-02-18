@@ -12,9 +12,6 @@
 .md-tabs__item:has(a[href*="/CONTRIBUTING/"]) {
     display: none;
 }
-.md-tabs__item:has(a[href*="/accessmap/"]) {
-    display: none;
-}
 .md-tabs__item:has(a[href*="/josm/"]) {
     display: none;
 }
