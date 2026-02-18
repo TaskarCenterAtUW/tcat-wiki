@@ -102,8 +102,12 @@ $brokenInternalLinks = @()
 function Get-MarkdownLinks {
     param([string]$content)
 
+    # Remove YAML frontmatter (contains # comments) to avoid extracting links from metadata
+    $contentWithoutFrontmatter = $content -replace '(?ms)\A---\r?\n.*?\r?\n---\r?\n?', ''
+    # Remove HTML comments (<!-- ... -->) which may span multiple lines
+    $contentWithoutComments = $contentWithoutFrontmatter -replace '(?s)<!--.*?-->', ''
     # Remove code blocks (``` ... ```) to avoid extracting links from code examples
-    $contentWithoutCodeBlocks = $content -replace '```[\s\S]*?```', ''
+    $contentWithoutCodeBlocks = $contentWithoutComments -replace '```[\s\S]*?```', ''
     # Remove inline code (` ... `) to avoid extracting links from code
     $contentWithoutInlineCode = $contentWithoutCodeBlocks -replace '`[^`]*`', ''
 

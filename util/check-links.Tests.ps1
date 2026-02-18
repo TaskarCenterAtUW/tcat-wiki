@@ -133,6 +133,83 @@ Another [Real Link](real.md) here.
         }
     }
 
+    Context "When content has HTML comments" {
+        It "Should ignore links inside single-line HTML comments" {
+            $content = @"
+Regular [Link](page.md) here.
+<!-- IMAGE PLACEHOLDER: ![Screenshot](../../resources/images/screenshot.png){ width="826" } -->
+Another [Real Link](real.md) here.
+"@
+            $links = Get-MarkdownLinks -content $content
+            $links.Count | Should -Be 2
+            $links[0].Groups[2].Value | Should -Be "page.md"
+            $links[1].Groups[2].Value | Should -Be "real.md"
+        }
+
+        It "Should ignore links inside multi-line HTML comments" {
+            $content = @"
+Regular [Link](page.md) here.
+<!--
+This is a multi-line comment with a [Commented Link](commented.md)
+and an image ![Alt](images/photo.png)
+-->
+Another [Real Link](real.md) here.
+"@
+            $links = Get-MarkdownLinks -content $content
+            $links.Count | Should -Be 2
+            $links[0].Groups[2].Value | Should -Be "page.md"
+            $links[1].Groups[2].Value | Should -Be "real.md"
+        }
+
+        It "Should ignore links in multiple HTML comments" {
+            $content = @"
+[Link1](page1.md)
+<!-- [Hidden1](hidden1.md) -->
+[Link2](page2.md)
+<!-- [Hidden2](hidden2.md) -->
+[Link3](page3.md)
+"@
+            $links = Get-MarkdownLinks -content $content
+            $links.Count | Should -Be 3
+            $links[0].Groups[2].Value | Should -Be "page1.md"
+            $links[1].Groups[2].Value | Should -Be "page2.md"
+            $links[2].Groups[2].Value | Should -Be "page3.md"
+        }
+    }
+
+    Context "When content has YAML frontmatter with # comments" {
+        It "Should ignore links inside YAML frontmatter comments" {
+            $content = @"
+---
+title: Test Page
+tags:
+    - Guide
+# exclude-from-main-guides-list
+# See [Reference](reference.md) for details
+---
+
+Regular [Link](page.md) here.
+"@
+            $links = Get-MarkdownLinks -content $content
+            $links.Count | Should -Be 1
+            $links[0].Groups[2].Value | Should -Be "page.md"
+        }
+
+        It "Should strip entire frontmatter block" {
+            $content = @"
+---
+title: My Page
+description: Check [this](meta-link.md) out
+---
+
+[Real Link](real.md) is here.
+"@
+            $links = Get-MarkdownLinks -content $content
+            $links.Count | Should -Be 1
+            $links[0].Groups[2].Value | Should -Be "real.md"
+        }
+    }
+
     Context "When content has no links" {
         It "Should return empty array" {
             $content = "This is just plain text with no links."
