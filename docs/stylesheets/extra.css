@@ -7,7 +7,6 @@
 /*
  * TEMPORARY TAB VISIBILITY PATCH
  * Hide tabs by href. Remove once Zensical has proper modular navigation.
- * Uncomment lines to hide specific tabs.
  */
 .md-tabs__item:has(a[href*="/CONTRIBUTING/"]) {
     display: none;
@@ -144,10 +143,18 @@ abbr[title],
 }
 
 /* Theme-conditional block visibility (mirrors #only-light / #only-dark for non-img elements) */
-.only-light { display: block; }
-.only-dark  { display: none;  }
-[data-md-color-scheme="slate"] .only-light { display: none;  }
-[data-md-color-scheme="slate"] .only-dark  { display: block; }
+.only-light {
+    display: block;
+}
+.only-dark {
+    display: none;
+}
+[data-md-color-scheme="slate"] .only-light {
+    display: none;
+}
+[data-md-color-scheme="slate"] .only-dark {
+    display: block;
+}
 
 /* Responsive right-floated section images. Place image just above its section header. */
 .md-typeset img.img-right,
