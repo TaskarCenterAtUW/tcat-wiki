@@ -148,3 +148,10 @@ abbr[title],
 .only-dark  { display: none;  }
 [data-md-color-scheme="slate"] .only-light { display: none;  }
 [data-md-color-scheme="slate"] .only-dark  { display: block; }
+
+/* Ensure horizontal rules always clear floating images so section dividers span fully, and remove vertical padding */
+.md-typeset hr {
+    clear: both;
+    margin-top: 0em;
+    margin-bottom: 0em;
+}
