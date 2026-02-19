@@ -161,6 +161,10 @@ At the very bottom of the screen, a horizontal bar displays a color gradient lab
 </img-comparison-slider>
 </div>
 
+!!! tip
+
+    The image comparison slider above compares two map views: once where the steepness values are set to the minimum possible, and once where the steepness values are set to the maximum possible. This highlights how the steepness sliders, incline bar, and map colors all update in sync.
+
 ---
 
 ### Inspecting a Feature
