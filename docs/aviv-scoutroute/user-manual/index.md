@@ -45,24 +45,24 @@ AVIV ScoutRoute User Manual Table of Contents
 
 #### [Installation](installation.md)
 
-This guide provides platform-specific instructions for installing AVIV ScoutRoute on Android and iOS devices.
+This section provides platform-specific instructions for installing AVIV ScoutRoute on Android and iOS devices.
 
 #### [Getting Started](getting-started.md)
 
-This guide walks you through your first steps after installing AVIV ScoutRoute, including logging in, selecting a workspace, understanding basic concepts, and completing your first quest.
+This section walks you through your first steps after installing AVIV ScoutRoute, including logging in, selecting a workspace, understanding basic concepts, and completing your first quest.
 
 #### [Map Interface](map-interface.md)
 
-This guide explains the main AVIV ScoutRoute map interface, including how to navigate the map, understand quest icons, and interpret common pedestrian feature terminology.
+This section explains the main AVIV ScoutRoute map interface, including how to navigate the map, understand quest icons, and interpret common pedestrian feature terminology.
 
 #### [Completing Quests](completing-quests.md)
 
-This guide explains how to view, select, answer, submit, and undo quests in AVIV ScoutRoute.
+This section explains how to view, select, answer, submit, and undo quests in AVIV ScoutRoute.
 
 #### [Quest Types](quest-types.md)
 
-This guide provides a detailed reference for each quest input type you'll encounter in AVIV ScoutRoute.
+This section provides a detailed reference for each quest input type you'll encounter in AVIV ScoutRoute.
 
 #### [App Settings](app-settings.md)
 
-This guide provides a complete reference for all settings, controls, and features available in AVIV ScoutRoute.
+This section provides a complete reference for all settings, controls, and features available in AVIV ScoutRoute.

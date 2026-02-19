@@ -12,7 +12,7 @@ tags:
 
 ## Quest Types
 
-This guide provides a detailed reference for each quest input type you'll encounter in AVIV ScoutRoute.
+This section provides a detailed reference for each quest input type you'll encounter in AVIV ScoutRoute.
 
 _For a list of all guides on the TCAT Wiki, refer to the [Guides List](../../guides-list/index.md)._
 

@@ -12,7 +12,7 @@ tags:
 
 ## Completing Quests
 
-This guide explains how to view, select, answer, submit, and undo quests in AVIV ScoutRoute.
+This section explains how to view, select, answer, submit, and undo quests in AVIV ScoutRoute.
 
 _For a list of all guides on the TCAT Wiki, refer to the [Guides List](../../guides-list/index.md)._
 

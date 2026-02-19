@@ -22,4 +22,4 @@ TDEI Portal User Manual Table of Contents
 
 #### [TDEI Portal Account Registration Guide](account-registration.md)
 
-This guide explains how to register for a TDEI account using the TDEI Portal.
+This section explains how to register for a TDEI account using the TDEI Portal.

@@ -87,8 +87,8 @@ This document explains the structure of the OS-CONNECT "Jurisdiction Snapshot" Q
 
 #### [OS-CONNECT QA/QC Report Subsections in Detail](metrics.md)
 
-This guide covers the details of each OS-CONNECT QA/QC report subsection and metric.
+This section covers the details of each OS-CONNECT QA/QC report subsection and metric.
 
 #### [Data Infrastructure for QA/QC Report Generation](infrastructure.md)
 
-This guide details the data infrastructure system components used by OS-CONNECT QA/QC reports.
+This section details the data infrastructure system components used by OS-CONNECT QA/QC reports.

@@ -12,7 +12,7 @@ tags:
 
 ## OS-CONNECT QA/QC Report Subsections in Detail
 
-This guide covers the details of each OS-CONNECT QA/QC report subsection and metric.
+This section covers the details of each OS-CONNECT QA/QC report subsection and metric.
 
 ---
 

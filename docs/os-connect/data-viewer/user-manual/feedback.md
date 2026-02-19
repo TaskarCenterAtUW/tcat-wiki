@@ -12,7 +12,7 @@ tags:
 
 ## Feedback
 
-This guide explains how to report data issues in the OS-CONNECT Data Viewer using the Inspect and Report Issue features.
+This section explains how to report data issues in the OS-CONNECT Data Viewer using the Inspect and Report Issue features.
 
 _For a list of all guides on the TCAT Wiki, refer to the [Guides List](../../../guides-list/index.md)._
 
