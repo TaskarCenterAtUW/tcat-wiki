@@ -111,8 +111,8 @@ function Get-MarkdownLinks {
     # Remove inline code (` ... `) to avoid extracting links from code
     $contentWithoutInlineCode = $contentWithoutCodeBlocks -replace '`[^`]*`', ''
 
-    # Match [text](url) pattern
-    $linkPattern = '\[([^\]]*)\]\(([^)]+)\)'
+    # Match [text](url) pattern (negative lookbehind excludes image links)
+    $linkPattern = '(?<!!)\[([^\]]*)\]\(([^)]+)\)'
     $imagePattern = '!\[([^\]]*)\]\(([^)]+)\)'
 
     $links = [regex]::Matches($contentWithoutInlineCode, $linkPattern)

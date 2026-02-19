@@ -88,9 +88,8 @@ See [Link One](page1.md) and [Link Two](page2.md) for details.
         It "Should extract image references" {
             $content = "Here is an image: ![Alt text](images/photo.png)"
             $links = Get-MarkdownLinks -content $content
-            # The link pattern also matches the [text](url) part of images, so we get 2 matches
-            # This is intentional - we want to check both link and image paths
-            $links.Count | Should -Be 2
+            # Image links are matched only by the image pattern, not double-counted
+            $links.Count | Should -Be 1
             $links[0].Groups[2].Value | Should -Be "images/photo.png"
         }
 
@@ -99,8 +98,8 @@ See [Link One](page1.md) and [Link Two](page2.md) for details.
 Check [this link](page.md) and this image ![logo](logo.png).
 "@
             $links = Get-MarkdownLinks -content $content
-            # 1 explicit link + 2 matches for image (link pattern + image pattern)
-            $links.Count | Should -Be 3
+            # 1 explicit link + 1 image match
+            $links.Count | Should -Be 2
         }
     }
 
@@ -656,8 +655,8 @@ Fragment: [Jump to section](#overview)
         $links = Get-MarkdownLinks -content $content
 
         # Links found: getting-started.md, api/index.md, https://github.com,
-        # images/logo.png (matched twice - by link and image patterns), #overview
-        $links.Count | Should -Be 6
+        # images/logo.png (image pattern only), #overview
+        $links.Count | Should -Be 5
     }
 
     It "Should correctly categorize external vs internal URLs" {
@@ -668,7 +667,7 @@ Fragment: [Jump to section](#overview)
         $internalCount = ($links | Where-Object { -not (Test-ExternalUrl -url $_.Groups[2].Value) }).Count
 
         $externalCount | Should -Be 1  # https://github.com
-        $internalCount | Should -Be 5  # getting-started.md, api/index.md, images/logo.png (x2), #overview
+        $internalCount | Should -Be 4  # getting-started.md, api/index.md, images/logo.png, #overview
     }
 
     It "Should validate all internal links correctly" {
