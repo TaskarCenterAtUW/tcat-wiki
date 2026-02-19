@@ -12,7 +12,7 @@ Guides, tutorials, and user manuals produced by TCAT and/or its partners are lis
 
 #### [AccessMap User Manual](../accessmap/user-manual/index.md)
 
-This user manual explains how to use the AccessMap application.
+This user manual explains how to use the AccessMap web application.
 
 ### [AVIV ScoutRoute](../aviv-scoutroute/index.md)
 
