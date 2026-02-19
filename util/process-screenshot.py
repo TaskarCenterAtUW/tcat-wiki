@@ -497,11 +497,11 @@ def process_file(
                 f"  Re-run with --overwrite to replace existing files."
             )
 
-        # Save as uncompressed PNG with no metadata.
-        # compress_level=0 disables deflate compression.
+        # Save as maximally-compressed lossless PNG with no metadata.
+        # compress_level=9 applies maximum zlib deflate compression.
         # Pillow writes no text chunks, no gamma, no ICC profile —
         # only the mandatory IHDR, IDAT, and IEND chunks.
-        result.save(out_path, "PNG", compress_level=0)
+        result.save(out_path, "PNG", compress_level=9)
         outputs.append(out_path)
         print(f"  -> {out_path}")
 
