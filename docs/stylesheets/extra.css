@@ -183,3 +183,9 @@ abbr[title],
     margin-top: 0em;
     margin-bottom: 0em;
 }
+
+/* Enable CSS order-based sorting for sidebar nav lists (supports nav_order frontmatter) */
+.md-nav__list {
+    display: flex;
+    flex-direction: column;
+}
