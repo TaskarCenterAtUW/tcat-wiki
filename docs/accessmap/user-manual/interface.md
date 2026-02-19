@@ -103,8 +103,8 @@ Controls are positioned around the edges of the map view in two groups.
 
 ---
 
-![Map legend](../../resources/images/accessmap/user-manual/interface/map-legend-light.png#only-light){ width="262" align=right }
-![Map legend](../../resources/images/accessmap/user-manual/interface/map-legend-dark.png#only-dark){ width="262" align=right }
+![Map legend](../../resources/images/accessmap/user-manual/interface/map-legend-light.png#only-light){ .img-right }
+![Map legend](../../resources/images/accessmap/user-manual/interface/map-legend-dark.png#only-dark){ .img-right }
 
 ### Map Legend
 

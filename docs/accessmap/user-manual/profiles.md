@@ -41,12 +41,12 @@ The profile panel is located in the [sidebar](interface.md#sidebar). Select a pr
 
 ---
 
+![Custom preferences panel](../../resources/images/accessmap/user-manual/profiles/custom-light.png#only-light){ .img-right }
+![Custom preferences panel](../../resources/images/accessmap/user-manual/profiles/custom-dark.png#only-dark){ .img-right }
+
 ### Customizing Preferences
 
 Selecting the **Custom** profile unlocks individual preference controls. These let you configure exactly how AccessMap plans your route.
-
-![Custom preferences panel](../../resources/images/accessmap/user-manual/profiles/custom-light.png#only-light){ width="360" align=right }
-![Custom preferences panel](../../resources/images/accessmap/user-manual/profiles/custom-dark.png#only-dark){ width="360" align=right }
 
 #### Routing Preferences
 
