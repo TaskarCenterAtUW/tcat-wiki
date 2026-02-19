@@ -142,3 +142,9 @@ abbr[title],
     --md-mermaid-label-fg-color: #000000;
     --md-mermaid-node-fg-color: #333333;
 }
+
+/* Theme-conditional block visibility (mirrors #only-light / #only-dark for non-img elements) */
+.only-light { display: block; }
+.only-dark  { display: none;  }
+[data-md-color-scheme="slate"] .only-light { display: none;  }
+[data-md-color-scheme="slate"] .only-dark  { display: block; }
