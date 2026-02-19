@@ -149,6 +149,27 @@ abbr[title],
 [data-md-color-scheme="slate"] .only-light { display: none;  }
 [data-md-color-scheme="slate"] .only-dark  { display: block; }
 
+/* Responsive right-floated section images. Place image just above its section header. */
+.md-typeset img.img-right,
+.md-typeset img.img-right-sm,
+.md-typeset img.img-right-lg {
+    float: right;
+    height: auto;
+    margin: 0 0 0.1em 0.1em;
+}
+.md-typeset img.img-right {
+    width: 33%;
+    min-width: 158px;
+}
+.md-typeset img.img-right-sm {
+    width: 25%;
+    min-width: 120px;
+}
+.md-typeset img.img-right-lg {
+    width: 50%;
+    min-width: 240px;
+}
+
 /* Ensure horizontal rules always clear floating images so section dividers span fully, and remove vertical padding */
 .md-typeset hr {
     clear: both;
