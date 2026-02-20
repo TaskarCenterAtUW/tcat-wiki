@@ -18,7 +18,7 @@ Choose your path: each one starts with the simplest document and then offers dee
 
     Do you want to find accessible, customized pedestrian routing and share it with others?
 
-    **Get Started:** _(Coming soon!)_ [Use AccessMap](accessmap/user-manual/index.md)
+    **Get Started:** [Use AccessMap](accessmap/user-manual/index.md)
 
 ??? abstract "I work for a jurisdiction or agency"
 
