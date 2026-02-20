@@ -34,21 +34,21 @@ A data consumer is a user who will read data from the TDEI. Any person can regis
 
 #### Point of Contact
 
-Each Project Group must have a designated Point of Contact (PoC). They have the authority to approve access for data generators for that Project Group. The purpose of the PoC is to ensure that staff from the related agency, company, or group with the proper authority are approving access for data generators.
+Each Project Group must have a designated Point of Contact (PoC). They have the authority to approve access for data producers for that Project Group. The purpose of the PoC is to ensure that staff from the related agency, company, or group with the proper authority are approving access for data producers.
 
-#### Data Generator
+#### Data Producer
 
-A data generator is a user who will contribute data to the TDEI.
+A data producer is a user who will contribute data to the TDEI.
 
-##### Flex Data Generator
+##### Flex Data Producer
 
 The `flex-data-generator` role allows a user to create GTFS Flex data.
 
-##### Pathways Data Generator
+##### Pathways Data Producer
 
 The `pathways-data-generator` role allows a user to create GTFS Pathways data.
 
-##### OpenSidewalks Data Generator
+##### OpenSidewalks Data Producer
 
 The `osw-data-generator` role allows a user to upload OpenSidewalks data.
 

@@ -1,6 +1,6 @@
 #region Meta
 [project]
-version = "6.0.1"
+version = "6.1.0"
 site_name = "The Taskar Center for Accessible Technology"
 site_description = "Information and guides related to the Taskar Center for Accessible Technology (TCAT) at the University of Washington."
 site_author = "Taskar Center for Accessible Technology"
@@ -228,6 +228,7 @@ nav = [
         "tdei/index.md",
         {"Portal" = [
             "tdei/portal/index.md",
+            {"How To" = [ {"How To: Download OS-CONNECT Data from the TDEI Portal" = "tdei/portal/how-to/download-os-connect.md"} ]},
             {"User Manual" = [
                 "tdei/portal/user-manual/index.md",
                 {"TDEI Portal Account Registration Guide" = "tdei/portal/user-manual/account-registration.md"}

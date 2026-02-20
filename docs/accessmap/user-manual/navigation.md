@@ -53,14 +53,14 @@ To follow your position on the map in real time:
 
 3. Your position is shown on the map as you move, and directions update accordingly
 
-!!! question
-
-    Location not being detected? Real-time location tracking requires location permissions to be enabled. If you experience issues, check your settings and ensure location access is allowed at the system level for your browser and at the browser level for the `https://accessmap.app/` website.
-
 4. You can also select one of the directions cards and a highlight will appear on the card and the associated segment on the map will be highlighted.
 
 ![Directions panel with a card selected and map segment highlighted](../../resources/images/accessmap/user-manual/navigation/selected-light.png#only-light)
 ![Directions panel with a card selected and map segment highlighted](../../resources/images/accessmap/user-manual/navigation/selected-dark.png#only-dark)
+
+!!! question "Location not being detected?"
+
+    Real-time location tracking requires location permissions to be enabled. If you experience issues, check your settings and ensure location access is allowed at the system level for your browser and at the browser level for the `https://accessmap.app/` website.
 
 ---
 
