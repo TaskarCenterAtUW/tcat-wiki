@@ -1,8 +1,24 @@
 /**
  * extra.css
  *
+ * Custom styles for the TCAT Wiki Zensical site.
+ *
+ * Sections:
+ *   1. Temporary Patches         — workarounds to remove when upstream supports them
+ *   2. Typography                — line height, heading hierarchy, abbreviation underlines
+ *   3. Header & Branding         — site title, subtitle, logo, TCAT link
+ *   4. Layout Utilities          — right-floated images, horizontal rules, nav ordering
+ *   5. Tables                    — schema definition tables
+ *   6. Admonitions               — title/icon alignment
+ *   7. Theme-Conditional Content — light/dark visibility for non-image elements
+ *   8. Diagrams                  — Mermaid overrides
+ *
  * @format
  */
+
+/* =============================================================================
+   1. Temporary Patches
+   ============================================================================= */
 
 /*
  * TEMPORARY TAB VISIBILITY PATCH
@@ -21,26 +37,16 @@
     display: none;
 }
 
-/* Schema definition tables */
-.schema-table {
-    width: 100%;
-    table-layout: fixed;
-}
-.schema-table td:first-child {
-    width: 150px;
-    white-space: nowrap;
-    font-weight: bold;
-}
-.schema-table td:last-child {
-    width: auto;
-}
+/* =============================================================================
+   2. Typography
+   ============================================================================= */
 
-/* Reduce line spacing site-wide. Default is 1.8 */
+/* Reduce line spacing site-wide (default is 1.8) */
 .md-typeset {
     line-height: 1.3;
 }
 
-/* Hide auto-generated page title (H1), promote H2 to H1 styling */
+/* Hide auto-generated page title (H1); promote H2 to H1 styling */
 .md-typeset h1 {
     display: none;
 }
@@ -51,7 +57,7 @@
     line-height: 1;
 }
 
-/* Abbreviation underline styling */
+/* Abbreviation underline styling — subtle dotted underline only */
 abbr,
 abbr[title],
 .md-typeset abbr,
@@ -67,24 +73,18 @@ abbr[title],
     position: absolute;
     left: 0;
     right: 0;
-    bottom: 0.05em; /* Change this to adjust dotted line offset */
+    bottom: 0.05em;
     border-bottom: 1px dotted rgba(0, 0, 0, 0.3);
 }
 [data-md-color-scheme="slate"] .md-typeset abbr[title]::after {
     border-bottom-color: rgba(255, 255, 255, 0.3);
 }
 
-/* Admonition title: vertically center text with icon, prevent icon clipping */
-.md-typeset .admonition-title,
-.md-typeset details summary {
-    line-height: 1.8;
-}
-.md-typeset .admonition-title::before,
-.md-typeset details summary::before {
-    vertical-align: middle;
-}
+/* =============================================================================
+   3. Header & Branding
+   ============================================================================= */
 
-/* Header title with subtitle */
+/* Header title with subtitle — vertical centering */
 .md-header__inner {
     align-items: center;
 }
@@ -105,6 +105,8 @@ abbr[title],
     line-height: 1.2;
     letter-spacing: 0em;
 }
+
+/* Subtitle line beneath the site title */
 .md-header__subtitle {
     display: block;
     font-size: 0.55em;
@@ -119,7 +121,7 @@ abbr[title],
     max-width: 100%;
 }
 
-/* Header TCAT link, inherits text color, no underline */
+/* Header TCAT link — inherits text color, no underline */
 .md-header__tcat-link {
     color: inherit;
     text-decoration: none;
@@ -131,32 +133,16 @@ abbr[title],
     opacity: 0.85;
 }
 
-/* Swap logo if in light mode */
+/* Swap logo to dark variant in light mode */
 [data-md-color-scheme="default"] .md-logo img {
     content: url("../resources/images/logo/tcat/logo-dark.png");
 }
 
-/* TDEI Architecture diagram - force black text */
-#tdei-arch {
-    --md-mermaid-label-fg-color: #000000;
-    --md-mermaid-node-fg-color: #333333;
-}
+/* =============================================================================
+   4. Layout Utilities
+   ============================================================================= */
 
-/* Theme-conditional block visibility (mirrors #only-light / #only-dark for non-img elements) */
-.only-light {
-    display: block;
-}
-.only-dark {
-    display: none;
-}
-[data-md-color-scheme="slate"] .only-light {
-    display: none;
-}
-[data-md-color-scheme="slate"] .only-dark {
-    display: block;
-}
-
-/* Responsive right-floated section images. Place image just above its section header. */
+/* Responsive right-floated section images (place image just above its section header) */
 .md-typeset img.img-right,
 .md-typeset img.img-right-sm,
 .md-typeset img.img-right-lg {
@@ -177,7 +163,7 @@ abbr[title],
     min-width: 240px;
 }
 
-/* Ensure horizontal rules always clear floating images so section dividers span fully, and remove vertical padding */
+/* Horizontal rules always clear floating images; remove vertical padding */
 .md-typeset hr {
     clear: both;
     margin-top: 0em;
@@ -188,4 +174,64 @@ abbr[title],
 .md-nav__list {
     display: flex;
     flex-direction: column;
+}
+
+/* =============================================================================
+   5. Tables
+   ============================================================================= */
+
+/* Schema definition tables */
+.schema-table {
+    width: 100%;
+    table-layout: fixed;
+}
+.schema-table td:first-child {
+    width: 150px;
+    white-space: nowrap;
+    font-weight: bold;
+}
+.schema-table td:last-child {
+    width: auto;
+}
+
+/* =============================================================================
+   6. Admonitions
+   ============================================================================= */
+
+/* Vertically center admonition title text with icon; prevent icon clipping */
+.md-typeset .admonition-title,
+.md-typeset details summary {
+    line-height: 1.8;
+}
+.md-typeset .admonition-title::before,
+.md-typeset details summary::before {
+    vertical-align: middle;
+}
+
+/* =============================================================================
+   7. Theme-Conditional Content
+   ============================================================================= */
+
+/* Mirrors #only-light / #only-dark for non-image elements */
+.only-light {
+    display: block;
+}
+.only-dark {
+    display: none;
+}
+[data-md-color-scheme="slate"] .only-light {
+    display: none;
+}
+[data-md-color-scheme="slate"] .only-dark {
+    display: block;
+}
+
+/* =============================================================================
+   8. Diagrams
+   ============================================================================= */
+
+/* TDEI Architecture diagram — force black text */
+#tdei-arch {
+    --md-mermaid-label-fg-color: #000000;
+    --md-mermaid-node-fg-color: #333333;
 }
