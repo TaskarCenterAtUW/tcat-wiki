@@ -1,13 +1,27 @@
 /**
  * extra.js
  *
+ * Client-side enhancements for the TCAT Wiki Zensical site.
+ *
+ * Sections:
+ *   1. Title Capitalization Data     — titleMapSource and derived titleMap lookup
+ *   2. Text Transformation Helpers   — toTitleCase, applyTitleCapitalization
+ *   3. DOM Fixup Functions           — fixElementCapitalization, fixNavigationCapitalization
+ *   4. Initialization                — event hooks, MutationObserver, periodic fallback
+ *
  * @format
  */
 
-/**
- * Title capitalization map - mirrors $script:titleMap from generate-nav.ps1
- * Keys use spaces (dashes are handled automatically during matching)
- */
+// =============================================================================
+// 1. Title Capitalization Data
+// =============================================================================
+//
+// titleMapSource maps lowercase keys (space-separated) to their correctly
+// capitalized display values. Keys with spaces automatically gain a dash
+// variant in the expanded titleMap (e.g., "user manual" → "user-manual").
+//
+// Keep this in sync with $script:titleMap in util/generate-nav.ps1.
+
 const titleMapSource = {
     osw: "OSW",
     tdei: "TDEI",
@@ -35,8 +49,8 @@ const titleMapSource = {
 };
 
 /**
- * Expanded titleMap that includes both space and dash variants.
- * Generated automatically from titleMapSource.
+ * Expanded lookup that includes both space and dash variants of each key.
+ * Generated automatically from titleMapSource — do not edit directly.
  */
 const titleMap = Object.fromEntries(
     Object.entries(titleMapSource).flatMap(([key, value]) => {
@@ -48,6 +62,10 @@ const titleMap = Object.fromEntries(
         return entries;
     })
 );
+
+// =============================================================================
+// 2. Text Transformation Helpers
+// =============================================================================
 
 /**
  * Converts a string to Title Case.
@@ -63,8 +81,9 @@ function toTitleCase(str) {
 }
 
 /**
- * Applies correct capitalization to a text string based on titleMap.
- * Falls back to Title Case for unmatched text.
+ * Applies correct capitalization to a text string using titleMap.
+ * Checks for an exact match first, then replaces known terms in-place,
+ * and falls back to Title Case for any remaining unmatched text.
  * @param {string} text - The text to transform
  * @returns {string} - The text with correct capitalization
  */
@@ -79,31 +98,24 @@ function applyTitleCapitalization(text) {
         return titleMap[lowerText];
     }
 
-    // Apply mapped terms first, then Title Case the rest
     let result = trimmedText;
 
-    // Track which parts have been replaced by titleMap entries
+    // Placeholder slots for matched segments, keyed by index
     const replacements = [];
 
-    // First, protect any titleMapSource VALUES that appear in the text
-    // (e.g., if text already contains "Clark County Walk/Roll Event" from frontmatter)
+    // Pass 1: protect titleMapSource VALUES already present in the text
+    // (e.g., text already contains "Clark County Walk/Roll Event" from frontmatter)
     for (const value of Object.values(titleMapSource)) {
-        // Escape special regex characters in the value
         const escapedValue = value.replace(/[.*+?^${}()|[\]\\]/g, "\\$&");
         const regex = new RegExp(escapedValue, "gi");
         result = result.replace(regex, (match) => {
-            // If the match has correct casing, preserve it; otherwise use the canonical value
-            replacements.push({
-                original: match,
-                replacement: match === value ? value : value,
-            });
+            replacements.push({ original: match, replacement: value });
             return `\x00${replacements.length - 1}\x00`;
         });
     }
 
-    // Then, match titleMapSource KEYS and replace with their values
+    // Pass 2: match titleMapSource KEYS (space/dash interchangeable) and replace
     for (const [key, value] of Object.entries(titleMapSource)) {
-        // Create regex to match the key with spaces or dashes interchangeably
         const pattern = key.replace(/ /g, "[- ]");
         const regex = new RegExp(`\\b${pattern}\\b`, "gi");
         result = result.replace(regex, (match) => {
@@ -112,10 +124,10 @@ function applyTitleCapitalization(text) {
         });
     }
 
-    // Apply Title Case to any remaining text (not matched by titleMap)
+    // Pass 3: apply Title Case to any remaining unmatched text
     result = toTitleCase(result);
 
-    // Restore the titleMap replacements
+    // Restore all placeholder slots with their canonical replacements
     replacements.forEach((r, i) => {
         result = result.replace(`\x00${i}\x00`, r.replacement);
     });
@@ -123,16 +135,19 @@ function applyTitleCapitalization(text) {
     return result;
 }
 
+// =============================================================================
+// 3. DOM Fixup Functions
+// =============================================================================
+
 /**
  * Applies title capitalization to a single element's text content.
+ * Iterates child text nodes to preserve mixed content (e.g., text + icons).
  * @param {Element} element - The DOM element to fix
  */
 function fixElementCapitalization(element) {
     if (!element) return;
 
-    // Handle elements with mixed content (text + icons)
-    const childNodes = Array.from(element.childNodes);
-    childNodes.forEach((node) => {
+    Array.from(element.childNodes).forEach((node) => {
         if (node.nodeType === Node.TEXT_NODE && node.textContent.trim()) {
             const original = node.textContent;
             const fixed = applyTitleCapitalization(original);
@@ -144,42 +159,42 @@ function fixElementCapitalization(element) {
 }
 
 /**
- * Applies title capitalization to all navigation elements.
- * Targets: navigation tabs, sidebar nav items, TOC entries, breadcrumbs.
+ * Applies title capitalization to all navigation elements in the document.
+ * Targets: top tabs, sidebar nav links, TOC entries, breadcrumbs, header topic.
  */
 function fixNavigationCapitalization() {
-    // All navigation link selectors
     const selectors = [
         ".md-tabs__link", // Top navigation tabs
-        ".md-nav__link", // All nav links (sidebar + TOC)
+        ".md-nav__link", // Sidebar and TOC nav links
         ".md-path__link", // Breadcrumb links
         ".md-header__topic", // Header topic text
         ".md-ellipsis", // Truncated nav items
     ];
 
-    const allElements = document.querySelectorAll(selectors.join(", "));
-    allElements.forEach(fixElementCapitalization);
+    document
+        .querySelectorAll(selectors.join(", "))
+        .forEach(fixElementCapitalization);
 }
 
-/**
- * Initialize with aggressive monitoring for instant navigation.
- */
-(function initCapitalizationFixes() {
-    // Apply fixes immediately and repeatedly during initial load
-    fixNavigationCapitalization();
+// =============================================================================
+// 4. Initialization
+// =============================================================================
+//
+// Runs fixNavigationCapitalization immediately and re-runs it on every
+// possible navigation or DOM update event to handle Zensical's instant nav.
 
-    // Apply again after short delays to catch async renders
+(function initCapitalizationFixes() {
+    // Apply immediately and after short delays to catch async renders on load
+    fixNavigationCapitalization();
     setTimeout(fixNavigationCapitalization, 100);
     setTimeout(fixNavigationCapitalization, 250);
     setTimeout(fixNavigationCapitalization, 500);
 
-    // Create a global observer on document body to catch ALL changes
+    // MutationObserver: re-apply whenever the DOM changes
     const observer = new MutationObserver(() => {
-        // Use requestAnimationFrame for smoother updates
         requestAnimationFrame(fixNavigationCapitalization);
     });
 
-    // Start observing once body is available
     const startObserving = () => {
         observer.observe(document.body, {
             childList: true,
@@ -195,16 +210,16 @@ function fixNavigationCapitalization() {
         document.addEventListener("DOMContentLoaded", startObserving);
     }
 
-    // Hook into all possible navigation events
+    // Standard browser navigation events
     document.addEventListener("DOMContentLoaded", fixNavigationCapitalization);
     window.addEventListener("load", fixNavigationCapitalization);
     window.addEventListener("hashchange", fixNavigationCapitalization);
     window.addEventListener("popstate", fixNavigationCapitalization);
 
-    // The instant loading feature dispatches a custom event
+    // Zensical instant-loading custom event
     document.addEventListener("DOMContentSwitch", fixNavigationCapitalization);
 
-    // Also use location subscription if available
+    // Zensical location$ observable (if available)
     if (typeof location$ !== "undefined") {
         location$.subscribe(() => {
             setTimeout(fixNavigationCapitalization, 0);
@@ -212,14 +227,10 @@ function fixNavigationCapitalization() {
         });
     }
 
-    // Fallback: periodic check for first few seconds after load
+    // Periodic fallback for the first ~10 seconds after load
     let checkCount = 0;
     const periodicCheck = setInterval(() => {
         fixNavigationCapitalization();
-        checkCount++;
-        if (checkCount >= 20) {
-            // Stop after ~10 seconds
-            clearInterval(periodicCheck);
-        }
+        if (++checkCount >= 20) clearInterval(periodicCheck);
     }, 500);
 })();
