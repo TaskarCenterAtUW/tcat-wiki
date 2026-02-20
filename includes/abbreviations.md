@@ -146,6 +146,7 @@
 *[USGS]: United States Geological Survey
 *[UW]: University of Washington
 *[UX]: User Experience
+*[V2X]: Vehicle-to-Everything
 *[WIC]: Special Supplemental Nutrition Program for Women, Infants, and Children
 *[WSDOT]: Washington State Department of Transportation
 *[WSP]: Washington State Proviso

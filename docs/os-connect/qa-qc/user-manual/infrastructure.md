@@ -12,7 +12,7 @@ tags:
 
 ## Data Infrastructure for QA/QC Report Generation
 
-This guide details the data infrastructure system components used by OS-CONNECT QA/QC reports.
+This section details the data infrastructure system components used by OS-CONNECT QA/QC reports.
 
 ---
 

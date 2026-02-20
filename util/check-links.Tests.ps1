@@ -2,8 +2,8 @@
 #Requires -Modules @{ ModuleName='Pester'; ModuleVersion='5.0.0' }
 
 # Name: TCAT Wiki - Link Checker Tests
-# Version: 2.0.0
-# Date: 2026-02-06
+# Version: 2.2.0
+# Date: 2026-02-18
 # Author: Amy Bordenave, Taskar Center for Accessible Technology, University of Washington
 # License: CC-BY-ND 4.0 International
 
@@ -88,9 +88,8 @@ See [Link One](page1.md) and [Link Two](page2.md) for details.
         It "Should extract image references" {
             $content = "Here is an image: ![Alt text](images/photo.png)"
             $links = Get-MarkdownLinks -content $content
-            # The link pattern also matches the [text](url) part of images, so we get 2 matches
-            # This is intentional - we want to check both link and image paths
-            $links.Count | Should -Be 2
+            # Image links are matched only by the image pattern, not double-counted
+            $links.Count | Should -Be 1
             $links[0].Groups[2].Value | Should -Be "images/photo.png"
         }
 
@@ -99,8 +98,8 @@ See [Link One](page1.md) and [Link Two](page2.md) for details.
 Check [this link](page.md) and this image ![logo](logo.png).
 "@
             $links = Get-MarkdownLinks -content $content
-            # 1 explicit link + 2 matches for image (link pattern + image pattern)
-            $links.Count | Should -Be 3
+            # 1 explicit link + 1 image match
+            $links.Count | Should -Be 2
         }
     }
 
@@ -130,6 +129,83 @@ Another [Real Link](real.md) here.
             $links.Count | Should -BeGreaterOrEqual 1
             # The real link should be found
             ($links | Where-Object { $_.Groups[2].Value -eq "real.md" }).Count | Should -Be 1
+        }
+    }
+
+    Context "When content has HTML comments" {
+        It "Should ignore links inside single-line HTML comments" {
+            $content = @"
+Regular [Link](page.md) here.
+<!-- IMAGE PLACEHOLDER: ![Screenshot](../../resources/images/screenshot.png){ width="826" } -->
+Another [Real Link](real.md) here.
+"@
+            $links = Get-MarkdownLinks -content $content
+            $links.Count | Should -Be 2
+            $links[0].Groups[2].Value | Should -Be "page.md"
+            $links[1].Groups[2].Value | Should -Be "real.md"
+        }
+
+        It "Should ignore links inside multi-line HTML comments" {
+            $content = @"
+Regular [Link](page.md) here.
+<!--
+This is a multi-line comment with a [Commented Link](commented.md)
+and an image ![Alt](images/photo.png)
+-->
+Another [Real Link](real.md) here.
+"@
+            $links = Get-MarkdownLinks -content $content
+            $links.Count | Should -Be 2
+            $links[0].Groups[2].Value | Should -Be "page.md"
+            $links[1].Groups[2].Value | Should -Be "real.md"
+        }
+
+        It "Should ignore links in multiple HTML comments" {
+            $content = @"
+[Link1](page1.md)
+<!-- [Hidden1](hidden1.md) -->
+[Link2](page2.md)
+<!-- [Hidden2](hidden2.md) -->
+[Link3](page3.md)
+"@
+            $links = Get-MarkdownLinks -content $content
+            $links.Count | Should -Be 3
+            $links[0].Groups[2].Value | Should -Be "page1.md"
+            $links[1].Groups[2].Value | Should -Be "page2.md"
+            $links[2].Groups[2].Value | Should -Be "page3.md"
+        }
+    }
+
+    Context "When content has YAML frontmatter with # comments" {
+        It "Should ignore links inside YAML frontmatter comments" {
+            $content = @"
+---
+title: Test Page
+tags:
+    - Guide
+# exclude-from-main-guides-list
+# See [Reference](reference.md) for details
+---
+
+Regular [Link](page.md) here.
+"@
+            $links = Get-MarkdownLinks -content $content
+            $links.Count | Should -Be 1
+            $links[0].Groups[2].Value | Should -Be "page.md"
+        }
+
+        It "Should strip entire frontmatter block" {
+            $content = @"
+---
+title: My Page
+description: Check [this](meta-link.md) out
+---
+
+[Real Link](real.md) is here.
+"@
+            $links = Get-MarkdownLinks -content $content
+            $links.Count | Should -Be 1
+            $links[0].Groups[2].Value | Should -Be "real.md"
         }
     }
 
@@ -438,6 +514,19 @@ Describe "Test-CacheEntryValid" {
         }
     }
 
+    Context "Timeout cache entries" {
+        It "Should return true for timeout entry within TTL (TTL-valid but retried by caller)" {
+            $entry = @{
+                timestamp = (Get-Date).AddHours(-1).ToString("o")
+                valid     = $false
+                status    = "The request was canceled due to the configured HttpClient.Timeout of 5 seconds elapsing."
+                isTimeout = $true
+            }
+            # Test-CacheEntryValid only checks TTL, so it returns true
+            Test-CacheEntryValid -entry $entry | Should -Be $true
+        }
+    }
+
     Context "Invalid cache entries" {
         It "Should return false for null entry" {
             Test-CacheEntryValid -entry $null | Should -Be $false
@@ -566,8 +655,8 @@ Fragment: [Jump to section](#overview)
         $links = Get-MarkdownLinks -content $content
 
         # Links found: getting-started.md, api/index.md, https://github.com,
-        # images/logo.png (matched twice - by link and image patterns), #overview
-        $links.Count | Should -Be 6
+        # images/logo.png (image pattern only), #overview
+        $links.Count | Should -Be 5
     }
 
     It "Should correctly categorize external vs internal URLs" {
@@ -578,7 +667,7 @@ Fragment: [Jump to section](#overview)
         $internalCount = ($links | Where-Object { -not (Test-ExternalUrl -url $_.Groups[2].Value) }).Count
 
         $externalCount | Should -Be 1  # https://github.com
-        $internalCount | Should -Be 5  # getting-started.md, api/index.md, images/logo.png (x2), #overview
+        $internalCount | Should -Be 4  # getting-started.md, api/index.md, images/logo.png, #overview
     }
 
     It "Should validate all internal links correctly" {

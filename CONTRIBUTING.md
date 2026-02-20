@@ -192,25 +192,53 @@ For creating screenshots with a consistent style, Firefox DevTools is to be used
 
 3. Add custom device profiles:
     1. Name: `[Screenshot] Web - Portrait`
-        1. Size: `671`x`1196`
+        1. Size: `810`x`1440`
 
         2. Device Pixel Ratio: `1`
 
         3. User Agent String: `Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:140.0) Gecko/20100101 Firefox/140.0`
 
     2. Name: `[Screenshot] Web - Landscape`
-        1. Size: `1196`x`671`
+        1. Size: `1440`x`810`
 
         2. Device Pixel Ratio: `1`
 
         3. User Agent String: `Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:140.0) Gecko/20100101 Firefox/140.0`
 
-4. Resulting screenshots will fit exactly within the 2px outside border present in the following screenshot templates:
-    1. [Landscape (Desktop) - templates/images/screenshots/landscape-desktop.png](https://github.com/TaskarCenterAtUW/tcat-wiki/blob/main/templates/images/screenshots/landscape-desktop.png)
+4. It is recommended to remove all embedded metadata, such as with the use of [ExifToolGUI](https://exiftool.org/gui/).
 
-    2. [Portrait (Desktop) - templates/images/screenshots/portrait-desktop.png](https://github.com/TaskarCenterAtUW/tcat-wiki/blob/main/templates/images/screenshots/portrait-desktop.png)
+5. Process screenshots with the `process-screenshot.py` utility to generate themed light/dark variants with borders and drop shadows:
 
-5. It is recommended to remove all embedded metadata, such as with the use of [ExifToolGUI](https://exiftool.org/gui/).
+    ```powershell
+    # Ensure venv is activated first!
+    ..\.venv\Scripts\Activate.ps1
+
+    # Process a single screenshot
+    python .\util\process-screenshot.py docs\resources\images\example\screenshot.png
+
+    # Process all images in a directory
+    python .\util\process-screenshot.py docs\resources\images\example\
+
+    # Process recursively with a custom profile
+    python .\util\process-screenshot.py docs\resources\images\ --recurse --profile uw-purple
+
+    # Regenerate existing output files
+    python .\util\process-screenshot.py screenshot.png --overwrite
+    ```
+
+    The script produces two variants per input image, saved as maximally-compressed lossless PNGs:
+
+    - `{name}-light.png` — dark border + drop shadow for light theme pages
+    - `{name}-dark.png` — light border + glow for dark theme pages
+
+    Reference them in Markdown with Zensical's theme-switching fragments:
+
+    ```markdown
+    ![Alt text](path/to/image-light.png#only-light)
+    ![Alt text](path/to/image-dark.png#only-dark)
+    ```
+
+    Mode-tagged source files (e.g., `image.light.png`, `image.dark.png`) generate only the matching variant. Run with `--help` for all options including per-variant color/shadow overrides.
 
 ##### Image Annotations
 

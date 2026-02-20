@@ -31,16 +31,16 @@ OS-CONNECT Data Viewer User Manual Table of Contents
 
 #### [Interface Overview](interface.md)
 
-This guide introduces the OS-CONNECT Data Viewer map interface, including the base map toggle, layer toggles, legend, search, and map navigation.
+This section introduces the OS-CONNECT Data Viewer map interface, including the base map toggle, layer toggles, legend, search, and map navigation.
 
 #### [Boundaries](boundaries.md)
 
-This guide explains how to view and interact with dataset boundaries in the OS-CONNECT Data Viewer, including viewing boundary and dataset details and accessing QA/QC quality reports.
+This section explains how to view and interact with dataset boundaries in the OS-CONNECT Data Viewer, including viewing boundary and dataset details and accessing QA/QC quality reports.
 
 #### [Data](data.md)
 
-This guide explains how to explore pedestrian network data in the OS-CONNECT Data Viewer, including feature types, attributes, and how to view feature details.
+This section explains how to explore pedestrian network data in the OS-CONNECT Data Viewer, including feature types, attributes, and how to view feature details.
 
 #### [Feedback](feedback.md)
 
-This guide explains how to report data issues in the OS-CONNECT Data Viewer using the Inspect and Report Issue features.
+This section explains how to report data issues in the OS-CONNECT Data Viewer using the Inspect and Report Issue features.

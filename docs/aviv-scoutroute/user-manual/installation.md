@@ -12,7 +12,7 @@ tags:
 
 ## Installation
 
-This guide provides platform-specific instructions for installing AVIV ScoutRoute on Android and iOS devices.
+This section provides platform-specific instructions for installing AVIV ScoutRoute on Android and iOS devices.
 
 _For a list of all guides on the TCAT Wiki, refer to the [Guides List](../../guides-list/index.md)._
 

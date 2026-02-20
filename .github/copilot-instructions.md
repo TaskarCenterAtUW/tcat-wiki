@@ -135,6 +135,38 @@ cd util
 
 **Why**: Navigation structure and guide indices aren't hand-maintained. These scripts parse `/docs` structure, extract frontmatter titles, and generate the Markdown files accordingly. Generation of the nav section of `zensical.toml` is done afterwards to ensure all files are included.
 
+### Process Screenshots
+
+The `process-screenshot.py` utility generates themed light/dark variants of screenshots with borders and drop shadows, saved as maximally-compressed lossless PNGs:
+
+```powershell
+# Ensure venv is activated first!
+..\.venv\Scripts\Activate.ps1
+
+# Process a single screenshot
+python .\util\process-screenshot.py docs\resources\images\example\screenshot.png
+
+# Process all images in a directory (optionally --recurse for subdirs)
+python .\util\process-screenshot.py docs\resources\images\example\
+
+# Apply a named custom profile
+python .\util\process-screenshot.py screenshot.png --profile uw-purple
+
+# Regenerate existing output files
+python .\util\process-screenshot.py screenshot.png --overwrite
+```
+
+**Output**: For each input `image.png`, produces `image-light.png` (dark border + shadow for light pages) and `image-dark.png` (light border + glow for dark pages). Mode-tagged sources (e.g., `image.light.png`) produce only the matching variant.
+
+**Markdown usage**:
+
+```markdown
+![Alt text](path/to/image-light.png#only-light)
+![Alt text](path/to/image-dark.png#only-dark)
+```
+
+Run with `--help` for all options including per-variant color, shadow, and blur overrides.
+
 ### Validate Links
 
 ```powershell
@@ -345,5 +377,6 @@ Refer to the official Zensical documentation, which is hosted online at https://
 - `util/generate-nav.Tests.ps1`: Pester tests for nav generator
 - `util/check-links.ps1`: PowerShell validation of links (not standard CI integration)
 - `util/check-links.Tests.ps1`: Pester tests for link checker
+- `util/process-screenshot.py`: Generates themed light/dark screenshot variants with borders, shadows, and maximum lossless PNG compression
 - `/includes/abbreviations.md`: Global acronym definitions
 - `/resources/stylesheets/extra.css`: Theming

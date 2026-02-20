@@ -22,4 +22,4 @@ Workspaces User Manual Table of Contents
 
 #### [Workspace Settings](workspace-settings.md)
 
-This guide explains how to use the Workspaces platform to configure Workspace Settings.
+This section explains how to use the Workspaces platform to configure Workspace Settings.

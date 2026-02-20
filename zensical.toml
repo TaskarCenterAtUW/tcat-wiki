@@ -1,6 +1,6 @@
 #region Meta
 [project]
-version = "5.0.0"
+version = "6.0.0"
 site_name = "The Taskar Center for Accessible Technology"
 site_description = "Information and guides related to the Taskar Center for Accessible Technology (TCAT) at the University of Washington."
 site_author = "Taskar Center for Accessible Technology"
@@ -8,13 +8,15 @@ site_url = "https://taskarcenteratuw.github.io/tcat-wiki/"
 copyright = "Copyright &copy; 2026 Taskar Center for Accessible Technology"
 extra_css = [
     "stylesheets/extra.css",
-    "https://unpkg.com/katex@0/dist/katex.min.css"
+    "https://unpkg.com/katex@0/dist/katex.min.css",
+    "https://cdn.jsdelivr.net/npm/img-comparison-slider@8/dist/styles.css"
 ]
 extra_javascript = [
     "javascripts/extra.js",
     "javascripts/katex.js",
     "https://unpkg.com/katex@0/dist/katex.min.js",
-    "https://unpkg.com/katex@0/dist/contrib/auto-render.min.js"
+    "https://unpkg.com/katex@0/dist/contrib/auto-render.min.js",
+    "https://cdn.jsdelivr.net/npm/img-comparison-slider@8/dist/index.js"
 ]
 
 #region Theme
@@ -129,7 +131,15 @@ nav = [
     {"Welcome" = "index.md"},
     {"AccessMap" = [
         "accessmap/index.md",
-        {"User Manual" = [ "accessmap/user-manual/index.md" ]}
+        {"User Manual" = [
+            "accessmap/user-manual/index.md",
+            {"Getting Started" = "accessmap/user-manual/getting-started.md"},
+            {"Interface Overview" = "accessmap/user-manual/interface.md"},
+            {"Mobility Profiles and Preferences" = "accessmap/user-manual/profiles.md"},
+            {"Planning a Route" = "accessmap/user-manual/route-planning.md"},
+            {"Navigation" = "accessmap/user-manual/navigation.md"},
+            {"Leaving Feedback" = "accessmap/user-manual/feedback.md"}
+        ]}
     ]},
     {"AVIV ScoutRoute" = [
         "aviv-scoutroute/index.md",
