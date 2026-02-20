@@ -18,7 +18,7 @@ Choose your path: each one starts with the simplest document and then offers dee
 
     Do you want to find accessible, customized pedestrian routing and share it with others?
 
-    **Get Started:** _(Coming soon!)_ [Use AccessMap](accessmap/user-manual/index.md)
+    **Get Started:** [Use AccessMap](accessmap/user-manual/index.md)
 
 ??? abstract "I work for a jurisdiction or agency"
 
@@ -154,6 +154,7 @@ flowchart LR
     class SVC core
     class TEN tenant
     class AM,WS,AUD,CVL app
+
 ```
 </div>
 
@@ -193,3 +194,4 @@ New to this? If you are unfamiliar with some of this terminology, start with the
 ### Guides and User Manuals
 
 Looking for step-by-step instructions? Start with our full **[Guides List](guides-list/index.md)**.
+```

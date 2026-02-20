@@ -1,6 +1,6 @@
 #region Meta
 [project]
-version = "6.0.0"
+version = "6.0.1"
 site_name = "The Taskar Center for Accessible Technology"
 site_description = "Information and guides related to the Taskar Center for Accessible Technology (TCAT) at the University of Washington."
 site_author = "Taskar Center for Accessible Technology"
