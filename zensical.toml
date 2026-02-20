@@ -131,7 +131,15 @@ nav = [
     {"Welcome" = "index.md"},
     {"AccessMap" = [
         "accessmap/index.md",
-        {"User Manual" = [ "accessmap/user-manual/index.md" ]}
+        {"User Manual" = [
+            "accessmap/user-manual/index.md",
+            {"Getting Started" = "accessmap/user-manual/getting-started.md"},
+            {"Interface Overview" = "accessmap/user-manual/interface.md"},
+            {"Mobility Profiles and Preferences" = "accessmap/user-manual/profiles.md"},
+            {"Planning a Route" = "accessmap/user-manual/route-planning.md"},
+            {"Navigation" = "accessmap/user-manual/navigation.md"},
+            {"Leaving Feedback" = "accessmap/user-manual/feedback.md"}
+        ]}
     ]},
     {"AVIV ScoutRoute" = [
         "aviv-scoutroute/index.md",
