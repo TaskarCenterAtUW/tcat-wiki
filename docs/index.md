@@ -154,7 +154,6 @@ flowchart LR
     class SVC core
     class TEN tenant
     class AM,WS,AUD,CVL app
-
 ```
 </div>
 
@@ -194,4 +193,3 @@ New to this? If you are unfamiliar with some of this terminology, start with the
 ### Guides and User Manuals
 
 Looking for step-by-step instructions? Start with our full **[Guides List](guides-list/index.md)**.
-```
