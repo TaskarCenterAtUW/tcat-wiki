@@ -18,6 +18,8 @@ With the support of the **Transportation Data Exchange Initiative** (TDEI), the 
 
 _TDEI is a project sponsored by the [ITS4US Deployment Program](https://www.its.dot.gov/its4us/index.htm), focused on improving frameworks for transportation services and infrastructure. By developing open-source data collection tools, digital infrastructure, and governance models, TDEI enables seamless public-private data exchange and interoperability._
 
+---
+
 ### User Registration and Access
 
 All TDEI users register through the same process via the [TDEI Portal](https://portal.tdei.us/) and receive an API key and access credentials. Users are differentiated by their assigned roles and permissions.
@@ -25,6 +27,8 @@ All TDEI users register through the same process via the [TDEI Portal](https://p
 API keys are used to retrieve data from TDEI. Access credentials are used to log into the portal, retrieve or regenerate API keys, and upload data.
 
 Refer to the [TDEI Portal Account Registration Guide](portal/user-manual/account-registration.md) for instructions on registering for a TDEI account.
+
+---
 
 ### Roles
 
@@ -40,29 +44,19 @@ Each Project Group must have a designated Point of Contact (PoC). They have the 
 
 A data producer is a user who will contribute data to the TDEI.
 
-##### Flex Data Producer
+- **Flex Data Producer**
 
 The `flex-data-generator` role allows a user to create GTFS Flex data.
 
-##### Pathways Data Producer
+- **Pathways Data Producer**
 
 The `pathways-data-generator` role allows a user to create GTFS Pathways data.
 
-##### OpenSidewalks Data Producer
+- **OpenSidewalks Data Producer**
 
 The `osw-data-generator` role allows a user to upload OpenSidewalks data.
 
-### TDEI Data Consuming Applications
-
-Transportation Data Exchange Initiative Data Consuming Applications
-
-#### [AccessMap](../accessmap/index.md)
-
-Accessibility-forward customizable router.
-
-#### [TDEI Walksheds](../walksheds/index.md)
-
-Tool for analyzing pedestrian infrastructure and access to amenities.
+---
 
 ### TDEI Data Producing Applications
 
@@ -83,6 +77,20 @@ Mobile applications for both Android and iOS.
 #### [JOSM](../josm/index.md)
 
 Desktop application for advanced editing.
+
+---
+
+### TDEI Data Consuming Applications
+
+Transportation Data Exchange Initiative Data Consuming Applications
+
+#### [AccessMap](../accessmap/index.md)
+
+Accessibility-forward customizable router.
+
+#### [TDEI Walksheds](../walksheds/index.md)
+
+Tool for analyzing pedestrian infrastructure and access to amenities.
 
 ---
 
