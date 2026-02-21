@@ -144,6 +144,8 @@ flowchart LR
     click RAP "rapid/"
     click AM "accessmap/"
     click WS "walksheds/"
+    click AUD "https://www.audiom.net/"
+    click CVL "https://conveyal.com/"
 
     classDef tool fill:#90caf9,stroke:#1565c0,color:#000000
     classDef core fill:#ffe082,stroke:#f9a825,color:#000000
