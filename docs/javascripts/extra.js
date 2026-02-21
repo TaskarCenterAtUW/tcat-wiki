@@ -74,8 +74,8 @@ const titleMap = Object.fromEntries(
  * @returns {string} - The string in Title Case
  */
 function toTitleCase(str) {
-    // Match word characters, treating / as a word boundary
-    return str.replace(/\w+/g, (word) => {
+    // Match word characters including contractions (e.g., "What's", "don't")
+    return str.replace(/\w+(?:'\w+)*/g, (word) => {
         return word.charAt(0).toUpperCase() + word.substr(1).toLowerCase();
     });
 }
@@ -107,7 +107,7 @@ function applyTitleCapitalization(text) {
     // (e.g., text already contains "Clark County Walk/Roll Event" from frontmatter)
     for (const value of Object.values(titleMapSource)) {
         const escapedValue = value.replace(/[.*+?^${}()|[\]\\]/g, "\\$&");
-        const regex = new RegExp(escapedValue, "gi");
+        const regex = new RegExp(`\\b${escapedValue}\\b`, "gi");
         result = result.replace(regex, (match) => {
             replacements.push({ original: match, replacement: value });
             return `\x00${replacements.length - 1}\x00`;

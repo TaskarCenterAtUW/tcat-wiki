@@ -7,11 +7,12 @@
  *   1. Temporary Patches         — workarounds to remove when upstream supports them
  *   2. Typography                — line height, heading hierarchy, abbreviation underlines
  *   3. Header & Branding         — site title, subtitle, logo, TCAT link
- *   4. Layout Utilities          — right-floated images, horizontal rules, nav ordering
+ *   4. Layout Utilities          — right-floated images, horizontal rules, nav ordering, content spacing
  *   5. Tables                    — schema definition tables
  *   6. Admonitions               — title/icon alignment
  *   7. Theme-Conditional Content — light/dark visibility for non-image elements
  *   8. Diagrams                  — Mermaid overrides
+ *   9. Table of Contents         — right-side "On this page" TOC accent
  *
  * @format
  */
@@ -176,6 +177,16 @@ abbr[title],
     flex-direction: column;
 }
 
+/* Reduce gap between top navbar and page content (default is 1.5rem) */
+.md-main__inner {
+    margin-top: 0.4rem;
+}
+
+/* Adjust padding above breadcrumbs (default is 1.2rem) */
+.md-path {
+    padding-top: 1.3rem;
+}
+
 /* =============================================================================
    5. Tables
    ============================================================================= */
@@ -234,4 +245,58 @@ abbr[title],
 #tdei-arch {
     --md-mermaid-label-fg-color: #000000;
     --md-mermaid-node-fg-color: #333333;
+}
+
+/* =============================================================================
+   9. Table of Contents
+   ============================================================================= */
+
+/*
+ * Subtle accent for the right-side "On this page" TOC.
+ *
+ * Configurable via CSS custom properties on :root / [data-md-color-scheme]:
+ *   --toc-border-color    Left accent stripe color
+ *   --toc-bg              Panel background tint
+ *   --toc-title-color     "On this page" label color
+ *   --toc-border-width    Accent stripe thickness
+ *   --toc-border-radius   Panel corner rounding
+ *
+ * Defaults use muted UW brand colors (Purple #4B2E83, Gold #B7A57A).
+ */
+
+:root {
+    --toc-border-color: rgba(75, 46, 131, 0.35);
+    --toc-bg: rgba(75, 46, 131, 0.04);
+    --toc-title-color: #4b2e83;
+    --toc-title-bg: rgba(75, 46, 131, 0.12);
+    --toc-border-width: 3px;
+    --toc-border-radius: 4px;
+}
+[data-md-color-scheme="slate"] {
+    --toc-border-color: rgba(183, 165, 122, 0.4);
+    --toc-bg: rgba(183, 165, 122, 0.06);
+    --toc-title-color: #c9b882;
+    --toc-title-bg: rgba(183, 165, 122, 0.15);
+}
+
+/* Panel wrapper — left stripe + background tint */
+.md-sidebar--secondary .md-nav--secondary {
+    border-left: var(--toc-border-width) solid var(--toc-border-color);
+    background: var(--toc-bg);
+    border-radius: var(--toc-border-radius);
+    margin-top: 0.85rem;
+    padding: 0.6em 0.8em 0.6em 0.6em;
+}
+
+/* "On this page" label — colored background band, small caps */
+.md-sidebar--secondary .md-nav--secondary > .md-nav__title {
+    background: var(--toc-title-bg);
+    color: var(--toc-title-color);
+    font-weight: 600;
+    font-variant: small-caps;
+    font-size: 0.7rem;
+    letter-spacing: 0.04em;
+    margin: -0.6em -0.8em 0.4em -0.6em;
+    padding: 0.35em 0.8em 0.35em 0.6em;
+    border-radius: var(--toc-border-radius) var(--toc-border-radius) 0 0;
 }
