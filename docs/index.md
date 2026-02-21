@@ -10,6 +10,17 @@ This site explains how to use the open-source transportation accessibility **too
 
 ---
 
+### What's Your Goal?
+
+| If you want to… | Use                                                                                                    |
+|-----------------|--------------------------------------------------------------------------------------------------------|
+| **View**        | [OS-CONNECT Data Viewer](os-connect/data-viewer/index.md) — a view-only map; no GIS required           |
+| **Download**    | [TDEI Portal](tdei/portal/index.md) — manage accounts, API keys, and access controls                   |
+| **Plan**        | [Walksheds](walksheds/index.md) for scenario planning, project proposal evaluation, and prioritization |
+| **Route**       | [AccessMap](accessmap/index.md) — a public routing app, no portal required                             |
+
+---
+
 ### User Journeys (Start Here!)
 
 Choose your path: each one starts with the simplest document and then offers deeper options.
@@ -61,17 +72,6 @@ If you remember only three things, remember these:
 **[TDEI](tdei/index.md) is the platform** — It is where data can be accessed for downloads and APIs, and where tools like [AccessMap](accessmap/index.md), [Walksheds](walksheds/index.md), [AVIV ScoutRoute](aviv-scoutroute/index.md), and [Workspaces](workspaces/index.md) connect to the data.
 
 **[AccessMap](accessmap/index.md) is the router** — It uses OpenSidewalks Schema-formatted data to provide custom accessible pedestrian routing without requiring specialized tools.
-
----
-
-### What's Your Goal?
-
-| If you want to… | Use                                                                                                    |
-|-----------------|--------------------------------------------------------------------------------------------------------|
-| **View**        | [OS-CONNECT Data Viewer](os-connect/data-viewer/index.md) — a view-only map; no GIS required           |
-| **Download**    | [TDEI Portal](tdei/portal/index.md) — manage accounts, API keys, and access controls                   |
-| **Plan**        | [Walksheds](walksheds/index.md) for scenario planning, project proposal evaluation, and prioritization |
-| **Route**       | [AccessMap](accessmap/index.md) — a public routing app, no portal required                             |
 
 ---
 
