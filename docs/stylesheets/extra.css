@@ -7,7 +7,7 @@
  *   1. Temporary Patches         — workarounds to remove when upstream supports them
  *   2. Typography                — line height, heading hierarchy, abbreviation underlines
  *   3. Header & Branding         — site title, subtitle, logo, TCAT link
- *   4. Layout Utilities          — right-floated images, horizontal rules, nav ordering
+ *   4. Layout Utilities          — right-floated images, horizontal rules, nav ordering, content spacing
  *   5. Tables                    — schema definition tables
  *   6. Admonitions               — title/icon alignment
  *   7. Theme-Conditional Content — light/dark visibility for non-image elements
@@ -177,6 +177,16 @@ abbr[title],
     flex-direction: column;
 }
 
+/* Reduce gap between top navbar and page content (default is 1.5rem) */
+.md-main__inner {
+    margin-top: 0.4rem;
+}
+
+/* Adjust padding above breadcrumbs (default is 1.2rem) */
+.md-path {
+    padding-top: 1.3rem;
+}
+
 /* =============================================================================
    5. Tables
    ============================================================================= */
@@ -274,6 +284,7 @@ abbr[title],
     border-left: var(--toc-border-width) solid var(--toc-border-color);
     background: var(--toc-bg);
     border-radius: var(--toc-border-radius);
+    margin-top: 0.85rem;
     padding: 0.6em 0.8em 0.6em 0.6em;
 }
 
