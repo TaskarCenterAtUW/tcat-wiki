@@ -2,8 +2,8 @@
 # This script is designed to be run in a PowerShell environment.
 
 # Name: TCAT Wiki - Guides Lists Generator
-# Version: 7.0.0
-# Date: 2026-02-05
+# Version: 8.0.0
+# Date: 2026-02-22
 # Author: Amy Bordenave, Taskar Center for Accessible Technology, University of Washington
 # License: CC-BY-ND 4.0 International
 
@@ -360,7 +360,16 @@ function Build-SectionHeader {
     # Format: "### [Title](link) Guides" - User manuals don't get " Guides" suffix
     $suffix = if ($IsUserManual) { "" } else { " Guides" }
 
-    return "$HeaderLevel [$Title]($relativePath)$suffix$CRLF$CRLF"
+    $header = "$HeaderLevel [$Title]($relativePath)$suffix$CRLF"
+
+    # Extract and include the description from the index page
+    $guideInfo = Get-GuideInfo -FilePath $IndexPath
+    if ($guideInfo.Description) {
+        $header += "$CRLF$($guideInfo.Description)$CRLF"
+    }
+
+    $header += $CRLF
+    return $header
 }
 
 function Get-AllGuidesAtLevel {
@@ -479,6 +488,16 @@ function Update-ParentGuidesSection {
             $hasSubdirContent = $true
             break
         }
+        # A subdirectory with no visible children still counts as content
+        # if its own index.md is a guide (e.g. all children excluded from parent)
+        $subdirIndexPath = Join-Path $subdir.FullName "index.md"
+        if (Test-Path $subdirIndexPath -PathType Leaf) {
+            $subdirGuideInfo = Get-GuideInfo -FilePath $subdirIndexPath
+            if ($subdirGuideInfo.IsGuide -and -not $subdirGuideInfo.ExcludeFromParent) {
+                $hasSubdirContent = $true
+                break
+            }
+        }
     }
 
     if ($allEntries.Count -eq 0 -and -not $hasSubdirContent) {
@@ -530,6 +549,14 @@ function Update-ParentGuidesSection {
         $subdirEntries = Get-AllGuidesAtLevel -Directory $subdir.FullName -ExcludeFlag $EXCLUDE_PARENT_FLAG -Subdirectories $subdirSubdirs
 
         if ($subdirEntries.Count -eq 0) {
+            # No visible child entries - but if the subdirectory's index.md is
+            # itself a guide, show it as a standalone entry (e.g. jobs/index.md
+            # inside a user manual where all child pages are excluded from parent)
+            $subdirGuideInfo = Get-GuideInfo -FilePath $subdirIndexPath
+            if ($subdirGuideInfo.IsGuide -and -not $subdirGuideInfo.ExcludeFromParent) {
+                $guidesSection += Build-GuideEntry -GuideFile (Get-Item $subdirIndexPath) -FromPath $parentDir -HeaderLevel "####"
+                $guidesSection += $CRLF
+            }
             continue
         }
 

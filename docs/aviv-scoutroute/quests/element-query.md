@@ -16,11 +16,11 @@ _For a list of all guides on the TCAT Wiki, refer to the [Guides List](../../gui
 
 ---
 
+### Cheatsheet for element filter syntax
+
 The `quest_query` attribute of an AVIV ScoutRoute long form quest definition is constructed in a similar way to an OverPass API query, with some modifications.
 
 For example, to get all ways, simply enter the query: `ways`
-
-### Cheatsheet for element filter syntax
 
 | Expression                   | [matches] returns `true` if element...                                                                                    |
 |:-----------------------------|:--------------------------------------------------------------------------------------------------------------------------|
@@ -48,6 +48,8 @@ For example, to get all ways, simply enter the query: `ways`
 
 Note that regexes have to match the whole string, i.e. `~shop\|craft` does not match `shop_type`.
 
+---
+
 ### Equivalent expressions
 
 | Expression                  | Equivalent Expression                                    |
@@ -60,6 +62,8 @@ Note that regexes have to match the whole string, i.e. `~shop\|craft` does not m
 | `!(amenity or craft)`       | `!amenity and !craft`                                    |
 
 The queries can be combined with parenthesis and can also be used for matching with multiple tag filters.
+
+---
 
 ### Example queries:
 

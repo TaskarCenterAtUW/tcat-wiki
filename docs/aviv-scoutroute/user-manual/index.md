@@ -10,7 +10,7 @@ tags:
 
 ## AVIV ScoutRoute User Manual
 
-This guide serves as a user manual and documentation reference for the AVIV ScoutRoute mobile app.
+This user manual serves as a documentation reference for the AVIV ScoutRoute mobile app.
 
 _For a list of all guides on the TCAT Wiki, refer to the [Guides List](../../guides-list/index.md)._
 

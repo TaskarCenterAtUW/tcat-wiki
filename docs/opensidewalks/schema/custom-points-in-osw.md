@@ -25,6 +25,8 @@ Doing so is simple - just prefix `ext:` before the tags that are not in the OSW 
 
 This approach allows for immediately adding custom data, preserving data from existing systems.
 
+---
+
 ### Common Use Cases
 
 Custom Points are perfect for adding:
@@ -33,6 +35,8 @@ Custom Points are perfect for adding:
 - **Accessibility features**: Accessible parking spaces, wheelchair-accessible entrances, elevators
 - **Wayfinding aids**: Information kiosks, signage
 - **Points of interest**: Water fountains, ATMs, restrooms
+
+---
 
 ### Case Study: GTFS Bus Stops to OSW Custom Points
 
@@ -69,6 +73,8 @@ We want to convert each bus stop into an OpenSidewalks Custom Point that looks l
     }
 }
 ```
+
+---
 
 ### Step-by-Step Conversion Process
 
@@ -157,6 +163,8 @@ Include required OpenSidewalks metadata at the dataset level:
 }
 ```
 
+---
+
 ### Conversion Tools
 
 #### Option 1: Purpose-built Scripts
@@ -169,6 +177,8 @@ Use your spreadsheet software of choice to add `ext:` prefix to column headers, 
 
 - https://geojson.io/
 - https://mapbox.github.io/csv2geojson/
+
+---
 
 ### Validation and Quality Assurance
 
@@ -191,6 +201,8 @@ Before using your Custom Points, verify:
 | Invalid JSON         | Use a JSON validator to find syntax errors      |
 | Coordinate precision | GTFS uses 6+ decimal places; preserve precision |
 
+---
+
 ### Integration with Existing OSW Data
 
 #### Manual Adding to Existing Datasets
@@ -204,6 +216,8 @@ To add Custom Points to an existing OpenSidewalks dataset:
 #### Coordinate System Compatibility
 
 OpenSidewalks uses WGS84 (EPSG:4326) coordinates in decimal degrees. GTFS data is already in this format, so no conversion is needed. If your source data uses a different coordinate system, you'll need to reproject it first.
+
+---
 
 ### Best Practices
 

@@ -10,11 +10,15 @@ OpenSidewalks ([OSW](https://sidewalks.washington.edu/)) is an initiative led by
 
 OpenSidewalks seeks to provide a specification that is not only compatible with OpenStreetMap but is a comprehensive and accessibility-forward specification for mapping sidewalks and related pedestrian infrastructure features.
 
+---
+
 ### [OpenSidewalks Schema](schema/index.md)
 
 The [OpenSidewalks Schema](https://github.com/OpenSidewalks/OpenSidewalks-Schema) is an open pedestrian transportation infrastructure network data standard for describing and sharing pedestrian network and pedestrian network-adjacent data. The OpenSidewalks Schema promotes an explicit network (graph) model that represents a traversable and graph-analyzable network of pedestrian paths such as sidewalks, street crossings, some streets, and other paths, as well as metadata representing potential barriers.
 
 The OpenSidewalks Schema draws from and is intended to be largely compatible with OpenStreetMap data, though it is possible to create OpenSidewalks Schema data not derived from OpenStreetMap.
+
+---
 
 ### [OSW on the OSM US Tasking Manager](tasking-manager/index.md)
 
@@ -34,6 +38,8 @@ _For a list of all guides on the TCAT Wiki, refer to the [Guides List](../guides
 
 #### [OpenSidewalks Schema](schema/index.md) Guides
 
+This page explains the OpenSidewalks Schema.
+
 ##### [Core Edges in OSW](schema/core-edges-in-osw.md)
 
 This guide shows how to convert existing sidewalk centerline datasets into OpenSidewalks (OSW) format for upload to the Transportation Data Exchange Initiative (TDEI).
@@ -47,6 +53,8 @@ This guide shows how to add custom non-routable point features (like bus stops) 
 This guide explains how to make edits to OpenStreetMap following and supporting the OpenSidewalks schema.
 
 #### [OSW on the OSM US Tasking Manager](tasking-manager/index.md) Guides
+
+This page explains the OSM US Tasking Manager and how OpenSidewalks makes use of it.
 
 ##### [Tasking Manager User Manual](tasking-manager/user-manual/index.md)
 

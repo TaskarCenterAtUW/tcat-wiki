@@ -30,6 +30,8 @@ These icons help the mobile app display appropriate quest icons for each element
     1. Insert the icon name as the value for the `element_type_icon` key.
     2. Make sure to not include any file extension (like .png or .svg)
 
+---
+
 ### Example:
 
 ```json hl_lines="2"
@@ -38,6 +40,8 @@ These icons help the mobile app display appropriate quest icons for each element
   "quest_query": "ways with (highway=footway and footway=sidewalk)",
   "quests": [ ... ]
 ```
+
+---
 
 ### How the Mobile App Uses It
 

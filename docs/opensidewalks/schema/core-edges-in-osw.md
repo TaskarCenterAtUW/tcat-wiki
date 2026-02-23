@@ -28,6 +28,8 @@ Sidewalk centerlines are linear GIS features representing the middle path of sid
 
 Converting these datasets to OSW format enables pedestrian routing, accessibility analysis, and integration with other transportation data through TDEI.
 
+---
+
 ### Case Study: Seattle Sidewalk Centerlines to OSW
 
 This example demonstrates converting a city's sidewalk centerline dataset to OSW format using Seattle's sidewalk inventory data.
@@ -91,6 +93,8 @@ We want to convert each sidewalk centerline into an OpenSidewalks footway that l
     }
 }
 ```
+
+---
 
 ### Step-by-Step Conversion Process
 
@@ -178,6 +182,8 @@ Build the complete OSW dataset:
 }
 ```
 
+---
+
 ### Conversion Tools and Scripts
 
 As some processing of the existing data is usually necessary, consider creating Python scripts or using [ogr2ogr](https://gdal.org/en/stable/programs/ogr2ogr.html) to make the necessary changes.
@@ -193,6 +199,8 @@ ogr2ogr -s_srs EPSG:2926 -t_srs EPSG:4326 sidewalks_epsg4326.geojson sidewalks_e
 # Use ogr2ogr with SQL to transform fields
 ogr2ogr -f GeoJSON output.geojson sidewalks_epsg4326.geojson -sql "SELECT UNITID as ext_unit_id, UNITDESC as ext_description, 'footway' as highway, 'sidewalk' as footway, SW_WIDTH * 0.0254 as width, CASE WHEN SURFTYPE = 'PCC' THEN 'concrete' WHEN SURFTYPE = 'AC' THEN 'asphalt' ELSE 'unknown' END as surface FROM input_layer"
 ```
+
+---
 
 ### Validation and Quality Assurance
 
@@ -220,6 +228,8 @@ ogr2ogr -f GeoJSON output.geojson sidewalks_epsg4326.geojson -sql "SELECT UNITID
 - **Visual inspection**: Load in QGIS or web mapping tools
 - **Attribute completeness**: Verify required and optional fields
 
+---
+
 ### Integration with TDEI
 
 #### Best Practices for TDEI Upload
@@ -227,6 +237,8 @@ ogr2ogr -f GeoJSON output.geojson sidewalks_epsg4326.geojson -sql "SELECT UNITID
 - **Regular updates**: Plan for periodic data refreshes
 - **Quality documentation**: Document data collection methods and accuracy
 - **Contact information**: Provide maintainer contact for data issues
+
+---
 
 ### Advanced Considerations
 

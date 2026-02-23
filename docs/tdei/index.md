@@ -46,11 +46,11 @@ A data producer is a user who will contribute data to the TDEI.
 
 - **Flex Data Producer**
 
-The `flex-data-generator` role allows a user to create GTFS Flex data.
+The `flex-data-generator` role allows a user to create GTFS-Flex data.
 
 - **Pathways Data Producer**
 
-The `pathways-data-generator` role allows a user to create GTFS Pathways data.
+The `pathways-data-generator` role allows a user to create GTFS-Pathways data.
 
 - **OpenSidewalks Data Producer**
 
@@ -169,6 +169,8 @@ TDEI Guides
 _For a list of all guides on the TCAT Wiki, refer to the [Guides List](../guides-list/index.md)._
 
 #### [TDEI Portal](portal/index.md) Guides
+
+The **[TDEI Portal](https://portal.tdei.us/)** is the web interface for the Transportation Data Exchange Initiative (TDEI).
 
 ##### [TDEI Portal User Manual](portal/user-manual/index.md)
 

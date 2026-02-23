@@ -46,6 +46,8 @@ const titleMapSource = {
     "os connect": "OS-CONNECT",
     "qa qc": "QA/QC",
     url: "URL",
+    ixn: "IXN",
+    bbox: "BBox"
 };
 
 /**
