@@ -170,6 +170,8 @@ _For a list of all guides on the TCAT Wiki, refer to the [Guides List](../guides
 
 #### [TDEI Portal](portal/index.md) Guides
 
+The **[TDEI Portal](https://portal.tdei.us/)** is the web interface for the Transportation Data Exchange Initiative (TDEI).
+
 ##### [TDEI Portal User Manual](portal/user-manual/index.md)
 
 This user manual explains how to use the TDEI Portal platform.

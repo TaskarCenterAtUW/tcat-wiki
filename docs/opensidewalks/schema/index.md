@@ -11,6 +11,12 @@ tags:
 
 ## OpenSidewalks Schema
 
+This page explains the OpenSidewalks Schema.
+
+---
+
+### The OpenSidewalks Schema
+
 The [OpenSidewalks Schema](https://github.com/OpenSidewalks/OpenSidewalks-Schema) is an open pedestrian transportation network data standard for describing and sharing pedestrian network and pedestrian network-adjacent data. The OpenSidewalks Schema promotes an explicit network (graph) model wherein its primary data entities can be deterministically transformed into graph Edges and graph Nodes.
 
 Therefore, OpenSidewalks Schema data represents a traversable and graph-analyzable network of (conditional) pedestrian paths like sidewalks, street crossings, some streets, and other paths, as well as metadata representing potential barriers.
@@ -18,6 +24,8 @@ Therefore, OpenSidewalks Schema data represents a traversable and graph-analyzab
 The OpenSidewalks Schema is explicitly a _network schema_: its primary features are defined and interpreted as elements of a network (or graph), i.e. Nodes and Edges. Therefore, OpenSidewalks Schema data is understood not only as a set of features describing pedestrian infrastructure, but as _connected elements_ of a pedestrian network.
 
 The OpenSidewalks Schema draws from and is intended to be largely compatible with OpenStreetMap data, though it is possible to create OpenSidewalks Schema data not derived from OpenStreetMap.
+
+---
 
 ### Transportation Data Exchange Initiative
 
@@ -42,6 +50,8 @@ An OpenSideWalks Schema validator is available as a Python library and as a Job 
     - [TDEI Portal: Create Job](https://portal.tdei.us/CreateJob): "OSW - Validate" (Dataset-Validate)
 
     - [GitHub: TaskarCenterAtUW/TDEI-python-osw-validation](https://github.com/TaskarCenterAtUW/TDEI-python-osw-validation)
+
+---
 
 ### OpenSidewalks Schema Entities
 
@@ -484,6 +494,8 @@ Zones are features that are geometrically defined by a Polygon (a closed ring of
     <tr><td>Identifying Fields</td><td><code>highway=pedestrian</code></td></tr>
     <tr><td>Optional Fields</td><td><a href="#surface">surface</a><br><a href="#description">description</a><br><a href="#name">name</a><br><a href="#foot">foot</a></td></tr>
     </table>
+
+---
 
 ### List of Adjacent Entities
 
@@ -934,6 +946,8 @@ OpenSidewalks Schema fields are typed key-value pairs. Keys are always strings a
     <tr><td>Value type</td><td>enum</td></tr>
     <tr><td>Enumerated Values</td><td>- <em>broadleaved</em>: Broad, flat leaves.<br>- <em>leafless</em>: No leaves.<br>- <em>mixed</em>: Multiple trees with different leaf types.<br>- <em>needleleaved</em>: Needle-shaped leaves.</td></tr>
     </table>
+
+---
 
 ### Schema Versions
 

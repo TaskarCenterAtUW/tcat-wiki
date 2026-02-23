@@ -8,6 +8,8 @@ title: OS-CONNECT Data Viewer
 
 The [OS-CONNECT Data Viewer](https://osconnect-viewer.tdei.us/) facilitates insight into OS-CONNECT data.
 
+---
+
 ![OS-CONNECT Data Viewer](../../resources/images/os-connect/data-viewer/data-viewer-light.png#only-light)
 ![OS-CONNECT Data Viewer](../../resources/images/os-connect/data-viewer/data-viewer-dark.png#only-dark)
 

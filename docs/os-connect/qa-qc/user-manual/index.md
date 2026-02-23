@@ -11,7 +11,7 @@ tags:
 
 ## QA/QC Reports User Manual
 
-This documentation explains the context and goals behind as well as how to read and interpret QA/QC reports for the OS-CONNECT dataset.
+This user manual explains the context and goals behind as well as how to read and interpret QA/QC reports for the OS-CONNECT dataset.
 
 ---
 
