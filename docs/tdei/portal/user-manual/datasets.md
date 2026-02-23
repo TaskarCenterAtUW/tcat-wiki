@@ -72,7 +72,7 @@ Select the **action menu** (⋮) on the right side of any dataset row to access 
 
 | Action                 | Description                                                                                                |
 |:-----------------------|:-----------------------------------------------------------------------------------------------------------|
-| **Open in Workspaces** | Opens the dataset in the [Workspaces](../../../../workspaces/index.md) editing platform                    |
+| **Open in Workspaces** | Opens the dataset in the [Workspaces](../../../workspaces/index.md) editing platform                    |
 | **Download Metadata**  | Downloads the metadata associated with the dataset                                                         |
 | **Clone Dataset**      | Creates a copy of the dataset, allowing you to make changes without affecting the original                 |
 | **Download**           | Downloads the dataset files in a chosen format (see [Downloading a Dataset](#downloading-a-dataset) below) |
@@ -97,7 +97,7 @@ Select the **action menu** (⋮) on the right side of any dataset row to access 
 
 !!! info "Looking for OS-CONNECT datasets?"
 
-    For a step-by-step walkthrough of downloading [OS-CONNECT](../../../../os-connect/index.md) datasets specifically, refer to the [How To: Download OS-CONNECT Data from the TDEI Portal](../how-to/download-os-connect.md) guide.
+    For a step-by-step walkthrough of downloading [OS-CONNECT](../../../os-connect/index.md) datasets specifically, refer to the [How To: Download OS-CONNECT Data from the TDEI Portal](../how-to/download-os-connect.md) guide.
 
 ---
 
