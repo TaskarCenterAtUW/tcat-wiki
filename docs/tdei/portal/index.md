@@ -39,9 +39,9 @@ Each project group has at least one designated Point of Contact (`poc` role). Th
 
 A data producer is a user who contributes data to the TDEI. In addition to the standard `member` role, the following data producer roles are available:
 
-- **Flex Data Producer** (`flex-data-generator`) — publishes GTFS-Flex data
-- **Pathways Data Producer** (`pathways-data-generator`) — publishes GTFS-Pathways data
-- **OpenSidewalks Data Producer** (`osw-data-generator`) — publishes OpenSidewalks data
+- **Flex Data Producer** (`flex_data_generator`) — publishes GTFS-Flex data
+- **Pathways Data Producer** (`pathways_data_generator`) — publishes GTFS-Pathways data
+- **OpenSidewalks Data Producer** (`osw_data_generator`) — publishes OpenSidewalks data
 
 ---
 
