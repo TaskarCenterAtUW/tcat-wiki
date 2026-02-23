@@ -1,6 +1,6 @@
 #region Meta
 [project]
-version = "7.0.0"
+version = "7.1.0"
 site_name = "The Taskar Center for Accessible Technology"
 site_description = "Information and guides related to the Taskar Center for Accessible Technology (TCAT) at the University of Washington."
 site_author = "Taskar Center for Accessible Technology"
@@ -258,7 +258,16 @@ nav = [
     ]},
     {"Walksheds" = [
         "walksheds/index.md",
-        {"User Manual" = [ "walksheds/user-manual/index.md" ]}
+        {"User Manual" = [
+            "walksheds/user-manual/index.md",
+            {"Getting Started" = "walksheds/user-manual/getting-started.md"},
+            {"Interface Overview" = "walksheds/user-manual/interface.md"},
+            {"Mobility Profiles and Preferences" = "walksheds/user-manual/preferences.md"},
+            {"Inspecting and Editing Features" = "walksheds/user-manual/editing.md"},
+            {"Scenarios" = "walksheds/user-manual/scenarios.md"},
+            {"Sidewalk Score" = "walksheds/user-manual/sidewalk-score.md"},
+            {"Custom Cost Function" = "walksheds/user-manual/custom-cost-function.md"}
+        ]}
     ]},
     {"Workspaces" = [
         "workspaces/index.md",
