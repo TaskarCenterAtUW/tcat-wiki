@@ -56,7 +56,7 @@ Returns a subgraph of a dataset that falls within a specified bounding box, defi
 
 ??? quote "Full job description"
 
-    _When provided with a tdei_dataset_id, this request returns a subgraph dataset that falls within a specified bounding box defined by the coordinates (xmin, ymin, ymax, xmax)._
+    _When provided with a tdei_dataset_id, this request returns a subgraph dataset that falls within a specified bounding box defined by the coordinates (xmin, ymin, xmax, ymax)._
 
     _The response includes a `job_id` for tracking the request._
 
