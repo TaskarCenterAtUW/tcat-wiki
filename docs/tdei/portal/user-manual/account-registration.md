@@ -25,6 +25,8 @@ To access the TDEI Portal, navigate to [https://portal.tdei.us/](https://portal.
 ![TDEI Portal login page](../../../resources/images/tdei-portal/user-manual/account/login.landscape-light.png#only-light)
 ![TDEI Portal login page](../../../resources/images/tdei-portal/user-manual/account/login.landscape-dark.png#only-dark)
 
+After signing in successfully, you will be redirected to the [Dashboard](dashboard.md#dashboard).
+
 ---
 
 ### Registering a New Account
