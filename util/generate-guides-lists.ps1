@@ -360,7 +360,16 @@ function Build-SectionHeader {
     # Format: "### [Title](link) Guides" - User manuals don't get " Guides" suffix
     $suffix = if ($IsUserManual) { "" } else { " Guides" }
 
-    return "$HeaderLevel [$Title]($relativePath)$suffix$CRLF$CRLF"
+    $header = "$HeaderLevel [$Title]($relativePath)$suffix$CRLF"
+
+    # Extract and include the description from the index page
+    $guideInfo = Get-GuideInfo -FilePath $IndexPath
+    if ($guideInfo.Description) {
+        $header += "$CRLF$($guideInfo.Description)$CRLF"
+    }
+
+    $header += $CRLF
+    return $header
 }
 
 function Get-AllGuidesAtLevel {
