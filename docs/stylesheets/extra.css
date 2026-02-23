@@ -205,6 +205,23 @@ abbr[title],
     width: auto;
 }
 
+/* Full-width tables (via md_in_html: wrap table in <div class="full-width" markdown>) */
+.md-typeset .full-width table:not([class]) {
+    display: table;
+    width: 100%;
+}
+
+/* Override theme's runtime scroll/table wrappers inside .full-width */
+.full-width .md-typeset__scrollwrap {
+    margin-left: 0;
+    margin-right: 0;
+}
+
+.full-width .md-typeset__table {
+    display: block;
+    padding: 0;
+}
+
 /* =============================================================================
    6. Admonitions
    ============================================================================= */
