@@ -18,9 +18,11 @@ This user manual explains how to use the AccessMap web application.
 
 #### [AVIV ScoutRoute User Manual](../aviv-scoutroute/user-manual/index.md)
 
-This guide serves as a user manual and documentation reference for the AVIV ScoutRoute mobile app.
+This user manual serves as a documentation reference for the AVIV ScoutRoute mobile app.
 
 #### [Long Form Quest Definition](../aviv-scoutroute/quests/index.md) Guides
+
+This page explains quests and the Long Form Quest Definition, a JSON file that defines the quests used in AVIV ScoutRoute.
 
 ##### [Element Query Guide](../aviv-scoutroute/quests/element-query.md)
 
@@ -44,6 +46,8 @@ This guide explains how to use the [Workspaces JOSM Settings Script](https://git
 
 #### [OpenSidewalks Schema](../opensidewalks/schema/index.md) Guides
 
+This page explains the OpenSidewalks Schema.
+
 ##### [Core Edges in OSW](../opensidewalks/schema/core-edges-in-osw.md)
 
 This guide shows how to convert existing sidewalk centerline datasets into OpenSidewalks (OSW) format for upload to the Transportation Data Exchange Initiative (TDEI).
@@ -58,6 +62,8 @@ This guide explains how to make edits to OpenStreetMap following and supporting 
 
 #### [OSW on the OSM US Tasking Manager](../opensidewalks/tasking-manager/index.md) Guides
 
+This page explains the OSM US Tasking Manager and how OpenSidewalks makes use of it.
+
 ##### [Tasking Manager User Manual](../opensidewalks/tasking-manager/user-manual/index.md)
 
 This user manual explains how to use the [OSM US Tasking Manager](https://tasks.openstreetmap.us/) platform.
@@ -70,15 +76,19 @@ This guide shows the steps for an automated workflow that generates task polygon
 
 #### [OS-CONNECT Data Viewer](../os-connect/data-viewer/index.md) Guides
 
+The [OS-CONNECT Data Viewer](https://osconnect-viewer.tdei.us/) facilitates insight into OS-CONNECT data.
+
 ##### [OS-CONNECT Data Viewer User Manual](../os-connect/data-viewer/user-manual/index.md)
 
 This user manual explains how to use the OS-CONNECT Data Viewer.
 
 #### [QA/QC](../os-connect/qa-qc/index.md) Guides
 
+This page explains OS-CONNECT QA/QC reports.
+
 ##### [QA/QC Reports User Manual](../os-connect/qa-qc/user-manual/index.md)
 
-This documentation explains the context and goals behind as well as how to read and interpret QA/QC reports for the OS-CONNECT dataset.
+This user manual explains the context and goals behind as well as how to read and interpret QA/QC reports for the OS-CONNECT dataset.
 
 ### [Rapid Editor](../rapid/index.md)
 
@@ -89,6 +99,8 @@ This user manual explains how to use the Rapid editor.
 ### [TDEI](../tdei/index.md)
 
 #### [TDEI Portal](../tdei/portal/index.md) Guides
+
+The **[TDEI Portal](https://portal.tdei.us/)** is the web interface for the Transportation Data Exchange Initiative (TDEI).
 
 ##### [TDEI Portal User Manual](../tdei/portal/user-manual/index.md)
 
