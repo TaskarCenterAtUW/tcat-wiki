@@ -44,7 +44,7 @@ TDEI Portal User Manual Table of Contents
 
 #### [Account Registration](account-registration.md)
 
-This section explains how to register for a TDEI account, verify your email, and log in to the TDEI Portal.
+This section explains how to register for a TDEI account, verify your email, and log in to the TDEI Portal, or reset your password.
 
 #### [Dashboard](dashboard.md)
 
