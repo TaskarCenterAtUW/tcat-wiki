@@ -70,50 +70,6 @@ This section explains how to browse, configure, and download datasets in the TDE
 
 This section explains how to view and manage feedback submitted for datasets in the TDEI Portal.
 
-#### [Jobs](jobs/index.md) Guides
+#### [Jobs](jobs/index.md)
 
 This section explains how to create and monitor processing jobs in the TDEI Portal.
-
-##### [OSW — Validate](jobs/osw-validate.md)
-
-This page explains how to use the OSW — Validate job to validate an OSW dataset.
-
-##### [Flex — Validate](jobs/flex-validate.md)
-
-This page explains how to use the Flex — Validate job to validate a GTFS Flex dataset.
-
-##### [Pathways — Validate](jobs/pathways-validate.md)
-
-This page explains how to use the Pathways — Validate job to validate a GTFS Pathways dataset.
-
-##### [OSW — Convert](jobs/osw-convert.md)
-
-This page explains how to use the OSW — Convert job to convert an OSW dataset to OSM format, or vice versa.
-
-##### [Confidence Calculation](jobs/confidence-calculation.md)
-
-This page explains how to use the Confidence Calculation job to calculate confidence scores for a dataset.
-
-##### [Quality Metric IXN Calculation](jobs/quality-metric-ixn-calculation.md)
-
-This page explains how to use the Quality Metric IXN Calculation job to calculate intersection quality metrics for a dataset.
-
-##### [Filter Dataset By BBox](jobs/filter-dataset-by-bbox.md)
-
-This page explains how to use the Filter Dataset By BBox job to extract a subgraph of a dataset within a bounding box.
-
-##### [Dataset Tag Road](jobs/dataset-tag-road.md)
-
-This page explains how to use the Dataset Tag Road job to associate sidewalks with a nearby road network.
-
-##### [Quality Metric Tag](jobs/quality-metric-tag.md)
-
-This page explains how to use the Quality Metric Tag job to calculate quality metrics on dataset element tags.
-
-##### [Spatial Join](jobs/spatial-join.md)
-
-This page explains how to use the Spatial Join job to perform a spatial join operation between two datasets.
-
-##### [Dataset Union](jobs/dataset-union.md)
-
-This page explains how to use the Dataset Union job to merge spatial data from two datasets.
