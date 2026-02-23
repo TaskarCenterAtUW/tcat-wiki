@@ -228,11 +228,31 @@ nav = [
         "tdei/index.md",
         {"Portal" = [
             "tdei/portal/index.md",
-            {"How To" = [ {"How To: Download OS-CONNECT Data from the TDEI Portal" = "tdei/portal/how-to/download-os-connect.md"} ]},
             {"User Manual" = [
                 "tdei/portal/user-manual/index.md",
-                {"TDEI Portal Account Registration Guide" = "tdei/portal/user-manual/account-registration.md"}
-            ]}
+                {"Account Registration" = "tdei/portal/user-manual/account-registration.md"},
+                {"Dashboard" = "tdei/portal/user-manual/dashboard.md"},
+                {"Project Groups" = "tdei/portal/user-manual/project-groups.md"},
+                {"Services" = "tdei/portal/user-manual/services.md"},
+                {"Members" = "tdei/portal/user-manual/members.md"},
+                {"Datasets" = "tdei/portal/user-manual/datasets.md"},
+                {"Feedback" = "tdei/portal/user-manual/feedback.md"},
+                {"Jobs" = [
+                    "tdei/portal/user-manual/jobs/index.md",
+                    {"OSW - Validate" = "tdei/portal/user-manual/jobs/osw-validate.md"},
+                    {"Flex - Validate" = "tdei/portal/user-manual/jobs/flex-validate.md"},
+                    {"Pathways - Validate" = "tdei/portal/user-manual/jobs/pathways-validate.md"},
+                    {"OSW - Convert" = "tdei/portal/user-manual/jobs/osw-convert.md"},
+                    {"Confidence Calculation" = "tdei/portal/user-manual/jobs/confidence-calculation.md"},
+                    {"Quality Metric IXN Calculation" = "tdei/portal/user-manual/jobs/quality-metric-ixn-calculation.md"},
+                    {"Filter Dataset By BBox" = "tdei/portal/user-manual/jobs/filter-dataset-by-bbox.md"},
+                    {"Dataset Tag Road" = "tdei/portal/user-manual/jobs/dataset-tag-road.md"},
+                    {"Quality Metric Tag" = "tdei/portal/user-manual/jobs/quality-metric-tag.md"},
+                    {"Spatial Join" = "tdei/portal/user-manual/jobs/spatial-join.md"},
+                    {"Dataset Union" = "tdei/portal/user-manual/jobs/dataset-union.md"}
+                ]}
+            ]},
+            {"How To" = [ {"How To: Download OS-CONNECT Data from the TDEI Portal" = "tdei/portal/how-to/download-os-connect.md"} ]}
         ]},
         {"TDEI Core" = [ "tdei/tdei-core/index.md" ]}
     ]},
