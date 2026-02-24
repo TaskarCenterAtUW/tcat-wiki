@@ -20,7 +20,10 @@ _For a list of all guides on the TCAT Wiki, refer to the [Guides List](../../gui
 
 ### Inspecting an Edge
 
-Click on any edge or feature on the map to select it. The action pop-up at the bottom of the screen will display the feature's attributes and three action buttons:
+Click on any edge or point feature on the map to select it. The action pop-up at the bottom of the screen will display the feature's attributes and three action buttons:
+
+![Inspect feature](../../resources/images/walksheds/user-manual/edits/inspect-light.png#only-light){ .img-right-lg }
+![Inspect feature](../../resources/images/walksheds/user-manual/edits/inspect-dark.png#only-dark){ .img-right-lg }
 
 - **Walkshed From Here:** Sets the clicked feature's location as the walkshed origin and triggers a new walkshed calculation.
 - **Walkshed To Here:** Calculates a walkshed that includes this feature as a destination point.
@@ -34,11 +37,17 @@ After selecting a network feature, click **Edit Feature** (pencil icon) in the a
 
 This ability provides a way to correct an error in the source data or to "try out" a potential infrastructure improvement. For example, you might mark an inaccessible crossing as having curb ramps to observe the effect on the walkshed while planning new construction.
 
+![Feature editor](../../resources/images/walksheds/user-manual/edits/edit-light.png#only-light)
+![Feature editor](../../resources/images/walksheds/user-manual/edits/edit-dark.png#only-dark)
+
 ---
 
 ### Reviewing and Removing Changes
 
-The **Changes tab** (pencil icon) in the left sidebar lists any attribute edits. From there you can review the specific attributes that were modified for each feature and remove individual edits to restore the original data values.
+The **Edits tab** (pencil icon) in the left sidebar lists any attribute edits. From there you can review the specific attributes that were modified for each feature and remove edits to restore the original data values.
+
+![Edits tab](../../resources/images/walksheds/user-manual/edits/tab-light.png#only-light)
+![Edits tab](../../resources/images/walksheds/user-manual/edits/tab-dark.png#only-dark)
 
 ---
 
