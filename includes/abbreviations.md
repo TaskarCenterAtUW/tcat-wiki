@@ -59,8 +59,10 @@
 *[IXN]: Intersection / Intersection Traversability Metric
 *[JOSM]: Java OpenStreetMap Editor
 *[KPI]: Key Performance Indicator
+*[lat]: Latitude
 *[LFQD]: Long Form Quest Definition
 *[LiDAR]: Light Detection and Ranging
+*[lon]: Longitude
 *[LRS]: Linear Referencing System
 *[LRTP]: Long-Range Transportation Plan
 *[MBTA]: Massachusetts Bay Transportation Authority
