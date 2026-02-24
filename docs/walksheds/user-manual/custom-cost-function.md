@@ -1,11 +1,12 @@
 ---
 title: Custom Cost Function
-nav_order: 8
+nav_order: 10
 tags:
     - Guide
     - External
     - Developer
 # exclude-from-main-guides-list
+# exclude-from-parent-guides-list
 ---
 
 <!-- @format -->
@@ -61,7 +62,7 @@ def cost_fun_generator(
 These parameters are passed automatically by the tool based on the current UI settings when the walkshed is calculated.
 
 | Parameter            | Type        | Description                                                                                |
-| -------------------- | ----------- | ------------------------------------------------------------------------------------------ |
+|:---------------------|:------------|:-------------------------------------------------------------------------------------------|
 | `G`                  | graph       | The full pedestrian network graph. Useful for advanced lookups across nodes and edges.     |
 | `base_speed`         | float       | Base movement speed in m/s, set by the selected mobility profile.                          |
 | `downhill`           | float       | Maximum downhill grade as a decimal (e.g., `0.1` = 10%), from the Walkshed tab.            |
@@ -82,18 +83,18 @@ The `cost_fun_generator` function must return another function that will compute
 - A **non-negative float** representing the cost (in seconds) of traversing the edge, or
 - **`None`**, which signals that the edge should be completely excluded from the walkshed (infinite cost).
 
-| Parameter | Type | Description                                    |
-| --------- | ---- | ---------------------------------------------- |
-| `u`       | int  | The ID of the incoming node.                   |
-| `v`       | int  | The ID of the outgoing node.                   |
-| `d`       | dict | A dictionary of edge attributes (see below).   |
+| Parameter | Type | Description                                  |
+|:----------|:-----|:---------------------------------------------|
+| `u`       | int  | The ID of the incoming node.                 |
+| `v`       | int  | The ID of the outgoing node.                 |
+| `d`       | dict | A dictionary of edge attributes (see below). |
 
 ---
 
 ### Key Edge Attributes (`d`)
 
 | Key              | Type  | Description                                                                                                              |
-| ---------------- | ----- | ------------------------------------------------------------------------------------------------------------------------ |
+|:-----------------|:------|:-------------------------------------------------------------------------------------------------------------------------|
 | `length`         | float | Length of the edge in meters.                                                                                            |
 | `highway`        | str   | OSW highway type (e.g., `"footway"`, `"residential"`, `"steps"`).                                                        |
 | `incline`        | float | Grade of the edge as a decimal (e.g., `0.08` = 8% uphill).                                                               |
@@ -119,7 +120,7 @@ cost = street_cost_factor × (length / speed)
 ...where `speed` is derived from a modified version of Tobler's hiking function, an empirical model relating walking speed to slope. The base walking speeds used as starting points are:
 
 | Mode               | Base Speed |
-| ------------------ | ---------- |
+|:-------------------|:-----------|
 | Walking            | 1.3 m/s    |
 | Manual wheelchair  | 0.6 m/s    |
 | Powered wheelchair | 2.0 m/s    |
@@ -153,6 +154,8 @@ def cost_fun_generator(
         # ... rest of default logic
     return cost_fun
 ```
+
+---
 
 ### Example: Customize the Penalty for Crossings
 
