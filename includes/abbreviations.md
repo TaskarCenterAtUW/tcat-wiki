@@ -13,6 +13,7 @@
 *[AVIV]: Accessibility Verification, Improved Validation
 *[AVIV SR]: AVIV ScoutRoute
 *[BART]: Bay Area Rapid Transit
+*[BBox]: Bounding Box
 *[BLV]: Blind and Low-Vision
 *[BRT]: Bus Rapid Transit
 *[BTS]: Bureau of Transportation Statistics
