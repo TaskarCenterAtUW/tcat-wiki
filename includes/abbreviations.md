@@ -25,6 +25,7 @@
 *[CRS]: Coordinate Reference System
 *[CSE]: Computer Science and Engineering
 *[CSUN]: California State University, Northridge
+*[CSV]: Comma-Separated Values
 *[DEM]: Digital Elevation Model
 *[DOT]: Department of Transportation
 *[DSB]: Department of Services for the Blind
