@@ -20,18 +20,20 @@ _For a list of all guides on the TCAT Wiki, refer to the [Guides List](../../gui
 
 ### Accessing the Walkshed Tool
 
-The Walkshed Tool is a web application, so **no download or installation is required**. It runs directly in your browser on any device, including phone, tablet, or desktop.
+The Walkshed tool is a web application, so **no download or installation is required**. It runs directly in your browser on any device, including phone, tablet, or desktop.
 
 1. Open your preferred web browser (e.g., Chrome, Firefox, Safari, Edge)
 
 2. Navigate to [walkshed.tdei.us](https://walkshed.tdei.us)
 
-![Walkshed Tool landing page](../../resources/images/walksheds/user-manual/index/walkshed-light.png#only-light)
-![Walkshed Tool landing page](../../resources/images/walksheds/user-manual/index/walkshed-dark.png#only-dark)
+![Walkshed landing page](../../resources/images/walksheds/user-manual/index/walksheds-light.png#only-light)
+![Walkshed landing page](../../resources/images/walksheds/user-manual/index/walksheds-dark.png#only-dark)
 
 !!! info "Account Required"
 
-    A TDEI account is required to use the Walkshed Tool. If you do not have one, register at [portal.tdei.us](https://portal.tdei.us/) before signing in.
+    A TDEI account is required to use the Walkshed tool. If you do not have one, register at [portal.tdei.us](https://portal.tdei.us/) before signing in.
+
+    For more information, refer to the [TDEI Portal User Manual: Account Registration](../../tdei/portal/user-manual/account-registration.md) guide.
 
 ---
 
