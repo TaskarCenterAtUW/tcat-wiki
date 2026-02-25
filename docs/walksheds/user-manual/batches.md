@@ -20,7 +20,7 @@ _For a list of all guides on the TCAT Wiki, refer to the [Guides List](../../gui
 
 ### Overview
 
-The **Batch** tab in the left toolbar allows you to run multiple walksheds in a single operation by uploading a CSV file. Each row in the CSV defines the parameters for one walkshed. The tool runs at most 3 walksheds concurrently, adds each result as a [Scenario](scenarios.md), and uploads them once at the end.
+The **Batch** tab in the left sidebar allows you to run multiple walksheds in a single operation by uploading a CSV file. Each row in the CSV defines the parameters for one walkshed. The tool runs at most 3 walksheds concurrently, adds each result as a [Scenario](scenarios.md), and uploads them once at the end.
 
 ---
 
@@ -67,4 +67,4 @@ A progress indicator at the bottom of the panel displays the number of completed
 
 Previous: [Datasets](datasets.md)
 
-Next: [Sidewalk Score](sidewalk-score.md)
+Next: [Walkshed Information & Sidewalk Score](sidewalk-score.md)

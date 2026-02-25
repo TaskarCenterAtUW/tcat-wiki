@@ -19,7 +19,7 @@ _For a list of all guides on the TCAT Wiki, refer to the [Guides List](../../gui
 
 ### About Walksheds
 
-The [TDEI Walksheds tool](https://walkshed.tdei.us) calculates pedestrian walkshed areas around a specified origin point. 
+The [TDEI Walksheds tool](https://walkshed.tdei.us) calculates pedestrian walkshed areas around a specified origin point.
 
 A **walkshed** is the region reachable by pedestrians (on foot or by mobility device) within a given travel time or cost budget, given the characteristics of the surrounding pedestrian network: sidewalks, crossings, slopes, and barriers such as curbs and stairs.
 

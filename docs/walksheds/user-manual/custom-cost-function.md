@@ -193,6 +193,6 @@ def cost_fun_generator(
 
 ---
 
-Previous: [Sidewalk Score](sidewalk-score.md)
+Previous: [Walkshed Information & Sidewalk Score](sidewalk-score.md)
 
 Return: [Walksheds User Manual](index.md)

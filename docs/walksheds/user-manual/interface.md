@@ -20,7 +20,7 @@ _For a list of all guides on the TCAT Wiki, refer to the [Guides List](../../gui
 
 ### Map Overview
 
-The Walkshed tool interface consists of two main areas: the **sidebar** on the left, which contains tabs for dataset selection, walkshed configuration, and other functions; and the **map view** on the right, which displays the pedestrian network and the calculated walkshed.
+The Walksheds tool interface consists of two main areas: the **sidebar** on the left, which contains tabs for dataset selection, walkshed configuration, and other functions; and the **map view** on the right, which displays the pedestrian network and the calculated walkshed.
 
 ![Full Walkshed interface](../../resources/images/walksheds/user-manual/interface/overview-light.png#only-light)
 ![Full Walkshed interface](../../resources/images/walksheds/user-manual/interface/overview-dark.png#only-dark)
@@ -29,7 +29,7 @@ The Walkshed tool interface consists of two main areas: the **sidebar** on the l
 
 ### Sidebar
 
-The left sidebar is the primary control panel for the Walkshed tool. It contains the following tabs:
+The left sidebar is the primary control panel for the Walksheds tool. It contains the following tabs:
 
 | Tab                      | Icon            | Purpose                                                                                                                 |
 |:-------------------------|:----------------|:------------------------------------------------------------------------------------------------------------------------|
@@ -123,13 +123,13 @@ At the very bottom of the screen, a horizontal bar displays a color gradient lab
 
 !!! tip
 
-    The image comparison slider above compares two map views: once where the steepness values are set to the minimum possible, and once where the steepness values are set to the maximum possible. This highlights how the steepness sliders, incline bar, and map contents all update in sync.
+    The image comparison slider above compares two map views: one where the steepness values are set to the minimum possible, and one where the steepness values are set to the maximum possible. This highlights how the steepness sliders, incline bar, and map contents all update in sync.
 
 ---
 
 ### Action Pop-up
 
-After a walkshed is generated, an action pop-up appears at the bottom of the screen with options to view walkshed statistics, download results as a GeoJSON file, and save scenarios for later comparison. For more information, see [Scenarios](scenarios.md).
+After a walkshed is generated, an action pop-up appears at the bottom of the screen with options to [view walkshed information](sidewalk-score.md), download results as a GeoJSON file, and save [scenarios](scenarios.md) for later comparison.
 
 ---
 

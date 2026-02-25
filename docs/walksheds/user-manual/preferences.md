@@ -22,7 +22,7 @@ _For a list of all guides on the TCAT Wiki, refer to the [Guides List](../../gui
 
 The Walksheds tool includes several pre-defined **mobility profiles**, each designed to configure routing for a specific set of mobility needs. Profiles set recommended default values for preferences such as maximum steepness and obstacle avoidance.
 
-Open the **Preferences tab** in the left sidebar and select a profile to apply it.
+Open the **Walkshed Preferences tab** in the left sidebar and select a profile to apply it.
 
 | Profile                | Description                                                                                                                        |
 |:-----------------------|:-----------------------------------------------------------------------------------------------------------------------------------|
@@ -41,7 +41,6 @@ Open the **Preferences tab** in the left sidebar and select a profile to apply i
 #### Travel Budget (Maximum Cost)
 
 The **Maximum Cost** slider sets the maximum travel cost (in seconds of estimated travel time) that defines how far the walkshed extends from the origin. Only edges reachable within this budget are included in the walkshed. Increasing the budget expands the walkshed; decreasing it contracts it. The cost slider can be configured on any of the mobility profiles.
-
 
 ---
 

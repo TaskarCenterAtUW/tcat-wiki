@@ -20,7 +20,7 @@ _For a list of all guides on the TCAT Wiki, refer to the [Guides List](../../gui
 
 ### Overview
 
-The **Dataset tab** (gear icon) in the sidebar is where you choose which pedestrian network the Walkshed tool uses for routing. A dataset must be selected and the router built before you can generate any walksheds.
+The **Datasets tab** (gear icon) in the sidebar is where you choose which pedestrian network the Walksheds tool uses for routing. A dataset must be selected and the router built before you can generate any walksheds.
 
 ![Dataset tab](../../resources/images/walksheds/user-manual/datasets/datasets-tab-light.png#only-light)
 ![Dataset tab](../../resources/images/walksheds/user-manual/datasets/datasets-tab-dark.png#only-dark)
@@ -33,7 +33,7 @@ The **Dataset tab** (gear icon) in the sidebar is where you choose which pedestr
 
 ### Selecting a Dataset
 
-1. Open the **Dataset tab** in the left sidebar.
+1. Open the **Datasets tab** in the left sidebar.
 2. Use the search field to filter the list of available TDEI datasets by name. This field _filters_ the list: it does not accept free-text input for dataset selection.
 3. Select a dataset from the filtered list. The selected dataset is highlighted in blue.
 
@@ -71,7 +71,7 @@ After selecting a dataset (and optionally an extension dataset), select **Build 
 
 Select the **refresh** button (circular arrow icon) next to the "Select a new TDEI dataset" label to reload the list of available datasets from the TDEI platform.
 
-Note that this dataset list refresh button does _not_ reload the page to activate router generated from the selected datasets.
+Note that this dataset list refresh button does _not_ reload the page to activate the router generated from the selected datasets.
 
 ---
 

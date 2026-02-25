@@ -39,8 +39,8 @@ Saved scenarios are listed in the **Edits tab** (pencil icon) in the left sideba
 
 Selecting the checkbox next to a saved scenario will make that scenario visible on the map view.
 
-![Saving a scenario](../../resources/images/walksheds/user-manual/scenarios/scenarios-light.png#only-light)
-![Saving a scenario](../../resources/images/walksheds/user-manual/scenarios/scenarios-dark.png#only-dark)
+![Saved scenarios list](../../resources/images/walksheds/user-manual/scenarios/scenarios-light.png#only-light)
+![Saved scenarios list](../../resources/images/walksheds/user-manual/scenarios/scenarios-dark.png#only-dark)
 
 ---
 
