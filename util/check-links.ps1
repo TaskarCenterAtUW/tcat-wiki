@@ -2,8 +2,8 @@
 # This script is designed to be run in a PowerShell environment.
 
 # Name: TCAT Wiki - Link Checker
-# Version: 4.2.0
-# Date: 2026-02-18
+# Version: 4.3.0
+# Date: 2026-02-24
 # Author: Amy Bordenave, Taskar Center for Accessible Technology, University of Washington
 # License: CC-BY-ND 4.0 International
 
@@ -166,6 +166,7 @@ function Test-ExternalUrlValid {
     $skipDomains = @(
         "*visualstudio.com*"
         "*docs.google.com*"
+        "*maps.app.goo.gl*"
         "*firebase*"
         "*osm.workspaces-stage.sidewalks.washington.edu/api*"
     )
@@ -182,7 +183,7 @@ function Test-ExternalUrlValid {
     try {
         # Prepare headers with User-Agent to identify as a bot
         $headers = @{
-            'User-Agent' = 'TCAT-Wiki-LinkChecker/4.2.0 (+https://github.com/TaskarCenterAtUW/tcat-wiki)'
+            'User-Agent' = 'TCAT-Wiki-LinkChecker/4.3.0 (+https://github.com/TaskarCenterAtUW/tcat-wiki)'
         }
 
         # Use HEAD request first, fallback to GET if needed
@@ -382,6 +383,7 @@ if ($external) {
             $skipDomains = @(
                 "*visualstudio.com*"
                 "*docs.google.com*"
+                "*maps.app.goo.gl*"
                 "*firebase*"
                 "*osm.workspaces-stage.sidewalks.washington.edu/api*"
             )

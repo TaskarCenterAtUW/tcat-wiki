@@ -13,6 +13,7 @@
 *[AVIV]: Accessibility Verification, Improved Validation
 *[AVIV SR]: AVIV ScoutRoute
 *[BART]: Bay Area Rapid Transit
+*[BBox]: Bounding Box
 *[BLV]: Blind and Low-Vision
 *[BRT]: Bus Rapid Transit
 *[BTS]: Bureau of Transportation Statistics
@@ -25,6 +26,7 @@
 *[CRS]: Coordinate Reference System
 *[CSE]: Computer Science and Engineering
 *[CSUN]: California State University, Northridge
+*[CSV]: Comma-Separated Values
 *[DEM]: Digital Elevation Model
 *[DOT]: Department of Transportation
 *[DSB]: Department of Services for the Blind
@@ -58,8 +60,10 @@
 *[IXN]: Intersection / Intersection Traversability Metric
 *[JOSM]: Java OpenStreetMap Editor
 *[KPI]: Key Performance Indicator
+*[lat]: Latitude
 *[LFQD]: Long Form Quest Definition
 *[LiDAR]: Light Detection and Ranging
+*[lon]: Longitude
 *[LRS]: Linear Referencing System
 *[LRTP]: Long-Range Transportation Plan
 *[MBTA]: Massachusetts Bay Transportation Authority

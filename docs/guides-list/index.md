@@ -110,7 +110,7 @@ This user manual explains how to use the TDEI Portal platform.
 
 #### [Walksheds User Manual](../walksheds/user-manual/index.md)
 
-This user manual explains how to use the TDEI Walksheds platform.
+This user manual explains how to use the TDEI Walksheds tool.
 
 ### [Workspaces](../workspaces/index.md)
 

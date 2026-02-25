@@ -23,31 +23,71 @@
 // Keep this in sync with $script:titleMap in util/generate-nav.ps1.
 
 const titleMapSource = {
-    osw: "OSW",
-    tdei: "TDEI",
+    // --- Acronyms & Technical Terms ---
+    api: "API",
+    bbox: "BBox",
+    csv: "CSV",
+    geojson: "GeoJSON",
+    gtfs: "GTFS",
+    ios: "iOS",
+    ixn: "IXN",
     josm: "JOSM",
-    "aviv scoutroute": "AVIV ScoutRoute",
+    json: "JSON",
+    osm: "OSM",
+    osw: "OSW",
+    pbf: "PBF",
+    sclio: "SCLIO",
+    tcat: "TCAT",
+    tdei: "TDEI",
+    url: "URL",
+    us: "US",
+
+    // --- Products & Projects ---
     accessmap: "AccessMap",
-    walksheds: "Walksheds",
+    "aviv scoutroute": "AVIV ScoutRoute",
+    opensidewalks: "OpenSidewalks",
+    openstreetmap: "OpenStreetMap",
+    "os connect": "OS-CONNECT",
+    rapid: "Rapid",
+    "tcat wiki": "TCAT Wiki",
+    "tdei core": "TDEI Core",
     "tdei walkshed": "TDEI Walkshed",
     "tdei workspaces": "TDEI Workspaces",
-    opensidewalks: "OpenSidewalks",
-    "tdei core": "TDEI Core",
-    rapid: "Rapid",
+    walksheds: "Walksheds",
     workspaces: "Workspaces",
+
+    // --- UI & Navigation Terms ---
     "guides list": "Guides List",
+    "how to": "How To",
+    "log in": "Log In",
+    "logging in": "Logging In",
+    "qa qc": "QA/QC",
+    "subreport a": "Subreport A",
     "user manual": "User Manual",
-    "tcat wiki": "TCAT Wiki",
-    "nda vancouver": "Clark County Walk/Roll Event",
-    ios: "iOS",
+
+    // --- Events ---
     mny26: "Mappy New Year 2026",
+    "nda vancouver": "Clark County Walk/Roll Event",
     "olympia connected": "Olympia, Connected",
     oswmh: "OpenSidewalks Mappy Hours",
-    "os connect": "OS-CONNECT",
-    "qa qc": "QA/QC",
-    url: "URL",
-    ixn: "IXN",
-    bbox: "BBox"
+
+    // --- Articles, Prepositions & Conjunctions ---
+    a: "a",
+    an: "an",
+    and: "and",
+    are: "are",
+    as: "as",
+    for: "for",
+    in: "in",
+    is: "is",
+    of: "of",
+    on: "on",
+    or: "or",
+    the: "the",
+    to: "to",
+    via: "via",
+    with: "with",
+    your: "your",
 };
 
 /**
