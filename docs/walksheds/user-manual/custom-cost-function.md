@@ -21,6 +21,8 @@ _For a list of all guides on the TCAT Wiki, refer to the [Guides List](../../gui
 
 ### Overview
 
+!!! example "This is an experimental feature which may not always be enabled and made visible."
+
 Advanced users can directly edit the Python code that computes the travel cost for each edge in the pedestrian network. This allows for highly customized walkshed calculations beyond what the standard preference sliders support.
 
 ---
