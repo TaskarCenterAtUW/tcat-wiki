@@ -12,15 +12,45 @@ tags:
 
 ## Interface Overview
 
-This section introduces the Walkshed Tool interface, including the sidebar tabs, map controls, and action pop-up.
+This section introduces the Walksheds interface, including the sidebar tabs, map controls, and legend.
 
 _For a list of all guides on the TCAT Wiki, refer to the [Guides List](../../guides-list/index.md)._
 
 ---
 
-### Overview
+### Map Overview
 
-The tool is organized around a left sidebar with several tabs, a main map view, and an action pop-up at the bottom of the screen.
+The Walkshed tool interface consists of two main areas: the **sidebar** on the left, which contains tabs for dataset selection, walkshed configuration, and other functions; and the **map view** on the right, which displays the pedestrian network and the calculated walkshed.
+
+![Full Walkshed interface](../../resources/images/walksheds/user-manual/interface/overview-light.png#only-light)
+![Full Walkshed interface](../../resources/images/walksheds/user-manual/interface/overview-dark.png#only-dark)
+
+---
+
+### Sidebar
+
+The left sidebar is the primary control panel for the Walkshed tool. It contains the following tabs:
+
+| Tab                      | Icon            | Purpose                                                                                                                 |
+|:-------------------------|:----------------|:------------------------------------------------------------------------------------------------------------------------|
+| **Walkshed Preferences** | Network graph   | Search for an address and configure walkshed preferences. Refer to [Mobility Profiles and Preferences](preferences.md). |
+| **Edits**                | Pencil          | Review, manage, or remove [Edits](edits.md) and saved [Scenarios](scenarios.md).                                        |
+| **Datasets**             | Settings (gear) | Select a TDEI dataset and build the routing graph. Refer to [Datasets](datasets.md).                                    |
+| **Batch**                | _(none)_        | Run multiple walkshed calculations from a CSV file. Refer to [Batches](batches.md).                                     |
+
+---
+
+### Main Menu
+
+Select the **Main Menu** button (☰ "hamburger" icon) at the top left of the sidebar to open a panel with the following options:
+
+| Option      | Description                                             |
+|:------------|:--------------------------------------------------------|
+| **About**   | Opens a popup with information about the Walksheds tool |
+| **Contact** | Opens a popup with contact and support information      |
+
+![About dialog](../../resources/images/walksheds/user-manual/interface/about-light.png#only-light)
+![About dialog](../../resources/images/walksheds/user-manual/interface/about-dark.png#only-dark)
 
 ---
 
@@ -32,49 +62,74 @@ Individual walkways are color-coded by how their incline affects movement speed:
 
 ---
 
-### Sidebar
+![Map legend](../../resources/images/walksheds/user-manual/interface/legend-light.png#only-light){ .img-right }
+![Map legend](../../resources/images/walksheds/user-manual/interface/legend-dark.png#only-dark){ .img-right }
 
-The left sidebar houses the controls used to configure the walkshed.
+### Map Legend
 
-| Tab          | Icon             | Purpose                                                                                                                                                                        |
-| ------------ | ---------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
-| **Walkshed** | Network          | Search for an address and configure walkshed preferences: slope limits, barrier avoidance, and street avoidance using sliders and toggles, and time of day using date/time pickers. See [Mobility Profiles and Preferences](preferences.md). |
-| **Changes**  | Pencil           | Review, manage, or remove [edge attribute edits](editing.md) and saved [walkshed scenarios](scenarios.md).                                                                     |
-| **Cost Fn**  | (none)           | View and edit the Python cost function used to weight network edges. See [Custom Cost Function](custom-cost-function.md).                                                      |
-| **Dataset**  | Settings (gear)  | Select a TDEI dataset and build the routing graph. See [TDEI Datasets](../../tdei/portal/user-manual/datasets.md).                                                             |
+Select the **Map Legend** button (top right of the map) to open a right sidebar that explains the symbols and colors used on the map. The legend is organized into the following sections:
 
----
+**Movement Speed Due to Incline**
 
-### Map Controls
+Walkways are color-coded by how their incline affects movement speed:
 
-A **map legend** button in the top-right corner of the screen opens a menu with toggles that control the visibility of the following map features:
+- **Blue** solid line — High speed (flat)
+- **Pink** solid line — Medium speed (moderate incline)
+- **Orange** solid line — Low speed (steep)
+- **Red** dotted line — Inaccessible
 
-- **Points:** Non-network point features in the dataset (light poles, benches, etc.).
-- **Cost Nodes:** Network nodes color-coded with their computed travel cost from the origin. The four colors (green, yellow, orange, and red) correspond to isochrones representing quartiles of travel cost from the origin.
-- **Convex Hull:** The outer boundary polygon of the walkshed with color-coded isochrones representing quartiles of travel cost from the origin.
+**Crossings**
 
----
+- **Light gray** line — Unmarked crossing
+- **Striped** line — Marked crossing
+- **Red** dotted line — Inaccessible
 
-### Action Pop-up
+**Stairs**
 
-The action pop-up at the bottom of the screen changes based on context:
+- **Black** dashed blocks — Accessible
+- **Red** dashed blocks — Inaccessible
 
-- **When an edge or feature is selected** (see [Inspecting and Editing Features](editing.md)), it displays the feature's attributes and action buttons.
-- **After a walkshed is generated**, it displays walkshed summary actions (see below).
+**Points**
 
-#### Walkshed Actions
+Point features (such as curb ramps, signals, and other landmarks) are displayed as small dots on the map.
 
-**Walkshed Info:** Opens a sidebar displaying summary statistics about the walkshed, including the number of sidewalk edges, crossing edges, and the total length of all included edges.
+**Walkshed**
 
-**Download Walkshed:** Saves the walkshed network as an OpenSidewalks GeoJSON document for use in external tools.
+- **Cost Nodes** — Network nodes color-coded with their computed travel cost from the origin. The four colors (green, yellow, orange, and red) correspond to isochrones representing quartiles of travel cost from the origin.
+- **Convex Hull** — The outer boundary polygon of the walkshed with color-coded isochrones representing quartiles of travel cost from the origin.
 
-**Save Scenario:** Enter a name in the text input box to save the current walkshed as a named scenario for later comparison. See [Scenarios](scenarios.md) for more information.
+!!! tip "Cost nodes or convex hull not visible on the map view?"
+
+    Toggle their visibility (eye icon) from the Map Legend panel.
 
 ---
 
 ### Incline Bar
 
 At the very bottom of the screen, a horizontal bar displays a color gradient labeled **Speed at incline %**. This bar maps incline percentages (from flat to steep) to the colors used on the map, which update in real time based on the currently selected mobility profile's maximum uphill and downhill steepness settings, providing a quick reference for interpreting path colors without opening the full map legend.
+
+<div class="only-light">
+<img-comparison-slider>
+  <img slot="first" src="../../../resources/images/walksheds/user-manual/interface/incline-bar-min-light.png" alt="Incline bar at minimum steepness settings" />
+  <img slot="second" src="../../../resources/images/walksheds/user-manual/interface/incline-bar-max-light.png" alt="Incline bar at maximum steepness settings" />
+</img-comparison-slider>
+</div>
+<div class="only-dark">
+<img-comparison-slider>
+  <img slot="first" src="../../../resources/images/walksheds/user-manual/interface/incline-bar-min-dark.png" alt="Incline bar at minimum steepness settings" />
+  <img slot="second" src="../../../resources/images/walksheds/user-manual/interface/incline-bar-max-dark.png" alt="Incline bar at maximum steepness settings" />
+</img-comparison-slider>
+</div>
+
+!!! tip
+
+    The image comparison slider above compares two map views: once where the steepness values are set to the minimum possible, and once where the steepness values are set to the maximum possible. This highlights how the steepness sliders, incline bar, and map contents all update in sync.
+
+---
+
+### Action Pop-up
+
+After a walkshed is generated, an action pop-up appears at the bottom of the screen with options to view walkshed statistics, download results as a GeoJSON file, and save scenarios for later comparison. For more information, see [Scenarios](scenarios.md).
 
 ---
 
