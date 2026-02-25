@@ -263,8 +263,10 @@ nav = [
             {"Getting Started" = "walksheds/user-manual/getting-started.md"},
             {"Interface Overview" = "walksheds/user-manual/interface.md"},
             {"Mobility Profiles and Preferences" = "walksheds/user-manual/preferences.md"},
-            {"Inspecting and Editing Features" = "walksheds/user-manual/editing.md"},
+            {"Inspecting and Editing Features" = "walksheds/user-manual/edits.md"},
             {"Scenarios" = "walksheds/user-manual/scenarios.md"},
+            {"Datasets" = "walksheds/user-manual/datasets.md"},
+            {"Batches" = "walksheds/user-manual/batches.md"},
             {"Sidewalk Score" = "walksheds/user-manual/sidewalk-score.md"},
             {"Custom Cost Function" = "walksheds/user-manual/custom-cost-function.md"}
         ]}
