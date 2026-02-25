@@ -17,28 +17,30 @@ _For a list of all guides on the TCAT Wiki, refer to the [Guides List](../../gui
 
 ---
 
-### About the Walkshed Tool
+### About Walksheds
 
-The [Walkshed Tool](https://walkshed.tdei.us) calculates pedestrian walkshed areas around a specified origin point. A **walkshed** is the region reachable on foot (or by mobility device) within a given travel time or cost budget, given the characteristics of the surrounding pedestrian network: sidewalks, crossings, slopes, and barriers.
+The [TDEI Walksheds tool](https://walkshed.tdei.us) calculates pedestrian walkshed areas around a specified origin point. 
 
-Unlike a simple radius, a walkshed reflects real-world travel conditions. Two points equidistant from an origin may have very different costs to reach depending on slope, raised curbs or stairs, or whether the route requires crossing a busy street. The result is a realistic map of accessible space from your chosen origin.
+A **walkshed** is the region reachable by pedestrians (on foot or by mobility device) within a given travel time or cost budget, given the characteristics of the surrounding pedestrian network: sidewalks, crossings, slopes, and barriers such as curbs and stairs.
 
-A TDEI account is required to sign in. You can register for one at [https://portal.tdei.us/](https://portal.tdei.us/).
+Unlike a simple distance radius, a walkshed reflects real-world travel conditions. Two points equidistant from an origin may have very different costs to reach depending on slope, raised curbs or stairs, or whether the route requires crossing a busy street. The result is a realistic map of accessible space from your chosen origin point.
+
+A TDEI account is required to sign in. You can register for one at [portal.tdei.us/register](https://portal.tdei.us/register).
 
 ---
 
 ### Quick Start
 
-1. **Register** at [https://portal.tdei.us/](https://portal.tdei.us/) and sign in to the Walkshed Tool at [https://walkshed.tdei.us](https://walkshed.tdei.us)
-2. **Select a dataset** in the **Dataset tab** and click **Build Router**
-3. **Configure preferences** in the **Walkshed tab**, or choose a profile
-4. **Click on the map** to set an origin point and choose a travel budget
+1. **Register** for a [TDEI Portal](../../tdei/portal/index.md) account ([portal.tdei.us/register](https://portal.tdei.us/register)) and sign in to the Walksheds tool ([walkshed.tdei.us](https://walkshed.tdei.us))
+2. **Select a dataset** in the **[Datasets tab](datasets.md)** and click **Build Router**
+3. **Configure preferences** in the **[Preferences tab](preferences.md)**, or choose a profile
+4. **Click on the map** to set an origin point and choose a travel time budget
 5. **Read the results:** reachable paths are highlighted in blue
 
 ---
 
-![Walkshed Tool](../../resources/images/walksheds/user-manual/index/walkshed-light.png#only-light)
-![Walkshed Tool](../../resources/images/walksheds/user-manual/index/walkshed-dark.png#only-dark)
+![Walksheds](../../resources/images/walksheds/user-manual/index/walksheds-light.png#only-light)
+![Walksheds](../../resources/images/walksheds/user-manual/index/walksheds-dark.png#only-dark)
 
 ---
 
@@ -52,13 +54,13 @@ This section explains how to sign in, load a dataset, configure preferences, and
 
 #### [Interface Overview](interface.md)
 
-This section introduces the Walkshed Tool interface, including the sidebar tabs, map controls, and action pop-up.
+This section introduces the Walksheds interface, including the sidebar tabs, map controls, and legend.
 
 #### [Mobility Profiles and Preferences](preferences.md)
 
 This section explains how to select a pre-defined mobility profile and how to customize individual routing preferences.
 
-#### [Inspecting and Editing Features](editing.md)
+#### [Inspecting and Editing Features](edits.md)
 
 This section explains how to inspect network edges on the map, edit their attributes, and review or remove changes.
 
@@ -66,11 +68,14 @@ This section explains how to inspect network edges on the map, edit their attrib
 
 This section explains how to save walksheds as named scenarios and use them to compare results across different configurations or datasets.
 
+#### [Datasets](datasets.md)
+
+This section explains how to select a TDEI dataset and build the routing graph used for walkshed calculations.
+
+#### [Batches](batches.md)
+
+This section explains how to use the Batch tab to run multiple walkshed calculations from a single CSV file.
+
 #### [Sidewalk Score](sidewalk-score.md)
 
-This section explains the Sidewalk Score feature of the Walkshed Tool.
-
-#### [Custom Cost Function](custom-cost-function.md)
-
-This section explains how to view and modify the Python cost function used to weight network edges.
-
+This section explains the Sidewalk Score feature of the Walksheds tool.
