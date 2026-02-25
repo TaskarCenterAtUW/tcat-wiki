@@ -76,6 +76,6 @@ This section explains how to select a TDEI dataset and build the routing graph u
 
 This section explains how to use the Batch tab to run multiple walkshed calculations from a single CSV file.
 
-#### [Sidewalk Score](sidewalk-score.md)
+#### [Walkshed Information & Sidewalk Score](sidewalk-score.md)
 
-This section explains the Sidewalk Score feature of the Walksheds tool.
+This section explains how to view walkshed statistics and the Sidewalk Score feature of the Walksheds tool.

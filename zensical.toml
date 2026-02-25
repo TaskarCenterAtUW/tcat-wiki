@@ -267,7 +267,7 @@ nav = [
             {"Scenarios" = "walksheds/user-manual/scenarios.md"},
             {"Datasets" = "walksheds/user-manual/datasets.md"},
             {"Batches" = "walksheds/user-manual/batches.md"},
-            {"Sidewalk Score" = "walksheds/user-manual/sidewalk-score.md"},
+            {"Walkshed Information & Sidewalk Score" = "walksheds/user-manual/sidewalk-score.md"},
             {"Custom Cost Function" = "walksheds/user-manual/custom-cost-function.md"}
         ]}
     ]},
