@@ -21,7 +21,7 @@ This site explains how to use the open-source transportation accessibility **too
 
 ---
 
-### User Journeys (Start Here!)
+### User Journeys
 
 Choose your path: each one starts with the simplest document and then offers deeper options.
 
@@ -37,7 +37,7 @@ Choose your path: each one starts with the simplest document and then offers dee
 
     **Get Started:** [View the data](os-connect/data-viewer/user-manual/index.md) and get a [Jurisdiction Snapshot (PDF)](os-connect/qa-qc/user-manual/index.md)
 
-??? abstract "I'm a planner / analyst (no GIS required)"
+<!-- ??? abstract "I'm a planner / analyst (no GIS required)"
 
     Do you want to use outputs in planning (ADA transition plans, active transportation plans, equity work)?
 
@@ -59,8 +59,7 @@ Choose your path: each one starts with the simplest document and then offers dee
 
     Do you want to help a jurisdiction validate, report issues, or contribute edits?
 
-    **Get Started:** Learn how to report a problem _(Coming soon!)_ and about how updates happen through [Workspaces](workspaces/index.md)
-
+    **Get Started:** Learn how to report a problem _(Coming soon!)_ and about how updates happen through [Workspaces](workspaces/index.md) -->
 ---
 
 ### Key Takeaways
