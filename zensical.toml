@@ -176,7 +176,12 @@ nav = [
             {"Mapping Guide" = "events/olympia-connected/mapping-guide.md"},
             {"Validation Guide" = "events/olympia-connected/validation-guide.md"}
         ]},
-        {"Oswmh" = [ "events/oswmh/index.md" ]}
+        {"Oswmh" = [ "events/oswmh/index.md" ]},
+        {"Otp26" = [
+            "events/otp26/index.md",
+            {"Mapping Guide" = "events/otp26/mapping-guide.md"},
+            {"Validation Guide" = "events/otp26/validation-guide.md"}
+        ]}
     ]},
     {"JOSM" = [
         "josm/index.md",
