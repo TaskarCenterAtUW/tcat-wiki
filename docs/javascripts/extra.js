@@ -70,6 +70,7 @@ const titleMapSource = {
     "nda vancouver": "Clark County Walk/Roll Event",
     "olympia connected": "Olympia, Connected",
     oswmh: "OpenSidewalks Mappy Hours",
+    otp26: "OpenThePaths 2026",
 
     // --- Articles, Prepositions & Conjunctions ---
     a: "a",
