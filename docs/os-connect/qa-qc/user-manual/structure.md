@@ -12,7 +12,7 @@ tags:
 
 ## Data Sources and OS-CONNECT QA/QC Report Structure
 
-This document explains the structure of the OS-CONNECT "Jurisdiction Snapshot" QA/QC reports.
+This section explains the structure of the OS-CONNECT "Jurisdiction Snapshot" QA/QC reports.
 
 ---
 
