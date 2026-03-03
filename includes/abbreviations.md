@@ -6,6 +6,7 @@
 *[ADA]: Americans with Disabilities Act
 *[AI]: Artificial Intelligence
 *[API]: Application Programming Interface
+*[APS]: Accessible Pedestrian Signal
 *[ARNOLD]: All Road Network of Linear Referenced Data
 *[ASR]: AVIV ScoutRoute
 *[ATTRI]: Accessible Transportation Technologies Research Initiative
@@ -32,8 +33,10 @@
 *[DSB]: Department of Services for the Blind
 *[DSM]: Digital Surface Model
 *[DTM]: Digital Terrain Model
+*[EFA]: Equity Focus Area
 *[ETL]: Extract, Transform, Load
 *[FDE]: Fundamental Data Elements
+*[FGTS]: Freight & Goods Transportation System
 *[FHWA]: Federal Highway Administration
 *[FNS]: Food and Nutrition Service
 *[FTA]: Federal Transit Administration
@@ -42,6 +45,7 @@
 *[GERS]: Global Entity Reference System
 *[GIG]: GoInfoGame
 *[GIS]: Geographic Information System
+*[GIS-T]: Geospatial Information Systems for Transportation
 *[GOFS]: General On-Demand Transit Feed Specification
 *[GNSS]: Global Navigation Satellite System
 *[GPS]: Global Positioning System
@@ -50,6 +54,8 @@
 *[GTFS-Flex]: General Transit Feed Specification, Flex Extension
 *[GTFS-Pathways]: General Transit Feed Specification, Pathways Extension
 *[HAWK]: High-Intensity Activated Crosswalk Beacon
+*[HCT]: High-Capacity Transit
+*[HIN]: High Injury Network
 *[HOT]: Humanitarian OpenStreetMap Team
 *[HOV]: High Occupancy Vehicle
 *[HxGN]: Hexagon (aerial imagery provider)
@@ -69,10 +75,12 @@
 *[MBTA]: Massachusetts Bay Transportation Authority
 *[MDIP]: Mobility Data Interoperability Principles
 *[MDOT]: Michigan Department of Transportation
+*[MIC]: Manufacturing Industrial Center
 *[MIRE]: Model Inventory of Roadway Elements
 *[ML]: Machine Learning
 *[MnDOT]: Minnesota Department of Transportation
 *[MNY26]: Mappy New Year 2026
+*[MOD]: Mobility-on-Demand
 *[MOU]: Memorandum of Understanding
 *[MPO]: Metropolitan Planning Organization
 *[MUTCD]: Manual on Uniform Traffic Control Devices
@@ -108,6 +116,7 @@
 *[QA]: Quality Assurance
 *[QC]: Quality Control
 *[RCTO]: Regional Concept for Transportation Operations
+*[RGC]: Regional Growth Center
 *[ROW]: Right of Way
 *[RRFB]: Rectangular Rapid Flashing Beacon
 *[RSO]: Registered Student Organization
@@ -138,6 +147,7 @@
 *[TEA-21]: Transportation Equity Act for the 21st Century
 *[TIP]: Transportation Improvement Program
 *[TMA]: Transportation Management Areas
+*[TOD]: Time of Day
 *[TRAILS]: Trail Routing, Analysis, and Information Linkage System
 *[TRB]: Transportation Research Board
 *[TSP]: Transportation Service Provider / Transportation Safety Planning
