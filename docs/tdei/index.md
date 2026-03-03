@@ -172,6 +172,12 @@ _For a list of all guides on the TCAT Wiki, refer to the [Guides List](../guides
 
 The **[TDEI Portal](https://portal.tdei.us/)** is the web interface for the Transportation Data Exchange Initiative (TDEI).
 
+##### Tutorials
+
+###### ["Download OS-CONNECT Data from the TDEI Portal"](portal/tutorial/download-os-connect.md)
+
+This tutorial walks you through downloading OpenSidewalks-formatted OS-CONNECT datasets from the TDEI Portal.
+
 ##### [TDEI Portal User Manual](portal/user-manual/index.md)
 
 This user manual explains how to use the TDEI Portal platform.

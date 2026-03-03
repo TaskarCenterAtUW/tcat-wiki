@@ -51,6 +51,12 @@ TDEI Portal Guides
 
 _For a list of all guides on the TCAT Wiki, refer to the [Guides List](../../guides-list/index.md)._
 
+#### Tutorials
+
+##### ["Download OS-CONNECT Data from the TDEI Portal"](tutorial/download-os-connect.md)
+
+This tutorial walks you through downloading OpenSidewalks-formatted OS-CONNECT datasets from the TDEI Portal.
+
 #### [TDEI Portal User Manual](user-manual/index.md)
 
 This user manual explains how to use the TDEI Portal platform.

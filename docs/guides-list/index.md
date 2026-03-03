@@ -102,6 +102,12 @@ This user manual explains how to use the Rapid editor.
 
 The **[TDEI Portal](https://portal.tdei.us/)** is the web interface for the Transportation Data Exchange Initiative (TDEI).
 
+##### Tutorials
+
+###### ["Download OS-CONNECT Data from the TDEI Portal"](../tdei/portal/tutorial/download-os-connect.md)
+
+This tutorial walks you through downloading OpenSidewalks-formatted OS-CONNECT datasets from the TDEI Portal.
+
 ##### [TDEI Portal User Manual](../tdei/portal/user-manual/index.md)
 
 This user manual explains how to use the TDEI Portal platform.
@@ -113,6 +119,12 @@ This user manual explains how to use the TDEI Portal platform.
 This user manual explains how to use the TDEI Walksheds tool.
 
 ### [Workspaces](../workspaces/index.md)
+
+#### Tutorials
+
+##### ["Import OSM Data into Workspaces"](../workspaces/tutorial/osm-to-workspaces.md)
+
+This tutorial explains how to download an area of interest from OpenStreetMap, convert it to the OpenSidewalks format, and upload it to Workspaces as a new dataset.
 
 #### [Workspaces User Manual](../workspaces/user-manual/index.md)
 

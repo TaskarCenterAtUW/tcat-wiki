@@ -227,6 +227,7 @@ Invoke-Pester .\check-links.Tests.ps1 -ExcludeTag "Network" -Output Minimal # Sk
 1. **Guide Tags**:
     - Use `- Guide` tag for regular guide pages
     - Use `- User Manual` tag for user manual index files (e.g., `user-manual/index.md`)
+    - Use `- Tutorial` tag for tutorial guides (short tutorials focused on specific goals or use cases)
 2. **Other Tags**: Use additional tags for filtering; supported tags: "OSW 0.2", "OSW 0.3", "OSW 0.4", "Internal", "External", "Developer", "User"
 3. **Abbreviations**: Wrap acronyms normally (e.g., "OSW", "TDEI", "JOSM"); abbreviations plugin auto-links them
 
@@ -254,6 +255,18 @@ tags:
     - User Manual
     - External
     - User
+---
+```
+
+Or for tutorials:
+
+```yaml
+---
+title: "Accomplish Specific Task"
+tags:
+    - Tutorial
+    - External
+    - Developer
 ---
 ```
 
@@ -316,6 +329,17 @@ Both flags can be used together to exclude a guide from all guides lists.
 - They appear as single entries in parent guides sections (not as section headers)
 - In the main guides list, only the user manual itself appears, not its subpages
 - Their subpages (e.g., `workspace-settings.md`) appear only in the user manual's own `## Guides` section
+- The `index.md` must always begin its first prose sentence with "This user manual..."
+- Subpages must always begin their first prose sentence with "This section..."
+
+**Tutorials**: Pages tagged with `- Tutorial` are treated as guides (implies Guide) but handled specially:
+
+- They are short tutorials focused on specific goals or use cases, typically linking to user manuals for details
+- They appear first in guides sections under a "Tutorials" subsection header, before user manuals and regular guides
+- They may live directly in a topic directory or in a `tutorial/` subdirectory (without index.md)
+- The `tutorial/` subdirectory is scanned automatically; its contents are attributed to the parent directory
+- Ordering at every level is: Tutorials → User Manuals → Regular Guides
+- Must always begin their first prose sentence with "This tutorial..."
 
 ### Organization
 

@@ -2,8 +2,8 @@
 #Requires -Modules @{ ModuleName='Pester'; ModuleVersion='5.0.0' }
 
 # Name: TCAT Wiki - Guides Lists Generator Tests
-# Version: 3.0.0
-# Date: 2026-02-05
+# Version: 4.0.0
+# Date: 2026-03-03
 # Author: Amy Bordenave, Taskar Center for Accessible Technology, University of Washington
 # License: CC-BY-ND 4.0 International
 
@@ -71,6 +71,7 @@ This is a test guide.
             $result = Get-GuideInfo -FilePath $testFile
             $result.IsGuide | Should -Be $true
             $result.IsUserManual | Should -Be $false
+            $result.IsTutorial | Should -Be $false
             $result.Title | Should -Be "Test Guide"
         }
     }
@@ -94,7 +95,31 @@ This is a test user manual.
             $result = Get-GuideInfo -FilePath $testFile
             $result.IsGuide | Should -Be $true
             $result.IsUserManual | Should -Be $true
-            $result.Title | Should -Be "Test User Manual"
+            $result.IsTutorial | Should -Be $false
+        }
+    }
+
+    Context "When file has Tutorial tag in frontmatter" {
+        It "Should detect file as both guide and tutorial" {
+            $testFile = Join-Path $TestDrive "tutorial-test.md"
+            @"
+---
+title: "Test Task"
+tags:
+    - Tutorial
+    - External
+---
+
+# Test Task
+
+This is a test tutorial.
+"@ | Set-Content -Path $testFile -Encoding UTF8
+
+            $result = Get-GuideInfo -FilePath $testFile
+            $result.IsGuide | Should -Be $true
+            $result.IsTutorial | Should -Be $true
+            $result.IsUserManual | Should -Be $false
+            $result.Title | Should -Be '"Test Task"'
         }
     }
 
@@ -114,9 +139,9 @@ This is not a guide.
             $result = Get-GuideInfo -FilePath $testFile
             $result.IsGuide | Should -Be $false
             $result.IsUserManual | Should -Be $false
+            $result.IsTutorial | Should -Be $false
         }
     }
-
     Context "When file has exclude-from-parent-guides-list flag" {
         It "Should set ExcludeFromParent to true" {
             $testFile = Join-Path $TestDrive "exclude-parent-test.md"
@@ -548,6 +573,132 @@ nav_order: 1
             $result[2].Name | Should -Be "zebra-guide.md" -Because "guides without nav_order should come last"
         }
     }
+
+    Context "When directory has tutorial files in a tutorial/ subdirectory" {
+        BeforeAll {
+            $script:tutorialGuidesDir = Join-Path $TestDrive "tutorial-guides-dir"
+            New-Item -Path $tutorialGuidesDir -ItemType Directory -Force | Out-Null
+
+            # Create index.md (not a guide)
+            @"
+---
+title: Section Index
+---
+"@ | Set-Content -Path (Join-Path $tutorialGuidesDir "index.md") -Encoding UTF8
+
+            # Create a regular guide
+            @"
+---
+title: Regular Guide
+tags:
+    - Guide
+---
+"@ | Set-Content -Path (Join-Path $tutorialGuidesDir "regular-guide.md") -Encoding UTF8
+
+            # Create tutorial/ subdirectory with a tutorial file
+            $tutorialSubdir = Join-Path $tutorialGuidesDir "tutorial"
+            New-Item -Path $tutorialSubdir -ItemType Directory -Force | Out-Null
+            @"
+---
+title: "Do Something"
+tags:
+    - Tutorial
+---
+"@ | Set-Content -Path (Join-Path $tutorialSubdir "do-something.md") -Encoding UTF8
+        }
+
+        It "Should include tutorial files from tutorial/ subdirectory" {
+            $result = Get-GuidesInDirectory -Directory $tutorialGuidesDir -ExcludeOwnIndex $true -ExcludeFlag $EXCLUDE_PARENT_FLAG
+            $result.Count | Should -Be 2
+        }
+
+        It "Should return tutorial files before regular guides" {
+            $result = Get-GuidesInDirectory -Directory $tutorialGuidesDir -ExcludeOwnIndex $true -ExcludeFlag $EXCLUDE_PARENT_FLAG
+            $result[0].Name | Should -Be "do-something.md" -Because "tutorials should come before regular guides"
+            $result[1].Name | Should -Be "regular-guide.md"
+        }
+    }
+
+    Context "When directory has tutorial files directly (not in subdirectory)" {
+        BeforeAll {
+            $script:tutorialDirectDir = Join-Path $TestDrive "tutorial-direct-dir"
+            New-Item -Path $tutorialDirectDir -ItemType Directory -Force | Out-Null
+
+            # Create index.md (not a guide)
+            @"
+---
+title: Section Index
+---
+"@ | Set-Content -Path (Join-Path $tutorialDirectDir "index.md") -Encoding UTF8
+
+            # Create a tutorial file directly in the directory
+            @"
+---
+title: "Direct Task"
+tags:
+    - Tutorial
+---
+"@ | Set-Content -Path (Join-Path $tutorialDirectDir "direct-tutorial.md") -Encoding UTF8
+
+            # Create a regular guide
+            @"
+---
+title: Regular Guide
+tags:
+    - Guide
+---
+"@ | Set-Content -Path (Join-Path $tutorialDirectDir "regular-guide.md") -Encoding UTF8
+        }
+
+        It "Should detect tutorial files and return them before regular guides" {
+            $result = Get-GuidesInDirectory -Directory $tutorialDirectDir -ExcludeOwnIndex $true -ExcludeFlag $EXCLUDE_PARENT_FLAG
+            $result.Count | Should -Be 2
+            $result[0].Name | Should -Be "direct-tutorial.md" -Because "tutorials should come before regular guides"
+            $result[1].Name | Should -Be "regular-guide.md"
+        }
+    }
+
+    Context "When directory has tutorials, user manuals, and regular guides" {
+        BeforeAll {
+            $script:allTypesDir = Join-Path $TestDrive "all-types-dir"
+            New-Item -Path $allTypesDir -ItemType Directory -Force | Out-Null
+
+            # Create index.md with User Manual tag
+            @"
+---
+title: Test User Manual
+tags:
+    - User Manual
+---
+"@ | Set-Content -Path (Join-Path $allTypesDir "index.md") -Encoding UTF8
+
+            # Create a tutorial file
+            @"
+---
+title: "Something"
+tags:
+    - Tutorial
+---
+"@ | Set-Content -Path (Join-Path $allTypesDir "tutorial-something.md") -Encoding UTF8
+
+            # Create a regular guide
+            @"
+---
+title: Regular Guide
+tags:
+    - Guide
+---
+"@ | Set-Content -Path (Join-Path $allTypesDir "regular-guide.md") -Encoding UTF8
+        }
+
+        It "Should return in order: tutorials, user manuals, regular guides" {
+            $result = Get-GuidesInDirectory -Directory $allTypesDir -ExcludeOwnIndex $false -ExcludeFlag $EXCLUDE_PARENT_FLAG
+            $result.Count | Should -Be 3
+            $result[0].Name | Should -Be "tutorial-something.md" -Because "tutorials should come first"
+            $result[1].Name | Should -Be "index.md" -Because "user manuals should come second"
+            $result[2].Name | Should -Be "regular-guide.md" -Because "regular guides should come last"
+        }
+    }
 }
 
 # ==============================================================================
@@ -601,6 +752,20 @@ title: Resources
     It "Should exclude directories without index.md" {
         $result = Get-Subdirectories -Directory $subdirTestRoot
         $result | Where-Object { $_.Name -eq "no-index" } | Should -BeNullOrEmpty
+    }
+
+    It "Should exclude tutorial directories" {
+        # Create a tutorial subdirectory (should be excluded even if it has index.md)
+        $tutorialDir = Join-Path $subdirTestRoot "tutorial"
+        New-Item -Path $tutorialDir -ItemType Directory -Force | Out-Null
+        @"
+---
+title: Tutorials
+---
+"@ | Set-Content -Path (Join-Path $tutorialDir "index.md") -Encoding UTF8
+
+        $result = Get-Subdirectories -Directory $subdirTestRoot
+        $result | Where-Object { $_.Name -eq "tutorial" } | Should -BeNullOrEmpty
     }
 
     It "Should include directories with index.md" {
@@ -766,6 +931,15 @@ tags:
 ---
 "@ | Set-Content -Path (Join-Path $allGuidesTestDir "regular-guide.md") -Encoding UTF8
 
+        # Create tutorial file
+        @"
+---
+title: "Test Task"
+tags:
+    - Tutorial
+---
+"@ | Set-Content -Path (Join-Path $allGuidesTestDir "tutorial-test.md") -Encoding UTF8
+
         # Create user manual subdirectory
         $umSubdir = Join-Path $allGuidesTestDir "user-manual"
         New-Item -Path $umSubdir -ItemType Directory -Force | Out-Null
@@ -781,10 +955,12 @@ tags:
         $script:testSubdirs = @(Get-Item $umSubdir)
     }
 
-    It "Should return user manuals before regular guides" {
+    It "Should return tutorials before user manuals before regular guides" {
         $result = Get-AllGuidesAtLevel -Directory $allGuidesTestDir -ExcludeFlag $EXCLUDE_PARENT_FLAG -Subdirectories $testSubdirs
-        $result[0].Type | Should -Be 'UserManual'
-        $result[1].Type | Should -Be 'Guide'
+        $result.Count | Should -Be 3
+        $result[0].Type | Should -Be 'Tutorial'
+        $result[1].Type | Should -Be 'UserManual'
+        $result[2].Type | Should -Be 'Guide'
     }
 
     It "Should include Path property for all entries" {
@@ -799,6 +975,14 @@ tags:
         $result | ForEach-Object {
             $_.Info | Should -Not -BeNullOrEmpty
         }
+    }
+
+    It "Should include File property for Tutorial and Guide entries" {
+        $result = Get-AllGuidesAtLevel -Directory $allGuidesTestDir -ExcludeFlag $EXCLUDE_PARENT_FLAG -Subdirectories $testSubdirs
+        $tutorialEntry = $result | Where-Object { $_.Type -eq 'Tutorial' }
+        $guideEntry = $result | Where-Object { $_.Type -eq 'Guide' }
+        $tutorialEntry.File | Should -Not -BeNullOrEmpty
+        $guideEntry.File | Should -Not -BeNullOrEmpty
     }
 }
 
@@ -847,6 +1031,21 @@ tags:
 This guide is about the topic.
 "@ | Set-Content -Path (Join-Path $topicDir "topic-guide.md") -Encoding UTF8
 
+        # Create tutorial/ subdirectory with a tutorial file
+        $tutorialDir = Join-Path $topicDir "tutorial"
+        New-Item -Path $tutorialDir -ItemType Directory -Force | Out-Null
+        @"
+---
+title: "Test Something"
+tags:
+    - Tutorial
+---
+
+# Test Something
+
+This is a tutorial guide.
+"@ | Set-Content -Path (Join-Path $tutorialDir "test-something.md") -Encoding UTF8
+
         # Create user manual subdirectory
         $umDir = Join-Path $topicDir "user-manual"
         New-Item -Path $umDir -ItemType Directory -Force | Out-Null
@@ -892,15 +1091,24 @@ This is a chapter.
     }
 
     Context "Guides ordering" {
-        It "Should place user manuals before regular guides in Get-AllGuidesAtLevel" {
+        It "Should place tutorials before user manuals before regular guides in Get-AllGuidesAtLevel" {
             $topicDir = Join-Path $integrationRoot "test-topic"
             $subdirs = Get-Subdirectories -Directory $topicDir
             $entries = Get-AllGuidesAtLevel -Directory $topicDir -ExcludeFlag $EXCLUDE_PARENT_FLAG -Subdirectories $subdirs
 
-            # First entry should be user manual (from subdirectory)
-            $entries[0].Type | Should -Be 'UserManual'
-            # Second entry should be regular guide
-            $entries[1].Type | Should -Be 'Guide'
+            # First entry should be tutorial (from tutorial/ subdirectory)
+            $entries[0].Type | Should -Be 'Tutorial'
+            # Second entry should be user manual (from subdirectory)
+            $entries[1].Type | Should -Be 'UserManual'
+            # Third entry should be regular guide
+            $entries[2].Type | Should -Be 'Guide'
+        }
+
+        It "Should discover tutorial files from tutorial/ subdirectory via Get-GuidesInDirectory" {
+            $topicDir = Join-Path $integrationRoot "test-topic"
+            $guides = Get-GuidesInDirectory -Directory $topicDir -ExcludeOwnIndex $true -ExcludeFlag $EXCLUDE_PARENT_FLAG
+            $tutorialFiles = @($guides | Where-Object { $_.Directory.Name -eq "tutorial" })
+            $tutorialFiles.Count | Should -Be 1 -Because "tutorial files from tutorial/ subdirectory should be discovered"
         }
     }
 }

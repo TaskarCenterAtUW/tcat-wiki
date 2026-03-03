@@ -1,6 +1,6 @@
 #region Meta
 [project]
-version = "7.3.0"
+version = "8.0.0"
 site_name = "The Taskar Center for Accessible Technology"
 site_description = "Information and guides related to the Taskar Center for Accessible Technology (TCAT) at the University of Washington."
 site_author = "Taskar Center for Accessible Technology"
@@ -257,7 +257,7 @@ nav = [
                     {"Dataset Union" = "tdei/portal/user-manual/jobs/dataset-union.md"}
                 ]}
             ]},
-            {"How To" = [ {"How To: Download OS-CONNECT Data from the TDEI Portal" = "tdei/portal/how-to/download-os-connect.md"} ]}
+            {"Tutorial" = [ {"Download OS-CONNECT Data from the TDEI Portal" = "tdei/portal/tutorial/download-os-connect.md"} ]}
         ]},
         {"TDEI Core" = [ "tdei/tdei-core/index.md" ]}
     ]},
@@ -279,6 +279,7 @@ nav = [
     {"Workspaces" = [
         "workspaces/index.md",
         {"Workspace Export Guide" = "workspaces/workspace-export.md"},
+        {"Tutorial" = [ {"Import OSM Data into Workspaces" = "workspaces/tutorial/osm-to-workspaces.md"} ]},
         {"User Manual" = [
             "workspaces/user-manual/index.md",
             {"Workspace Settings" = "workspaces/user-manual/workspace-settings.md"}
@@ -286,3 +287,4 @@ nav = [
     ]},
     {"Guides List" = "guides-list/index.md"}
 ]
+

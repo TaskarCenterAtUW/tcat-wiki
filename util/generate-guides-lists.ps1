@@ -3,7 +3,7 @@
 
 # Name: TCAT Wiki - Guides Lists Generator
 # Version: 8.0.0
-# Date: 2026-02-22
+# Date: 2026-03-03
 # Author: Amy Bordenave, Taskar Center for Accessible Technology, University of Washington
 # License: CC-BY-ND 4.0 International
 
@@ -16,24 +16,33 @@
 
     PHASE 1: For each directory with index.md, creates a "### Guides" section
     (or "### Table of Contents" for user manual pages) listing:
-    - User manual subdirectories first (sorted alphabetically)
+    - Tutorials first (in a "Tutorials" subsection)
+    - User manual subdirectories next (sorted alphabetically)
     - Direct guides in that directory (sorted alphabetically)
     - Subsections for non-user-manual subdirectories with their guides
 
     PHASE 2: Generates the main guides-list/index.md with hierarchical structure
-    across all topics, maintaining consistent ordering with user manuals first
-    at each hierarchy level.
+    across all topics, maintaining consistent ordering with tutorials first,
+    then user manuals, then regular guides at each hierarchy level.
 
     Guide files must have "- Guide" tag in frontmatter.
     User manual index files should have "- User Manual" tag (implies Guide).
+    Tutorial files should have "- Tutorial" tag (implies Guide).
 
     Special frontmatter flags (YAML comments, invisible on built pages):
     - # exclude-from-parent-guides-list - Exclude from parent directory guides sections
     - # exclude-from-main-guides-list - Exclude from main guides list
 
+    Tutorial handling:
+    - Detected by "- Tutorial" tag in frontmatter (implies Guide)
+    - Individual files, not directories with index.md
+    - May live in a tutorial/ subdirectory (without index.md) or directly in a topic directory
+    - Always appear first at their heading level (before user manuals and regular guides)
+    - Listed under a "Tutorials" subsection header at each level
+
     User Manual handling:
     - Detected by "- User Manual" tag on index.md
-    - Always appear first at their heading level (before regular guides)
+    - Always appear after tutorials but before regular guides at their heading level
     - Use "### Table of Contents" instead of "### Guides" on their own pages
     - Don't get " Guides" suffix in section headers
     - In main guides list: only the user manual itself appears, not its subpages
@@ -64,7 +73,7 @@ function Get-GuideInfo {
         Parses YAML frontmatter to extract title, description, guide tags,
         nav_order, and exclusion flags. Returns a hashtable with the extracted information.
     .OUTPUTS
-        Hashtable with keys: Title, Description, IsGuide, IsUserManual, ExcludeFromParent, ExcludeFromMain, NavOrder
+        Hashtable with keys: Title, Description, IsGuide, IsUserManual, IsTutorial, ExcludeFromParent, ExcludeFromMain, NavOrder
     #>
     param(
         [Parameter(Mandatory = $true)]
@@ -76,6 +85,7 @@ function Get-GuideInfo {
         Description       = ""
         IsGuide           = $false
         IsUserManual      = $false
+        IsTutorial        = $false
         ExcludeFromParent = $false
         ExcludeFromMain   = $false
         NavOrder          = $null
@@ -93,6 +103,10 @@ function Get-GuideInfo {
             if ($frontmatter -match '- User Manual') {
                 $result.IsUserManual = $true
                 $result.IsGuide = $true  # User manuals are also guides
+            }
+            if ($frontmatter -match '- Tutorial') {
+                $result.IsTutorial = $true
+                $result.IsGuide = $true  # Tutorials are also guides
             }
             if ($frontmatter -match "# $EXCLUDE_PARENT_FLAG") {
                 $result.ExcludeFromParent = $true
@@ -196,12 +210,14 @@ function Get-RelativeMarkdownPath {
 function Get-GuidesInDirectory {
     <#
     .SYNOPSIS
-        Gets all guide files in a directory, sorted with user manuals first
+        Gets all guide files in a directory, sorted with tutorials first, then user manuals
     .DESCRIPTION
-        Scans a directory for .md files with guide tags, separating user manuals
-        from regular guides and returning them sorted with user manuals first.
+        Scans a directory for .md files with guide tags, separating tutorials and
+        user manuals from regular guides and returning them sorted with tutorials
+        first, then user manuals, then regular guides. Also scans any tutorial/
+        subdirectory for additional guide files.
     .OUTPUTS
-        Array of FileInfo objects for guide files, user manuals first
+        Array of FileInfo objects for guide files, tutorials first, then user manuals
     #>
     param(
         [Parameter(Mandatory = $true)]
@@ -215,6 +231,7 @@ function Get-GuidesInDirectory {
     )
 
     $indexPath = Join-Path $Directory "index.md"
+    $tutorials = [System.Collections.ArrayList]@()
     $userManuals = [System.Collections.ArrayList]@()
     $regularGuides = [System.Collections.ArrayList]@()
 
@@ -238,7 +255,9 @@ function Get-GuidesInDirectory {
                 File     = $_
                 NavOrder = $guideInfo.NavOrder
             }
-            if ($guideInfo.IsUserManual) {
+            if ($guideInfo.IsTutorial) {
+                [void]$tutorials.Add($entry)
+            } elseif ($guideInfo.IsUserManual) {
                 [void]$userManuals.Add($entry)
             } else {
                 [void]$regularGuides.Add($entry)
@@ -246,10 +265,39 @@ function Get-GuidesInDirectory {
         }
     }
 
+    # Also scan tutorial/ subdirectory for additional guide files
+    $tutorialSubdir = Join-Path $Directory "tutorial"
+    if (Test-Path $tutorialSubdir -PathType Container) {
+        Get-ChildItem -Path $tutorialSubdir -Filter "*.md" -File | ForEach-Object {
+            $guideInfo = Get-GuideInfo -FilePath $_.FullName
+
+            $isExcluded = if ($ExcludeFlag -eq $EXCLUDE_PARENT_FLAG) {
+                $guideInfo.ExcludeFromParent
+            } else {
+                $guideInfo.ExcludeFromMain
+            }
+
+            if ($guideInfo.IsGuide -and -not $isExcluded) {
+                $entry = @{
+                    File     = $_
+                    NavOrder = $guideInfo.NavOrder
+                }
+                if ($guideInfo.IsTutorial) {
+                    [void]$tutorials.Add($entry)
+                } elseif ($guideInfo.IsUserManual) {
+                    [void]$userManuals.Add($entry)
+                } else {
+                    [void]$regularGuides.Add($entry)
+                }
+            }
+        }
+    }
+
     # Sort by nav_order first (items with nav_order come before those without), then alphabetically
+    $sortedTutorials = @($tutorials | Sort-Object @{Expression = { if ($null -eq $_.NavOrder) { [int]::MaxValue } else { $_.NavOrder } } }, @{Expression = { $_.File.FullName } } | ForEach-Object { $_.File })
     $sortedUserManuals = @($userManuals | Sort-Object @{Expression = { if ($null -eq $_.NavOrder) { [int]::MaxValue } else { $_.NavOrder } } }, @{Expression = { $_.File.FullName } } | ForEach-Object { $_.File })
     $sortedRegularGuides = @($regularGuides | Sort-Object @{Expression = { if ($null -eq $_.NavOrder) { [int]::MaxValue } else { $_.NavOrder } } }, @{Expression = { $_.File.FullName } } | ForEach-Object { $_.File })
-    return $sortedUserManuals + $sortedRegularGuides
+    return $sortedTutorials + $sortedUserManuals + $sortedRegularGuides
 }
 
 function Get-Subdirectories {
@@ -258,7 +306,7 @@ function Get-Subdirectories {
         Gets subdirectories that have index.md files, sorted with user manual directories first
     .DESCRIPTION
         Scans a directory for subdirectories containing index.md files,
-        excluding the 'resources' directory. Returns them sorted with
+        excluding the 'resources' and 'tutorial' directories. Returns them sorted with
         user manual directories appearing before regular directories,
         then by nav_order, then alphabetically.
     .OUTPUTS
@@ -273,7 +321,7 @@ function Get-Subdirectories {
     $regularDirs = [System.Collections.ArrayList]@()
 
     Get-ChildItem -Path $Directory -Directory | ForEach-Object {
-        if ($_.Name -eq "resources") {
+        if ($_.Name -eq "resources" -or $_.Name -eq "tutorial") {
             return
         }
 
@@ -375,14 +423,13 @@ function Build-SectionHeader {
 function Get-AllGuidesAtLevel {
     <#
     .SYNOPSIS
-        Gets all guide entries (user manuals and regular guides) at a directory level
+        Gets all guide entries (tutorials, user manuals, and regular guides) at a directory level
     .DESCRIPTION
-        Collects user manual subdirectories and regular guide files from a directory,
-        returning them sorted with user manuals first. Within each category, items are
-        sorted by nav_order first, then alphabetically. This ensures proper ordering
-        where user manuals always appear before regular guides at the same heading level.
+        Collects tutorial files, user manual subdirectories, and regular guide files from a
+        directory, returning them sorted with tutorials first, then user manuals, then regular
+        guides. Within each category, items are sorted by nav_order first, then alphabetically.
     .OUTPUTS
-        Array of hashtables with Type ('UserManual' or 'Guide'), Path, Info, and NavOrder properties
+        Array of hashtables with Type ('Tutorial', 'UserManual', or 'Guide'), Path, Info, and NavOrder properties
     #>
     param(
         [Parameter(Mandatory = $true)]
@@ -396,6 +443,7 @@ function Get-AllGuidesAtLevel {
         [array]$Subdirectories = @()
     )
 
+    $tutorialEntries = [System.Collections.ArrayList]@()
     $userManualEntries = [System.Collections.ArrayList]@()
     $regularGuideEntries = [System.Collections.ArrayList]@()
 
@@ -425,24 +473,35 @@ function Get-AllGuidesAtLevel {
         }
     }
 
-    # Get regular guide files from the directory (already sorted by nav_order by Get-GuidesInDirectory)
+    # Get guide files from the directory (already sorted by Get-GuidesInDirectory)
     $guides = Get-GuidesInDirectory -Directory $Directory -ExcludeOwnIndex $true -ExcludeFlag $ExcludeFlag
     foreach ($guide in $guides) {
         $guideInfo = Get-GuideInfo -FilePath $guide.FullName
-        [void]$regularGuideEntries.Add(@{
-                Type     = 'Guide'
-                Path     = $guide.FullName
-                Info     = $guideInfo
-                File     = $guide
-                NavOrder = $guideInfo.NavOrder
-            })
+        if ($guideInfo.IsTutorial) {
+            [void]$tutorialEntries.Add(@{
+                    Type     = 'Tutorial'
+                    Path     = $guide.FullName
+                    Info     = $guideInfo
+                    File     = $guide
+                    NavOrder = $guideInfo.NavOrder
+                })
+        } else {
+            [void]$regularGuideEntries.Add(@{
+                    Type     = 'Guide'
+                    Path     = $guide.FullName
+                    Info     = $guideInfo
+                    File     = $guide
+                    NavOrder = $guideInfo.NavOrder
+                })
+        }
     }
 
     # Sort by nav_order first (items with nav_order come before those without), then alphabetically
-    # User manuals first, then regular guides
+    # Tutorials first, then user manuals, then regular guides
+    $sortedTutorials = @($tutorialEntries | Sort-Object @{Expression = { if ($null -eq $_.NavOrder) { [int]::MaxValue } else { $_.NavOrder } } }, @{Expression = { $_.Path } })
     $sortedUserManuals = @($userManualEntries | Sort-Object @{Expression = { if ($null -eq $_.NavOrder) { [int]::MaxValue } else { $_.NavOrder } } }, @{Expression = { $_.Path } })
     $sortedRegularGuides = @($regularGuideEntries | Sort-Object @{Expression = { if ($null -eq $_.NavOrder) { [int]::MaxValue } else { $_.NavOrder } } }, @{Expression = { $_.Path } })
-    return $sortedUserManuals + $sortedRegularGuides
+    return $sortedTutorials + $sortedUserManuals + $sortedRegularGuides
 }
 
 #endregion Helper Functions
@@ -521,17 +580,30 @@ function Update-ParentGuidesSection {
         $guidesSection += "_For a list of all guides on the TCAT Wiki, refer to the [Guides List]($relPathToGuidesList)._$CRLF$CRLF"
     }
 
-    # Add all top-level entries (user manuals and direct guides, sorted with user manuals first)
-    foreach ($entry in $allEntries) {
-        if ($entry.Type -eq 'UserManual') {
-            # User manual: show as a single guide entry (no child guides listed)
-            $guidesSection += Build-GuideEntry -GuideFile (Get-Item $entry.Path) -FromPath $parentDir -HeaderLevel "####"
-            $guidesSection += $CRLF
-        } else {
-            # Regular guide file
-            $guidesSection += Build-GuideEntry -GuideFile $entry.File -FromPath $parentDir -HeaderLevel "####"
+    # Separate entries by type for proper ordering
+    $tutorialEntries = @($allEntries | Where-Object { $_.Type -eq 'Tutorial' })
+    $userManualEntries = @($allEntries | Where-Object { $_.Type -eq 'UserManual' })
+    $regularGuideEntries = @($allEntries | Where-Object { $_.Type -eq 'Guide' })
+
+    # Add Tutorials section if any exist (listed first)
+    if ($tutorialEntries.Count -gt 0) {
+        $guidesSection += "#### Tutorials$CRLF$CRLF"
+        foreach ($entry in $tutorialEntries) {
+            $guidesSection += Build-GuideEntry -GuideFile $entry.File -FromPath $parentDir -HeaderLevel "#####"
             $guidesSection += $CRLF
         }
+    }
+
+    # Add User Manual entries
+    foreach ($entry in $userManualEntries) {
+        $guidesSection += Build-GuideEntry -GuideFile (Get-Item $entry.Path) -FromPath $parentDir -HeaderLevel "####"
+        $guidesSection += $CRLF
+    }
+
+    # Add Regular Guide entries
+    foreach ($entry in $regularGuideEntries) {
+        $guidesSection += Build-GuideEntry -GuideFile $entry.File -FromPath $parentDir -HeaderLevel "####"
+        $guidesSection += $CRLF
     }
 
     # Add subdirectory subsections (non-user-manual directories only)
@@ -562,12 +634,29 @@ function Update-ParentGuidesSection {
 
         $guidesSection += Build-SectionHeader -Title $subdirTitle -IndexPath $subdirIndexPath -FromPath $parentDir -HeaderLevel "####" -IsUserManual $false
 
-        foreach ($subdirEntry in $subdirEntries) {
-            if ($subdirEntry.Type -eq 'UserManual') {
-                $guidesSection += Build-GuideEntry -GuideFile (Get-Item $subdirEntry.Path) -FromPath $parentDir -HeaderLevel "#####"
-            } else {
-                $guidesSection += Build-GuideEntry -GuideFile $subdirEntry.File -FromPath $parentDir -HeaderLevel "#####"
+        # Separate subdirectory entries by type
+        $subdirTutorials = @($subdirEntries | Where-Object { $_.Type -eq 'Tutorial' })
+        $subdirUserManuals = @($subdirEntries | Where-Object { $_.Type -eq 'UserManual' })
+        $subdirRegularGuides = @($subdirEntries | Where-Object { $_.Type -eq 'Guide' })
+
+        # Add Tutorials subsection if any exist
+        if ($subdirTutorials.Count -gt 0) {
+            $guidesSection += "##### Tutorials$CRLF$CRLF"
+            foreach ($subdirEntry in $subdirTutorials) {
+                $guidesSection += Build-GuideEntry -GuideFile $subdirEntry.File -FromPath $parentDir -HeaderLevel "######"
+                $guidesSection += $CRLF
             }
+        }
+
+        # Add User Manual entries
+        foreach ($subdirEntry in $subdirUserManuals) {
+            $guidesSection += Build-GuideEntry -GuideFile (Get-Item $subdirEntry.Path) -FromPath $parentDir -HeaderLevel "#####"
+            $guidesSection += $CRLF
+        }
+
+        # Add Regular Guide entries
+        foreach ($subdirEntry in $subdirRegularGuides) {
+            $guidesSection += Build-GuideEntry -GuideFile $subdirEntry.File -FromPath $parentDir -HeaderLevel "#####"
             $guidesSection += $CRLF
         }
     }
@@ -784,7 +873,30 @@ function Build-MainGuidesList {
                     $script:content += $sectionHeader
                 }
 
-                # First, add user manual children (they should appear first under this section)
+                # First, separate tutorials from other guides
+                $tutorialGuides = @()
+                $nonTutorialGuides = @()
+                foreach ($guide in $guides) {
+                    $gi = Get-GuideInfo -FilePath $guide.FullName
+                    if ($gi.IsTutorial) {
+                        $tutorialGuides += $guide
+                    } else {
+                        $nonTutorialGuides += $guide
+                    }
+                }
+
+                # Add Tutorials section if any exist (listed first)
+                if ($tutorialGuides.Count -gt 0) {
+                    $tutorialHeaderLevel = '#' * ($depthInTopic + 4)
+                    $script:content += "${tutorialHeaderLevel} Tutorials${CRLF}${CRLF}"
+                    $tutorialGuideLevel = '#' * ($depthInTopic + 5)
+                    foreach ($guide in $tutorialGuides) {
+                        $guideEntry = Build-GuideEntry -GuideFile $guide -FromPath $guidesListPath -HeaderLevel $tutorialGuideLevel
+                        $script:content += $guideEntry + $CRLF
+                    }
+                }
+
+                # Then add user manual children
                 # Get nav_order for child user manuals and sort
                 $childUmEntries = @($childUserManuals | ForEach-Object {
                         $umIndexPath = Join-Path $_.FullName "index.md"
@@ -809,8 +921,8 @@ function Build-MainGuidesList {
                     $script:content += $guideEntry + $CRLF
                 }
 
-                # Then add direct guides (already sorted by nav_order via Get-GuidesInDirectory)
-                foreach ($guide in $guides) {
+                # Then add remaining direct guides (non-tutorial, already sorted by Get-GuidesInDirectory)
+                foreach ($guide in $nonTutorialGuides) {
                     $guideHeaderLevel = '#' * ($depthInTopic + 4)
                     $guideEntry = Build-GuideEntry -GuideFile $guide -FromPath $guidesListPath -HeaderLevel $guideHeaderLevel
                     $script:content += $guideEntry + $CRLF
@@ -828,7 +940,31 @@ function Build-MainGuidesList {
             }
         }
 
-        # First, check for user manual directories directly under the topic and add them first
+        # Get all guides directly in the topic directory (includes tutorial/ subdir scan)
+        $topicGuides = Get-GuidesInDirectory -Directory $topicDir.FullName -ExcludeOwnIndex $true -ExcludeFlag $EXCLUDE_MAIN_FLAG
+
+        # Separate tutorials from other guides
+        $topicTutorials = @()
+        $topicRegularGuides = @()
+        foreach ($guide in $topicGuides) {
+            $gi = Get-GuideInfo -FilePath $guide.FullName
+            if ($gi.IsTutorial) {
+                $topicTutorials += $guide
+            } else {
+                $topicRegularGuides += $guide
+            }
+        }
+
+        # First, add tutorials section if any exist
+        if ($topicTutorials.Count -gt 0) {
+            $script:content += "#### Tutorials${CRLF}${CRLF}"
+            foreach ($guide in $topicTutorials) {
+                $script:content += Build-GuideEntry -GuideFile $guide -FromPath $guidesListPath -HeaderLevel '#####'
+                $script:content += $CRLF
+            }
+        }
+
+        # Then, check for user manual directories directly under the topic
         # Sort by nav_order, then alphabetically
         if ($dirsByParent.ContainsKey($topicDir.FullName)) {
             $topicChildren = $dirsByParent[$topicDir.FullName]
@@ -859,9 +995,8 @@ function Build-MainGuidesList {
             }
         }
 
-        # Then add any regular guides directly in the topic directory
-        $topicGuides = Get-GuidesInDirectory -Directory $topicDir.FullName -ExcludeOwnIndex $true -ExcludeFlag $EXCLUDE_MAIN_FLAG
-        foreach ($guide in $topicGuides) {
+        # Then add remaining regular guides directly in the topic directory
+        foreach ($guide in $topicRegularGuides) {
             $guideHeaderLevel = '####'  # H4 for top-level guides under the topic
             $script:content += Build-GuideEntry -GuideFile $guide -FromPath $guidesListPath -HeaderLevel $guideHeaderLevel
             $script:content += $CRLF

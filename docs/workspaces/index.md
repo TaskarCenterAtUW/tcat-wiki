@@ -32,6 +32,12 @@ Workspaces Guides
 
 _For a list of all guides on the TCAT Wiki, refer to the [Guides List](../guides-list/index.md)._
 
+#### Tutorials
+
+##### ["Import OSM Data into Workspaces"](tutorial/osm-to-workspaces.md)
+
+This tutorial explains how to download an area of interest from OpenStreetMap, convert it to the OpenSidewalks format, and upload it to Workspaces as a new dataset.
+
 #### [Workspaces User Manual](user-manual/index.md)
 
 This user manual explains how to use the TDEI Workspaces platform.
