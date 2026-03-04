@@ -191,6 +191,6 @@ New to this? If you are unfamiliar with some of this terminology, start with the
 
 ---
 
-### Guides and User Manuals
+### Tutorials, User Manuals, and Guides
 
-Looking for step-by-step instructions? Start with our full **[Guides List](guides-list/index.md)**.
+Looking for step-by-step instructions? Start with our full **[Guides List](guides-list/index.md)** or try ++ctrl+k++ **Search**!

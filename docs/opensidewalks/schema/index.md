@@ -963,7 +963,7 @@ OpenSidewalks Schema fields are typed key-value pairs. Keys are always strings a
 
 OpenSidewalks Schema Guides
 
-_For a list of all guides on the TCAT Wiki, refer to the [Guides List](../../guides-list/index.md)._
+_For a list of all guides on the TCAT Wiki, refer to the [Guides List](../../guides-list/index.md)._{ .guides-list-ref }
 
 #### [Core Edges in OSW](core-edges-in-osw.md)
 

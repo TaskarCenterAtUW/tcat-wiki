@@ -14,7 +14,7 @@ tags:
 
 This section explains how to browse, configure, and download datasets in the TDEI Portal.
 
-_For a list of all guides on the TCAT Wiki, refer to the [Guides List](../../../guides-list/index.md)._
+_For a list of all guides on the TCAT Wiki, refer to the [Guides List](../../../guides-list/index.md)._{ .guides-list-ref }
 
 ---
 
@@ -59,8 +59,8 @@ For more specific filtering, select the **Filter** button to expand the filter p
 | **Valid From**    | Filter to datasets valid from a given date  |
 | **Valid To**      | Filter to datasets valid up to a given date |
 
-![Datasets filter panel](../../../resources/images/tdei-portal/how-to/download-os-connect/filter-light.png#only-light)
-![Datasets filter panel](../../../resources/images/tdei-portal/how-to/download-os-connect/filter-dark.png#only-dark)
+![Datasets filter panel](../../../resources/images/tdei-portal/tutorial/download-os-connect/filter-light.png#only-light)
+![Datasets filter panel](../../../resources/images/tdei-portal/tutorial/download-os-connect/filter-dark.png#only-dark)
 
 Select **Clear** next to any field to reset that filter, or use **Sort by** to change the sort order. Select the **Refresh (↻)** button to refresh the list.
 
@@ -97,7 +97,7 @@ Select the **action menu** (⋮) on the right side of any dataset row to access 
 
 !!! info "Looking for OS-CONNECT datasets?"
 
-    For a step-by-step walkthrough of downloading [OS-CONNECT](../../../os-connect/index.md) datasets specifically, refer to the [How To: Download OS-CONNECT Data from the TDEI Portal](../how-to/download-os-connect.md) guide.
+    For a step-by-step walkthrough of downloading [OS-CONNECT](../../../os-connect/index.md) datasets specifically, refer to the [Download OS-CONNECT Data from the TDEI Portal](../tutorial/download-os-connect.md) tutorial.
 
 ---
 

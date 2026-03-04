@@ -14,7 +14,7 @@ tags:
 
 This section walks you through your first steps after installing AVIV ScoutRoute, including logging in, selecting a workspace, understanding basic concepts, and completing your first quest.
 
-_For a list of all guides on the TCAT Wiki, refer to the [Guides List](../../guides-list/index.md)._
+_For a list of all guides on the TCAT Wiki, refer to the [Guides List](../../guides-list/index.md)._{ .guides-list-ref }
 
 ---
 

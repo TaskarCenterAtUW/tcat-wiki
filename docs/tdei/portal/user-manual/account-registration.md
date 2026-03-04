@@ -14,7 +14,7 @@ tags:
 
 This section explains how to register for a TDEI account, verify your email, and log in to the TDEI Portal, or reset your password.
 
-_For a list of all guides on the TCAT Wiki, refer to the [Guides List](../../../guides-list/index.md)._
+_For a list of all guides on the TCAT Wiki, refer to the [Guides List](../../../guides-list/index.md)._{ .guides-list-ref }
 
 ---
 

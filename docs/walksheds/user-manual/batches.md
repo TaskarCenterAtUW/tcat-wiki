@@ -14,7 +14,7 @@ tags:
 
 This section explains how to use the Batch tab to run multiple walkshed calculations from a single CSV file.
 
-_For a list of all guides on the TCAT Wiki, refer to the [Guides List](../../guides-list/index.md)._
+_For a list of all guides on the TCAT Wiki, refer to the [Guides List](../../guides-list/index.md)._{ .guides-list-ref }
 
 ---
 

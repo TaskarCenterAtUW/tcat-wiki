@@ -30,7 +30,13 @@ The [Java OpenStreetMap Editor](https://josm.openstreetmap.de/) (JOSM) is a powe
 
 Workspaces Guides
 
-_For a list of all guides on the TCAT Wiki, refer to the [Guides List](../guides-list/index.md)._
+_For a list of all guides on the TCAT Wiki, refer to the [Guides List](../guides-list/index.md)._{ .guides-list-ref }
+
+#### Tutorials
+
+##### [Import OSM Data into Workspaces](tutorial/osm-to-workspaces.md)
+
+This tutorial explains how to download an area of interest from OpenStreetMap, convert it to the OpenSidewalks format, and upload it to Workspaces.
 
 #### [Workspaces User Manual](user-manual/index.md)
 

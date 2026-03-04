@@ -19,7 +19,7 @@ title: Walksheds
 
 Walksheds Guides
 
-_For a list of all guides on the TCAT Wiki, refer to the [Guides List](../guides-list/index.md)._
+_For a list of all guides on the TCAT Wiki, refer to the [Guides List](../guides-list/index.md)._{ .guides-list-ref }
 
 #### [Walksheds User Manual](user-manual/index.md)
 
