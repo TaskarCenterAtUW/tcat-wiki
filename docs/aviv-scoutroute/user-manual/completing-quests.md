@@ -14,7 +14,7 @@ tags:
 
 This section explains how to view, select, answer, submit, and undo quests in AVIV ScoutRoute.
 
-_For a list of all guides on the TCAT Wiki, refer to the [Guides List](../../guides-list/index.md)._
+_For a list of all guides on the TCAT Wiki, refer to the [Guides List](../../guides-list/index.md)._{ .guides-list-ref }
 
 ---
 

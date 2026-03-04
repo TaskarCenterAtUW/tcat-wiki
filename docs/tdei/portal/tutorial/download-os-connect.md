@@ -1,5 +1,5 @@
 ---
-title: "Download OS-CONNECT Data from the TDEI Portal"
+title: Download OS-CONNECT Data from the TDEI Portal
 tags:
     - Tutorial
     - External
@@ -12,7 +12,7 @@ tags:
 
 This tutorial walks you through downloading OpenSidewalks-formatted OS-CONNECT datasets from the TDEI Portal.
 
-_For a list of all guides on the TCAT Wiki, refer to the [Guides List](../../../guides-list/index.md)._
+_For a list of all guides on the TCAT Wiki, refer to the [Guides List](../../../guides-list/index.md)._{ .guides-list-ref }
 
 ---
 

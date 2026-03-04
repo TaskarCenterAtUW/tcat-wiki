@@ -49,11 +49,11 @@ A data producer is a user who contributes data to the TDEI. In addition to the s
 
 TDEI Portal Guides
 
-_For a list of all guides on the TCAT Wiki, refer to the [Guides List](../../guides-list/index.md)._
+_For a list of all guides on the TCAT Wiki, refer to the [Guides List](../../guides-list/index.md)._{ .guides-list-ref }
 
 #### Tutorials
 
-##### ["Download OS-CONNECT Data from the TDEI Portal"](tutorial/download-os-connect.md)
+##### [Download OS-CONNECT Data from the TDEI Portal](tutorial/download-os-connect.md)
 
 This tutorial walks you through downloading OpenSidewalks-formatted OS-CONNECT datasets from the TDEI Portal.
 

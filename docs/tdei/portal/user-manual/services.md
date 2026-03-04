@@ -14,7 +14,7 @@ tags:
 
 This section explains how Points of Contact can create and manage data services linked to their project group.
 
-_For a list of all guides on the TCAT Wiki, refer to the [Guides List](../../../guides-list/index.md)._
+_For a list of all guides on the TCAT Wiki, refer to the [Guides List](../../../guides-list/index.md)._{ .guides-list-ref }
 
 ---
 

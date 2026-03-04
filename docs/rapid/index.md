@@ -14,7 +14,7 @@ Rapid is an extended version of the OpenStreetMap iD editor. A modified version 
 
 Rapid Editor Guides
 
-_For a list of all guides on the TCAT Wiki, refer to the [Guides List](../guides-list/index.md)._
+_For a list of all guides on the TCAT Wiki, refer to the [Guides List](../guides-list/index.md)._{ .guides-list-ref }
 
 #### [Rapid User Manual](user-manual/index.md)
 

@@ -2,7 +2,7 @@
 # This script is designed to be run in a PowerShell environment.
 
 # Name: TCAT Wiki - Guides Lists Generator
-# Version: 8.0.0
+# Version: 8.1.0
 # Date: 2026-03-03
 # Author: Amy Bordenave, Taskar Center for Accessible Technology, University of Washington
 # License: CC-BY-ND 4.0 International
@@ -577,7 +577,7 @@ function Update-ParentGuidesSection {
 
     # Only include the Guides List reference for non-user-manual pages
     if (-not $isUserManual) {
-        $guidesSection += "_For a list of all guides on the TCAT Wiki, refer to the [Guides List]($relPathToGuidesList)._$CRLF$CRLF"
+        $guidesSection += "_For a list of all guides on the TCAT Wiki, refer to the [Guides List]($relPathToGuidesList)._{ .guides-list-ref }$CRLF$CRLF"
     }
 
     # Separate entries by type for proper ordering

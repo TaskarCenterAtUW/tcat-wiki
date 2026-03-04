@@ -166,7 +166,7 @@ Tool for analyzing pedestrian infrastructure and access to amenities.
 
 TDEI Guides
 
-_For a list of all guides on the TCAT Wiki, refer to the [Guides List](../guides-list/index.md)._
+_For a list of all guides on the TCAT Wiki, refer to the [Guides List](../guides-list/index.md)._{ .guides-list-ref }
 
 #### [TDEI Portal](portal/index.md) Guides
 
@@ -174,7 +174,7 @@ The **[TDEI Portal](https://portal.tdei.us/)** is the web interface for the Tran
 
 ##### Tutorials
 
-###### ["Download OS-CONNECT Data from the TDEI Portal"](portal/tutorial/download-os-connect.md)
+###### [Download OS-CONNECT Data from the TDEI Portal](portal/tutorial/download-os-connect.md)
 
 This tutorial walks you through downloading OpenSidewalks-formatted OS-CONNECT datasets from the TDEI Portal.
 

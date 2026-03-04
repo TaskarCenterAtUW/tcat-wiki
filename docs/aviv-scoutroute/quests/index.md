@@ -20,7 +20,7 @@ The Long Form Quest Definition JSON Schema is available on [GitHub](https://gith
 
 Long Form Quest Definition Guides
 
-_For a list of all guides on the TCAT Wiki, refer to the [Guides List](../../guides-list/index.md)._
+_For a list of all guides on the TCAT Wiki, refer to the [Guides List](../../guides-list/index.md)._{ .guides-list-ref }
 
 #### [Element Query Guide](element-query.md)
 

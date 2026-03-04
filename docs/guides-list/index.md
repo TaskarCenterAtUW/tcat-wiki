@@ -104,7 +104,7 @@ The **[TDEI Portal](https://portal.tdei.us/)** is the web interface for the Tran
 
 ##### Tutorials
 
-###### ["Download OS-CONNECT Data from the TDEI Portal"](../tdei/portal/tutorial/download-os-connect.md)
+###### [Download OS-CONNECT Data from the TDEI Portal](../tdei/portal/tutorial/download-os-connect.md)
 
 This tutorial walks you through downloading OpenSidewalks-formatted OS-CONNECT datasets from the TDEI Portal.
 
@@ -122,9 +122,9 @@ This user manual explains how to use the TDEI Walksheds tool.
 
 #### Tutorials
 
-##### ["Import OSM Data into Workspaces"](../workspaces/tutorial/osm-to-workspaces.md)
+##### [Import OSM Data into Workspaces](../workspaces/tutorial/osm-to-workspaces.md)
 
-This tutorial explains how to download an area of interest from OpenStreetMap, convert it to the OpenSidewalks format, and upload it to Workspaces as a new dataset.
+This tutorial explains how to download an area of interest from OpenStreetMap, convert it to the OpenSidewalks format, and upload it to Workspaces.
 
 #### [Workspaces User Manual](../workspaces/user-manual/index.md)
 

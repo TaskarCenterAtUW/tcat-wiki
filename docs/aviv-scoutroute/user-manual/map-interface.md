@@ -14,7 +14,7 @@ tags:
 
 This section explains the main AVIV ScoutRoute map interface, including how to navigate the map, understand quest icons, and interpret common pedestrian feature terminology.
 
-_For a list of all guides on the TCAT Wiki, refer to the [Guides List](../../guides-list/index.md)._
+_For a list of all guides on the TCAT Wiki, refer to the [Guides List](../../guides-list/index.md)._{ .guides-list-ref }
 
 ---
 
