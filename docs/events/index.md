@@ -32,27 +32,6 @@ Visit the [OpenSidewalks Mappy Hours](oswmh/index.md) page for more information,
 
 ### Upcoming Events
 
-#### OpenThePaths 2026
-
-**Name:** OpenThePaths 2026: Connecting People and Places Through Sustainable Access
-
-**Organizers:** [TCAT](https://tcat.cs.washington.edu/)
-
-**Time:** February 26th & 27th, 2026 | 9:00 AM PT – 4:00 PM PT
-
-**Location:** Hybrid
-
-- Virtual: Zoom
-- In-person: [Zillow Commons, 4th Floor, Bill & Melinda Gates Center For Computer Science & Engineering, University of Washington, 3800 E Stevens Way NE, Seattle, WA 98195, US](https://maps.app.goo.gl/WFvhVuA47BBpnr81A)
-
-**TDEI Calendar:** [OpenThePaths 2026](https://tcat.cs.washington.edu/events/openthepaths-2026-connecting-people-and-places-through-sustainable-access/)
-
-**Related Content:**
-
-_Content will be added as it becomes available._
-
----
-
 #### CSUN 2026
 
 **Name:** CSUN Assistive Technology Conference
@@ -90,6 +69,23 @@ _Content will be added as it becomes available._
 ---
 
 ### Past Events
+
+#### OpenThePaths 2026
+
+**Name:** OpenThePaths 2026: Connecting People and Places Through Sustainable Access
+
+**Organizers:** [TCAT](https://tcat.cs.washington.edu/)
+
+**Time:** February 26th & 27th, 2026 | 9:00 AM PT – 4:00 PM PT
+
+**Location:** Hybrid
+
+- Virtual: Zoom
+- In-person: [Zillow Commons, 4th Floor, Bill & Melinda Gates Center For Computer Science & Engineering, University of Washington, 3800 E Stevens Way NE, Seattle, WA 98195, US](https://maps.app.goo.gl/WFvhVuA47BBpnr81A)
+
+**TDEI Calendar:** [OpenThePaths 2026](https://tcat.cs.washington.edu/events/openthepaths-2026-connecting-people-and-places-through-sustainable-access/)
+
+---
 
 #### Olympia, Connected
 
