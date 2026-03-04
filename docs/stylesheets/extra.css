@@ -13,7 +13,8 @@
  *   7. Theme-Conditional Content — light/dark visibility for non-image elements
  *   8. Diagrams                  — Mermaid overrides
  *   9. Table of Contents         — right-side "On this page" TOC accent
- *  10. Guides List Reference     — size of the "For a list of all guides..." blurb
+ *  10. Tags                      — tag bar spacing at top of page
+ *  11. Guides List Reference     — size of the "For a list of all guides..." blurb
  *
  * @format
  */
@@ -317,7 +318,16 @@ abbr[title],
 }
 
 /* =============================================================================
-   10. Guides List Reference
+   10. Tags
+   ============================================================================= */
+
+/* Spacing below the tag bar (which now renders above page content) */
+.md-content__inner > .md-tags {
+    padding-bottom: 1em;
+}
+
+/* =============================================================================
+   11. Guides List Reference
    ============================================================================= */
 
 /* Slightly reduce size of the "For a list of all guides..." blurb */
