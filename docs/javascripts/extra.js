@@ -66,6 +66,7 @@ const titleMapSource = {
     "user manual": "User Manual",
 
     // --- Events ---
+    csun: "CSUN",
     mny26: "Mappy New Year 2026",
     "nda vancouver": "Clark County Walk/Roll Event",
     "olympia connected": "Olympia, Connected",
