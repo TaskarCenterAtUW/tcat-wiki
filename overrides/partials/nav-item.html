@@ -147,7 +147,8 @@
       {% endif %}
     </li>
   {% elif nav_item.active %}
-    {% set nav_order = nav_item.meta.nav_order if (nav_item.meta and nav_item.meta.nav_order) else 10000 %}
+    {%- set _is_event_report = "events/" in page.url and "/report/" in nav_item.url -%}
+    {% set nav_order = nav_item.meta.nav_order if (nav_item.meta and nav_item.meta.nav_order) else (99999 if _is_event_report else 10000) %}
     <li class="{{ class }}" style="order: {{ nav_order }}">
       {% set toc = page.toc %}
       <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
@@ -169,7 +170,8 @@
       {% endif %}
     </li>
   {% else %}
-    {% set nav_order = nav_item.meta.nav_order if (nav_item.meta and nav_item.meta.nav_order) else 10000 %}
+    {%- set _is_event_report = "events/" in page.url and "/report/" in nav_item.url -%}
+    {% set nav_order = nav_item.meta.nav_order if (nav_item.meta and nav_item.meta.nav_order) else (99999 if _is_event_report else 10000) %}
     <li class="{{ class }}" style="order: {{ nav_order }}">
       <a href="{{ nav_item.url | url }}" class="md-nav__link">
         {{ render_content(nav_item) }}
