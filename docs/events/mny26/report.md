@@ -1,5 +1,5 @@
 ---
-title: Event Summary
+title: Event Summary Report
 tags:
     - External
     - User
@@ -7,7 +7,7 @@ tags:
 
 <!-- @format -->
 
-# Mappy New Year 2026 - Event Summary
+# Mappy New Year 2026 - Event Summary Report
 
 ## Overview
 
