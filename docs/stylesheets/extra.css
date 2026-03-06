@@ -15,6 +15,7 @@
  *   9. Table of Contents         — right-side "On this page" TOC accent
  *  10. Tags                      — tag bar spacing at top of page
  *  11. Guides List Reference     — size of the "For a list of all guides..." blurb
+ *  12. Brand Colors              — named color utilities for OSM TM providers
  *
  * @format
  */
@@ -333,4 +334,18 @@ abbr[title],
 /* Slightly reduce size of the "For a list of all guides..." blurb */
 .md-typeset .guides-list-ref {
     font-size: 0.85em;
+}
+
+/* =============================================================================
+   12. Brand Colors
+   ============================================================================= */
+
+/* OSM US Tasking Manager green */
+.osmustm-green {
+    color: #59a336;
+}
+
+/* HOT OSM Tasking Manager red */
+.hotosmtm-red {
+    color: #d73f3f;
 }
