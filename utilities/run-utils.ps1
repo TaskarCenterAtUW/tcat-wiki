@@ -2,8 +2,8 @@
 # This script is designed to be run in a PowerShell environment.
 
 # Name: TCAT Wiki - Utility Runner
-# Version: 3.0.0
-# Date: 2026-02-06
+# Version: 4.0.0
+# Date: 2026-03-06
 # Author: Amy Bordenave, Taskar Center for Accessible Technology, University of Washington
 # License: CC-BY-ND 4.0 International
 
@@ -120,7 +120,7 @@ function Test-PesterVersion {
 function Get-TestFiles {
     <#
     .SYNOPSIS
-        Gets all Pester test files in the util directory in the correct order
+        Gets all Pester test files in the utilities directory in the correct order
     .DESCRIPTION
         Returns test files with run-utils.Tests.ps1 first (self-check),
         followed by other test files in alphabetical order.
@@ -287,7 +287,7 @@ if (-not $utilPath) {
 
 # Verify we're in the right place
 if (-not (Test-Path (Join-Path $utilPath "generate-nav.ps1"))) {
-    Write-Error "Could not find utility scripts. Please run from the util directory."
+    Write-Error "Could not find utility scripts. Please run from the utilities directory."
     exit 1
 }
 
