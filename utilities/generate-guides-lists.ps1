@@ -2,8 +2,8 @@
 # This script is designed to be run in a PowerShell environment.
 
 # Name: TCAT Wiki - Guides Lists Generator
-# Version: 8.1.0
-# Date: 2026-03-03
+# Version: 9.0.0
+# Date: 2026-03-06
 # Author: Amy Bordenave, Taskar Center for Accessible Technology, University of Washington
 # License: CC-BY-ND 4.0 International
 
@@ -1027,7 +1027,7 @@ if (Test-Path "..\docs") {
 } elseif (Test-Path "docs") {
     $script:docsPath = Resolve-Path "docs"
 } else {
-    Write-Error "docs directory not found. Please run this script from the repository root or util directory."
+    Write-Error "docs directory not found. Please run this script from the repository root or utilities directory."
     exit 1
 }
 
