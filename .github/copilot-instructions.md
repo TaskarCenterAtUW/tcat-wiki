@@ -128,7 +128,7 @@ deactivate
 # Ensure venv is activated first!
 .\.venv\Scripts\Activate.ps1
 
-cd util
+cd utilities
 .\generate-guides-lists.ps1        # Auto-generates index.md in guides/ directories
 .\generate-nav.ps1                 # Updates zensical.toml nav section directly
 ```
@@ -144,16 +144,16 @@ The `process-screenshot.py` utility generates themed light/dark variants of scre
 ..\.venv\Scripts\Activate.ps1
 
 # Process a single screenshot
-python .\util\process-screenshot.py docs\resources\images\example\screenshot.png
+python .\utilities\process-screenshot.py docs\resources\images\example\screenshot.png
 
 # Process all images in a directory (optionally --recurse for subdirs)
-python .\util\process-screenshot.py docs\resources\images\example\
+python .\utilities\process-screenshot.py docs\resources\images\example\
 
 # Apply a named custom profile
-python .\util\process-screenshot.py screenshot.png --profile uw-purple
+python .\utilities\process-screenshot.py screenshot.png --profile uw-purple
 
 # Regenerate existing output files
-python .\util\process-screenshot.py screenshot.png --overwrite
+python .\utilities\process-screenshot.py screenshot.png --overwrite
 ```
 
 **Output**: For each input `image.png`, produces `image-light.png` (dark border + shadow for light pages) and `image-dark.png` (light border + glow for dark pages). Mode-tagged sources (e.g., `image.light.png`) produce only the matching variant.
@@ -173,7 +173,7 @@ Run with `--help` for all options including per-variant color, shadow, and blur 
 # Ensure venv is activated first!
 .\.venv\Scripts\Activate.ps1
 
-cd util
+cd utilities
 .\check-links.ps1                   # Check internal + external links
 .\check-links.ps1 -internal         # Internal only
 .\check-links.ps1 -external         # External only
@@ -190,7 +190,7 @@ The `run-utils.ps1` script provides an automated workflow to validate and run al
 # Ensure venv is activated first!
 .\.venv\Scripts\Activate.ps1
 
-cd util
+cd utilities
 .\run-utils.ps1                     # Run all tests, then all utilities
 .\run-utils.ps1 -TestsOnly          # Run only Pester tests
 .\run-utils.ps1 -SkipLinkCheck      # Skip external link checker in Phase 2
@@ -207,7 +207,7 @@ cd util
 Utility scripts have Pester test suites for validation:
 
 ```powershell
-cd util
+cd utilities
 .\run-utils.ps1 -TestsOnly           # Run all tests (recommended)
 
 # Or run individual test files:
@@ -353,7 +353,7 @@ Both flags can be used together to exclude a guide from all guides lists.
 - **workspaces**: Workspaces editing platform guides
 - **resources**: Images and stylesheets (no content pages)
 - **local-storage/**: Directory ignored by git, used as a storage target for temporary local files
-- **util**: Utilities and scripts to make editing this Wiki easier
+- **utilities**: Utilities and scripts to make editing this Wiki easier
 
 ## Integration Points & Dependencies
 
@@ -367,7 +367,7 @@ Both flags can be used together to exclude a guide from all guides lists.
 1. **Create**: Add `.md` file in appropriate `/docs/[topic]/` subtree
 2. **Frontmatter**: Include `title:`, and `tags:` if it's a guide
 3. **Links**: Reference guides-list and use relative paths
-4. **Regenerate Navigation**: Run `.\generate-nav.ps1` from `util/`
+4. **Regenerate Navigation**: Run `.\generate-nav.ps1` from `utilities/`
 5. **Verify Build**: Run `zensical serve` locally before committing
 
 ## Assistant Role
@@ -402,5 +402,14 @@ Refer to the official Zensical documentation, which is hosted online at https://
 - `util/check-links.ps1`: PowerShell validation of links (not standard CI integration)
 - `util/check-links.Tests.ps1`: Pester tests for link checker
 - `util/process-screenshot.py`: Generates themed light/dark screenshot variants with borders, shadows, and maximum lossless PNG compression
+- `utilities/run-utils.ps1`: Master utility runner - tests and runs all utilities in sequence
+- `utilities/run-utils.Tests.ps1`: Pester tests for utility runner
+- `utilities/generate-guides-lists.ps1`: Creates guide index markdown files
+- `utilities/generate-guides-lists.Tests.ps1`: Pester tests for guides lists generator
+- `utilities/generate-nav.ps1`: Builds TOML navigation tree from file structure
+- `utilities/generate-nav.Tests.ps1`: Pester tests for nav generator
+- `utilities/check-links.ps1`: PowerShell validation of links (not standard CI integration)
+- `utilities/check-links.Tests.ps1`: Pester tests for link checker
+- `utilities/process-screenshot.py`: Generates themed light/dark screenshot variants with borders, shadows, and maximum lossless PNG compression
 - `/includes/abbreviations.md`: Global acronym definitions
 - `/resources/stylesheets/extra.css`: Theming
