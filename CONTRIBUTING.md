@@ -227,7 +227,6 @@ For creating screenshots with a consistent style, Firefox DevTools is to be used
     ```
 
     The script produces two variants per input image, saved as maximally-compressed lossless PNGs:
-
     - `{name}-light.png` — dark border + drop shadow for light theme pages
     - `{name}-dark.png` — light border + glow for dark theme pages
 
