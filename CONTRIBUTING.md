@@ -214,16 +214,16 @@ For creating screenshots with a consistent style, Firefox DevTools is to be used
     ..\.venv\Scripts\Activate.ps1
 
     # Process a single screenshot
-    python .\util\process-screenshot.py docs\resources\images\example\screenshot.png
+    python .\utilities\process-screenshot.py docs\resources\images\example\screenshot.png
 
     # Process all images in a directory
-    python .\util\process-screenshot.py docs\resources\images\example\
+    python .\utilities\process-screenshot.py docs\resources\images\example\
 
     # Process recursively with a custom profile
-    python .\util\process-screenshot.py docs\resources\images\ --recurse --profile uw-purple
+    python .\utilities\process-screenshot.py docs\resources\images\ --recurse --profile uw-purple
 
     # Regenerate existing output files
-    python .\util\process-screenshot.py screenshot.png --overwrite
+    python .\utilities\process-screenshot.py screenshot.png --overwrite
     ```
 
     The script produces two variants per input image, saved as maximally-compressed lossless PNGs:
