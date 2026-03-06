@@ -2,7 +2,7 @@
 .venv/
 site/
 local-storage/
-util/.link-cache.json
-util/__pycache__
+utilities/.link-cache.json
+__pycache__
 .DS_Store
 tcat-wiki.code-workspace
