@@ -20,7 +20,7 @@
 // capitalized display values. Keys with spaces automatically gain a dash
 // variant in the expanded titleMap (e.g., "user manual" → "user-manual").
 //
-// Keep this in sync with $script:titleMap in util/generate-nav.ps1.
+// Keep this in sync with $script:titleMap in utilities/generate-nav.ps1.
 
 const titleMapSource = {
     // --- Acronyms & Technical Terms ---
@@ -66,6 +66,7 @@ const titleMapSource = {
     "user manual": "User Manual",
 
     // --- Events ---
+    csun: "CSUN",
     mny26: "Mappy New Year 2026",
     "nda vancouver": "Clark County Walk/Roll Event",
     "olympia connected": "Olympia, Connected",

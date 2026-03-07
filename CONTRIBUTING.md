@@ -214,20 +214,19 @@ For creating screenshots with a consistent style, Firefox DevTools is to be used
     ..\.venv\Scripts\Activate.ps1
 
     # Process a single screenshot
-    python .\util\process-screenshot.py docs\resources\images\example\screenshot.png
+    python .\utilities\process-screenshot.py docs\resources\images\example\screenshot.png
 
     # Process all images in a directory
-    python .\util\process-screenshot.py docs\resources\images\example\
+    python .\utilities\process-screenshot.py docs\resources\images\example\
 
     # Process recursively with a custom profile
-    python .\util\process-screenshot.py docs\resources\images\ --recurse --profile uw-purple
+    python .\utilities\process-screenshot.py docs\resources\images\ --recurse --profile uw-purple
 
     # Regenerate existing output files
-    python .\util\process-screenshot.py screenshot.png --overwrite
+    python .\utilities\process-screenshot.py screenshot.png --overwrite
     ```
 
     The script produces two variants per input image, saved as maximally-compressed lossless PNGs:
-
     - `{name}-light.png` — dark border + drop shadow for light theme pages
     - `{name}-dark.png` — light border + glow for dark theme pages
 
@@ -269,6 +268,29 @@ For creating image annotations with a consistent style, follow these guidelines.
 ##### QR Codes
 
 1. Create QR codes using [Project Nayuki's QR Code generator library](https://github.com/nayuki/QR-Code-generator).
+
+#### Event Statistics
+
+The event report system generates post-event summary reports.
+
+```powershell
+# Ensure venv is activated first!
+.\.venv\Scripts\Activate.ps1
+
+# Generate a complete event report:
+python .\utilities\generate-event-report.py --event olympia-connected
+
+# Re-generate using cached stats:
+python .\utilities\generate-event-report.py --event olympia-connected --skip-stats
+
+# Run TM stats generator directly:
+python .\utilities\event-reports\generate-tm-event-stats.py --event mny26
+
+# Run ASR stats generator directly:
+python .\utilities\event-reports\generate-asr-event-stats.py --event nda-vancouver
+```
+
+Run with `--help` for all available options.
 
 ### Markdown Guide
 

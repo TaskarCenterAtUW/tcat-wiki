@@ -1,0 +1,31 @@
+{
+  "workspace_id": 931,
+  "workspace_env": "prod",
+  "workspace_stats": {
+    "total_elements": 141,
+    "total_ways": 104,
+    "total_nodes": 37,
+    "changeset_count": 93,
+    "contributor_count": 22,
+    "footway_way_count": 0,
+    "footway_length_m": 0.0,
+    "crossing_way_count": 53,
+    "crossing_way_length_m": 712.4,
+    "sidewalk_way_count": 51,
+    "sidewalk_way_length_m": 2960.9,
+    "steps_count": 0,
+    "steps_length_m": 0.0,
+    "all_footway_length_m": 3673.3,
+    "all_footway_miles": 2.3,
+    "crossing_node_count": 0,
+    "curb_node_count": 0,
+    "node_count": 37,
+    "way_count": 104
+  },
+  "bbox": {
+    "min_lat": 45.584464,
+    "min_lon": -122.7658855,
+    "max_lat": 45.6896962,
+    "max_lon": -122.4603904
+  }
+}

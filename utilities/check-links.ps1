@@ -2,8 +2,8 @@
 # This script is designed to be run in a PowerShell environment.
 
 # Name: TCAT Wiki - Link Checker
-# Version: 4.3.0
-# Date: 2026-02-24
+# Version: 5.0.0
+# Date: 2026-03-06
 # Author: Amy Bordenave, Taskar Center for Accessible Technology, University of Washington
 # License: CC-BY-ND 4.0 International
 
@@ -59,11 +59,11 @@ if (-not $external -and -not $internal) {
     $internal = $true
 }
 
-# Verify we're in the util directory
+# Verify we're in the utilities directory
 $currentDirName = Split-Path -Leaf (Get-Location)
 
-if ($currentDirName -ne "util") {
-    Write-Host "Error: This script must be run from the util/ directory" -ForegroundColor Red
+if ($currentDirName -ne "utilities") {
+    Write-Host "Error: This script must be run from the utilities/ directory" -ForegroundColor Red
     Write-Host "Current location: $(Get-Location)" -ForegroundColor Yellow
     exit 1
 }
@@ -183,7 +183,7 @@ function Test-ExternalUrlValid {
     try {
         # Prepare headers with User-Agent to identify as a bot
         $headers = @{
-            'User-Agent' = 'TCAT-Wiki-LinkChecker/4.3.0 (+https://github.com/TaskarCenterAtUW/tcat-wiki)'
+            'User-Agent' = 'TCAT-Wiki-LinkChecker/5.0.0 (+https://github.com/TaskarCenterAtUW/tcat-wiki)'
         }
 
         # Use HEAD request first, fallback to GET if needed
@@ -406,7 +406,7 @@ if ($external) {
             } else {
                 try {
                     $headers = @{
-                        'User-Agent' = 'TCAT-Wiki-LinkChecker/3.4.0 (+https://github.com/TaskarCenterAtUW/tcat-wiki)'
+                        'User-Agent' = 'TCAT-Wiki-LinkChecker/5.0.0 (+https://github.com/TaskarCenterAtUW/tcat-wiki)'
                     }
 
                     try {

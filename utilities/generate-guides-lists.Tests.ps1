@@ -2,8 +2,8 @@
 #Requires -Modules @{ ModuleName='Pester'; ModuleVersion='5.0.0' }
 
 # Name: TCAT Wiki - Guides Lists Generator Tests
-# Version: 4.0.0
-# Date: 2026-03-03
+# Version: 5.0.0
+# Date: 2026-03-06
 # Author: Amy Bordenave, Taskar Center for Accessible Technology, University of Washington
 # License: CC-BY-ND 4.0 International
 

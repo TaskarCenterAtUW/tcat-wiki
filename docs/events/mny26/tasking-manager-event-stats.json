@@ -1,0 +1,47 @@
+{
+  "project_id": 1017,
+  "time_window": {
+    "start": "2026-01-19T17:00:00Z",
+    "end": "2026-01-19T21:00:00Z"
+  },
+  "query_window": {
+    "start": "2026-01-18T17:00:00Z",
+    "end": "2026-01-20T21:00:00Z"
+  },
+  "bbox": {
+    "south": 47.166811,
+    "west": -122.562265,
+    "north": 47.318977,
+    "east": -122.34815
+  },
+  "task_stats": {
+    "total": 899,
+    "status_counts": {
+      "READY": 869,
+      "MAPPED": 30
+    },
+    "mapped": 30,
+    "validated": 0,
+    "done": 30,
+    "percent_done": 3.3
+  },
+  "osm_stats": {
+    "total_elements": 1376,
+    "total_ways": 721,
+    "total_nodes": 655,
+    "changeset_count": 31,
+    "mapper_count": 7,
+    "footway_way_count": 25,
+    "footway_length_m": 969.1,
+    "crossing_way_count": 249,
+    "crossing_way_length_m": 3060.9,
+    "sidewalk_way_count": 447,
+    "sidewalk_way_length_m": 24297.5,
+    "steps_count": 0,
+    "steps_length_m": 0.0,
+    "all_footway_length_m": 28327.5,
+    "all_footway_miles": 17.6,
+    "crossing_node_count": 308,
+    "curb_node_count": 347
+  }
+}

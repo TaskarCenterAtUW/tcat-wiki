@@ -1,6 +1,6 @@
 #region Meta
 [project]
-version = "8.0.0"
+version = "9.0.0"
 site_name = "The Taskar Center for Accessible Technology"
 site_description = "Information and guides related to the Taskar Center for Accessible Technology (TCAT) at the University of Washington."
 site_author = "Taskar Center for Accessible Technology"
@@ -163,25 +163,22 @@ nav = [
         {"Mny26" = [
             "events/mny26/index.md",
             {"Mapping Guide" = "events/mny26/mapping-guide.md"},
-            {"Event Summary" = "events/mny26/report.md"},
+            {"Event Summary Report" = "events/mny26/report.md"},
             {"Validation Guide" = "events/mny26/validation-guide.md"}
         ]},
         {"Nda Vancouver" = [
             "events/nda-vancouver/index.md",
             {"AccessMap" = "events/nda-vancouver/accessmap.md"},
-            {"AVIV ScoutRoute" = "events/nda-vancouver/aviv-scoutroute.md"}
+            {"AVIV ScoutRoute" = "events/nda-vancouver/aviv-scoutroute.md"},
+            {"Event Summary Report" = "events/nda-vancouver/report.md"}
         ]},
         {"Olympia Connected" = [
             "events/olympia-connected/index.md",
             {"Mapping Guide" = "events/olympia-connected/mapping-guide.md"},
+            {"Event Summary Report" = "events/olympia-connected/report.md"},
             {"Validation Guide" = "events/olympia-connected/validation-guide.md"}
         ]},
-        {"Oswmh" = [ "events/oswmh/index.md" ]},
-        {"Otp26" = [
-            "events/otp26/index.md",
-            {"Mapping Guide" = "events/otp26/mapping-guide.md"},
-            {"Validation Guide" = "events/otp26/validation-guide.md"}
-        ]}
+        {"Oswmh" = [ "events/oswmh/index.md" ]}
     ]},
     {"JOSM" = [
         "josm/index.md",

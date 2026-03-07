@@ -2,8 +2,8 @@
 # This script is designed to be run in a PowerShell environment.
 
 # Name: TCAT Wiki - Navigation Section Generator
-# Version: 4.0.0
-# Date: 2026-02-05
+# Version: 5.0.0
+# Date: 2026-03-06
 # Author: Amy Bordenave, Taskar Center for Accessible Technology, University of Washington
 # License: CC-BY-ND 4.0 International
 
@@ -625,11 +625,11 @@ function Update-ZensicalNav {
 
 #region Main Execution
 
-# Verify we're in the util directory
+# Verify we're in the utilities directory
 $currentDirName = Split-Path -Leaf (Get-Location)
 
-if ($currentDirName -ne "util") {
-    Write-Host "Error: This script must be run from the util/ directory" -ForegroundColor Red
+if ($currentDirName -ne "utilities") {
+    Write-Host "Error: This script must be run from the utilities/ directory" -ForegroundColor Red
     Write-Host "Current location: $(Get-Location)" -ForegroundColor Yellow
     exit 1
 }

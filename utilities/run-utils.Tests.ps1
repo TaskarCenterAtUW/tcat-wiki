@@ -2,8 +2,8 @@
 #Requires -Modules @{ ModuleName='Pester'; ModuleVersion='5.0.0' }
 
 # Name: TCAT Wiki - Utility Runner Tests
-# Version: 3.0.0
-# Date: 2026-02-06
+# Version: 4.0.0
+# Date: 2026-03-06
 # Author: Amy Bordenave, Taskar Center for Accessible Technology, University of Washington
 # License: CC-BY-ND 4.0 International
 
@@ -252,13 +252,13 @@ Describe "Script Structure" {
 # ==============================================================================
 
 Describe "Integration Tests" -Tag "Integration" {
-    Context "Actual util directory" {
-        It "Should find test files in real util directory" {
+    Context "Actual utilities directory" {
+        It "Should find test files in real utilities directory" {
             $result = Get-TestFiles -UtilPath $PSScriptRoot
             $result.Count | Should -BeGreaterThan 0
         }
 
-        It "Should find run-utils.Tests.ps1 first in real util directory" {
+        It "Should find run-utils.Tests.ps1 first in real utilities directory" {
             $result = Get-TestFiles -UtilPath $PSScriptRoot
             $result[0].Name | Should -Be "run-utils.Tests.ps1"
         }

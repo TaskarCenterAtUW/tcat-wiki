@@ -1,5 +1,33 @@
 ---
 title: Clark County Walk/Roll Event
+
+# ── Event type flags (required) ──────────────────────────────────────
+# Set each to true or false. At least one must be true for report generation.
+tasking_manager_event: false # true if the event uses the OSM US Tasking Manager
+aviv_scoutroute_event: true # true if the event uses AVIV ScoutRoute / Workspaces
+
+# ── Common event properties (used by report intro/outro) ─────────────
+event_name: "Clark County Walk/Roll Event" # Full event name as it appears in the report title
+event_date: "January 20th, 2026" # Human-readable event date (e.g. "February 12th, 2026")
+# event_time_range: "H:MM AM PT – H:MM PM PT" # Display time range; use local timezone abbreviation
+event_format: in-person # (virtual | in-person)
+event_location: "Gaiser Hall, Vancouver, WA" # Zoom or physical venue name + address
+target_area: "Vancouver, WA" # Geographic area being mapped/surveyed (used throughout the report)
+organizers: "the Nondrivers Alliance (NDA) and the Taskar Center for Accessible Technology (TCAT)" # Comma-separated list of organizing groups
+event_purpose: "improving pedestrian infrastructure data in Vancouver, WA for accessibility-focused routing" # One-sentence purpose statement used in the report intro
+# participant_count: "" # Total number of participants; leave blank if unknown until after the event
+
+# ── AVIV ScoutRoute properties (when aviv_scoutroute_event: true) ────
+asr_workspace_id: 931 # Numeric Workspaces workspace ID (from the Workspaces platform)
+asr_workspace_env: "prod" # Workspaces environment: "prod", "stage", or "dev"
+asr_workspace_name: "NDA Vancouver Walk/Roll" # Display name of the workspace (e.g. "NDA Vancouver")
+asr_event_start: "2026-01-20T00:00:00Z" # ISO 8601 UTC timestamp for event start (used for time filtering)
+asr_event_end: "2026-01-21T00:00:00Z" # ISO 8601 UTC timestamp for event end (used for time filtering)
+asr_target_area: "Vancouver, WA" # Area description specific to the ScoutRoute event; defaults to target_area if blank
+asr_route_description: "Gaiser Hall to Washington Street" # Short description of the walking route (e.g. "Gaiser Hall to Washington Street")
+asr_route_distance: "1.6 miles" # Total route distance as a display string (e.g. "1.2 miles")
+asr_route_links: "[**Route 1: Gaiser Hall to Washington Elementary**](https://www.accessmap.app/dir?wp=-122.650576_45.6362821%27-122.65249_45.643354&region=97cb53e5-831e-4fed-8688-86d0eecd1c0b&lon=-122.6569414&lat=45.6383421&z=14.38&sa=1&mu=0.095&md=0.12&ab=0&aps=0) and [**Route 2: Washington Elementary to Washington Street**](https://www.accessmap.app/dir?wp=-122.6548741_45.6425172%27-122.671873_45.642222&region=97cb53e5-831e-4fed-8688-86d0eecd1c0b&lon=-122.6688821&lat=45.6410701&z=14.58&sa=1&mu=0.095&md=0.12&ab=0&aps=0)" # Markdown link(s) to AccessMap or other route visualization(s)
+asr_api_key_env_var: "TDEI_API_KEY" # Name of the env var holding the TDEI API key; defaults to TDEI_API_KEY if blank
 ---
 
 <!-- @format -->

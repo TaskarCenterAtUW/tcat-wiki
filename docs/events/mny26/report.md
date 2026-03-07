@@ -1,5 +1,5 @@
 ---
-title: Event Summary
+title: Event Summary Report
 tags:
     - External
     - User
@@ -7,42 +7,59 @@ tags:
 
 <!-- @format -->
 
-# Mappy New Year 2026 - Event Summary
+## Mappy New Year 2026 — Event Summary Report
 
-## Overview
+### Overview
 
-On January 19th, 2026, the Taskar Center for Accessible Technology (TCAT) hosted **Mappy New Year 2026**, a virtual mapathon focused on improving pedestrian infrastructure data in Tacoma, WA. The event brought together mappers of all skill levels to contribute to the OpenStreetMap project through the OSM US Tasking Manager.
+On January 19th, 2026, Taskar Center for Accessible Technology (TCAT) hosted **Mappy New Year 2026**, a virtual event focused on improving pedestrian infrastructure data to support accessibility-focused routing in **Tacoma, WA**.
 
-## Participation
+| Detail       | Info                      |
+|--------------|---------------------------|
+| **Date**     | January 19th, 2026        |
+| **Time**     | 9:00 AM PT – 12:00+ PM PT |
+| **Format**   | virtual                   |
+| **Location** | Zoom                      |
 
-- **8 external participants** joined TCAT staff for the event
-- Mappers contributed to **[Project #1017 - Tacoma, WA, US: Pedestrian Infrastructure](https://tasks.openstreetmap.us/projects/1017)**
-- Event duration: 9:00 AM PT - 1:00 PM PT
+### OSM Mapping
 
-## By the Numbers
+Mappers contributed to **[Project #1017 — Tacoma, WA, US: Pedestrian Infrastructure | #OpenSidewalks](https://tasks.openstreetmap.us/projects/1017)** via the OSM US Tasking Manager, adding pedestrian infrastructure data to OpenStreetMap.
 
-During the event, participants successfully mapped pedestrian infrastructure across Tacoma:
+- **7 unique mappers** contributed edits related to this mapping event.
 
-- **Number of changes**: 1,961 map edits across 31 changesets
-- **Footways mapped**: 18 miles total length
-- **Crossings mapped**: 253 crossing edges
-- **Curbs mapped**: 380 curb points
+#### Mapping Statistics
 
-## Impact
+| Metric                 | Value                                |
+|------------------------|--------------------------------------|
+| **Edits**              | 1,376 map edits across 31 changesets |
+| **Footways mapped**    | 17.6 miles total length              |
+| **Crossings mapped**   | 308 crossing ways                    |
+| **Curbs mapped**       | 347 curb nodes                       |
+| **Tasks mapped**       | 30                                   |
+| **Tasks validated**    | 0                                    |
+| **Project completion** | 3.3% at event end                    |
 
-The pedestrian infrastructure data collected during this mapathon directly supports:
+#### What Was Mapped
 
-- Improved routing for wheelchair users and others with mobility needs through AccessMap
-- Enhanced pedestrian navigation across Tacoma
-- A more complete and accessible OpenStreetMap dataset for the Pacific Northwest
+Participants focused on the following pedestrian infrastructure features:
 
-## Resources
+- **Sidewalks and footways** — drawn as separate ways alongside roads
+- **Crossings** — mapped as edges connecting sidewalks across intersections
+- **Curbs** — placed at transition points between sidewalks and crossings
+- **Attributes** — surface type, tactile paving, width, and other accessibility-relevant tags
 
-Participants used the following guides during the event:
+#### Mapping Resources
 
-- [Mapping Guide](mapping-guide.md) - Tagging schema and mapping instructions
-- [Validation Guide](validation-guide.md) - Task validation procedures
+- [Mapping Guide](mapping-guide.md) — tagging schema and mapping instructions
+- [Validation Guide](validation-guide.md) — task validation procedures
 
-## Acknowledgments
+### Impact
 
-Thank you to all participants who contributed their time and expertise to make pedestrian infrastructure data more accessible and complete. Your contributions have a lasting impact on accessibility for the Tacoma community!
+The data collected during this event directly supports:
+
+- **Accessible routing** — improved trip planning for wheelchair users, people in the blind/low-vision community, and others with mobility needs through [AccessMap](https://accessmap.app/)
+- **Pedestrian navigation** — more complete sidewalk and crossing data enables safer, more accurate walking and rolling directions
+- **Open data** — a richer, freely available dataset for Tacoma, WA and the surrounding region
+
+### Acknowledgments
+
+Thank you to all participants who contributed their time and expertise. Your contributions have a lasting impact on accessibility for the Tacoma, WA community!

@@ -1,0 +1,31 @@
+### OSM Mapping
+
+Mappers contributed to **[Project #1017 — Tacoma, WA, US: Pedestrian Infrastructure | #OpenSidewalks](https://tasks.openstreetmap.us/projects/1017)** via the OSM US Tasking Manager, adding pedestrian infrastructure data to OpenStreetMap.
+
+- **7 unique mappers** contributed edits related to this mapping event.
+
+#### Mapping Statistics
+
+| Metric                 | Value                                                                |
+|------------------------|----------------------------------------------------------------------|
+| **Edits**              | 1,376 map edits across 31 changesets |
+| **Footways mapped**    | 17.6 miles total length                              |
+| **Crossings mapped**   | 308 crossing ways                                  |
+| **Curbs mapped**       | 347 curb nodes                                         |
+| **Tasks mapped**       | 30                                                  |
+| **Tasks validated**    | 0                                               |
+| **Project completion** | 3.3% at event end                                  |
+
+#### What Was Mapped
+
+Participants focused on the following pedestrian infrastructure features:
+
+- **Sidewalks and footways** — drawn as separate ways alongside roads
+- **Crossings** — mapped as edges connecting sidewalks across intersections
+- **Curbs** — placed at transition points between sidewalks and crossings
+- **Attributes** — surface type, tactile paving, width, and other accessibility-relevant tags
+
+#### Mapping Resources
+
+- [Mapping Guide](mapping-guide.md) — tagging schema and mapping instructions
+- [Validation Guide](validation-guide.md) — task validation procedures
