@@ -163,17 +163,19 @@ nav = [
         {"Mny26" = [
             "events/mny26/index.md",
             {"Mapping Guide" = "events/mny26/mapping-guide.md"},
-            {"Event Summary" = "events/mny26/report.md"},
+            {"Event Summary Report" = "events/mny26/report.md"},
             {"Validation Guide" = "events/mny26/validation-guide.md"}
         ]},
         {"Nda Vancouver" = [
             "events/nda-vancouver/index.md",
             {"AccessMap" = "events/nda-vancouver/accessmap.md"},
-            {"AVIV ScoutRoute" = "events/nda-vancouver/aviv-scoutroute.md"}
+            {"AVIV ScoutRoute" = "events/nda-vancouver/aviv-scoutroute.md"},
+            {"Event Summary Report" = "events/nda-vancouver/report.md"}
         ]},
         {"Olympia Connected" = [
             "events/olympia-connected/index.md",
             {"Mapping Guide" = "events/olympia-connected/mapping-guide.md"},
+            {"Event Summary Report" = "events/olympia-connected/report.md"},
             {"Validation Guide" = "events/olympia-connected/validation-guide.md"}
         ]},
         {"Oswmh" = [ "events/oswmh/index.md" ]}

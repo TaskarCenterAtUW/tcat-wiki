@@ -1,5 +1,30 @@
 ---
 title: Olympia, Connected
+
+# ── Event type flags (required) ──────────────────────────────────────
+# Set each to true or false. At least one must be true for report generation.
+tasking_manager_event: true # true if the event uses the OSM US Tasking Manager
+aviv_scoutroute_event: false # true if the event uses AVIV ScoutRoute / Workspaces
+
+# ── Common event properties (used by report intro/outro) ─────────────
+event_name: "Olympia, Connected: Mapping for Mobility in OpenStreetMap" # Full event name as it appears in the report title
+event_date: "February 12th, 2026" # Human-readable event date (e.g. "February 12th, 2026")
+event_time_range: "6:00 PM PT – 8:00 PM PT" # Display time range; use local timezone abbreviation
+event_format: in-person # (virtual | in-person)
+event_location: "HRDG 143, John and Judy Harding Building, Seattle University" # Zoom URL or physical venue name + address
+target_area: "Olympia, WA" # Geographic area being mapped/surveyed (used throughout the report)
+organizers: "MaptimeSEA and the Taskar Center for Accessible Technology (TCAT)" # Comma-separated list of organizing groups
+event_purpose: "improving pedestrian infrastructure data to support accessibility-focused routing" # One-sentence purpose statement used in the report intro
+participant_count: "" # Total number of participants; leave blank if unknown until after the event
+
+# ── Tasking Manager properties (when tasking_manager_event: true) ────
+tm_project: 1083 # Numeric TM project ID (e.g. 1017); used to build URLs and fetch task stats
+tm_project_name: "Olympia, WA, US: Pedestrian Infrastructure | #OpenSidewalks" # TM project title as shown on tasks.openstreetmap.us
+tm_project_url: "" # Override project URL; leave blank to auto-build from tm_project ID
+tm_event_start: "2026-02-13T02:00:00Z" # ISO 8601 UTC timestamp for event start (used for Overpass stats window)
+tm_event_end: "2026-02-13T04:00:00Z" # ISO 8601 UTC timestamp for event end (used for Overpass stats window)
+tm_bbox: "" # Overpass bounding box "south,west,north,east" (decimal degrees); leave blank to fetch from TM API
+tm_geographic_coverage: "" # Human-readable description of area covered (e.g. "Downtown Olympia"); leave blank if not applicable
 ---
 
 <!-- @format -->

@@ -167,6 +167,86 @@ python .\utilities\process-screenshot.py screenshot.png --overwrite
 
 Run with `--help` for all options including per-variant color, shadow, and blur overrides.
 
+### Generate Event Reports
+
+Event reports are generated using a modular architecture that supports two event types: **Tasking Manager (TM)** and **AVIV ScoutRoute (ASR)**. Events can be either or both types.
+
+#### Architecture
+
+1. **`generate-event-report.py`** — Orchestrator. Reads event frontmatter, runs the appropriate stats generators, fills section templates, and concatenates intro + sections + outro into a publish-ready `report.md`.
+2. **`generate-tm-event-stats.py`** — TM stats generator. Fetches mapping statistics from the Tasking Manager and Overpass APIs, writes `tasking-manager-event-stats.json`.
+3. **`generate-asr-event-stats.py`** — ASR stats generator. Fetches workspace data from the Workspaces OSM-like API, writes `aviv-scoutroute-event-stats.json`.
+4. **`event-reports/common.py`** — Shared utilities (frontmatter parsing, HTTP helpers, template filling, path helpers, haversine).
+
+#### Report Templates
+
+- `templates/events/event-report-intro.md` — Common report intro (overview, participation)
+- `templates/events/event-report-outro.md` — Common report outro (impact, acknowledgments)
+- `templates/events/event-report-tm-section.md` — TM activity section
+- `templates/events/event-report-asr-section.md` — ASR activity section
+
+```powershell
+# Ensure venv is activated first!
+.\.venv\Scripts\Activate.ps1
+
+# Generate a complete event report (reads frontmatter, fetches stats, fills template):
+python .\utilities\generate-event-report.py --event olympia-connected
+
+# Re-generate report using cached stats (skip all API calls):
+python .\utilities\generate-event-report.py --event olympia-connected --skip-stats
+
+# Skip only TM or ASR stats (when event has both):
+python .\utilities\generate-event-report.py --event my-event --skip-tm-stats
+python .\utilities\generate-event-report.py --event my-event --skip-asr-stats
+
+# Run TM stats generator directly:
+python .\utilities\event-reports\generate-tm-event-stats.py --event mny26
+
+# Run ASR stats generator directly:
+python .\utilities\event-reports\generate-asr-event-stats.py --event nda-vancouver
+```
+
+**Orchestrator options** (`generate-event-report.py`):
+
+- `--event <slug>`: Event folder name under `docs/events/` (required)
+- `--skip-stats`: Skip all stats generators (use existing JSON files)
+- `--skip-tm-stats`: Skip TM stats generator only
+- `--skip-asr-stats`: Skip ASR stats generator only
+- `--output` / `-o`: Override output path for final `report.md`
+- Pass-through args: `--skip-overpass`, `--overpass-url`, `--aoi-file`, `--tasks-file`, `--pad-before`, `--pad-after` (forwarded to TM stats generator); `--osm-file`, `--api-key-env-var` (forwarded to ASR stats generator)
+
+**TM stats generator options** (`generate-tm-event-stats.py`):
+
+- `--event <slug>`: Event folder name (required); reads `tm_project`, `tm_event_start`, `tm_event_end`, `tm_bbox` from frontmatter
+- `--aoi-file` / `--tasks-file`: Local GeoJSON files for the TM project
+- `--output` / `-o`: Override output path
+- `--json`: Also print JSON to console
+- `--ultra`: Print Overpass visualization queries
+- `--skip-overpass`: Skip Overpass query (TM task stats only)
+- `--overpass-url`: Pin a specific Overpass server
+- `--pad-before` / `--pad-after`: Hours of padding around event window
+
+**ASR stats generator options** (`generate-asr-event-stats.py`):
+
+- `--event <slug>`: Event folder name (required); reads `asr_workspace_id`, `asr_workspace_env` from frontmatter
+- `--osm-file`: Load OSM XML from file instead of API
+- `--api-key-env-var`: Override the TDEI API key environment variable name
+- `--output` / `-o`: Override output path
+- `--json`: Also print JSON to console
+
+**Event frontmatter**: Each event's `index.md` must include frontmatter with event type flags and prefixed properties:
+
+- **Required**: `tasking_manager_event` (true/false), `aviv_scoutroute_event` (true/false)
+- **Common** (unprefixed): `event_name`, `event_date`, `event_time_range`, `event_format`, `event_location`, `target_area`, `organizers`, `event_purpose`, `participant_count`
+- **TM** (tm\_ prefix, when `tasking_manager_event: true`): `tm_project`, `tm_project_name`, `tm_event_start`, `tm_event_end`, `tm_bbox`, `tm_geographic_coverage`
+- **ASR** (asr\_ prefix, when `aviv_scoutroute_event: true`): `asr_workspace_id`, `asr_workspace_env`, `asr_workspace_name`, `asr_event_start`, `asr_event_end`, `asr_target_area`, `asr_route_description`, `asr_route_distance`, `asr_route_links`, `asr_api_key_env_var`
+
+**Generated artifacts** (per event directory):
+
+- `tasking-manager-event-stats.json` / `aviv-scoutroute-event-stats.json` — Stats JSON
+- `tasking-manager-event-report.md.part` / `aviv-scoutroute-event-report.md.part` — Section fragments
+- `report.md` — Final concatenated report
+
 ### Validate Links
 
 ```powershell
@@ -393,15 +473,6 @@ Refer to the official Zensical documentation, which is hosted online at https://
 ### Key Files for Reference
 
 - `zensical.toml`: Main config; nav section auto-updated by scripts
-- `util/run-utils.ps1`: Master utility runner - tests and runs all utilities in sequence
-- `util/run-utils.Tests.ps1`: Pester tests for utility runner
-- `util/generate-guides-lists.ps1`: Creates guide index markdown files
-- `util/generate-guides-lists.Tests.ps1`: Pester tests for guides lists generator
-- `util/generate-nav.ps1`: Builds TOML navigation tree from file structure
-- `util/generate-nav.Tests.ps1`: Pester tests for nav generator
-- `util/check-links.ps1`: PowerShell validation of links (not standard CI integration)
-- `util/check-links.Tests.ps1`: Pester tests for link checker
-- `util/process-screenshot.py`: Generates themed light/dark screenshot variants with borders, shadows, and maximum lossless PNG compression
 - `utilities/run-utils.ps1`: Master utility runner - tests and runs all utilities in sequence
 - `utilities/run-utils.Tests.ps1`: Pester tests for utility runner
 - `utilities/generate-guides-lists.ps1`: Creates guide index markdown files
@@ -411,5 +482,14 @@ Refer to the official Zensical documentation, which is hosted online at https://
 - `utilities/check-links.ps1`: PowerShell validation of links (not standard CI integration)
 - `utilities/check-links.Tests.ps1`: Pester tests for link checker
 - `utilities/process-screenshot.py`: Generates themed light/dark screenshot variants with borders, shadows, and maximum lossless PNG compression
+- `utilities/generate-event-report.py`: Orchestrator — reads frontmatter, runs stats generators, fills templates, writes report
+- `utilities/event-reports/generate-tm-event-stats.py`: TM stats generator — fetches Tasking Manager/Overpass statistics, writes JSON
+- `utilities/event-reports/generate-asr-event-stats.py`: ASR stats generator — fetches Workspaces API data, writes JSON
+- `utilities/event-reports/common.py`: Shared utilities for event report scripts (frontmatter, HTTP, templates)
+- `templates/events/event-report-intro.md`: Common report intro template
+- `templates/events/event-report-outro.md`: Common report outro template
+- `templates/events/event-report-tm-section.md`: TM activity section template
+- `templates/events/event-report-asr-section.md`: ASR activity section template
+- `templates/events/index.md`: Event page template with full frontmatter schema
 - `/includes/abbreviations.md`: Global acronym definitions
 - `/resources/stylesheets/extra.css`: Theming

@@ -269,6 +269,29 @@ For creating image annotations with a consistent style, follow these guidelines.
 
 1. Create QR codes using [Project Nayuki's QR Code generator library](https://github.com/nayuki/QR-Code-generator).
 
+#### Event Statistics
+
+The event report system generates post-event summary reports.
+
+```powershell
+# Ensure venv is activated first!
+.\.venv\Scripts\Activate.ps1
+
+# Generate a complete event report:
+python .\utilities\generate-event-report.py --event olympia-connected
+
+# Re-generate using cached stats:
+python .\utilities\generate-event-report.py --event olympia-connected --skip-stats
+
+# Run TM stats generator directly:
+python .\utilities\event-reports\generate-tm-event-stats.py --event mny26
+
+# Run ASR stats generator directly:
+python .\utilities\event-reports\generate-asr-event-stats.py --event nda-vancouver
+```
+
+Run with `--help` for all available options.
+
 ### Markdown Guide
 
 #### Headers
