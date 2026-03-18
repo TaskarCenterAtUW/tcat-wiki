@@ -1,0 +1,37 @@
+### Walkabout
+
+Participants walked a route through Anaheim Convention Center using **AVIV ScoutRoute** to collect on-the-ground pedestrian infrastructure observations, submitted to the **CSUN 2026** workspace.
+
+#### Route
+
+Anaheim Marriott to Anaheim GardenWalk
+
+- **Distance**: 0.75 miles
+
+[AccessMap](https://www.accessmap.app/dir?wp=-117.918313_33.799592%27-117.911555_33.8051782&region=ca.anaheim&lon=-117.9160288&lat=33.8023852&z=16.85&sa=1&mu=0.14&md=0.14&ab=0&aps=0)
+
+#### Walkabout Statistics
+
+| Metric              | Value                     |
+|---------------------|---------------------------|
+| **Contributors**    | 8 |
+| **Total elements**  | 16    |
+| **Nodes submitted** | 5        |
+| **Ways submitted**  | 11         |
+| **Footways mapped** | 0.3 mi  |
+| **Crossing nodes**  | 0    |
+| **Curb nodes**      | 4        |
+
+#### What Was Observed
+
+Participants used AVIV ScoutRoute to submit observations about pedestrian infrastructure conditions along the route, including:
+
+- Sidewalk surface condition and width
+- Missing or damaged curb ramps
+- Obstructions (poles, signs, vegetation)
+- Tactile paving presence/absence
+- Crosswalk visibility and signal accessibility
+
+#### Walkabout Resources
+
+- [AVIV ScoutRoute Guide](aviv-scoutroute.md) — app installation and usage

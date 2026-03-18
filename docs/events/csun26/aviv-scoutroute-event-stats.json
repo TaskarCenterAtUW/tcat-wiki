@@ -1,0 +1,31 @@
+{
+  "workspace_id": 1286,
+  "workspace_env": "prod",
+  "workspace_stats": {
+    "total_elements": 16,
+    "total_ways": 11,
+    "total_nodes": 5,
+    "changeset_count": 16,
+    "contributor_count": 8, /* Note: Actual count is 10. Demo devices used by multiple participants. */
+    "footway_way_count": 0,
+    "footway_length_m": 0.0,
+    "crossing_way_count": 3,
+    "crossing_way_length_m": 28.0,
+    "sidewalk_way_count": 8,
+    "sidewalk_way_length_m": 376.1,
+    "steps_count": 0,
+    "steps_length_m": 0.0,
+    "all_footway_length_m": 404.2,
+    "all_footway_miles": 0.3,
+    "crossing_node_count": 0,
+    "curb_node_count": 4,
+    "node_count": 5,
+    "way_count": 11
+  },
+  "bbox": {
+    "min_lat": 33.781783,
+    "min_lon": -117.9799224,
+    "max_lat": 33.828935,
+    "max_lon": -117.8859411
+  }
+}
