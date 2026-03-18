@@ -32,24 +32,6 @@ Visit the [OpenSidewalks Mappy Hours](oswmh/index.md) page for more information,
 
 ### Upcoming Events
 
-#### CSUN 2026
-
-**Name:** CSUN Assistive Technology Conference
-
-**Organizers:** [CSUN Center on Disabilities](https://www.csun.edu/cod)
-
-**Website:** [https://www.csun.edu/cod/conference](https://www.csun.edu/cod/conference) | [https://conference.csun.at/event/2026/summary](https://conference.csun.at/event/2026/summary)
-
-**Time:** March 9th - 13th, 2026
-
-**Location:** In-person: [Anaheim Marriott, 700 W Convention Way, Anaheim, CA 92802, US](https://maps.app.goo.gl/zwTgMF9jL9A91nQ48)
-
-**Related Content:**
-
-_Content will be added as it becomes available._
-
----
-
 #### State of the Map US 2026
 
 **Name:** State of the Map US 2026
@@ -69,6 +51,24 @@ _Content will be added as it becomes available._
 ---
 
 ### Past Events
+
+#### CSUN 2026
+
+**Name:** CSUN 2026 Assistive Technology Conference
+
+**Organizers:** [CSUN Center on Disabilities](https://www.csun.edu/cod)
+
+**Website:** [https://www.csun.edu/cod/conference](https://www.csun.edu/cod/conference) | [https://conference.csun.at/event/2026/summary](https://conference.csun.at/event/2026/summary)
+
+**Time:** March 9th - 13th, 2026
+
+**Location:** In-person: [Anaheim Marriott, 700 W Convention Way, Anaheim, CA 92802, US](https://maps.app.goo.gl/zwTgMF9jL9A91nQ48)
+
+**Related Content:**
+
+Visit the [CSUN 2026](csun26/index.md) page for more information!
+
+---
 
 #### OpenThePaths 2026
 
