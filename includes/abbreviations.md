@@ -1,5 +1,6 @@
 *[2FA]: Two-Factor Authentication
 *[3DEP]: 3D Elevation Program
+*[A11y]: Accessibility
 *[AADT]: Annual Average Daily Traffic
 *[AASHTO]: American Association of State Highway and Transportation Officials
 *[ABA]: Architectural Barriers Act
@@ -28,6 +29,7 @@
 *[CSE]: Computer Science and Engineering
 *[CSUN]: California State University, Northridge
 *[CSV]: Comma-Separated Values
+*[CUGOS]: Cascadia Users of Geospatial Open Source
 *[DEM]: Digital Elevation Model
 *[DOT]: Department of Transportation
 *[DSB]: Department of Services for the Blind
@@ -54,6 +56,7 @@
 *[GTFS-Flex]: General Transit Feed Specification, Flex Extension
 *[GTFS-Pathways]: General Transit Feed Specification, Pathways Extension
 *[HAWK]: High-Intensity Activated Crosswalk Beacon
+*[HCI]: Human-Computer Interaction
 *[HCT]: High-Capacity Transit
 *[HIN]: High Injury Network
 *[HOT]: Humanitarian OpenStreetMap Team
@@ -73,6 +76,7 @@
 *[LRS]: Linear Referencing System
 *[LRTP]: Long-Range Transportation Plan
 *[MBTA]: Massachusetts Bay Transportation Authority
+*[MCP]: Model Context Protocol
 *[MDIP]: Mobility Data Interoperability Principles
 *[MDOT]: Michigan Department of Transportation
 *[MIC]: Manufacturing Industrial Center
@@ -128,6 +132,7 @@
 *[SCLIO]: Specialized Community-Led Impact Opportunity
 *[SDOT]: Seattle Department of Transportation
 *[SHSP]: Strategic Highway Safety Plan
+*[SLAM]: Simultaneous Location and Mapping
 *[SNAP]: Supplemental Nutrition Assistance Program
 *[SOV]: Single Occupancy Vehicle
 *[SOW]: Statement of Work
@@ -161,6 +166,7 @@
 *[UW]: University of Washington
 *[UX]: User Experience
 *[V2X]: Vehicle-to-Everything
+*[WCAG]: Web Content Accessibility Guidelines
 *[WIC]: Special Supplemental Nutrition Program for Women, Infants, and Children
 *[WSDOT]: Washington State Department of Transportation
 *[WSP]: Washington State Proviso
