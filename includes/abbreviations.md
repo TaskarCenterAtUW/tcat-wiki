@@ -19,24 +19,31 @@
 *[BLV]: Blind and Low-Vision
 *[BRT]: Bus Rapid Transit
 *[BTS]: Bureau of Transportation Statistics
-*[CC0]: Creative Commons Zero
-*[CDP]: Census-Designated Place
+*[CAD]: Computer-Aided Design
+*[CADD]: Computer-Aided Design and Drafting
 *[CALACT]: California Association of Coordinated Transportation
 *[Cal-ITP]: California Integrated Travel Project
+*[CC0]: Creative Commons Zero
+*[CDP]: Census-Designated Place
 *[CMP]: Congestion Management Process
 *[COE]: College of Engineering
+*[COG]: Cloud Optimized GeoTIFF
 *[CRS]: Coordinate Reference System
 *[CSE]: Computer Science and Engineering
 *[CSUN]: California State University, Northridge
 *[CSV]: Comma-Separated Values
 *[CUGOS]: Cascadia Users of Geospatial Open Source
+*[DE-9IM]: Dimensionally Extended Nine-Intersection Model
 *[DEM]: Digital Elevation Model
 *[DOT]: Department of Transportation
 *[DSB]: Department of Services for the Blind
 *[DSM]: Digital Surface Model
 *[DTM]: Digital Terrain Model
+*[DXF]: Drawing Exchange Format
 *[EFA]: Equity Focus Area
+*[EPSG]: European Petroleum Survey Group
 *[ETL]: Extract, Transform, Load
+*[ETRS89]: European Terrestrial Reference System 1989
 *[FDE]: Fundamental Data Elements
 *[FGTS]: Freight & Goods Transportation System
 *[FHWA]: Federal Highway Administration
@@ -48,9 +55,11 @@
 *[GIG]: GoInfoGame
 *[GIS]: Geographic Information System
 *[GIS-T]: Geospatial Information Systems for Transportation
+*[GML]: Geography Markup Language
 *[GOFS]: General On-Demand Transit Feed Specification
 *[GNSS]: Global Navigation Satellite System
 *[GPS]: Global Positioning System
+*[GPX]: GPS Exchange Format
 *[GS]: Gaussian Solutions
 *[GTFS]: General Transit Feed Specification
 *[GTFS-Flex]: General Transit Feed Specification, Flex Extension
@@ -62,23 +71,28 @@
 *[HOT]: Humanitarian OpenStreetMap Team
 *[HOV]: High Occupancy Vehicle
 *[HxGN]: Hexagon (aerial imagery provider)
+*[IDW]: Inverse Distance Weighting
 *[IoU]: Intersection over Union
 *[IRB]: Internal Review Board
 *[ISTEA]: Intermodal Surface Transportation Efficiency Act of 1991
 *[ITS]: Intelligent Transportation System
 *[IXN]: Intersection / Intersection Traversability Metric
 *[JOSM]: Java OpenStreetMap Editor
+*[KML]: Keyhole Markup Language
 *[KPI]: Key Performance Indicator
 *[lat]: Latitude
 *[LFQD]: Long Form Quest Definition
 *[LiDAR]: Light Detection and Ranging
+*[LoD]: Level of Detail
 *[lon]: Longitude
+*[LoS]: Line of Sight
 *[LRS]: Linear Referencing System
 *[LRTP]: Long-Range Transportation Plan
 *[MBTA]: Massachusetts Bay Transportation Authority
 *[MCP]: Model Context Protocol
 *[MDIP]: Mobility Data Interoperability Principles
 *[MDOT]: Michigan Department of Transportation
+*[MGRS]: Military Grid Reference System
 *[MIC]: Manufacturing Industrial Center
 *[MIRE]: Model Inventory of Roadway Elements
 *[ML]: Machine Learning
@@ -86,17 +100,25 @@
 *[MNY26]: Mappy New Year 2026
 *[MOD]: Mobility-on-Demand
 *[MOU]: Memorandum of Understanding
+*[MP]: MultiPolygon
 *[MPO]: Metropolitan Planning Organization
 *[MUTCD]: Manual on Uniform Traffic Control Devices
+*[MVT]: Mapbox Vector Tile
 *[NACTO]: National Association of City Transportation Officials
+*[NAD27]: North American Datum 1927
+*[NAD83]: North American Datum 1983
 *[NCHRP]: National Cooperative Highway Research Program
 *[NC-BPAID]: National Collaboration on Bicycle, Pedestrian, and Accessibility Infrastructure Data
 *[NCDOT]: North Carolina Department of Transportation
 *[NDA]: Nondrivers Alliance
+*[NDVI]: Normalized Difference Vegetation Index
 *[NEMT]: Non-Emergency Medical Transportation
+*[NetCDF]: Network Common Data Form
 *[NHS]: National Highway System
 *[NHTSA]: National Highway Traffic Safety Administration
+*[NIR]: Near-Infrared
 *[NYPL]: New York Public Library
+*[OD]: Origin-Destination
 *[ODOT]: Oregon Department of Transportation
 *[OGC]: Open Geospatial Consortium
 *[OMF]: Open Mobility Foundation
@@ -130,13 +152,16 @@
 *[SAM]: Segment Anything Model
 *[SAM-Road]: Segment Anything Model for Road Network Graph Extraction
 *[SCLIO]: Specialized Community-Led Impact Opportunity
+*[SDI]: Spatial Data Infrastructure
 *[SDOT]: Seattle Department of Transportation
 *[SHSP]: Strategic Highway Safety Plan
 *[SLAM]: Simultaneous Location and Mapping
+*[SLD]: Styled Layer Descriptor
 *[SNAP]: Supplemental Nutrition Assistance Program
 *[SOV]: Single Occupancy Vehicle
 *[SOW]: Statement of Work
 *[SPS]: Seattle Public Schools
+*[SRID]: Spatial Reference System Identifier
 *[SRTS]: Safe Routes to School
 *[STIP]: State Transportation Improvement Program
 *[SUMC]: Shared User Mobility Conference / Shared Use Mobility Center
@@ -150,8 +175,10 @@
 *[TDEI]: Transportation Data Exchange Initiative
 *[TDM]: Transportation Demand Management
 *[TEA-21]: Transportation Equity Act for the 21st Century
+*[TIN]: Triangulated Irregular Network
 *[TIP]: Transportation Improvement Program
 *[TMA]: Transportation Management Areas
+*[TMS]: Tile Map Service
 *[TOD]: Time of Day
 *[TRAILS]: Trail Routing, Analysis, and Information Linkage System
 *[TRB]: Transportation Research Board
@@ -163,11 +190,18 @@
 *[USDA]: United States Department of Agriculture
 *[USDOT]: United States Department of Transportation
 *[USGS]: United States Geological Survey
+*[UTM]: Universal Transverse Mercator
 *[UW]: University of Washington
 *[UX]: User Experience
 *[V2X]: Vehicle-to-Everything
 *[WCAG]: Web Content Accessibility Guidelines
+*[WFS]: Web Feature Service
+*[WGS]: World Geodetic System
 *[WIC]: Special Supplemental Nutrition Program for Women, Infants, and Children
+*[WKB]: Well-Known Binary
+*[WKT]: Well-Known Text
+*[WMS]: Web Map Service
+*[WMTS]: Web Map Tile Service
 *[WSDOT]: Washington State Department of Transportation
 *[WSP]: Washington State Proviso
 *[XML]: Extensible Markup Language
