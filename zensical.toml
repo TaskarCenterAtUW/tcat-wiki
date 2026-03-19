@@ -258,7 +258,10 @@ nav = [
                     {"Dataset Union" = "tdei/portal/user-manual/jobs/dataset-union.md"}
                 ]}
             ]},
-            {"Tutorial" = [ {"Download OS-CONNECT Data from the TDEI Portal" = "tdei/portal/tutorial/download-os-connect.md"} ]}
+            {"Tutorial" = [
+                {"Import Curb Ramp Data into the TDEI" = "tdei/portal/tutorial/curb-points-in-tdei.md"},
+                {"Download OS-CONNECT Data from the TDEI Portal" = "tdei/portal/tutorial/download-os-connect.md"},
+            ]}
         ]},
         {"TDEI Core" = [ "tdei/tdei-core/index.md" ]}
     ]},

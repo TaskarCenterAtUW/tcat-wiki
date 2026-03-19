@@ -1,0 +1,1288 @@
+<!-- @format -->
+
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Curb Ramp Dataset Converter</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible+Next:wght@400;600;700&family=Atkinson+Hyperlegible+Mono&display=swap"
+            rel="stylesheet"
+        />
+        <style>
+            /* ── Theme tokens ── */
+            :root {
+                --tool-bg: #f4f1fa;
+                --card-bg: #ffffff;
+                --card-shadow: 0 2px 12px rgba(75, 46, 131, 0.1);
+                --text: #1a1a2e;
+                --text-secondary: #666;
+                --text-muted: #999;
+                --accent: #4b2e83;
+                --accent-hover: #3a2266;
+                --accent-tint: #faf8ff;
+                --accent-subtle: #ede8f7;
+                --border: #ede8f7;
+                --border-strong: #e0d8f0;
+                --drop-border: #c5b3e8;
+                --drop-hover-bg: #f0eaff;
+                --input-bg: #ffffff;
+                --input-border: #d4cce8;
+                --input-focus-shadow: 0 0 0 2px rgba(75, 46, 131, 0.12);
+                --pill-bg: #ede8f7;
+                --btn-primary-bg: #4b2e83;
+                --btn-primary-hover: #3a2266;
+                --btn-primary-disabled: #c8bde8;
+                --btn-success-bg: #1a6632;
+                --btn-success-hover: #145127;
+                --status-info-bg: #eef3ff;
+                --status-info-text: #2244aa;
+                --status-info-border: #bdd0f8;
+                --status-success-bg: #e8f6ee;
+                --status-success-text: #1a5e2d;
+                --status-success-border: #9fd4b4;
+                --status-error-bg: #fff0f0;
+                --status-error-text: #992222;
+                --status-error-border: #f0c0c0;
+                --footer-text: #bbb;
+                --footer-link: #9980c8;
+                --ext-header-text: #888;
+                --ext-border: #e8e0f4;
+                --ext-input-border: #ddd;
+                --btn-outline-border: #bbb;
+                --btn-outline-text: #666;
+                --btn-del-idle: #ccc;
+                --danger: #c00;
+                --summary-text: #555;
+            }
+
+            [data-theme="dark"] {
+                --tool-bg: #2b2d3e;
+                --card-bg: #33354a;
+                --card-shadow: 0 2px 16px rgba(0, 0, 0, 0.4);
+                --text: #d0cdd9;
+                --text-secondary: #9e9aac;
+                --text-muted: #75728a;
+                --accent: #c9b882;
+                --accent-hover: #d8ca98;
+                --accent-tint: rgba(183, 165, 122, 0.05);
+                --accent-subtle: rgba(183, 165, 122, 0.1);
+                --border: rgba(183, 165, 122, 0.12);
+                --border-strong: rgba(183, 165, 122, 0.2);
+                --drop-border: rgba(183, 165, 122, 0.35);
+                --drop-hover-bg: rgba(183, 165, 122, 0.08);
+                --input-bg: #2b2d42;
+                --input-border: rgba(183, 165, 122, 0.22);
+                --input-focus-shadow: 0 0 0 2px rgba(183, 165, 122, 0.18);
+                --pill-bg: rgba(183, 165, 122, 0.12);
+                --btn-primary-bg: #5e40a0;
+                --btn-primary-hover: #7254b8;
+                --btn-primary-disabled: rgba(94, 64, 160, 0.35);
+                --btn-success-bg: #1a6632;
+                --btn-success-hover: #228b3f;
+                --status-info-bg: rgba(34, 68, 170, 0.12);
+                --status-info-text: #8db4f8;
+                --status-info-border: rgba(34, 68, 170, 0.3);
+                --status-success-bg: rgba(26, 102, 50, 0.14);
+                --status-success-text: #7ed4a0;
+                --status-success-border: rgba(26, 102, 50, 0.3);
+                --status-error-bg: rgba(153, 34, 34, 0.14);
+                --status-error-text: #f0a0a0;
+                --status-error-border: rgba(153, 34, 34, 0.35);
+                --footer-text: #5a5870;
+                --footer-link: #c9b882;
+                --ext-header-text: #8a8698;
+                --ext-border: rgba(183, 165, 122, 0.15);
+                --ext-input-border: rgba(183, 165, 122, 0.2);
+                --btn-outline-border: rgba(183, 165, 122, 0.3);
+                --btn-outline-text: #9e9aac;
+                --btn-del-idle: #5a5870;
+                --danger: #e05555;
+                --summary-text: #9e9aac;
+            }
+
+            /* ── Reset ── */
+            *,
+            *::before,
+            *::after {
+                box-sizing: border-box;
+                margin: 0;
+                padding: 0;
+            }
+
+            /* ── Visually hidden (screen readers only) ── */
+            .sr-only {
+                position: absolute;
+                width: 1px;
+                height: 1px;
+                padding: 0;
+                margin: -1px;
+                overflow: hidden;
+                clip: rect(0, 0, 0, 0);
+                white-space: nowrap;
+                border: 0;
+            }
+
+            body {
+                font-family:
+                    "Atkinson Hyperlegible Next",
+                    -apple-system,
+                    BlinkMacSystemFont,
+                    "Segoe UI",
+                    Roboto,
+                    sans-serif;
+                font-size: 14px;
+                line-height: 1.5;
+                color: var(--text);
+                background: var(--tool-bg);
+                padding: 12px;
+                transition:
+                    background 0.2s,
+                    color 0.2s;
+            }
+
+            .card {
+                background: var(--card-bg);
+                border-radius: 10px;
+                box-shadow: var(--card-shadow);
+                padding: 22px;
+                width: 100%;
+                transition:
+                    background 0.2s,
+                    box-shadow 0.2s;
+            }
+
+            /* ── Header ── */
+            .card-header {
+                margin-bottom: 14px;
+            }
+
+            h1 {
+                font-size: 1.15rem;
+                font-weight: 700;
+                color: var(--accent);
+                margin-bottom: 3px;
+                transition: color 0.2s;
+            }
+
+            .subtitle {
+                font-size: 0.82rem;
+                color: var(--text-secondary);
+            }
+
+            /* ── Divider ── */
+            .divider {
+                border: none;
+                border-top: 1px solid var(--border);
+                margin: 18px 0;
+            }
+
+            /* ── Drop zone ── */
+            .drop-zone {
+                border: 2px dashed var(--drop-border);
+                border-radius: 8px;
+                padding: 20px 16px;
+                text-align: center;
+                cursor: pointer;
+                transition:
+                    border-color 0.15s,
+                    background 0.15s;
+                background: var(--accent-tint);
+            }
+
+            .drop-zone:hover,
+            .drop-zone.drag-over {
+                border-color: var(--accent);
+                background: var(--drop-hover-bg);
+            }
+
+            .drop-zone:focus-visible {
+                border-color: var(--accent);
+                outline: 2px solid var(--accent);
+                outline-offset: 2px;
+            }
+
+            .drop-zone input[type="file"] {
+                display: none;
+            }
+
+            .drop-icon {
+                font-size: 1.9rem;
+                margin-bottom: 8px;
+                pointer-events: none;
+            }
+
+            .drop-label {
+                font-weight: 600;
+                color: var(--accent);
+                pointer-events: none;
+            }
+
+            .drop-hint {
+                font-size: 0.78rem;
+                color: var(--text-muted);
+                margin-top: 3px;
+                pointer-events: none;
+            }
+
+            /* ── File pill ── */
+            .file-pill {
+                display: none;
+                align-items: center;
+                gap: 8px;
+                padding: 8px 12px;
+                background: var(--pill-bg);
+                border-radius: 6px;
+                margin-top: 12px;
+            }
+
+            .file-pill.visible {
+                display: flex;
+            }
+
+            .file-pill-name {
+                flex: 1;
+                font-weight: 500;
+                font-size: 0.88rem;
+                overflow: hidden;
+                text-overflow: ellipsis;
+                white-space: nowrap;
+            }
+
+            .btn-clear {
+                background: none;
+                border: none;
+                cursor: pointer;
+                color: var(--text-muted);
+                font-size: 0.95rem;
+                padding: 2px 4px;
+                line-height: 1;
+                flex-shrink: 0;
+            }
+
+            .btn-clear:hover {
+                color: var(--danger);
+            }
+
+            /* ── Section label ── */
+            .section-label {
+                font-size: 0.7rem;
+                font-weight: 700;
+                text-transform: uppercase;
+                letter-spacing: 0.07em;
+                color: var(--accent);
+                margin: 14px 0 8px;
+            }
+
+            /* ── Details / Advanced ── */
+            details {
+                border: 1px solid var(--border-strong);
+                border-radius: 6px;
+                overflow: hidden;
+            }
+
+            summary {
+                padding: 9px 14px;
+                cursor: pointer;
+                font-size: 0.82rem;
+                font-weight: 600;
+                color: var(--summary-text);
+                background: var(--accent-tint);
+                user-select: none;
+                list-style: none;
+                display: flex;
+                align-items: center;
+                gap: 6px;
+            }
+
+            summary::-webkit-details-marker {
+                display: none;
+            }
+
+            summary::before {
+                content: "▶";
+                font-size: 0.65rem;
+                color: var(--accent);
+                transition: transform 0.15s;
+                flex-shrink: 0;
+            }
+
+            details[open] > summary::before {
+                transform: rotate(90deg);
+            }
+
+            .config-body {
+                padding: 14px;
+                border-top: 1px solid var(--border-strong);
+            }
+
+            /* ── Form grid ── */
+            .form-grid {
+                display: grid;
+                grid-template-columns: 1fr 1fr;
+                gap: 10px;
+            }
+
+            .form-grid.full {
+                grid-template-columns: 1fr;
+            }
+
+            .field-group {
+                display: flex;
+                flex-direction: column;
+                gap: 4px;
+            }
+
+            .field-group label {
+                font-size: 0.72rem;
+                font-weight: 600;
+                text-transform: uppercase;
+                letter-spacing: 0.04em;
+                color: var(--text-secondary);
+            }
+
+            .field-group input {
+                padding: 6px 8px;
+                border: 1px solid var(--input-border);
+                border-radius: 4px;
+                font-size: 0.83rem;
+                font-family: inherit;
+                color: var(--text);
+                background: var(--input-bg);
+                transition:
+                    border-color 0.15s,
+                    box-shadow 0.15s;
+            }
+
+            .field-group input:focus-visible,
+            .field-group select:focus-visible {
+                outline: 2px solid var(--accent);
+                outline-offset: -1px;
+                border-color: var(--accent);
+                box-shadow: var(--input-focus-shadow);
+            }
+
+            .field-group select {
+                padding: 6px 8px;
+                border: 1px solid var(--input-border);
+                border-radius: 4px;
+                font-size: 0.83rem;
+                font-family: inherit;
+                color: var(--text);
+                background: var(--input-bg);
+                cursor: pointer;
+                width: 100%;
+                transition:
+                    border-color 0.15s,
+                    box-shadow 0.15s;
+            }
+
+            .field-hint {
+                font-size: 0.7rem;
+                color: var(--text-muted);
+                margin-top: 2px;
+            }
+
+            /* ── Ext fields table ── */
+            .ext-table {
+                width: 100%;
+                border-collapse: collapse;
+                font-size: 0.81rem;
+            }
+
+            .ext-table th {
+                text-align: left;
+                font-size: 0.69rem;
+                font-weight: 700;
+                text-transform: uppercase;
+                letter-spacing: 0.04em;
+                color: var(--ext-header-text);
+                padding: 4px 6px;
+                border-bottom: 1px solid var(--ext-border);
+            }
+
+            .ext-table td {
+                padding: 3px 4px;
+            }
+
+            .ext-table input {
+                width: 100%;
+                padding: 4px 6px;
+                border: 1px solid var(--ext-input-border);
+                border-radius: 3px;
+                font-size: 0.79rem;
+                font-family:
+                    "Atkinson Hyperlegible Mono", "Consolas", "Menlo", monospace;
+                color: var(--text);
+                background: var(--input-bg);
+                transition: border-color 0.15s;
+            }
+
+            .ext-table input:focus-visible {
+                outline: 2px solid var(--accent);
+                outline-offset: -1px;
+                border-color: var(--accent);
+            }
+
+            .btn-add-row {
+                margin-top: 7px;
+                padding: 4px 10px;
+                font-size: 0.77rem;
+                background: none;
+                border: 1px dashed var(--btn-outline-border);
+                border-radius: 4px;
+                color: var(--btn-outline-text);
+                cursor: pointer;
+            }
+
+            .btn-add-row:hover {
+                border-color: var(--accent);
+                color: var(--accent);
+            }
+
+            .btn-del-row {
+                background: none;
+                border: none;
+                cursor: pointer;
+                color: var(--btn-del-idle);
+                font-size: 0.85rem;
+                padding: 0 4px;
+                line-height: 1;
+            }
+
+            .btn-del-row:hover {
+                color: var(--danger);
+            }
+
+            /* ── Convert button ── */
+            .btn-convert {
+                display: block;
+                width: 100%;
+                margin-top: 20px;
+                padding: 11px;
+                background: var(--btn-primary-bg);
+                color: white;
+                border: none;
+                border-radius: 6px;
+                font-size: 0.95rem;
+                font-weight: 600;
+                cursor: pointer;
+                transition: background 0.15s;
+                letter-spacing: 0.01em;
+            }
+
+            .btn-convert:hover:not(:disabled) {
+                background: var(--btn-primary-hover);
+            }
+
+            .btn-convert:disabled {
+                background: var(--btn-primary-disabled);
+                color: rgba(255, 255, 255, 0.7);
+                cursor: not-allowed;
+            }
+
+            .btn-convert:focus-visible,
+            .btn-download:focus-visible,
+            .btn-add-row:focus-visible,
+            .btn-clear:focus-visible,
+            .btn-del-row:focus-visible {
+                outline: 2px solid var(--accent);
+                outline-offset: 2px;
+            }
+
+            /* ── Status message ── */
+            .status {
+                display: none;
+                margin-top: 13px;
+                padding: 10px 13px;
+                border-radius: 6px;
+                font-size: 0.85rem;
+                line-height: 1.45;
+            }
+
+            .status.info {
+                display: block;
+                background: var(--status-info-bg);
+                color: var(--status-info-text);
+                border: 1px solid var(--status-info-border);
+            }
+
+            .status.success {
+                display: block;
+                background: var(--status-success-bg);
+                color: var(--status-success-text);
+                border: 1px solid var(--status-success-border);
+            }
+
+            .status.error {
+                display: block;
+                background: var(--status-error-bg);
+                color: var(--status-error-text);
+                border: 1px solid var(--status-error-border);
+            }
+
+            /* ── Save button ── */
+            .btn-download {
+                display: none;
+                width: 100%;
+                margin-top: 10px;
+                padding: 11px;
+                background: var(--btn-success-bg);
+                color: white;
+                border: none;
+                border-radius: 6px;
+                font-size: 0.95rem;
+                font-weight: 600;
+                cursor: pointer;
+                transition: background 0.15s;
+                letter-spacing: 0.01em;
+            }
+
+            .btn-download:hover {
+                background: var(--btn-success-hover);
+            }
+
+            .btn-download.visible {
+                display: block;
+            }
+
+            /* ── Footer ── */
+            .tool-footer {
+                margin-top: 18px;
+                margin-bottom: 8px;
+                padding-bottom: 4px;
+                font-size: 0.72rem;
+                color: var(--text-muted);
+                text-align: center;
+            }
+
+            .tool-footer a {
+                color: var(--footer-link);
+                text-decoration: none;
+            }
+
+            .tool-footer a:hover {
+                text-decoration: underline;
+            }
+
+            /* ── Reduced motion ── */
+            @media (prefers-reduced-motion: reduce) {
+                *,
+                *::before,
+                *::after {
+                    transition-duration: 0.01ms !important;
+                }
+            }
+        </style>
+    </head>
+    <body>
+        <main class="card">
+            <div class="card-header">
+                <h1>Curb Ramp Dataset Converter</h1>
+                <p class="subtitle">
+                    Converts a curb ramp GeoJSON file to OpenSidewalks (OSW)
+                    format for upload to the TDEI.
+                </p>
+            </div>
+
+            <div class="section-label">Select your GeoJSON file</div>
+
+            <div
+                class="drop-zone"
+                id="dropZone"
+                role="button"
+                tabindex="0"
+                aria-label="Drop GeoJSON file here or click to browse"
+            >
+                <input type="file" id="fileInput" accept=".geojson,.json" />
+                <div class="drop-icon">📂</div>
+                <div class="drop-label">Drop your GeoJSON file here</div>
+                <div class="drop-hint">or click to browse</div>
+            </div>
+
+            <div class="file-pill" id="filePill">
+                <span>📄</span>
+                <span class="file-pill-name" id="fileName"></span>
+                <button class="btn-clear" id="btnClear" title="Remove file">
+                    ✕
+                </button>
+            </div>
+
+            <details id="advancedDetails" open style="margin-top: 16px">
+                <summary>
+                    Dataset &amp; field mapping (pre-configured for SDOT Curb
+                    Ramps)
+                </summary>
+                <div class="config-body">
+                    <div class="section-label" style="margin-top: 0">
+                        Source metadata
+                    </div>
+                    <div class="form-grid">
+                        <div class="field-group">
+                            <label for="cfgSourceName">Data source name</label>
+                            <input
+                                type="text"
+                                id="cfgSourceName"
+                                value="Seattle Department of Transportation"
+                            />
+                        </div>
+                        <div class="field-group">
+                            <label for="cfgLicense">License</label>
+                            <input
+                                type="text"
+                                id="cfgLicense"
+                                value=""
+                                placeholder="e.g. ODbL, CC-BY"
+                            />
+                        </div>
+                    </div>
+
+                    <div class="section-label">Coordinate system</div>
+                    <div class="form-grid full">
+                        <div class="field-group">
+                            <label for="cfgCrs">Source CRS</label>
+                            <select id="cfgCrs">
+                                <option value="EPSG:2926" selected>
+                                    EPSG:2926 — WA State Plane South, US ft
+                                    (SDOT)
+                                </option>
+                                <option value="">
+                                    WGS84 / EPSG:4326 (no reprojection)
+                                </option>
+                                <option value="EPSG:2927">
+                                    EPSG:2927 — WA State Plane North, US ft
+                                </option>
+                                <option value="EPSG:32149">
+                                    EPSG:32149 — WA State Plane South, meters
+                                </option>
+                                <option value="EPSG:2227">
+                                    EPSG:2227 — CA State Plane Zone 3, US ft
+                                </option>
+                                <option value="EPSG:26910">
+                                    EPSG:26910 — NAD83 / UTM zone 10N
+                                </option>
+                                <option value="EPSG:26918">
+                                    EPSG:26918 — NAD83 / UTM zone 18N
+                                </option>
+                                <option value="EPSG:3435">
+                                    EPSG:3435 — IL State Plane East, US ft
+                                </option>
+                                <option value="EPSG:2263">
+                                    EPSG:2263 — NY Long Island, US ft
+                                </option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <div class="section-label">Feature identification</div>
+                    <div class="form-grid">
+                        <div class="field-group">
+                            <label for="cfgIdField">Unique ID field</label>
+                            <input type="text" id="cfgIdField" value="UNITID" />
+                        </div>
+                        <div class="field-group">
+                            <label for="cfgIdPrefix">ID prefix</label>
+                            <input
+                                type="text"
+                                id="cfgIdPrefix"
+                                value="ramp_"
+                                aria-describedby="idPrefixHint"
+                            />
+                            <span class="field-hint" id="idPrefixHint"
+                                >OSW _ids must start with a letter.</span
+                            >
+                        </div>
+                    </div>
+
+                    <div class="section-label">Ramp width</div>
+                    <div class="form-grid">
+                        <div class="field-group">
+                            <label for="cfgWidthField"
+                                >Width source field</label
+                            >
+                            <input
+                                type="text"
+                                id="cfgWidthField"
+                                value="RAMP_WIDTH"
+                                placeholder="Leave blank to skip"
+                            />
+                        </div>
+                        <div class="field-group">
+                            <label for="cfgWidthUnits"
+                                >Width units in source</label
+                            >
+                            <select id="cfgWidthUnits">
+                                <option value="inches" selected>Inches</option>
+                                <option value="meters">
+                                    Meters (no conversion)
+                                </option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <div class="section-label">Extension fields (ext:)</div>
+                    <table
+                        class="ext-table"
+                        aria-label="Extension field mapping"
+                    >
+                        <thead>
+                            <tr>
+                                <th>OSW output key</th>
+                                <th>Source field name</th>
+                                <th><span class="sr-only">Actions</span></th>
+                            </tr>
+                        </thead>
+                        <tbody id="extTableBody"></tbody>
+                    </table>
+                    <button class="btn-add-row" id="btnAddRow">
+                        + Add field
+                    </button>
+                </div>
+            </details>
+
+            <div class="section-label" style="margin-top: 18px">
+                Convert &amp; save
+            </div>
+
+            <button class="btn-convert" id="btnConvert" disabled>
+                Convert to OSW
+            </button>
+
+            <div
+                class="status"
+                id="status"
+                role="status"
+                aria-live="polite"
+            ></div>
+
+            <button
+                class="btn-download"
+                id="btnDownload"
+                aria-label="Save OSW ZIP file"
+            >
+                ⬇&nbsp; Save OSW ZIP
+            </button>
+        </main>
+
+        <footer class="tool-footer">
+            Curb Ramp Dataset Converter &middot;
+            <a
+                href="https://tcat.cs.washington.edu/"
+                target="_blank"
+                rel="noopener"
+                >Taskar Center for Accessible Technology</a
+            >
+        </footer>
+
+        <!-- ================================================================
+             Libraries (loaded from CDN, client-side only — no server needed)
+             ================================================================ -->
+        <script
+            src="https://cdnjs.cloudflare.com/ajax/libs/proj4js/2.11.0/proj4.js"
+            crossorigin="anonymous"
+            referrerpolicy="no-referrer"
+        ></script>
+        <script
+            src="https://cdnjs.cloudflare.com/ajax/libs/jszip/3.10.1/jszip.min.js"
+            crossorigin="anonymous"
+            referrerpolicy="no-referrer"
+        ></script>
+
+        <script>
+            "use strict";
+
+            // ================================================================
+            // KNOWN CRS DEFINITIONS
+            // proj4.js ships with only WGS84/EPSG:4326 by default. Definitions
+            // for common city/state open-data projected systems are registered
+            // here so the tool works without any external lookup service.
+            // ================================================================
+            const KNOWN_CRS = {
+                // Washington State Plane South — SDOT (US feet)
+                "EPSG:2926":
+                    "+proj=lcc +lat_0=45.3333333333333 +lon_0=-120.5 +lat_1=47.3333333333333 +lat_2=45.8333333333333 +x_0=500000.0001016 +y_0=0 +datum=NAD83 +units=us-ft +no_defs",
+                // Washington State Plane North (US feet)
+                "EPSG:2927":
+                    "+proj=lcc +lat_0=47 +lon_0=-120.833333333333 +lat_1=48.7333333333333 +lat_2=47.5 +x_0=500000.0001016 +y_0=0 +datum=NAD83 +units=us-ft +no_defs",
+                // NAD83 / Washington State Plane South (meters)
+                "EPSG:32149":
+                    "+proj=lcc +lat_0=45.3333333333333 +lon_0=-120.5 +lat_1=47.3333333333333 +lat_2=45.8333333333333 +x_0=500000 +y_0=0 +datum=NAD83 +units=m +no_defs",
+                // California State Plane Zone 3 — SF Bay Area (US feet)
+                "EPSG:2227":
+                    "+proj=lcc +lat_0=36.5 +lon_0=-120.5 +lat_1=38.4333333333333 +lat_2=37.0666666666667 +x_0=2000000.0001016 +y_0=500000.0001016 +datum=NAD83 +units=us-ft +no_defs",
+                // NAD83 / UTM zone 10N — Pacific NW metros (meters)
+                "EPSG:26910":
+                    "+proj=utm +zone=10 +datum=NAD83 +units=m +no_defs",
+                // NAD83 / UTM zone 18N — East Coast metros (meters)
+                "EPSG:26918":
+                    "+proj=utm +zone=18 +datum=NAD83 +units=m +no_defs",
+                // NAD83 / Illinois State Plane East — Chicago area (US feet)
+                "EPSG:3435":
+                    "+proj=tmerc +lat_0=36.6666666666667 +lon_0=-88.3333333333333 +k=0.999975 +x_0=300000.0000000001 +y_0=0 +datum=NAD83 +units=us-ft +no_defs",
+                // NAD83 / New York Long Island — NYC area (US feet)
+                "EPSG:2263":
+                    "+proj=lcc +lat_0=40.1666666666667 +lon_0=-74 +lat_1=41.0333333333333 +lat_2=40.6666666666667 +x_0=300000.0000000001 +y_0=0 +datum=NAD83 +units=us-ft +no_defs",
+            };
+
+            Object.entries(KNOWN_CRS).forEach(([code, def]) =>
+                proj4.defs(code, def)
+            );
+
+            // ================================================================
+            // DEFAULT EXTENSION FIELD MAPPINGS  (SDOT Curb Ramps dataset)
+            // Edit in the Advanced section of the UI to adapt for other cities.
+            // ================================================================
+            const DEFAULT_EXT_FIELDS = [
+                ["ext:unit_id", "UNITID"],
+                ["ext:ada", "ADA_COMPLIANT"],
+                ["ext:desc", "INT_UNITDESC"],
+                ["ext:side", "SW_STSIDE"],
+                ["ext:direction", "DIRECTION"],
+                ["ext:condition", "CONDITION"],
+                ["ext:style", "STYLE"],
+            ];
+
+            // ================================================================
+            // THEME SYNC — match parent Material for MkDocs dark/light toggle
+            // ================================================================
+            function _detectScheme() {
+                try {
+                    if (window.self !== window.top) {
+                        const s = window.parent.document.body.getAttribute(
+                            "data-md-color-scheme"
+                        );
+                        return s === "slate" ? "dark" : "light";
+                    }
+                } catch (_) {
+                    /* cross-origin — fall through */
+                }
+                return window.matchMedia("(prefers-color-scheme: dark)").matches
+                    ? "dark"
+                    : "light";
+            }
+
+            function _applyScheme(scheme) {
+                document.documentElement.setAttribute("data-theme", scheme);
+            }
+
+            function _initThemeSync() {
+                _applyScheme(_detectScheme());
+                try {
+                    if (window.self !== window.top) {
+                        new MutationObserver(() =>
+                            _applyScheme(_detectScheme())
+                        ).observe(window.parent.document.body, {
+                            attributes: true,
+                            attributeFilter: ["data-md-color-scheme"],
+                        });
+                        return;
+                    }
+                } catch (_) {
+                    /* cross-origin */
+                }
+                window
+                    .matchMedia("(prefers-color-scheme: dark)")
+                    .addEventListener("change", () =>
+                        _applyScheme(_detectScheme())
+                    );
+            }
+
+            // ================================================================
+            // STATE
+            // ================================================================
+            let _selectedFile = null;
+            let _downloadBlob = null;
+            let _downloadName = null;
+
+            // ================================================================
+            // INIT
+            // ================================================================
+            document.addEventListener("DOMContentLoaded", () => {
+                _initThemeSync();
+                populateExtTable(DEFAULT_EXT_FIELDS);
+
+                const dropZone = document.getElementById("dropZone");
+                const fileInput = document.getElementById("fileInput");
+
+                dropZone.addEventListener("click", () => fileInput.click());
+                dropZone.addEventListener("keydown", (e) => {
+                    if (e.key === "Enter" || e.key === " ") {
+                        e.preventDefault();
+                        fileInput.click();
+                    }
+                });
+                fileInput.addEventListener("change", () =>
+                    handleFileSelect(fileInput.files[0])
+                );
+
+                dropZone.addEventListener("dragover", (e) => {
+                    e.preventDefault();
+                    dropZone.classList.add("drag-over");
+                });
+                dropZone.addEventListener("dragleave", () =>
+                    dropZone.classList.remove("drag-over")
+                );
+                dropZone.addEventListener("drop", (e) => {
+                    e.preventDefault();
+                    dropZone.classList.remove("drag-over");
+                    if (e.dataTransfer.files[0])
+                        handleFileSelect(e.dataTransfer.files[0]);
+                });
+
+                document
+                    .getElementById("btnClear")
+                    .addEventListener("click", clearFile);
+                document
+                    .getElementById("btnConvert")
+                    .addEventListener("click", runConversion);
+                document
+                    .getElementById("btnDownload")
+                    .addEventListener("click", triggerDownload);
+                document
+                    .getElementById("btnAddRow")
+                    .addEventListener("click", () => addExtRow("ext:", ""));
+            });
+
+            // ================================================================
+            // FILE SELECTION
+            // ================================================================
+            function handleFileSelect(file) {
+                if (!file) return;
+                _selectedFile = file;
+                document.getElementById("fileName").textContent = file.name;
+                document.getElementById("filePill").classList.add("visible");
+                document.getElementById("btnConvert").disabled = false;
+                clearResult();
+            }
+
+            function clearFile() {
+                _selectedFile = null;
+                document.getElementById("fileInput").value = "";
+                document.getElementById("filePill").classList.remove("visible");
+                document.getElementById("btnConvert").disabled = true;
+                clearResult();
+            }
+
+            function clearResult() {
+                const statusEl = document.getElementById("status");
+                statusEl.className = "status";
+                statusEl.innerHTML = "";
+                document
+                    .getElementById("btnDownload")
+                    .classList.remove("visible");
+                _downloadBlob = null;
+                _downloadName = null;
+            }
+
+            // ================================================================
+            // EXT FIELD TABLE
+            // ================================================================
+            function populateExtTable(rows) {
+                document.getElementById("extTableBody").innerHTML = "";
+                rows.forEach(([key, src]) => addExtRow(key, src));
+            }
+
+            function addExtRow(key, src) {
+                const tbody = document.getElementById("extTableBody");
+                const tr = document.createElement("tr");
+                tr.innerHTML = `
+                    <td><input type="text" value="${escHtml(key)}" placeholder="ext:field_name" aria-label="OSW output key" /></td>
+                    <td><input type="text" value="${escHtml(src)}" placeholder="SOURCE_FIELD" aria-label="Source field name" /></td>
+                    <td><button class="btn-del-row" title="Remove row" aria-label="Remove row">✕</button></td>
+                `;
+                tr.querySelector(".btn-del-row").addEventListener("click", () =>
+                    tr.remove()
+                );
+                tbody.appendChild(tr);
+            }
+
+            function getExtFields() {
+                const result = {};
+                document.querySelectorAll("#extTableBody tr").forEach((tr) => {
+                    const [kInput, vInput] = tr.querySelectorAll("input");
+                    const k = kInput.value.trim();
+                    const v = vInput.value.trim();
+                    if (k && v) result[k] = v;
+                });
+                return result;
+            }
+
+            // ================================================================
+            // CONVERSION
+            // ================================================================
+            async function runConversion() {
+                if (!_selectedFile) return;
+                clearResult();
+                setStatus("info", "Reading file…");
+                document.getElementById("btnConvert").disabled = true;
+
+                try {
+                    const text = await readFileAsText(_selectedFile);
+                    let data;
+                    try {
+                        data = JSON.parse(text);
+                    } catch {
+                        throw new Error(
+                            "The file does not appear to be valid JSON. Make sure you downloaded it as GeoJSON."
+                        );
+                    }
+
+                    if (!data.features || !Array.isArray(data.features)) {
+                        throw new Error(
+                            'No "features" array found. Make sure the file is a GeoJSON FeatureCollection.'
+                        );
+                    }
+
+                    const config = readConfig();
+
+                    // Set up coordinate transformer if source is not WGS84
+                    let transformer = null;
+                    const crsRaw = config.sourceCrs.trim();
+                    const crsKey = crsRaw.toUpperCase();
+                    if (
+                        crsRaw &&
+                        !["EPSG:4326", "WGS84", "CRS84", ""].includes(crsKey)
+                    ) {
+                        if (proj4.defs(crsKey)) {
+                            transformer = proj4(crsKey, "EPSG:4326");
+                        } else if (crsRaw.startsWith("+")) {
+                            // Treat as a raw proj4 string
+                            proj4.defs("CUSTOM_SRC", crsRaw);
+                            transformer = proj4("CUSTOM_SRC", "EPSG:4326");
+                        } else {
+                            const known = Object.keys(KNOWN_CRS).join(", ");
+                            throw new Error(
+                                `Unrecognized CRS "${crsRaw}".\n` +
+                                    `Built-in EPSG codes: ${known}.\n` +
+                                    `You can also paste a proj4 definition string directly (starts with "+proj=…").`
+                            );
+                        }
+                    }
+
+                    setStatus("info", "Converting features…");
+                    // Yield to the browser so the status message renders before the loop
+                    await new Promise((r) => setTimeout(r, 0));
+
+                    const featuresIn = data.features;
+                    const featuresOut = [];
+                    const seenIds = new Set();
+                    let skipped = 0;
+
+                    for (const feat of featuresIn) {
+                        const result = convertFeature(
+                            feat,
+                            seenIds,
+                            transformer,
+                            config
+                        );
+                        if (result) featuresOut.push(result);
+                        else skipped++;
+                    }
+
+                    if (featuresOut.length === 0) {
+                        throw new Error(
+                            "No features could be converted. Check that the file contains " +
+                                "point geometries and that the ID field name in the configuration is correct."
+                        );
+                    }
+
+                    const osw = {
+                        $schema:
+                            "https://sidewalks.washington.edu/opensidewalks/0.3/schema.json",
+                        type: "FeatureCollection",
+                        dataSource: {
+                            name: config.sourceName,
+                            license: config.license,
+                        },
+                        dataTimestamp: new Date().toISOString(),
+                        features: featuresOut,
+                    };
+
+                    setStatus("info", "Packaging ZIP…");
+                    await new Promise((r) => setTimeout(r, 0));
+
+                    const baseName = _selectedFile.name.replace(/\.[^.]+$/, "");
+                    const nodesFilename = baseName + ".nodes.geojson";
+                    const zipFilename = baseName + "-osw.zip";
+
+                    const zip = new JSZip();
+                    zip.file(nodesFilename, JSON.stringify(osw, null, 2));
+                    _downloadBlob = await zip.generateAsync({
+                        type: "blob",
+                        compression: "DEFLATE",
+                        compressionOptions: { level: 6 },
+                    });
+                    _downloadName = zipFilename;
+
+                    const skippedNote = skipped
+                        ? ` &middot; <strong>${skipped.toLocaleString()} skipped</strong> (no geometry, missing ID, or duplicate)`
+                        : "";
+                    setStatus(
+                        "success",
+                        `✓ <strong>${featuresOut.length.toLocaleString()} features</strong> converted${skippedNote}.<br>` +
+                            `Ready to save as <strong>${escHtml(zipFilename)}</strong>.`
+                    );
+                    document
+                        .getElementById("btnDownload")
+                        .classList.add("visible");
+                } catch (err) {
+                    setStatus(
+                        "error",
+                        `<strong>Error:</strong> ${escHtml(err.message)}`
+                    );
+                } finally {
+                    document.getElementById("btnConvert").disabled = false;
+                }
+            }
+
+            function convertFeature(feat, seenIds, transformer, config) {
+                const props = feat.properties || {};
+                const geom = feat.geometry;
+
+                // Must have point geometry with coordinates
+                if (
+                    !geom ||
+                    geom.type !== "Point" ||
+                    !Array.isArray(geom.coordinates)
+                )
+                    return null;
+
+                // Must have a non-null unique ID
+                const rawId = clean(props[config.idField]);
+                if (rawId == null) return null;
+
+                // Build and deduplicate OSW _id
+                const oswId =
+                    config.idPrefix +
+                    String(rawId)
+                        .replace(/[^a-zA-Z0-9_]/g, "_")
+                        .toLowerCase();
+                if (seenIds.has(oswId)) return null;
+                seenIds.add(oswId);
+
+                // Strip Z dimension then reproject to WGS84 if needed
+                let [x, y] = geom.coordinates; // Z ignored
+                if (transformer) {
+                    [x, y] = transformer.forward([x, y]);
+                }
+
+                // Validate that the result is a plausible WGS84 coordinate
+                if (x < -180 || x > 180 || y < -90 || y > 90) return null;
+
+                // Build OSW properties
+                const outProps = {
+                    _id: oswId,
+                    barrier: "kerb",
+                };
+
+                // Ramp width — convert to meters and store as ext:width
+                if (config.widthField) {
+                    const rawW = clean(props[config.widthField]);
+                    if (rawW != null) {
+                        const raw = parseFloat(rawW);
+                        if (!isNaN(raw) && raw > 0) {
+                            const factor = config.widthUnits.startsWith("m")
+                                ? 1.0
+                                : 0.0254; // metres or inches
+                            outProps["ext:width"] =
+                                Math.round(raw * factor * 100) / 100;
+                        }
+                    }
+                }
+
+                // Agency-defined extension fields
+                for (const [oswKey, srcField] of Object.entries(
+                    config.extFields
+                )) {
+                    const v = clean(props[srcField]);
+                    if (v != null) outProps[oswKey] = v;
+                }
+
+                return {
+                    type: "Feature",
+                    geometry: { type: "Point", coordinates: [x, y] },
+                    properties: outProps,
+                };
+            }
+
+            // ================================================================
+            // HELPERS
+            // ================================================================
+
+            /** Return null for null / undefined / NaN / blank / "none" / "null" / "nan" strings. */
+            function clean(v) {
+                if (v === null || v === undefined) return null;
+                if (typeof v === "number" && !isFinite(v)) return null;
+                if (
+                    typeof v === "string" &&
+                    ["", "none", "null", "nan", "n/a"].includes(
+                        v.trim().toLowerCase()
+                    )
+                )
+                    return null;
+                return v;
+            }
+
+            function readFileAsText(file) {
+                return new Promise((resolve, reject) => {
+                    const reader = new FileReader();
+                    reader.onload = (e) => resolve(e.target.result);
+                    reader.onerror = () =>
+                        reject(new Error("Could not read the file."));
+                    reader.readAsText(file, "utf-8");
+                });
+            }
+
+            function readConfig() {
+                return {
+                    sourceName: document
+                        .getElementById("cfgSourceName")
+                        .value.trim(),
+                    license: document.getElementById("cfgLicense").value.trim(),
+                    sourceCrs: document.getElementById("cfgCrs").value.trim(),
+                    idField: document.getElementById("cfgIdField").value.trim(),
+                    idPrefix: document
+                        .getElementById("cfgIdPrefix")
+                        .value.trim(),
+                    widthField: document
+                        .getElementById("cfgWidthField")
+                        .value.trim(),
+                    widthUnits: document
+                        .getElementById("cfgWidthUnits")
+                        .value.trim()
+                        .toLowerCase(),
+                    extFields: getExtFields(),
+                };
+            }
+
+            function setStatus(type, html) {
+                const el = document.getElementById("status");
+                el.className = "status " + type;
+                el.innerHTML = html;
+            }
+
+            function triggerDownload() {
+                if (!_downloadBlob) return;
+                const url = URL.createObjectURL(_downloadBlob);
+                const a = document.createElement("a");
+                a.href = url;
+                a.download = _downloadName;
+                document.body.appendChild(a);
+                a.click();
+                document.body.removeChild(a);
+                setTimeout(() => URL.revokeObjectURL(url), 2000);
+            }
+
+            function escHtml(s) {
+                return String(s)
+                    .replace(/&/g, "&amp;")
+                    .replace(/</g, "&lt;")
+                    .replace(/>/g, "&gt;")
+                    .replace(/"/g, "&quot;");
+            }
+        </script>
+    </body>
+</html>

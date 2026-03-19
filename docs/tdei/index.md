@@ -174,6 +174,10 @@ The **[TDEI Portal](https://portal.tdei.us/)** is the web interface for the Tran
 
 ##### Tutorials
 
+###### [Import Curb Ramp Data into the TDEI](portal/tutorial/curb-points-in-tdei.md)
+
+This tutorial explains how to convert an existing curb ramp point dataset to OpenSidewalks (OSW) format and upload it to the TDEI Portal as a new dataset.
+
 ###### [Download OS-CONNECT Data from the TDEI Portal](portal/tutorial/download-os-connect.md)
 
 This tutorial walks you through downloading OpenSidewalks-formatted OS-CONNECT datasets from the TDEI Portal.
