@@ -37,6 +37,12 @@ Choose your path: each one starts with the simplest document and then offers dee
 
     **Get Started:** [View the data](os-connect/data-viewer/user-manual/index.md) and get a [Jurisdiction Snapshot (PDF)](os-connect/qa-qc/user-manual/index.md)
 
+??? abstract "I want to import my existing data into the TDEI"
+
+    Do you have existing datasets of sidewalks, curb ramps, bus stops, or other features that you want to get into the TDEI system?
+
+    **Get Started:** Check out our tutorials, guides, and examples: [Curb Ramp Data into the TDEI](tdei/portal/tutorial/curb-points-in-tdei.md), [Core Edges in OSW](opensidewalks/schema/core-edges-in-osw.md), [Custom Points in OSW](opensidewalks/schema/custom-points-in-osw.md), and much more in our [Guides List](guides-list/index.md)!
+
 <!-- ??? abstract "I'm a planner / analyst (no GIS required)"
 
     Do you want to use outputs in planning (ADA transition plans, active transportation plans, equity work)?

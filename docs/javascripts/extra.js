@@ -82,6 +82,7 @@ const titleMapSource = {
     as: "as",
     for: "for",
     in: "in",
+    into: "into",
     is: "is",
     of: "of",
     on: "on",
