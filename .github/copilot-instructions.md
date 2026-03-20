@@ -464,6 +464,19 @@ Both flags can be used together to exclude a guide from all guides lists.
 
 Planning documents, temporary files, and the like should be saved into local-storage/ by default, unless otherwise instructed.
 
+### Working With Non-Markdown Source Files
+
+`markitdown` (installed in the venv) converts binary and proprietary formats to Markdown so the assistant can read and work with them. Use it whenever the user references a PDF, Word doc, PowerPoint, or other non-Markdown file:
+
+```powershell
+# Activate venv first, then:
+python -c "from markitdown import MarkItDown; r = MarkItDown().convert('path/to/file'); print(r.text_content)"
+```
+
+Supported formats include: PDF, DOCX, PPTX, XLSX, HTML, CSV, JSON, XML, and ZIP archives. Google Docs/Slides/Sheets work if exported as DOCX/PPTX first.
+
+For large files or batch conversion, write the output to `local-storage/` as a `.md` file and read it from there.
+
 ## Resources
 
 ### Zensical Documentation
