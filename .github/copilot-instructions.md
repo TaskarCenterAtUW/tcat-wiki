@@ -416,10 +416,16 @@ Both flags can be used together to exclude a guide from all guides lists.
 
 - They are short tutorials focused on specific goals or use cases, typically linking to user manuals for details
 - They appear first in guides sections under a "Tutorials" subsection header, before user manuals and regular guides
-- They may live directly in a topic directory or in a `tutorial/` subdirectory (without index.md)
-- The `tutorial/` subdirectory is scanned automatically; its contents are attributed to the parent directory
+- May be single files or multi-page directories (with `index.md` tagged `- Tutorial`)
+- Single-file tutorials may live directly in a topic directory or in a `tutorial/` subdirectory
+- Multi-page tutorials may live in a `tutorial/` subdirectory or as direct children of any directory (e.g., `topic/tutorial/example/index.md` + subpages, or `topic/my-tutorial/index.md` + subpages)
+- Multi-page tutorials are treated like user manuals: only the index appears in parent/main listings; subpages appear only in the tutorial's own Table of Contents
+- The `tutorial/` subdirectory is scanned automatically for both single files and multi-page directories; its contents are attributed to the parent directory
+- Multi-page tutorial pages get "### Table of Contents" instead of "### Guides"
 - Ordering at every level is: Tutorials → User Manuals → Regular Guides
-- Must always begin their first prose sentence with "This tutorial..."
+- Single-file tutorials must always begin their first prose sentence with "This tutorial..."
+- Multi-page tutorial `index.md` must always begin its first prose sentence with "This tutorial..."
+- Multi-page tutorial subpages must always begin their first prose sentence with "This section..."
 
 ### Organization
 

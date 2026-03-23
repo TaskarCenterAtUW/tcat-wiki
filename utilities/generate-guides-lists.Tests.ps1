@@ -396,6 +396,74 @@ title: Regular Section
 }
 
 # ==============================================================================
+# TEST-ISTUTORIALDIRECTORY TESTS
+# ==============================================================================
+
+Describe "Test-IsTutorialDirectory" {
+    Context "When directory contains tutorial index.md" {
+        It "Should return true" {
+            $testDir = Join-Path $TestDrive "tutorial-dir"
+            New-Item -Path $testDir -ItemType Directory -Force | Out-Null
+            $indexPath = Join-Path $testDir "index.md"
+            @"
+---
+title: "Test Tutorial"
+tags:
+    - Tutorial
+---
+"@ | Set-Content -Path $indexPath -Encoding UTF8
+
+            $result = Test-IsTutorialDirectory -Directory $testDir
+            $result | Should -Be $true
+        }
+    }
+
+    Context "When directory contains regular index.md" {
+        It "Should return false" {
+            $testDir = Join-Path $TestDrive "regular-dir-tut-test"
+            New-Item -Path $testDir -ItemType Directory -Force | Out-Null
+            $indexPath = Join-Path $testDir "index.md"
+            @"
+---
+title: Regular Section
+---
+"@ | Set-Content -Path $indexPath -Encoding UTF8
+
+            $result = Test-IsTutorialDirectory -Directory $testDir
+            $result | Should -Be $false
+        }
+    }
+
+    Context "When directory has no index.md" {
+        It "Should return false" {
+            $testDir = Join-Path $TestDrive "no-index-dir-tut-test"
+            New-Item -Path $testDir -ItemType Directory -Force | Out-Null
+
+            $result = Test-IsTutorialDirectory -Directory $testDir
+            $result | Should -Be $false
+        }
+    }
+
+    Context "When directory contains user manual (not tutorial)" {
+        It "Should return false" {
+            $testDir = Join-Path $TestDrive "um-dir-tut-test"
+            New-Item -Path $testDir -ItemType Directory -Force | Out-Null
+            $indexPath = Join-Path $testDir "index.md"
+            @"
+---
+title: User Manual
+tags:
+    - User Manual
+---
+"@ | Set-Content -Path $indexPath -Encoding UTF8
+
+            $result = Test-IsTutorialDirectory -Directory $testDir
+            $result | Should -Be $false
+        }
+    }
+}
+
+# ==============================================================================
 # GET-RELATIVEMARKDOWNPATH TESTS
 # ==============================================================================
 
@@ -699,6 +767,80 @@ tags:
             $result[2].Name | Should -Be "regular-guide.md" -Because "regular guides should come last"
         }
     }
+
+    Context "When tutorial/ subdirectory has multi-page tutorial directories" {
+        BeforeAll {
+            $script:multiPageTutDir = Join-Path $TestDrive "multi-page-tut-dir"
+            New-Item -Path $multiPageTutDir -ItemType Directory -Force | Out-Null
+
+            # Create index.md (not a guide)
+            @"
+---
+title: Section Index
+---
+"@ | Set-Content -Path (Join-Path $multiPageTutDir "index.md") -Encoding UTF8
+
+            # Create a regular guide
+            @"
+---
+title: Regular Guide
+tags:
+    - Guide
+---
+"@ | Set-Content -Path (Join-Path $multiPageTutDir "regular-guide.md") -Encoding UTF8
+
+            # Create tutorial/ subdirectory with a single-file tutorial
+            $tutSubdir = Join-Path $multiPageTutDir "tutorial"
+            New-Item -Path $tutSubdir -ItemType Directory -Force | Out-Null
+            @"
+---
+title: "Single File Tutorial"
+tags:
+    - Tutorial
+---
+"@ | Set-Content -Path (Join-Path $tutSubdir "single-tutorial.md") -Encoding UTF8
+
+            # Create a multi-page tutorial directory inside tutorial/
+            $multiTut = Join-Path $tutSubdir "multi-tutorial"
+            New-Item -Path $multiTut -ItemType Directory -Force | Out-Null
+            @"
+---
+title: "Multi-Page Tutorial"
+tags:
+    - Tutorial
+---
+"@ | Set-Content -Path (Join-Path $multiTut "index.md") -Encoding UTF8
+
+            # Create a subpage in the multi-page tutorial
+            @"
+---
+title: Subpage
+tags:
+    - Guide
+---
+"@ | Set-Content -Path (Join-Path $multiTut "subpage.md") -Encoding UTF8
+        }
+
+        It "Should discover multi-page tutorial index from tutorial/ subdirectory" {
+            $result = Get-GuidesInDirectory -Directory $multiPageTutDir -ExcludeOwnIndex $true -ExcludeFlag $EXCLUDE_PARENT_FLAG
+            $tutorialResults = @($result | Where-Object { $_.Directory.Name -eq "tutorial" -or $_.Directory.Name -eq "multi-tutorial" })
+            $tutorialResults.Count | Should -Be 2 -Because "both single-file and multi-page tutorial should be discovered"
+        }
+
+        It "Should return multi-page tutorial index.md, not subpages" {
+            $result = Get-GuidesInDirectory -Directory $multiPageTutDir -ExcludeOwnIndex $true -ExcludeFlag $EXCLUDE_PARENT_FLAG
+            $multiTutResult = @($result | Where-Object { $_.Directory.Name -eq "multi-tutorial" })
+            $multiTutResult.Count | Should -Be 1
+            $multiTutResult[0].Name | Should -Be "index.md"
+        }
+
+        It "Should return tutorials before regular guides" {
+            $result = Get-GuidesInDirectory -Directory $multiPageTutDir -ExcludeOwnIndex $true -ExcludeFlag $EXCLUDE_PARENT_FLAG
+            # Should be: single-tutorial, multi-tutorial index, regular-guide
+            $result.Count | Should -Be 3
+            $result[2].Name | Should -Be "regular-guide.md" -Because "regular guides should come last"
+        }
+    }
 }
 
 # ==============================================================================
@@ -777,6 +919,52 @@ title: Tutorials
         $result = Get-Subdirectories -Directory $subdirTestRoot
         $result[0].Name | Should -Be "user-manual"
         $result[1].Name | Should -Be "regular-section"
+    }
+}
+
+Describe "Get-Subdirectories with tutorial directories" {
+    BeforeAll {
+        $script:tutSubdirRoot = Join-Path $TestDrive "tut-subdir-root"
+        New-Item -Path $tutSubdirRoot -ItemType Directory -Force | Out-Null
+
+        # Create regular subdirectory with index.md
+        $regularDir = Join-Path $tutSubdirRoot "regular-section"
+        New-Item -Path $regularDir -ItemType Directory -Force | Out-Null
+        @"
+---
+title: Regular Section
+---
+"@ | Set-Content -Path (Join-Path $regularDir "index.md") -Encoding UTF8
+
+        # Create user manual subdirectory
+        $umDir = Join-Path $tutSubdirRoot "user-manual"
+        New-Item -Path $umDir -ItemType Directory -Force | Out-Null
+        @"
+---
+title: User Manual
+tags:
+    - User Manual
+---
+"@ | Set-Content -Path (Join-Path $umDir "index.md") -Encoding UTF8
+
+        # Create tutorial directory (multi-page tutorial, direct child)
+        $tutDir = Join-Path $tutSubdirRoot "my-tutorial"
+        New-Item -Path $tutDir -ItemType Directory -Force | Out-Null
+        @"
+---
+title: "My Tutorial"
+tags:
+    - Tutorial
+---
+"@ | Set-Content -Path (Join-Path $tutDir "index.md") -Encoding UTF8
+    }
+
+    It "Should return tutorial directories before user manuals before regular directories" {
+        $result = Get-Subdirectories -Directory $tutSubdirRoot
+        $result.Count | Should -Be 3
+        $result[0].Name | Should -Be "my-tutorial" -Because "tutorial directories should come first"
+        $result[1].Name | Should -Be "user-manual" -Because "user manual directories should come second"
+        $result[2].Name | Should -Be "regular-section" -Because "regular directories should come last"
     }
 }
 
@@ -983,6 +1171,76 @@ tags:
         $guideEntry = $result | Where-Object { $_.Type -eq 'Guide' }
         $tutorialEntry.File | Should -Not -BeNullOrEmpty
         $guideEntry.File | Should -Not -BeNullOrEmpty
+    }
+}
+
+Describe "Get-AllGuidesAtLevel with tutorial directories" {
+    BeforeAll {
+        $script:allGuidesTutDirTest = Join-Path $TestDrive "all-guides-tut-dir-test"
+        New-Item -Path $allGuidesTutDirTest -ItemType Directory -Force | Out-Null
+
+        # Create index.md
+        @"
+---
+title: Test Section
+---
+"@ | Set-Content -Path (Join-Path $allGuidesTutDirTest "index.md") -Encoding UTF8
+
+        # Create regular guide
+        @"
+---
+title: Regular Guide
+tags:
+    - Guide
+---
+"@ | Set-Content -Path (Join-Path $allGuidesTutDirTest "regular-guide.md") -Encoding UTF8
+
+        # Create tutorial directory (multi-page, direct child)
+        $tutSubdir = Join-Path $allGuidesTutDirTest "my-tutorial"
+        New-Item -Path $tutSubdir -ItemType Directory -Force | Out-Null
+        @"
+---
+title: "Multi-Page Tutorial"
+tags:
+    - Tutorial
+---
+"@ | Set-Content -Path (Join-Path $tutSubdir "index.md") -Encoding UTF8
+
+        # Create user manual subdirectory
+        $umSubdir = Join-Path $allGuidesTutDirTest "user-manual"
+        New-Item -Path $umSubdir -ItemType Directory -Force | Out-Null
+        @"
+---
+title: Sub User Manual
+tags:
+    - User Manual
+---
+"@ | Set-Content -Path (Join-Path $umSubdir "index.md") -Encoding UTF8
+
+        # Get subdirectories for testing (includes both tutorial dir and user manual dir)
+        $script:tutDirTestSubdirs = @(Get-Item $tutSubdir) + @(Get-Item $umSubdir)
+    }
+
+    It "Should detect tutorial directories from subdirectories and return them as Tutorial type" {
+        $result = Get-AllGuidesAtLevel -Directory $allGuidesTutDirTest -ExcludeFlag $EXCLUDE_PARENT_FLAG -Subdirectories $tutDirTestSubdirs
+        $tutorials = @($result | Where-Object { $_.Type -eq 'Tutorial' })
+        $tutorials.Count | Should -Be 1
+        $tutorials[0].Path | Should -Match 'my-tutorial'
+    }
+
+    It "Should return tutorials before user manuals before regular guides" {
+        $result = Get-AllGuidesAtLevel -Directory $allGuidesTutDirTest -ExcludeFlag $EXCLUDE_PARENT_FLAG -Subdirectories $tutDirTestSubdirs
+        $result.Count | Should -Be 3
+        $result[0].Type | Should -Be 'Tutorial'
+        $result[1].Type | Should -Be 'UserManual'
+        $result[2].Type | Should -Be 'Guide'
+    }
+
+    It "Should include File property for tutorial directory entries" {
+        $result = Get-AllGuidesAtLevel -Directory $allGuidesTutDirTest -ExcludeFlag $EXCLUDE_PARENT_FLAG -Subdirectories $tutDirTestSubdirs
+        $tutorialEntry = $result | Where-Object { $_.Type -eq 'Tutorial' }
+        $tutorialEntry.File | Should -Not -BeNullOrEmpty
+        $tutorialEntry.File.Name | Should -Be "index.md"
     }
 }
 
