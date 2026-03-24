@@ -24,6 +24,12 @@ OSW on the OSM US Tasking Manager Guides
 
 _For a list of all guides on the TCAT Wiki, refer to the [Guides List](../../guides-list/index.md)._{ .guides-list-ref }
 
+#### Tutorials
+
+##### [Mapping for OSW in the OSM US Tasking Manager](tutorial/osw-in-osmustm/index.md)
+
+This tutorial explains how to contribute to OpenSidewalks pedestrian infrastructure mapping efforts organized through the OSM US Tasking Manager.
+
 #### [Tasking Manager User Manual](user-manual/index.md)
 
 This user manual explains how to use the [OSM US Tasking Manager](https://tasks.openstreetmap.us/) platform.
