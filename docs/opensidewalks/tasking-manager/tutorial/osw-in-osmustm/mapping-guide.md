@@ -154,18 +154,16 @@ We're focusing on mapping the **pedestrian network**: sidewalks, crossings, and 
 
 ---
 
-### Mapping Crossings
+### How to Map Crossings
 
 Crossings are paths pedestrians traverse to cross streets.
-
-#### How to Map
 
 1. Select the **Line** tool (Keyboard shortcut: ++2++)
 2. Click at one edge of the street (curb location)
 3. Click where your line meets the road centerline (this connects to the road network)
 4. Double-click at the opposite curb to finish
 
-#### Tagging
+#### Tagging Crossing Ways
 
 Search for one of these presets in the Rapid Editor:
 
@@ -174,7 +172,7 @@ Search for one of these presets in the Rapid Editor:
 | **Marked** (has painted lines)  | "Marked Crosswalk"  | `highway=footway` + `footway=crossing` + `crossing:markings=yes` |
 | **Unmarked** (no painted lines) | "Unmarked Crossing" | `highway=footway` + `footway=crossing` + `crossing:markings=no`  |
 
-#### Tag the Crossing Node
+#### Tagging Crossing Nodes
 
 The middle point where the crossing intersects the roadway should be tagged:
 
@@ -193,11 +191,9 @@ If you'd like to add additional detail that is helpful for accessibility-focused
 
 ---
 
-### Mapping Curbs
+### How to Map Curbs
 
 Curbs are points at the edge of the street where crossings begin and end.
-
-#### How to Map
 
 The endpoints of your crossing line are the curb nodes: select each endpoint and classify them as curbs.
 
@@ -207,7 +203,7 @@ The endpoints of your crossing line are the curb nodes: select each endpoint and
 
     This is helpful when, for example, an intersection has 8 identical curb ramps - just be certain that the same properties apply to all of them!
 
-#### Tagging
+#### Tagging Curb Nodes
 
 Select a curb point and use the search panel to find and apply the correct preset.
 
@@ -234,17 +230,15 @@ Remember: use street-level imagery to help verify the curb type where the aerial
 
 ---
 
-### Mapping Sidewalks
+### How to Map Sidewalks
 
 Sidewalks are pedestrian paths along streets.
-
-#### How to Map
 
 1. Select the **Line** (++2++) tool
 2. Draw a line along the **center** of the sidewalk
 3. Search for "Sidewalk" and select the preset
 
-#### Tagging
+#### Tagging Sidewalk Ways
 
 | Feature      | Rapid Preset | Tags                                   |
 |--------------|--------------|----------------------------------------|
@@ -263,11 +257,9 @@ Sidewalks are pedestrian paths along streets.
 
 ---
 
-### Tagging Connectors
+### How to Map Connectors
 
 Optionally, the short sidewalk **connector** segments between sidewalk centerlines and curb nodes can be tagged with `crossing_link=yes` to help identify these features, which often have different properties such as a notable incline or different surface material.
-
-#### How to Map
 
 1. Select the **Line** (++2++) tool
 2. Click on a curb node (at the end of a crossing)
@@ -276,7 +268,7 @@ Optionally, the short sidewalk **connector** segments between sidewalk centerlin
 5. Search for "Sidewalk" and select the preset
 6. Add the `crossing_link=yes` tag
 
-#### Tagging
+#### Tagging Connector Ways
 
 | Feature      | Rapid Preset | Tags                                   |
 |--------------|--------------|----------------------------------------|
