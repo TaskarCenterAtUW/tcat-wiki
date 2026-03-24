@@ -35,7 +35,7 @@ This guide covers how to map pedestrian infrastructure for the [Olympia, Connect
 
 1. Select **Contribute** on the bottom right of the project page
 2. **Choose** an available task (white tiles on the map)
-3. Select "**RapiD**" as your _Editor_, at the bottom center of the page
+3. Select "**Rapid**" as your _Editor_, at the bottom center of the page
 4. Select **Map selected task** to open the Rapid Editor
 
 You'll see the Rapid Editor on the left and task information on the right. The magenta boundary shows your task area.
@@ -71,9 +71,9 @@ Crossings are paths pedestrians traverse to cross streets.
 
 #### Tagging
 
-Search for these presets in the RapiD Editor:
+Search for these presets in the Rapid Editor:
 
-| Crossing Type                   | RapiD Preset        | Tags                                                             |
+| Crossing Type                   | Rapid Preset        | Tags                                                             |
 |---------------------------------|---------------------|------------------------------------------------------------------|
 | **Marked** (has painted lines)  | "Marked Crosswalk"  | `highway=footway` + `footway=crossing` + `crossing:markings=yes` |
 | **Unmarked** (no painted lines) | "Unmarked Crossing" | `highway=footway` + `footway=crossing` + `crossing:markings=no`  |
@@ -107,7 +107,7 @@ The endpoints of your crossing line are curb nodes. Select each endpoint and tag
 
 #### Tagging
 
-| Curb Type   | RapiD Preset   | Tags                            | Description            |
+| Curb Type   | Rapid Preset   | Tags                            | Description            |
 |-------------|----------------|---------------------------------|------------------------|
 | **Lowered** | "Lowered Curb" | `barrier=kerb` + `kerb=lowered` | Curb ramp present      |
 | **Raised**  | "Raised Curb"  | `barrier=kerb` + `kerb=raised`  | Standard curb, no ramp |
@@ -133,7 +133,7 @@ Sidewalks are pedestrian paths along streets.
 
 #### Tagging
 
-| Feature      | RapiD Preset | Tags                                   |
+| Feature      | Rapid Preset | Tags                                   |
 |--------------|--------------|----------------------------------------|
 | **Sidewalk** | "Sidewalk"   | `highway=footway` + `footway=sidewalk` |
 
@@ -165,7 +165,7 @@ Optionally, the short sidewalk **connector** segments between sidewalk centerlin
 
 #### Tagging
 
-| Feature      | RapiD Preset | Tags                                   |
+| Feature      | Rapid Preset | Tags                                   |
 |--------------|--------------|----------------------------------------|
 | **Sidewalk** | "Sidewalk"   | `highway=footway` + `footway=sidewalk` |
 
@@ -194,7 +194,7 @@ Optionally, the short sidewalk **connector** segments between sidewalk centerlin
 
 ### Saving Your Work
 
-1. Click **Save** in the RapiD Editor (top right)
+1. Click **Save** in the Rapid Editor (top right)
 2. The changeset comment should be automatically filled out:
 
     `#osmus-tasks-1083 #MaptimeSEA | Olympia, WA, US: Pedestrian Infrastructure | #OpenSidewalks`

@@ -162,7 +162,7 @@ JOSM: _yes_
 Potlatch 2: _no_
 Field Papers: _no_
 **Enforce random task selection**: no
-**Enable RapiD Power User Features**: no
+**Enable Rapid Power User Features**: no
 
 ## Actions
 
