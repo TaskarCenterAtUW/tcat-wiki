@@ -64,6 +64,12 @@ This guide explains how to make edits to OpenStreetMap following and supporting 
 
 This page explains the OSM US Tasking Manager and how OpenSidewalks makes use of it.
 
+##### Tutorials
+
+###### [Mapping for OSW in the OSM US Tasking Manager](../opensidewalks/tasking-manager/tutorial/osw-in-osmustm/index.md)
+
+This tutorial explains how to contribute to OpenSidewalks pedestrian infrastructure mapping efforts organized through the OSM US Tasking Manager.
+
 ##### [Tasking Manager User Manual](../opensidewalks/tasking-manager/user-manual/index.md)
 
 This user manual explains how to use the [OSM US Tasking Manager](https://tasks.openstreetmap.us/) platform.

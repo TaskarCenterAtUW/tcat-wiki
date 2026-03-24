@@ -1,6 +1,6 @@
 #region Meta
 [project]
-version = "9.2.0"
+version = "10.0.0"
 site_name = "Taskar Center for Accessible Technology"
 site_description = "Information and guides related to the Taskar Center for Accessible Technology (TCAT) at the University of Washington."
 site_author = "Taskar Center for Accessible Technology"
@@ -201,6 +201,13 @@ nav = [
             "opensidewalks/tasking-manager/index.md",
             {"Tasking Manager Project List" = "opensidewalks/tasking-manager/project-list.md"},
             {"Task Polygon Automation Guide" = "opensidewalks/tasking-manager/task-polygon-automation.md"},
+            {"Tutorial" = [
+                {"Osw In Osmustm" = [
+                    "opensidewalks/tasking-manager/tutorial/osw-in-osmustm/index.md",
+                    {"Mapping Guide" = "opensidewalks/tasking-manager/tutorial/osw-in-osmustm/mapping-guide.md"},
+                    {"Validation Guide" = "opensidewalks/tasking-manager/tutorial/osw-in-osmustm/validation-guide.md"}
+                ]}
+            ]},
             {"User Manual" = [ "opensidewalks/tasking-manager/user-manual/index.md" ]}
         ]}
     ]},

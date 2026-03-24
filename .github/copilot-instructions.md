@@ -416,10 +416,16 @@ Both flags can be used together to exclude a guide from all guides lists.
 
 - They are short tutorials focused on specific goals or use cases, typically linking to user manuals for details
 - They appear first in guides sections under a "Tutorials" subsection header, before user manuals and regular guides
-- They may live directly in a topic directory or in a `tutorial/` subdirectory (without index.md)
-- The `tutorial/` subdirectory is scanned automatically; its contents are attributed to the parent directory
+- May be single files or multi-page directories (with `index.md` tagged `- Tutorial`)
+- Single-file tutorials may live directly in a topic directory or in a `tutorial/` subdirectory
+- Multi-page tutorials may live in a `tutorial/` subdirectory or as direct children of any directory (e.g., `topic/tutorial/example/index.md` + subpages, or `topic/my-tutorial/index.md` + subpages)
+- Multi-page tutorials are treated like user manuals: only the index appears in parent/main listings; subpages appear only in the tutorial's own Table of Contents
+- The `tutorial/` subdirectory is scanned automatically for both single files and multi-page directories; its contents are attributed to the parent directory
+- Multi-page tutorial pages get "### Table of Contents" instead of "### Guides"
 - Ordering at every level is: Tutorials → User Manuals → Regular Guides
-- Must always begin their first prose sentence with "This tutorial..."
+- Single-file tutorials must always begin their first prose sentence with "This tutorial..."
+- Multi-page tutorial `index.md` must always begin its first prose sentence with "This tutorial..."
+- Multi-page tutorial subpages must always begin their first prose sentence with "This section..."
 
 ### Organization
 
@@ -463,6 +469,19 @@ Both flags can be used together to exclude a guide from all guides lists.
 **The assistant should NOT write the core guide content itself!** Guides must reflect the knowledge and perspective of subject matter experts and domain authors.
 
 Planning documents, temporary files, and the like should be saved into local-storage/ by default, unless otherwise instructed.
+
+### Working With Non-Markdown Source Files
+
+`markitdown` (installed in the venv) converts binary and proprietary formats to Markdown so the assistant can read and work with them. Use it whenever the user references a PDF, Word doc, PowerPoint, or other non-Markdown file:
+
+```powershell
+# Activate venv first, then:
+python -c "from markitdown import MarkItDown; r = MarkItDown().convert('path/to/file'); print(r.text_content)"
+```
+
+Supported formats include: PDF, DOCX, PPTX, XLSX, HTML, CSV, JSON, XML, and ZIP archives. Google Docs/Slides/Sheets work if exported as DOCX/PPTX first.
+
+For large files or batch conversion, write the output to `local-storage/` as a `.md` file and read it from there.
 
 ## Resources
 

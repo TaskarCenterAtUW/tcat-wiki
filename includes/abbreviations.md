@@ -4,6 +4,7 @@
 *[AADT]: Annual Average Daily Traffic
 *[AASHTO]: American Association of State Highway and Transportation Officials
 *[ABA]: Architectural Barriers Act
+*[ACM]: Association for Computing Machinery
 *[ADA]: Americans with Disabilities Act
 *[AI]: Artificial Intelligence
 *[API]: Application Programming Interface
@@ -21,6 +22,7 @@
 *[BTS]: Bureau of Transportation Statistics
 *[CAD]: Computer-Aided Design
 *[CADD]: Computer-Aided Design and Drafting
+*[CHIIR]: Conference on Human Information Interaction and Retrieval
 *[CALACT]: California Association of Coordinated Transportation
 *[Cal-ITP]: California Integrated Travel Project
 *[CC0]: Creative Commons Zero
@@ -35,6 +37,7 @@
 *[CUGOS]: Cascadia Users of Geospatial Open Source
 *[DE-9IM]: Dimensionally Extended Nine-Intersection Model
 *[DEM]: Digital Elevation Model
+*[DESA]: Department of Economic and Social Affairs
 *[DOT]: Department of Transportation
 *[DSB]: Department of Services for the Blind
 *[DSM]: Digital Surface Model
@@ -50,6 +53,7 @@
 *[FNS]: Food and Nutrition Service
 *[FTA]: Federal Transit Administration
 *[FQHC]: Federally Qualified Health Center
+*[G3ict]: Global Initiative for Inclusive Information and Communication Technologies
 *[GATIS]: General Active Transportation Infrastructure Specification
 *[GERS]: Global Entity Reference System
 *[GIG]: GoInfoGame
@@ -66,17 +70,20 @@
 *[GTFS-Pathways]: General Transit Feed Specification, Pathways Extension
 *[HAWK]: High-Intensity Activated Crosswalk Beacon
 *[HCI]: Human-Computer Interaction
+*[HCIR]: Human Computer Information Retrieval
 *[HCT]: High-Capacity Transit
 *[HIN]: High Injury Network
 *[HOT]: Humanitarian OpenStreetMap Team
 *[HOV]: High Occupancy Vehicle
 *[HxGN]: Hexagon (aerial imagery provider)
 *[IDW]: Inverse Distance Weighting
+*[IIiX]: Information Interaction in Context
 *[IoU]: Intersection over Union
 *[IRB]: Internal Review Board
 *[ISTEA]: Intermodal Surface Transportation Efficiency Act of 1991
 *[ITS]: Intelligent Transportation System
 *[IXN]: Intersection / Intersection Traversability Metric
+*[JCDL]: Joint Conference on Digital Libraries
 *[JOSM]: Java OpenStreetMap Editor
 *[KML]: Keyhole Markup Language
 *[KPI]: Key Performance Indicator
@@ -155,6 +162,7 @@
 *[SDI]: Spatial Data Infrastructure
 *[SDOT]: Seattle Department of Transportation
 *[SHSP]: Strategic Highway Safety Plan
+*[SIGIR]: Special Interest Group on Information Retrieval
 *[SLAM]: Simultaneous Location and Mapping
 *[SLD]: Styled Layer Descriptor
 *[SNAP]: Supplemental Nutrition Assistance Program
@@ -187,6 +195,9 @@
 *[TVM]: Ticket Vending Machine
 *[TxDOT]: Texas Department of Transportation
 *[UI]: User Interface
+*[UN]: United Nations
+*[UNDESA]: United Nations Department of Economic and Social Affairs
+*[US]: United States
 *[USDA]: United States Department of Agriculture
 *[USDOT]: United States Department of Transportation
 *[USGS]: United States Geological Survey
@@ -194,6 +205,7 @@
 *[UW]: University of Washington
 *[UX]: User Experience
 *[V2X]: Vehicle-to-Everything
+*[WA]: Washington (state)
 *[WCAG]: Web Content Accessibility Guidelines
 *[WFS]: Web Feature Service
 *[WGS]: World Geodetic System
