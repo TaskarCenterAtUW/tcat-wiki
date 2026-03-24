@@ -39,8 +39,8 @@ OpenSidewalks projects typically focus on the pedestrian features that enable ac
 
 ---
 
-![OSM US Tasking Manager Overview](../../../../resources/images/opensidewalks/tasking-manager/tutorials/osw-in-osmustm/index/osmustm-light.png#only-light)
-![OSM US Tasking Manager Overview](../../../../resources/images/opensidewalks/tasking-manager/tutorials/osw-in-osmustm/index/osmustm-dark.png#only-dark)
+![Screenshot of the OSM US Tasking Manager main landing page, showing a 'Map for Public Good' call to action](../../../../resources/images/opensidewalks/tasking-manager/tutorials/osw-in-osmustm/index/osmustm-light.png#only-light)
+![Screenshot of the OSM US Tasking Manager main landing page, showing a 'Map for Public Good' call to action](../../../../resources/images/opensidewalks/tasking-manager/tutorials/osw-in-osmustm/index/osmustm-dark.png#only-dark)
 
 ---
 
