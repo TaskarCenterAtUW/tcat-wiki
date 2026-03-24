@@ -55,6 +55,7 @@ const titleMapSource = {
     "tdei workspaces": "TDEI Workspaces",
     walksheds: "Walksheds",
     workspaces: "Workspaces",
+    tm: "Tasking Manager",
 
     // --- UI & Navigation Terms ---
     "guides list": "Guides List",
@@ -73,6 +74,9 @@ const titleMapSource = {
     "olympia connected": "Olympia, Connected",
     oswmh: "OpenSidewalks Mappy Hours",
     otp26: "OpenThePaths 2026",
+    
+    // --- Tutorials ---
+    "osw in osmustm": "OSW in the OSM US TM",
 
     // --- Articles, Prepositions & Conjunctions ---
     a: "a",
