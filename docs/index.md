@@ -43,6 +43,12 @@ Choose your path: each one starts with the simplest document and then offers dee
 
     **Get Started:** Check out our tutorials, guides, and examples: [Curb Ramp Data into the TDEI](tdei/portal/tutorial/curb-points-in-tdei.md), [Core Edges in OSW](opensidewalks/schema/core-edges-in-osw.md), [Custom Points in OSW](opensidewalks/schema/custom-points-in-osw.md), and much more in our [Guides List](guides-list/index.md)!
 
+??? abstract "I want to contribute as a mapper"
+
+    Do you want to help with mapping sidewalks, crossings, and curbs - directly in OpenStreetMap?
+
+    **Get Started:** Check out our ["Mapping for OSW in OSM" tutorial](opensidewalks/tasking-manager/tutorial/osw-in-osmustm/index.md) and our [list of Tasking Manager projects](opensidewalks/tasking-manager/project-list.md)!
+
 <!-- ??? abstract "I'm a planner / analyst (no GIS required)"
 
     Do you want to use outputs in planning (ADA transition plans, active transportation plans, equity work)?
