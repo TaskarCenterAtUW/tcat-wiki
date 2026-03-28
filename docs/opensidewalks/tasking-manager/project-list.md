@@ -17,6 +17,7 @@ Projects typically follow a `Neighborhood, City, State, Country: Pedestrian Infr
 
 Published projects are generally available for both mapping and viewing.
 
+- [#1192](https://tasks.openstreetmap.us/projects/1192) - Quito, EC: Pedestrian Infrastructure | #OpenSidewalks
 - [#1137](https://tasks.openstreetmap.us/projects/1137) - Austin, TX, US: Crossings | #OpenSidewalks
 - [#1097](https://tasks.openstreetmap.us/projects/1097) - New Orleans, LA, US: Pedestrian Infrastructure | #OpenSidewalks
 - [#1083](https://tasks.openstreetmap.us/projects/1083) - Olympia, WA, US: Pedestrian Infrastructure | #OpenSidewalks
