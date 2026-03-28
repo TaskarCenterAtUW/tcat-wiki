@@ -309,7 +309,8 @@ abbr[title],
 /* Uses a layered background so the sticky title is fully opaque (prevents
    scrolling items from bleeding through the semi-transparent tint). */
 .md-sidebar--secondary .md-nav--secondary > .md-nav__title {
-    background: linear-gradient(var(--toc-title-bg), var(--toc-title-bg)),
+    background:
+        linear-gradient(var(--toc-title-bg), var(--toc-title-bg)),
         var(--md-default-bg-color);
     color: var(--toc-title-color);
     font-weight: 600;
