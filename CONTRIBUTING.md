@@ -36,8 +36,6 @@ The TCAT Wiki uses [Semantic Versioning](https://semver.org/) (MAJOR.MINOR.PATCH
     - Core: Minor fixes, fixing typos, completing chores
     - Docs: Small updates, fixing typos, adding images
 
-The version number is stored in the `version` field in `zensical.toml`.
-
 #### Conventional Commits
 
 Commits follow [Conventional Commits](https://www.conventionalcommits.org/) with scoping:
@@ -73,8 +71,33 @@ fix/docs-walksheds/2048-fix-typo
 
 1. Create a feature branch following the naming convention
 2. Make commits using conventional commit format
-3. Open a pull request to `main`
-4. Upon merge to `main`, releases are automated
+3. Open a pull request to `main` and merge it
+
+#### Changelog & Tagging a Release
+
+Changelog entries and version tags are managed manually, not on every PR merge. Do this whenever a meaningful set of changes has landed on `main`:
+
+1. In VS Code Copilot Chat (agent mode), run:
+
+    ```
+    /changelog
+    ```
+
+    The prompt reads the commit history since the last tag, determines the correct [Semantic Version](https://semver.org/) bump, and prepends a new `### Features` / `### Fixes` entry to `CHANGELOG.md`.
+
+2. Review the generated entry — the prompt will flag any commits it omitted or that looked miscategorized.
+
+3. Commit the changelog update to `main`:
+
+    ```
+    chore: update changelog for vX.Y.Z
+    ```
+
+4. On the GitHub website, go to **Releases** → **Draft a new release**.
+    1. In **Choose a tag**, type the new version (e.g. `v11.1.0`) and select **Create new tag on publish**.
+    2. Set the title to `vX.Y.Z`.
+    3. Paste the release summary as the description.
+    4. Click **Publish release**.
 
 ### Getting Started (Windows 10/11)
 
