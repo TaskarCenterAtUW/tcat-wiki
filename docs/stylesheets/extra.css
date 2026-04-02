@@ -352,17 +352,25 @@ abbr[title],
 .toc-actions {
     display: inline-flex;
     align-items: center;
-    gap: 0.15em;
+    gap: 0.3em;
     margin-left: auto;
 }
 .toc-actions__icon {
     display: inline-flex;
     color: var(--toc-title-color);
     opacity: 0.55;
-    transition: opacity 0.15s;
+    transition:
+        opacity 0.15s,
+        outline-color 0.15s,
+        outline-offset 0.15s;
 }
 .toc-actions__icon:hover {
     opacity: 1;
+}
+.toc-actions__icon:focus-visible {
+    opacity: 1;
+    outline: 2px solid currentColor;
+    outline-offset: 2px;
 }
 .toc-actions__icon svg {
     width: 0.8rem;
