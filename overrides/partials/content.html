@@ -2,9 +2,10 @@
   Custom content partial that moves tags above page content.
   Tags are rendered before {{ page.content }} so they appear at the top of the
   page rather than the bottom (the default upstream behavior).
+  Action icons (view/edit) are rendered in the TOC sidebar header instead
+  (see overrides/partials/toc.html).
 -#}
 <!-- @format -->
-{% include "partials/actions.html" %}
 {% if "\u003ch1" not in page.content %}
   <h1>{{ page.title | d(config.site_name, true)}}</h1>
 {% endif %}

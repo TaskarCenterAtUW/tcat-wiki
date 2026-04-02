@@ -6,6 +6,7 @@ site_author = "Taskar Center for Accessible Technology"
 site_url = "https://taskarcenteratuw.github.io/tcat-wiki/"
 repo_name = "TCAT Wiki"
 repo_url = "https://github.com/taskarcenteratuw/tcat-wiki"
+edit_uri = "edit/main/docs/"
 copyright = "Copyright &copy; 2026 Taskar Center for Accessible Technology"
 extra_css = [
     "stylesheets/extra.css",

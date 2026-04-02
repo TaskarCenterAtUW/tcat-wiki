@@ -1,0 +1,46 @@
+{#-
+  Custom TOC partial that embeds view/edit action icons in the
+  "On this page" title bar, right-aligned and sized to fit inline.
+-#}
+<!-- @format -->
+{% import "partials/language.html" as lang with context %}
+{% set title = lang.t("toc") %}
+{% if config.mdx_configs.toc and config.mdx_configs.toc.title %}
+  {% set title = config.mdx_configs.toc.title %}
+{% endif %}
+<nav class="md-nav md-nav--secondary" aria-label="{{ title | e }}">
+  {% set toc = page.toc %}
+  {% set first = toc | first %}
+  {% if first and first.level == 1 %}
+    {% set toc = first.children %}
+  {% endif %}
+  {% if toc %}
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      {{ title }}
+      {#- Action icons (view / edit) inlined in the TOC title -#}
+      {% if page.edit_url %}
+        <span class="toc-actions">
+          {% if "content.action.view" in features %}
+            {% set view_url = page.edit_url | replace("github.com/", "raw.githubusercontent.com/") | replace("/edit/", "/") %}
+            <a href="{{ view_url }}" title="{{ lang.t('action.view') }}" class="toc-actions__icon" rel="noopener">
+              {% set icon = config.theme.icon.view or "material/file-eye-outline" %}
+              {% include ".icons/" ~ icon ~ ".svg" %}
+            </a>
+          {% endif %}
+          {% if "content.action.edit" in features %}
+            <a href="{{ page.edit_url }}" title="{{ lang.t('action.edit') }}" class="toc-actions__icon" rel="edit noopener">
+              {% set icon = config.theme.icon.edit or "material/file-edit-outline" %}
+              {% include ".icons/" ~ icon ~ ".svg" %}
+            </a>
+          {% endif %}
+        </span>
+      {% endif %}
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      {% for toc_item in toc %}
+        {% include "partials/toc-item.html" %}
+      {% endfor %}
+    </ul>
+  {% endif %}
+</nav>
