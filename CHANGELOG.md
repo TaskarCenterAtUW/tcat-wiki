@@ -11,7 +11,7 @@ This project adheres to [Semantic Versioning](https://semver.org/) and
 
 ### Features
 
-- **(core)** Add GitHub repo link and view/edit page action buttons; repositioned into the right sidebar "On this page" header to keep them accessible but visually unobtrusive
+- **core**: Add GitHub repo link and view/edit page action buttons; repositioned into the right sidebar "On this page" header to keep them accessible but visually unobtrusive
 
 ## v11.0.0 (2026-03-30)
 
