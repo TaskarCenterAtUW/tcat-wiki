@@ -333,6 +333,8 @@ abbr[title],
 /* Uses a layered background so the sticky title is fully opaque (prevents
    scrolling items from bleeding through the semi-transparent tint). */
 .md-sidebar--secondary .md-nav--secondary > .md-nav__title {
+    display: flex;
+    align-items: center;
     background:
         linear-gradient(var(--toc-title-bg), var(--toc-title-bg)),
         var(--md-default-bg-color);
@@ -344,6 +346,35 @@ abbr[title],
     margin: -0.6em -0.8em 0.4em -0.6em;
     padding: 0.35em 0.8em 0.35em 0.6em;
     border-radius: var(--toc-border-radius) var(--toc-border-radius) 0 0;
+}
+
+/* View/edit action icons inside the TOC title bar */
+.toc-actions {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.3em;
+    margin-left: auto;
+}
+.toc-actions__icon {
+    display: inline-flex;
+    color: var(--toc-title-color);
+    opacity: 0.55;
+    transition:
+        opacity 0.15s,
+        outline-color 0.15s,
+        outline-offset 0.15s;
+}
+.toc-actions__icon:hover {
+    opacity: 1;
+}
+.toc-actions__icon:focus-visible {
+    opacity: 1;
+    outline: 2px solid currentColor;
+    outline-offset: 2px;
+}
+.toc-actions__icon svg {
+    width: 0.8rem;
+    height: 0.8rem;
 }
 
 /* =============================================================================
