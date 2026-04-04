@@ -10,6 +10,23 @@ OS-CONNECT is a comprehensive, high-resolution, and connected pedestrian network
 
 ---
 
+### Dataset Name Suffixes
+
+OS-CONNECT dataset names end with a suffix that indicates the type of area the dataset covers:
+
+| Suffix   | Coverage                  | Example             |
+|----------|---------------------------|---------------------|
+| `City`   | A city or town            | WSP_Wenatchee_City  |
+| `UGA`    | An urban growth area      | WSP_Burlington_UGA  |
+| `UI`     | Unincorporated areas      | WSP_Pend_Orielle_UI |
+| `County` | An entire county          | WSP_Yakima_County   |
+| `CDP`    | A census-designated place | WSP_Trout_Lake_CDP  |
+
+![The TDEI portal's All Released Datasets list filtered to OSW type, showing five example datasets whose names use the suffixes City, UGA, UI, County, and CDP.](../resources/images/os-connect/suffixes-light.png#only-light)
+![The TDEI portal's All Released Datasets list filtered to OSW type, showing five example datasets whose names use the suffixes City, UGA, UI, County, and CDP.](../resources/images/os-connect/suffixes-dark.png#only-dark)
+
+---
+
 ### Guides
 
 OS-CONNECT Guides
