@@ -64,6 +64,19 @@ For more specific filtering, select the **Filter** button to expand the filter p
 
 Select **Clear** next to any field to reset that filter, or use **Sort by** to change the sort order. Select the **Refresh (↻)** button to refresh the list.
 
+??? tip "Double-check the dataset name!"
+
+    The **Dataset** filter returns every dataset whose name contains the text you entered, not just exact matches.
+
+    For example, searching for "Spokane" returns `WSP_Spokane_Valley_City`, `WSP_Spokane_UI`, `WSP_Spokane_City`, and `WSP_Spokane_County`.
+
+    If the dataset you want isn't the first result, scroll through the list to find the one with the exact name you need.
+
+    For more information about OS-CONNECT dataset names, refer to [OS-CONNECT > Dataset Name Suffixes](../../../os-connect/index.md#dataset-name-suffixes).
+
+    ![The TDEI portal's Datasets page with the filter panel expanded, showing "Spokane" entered in the Dataset search field. Results show four matching datasets: WSP_Spokane_Valley_City, WSP_Spokane_UI, WSP_Spokane_City, and WSP_Spokane_County.](../../../resources/images/tdei-portal/user-manual/datasets/search-results-light.png#only-light)
+    ![The TDEI portal's Datasets page with the filter panel expanded, showing "Spokane" entered in the Dataset search field. Results show four matching datasets: WSP_Spokane_Valley_City, WSP_Spokane_UI, WSP_Spokane_City, and WSP_Spokane_County.](../../../resources/images/tdei-portal/user-manual/datasets/search-results-dark.png#only-dark)
+
 ---
 
 ### Action
@@ -72,7 +85,7 @@ Select the **action menu** (⋮) on the right side of any dataset row to access 
 
 | Action                 | Description                                                                                                |
 |:-----------------------|:-----------------------------------------------------------------------------------------------------------|
-| **Open in Workspaces** | Opens the dataset in the [Workspaces](../../../workspaces/index.md) editing platform                    |
+| **Open in Workspaces** | Opens the dataset in the [Workspaces](../../../workspaces/index.md) editing platform                       |
 | **Download Metadata**  | Downloads the metadata associated with the dataset                                                         |
 | **Clone Dataset**      | Creates a copy of the dataset, allowing you to make changes without affecting the original                 |
 | **Download**           | Downloads the dataset files in a chosen format (see [Downloading a Dataset](#downloading-a-dataset) below) |
