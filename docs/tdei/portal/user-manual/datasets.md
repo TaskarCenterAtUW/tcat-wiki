@@ -27,8 +27,8 @@ The **Datasets** section lists datasets available within the TDEI system. It has
 | **My Project Datasets**   | Datasets belonging to your currently active project group                   |
 | **All Released Datasets** | All datasets that have been publicly released across the entire TDEI system |
 
-![Datasets — All Released Datasets tab](../../../resources/images/tdei-portal/user-manual/datasets/all-released-light.png#only-light)
-![Datasets — All Released Datasets tab](../../../resources/images/tdei-portal/user-manual/datasets/all-released-dark.png#only-dark)
+![The TDEI portal's Datasets page showing the All Released Datasets tab with Type set to All and no filters applied. Three datasets are visible.](../../../resources/images/tdei-portal/user-manual/datasets/all-released-light.png#only-light)
+![The TDEI portal's Datasets page showing the All Released Datasets tab with Type set to All and no filters applied. Three datasets are visible.](../../../resources/images/tdei-portal/user-manual/datasets/all-released-dark.png#only-dark)
 
 Each dataset entry displays:
 
@@ -59,8 +59,8 @@ For more specific filtering, select the **Filter** button to expand the filter p
 | **Valid From**    | Filter to datasets valid from a given date  |
 | **Valid To**      | Filter to datasets valid up to a given date |
 
-![Datasets filter panel](../../../resources/images/tdei-portal/tutorial/download-os-connect/filter-light.png#only-light)
-![Datasets filter panel](../../../resources/images/tdei-portal/tutorial/download-os-connect/filter-dark.png#only-dark)
+![The Datasets filter panel expanded with Type set to OSW and "TCAT_WSP_PG" entered in the Project Group field. One matching result is shown.](../../../resources/images/tdei-portal/tutorial/download-os-connect/filter-light.png#only-light)
+![The Datasets filter panel expanded with Type set to OSW and "TCAT_WSP_PG" entered in the Project Group field. One matching result is shown.](../../../resources/images/tdei-portal/tutorial/download-os-connect/filter-dark.png#only-dark)
 
 Select **Clear** next to any field to reset that filter, or use **Sort by** to change the sort order. Select the **Refresh (↻)** button to refresh the list.
 
@@ -90,8 +90,8 @@ Select the **action menu** (⋮) on the right side of any dataset row to access 
 | **Clone Dataset**      | Creates a copy of the dataset, allowing you to make changes without affecting the original                 |
 | **Download**           | Downloads the dataset files in a chosen format (see [Downloading a Dataset](#downloading-a-dataset) below) |
 
-![Datasets action menu](../../../resources/images/tdei-portal/user-manual/datasets/action-light.png#only-light)
-![Datasets action menu](../../../resources/images/tdei-portal/user-manual/datasets/action-dark.png#only-dark)
+![The dataset action menu open on the WSP_Verlot_CDP row, showing four options: Open in Workspaces, Download Metadata, Clone Dataset, and Download.](../../../resources/images/tdei-portal/user-manual/datasets/action-light.png#only-light)
+![The dataset action menu open on the WSP_Verlot_CDP row, showing four options: Open in Workspaces, Download Metadata, Clone Dataset, and Download.](../../../resources/images/tdei-portal/user-manual/datasets/action-dark.png#only-dark)
 
 ---
 
@@ -105,8 +105,8 @@ Select the **action menu** (⋮) on the right side of any dataset row to access 
 
 4. In the download dialog, use the **Select Format** dropdown to choose your preferred file format, then select **Download**
 
-![Download dialog format selection](../../../resources/images/tdei-portal/user-manual/datasets/format-light.png#only-light)
-![Download dialog format selection](../../../resources/images/tdei-portal/user-manual/datasets/format-dark.png#only-dark)
+![The OSW Dataset Download dialog with a Select Format dropdown set to OSW, a note reading "File format to download. Defaults to OSW.", and Cancel and Download buttons.](../../../resources/images/tdei-portal/user-manual/datasets/format-light.png#only-light)
+![The OSW Dataset Download dialog with a Select Format dropdown set to OSW, a note reading "File format to download. Defaults to OSW.", and Cancel and Download buttons.](../../../resources/images/tdei-portal/user-manual/datasets/format-dark.png#only-dark)
 
 !!! info "Looking for OS-CONNECT datasets?"
 
