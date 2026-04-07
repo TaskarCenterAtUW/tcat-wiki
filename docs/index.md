@@ -35,7 +35,7 @@ Choose your path: each one starts with the simplest document and then offers dee
 
     Do you want to see what pedestrian infrastructure exists for your area, understand what the numbers mean, and decide what to do next?
 
-    **Get Started:** [View the data](os-connect/data-viewer/user-manual/index.md) and get a [Jurisdiction Snapshot (PDF)](os-connect/qa-qc/user-manual/index.md)
+    **Get Started:** [View the data](os-connect/data-viewer/user-manual/index.md) and get a [Jurisdiction Snapshot](os-connect/qa-qc/user-manual/index.md)
 
 ??? abstract "I want to import my existing data into the TDEI"
 
