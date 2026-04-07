@@ -72,6 +72,7 @@ Choose your path: each one starts with the simplest document and then offers dee
     Do you want to help a jurisdiction validate, report issues, or contribute edits?
 
     **Get Started:** Learn how to report a problem _(Coming soon!)_ and about how updates happen through [Workspaces](workspaces/index.md) -->
+
 ---
 
 ### Key Takeaways
