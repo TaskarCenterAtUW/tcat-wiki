@@ -208,6 +208,7 @@
 *[UX]: User Experience
 *[V2X]: Vehicle-to-Everything
 *[WA]: Washington (state)
+*[WAGISA]: Washington GIS Association
 *[WCAG]: Web Content Accessibility Guidelines
 *[WFS]: Web Feature Service
 *[WGS]: World Geodetic System
