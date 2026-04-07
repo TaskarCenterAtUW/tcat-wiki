@@ -35,7 +35,7 @@ Choose your path: each one starts with the simplest document and then offers dee
 
     Do you want to see what pedestrian infrastructure exists for your area, understand what the numbers mean, and decide what to do next?
 
-    **Get Started:** [View the data](os-connect/data-viewer/user-manual/index.md) and get a [Jurisdiction Snapshot (PDF)](os-connect/qa-qc/user-manual/index.md)
+    **Get Started:** [View the data](os-connect/data-viewer/user-manual/index.md) and get a [Jurisdiction Snapshot](os-connect/qa-qc/user-manual/index.md)
 
 ??? abstract "I want to import my existing data into the TDEI"
 
@@ -72,6 +72,7 @@ Choose your path: each one starts with the simplest document and then offers dee
     Do you want to help a jurisdiction validate, report issues, or contribute edits?
 
     **Get Started:** Learn how to report a problem _(Coming soon!)_ and about how updates happen through [Workspaces](workspaces/index.md) -->
+
 ---
 
 ### Key Takeaways
@@ -103,74 +104,6 @@ If you remember only three things, remember these:
 **[AVIV ScoutRoute](aviv-scoutroute/index.md)** — Mobile app for adding data into the existing pedestrian map. AVIV ScoutRoute enables everyone to make structured, clear, and direct contributions of surveyed data to enhance it or keep it up to date.
 
 _Additional TCAT projects are listed on the [TCAT website](https://tcat.cs.washington.edu/current-projects/)._
-
-#### Architecture
-
-A multi‑tenant data sharing and exchange platform that supports the full lifecycle of transportation datasets, from collection and updates to publication and consumption.
-
-TCAT architecture has three layers: data generation tools (such as AVIV ScoutRoute, Rapid, and Prophet) which feed into the TDEI Core, which handles ingestion, validation, metadata, quality checks, access control, publishing, APIs, and more. Data then flows to consumer apps (such as AccessMap, Walksheds, Audiom, and Conveyal).
-
-<div id="tdei-arch" markdown>
-```mermaid
-%%{init: {'theme': 'base', 'themeVariables': {'darkMode': false, 'primaryTextColor': '#000000', 'secondaryTextColor': '#000000', 'tertiaryTextColor': '#000000', 'nodeTextColor': '#000000', 'lineColor': '#666666', 'textColor': '#000000', 'mainBkg': '#ffffff', 'clusterBkg': '#f5f5f5', 'clusterBorder': '#cccccc', 'titleColor': '#000000'}}}%%
-flowchart LR
-    subgraph tools ["Data Generation"]
-        ASR([AVIV ScoutRoute])
-        RAP([Rapid])
-        PRO([Prophet])
-        IOS([iOSPointMapper])
-    end
-
-    subgraph tdei ["TDEI Core"]
-        SVC["Ingestion & Validation
-        Schema & Metadata
-        Versioning & Lineage
-        Quality Checks
-        Access Control
-        Publishing & Catalog
-        APIs & SDKs"]
-        TEN["Tenants:
-        OS‑CONNECT
-        Multnomah, OR
-        Columbia, OR
-        Montgomery, MD
-        Baltimore, MD"]
-    end
-
-    subgraph apps ["Data Consumption"]
-        AM([AccessMap])
-        WS([Walksheds])
-        AUD([Audiom])
-        CVL([Conveyal])
-    end
-
-    ASR --> SVC
-    RAP --> SVC
-    PRO --> SVC
-    IOS --> SVC
-    SVC -.-> AM
-    SVC -.-> WS
-    SVC -.-> AUD
-    SVC -.-> CVL
-
-    click ASR "aviv-scoutroute/"
-    click RAP "rapid/"
-    click AM "accessmap/"
-    click WS "walksheds/"
-    click AUD "https://www.audiom.net/"
-    click CVL "https://conveyal.com/"
-
-    classDef tool fill:#90caf9,stroke:#1565c0,color:#000000
-    classDef core fill:#ffe082,stroke:#f9a825,color:#000000
-    classDef tenant fill:#ffcc80,stroke:#ef6c00,color:#000000
-    classDef app fill:#a5d6a7,stroke:#2e7d32,color:#000000
-
-    class ASR,RAP,PRO,IOS tool
-    class SVC core
-    class TEN tenant
-    class AM,WS,AUD,CVL app
-```
-</div>
 
 ---
 
