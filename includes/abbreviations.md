@@ -80,6 +80,7 @@
 *[IIiX]: Information Interaction in Context
 *[IoU]: Intersection over Union
 *[IRB]: Internal Review Board
+*[ISB]: Industrial Service Boundary
 *[ISTEA]: Intermodal Surface Transportation Efficiency Act of 1991
 *[ITS]: Intelligent Transportation System
 *[IXN]: Intersection / Intersection Traversability Metric
@@ -194,7 +195,8 @@
 *[TTS]: Text-to-Speech
 *[TVM]: Ticket Vending Machine
 *[TxDOT]: Texas Department of Transportation
-*[UI]: User Interface
+*[UGA]: Urban Growth Area
+*[UI]: User Interface / Unincorporated
 *[UN]: United Nations
 *[UNDESA]: United Nations Department of Economic and Social Affairs
 *[US]: United States
@@ -206,6 +208,7 @@
 *[UX]: User Experience
 *[V2X]: Vehicle-to-Everything
 *[WA]: Washington (state)
+*[WAGISA]: Washington GIS Association
 *[WCAG]: Web Content Accessibility Guidelines
 *[WFS]: Web Feature Service
 *[WGS]: World Geodetic System
