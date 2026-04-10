@@ -6,6 +6,7 @@
 *[ABA]: Architectural Barriers Act
 *[ACM]: Association for Computing Machinery
 *[ADA]: Americans with Disabilities Act
+*[ADS]: Aging and Disability Services
 *[AI]: Artificial Intelligence
 *[API]: Application Programming Interface
 *[APS]: Accessible Pedestrian Signal
