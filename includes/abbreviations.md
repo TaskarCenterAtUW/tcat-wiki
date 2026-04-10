@@ -6,6 +6,7 @@
 *[ABA]: Architectural Barriers Act
 *[ACM]: Association for Computing Machinery
 *[ADA]: Americans with Disabilities Act
+*[ADS]: Aging and Disability Services
 *[AI]: Artificial Intelligence
 *[API]: Application Programming Interface
 *[APS]: Accessible Pedestrian Signal
@@ -34,6 +35,7 @@
 *[CSE]: Computer Science and Engineering
 *[CSUN]: California State University, Northridge
 *[CSV]: Comma-Separated Values
+*[CTANW]: Community Transportation Association of the Northwest
 *[CUGOS]: Cascadia Users of Geospatial Open Source
 *[DE-9IM]: Dimensionally Extended Nine-Intersection Model
 *[DEM]: Digital Elevation Model
@@ -50,10 +52,12 @@
 *[FDE]: Fundamental Data Elements
 *[FGTS]: Freight & Goods Transportation System
 *[FHWA]: Federal Highway Administration
+*[FIFA]: Fédération Internationale de Football Association
 *[FNS]: Food and Nutrition Service
 *[FTA]: Federal Transit Administration
 *[FQHC]: Federally Qualified Health Center
 *[G3ict]: Global Initiative for Inclusive Information and Communication Technologies
+*[GAAD]: Global Accessibility Awareness Day
 *[GATIS]: General Active Transportation Infrastructure Specification
 *[GERS]: Global Entity Reference System
 *[GIG]: GoInfoGame
@@ -207,6 +211,7 @@
 *[UW]: University of Washington
 *[UX]: User Experience
 *[V2X]: Vehicle-to-Everything
+*[VGI]: Volunteered Geographic Information
 *[WA]: Washington (state)
 *[WAGISA]: Washington GIS Association
 *[WCAG]: Web Content Accessibility Guidelines
