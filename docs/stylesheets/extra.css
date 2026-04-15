@@ -28,36 +28,16 @@
  * TEMPORARY TAB VISIBILITY PATCH
  * Hide tabs by href. Remove once Zensical has proper modular navigation.
  */
-.md-tabs__item:has(a[href*="/CONTRIBUTING/"]) {
-    display: none;
-}
-.md-tabs__item:has(a[href*="/includes/"]) {
-    display: none;
-}
-.md-tabs__item:has(a[href*="/javascripts/"]) {
-    display: none;
-}
-.md-tabs__item:has(a[href*="/josm/"]) {
-    display: none;
-}
-.md-tabs__item:has(a[href*="/overrides/"]) {
-    display: none;
-}
-.md-tabs__item:has(a[href*="/rapid/"]) {
-    display: none;
-}
-.md-tabs__item:has(a[href*="/README/"]) {
-    display: none;
-}
-.md-tabs__item:has(a[href*="/resources/"]) {
-    display: none;
-}
-.md-tabs__item:has(a[href*="/stylesheets/"]) {
-    display: none;
-}
-.md-tabs__item:has(a[href*="/templates/"]) {
-    display: none;
-}
+.md-tabs__item:has(a[href*="/CONTRIBUTING/"]),
+.md-tabs__item:has(a[href*="/includes/"]),
+.md-tabs__item:has(a[href*="/javascripts/"]),
+.md-tabs__item:has(a[href*="/josm/"]),
+.md-tabs__item:has(a[href*="/overrides/"]),
+.md-tabs__item:has(a[href*="/rapid/"]),
+.md-tabs__item:has(a[href*="/README/"]),
+.md-tabs__item:has(a[href*="/resources/"]),
+.md-tabs__item:has(a[href*="/stylesheets/"]),
+.md-tabs__item:has(a[href*="/templates/"]),
 .md-tabs__item:has(a[href*="/utilities/"]) {
     display: none;
 }
@@ -77,7 +57,7 @@
 }
 .md-typeset h2 {
     font-size: 2em;
-    margin: 0 0 0em;
+    margin: 0;
     font-weight: 600;
     line-height: 1;
 }
@@ -88,8 +68,6 @@ abbr[title],
 .md-typeset abbr,
 .md-typeset abbr[title] {
     text-decoration: none !important;
-    text-decoration-line: none !important;
-    text-decoration-style: none !important;
     border-bottom: none !important;
     position: relative;
 }
@@ -128,7 +106,6 @@ abbr[title],
 }
 .md-header__title--with-subtitle .md-header__topic:first-child .md-ellipsis {
     line-height: 1.2;
-    letter-spacing: 0em;
 }
 
 /* Subtitle line beneath the site title */
@@ -191,8 +168,8 @@ abbr[title],
 /* Horizontal rules always clear floating images; remove vertical padding */
 .md-typeset hr {
     clear: both;
-    margin-top: 0em;
-    margin-bottom: 0em;
+    margin-top: 0;
+    margin-bottom: 0;
 }
 
 /* Enable CSS order-based sorting for sidebar nav lists (supports nav_order frontmatter) */
@@ -203,12 +180,49 @@ abbr[title],
 
 /* Reduce gap between top navbar and page content (default is 1.5rem) */
 .md-main__inner {
-    margin-top: 0.4rem;
+    margin-top: 0.3rem;
+}
+
+/*
+ * Custom properties for layout and theming.
+ *
+ * Layout:
+ *   --content-start-offset  Shared vertical offset for the three-column content area
+ *
+ * TOC accent (Section 9):
+ *   --toc-border-color      Left accent stripe color
+ *   --toc-bg                Panel background tint
+ *   --toc-title-color       "On this page" label color
+ *   --toc-title-bg          Title band background
+ *   --toc-border-width      Accent stripe thickness
+ *   --toc-border-radius     Panel corner rounding
+ *
+ * TOC defaults use muted UW brand colors (Purple #4B2E83, Gold #B7A57A).
+ */
+:root {
+    --content-start-offset: 0.35rem;
+    --toc-border-color: rgba(75, 46, 131, 0.35);
+    --toc-bg: rgba(75, 46, 131, 0.04);
+    --toc-title-color: #4b2e83;
+    --toc-title-bg: rgba(75, 46, 131, 0.12);
+    --toc-border-width: 3px;
+    --toc-border-radius: 4px;
+}
+[data-md-color-scheme="slate"] {
+    --toc-border-color: rgba(183, 165, 122, 0.4);
+    --toc-bg: rgba(183, 165, 122, 0.06);
+    --toc-title-color: #c9b882;
+    --toc-title-bg: rgba(183, 165, 122, 0.15);
 }
 
 /* Adjust padding above breadcrumbs (default is 1.2rem) */
 .md-path {
-    padding-top: 1.3rem;
+    padding-top: calc(var(--content-start-offset) + 0.25rem);
+}
+
+/* Align sidebar top padding with breadcrumb area (default is 1.2rem) */
+.md-sidebar {
+    padding-top: var(--content-start-offset);
 }
 
 /* =============================================================================
@@ -294,38 +308,15 @@ abbr[title],
 
 /*
  * Subtle accent for the right-side "On this page" TOC.
- *
- * Configurable via CSS custom properties on :root / [data-md-color-scheme]:
- *   --toc-border-color    Left accent stripe color
- *   --toc-bg              Panel background tint
- *   --toc-title-color     "On this page" label color
- *   --toc-border-width    Accent stripe thickness
- *   --toc-border-radius   Panel corner rounding
- *
- * Defaults use muted UW brand colors (Purple #4B2E83, Gold #B7A57A).
+ * Custom properties are defined in the unified :root block in Section 4.
  */
-
-:root {
-    --toc-border-color: rgba(75, 46, 131, 0.35);
-    --toc-bg: rgba(75, 46, 131, 0.04);
-    --toc-title-color: #4b2e83;
-    --toc-title-bg: rgba(75, 46, 131, 0.12);
-    --toc-border-width: 3px;
-    --toc-border-radius: 4px;
-}
-[data-md-color-scheme="slate"] {
-    --toc-border-color: rgba(183, 165, 122, 0.4);
-    --toc-bg: rgba(183, 165, 122, 0.06);
-    --toc-title-color: #c9b882;
-    --toc-title-bg: rgba(183, 165, 122, 0.15);
-}
 
 /* Panel wrapper — left stripe + background tint */
 .md-sidebar--secondary .md-nav--secondary {
     border-left: var(--toc-border-width) solid var(--toc-border-color);
     background: var(--toc-bg);
     border-radius: var(--toc-border-radius);
-    margin-top: 0.85rem;
+    margin-top: 0.3rem; /* 0.3rem top margin aligns with left sidebar */
     padding: 0.6em 0.8em 0.6em 0.6em;
 }
 
@@ -381,9 +372,11 @@ abbr[title],
    10. Tags
    ============================================================================= */
 
-/* Spacing below the tag bar (which now renders above page content) */
-.md-content__inner > .md-tags {
-    padding-bottom: 1em;
+/* Reset default top spacing on the tag bar (which now renders above page content) */
+.md-content__inner > .md-tags:not([hidden]) {
+    margin-top: 0;
+    padding-top: 0;
+    padding-bottom: 0;
 }
 
 /* =============================================================================
@@ -396,7 +389,7 @@ abbr[title],
 }
 
 /* =============================================================================
-   12. Brand Colors
+   12. External Brand Colors
    ============================================================================= */
 
 /* OSM US Tasking Manager green */
