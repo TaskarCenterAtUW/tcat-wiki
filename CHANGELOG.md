@@ -7,6 +7,13 @@ Changes to the TCAT Wiki are documented here.
 This project adheres to [Semantic Versioning](https://semver.org/) and
 [Conventional Commits](https://www.conventionalcommits.org/).
 
+## v11.4.1 (2026-04-15)
+
+### Fixes
+
+- **Core**: Fix top-of-page padding
+- **Core**: Clean up `extra.css`
+
 ## v11.4.0 (2026-04-07)
 
 ### Features
