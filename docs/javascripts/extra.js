@@ -4,11 +4,12 @@
  * Client-side enhancements for the TCAT Wiki Zensical site.
  *
  * Sections:
- *   1. Title Capitalization Data     — titleMapSource and derived titleMap lookup
- *   2. Text Transformation Helpers   — toTitleCase, applyTitleCapitalization
- *   3. DOM Fixup Functions           — fixElementCapitalization, fixNavigationCapitalization
- *   4. Initialization                — event hooks, MutationObserver, periodic fallback
- *   5. Footer Cookie-Settings Link   — move consent link after "Made with Zensical"
+ *   1. Title Capitalization Data        — titleMapSource and derived titleMap lookup
+ *   2. Text Transformation Helpers      — toTitleCase, applyTitleCapitalization
+ *   3. DOM Fixup Functions              — fixElementCapitalization, fixNavigationCapitalization
+ *   4. Initialization                   — event hooks, MutationObserver, periodic fallback
+ *   5. Consent Dialog Escape Dismissal  — Escape key closes dialog, saving state
+ *   6. Footer Cookie-Settings Link      — move consent link after "Made with Zensical"
  *
  * @format
  */
@@ -287,7 +288,34 @@ function fixNavigationCapitalization() {
 })();
 
 // =============================================================================
-// 5. Footer Cookie-Settings Link Relocation
+// 5. Consent Dialog Escape Key Dismissal
+// =============================================================================
+//
+// The ARIA Authoring Practices Guide dialog pattern requires Escape to close a
+// modal dialog. Zensical's consent dialog has no native key handler, leaving
+// users who press Escape with no response. We add a keydown listener that
+// clicks the "Save" button when Escape is pressed while the dialog is open,
+// saving the user's current checkbox state and closing the dialog.
+
+(function consentEscapeDismiss() {
+    document.addEventListener("keydown", function (event) {
+        if (event.key !== "Escape") return;
+        const dialog = document.querySelector(
+            '[data-md-component="consent"]:not([hidden])'
+        );
+        if (!dialog) return;
+        // Target the primary "Save" button, not the "Reject All" reset button
+        const saveButton = dialog.querySelector(
+            '.md-consent__controls .md-button:not([type="reset"])'
+        );
+        if (saveButton) {
+            saveButton.click();
+        }
+    });
+})();
+
+// =============================================================================
+// 6. Footer Cookie-Settings Link Relocation
 // =============================================================================
 //
 // The "Change cookie settings" link is hard-coded inside
