@@ -331,7 +331,9 @@ function fixNavigationCapitalization() {
         if (link && copyright && link.parentElement !== copyright) {
             // Trim trailing whitespace inside the Zensical link (its inner HTML has
             // a trailing newline+spaces that render as an unwanted space after the link)
-            const zensicalLink = copyright.querySelector('a[href*="zensical.org"]');
+            const zensicalLink = copyright.querySelector(
+                'a[href*="zensical.org"]'
+            );
             if (zensicalLink) {
                 const lastNode = zensicalLink.lastChild;
                 if (lastNode && lastNode.nodeType === Node.TEXT_NODE) {
@@ -344,7 +346,9 @@ function fixNavigationCapitalization() {
                 last.textContent = last.textContent.trimEnd();
             }
             // Two non-breaking spaces on each side of the bullet for consistent padding
-            copyright.appendChild(document.createTextNode("\u00A0\u00A0\u2022\u00A0\u00A0"));
+            copyright.appendChild(
+                document.createTextNode("\u00A0\u00A0\u2022\u00A0\u00A0")
+            );
             copyright.appendChild(link);
         }
     }
