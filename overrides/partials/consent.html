@@ -32,7 +32,7 @@
 {% if "manage" not in actions %}
   {% set checked = "checked" %}
 {% endif %}
-<h2>{{ config.extra.consent.title }}</h2>
+<h2 style="font-size: 1.1em; padding-top: 1em;">{{ config.extra.consent.title }}</h2>
 <p style="white-space: pre-line;">{{ config.extra.consent.description | trim }}</p>
 <input class="md-toggle" type="checkbox" id="__settings" {{ checked }}
        aria-hidden="true" tabindex="-1">
