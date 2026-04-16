@@ -16,6 +16,7 @@
  *  10. Tags                      — tag bar spacing at top of page
  *  11. Guides List Reference     — size of the "For a list of all guides..." blurb
  *  12. Brand Colors              — named color utilities for OSM TM providers
+ *  13. Task Lists                — vertical alignment of checkbox text
  *
  * @format
  */
@@ -400,4 +401,14 @@ abbr[title],
 /* HOT OSM Tasking Manager red */
 .hotosmtm-red {
     color: #d73f3f;
+}
+
+/* =============================================================================
+   13. Task Lists
+   ============================================================================= */
+
+/* Vertically align the checkbox indicator and its label text */
+.task-list-control {
+    display: inline-flex;
+    align-items: center;
 }
