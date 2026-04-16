@@ -8,6 +8,7 @@
  *   2. Text Transformation Helpers   — toTitleCase, applyTitleCapitalization
  *   3. DOM Fixup Functions           — fixElementCapitalization, fixNavigationCapitalization
  *   4. Initialization                — event hooks, MutationObserver, periodic fallback
+ *   5. Footer Cookie-Settings Link   — move consent link after "Made with Zensical"
  *
  * @format
  */
@@ -283,4 +284,45 @@ function fixNavigationCapitalization() {
         fixNavigationCapitalization();
         if (++checkCount >= 20) clearInterval(periodicCheck);
     }, 500);
+})();
+
+// =============================================================================
+// 5. Footer Cookie-Settings Link Relocation
+// =============================================================================
+//
+// The "Change cookie settings" link is hard-coded inside
+// .md-copyright__highlight (the copyright line). Move it to the end of
+// .md-copyright so it renders after "Made with Zensical".
+
+(function relocateCookieLink() {
+    function move() {
+        const link = document.querySelector(
+            '.md-copyright__highlight a[href$="#__consent"]'
+        );
+        const copyright = document.querySelector(".md-copyright");
+        if (link && copyright && link.parentElement !== copyright) {
+            // Trim trailing whitespace inside the Zensical link (its inner HTML has
+            // a trailing newline+spaces that render as an unwanted space after the link)
+            const zensicalLink = copyright.querySelector('a[href*="zensical.org"]');
+            if (zensicalLink) {
+                const lastNode = zensicalLink.lastChild;
+                if (lastNode && lastNode.nodeType === Node.TEXT_NODE) {
+                    lastNode.textContent = lastNode.textContent.trimEnd();
+                }
+            }
+            // Trim trailing whitespace from .md-copyright before appending
+            const last = copyright.lastChild;
+            if (last && last.nodeType === Node.TEXT_NODE) {
+                last.textContent = last.textContent.trimEnd();
+            }
+            // Two non-breaking spaces on each side of the bullet for consistent padding
+            copyright.appendChild(document.createTextNode("\u00A0\u00A0\u2022\u00A0\u00A0"));
+            copyright.appendChild(link);
+        }
+    }
+    if (document.readyState === "loading") {
+        document.addEventListener("DOMContentLoaded", move);
+    } else {
+        move();
+    }
 })();
