@@ -7,6 +7,23 @@ Changes to the TCAT Wiki are documented here.
 This project adheres to [Semantic Versioning](https://semver.org/) and
 [Conventional Commits](https://www.conventionalcommits.org/).
 
+## v11.5.1 (2026-04-16)
+
+### Fixes
+
+- **(CI)**: Improve build-and-deploy workflow
+
+## v11.5.0 (2026-04-16)
+
+### Features
+
+- **Core**: Add Google Analytics with cookie consent dialog
+- **Core**: Add footer "Change cookie settings" link, relocated after the "Made with Zensical" credit
+
+### Fixes
+
+- **Core**: Fix vertical alignment of checkbox list item text
+
 ## v11.4.1 (2026-04-15)
 
 ### Fixes

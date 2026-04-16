@@ -7,7 +7,10 @@ site_url = "https://taskarcenteratuw.github.io/tcat-wiki/"
 repo_name = "TCAT Wiki"
 repo_url = "https://github.com/taskarcenteratuw/tcat-wiki"
 edit_uri = "edit/main/docs/"
-copyright = "Copyright &copy; 2026 Taskar Center for Accessible Technology"
+copyright = """
+  Copyright &copy; 2026 Taskar Center for Accessible Technology
+  <a href="#__consent">Change cookie settings</a>
+"""
 extra_css = [
     "stylesheets/extra.css",
     "https://unpkg.com/katex@0/dist/katex.min.css",
@@ -127,6 +130,23 @@ link = "https://www.facebook.com/TaskarCenter"
 [[project.extra.social]]
 icon = "fontawesome/brands/instagram"
 link = "https://www.instagram.com/TaskarCenter/"
+
+#region Analytics
+[project.extra.analytics]
+provider = "google"
+property = "G-6YXHR48VQC"
+
+[project.extra.consent]
+title = "Cookie Settings"
+description = """
+    We use cookies to save your preferences and to collect analytics data using Google Analytics.
+    This helps us understand how people find and use our documentation.
+    You can update your cookie settings at any time from the bottom of any page.
+"""
+actions = [
+    "accept",
+    "reject"
+]
 
 #region Navigation
 nav = [

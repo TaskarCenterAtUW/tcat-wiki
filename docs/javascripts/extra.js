@@ -4,10 +4,12 @@
  * Client-side enhancements for the TCAT Wiki Zensical site.
  *
  * Sections:
- *   1. Title Capitalization Data     — titleMapSource and derived titleMap lookup
- *   2. Text Transformation Helpers   — toTitleCase, applyTitleCapitalization
- *   3. DOM Fixup Functions           — fixElementCapitalization, fixNavigationCapitalization
- *   4. Initialization                — event hooks, MutationObserver, periodic fallback
+ *   1. Title Capitalization Data        — titleMapSource and derived titleMap lookup
+ *   2. Text Transformation Helpers      — toTitleCase, applyTitleCapitalization
+ *   3. DOM Fixup Functions              — fixElementCapitalization, fixNavigationCapitalization
+ *   4. Initialization                   — event hooks, MutationObserver, periodic fallback
+ *   5. Consent Dialog Escape Dismissal  — Escape key closes dialog, saving state
+ *   6. Footer Cookie-Settings Link      — move consent link after "Made with Zensical"
  *
  * @format
  */
@@ -74,7 +76,7 @@ const titleMapSource = {
     "olympia connected": "Olympia, Connected",
     oswmh: "OpenSidewalks Mappy Hours",
     otp26: "OpenThePaths 2026",
-    
+
     // --- Tutorials ---
     "osw in osmustm": "OSW in the OSM US TM",
 
@@ -283,4 +285,76 @@ function fixNavigationCapitalization() {
         fixNavigationCapitalization();
         if (++checkCount >= 20) clearInterval(periodicCheck);
     }, 500);
+})();
+
+// =============================================================================
+// 5. Consent Dialog Escape Key Dismissal
+// =============================================================================
+//
+// The ARIA Authoring Practices Guide dialog pattern requires Escape to close a
+// modal dialog. Zensical's consent dialog has no native key handler, leaving
+// users who press Escape with no response. We add a keydown listener that
+// clicks the "Save" button when Escape is pressed while the dialog is open,
+// saving the user's current checkbox state and closing the dialog.
+
+(function consentEscapeDismiss() {
+    document.addEventListener("keydown", function (event) {
+        if (event.key !== "Escape") return;
+        const dialog = document.querySelector(
+            '[data-md-component="consent"]:not([hidden])'
+        );
+        if (!dialog) return;
+        // Target the primary "Save" button, not the "Reject All" reset button
+        const saveButton = dialog.querySelector(
+            '.md-consent__controls .md-button:not([type="reset"])'
+        );
+        if (saveButton) {
+            saveButton.click();
+        }
+    });
+})();
+
+// =============================================================================
+// 6. Footer Cookie-Settings Link Relocation
+// =============================================================================
+//
+// The "Change cookie settings" link is hard-coded inside
+// .md-copyright__highlight (the copyright line). Move it to the end of
+// .md-copyright so it renders after "Made with Zensical".
+
+(function relocateCookieLink() {
+    function move() {
+        const link = document.querySelector(
+            '.md-copyright__highlight a[href$="#__consent"]'
+        );
+        const copyright = document.querySelector(".md-copyright");
+        if (link && copyright && link.parentElement !== copyright) {
+            // Trim trailing whitespace inside the Zensical link (its inner HTML has
+            // a trailing newline+spaces that render as an unwanted space after the link)
+            const zensicalLink = copyright.querySelector(
+                'a[href*="zensical.org"]'
+            );
+            if (zensicalLink) {
+                const lastNode = zensicalLink.lastChild;
+                if (lastNode && lastNode.nodeType === Node.TEXT_NODE) {
+                    lastNode.textContent = lastNode.textContent.trimEnd();
+                }
+            }
+            // Trim trailing whitespace from .md-copyright before appending
+            const last = copyright.lastChild;
+            if (last && last.nodeType === Node.TEXT_NODE) {
+                last.textContent = last.textContent.trimEnd();
+            }
+            // Two non-breaking spaces on each side of the bullet for consistent padding
+            copyright.appendChild(
+                document.createTextNode("\u00A0\u00A0\u2022\u00A0\u00A0")
+            );
+            copyright.appendChild(link);
+        }
+    }
+    if (document.readyState === "loading") {
+        document.addEventListener("DOMContentLoaded", move);
+    } else {
+        move();
+    }
 })();
