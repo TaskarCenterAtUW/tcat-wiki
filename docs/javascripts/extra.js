@@ -74,7 +74,7 @@ const titleMapSource = {
     "olympia connected": "Olympia, Connected",
     oswmh: "OpenSidewalks Mappy Hours",
     otp26: "OpenThePaths 2026",
-    
+
     // --- Tutorials ---
     "osw in osmustm": "OSW in the OSM US TM",
 
