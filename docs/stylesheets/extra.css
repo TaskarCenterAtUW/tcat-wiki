@@ -404,11 +404,20 @@ abbr[title],
 }
 
 /* =============================================================================
-   13. Task Lists
+   13. Task Lists (Checkboxes)
    ============================================================================= */
 
 /* Vertically align the checkbox indicator and its label text */
 .task-list-control {
     display: inline-flex;
     align-items: center;
+}
+
+/* Keyboard focus ring on the custom checkbox.
+ * The native input is opacity:0, so style the label wrapper via :has().
+ * outline on the label (inline-flex with real dimensions) is reliably visible */
+.task-list-control:has(input[type="checkbox"]:focus-visible) {
+    outline: 2px solid currentColor;
+    outline-offset: 2px;
+    border-radius: 2px;
 }
