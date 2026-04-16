@@ -1,0 +1,77 @@
+{#-
+  Override of partials/consent.html.
+  Replaces the upstream "Accept" / "Reject" button labels with
+  "Save" / "Reject All" to make the actions unambiguous (the settings
+  panel is shown expanded by default, so "Save" reflects that users
+  choose individual cookies before confirming).
+  All other logic is identical to the upstream template.
+-#}
+{% macro render_cookie(cookie, type) %}
+  {% set checked = "" %}
+  {% if cookie is string %}
+    {% set name = cookie %}
+    {% set checked = "checked" %}
+  {% else %}
+    {% set name = cookie.name %}
+    {% if cookie.checked %}
+      {% set checked = "checked" %}
+    {% endif %}
+  {% endif %}
+  <li class="task-list-item">
+    <label class="task-list-control">
+      <input type="checkbox" name="{{ type }}" {{ checked }}>
+      <span class="task-list-indicator"></span>
+      {{ name }}
+    </label>
+  </li>
+{% endmacro %}
+{% set actions = config.extra.consent.actions %}
+{% if not actions %}
+  {% set actions = ["accept", "manage"] %}
+{% endif %}
+{% if "manage" not in actions %}
+  {% set checked = "checked" %}
+{% endif %}
+<h2 style="font-size: 1.1em; padding-top: 1em;">{{ config.extra.consent.title }}</h2>
+<p style="white-space: pre-line;">{{ config.extra.consent.description | trim }}</p>
+<input class="md-toggle" type="checkbox" id="__settings" {{ checked }}
+       aria-hidden="true" tabindex="-1">
+<div class="md-consent__settings">
+  <ul class="task-list">
+    {% set cookies = config.extra.consent.cookies %}
+    {% if "analytics" not in cookies %}
+      {% if config.extra.analytics %}
+        {{ render_cookie("Google Analytics", "analytics") }}
+      {% endif %}
+    {% endif %}
+    {% if "github" not in cookies %}
+      {% if config.repo_url and "github.com" in config.repo_url %}
+        {{ render_cookie("GitHub Statistics", "github") }}
+      {% endif %}
+    {% endif %}
+    {% for type in cookies %}
+      {% if cookies[type] %}
+        {{ render_cookie(cookies[type], type) }}
+      {% endif %}
+    {% endfor %}
+  </ul>
+</div>
+<div class="md-consent__controls" style="display: flex; flex-wrap: wrap; gap: 0.6rem;">
+  {% for action in actions %}
+    {% if action == "accept" %}
+      <button class="md-button md-button--primary">
+        Save
+      </button>
+    {% endif %}
+    {% if action == "reject" %}
+      <button type="reset" class="md-button">
+        Reject All
+      </button>
+    {% endif %}
+    {% if action == "manage" %}
+      <label class="md-button" for="__settings">
+        Manage Settings
+      </label>
+    {% endif %}
+  {% endfor %}
+</div>
