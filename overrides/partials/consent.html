@@ -46,7 +46,7 @@
     {% endif %}
     {% if "github" not in cookies %}
       {% if config.repo_url and "github.com" in config.repo_url %}
-        {{ render_cookie("GitHub", "github") }}
+        {{ render_cookie("GitHub Statistics", "github") }}
       {% endif %}
     {% endif %}
     {% for type in cookies %}
