@@ -59,8 +59,8 @@ For more specific filtering, select the **Filter** button to expand the filter p
 | **Valid From**    | Filter to datasets valid from a given date  |
 | **Valid To**      | Filter to datasets valid up to a given date |
 
-![The Datasets filter panel expanded with Type set to OSW and "TCAT_WSP_PG" entered in the Project Group field. One matching result is shown.](../../../resources/images/tdei-portal/tutorial/download-os-connect/filter-light.png#only-light)
-![The Datasets filter panel expanded with Type set to OSW and "TCAT_WSP_PG" entered in the Project Group field. One matching result is shown.](../../../resources/images/tdei-portal/tutorial/download-os-connect/filter-dark.png#only-dark)
+![The Datasets filter panel expanded with Type set to OSW and "TCAT_WSP_PG" entered in the Project Group field. One matching result is shown.](../../../resources/images/tdei/portal/tutorial/download-os-connect/filter-light.png#only-light)
+![The Datasets filter panel expanded with Type set to OSW and "TCAT_WSP_PG" entered in the Project Group field. One matching result is shown.](../../../resources/images/tdei/portal/tutorial/download-os-connect/filter-dark.png#only-dark)
 
 Select **Clear** next to any field to reset that filter, or use **Sort by** to change the sort order. Select the **Refresh (↻)** button to refresh the list.
 
