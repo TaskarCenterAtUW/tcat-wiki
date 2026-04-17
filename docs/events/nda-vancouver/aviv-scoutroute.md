@@ -26,9 +26,8 @@ This section covers the installation of the AVIV ScoutRoute mobile app for both 
 
     [https://portal.tdei.us/register?code=NDAV26HIJ](https://portal.tdei.us/register?code=NDAV26HIJ)
 
-    ![QR Code: https://portal.tdei.us/register?code=NDAV26HIJ](../../resources/images/tdei-portal/qr-codes/NDAV26HIJ-nda-vancouver-dark.png#only-dark){ width="200" }
-
-    ![QR Code: https://portal.tdei.us/register?code=NDAV26HIJ](../../resources/images/tdei-portal/qr-codes/NDAV26HIJ-nda-vancouver-light.png#only-light){ width="200" }
+    ![QR Code: https://portal.tdei.us/register?code=NDAV26HIJ](../../resources/images/tdei/portal/referral-codes/832c0df9-1950-4c72-ac25-232c7752beb0/NDAV26HIJ-dark.png#only-dark){ width="200" }
+    ![QR Code: https://portal.tdei.us/register?code=NDAV26HIJ](../../resources/images/tdei/portal/referral-codes/832c0df9-1950-4c72-ac25-232c7752beb0/NDAV26HIJ-light.png#only-light){ width="200" }
 
     _Note: If you already have a TDEI Portal account, skip the next step. Instead, scroll to the bottom of the page and select "**Sign in**"_
 
