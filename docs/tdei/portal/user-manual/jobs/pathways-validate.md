@@ -25,8 +25,8 @@ Validates a GTFS-Pathways dataset to check the correctness of data.
 
 ### Job Creation Form
 
-![Pathways - Validate form](../../../../resources/images/tdei-portal/user-manual/jobs/pathways-validate-light.png#only-light)
-![Pathways - Validate form](../../../../resources/images/tdei-portal/user-manual/jobs/pathways-validate-dark.png#only-dark)
+![Pathways - Validate form](../../../../resources/images/tdei/portal/user-manual/jobs/pathways-validate-light.png#only-light)
+![Pathways - Validate form](../../../../resources/images/tdei/portal/user-manual/jobs/pathways-validate-dark.png#only-dark)
 
 <div class="full-width" markdown>
 

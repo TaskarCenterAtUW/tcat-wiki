@@ -27,8 +27,8 @@ The **Datasets** section lists datasets available within the TDEI system. It has
 | **My Project Datasets**   | Datasets belonging to your currently active project group                   |
 | **All Released Datasets** | All datasets that have been publicly released across the entire TDEI system |
 
-![The TDEI portal's Datasets page showing the All Released Datasets tab with Type set to All and no filters applied. Three datasets are visible.](../../../resources/images/tdei-portal/user-manual/datasets/all-released-light.png#only-light)
-![The TDEI portal's Datasets page showing the All Released Datasets tab with Type set to All and no filters applied. Three datasets are visible.](../../../resources/images/tdei-portal/user-manual/datasets/all-released-dark.png#only-dark)
+![The TDEI portal's Datasets page showing the All Released Datasets tab with Type set to All and no filters applied. Three datasets are visible.](../../../resources/images/tdei/portal/user-manual/datasets/all-released-light.png#only-light)
+![The TDEI portal's Datasets page showing the All Released Datasets tab with Type set to All and no filters applied. Three datasets are visible.](../../../resources/images/tdei/portal/user-manual/datasets/all-released-dark.png#only-dark)
 
 Each dataset entry displays:
 
@@ -74,8 +74,8 @@ Select **Clear** next to any field to reset that filter, or use **Sort by** to c
 
     For more information about OS-CONNECT dataset names, refer to [OS-CONNECT > Dataset Name Suffixes](../../../os-connect/index.md#dataset-name-suffixes).
 
-    ![The TDEI portal's Datasets page with the filter panel expanded, showing "Spokane" entered in the Dataset search field. Results show four matching datasets: WSP_Spokane_Valley_City, WSP_Spokane_UI, WSP_Spokane_City, and WSP_Spokane_County.](../../../resources/images/tdei-portal/user-manual/datasets/search-results-light.png#only-light)
-    ![The TDEI portal's Datasets page with the filter panel expanded, showing "Spokane" entered in the Dataset search field. Results show four matching datasets: WSP_Spokane_Valley_City, WSP_Spokane_UI, WSP_Spokane_City, and WSP_Spokane_County.](../../../resources/images/tdei-portal/user-manual/datasets/search-results-dark.png#only-dark)
+    ![The TDEI portal's Datasets page with the filter panel expanded, showing "Spokane" entered in the Dataset search field. Results show four matching datasets: WSP_Spokane_Valley_City, WSP_Spokane_UI, WSP_Spokane_City, and WSP_Spokane_County.](../../../resources/images/tdei/portal/user-manual/datasets/search-results-light.png#only-light)
+    ![The TDEI portal's Datasets page with the filter panel expanded, showing "Spokane" entered in the Dataset search field. Results show four matching datasets: WSP_Spokane_Valley_City, WSP_Spokane_UI, WSP_Spokane_City, and WSP_Spokane_County.](../../../resources/images/tdei/portal/user-manual/datasets/search-results-dark.png#only-dark)
 
 ---
 
@@ -90,8 +90,8 @@ Select the **action menu** (⋮) on the right side of any dataset row to access 
 | **Clone Dataset**      | Creates a copy of the dataset, allowing you to make changes without affecting the original                 |
 | **Download**           | Downloads the dataset files in a chosen format (see [Downloading a Dataset](#downloading-a-dataset) below) |
 
-![The dataset action menu open on the WSP_Verlot_CDP row, showing four options: Open in Workspaces, Download Metadata, Clone Dataset, and Download.](../../../resources/images/tdei-portal/user-manual/datasets/action-light.png#only-light)
-![The dataset action menu open on the WSP_Verlot_CDP row, showing four options: Open in Workspaces, Download Metadata, Clone Dataset, and Download.](../../../resources/images/tdei-portal/user-manual/datasets/action-dark.png#only-dark)
+![The dataset action menu open on the WSP_Verlot_CDP row, showing four options: Open in Workspaces, Download Metadata, Clone Dataset, and Download.](../../../resources/images/tdei/portal/user-manual/datasets/action-light.png#only-light)
+![The dataset action menu open on the WSP_Verlot_CDP row, showing four options: Open in Workspaces, Download Metadata, Clone Dataset, and Download.](../../../resources/images/tdei/portal/user-manual/datasets/action-dark.png#only-dark)
 
 ---
 
@@ -105,8 +105,8 @@ Select the **action menu** (⋮) on the right side of any dataset row to access 
 
 4. In the download dialog, use the **Select Format** dropdown to choose your preferred file format, then select **Download**
 
-![The OSW Dataset Download dialog with a Select Format dropdown set to OSW, a note reading "File format to download. Defaults to OSW.", and Cancel and Download buttons.](../../../resources/images/tdei-portal/user-manual/datasets/format-light.png#only-light)
-![The OSW Dataset Download dialog with a Select Format dropdown set to OSW, a note reading "File format to download. Defaults to OSW.", and Cancel and Download buttons.](../../../resources/images/tdei-portal/user-manual/datasets/format-dark.png#only-dark)
+![The OSW Dataset Download dialog with a Select Format dropdown set to OSW, a note reading "File format to download. Defaults to OSW.", and Cancel and Download buttons.](../../../resources/images/tdei/portal/user-manual/datasets/format-light.png#only-light)
+![The OSW Dataset Download dialog with a Select Format dropdown set to OSW, a note reading "File format to download. Defaults to OSW.", and Cancel and Download buttons.](../../../resources/images/tdei/portal/user-manual/datasets/format-dark.png#only-dark)
 
 !!! info "Looking for OS-CONNECT datasets?"
 

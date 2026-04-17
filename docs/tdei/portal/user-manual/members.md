@@ -26,15 +26,15 @@ The **Members** section displays the members of the currently active project gro
 
 If you do not have the `poc` [role](#roles), navigating to Members will show a permission error: _"Oops! User doesn't have permission to access this page!"_
 
-![Members page — permission denied](../../../resources/images/tdei-portal/user-manual/members/members-member-light.png#only-light)
-![Members page — permission denied](../../../resources/images/tdei-portal/user-manual/members/members-member-dark.png#only-dark)
+![Members page — permission denied](../../../resources/images/tdei/portal/user-manual/members/members-member-light.png#only-light)
+![Members page — permission denied](../../../resources/images/tdei/portal/user-manual/members/members-member-dark.png#only-dark)
 
 #### Point of Contact View
 
 As a **Point of Contact (`poc`)**, the Members page shows a list of all members in the currently selected project group, with a **Search User** field to filter the list and an **Assign New User** button to add new members.
 
-![Members page — Point of Contact view](../../../resources/images/tdei-portal/user-manual/members/members-poc-light.png#only-light)
-![Members page — Point of Contact view](../../../resources/images/tdei-portal/user-manual/members/members-poc-dark.png#only-dark)
+![Members page — Point of Contact view](../../../resources/images/tdei/portal/user-manual/members/members-poc-light.png#only-light)
+![Members page — Point of Contact view](../../../resources/images/tdei/portal/user-manual/members/members-poc-dark.png#only-dark)
 
 Each member entry displays:
 
@@ -47,8 +47,8 @@ Each member entry displays:
 
 ---
 
-![Assign Role to New User dialog — user not found error](../../../resources/images/tdei-portal/user-manual/members/user-not-found-light.png#only-light){ .img-right }
-![Assign Role to New User dialog — user not found error](../../../resources/images/tdei-portal/user-manual/members/user-not-found-dark.png#only-dark){ .img-right }
+![Assign Role to New User dialog — user not found error](../../../resources/images/tdei/portal/user-manual/members/user-not-found-light.png#only-light){ .img-right }
+![Assign Role to New User dialog — user not found error](../../../resources/images/tdei/portal/user-manual/members/user-not-found-dark.png#only-dark){ .img-right }
 
 ### Assigning a New User
 
@@ -64,8 +64,8 @@ To add a new user to your project group:
 
 4. Select **Assign** to confirm, or **Cancel** to dismiss
 
-![Assign Role to New User dialog](../../../resources/images/tdei-portal/user-manual/members/assign-role-light.png#only-light)
-![Assign Role to New User dialog](../../../resources/images/tdei-portal/user-manual/members/assign-role-dark.png#only-dark)
+![Assign Role to New User dialog](../../../resources/images/tdei/portal/user-manual/members/assign-role-light.png#only-light)
+![Assign Role to New User dialog](../../../resources/images/tdei/portal/user-manual/members/assign-role-dark.png#only-dark)
 
 !!! danger "Assign roles carefully!"
 

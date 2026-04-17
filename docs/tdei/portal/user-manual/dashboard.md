@@ -22,8 +22,8 @@ _For a list of all guides on the TCAT Wiki, refer to the [Guides List](../../../
 
 After logging in, you will be taken to the **Dashboard**. The dashboard is the main landing page of the TDEI Portal and displays your current project group, your role within it, your Project Id, and your API key.
 
-![TDEI Portal dashboard](../../../resources/images/tdei-portal/user-manual/dashboard/dashboard-light.png#only-light)
-![TDEI Portal dashboard](../../../resources/images/tdei-portal/user-manual/dashboard/dashboard-dark.png#only-dark)
+![TDEI Portal dashboard](../../../resources/images/tdei/portal/user-manual/dashboard/dashboard-light.png#only-light)
+![TDEI Portal dashboard](../../../resources/images/tdei/portal/user-manual/dashboard/dashboard-dark.png#only-dark)
 
 The dashboard shows:
 
@@ -56,8 +56,8 @@ Your **API key** is displayed on the dashboard in a masked field. Use the button
 
 In the top-right of the header bar, the **Project Group** area (left of your username) displays your currently active project group. Select it to open the project group dropdown, which shows your current group and allows you to switch to another.
 
-![Project group dropdown](../../../resources/images/tdei-portal/user-manual/dashboard/project-group-dropdown-light.png#only-light)
-![Project group dropdown](../../../resources/images/tdei-portal/user-manual/dashboard/project-group-dropdown-dark.png#only-dark)
+![Project group dropdown](../../../resources/images/tdei/portal/user-manual/dashboard/project-group-dropdown-light.png#only-light)
+![Project group dropdown](../../../resources/images/tdei/portal/user-manual/dashboard/project-group-dropdown-dark.png#only-dark)
 
 Switching project groups updates the other sections of the portal to reflect the selected group.
 
@@ -67,15 +67,15 @@ Switching project groups updates the other sections of the portal to reflect the
 
 In the top-right of the header bar, select your **username** (right of the project group selector) to open the user menu, which provides the following options:
 
-![User menu](../../../resources/images/tdei-portal/user-manual/dashboard/reset-password-option-light.png#only-light)
-![User menu](../../../resources/images/tdei-portal/user-manual/dashboard/reset-password-option-dark.png#only-dark)
+![User menu](../../../resources/images/tdei/portal/user-manual/dashboard/reset-password-option-light.png#only-light)
+![User menu](../../../resources/images/tdei/portal/user-manual/dashboard/reset-password-option-dark.png#only-dark)
 
 #### Reset Password
 
 Select **Reset Password** to open a dialog where you can change your password by entering your current password and a new password.
 
-![Reset password dialog](../../../resources/images/tdei-portal/user-manual/dashboard/reset-password-popup-light.png#only-light)
-![Reset password dialog](../../../resources/images/tdei-portal/user-manual/dashboard/reset-password-popup-dark.png#only-dark)
+![Reset password dialog](../../../resources/images/tdei/portal/user-manual/dashboard/reset-password-popup-light.png#only-light)
+![Reset password dialog](../../../resources/images/tdei/portal/user-manual/dashboard/reset-password-popup-dark.png#only-dark)
 
 !!! warning
 
@@ -85,8 +85,8 @@ Select **Reset Password** to open a dialog where you can change your password by
 
 Select **Join With Referral Code** to join a project group using a referral code. Paste in the code shared with you and select **Apply**, or select **Cancel** to dismiss the popup.
 
-![Join with referral code dialog](../../../resources/images/tdei-portal/user-manual/dashboard/join-with-referral-code-popup-light.png#only-light)
-![Join with referral code dialog](../../../resources/images/tdei-portal/user-manual/dashboard/join-with-referral-code-popup-dark.png#only-dark)
+![Join with referral code dialog](../../../resources/images/tdei/portal/user-manual/dashboard/join-with-referral-code-popup-light.png#only-light)
+![Join with referral code dialog](../../../resources/images/tdei/portal/user-manual/dashboard/join-with-referral-code-popup-dark.png#only-dark)
 
 #### Logout
 

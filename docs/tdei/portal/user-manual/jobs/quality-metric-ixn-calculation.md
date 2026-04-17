@@ -25,8 +25,8 @@ Calculates the intersection quality metric for a dataset. An optional intersecti
 
 ### Job Creation Form
 
-![Quality Metric IXN Calculation form](../../../../resources/images/tdei-portal/user-manual/jobs/quality-metric-ixn-calculation-light.png#only-light)
-![Quality Metric IXN Calculation form](../../../../resources/images/tdei-portal/user-manual/jobs/quality-metric-ixn-calculation-dark.png#only-dark)
+![Quality Metric IXN Calculation form](../../../../resources/images/tdei/portal/user-manual/jobs/quality-metric-ixn-calculation-light.png#only-light)
+![Quality Metric IXN Calculation form](../../../../resources/images/tdei/portal/user-manual/jobs/quality-metric-ixn-calculation-dark.png#only-dark)
 
 <div class="full-width" markdown>
 
