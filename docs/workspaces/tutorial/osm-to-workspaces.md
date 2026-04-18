@@ -20,18 +20,18 @@ _For a list of all guides on the TCAT Wiki, refer to the [Guides List](../../gui
 
 1. Open [SliceOSM](https://slice.openstreetmap.us/) in your browser.
 
-    ![SliceOSM landing page](../../resources/images/workspaces/tutorial/osm-to-workspaces/sliceosm-landing-light.png#only-light)
-    ![SliceOSM landing page](../../resources/images/workspaces/tutorial/osm-to-workspaces/sliceosm-landing-dark.png#only-dark)
+    ![SliceOSM interface showing a world map with shape selection tools, a search bar, and a Generate Slice button](../../resources/images/workspaces/tutorial/osm-to-workspaces/sliceosm-landing-light.png#only-light)
+    ![SliceOSM interface showing a world map with shape selection tools, a search bar, and a Generate Slice button](../../resources/images/workspaces/tutorial/osm-to-workspaces/sliceosm-landing-dark.png#only-dark)
 
 2. Search for a location or use the map to navigate to your area of interest, **draw a bounding box** (or other shape) around it, and enter a name for the area.
 
-    ![SliceOSM bounding box selection](../../resources/images/workspaces/tutorial/osm-to-workspaces/sliceosm-bbox-light.png#only-light)
-    ![SliceOSM bounding box selection](../../resources/images/workspaces/tutorial/osm-to-workspaces/sliceosm-bbox-dark.png#only-dark)
+    ![SliceOSM interface showing a map of Covington, WA with a selected area of interest highlighted in purple](../../resources/images/workspaces/tutorial/osm-to-workspaces/sliceosm-bbox-light.png#only-light)
+    ![SliceOSM interface showing a map of Covington, WA with a selected area of interest highlighted in purple](../../resources/images/workspaces/tutorial/osm-to-workspaces/sliceosm-bbox-dark.png#only-dark)
 
 3. Select **Generate Slice**, then select **Download .osm.pbf** once the slice is ready.
 
-    ![SliceOSM download](../../resources/images/workspaces/tutorial/osm-to-workspaces/sliceosm-download-light.png#only-light)
-    ![SliceOSM download](../../resources/images/workspaces/tutorial/osm-to-workspaces/sliceosm-download-dark.png#only-dark)
+    ![SliceOSM showing a completed extract for Covington, WA, with a Download .osm.pbf button](../../resources/images/workspaces/tutorial/osm-to-workspaces/sliceosm-download-light.png#only-light)
+    ![SliceOSM showing a completed extract for Covington, WA, with a Download .osm.pbf button](../../resources/images/workspaces/tutorial/osm-to-workspaces/sliceosm-download-dark.png#only-dark)
 
 ---
 
@@ -45,13 +45,13 @@ Use the [TDEI Portal](https://portal.tdei.us/jobs) to create and run a new **OSW
 
 3. Set **Job Type** to **OSW - Convert**, **Source Format** to **OSM**, and **Target Format** to **OSW**. Upload your `.osm.pbf` file, then select **Create**.
 
-    ![TDEI Portal create OSW - Convert job](../../resources/images/workspaces/tutorial/osm-to-workspaces/tdei-portal-create-job-light.png#only-light)
-    ![TDEI Portal create OSW - Convert job](../../resources/images/workspaces/tutorial/osm-to-workspaces/tdei-portal-create-job-dark.png#only-dark)
+    ![TDEI Portal Create Job form with Job Type set to OSW Convert, Source Format OSM, Target Format OSW, and the file us-wa-covington.osm.pbf attached](../../resources/images/workspaces/tutorial/osm-to-workspaces/tdei-portal-create-job-light.png#only-light)
+    ![TDEI Portal Create Job form with Job Type set to OSW Convert, Source Format OSM, Target Format OSW, and the file us-wa-covington.osm.pbf attached](../../resources/images/workspaces/tutorial/osm-to-workspaces/tdei-portal-create-job-dark.png#only-dark)
 
 4. After submitting, a popup will prompt you to navigate to the **Jobs** page. Go there and find your **Dataset-Reformat** job at the top of the list. Once it shows **Completed**, select **Download Result** to download the output, which will be named `<JobId>.zip`.
 
-    ![TDEI Portal completed job with Download Result](../../resources/images/workspaces/tutorial/osm-to-workspaces/tdei-portal-job-completed-light.png#only-light)
-    ![TDEI Portal completed job with Download Result](../../resources/images/workspaces/tutorial/osm-to-workspaces/tdei-portal-job-completed-dark.png#only-dark)
+    ![TDEI Portal Jobs page with a Success Download has been initiated notification banner at the top](../../resources/images/workspaces/tutorial/osm-to-workspaces/tdei-portal-job-completed-light.png#only-light)
+    ![TDEI Portal Jobs page with a Success Download has been initiated notification banner at the top](../../resources/images/workspaces/tutorial/osm-to-workspaces/tdei-portal-job-completed-dark.png#only-dark)
 
 ---
 
@@ -61,8 +61,8 @@ Use the [TDEI Portal](https://portal.tdei.us/jobs) to create and run a new **OSW
 
 2. Fill in the **Workspace Title** and **Project Group**, set **Dataset Type** to **OpenSidewalks**, and upload the `<JobId>.zip` from the previous step. Select **Create Workspace**.
 
-    ![Workspaces create workspace form](../../resources/images/workspaces/tutorial/osm-to-workspaces/workspaces-create-workspace-light.png#only-light)
-    ![Workspaces create workspace form](../../resources/images/workspaces/tutorial/osm-to-workspaces/workspaces-create-workspace-dark.png#only-dark)
+    ![TDEI Workspaces Create Workspace from File form with title Covington, WA, US, Dataset Type OpenSidewalks selected, and the file 35241.zip attached](../../resources/images/workspaces/tutorial/osm-to-workspaces/workspaces-create-workspace-light.png#only-light)
+    ![TDEI Workspaces Create Workspace from File form with title Covington, WA, US, Dataset Type OpenSidewalks selected, and the file 35241.zip attached](../../resources/images/workspaces/tutorial/osm-to-workspaces/workspaces-create-workspace-dark.png#only-dark)
 
 3. The page will show **Converting dataset...** while the file is processed, followed by **Initializing workspace...** and then **Importing dataset to workspace...** before the process completes and the page automatically refreshes.
 
@@ -72,8 +72,8 @@ Use the [TDEI Portal](https://portal.tdei.us/jobs) to create and run a new **OSW
 
 4. Once complete, you will be taken to the dashboard with the newly created workspace selected.
 
-    ![Workspaces dashboard with new workspace](../../resources/images/workspaces/tutorial/osm-to-workspaces/workspaces-created-workspace-light.png#only-light)
-    ![Workspaces dashboard with new workspace](../../resources/images/workspaces/tutorial/osm-to-workspaces/workspaces-created-workspace-dark.png#only-dark)
+    ![TDEI Workspaces dashboard showing the Covington, WA, US OSW workspace selected, with a map preview of the Covington area and workspace metadata including creation date and project group ID](../../resources/images/workspaces/tutorial/osm-to-workspaces/workspaces-created-workspace-light.png#only-light)
+    ![TDEI Workspaces dashboard showing the Covington, WA, US OSW workspace selected, with a map preview of the Covington area and workspace metadata including creation date and project group ID](../../resources/images/workspaces/tutorial/osm-to-workspaces/workspaces-created-workspace-dark.png#only-dark)
 
 !!! success "You have now successfully created a new workspace using the latest OSM data!"
 

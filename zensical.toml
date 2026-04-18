@@ -311,8 +311,10 @@ nav = [
     ]},
     {"Workspaces" = [
         "workspaces/index.md",
-        {"Workspace Export Guide" = "workspaces/workspace-export.md"},
-        {"Tutorial" = [ {"Import OSM Data into Workspaces" = "workspaces/tutorial/osm-to-workspaces.md"} ]},
+        {"Tutorial" = [
+            {"Import OSM Data into Workspaces" = "workspaces/tutorial/osm-to-workspaces.md"},
+            {"Workspace Export Guide" = "workspaces/tutorial/workspace-export.md"}
+        ]},
         {"User Manual" = [
             "workspaces/user-manual/index.md",
             {"Workspace Settings" = "workspaces/user-manual/workspace-settings.md"}
