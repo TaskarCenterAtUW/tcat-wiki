@@ -136,10 +136,10 @@ This user manual explains how to use the TDEI Walksheds tool.
 
 This tutorial explains how to download an area of interest from OpenStreetMap, convert it to the OpenSidewalks format, and upload it to Workspaces.
 
+##### [Workspace Export Guide](../workspaces/tutorial/workspace-export.md)
+
+This tutorial explains how to directly export a dataset in `.osm` format from Workspaces.
+
 #### [Workspaces User Manual](../workspaces/user-manual/index.md)
 
 This user manual explains how to use the TDEI Workspaces platform.
-
-#### [Workspace Export Guide](../workspaces/workspace-export.md)
-
-This guide explains how to directly export a dataset in `.osm` format from Workspaces.
