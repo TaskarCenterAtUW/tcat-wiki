@@ -27,8 +27,8 @@ _Example: Find all light poles in a source dataset within 5 m of an edge in a ta
 
 ### Job Creation Form
 
-![Spatial Join form](../../../../resources/images/tdei-portal/user-manual/jobs/spatial-join-light.png#only-light)
-![Spatial Join form](../../../../resources/images/tdei-portal/user-manual/jobs/spatial-join-dark.png#only-dark)
+![Spatial Join form](../../../../resources/images/tdei/portal/user-manual/jobs/spatial-join-light.png#only-light)
+![Spatial Join form](../../../../resources/images/tdei/portal/user-manual/jobs/spatial-join-dark.png#only-dark)
 
 The form contains a JSON text area pre-populated with the following template:
 

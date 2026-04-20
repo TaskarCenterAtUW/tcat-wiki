@@ -22,8 +22,8 @@ _For a list of all guides on the TCAT Wiki, refer to the [Guides List](../../../
 
 The **Jobs** section lists all processing jobs you have access to within the TDEI system. Jobs allow users to submit requests for data processing operations such as validation, format conversion, quality metric calculation, and more.
 
-![Jobs page](../../../../resources/images/tdei-portal/user-manual/jobs/jobs-light.png#only-light)
-![Jobs page](../../../../resources/images/tdei-portal/user-manual/jobs/jobs-dark.png#only-dark)
+![Jobs page](../../../../resources/images/tdei/portal/user-manual/jobs/jobs-light.png#only-light)
+![Jobs page](../../../../resources/images/tdei/portal/user-manual/jobs/jobs-dark.png#only-dark)
 
 Each job entry displays:
 
@@ -57,8 +57,8 @@ Select **Refresh (↻)** to refresh the job list.
 
 Select the **Create Job** button (top right) to open the **Create New Job** page.
 
-![Create New Job page](../../../../resources/images/tdei-portal/user-manual/jobs/create-light.png#only-light)
-![Create New Job page](../../../../resources/images/tdei-portal/user-manual/jobs/create-dark.png#only-dark)
+![Create New Job page](../../../../resources/images/tdei/portal/user-manual/jobs/create-light.png#only-light)
+![Create New Job page](../../../../resources/images/tdei/portal/user-manual/jobs/create-dark.png#only-dark)
 
 Select a **Job Type** from the dropdown. Once selected, the relevant input fields for that job type will appear. Fill in the required inputs and select **Create** to submit the job. Select **Cancel** to return to the Jobs list without submitting.
 

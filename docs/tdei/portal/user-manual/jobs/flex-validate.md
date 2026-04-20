@@ -25,8 +25,8 @@ Validates a GTFS-Flex dataset to check the correctness of data.
 
 ### Job Creation Form
 
-![Flex - Validate form](../../../../resources/images/tdei-portal/user-manual/jobs/flex-validate-light.png#only-light)
-![Flex - Validate form](../../../../resources/images/tdei-portal/user-manual/jobs/flex-validate-dark.png#only-dark)
+![Flex - Validate form](../../../../resources/images/tdei/portal/user-manual/jobs/flex-validate-light.png#only-light)
+![Flex - Validate form](../../../../resources/images/tdei/portal/user-manual/jobs/flex-validate-dark.png#only-dark)
 
 <div class="full-width" markdown>
 

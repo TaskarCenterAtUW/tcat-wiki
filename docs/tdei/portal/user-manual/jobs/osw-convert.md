@@ -25,8 +25,8 @@ Converts an OSW dataset to OSM format, or vice versa.
 
 ### Job Creation Form
 
-![OSW - Convert form](../../../../resources/images/tdei-portal/user-manual/jobs/osw-convert-light.png#only-light)
-![OSW - Convert form](../../../../resources/images/tdei-portal/user-manual/jobs/osw-convert-dark.png#only-dark)
+![OSW - Convert form](../../../../resources/images/tdei/portal/user-manual/jobs/osw-convert-light.png#only-light)
+![OSW - Convert form](../../../../resources/images/tdei/portal/user-manual/jobs/osw-convert-dark.png#only-dark)
 
 <div class="full-width" markdown>
 

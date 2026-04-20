@@ -25,8 +25,8 @@ Returns a subgraph of a dataset that falls within a specified bounding box, defi
 
 ### Job Creation Form
 
-![Filter Dataset By BBox form](../../../../resources/images/tdei-portal/user-manual/jobs/filter-dataset-by-bbox-light.png#only-light)
-![Filter Dataset By BBox form](../../../../resources/images/tdei-portal/user-manual/jobs/filter-dataset-by-bbox-dark.png#only-dark)
+![Filter Dataset By BBox form](../../../../resources/images/tdei/portal/user-manual/jobs/filter-dataset-by-bbox-light.png#only-light)
+![Filter Dataset By BBox form](../../../../resources/images/tdei/portal/user-manual/jobs/filter-dataset-by-bbox-dark.png#only-dark)
 
 <div class="full-width" markdown>
 

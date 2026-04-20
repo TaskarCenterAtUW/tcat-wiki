@@ -25,8 +25,8 @@ Calculates quality metrics on dataset element tags. Tags are the specific attrib
 
 ### Job Creation Form
 
-![Quality Metric Tag form](../../../../resources/images/tdei-portal/user-manual/jobs/quality-metric-tag-light.png#only-light)
-![Quality Metric Tag form](../../../../resources/images/tdei-portal/user-manual/jobs/quality-metric-tag-dark.png#only-dark)
+![Quality Metric Tag form](../../../../resources/images/tdei/portal/user-manual/jobs/quality-metric-tag-light.png#only-light)
+![Quality Metric Tag form](../../../../resources/images/tdei/portal/user-manual/jobs/quality-metric-tag-dark.png#only-dark)
 
 <div class="full-width" markdown>
 

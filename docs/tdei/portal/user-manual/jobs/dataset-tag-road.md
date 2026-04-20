@@ -25,8 +25,8 @@ Associates sidewalks from a target dataset with the road network from a source d
 
 ### Job Creation Form
 
-![Dataset Tag Road form](../../../../resources/images/tdei-portal/user-manual/jobs/dataset-tag-road-light.png#only-light)
-![Dataset Tag Road form](../../../../resources/images/tdei-portal/user-manual/jobs/dataset-tag-road-dark.png#only-dark)
+![Dataset Tag Road form](../../../../resources/images/tdei/portal/user-manual/jobs/dataset-tag-road-light.png#only-light)
+![Dataset Tag Road form](../../../../resources/images/tdei/portal/user-manual/jobs/dataset-tag-road-dark.png#only-dark)
 
 <div class="full-width" markdown>
 

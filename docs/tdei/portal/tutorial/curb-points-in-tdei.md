@@ -41,15 +41,15 @@ The Seattle Department of Transportation (SDOT) curb ramps dataset is used as a 
 
 3. **Save** the file to a convenient location on your device, with a name such as `curb_ramps.geojson`.
 
-    ![Dataset download options](../../../resources/images/tdei-portal/tutorial/curb-points-in-tdei/dataset-download-light.png#only-light)
-    ![Dataset download options](../../../resources/images/tdei-portal/tutorial/curb-points-in-tdei/dataset-download-dark.png#only-dark)
+    ![Dataset download options](../../../resources/images/tdei/portal/tutorial/curb-points-in-tdei/dataset-download-light.png#only-light)
+    ![Dataset download options](../../../resources/images/tdei/portal/tutorial/curb-points-in-tdei/dataset-download-dark.png#only-dark)
 
 ??? question "Download not working?"
 
     If an _"Up to date download file is being generated. Please check back again later."_ or similar message appears after selecting the download button, simply wait for some time then **Refresh** (++f5++) the page. Depending on the size of the dataset, this part of the process may take anywhere from only a few seconds up to an hour or more.
 
-    ![Dataset generating](../../../resources/images/tdei-portal/tutorial/curb-points-in-tdei/dataset-generating-light.png#only-light)
-    ![Dataset generating](../../../resources/images/tdei-portal/tutorial/curb-points-in-tdei/dataset-generating-dark.png#only-dark)
+    ![Dataset generating](../../../resources/images/tdei/portal/tutorial/curb-points-in-tdei/dataset-generating-light.png#only-light)
+    ![Dataset generating](../../../resources/images/tdei/portal/tutorial/curb-points-in-tdei/dataset-generating-dark.png#only-dark)
 
 !!! info "Using a different dataset?"
 
@@ -107,8 +107,8 @@ The Seattle Department of Transportation (SDOT) curb ramps dataset is used as a 
       Features   : 45,814
     ```
 
-    ![Terminal with convert-curb-ramps.py run](../../../resources/images/tdei-portal/tutorial/curb-points-in-tdei/convert-curb-ramps-light.png#only-light)
-    ![Terminal with convert-curb-ramps.py run](../../../resources/images/tdei-portal/tutorial/curb-points-in-tdei/convert-curb-ramps-dark.png#only-dark)
+    ![Terminal with convert-curb-ramps.py run](../../../resources/images/tdei/portal/tutorial/curb-points-in-tdei/convert-curb-ramps-light.png#only-light)
+    ![Terminal with convert-curb-ramps.py run](../../../resources/images/tdei/portal/tutorial/curb-points-in-tdei/convert-curb-ramps-dark.png#only-dark)
 
     !!! warning "Adapt the script for your dataset!"
 
@@ -126,8 +126,8 @@ Before uploading, it is recommended to validate the converted file using the TDE
 
 3. Set **Job Type** to **OSW - Validate**, upload your `.zip` file, and select **Create**.
 
-    ![TDEI Portal create OSW - Validate job](../../../resources/images/tdei-portal/tutorial/curb-points-in-tdei/validate-light.png#only-light)
-    ![TDEI Portal create OSW - Validate job](../../../resources/images/tdei-portal/tutorial/curb-points-in-tdei/validate-dark.png#only-dark)
+    ![TDEI Portal create OSW - Validate job](../../../resources/images/tdei/portal/tutorial/curb-points-in-tdei/validate-light.png#only-light)
+    ![TDEI Portal create OSW - Validate job](../../../resources/images/tdei/portal/tutorial/curb-points-in-tdei/validate-dark.png#only-dark)
 
 4. Monitor the status on the **Jobs** page. A **Completed** status confirms the file is valid and ready to upload. A **Failed** status indicates validation errors — review the job details for error messages.
 
@@ -143,13 +143,13 @@ Upload the resulting `.zip` file to the TDEI Portal as a new OSW dataset.
 
 2.  Choose a **Service**: Choose an available `OSW` service, then select **Next**.
 
-    ![Upload Dataset — Select Service step](../../../resources/images/tdei-portal/tutorial/curb-points-in-tdei/upload-01-service-light.png#only-light)
-    ![Upload Dataset — Select Service step](../../../resources/images/tdei-portal/tutorial/curb-points-in-tdei/upload-01-service-dark.png#only-dark)
+    ![Upload Dataset — Select Service step](../../../resources/images/tdei/portal/tutorial/curb-points-in-tdei/upload-01-service-light.png#only-light)
+    ![Upload Dataset — Select Service step](../../../resources/images/tdei/portal/tutorial/curb-points-in-tdei/upload-01-service-dark.png#only-dark)
 
 3.  **Attach Data File**: Drag and drop your `.zip` file onto the upload area (or select to browse), then select **Next**.
 
-    ![Upload Dataset — Data File and Metadata step](../../../resources/images/tdei-portal/tutorial/curb-points-in-tdei/upload-02-file-light.png#only-light)
-    ![Upload Dataset — Data File and Metadata step](../../../resources/images/tdei-portal/tutorial/curb-points-in-tdei/upload-02-file-dark.png#only-dark)
+    ![Upload Dataset — Data File and Metadata step](../../../resources/images/tdei/portal/tutorial/curb-points-in-tdei/upload-02-file-light.png#only-light)
+    ![Upload Dataset — Data File and Metadata step](../../../resources/images/tdei/portal/tutorial/curb-points-in-tdei/upload-02-file-dark.png#only-dark)
 
 4.  Specify **Metadata**: Fill in the required metadata fields across the tabs:
     - **Dataset Details** tab:
@@ -160,30 +160,30 @@ Upload the resulting `.zip` file to the TDEI Portal as a new OSW dataset.
         - _Collection Date_
         - _Data Source_
 
-    ![Upload Dataset — Dataset Details tab](../../../resources/images/tdei-portal/tutorial/curb-points-in-tdei/upload-03-details-light.png#only-light)
-    ![Upload Dataset — Dataset Details tab](../../../resources/images/tdei-portal/tutorial/curb-points-in-tdei/upload-03-details-dark.png#only-dark)
+    ![Upload Dataset — Dataset Details tab](../../../resources/images/tdei/portal/tutorial/curb-points-in-tdei/upload-03-details-light.png#only-light)
+    ![Upload Dataset — Dataset Details tab](../../../resources/images/tdei/portal/tutorial/curb-points-in-tdei/upload-03-details-dark.png#only-dark)
     - **Data Provenance** tab:
         - _Full Dataset Name_
 
     ??? note "Screenshot: Data Provenance tab"
 
-        ![Upload Dataset — Data Provenance tab](../../../resources/images/tdei-portal/tutorial/curb-points-in-tdei/upload-04-provenance-light.png#only-light)
-        ![Upload Dataset — Data Provenance tab](../../../resources/images/tdei-portal/tutorial/curb-points-in-tdei/upload-04-provenance-dark.png#only-dark)
+        ![Upload Dataset — Data Provenance tab](../../../resources/images/tdei/portal/tutorial/curb-points-in-tdei/upload-04-provenance-light.png#only-light)
+        ![Upload Dataset — Data Provenance tab](../../../resources/images/tdei/portal/tutorial/curb-points-in-tdei/upload-04-provenance-dark.png#only-dark)
 
 5.  **Changeset**: Leave this step empty and select **Submit** at the bottom right.
 
-    ![Upload Dataset — Changeset step](../../../resources/images/tdei-portal/tutorial/curb-points-in-tdei/upload-05-changeset-light.png#only-light)
-    ![Upload Dataset — Changeset step](../../../resources/images/tdei-portal/tutorial/curb-points-in-tdei/upload-05-changeset-dark.png#only-dark)
+    ![Upload Dataset — Changeset step](../../../resources/images/tdei/portal/tutorial/curb-points-in-tdei/upload-05-changeset-light.png#only-light)
+    ![Upload Dataset — Changeset step](../../../resources/images/tdei/portal/tutorial/curb-points-in-tdei/upload-05-changeset-dark.png#only-dark)
 
 6.  A **Success** popup confirms the upload job was accepted. Select **Go to Jobs Page** to monitor its progress.
 
-    ![Upload Dataset — Success popup](../../../resources/images/tdei-portal/tutorial/curb-points-in-tdei/upload-06-success-light.png#only-light)
-    ![Upload Dataset — Success popup](../../../resources/images/tdei-portal/tutorial/curb-points-in-tdei/upload-06-success-dark.png#only-dark)
+    ![Upload Dataset — Success popup](../../../resources/images/tdei/portal/tutorial/curb-points-in-tdei/upload-06-success-light.png#only-light)
+    ![Upload Dataset — Success popup](../../../resources/images/tdei/portal/tutorial/curb-points-in-tdei/upload-06-success-dark.png#only-dark)
 
 7.  A new **Dataset-Upload** entry will appear at the top of the Jobs list. Wait for the status to show **Completed**.
 
-    ![Jobs page showing completed Dataset-Upload job](../../../resources/images/tdei-portal/tutorial/curb-points-in-tdei/upload-07-jobs-light.png#only-light)
-    ![Jobs page showing completed Dataset-Upload job](../../../resources/images/tdei-portal/tutorial/curb-points-in-tdei/upload-07-jobs-dark.png#only-dark)
+    ![Jobs page showing completed Dataset-Upload job](../../../resources/images/tdei/portal/tutorial/curb-points-in-tdei/upload-07-jobs-light.png#only-light)
+    ![Jobs page showing completed Dataset-Upload job](../../../resources/images/tdei/portal/tutorial/curb-points-in-tdei/upload-07-jobs-dark.png#only-dark)
 
     !!! info "This job may take a moment"
 
@@ -191,8 +191,8 @@ Upload the resulting `.zip` file to the TDEI Portal as a new OSW dataset.
 
 8.  The dataset will now be available in the **Datasets** section of the portal.
 
-    ![TDEI Portal Datasets page](../../../resources/images/tdei-portal/tutorial/curb-points-in-tdei/datasets-light.png#only-light)
-    ![TDEI Portal Datasets page](../../../resources/images/tdei-portal/tutorial/curb-points-in-tdei/datasets-dark.png#only-dark)
+    ![TDEI Portal Datasets page](../../../resources/images/tdei/portal/tutorial/curb-points-in-tdei/datasets-light.png#only-light)
+    ![TDEI Portal Datasets page](../../../resources/images/tdei/portal/tutorial/curb-points-in-tdei/datasets-dark.png#only-dark)
 
 For more details on working with datasets in the TDEI Portal, refer to the [Datasets](../user-manual/datasets.md) guide.
 
