@@ -12,6 +12,9 @@
 *[APS]: Accessible Pedestrian Signal
 *[ARNOLD]: All Road Network of Linear Referenced Data
 *[ASR]: AVIV ScoutRoute
+*[ATP]: Active Transportation Plan
+*[ATSAC]: Cooper Jones Active Transportation Safety Advisory Council
+*[ATSC]: Cooper Jones Active Transportation Safety Council
 *[ATTRI]: Accessible Transportation Technologies Research Initiative
 *[AT-DaWG]: Active Transportation Data Working Group
 *[AVIV]: Accessibility Verification, Improved Validation
@@ -20,6 +23,7 @@
 *[BBox]: Bounding Box
 *[BLV]: Blind and Low-Vision
 *[BRT]: Bus Rapid Transit
+*[BSAC]: Cooper Jones Bicyclist Safety Advisory Council
 *[BTS]: Bureau of Transportation Statistics
 *[CAD]: Computer-Aided Design
 *[CADD]: Computer-Aided Design and Drafting
@@ -149,6 +153,7 @@
 *[POI]: Point of Interest
 *[POIs]: Points of Interest
 *[PROWAG]: Public Right-of-Way Accessibility Guidelines
+*[PSAC]: Pedestrian Safety Advisory Council
 *[PSRC]: Puget Sound Regional Council
 *[PWG]: Pedestrian Working Group
 *[QA]: Quality Assurance
@@ -176,6 +181,7 @@
 *[SPS]: Seattle Public Schools
 *[SRID]: Spatial Reference System Identifier
 *[SRTS]: Safe Routes to School
+*[STAR]: Smart Transportation Applications and Research
 *[STIP]: State Transportation Improvement Program
 *[SUMC]: Shared User Mobility Conference / Shared Use Mobility Center
 *[SVEA]: Snoqualmie Valley Economic Alliance
@@ -223,5 +229,6 @@
 *[WMS]: Web Map Service
 *[WMTS]: Web Map Tile Service
 *[WSDOT]: Washington State Department of Transportation
+*[WTSC]: Washington Traffic Safety Commission
 *[WSP]: Washington State Proviso
 *[XML]: Extensible Markup Language
