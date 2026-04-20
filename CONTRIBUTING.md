@@ -270,7 +270,12 @@ For creating image annotations with a consistent style, follow these guidelines.
     1. Use: Indicating an area of focus in an image.
     2. Style: Use the native keyboard navigation highlight
     3. Example:
-        ![Screenshot of TDEI Portal Dashboard page with the Copy API Key button highlighted.](docs/resources/images/workspaces/tutorial/workspace-export/dashboard-h-api-key-copy-dark.png)
+        ```md
+        ![Screenshot of TDEI Portal Dashboard page with the Copy API Key button highlighted.](docs/resources/images/workspaces/tutorial/workspace-export/dashboard-h-api-key-copy-light.png#only-light)
+        ![Screenshot of TDEI Portal Dashboard page with the Copy API Key button highlighted.](docs/resources/images/workspaces/tutorial/workspace-export/dashboard-h-api-key-copy-dark.png#only-dark)
+        ```
+        ![Screenshot of TDEI Portal Dashboard page with the Copy API Key button highlighted.](docs/resources/images/workspaces/tutorial/workspace-export/dashboard-h-api-key-copy-light.png#only-light)
+        ![Screenshot of TDEI Portal Dashboard page with the Copy API Key button highlighted.](docs/resources/images/workspaces/tutorial/workspace-export/dashboard-h-api-key-copy-dark.png#only-dark)
     4. Naming convention: For images with highlights, append `-h-$highlightedFeature` before the light/dark identifier.
         1. Example: `dashboard-dark.png` → `dashboard-h-api-key-copy-dark.png`
 
