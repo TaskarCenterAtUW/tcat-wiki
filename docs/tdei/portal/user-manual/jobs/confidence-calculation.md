@@ -25,8 +25,8 @@ Calculates the confidence score for a dataset. An optional sub-regions GeoJSON f
 
 ### Job Creation Form
 
-![Confidence Calculation form](../../../../resources/images/tdei-portal/user-manual/jobs/confidence-calculation-light.png#only-light)
-![Confidence Calculation form](../../../../resources/images/tdei-portal/user-manual/jobs/confidence-calculation-dark.png#only-dark)
+![Confidence Calculation form](../../../../resources/images/tdei/portal/user-manual/jobs/confidence-calculation-light.png#only-light)
+![Confidence Calculation form](../../../../resources/images/tdei/portal/user-manual/jobs/confidence-calculation-dark.png#only-dark)
 
 <div class="full-width" markdown>
 

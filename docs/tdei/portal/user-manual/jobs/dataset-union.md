@@ -25,8 +25,8 @@ Merges spatial data from two datasets by unifying overlapping nodes, edges, and 
 
 ### Job Creation Form
 
-![Dataset Union form](../../../../resources/images/tdei-portal/user-manual/jobs/dataset-union-light.png#only-light)
-![Dataset Union form](../../../../resources/images/tdei-portal/user-manual/jobs/dataset-union-dark.png#only-dark)
+![Dataset Union form](../../../../resources/images/tdei/portal/user-manual/jobs/dataset-union-light.png#only-light)
+![Dataset Union form](../../../../resources/images/tdei/portal/user-manual/jobs/dataset-union-dark.png#only-dark)
 
 <div class="full-width" markdown>
 

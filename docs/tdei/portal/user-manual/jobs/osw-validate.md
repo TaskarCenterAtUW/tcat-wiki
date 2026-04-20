@@ -25,8 +25,8 @@ Validates an OSW dataset to check the correctness of data.
 
 ### Job Creation Form
 
-![OSW - Validate form](../../../../resources/images/tdei-portal/user-manual/jobs/osw-validate-light.png#only-light)
-![OSW - Validate form](../../../../resources/images/tdei-portal/user-manual/jobs/osw-validate-dark.png#only-dark)
+![OSW - Validate form](../../../../resources/images/tdei/portal/user-manual/jobs/osw-validate-light.png#only-light)
+![OSW - Validate form](../../../../resources/images/tdei/portal/user-manual/jobs/osw-validate-dark.png#only-dark)
 
 <div class="full-width" markdown>
 

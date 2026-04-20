@@ -22,8 +22,8 @@ _For a list of all guides on the TCAT Wiki, refer to the [Guides List](../../../
 
 To access the TDEI Portal, navigate to [https://portal.tdei.us/](https://portal.tdei.us/). If you already have an account, enter your email and password and select **Sign In**.
 
-![TDEI Portal login page](../../../resources/images/tdei-portal/user-manual/account/login.landscape-light.png#only-light)
-![TDEI Portal login page](../../../resources/images/tdei-portal/user-manual/account/login.landscape-dark.png#only-dark)
+![TDEI Portal login page](../../../resources/images/tdei/portal/user-manual/account/login.landscape-light.png#only-light)
+![TDEI Portal login page](../../../resources/images/tdei/portal/user-manual/account/login.landscape-dark.png#only-dark)
 
 After signing in successfully, you will be redirected to the [Dashboard](dashboard.md#dashboard).
 
@@ -41,13 +41,13 @@ If you do not yet have an account:
 
 3.  Check **I agree to the Terms and Conditions**, then select **Create Account**
 
-    ![TDEI Portal register page](../../../resources/images/tdei-portal/user-manual/account/register.landscape-light.png#only-light)
-    ![TDEI Portal register page](../../../resources/images/tdei-portal/user-manual/account/register.landscape-dark.png#only-dark)
+    ![TDEI Portal register page](../../../resources/images/tdei/portal/user-manual/account/register.landscape-light.png#only-light)
+    ![TDEI Portal register page](../../../resources/images/tdei/portal/user-manual/account/register.landscape-dark.png#only-dark)
 
 4.  A confirmation page will appear indicating that a verification link has been sent to your email address
 
-    ![Email verification link sent](../../../resources/images/tdei-portal/user-manual/account/email-verification-light.png#only-light)
-    ![Email verification link sent](../../../resources/images/tdei-portal/user-manual/account/email-verification-dark.png#only-dark)
+    ![Email verification link sent](../../../resources/images/tdei/portal/user-manual/account/email-verification-light.png#only-light)
+    ![Email verification link sent](../../../resources/images/tdei/portal/user-manual/account/email-verification-dark.png#only-dark)
 
     !!! question "Didn't receive the verification email?"
 
@@ -59,8 +59,8 @@ If you do not yet have an account:
 
 1.  Open the verification email from `admin@tdei.us` and select **Verify My Email**
 
-    ![Verification email](../../../resources/images/tdei-portal/user-manual/account/email-light.png#only-light)
-    ![Verification email](../../../resources/images/tdei-portal/user-manual/account/email-dark.png#only-dark)
+    ![Verification email](../../../resources/images/tdei/portal/user-manual/account/email-light.png#only-light)
+    ![Verification email](../../../resources/images/tdei/portal/user-manual/account/email-dark.png#only-dark)
 
     !!! info
 
@@ -68,13 +68,13 @@ If you do not yet have an account:
 
 2.  You will be taken to a page prompting you to complete the verification — select **» Click here to proceed**
 
-    ![Verify email — click here to proceed](../../../resources/images/tdei-portal/user-manual/account/proceed-light.png#only-light)
-    ![Verify email — click here to proceed](../../../resources/images/tdei-portal/user-manual/account/proceed-dark.png#only-dark)
+    ![Verify email — click here to proceed](../../../resources/images/tdei/portal/user-manual/account/proceed-light.png#only-light)
+    ![Verify email — click here to proceed](../../../resources/images/tdei/portal/user-manual/account/proceed-dark.png#only-dark)
 
 3.  A confirmation page will appear: **Your account has been updated.** Select **« Back to Application** to return to the login page
 
-    ![Account updated](../../../resources/images/tdei-portal/user-manual/account/return-light.png#only-light)
-    ![Account updated](../../../resources/images/tdei-portal/user-manual/account/return-dark.png#only-dark)
+    ![Account updated](../../../resources/images/tdei/portal/user-manual/account/return-light.png#only-light)
+    ![Account updated](../../../resources/images/tdei/portal/user-manual/account/return-dark.png#only-dark)
 
 You are now ready to [log in](#logging-in).
 
@@ -84,8 +84,8 @@ You are now ready to [log in](#logging-in).
 
 If you have forgotten your password, select **Forgot Password** on the login page and provide your registered email address to receive a password reset link.
 
-![Forgot password page](../../../resources/images/tdei-portal/user-manual/account/forgot-password.landscape-light.png#only-light)
-![Forgot password page](../../../resources/images/tdei-portal/user-manual/account/forgot-password.landscape-dark.png#only-dark)
+![Forgot password page](../../../resources/images/tdei/portal/user-manual/account/forgot-password.landscape-light.png#only-light)
+![Forgot password page](../../../resources/images/tdei/portal/user-manual/account/forgot-password.landscape-dark.png#only-dark)
 
 ---
 

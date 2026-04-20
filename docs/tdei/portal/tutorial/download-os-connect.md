@@ -30,8 +30,8 @@ Before you begin, you will need a TDEI Portal account. If you don't have one yet
 
 3. Select **Sign In**
 
-![TDEI Portal login page](../../../resources/images/tdei-portal/tutorial/download-os-connect/login-light.png#only-light)
-![TDEI Portal login page](../../../resources/images/tdei-portal/tutorial/download-os-connect/login-dark.png#only-dark)
+![TDEI Portal login page](../../../resources/images/tdei/portal/tutorial/download-os-connect/login-light.png#only-light)
+![TDEI Portal login page](../../../resources/images/tdei/portal/tutorial/download-os-connect/login-dark.png#only-dark)
 
 ---
 
@@ -39,8 +39,8 @@ Before you begin, you will need a TDEI Portal account. If you don't have one yet
 
 After logging in, you will land on the **Dashboard**. The Dashboard displays your Project Group, Role, and Project Id, along with your API Key.
 
-![TDEI Portal Dashboard](../../../resources/images/tdei-portal/tutorial/download-os-connect/dashboard-light.png#only-light)
-![TDEI Portal Dashboard](../../../resources/images/tdei-portal/tutorial/download-os-connect/dashboard-dark.png#only-dark)
+![TDEI Portal Dashboard](../../../resources/images/tdei/portal/tutorial/download-os-connect/dashboard-light.png#only-light)
+![TDEI Portal Dashboard](../../../resources/images/tdei/portal/tutorial/download-os-connect/dashboard-dark.png#only-dark)
 
 1. Select **Datasets** from the left sidebar
 
@@ -63,8 +63,8 @@ Select the **Filter** button to narrow down the dataset list. You can filter by:
 | **Valid From**    | Filter by the start of the dataset's validity date |
 | **Valid To**      | Filter by the end of the dataset's validity date   |
 
-![Datasets filter panel](../../../resources/images/tdei-portal/tutorial/download-os-connect/filter-light.png#only-light)
-![Datasets filter panel](../../../resources/images/tdei-portal/tutorial/download-os-connect/filter-dark.png#only-dark)
+![Datasets filter panel](../../../resources/images/tdei/portal/tutorial/download-os-connect/filter-light.png#only-light)
+![Datasets filter panel](../../../resources/images/tdei/portal/tutorial/download-os-connect/filter-dark.png#only-dark)
 
 !!! info "Filter by "**Project Group: TCAT_WSP_PG**" to search for OS-CONNECT datasets."
 
@@ -78,8 +78,8 @@ Select the **Filter** button to narrow down the dataset list. You can filter by:
 
 3. Select **Download** from the menu
 
-![Dataset action menu with Download option](../../../resources/images/tdei-portal/tutorial/download-os-connect/download-light.png#only-light)
-![Dataset action menu with Download option](../../../resources/images/tdei-portal/tutorial/download-os-connect/download-dark.png#only-dark)
+![Dataset action menu with Download option](../../../resources/images/tdei/portal/tutorial/download-os-connect/download-light.png#only-light)
+![Dataset action menu with Download option](../../../resources/images/tdei/portal/tutorial/download-os-connect/download-dark.png#only-dark)
 
 ---
 
@@ -89,7 +89,7 @@ Select the **Filter** button to narrow down the dataset list. You can filter by:
 
 2. Select **Download** to save the dataset to your computer
 
-![OSW Dataset Download dialog](../../../resources/images/tdei-portal/tutorial/download-os-connect/format-light.png#only-light)
-![OSW Dataset Download dialog](../../../resources/images/tdei-portal/tutorial/download-os-connect/format-dark.png#only-dark)
+![OSW Dataset Download dialog](../../../resources/images/tdei/portal/tutorial/download-os-connect/format-light.png#only-light)
+![OSW Dataset Download dialog](../../../resources/images/tdei/portal/tutorial/download-os-connect/format-dark.png#only-dark)
 
 Your dataset will begin downloading. The file will be saved to your browser's default download location.

@@ -7,11 +7,27 @@ Changes to the TCAT Wiki are documented here.
 This project adheres to [Semantic Versioning](https://semver.org/) and
 [Conventional Commits](https://www.conventionalcommits.org/).
 
+## v11.7.0 (2026-04-20)
+
+### Features
+
+- **Docs**: Update image paths; replace outdated screenshots
+
+### Fixes
+
+- **Docs**: Reorganize TDEI Portal images into `images/tdei/portal/` subdirectory structure
+
+## v11.6.0 (2026-04-17)
+
+### Features
+
+- **Docs**: Refresh the Workspaces section
+
 ## v11.5.1 (2026-04-16)
 
 ### Fixes
 
-- **(CI)**: Improve build-and-deploy workflow
+- **(Core)**: Improve build-and-deploy workflow
 
 ## v11.5.0 (2026-04-16)
 

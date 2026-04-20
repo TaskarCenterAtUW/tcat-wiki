@@ -22,8 +22,8 @@ _For a list of all guides on the TCAT Wiki, refer to the [Guides List](../../../
 
 The **Feedback** page lets Points of Contact view and manage feedback that has been submitted against datasets in their project group.
 
-![Feedback page](../../../resources/images/tdei-portal/user-manual/feedback/feedback-light.png#only-light)
-![Feedback page](../../../resources/images/tdei-portal/user-manual/feedback/feedback-dark.png#only-dark)
+![Feedback page](../../../resources/images/tdei/portal/user-manual/feedback/feedback-light.png#only-light)
+![Feedback page](../../../resources/images/tdei/portal/user-manual/feedback/feedback-dark.png#only-dark)
 
 The page displays four summary cards at the top:
 

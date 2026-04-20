@@ -30,15 +30,15 @@ The options available on this page depend on your [roles](members.md#roles).
 
 As a regular `member`, the Services page shows a read-only list of the project group's services with no edit controls.
 
-![Services page member view](../../../resources/images/tdei-portal/user-manual/services/services-member-light.png#only-light)
-![Services page member view](../../../resources/images/tdei-portal/user-manual/services/services-member-dark.png#only-dark)
+![Services page member view](../../../resources/images/tdei/portal/user-manual/services/services-member-light.png#only-light)
+![Services page member view](../../../resources/images/tdei/portal/user-manual/services/services-member-dark.png#only-dark)
 
 #### Point of Contact View
 
 As a **Point of Contact (`poc`)**, the Services page additionally shows a **Create Service** button (top right) and **Edit** / **Deactivate** controls on each service entry.
 
-![Services page Point of Contact view](../../../resources/images/tdei-portal/user-manual/services/services-poc-light.png#only-light)
-![Services page Point of Contact view](../../../resources/images/tdei-portal/user-manual/services/services-poc-dark.png#only-dark)
+![Services page Point of Contact view](../../../resources/images/tdei/portal/user-manual/services/services-poc-light.png#only-light)
+![Services page Point of Contact view](../../../resources/images/tdei/portal/user-manual/services/services-poc-dark.png#only-dark)
 
 ---
 
@@ -46,8 +46,8 @@ As a **Point of Contact (`poc`)**, the Services page additionally shows a **Crea
 
 To create a new service, select **Create Service** (top right). This opens the **Create New Service** page.
 
-![Create New Service page](../../../resources/images/tdei-portal/user-manual/services/create-service-light.png#only-light)
-![Create New Service page](../../../resources/images/tdei-portal/user-manual/services/create-service-dark.png#only-dark)
+![Create New Service page](../../../resources/images/tdei/portal/user-manual/services/create-service-light.png#only-light)
+![Create New Service page](../../../resources/images/tdei/portal/user-manual/services/create-service-dark.png#only-dark)
 
 Fill in the following fields:
 
@@ -62,8 +62,8 @@ Select **Create** to create the service, or **Cancel** to return to the Services
 
 Once created, the new service will appear in the list.
 
-![Services page after adding a service](../../../resources/images/tdei-portal/user-manual/services/services-poc-added-light.png#only-light)
-![Services page after adding a service](../../../resources/images/tdei-portal/user-manual/services/services-poc-added-dark.png#only-dark)
+![Services page after adding a service](../../../resources/images/tdei/portal/user-manual/services/services-poc-added-light.png#only-light)
+![Services page after adding a service](../../../resources/images/tdei/portal/user-manual/services/services-poc-added-dark.png#only-dark)
 
 ---
 
