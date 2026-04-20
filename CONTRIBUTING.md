@@ -268,25 +268,11 @@ For creating image annotations with a consistent style, follow these guidelines.
 
 1. Highlight box
     1. Use: Indicating an area of focus in an image.
-    2. Style
-        1. Padding: `2px` distance from highlighted selection
-
-        2. Outline
-            1. Width: `1px`
-
-            2. Color: `#4B2E83` ("Husky "Purple")
-
-        3. Fill
-            1. Color: `#FFC700` ("Spirit Gold")
-
-            2. Opacity: `0.25`
-
+    2. Style: Use the native keyboard navigation highlight
     3. Example:
-
-        ![Screenshot of TDEI Portal Login page with "Forgot Password?" highlighted.](resources/images/tdei-portal/login-h-forgot-password.png){ loading=lazy }
-
-    4. Naming convention: For images with highlights, append `-h-$highlightedFeature`
-        1. Example: `login.png` → `login-h-forgot-password.png`
+        ![Screenshot of TDEI Portal Login page with the Forgot Password link highlighted.](docs/resources/images/workspaces/tutorial/workspace-export/dashboard-h-api-key-copy-dark.png)
+    4. Naming convention: For images with highlights, append `-h-$highlightedFeature` before the light/dark identifier.
+        1. Example: `dashboard-dark.png` → `dashboard-h-api-key-copy-dark.png`
 
 ##### QR Codes
 
