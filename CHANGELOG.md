@@ -7,6 +7,12 @@ Changes to the TCAT Wiki are documented here.
 This project adheres to [Semantic Versioning](https://semver.org/) and
 [Conventional Commits](https://www.conventionalcommits.org/).
 
+## v11.8.0 (2026-04-21)
+
+### Features
+
+- **Core**: Add insert-image prompt
+
 ## v11.7.0 (2026-04-20)
 
 ### Features
