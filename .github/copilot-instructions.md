@@ -356,6 +356,8 @@ tags:
 
 **Custom Page Ordering with nav_order**: By default, pages within a directory are sorted alphabetically. To specify a custom order, add the `nav_order` frontmatter property with an integer value. Pages with `nav_order` are sorted by their value (ascending, lower numbers first), followed by pages without `nav_order` (sorted alphabetically). This ordering is local to each directory and applies consistently across navigation structure, parent guides sections, and the main guides list.
 
+**Implementation note**: `nav_order` is implemented in two layers. (1) `nav-item.html` sets `style="order: N"` on each `<li>` and `extra.css` makes `.md-nav__list` a flex container — this produces the correct **visual** order. (2) `extra.js` (`sortNavByOrder`) reads those `style.order` values and reappends DOM nodes in sorted order, so **screen readers and keyboard tab navigation** also follow the intended sequence (satisfying WCAG SC 1.3.2 and SC 2.4.3). Both layers are required; neither alone is sufficient.
+
 Example of ordered pages in a user manual:
 
 ```yaml

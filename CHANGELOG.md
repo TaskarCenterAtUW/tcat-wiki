@@ -7,6 +7,14 @@ Changes to the TCAT Wiki are documented here.
 This project adheres to [Semantic Versioning](https://semver.org/) and
 [Conventional Commits](https://www.conventionalcommits.org/).
 
+## v11.8.1 (2026-04-22)
+
+### Fixes
+
+- **Core**: Fix `nav_order` keyboard/screen-reader focus order.
+    - Details: _The CSS `order` property was already correcting the visual sequence, but DOM order (which screen readers and keyboard tab navigation follow) remained alphabetical. A new `sortNavByOrder` function in `extra.js` reads each item's `style.order` value and reappends DOM nodes in sorted order after every navigation event, aligning reading/focus order with visual order (WCAG SC 1.3.2, SC 2.4.3)._
+- **Core**: Update padding on breadcrumbs and left sidebar sections to prevent clipping of keyboard focus ring
+
 ## v11.8.0 (2026-04-21)
 
 ### Features

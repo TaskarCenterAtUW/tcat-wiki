@@ -8,8 +8,9 @@
  *   2. Text Transformation Helpers      — toTitleCase, applyTitleCapitalization
  *   3. DOM Fixup Functions              — fixElementCapitalization, fixNavigationCapitalization
  *   4. Initialization                   — event hooks, MutationObserver, periodic fallback
- *   5. Consent Dialog Escape Dismissal  — Escape key closes dialog, saving state
- *   6. Footer Cookie-Settings Link      — move consent link after "Made with Zensical"
+ *   5. Nav Order DOM Reordering         — sort nav <li> nodes by style.order for screen readers
+ *   6. Consent Dialog Escape Dismissal  — Escape key closes dialog, saving state
+ *   7. Footer Cookie-Settings Link      — move consent link after "Made with Zensical"
  *
  * @format
  */
@@ -288,7 +289,105 @@ function fixNavigationCapitalization() {
 })();
 
 // =============================================================================
-// 5. Consent Dialog Escape Key Dismissal
+// 5. Nav Order DOM Reordering
+// =============================================================================
+//
+// The CSS `order` property (applied per nav-item.html based on nav_order
+// frontmatter) visually reorders sidebar nav items correctly, but CSS `order`
+// does not change DOM order — the order screen readers and keyboard tab
+// navigation follow. Zensical renders <li> elements alphabetically by filename
+// regardless of TOML nav configuration.
+//
+// This function reads each item's style.order value and reappends children in
+// that order, making DOM order match visual order (WCAG SC 1.3.2, SC 2.4.3).
+//
+// Loop prevention: if the list is already in sorted order the function returns
+// without touching the DOM, so MutationObserver callbacks converge immediately.
+
+(function sortNavByOrder() {
+    function sortNavLists() {
+        document.querySelectorAll(".md-nav__list").forEach((list) => {
+            const items = Array.from(list.children);
+            if (items.length < 2) return;
+
+            const getOrder = (el) => {
+                const v = parseInt(el.style.order, 10);
+                return isNaN(v) ? 10000 : v;
+            };
+
+            // Check if already sorted — avoids unnecessary DOM mutations and
+            // breaks the MutationObserver re-entry loop.
+            let alreadySorted = true;
+            for (let i = 1; i < items.length; i++) {
+                if (getOrder(items[i]) < getOrder(items[i - 1])) {
+                    alreadySorted = false;
+                    break;
+                }
+            }
+            if (alreadySorted) return;
+
+            // Stable sort (Array.prototype.sort is stable since ES2019 /
+            // all modern browsers) so items with equal order values keep their
+            // original relative (alphabetical) position.
+            items
+                .slice()
+                .sort((a, b) => getOrder(a) - getOrder(b))
+                .forEach((item) => list.appendChild(item));
+        });
+    }
+
+    // Run immediately and after short delays to catch async renders on load.
+    sortNavLists();
+    setTimeout(sortNavLists, 100);
+    setTimeout(sortNavLists, 250);
+    setTimeout(sortNavLists, 500);
+
+    // MutationObserver: re-sort whenever nav DOM changes (e.g., after instant
+    // navigation inserts a new nav tree). The "already sorted" guard above
+    // prevents infinite loops.
+    const observer = new MutationObserver(() => {
+        requestAnimationFrame(sortNavLists);
+    });
+
+    const startObserving = () => {
+        observer.observe(document.body, {
+            childList: true,
+            subtree: true,
+        });
+    };
+
+    if (document.body) {
+        startObserving();
+    } else {
+        document.addEventListener("DOMContentLoaded", startObserving);
+    }
+
+    // Standard browser navigation events.
+    document.addEventListener("DOMContentLoaded", sortNavLists);
+    window.addEventListener("load", sortNavLists);
+    window.addEventListener("popstate", sortNavLists);
+
+    // Zensical instant-loading custom event.
+    document.addEventListener("DOMContentSwitch", sortNavLists);
+
+    // Zensical location$ observable (if available).
+    if (typeof location$ !== "undefined") {
+        location$.subscribe(() => {
+            setTimeout(sortNavLists, 0);
+            setTimeout(sortNavLists, 100);
+        });
+    }
+
+    // Periodic fallback for the first ~10 seconds after load.
+    let checkCount = 0;
+    const periodicCheck = setInterval(() => {
+        sortNavLists();
+        if (++checkCount >= 20) clearInterval(periodicCheck);
+    }, 500);
+})();
+
+// =============================================================================
+// 6. Consent Dialog Escape Key Dismissal
 // =============================================================================
 //
 // The ARIA Authoring Practices Guide dialog pattern requires Escape to close a
@@ -315,7 +414,7 @@ function fixNavigationCapitalization() {
 })();
 
 // =============================================================================
-// 6. Footer Cookie-Settings Link Relocation
+// 7. Footer Cookie-Settings Link Relocation
 // =============================================================================
 //
 // The "Change cookie settings" link is hard-coded inside

@@ -174,9 +174,11 @@ abbr[title],
 }
 
 /* Enable CSS order-based sorting for sidebar nav lists (supports nav_order frontmatter) */
+/* padding-bottom prevents the focus ring / hover highlight on the last item from being clipped */
 .md-nav__list {
     display: flex;
     flex-direction: column;
+    padding-bottom: 4px;
 }
 
 /* Reduce gap between top navbar and page content (default is 1.5rem) */
@@ -217,8 +219,11 @@ abbr[title],
 }
 
 /* Adjust padding above breadcrumbs (default is 1.2rem) */
+/* padding-bottom and padding-left prevent focus rings from being clipped */
 .md-path {
     padding-top: calc(var(--content-start-offset) + 0.25rem);
+    padding-bottom: 4px;
+    padding-left: 4px;
 }
 
 /* Align sidebar top padding with breadcrumb area (default is 1.2rem) */
