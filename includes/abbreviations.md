@@ -6,11 +6,15 @@
 *[ABA]: Architectural Barriers Act
 *[ACM]: Association for Computing Machinery
 *[ADA]: Americans with Disabilities Act
+*[ADS]: Aging and Disability Services
 *[AI]: Artificial Intelligence
 *[API]: Application Programming Interface
 *[APS]: Accessible Pedestrian Signal
 *[ARNOLD]: All Road Network of Linear Referenced Data
 *[ASR]: AVIV ScoutRoute
+*[ATP]: Active Transportation Plan
+*[ATSAC]: Cooper Jones Active Transportation Safety Advisory Council
+*[ATSC]: Cooper Jones Active Transportation Safety Council
 *[ATTRI]: Accessible Transportation Technologies Research Initiative
 *[AT-DaWG]: Active Transportation Data Working Group
 *[AVIV]: Accessibility Verification, Improved Validation
@@ -19,6 +23,7 @@
 *[BBox]: Bounding Box
 *[BLV]: Blind and Low-Vision
 *[BRT]: Bus Rapid Transit
+*[BSAC]: Cooper Jones Bicyclist Safety Advisory Council
 *[BTS]: Bureau of Transportation Statistics
 *[CAD]: Computer-Aided Design
 *[CADD]: Computer-Aided Design and Drafting
@@ -30,10 +35,12 @@
 *[CMP]: Congestion Management Process
 *[COE]: College of Engineering
 *[COG]: Cloud Optimized GeoTIFF
+*[CREATE]: Center for Research and Education on Accessible Technology and Experiences
 *[CRS]: Coordinate Reference System
 *[CSE]: Computer Science and Engineering
 *[CSUN]: California State University, Northridge
 *[CSV]: Comma-Separated Values
+*[CTANW]: Community Transportation Association of the Northwest
 *[CUGOS]: Cascadia Users of Geospatial Open Source
 *[DE-9IM]: Dimensionally Extended Nine-Intersection Model
 *[DEM]: Digital Elevation Model
@@ -50,10 +57,12 @@
 *[FDE]: Fundamental Data Elements
 *[FGTS]: Freight & Goods Transportation System
 *[FHWA]: Federal Highway Administration
+*[FIFA]: Fédération Internationale de Football Association
 *[FNS]: Food and Nutrition Service
 *[FTA]: Federal Transit Administration
 *[FQHC]: Federally Qualified Health Center
 *[G3ict]: Global Initiative for Inclusive Information and Communication Technologies
+*[GAAD]: Global Accessibility Awareness Day
 *[GATIS]: General Active Transportation Infrastructure Specification
 *[GERS]: Global Entity Reference System
 *[GIG]: GoInfoGame
@@ -75,6 +84,7 @@
 *[HIN]: High Injury Network
 *[HOT]: Humanitarian OpenStreetMap Team
 *[HOV]: High Occupancy Vehicle
+*[HuskyADAPT]: Accessible Design And Play Technology
 *[HxGN]: Hexagon (aerial imagery provider)
 *[IDW]: Inverse Distance Weighting
 *[IIiX]: Information Interaction in Context
@@ -145,6 +155,7 @@
 *[POI]: Point of Interest
 *[POIs]: Points of Interest
 *[PROWAG]: Public Right-of-Way Accessibility Guidelines
+*[PSAC]: Pedestrian Safety Advisory Council
 *[PSRC]: Puget Sound Regional Council
 *[PWG]: Pedestrian Working Group
 *[QA]: Quality Assurance
@@ -172,6 +183,7 @@
 *[SPS]: Seattle Public Schools
 *[SRID]: Spatial Reference System Identifier
 *[SRTS]: Safe Routes to School
+*[STAR]: Smart Transportation Applications and Research
 *[STIP]: State Transportation Improvement Program
 *[SUMC]: Shared User Mobility Conference / Shared Use Mobility Center
 *[SVEA]: Snoqualmie Valley Economic Alliance
@@ -207,6 +219,7 @@
 *[UW]: University of Washington
 *[UX]: User Experience
 *[V2X]: Vehicle-to-Everything
+*[VGI]: Volunteered Geographic Information
 *[WA]: Washington (state)
 *[WAGISA]: Washington GIS Association
 *[WCAG]: Web Content Accessibility Guidelines
@@ -218,5 +231,6 @@
 *[WMS]: Web Map Service
 *[WMTS]: Web Map Tile Service
 *[WSDOT]: Washington State Department of Transportation
+*[WTSC]: Washington Traffic Safety Commission
 *[WSP]: Washington State Proviso
 *[XML]: Extensible Markup Language
