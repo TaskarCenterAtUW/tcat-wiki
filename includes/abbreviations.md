@@ -35,6 +35,7 @@
 *[CMP]: Congestion Management Process
 *[COE]: College of Engineering
 *[COG]: Cloud Optimized GeoTIFF
+*[CREATE]: Center for Research and Education on Accessible Technology and Experiences
 *[CRS]: Coordinate Reference System
 *[CSE]: Computer Science and Engineering
 *[CSUN]: California State University, Northridge
@@ -83,6 +84,7 @@
 *[HIN]: High Injury Network
 *[HOT]: Humanitarian OpenStreetMap Team
 *[HOV]: High Occupancy Vehicle
+*[HuskyADAPT]: Accessible Design And Play Technology
 *[HxGN]: Hexagon (aerial imagery provider)
 *[IDW]: Inverse Distance Weighting
 *[IIiX]: Information Interaction in Context
