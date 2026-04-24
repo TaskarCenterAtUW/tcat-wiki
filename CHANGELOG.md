@@ -7,6 +7,13 @@ Changes to the TCAT Wiki are documented here.
 This project adheres to [Semantic Versioning](https://semver.org/) and
 [Conventional Commits](https://www.conventionalcommits.org/).
 
+## v11.9.0 (2026-04-24)
+
+### Features
+
+- **Core**: Add content style guidance system
+    - Details: _Added golden sample templates per page type and updated both user-focused and AI-targeted documentation guidance._
+
 ## v11.8.1 (2026-04-22)
 
 ### Fixes

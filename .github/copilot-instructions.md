@@ -512,5 +512,11 @@ Refer to the official Zensical documentation, which is hosted online at https://
 - `templates/events/event-report-tm-section.md`: TM activity section template
 - `templates/events/event-report-asr-section.md`: ASR activity section template
 - `templates/events/index.md`: Event page template with full frontmatter schema
+- `.github/instructions/content-style.instructions.md`: Editorial style guide for docs content under `docs/`
+- `templates/content/README.md`: Golden sample overview for docs page types
+- `templates/content/topic-index.md`: Golden sample for topic landing pages
+- `templates/content/tutorial.md`: Golden sample for single-page tutorials
+- `templates/content/user-manual-index.md`: Golden sample for user manual index pages
+- `templates/content/subpage.md`: Golden sample for tutorial and user manual subpages
 - `/includes/abbreviations.md`: Global acronym definitions
 - `/resources/stylesheets/extra.css`: Theming
