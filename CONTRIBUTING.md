@@ -187,6 +187,30 @@ tags:
 
 Both flags can be used together to exclude a guide from all guides lists.
 
+#### Content Style Guide
+
+Use the golden samples in [templates/content/README.md](templates/content/README.md) rather than live docs pages when checking content structure and formatting.
+
+The full editor-facing guide lives in [.github/instructions/content-style.instructions.md](.github/instructions/content-style.instructions.md). Apply these conventions when writing or revising content in `docs/`:
+
+- Choose the closest golden sample before drafting or reviewing:
+    - [templates/content/topic-index.md](templates/content/topic-index.md) for topic landing pages
+    - [templates/content/tutorial.md](templates/content/tutorial.md) for single-page tutorials
+    - [templates/content/user-manual-index.md](templates/content/user-manual-index.md) for user manual landing pages
+    - [templates/content/subpage.md](templates/content/subpage.md) for tutorial and user manual subpages
+- For multi-page tutorial indexes, combine the opening pattern from [templates/content/tutorial.md](templates/content/tutorial.md) with the table-of-contents pattern from [templates/content/user-manual-index.md](templates/content/user-manual-index.md).
+- Open each guide with frontmatter, a `##` page heading that matches the frontmatter title, a one-sentence opener, the standard Guides List reference, and a horizontal rule.
+- Use the required first sentence for the page type:
+    - Tutorials and tutorial index pages begin with `This tutorial...`
+    - User manual index pages begin with `This user manual...`
+    - Tutorial and user manual subpages begin with `This section...`
+- Write for one clear user goal per page. Break procedures into `###` sections and ordered lists, using either named steps or numbered subsections depending on the complexity of the workflow.
+- Use short, imperative steps. Bold exact UI labels and use code formatting for commands, filenames, IDs, placeholders, headers, and literal values.
+- When readers must substitute values, explain the placeholders once and provide a concrete example when it materially improves clarity.
+- Add screenshots only when they clarify a step or confirm a state. Place them directly after the relevant step and write alt text that identifies both the screen and the key focus area.
+- Use admonitions sparingly for cautions, waiting states, tips, and success confirmations.
+- Prefer plain language, active voice, and verified instructions over exhaustive explanation. Do not invent undocumented behavior or UI details.
+
 #### Images
 
 Where possible, follow these guidelines for images:
