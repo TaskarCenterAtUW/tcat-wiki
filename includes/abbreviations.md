@@ -33,6 +33,7 @@
 *[CC0]: Creative Commons Zero
 *[CDP]: Census-Designated Place
 *[CMP]: Congestion Management Process
+*[CNG]: Cloud-Native Geospatial Forum
 *[COE]: College of Engineering
 *[COG]: Cloud Optimized GeoTIFF
 *[CREATE]: Center for Research and Education on Accessible Technology and Experiences
