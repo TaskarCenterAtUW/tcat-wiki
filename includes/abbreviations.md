@@ -183,6 +183,7 @@
 *[SPS]: Seattle Public Schools
 *[SRID]: Spatial Reference System Identifier
 *[SRTS]: Safe Routes to School
+*[SS4A]: Safe Streets and Roads for All
 *[STAR]: Smart Transportation Applications and Research
 *[STIP]: State Transportation Improvement Program
 *[SUMC]: Shared User Mobility Conference / Shared Use Mobility Center
