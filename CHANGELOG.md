@@ -7,6 +7,13 @@ Changes to the TCAT Wiki are documented here.
 This project adheres to [Semantic Versioning](https://semver.org/) and
 [Conventional Commits](https://www.conventionalcommits.org/).
 
+## v11.10.0 (2026-04-29)
+
+### Features
+
+- **Core**: Add AccessMap sprites
+    - Details: _Extracted individual sprites from https://www.accessmap.app/sprite.svg and saved each as a separate image._
+
 ## v11.9.0 (2026-04-24)
 
 ### Features
