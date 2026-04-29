@@ -10,6 +10,7 @@
 *[AI]: Artificial Intelligence
 *[API]: Application Programming Interface
 *[APS]: Accessible Pedestrian Signal
+*[ARIA]: Accessible Rich Internet Applications
 *[ARNOLD]: All Road Network of Linear Referenced Data
 *[ASR]: AVIV ScoutRoute
 *[ATP]: Active Transportation Plan
@@ -39,6 +40,7 @@
 *[CREATE]: Center for Research and Education on Accessible Technology and Experiences
 *[CRS]: Coordinate Reference System
 *[CSE]: Computer Science and Engineering
+*[CSS]: Cascading Style Sheets
 *[CSUN]: California State University, Northridge
 *[CSV]: Comma-Separated Values
 *[CTANW]: Community Transportation Association of the Northwest
@@ -85,6 +87,7 @@
 *[HIN]: High Injury Network
 *[HOT]: Humanitarian OpenStreetMap Team
 *[HOV]: High Occupancy Vehicle
+*[HTML]: Hypertext Markup Language
 *[HuskyADAPT]: Accessible Design And Play Technology
 *[HxGN]: Hexagon (aerial imagery provider)
 *[IDW]: Inverse Distance Weighting
@@ -97,6 +100,7 @@
 *[IXN]: Intersection / Intersection Traversability Metric
 *[JCDL]: Joint Conference on Digital Libraries
 *[JOSM]: Java OpenStreetMap Editor
+*[JSON]: JavaScript Object Notation
 *[KML]: Keyhole Markup Language
 *[KPI]: Key Performance Indicator
 *[lat]: Latitude
@@ -189,6 +193,7 @@
 *[STIP]: State Transportation Improvement Program
 *[SUMC]: Shared User Mobility Conference / Shared Use Mobility Center
 *[SVEA]: Snoqualmie Valley Economic Alliance
+*[SVG]: Scalable Vector Graphics
 *[TAM]: Transportation Asset Management
 *[TAMP]: Transportation Asset Management Plan
 *[TANF]: Temporary Assistance for Needy Families
@@ -222,8 +227,11 @@
 *[UX]: User Experience
 *[V2X]: Vehicle-to-Everything
 *[VGI]: Volunteered Geographic Information
+*[W3C]: World Wide Web Consortium
 *[WA]: Washington (state)
 *[WAGISA]: Washington GIS Association
+*[WAI]: Web Accessibility Initiative
+*[WAI-ARIA]: Web Accessibility Initiative – Accessible Rich Internet Applications
 *[WCAG]: Web Content Accessibility Guidelines
 *[WFS]: Web Feature Service
 *[WGS]: World Geodetic System
@@ -235,4 +243,5 @@
 *[WSDOT]: Washington State Department of Transportation
 *[WTSC]: Washington Traffic Safety Commission
 *[WSP]: Washington State Proviso
+*[WWWC]: World Wide Web Consortium
 *[XML]: Extensible Markup Language
