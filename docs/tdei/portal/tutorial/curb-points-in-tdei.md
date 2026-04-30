@@ -63,7 +63,7 @@ The Seattle Department of Transportation (SDOT) curb ramps dataset is used as a 
 
     Use this browser-based converter below. Nothing else required — everything runs locally in your browser.
 
-    <iframe src="../convert-curb-ramps/" style="width: 100%; height: 1400px; border: 1px solid var(--md-default-fg-color--lightest); border-radius: 6px;"></iframe>
+    <iframe src="convert-curb-ramps/" style="width: 100%; height: 1400px; border: 1px solid var(--md-default-fg-color--lightest); border-radius: 6px;"></iframe>
 
     1. Select your GeoJSON file using the file picker or by dragging it onto the upload area.
     2. The **Dataset & field mapping** section is pre-configured for the SDOT Curb Ramps dataset. If you are using a different source, expand it and update the field names and coordinate system to match your source data.
