@@ -80,6 +80,7 @@
 *[GTFS]: General Transit Feed Specification
 *[GTFS-Flex]: General Transit Feed Specification, Flex Extension
 *[GTFS-Pathways]: General Transit Feed Specification, Pathways Extension
+*[GWF]: Geospatial World Forum
 *[HAWK]: High-Intensity Activated Crosswalk Beacon
 *[HCI]: Human-Computer Interaction
 *[HCIR]: Human Computer Information Retrieval
