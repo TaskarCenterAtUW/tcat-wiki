@@ -184,12 +184,14 @@
 *[SLAM]: Simultaneous Location and Mapping
 *[SLD]: Styled Layer Descriptor
 *[SNAP]: Supplemental Nutrition Assistance Program
+*[SNG]: Seattle Neighborhood Greenways
 *[SOV]: Single Occupancy Vehicle
 *[SOW]: Statement of Work
 *[SPS]: Seattle Public Schools
 *[SRID]: Spatial Reference System Identifier
 *[SRTS]: Safe Routes to School
 *[SS4A]: Safe Streets and Roads for All
+*[SSA]: Seattle Streets Alliance
 *[STAR]: Smart Transportation Applications and Research
 *[STIP]: State Transportation Improvement Program
 *[SUMC]: Shared User Mobility Conference / Shared Use Mobility Center
