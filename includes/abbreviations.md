@@ -192,6 +192,7 @@
 *[SRTS]: Safe Routes to School
 *[SS4A]: Safe Streets and Roads for All
 *[SSA]: Seattle Streets Alliance
+*[STAC]: SpatioTemporal Asset Catalog
 *[STAR]: Smart Transportation Applications and Research
 *[STIP]: State Transportation Improvement Program
 *[SUMC]: Shared User Mobility Conference / Shared Use Mobility Center
