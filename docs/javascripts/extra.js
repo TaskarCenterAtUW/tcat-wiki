@@ -73,8 +73,8 @@ const titleMapSource = {
     csun: "CSUN",
     csun26: "CSUN 2026",
     mny26: "Mappy New Year 2026",
-    "nda vancouver": "Clark County Walk/Roll Event",
     "olympia connected": "Olympia, Connected",
+    nda: "NDA",
     oswmh: "OpenSidewalks Mappy Hours",
     otp26: "OpenThePaths 2026",
 
