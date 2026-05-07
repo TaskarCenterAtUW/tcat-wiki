@@ -148,6 +148,17 @@ actions = [
     "reject"
 ]
 
+#region Validation
+[project.validation]
+unresolved_references = true
+unresolved_footnotes = true
+unused_definitions = true
+unused_footnotes = true
+shadowed_definitions = true
+shadowed_footnotes = true
+invalid_links = true
+invalid_link_anchors = true
+
 #region Navigation
 nav = [
     {"Welcome" = "index.md"},
