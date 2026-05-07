@@ -694,7 +694,7 @@ OpenSidewalks Schema fields are typed key-value pairs. Keys are always strings a
 ??? abstract "name"
 
     <table class="schema-table">
-    <tr><td>Description</td><td>The (semi-)official name of an entity. <em>Not</em> a description of the entity. For example, this would be the street name for a street path or a specially-designated name for a famous footpath. <code>name="The [X] trail"</code>, for example.</td></tr>
+    <tr><td>Description</td><td>The (semi-)official name of an entity. <em>Not</em> a description of the entity. For example, this would be the street name for a street path or a specially-designated name for a famous footpath. <code>name="The \[X] trail"</code>, for example.</td></tr>
     <tr><td>Value type</td><td>text</td></tr>
     </table>
 
