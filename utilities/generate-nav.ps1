@@ -2,8 +2,8 @@
 # This script is designed to be run in a PowerShell environment.
 
 # Name: TCAT Wiki - Navigation Section Generator
-# Version: 5.0.0
-# Date: 2026-03-06
+# Version: 5.0.1
+# Date: 2026-05-07
 # Author: Amy Bordenave, Taskar Center for Accessible Technology, University of Washington
 # License: CC-BY-ND 4.0 International
 
@@ -373,6 +373,8 @@ function Build-DirectoryNav {
     # Add subdirectories recursively
     foreach ($subDir in $subDirs) {
         $subDirItems = @(Build-DirectoryNav -dirPath $subDir.FullName -indentLevel ($indentLevel + 1) -docsBasePath $docsBasePath)
+        # Skip subdirectories that produced no nav output (e.g. contain only non-markdown files)
+        if ($subDirItems.Count -eq 0) { continue }
         # Each subdirectory returns an array of lines - treat as a single nested item
         # Only strip trailing comma from the LAST line (the closing bracket line)
         $cleanedLines = @()
