@@ -14,7 +14,7 @@ These meetings held regularly via Zoom with members of TCAT are open to all for 
 
 ### Meeting Information & Links
 
-- **Calendar Event:** [[Virtual] OSW Mappy Hours / TCAT Office Hours](https://calendar.google.com/calendar/event?action=TEMPLATE&tmeid=MDR2cGs2YzJmazl2Nm1pcWJhM3ZhOGN0Z3FfMjAyNTExMTFUMTYwMDAwWiBjX2F0M29tcXVnNGxzM2pvdXBsY3Q5OHFvM2djQGc&tmsrc=c_at3omqug4ls3jouplct98qo3gc%40group.calendar.google.com&scp=ALL)
+- **Calendar Event:** [&#91;Virtual&#93; OSW Mappy Hours / TCAT Office Hours](https://calendar.google.com/calendar/event?action=TEMPLATE&tmeid=MDR2cGs2YzJmazl2Nm1pcWJhM3ZhOGN0Z3FfMjAyNTExMTFUMTYwMDAwWiBjX2F0M29tcXVnNGxzM2pvdXBsY3Q5OHFvM2djQGc&tmsrc=c_at3omqug4ls3jouplct98qo3gc%40group.calendar.google.com&scp=ALL)
 - **Schedule:** Weekly, on Tuesdays, from 8:00 AM - 10:00 AM (PT)
 - **Meeting Location:** Zoom ([link to room](https://washington.zoom.us/j/98269654220))
 - **Meeting Notes:** [Google Docs: OSW Mappy Hours - Meeting Notes](https://docs.google.com/document/d/1SwfAW0a42_DFDgko22O-707dAoCvP3KafV47ixC5gLM/edit?tab=t.2nldj8jv044e)
