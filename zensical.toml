@@ -192,6 +192,10 @@ nav = [
             {"Event Summary Report" = "events/mny26/report.md"},
             {"Validation Guide" = "events/mny26/validation-guide.md"}
         ]},
+        {"Nda Dayton" = [ "events/nda-dayton/index.md" ]},
+        {"Nda Everett" = [ "events/nda-everett/index.md" ]},
+        {"Nda Sedro Woolley" = [ "events/nda-sedro-woolley/index.md" ]},
+        {"Nda Spanaway" = [ "events/nda-spanaway/index.md" ]},
         {"Nda Vancouver" = [
             "events/nda-vancouver/index.md",
             {"AccessMap" = "events/nda-vancouver/accessmap.md"},
