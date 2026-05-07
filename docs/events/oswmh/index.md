@@ -28,15 +28,15 @@ These meetings held regularly via Zoom with members of TCAT are open to all for 
 
 #### Regular TCAT Attendees
 
-_[In-call]_ **Primary Support:** Amy B. ([amykateb@uw.edu](mailto:amykateb@uw.edu)), Ryan L. ([ryanliu8@uw.edu](mailto:ryanliu8@uw.edu))
+_\[In-call]_ **Primary Support:** Amy B. ([amykateb@uw.edu](mailto:amykateb@uw.edu)), Ryan L. ([ryanliu8@uw.edu](mailto:ryanliu8@uw.edu))
 
-_[On-call]_ **AccessMap & Walksheds Support:** Anat C. ([caspian@cs.washington.edu](mailto:caspian@cs.washington.edu)), Sam Y. ([wisam@uw.edu](mailto:wisam@uw.edu))
+_\[On-call]_ **AccessMap & Walksheds Support:** Anat C. ([caspian@cs.washington.edu](mailto:caspian@cs.washington.edu)), Sam Y. ([wisam@uw.edu](mailto:wisam@uw.edu))
 
-_[On-call]_ **AccessMap Non-Visual Support:** Kunal M. ([kunalvm@uw.edu](mailto:kunalvm@uw.edu))
+_\[On-call]_ **AccessMap Non-Visual Support:** Kunal M. ([kunalvm@uw.edu](mailto:kunalvm@uw.edu))
 
-_[On-call]_ **SCLIO Grant Support:** Anat C. ([caspian@cs.washington.edu](mailto:caspian@cs.washington.edu))
+_\[On-call]_ **SCLIO Grant Support:** Anat C. ([caspian@cs.washington.edu](mailto:caspian@cs.washington.edu))
 
-_[Drop-in]_ **Additional Members:** Amara S. ([ascherm@uw.edu](mailto:ascherm@uw.edu)), Tanisha S. ([tsepul@uw.edu](mailto:tsepul@uw.edu))
+_\[Drop-in]_ **Additional Members:** Amara S. ([ascherm@uw.edu](mailto:ascherm@uw.edu)), Tanisha S. ([tsepul@uw.edu](mailto:tsepul@uw.edu))
 
 ---
 
