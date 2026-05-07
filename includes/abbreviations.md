@@ -13,6 +13,7 @@
 *[ARIA]: Accessible Rich Internet Applications
 *[ARNOLD]: All Road Network of Linear Referenced Data
 *[ASR]: AVIV ScoutRoute
+*[AST]: Abstract Syntax Tree
 *[ATP]: Active Transportation Plan
 *[ATSAC]: Cooper Jones Active Transportation Safety Advisory Council
 *[ATSC]: Cooper Jones Active Transportation Safety Council
