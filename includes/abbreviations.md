@@ -29,6 +29,7 @@
 *[BTS]: Bureau of Transportation Statistics
 *[CAD]: Computer-Aided Design
 *[CADD]: Computer-Aided Design and Drafting
+*[CCMS]: Component Content Management System
 *[CHIIR]: Conference on Human Information Interaction and Retrieval
 *[CALACT]: California Association of Coordinated Transportation
 *[Cal-ITP]: California Integrated Travel Project
@@ -49,6 +50,7 @@
 *[DE-9IM]: Dimensionally Extended Nine-Intersection Model
 *[DEM]: Digital Elevation Model
 *[DESA]: Department of Economic and Social Affairs
+*[DITA]: Darwin Information Typing Architecture
 *[DOT]: Department of Transportation
 *[DSB]: Department of Services for the Blind
 *[DSM]: Digital Surface Model
@@ -103,6 +105,7 @@
 *[JCDL]: Joint Conference on Digital Libraries
 *[JOSM]: Java OpenStreetMap Editor
 *[JSON]: JavaScript Object Notation
+*[JSX]: JavaScript XML
 *[KML]: Keyhole Markup Language
 *[KPI]: Key Performance Indicator
 *[lat]: Latitude
@@ -167,6 +170,7 @@
 *[PWG]: Pedestrian Working Group
 *[QA]: Quality Assurance
 *[QC]: Quality Control
+*[RAG]: Retrieval-Augmented Generation
 *[RCTO]: Regional Concept for Transportation Operations
 *[RGC]: Regional Growth Center
 *[ROW]: Right of Way
