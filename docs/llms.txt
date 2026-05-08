@@ -1,12 +1,6 @@
 # TCAT Wiki
 
-> Documentation for transportation accessibility tools and data developed by the
-> Taskar Center for Accessible Technology (TCAT) at the University of Washington.
-> This wiki covers OS-CONNECT (Washington State's connected pedestrian network
-> dataset), TDEI (the platform for storing and serving that data), OpenSidewalks
-> (the data schema/standard), AccessMap (accessible pedestrian routing), Walksheds
-> (pedestrian network analysis), Workspaces (dataset editing tools), and AVIV
-> ScoutRoute (a crowdsourcing mobile app for pedestrian data collection).
+> Documentation for transportation accessibility tools developed by the Taskar Center for Accessible Technology (TCAT) at the University of Washington. Covers OS-CONNECT (WA State pedestrian network dataset), TDEI (the platform), OpenSidewalks (the data schema), AccessMap (accessible routing), Walksheds (network analysis), Workspaces (editing tools), and AVIV ScoutRoute (mobile crowdsourcing app).
 
 TCAT develops open-source tools and data infrastructure to improve pedestrian
 accessibility and mobility for people with disabilities. The core dataset is
@@ -22,22 +16,12 @@ Key acronyms:
 - **OS-CONNECT** — Washington State's connected pedestrian network dataset (structured in the OSW schema)
 - **ASR** — AVIV ScoutRoute: a mobile crowdsourcing app for pedestrian data collection
 
-Architecture: data generation tools (AVIV ScoutRoute, Rapid editor, Prophet) feed
-into TDEI Core (ingestion, validation, metadata, quality checks, access control,
-publishing, APIs), and data flows from there to consumer apps (AccessMap, Walksheds,
-Audiom, Conveyal).
+Data flow: AVIV ScoutRoute, Rapid editor, and Prophet generate data → TDEI Core (ingestion, validation, metadata, quality checks, access control, publishing, APIs) → consumer apps (AccessMap, Walksheds, Audiom, Conveyal).
 
-## Key Pages
+## Overview
 
 - [Site Overview](https://taskarcenteratuw.github.io/tcat-wiki/): Project map, user journeys, and architecture overview
 - [Guides List](https://taskarcenteratuw.github.io/tcat-wiki/guides-list/): Complete index of all guides on the TCAT Wiki
-- [OS-CONNECT](https://taskarcenteratuw.github.io/tcat-wiki/os-connect/): Washington State connected pedestrian network dataset
-- [TDEI](https://taskarcenteratuw.github.io/tcat-wiki/tdei/): Platform infrastructure for transportation accessibility data
-- [OpenSidewalks](https://taskarcenteratuw.github.io/tcat-wiki/opensidewalks/): Open pedestrian network data standard and schema
-- [AccessMap](https://taskarcenteratuw.github.io/tcat-wiki/accessmap/): Accessibility-focused multimodal routing web app
-- [Walksheds](https://taskarcenteratuw.github.io/tcat-wiki/walksheds/): Pedestrian network analysis and access-to-destinations tool
-- [Workspaces](https://taskarcenteratuw.github.io/tcat-wiki/workspaces/): TDEI dataset editing platform
-- [AVIV ScoutRoute](https://taskarcenteratuw.github.io/tcat-wiki/aviv-scoutroute/): Mobile crowdsourcing app for pedestrian data collection
 
 ## OS-CONNECT
 
@@ -76,6 +60,6 @@ Audiom, Conveyal).
 
 ## Optional
 
-- [Abbreviations Glossary](https://taskarcenteratuw.github.io/tcat-wiki/includes/abbreviations/): Full glossary of 100+ acronyms and abbreviations used across TCAT tools and documentation
-- [Events](https://taskarcenteratuw.github.io/tcat-wiki/events/): Organized editing events (mapathons) and post-event reports
+- [Abbreviations Glossary](https://raw.githubusercontent.com/TaskarCenterAtUW/tcat-wiki/refs/heads/main/includes/abbreviations.md): Full glossary of 100+ acronyms and abbreviations used across TCAT tools and documentation
+- [Events](https://taskarcenteratuw.github.io/tcat-wiki/events/): Organized editing events (walkabouts, mapathons) and post-event reports
 - [Tasking Manager User Manual](https://taskarcenteratuw.github.io/tcat-wiki/opensidewalks/tasking-manager/user-manual/): How to participate in OpenSidewalks organized editing on the OSM US Tasking Manager
