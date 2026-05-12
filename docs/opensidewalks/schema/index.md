@@ -331,10 +331,10 @@ Edges are Lines (their serializable geometries are representable by LineStrings)
 
     <table class="schema-table">
     <tr><td>Description</td><td>The centerline of a sidewalk, a designated pedestrian path to the side of a street.</td></tr>
-    <tr><td>Subtype of</td><td><a href="#footway">Footway</a></td></tr>
+    <tr><td>Subtype of</td><td><a href="#footway-plain">Footway</a></td></tr>
     <tr><td>Geometry</td><td>LineString</td></tr>
     <tr><td>Identifying Fields</td><td><code>highway=footway</code>, <code>footway=sidewalk</code></td></tr>
-    <tr><td>Optional Fields</td><td>All <a href="#footway">optional fields of footway</a><br><a href="#description">description</a></td></tr>
+    <tr><td>Optional Fields</td><td>All <a href="#footway-plain">optional fields of footway</a><br><a href="#description">description</a></td></tr>
     </table>
 
 <div id="crossing"></div>
@@ -343,10 +343,10 @@ Edges are Lines (their serializable geometries are representable by LineStrings)
 
     <table class="schema-table">
     <tr><td>Description</td><td>(Part of) the centerline of a pedestrian street crossing. A crossing exists only on the road surface itself, i.e. "from curb to curb".<br><br>Because crossings should be connected to the street network, they should be represented by at least two Edges: one from the first curb interface to the street centerline and one from the street centerline to the second curb interface, e.g..<br><br>Crossings should not be connected directly to sidewalk centerlines, as the sidewalk centerline is never the curb interface. Instead, a short footway should connect the two together.</td></tr>
-    <tr><td>Subtype of</td><td><a href="#footway">Footway</a></td></tr>
+    <tr><td>Subtype of</td><td><a href="#footway-plain">Footway</a></td></tr>
     <tr><td>Geometry</td><td>LineString</td></tr>
     <tr><td>Identifying Fields</td><td><code>highway=footway</code>, <code>footway=crossing</code></td></tr>
-    <tr><td>Optional Fields</td><td>All <a href="#footway">optional fields of footway</a><br><a href="#crossing-markings">crossing:markings</a></td></tr>
+    <tr><td>Optional Fields</td><td>All <a href="#footway-plain">optional fields of footway</a><br><a href="#crossing-markings">crossing:markings</a></td></tr>
     </table>
 
 <div id="traffic-island"></div>
@@ -355,10 +355,10 @@ Edges are Lines (their serializable geometries are representable by LineStrings)
 
     <table class="schema-table">
     <tr><td>Description</td><td>The centerline of a footway traversing a traffic island. Some complex, long, or busy pedestrian crossings have a built-up "island" to protect pedestrians, splitting up the crossing of the street into two or more crossings. As a pedestrian uses this crossing, they will transition across these Edge elements: sidewalk → footway → crossing → traffic island → crossing → footway → sidewalk.</td></tr>
-    <tr><td>Subtype of</td><td><a href="#footway">Footway</a></td></tr>
+    <tr><td>Subtype of</td><td><a href="#footway-plain">Footway</a></td></tr>
     <tr><td>Geometry</td><td>LineString</td></tr>
     <tr><td>Identifying Fields</td><td><code>highway=footway</code>, <code>footway=traffic_island</code></td></tr>
-    <tr><td>Optional Fields</td><td>All <a href="#footway">optional fields of footway</a></td></tr>
+    <tr><td>Optional Fields</td><td>All <a href="#footway-plain">optional fields of footway</a></td></tr>
     </table>
 
 <div id="pedestrian-road"></div>
@@ -382,7 +382,7 @@ Edges are Lines (their serializable geometries are representable by LineStrings)
     <tr><td>Subtype of</td><td><em>None</em></td></tr>
     <tr><td>Geometry</td><td>LineString</td></tr>
     <tr><td>Identifying Fields</td><td><code>highway=steps</code></td></tr>
-    <tr><td>Optional Fields</td><td><a href="#width">width</a><br><a href="#surface">surface</a><br><a href="#incline">incline</a><br><a href="#length">length</a><br><a href="#description">description</a><br><a href="#name">name</a><br><a href="#stepcount">step_count</a><br><a href="#climb">climb</a><br><a href="#foot">foot</a></td></tr>
+    <tr><td>Optional Fields</td><td><a href="#width">width</a><br><a href="#surface">surface</a><br><a href="#incline">incline</a><br><a href="#length">length</a><br><a href="#description">description</a><br><a href="#name">name</a><br><a href="#step-count">step_count</a><br><a href="#climb">climb</a><br><a href="#foot">foot</a></td></tr>
     </table>
 
 <div id="living-street"></div>
@@ -689,7 +689,7 @@ Polygons describe 2-dimensional areas which are adjacent to pedestrian paths. Th
     <tr><td>Description</td><td>A building is a man-made structure with a roof, standing more or less permanently in one place.</td></tr>
     <tr><td>Subtype of</td><td><em>None</em></td></tr>
     <tr><td>Geometry</td><td>Polygon</td></tr>
-    <tr><td>Identifying Fields</td><td><a href="#building-1">building</a>=\*</td></tr>
+    <tr><td>Identifying Fields</td><td><a href="#building">building</a>=\*</td></tr>
     <tr><td>Optional Fields</td><td><a href="#name">name</a><br><a href="#opening-hours">opening_hours</a></td></tr>
     </table>
 
