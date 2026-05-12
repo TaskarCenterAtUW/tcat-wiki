@@ -7,6 +7,18 @@ Changes to the TCAT Wiki are documented here.
 This project adheres to [Semantic Versioning](https://semver.org/) and
 [Conventional Commits](https://www.conventionalcommits.org/).
 
+## v11.11.0 (2026-05-11)
+
+### Features
+
+- **Core**: Improve AI-consumption support with `llms.txt` and `robots.txt` files
+- **Docs**: Add minimal NDA event pages and supporting stats
+
+### Fixes
+
+- **Docs**: Repair links and anchors and escape non-link bracket text
+- **Core**: Prevent an unnecessary trailing comma in generated nav output
+
 ## v11.10.1 (2026-04-29)
 
 ### Fixes

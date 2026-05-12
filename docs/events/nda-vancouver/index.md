@@ -1,5 +1,5 @@
 ---
-title: Clark County Walk/Roll Event
+title: NDA Vancouver
 
 # ── Event type flags (required) ──────────────────────────────────────
 # Set each to true or false. At least one must be true for report generation.
@@ -32,9 +32,9 @@ asr_api_key_env_var: "TDEI_API_KEY" # Name of the env var holding the TDEI API k
 
 <!-- @format -->
 
-## Clark County Walk/Roll Event
+## NDA Vancouver
 
-The **Clark County Walk/Roll Event** is an in-person pedestrian accessibility audit led by the [Nondrivers Alliance](https://nondrivers.org/) (NDA) in coordination with the Taskar Center for Accessible Technology (TCAT).
+The **Vancouver Walk/Roll Event** was an in-person pedestrian accessibility audit led by the [Nondrivers Alliance](https://nondrivers.org/) (NDA) in coordination with the Taskar Center for Accessible Technology (TCAT).
 
 ### Event Details
 

@@ -51,7 +51,7 @@ This section covers the installation of the AVIV ScoutRoute mobile app for both 
 
 #### Step 2: Install
 
-Installation instructions are different for Android and iOS users. If you use an Apple device, skip ahead to the [iOS](#ios) section.
+Installation instructions are different for Android and iOS users. If you use an Apple device, skip ahead to the [iOS](#ios-apple) section.
 
 ##### Android
 

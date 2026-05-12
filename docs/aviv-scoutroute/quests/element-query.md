@@ -22,7 +22,7 @@ The `quest_query` attribute of an AVIV ScoutRoute long form quest definition is 
 
 For example, to get all ways, simply enter the query: `ways`
 
-| Expression                   | [matches] returns `true` if element...                                                                                    |
+| Expression                   | \[matches] returns `true` if element...                                                                                   |
 |:-----------------------------|:--------------------------------------------------------------------------------------------------------------------------|
 | `shop`                       | has a tag with key `shop`                                                                                                 |
 | `!shop`                      | doesn't have a tag with key `shop`                                                                                        |

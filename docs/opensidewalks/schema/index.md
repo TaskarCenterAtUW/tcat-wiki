@@ -129,9 +129,9 @@ Polygons describe 2-dimensional areas which are adjacent to pedestrian paths. Th
 
 Custom Entities are user-defined features that extend the OpenSidewalks Schema beyond the predefined Core and Adjacent categories. They enable incorporation of bespoke data layers while maintaining schema consistency. Custom Entities can take one of three geometry types:
 
-- [Points](#custom-points)
-- [Lines](#custom-lines)
-- [Polygons](#custom-polygons)
+- [Points](#custom-point)
+- [Lines](#custom-line)
+- [Polygons](#custom-polygon)
 
 #### Entity Attributes
 
@@ -172,7 +172,7 @@ In addition to the above rule about Edge entities connecting end-to-end, it is c
 
 ##### Crossings do not connect to sidewalk centerlines
 
-The OpenSidewalks Schema defines [Crossings](#crossing) as existing only on the street surface and [Sidewalks](#sidewalk) as describing only the sidewalk centerline. There must therefore always be space between a Sidewalk and a Crossing. A Sidewalk and Crossing should be connected by a plain [Footway](#footway).
+The OpenSidewalks Schema defines [Crossings](#crossing) as existing only on the street surface and [Sidewalks](#sidewalk) as describing only the sidewalk centerline. There must therefore always be space between a Sidewalk and a Crossing. A Sidewalk and Crossing should be connected by a plain [Footway](#footway-plain).
 
 ##### Curb interfaces and curb ramps are mapped at Edge endpoints
 
@@ -237,6 +237,8 @@ The following is a sample snippet demonstrating the use of these metadata fields
 
 Nodes are features that are geometrically defined by a single latitude-longitude pair: a point on the planet. They are also defined as a part of a pedestrian network: each Node must define an `_id` string field, a unique identifier to which Edges and Zones may refer using their `_u_id`, `_v_id` or `_w_id` fields.
 
+<div id="bare-node"></div>
+
 ??? abstract "Bare Node"
 
     <table class="schema-table">
@@ -246,6 +248,8 @@ Nodes are features that are geometrically defined by a single latitude-longitude
     <tr><td>Identifying Fields</td><td>(must have the <code>_id</code> field, like all Nodes)</td></tr>
     <tr><td>Optional Fields</td><td><em>None</em></td></tr>
     </table>
+
+<div id="generic-curb"></div>
 
 ??? abstract "Generic Curb"
 
@@ -257,6 +261,8 @@ Nodes are features that are geometrically defined by a single latitude-longitude
     <tr><td>Optional Fields</td><td><a href="#tactile-paving"><code>tactile_paving</code></a></td></tr>
     </table>
 
+<div id="raised-curb"></div>
+
 ??? abstract "Raised Curb"
 
     <table class="schema-table">
@@ -266,6 +272,8 @@ Nodes are features that are geometrically defined by a single latitude-longitude
     <tr><td>Identifying Fields</td><td><code>barrier=kerb</code>, <code>kerb=raised</code></td></tr>
     <tr><td>Optional Fields</td><td>All <a href="#generic-curb">optional fields of generic curb</a></td></tr>
     </table>
+
+<div id="rolled-curb"></div>
 
 ??? abstract "Rolled Curb"
 
@@ -277,6 +285,8 @@ Nodes are features that are geometrically defined by a single latitude-longitude
     <tr><td>Optional Fields</td><td>All <a href="#generic-curb">optional fields of generic curb</a></td></tr>
     </table>
 
+<div id="curb-ramp"></div>
+
 ??? abstract "Curb Ramp"
 
     <table class="schema-table">
@@ -286,6 +296,8 @@ Nodes are features that are geometrically defined by a single latitude-longitude
     <tr><td>Identifying Fields</td><td><code>barrier=kerb</code>, <code>kerb=lowered</code></td></tr>
     <tr><td>Optional Fields</td><td>All <a href="#generic-curb">optional fields of generic curb</a></td></tr>
     </table>
+
+<div id="flush-curb"></div>
 
 ??? abstract "Flush Curb"
 
@@ -301,6 +313,8 @@ Nodes are features that are geometrically defined by a single latitude-longitude
 
 Edges are Lines (their serializable geometries are representable by LineStrings) intended to represent pedestrian network connections. Edges are often derived from topological data like that stored in OpenStreetMap. All Edges must have a unique `_id` field.
 
+<div id="footway-plain"></div>
+
 ??? abstract "Footway (plain)"
 
     <table class="schema-table">
@@ -311,35 +325,43 @@ Edges are Lines (their serializable geometries are representable by LineStrings)
     <tr><td>Optional Fields</td><td><a href="#width">width</a><br><a href="#surface">surface</a><br><a href="#incline">incline</a><br><a href="#length">length</a><br><a href="#description">description</a><br><a href="#name">name</a><br><a href="#foot">foot</a></td></tr>
     </table>
 
+<div id="sidewalk"></div>
+
 ??? abstract "Sidewalk"
 
     <table class="schema-table">
     <tr><td>Description</td><td>The centerline of a sidewalk, a designated pedestrian path to the side of a street.</td></tr>
-    <tr><td>Subtype of</td><td><a href="#footway">Footway</a></td></tr>
+    <tr><td>Subtype of</td><td><a href="#footway-plain">Footway</a></td></tr>
     <tr><td>Geometry</td><td>LineString</td></tr>
     <tr><td>Identifying Fields</td><td><code>highway=footway</code>, <code>footway=sidewalk</code></td></tr>
-    <tr><td>Optional Fields</td><td>All <a href="#footway">optional fields of footway</a><br><a href="#description">description</a></td></tr>
+    <tr><td>Optional Fields</td><td>All <a href="#footway-plain">optional fields of footway</a><br><a href="#description">description</a></td></tr>
     </table>
+
+<div id="crossing"></div>
 
 ??? abstract "Crossing"
 
     <table class="schema-table">
     <tr><td>Description</td><td>(Part of) the centerline of a pedestrian street crossing. A crossing exists only on the road surface itself, i.e. "from curb to curb".<br><br>Because crossings should be connected to the street network, they should be represented by at least two Edges: one from the first curb interface to the street centerline and one from the street centerline to the second curb interface, e.g..<br><br>Crossings should not be connected directly to sidewalk centerlines, as the sidewalk centerline is never the curb interface. Instead, a short footway should connect the two together.</td></tr>
-    <tr><td>Subtype of</td><td><a href="#footway">Footway</a></td></tr>
+    <tr><td>Subtype of</td><td><a href="#footway-plain">Footway</a></td></tr>
     <tr><td>Geometry</td><td>LineString</td></tr>
     <tr><td>Identifying Fields</td><td><code>highway=footway</code>, <code>footway=crossing</code></td></tr>
-    <tr><td>Optional Fields</td><td>All <a href="#footway">optional fields of footway</a><br><a href="#crossing-markings">crossing:markings</a></td></tr>
+    <tr><td>Optional Fields</td><td>All <a href="#footway-plain">optional fields of footway</a><br><a href="#crossing-markings">crossing:markings</a></td></tr>
     </table>
+
+<div id="traffic-island"></div>
 
 ??? abstract "Traffic Island"
 
     <table class="schema-table">
     <tr><td>Description</td><td>The centerline of a footway traversing a traffic island. Some complex, long, or busy pedestrian crossings have a built-up "island" to protect pedestrians, splitting up the crossing of the street into two or more crossings. As a pedestrian uses this crossing, they will transition across these Edge elements: sidewalk → footway → crossing → traffic island → crossing → footway → sidewalk.</td></tr>
-    <tr><td>Subtype of</td><td><a href="#footway">Footway</a></td></tr>
+    <tr><td>Subtype of</td><td><a href="#footway-plain">Footway</a></td></tr>
     <tr><td>Geometry</td><td>LineString</td></tr>
     <tr><td>Identifying Fields</td><td><code>highway=footway</code>, <code>footway=traffic_island</code></td></tr>
-    <tr><td>Optional Fields</td><td>All <a href="#footway">optional fields of footway</a></td></tr>
+    <tr><td>Optional Fields</td><td>All <a href="#footway-plain">optional fields of footway</a></td></tr>
     </table>
+
+<div id="pedestrian-road"></div>
 
 ??? abstract "Pedestrian Road"
 
@@ -351,6 +373,8 @@ Edges are Lines (their serializable geometries are representable by LineStrings)
     <tr><td>Optional Fields</td><td><a href="#width">width</a><br><a href="#surface">surface</a><br><a href="#incline">incline</a><br><a href="#length">length</a><br><a href="#description">description</a><br><a href="#name">name</a><br><a href="#foot">foot</a></td></tr>
     </table>
 
+<div id="steps"></div>
+
 ??? abstract "Steps"
 
     <table class="schema-table">
@@ -358,8 +382,10 @@ Edges are Lines (their serializable geometries are representable by LineStrings)
     <tr><td>Subtype of</td><td><em>None</em></td></tr>
     <tr><td>Geometry</td><td>LineString</td></tr>
     <tr><td>Identifying Fields</td><td><code>highway=steps</code></td></tr>
-    <tr><td>Optional Fields</td><td><a href="#width">width</a><br><a href="#surface">surface</a><br><a href="#incline">incline</a><br><a href="#length">length</a><br><a href="#description">description</a><br><a href="#name">name</a><br><a href="#stepcount">step_count</a><br><a href="#climb">climb</a><br><a href="#foot">foot</a></td></tr>
+    <tr><td>Optional Fields</td><td><a href="#width">width</a><br><a href="#surface">surface</a><br><a href="#incline">incline</a><br><a href="#length">length</a><br><a href="#description">description</a><br><a href="#name">name</a><br><a href="#step-count">step_count</a><br><a href="#climb">climb</a><br><a href="#foot">foot</a></td></tr>
     </table>
+
+<div id="living-street"></div>
 
 ??? abstract "Living Street"
 
@@ -371,6 +397,8 @@ Edges are Lines (their serializable geometries are representable by LineStrings)
     <tr><td>Optional Fields</td><td><a href="#width">width</a><br><a href="#surface">surface</a><br><a href="#incline">incline</a><br><a href="#length">length</a><br><a href="#description">description</a><br><a href="#name">name</a><br><a href="#foot">foot</a></td></tr>
     </table>
 
+<div id="motor-vehicle-roads"></div>
+
 ??? abstract "Motor Vehicle Roads"
 
     While OpenSidewalks schema is centered around the pedestrian experience and accessibility within the pedestrian network, the inclusion of roads as core entities in the schema is justified because:
@@ -380,6 +408,8 @@ Edges are Lines (their serializable geometries are representable by LineStrings)
     3. A pedestrian's safety and environment is greatly impacted by their adjacency to a particular road. For example, a wheelchair user may choose to avoid crossing busy roads for their safety unless they have to.
 
     In order to simplify the job of OpenSidewalks consuming applications when attempting to route pedestrians, we have included a [foot](#foot) field in all Edges and Zones to indicate whether an entity is safe to traverse by a pedestrian. We recommend applications clearly communicate the risk to pedestrians if they route users on entities with missing [foot](#foot) field or with `foot=no`.
+
+    <div id="primary-street"></div>
 
     ??? abstract "Primary Street"
 
@@ -391,6 +421,8 @@ Edges are Lines (their serializable geometries are representable by LineStrings)
         <tr><td>Optional Fields</td><td><a href="#width">width</a><br><a href="#surface">surface</a><br><a href="#incline">incline</a><br><a href="#length">length</a><br><a href="#description">description</a><br><a href="#name">name</a><br><a href="#foot">foot</a></td></tr>
         </table>
 
+    <div id="secondary-street"></div>
+
     ??? abstract "Secondary Street"
 
         <table class="schema-table">
@@ -400,6 +432,8 @@ Edges are Lines (their serializable geometries are representable by LineStrings)
         <tr><td>Identifying Fields</td><td><code>highway=secondary</code></td></tr>
         <tr><td>Optional Fields</td><td>All <a href="#primary-street">optional fields of a primary street</a>.</td></tr>
         </table>
+
+    <div id="tertiary-street"></div>
 
     ??? abstract "Tertiary Street"
 
@@ -411,6 +445,8 @@ Edges are Lines (their serializable geometries are representable by LineStrings)
         <tr><td>Optional Fields</td><td>All <a href="#primary-street">optional fields of a primary street</a>.</td></tr>
         </table>
 
+    <div id="residential-street"></div>
+
     ??? abstract "Residential Street"
 
         <table class="schema-table">
@@ -420,6 +456,8 @@ Edges are Lines (their serializable geometries are representable by LineStrings)
         <tr><td>Identifying Fields</td><td><code>highway=residential</code></td></tr>
         <tr><td>Optional Fields</td><td>All <a href="#primary-street">optional fields of a primary street</a>.</td></tr>
         </table>
+
+    <div id="service-road"></div>
 
     ??? abstract "Service Road"
 
@@ -431,6 +469,8 @@ Edges are Lines (their serializable geometries are representable by LineStrings)
         <tr><td>Optional Fields</td><td>All <a href="#primary-street">optional fields of a primary street</a>.</td></tr>
         </table>
 
+    <div id="driveway"></div>
+
     ??? abstract "Driveway"
 
         <table class="schema-table">
@@ -440,6 +480,8 @@ Edges are Lines (their serializable geometries are representable by LineStrings)
         <tr><td>Identifying Fields</td><td><code>highway=service</code>, <code>service=driveway</code></td></tr>
         <tr><td>Optional Fields</td><td>All <a href="#primary-street">optional fields of a primary street</a>.</td></tr>
         </table>
+
+    <div id="alley"></div>
 
     ??? abstract "Alley"
 
@@ -451,6 +493,8 @@ Edges are Lines (their serializable geometries are representable by LineStrings)
         <tr><td>Optional Fields</td><td>All <a href="#primary-street">optional fields of a primary street</a>.</td></tr>
         </table>
 
+    <div id="parking-aisle"></div>
+
     ??? abstract "Parking Aisle"
 
         <table class="schema-table">
@@ -461,6 +505,8 @@ Edges are Lines (their serializable geometries are representable by LineStrings)
         <tr><td>Optional Fields</td><td>All <a href="#primary-street">optional fields of a primary street</a>.</td></tr>
         </table>
 
+    <div id="unclassified-road"></div>
+
     ??? abstract "Unclassified Road"
 
         <table class="schema-table">
@@ -470,6 +516,8 @@ Edges are Lines (their serializable geometries are representable by LineStrings)
         <tr><td>Identifying Fields</td><td><code>highway=unclassified</code></td></tr>
         <tr><td>Optional Fields</td><td>All <a href="#primary-street">optional fields of a primary street</a>.</td></tr>
         </table>
+
+    <div id="trunk-road"></div>
 
     ??? abstract "Trunk Road"
 
@@ -484,6 +532,8 @@ Edges are Lines (their serializable geometries are representable by LineStrings)
 #### Zones
 
 Zones are features that are geometrically defined by a Polygon (a closed ring of coordinates). They are also defined as a part of a pedestrian network: each Zone must define an `_id` string field, a unique identifier, and a list (`_w_id`) of Node `_id`s that define the Zone's boundary.
+
+<div id="pedestrian-zone"></div>
 
 ??? abstract "Pedestrian Zone"
 
@@ -503,6 +553,8 @@ Zones are features that are geometrically defined by a Polygon (a closed ring of
 
 Points are features that are geometrically defined by a single latitude-longitude pair: a point on the planet. They are explicitly **not** elements of the pedestrian network definition (i.e. the graph structure described by Nodes and Edges), but they are still highly relevant to the physical pedestrian network. All Points must have a unique `_id` field.
 
+<div id="power-pole"></div>
+
 ??? abstract "Power Pole"
 
     <table class="schema-table">
@@ -512,6 +564,8 @@ Points are features that are geometrically defined by a single latitude-longitud
     <tr><td>Identifying Fields</td><td><code>power=pole</code></td></tr>
     <tr><td>Optional Fields</td><td><em>None</em></td></tr>
     </table>
+
+<div id="fire-hydrant"></div>
 
 ??? abstract "Fire Hydrant"
 
@@ -523,6 +577,8 @@ Points are features that are geometrically defined by a single latitude-longitud
     <tr><td>Optional Fields</td><td><em>None</em></td></tr>
     </table>
 
+<div id="bench"></div>
+
 ??? abstract "Bench"
 
     <table class="schema-table">
@@ -532,6 +588,8 @@ Points are features that are geometrically defined by a single latitude-longitud
     <tr><td>Identifying Fields</td><td><code>amenity=bench</code></td></tr>
     <tr><td>Optional Fields</td><td><em>None</em></td></tr>
     </table>
+
+<div id="bollard"></div>
 
 ??? abstract "Bollard"
 
@@ -543,6 +601,8 @@ Points are features that are geometrically defined by a single latitude-longitud
     <tr><td>Optional Fields</td><td><em>None</em></td></tr>
     </table>
 
+<div id="manhole"></div>
+
 ??? abstract "Manhole"
 
     <table class="schema-table">
@@ -552,6 +612,8 @@ Points are features that are geometrically defined by a single latitude-longitud
     <tr><td>Identifying Fields</td><td><code>man_made=manhole</code></td></tr>
     <tr><td>Optional Fields</td><td><em>None</em></td></tr>
     </table>
+
+<div id="street-lamp"></div>
 
 ??? abstract "Street Lamp"
 
@@ -563,6 +625,8 @@ Points are features that are geometrically defined by a single latitude-longitud
     <tr><td>Optional Fields</td><td><em>None</em></td></tr>
     </table>
 
+<div id="waste-basket"></div>
+
 ??? abstract "Waste Basket"
 
     <table class="schema-table">
@@ -572,6 +636,8 @@ Points are features that are geometrically defined by a single latitude-longitud
     <tr><td>Identifying Fields</td><td><code>amenity=waste_basket</code></td></tr>
     <tr><td>Optional Fields</td><td><em>None</em></td></tr>
     </table>
+
+<div id="tree"></div>
 
 ??? abstract "Tree"
 
@@ -587,6 +653,8 @@ Points are features that are geometrically defined by a single latitude-longitud
 
 Lines are features that are geometrically defined by a series of coordinates forming a LineString. They are explicitly **not** elements of the pedestrian network definition (i.e. the graph structure described by Nodes, Edges and Zones), but they are still highly relevant to the physical pedestrian network. All Lines must have a unique `_id` field.
 
+<div id="fence"></div>
+
 ??? abstract "Fence"
 
     <table class="schema-table">
@@ -596,6 +664,8 @@ Lines are features that are geometrically defined by a series of coordinates for
     <tr><td>Identifying Fields</td><td><code>barrier=fence</code></td></tr>
     <tr><td>Optional Fields</td><td><a href="#length">length</a></td></tr>
     </table>
+
+<div id="tree-row"></div>
 
 ??? abstract "Tree Row"
 
@@ -611,15 +681,19 @@ Lines are features that are geometrically defined by a series of coordinates for
 
 Polygons describe 2-dimensional areas which are adjacent to pedestrian paths. They are explicitly **not** elements of the pedestrian network definition (i.e. the graph structure described by Nodes, Edges and Zones), but they are still highly relevant to the physical pedestrian network. All Polygons must have a unique `_id` field.
 
+<div id="building"></div>
+
 ??? abstract "Building"
 
     <table class="schema-table">
     <tr><td>Description</td><td>A building is a man-made structure with a roof, standing more or less permanently in one place.</td></tr>
     <tr><td>Subtype of</td><td><em>None</em></td></tr>
     <tr><td>Geometry</td><td>Polygon</td></tr>
-    <tr><td>Identifying Fields</td><td><a href="#building-1">building</a>=\*</td></tr>
+    <tr><td>Identifying Fields</td><td><a href="#building">building</a>=\*</td></tr>
     <tr><td>Optional Fields</td><td><a href="#name">name</a><br><a href="#opening-hours">opening_hours</a></td></tr>
     </table>
+
+<div id="wood"></div>
 
 ??? abstract "Wood"
 
@@ -684,6 +758,8 @@ OpenSidewalks Schema fields are typed key-value pairs. Keys are always strings a
 
 #### List of fields
 
+<div id="description"></div>
+
 ??? abstract "description"
 
     <table class="schema-table">
@@ -691,12 +767,16 @@ OpenSidewalks Schema fields are typed key-value pairs. Keys are always strings a
     <tr><td>Value type</td><td>text</td></tr>
     </table>
 
+<div id="name"></div>
+
 ??? abstract "name"
 
     <table class="schema-table">
-    <tr><td>Description</td><td>The (semi-)official name of an entity. <em>Not</em> a description of the entity. For example, this would be the street name for a street path or a specially-designated name for a famous footpath. <code>name="The [X] trail"</code>, for example.</td></tr>
+    <tr><td>Description</td><td>The (semi-)official name of an entity. <em>Not</em> a description of the entity. For example, this would be the street name for a street path or a specially-designated name for a famous footpath. <code>name="The \[X] trail"</code>, for example.</td></tr>
     <tr><td>Value type</td><td>text</td></tr>
     </table>
+
+<div id="incline"></div>
 
 ??? abstract "incline"
 
@@ -704,6 +784,8 @@ OpenSidewalks Schema fields are typed key-value pairs. Keys are always strings a
     <tr><td>Description</td><td>The estimated incline over a particular path, i.e. slope, i.e. grade, i.e. rise over run. If derived from OpenStreetMap data, this is the maximum incline over the path. If derived from DEM data, it is more likely to be an underestimation. Positive values indicate an uphill climb while negative are downhill. For example, a 45 degree downhill value for incline would be -1.0. For steps, you can use "up" or "down" to indicate the direction of the climb relative to the direction of the Edge.</td></tr>
     <tr><td>Value type</td><td>numeric</td></tr>
     </table>
+
+<div id="surface"></div>
 
 ??? abstract "surface"
 
@@ -713,6 +795,8 @@ OpenSidewalks Schema fields are typed key-value pairs. Keys are always strings a
     <tr><td>Enumerated Values</td><td>- <em>asphalt</em><br>- <em>concrete</em><br>- <em>gravel</em><br>- <em>grass</em><br>- <em>paved</em><br>- _paving_stones_<br>- <em>unpaved</em><br>- <em>dirt</em><br>- _grass_paver_</td></tr>
     </table>
 
+<div id="length"></div>
+
 ??? abstract "length"
 
     <table class="schema-table">
@@ -720,12 +804,16 @@ OpenSidewalks Schema fields are typed key-value pairs. Keys are always strings a
     <tr><td>Value type</td><td>numeric</td></tr>
     </table>
 
+<div id="width"></div>
+
 ??? abstract "width"
 
     <table class="schema-table">
     <tr><td>Description</td><td>The width of an Edge in meters.</td></tr>
     <tr><td>Value type</td><td>numeric</td></tr>
     </table>
+
+<div id="tactile-paving"></div>
 
 ??? abstract "tactile_paving"
 
@@ -735,6 +823,8 @@ OpenSidewalks Schema fields are typed key-value pairs. Keys are always strings a
     <tr><td>Enumerated Values</td><td>- <em>yes</em><br>- <em>no</em><br>- <em>contrasted</em>: Where there is a tactile paving which contrast is at least 70% the colour of the ground (white if the ground is black and vice-versa).<br>- <em>primitive</em>: Where any water drain or decorative tactile element can be used for orientation accidentally, but no typical tactile ground elements are used.</td></tr>
     </table>
 
+<div id="crossing-markings"></div>
+
 ??? abstract "crossing:markings"
 
     <table class="schema-table">
@@ -743,12 +833,16 @@ OpenSidewalks Schema fields are typed key-value pairs. Keys are always strings a
     <tr><td>Enumerated Values</td><td>- <em>yes</em>: The crossing has surface markings but the type is unspecified.<br>- <em>no</em>: The crossing has no surface markings.<br>- <em>surface</em>: There is a surface change but no distinct markings.<br>- <em>lines</em>: There are only two parallel lines to indicate the outline of the crossing.<br>- <em>lines:paired</em>: The same as <code>crossing:markings=lines</code> but each line is actually two very-close parallel lines (for a total of 4 lines).<br>- <em>dashes</em>: There are only two parallel dashed lines to indicate the outline of the crossing.<br>- <em>dots</em>: There are only two parallel dotted lines (square/round markings with significant distance between them) to indicate the outline of the crossing.<br>- <em>zebra</em>: The crossing is only marked by regularly spaced bars along its length.<br>-zebra:double: The same as <code>crossing:markings=zebra</code> but there are two sets of regularly spaced bars with a small gap between them.<br>- <em>zebra:paired</em>: The same as <code>crossing:markings=zebra</code> but each bar is made up of two smaller bars (i.e. there's a small gap between smaller bars).<br>- <em>zebra:bicolour</em>: The same as <code>crossing:markings=zebra</code> but there are the bars and gaps are made of two alternating colors.<br>- <em>ladder</em>: The same as combining <code>crossing:markings=zebra</code> and <code>crossing:markings=lines</code>: horizontal bars but with linear outlines enclosing the crossing.<br>- <em>skewed</em>: The same as <code>crossing:markings=ladder</code> but the horizontal bars are at a slight diagonal (~30 degree shift) - they're skewed.<br>- <em>ladder:paired</em>: The same as <code>crossing:markings=ladder</code> but the horizontal bars are actually made up of two very-close smaller bars.<br>- <em>rainbow</em>: A crossing with rainbow colors, other than in zebra pattern or lines along the crossing.<br>- <em>lines:rainbow</em>: Rainbow colored lines along the crossing.<br>- <em>zebra:rainbow</em>: A zebra crossing with rainbow colors.<br>- <em>ladder:skewed</em>: Two lines orthogonal to the direction of the roadway with diagonal bars connecting the two lines.<br>- <em>pictograms</em>: Painted pictogram(s) of pedestrian and/or bicycle (with or without arrows)</td></tr>
     </table>
 
+<div id="step-count"></div>
+
 ??? abstract "step_count"
 
     <table class="schema-table">
     <tr><td>Description</td><td>Can be added to indicate the number of steps</td></tr>
     <tr><td>Value type</td><td>integer</td></tr>
     </table>
+
+<div id="climb"></div>
 
 ??? abstract "climb"
 
@@ -757,6 +851,8 @@ OpenSidewalks Schema fields are typed key-value pairs. Keys are always strings a
     <tr><td>Value type</td><td>enum</td></tr>
     <tr><td>Enumerated Values</td><td>- <em>up</em>: when a way rises upward <em>in the direction</em> of the Edge.<br>- <em>down</em>: when a way rises upward <em>against the direction</em> of the Edge.</td></tr>
     </table>
+
+<div id="building-field"></div>
 
 ??? abstract "building"
 
@@ -916,12 +1012,16 @@ OpenSidewalks Schema fields are typed key-value pairs. Keys are always strings a
         <tr><td>yes</td><td>Use this value where it is not possible to determine a more specific value.</td></tr>
         </table>
 
+<div id="opening-hours"></div>
+
 ??? abstract "opening_hours"
 
     <table class="schema-table">
     <tr><td>Description</td><td>The opening hours of the entity. This may apply to, for example, a path that is inside a building or the building itself. The value is in OpenStreetMap syntax for the <code>opening_hours</code> tag. See <a href="https://wiki.openstreetmap.org/wiki/Key:opening_hours/specification">OpenStreetMap specification</a> on the formatting for this field.</td></tr>
     <tr><td>Value type</td><td>opening_hours</td></tr>
     </table>
+
+<div id="foot"></div>
 
 ??? abstract "foot"
 
@@ -931,6 +1031,8 @@ OpenSidewalks Schema fields are typed key-value pairs. Keys are always strings a
     <tr><td>Enumerated Values</td><td>- <em>yes</em>: Roads and other objects where the public has a legally-enshrined right for access on foot<br>- <em>no</em>: Access on foot or by pedestrians is prohibited.<br>- <em>designated</em>: A preferred or designated route for pedestrians.<br>- <em>permissive</em>: Access by pedestrians is permitted but permission may be withdrawn at any time.<br>- _use_sidepath_: Use compulsory parallel footpath instead.<br>- <em>private</em>: indicates that walking is not allowed for general public, but the owner may make exceptions at will.<br>- <em>destination</em>: Transit traffic forbidden for pedestrians, non-transit to a local destination allowed.</td></tr>
     </table>
 
+<div id="leaf-cycle"></div>
+
 ??? abstract "leaf_cycle"
 
     <table class="schema-table">
@@ -938,6 +1040,8 @@ OpenSidewalks Schema fields are typed key-value pairs. Keys are always strings a
     <tr><td>Value type</td><td>enum</td></tr>
     <tr><td>Enumerated Values</td><td>- <em>deciduous</em>: Leaves are shed seasonally, typically in autumn.<br>- <em>evergreen</em>: Retains foliage year-round.<br>- <em>mixed</em>: Both deciduous and evergreen trees are present.</td></tr>
     </table>
+
+<div id="leaf-type"></div>
 
 ??? abstract "leaf_type"
 
@@ -954,8 +1058,8 @@ OpenSidewalks Schema fields are typed key-value pairs. Keys are always strings a
 | Version | Release Date | Link                                                                         | Notes                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                |
 |---------|--------------|------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | 0.1     | 2023-08-11   | [GitHub](https://github.com/OpenSidewalks/OpenSidewalks-Schema/tree/32dad18) | - Minimal initial beta release of schema to unblock development of schema consuming applications                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                     |
-| 0.2     | 2024-01-30   | [GitHub](https://github.com/OpenSidewalks/OpenSidewalks-Schema/tree/9338af)  | - Add required `_id` Field to [Edges](#edges)<br>- Update the documentation with regards to the [coordinate reference system](#coordinate-reference-system)<br>- Introduce the concept of [Core Entities](#core-entities) and [Adjacent Entities](#adjacent-entities) (formerly called "Extensions")<br>- Add [Zones](#zones) to [Core Entities](#core-entities)<br>- Add [Lines](#lines) and [Polygons](#polygons) to [Adjacent Entities](#adjacent-entities)<br>- Add [Schema Versions](#schema-versions) and [OpenSidewalks Dataset Metadata](#opensidewalks-dataset-metadata)<br>- Add [Pedestrian Zone](#pedestrian-zone) to [Zones](#zones)<br>- Add [Fence](#fence) to [Lines](#lines)<br>- Add [Building](#building) to [Polygons](#polygons)<br>- Add _additional fields_ to [Entity Attributes](#entity-attributes)<br>- Add [Motor Vehicle Roads](#motor-vehicle-roads) to [Edges](#edges) with justification<br>- Add [Climb](#climb) Field to [Steps](#steps) Edge in addition to the existing [Incline](#incline) Field<br>- Add [Opening Hours](#opening-hours) Field and include it to the existing [Building](#building) Fields<br>- Add [Generic Curb](#generic-curb) entity to [Nodes](#nodes)<br>- Add [Foot](#foot) Field to all [Edges](#edges) and [Zones](#zones)<br>- Change [Entity Type Inference](#entity-type-inference) to include the _geometry type_<br>- Fix lossiness of [Tactile Paving](#tactile-paving) Field<br>- Remove _crossing_ Field in favor of [crossing:markings](#crossing-markings) Field<br>- Add [Living Street](#living-street) to [Edges](#edges)<br>- Add _unclassified road_ to [Motor Vehicle Roads](#motor-vehicle-roads)<br>- Add _trunk road_ to [Motor Vehicle Roads](#motor-vehicle-roads)<br>- Require that the `_id` Field for all entities has at least one character |
-| 0.3     | 2026-01-27   | [GitHub](https://github.com/OpenSidewalks/OpenSidewalks-Schema)              | - Add [Custom Points](#points-c)<br>- Add [Custom Lines](#lines-c)<br>- Add [Custom Polygons](#polygons-c)<br>- Add [Tree](#tree) to [Points](#points)<br>- Add [Tree Row](#tree-row) to [Lines](#lines)<br>- Add [Wood](#wood) to [Polygons](#polygons)<br>- Add [Leaf Type](#leaf-type) Field<br>- Add [Leaf Cycle](#leaf-cycle) Field<br>- Update documentation to improve clarity with regards to [Adjacent Entities](#adjacent-entities) (formerly called "Extensions")                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         |
+| 0.2     | 2024-01-30   | [GitHub](https://github.com/OpenSidewalks/OpenSidewalks-Schema/tree/9338af)  | - Add required `_id` Field to [Edges](#edges)<br>- Update the documentation with regards to the [coordinate reference system](#coordinate-reference-system)<br>- Introduce the concept of [Core Entities](#1-core-entities) and [Adjacent Entities](#2-adjacent-entities) (formerly called "Extensions")<br>- Add [Zones](#zones) to [Core Entities](#1-core-entities)<br>- Add [Lines](#lines) and [Polygons](#polygons) to [Adjacent Entities](#2-adjacent-entities)<br>- Add [Schema Versions](#schema-versions) and [OpenSidewalks Dataset Metadata](#opensidewalks-dataset-metadata)<br>- Add [Pedestrian Zone](#pedestrian-zone) to [Zones](#zones_1)<br>- Add [Fence](#fence) to [Lines](#lines_1)<br>- Add [Building](#building) to [Polygons](#polygons_1)<br>- Add _additional fields_ to [Entity Attributes](#entity-attributes)<br>- Add [Motor Vehicle Roads](#motor-vehicle-roads) to [Edges](#edges_1) with justification<br>- Add [Climb](#climb) Field to [Steps](#steps) Edge in addition to the existing [Incline](#incline) Field<br>- Add [Opening Hours](#opening-hours) Field and include it to the existing [Building](#building-field) Fields<br>- Add [Generic Curb](#generic-curb) entity to [Nodes](#nodes)<br>- Add [Foot](#foot) Field to all [Edges](#edges) and [Zones](#zones)<br>- Change [Entity Type Inference](#entity-type-inference) to include the _geometry type_<br>- Fix lossiness of [Tactile Paving](#tactile-paving) Field<br>- Remove _crossing_ Field in favor of [crossing:markings](#crossing-markings) Field<br>- Add [Living Street](#living-street) to [Edges](#edges)<br>- Add [Unclassified Road](#unclassified-road) to [Motor Vehicle Roads](#motor-vehicle-roads)<br>- Add [Trunk Road](#trunk-road) to [Motor Vehicle Roads](#motor-vehicle-roads)<br>- Require that the `_id` Field for all entities has at least one character |
+| 0.3     | 2026-01-27   | [GitHub](https://github.com/OpenSidewalks/OpenSidewalks-Schema)              | - Add [Custom Points](#custom-point)<br>- Add [Custom Lines](#custom-line)<br>- Add [Custom Polygons](#custom-polygon)<br>- Add [Tree](#tree) to [Points](#points)<br>- Add [Tree Row](#tree-row) to [Lines](#lines)<br>- Add [Wood](#wood) to [Polygons](#polygons)<br>- Add [Leaf Type](#leaf-type) Field<br>- Add [Leaf Cycle](#leaf-cycle) Field<br>- Update documentation to improve clarity with regards to [Adjacent Entities](#2-adjacent-entities) (formerly called "Extensions")                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         |
 
 ---
 

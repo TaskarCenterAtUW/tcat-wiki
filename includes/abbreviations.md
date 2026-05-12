@@ -6,11 +6,17 @@
 *[ABA]: Architectural Barriers Act
 *[ACM]: Association for Computing Machinery
 *[ADA]: Americans with Disabilities Act
+*[ADS]: Aging and Disability Services
 *[AI]: Artificial Intelligence
 *[API]: Application Programming Interface
 *[APS]: Accessible Pedestrian Signal
+*[ARIA]: Accessible Rich Internet Applications
 *[ARNOLD]: All Road Network of Linear Referenced Data
 *[ASR]: AVIV ScoutRoute
+*[AST]: Abstract Syntax Tree
+*[ATP]: Active Transportation Plan
+*[ATSAC]: Cooper Jones Active Transportation Safety Advisory Council
+*[ATSC]: Cooper Jones Active Transportation Safety Council
 *[ATTRI]: Accessible Transportation Technologies Research Initiative
 *[AT-DaWG]: Active Transportation Data Working Group
 *[AVIV]: Accessibility Verification, Improved Validation
@@ -19,25 +25,32 @@
 *[BBox]: Bounding Box
 *[BLV]: Blind and Low-Vision
 *[BRT]: Bus Rapid Transit
+*[BSAC]: Cooper Jones Bicyclist Safety Advisory Council
 *[BTS]: Bureau of Transportation Statistics
 *[CAD]: Computer-Aided Design
 *[CADD]: Computer-Aided Design and Drafting
+*[CCMS]: Component Content Management System
 *[CHIIR]: Conference on Human Information Interaction and Retrieval
 *[CALACT]: California Association of Coordinated Transportation
 *[Cal-ITP]: California Integrated Travel Project
 *[CC0]: Creative Commons Zero
 *[CDP]: Census-Designated Place
 *[CMP]: Congestion Management Process
+*[CNG]: Cloud-Native Geospatial Forum
 *[COE]: College of Engineering
 *[COG]: Cloud Optimized GeoTIFF
+*[CREATE]: Center for Research and Education on Accessible Technology and Experiences
 *[CRS]: Coordinate Reference System
 *[CSE]: Computer Science and Engineering
+*[CSS]: Cascading Style Sheets
 *[CSUN]: California State University, Northridge
 *[CSV]: Comma-Separated Values
+*[CTANW]: Community Transportation Association of the Northwest
 *[CUGOS]: Cascadia Users of Geospatial Open Source
 *[DE-9IM]: Dimensionally Extended Nine-Intersection Model
 *[DEM]: Digital Elevation Model
 *[DESA]: Department of Economic and Social Affairs
+*[DITA]: Darwin Information Typing Architecture
 *[DOT]: Department of Transportation
 *[DSB]: Department of Services for the Blind
 *[DSM]: Digital Surface Model
@@ -50,10 +63,12 @@
 *[FDE]: Fundamental Data Elements
 *[FGTS]: Freight & Goods Transportation System
 *[FHWA]: Federal Highway Administration
+*[FIFA]: Fédération Internationale de Football Association
 *[FNS]: Food and Nutrition Service
 *[FTA]: Federal Transit Administration
 *[FQHC]: Federally Qualified Health Center
 *[G3ict]: Global Initiative for Inclusive Information and Communication Technologies
+*[GAAD]: Global Accessibility Awareness Day
 *[GATIS]: General Active Transportation Infrastructure Specification
 *[GERS]: Global Entity Reference System
 *[GIG]: GoInfoGame
@@ -68,6 +83,7 @@
 *[GTFS]: General Transit Feed Specification
 *[GTFS-Flex]: General Transit Feed Specification, Flex Extension
 *[GTFS-Pathways]: General Transit Feed Specification, Pathways Extension
+*[GWF]: Geospatial World Forum
 *[HAWK]: High-Intensity Activated Crosswalk Beacon
 *[HCI]: Human-Computer Interaction
 *[HCIR]: Human Computer Information Retrieval
@@ -75,6 +91,8 @@
 *[HIN]: High Injury Network
 *[HOT]: Humanitarian OpenStreetMap Team
 *[HOV]: High Occupancy Vehicle
+*[HTML]: Hypertext Markup Language
+*[HuskyADAPT]: Accessible Design And Play Technology
 *[HxGN]: Hexagon (aerial imagery provider)
 *[IDW]: Inverse Distance Weighting
 *[IIiX]: Information Interaction in Context
@@ -86,6 +104,8 @@
 *[IXN]: Intersection / Intersection Traversability Metric
 *[JCDL]: Joint Conference on Digital Libraries
 *[JOSM]: Java OpenStreetMap Editor
+*[JSON]: JavaScript Object Notation
+*[JSX]: JavaScript XML
 *[KML]: Keyhole Markup Language
 *[KPI]: Key Performance Indicator
 *[lat]: Latitude
@@ -145,10 +165,12 @@
 *[POI]: Point of Interest
 *[POIs]: Points of Interest
 *[PROWAG]: Public Right-of-Way Accessibility Guidelines
+*[PSAC]: Pedestrian Safety Advisory Council
 *[PSRC]: Puget Sound Regional Council
 *[PWG]: Pedestrian Working Group
 *[QA]: Quality Assurance
 *[QC]: Quality Control
+*[RAG]: Retrieval-Augmented Generation
 *[RCTO]: Regional Concept for Transportation Operations
 *[RGC]: Regional Growth Center
 *[ROW]: Right of Way
@@ -167,14 +189,20 @@
 *[SLAM]: Simultaneous Location and Mapping
 *[SLD]: Styled Layer Descriptor
 *[SNAP]: Supplemental Nutrition Assistance Program
+*[SNG]: Seattle Neighborhood Greenways
 *[SOV]: Single Occupancy Vehicle
 *[SOW]: Statement of Work
 *[SPS]: Seattle Public Schools
 *[SRID]: Spatial Reference System Identifier
 *[SRTS]: Safe Routes to School
+*[SS4A]: Safe Streets and Roads for All
+*[SSA]: Seattle Streets Alliance
+*[STAC]: SpatioTemporal Asset Catalog
+*[STAR]: Smart Transportation Applications and Research
 *[STIP]: State Transportation Improvement Program
 *[SUMC]: Shared User Mobility Conference / Shared Use Mobility Center
 *[SVEA]: Snoqualmie Valley Economic Alliance
+*[SVG]: Scalable Vector Graphics
 *[TAM]: Transportation Asset Management
 *[TAMP]: Transportation Asset Management Plan
 *[TANF]: Temporary Assistance for Needy Families
@@ -207,8 +235,12 @@
 *[UW]: University of Washington
 *[UX]: User Experience
 *[V2X]: Vehicle-to-Everything
+*[VGI]: Volunteered Geographic Information
+*[W3C]: World Wide Web Consortium
 *[WA]: Washington (state)
 *[WAGISA]: Washington GIS Association
+*[WAI]: Web Accessibility Initiative
+*[WAI-ARIA]: Web Accessibility Initiative – Accessible Rich Internet Applications
 *[WCAG]: Web Content Accessibility Guidelines
 *[WFS]: Web Feature Service
 *[WGS]: World Geodetic System
@@ -218,5 +250,7 @@
 *[WMS]: Web Map Service
 *[WMTS]: Web Map Tile Service
 *[WSDOT]: Washington State Department of Transportation
+*[WTSC]: Washington Traffic Safety Commission
 *[WSP]: Washington State Proviso
+*[WWWC]: World Wide Web Consortium
 *[XML]: Extensible Markup Language

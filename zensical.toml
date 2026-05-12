@@ -148,6 +148,17 @@ actions = [
     "reject"
 ]
 
+#region Validation
+[project.validation]
+unresolved_references = true
+unresolved_footnotes = true
+unused_definitions = true
+unused_footnotes = true
+shadowed_definitions = true
+shadowed_footnotes = true
+invalid_links = true
+invalid_link_anchors = true
+
 #region Navigation
 nav = [
     {"Welcome" = "index.md"},
@@ -192,6 +203,10 @@ nav = [
             {"Event Summary Report" = "events/mny26/report.md"},
             {"Validation Guide" = "events/mny26/validation-guide.md"}
         ]},
+        {"Nda Dayton" = [ "events/nda-dayton/index.md" ]},
+        {"Nda Everett" = [ "events/nda-everett/index.md" ]},
+        {"Nda Sedro Woolley" = [ "events/nda-sedro-woolley/index.md" ]},
+        {"Nda Spanaway" = [ "events/nda-spanaway/index.md" ]},
         {"Nda Vancouver" = [
             "events/nda-vancouver/index.md",
             {"AccessMap" = "events/nda-vancouver/accessmap.md"},
@@ -289,7 +304,7 @@ nav = [
             ]},
             {"Tutorial" = [
                 {"Import Curb Ramp Data into the TDEI" = "tdei/portal/tutorial/curb-points-in-tdei.md"},
-                {"Download OS-CONNECT Data from the TDEI Portal" = "tdei/portal/tutorial/download-os-connect.md"},
+                {"Download OS-CONNECT Data from the TDEI Portal" = "tdei/portal/tutorial/download-os-connect.md"}
             ]}
         ]},
         {"TDEI Core" = [ "tdei/tdei-core/index.md" ]}
@@ -322,4 +337,3 @@ nav = [
     ]},
     {"Guides List" = "guides-list/index.md"}
 ]
-

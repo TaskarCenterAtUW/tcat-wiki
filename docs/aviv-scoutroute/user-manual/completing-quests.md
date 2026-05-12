@@ -158,7 +158,7 @@ You don't have to complete every quest you open! To skip a quest:
 1. Tap the Close (++x++) icon in the upper right corner
 2. The quest remains on the map for later (or for another user)
 
-You can also hide individual quests you want to skip temporarily - see [App Settings - Hidden Quests](app-settings.md#hidden-quests).
+You can also hide individual quests you want to skip - refer to [Map Interface - Hide Quest](map-interface.md#hide-quest).
 
 ---
 

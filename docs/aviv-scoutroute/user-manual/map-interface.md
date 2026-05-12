@@ -95,8 +95,6 @@ Quests appear as icons on the map. Each icon type represents a different type of
 
 You can switch between different background map imagery sources (aerial imagery, street maps, etc.), if they are configured for that workspace, using the Layers button.
 
-Refer to [App Settings - Imagery Layer Control](app-settings.md#imagery-layer-control) for details.
-
 ---
 
 ### Undo Changes
