@@ -211,6 +211,14 @@ The full editor-facing guide lives in [.github/instructions/content-style.instru
 - Use admonitions sparingly for cautions, waiting states, tips, and success confirmations.
 - Prefer plain language, active voice, and verified instructions over exhaustive explanation. Do not invent undocumented behavior or UI details.
 
+#### Assistant Knowledge Base (`docs/assistant/`)
+
+Pages under `docs/assistant/` follow the [RAG corpus schema](docs/rag/schema.md), not the Guide opening pattern above. They use `doc_type`, `products`, `topics`, and sections such as **Short Answer** and **Significance** for retrieval and public-assistant grounding.
+
+Human-facing procedures remain in product manuals and guides (with `tags: - Guide`). When assistant content is promoted to a guide, add the guide under the appropriate product path, list it on the [Guides List](docs/guides-list/index.md), and cross-link from the assistant page.
+
+`zensical build` may report unresolved link warnings for assistant scaffolds and frontmatter. See [RAG README — Zensical build and link validation](docs/rag/README.md#zensical-build-and-link-validation). The wiki repo manager is expected to resolve those references in follow-up work.
+
 #### Images
 
 Where possible, follow these guidelines for images:

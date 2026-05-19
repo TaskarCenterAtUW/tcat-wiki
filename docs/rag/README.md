@@ -23,6 +23,16 @@ Without a single spec, every consumer reinvents chunking, loses governance field
 - Not a hosted search service.
 - Not an OpenAI or vendor integration.
 
+## Zensical build and link validation
+
+`zensical build` with `[project.validation]` enabled may report a large number of **unresolved link reference** warnings for `docs/assistant/` pages. Common causes:
+
+- `related_pages` entries that use bare slugs (for example `workspace-sandbox`) instead of paths relative to `docs/`
+- Empty YAML lists such as `related_pages: []` or `do_not_claim: []` that the validator treats like link targets
+- Scaffold pages with `TODO` bodies and incomplete **Related Concepts** sections
+
+**Maintainer expectation:** the wiki repo manager (or a follow-up PR) should resolve these warnings by normalizing `related_pages` paths, adjusting frontmatter so metadata is not parsed as links, and replacing TODO placeholders with valid relative links as content is reviewed. This assistant KB PR intentionally lands structure and RAG export tooling first; link cleanup is not a blocker for merging the corpus layout.
+
 ## How To Use This
 
 1. Read [schema.md](schema.md).
