@@ -162,6 +162,55 @@ invalid_link_anchors = true
 #region Navigation
 nav = [
     {"Welcome" = "index.md"},
+    {"Assistant Knowledge Base" = [
+        "assistant/index.md",
+        {"Concepts" = [
+            "assistant/concepts/completeness.md",
+            "assistant/concepts/ada-compliance-boundaries.md",
+            "assistant/concepts/accessibility-islands.md",
+            "assistant/concepts/connected-pedestrian-graph.md",
+            "assistant/concepts/walksheds.md",
+            "assistant/concepts/accessmap-routing.md",
+            {"Workspaces" = "assistant/concepts/workspaces/index.md"}
+        ]},
+        {"Questions" = [
+            {"OS-CONNECT" = "assistant/questions/os-connect/index.md"},
+            {"AccessMap" = "assistant/questions/accessmap/index.md"},
+            {"Walksheds" = "assistant/questions/walksheds/index.md"},
+            {"TDEI" = "assistant/questions/tdei/index.md"},
+            {"Workspaces" = "assistant/questions/workspaces/index.md"},
+            {"Support & helpline" = "assistant/questions/support/index.md"}
+        ]},
+        {"Helpline backlog" = [
+            "assistant/backlog/helpline-faq-backlog.md",
+            "assistant/intents/support-intents.md",
+            "assistant/workflows/support-answer-patterns.md"
+        ]},
+        {"Workflows" = [
+            "assistant/workflows/use-os-connect-for-ada-transition-planning.md",
+            "assistant/workflows/use-walksheds-for-safe-routes-to-school.md",
+            "assistant/workflows/use-accessmap-for-public-engagement.md",
+            "assistant/workflows/review-community-feedback.md",
+            "assistant/workflows/update-jurisdiction-data.md",
+            {"Workspaces" = "assistant/workflows/workspaces/index.md"}
+        ]},
+        {"Policies" = [
+            "assistant/policies/assistant-abstention.md",
+            "assistant/policies/public-vs-internal-content.md",
+            "assistant/policies/data-freshness.md",
+            "assistant/policies/ada-safety-legal-boundaries.md",
+            "assistant/policies/assistant-policy-questions-index.md",
+            {"Workspaces" = "assistant/policies/workspaces/index.md"}
+        ]},
+        {"Glossary" = [
+            "assistant/glossary/index.md",
+            "assistant/glossary/terms.md"
+        ]},
+        {"RAG export spec" = [
+            "rag/README.md",
+            "rag/schema.md"
+        ]}
+    ]},
     {"AccessMap" = [
         "accessmap/index.md",
         {"User Manual" = [

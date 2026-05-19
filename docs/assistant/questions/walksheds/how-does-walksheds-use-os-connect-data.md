@@ -1,0 +1,60 @@
+---
+title: "How does Walksheds use OS-CONNECT data?"
+slug: how-does-walksheds-use-os-connect-data
+doc_type: question
+products:
+  - Walksheds
+audiences:
+  - planner
+  - jurisdiction
+  - advocate
+  - public
+topics:
+  - walksheds
+  - os-connect
+risk_level: medium
+authority_level: explanatory
+review_status: draft
+last_reviewed: ""
+retrieval_priority: high
+assistant_behavior:
+  allow_inference: false
+  requires_citation: true
+  abstain_if_missing_context: true
+  do_not_claim: []
+related_pages: []
+---
+
+# How does Walksheds use OS-CONNECT data?
+
+## Short Answer
+
+TODO
+
+## Significance
+
+TODO
+
+## What This Means
+
+TODO
+
+## What This Does Not Mean
+
+TODO
+
+## How To Use This
+
+TODO
+
+## Example
+
+TODO
+
+## Assistant Guidance
+
+TODO
+
+## Related Concepts
+
+TODO

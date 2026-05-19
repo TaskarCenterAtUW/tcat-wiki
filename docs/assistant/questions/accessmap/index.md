@@ -1,0 +1,78 @@
+---
+title: "Accessmap — assistant questions"
+---
+
+# Accessmap — assistant questions
+
+This index lists RAG-oriented question stubs (`doc_type: question`). Open a page to draft vetted answers; do not treat `TODO` placeholders as authoritative.
+
+## Questions by ID
+
+101. [What is AccessMap?](what-is-accessmap.md)
+102. [How is AccessMap different from Google Maps?](how-is-accessmap-different-from-google-maps.md)
+103. [What accessibility needs does AccessMap support?](what-accessibility-needs-does-accessmap-support.md)
+104. [What routing profiles are available?](what-routing-profiles-are-available.md)
+105. [How does AccessMap calculate accessible routes?](how-does-accessmap-calculate-accessible-routes.md)
+106. [Why might AccessMap choose a longer route?](why-might-accessmap-choose-a-longer-route.md)
+107. [How are slopes incorporated into routing?](how-are-slopes-incorporated-into-routing.md)
+108. [How are curb ramps incorporated into routing?](how-are-curb-ramps-incorporated-into-routing.md)
+109. [What does "avoid steep slopes" mean?](what-does-avoid-steep-slopes-mean.md)
+110. [What does "avoid missing curb ramps" mean?](what-does-avoid-missing-curb-ramps-mean.md)
+111. [Can AccessMap support manual wheelchair users?](can-accessmap-support-manual-wheelchair-users.md)
+112. [Can AccessMap support powered wheelchair users?](can-accessmap-support-powered-wheelchair-users.md)
+113. [Can AccessMap support blind or low-vision users?](can-accessmap-support-blind-or-low-vision-users.md)
+114. [What accessibility assumptions are built into AccessMap?](what-accessibility-assumptions-are-built-into-accessmap.md)
+115. [What data powers AccessMap?](what-data-powers-accessmap.md)
+116. [What are the limitations of AccessMap routing?](what-are-the-limitations-of-accessmap-routing.md)
+117. [How often is AccessMap updated?](how-often-is-accessmap-updated.md)
+118. [How do local datasets improve routing quality?](how-do-local-datasets-improve-routing-quality.md)
+119. [What happens when accessibility data is missing?](what-happens-when-accessibility-data-is-missing.md)
+120. [How can users report routing problems?](how-can-users-report-routing-problems.md)
+121. [How can cities use AccessMap operationally?](how-can-cities-use-accessmap-operationally.md)
+122. [Can AccessMap support ADA compliance workflows?](can-accessmap-support-ada-compliance-workflows.md)
+123. [Can AccessMap support paratransit planning?](can-accessmap-support-paratransit-planning.md)
+124. [Can AccessMap support campus accessibility?](can-accessmap-support-campus-accessibility.md)
+125. [Can AccessMap support transit wayfinding?](can-accessmap-support-transit-wayfinding.md)
+126. [How can AccessMap support emergency planning?](how-can-accessmap-support-emergency-planning.md)
+127. [Can AccessMap support tourism accessibility?](can-accessmap-support-tourism-accessibility.md)
+128. [Can AccessMap support hospitals or medical campuses?](can-accessmap-support-hospitals-or-medical-campuses.md)
+129. [How can schools use AccessMap?](how-can-schools-use-accessmap.md)
+130. [Can AccessMap integrate with GTFS?](can-accessmap-integrate-with-gtfs.md)
+131. [What is GTFS-Pathways?](what-is-gtfs-pathways.md)
+132. [How does transit accessibility integrate with pedestrian routing?](how-does-transit-accessibility-integrate-with-pedestrian-routing.md)
+133. [How are inaccessible transit stations represented?](how-are-inaccessible-transit-stations-represented.md)
+134. [How does construction affect routing?](how-does-construction-affect-routing.md)
+135. [Can temporary barriers be represented?](can-temporary-barriers-be-represented.md)
+136. [Can agencies customize routing profiles?](can-agencies-customize-routing-profiles.md)
+137. [Can communities define accessibility priorities?](can-communities-define-accessibility-priorities.md)
+138. [How should municipalities validate routing results?](how-should-municipalities-validate-routing-results.md)
+139. [What role does field validation play?](what-role-does-field-validation-play.md)
+140. [How can AccessMap support public engagement?](how-can-accessmap-support-public-engagement.md)
+186. [Why does AccessMap differ from Google Maps?](why-does-accessmap-differ-from-google-maps.md)
+187. [Why does AccessMap differ from HERE routing?](why-does-accessmap-differ-from-here-routing.md)
+188. [Why does AccessMap differ from Apple Maps?](why-does-accessmap-differ-from-apple-maps.md)
+189. [Why do accessibility-aware routes sometimes appear longer?](why-do-accessibility-aware-routes-sometimes-appear-longer.md)
+190. [How can agencies compare routing systems?](how-can-agencies-compare-routing-systems.md)
+191. [What are routing tradeoffs?](what-are-routing-tradeoffs.md)
+192. [How do missing curb ramps affect route selection?](how-do-missing-curb-ramps-affect-route-selection.md)
+193. [How do steep slopes affect route selection?](how-do-steep-slopes-affect-route-selection.md)
+194. [What happens when sidewalks are disconnected?](what-happens-when-sidewalks-are-disconnected.md)
+195. [How do accessibility profiles reveal hidden inequities?](how-do-accessibility-profiles-reveal-hidden-inequities.md)
+196. [What metrics matter most for accessible mobility?](what-metrics-matter-most-for-accessible-mobility.md)
+197. [What is route reliability?](what-is-route-reliability.md)
+198. [What is network redundancy?](what-is-network-redundancy.md)
+199. [What is pedestrian resilience?](what-is-pedestrian-resilience.md)
+200. [How can agencies identify critical pedestrian corridors?](how-can-agencies-identify-critical-pedestrian-corridors.md)
+201. [What does "edge betweenness" reveal operationally?](what-does-edge-betweenness-reveal-operationally.md)
+202. [What does "node centrality" reveal operationally?](what-does-node-centrality-reveal-operationally.md)
+203. [How should planners prioritize pedestrian investments?](how-should-planners-prioritize-pedestrian-investments.md)
+204. [What metrics best support accessibility prioritization?](what-metrics-best-support-accessibility-prioritization.md)
+205. [How can agencies explain these metrics publicly?](how-can-agencies-explain-these-metrics-publicly.md)
+267. [What future capabilities are planned for AccessMap?](what-future-capabilities-are-planned-for-accessmap.md)
+
+## Additional curated pages (pre-batch)
+
+These pages predate the numbered stub set and may contain fuller draft or reviewed answers.
+
+- [Why does AccessMap choose longer routes?](why-does-accessmap-choose-longer-routes.md)
+- [How do mobility profiles work?](how-do-mobility-profiles-work.md)

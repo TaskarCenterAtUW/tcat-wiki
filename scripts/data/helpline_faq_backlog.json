@@ -1,0 +1,1473 @@
+{
+  "version": 1,
+  "source": "Question Board and helpline (May 2026)",
+  "priority_faq": [
+    "What is the difference between TDEI, OS-CONNECT, OpenSidewalks, and OpenStreetMap?",
+    "Which dataset and format should an agency use for pedestrian walkway data in ArcGIS?",
+    "How do I report an error in OS-CONNECT data?",
+    "What happens after I submit an issue report?",
+    "How long do corrections take to appear in a public release?",
+    "Can agencies submit bulk corrections or priority areas for review?",
+    "How is OS-CONNECT different from GTFS Pathways?",
+    "How can OS-CONNECT and Walksheds support bus stop planning?",
+    "How should separately mapped sidewalks be associated with street names in OSM?",
+    "When should partners be referred to Mappy Hours versus direct technical support?"
+  ],
+  "faq_questions": [
+    {
+      "q": "What is TDEI?",
+      "folder": "tdei",
+      "priority": "external",
+      "topics": [
+        "tdei-overview"
+      ],
+      "slug": "what-is-tdei",
+      "existing_path": "assistant/questions/tdei/what-is-tdei.md",
+      "status": "existing"
+    },
+    {
+      "q": "What is OS-CONNECT?",
+      "folder": "os-connect",
+      "priority": "external",
+      "topics": [
+        "os-connect-overview"
+      ],
+      "existing_path": "assistant/questions/os-connect/what-is-os-connect.md",
+      "slug": "what-is-os-connect",
+      "status": "existing"
+    },
+    {
+      "q": "What is OpenSidewalks?",
+      "folder": "os-connect",
+      "priority": "external",
+      "topics": [
+        "opensidewalks-overview"
+      ],
+      "slug": "what-is-opensidewalks",
+      "existing_path": "assistant/questions/os-connect/what-is-opensidewalks.md",
+      "status": "existing"
+    },
+    {
+      "q": "What is the difference between TDEI, OS-CONNECT, OpenSidewalks, OpenStreetMap, AccessMap, Walksheds, GTFS, GTFS Pathways, and GTFS-Flex?",
+      "folder": "support",
+      "priority": "external",
+      "topics": [
+        "ecosystem",
+        "overview"
+      ],
+      "slug": "ecosystem-differences-tdei-os-connect-opensidewalks-osm-accessmap-walksheds-gtfs",
+      "existing_path": "assistant/questions/support/ecosystem-differences-tdei-os-connect-opensidewalks-osm-accessmap-walksheds-gtfs.md",
+      "status": "existing"
+    },
+    {
+      "q": "What is the difference between TDEI, OS-CONNECT, OpenSidewalks, and OpenStreetMap?",
+      "folder": "support",
+      "priority": "external",
+      "topics": [
+        "ecosystem",
+        "overview"
+      ],
+      "slug": "what-is-the-difference-between-tdei-os-connect-opensidewalks-and-openstreetmap",
+      "existing_path": "assistant/questions/support/what-is-the-difference-between-tdei-os-connect-opensidewalks-and-openstreetmap.md",
+      "status": "existing"
+    },
+    {
+      "q": "Is OS-CONNECT the same as OpenStreetMap data?",
+      "folder": "os-connect",
+      "priority": "external",
+      "topics": [
+        "openstreetmap",
+        "data-model"
+      ],
+      "existing_path": "assistant/questions/os-connect/how-is-os-connect-different-from-openstreetmap.md",
+      "slug": "is-os-connect-the-same-as-openstreetmap-data",
+      "status": "existing"
+    },
+    {
+      "q": "What does it mean that OS-CONNECT uses the OpenSidewalks schema?",
+      "folder": "os-connect",
+      "priority": "external",
+      "topics": [
+        "opensidewalks",
+        "schema"
+      ],
+      "slug": "what-does-it-mean-that-os-connect-uses-the-opensidewalks-schema",
+      "existing_path": "assistant/questions/os-connect/what-does-it-mean-that-os-connect-uses-the-opensidewalks-schema.md",
+      "status": "existing"
+    },
+    {
+      "q": "Which dataset should I use if I need pedestrian walkway data for planning?",
+      "folder": "support",
+      "priority": "external",
+      "topics": [
+        "dataset-selection",
+        "planning"
+      ],
+      "slug": "which-dataset-should-i-use-if-i-need-pedestrian-walkway-data-for-planning",
+      "existing_path": "assistant/questions/support/which-dataset-should-i-use-if-i-need-pedestrian-walkway-data-for-planning.md",
+      "status": "existing"
+    },
+    {
+      "q": "Which dataset should I use if I need transit-station pathway data?",
+      "folder": "support",
+      "priority": "external",
+      "topics": [
+        "dataset-selection",
+        "gtfs-pathways"
+      ],
+      "slug": "which-dataset-should-i-use-if-i-need-transit-station-pathway-data",
+      "existing_path": "assistant/questions/support/which-dataset-should-i-use-if-i-need-transit-station-pathway-data.md",
+      "status": "existing"
+    },
+    {
+      "q": "Where do I download OS-CONNECT data?",
+      "folder": "tdei",
+      "priority": "external",
+      "topics": [
+        "downloads",
+        "tdei"
+      ],
+      "existing_path": "assistant/questions/tdei/where-do-i-download-os-connect-data.md",
+      "slug": "where-do-i-download-os-connect-data",
+      "status": "existing"
+    },
+    {
+      "q": "What is the difference between downloading OSW format and OSM format?",
+      "folder": "tdei",
+      "priority": "external",
+      "topics": [
+        "downloads",
+        "formats"
+      ],
+      "slug": "what-is-the-difference-between-downloading-osw-format-and-osm-format",
+      "existing_path": "assistant/questions/tdei/what-is-the-difference-between-downloading-osw-format-and-osm-format.md",
+      "status": "existing"
+    },
+    {
+      "q": "What files are included in an OSW download?",
+      "folder": "tdei",
+      "priority": "external",
+      "topics": [
+        "downloads",
+        "formats",
+        "osw"
+      ],
+      "slug": "what-files-are-included-in-an-osw-download",
+      "existing_path": "assistant/questions/tdei/what-files-are-included-in-an-osw-download.md",
+      "status": "existing"
+    },
+    {
+      "q": "What are edges and nodes in the OSW download?",
+      "folder": "tdei",
+      "priority": "external",
+      "topics": [
+        "downloads",
+        "routing-graph",
+        "osw"
+      ],
+      "slug": "what-are-edges-and-nodes-in-the-osw-download",
+      "existing_path": "assistant/questions/tdei/what-are-edges-and-nodes-in-the-osw-download.md",
+      "status": "existing"
+    },
+    {
+      "q": "Can OS-CONNECT data be used in ArcGIS?",
+      "folder": "os-connect",
+      "priority": "external",
+      "topics": [
+        "gis",
+        "arcgis"
+      ],
+      "existing_path": "assistant/questions/os-connect/can-i-use-this-in-arcgis-or-qgis.md",
+      "slug": "can-os-connect-data-be-used-in-arcgis",
+      "status": "existing"
+    },
+    {
+      "q": "Which dataset and format should an agency use for pedestrian walkway data in ArcGIS?",
+      "folder": "support",
+      "priority": "external",
+      "topics": [
+        "dataset-selection",
+        "arcgis",
+        "planning"
+      ],
+      "slug": "which-dataset-and-format-should-an-agency-use-for-pedestrian-walkway-data-in-arcgis",
+      "existing_path": "assistant/questions/support/which-dataset-and-format-should-an-agency-use-for-pedestrian-walkway-data-in-arcgis.md",
+      "status": "existing"
+    },
+    {
+      "q": "How do I import OS-CONNECT / OSW GeoJSON into ArcGIS?",
+      "folder": "os-connect",
+      "priority": "external",
+      "topics": [
+        "gis",
+        "arcgis",
+        "imports"
+      ],
+      "slug": "how-do-i-import-os-connect-osw-geojson-into-arcgis",
+      "existing_path": "assistant/questions/os-connect/how-do-i-import-os-connect-osw-geojson-into-arcgis.md",
+      "status": "existing"
+    },
+    {
+      "q": "What attributes are included for sidewalks, crossings, curb ramps, and related pedestrian features?",
+      "folder": "os-connect",
+      "priority": "external",
+      "topics": [
+        "attributes",
+        "schema"
+      ],
+      "slug": "what-attributes-are-included-for-sidewalks-crossings-curb-ramps-and-related-pedestrian-features",
+      "existing_path": "assistant/questions/os-connect/what-attributes-are-included-for-sidewalks-crossings-curb-ramps-and-related-pedestrian-features.md",
+      "status": "existing"
+    },
+    {
+      "q": "Where are OpenSidewalks attribute definitions documented?",
+      "folder": "os-connect",
+      "priority": "external",
+      "topics": [
+        "opensidewalks",
+        "schema",
+        "documentation"
+      ],
+      "slug": "where-are-opensidewalks-attribute-definitions-documented",
+      "existing_path": "assistant/questions/os-connect/where-are-opensidewalks-attribute-definitions-documented.md",
+      "status": "existing"
+    },
+    {
+      "q": "How should an agency cite OS-CONNECT or TDEI data?",
+      "folder": "support",
+      "priority": "external",
+      "topics": [
+        "citation",
+        "governance"
+      ],
+      "slug": "how-should-an-agency-cite-os-connect-or-tdei-data",
+      "existing_path": "assistant/questions/support/how-should-an-agency-cite-os-connect-or-tdei-data.md",
+      "status": "existing"
+    },
+    {
+      "q": "How do I know whether a dataset is current?",
+      "folder": "tdei",
+      "priority": "external",
+      "topics": [
+        "data-freshness",
+        "releases"
+      ],
+      "slug": "how-do-i-know-whether-a-dataset-is-current",
+      "existing_path": "assistant/questions/tdei/how-do-i-know-whether-a-dataset-is-current.md",
+      "status": "existing"
+    },
+    {
+      "q": "How do I know whether a dataset is authoritative?",
+      "folder": "support",
+      "priority": "external",
+      "topics": [
+        "authority",
+        "governance"
+      ],
+      "slug": "how-do-i-know-whether-a-dataset-is-authoritative",
+      "existing_path": "assistant/questions/support/how-do-i-know-whether-a-dataset-is-authoritative.md",
+      "status": "existing"
+    },
+    {
+      "q": "What does \"released dataset\" mean in TDEI?",
+      "folder": "tdei",
+      "priority": "external",
+      "topics": [
+        "releases",
+        "tdei"
+      ],
+      "slug": "what-does-released-dataset-mean-in-tdei",
+      "existing_path": "assistant/questions/tdei/what-does-released-dataset-mean-in-tdei.md",
+      "status": "existing"
+    },
+    {
+      "q": "What is a project group in TDEI?",
+      "folder": "tdei",
+      "priority": "external",
+      "topics": [
+        "tdei",
+        "project-groups"
+      ],
+      "slug": "what-is-a-project-group-in-tdei",
+      "existing_path": "assistant/questions/tdei/what-is-a-project-group-in-tdei.md",
+      "status": "existing"
+    },
+    {
+      "q": "Why might a test dataset appear in the portal?",
+      "folder": "tdei",
+      "priority": "external",
+      "topics": [
+        "tdei",
+        "releases",
+        "testing"
+      ],
+      "slug": "why-might-a-test-dataset-appear-in-the-portal",
+      "existing_path": "assistant/questions/tdei/why-might-a-test-dataset-appear-in-the-portal.md",
+      "status": "existing"
+    },
+    {
+      "q": "What should I do if a dataset appears mislabeled or downloads the wrong file?",
+      "folder": "tdei",
+      "priority": "external",
+      "topics": [
+        "tdei",
+        "support",
+        "downloads"
+      ],
+      "slug": "what-should-i-do-if-a-dataset-appears-mislabeled-or-downloads-the-wrong-file",
+      "existing_path": "assistant/questions/tdei/what-should-i-do-if-a-dataset-appears-mislabeled-or-downloads-the-wrong-file.md",
+      "status": "existing"
+    },
+    {
+      "q": "How do I report an error in OS-CONNECT data?",
+      "folder": "os-connect",
+      "priority": "external",
+      "topics": [
+        "feedback",
+        "issue-reporting"
+      ],
+      "slug": "how-do-i-report-an-error-in-os-connect-data",
+      "existing_path": "assistant/questions/os-connect/how-do-i-report-an-error-in-os-connect-data.md",
+      "status": "existing"
+    },
+    {
+      "q": "What kinds of errors should be reported through the OS-CONNECT Viewer?",
+      "folder": "os-connect",
+      "priority": "external",
+      "topics": [
+        "feedback",
+        "data-viewer"
+      ],
+      "slug": "what-kinds-of-errors-should-be-reported-through-the-os-connect-viewer",
+      "existing_path": "assistant/questions/os-connect/what-kinds-of-errors-should-be-reported-through-the-os-connect-viewer.md",
+      "status": "existing"
+    },
+    {
+      "q": "What happens after I submit an issue report?",
+      "folder": "os-connect",
+      "priority": "external",
+      "topics": [
+        "feedback",
+        "issue-reporting"
+      ],
+      "slug": "what-happens-after-i-submit-an-issue-report",
+      "existing_path": "assistant/questions/os-connect/what-happens-after-i-submit-an-issue-report.md",
+      "status": "existing"
+    },
+    {
+      "q": "Do reported issues automatically update the public dataset?",
+      "folder": "os-connect",
+      "priority": "external",
+      "topics": [
+        "feedback",
+        "releases"
+      ],
+      "slug": "do-reported-issues-automatically-update-the-public-dataset",
+      "existing_path": "assistant/questions/os-connect/do-reported-issues-automatically-update-the-public-dataset.md",
+      "status": "existing"
+    },
+    {
+      "q": "Who reviews submitted issue reports?",
+      "folder": "os-connect",
+      "priority": "external",
+      "topics": [
+        "feedback",
+        "stewardship"
+      ],
+      "slug": "who-reviews-submitted-issue-reports",
+      "existing_path": "assistant/questions/os-connect/who-reviews-submitted-issue-reports.md",
+      "status": "existing"
+    },
+    {
+      "q": "How long does it take for a correction to appear in a public release?",
+      "folder": "os-connect",
+      "priority": "external",
+      "topics": [
+        "feedback",
+        "releases"
+      ],
+      "slug": "how-long-does-it-take-for-a-correction-to-appear-in-a-public-release",
+      "existing_path": "assistant/questions/os-connect/how-long-does-it-take-for-a-correction-to-appear-in-a-public-release.md",
+      "status": "existing"
+    },
+    {
+      "q": "How long do corrections take to appear in a public release?",
+      "folder": "os-connect",
+      "priority": "external",
+      "topics": [
+        "feedback",
+        "releases"
+      ],
+      "slug": "how-long-do-corrections-take-to-appear-in-a-public-release",
+      "existing_path": "assistant/questions/os-connect/how-long-do-corrections-take-to-appear-in-a-public-release.md",
+      "status": "existing"
+    },
+    {
+      "q": "Can an agency submit a batch of known corrections instead of reporting one issue at a time?",
+      "folder": "os-connect",
+      "priority": "external",
+      "topics": [
+        "feedback",
+        "agencies"
+      ],
+      "slug": "can-an-agency-submit-a-batch-of-known-corrections-instead-of-reporting-one-issue-at-a-time",
+      "existing_path": "assistant/questions/os-connect/can-an-agency-submit-a-batch-of-known-corrections-instead-of-reporting-one-issue-at-a-time.md",
+      "status": "existing"
+    },
+    {
+      "q": "Can agencies submit bulk corrections or priority areas for review?",
+      "folder": "os-connect",
+      "priority": "external",
+      "topics": [
+        "feedback",
+        "agencies"
+      ],
+      "slug": "can-agencies-submit-bulk-corrections-or-priority-areas-for-review",
+      "existing_path": "assistant/questions/os-connect/can-agencies-submit-bulk-corrections-or-priority-areas-for-review.md",
+      "status": "existing"
+    },
+    {
+      "q": "Can agencies provide their own sidewalk or curb-ramp data for integration?",
+      "folder": "os-connect",
+      "priority": "external",
+      "topics": [
+        "stewardship",
+        "agencies"
+      ],
+      "slug": "can-agencies-provide-their-own-sidewalk-or-curb-ramp-data-for-integration",
+      "existing_path": "assistant/questions/os-connect/can-agencies-provide-their-own-sidewalk-or-curb-ramp-data-for-integration.md",
+      "status": "existing"
+    },
+    {
+      "q": "What information should agencies include when reporting a data issue?",
+      "folder": "os-connect",
+      "priority": "external",
+      "topics": [
+        "feedback",
+        "agencies"
+      ],
+      "slug": "what-information-should-agencies-include-when-reporting-a-data-issue",
+      "existing_path": "assistant/questions/os-connect/what-information-should-agencies-include-when-reporting-a-data-issue.md",
+      "status": "existing"
+    },
+    {
+      "q": "How are agency-submitted corrections validated?",
+      "folder": "os-connect",
+      "priority": "external",
+      "topics": [
+        "feedback",
+        "validation"
+      ],
+      "slug": "how-are-agency-submitted-corrections-validated",
+      "existing_path": "assistant/questions/os-connect/how-are-agency-submitted-corrections-validated.md",
+      "status": "existing"
+    },
+    {
+      "q": "Does a correction update OS-CONNECT, OpenStreetMap, TDEI, or all of them?",
+      "folder": "os-connect",
+      "priority": "external",
+      "topics": [
+        "feedback",
+        "stewardship",
+        "openstreetmap"
+      ],
+      "slug": "does-a-correction-update-os-connect-openstreetmap-tdei-or-all-of-them",
+      "existing_path": "assistant/questions/os-connect/does-a-correction-update-os-connect-openstreetmap-tdei-or-all-of-them.md",
+      "status": "existing"
+    },
+    {
+      "q": "How are corrections tracked across releases?",
+      "folder": "os-connect",
+      "priority": "external",
+      "topics": [
+        "feedback",
+        "releases"
+      ],
+      "slug": "how-are-corrections-tracked-across-releases",
+      "existing_path": "assistant/questions/os-connect/how-are-corrections-tracked-across-releases.md",
+      "status": "existing"
+    },
+    {
+      "q": "How can an agency confirm that a submitted correction was incorporated?",
+      "folder": "os-connect",
+      "priority": "external",
+      "topics": [
+        "feedback",
+        "agencies"
+      ],
+      "slug": "how-can-an-agency-confirm-that-a-submitted-correction-was-incorporated",
+      "existing_path": "assistant/questions/os-connect/how-can-an-agency-confirm-that-a-submitted-correction-was-incorporated.md",
+      "status": "existing"
+    },
+    {
+      "q": "What should agencies do if they need a correction sooner than the next public release?",
+      "folder": "os-connect",
+      "priority": "external",
+      "topics": [
+        "feedback",
+        "releases"
+      ],
+      "slug": "what-should-agencies-do-if-they-need-a-correction-sooner-than-the-next-public-release",
+      "existing_path": "assistant/questions/os-connect/what-should-agencies-do-if-they-need-a-correction-sooner-than-the-next-public-release.md",
+      "status": "existing"
+    },
+    {
+      "q": "How should agencies treat OS-CONNECT data in planning workflows when known errors exist?",
+      "folder": "os-connect",
+      "priority": "external",
+      "topics": [
+        "planning",
+        "data-quality"
+      ],
+      "slug": "how-should-agencies-treat-os-connect-data-in-planning-workflows-when-known-errors-exist",
+      "existing_path": "assistant/questions/os-connect/how-should-agencies-treat-os-connect-data-in-planning-workflows-when-known-errors-exist.md",
+      "status": "existing"
+    },
+    {
+      "q": "Can OS-CONNECT support bus stop planning?",
+      "folder": "os-connect",
+      "priority": "external",
+      "topics": [
+        "planning",
+        "transit",
+        "bus-stops"
+      ],
+      "slug": "can-os-connect-support-bus-stop-planning",
+      "existing_path": "assistant/questions/os-connect/can-os-connect-support-bus-stop-planning.md",
+      "status": "existing"
+    },
+    {
+      "q": "How can OS-CONNECT and Walksheds support bus stop planning?",
+      "folder": "support",
+      "priority": "external",
+      "topics": [
+        "planning",
+        "transit",
+        "walksheds"
+      ],
+      "slug": "how-can-os-connect-and-walksheds-support-bus-stop-planning",
+      "existing_path": "assistant/questions/support/how-can-os-connect-and-walksheds-support-bus-stop-planning.md",
+      "status": "existing"
+    },
+    {
+      "q": "Can OS-CONNECT support service planning and reliability analysis?",
+      "folder": "os-connect",
+      "priority": "external",
+      "topics": [
+        "planning",
+        "transit"
+      ],
+      "slug": "can-os-connect-support-service-planning-and-reliability-analysis",
+      "existing_path": "assistant/questions/os-connect/can-os-connect-support-service-planning-and-reliability-analysis.md",
+      "status": "existing"
+    },
+    {
+      "q": "Can OS-CONNECT support capital planning?",
+      "folder": "os-connect",
+      "priority": "external",
+      "topics": [
+        "planning",
+        "capital"
+      ],
+      "slug": "can-os-connect-support-capital-planning",
+      "existing_path": "assistant/questions/os-connect/can-os-connect-support-capital-planning.md",
+      "status": "existing"
+    },
+    {
+      "q": "Can OS-CONNECT support ADA transition planning?",
+      "folder": "os-connect",
+      "priority": "external",
+      "topics": [
+        "ada",
+        "planning"
+      ],
+      "existing_path": "assistant/questions/os-connect/can-os-connect-be-used-for-ada-transition-planning.md",
+      "slug": "can-os-connect-support-ada-transition-planning",
+      "status": "existing"
+    },
+    {
+      "q": "Can OS-CONNECT support FIFA or major-event accessibility planning?",
+      "folder": "os-connect",
+      "priority": "external",
+      "topics": [
+        "planning",
+        "events"
+      ],
+      "slug": "can-os-connect-support-fifa-or-major-event-accessibility-planning",
+      "existing_path": "assistant/questions/os-connect/can-os-connect-support-fifa-or-major-event-accessibility-planning.md",
+      "status": "existing"
+    },
+    {
+      "q": "Can OS-CONNECT support pedestrian access analysis around schools, clinics, grocery stores, and other destinations?",
+      "folder": "os-connect",
+      "priority": "external",
+      "topics": [
+        "planning",
+        "destinations"
+      ],
+      "slug": "can-os-connect-support-pedestrian-access-analysis-around-schools-clinics-grocery-stores-and-othe",
+      "existing_path": "assistant/questions/os-connect/can-os-connect-support-pedestrian-access-analysis-around-schools-clinics-grocery-stores-and-othe.md",
+      "status": "existing"
+    },
+    {
+      "q": "What is a walkshed?",
+      "folder": "walksheds",
+      "priority": "external",
+      "topics": [
+        "walksheds-overview"
+      ],
+      "existing_path": "assistant/questions/walksheds/what-is-a-walkshed.md",
+      "slug": "what-is-a-walkshed",
+      "status": "existing"
+    },
+    {
+      "q": "How does Walksheds use OS-CONNECT data?",
+      "folder": "walksheds",
+      "priority": "external",
+      "topics": [
+        "walksheds",
+        "os-connect"
+      ],
+      "slug": "how-does-walksheds-use-os-connect-data",
+      "existing_path": "assistant/questions/walksheds/how-does-walksheds-use-os-connect-data.md",
+      "status": "existing"
+    },
+    {
+      "q": "What is the difference between a pedestrian walkshed and a wheelchair-user walkshed?",
+      "folder": "walksheds",
+      "priority": "external",
+      "topics": [
+        "walksheds",
+        "profiles"
+      ],
+      "slug": "what-is-the-difference-between-a-pedestrian-walkshed-and-a-wheelchair-user-walkshed",
+      "existing_path": "assistant/questions/walksheds/what-is-the-difference-between-a-pedestrian-walkshed-and-a-wheelchair-user-walkshed.md",
+      "status": "existing"
+    },
+    {
+      "q": "What travel profiles are available in Walksheds?",
+      "folder": "walksheds",
+      "priority": "external",
+      "topics": [
+        "walksheds",
+        "profiles"
+      ],
+      "slug": "what-travel-profiles-are-available-in-walksheds",
+      "existing_path": "assistant/questions/walksheds/what-travel-profiles-are-available-in-walksheds.md",
+      "status": "existing"
+    },
+    {
+      "q": "How can Walksheds help analyze access to bus stops?",
+      "folder": "walksheds",
+      "priority": "external",
+      "topics": [
+        "walksheds",
+        "transit",
+        "bus-stops"
+      ],
+      "slug": "how-can-walksheds-help-analyze-access-to-bus-stops",
+      "existing_path": "assistant/questions/walksheds/how-can-walksheds-help-analyze-access-to-bus-stops.md",
+      "status": "existing"
+    },
+    {
+      "q": "Can Walksheds be joined with census, crash, or internal agency datasets?",
+      "folder": "walksheds",
+      "priority": "external",
+      "topics": [
+        "walksheds",
+        "gis",
+        "analysis"
+      ],
+      "slug": "can-walksheds-be-joined-with-census-crash-or-internal-agency-datasets",
+      "existing_path": "assistant/questions/walksheds/can-walksheds-be-joined-with-census-crash-or-internal-agency-datasets.md",
+      "status": "existing"
+    },
+    {
+      "q": "What is AccessMap?",
+      "folder": "accessmap",
+      "priority": "external",
+      "topics": [
+        "accessmap-overview"
+      ],
+      "existing_path": "assistant/questions/accessmap/what-is-accessmap.md",
+      "slug": "what-is-accessmap",
+      "status": "existing"
+    },
+    {
+      "q": "How is AccessMap different from Walksheds?",
+      "folder": "support",
+      "priority": "external",
+      "topics": [
+        "accessmap",
+        "walksheds"
+      ],
+      "slug": "how-is-accessmap-different-from-walksheds",
+      "existing_path": "assistant/questions/support/how-is-accessmap-different-from-walksheds.md",
+      "status": "existing"
+    },
+    {
+      "q": "How does AccessMap consume OpenSidewalks or OS-CONNECT data?",
+      "folder": "accessmap",
+      "priority": "external",
+      "topics": [
+        "accessmap",
+        "os-connect"
+      ],
+      "slug": "how-does-accessmap-consume-opensidewalks-or-os-connect-data",
+      "existing_path": "assistant/questions/accessmap/how-does-accessmap-consume-opensidewalks-or-os-connect-data.md",
+      "status": "existing"
+    },
+    {
+      "q": "What does it mean to route using accessibility preferences?",
+      "folder": "accessmap",
+      "priority": "external",
+      "topics": [
+        "accessmap",
+        "routing"
+      ],
+      "slug": "what-does-it-mean-to-route-using-accessibility-preferences",
+      "existing_path": "assistant/questions/accessmap/what-does-it-mean-to-route-using-accessibility-preferences.md",
+      "status": "existing"
+    },
+    {
+      "q": "What is GTFS Pathways?",
+      "folder": "accessmap",
+      "priority": "external",
+      "topics": [
+        "gtfs-pathways"
+      ],
+      "existing_path": "assistant/questions/accessmap/what-is-gtfs-pathways.md",
+      "slug": "what-is-gtfs-pathways",
+      "status": "existing"
+    },
+    {
+      "q": "How is GTFS Pathways different from OS-CONNECT?",
+      "folder": "support",
+      "priority": "external",
+      "topics": [
+        "gtfs-pathways",
+        "os-connect"
+      ],
+      "slug": "how-is-gtfs-pathways-different-from-os-connect",
+      "existing_path": "assistant/questions/support/how-is-gtfs-pathways-different-from-os-connect.md",
+      "status": "existing"
+    },
+    {
+      "q": "How is OS-CONNECT different from GTFS Pathways?",
+      "folder": "support",
+      "priority": "external",
+      "topics": [
+        "gtfs-pathways",
+        "os-connect"
+      ],
+      "slug": "how-is-os-connect-different-from-gtfs-pathways",
+      "existing_path": "assistant/questions/support/how-is-os-connect-different-from-gtfs-pathways.md",
+      "status": "existing"
+    },
+    {
+      "q": "Can OS-CONNECT generate GTFS Pathways data?",
+      "folder": "os-connect",
+      "priority": "external",
+      "topics": [
+        "gtfs-pathways",
+        "exports"
+      ],
+      "slug": "can-os-connect-generate-gtfs-pathways-data",
+      "existing_path": "assistant/questions/os-connect/can-os-connect-generate-gtfs-pathways-data.md",
+      "status": "existing"
+    },
+    {
+      "q": "Are Sound Transit or other agencies publishing GTFS Pathways data?",
+      "folder": "support",
+      "priority": "external",
+      "topics": [
+        "gtfs-pathways",
+        "publishers"
+      ],
+      "slug": "are-sound-transit-or-other-agencies-publishing-gtfs-pathways-data",
+      "existing_path": "assistant/questions/support/are-sound-transit-or-other-agencies-publishing-gtfs-pathways-data.md",
+      "status": "existing"
+    },
+    {
+      "q": "How can I tell whether a GTFS feed includes pathways.txt?",
+      "folder": "support",
+      "priority": "external",
+      "topics": [
+        "gtfs-pathways",
+        "validation"
+      ],
+      "slug": "how-can-i-tell-whether-a-gtfs-feed-includes-pathways-txt",
+      "existing_path": "assistant/questions/support/how-can-i-tell-whether-a-gtfs-feed-includes-pathways-txt.md",
+      "status": "existing"
+    },
+    {
+      "q": "What is the relationship between pedestrian paths in OpenStreetMap and GTFS Pathways?",
+      "folder": "support",
+      "priority": "external",
+      "topics": [
+        "gtfs-pathways",
+        "openstreetmap"
+      ],
+      "slug": "what-is-the-relationship-between-pedestrian-paths-in-openstreetmap-and-gtfs-pathways",
+      "existing_path": "assistant/questions/support/what-is-the-relationship-between-pedestrian-paths-in-openstreetmap-and-gtfs-pathways.md",
+      "status": "existing"
+    },
+    {
+      "q": "What should agencies do if GTFS Pathways data are missing but pedestrian data exist in OSM or OS-CONNECT?",
+      "folder": "support",
+      "priority": "external",
+      "topics": [
+        "gtfs-pathways",
+        "planning"
+      ],
+      "slug": "what-should-agencies-do-if-gtfs-pathways-data-are-missing-but-pedestrian-data-exist-in-osm-or-os",
+      "existing_path": "assistant/questions/support/what-should-agencies-do-if-gtfs-pathways-data-are-missing-but-pedestrian-data-exist-in-osm-or-os.md",
+      "status": "existing"
+    },
+    {
+      "q": "How should separately mapped sidewalks be associated with street names in OpenStreetMap?",
+      "folder": "os-connect",
+      "priority": "external",
+      "topics": [
+        "openstreetmap",
+        "mapping",
+        "street-names"
+      ],
+      "slug": "how-should-separately-mapped-sidewalks-be-associated-with-street-names-in-openstreetmap",
+      "existing_path": "assistant/questions/os-connect/how-should-separately-mapped-sidewalks-be-associated-with-street-names-in-openstreetmap.md",
+      "status": "existing"
+    },
+    {
+      "q": "How should separately mapped sidewalks be associated with street names in OSM?",
+      "folder": "os-connect",
+      "priority": "external",
+      "topics": [
+        "openstreetmap",
+        "mapping",
+        "street-names"
+      ],
+      "slug": "how-should-separately-mapped-sidewalks-be-associated-with-street-names-in-osm",
+      "existing_path": "assistant/questions/os-connect/how-should-separately-mapped-sidewalks-be-associated-with-street-names-in-osm.md",
+      "status": "existing"
+    },
+    {
+      "q": "What is the difference between street:name=* and is_sidepath:of:name=*?",
+      "folder": "os-connect",
+      "priority": "external",
+      "topics": [
+        "openstreetmap",
+        "tagging"
+      ],
+      "slug": "what-is-the-difference-between-street-name-and-is-sidepath-of-name",
+      "existing_path": "assistant/questions/os-connect/what-is-the-difference-between-street-name-and-is-sidepath-of-name.md",
+      "status": "existing"
+    },
+    {
+      "q": "Which sidewalk-to-street-name tagging pattern is currently recommended?",
+      "folder": "os-connect",
+      "priority": "external",
+      "topics": [
+        "openstreetmap",
+        "tagging"
+      ],
+      "slug": "which-sidewalk-to-street-name-tagging-pattern-is-currently-recommended",
+      "existing_path": "assistant/questions/os-connect/which-sidewalk-to-street-name-tagging-pattern-is-currently-recommended.md",
+      "status": "existing"
+    },
+    {
+      "q": "Why do street names matter for walking directions?",
+      "folder": "os-connect",
+      "priority": "external",
+      "topics": [
+        "openstreetmap",
+        "routing",
+        "navigation"
+      ],
+      "slug": "why-do-street-names-matter-for-walking-directions",
+      "existing_path": "assistant/questions/os-connect/why-do-street-names-matter-for-walking-directions.md",
+      "status": "existing"
+    },
+    {
+      "q": "How can trip planners use sidewalk street-name tags to produce better walking instructions?",
+      "folder": "os-connect",
+      "priority": "external",
+      "topics": [
+        "openstreetmap",
+        "routing",
+        "vendors"
+      ],
+      "slug": "how-can-trip-planners-use-sidewalk-street-name-tags-to-produce-better-walking-instructions",
+      "existing_path": "assistant/questions/os-connect/how-can-trip-planners-use-sidewalk-street-name-tags-to-produce-better-walking-instructions.md",
+      "status": "existing"
+    },
+    {
+      "q": "What should mappers do when a sidewalk is separated from the road geometry?",
+      "folder": "os-connect",
+      "priority": "external",
+      "topics": [
+        "openstreetmap",
+        "mapping"
+      ],
+      "slug": "what-should-mappers-do-when-a-sidewalk-is-separated-from-the-road-geometry",
+      "existing_path": "assistant/questions/os-connect/what-should-mappers-do-when-a-sidewalk-is-separated-from-the-road-geometry.md",
+      "status": "existing"
+    },
+    {
+      "q": "What should trip-planning vendors do when OSM pedestrian paths do not include street names?",
+      "folder": "os-connect",
+      "priority": "external",
+      "topics": [
+        "openstreetmap",
+        "vendors"
+      ],
+      "slug": "what-should-trip-planning-vendors-do-when-osm-pedestrian-paths-do-not-include-street-names",
+      "existing_path": "assistant/questions/os-connect/what-should-trip-planning-vendors-do-when-osm-pedestrian-paths-do-not-include-street-names.md",
+      "status": "existing"
+    },
+    {
+      "q": "How do OpenSidewalks mapping efforts relate to local community mapping groups such as Maptime LA?",
+      "folder": "os-connect",
+      "priority": "external",
+      "topics": [
+        "community",
+        "mapping"
+      ],
+      "slug": "how-do-opensidewalks-mapping-efforts-relate-to-local-community-mapping-groups-such-as-maptime-la",
+      "existing_path": "assistant/questions/os-connect/how-do-opensidewalks-mapping-efforts-relate-to-local-community-mapping-groups-such-as-maptime-la.md",
+      "status": "existing"
+    },
+    {
+      "q": "Can TCAT help set up a sidewalk-mapping project in the OSM US Tasking Manager?",
+      "folder": "os-connect",
+      "priority": "external",
+      "topics": [
+        "community",
+        "tasking-manager"
+      ],
+      "slug": "can-tcat-help-set-up-a-sidewalk-mapping-project-in-the-osm-us-tasking-manager",
+      "existing_path": "assistant/questions/os-connect/can-tcat-help-set-up-a-sidewalk-mapping-project-in-the-osm-us-tasking-manager.md",
+      "status": "existing"
+    },
+    {
+      "q": "What happened to the older OpenSidewalks / MapWith.ai Tasking Manager workflow?",
+      "folder": "os-connect",
+      "priority": "external",
+      "topics": [
+        "community",
+        "tasking-manager"
+      ],
+      "slug": "what-happened-to-the-older-opensidewalks-mapwith-ai-tasking-manager-workflow",
+      "existing_path": "assistant/questions/os-connect/what-happened-to-the-older-opensidewalks-mapwith-ai-tasking-manager-workflow.md",
+      "status": "existing"
+    },
+    {
+      "q": "What training materials are available for new sidewalk mappers?",
+      "folder": "os-connect",
+      "priority": "external",
+      "topics": [
+        "community",
+        "training"
+      ],
+      "slug": "what-training-materials-are-available-for-new-sidewalk-mappers",
+      "existing_path": "assistant/questions/os-connect/what-training-materials-are-available-for-new-sidewalk-mappers.md",
+      "status": "existing"
+    },
+    {
+      "q": "How should communities decide which areas to map first?",
+      "folder": "os-connect",
+      "priority": "external",
+      "topics": [
+        "community",
+        "mapping"
+      ],
+      "slug": "how-should-communities-decide-which-areas-to-map-first",
+      "existing_path": "assistant/questions/os-connect/how-should-communities-decide-which-areas-to-map-first.md",
+      "status": "existing"
+    },
+    {
+      "q": "Can mapping volunteers contribute data that agencies can use?",
+      "folder": "os-connect",
+      "priority": "external",
+      "topics": [
+        "community",
+        "stewardship"
+      ],
+      "slug": "can-mapping-volunteers-contribute-data-that-agencies-can-use",
+      "existing_path": "assistant/questions/os-connect/can-mapping-volunteers-contribute-data-that-agencies-can-use.md",
+      "status": "existing"
+    },
+    {
+      "q": "What makes community-mapped sidewalk data usable for agency workflows?",
+      "folder": "os-connect",
+      "priority": "external",
+      "topics": [
+        "community",
+        "data-quality"
+      ],
+      "slug": "what-makes-community-mapped-sidewalk-data-usable-for-agency-workflows",
+      "existing_path": "assistant/questions/os-connect/what-makes-community-mapped-sidewalk-data-usable-for-agency-workflows.md",
+      "status": "existing"
+    },
+    {
+      "q": "What quality checks are needed before community-mapped data can support planning or routing?",
+      "folder": "os-connect",
+      "priority": "external",
+      "topics": [
+        "community",
+        "validation"
+      ],
+      "slug": "what-quality-checks-are-needed-before-community-mapped-data-can-support-planning-or-routing",
+      "existing_path": "assistant/questions/os-connect/what-quality-checks-are-needed-before-community-mapped-data-can-support-planning-or-routing.md",
+      "status": "existing"
+    },
+    {
+      "q": "Can agencies or community groups attend Mappy Hours?",
+      "folder": "support",
+      "priority": "external",
+      "topics": [
+        "mappy-hours",
+        "community"
+      ],
+      "slug": "can-agencies-or-community-groups-attend-mappy-hours",
+      "existing_path": "assistant/questions/support/can-agencies-or-community-groups-attend-mappy-hours.md",
+      "status": "existing"
+    },
+    {
+      "q": "When should someone be referred to Mappy Hours versus receiving direct support?",
+      "folder": "support",
+      "priority": "external",
+      "topics": [
+        "mappy-hours",
+        "support"
+      ],
+      "slug": "when-should-someone-be-referred-to-mappy-hours-versus-receiving-direct-support",
+      "existing_path": "assistant/questions/support/when-should-someone-be-referred-to-mappy-hours-versus-receiving-direct-support.md",
+      "status": "existing"
+    },
+    {
+      "q": "When should partners be referred to Mappy Hours versus direct technical support?",
+      "folder": "support",
+      "priority": "external",
+      "topics": [
+        "mappy-hours",
+        "support"
+      ],
+      "slug": "when-should-partners-be-referred-to-mappy-hours-versus-direct-technical-support",
+      "existing_path": "assistant/questions/support/when-should-partners-be-referred-to-mappy-hours-versus-direct-technical-support.md",
+      "status": "existing"
+    },
+    {
+      "q": "Who should external partners contact for TDEI support?",
+      "folder": "support",
+      "priority": "support",
+      "topics": [
+        "contacts",
+        "tdei"
+      ],
+      "slug": "who-should-external-partners-contact-for-tdei-support",
+      "existing_path": "assistant/questions/support/who-should-external-partners-contact-for-tdei-support.md",
+      "status": "existing"
+    },
+    {
+      "q": "Who should external partners contact for OS-CONNECT data questions?",
+      "folder": "support",
+      "priority": "support",
+      "topics": [
+        "contacts",
+        "os-connect"
+      ],
+      "slug": "who-should-external-partners-contact-for-os-connect-data-questions",
+      "existing_path": "assistant/questions/support/who-should-external-partners-contact-for-os-connect-data-questions.md",
+      "status": "existing"
+    },
+    {
+      "q": "Who should external partners contact for OpenSidewalks mapping questions?",
+      "folder": "support",
+      "priority": "support",
+      "topics": [
+        "contacts",
+        "opensidewalks"
+      ],
+      "slug": "who-should-external-partners-contact-for-opensidewalks-mapping-questions",
+      "existing_path": "assistant/questions/support/who-should-external-partners-contact-for-opensidewalks-mapping-questions.md",
+      "status": "existing"
+    },
+    {
+      "q": "Who owns follow-up when a partner asks a question that crosses tools or teams?",
+      "folder": "support",
+      "priority": "support",
+      "topics": [
+        "contacts",
+        "ownership"
+      ],
+      "slug": "who-owns-follow-up-when-a-partner-asks-a-question-that-crosses-tools-or-teams",
+      "existing_path": "assistant/questions/support/who-owns-follow-up-when-a-partner-asks-a-question-that-crosses-tools-or-teams.md",
+      "status": "existing"
+    },
+    {
+      "q": "What response time should external partners expect?",
+      "folder": "support",
+      "priority": "support",
+      "topics": [
+        "support",
+        "sla"
+      ],
+      "slug": "what-response-time-should-external-partners-expect",
+      "existing_path": "assistant/questions/support/what-response-time-should-external-partners-expect.md",
+      "status": "existing"
+    },
+    {
+      "q": "What should staff do when they do not know the answer to a partner's question?",
+      "folder": "support",
+      "priority": "support",
+      "topics": [
+        "support",
+        "escalation"
+      ],
+      "slug": "what-should-staff-do-when-they-do-not-know-the-answer-to-a-partner-s-question",
+      "existing_path": "assistant/questions/support/what-should-staff-do-when-they-do-not-know-the-answer-to-a-partner-s-question.md",
+      "status": "existing"
+    },
+    {
+      "q": "What language should staff use when a question requires internal verification?",
+      "folder": "support",
+      "priority": "support",
+      "topics": [
+        "support",
+        "communication"
+      ],
+      "slug": "what-language-should-staff-use-when-a-question-requires-internal-verification",
+      "existing_path": "assistant/questions/support/what-language-should-staff-use-when-a-question-requires-internal-verification.md",
+      "status": "existing"
+    },
+    {
+      "q": "What should staff avoid saying in external technical-support emails?",
+      "folder": "support",
+      "priority": "support",
+      "topics": [
+        "support",
+        "communication"
+      ],
+      "slug": "what-should-staff-avoid-saying-in-external-technical-support-emails",
+      "existing_path": "assistant/questions/support/what-should-staff-avoid-saying-in-external-technical-support-emails.md",
+      "status": "existing"
+    },
+    {
+      "q": "How should staff explain uncertainty without sounding evasive?",
+      "folder": "support",
+      "priority": "support",
+      "topics": [
+        "support",
+        "communication"
+      ],
+      "slug": "how-should-staff-explain-uncertainty-without-sounding-evasive",
+      "existing_path": "assistant/questions/support/how-should-staff-explain-uncertainty-without-sounding-evasive.md",
+      "status": "existing"
+    },
+    {
+      "q": "How should staff distinguish current functionality from future plans?",
+      "folder": "support",
+      "priority": "support",
+      "topics": [
+        "support",
+        "roadmap"
+      ],
+      "slug": "how-should-staff-distinguish-current-functionality-from-future-plans",
+      "existing_path": "assistant/questions/support/how-should-staff-distinguish-current-functionality-from-future-plans.md",
+      "status": "existing"
+    },
+    {
+      "q": "How should staff introduce related tools without making the answer feel like a sales pitch?",
+      "folder": "support",
+      "priority": "support",
+      "topics": [
+        "support",
+        "communication"
+      ],
+      "slug": "how-should-staff-introduce-related-tools-without-making-the-answer-feel-like-a-sales-pitch",
+      "existing_path": "assistant/questions/support/how-should-staff-introduce-related-tools-without-making-the-answer-feel-like-a-sales-pitch.md",
+      "status": "existing"
+    }
+  ],
+  "intents": [
+    {
+      "id": "explain-ecosystem",
+      "example_query": "A partner is confused about TDEI, OS-CONNECT, OpenSidewalks, and OSM. Give a short explanation of how they relate.",
+      "related_slugs": [
+        "what-is-the-difference-between-tdei-os-connect-opensidewalks-and-openstreetmap",
+        "what-is-tdei",
+        "what-is-os-connect",
+        "what-is-opensidewalks"
+      ]
+    },
+    {
+      "id": "recommend-dataset",
+      "example_query": "An agency wants pedestrian walkway data for bus stop planning in ArcGIS. Which dataset and format should we recommend?",
+      "related_slugs": [
+        "which-dataset-and-format-should-an-agency-use-for-pedestrian-walkway-data-in-arcgis",
+        "which-dataset-should-i-use-if-i-need-pedestrian-walkway-data-for-planning"
+      ]
+    },
+    {
+      "id": "guide-download",
+      "example_query": "A user downloaded the wrong file from TDEI. How should we help them find the correct released OS-CONNECT dataset?",
+      "related_slugs": [
+        "what-should-i-do-if-a-dataset-appears-mislabeled-or-downloads-the-wrong-file",
+        "where-do-i-download-os-connect-data",
+        "what-does-released-dataset-mean-in-tdei"
+      ]
+    },
+    {
+      "id": "explain-osw-format",
+      "example_query": "What does an OSW download contain, and how do edges and nodes map to sidewalks, crossings, and curb ramps?",
+      "related_slugs": [
+        "what-files-are-included-in-an-osw-download",
+        "what-are-edges-and-nodes-in-the-osw-download"
+      ]
+    },
+    {
+      "id": "support-arcgis-use",
+      "example_query": "How should I explain importing OS-CONNECT GeoJSON into ArcGIS?",
+      "related_slugs": [
+        "how-do-i-import-os-connect-osw-geojson-into-arcgis",
+        "can-os-connect-data-be-used-in-arcgis"
+      ]
+    },
+    {
+      "id": "handle-mislabeled-datasets",
+      "example_query": "A public dataset appears mislabeled or points to a wrong download. What should support staff say and do?",
+      "related_slugs": [
+        "what-should-i-do-if-a-dataset-appears-mislabeled-or-downloads-the-wrong-file"
+      ]
+    },
+    {
+      "id": "explain-issue-reporting",
+      "example_query": "A user found a railroad track incorrectly marked as a walkway. How should they report it?",
+      "related_slugs": [
+        "how-do-i-report-an-error-in-os-connect-data",
+        "what-kinds-of-errors-should-be-reported-through-the-os-connect-viewer"
+      ]
+    },
+    {
+      "id": "explain-correction-lifecycle",
+      "example_query": "How long does it take for submitted corrections to appear in OS-CONNECT?",
+      "related_slugs": [
+        "how-long-do-corrections-take-to-appear-in-a-public-release",
+        "what-happens-after-i-submit-an-issue-report"
+      ]
+    },
+    {
+      "id": "distinguish-release-from-review",
+      "example_query": "Does submitting an issue immediately change the public dataset?",
+      "related_slugs": [
+        "do-reported-issues-automatically-update-the-public-dataset"
+      ]
+    },
+    {
+      "id": "handle-bulk-corrections",
+      "example_query": "An agency has many known sidewalk errors. Should they submit them individually or coordinate a structured review?",
+      "related_slugs": [
+        "can-agencies-submit-bulk-corrections-or-priority-areas-for-review"
+      ]
+    },
+    {
+      "id": "validate-authority",
+      "example_query": "A partner asks whether this is the authoritative pedestrian dataset for their jurisdiction. What can we safely say?",
+      "related_slugs": [
+        "how-do-i-know-whether-a-dataset-is-authoritative"
+      ]
+    },
+    {
+      "id": "explain-gtfs-pathways-relationship",
+      "example_query": "A transit agency asks whether OS-CONNECT is a substitute for GTFS Pathways.",
+      "related_slugs": [
+        "how-is-os-connect-different-from-gtfs-pathways"
+      ]
+    },
+    {
+      "id": "check-gtfs-pathways-availability",
+      "example_query": "How can someone tell whether a GTFS feed includes pathways.txt?",
+      "related_slugs": [
+        "how-can-i-tell-whether-a-gtfs-feed-includes-pathways-txt"
+      ]
+    },
+    {
+      "id": "support-trip-planning-vendors",
+      "example_query": "A trip planner has poor walking directions because sidewalks lack street-name references. What should we explain?",
+      "related_slugs": [
+        "what-should-trip-planning-vendors-do-when-osm-pedestrian-paths-do-not-include-street-names"
+      ]
+    },
+    {
+      "id": "explain-osm-sidewalk-naming-tags",
+      "example_query": "What are street:name and is_sidepath:of:name, and when should they be used?",
+      "related_slugs": [
+        "what-is-the-difference-between-street-name-and-is-sidepath-of-name"
+      ]
+    },
+    {
+      "id": "recommend-osm-tagging-practice",
+      "example_query": "Which tag should we recommend for associating sidewalks with street names?",
+      "related_slugs": [
+        "which-sidewalk-to-street-name-tagging-pattern-is-currently-recommended"
+      ]
+    },
+    {
+      "id": "connect-mapping-to-routing",
+      "example_query": "Why does sidewalk tagging matter for navigation instructions?",
+      "related_slugs": [
+        "why-do-street-names-matter-for-walking-directions"
+      ]
+    },
+    {
+      "id": "explain-walksheds",
+      "example_query": "How should support staff explain Walksheds to a transit planner?",
+      "related_slugs": [
+        "what-is-a-walkshed",
+        "how-does-walksheds-use-os-connect-data"
+      ]
+    },
+    {
+      "id": "explain-accessmap",
+      "example_query": "How is AccessMap different from Walksheds?",
+      "related_slugs": [
+        "how-is-accessmap-different-from-walksheds"
+      ]
+    },
+    {
+      "id": "support-stop-planning",
+      "example_query": "How can OS-CONNECT and Walksheds help with bus stop placement or access analysis?",
+      "related_slugs": [
+        "how-can-os-connect-and-walksheds-support-bus-stop-planning"
+      ]
+    },
+    {
+      "id": "support-event-accessibility",
+      "example_query": "How can OS-CONNECT support FIFA or major-event accessibility planning?",
+      "related_slugs": [
+        "can-os-connect-support-fifa-or-major-event-accessibility-planning"
+      ]
+    },
+    {
+      "id": "support-school-access",
+      "example_query": "How can pedestrian accessibility data be used around schools and transit stops?",
+      "related_slugs": [
+        "can-os-connect-support-pedestrian-access-analysis-around-schools-clinics-grocery-stores-and-other-destinations"
+      ]
+    },
+    {
+      "id": "explain-community-mapping-pathways",
+      "example_query": "A local mapping group wants to restart sidewalk mapping. What support can TCAT offer?",
+      "related_slugs": [
+        "can-tcat-help-set-up-a-sidewalk-mapping-project-in-the-osm-us-tasking-manager"
+      ]
+    },
+    {
+      "id": "explain-tasking-manager-status",
+      "example_query": "What happened to the old MapWith.ai Tasking Manager, and what should we recommend now?",
+      "related_slugs": [
+        "what-happened-to-the-older-opensidewalks-mapwith-ai-tasking-manager-workflow"
+      ]
+    },
+    {
+      "id": "onboard-new-mappers",
+      "example_query": "What beginner materials should we share with sidewalk mappers?",
+      "related_slugs": [
+        "what-training-materials-are-available-for-new-sidewalk-mappers"
+      ]
+    },
+    {
+      "id": "decide-mapping-priorities",
+      "example_query": "How should a community decide where to start mapping sidewalks?",
+      "related_slugs": [
+        "how-should-communities-decide-which-areas-to-map-first"
+      ]
+    },
+    {
+      "id": "explain-data-quality-expectations",
+      "example_query": "When can volunteer-contributed sidewalk data become useful for agency planning?",
+      "related_slugs": [
+        "what-makes-community-mapped-sidewalk-data-usable-for-agency-workflows"
+      ]
+    },
+    {
+      "id": "refer-to-mappy-hours",
+      "example_query": "When is Mappy Hours the right next step?",
+      "related_slugs": [
+        "when-should-partners-be-referred-to-mappy-hours-versus-direct-technical-support"
+      ]
+    },
+    {
+      "id": "decide-direct-support-vs-office-hours",
+      "example_query": "When should staff answer directly instead of referring someone to Mappy Hours?",
+      "related_slugs": [
+        "when-should-partners-be-referred-to-mappy-hours-versus-direct-technical-support"
+      ]
+    },
+    {
+      "id": "draft-professional-support-response",
+      "example_query": "Draft a professional response to an agency partner asking about OS-CONNECT correction timelines.",
+      "related_slugs": [
+        "how-long-do-corrections-take-to-appear-in-a-public-release"
+      ],
+      "uses_pattern": "answer-known-operational"
+    },
+    {
+      "id": "soften-support-tone",
+      "example_query": "Rewrite this support email to be warmer but less casual and more technically precise.",
+      "uses_pattern": "answer-when-uncertain"
+    },
+    {
+      "id": "manage-uncertainty",
+      "example_query": "Rewrite this answer so it does not overstate what we know.",
+      "uses_pattern": "answer-when-uncertain"
+    },
+    {
+      "id": "preserve-relationship-continuity",
+      "example_query": "Draft a reply to a partner who is reconnecting after several months about a paused sidewalk-mapping project.",
+      "uses_pattern": "reconnect-prior-collaborator"
+    },
+    {
+      "id": "identify-ownership",
+      "example_query": "This question crosses data, portal, and mapping workflows. Who should own the follow-up?",
+      "related_slugs": [
+        "who-owns-follow-up-when-a-partner-asks-a-question-that-crosses-tools-or-teams"
+      ]
+    },
+    {
+      "id": "propose-next-step",
+      "example_query": "A partner has a practical use case but we do not yet know the answer. What should we say next?",
+      "related_slugs": [
+        "what-should-staff-do-when-they-do-not-know-the-answer-to-a-partner-s-question"
+      ],
+      "uses_pattern": "answer-when-uncertain"
+    }
+  ],
+  "patterns": [
+    {
+      "id": "answer-known-operational",
+      "title": "Answer a known operational question",
+      "structure": "direct answer → brief explanation → link if needed → next step"
+    },
+    {
+      "id": "answer-when-uncertain",
+      "title": "Answer when uncertain",
+      "structure": "state what is known → state what is not confirmed → who is checking → interim guidance"
+    },
+    {
+      "id": "respond-to-data-error",
+      "title": "Respond to a data error",
+      "structure": "thank them → likely issue category → reporting path → review lifecycle → structured follow-up for agency-scale issues"
+    },
+    {
+      "id": "explain-tool-without-overselling",
+      "title": "Explain a tool without overselling it",
+      "structure": "connect to stated use case → what it does → current limitations → next step"
+    },
+    {
+      "id": "reconnect-prior-collaborator",
+      "title": "Reconnect with a prior collaborator",
+      "structure": "acknowledge prior context → recognize current update → answer current question → concrete way to continue"
+    }
+  ]
+}

@@ -1,0 +1,59 @@
+---
+title: "What does \"width\" mean in the dataset?"
+slug: what-does-width-mean-in-the-dataset
+doc_type: question
+products:
+  - OS-CONNECT
+audiences:
+  - planner
+  - jurisdiction
+  - advocate
+  - public
+topics:
+  - attributes
+risk_level: medium
+authority_level: explanatory
+review_status: draft
+last_reviewed: ""
+retrieval_priority: high
+assistant_behavior:
+  allow_inference: false
+  requires_citation: true
+  abstain_if_missing_context: true
+  do_not_claim: []
+related_pages: []
+---
+
+# What does "width" mean in the dataset?
+
+## Short Answer
+
+TODO
+
+## Significance
+
+TODO
+
+## What This Means
+
+TODO
+
+## What This Does Not Mean
+
+TODO
+
+## How To Use This
+
+TODO
+
+## Example
+
+TODO
+
+## Assistant Guidance
+
+TODO
+
+## Related Concepts
+
+TODO

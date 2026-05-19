@@ -1,0 +1,60 @@
+---
+title: "What metrics best support accessibility prioritization?"
+slug: what-metrics-best-support-accessibility-prioritization
+doc_type: question
+products:
+  - AccessMap
+audiences:
+  - planner
+  - jurisdiction
+  - advocate
+  - public
+topics:
+  - metrics
+  - accessibility
+risk_level: medium
+authority_level: explanatory
+review_status: draft
+last_reviewed: ""
+retrieval_priority: high
+assistant_behavior:
+  allow_inference: false
+  requires_citation: true
+  abstain_if_missing_context: true
+  do_not_claim: []
+related_pages: []
+---
+
+# What metrics best support accessibility prioritization?
+
+## Short Answer
+
+TODO
+
+## Significance
+
+TODO
+
+## What This Means
+
+TODO
+
+## What This Does Not Mean
+
+TODO
+
+## How To Use This
+
+TODO
+
+## Example
+
+TODO
+
+## Assistant Guidance
+
+TODO
+
+## Related Concepts
+
+TODO

@@ -1,0 +1,26 @@
+{
+  "export_tool": "scripts/export_rag.py",
+  "export_note": "Sample manifest for illustration only. Production pipelines should generate their own manifest alongside chunks.jsonl.",
+  "corpus_root": "docs/assistant",
+  "record_count": 2,
+  "fields": [
+    "path",
+    "title",
+    "slug",
+    "doc_type",
+    "products",
+    "audiences",
+    "topics",
+    "risk_level",
+    "authority_level",
+    "retrieval_priority",
+    "review_status",
+    "last_reviewed",
+    "assistant_behavior",
+    "source_url",
+    "content"
+  ],
+  "source_url_prefix": "PLACEHOLDER_SITE_URL",
+  "embedding_model": null,
+  "vector_store": null
+}
