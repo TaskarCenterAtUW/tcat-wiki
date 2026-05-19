@@ -7,6 +7,13 @@ Changes to the TCAT Wiki are documented here.
 This project adheres to [Semantic Versioning](https://semver.org/) and
 [Conventional Commits](https://www.conventionalcommits.org/).
 
+## v11.11.1 (2026-05-18)
+
+### Features
+- **Docs**: Proposing in a new branch the added assistant/ pages. Requesting slugs get filled in and link resolution. eventual incorporation of select assistant docs into guides-list
+
+
+
 ## v11.11.0 (2026-05-11)
 
 ### Features
