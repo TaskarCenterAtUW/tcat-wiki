@@ -23,7 +23,7 @@ Cross-product questions from the Question Board and helpline. Prioritize [Helpli
 - [What is the relationship between pedestrian paths in OpenStreetMap and GTFS Pathways?](what-is-the-relationship-between-pedestrian-paths-in-openstreetmap-and-gtfs-pathways.md)
 - [What language should staff use when a question requires internal verification?](what-language-should-staff-use-when-a-question-requires-internal-verification.md)
 - [What response time should external partners expect?](what-response-time-should-external-partners-expect.md)
-- [What should agencies do if GTFS Pathways data are missing but pedestrian data exist in OSM or OS-CONNECT?](what-should-agencies-do-if-gtfs-pathways-data-are-missing-but-pedestrian-data-exist-in-osm-or-os.md)
+- [What should agencies do if GTFS Pathways data are missing but pedestrian data exist in OSM or OS-CONNECT?](what-should-agencies-do-if-gtfs-pathways-data-are-missing-but-pedestrian-data-exist-in-osm-or-os-connect.md)
 - [What should staff avoid saying in external technical-support emails?](what-should-staff-avoid-saying-in-external-technical-support-emails.md)
 - [What should staff do when they do not know the answer to a partner's question?](what-should-staff-do-when-they-do-not-know-the-answer-to-a-partner-s-question.md)
 - [When should partners be referred to Mappy Hours versus direct technical support?](when-should-partners-be-referred-to-mappy-hours-versus-direct-technical-support.md)

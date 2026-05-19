@@ -226,7 +226,7 @@ Support staff ask operational questions in the moment. Intents bundle the right 
 
 **Retrieve these pages:**
 
-- `can-os-connect-support-pedestrian-access-analysis-around-schools-clinics-grocery-stores-and-other-destinations` (page not found — check slug)
+- [can-os-connect-support-pedestrian-access-analysis-around-schools-clinics-grocery-stores-and-other-destinations](../questions/os-connect/can-os-connect-support-pedestrian-access-analysis-around-schools-clinics-grocery-stores-and-other-destinations.md)
 
 ### `explain-community-mapping-pathways`
 

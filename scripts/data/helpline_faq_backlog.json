@@ -605,8 +605,8 @@
         "planning",
         "destinations"
       ],
-      "slug": "can-os-connect-support-pedestrian-access-analysis-around-schools-clinics-grocery-stores-and-othe",
-      "existing_path": "assistant/questions/os-connect/can-os-connect-support-pedestrian-access-analysis-around-schools-clinics-grocery-stores-and-othe.md",
+      "slug": "can-os-connect-support-pedestrian-access-analysis-around-schools-clinics-grocery-stores-and-other-destinations",
+      "existing_path": "assistant/questions/os-connect/can-os-connect-support-pedestrian-access-analysis-around-schools-clinics-grocery-stores-and-other-destinations.md",
       "status": "existing"
     },
     {
@@ -820,8 +820,8 @@
         "gtfs-pathways",
         "planning"
       ],
-      "slug": "what-should-agencies-do-if-gtfs-pathways-data-are-missing-but-pedestrian-data-exist-in-osm-or-os",
-      "existing_path": "assistant/questions/support/what-should-agencies-do-if-gtfs-pathways-data-are-missing-but-pedestrian-data-exist-in-osm-or-os.md",
+      "slug": "what-should-agencies-do-if-gtfs-pathways-data-are-missing-but-pedestrian-data-exist-in-osm-or-os-connect",
+      "existing_path": "assistant/questions/support/what-should-agencies-do-if-gtfs-pathways-data-are-missing-but-pedestrian-data-exist-in-osm-or-os-connect.md",
       "status": "existing"
     },
     {

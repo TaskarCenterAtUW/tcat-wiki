@@ -59,7 +59,8 @@ def slugify(text: str) -> str:
     s = text.lower().strip()
     s = re.sub(r"[^a-z0-9]+", "-", s)
     s = re.sub(r"-+", "-", s).strip("-")
-    return s[:96]
+    # Keep full slug; longest helpline titles are ~110 chars (under typical path limits).
+    return s
 
 
 def risk_level_for(question: str, topics: list) -> str:

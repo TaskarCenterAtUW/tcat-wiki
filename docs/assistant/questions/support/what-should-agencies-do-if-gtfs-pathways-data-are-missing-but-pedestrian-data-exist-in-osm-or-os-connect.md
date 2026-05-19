@@ -1,17 +1,20 @@
 ---
-title: "Can OS-CONNECT support pedestrian access analysis around schools, clinics, grocery stores, and other destinations?"
-slug: can-os-connect-support-pedestrian-access-analysis-around-schools-clinics-grocery-stores-and-othe
+title: "What should agencies do if GTFS Pathways data are missing but pedestrian data exist in OSM or OS-CONNECT?"
+slug: what-should-agencies-do-if-gtfs-pathways-data-are-missing-but-pedestrian-data-exist-in-osm-or-os-connect
 doc_type: question
 products:
   - OS-CONNECT
+  - AccessMap
+  - Walksheds
+  - TDEI
 audiences:
   - planner
   - jurisdiction
   - advocate
   - public
 topics:
+  - gtfs-pathways
   - planning
-  - destinations
 risk_level: medium
 authority_level: explanatory
 review_status: draft
@@ -25,7 +28,7 @@ assistant_behavior:
 related_pages: []
 ---
 
-# Can OS-CONNECT support pedestrian access analysis around schools, clinics, grocery stores, and other destinations?
+# What should agencies do if GTFS Pathways data are missing but pedestrian data exist in OSM or OS-CONNECT?
 
 ## Short Answer
 
