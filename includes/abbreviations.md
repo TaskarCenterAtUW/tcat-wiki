@@ -39,6 +39,7 @@
 *[CNG]: Cloud-Native Geospatial Forum
 *[COE]: College of Engineering
 *[COG]: Cloud Optimized GeoTIFF
+*[CRAB]: Washington State County Road Administration Board
 *[CREATE]: Center for Research and Education on Accessible Technology and Experiences
 *[CRS]: Coordinate Reference System
 *[CSE]: Computer Science and Engineering
@@ -172,10 +173,12 @@
 *[QC]: Quality Control
 *[RAG]: Retrieval-Augmented Generation
 *[RCTO]: Regional Concept for Transportation Operations
+*[RCW]: Revised Code of Washington
 *[RGC]: Regional Growth Center
 *[ROW]: Right of Way
 *[RRFB]: Rectangular Rapid Flashing Beacon
 *[RSO]: Registered Student Organization
+*[RTAN]: Regional Transportation Accessibility Network
 *[RTD]: Denver Regional Transportation District
 *[RTPO]: Regional Transportation Planning Organization
 *[SAFETEA-LU]: Safe, Accountable, Flexible, Efficient Transportation Equity Act: A Legacy for Users
@@ -212,6 +215,8 @@
 *[TDEI]: Transportation Data Exchange Initiative
 *[TDM]: Transportation Demand Management
 *[TEA-21]: Transportation Equity Act for the 21st Century
+*[TFTF]: Transportation Funding Task Force
+*[TIB]: Transportation Improvement Board
 *[TIN]: Triangulated Irregular Network
 *[TIP]: Transportation Improvement Program
 *[TMA]: Transportation Management Areas
@@ -236,6 +241,7 @@
 *[UX]: User Experience
 *[V2X]: Vehicle-to-Everything
 *[VGI]: Volunteered Geographic Information
+*[VMT]: Vehicle Miles Traveled
 *[W3C]: World Wide Web Consortium
 *[WA]: Washington (state)
 *[WAGISA]: Washington GIS Association
