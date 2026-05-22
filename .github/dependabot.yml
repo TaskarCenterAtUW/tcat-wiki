@@ -1,0 +1,32 @@
+# @format
+
+version: 2
+updates:
+  - package-ecosystem: "pip"
+    directory: "/"
+    schedule:
+      interval: "weekly"
+      day: "sunday"
+      time: "14:00"
+    ignore:
+      - dependency-name: "zensical"
+    cooldown:
+      default-days: 3
+    commit-message:
+      prefix: "chore:"
+      include: "scope"
+    assignees:
+      - "uw-amy-bordenave"
+  - package-ecosystem: "github-actions"
+    directory: "/"
+    schedule:
+      interval: "weekly"
+      day: "sunday"
+      time: "14:00"
+    cooldown:
+      default-days: 3
+    commit-message:
+      prefix: "chore:"
+      include: "scope"
+    assignees:
+      - "uw-amy-bordenave"
