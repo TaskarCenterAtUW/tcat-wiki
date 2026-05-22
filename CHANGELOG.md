@@ -7,6 +7,17 @@ Changes to the TCAT Wiki are documented here.
 This project adheres to [Semantic Versioning](https://semver.org/) and
 [Conventional Commits](https://www.conventionalcommits.org/).
 
+## v11.12.0 (2026-05-22)
+
+### Features
+
+- **Core**: Configure Dependabot for root Python dependencies and GitHub Actions updates
+- **Docs**: Expand the site-wide abbreviations list
+
+### Fixes
+
+- **Core**: Pin `zensical` to `0.0.43` so framework upgrades remain manual
+
 ## v11.11.0 (2026-05-11)
 
 ### Features
