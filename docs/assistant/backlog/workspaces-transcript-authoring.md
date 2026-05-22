@@ -71,8 +71,8 @@ Do not batch-commit multiple reviewed pages unless you ask for it.
 |---|------|------|--------|
 | A1 | Create a workspace from TDEI | [create-a-workspace-from-tdei.md](../workflows/workspaces/create-a-workspace-from-tdei.md) | done (`95e795e`) |
 | A2 | Edit accessibility features in a workspace | [edit-accessibility-features-in-a-workspace.md](../workflows/workspaces/edit-accessibility-features-in-a-workspace.md) | done (`9571426`) |
-| A3 | Configure imagery layers | [configure-imagery-layers.md](../workflows/workspaces/configure-imagery-layers.md) | **next** |
-| A4 | Invite a team to a workspace | [invite-a-team-to-a-workspace.md](../workflows/workspaces/invite-a-team-to-a-workspace.md) | pending |
+| A3 | Configure imagery layers | [configure-imagery-layers.md](../workflows/workspaces/configure-imagery-layers.md) | done |
+| A4 | Invite a team to a workspace | [invite-a-team-to-a-workspace.md](../workflows/workspaces/invite-a-team-to-a-workspace.md) | **next** |
 | A5 | Review workspace edits | [review-workspace-edits.md](../workflows/workspaces/review-workspace-edits.md) | pending |
 | A6 | Export workspace edits to TDEI | [export-workspace-edits-to-tdei.md](../workflows/workspaces/export-workspace-edits-to-tdei.md) | pending |
 | A7 | Jurisdiction stewardship | [use-workspaces-for-jurisdiction-stewardship.md](../workflows/workspaces/use-workspaces-for-jurisdiction-stewardship.md) | pending |
