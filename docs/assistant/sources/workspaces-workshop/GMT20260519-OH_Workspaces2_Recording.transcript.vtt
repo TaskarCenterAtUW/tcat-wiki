@@ -1,0 +1,2306 @@
+WEBVTT
+
+1
+00:00:09.090 --> 00:00:10.270
+Amy Kate Bordenave: Alright.
+
+2
+00:00:11.090 --> 00:00:16.110
+Amy Kate Bordenave: We will get started going through… Walk shits.
+
+3
+00:00:17.110 --> 00:00:25.439
+Amy Kate Bordenave: So I'm gonna be switching back and forth between the wiki pages and walksheds itself.
+
+4
+00:00:26.030 --> 00:00:28.210
+Amy Kate Bordenave: Just so that I can demo both.
+
+5
+00:00:32.310 --> 00:00:34.780
+Amy Kate Bordenave: And I'll put this link in the chat.
+
+6
+00:00:37.250 --> 00:00:45.139
+Amy Kate Bordenave: This is the Walk Sheds page on the TCAT wiki, and we will go through the user manual.
+
+7
+00:00:45.930 --> 00:00:48.859
+Amy Kate Bordenave: So, walk sheds, which officially…
+
+8
+00:00:49.100 --> 00:01:00.659
+Amy Kate Bordenave: is named TDEI Walksheds, is a web tool that was developed by TCAT for analyzing pedestrian infrastructure and access to amenities.
+
+9
+00:01:00.850 --> 00:01:02.420
+Amy Kate Bordenave: So we have the user manual.
+
+10
+00:01:05.390 --> 00:01:23.760
+Amy Kate Bordenave: So, the TDEI Walksheds tool calculates pedestrian walk shed areas around a specified origin point. A walkshed is the region reachable by pedestrians on foot or by mobility device within a given travel time or cost budget.
+
+11
+00:01:23.810 --> 00:01:33.050
+Amy Kate Bordenave: Given the characteristics of the surrounding pedestrian network, that means sidewalks, crossings, slopes, and barriers such as curbs and stairs.
+
+12
+00:01:33.720 --> 00:01:51.639
+Amy Kate Bordenave: Unlike a simple distance radius, which used to be the way that people computed walksheds, a walk shed reflects real-world travel conditions, so two points equidistant from an origin may have very different costs to reach, depending on
+
+13
+00:01:51.640 --> 00:02:02.320
+Amy Kate Bordenave: The slope of the segments, whether there's any raised curbs or stairs, or whether the route requires crossing a busy street versus a quiet neighborhood one.
+
+14
+00:02:02.550 --> 00:02:09.140
+Amy Kate Bordenave: The result is a realistic map of accessible space from a chosen origin point.
+
+15
+00:02:10.389 --> 00:02:13.169
+Amy Kate Bordenave: A TDEI account is required to sign in.
+
+16
+00:02:13.270 --> 00:02:18.299
+Amy Kate Bordenave: And that goes through the standard TDEI portal registration process.
+
+17
+00:02:20.610 --> 00:02:24.480
+Amy Kate Bordenave: So as a quick start, we'll cover… Boop.
+
+18
+00:02:33.960 --> 00:02:45.199
+Amy Kate Bordenave: Sorry, had to sneeze. As a quick start, we'll cover, well, we'll skip kind of past registering for a TDI Portal account and signing in.
+
+19
+00:02:45.260 --> 00:02:54.400
+Amy Kate Bordenave: We'll select a dataset and build a router, configure our preferences, click on the map to set an origin.
+
+20
+00:02:54.560 --> 00:02:56.809
+Amy Kate Bordenave: And then read the results.
+
+21
+00:02:59.490 --> 00:03:02.530
+Amy Kate Bordenave: So, part one, getting started.
+
+22
+00:03:03.460 --> 00:03:09.849
+Amy Kate Bordenave: We will sign in, load a dataset, configure preferences, and generate our first walk shed.
+
+23
+00:03:10.590 --> 00:03:22.869
+Amy Kate Bordenave: So the WalkShed tool is a web application, so there's no download or installation required. It runs directly in your browser on any device, including phone, tablet, or desktop.
+
+24
+00:03:24.220 --> 00:03:31.900
+Amy Kate Bordenave: So you open your preferred web browser, navigate to walkshed.tdei.us.
+
+25
+00:03:32.850 --> 00:03:39.280
+Amy Kate Bordenave: And do note that, as I mentioned earlier, a TDEI account is required to use the Walk Sheds tool.
+
+26
+00:03:41.690 --> 00:03:52.039
+Amy Kate Bordenave: And the… Wiki Guide also links out to the TDEI Portal User Manual Account Registration Guide.
+
+27
+00:03:52.590 --> 00:03:56.580
+Amy Kate Bordenave: So I'm gonna swap to the walk shed…
+
+28
+00:03:56.890 --> 00:04:10.590
+Amy Kate Bordenave: URL, so this is from walkshed.tdei.us. First thing you see is a sign-in box, so I'm gonna go ahead and sign in with my demo account.
+
+29
+00:04:10.810 --> 00:04:22.649
+Amy Kate Bordenave: And it does mention that this is the same one as all of the other TDEI, so TDI Portal, and for Workspaces, Eve scout route, it all uses that TDEI login.
+
+30
+00:04:23.070 --> 00:04:24.889
+Amy Kate Bordenave: Which is free for anyone to make.
+
+31
+00:04:28.420 --> 00:04:29.850
+Amy Kate Bordenave: So I just sign in.
+
+32
+00:04:32.480 --> 00:04:49.939
+Amy Kate Bordenave: First up is selecting a dataset. So before calculating a walk shed, you must load an open sidewalks formatted pedestrian network. There is a datasets tab that's a gear icon in the left sidebar. You select a dataset that has been uploaded to the TDEI.
+
+33
+00:04:50.130 --> 00:05:00.079
+Amy Kate Bordenave: And for more information on finding and managing datasets in the TDEI, there is a TDEI datasets guide also on the TCAT wiki.
+
+34
+00:05:05.120 --> 00:05:15.929
+Amy Kate Bordenave: So… First, we want to… Select our… Dataset,
+
+35
+00:05:19.690 --> 00:05:20.900
+Amy Kate Bordenave: Let's see…
+
+36
+00:05:26.190 --> 00:05:31.980
+Amy Kate Bordenave: I think the… U.S.
+
+37
+00:05:32.240 --> 00:05:33.150
+Amy Kate Bordenave: Jeez.
+
+38
+00:05:33.950 --> 00:05:39.219
+Amy Kate Bordenave: We used to be able to select the region here… Let me try.
+
+39
+00:05:39.220 --> 00:05:44.489
+Ryan Liu: Oh, do you need, help selecting the region, or…
+
+40
+00:05:44.490 --> 00:05:46.700
+Amy Kate Bordenave: Yeah… it looks like.
+
+41
+00:05:46.700 --> 00:05:47.210
+Ryan Liu: It's awesome.
+
+42
+00:05:47.210 --> 00:05:51.739
+Amy Kate Bordenave: I'm gonna clear my browser cache, too, just in case that's why.
+
+43
+00:05:51.950 --> 00:05:52.700
+Ryan Liu: Okay.
+
+44
+00:05:58.850 --> 00:06:02.930
+Amy Kate Bordenave: Hmm… yeah, I only see… Goldendale City.
+
+45
+00:06:04.770 --> 00:06:07.679
+Ryan Liu: So, do you wanna switch a dataset?
+
+46
+00:06:09.650 --> 00:06:14.039
+Amy Kate Bordenave: Yeah, there used to be an option to choose one.
+
+47
+00:06:14.040 --> 00:06:20.090
+Ryan Liu: Okay. Yeah, I think you have to go to, like, the settings, yeah, and the
+
+48
+00:06:20.560 --> 00:06:23.509
+Ryan Liu: You can select a new dataset from there.
+
+49
+00:06:24.310 --> 00:06:29.790
+Amy Kate Bordenave: Okay… Gotcha.
+
+50
+00:06:30.600 --> 00:06:34.889
+Amy Kate Bordenave: Alright, well, I'm gonna go through each of these in order.
+
+51
+00:06:35.100 --> 00:06:39.640
+Amy Kate Bordenave: Because at least for me, I think there should be a…
+
+52
+00:06:40.300 --> 00:06:50.909
+Amy Kate Bordenave: Yeah, we can… I can see here the, the available options have changed. There used to be these four tabs, and now we've got additional ones, so…
+
+53
+00:06:51.720 --> 00:06:54.180
+Amy Kate Bordenave: I will have to update the wiki.
+
+54
+00:07:06.980 --> 00:07:17.540
+Amy Kate Bordenave: Okay, so from… so getting back into it… We will select a dataset, Configure our preferences…
+
+55
+00:07:18.190 --> 00:07:22.919
+Amy Kate Bordenave: Set the origin point and travel budget, and then read the results.
+
+56
+00:07:24.710 --> 00:07:27.630
+Amy Kate Bordenave: So I'm gonna start with the interface overview here.
+
+57
+00:07:29.430 --> 00:07:32.640
+Amy Kate Bordenave: So, as mentioned, there's been some updates already.
+
+58
+00:07:32.950 --> 00:07:38.399
+Amy Kate Bordenave: And so some of this will need to be refreshed, but the general principles should hold.
+
+59
+00:07:39.660 --> 00:07:57.650
+Amy Kate Bordenave: So, the walk sheds tool consists of two main areas, the sidebar on the left, which has tabs for dataset selection, walk shed configuration, and some other functions, and the map view on the right, which displays the pedestrian network and the calculated walkshed.
+
+60
+00:08:00.840 --> 00:08:11.540
+Amy Kate Bordenave: So the left sidebar is the primary control panel for the Walk Sheds tool. Contains the following tabs in addition to that new one about the cost function.
+
+61
+00:08:11.810 --> 00:08:20.220
+Amy Kate Bordenave: the walk sheds preferences, that's the… Network graph… Symbol here.
+
+62
+00:08:21.820 --> 00:08:26.840
+Amy Kate Bordenave: The edits, which is the pencil icon, that's this one.
+
+63
+00:08:29.770 --> 00:08:36.970
+Amy Kate Bordenave: the dataset… Was the settings gear icon?
+
+64
+00:08:37.179 --> 00:08:39.129
+Amy Kate Bordenave: So that's this one.
+
+65
+00:08:42.780 --> 00:08:51.549
+Amy Kate Bordenave: And we'll explore for the batch functionality. Yeah, that's now this one. So it's got these little layers with a settings icon on top.
+
+66
+00:08:51.650 --> 00:08:56.490
+Amy Kate Bordenave: And there's a new tab, which is the Formulas tab.
+
+67
+00:09:03.270 --> 00:09:15.899
+Amy Kate Bordenave: There is a main menu, so that's the three horizontal lines, quote-unquote hamburger icon at the top left, and that opens a panel with some additional options.
+
+68
+00:09:17.930 --> 00:09:22.430
+Amy Kate Bordenave: So it's got About, documentation, and Contact.
+
+69
+00:09:23.000 --> 00:09:28.349
+Amy Kate Bordenave: So you can see that the documentation link has recently been added.
+
+70
+00:09:28.480 --> 00:09:32.379
+Amy Kate Bordenave: The About opens a pop-up with information.
+
+71
+00:09:34.410 --> 00:09:39.050
+Amy Kate Bordenave: It says, TDI WalkJads is developed by the Tasker Center at the University of Washington.
+
+72
+00:09:41.500 --> 00:09:44.080
+Amy Kate Bordenave: the new documentation…
+
+73
+00:09:44.190 --> 00:09:50.749
+Amy Kate Bordenave: Entry is a link to this resource that we're going through, the WalkSheds User Manual on the GCAT Wiki.
+
+74
+00:09:53.270 --> 00:09:56.030
+Amy Kate Bordenave: And contact opens up.
+
+75
+00:09:56.530 --> 00:09:57.660
+Amy Kate Bordenave: a little…
+
+76
+00:09:58.650 --> 00:10:06.640
+Amy Kate Bordenave: a dialog box with options for a link to Twitter, which I don't think we use anymore, and email.
+
+77
+00:10:12.860 --> 00:10:15.300
+Amy Kate Bordenave: So, reading the map.
+
+78
+00:10:16.150 --> 00:10:35.649
+Amy Kate Bordenave: The walk shed is displayed on the map with all reachable paths, so sidewalks, crossings, and other types of paths highlighted in blue. Areas excluded by the slope limits, obstacle avoidance settings, or street avoidance appear as gaps reflecting real barriers in the pedestrian environment.
+
+79
+00:10:35.840 --> 00:10:43.840
+Amy Kate Bordenave: Individual walkways are color-coded by how their incline affects the movement speed. So flat edges appear blue.
+
+80
+00:10:43.950 --> 00:11:03.400
+Amy Kate Bordenave: Moderately inclined edges shift towards pink and orange, and edges that exceed the slope limit appear as red dotted lines. The incline bar at the bottom of the screen provides a live reference for this color scale, which updates automatically as you adjust your steepness preferences.
+
+81
+00:11:03.620 --> 00:11:19.950
+Amy Kate Bordenave: So that's referring to this bar at the bottom here, where it goes from 0, and this is speed at incline percent, all the way up to a maximum of 15. This closely mirrors the very similar UI
+
+82
+00:11:20.070 --> 00:11:21.870
+Amy Kate Bordenave: on Access Map.
+
+83
+00:11:27.940 --> 00:11:31.330
+Amy Kate Bordenave: There's a map legend on the right side.
+
+84
+00:11:32.350 --> 00:11:45.629
+Amy Kate Bordenave: Select the map legend button, so that's the top right of the map, to open a right sidebar that explains the symbols and colors used on the map, which is split into sections.
+
+85
+00:11:50.470 --> 00:11:55.039
+Amy Kate Bordenave: So that's this button. You hover over it, and it says Map Legend.
+
+86
+00:11:55.220 --> 00:12:02.010
+Amy Kate Bordenave: And selecting that shows… the different…
+
+87
+00:12:03.690 --> 00:12:07.360
+Amy Kate Bordenave: UI elements, and then also for points.
+
+88
+00:12:07.830 --> 00:12:18.769
+Amy Kate Bordenave: cost nodes and the hull shapes, and you'll see what those all look like in a minute. There's also visibility toggles, so you can turn those
+
+89
+00:12:18.910 --> 00:12:21.020
+Amy Kate Bordenave: Off and on.
+
+90
+00:12:21.350 --> 00:12:24.020
+Amy Kate Bordenave: To adjust the visualization.
+
+91
+00:12:28.570 --> 00:12:31.809
+Amy Kate Bordenave: And to be a little bit more specific about those.
+
+92
+00:12:32.130 --> 00:12:50.359
+Amy Kate Bordenave: Point features are things such as curb ramps, signals, and other landmarks, and the cost nodes are the network nodes, so the individual points in the network, color-coded with their computed travel cost, so the four colors.
+
+93
+00:12:50.380 --> 00:12:59.790
+Amy Kate Bordenave: Green, yellow, orange, and red correspond to quartiles of travel costs from the origin, just to help visualize.
+
+94
+00:12:59.910 --> 00:13:16.649
+Amy Kate Bordenave: Where are the difficult-to-traverse areas. And the outer boundary polygon of the walkshed with color-coded isochrones represents the quartiles just as a different way, and you'll see that once we
+
+95
+00:13:18.040 --> 00:13:20.270
+Amy Kate Bordenave: Select a center point.
+
+96
+00:13:21.850 --> 00:13:28.930
+Amy Kate Bordenave: And we have a little bit more info about that incline bar, which, just like the one on Access Map.
+
+97
+00:13:29.050 --> 00:13:35.820
+Amy Kate Bordenave: Maps, and updates in real time based on the currently selected mobility profile.
+
+98
+00:13:42.440 --> 00:13:49.739
+Amy Kate Bordenave: And once a walk shed is generated, an action pop-up appears at the bottom of the screen with some more options.
+
+99
+00:13:51.810 --> 00:13:56.059
+Amy Kate Bordenave: So we're gonna take a look at mobility profiles and preferences.
+
+100
+00:13:57.640 --> 00:14:05.670
+Amy Kate Bordenave: So this goes over how to select a predefined mobility profile, and how to customize individual routing preferences.
+
+101
+00:14:07.610 --> 00:14:25.379
+Amy Kate Bordenave: The Walksheds tool includes several predefined mobility profiles, each designed to configure routing for a specific set of mobility needs. Profiles set recommended default values for preferences such as maximum steepness and obstacle avoidance.
+
+102
+00:14:25.440 --> 00:14:29.879
+Amy Kate Bordenave: Opening the Walk Shed Preferences tab in the left sidebar.
+
+103
+00:14:30.070 --> 00:14:33.969
+Amy Kate Bordenave: And you select a profile to apply it.
+
+104
+00:14:34.350 --> 00:14:44.470
+Amy Kate Bordenave: So, manual wheelchair, powered wheelchair, cane, and custom, which allows you full manual control over all of the preferences.
+
+105
+00:14:45.010 --> 00:14:51.669
+Amy Kate Bordenave: So again, a very similar to Access Map UI, with a bit different of a use case.
+
+106
+00:14:57.330 --> 00:15:16.149
+Amy Kate Bordenave: The travel budget, or maximum cost, is a slider that sets the maximum travel cost in seconds of estimated travel time that defines how far the walk shed extends from the origin. So only the edges, or the lines.
+
+107
+00:15:16.150 --> 00:15:33.770
+Amy Kate Bordenave: Reachable within this budget are included in the walk shed, and that's what makes a walk shed. So increasing the budget expands the walk shed, and decreasing contracts it, and this can be configured on any of the mobility profiles.
+
+108
+00:15:37.010 --> 00:15:40.299
+Amy Kate Bordenave: And there's also that Custom tab.
+
+109
+00:15:40.460 --> 00:15:44.170
+Amy Kate Bordenave: Where you can individually adjust each of the settings.
+
+110
+00:15:49.900 --> 00:16:05.440
+Amy Kate Bordenave: And note that slope does not only affect whether or not an edge or path segment is included, but also the travel speed, so shallower inclines close to the ideal walking grade.
+
+111
+00:16:05.440 --> 00:16:11.319
+Amy Kate Bordenave: Are traversed faster, and steeper ones reduce speed exponentially.
+
+112
+00:16:15.980 --> 00:16:21.310
+Amy Kate Bordenave: And you can also select to avoid raised curbs and stairs.
+
+113
+00:16:22.770 --> 00:16:33.770
+Amy Kate Bordenave: And with the default cost function, which is configurable, crossings add a fixed 30-second time penalty to account for waiting and crossing time.
+
+114
+00:16:37.990 --> 00:16:54.670
+Amy Kate Bordenave: Street avoidance factor controls how strongly the tool avoids routing along streets rather than dedicated pedestrian infrastructure. A value near 1 avoids streets, and whereas 0 treats streets like any other path.
+
+115
+00:16:55.370 --> 00:16:57.840
+Amy Kate Bordenave: So a use case for this might be…
+
+116
+00:16:58.050 --> 00:17:14.619
+Amy Kate Bordenave: you know, maybe you're willing to walk on some residential streets where necessary, versus maybe downtown, where there is reliable pedestrian infrastructure. You might want to avoid those streets.
+
+117
+00:17:16.460 --> 00:17:22.739
+Amy Kate Bordenave: And different street classifications receive different cost multipliers at the same avoidance level.
+
+118
+00:17:23.200 --> 00:17:32.840
+Amy Kate Bordenave: So, pedestrian streets and living streets are always treated as penalty-free, because they're more or less parts of the standard pedestrian network.
+
+119
+00:17:32.940 --> 00:17:51.790
+Amy Kate Bordenave: Whereas, service roads, so these are things like driveways, receive a mild penalty, so there's not a huge penalty for walking or rolling down an alleyway compared to other road types, like primary streets.
+
+120
+00:17:52.110 --> 00:17:53.820
+Amy Kate Bordenave: Having the highest penalty.
+
+121
+00:17:55.400 --> 00:18:08.509
+Amy Kate Bordenave: And you're also able to specify a departure date and time, and so for edges with time-restricted access, such as indoor pathways that are only open during business hours.
+
+122
+00:18:08.630 --> 00:18:17.729
+Amy Kate Bordenave: It can update to reflect those changes as well. And if no time is specified, the current time is used.
+
+123
+00:18:23.330 --> 00:18:27.729
+Amy Kate Bordenave: Next up, we'll look at inspecting and editing features.
+
+124
+00:18:33.590 --> 00:18:47.789
+Amy Kate Bordenave: And we're using Goldendale as our example here, although, as Ryan noted, we are able to select a new TDEI dataset from the Settings tab.
+
+125
+00:18:49.890 --> 00:18:52.699
+Amy Kate Bordenave: And you can search in here.
+
+126
+00:18:52.860 --> 00:18:57.680
+Amy Kate Bordenave: for that. But we'll use the… Goldendale example here.
+
+127
+00:18:59.500 --> 00:19:05.470
+Amy Kate Bordenave: And what we're going to be examining in this section is this card.
+
+128
+00:19:05.810 --> 00:19:06.730
+Amy Kate Bordenave: Here.
+
+129
+00:19:11.180 --> 00:19:26.520
+Amy Kate Bordenave: So, selecting an edge or point feature on the map will open up this action pop-up at the bottom of the screen that displays the feature's attributes and a set of action buttons, so that's…
+
+130
+00:19:26.520 --> 00:19:35.780
+Amy Kate Bordenave: Walk shed from here, which sets the clicked feature's location as the origin and triggers a new walkshed calculation.
+
+131
+00:19:35.810 --> 00:19:42.819
+Amy Kate Bordenave: Walkshed 2 here, which calculates a walkshed that includes this feature as a destination point.
+
+132
+00:19:42.970 --> 00:19:52.190
+Amy Kate Bordenave: And the edit feature, which is the pencil icon in the top right, which opens the attribute editor for this feature.
+
+133
+00:19:54.560 --> 00:20:05.029
+Amy Kate Bordenave: So, using this example here in Goldendale, as I click this segment of sidewalk along East Main Street between
+
+134
+00:20:05.190 --> 00:20:11.820
+Amy Kate Bordenave: South… Chatfield Avenue and South Wilbur.
+
+135
+00:20:14.220 --> 00:20:16.009
+Amy Kate Bordenave: We see this little pop-up.
+
+136
+00:20:17.970 --> 00:20:20.349
+Amy Kate Bordenave: And this includes that information.
+
+137
+00:20:20.710 --> 00:20:34.600
+Amy Kate Bordenave: Such as the incline of negative 0.8%, the surface material, which is concrete, and the width of 1.8 meters, as well as those buttons for walk shed, from, and to, and that edit
+
+138
+00:20:34.840 --> 00:20:38.870
+Amy Kate Bordenave: pencil button. So if I clicked Walk Shed from here…
+
+139
+00:20:39.640 --> 00:20:45.059
+Amy Kate Bordenave: It will calculate the walk shed according to the preferences that were set.
+
+140
+00:20:45.730 --> 00:20:48.450
+Amy Kate Bordenave: in this walkshed tab.
+
+141
+00:20:51.450 --> 00:20:59.229
+Amy Kate Bordenave: And so, basically, the highlighted segments here are the ones that are reachable within this
+
+142
+00:20:59.580 --> 00:21:09.290
+Amy Kate Bordenave: cost budget according to these preferences. So if I were to switch to a Manual wheelchair…
+
+143
+00:21:20.640 --> 00:21:22.900
+Amy Kate Bordenave: Versus powered?
+
+144
+00:21:27.150 --> 00:21:29.610
+Amy Kate Bordenave: We'll see if it… Changes…
+
+145
+00:21:30.910 --> 00:21:47.129
+Amy Kate Bordenave: Yes, okay, so it does update. I think I picked a pretty flat part of the city, so there's not a huge difference. And some of those… let's see, I think there were some steeper hills over on this side, so I'm gonna switch to over here, just for a more…
+
+146
+00:21:47.240 --> 00:21:51.679
+Amy Kate Bordenave: Representative difference, we're gonna say we'll do a walk shed from here.
+
+147
+00:21:52.460 --> 00:22:01.339
+Amy Kate Bordenave: And we'll note that there are differences when each of the profiles are selected, and of course the custom one
+
+148
+00:22:01.840 --> 00:22:04.700
+Amy Kate Bordenave: Which can be set as well.
+
+149
+00:22:05.150 --> 00:22:14.800
+Amy Kate Bordenave: Now, adjusting this maximum cost changes how long This profile is traversing for.
+
+150
+00:22:14.920 --> 00:22:19.699
+Amy Kate Bordenave: So, at the very minimum, just 100 seconds, can't get very far.
+
+151
+00:22:20.050 --> 00:22:27.679
+Amy Kate Bordenave: Versus as you increase… It will kind of spider out further.
+
+152
+00:22:28.230 --> 00:22:31.399
+Amy Kate Bordenave: Based on the properties of those paths.
+
+153
+00:22:40.720 --> 00:22:44.439
+Amy Kate Bordenave: So, back to selecting a feature…
+
+154
+00:22:47.560 --> 00:22:51.829
+Amy Kate Bordenave: I'm clicking on this sidewalk here, and there's this edit.
+
+155
+00:22:52.100 --> 00:22:53.200
+Amy Kate Bordenave: button.
+
+156
+00:22:54.040 --> 00:23:00.429
+Amy Kate Bordenave: Which allows you to change all of… well, not all of, but many of these…
+
+157
+00:23:01.810 --> 00:23:05.620
+Amy Kate Bordenave: details. So, for example, you can change the surface.
+
+158
+00:23:06.120 --> 00:23:09.979
+Amy Kate Bordenave: From what it currently is from OS Connect, which is concrete.
+
+159
+00:23:10.170 --> 00:23:12.999
+Amy Kate Bordenave: To any of these other settings.
+
+160
+00:23:15.930 --> 00:23:33.360
+Amy Kate Bordenave: So, after selecting a network feature, clicking the pencil icon will open up this pop-up, and you can modify the attributes. And when you save your changes, the tool will automatically recalculate the walkshed using the updated attributes.
+
+161
+00:23:34.470 --> 00:23:46.770
+Amy Kate Bordenave: So, this is where we get into really how this is valuable to our users, and this ability provides a way to either correct an error in the source data.
+
+162
+00:23:46.770 --> 00:24:04.669
+Amy Kate Bordenave: or to try out a potential infrastructure improvement. So, for example, you might mark an inaccessible crossing as having curb ramps to observe the effect on the walk shed while planning new construction. So, let's see if we can find a good example
+
+163
+00:24:06.100 --> 00:24:07.500
+Amy Kate Bordenave: of that.
+
+164
+00:24:11.520 --> 00:24:12.405
+Amy Kate Bordenave: So…
+
+165
+00:24:15.240 --> 00:24:25.199
+Amy Kate Bordenave: We'll show one kind of destructively in the other direction, just to sort of drive the point home. So let's say we're starting with…
+
+166
+00:24:25.420 --> 00:24:34.529
+Amy Kate Bordenave: Walk shed from here, and we want… to say… What if we changed?
+
+167
+00:24:35.940 --> 00:24:37.230
+Amy Kate Bordenave: this…
+
+168
+00:24:41.050 --> 00:24:50.290
+Amy Kate Bordenave: to not have curb ramps. So, we're looking at a profile, we're gonna use powered wheelchair.
+
+169
+00:24:51.060 --> 00:24:55.110
+Amy Kate Bordenave: Which does avoid raised curbs and stairs.
+
+170
+00:24:56.030 --> 00:25:03.879
+Amy Kate Bordenave: And we can see that currently, given… we'll give it a little bit longer of a travel budget.
+
+171
+00:25:07.520 --> 00:25:25.699
+Amy Kate Bordenave: So this is the distance that this profile is able to reach within 200 seconds with the current settings. However, if I select this crossing, and change it to not have curb ramps, and then save that change.
+
+172
+00:25:26.360 --> 00:25:31.320
+Amy Kate Bordenave: And I'll do this to each of them here.
+
+173
+00:25:33.040 --> 00:25:35.269
+Amy Kate Bordenave: We'll say no curb ramps.
+
+174
+00:25:39.800 --> 00:25:41.120
+Amy Kate Bordenave: And… no.
+
+175
+00:25:44.620 --> 00:26:00.710
+Amy Kate Bordenave: We now see that when I recalculated the walk shed at 200 seconds, which was the value it was at before, now these sections are no longer accessible. And that's because we changed one of the fundamental
+
+176
+00:26:01.380 --> 00:26:06.090
+Amy Kate Bordenave: attributes about this in order to try out, say, for example.
+
+177
+00:26:06.760 --> 00:26:21.399
+Amy Kate Bordenave: You know, if you were doing an improvement project on this intersection and needed to temporarily remove the curb ramps for some kind of electrical infrastructure maintenance, well, that…
+
+178
+00:26:21.570 --> 00:26:32.879
+Amy Kate Bordenave: this… Shows how that change would actually impact the walkshed for a real user in a powered wheelchair.
+
+179
+00:26:36.050 --> 00:26:40.280
+Amy Kate Bordenave: Whereas if we change this back to having curb ramps…
+
+180
+00:26:46.400 --> 00:26:51.290
+Amy Kate Bordenave: And recalculate that walk shed. Now, the reach is much further.
+
+181
+00:26:51.670 --> 00:26:55.900
+Amy Kate Bordenave: And we should see the same for this one.
+
+182
+00:26:56.390 --> 00:27:03.879
+Amy Kate Bordenave: If we re-enable curve ramps currently the reach is only to here, because it's saying that, well, we'll have to
+
+183
+00:27:04.020 --> 00:27:16.530
+Amy Kate Bordenave: Go south, and then across, and then back up in order to reach this segment. Whereas, if this were to have curb ramps, and this user with this profile could go directly across…
+
+184
+00:27:17.120 --> 00:27:18.510
+Amy Kate Bordenave: We'll save that.
+
+185
+00:27:20.280 --> 00:27:22.630
+Amy Kate Bordenave: And now they're able to reach further.
+
+186
+00:27:23.440 --> 00:27:32.340
+Amy Kate Bordenave: So that's a concrete example of how the Walksheds tool can be used to plan infrastructure changes, Either…
+
+187
+00:27:32.710 --> 00:27:40.060
+Amy Kate Bordenave: Improvements, or, for example, temporary, reworks.
+
+188
+00:27:40.540 --> 00:27:42.759
+Amy Kate Bordenave: And how that affects the network.
+
+189
+00:27:46.890 --> 00:27:51.220
+Amy Kate Bordenave: So, there's an Edits tab, and that's this with the…
+
+190
+00:27:51.480 --> 00:27:56.230
+Amy Kate Bordenave: Pencil icon, and this shows the edits that have been made.
+
+191
+00:27:56.420 --> 00:27:58.440
+Amy Kate Bordenave: To the network graph.
+
+192
+00:27:59.150 --> 00:28:02.410
+Amy Kate Bordenave: And you can select and delete them.
+
+193
+00:28:03.350 --> 00:28:11.149
+Amy Kate Bordenave: So you can review the specific attributes that were modified for each feature, and remove the edits to restore the original values.
+
+194
+00:28:15.690 --> 00:28:16.620
+Amy Kate Bordenave: Or not.
+
+195
+00:28:17.620 --> 00:28:20.079
+Amy Kate Bordenave: I will have to send in a bug report.
+
+196
+00:28:20.590 --> 00:28:26.389
+Amy Kate Bordenave: In this case, clicking delete caused a delete failed.
+
+197
+00:28:29.250 --> 00:28:31.929
+Amy Kate Bordenave: Always good to do a little testing.
+
+198
+00:28:39.330 --> 00:28:40.940
+Amy Kate Bordenave: I'm just putting in 2.
+
+199
+00:28:46.100 --> 00:28:47.969
+Amy Kate Bordenave: our notes…
+
+200
+00:28:48.690 --> 00:28:56.509
+Amy Kate Bordenave: like I said, there's been some recent changes, so it's not entirely surprising to me that maybe there were some bugs that weren't caught as we…
+
+201
+00:28:56.720 --> 00:28:58.920
+Amy Kate Bordenave: Update these features.
+
+202
+00:29:11.920 --> 00:29:12.960
+Amy Kate Bordenave: Okay.
+
+203
+00:29:25.020 --> 00:29:26.530
+Amy Kate Bordenave: Okay.
+
+204
+00:29:29.910 --> 00:29:38.149
+Amy Kate Bordenave: Gonna move on next to scenarios… And I'm actually going to…
+
+205
+00:29:40.430 --> 00:29:46.239
+Amy Kate Bordenave: Clear and refresh, just so that we have a… Oh, bye.
+
+206
+00:29:47.240 --> 00:29:47.940
+Amy Kate Bordenave: Nope.
+
+207
+00:29:59.280 --> 00:30:00.620
+Amy Kate Bordenave: Okay.
+
+208
+00:30:02.580 --> 00:30:05.389
+Amy Kate Bordenave: So next, we'll talk about scenarios.
+
+209
+00:30:07.030 --> 00:30:17.719
+Amy Kate Bordenave: So this section explains how to save walksheds as named scenarios and use them to compare results across different configurations or datasets.
+
+210
+00:30:18.380 --> 00:30:35.919
+Amy Kate Bordenave: A scenario is a saved snapshot of a walkshed, so that includes its origin point, travel budget, performance settings, and the resulting network coverage. And saving multiple scenarios allows you to overlay and compare walksheds on the same map
+
+211
+00:30:35.920 --> 00:30:46.609
+Amy Kate Bordenave: For example, to different… to visualize the difference in coverage between two mobility profiles, two different datasets, or two different departure times.
+
+212
+00:30:47.880 --> 00:30:56.030
+Amy Kate Bordenave: So, after a walkshed has been generated, selecting Save Scenario from the action pop-up in the bottom.
+
+213
+00:30:56.480 --> 00:30:57.850
+Amy Kate Bordenave: of the screen.
+
+214
+00:30:58.070 --> 00:31:04.560
+Amy Kate Bordenave: You can enter a name, and confirm to save the current walkshed as a named scenario.
+
+215
+00:31:04.700 --> 00:31:14.089
+Amy Kate Bordenave: So, for example, and just going from the beginning here, this is directly after signing in.
+
+216
+00:31:14.170 --> 00:31:28.710
+Amy Kate Bordenave: Let's use a different city, and that way I'm demoing that functionality as well, which I kind of glossed over in the beginning. On this settings wheel, in order to select a new or a different TDEI dataset.
+
+217
+00:31:28.850 --> 00:31:37.599
+Amy Kate Bordenave: These are search boxes, so let's say I wanted to use, Tanisha. Pick a city in Washington.
+
+218
+00:31:41.570 --> 00:31:48.539
+Tanisha Sepulveda: Let's do… Since I've been doing all these jurisdictional things.
+
+219
+00:31:48.730 --> 00:31:52.850
+Tanisha Sepulveda: Is it Zyla? Z-I-L-A-H?
+
+220
+00:31:53.680 --> 00:31:56.810
+Amy Kate Bordenave: Oop, caps along, C-I-L-A-H.
+
+221
+00:31:56.950 --> 00:32:00.410
+Amy Kate Bordenave: I think it's 2L, C-I-L-L-H.
+
+222
+00:32:00.550 --> 00:32:05.840
+Amy Kate Bordenave: Okay, we'll try Xylah City 1.6.
+
+223
+00:32:06.800 --> 00:32:23.369
+Amy Kate Bordenave: Do note that this here is a filter on the list of results, so after typing in, you also have to then select, and that'll highlight in this bluish color, at least I think it's blue,
+
+224
+00:32:23.830 --> 00:32:34.350
+Amy Kate Bordenave: You have to select it, so you can't just type in, for example, WSP underscore Zyla City V1.6.
+
+225
+00:32:35.370 --> 00:32:40.039
+Amy Kate Bordenave: You can't just type this in, this means that there's not actually one selected.
+
+226
+00:32:42.150 --> 00:32:45.649
+Amy Kate Bordenave: You have to type it in and then click to select.
+
+227
+00:32:46.170 --> 00:32:50.630
+Amy Kate Bordenave: And this is for an overlay dataset.
+
+228
+00:32:50.880 --> 00:32:53.330
+Amy Kate Bordenave: We're not gonna show this right now.
+
+229
+00:32:53.880 --> 00:33:07.679
+Amy Kate Bordenave: And we'll click Build Router. So if you had someone that you were talking to who was from this jurisdiction, and you wanted to show them, how do I look at, you know, not Goldendale, how do I look at my own city? This is how.
+
+230
+00:33:07.940 --> 00:33:11.310
+Amy Kate Bordenave: Settings wheel, type in to filter.
+
+231
+00:33:11.430 --> 00:33:15.070
+Amy Kate Bordenave: Click to select, and then Build Router.
+
+232
+00:33:15.510 --> 00:33:20.580
+Amy Kate Bordenave: And once that's done, it'll say request fulfilled, and you reload the page.
+
+233
+00:33:21.490 --> 00:33:32.750
+Amy Kate Bordenave: And just clicking that, now we're loaded into Sila, which looks like a lovely little town between Yakima and Richland.
+
+234
+00:33:33.030 --> 00:33:35.579
+Amy Kate Bordenave: Nice. I bet it looks really beautiful out there.
+
+235
+00:33:42.030 --> 00:33:43.340
+Amy Kate Bordenave: Alright.
+
+236
+00:33:45.570 --> 00:33:58.559
+Amy Kate Bordenave: So, saving a scenario. Here's an example where we might want to do that. So, I'm looking at this, and this looks like a… oh, I'm on custom. I'm gonna switch to powered wheelchair…
+
+237
+00:33:59.580 --> 00:34:17.609
+Amy Kate Bordenave: Okay. I can see just from the coloring of these edges that it looks like this kind of central area has some decently steep hills. I've seen that this one is that more warm-toned color compared to these pretty
+
+238
+00:34:17.610 --> 00:34:20.440
+Amy Kate Bordenave: Cool tones that indicate the more flat
+
+239
+00:34:20.500 --> 00:34:35.339
+Amy Kate Bordenave: sections, and it looks like the further you get towards the northwest, the steeper the elevation is across here. So maybe that's a good way to test if they wanted to do something like a regrading project.
+
+240
+00:34:35.690 --> 00:34:42.139
+Amy Kate Bordenave: Or maybe another option would be… it looks like this crossing…
+
+241
+00:34:43.650 --> 00:34:53.050
+Amy Kate Bordenave: does not have markings, whereas this one does. That won't make a huge difference in the… Lockshed…
+
+242
+00:34:54.889 --> 00:35:07.459
+Amy Kate Bordenave: Yeah, so it looks like these have curb wraps, but let's… let's do… let's do an incline scenario. So I'm gonna pick this spot right here on the north side of 2nd Avenue, between 6th and 7th Street.
+
+243
+00:35:08.080 --> 00:35:11.109
+Amy Kate Bordenave: And I'm gonna click right here, right in the middle.
+
+244
+00:35:11.600 --> 00:35:19.729
+Amy Kate Bordenave: And we'll say, we'll do a walk shed from here, and we're using that powered wheelchair profile.
+
+245
+00:35:19.730 --> 00:35:32.550
+Amy Kate Bordenave: I'm gonna keep the cost low, just so that we can see a more dramatic difference, and we're gonna create the walk shed from this location. So, for example, here's a more grounded
+
+246
+00:35:34.640 --> 00:35:51.800
+Amy Kate Bordenave: example, let's say that there's a school right on this block, and the entrance to the school is right in the middle here. We might want to know that, hey, under different infrastructure changes, or for different user profiles.
+
+247
+00:35:51.930 --> 00:36:07.400
+Amy Kate Bordenave: what does it look like from the entrance to this school, and where can people get in this cost amount of time for different profiles? So, with the powered wheelchair profile selected.
+
+248
+00:36:07.480 --> 00:36:15.049
+Amy Kate Bordenave: At 200 seconds, at this location, we've created our walk shed, and this shows what's reachable.
+
+249
+00:36:15.960 --> 00:36:17.560
+Amy Kate Bordenave: Per those settings.
+
+250
+00:36:18.360 --> 00:36:32.309
+Amy Kate Bordenave: And I'm gonna save this as, ghoul, and… Powered… 200 seconds.
+
+251
+00:36:33.110 --> 00:36:36.490
+Amy Kate Bordenave: And I'm gonna save… that.
+
+252
+00:36:37.620 --> 00:36:41.869
+Amy Kate Bordenave: Now, once I save that, it clears it from the map.
+
+253
+00:36:42.490 --> 00:36:44.989
+Amy Kate Bordenave: I'm just referencing the guide here.
+
+254
+00:36:46.810 --> 00:36:52.680
+Amy Kate Bordenave: So you enter a name in the text box here, and then click this save icon.
+
+255
+00:36:53.430 --> 00:37:08.039
+Amy Kate Bordenave: And that will put this in the Edits tab. So the same place where we made the change to… or where we could see the change to the surface material, or the… the… we use curb ramps as an example before.
+
+256
+00:37:09.560 --> 00:37:17.660
+Amy Kate Bordenave: That shows the attribute edits that you've made, and from there, you can review saved scenarios or delete them.
+
+257
+00:37:19.300 --> 00:37:24.700
+Amy Kate Bordenave: So, go to that pencil icon, and we can see here…
+
+258
+00:37:24.910 --> 00:37:32.180
+Amy Kate Bordenave: That we have saved this school-powered 200 seconds powered wheelchair profile.
+
+259
+00:37:33.270 --> 00:37:39.189
+Amy Kate Bordenave: And that's this one. So if we click this checkbox to visualize it.
+
+260
+00:37:39.660 --> 00:37:46.529
+Amy Kate Bordenave: We see that this is the result that we got when we ran this scenario under this profile.
+
+261
+00:37:48.300 --> 00:37:58.110
+Amy Kate Bordenave: And if I wanted to… We can look at some info here. This just gives some… some details.
+
+262
+00:37:58.320 --> 00:38:07.229
+Amy Kate Bordenave: what I'm gonna do… is… I'm gonna close this… I'm going to…
+
+263
+00:38:08.010 --> 00:38:13.910
+Amy Kate Bordenave: do another one from the same location. I'm gonna do a walk shed from here.
+
+264
+00:38:14.010 --> 00:38:31.669
+Amy Kate Bordenave: But in this case, instead of using the powered wheelchair profile, I'm gonna choose a custom one with no restrictions on uphill or downhill, and no restriction on raised curbs.
+
+265
+00:38:32.710 --> 00:38:41.360
+Amy Kate Bordenave: Same 200 seconds, same exact starting location, and I'm gonna save this one as…
+
+266
+00:38:41.770 --> 00:38:53.850
+Amy Kate Bordenave: school, because remember, there's a hypothetical school at this location, and I'm gonna say, custom… 200 seconds.
+
+267
+00:38:54.130 --> 00:38:56.359
+Amy Kate Bordenave: And I save that one.
+
+268
+00:38:57.420 --> 00:39:04.169
+Amy Kate Bordenave: Now, when we go to… and you know what, I'll do one more, just to really kind of drive the point home.
+
+269
+00:39:04.390 --> 00:39:14.890
+Amy Kate Bordenave: We're gonna use custom, but with… everything at… I'm sorry.
+
+270
+00:39:16.290 --> 00:39:24.109
+Amy Kate Bordenave: Voyage Streets… Very restricted uphill, downhill… And same cost budget.
+
+271
+00:39:24.530 --> 00:39:38.510
+Amy Kate Bordenave: And I will do the walk shed from here, and I'll save this as school, custom… Minimum… 200 seconds.
+
+272
+00:39:41.470 --> 00:39:42.520
+Amy Kate Bordenave: Okay.
+
+273
+00:39:42.690 --> 00:39:47.830
+Amy Kate Bordenave: So, from the same location, which again, is where we have our hypothetical school.
+
+274
+00:39:48.600 --> 00:39:56.579
+Amy Kate Bordenave: We've saved 3 scenarios, and we can see those here. So the 3 scenarios, as we named them.
+
+275
+00:39:57.340 --> 00:40:11.049
+Amy Kate Bordenave: We're for powered wheelchair Profile, a custom profile with, no, or the maximum limits, and a custom profile with the absolute minimum limits.
+
+276
+00:40:12.410 --> 00:40:17.420
+Amy Kate Bordenave: Here, I'll expand this… To show that there is a little bit more info, too, here.
+
+277
+00:40:18.880 --> 00:40:26.329
+Amy Kate Bordenave: And directly from this… We can already see that the total length decreases.
+
+278
+00:40:26.460 --> 00:40:31.350
+Amy Kate Bordenave: Or is highest in this custom, with no limits, which is what we'd expect.
+
+279
+00:40:31.550 --> 00:40:44.780
+Amy Kate Bordenave: Is a bit lower when we switch to the powered wheelchair, that has a 12% grade as its maximum uphill and downhill instead of 15.
+
+280
+00:40:44.870 --> 00:41:02.670
+Amy Kate Bordenave: And then when it's set to 4% uphill and downhill grade limitation, of course, the total length available drops dramatically. So directly from here, we get these computed stats for things like total length, and then if we…
+
+281
+00:41:03.420 --> 00:41:12.959
+Amy Kate Bordenave: Toggle them off and on. We'll see, overlaid on top of each other, Where each of those are.
+
+282
+00:41:15.070 --> 00:41:17.780
+Amy Kate Bordenave: So we can see, in order…
+
+283
+00:41:19.300 --> 00:41:23.219
+Amy Kate Bordenave: This being our most permissive one, this pink color.
+
+284
+00:41:24.570 --> 00:41:35.969
+Amy Kate Bordenave: A little bit shrunk in from that is this orange one, which represents that powered wheelchair, and then the minimum one is in this
+
+285
+00:41:36.290 --> 00:41:39.800
+Amy Kate Bordenave: I can't quite tell if that's yellow or green, but in this lighter color.
+
+286
+00:41:42.940 --> 00:42:00.100
+Amy Kate Bordenave: And I just want to pause in here, because that was a pretty detailed example, but hopefully this kind of layering here shows the steps of a real use case, saying, hey, I want to model these different scenarios.
+
+287
+00:42:00.240 --> 00:42:06.350
+Amy Kate Bordenave: With different settings, different profiles, and potentially even different cost budgets.
+
+288
+00:42:06.840 --> 00:42:12.800
+Amy Kate Bordenave: And I want to be able to visualize them and get some statistics about them.
+
+289
+00:42:13.340 --> 00:42:21.910
+Amy Kate Bordenave: in a real example. So Tanisha, I would love to hear some feedback or any thoughts you have,
+
+290
+00:42:22.030 --> 00:42:27.719
+Amy Kate Bordenave: Is this a sort of compelling case, or does this explain
+
+291
+00:42:27.830 --> 00:42:32.219
+Amy Kate Bordenave: How walk sheds can really be used in these scenarios.
+
+292
+00:42:33.090 --> 00:42:40.969
+Tanisha Sepulveda: I feel like it can. Honestly, I feel like that this tool is probably one of the…
+
+293
+00:42:41.400 --> 00:42:50.859
+Tanisha Sepulveda: Better, like, visually, like, to really give an impact when explaining the use cases as far as,
+
+294
+00:42:51.100 --> 00:43:01.080
+Tanisha Sepulveda: you know, if you were to add another accessible curb ramp here, or what happens when you take it away, I feel like the visual of it
+
+295
+00:43:01.100 --> 00:43:14.929
+Tanisha Sepulveda: It's so impactful, because, like, you know, maybe in different cities, depending on the location, but just seeing, you know, the distance that opens up or reduces.
+
+296
+00:43:15.140 --> 00:43:19.040
+Tanisha Sepulveda: per profile.
+
+297
+00:43:19.620 --> 00:43:21.860
+Tanisha Sepulveda: It's really helpful.
+
+298
+00:43:22.420 --> 00:43:29.040
+Amy Kate Bordenave: Awesome! Yeah, I'm really glad to hear that. I think our, our Walk Sheds tool
+
+299
+00:43:30.840 --> 00:43:36.349
+Amy Kate Bordenave: Is hopefully one of the more compelling things that we can show to people.
+
+300
+00:43:36.350 --> 00:43:52.970
+Amy Kate Bordenave: Because routers are cool, and they're genuinely useful to people. We know that just from our, like, monthly active users, right? That having Access Map to help people get around with accessibility-forward instructions is really helpful.
+
+301
+00:43:52.970 --> 00:43:58.049
+Amy Kate Bordenave: And for the more, like, civic planner or infrastructure people.
+
+302
+00:43:58.050 --> 00:44:10.680
+Amy Kate Bordenave: I think that this can do a really good job of, as you're saying, really showcasing the value of the tools that we've built here, and what is possible with the data that we have.
+
+303
+00:44:10.700 --> 00:44:22.030
+Amy Kate Bordenave: Because I think it's important to keep in mind everything that leads up to this little demo that I just did being possible. So it's not just this Walksheds platform.
+
+304
+00:44:22.040 --> 00:44:35.760
+Amy Kate Bordenave: It's the ability to do this in any of the jurisdictions that we've identified as part of OS Connect, which, remember, is statewide. So if we just look at OS Connect Viewer.
+
+305
+00:44:36.690 --> 00:44:39.159
+Amy Kate Bordenave: This tool is available
+
+306
+00:44:40.280 --> 00:44:49.430
+Amy Kate Bordenave: to all of these locations, and so I think it goes to show the work that we've really done as a team,
+
+307
+00:44:51.140 --> 00:45:03.950
+Amy Kate Bordenave: To collect all of this data in a standardized way, to run all the calculations on this, make it all available, and we can ground this out in a…
+
+308
+00:45:04.200 --> 00:45:22.120
+Amy Kate Bordenave: I don't want to say random in a derisive way, but in a random small town in kind of the middle of nowhere eastern Washington, we can go in and we can empower someone in, you know, maybe it takes them an hour or two to get familiar with the tool.
+
+309
+00:45:22.180 --> 00:45:26.420
+Amy Kate Bordenave: But we can immediately go and we can show, hey, like, let's…
+
+310
+00:45:26.660 --> 00:45:35.680
+Amy Kate Bordenave: let's see, I'm gonna delete those ones that we had, and I'm gonna show also, just to run through another example quickly here.
+
+311
+00:45:35.990 --> 00:45:41.240
+Amy Kate Bordenave: What a scenario with an infrastructure change can look like.
+
+312
+00:45:42.340 --> 00:45:56.689
+Amy Kate Bordenave: So, that one, the different scenarios, there was no change in the underlying data, it was just a change in the profile. Now, I want to try modeling a change in the underlying data.
+
+313
+00:45:57.330 --> 00:46:15.620
+Amy Kate Bordenave: So we can use that example that we did kind of ad hoc before with changing whether or not some of these have curb ramps in the other example. But let's say we start with… you know what, why don't you, Tanisha, let's hear… let's hear another town.
+
+314
+00:46:18.420 --> 00:46:21.420
+Tanisha Sepulveda: Okay, I'm like… Looking…
+
+315
+00:46:23.270 --> 00:46:30.179
+Amy Kate Bordenave: See, the trick is, this is a presenter trick. I'm giving myself a chance to take a sip of water.
+
+316
+00:46:31.080 --> 00:46:32.190
+Tanisha Sepulveda: Smart move.
+
+317
+00:46:32.500 --> 00:46:41.479
+Tanisha Sepulveda: Let's do… Will Kin… Wilkissen.
+
+318
+00:46:41.720 --> 00:46:46.190
+Tanisha Sepulveda: W-I-L-K-E-S-O-N.
+
+319
+00:46:48.920 --> 00:46:53.759
+Amy Kate Bordenave: Alright, thank you. Yeah, so we've got a Wilkinson City?
+
+320
+00:46:54.170 --> 00:46:57.259
+Amy Kate Bordenave: Place I have never heard of, I will confess.
+
+321
+00:46:57.820 --> 00:47:02.590
+Amy Kate Bordenave: And we're gonna build the router for Wilkerson.
+
+322
+00:47:05.650 --> 00:47:11.610
+Amy Kate Bordenave: Now, one thing to note is that building the router can take…
+
+323
+00:47:11.710 --> 00:47:27.909
+Amy Kate Bordenave: as we see here, just a couple seconds, up to a bit longer for the bigger cities, so if you're building a router for, say, Seattle, right, a very dense and extensive city versus a smaller town, it will take a little bit longer.
+
+324
+00:47:27.950 --> 00:47:33.050
+Amy Kate Bordenave: But note that this is done on our hardware, it's not done locally, so…
+
+325
+00:47:33.790 --> 00:47:37.199
+Amy Kate Bordenave: Won't depend on the device you're using, but we've got…
+
+326
+00:47:37.760 --> 00:47:41.240
+Amy Kate Bordenave: Wilkerson, which looks like, just…
+
+327
+00:47:41.550 --> 00:47:50.269
+Amy Kate Bordenave: on the edges here of the King County area. Actually, I was pretty close to this when I…
+
+328
+00:47:51.180 --> 00:47:54.520
+Amy Kate Bordenave: We might have even passed through this.
+
+329
+00:47:56.140 --> 00:48:02.429
+Amy Kate Bordenave: Anyway, I went, you know, in the camping, I think we were, like, right around here. Okay, anyway.
+
+330
+00:48:02.940 --> 00:48:04.050
+Amy Kate Bordenave: Alright.
+
+331
+00:48:05.270 --> 00:48:07.389
+Tanisha Sepulveda: You were, and he didn't even know it.
+
+332
+00:48:07.390 --> 00:48:09.849
+Amy Kate Bordenave: Yup. Yep, yep, yep.
+
+333
+00:48:12.450 --> 00:48:22.019
+Amy Kate Bordenave: Alright, this'll be a really good example, actually. So I'm looking at this intersection here of Church Street and Vine Street.
+
+334
+00:48:22.020 --> 00:48:33.149
+Amy Kate Bordenave: And I'm noticing, just based on the way that these look, that there's no curb ramps on this intersection across Church Street on the north side.
+
+335
+00:48:33.840 --> 00:48:51.489
+Amy Kate Bordenave: So, let's say that we had someone living here, kind of near Ash, and they wanted to travel to, I don't know, a community center, or a gym, or a church, perhaps, which kind of is a community center.
+
+336
+00:48:51.660 --> 00:48:52.990
+Amy Kate Bordenave: And…
+
+337
+00:48:53.130 --> 00:49:02.889
+Amy Kate Bordenave: they wanted to cross here. Well, someone who isn't able to go over curb ramps would not be able to do that. But we can model…
+
+338
+00:49:03.040 --> 00:49:05.870
+Amy Kate Bordenave: A change, using scenarios.
+
+339
+00:49:05.990 --> 00:49:24.090
+Amy Kate Bordenave: that, in a reproducible way, shows what a change really means for different populations. And so, you'll have to forgive me as I do this kind of on the fly, but I think those are the most useful kind of demos, where you don't have a pre-planned thing to
+
+340
+00:49:24.170 --> 00:49:39.219
+Amy Kate Bordenave: to go by your script, and to really test it out. So, let's say you're going to an infrastructure or maintenance team here and trying to demo our tool. Here's what that could look like.
+
+341
+00:49:40.360 --> 00:49:59.369
+Amy Kate Bordenave: So, I'm gonna start with a powered wheelchair profile that has the avoidance of raised curbs. I'm going to start here and adjust the walkshed such we're gonna go from this location
+
+342
+00:49:59.390 --> 00:50:03.740
+Amy Kate Bordenave: And we might actually have to start further away if I wanna… well…
+
+343
+00:50:05.360 --> 00:50:16.980
+Amy Kate Bordenave: No, this should work. We'll go with this, these settings. So, we're gonna start with just the base powered wheelchair profile, with the 300 second cost.
+
+344
+00:50:17.500 --> 00:50:21.299
+Amy Kate Bordenave: And we'll notice that in 300 seconds.
+
+345
+00:50:21.420 --> 00:50:28.009
+Amy Kate Bordenave: From this edge of this street here, This is where…
+
+346
+00:50:28.130 --> 00:50:43.950
+Amy Kate Bordenave: this profile can reach. And so I'm gonna save this scenario as… we'll say, scenario, 1, existing conditions powered…
+
+347
+00:50:44.470 --> 00:50:45.760
+Amy Kate Bordenave: wheelchair.
+
+348
+00:50:46.290 --> 00:50:49.200
+Amy Kate Bordenave: And… so we're gonna save that.
+
+349
+00:50:50.490 --> 00:50:51.410
+Amy Kate Bordenave: Okay?
+
+350
+00:50:51.530 --> 00:50:59.129
+Amy Kate Bordenave: And now I want to try the same thing, but I want to edit…
+
+351
+00:50:59.860 --> 00:51:10.110
+Amy Kate Bordenave: this feature, so I'm gonna select this red dotted line crossing, I'm gonna change this feature, so I'm gonna edit this by clicking the pencil icon.
+
+352
+00:51:10.200 --> 00:51:21.030
+Amy Kate Bordenave: And then clicking curb ramps. So this simulates the installation of curb ramps at both ends of this crossing. And I'm gonna save.
+
+353
+00:51:22.050 --> 00:51:31.390
+Amy Kate Bordenave: And now that we've made that edit to this crossing, I'm gonna sort of recreate that… Walk shed.
+
+354
+00:51:31.890 --> 00:51:38.680
+Amy Kate Bordenave: So I'm going to… Click here on this sidewalk, so that's the same starting point.
+
+355
+00:51:38.930 --> 00:51:41.980
+Amy Kate Bordenave: Same exact profile, I haven't changed that at all.
+
+356
+00:51:42.150 --> 00:51:48.609
+Amy Kate Bordenave: It's still in the powered wheelchair, 300 seconds. I'm gonna do Walk Shed from here.
+
+357
+00:51:49.700 --> 00:51:57.630
+Amy Kate Bordenave: And, oh, looks like maybe there is a… Connectivity reason…
+
+358
+00:52:01.080 --> 00:52:06.899
+Amy Kate Bordenave: Let's see, we'll save this, and then we'll try to take a look at that. So we'll say…
+
+359
+00:52:07.150 --> 00:52:22.859
+Amy Kate Bordenave: 2… The first one was current conditions, we're gonna say… Installed… Curb… ramps… However… we'll share.
+
+360
+00:52:24.070 --> 00:52:25.770
+Amy Kate Bordenave: I'm gonna save that.
+
+361
+00:52:27.050 --> 00:52:40.870
+Amy Kate Bordenave: And… okay, I see the issue here. And this does… I think this is helpful to point out one of the limitations, which is that right now, WalkShed supports
+
+362
+00:52:40.870 --> 00:52:49.090
+Amy Kate Bordenave: the changing of attributes of the existing data, so I was able to change this
+
+363
+00:52:49.090 --> 00:52:55.280
+Amy Kate Bordenave: Crossing from having, or from not having curb ramps to having curb ramps
+
+364
+00:52:55.280 --> 00:53:05.760
+Amy Kate Bordenave: However, there's more than that to this situation, which is that we can see… so this thicker line represents the sidewalk.
+
+365
+00:53:06.230 --> 00:53:24.089
+Amy Kate Bordenave: these, it's kind of hard to see with the dark background, maybe, but these lines represent the crossings, which we can tell that this changed from the dotted red line to the style of the other ones. However, there's a connector
+
+366
+00:53:24.150 --> 00:53:27.769
+Amy Kate Bordenave: Little segment here usually represents a curb ramp.
+
+367
+00:53:28.040 --> 00:53:39.900
+Amy Kate Bordenave: That connects this sidewalk and these crossings, but there isn't a connector here between this sidewalk and this end of the crossing.
+
+368
+00:53:39.900 --> 00:53:51.800
+Amy Kate Bordenave: And right now, we're not able to do geometry edits to create that connection. So even though we changed the properties of this crossing.
+
+369
+00:53:52.450 --> 00:54:10.279
+Amy Kate Bordenave: in order to model an infrastructure change, we're not yet able to actually create the connection to the rest of the network right here. So I think that's, it's a good limitation to be aware of, not to say that that… sorry, go ahead.
+
+370
+00:54:10.620 --> 00:54:12.480
+Tanisha Sepulveda: I'm confused.
+
+371
+00:54:12.820 --> 00:54:19.490
+Amy Kate Bordenave: Yeah! Okay, I think, the best way to show this is gonna be actually in the viewer.
+
+372
+00:54:20.280 --> 00:54:23.820
+Amy Kate Bordenave: So, let's… Let's see, was it…
+
+373
+00:54:24.110 --> 00:54:27.100
+Amy Kate Bordenave: Here, where was this little place?
+
+374
+00:54:35.940 --> 00:54:45.419
+Amy Kate Bordenave: It was… Between Buckley and Carbonado.
+
+375
+00:54:47.400 --> 00:54:49.440
+Amy Kate Bordenave: Here… here.
+
+376
+00:54:53.410 --> 00:54:55.829
+Amy Kate Bordenave: And we're looking at Church Street.
+
+377
+00:54:56.890 --> 00:54:58.809
+Amy Kate Bordenave: And Ash, okay.
+
+378
+00:55:02.980 --> 00:55:07.260
+Amy Kate Bordenave: Yes, okay. So yes, this is what I thought was happening.
+
+379
+00:55:10.320 --> 00:55:24.079
+Amy Kate Bordenave: And yes, I totally hear you that that can be kind of confusing, because it's like, well, hold on, I just changed it, why isn't it showing? And so if someone asks, I think it's important that we're able to explain why this is the case.
+
+380
+00:55:25.220 --> 00:55:37.720
+Amy Kate Bordenave: So, what I'm looking at here is the same exact intersection, but instead of in walksheds, I'm looking at it in the OS Connect viewer.
+
+381
+00:55:38.550 --> 00:55:40.489
+Amy Kate Bordenave: And what this shows…
+
+382
+00:55:41.530 --> 00:55:52.330
+Amy Kate Bordenave: is the same data. We'll note that there is a sidewalk here, and when we hover over this, we see that pop-up that says footway equals sidewalk.
+
+383
+00:55:52.990 --> 00:55:55.800
+Amy Kate Bordenave: There's this crossing here.
+
+384
+00:55:56.290 --> 00:56:09.510
+Amy Kate Bordenave: We hover over it, it says footway equals crossing. There's these curve nodes, so you can see that there's this barrier, curve, and it is not a lowered curve.
+
+385
+00:56:11.490 --> 00:56:15.150
+Amy Kate Bordenave: And then on this side… If it'll let me…
+
+386
+00:56:17.000 --> 00:56:30.429
+Amy Kate Bordenave: Okay, it's fussing up, it's having a hard time highlighting this, but this is a lowered curb, and then between the sidewalk and the curb, there's this footway, which represents the curb ramp.
+
+387
+00:56:31.060 --> 00:56:36.809
+Amy Kate Bordenave: However, on this side, because there's no…
+
+388
+00:56:37.730 --> 00:56:46.609
+Amy Kate Bordenave: Curb ramp footway, like this color one here, between these two, the connector geometry doesn't exist.
+
+389
+00:56:46.940 --> 00:56:50.130
+Amy Kate Bordenave: And if we switch to imagery.
+
+390
+00:56:57.380 --> 00:56:58.640
+Amy Kate Bordenave: Okay.
+
+391
+00:56:59.440 --> 00:57:04.410
+Amy Kate Bordenave: So, multiple… we run into multiple possibilities here.
+
+392
+00:57:04.580 --> 00:57:14.030
+Amy Kate Bordenave: One being that perhaps the data itself can be wrong, or two, it could be that…
+
+393
+00:57:15.730 --> 00:57:18.250
+Amy Kate Bordenave: There truly isn't.
+
+394
+00:57:18.450 --> 00:57:20.340
+Amy Kate Bordenave: That feature here…
+
+395
+00:57:21.270 --> 00:57:31.530
+Amy Kate Bordenave: But what I see is it looks like there are newly constructed curb ramps here and here, so what I actually think this is a case
+
+396
+00:57:31.940 --> 00:57:49.710
+Amy Kate Bordenave: Having looked at this, it looks to me like a data issue. So, as always, you know, you can turn this into a teachable moment. We might say, well, hold on, you know, I'm from Wilkinson? Wilkinson? And…
+
+397
+00:57:49.770 --> 00:57:54.820
+Amy Kate Bordenave: I know that there actually is this very newly constructed
+
+398
+00:57:54.950 --> 00:58:13.040
+Amy Kate Bordenave: You know, this here is a tactile paving, so is this. Looks like that is one as well. It's a little bit hard to tell from this imagery, but like, let's say that I know that this was newly constructed, and it looks relatively new. These look like pretty white sidewalks.
+
+399
+00:58:14.990 --> 00:58:26.180
+Amy Kate Bordenave: And there's a data issue. So, hey, I'm going to right-click here, and this is in the OS Connect viewer, so this is in a different
+
+400
+00:58:26.340 --> 00:58:43.149
+Amy Kate Bordenave: tool than the walksheds, and I think that's important to note, that from the walksheds tool, we don't have a way of reporting issues in the data. So again, just kind of another limitation to be aware of. Actually, I'm gonna write that down.
+
+401
+00:58:44.440 --> 00:58:59.120
+Amy Kate Bordenave: watches. Would be nice to have a link to view the location in the OS Connect viewer so that I can report data issues more easily.
+
+402
+00:59:04.030 --> 00:59:06.099
+Amy Kate Bordenave: But in the OS Connect viewer.
+
+403
+00:59:06.230 --> 00:59:11.489
+Amy Kate Bordenave: I'm able to right-click here and report an issue.
+
+404
+00:59:11.640 --> 00:59:20.150
+Amy Kate Bordenave: Which is that… There is actually a crossing here.
+
+405
+00:59:21.730 --> 00:59:28.709
+Amy Kate Bordenave: But… No… Crossing in the OS.
+
+406
+00:59:28.880 --> 00:59:40.170
+Amy Kate Bordenave: Connect data. And I'm actually gonna verify… Phi, will… Opus…
+
+407
+00:59:41.310 --> 00:59:47.240
+Amy Kate Bordenave: I'm gonna check really quickly. This is basically… Subst…
+
+408
+01:00:05.990 --> 01:00:10.139
+Ryan Liu: Oh, Amy, were you saying something? I… I can't hear…
+
+409
+01:00:13.250 --> 01:00:16.600
+Amy Kate Bordenave: I'm having connection issues. I'm not sure if you're… are you able to hear me?
+
+410
+01:00:16.600 --> 01:00:17.660
+Ryan Liu: Oh, yeah.
+
+411
+01:00:18.930 --> 01:00:20.279
+Tanisha Sepulveda: It cut you off earlier.
+
+412
+01:00:20.280 --> 01:00:24.889
+Amy Kate Bordenave: Oh, sorry, yeah, I lost internet connection, I saw it. Okay.
+
+413
+01:00:25.850 --> 01:00:29.849
+Amy Kate Bordenave: Catching back, so I'm… I'm loading in… are you able to hear me?
+
+414
+01:00:30.170 --> 01:00:31.040
+Tanisha Sepulveda: Yes.
+
+415
+01:00:31.040 --> 01:00:38.160
+Amy Kate Bordenave: Okay, cool. I'm loading this location in Google Maps Street View, just to…
+
+416
+01:00:38.230 --> 01:00:42.390
+Amy Kate Bordenave: Pretend that I'm someone who knows about this situation.
+
+417
+01:00:42.430 --> 01:00:47.610
+Amy Kate Bordenave: So, I can see… so this is a data issue in OS Connect.
+
+418
+01:00:47.650 --> 01:01:01.579
+Amy Kate Bordenave: I am able to look here, I'm able to see, okay, what we were looking at in this viewer is, yep, there's a tactile paving pad right here, right here, a crossing here.
+
+419
+01:01:01.580 --> 01:01:10.470
+Amy Kate Bordenave: Another tactile paving pad here and here, and there's this sidewalk which runs along here and connects But…
+
+420
+01:01:11.190 --> 01:01:12.670
+Amy Kate Bordenave: In… oop?
+
+421
+01:01:13.950 --> 01:01:15.459
+Amy Kate Bordenave: So that's what we're looking at.
+
+422
+01:01:16.090 --> 01:01:26.810
+Amy Kate Bordenave: So I've identified a data issue in OS Connect. By the way, I was right, this is such a cute little town. What a nice little small town nestled into the mountains.
+
+423
+01:01:27.210 --> 01:01:28.270
+Amy Kate Bordenave: Cute.
+
+424
+01:01:29.790 --> 01:01:42.510
+Amy Kate Bordenave: But yeah, I see… I know that there's a connection here, and I know that there is one here, but this is not showing up in OS Connect, so I'm gonna…
+
+425
+01:01:42.770 --> 01:01:47.480
+Amy Kate Bordenave: I think the issues are… They're mainly around here.
+
+426
+01:01:47.720 --> 01:01:52.359
+Amy Kate Bordenave: There's a couple issues. This sidewalk is not connected.
+
+427
+01:01:53.480 --> 01:02:02.759
+Amy Kate Bordenave: And this sort of configuration is not correct. So I'm gonna right-click here, I'm gonna… and we can see that, you know, as I right-click,
+
+428
+01:02:03.430 --> 01:02:07.089
+Amy Kate Bordenave: It updates the location, we will center it here.
+
+429
+01:02:07.910 --> 01:02:16.039
+Amy Kate Bordenave: I'm gonna report that… There is a…
+
+430
+01:02:16.360 --> 01:02:22.949
+Amy Kate Bordenave: There is, actually, a sidewalk along the…
+
+431
+01:02:23.280 --> 01:02:30.580
+Amy Kate Bordenave: Northeast side of Church Street, between… what are these called?
+
+432
+01:02:36.320 --> 01:02:43.279
+Amy Kate Bordenave: what is this? Between Davis and… Railroad Ave, Davis Street…
+
+433
+01:02:55.860 --> 01:02:58.499
+Amy Kate Bordenave: And I'm gonna add my…
+
+434
+01:03:04.730 --> 01:03:05.620
+Amy Kate Bordenave: Okay.
+
+435
+01:03:11.830 --> 01:03:16.889
+Amy Kate Bordenave: And so we reported the issue, which was submitted successfully.
+
+436
+01:03:17.430 --> 01:03:19.150
+Amy Kate Bordenave: And then, just so that…
+
+437
+01:03:19.290 --> 01:03:26.439
+Amy Kate Bordenave: We understand what actually happens in that case. If I go to Workspaces…
+
+438
+01:03:27.230 --> 01:03:29.880
+Amy Kate Bordenave: And I'm gonna sign in…
+
+439
+01:03:30.130 --> 01:03:36.259
+Amy Kate Bordenave: I don't know if any of my accounts are POC for that project group, actually.
+
+440
+01:03:36.710 --> 01:03:41.130
+Amy Kate Bordenave: Let's try. If there was one, it would be my main…
+
+441
+01:03:42.800 --> 01:03:58.899
+Amy Kate Bordenave: And if we go to the dashboard and select, TCAT, WSP EG… And then…
+
+442
+01:04:01.160 --> 01:04:04.129
+Amy Kate Bordenave: Oh, I'm sorry, wrong, wrong thing.
+
+443
+01:04:06.830 --> 01:04:09.419
+Amy Kate Bordenave: I'm gonna go to the TDI portal…
+
+444
+01:04:09.880 --> 01:04:13.470
+Amy Kate Bordenave: Sign in with my main, kind of, admin account.
+
+445
+01:04:13.810 --> 01:04:30.110
+Amy Kate Bordenave: Switch to… TCATWSPPG… And then I am a POC in this project group, so when I go to… Feedback…
+
+446
+01:04:34.430 --> 01:04:45.090
+Amy Kate Bordenave: dataset name is WSP… Will… Is it not Wilkerson? No, here it is.
+
+447
+01:04:48.050 --> 01:04:50.090
+Amy Kate Bordenave: Folkasin City…
+
+448
+01:04:59.420 --> 01:05:06.090
+Amy Kate Bordenave: Actually, Ryan, do you know if there's, like, on what schedule is feedback?
+
+449
+01:05:06.930 --> 01:05:11.750
+Amy Kate Bordenave: making it into this system? Is it immediate, or is it, like, an hourly fetch or something?
+
+450
+01:05:13.470 --> 01:05:20.449
+Ryan Liu: I don't know exactly, but I think it should go in…
+
+451
+01:05:20.610 --> 01:05:27.780
+Ryan Liu: pretty soon. And then in terms of, like, responses, I think it's…
+
+452
+01:05:28.020 --> 01:05:32.850
+Ryan Liu: Probably gonna be in, like, 1-2 weeks,
+
+453
+01:05:32.850 --> 01:05:38.889
+Amy Kate Bordenave: Oh yeah, I'm… that's… that's for, like, GS… Fixing it. What I'm…
+
+454
+01:05:38.890 --> 01:05:39.360
+Ryan Liu: Yeah.
+
+455
+01:05:39.360 --> 01:05:42.089
+Amy Kate Bordenave: 4 is moment sensitivity.
+
+456
+01:05:42.650 --> 01:05:43.330
+Amy Kate Bordenave: sticks.
+
+457
+01:05:43.990 --> 01:05:46.599
+Ryan Liu: But I think, you know, in terms of the…
+
+458
+01:05:47.880 --> 01:05:50.670
+Ryan Liu: go… it going into the system, I don't…
+
+459
+01:05:51.150 --> 01:05:55.150
+Ryan Liu: I think it should be pretty quick, but I don't know exactly.
+
+460
+01:05:59.960 --> 01:06:03.220
+Amy Kate Bordenave: Feedback for WSPBGE.
+
+461
+01:06:05.430 --> 01:06:09.490
+Amy Kate Bordenave: Hmm… I don't know what… I think this…
+
+462
+01:06:10.070 --> 01:06:31.810
+Amy Kate Bordenave: Okay, we're gonna… we're gonna put another suggestion. So… T… TDI portal… Feedback… Search… feedback… By… data set?
+
+463
+01:06:34.430 --> 01:06:46.440
+Amy Kate Bordenave: So ESP, Wilkerson City… Many results, one for each dataset version.
+
+464
+01:06:47.090 --> 01:06:56.320
+Amy Kate Bordenave: But no differentiation in the drop-down results. And let me just take a screenshot to show that.
+
+465
+01:07:01.920 --> 01:07:05.489
+Amy Kate Bordenave: Sorry, thanks, Tanisha, for bearing with us.
+
+466
+01:07:08.960 --> 01:07:13.919
+Amy Kate Bordenave: Okay. Well, I don't show it… I don't see it showing up here immediately.
+
+467
+01:07:15.170 --> 01:07:22.939
+Amy Kate Bordenave: I don't know a ton about how this system works on the back end.
+
+468
+01:07:23.080 --> 01:07:30.430
+Amy Kate Bordenave: I'm so curious if I… I wonder if it's got some kind of data in there.
+
+469
+01:07:36.620 --> 01:07:37.470
+Amy Kate Bordenave: Here.
+
+470
+01:07:42.690 --> 01:07:44.230
+Amy Kate Bordenave: Okay, it's empty, okay.
+
+471
+01:07:44.500 --> 01:07:52.830
+Amy Kate Bordenave: Alright, I'll have to follow up on that. But Tanisha, so that what we just did makes some kind of sense.
+
+472
+01:07:54.460 --> 01:07:55.830
+Amy Kate Bordenave: Let's recap.
+
+473
+01:07:56.160 --> 01:07:57.540
+Tanisha Sepulveda: Okay.
+
+474
+01:07:57.540 --> 01:08:03.249
+Amy Kate Bordenave: Because this is… this is a problem that one of our users could run into, right?
+
+475
+01:08:05.430 --> 01:08:10.649
+Amy Kate Bordenave: So we started in walksheds. We went to Wilkerson City.
+
+476
+01:08:11.100 --> 01:08:13.969
+Amy Kate Bordenave: And I'm a planner.
+
+477
+01:08:14.160 --> 01:08:30.129
+Amy Kate Bordenave: And I was told that we can use walk sheds to simulate changes such as creating new curb ramps, and see how that affects the different scenarios. However, when I went to do this, I made an edit
+
+478
+01:08:30.380 --> 01:08:39.510
+Amy Kate Bordenave: to this curr… to this crossing, which… in… Here… is…
+
+479
+01:08:42.609 --> 01:08:51.100
+Amy Kate Bordenave: this So, I… There's the painted one, and then this one, and then this one.
+
+480
+01:08:51.470 --> 01:08:53.229
+Amy Kate Bordenave: So, painted one…
+
+481
+01:08:56.670 --> 01:09:08.219
+Amy Kate Bordenave: I see, so it's saying that… so there should be… there should be a connection here to the sidewalk. It's under a building, so maybe… or it's under this kind of awning, so maybe that's why I didn't pick it up properly.
+
+482
+01:09:08.529 --> 01:09:13.450
+Amy Kate Bordenave: but there's no…
+
+483
+01:09:13.720 --> 01:09:30.569
+Amy Kate Bordenave: There's no connection between this point… we'll use this one… there's no connection between this and a sidewalk geometry here. So it doesn't matter if I say that this is perfectly accessible as a crossing.
+
+484
+01:09:30.810 --> 01:09:44.870
+Amy Kate Bordenave: When… even if we change those attributes, there's no way for walk sheds or access map or anything to route someone from the position up the street where we started from
+
+485
+01:09:45.090 --> 01:09:54.110
+Amy Kate Bordenave: down this way, across the crossing, and across this way. Even though this crossing is possible.
+
+486
+01:09:54.390 --> 01:09:58.819
+Amy Kate Bordenave: There's no connection to a sidewalk here.
+
+487
+01:10:00.520 --> 01:10:12.460
+Amy Kate Bordenave: And that is one current limitation of walksheds, which is that we can change the attributes of the OS Connect data, but we cannot create
+
+488
+01:10:12.780 --> 01:10:15.890
+Amy Kate Bordenave: additional geometry elements.
+
+489
+01:10:16.390 --> 01:10:22.430
+Amy Kate Bordenave: Does that kind of make sense? And it's fine if the answer is no, and we'll… we'll work on ironing that out.
+
+490
+01:10:23.750 --> 01:10:27.190
+Tanisha Sepulveda: It makes a little more sense.
+
+491
+01:10:28.130 --> 01:10:29.940
+Tanisha Sepulveda: But, yeah, it…
+
+492
+01:10:29.940 --> 01:10:34.960
+Amy Kate Bordenave: Okay. No, no, no, I mean, that's good. We need to be able to explain this.
+
+493
+01:10:35.870 --> 01:10:39.820
+Amy Kate Bordenave: So thank you for that feedback, and for working with me as I…
+
+494
+01:10:39.820 --> 01:10:40.680
+Tanisha Sepulveda: Yeah.
+
+495
+01:10:40.680 --> 01:10:42.139
+Amy Kate Bordenave: Try to convey this.
+
+496
+01:10:42.300 --> 01:10:55.030
+Amy Kate Bordenave: So, when… let's say, for example, when Walksheds wants to route from… Let's see… actually…
+
+497
+01:10:55.760 --> 01:10:58.299
+Amy Kate Bordenave: And now I'm going to another tool I know.
+
+498
+01:10:58.930 --> 01:11:04.200
+Amy Kate Bordenave: Not ideal, but… Ascend…
+
+499
+01:11:08.300 --> 01:11:14.379
+Amy Kate Bordenave: Access map is the best way to show the point-to-point routing, that's why I'm using it.
+
+500
+01:11:15.210 --> 01:11:20.110
+Amy Kate Bordenave: So again, this is the same location, but in a different tool of ours, which is AccessMap.
+
+501
+01:11:20.310 --> 01:11:29.029
+Amy Kate Bordenave: When… but you'll notice, and especially because of the UI similarity, Access Map and Walk Sheds are very similar under the hood.
+
+502
+01:11:30.120 --> 01:11:47.450
+Amy Kate Bordenave: So, when any of our tools wants to use our OS Connect data to find a route between, let's say, this point, which is the same as, you know, before we were selecting here, but it's the same segment, if we want to create a route from here.
+
+503
+01:11:47.730 --> 01:11:56.209
+Amy Kate Bordenave: to here. We'll go from… here… Second location, 2 here.
+
+504
+01:11:57.170 --> 01:12:04.429
+Amy Kate Bordenave: So, what this route shows is a connected set of elements that
+
+505
+01:12:04.590 --> 01:12:16.739
+Amy Kate Bordenave: connect from here to here. So there's this sidewalk, there's this footway, There's this curve right here.
+
+506
+01:12:17.040 --> 01:12:27.380
+Amy Kate Bordenave: There's this crossing… This footway… And then we're back to this sidewalk, and now we're able to reach here.
+
+507
+01:12:28.260 --> 01:12:35.110
+Amy Kate Bordenave: So, in order to go from point A here… oh, and I'm sorry, this is,
+
+508
+01:12:38.050 --> 01:12:46.299
+Amy Kate Bordenave: Yeah. In order to go from point A to point B, we have to have a connected network
+
+509
+01:12:47.030 --> 01:12:50.489
+Amy Kate Bordenave: all the way… From here to here.
+
+510
+01:12:52.620 --> 01:12:58.900
+Amy Kate Bordenave: But we can't go from A to… if B were here…
+
+511
+01:13:00.930 --> 01:13:10.219
+Amy Kate Bordenave: Oh yeah, you'll even see it says it can't find one. And the reason for that is because, well, we could go to here.
+
+512
+01:13:10.520 --> 01:13:20.829
+Amy Kate Bordenave: So we can start at that same spot, we can go down the sidewalk, we can go down the footway, we can go across the curb, we can go across the crossing.
+
+513
+01:13:21.000 --> 01:13:29.130
+Amy Kate Bordenave: But there's no thin line right here between this curve and this sidewalk.
+
+514
+01:13:31.050 --> 01:13:39.700
+Amy Kate Bordenave: So there's no physical line connecting these two in the data, and that's why we can't generate a route to this point.
+
+515
+01:13:40.300 --> 01:13:41.430
+Tanisha Sepulveda: Got it.
+
+516
+01:13:41.430 --> 01:13:42.939
+Amy Kate Bordenave: Does that make more sense?
+
+517
+01:13:42.940 --> 01:13:43.500
+Tanisha Sepulveda: Yeah.
+
+518
+01:13:43.660 --> 01:13:57.880
+Amy Kate Bordenave: And so, right now, what Walksheds allows us to do is to change the properties of any of these things that are currently in the dataset. So I could go into Walksheds.
+
+519
+01:13:58.880 --> 01:14:07.990
+Amy Kate Bordenave: Here… And I could change this to say, oh, well, this crossing actually is gonna… have…
+
+520
+01:14:08.120 --> 01:14:12.600
+Amy Kate Bordenave: markings, and it's gonna be made of…
+
+521
+01:14:12.710 --> 01:14:27.020
+Amy Kate Bordenave: gravel, or whatever. And you can make those changes, you can save those changes, you could say, oh, I'm gonna edit this footway to actually have an incline of, .1, so a 10%
+
+522
+01:14:27.150 --> 01:14:28.150
+Amy Kate Bordenave: grade.
+
+523
+01:14:28.900 --> 01:14:31.480
+Amy Kate Bordenave: And we can save that, and we can make that change.
+
+524
+01:14:31.770 --> 01:14:40.900
+Amy Kate Bordenave: The problem is that… No matter what changes we make to the attributes of these crossings.
+
+525
+01:14:41.220 --> 01:14:54.010
+Amy Kate Bordenave: It'll never be able to route from… and I'm just gonna switch back to the access map view… it'll never be able to route from A to B, because there's this gap in connectivity.
+
+526
+01:14:54.910 --> 01:14:58.349
+Amy Kate Bordenave: And so that's why, I mean, even in the name OS Connect, right?
+
+527
+01:14:58.620 --> 01:15:16.369
+Amy Kate Bordenave: It's all about connectivity. If you don't have actual connectivity in the sense that there is a line between here and here, then no amount of attribute changing on any of these elements will make that route possible.
+
+528
+01:15:19.130 --> 01:15:24.050
+Tanisha Sepulveda: And that's why we need these restrictions to participate.
+
+529
+01:15:24.050 --> 01:15:32.629
+Amy Kate Bordenave: Yes, there you go. So there's… there's the tie-in. There's the tie-in to say, well, wait a second, I'm trying to…
+
+530
+01:15:32.790 --> 01:15:48.380
+Amy Kate Bordenave: make these planned changes, and, well, I can… I can go into walksheds, I can say that this curve, or that this crossing actually does have curb ramps, but that doesn't change the output
+
+531
+01:15:48.380 --> 01:15:55.700
+Amy Kate Bordenave: Because there's… there's a data issue here. There's no connector between this crossing and this sidewalk.
+
+532
+01:15:55.790 --> 01:16:06.999
+Amy Kate Bordenave: And so, in this case, right, we then forward them to the OS Connect viewer. We say, hey, right-click right there, and report the issue.
+
+533
+01:16:07.270 --> 01:16:23.279
+Amy Kate Bordenave: And what happens to that report is that the person who manages the TCAT WSP PG project group will then get an alert that says, hey, someone submitted feedback
+
+534
+01:16:23.580 --> 01:16:26.279
+Amy Kate Bordenave: Actually, I think I know why.
+
+535
+01:16:26.680 --> 01:16:31.260
+Amy Kate Bordenave: It's because it actually goes to GS…
+
+536
+01:16:31.490 --> 01:16:35.609
+Amy Kate Bordenave: WSP, which I'm not a member of. Okay, now I understand.
+
+537
+01:16:36.150 --> 01:16:39.660
+Amy Kate Bordenave: This feedback goes to Gaussian.
+
+538
+01:16:40.250 --> 01:16:57.639
+Amy Kate Bordenave: And they would get an alert that says, hey, someone left feedback saying that the data here is wrong. And then they would be able to go in and change that, release it as, you know how we saw this was Wilkins, or Wilkinson City 1.6?
+
+539
+01:17:01.890 --> 01:17:02.580
+Tanisha Sepulveda: Yes.
+
+540
+01:17:02.880 --> 01:17:14.740
+Amy Kate Bordenave: they would go in, and the Gaussian Solutions, or ERISA people, or whoever it is, would make a change to the OS Connect data, and then re-release
+
+541
+01:17:15.150 --> 01:17:22.039
+Amy Kate Bordenave: Wilkinson City 1.7, which actually has that correction.
+
+542
+01:17:22.670 --> 01:17:34.620
+Amy Kate Bordenave: So, somewhere in Gaussian, someone's getting an email that says, hey, someone submitted some feedback and said that this is incorrect, and it would show up in this kind of UI, which
+
+543
+01:17:34.860 --> 01:17:40.160
+Amy Kate Bordenave: They have access to… It's not this project group. That's why I couldn't see it.
+
+544
+01:17:40.320 --> 01:17:54.809
+Amy Kate Bordenave: And what they would do is they would go in, they would look at street-level imagery like this, and say, oh, I see, hold on, there is… there is a crossing here, there is a connection between these two points. There is a connection between here
+
+545
+01:17:54.810 --> 01:18:01.250
+Amy Kate Bordenave: and here. And so, they would go in using Rapid, and they would edit the data.
+
+546
+01:18:01.460 --> 01:18:08.819
+Amy Kate Bordenave: Release it as an update to the Wilkinson City 1.6, so release it as 1.7.
+
+547
+01:18:09.200 --> 01:18:11.950
+Amy Kate Bordenave: That would filter in to all the other tools.
+
+548
+01:18:12.090 --> 01:18:16.189
+Amy Kate Bordenave: And then once there's this connector line here.
+
+549
+01:18:16.560 --> 01:18:22.790
+Amy Kate Bordenave: Then the planner would be able to change the attribute, and it would actually make a difference in the walk shed.
+
+550
+01:18:24.120 --> 01:18:26.370
+Amy Kate Bordenave: So, we're getting into time here.
+
+551
+01:18:26.570 --> 01:18:33.809
+Amy Kate Bordenave: And… this has been a really, really helpful… this is… honestly, I think this is one of the best…
+
+552
+01:18:34.510 --> 01:18:40.540
+Amy Kate Bordenave: office hours… That we've had, because of the problems that we run into.
+
+553
+01:18:41.690 --> 01:18:49.069
+Amy Kate Bordenave: Which is… Yeah, I mean, once you're actively following through, hey, give me a random city.
+
+554
+01:18:49.070 --> 01:19:07.609
+Amy Kate Bordenave: a small town where maybe no one's, like, looked super, super closely at the data, and let's try it out. You know, let's pretend I'm a planner, and let's see what issues we run into with our systems. This has been a really, really productive and helpful office hour, so thank you.
+
+555
+01:19:07.610 --> 01:19:11.729
+Amy Kate Bordenave: I know it's been one of our smallest ones, and…
+
+556
+01:19:12.110 --> 01:19:19.480
+Amy Kate Bordenave: it's been really great, and so now I have a bunch of things to take back to the team, to sort of add as tickets and things.
+
+557
+01:19:19.870 --> 01:19:30.069
+Amy Kate Bordenave: But yeah, hopefully. And we didn't completely get through this. There is a little bit more,
+
+558
+01:19:33.790 --> 01:19:37.309
+Amy Kate Bordenave: Oh, we just go through selecting a dataset on that tab.
+
+559
+01:19:39.470 --> 01:19:50.340
+Amy Kate Bordenave: We talk a little bit about this batch function, which basically lets you, control and sort of orchestrate the Walk Sheds tool.
+
+560
+01:19:50.570 --> 01:20:05.209
+Amy Kate Bordenave: And there's also, like, this sidewalk score function and this custom cost experimental thing. So we'll… I'll have walksheds on the agenda for next week as well.
+
+561
+01:20:05.470 --> 01:20:06.140
+Tanisha Sepulveda: Okay.
+
+562
+01:20:06.140 --> 01:20:16.249
+Amy Kate Bordenave: But yeah, thank you for sticking it out through us. Hopefully, you do have… do you feel like you come away with a better understanding of, like, what's happening here?
+
+563
+01:20:16.750 --> 01:20:18.410
+Tanisha Sepulveda: Kind of, yeah, like in the back.
+
+564
+01:20:18.690 --> 01:20:21.120
+Tanisha Sepulveda: Part of it a little more, yeah.
+
+565
+01:20:21.120 --> 01:20:38.040
+Amy Kate Bordenave: Yeah, and I mean, it is… and I think the fact that I have walksheds, and the wiki, and the OS Connect Viewer, and Street View, and Workspaces, and the TDI Portal, and Access Map, right?
+
+566
+01:20:38.140 --> 01:20:41.360
+Amy Kate Bordenave: In order to explain this, it does go to show…
+
+567
+01:20:41.790 --> 01:20:46.940
+Amy Kate Bordenave: If nothing else, the complexity and the depth of what we've built
+
+568
+01:20:48.040 --> 01:20:52.390
+Amy Kate Bordenave: So, even when there is problems in the underlying data.
+
+569
+01:20:52.870 --> 01:21:05.069
+Amy Kate Bordenave: at the very least, we can show, hey, this is how you report that, which is the OS Connect Viewer report an issue, and now it's kind of out of our hands and over to Gaussian.
+
+570
+01:21:07.120 --> 01:21:16.659
+Amy Kate Bordenave: to fix the underlying data connectivity issues. So, thank you, we are at time. I do really appreciate it, and I will do some work on
+
+571
+01:21:16.850 --> 01:21:22.689
+Amy Kate Bordenave: Getting our notes updated and getting this translated into, feedback.
+
+572
+01:21:23.470 --> 01:21:31.410
+Amy Kate Bordenave: feedback, is very, very helpful. So, thank you, and I will talk to y'all later!
+
+573
+01:21:31.790 --> 01:21:32.660
+Tanisha Sepulveda: Oh, thank you.
+
+574
+01:21:32.950 --> 01:21:33.920
+Ryan Liu: Thank you.
+
+575
+01:21:33.920 --> 01:21:35.150
+Amy Kate Bordenave: Have a good day. Bye-bye.
+
+576
+01:21:35.150 --> 01:21:36.050
+Ryan Liu: You too.
+

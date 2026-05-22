@@ -1,0 +1,3006 @@
+WEBVTT
+
+1
+00:00:10.670 --> 00:00:11.950
+Amy Kate Bordenave: Alright.
+
+2
+00:00:12.750 --> 00:00:15.970
+Amy Kate Bordenave: Thanks for joining, everyone. Today, we're gonna…
+
+3
+00:00:16.100 --> 00:00:24.040
+Amy Kate Bordenave: As I mentioned, we're going to talk about workspaces. So I will link to… this article…
+
+4
+00:00:24.360 --> 00:00:27.470
+Amy Kate Bordenave: For this page on the TCAT wiki, in chat.
+
+5
+00:00:27.850 --> 00:00:29.849
+Amy Kate Bordenave: And we can follow along.
+
+6
+00:00:31.400 --> 00:00:34.330
+Amy Kate Bordenave: I think it'll be helpful to start with
+
+7
+00:00:34.630 --> 00:00:47.010
+Amy Kate Bordenave: what Workspaces is, how it kind of fits into our ecosystem, and some basics on how to use workspaces.
+
+8
+00:00:47.730 --> 00:00:53.929
+Amy Kate Bordenave: So, for a lot of this, I'm gonna be in the Workspaces tab itself. Actually, I think if I…
+
+9
+00:00:56.670 --> 00:00:57.570
+Amy Kate Bordenave: There.
+
+10
+00:00:57.850 --> 00:01:06.419
+Amy Kate Bordenave: That… should be a… Better recording.
+
+11
+00:01:08.380 --> 00:01:09.270
+Amy Kate Bordenave: Okay.
+
+12
+00:01:11.080 --> 00:01:22.519
+Amy Kate Bordenave: So, Workspaces is the web platform for editing TDEI datasets. So, we've talked previously about…
+
+13
+00:01:22.760 --> 00:01:34.299
+Amy Kate Bordenave: the TDEI portal, and how that serves as, you know, primary function being a dataset storage platform.
+
+14
+00:01:34.430 --> 00:01:42.450
+Amy Kate Bordenave: And workspaces is one way, or the main way, that those datasets get edited.
+
+15
+00:01:45.090 --> 00:01:59.450
+Amy Kate Bordenave: So there's this… this concept of standing up this kind of containerized version of an OSM database, and that's what we call a workspace. It's the,
+
+16
+00:01:59.980 --> 00:02:03.939
+Amy Kate Bordenave: It's like a little private OSM, basically.
+
+17
+00:02:05.570 --> 00:02:19.020
+Amy Kate Bordenave: And Workspaces emulates all of the OSM editing features. That way, the existing OSM tools mostly work with
+
+18
+00:02:19.140 --> 00:02:21.870
+Amy Kate Bordenave: workspaces. It's kind of just a different…
+
+19
+00:02:21.990 --> 00:02:41.020
+Amy Kate Bordenave: configuration or endpoint for the existing OSM tools, and that makes us able to leverage all of those existing ones, such as Rapid and Jossum, and then we also use Aviv Scout Route, that's our mobile
+
+20
+00:02:41.270 --> 00:02:42.310
+Amy Kate Bordenave: version.
+
+21
+00:02:50.010 --> 00:03:02.959
+Amy Kate Bordenave: So as far as the TCAT wiki goes, the workspace's user manual is a little bit shallow right now. I do have…
+
+22
+00:03:03.150 --> 00:03:22.470
+Amy Kate Bordenave: two tutorials that are workspaces-specific, one for importing OSM data into workspaces, and the other is for exporting data from a workspace. But that's… that's more of an internal
+
+23
+00:03:22.680 --> 00:03:24.110
+Amy Kate Bordenave: focused one.
+
+24
+00:03:24.380 --> 00:03:27.070
+Amy Kate Bordenave: But the…
+
+25
+00:03:27.750 --> 00:03:36.069
+Amy Kate Bordenave: getting OSM data into workspaces, shows one of the… one of the, sort of, pipelines or pathways
+
+26
+00:03:36.410 --> 00:03:46.110
+Amy Kate Bordenave: Of taking existing data and getting it into our system in a way that it can be edited and worked with.
+
+27
+00:03:51.660 --> 00:03:59.369
+Amy Kate Bordenave: So the Workspaces user manual just kind of basically covers some… of the settings…
+
+28
+00:04:01.360 --> 00:04:13.350
+Amy Kate Bordenave: But I think for this one, I think it'll be most helpful to do a more kind of hands-on, let's get into workspaces and look at all the settings and all the buttons.
+
+29
+00:04:14.660 --> 00:04:20.789
+Amy Kate Bordenave: Before I tab over to workspaces, does anyone have any questions?
+
+30
+00:04:32.080 --> 00:04:33.260
+Amy Kate Bordenave: Alright.
+
+31
+00:04:33.630 --> 00:04:37.420
+Amy Kate Bordenave: So, I'm gonna switch over to workspaces.
+
+32
+00:04:38.500 --> 00:04:41.269
+Amy Kate Bordenave: And I'm putting a link to this in the chat.
+
+33
+00:04:41.960 --> 00:04:43.720
+Amy Kate Bordenave: And we'll start going through it.
+
+34
+00:04:43.970 --> 00:04:50.990
+Amy Kate Bordenave: So this is the… this is the landing page, and step one is signing in.
+
+35
+00:04:51.310 --> 00:05:01.790
+Amy Kate Bordenave: So this, as it says here, you sign in with your TDEI portal account credentials, so it's the same as the ones for the TDEI portal.
+
+36
+00:05:09.340 --> 00:05:17.320
+Amy Kate Bordenave: And after signing in, we get taken to this dashboard page.
+
+37
+00:05:17.740 --> 00:05:24.960
+Amy Kate Bordenave: so, by default, it should show… TDEI default.
+
+38
+00:05:26.990 --> 00:05:34.059
+Amy Kate Bordenave: And we're gonna use the Sleo Seattle, just because that's,
+
+39
+00:05:35.490 --> 00:05:40.300
+Amy Kate Bordenave: Or, I guess I could use the GAD events, but…
+
+40
+00:05:42.020 --> 00:05:48.460
+Amy Kate Bordenave: So, the first thing on this dashboard is to select your project group.
+
+41
+00:05:50.060 --> 00:06:01.369
+Amy Kate Bordenave: So I guess I won't… I won't give a refresher of project groups here, since we've covered that in previous ones. One new feature is the addition of
+
+42
+00:06:01.520 --> 00:06:06.070
+Amy Kate Bordenave: This… Functioning as a search.
+
+43
+00:06:06.390 --> 00:06:26.250
+Amy Kate Bordenave: Until very recently, there were some issues where if you had more than, more than 10 project groups, you wouldn't be able to find them all here. But thanks to Gaussian, we got some recent changes that allow you to search here. So I'm gonna search for our GAD workspaces.
+
+44
+00:06:26.330 --> 00:06:28.490
+Amy Kate Bordenave: And when I click on that.
+
+45
+00:06:29.170 --> 00:06:32.740
+Amy Kate Bordenave: This is opening up the GAD project group.
+
+46
+00:06:32.990 --> 00:06:44.739
+Amy Kate Bordenave: And inside of this project group, there are currently 3 open workspaces. So that's GAD Bremerton, Tacoma, and Seattle.
+
+47
+00:06:45.860 --> 00:06:54.830
+Amy Kate Bordenave: Now, before we actually go into any of the workspaces, I think it's useful to… Review this stuff here.
+
+48
+00:06:54.930 --> 00:07:14.860
+Amy Kate Bordenave: So, to start with, this map shows the area that the dataset covers. So you can see in this case, for Gad Bremerton, it has the Bremerton data, and then likewise, Tacoma and Seattle.
+
+49
+00:07:16.110 --> 00:07:21.919
+Amy Kate Bordenave: So that's the map. It's an interactive map, you can zoom in and… Click around.
+
+50
+00:07:22.060 --> 00:07:29.500
+Amy Kate Bordenave: Has some basic metadata, such as the date that this workspace was created, who created it.
+
+51
+00:07:29.880 --> 00:07:39.320
+Amy Kate Bordenave: This app access is indicating whether or not this is open to Aviv Scout Route contributions.
+
+52
+00:07:40.520 --> 00:07:49.690
+Amy Kate Bordenave: And then the from TDEI dataset ID helps with tracing where this dataset
+
+53
+00:07:49.880 --> 00:07:52.660
+Amy Kate Bordenave: In its initial state came from.
+
+54
+00:07:53.570 --> 00:08:01.350
+Amy Kate Bordenave: And same with the project group, and the version. So this helps find if, you know, if you wanted to…
+
+55
+00:08:02.320 --> 00:08:13.440
+Amy Kate Bordenave: see how recent this data is, then you could look up the corresponding dataset in the TDEI portal.
+
+56
+00:08:13.620 --> 00:08:15.659
+Amy Kate Bordenave: And get that information.
+
+57
+00:08:19.080 --> 00:08:26.549
+Amy Kate Bordenave: And next, we'll go over the settings. So, for each workspace, there's the settings.
+
+58
+00:08:27.050 --> 00:08:31.890
+Amy Kate Bordenave: Which allow you to rename the workspace title.
+
+59
+00:08:32.909 --> 00:08:35.919
+Amy Kate Bordenave: Toggle on or off.
+
+60
+00:08:36.309 --> 00:08:39.399
+Amy Kate Bordenave: the availability of Aviv Scout Route.
+
+61
+00:08:40.820 --> 00:08:48.220
+Amy Kate Bordenave: to define the Aviv Scout Route quest definition, and there's two ways to do that. It can either be
+
+62
+00:08:50.450 --> 00:08:57.839
+Amy Kate Bordenave: Defined directly in workspaces by pasting in a quest definition into this box.
+
+63
+00:08:58.100 --> 00:09:08.760
+Amy Kate Bordenave: Where basically you would… Take this content… And… Paste it into here…
+
+64
+00:09:10.000 --> 00:09:18.940
+Amy Kate Bordenave: And then save, and that would work. Alternatively, we have the feature of loading the quest definition from a URL.
+
+65
+00:09:19.240 --> 00:09:22.689
+Amy Kate Bordenave: And this just makes it easier to manage.
+
+66
+00:09:22.840 --> 00:09:30.809
+Amy Kate Bordenave: This URL can point to anywhere on the internet, as long as it is a…
+
+67
+00:09:30.930 --> 00:09:34.879
+Amy Kate Bordenave: Direct link to a JSON file.
+
+68
+00:09:36.030 --> 00:09:44.060
+Amy Kate Bordenave: And so, most of the quest definitions that we use are in this ASRQ quests
+
+69
+00:09:44.230 --> 00:09:48.310
+Amy Kate Bordenave: repo on GitHub that, I manage.
+
+70
+00:09:49.170 --> 00:09:57.519
+Amy Kate Bordenave: But that's not a requirement, so people can self-host their own in their own GitHub repos, or paste in whatever they want.
+
+71
+00:09:59.500 --> 00:10:03.230
+Amy Kate Bordenave: And we have links here for… the schema.
+
+72
+00:10:03.470 --> 00:10:05.440
+Amy Kate Bordenave: And an example quest.
+
+73
+00:10:06.910 --> 00:10:13.989
+Amy Kate Bordenave: And coming soon, we have a Quest Creator utility, hopefully.
+
+74
+00:10:14.600 --> 00:10:24.479
+Amy Kate Bordenave: You can also specify custom imagery, so this is saying the background imagery that is used
+
+75
+00:10:24.830 --> 00:10:33.810
+Amy Kate Bordenave: In the app. So, when you open Aviv Scout Route, you're able to change the background imagery.
+
+76
+00:10:34.580 --> 00:10:36.730
+Amy Kate Bordenave: And this is where…
+
+77
+00:10:37.140 --> 00:10:47.220
+Amy Kate Bordenave: the project manager would define this. And then it similarly links to the schema for it, and the example in
+
+78
+00:10:47.590 --> 00:10:53.439
+Amy Kate Bordenave: the ASR imagery repo. That one is managed by Gaussian.
+
+79
+00:10:53.930 --> 00:10:56.470
+Amy Kate Bordenave: And of course, deleting the workspace.
+
+80
+00:10:58.340 --> 00:10:59.800
+Amy Kate Bordenave: Is the other option here.
+
+81
+00:11:00.930 --> 00:11:07.370
+Amy Kate Bordenave: Any questions on any of these settings, or the way they interact with Aviv Scout Route?
+
+82
+00:11:09.030 --> 00:11:25.880
+Ryan Liu: Well, I put this in the chat as well, but, I do want to point out, I've had times where I pasted in the quest definition, not the raw JSON file itself, but just, like, when it's initially uploaded to,
+
+83
+00:11:26.210 --> 00:11:31.230
+Ryan Liu: uploaded to GitHub, that link, and, yeah, it's…
+
+84
+00:11:31.460 --> 00:11:38.129
+Ryan Liu: pretty important that you don't do that. You paste the JSON file instead, because
+
+85
+00:11:38.350 --> 00:11:54.039
+Ryan Liu: it will cause the workspace to stop working, and I've had to get Sky to help me fix this before, so… Yeah, it's just important to make sure you use the link that is a raw JSON file.
+
+86
+00:11:55.130 --> 00:11:56.680
+Amy Kate Bordenave: I see, I did not end.
+
+87
+00:11:56.680 --> 00:11:59.719
+Anat Caspi: Wait, it still stalls when you just put in the…
+
+88
+00:12:01.520 --> 00:12:03.480
+Amy Kate Bordenave: Yeah, I don't rotate for that.
+
+89
+00:12:03.480 --> 00:12:10.750
+Ryan Liu: But I still think it's better to just use the JSON itself. I still think that's better.
+
+90
+00:12:12.030 --> 00:12:15.589
+Anat Caspi: Well, in any case, nobody should be stalling. It should…
+
+91
+00:12:16.010 --> 00:12:19.549
+Anat Caspi: Alert you if you did something that is unexpected.
+
+92
+00:12:23.360 --> 00:12:25.609
+Anat Caspi: So, does it still happen, or not?
+
+93
+00:12:27.570 --> 00:12:33.840
+Ryan Liu: I mean, I don't know, just because I've been pasting the JSON links ever since, so I'm…
+
+94
+00:12:33.840 --> 00:12:34.240
+Anat Caspi: Right.
+
+95
+00:12:34.240 --> 00:12:34.770
+Ryan Liu: Sure.
+
+96
+00:12:35.710 --> 00:12:39.919
+Anat Caspi: Alright, so, please try it today.
+
+97
+00:12:40.080 --> 00:12:42.170
+Anat Caspi: And then we can file a ticket.
+
+98
+00:12:43.220 --> 00:12:44.700
+Anat Caspi: Cool, thank you.
+
+99
+00:12:57.600 --> 00:12:58.360
+Amy Kate Bordenave: Okay.
+
+100
+00:12:58.490 --> 00:13:06.409
+Amy Kate Bordenave: Thank you, that is… yeah, that's a very important thing. Definitely want to, not have to bug Sy.
+
+101
+00:13:06.630 --> 00:13:11.400
+Amy Kate Bordenave: For a configuration error that the user can submit on their own.
+
+102
+00:13:11.510 --> 00:13:13.700
+Amy Kate Bordenave: So thank you for bringing that up.
+
+103
+00:13:14.170 --> 00:13:19.109
+Amy Kate Bordenave: We'll make sure… That is either resolved or has a work item.
+
+104
+00:13:21.070 --> 00:13:28.850
+Amy Kate Bordenave: We don't yet have custom imagery by URL, Maybe that's another thing.
+
+105
+00:13:29.870 --> 00:13:31.399
+Amy Kate Bordenave: The second part…
+
+106
+00:13:31.400 --> 00:13:32.979
+Anat Caspi: Explain what to me.
+
+107
+00:13:33.310 --> 00:13:48.270
+Amy Kate Bordenave: Oh, yes. So, right now, the… so both the Aviv ScoutRoute long-form quest definition and the custom imagery, which now I realize, really, this should be in the same box.
+
+108
+00:13:48.390 --> 00:13:52.070
+Amy Kate Bordenave: But these are both for Aviv Scout route.
+
+109
+00:13:52.260 --> 00:14:03.879
+Amy Kate Bordenave: And right now, we allow people to define the quest definition either by directly pasting into this box, or by pointing to a URL.
+
+110
+00:14:03.920 --> 00:14:14.230
+Amy Kate Bordenave: But the custom imagery definition has to be pasted in in full, and there isn't currently a custom imagery URL option.
+
+111
+00:14:14.790 --> 00:14:18.300
+Anat Caspi: This is the images that are used in the quests.
+
+112
+00:14:19.070 --> 00:14:23.310
+Amy Kate Bordenave: Custom imagery. Custom imagery here, yeah, so, so good, good point.
+
+113
+00:14:23.310 --> 00:14:25.400
+Anat Caspi: Oh, sorry, the… I see.
+
+114
+00:14:25.400 --> 00:14:25.859
+Amy Kate Bordenave: This is the.
+
+115
+00:14:25.860 --> 00:14:26.970
+Anat Caspi: That custom bag.
+
+116
+00:14:26.970 --> 00:14:27.810
+Amy Kate Bordenave: mask.
+
+117
+00:14:27.810 --> 00:14:29.220
+Anat Caspi: Base map, okay.
+
+118
+00:14:29.220 --> 00:14:30.469
+Amy Kate Bordenave: Yes, yes, exactly.
+
+119
+00:14:30.470 --> 00:14:36.710
+Anat Caspi: So it's not at all… We have to fix this whole thing, it's terrible.
+
+120
+00:14:37.190 --> 00:14:41.780
+Anat Caspi: It needs to explain what… The user is being asked for.
+
+121
+00:14:42.090 --> 00:14:59.140
+Amy Kate Bordenave: I agree. So I will make a work item for… Merging… awesome imagery… Box into… Oops.
+
+122
+00:14:59.380 --> 00:15:11.130
+Amy Kate Bordenave: Supporting… a custom imagery URL… And… spending the… Explanation.
+
+123
+00:15:11.510 --> 00:15:12.709
+Amy Kate Bordenave: Because I agree.
+
+124
+00:15:15.590 --> 00:15:25.950
+Amy Kate Bordenave: For an example of what this looks like, here's a very simple one that uses just standard OSM basemaps.
+
+125
+00:15:26.600 --> 00:15:31.749
+Amy Kate Bordenave: But once again, this has to be copied directly in.
+
+126
+00:15:31.850 --> 00:15:36.750
+Amy Kate Bordenave: And then it makes… once saved, then it makes that available in the app.
+
+127
+00:15:41.140 --> 00:15:50.499
+Anat Caspi: And what is the… what does the JSON format mean in that context? You obviously aren't importing all the imagery, so it's a link…
+
+128
+00:15:51.000 --> 00:15:56.200
+Anat Caspi: How open does that link have to be? Can it be behind a… Any wall?
+
+129
+00:16:01.530 --> 00:16:02.669
+Amy Kate Bordenave: Oh, sorry, excuse me.
+
+130
+00:16:08.220 --> 00:16:11.850
+Amy Kate Bordenave: I swallowed a sip of my coffee wrong. Sorry about that.
+
+131
+00:16:12.360 --> 00:16:26.090
+Amy Kate Bordenave: so, we can take a look at… the schema for this. This is saved in the…
+
+132
+00:16:26.320 --> 00:16:32.330
+Amy Kate Bordenave: Tasker Center at UW ASR Imagery List repo,
+
+133
+00:16:36.960 --> 00:16:46.480
+Amy Kate Bordenave: So if we go to this, we have examples, and… A… a schema for it.
+
+134
+00:16:47.680 --> 00:17:01.229
+Amy Kate Bordenave: An example, that I like to use… I made this one because it's a public domain source, so it's very free to use in any workspace. But basically, you…
+
+135
+00:17:01.380 --> 00:17:04.609
+Amy Kate Bordenave: pass through a URL.
+
+136
+00:17:05.670 --> 00:17:09.670
+Amy Kate Bordenave: And this format is common to…
+
+137
+00:17:09.810 --> 00:17:16.199
+Amy Kate Bordenave: the way that OSM apps, well, and other GIS software load
+
+138
+00:17:16.210 --> 00:17:34.420
+Amy Kate Bordenave: tiles. I believe right now we only support the raster imagery layers, which is the, basically, little pictures. Like, when you look at a map, there's the difference between raster and vector imagery. Anyway.
+
+139
+00:17:34.830 --> 00:17:35.909
+Amy Kate Bordenave: So yeah, so there's…
+
+140
+00:17:35.910 --> 00:17:43.480
+Anat Caspi: Now, if you touched on it, explained to them what that means. I think Amara would know. So, if you flatten an image…
+
+141
+00:17:43.890 --> 00:17:46.680
+Anat Caspi: You can get pixels.
+
+142
+00:17:46.920 --> 00:17:56.059
+Anat Caspi: And a raster image. Raster just means in order. You get a pixelate… so how do you represent a two-dimensional image
+
+143
+00:17:56.440 --> 00:18:03.250
+Anat Caspi: in, bits… In a digital setting, you provide the XY
+
+144
+00:18:03.700 --> 00:18:07.900
+Anat Caspi: Access to that pixel, and what intensity it represents.
+
+145
+00:18:08.190 --> 00:18:09.670
+Anat Caspi: So that's Raster.
+
+146
+00:18:09.800 --> 00:18:16.250
+Anat Caspi: As opposed to vectorize, which I'm sure Amara is familiar with, because when you use
+
+147
+00:18:16.980 --> 00:18:24.710
+Anat Caspi: tools like Adobe Illustrator, you're creating vectorized images because then…
+
+148
+00:18:25.280 --> 00:18:28.939
+Anat Caspi: You get to represent a whole object, like an arrow.
+
+149
+00:18:29.540 --> 00:18:41.209
+Anat Caspi: And the vector part of it, it just says, like, this is from and to these locations in the image, so that when you rescale the image, you get to preserve exactly
+
+150
+00:18:41.740 --> 00:18:47.570
+Anat Caspi: The same relative positioning Of the different vectorized objects.
+
+151
+00:18:48.010 --> 00:18:49.239
+Anat Caspi: Does that make sense?
+
+152
+00:18:53.190 --> 00:18:54.230
+Tanisha Sepulveda: Yes.
+
+153
+00:18:54.230 --> 00:18:55.130
+Anat Caspi: And I…
+
+154
+00:18:55.130 --> 00:18:59.309
+Tanisha Sepulveda: It's somewhat of it, but that was a really good refresher, because it's been a really long time.
+
+155
+00:18:59.520 --> 00:19:00.090
+Anat Caspi: Sure.
+
+156
+00:19:00.760 --> 00:19:04.129
+Anat Caspi: So, like, CAD… CAD will create vectorized
+
+157
+00:19:04.400 --> 00:19:18.330
+Anat Caspi: object, so that then you can select that whole object on its own and, like, move it around, right, in a… in a UI represent… in a user interface representation of those things. Whereas, once you rasterize the thing.
+
+158
+00:19:18.430 --> 00:19:22.900
+Anat Caspi: it's kind of gone, like, none of the… object…
+
+159
+00:19:23.880 --> 00:19:29.780
+Anat Caspi: specificity is… is no longer there. It just kind of flattens everything to where it was
+
+160
+00:19:29.950 --> 00:19:38.020
+Anat Caspi: In the image with the specific intensity, whether it's, like, grayscale or… Red, green, blue, but…
+
+161
+00:19:38.340 --> 00:19:46.589
+Anat Caspi: Then that position in the image, like, the hundredth pixel from the left, At the 10th…
+
+162
+00:19:46.810 --> 00:19:48.810
+Anat Caspi: Position from the bottom.
+
+163
+00:19:48.960 --> 00:20:04.710
+Anat Caspi: is always gonna be that intensity, and you can't, like, select those objects. So, in our world of OSM, it's actually really a lot better to have maps in the vector representation, because then we can
+
+164
+00:20:05.760 --> 00:20:10.509
+Anat Caspi: Like, pick up, you know, a road and move it.
+
+165
+00:20:11.040 --> 00:20:15.190
+Anat Caspi: But when we use these as base maps.
+
+166
+00:20:15.470 --> 00:20:27.359
+Anat Caspi: We're actually not using any objects that are represented in the map, it's just the background visualization that you're gonna use in order to then move your sidewalk, or move the crossing.
+
+167
+00:20:27.540 --> 00:20:30.320
+Anat Caspi: So, it's okay if they're rasterized.
+
+168
+00:20:37.940 --> 00:20:41.249
+Amy Kate Bordenave: Yeah, that's… I think that's a pretty good explanation.
+
+169
+00:20:41.790 --> 00:20:51.690
+Amy Kate Bordenave: I think the… the kind of one… one or two sentence distilled version is that, raster, basemaps,
+
+170
+00:20:52.120 --> 00:21:04.780
+Amy Kate Bordenave: There's… the provider takes the data and renders that into static images, whereas for vector layers, the data
+
+171
+00:21:04.780 --> 00:21:12.870
+Amy Kate Bordenave: It's sent to the client, which then renders it on device, following a set of, like, rules.
+
+172
+00:21:12.870 --> 00:21:17.430
+Amy Kate Bordenave: So this is more, typically, more…
+
+173
+00:21:17.440 --> 00:21:29.639
+Amy Kate Bordenave: data efficient, which is a major plus, and allows some interactivity. But so right now, I have open just standardosm.org.
+
+174
+00:21:29.660 --> 00:21:41.050
+Amy Kate Bordenave: And this standard tile layer is just images. So you can't see it here, but there's basically just a set of tiles here that are…
+
+175
+00:21:41.510 --> 00:21:46.999
+Amy Kate Bordenave: you know, just PNGs, just image files that then get, served.
+
+176
+00:21:47.110 --> 00:21:50.170
+Amy Kate Bordenave: Whereas, if we switch to…
+
+177
+00:21:50.220 --> 00:22:00.220
+Amy Kate Bordenave: something like MapTiler, open map tiles. It looks pretty similar, but this is actually now the data itself.
+
+178
+00:22:00.220 --> 00:22:13.300
+Amy Kate Bordenave: that is being sent. And there's some trade-offs, so you'll notice one of the biggest ones is the coordinate precision. In order to reduce the file size and make the vector maps
+
+179
+00:22:13.400 --> 00:22:20.460
+Amy Kate Bordenave: more efficient to serve. You'll notice that these corners got a little bit…
+
+180
+00:22:20.720 --> 00:22:25.009
+Amy Kate Bordenave: mangled. And that's compared to…
+
+181
+00:22:25.120 --> 00:22:35.209
+Amy Kate Bordenave: the raster image, where you can see that they are square, and that's just because when the OSM Carto, that's the standard.
+
+182
+00:22:35.340 --> 00:22:43.549
+Amy Kate Bordenave: tiles are being made, they're using the full precision, versus when they send the…
+
+183
+00:22:44.340 --> 00:22:50.240
+Amy Kate Bordenave: Data here, it's a little bit… grounded.
+
+184
+00:22:52.320 --> 00:23:05.120
+Amy Kate Bordenave: And so, but you can see, if I toggle on map data here, it's the same underlying data. So whether I'm using a vector tileset or a standard one.
+
+185
+00:23:05.250 --> 00:23:16.679
+Amy Kate Bordenave: The data itself, which is the blue lines and circles, the data itself is the same, but the way that it gets rendered is different.
+
+186
+00:23:18.530 --> 00:23:29.290
+Amy Kate Bordenave: And one of the nice things about vector styles is that it gives a lot more flexibility to the client. So what I'm using here is…
+
+187
+00:23:29.500 --> 00:23:46.910
+Amy Kate Bordenave: picker, this is like an OSM power user tool kind of thing, but I think it'll be helpful for showing how… what you're actually loading here as I hover over each of these. You can see that you're loading a JSON file.
+
+188
+00:23:47.200 --> 00:23:52.060
+Amy Kate Bordenave: And the reason for that versus,
+
+189
+00:23:52.320 --> 00:23:55.940
+Amy Kate Bordenave: In the, let's see, where was it?
+
+190
+00:24:01.250 --> 00:24:05.789
+Amy Kate Bordenave: Well, these don't have the extension, but the raster…
+
+191
+00:24:05.830 --> 00:24:21.380
+Amy Kate Bordenave: sources are serving up images. These are serving up a combination of data plus styling rules. So it allows you to switch, kind of, on the fly between
+
+192
+00:24:21.550 --> 00:24:24.900
+Amy Kate Bordenave: All of these different… styles.
+
+193
+00:24:27.640 --> 00:24:31.000
+Amy Kate Bordenave: Hopefully that made things a little bit… clearer.
+
+194
+00:24:31.220 --> 00:24:32.859
+Amy Kate Bordenave: Need some water.
+
+195
+00:24:47.850 --> 00:24:56.450
+Amy Kate Bordenave: So yes, main… main point being that… Through… The workspace is settings.
+
+196
+00:24:56.810 --> 00:25:04.219
+Amy Kate Bordenave: you're able to define a custom imagery layer that shows up in the vScoutRoute app.
+
+197
+00:25:04.670 --> 00:25:10.800
+Amy Kate Bordenave: And I'll actually… Show you really quickly what that looks like.
+
+198
+00:25:12.280 --> 00:25:13.420
+Amy Kate Bordenave: in the app.
+
+199
+00:25:13.760 --> 00:25:23.389
+Amy Kate Bordenave: So I'm on the wiki, I'm going to the Avi Scout route user manual, and we'll look at the map interface.
+
+200
+00:25:23.790 --> 00:25:26.099
+Amy Kate Bordenave: And do I have pictures for this?
+
+201
+00:25:28.890 --> 00:25:35.049
+Amy Kate Bordenave: Okay, so I don't have the images, but there's this imagery layer control inside of the app.
+
+202
+00:25:35.330 --> 00:25:47.219
+Amy Kate Bordenave: Which lets you switch between background layers, and as it notes here, the available image resources in the app depend on what has been configured for the workspace.
+
+203
+00:25:56.880 --> 00:26:00.660
+Amy Kate Bordenave: Next up is the Teams system.
+
+204
+00:26:00.890 --> 00:26:04.260
+Amy Kate Bordenave: Oh, well, I guess in…
+
+205
+00:26:06.350 --> 00:26:09.070
+Amy Kate Bordenave: Alright, this is only in workspaces…
+
+206
+00:26:09.280 --> 00:26:13.030
+Amy Kate Bordenave: state. Just a little preview.
+
+207
+00:26:13.320 --> 00:26:19.760
+Amy Kate Bordenave: We're building… we… I say we, but not me. We're building this…
+
+208
+00:26:20.220 --> 00:26:24.840
+Amy Kate Bordenave: Teams system with, like, role-based access controls.
+
+209
+00:26:24.990 --> 00:26:26.740
+Amy Kate Bordenave: And…
+
+210
+00:26:33.960 --> 00:26:37.880
+Amy Kate Bordenave: Actually, let me switch to the testing one.
+
+211
+00:26:48.080 --> 00:26:57.219
+Amy Kate Bordenave: So coming… coming soon, there is this team system, that allows you to create teams. We're gonna say,
+
+212
+00:26:58.320 --> 00:27:01.999
+Amy Kate Bordenave: The first thing that came to mind was Happy Hippos.
+
+213
+00:27:03.630 --> 00:27:21.889
+Amy Kate Bordenave: I don't even… anyway, I don't know. By convention, we like our alliteration names. But you can create teams, and then change the settings for them, you can change the name, you'll be able to share this QR code. So this is…
+
+214
+00:27:21.930 --> 00:27:25.899
+Amy Kate Bordenave: Kind of like the project grouped invite codes.
+
+215
+00:27:33.840 --> 00:27:47.389
+Amy Kate Bordenave: Sorry, excuse me. So this is kind of like the project group invite codes that you might have seen from the TDEI portal, but these are specific for joining teams in workspaces.
+
+216
+00:27:47.780 --> 00:27:54.200
+Amy Kate Bordenave: And then deleting. So this, this functionality will be…
+
+217
+00:27:54.350 --> 00:28:02.230
+Amy Kate Bordenave: expanded. This is in the workspaces staging right now. It's just an empty tab.
+
+218
+00:28:03.370 --> 00:28:04.959
+Amy Kate Bordenave: Maybe have a coming soon?
+
+219
+00:28:04.960 --> 00:28:11.039
+Anat Caspi: Case that right now, size… Can you hear me?
+
+220
+00:28:11.040 --> 00:28:12.349
+Amy Kate Bordenave: You're cutting out a bit.
+
+221
+00:28:12.350 --> 00:28:13.580
+Anat Caspi: Are you able to hear?
+
+222
+00:28:15.800 --> 00:28:17.280
+Anat Caspi: That's not good.
+
+223
+00:28:17.720 --> 00:28:25.000
+Anat Caspi: I was wondering if Sy would be able to manipulate this for us for the GAD event this week.
+
+224
+00:28:25.570 --> 00:28:29.249
+Anat Caspi: Do you know if it's currently manipulable?
+
+225
+00:28:32.450 --> 00:28:34.640
+Amy Kate Bordenave: I am not sure. Yeah, I don't know.
+
+226
+00:28:34.750 --> 00:28:36.509
+Amy Kate Bordenave: But we can ask him.
+
+227
+00:28:37.500 --> 00:28:45.960
+Amy Kate Bordenave: So, we'll ask Cy about… Workspaces, teams for GAD.
+
+228
+00:28:50.710 --> 00:28:56.950
+Amy Kate Bordenave: Okay, so I'm gonna go back to… Dashboard…
+
+229
+00:28:59.720 --> 00:29:09.230
+Amy Kate Bordenave: And let's quickly, before we get into editing workspaces, there's a couple other buttons. There's the review.
+
+230
+00:29:11.170 --> 00:29:16.979
+Amy Kate Bordenave: And I believe this view is only available to POC?
+
+231
+00:29:17.140 --> 00:29:28.330
+Amy Kate Bordenave: role members, but this brings up an interface that is heavily inspired by, Awesome Chaws, like an OSM change set.
+
+232
+00:29:28.440 --> 00:29:35.060
+Amy Kate Bordenave: viewer and QA tool, and so this is very similar to that.
+
+233
+00:29:36.070 --> 00:29:39.279
+Amy Kate Bordenave: So you can see that…
+
+234
+00:29:39.520 --> 00:29:44.410
+Amy Kate Bordenave: You can look through all of the changes, so from number one… well, I shouldn't have clicked that.
+
+235
+00:29:44.530 --> 00:29:47.759
+Amy Kate Bordenave: Because it's a huge change set.
+
+236
+00:29:48.280 --> 00:30:03.450
+Amy Kate Bordenave: But from the first initial import all the way to the latest changes, like I was doing the mapping for the GAD POIs yesterday, and you can see that when I click on any one of these.
+
+237
+00:30:04.240 --> 00:30:14.340
+Amy Kate Bordenave: It'll give you some information about the change set, and allow you to edit to make changes to that same data.
+
+238
+00:30:14.340 --> 00:30:28.670
+Amy Kate Bordenave: This info button expands some details, so this shows what editor I was using, what sources were used, who created it, and when.
+
+239
+00:30:31.360 --> 00:30:35.600
+Amy Kate Bordenave: And it's not loading for some reason…
+
+240
+00:30:39.680 --> 00:30:41.569
+Amy Kate Bordenave: Which is unfortunate.
+
+241
+00:30:42.030 --> 00:30:54.429
+Amy Kate Bordenave: There's filters here for change sets, feedback, and notes. Actually, I'm gonna switch to… One that has…
+
+242
+00:30:55.220 --> 00:30:56.800
+Amy Kate Bordenave: both of those…
+
+243
+00:31:00.450 --> 00:31:07.200
+Amy Kate Bordenave: Yeah, I think my computer did not click… did not like trying to load 90,000…
+
+244
+00:31:07.370 --> 00:31:11.470
+Amy Kate Bordenave: elements. Okay, so I'm gonna switch to…
+
+245
+00:31:11.730 --> 00:31:18.370
+Amy Kate Bordenave: I mean, the NDA ones have… or, I'm sorry, SCLEO, what, Columbia County?
+
+246
+00:31:18.960 --> 00:31:23.840
+Amy Kate Bordenave: No, that one didn't happen yet, or didn't get, yo…
+
+247
+00:31:27.830 --> 00:31:34.649
+Amy Kate Bordenave: I can still… I think my computer is still trying to load that in the background, I can hear the…
+
+248
+00:31:35.230 --> 00:31:35.850
+Amy Kate Bordenave: I can hear that.
+
+249
+00:31:35.850 --> 00:31:38.040
+Anat Caspi: What were you trying to do?
+
+250
+00:31:38.280 --> 00:31:41.980
+Amy Kate Bordenave: I clicked on the… actually, yeah, let me put that in.
+
+251
+00:31:41.980 --> 00:31:47.160
+Anat Caspi: You know, Ellie left a brand new computer, so we swap you out?
+
+252
+00:31:49.370 --> 00:32:01.560
+Amy Kate Bordenave: Like a laptop? I'm on my desktop computer, and this is a pretty powerful one. But what happened here… Okay, I'm gonna… I need to close that tab.
+
+253
+00:32:02.840 --> 00:32:03.990
+Amy Kate Bordenave: Let me…
+
+254
+00:32:08.460 --> 00:32:10.370
+Amy Kate Bordenave: Network item…
+
+255
+00:32:21.500 --> 00:32:25.669
+Amy Kate Bordenave: Okay, so I think my computer was still trying to look, because I could hear my computer spinning up.
+
+256
+00:32:25.840 --> 00:32:33.529
+Amy Kate Bordenave: But yeah, I, if you send me the details of that, I'll take a look and see if it would be better than my current laptop.
+
+257
+00:32:34.290 --> 00:32:34.980
+Amy Kate Bordenave: What?
+
+258
+00:32:35.550 --> 00:32:44.580
+Amy Kate Bordenave: what I wanted to show is… 2… Everett.
+
+259
+00:32:47.100 --> 00:33:05.669
+Amy Kate Bordenave: This view also shows notes, so it's not just the chainsets, but for example, someone added this information about a surface disruption, and it places it on the map.
+
+260
+00:33:05.920 --> 00:33:12.990
+Amy Kate Bordenave: So you could then use this to edit and, for example, enter this information.
+
+261
+00:33:14.910 --> 00:33:23.920
+Amy Kate Bordenave: There will be… Varying usefulness of the notes, but…
+
+262
+00:33:24.170 --> 00:33:31.910
+Amy Kate Bordenave: And they're free-form, so people can put them in with any information, or language, or whatever they want.
+
+263
+00:33:33.120 --> 00:33:40.029
+Amy Kate Bordenave: It's like this is saying that they don't have a timetable for Route 5110.
+
+264
+00:33:40.440 --> 00:33:41.469
+Amy Kate Bordenave: I think.
+
+265
+00:33:44.500 --> 00:33:48.290
+Amy Kate Bordenave: No table for the hours and route, yeah.
+
+266
+00:33:49.180 --> 00:33:52.799
+Amy Kate Bordenave: Okay, so that is the review.
+
+267
+00:33:55.730 --> 00:34:03.430
+Amy Kate Bordenave: There's also an export option, so clicking that will open this, which allows you to upload
+
+268
+00:34:03.770 --> 00:34:17.879
+Amy Kate Bordenave: as a new dataset to the TDEI, and that fits into the workflow. So we can think of some… some kind of concrete workflow examples. Let's say a city
+
+269
+00:34:17.880 --> 00:34:24.170
+Amy Kate Bordenave: that has a dataset in OS Connect, wants to
+
+270
+00:34:24.460 --> 00:34:42.940
+Amy Kate Bordenave: submit updates to that. What they could do is, from the TDEI, they could create a workspace, and we'll go over that as the next thing, but they could create a workspace by opening up a dataset that is currently stored in the TDEI,
+
+271
+00:34:42.960 --> 00:34:51.740
+Amy Kate Bordenave: into workspaces, and so that transfers a snapshot of the data set as it is in TDEI,
+
+272
+00:34:52.179 --> 00:34:55.319
+Amy Kate Bordenave: Opens it up and loads it into this…
+
+273
+00:34:55.469 --> 00:34:58.660
+Amy Kate Bordenave: Possum, or Private OSM, or Workspace.
+
+274
+00:34:59.270 --> 00:35:01.249
+Amy Kate Bordenave: Allows edits to that.
+
+275
+00:35:01.550 --> 00:35:02.980
+Amy Kate Bordenave: Which can then be…
+
+276
+00:35:03.270 --> 00:35:16.619
+Amy Kate Bordenave: uploaded back to the TDEI. So the TDEI is just storage, well, not just storage, but TDI is just storage for the dataset. Workspaces is, like, the sandbox where it can be edited.
+
+277
+00:35:17.610 --> 00:35:20.910
+Amy Kate Bordenave: And then pushed back up to DDEI.
+
+278
+00:35:22.240 --> 00:35:25.670
+Amy Kate Bordenave: Or, downloaded locally.
+
+279
+00:35:27.720 --> 00:35:33.089
+Amy Kate Bordenave: And speaking of creating workspace, Let me get a sip of water.
+
+280
+00:35:38.590 --> 00:35:49.080
+Anat Caspi: So while… while Amy's getting some water, I, I wanna make, fallout to make things… more…
+
+281
+00:35:49.980 --> 00:35:53.070
+Anat Caspi: functionally apparent. So…
+
+282
+00:35:53.780 --> 00:36:01.829
+Anat Caspi: TDI is not just storage, but it's a way of dealing with an entire dataset as a whole. So, if you think about
+
+283
+00:36:03.060 --> 00:36:06.939
+Anat Caspi: The people who are managing data.
+
+284
+00:36:07.200 --> 00:36:09.110
+Anat Caspi: in these organizations.
+
+285
+00:36:10.320 --> 00:36:15.439
+Anat Caspi: There are those who are… mainly doing…
+
+286
+00:36:15.850 --> 00:36:20.790
+Anat Caspi: the inventory of the datasets, right? So they're like, oh, we have this…
+
+287
+00:36:20.950 --> 00:36:27.225
+Anat Caspi: one data about sidewalks, and it is for Renton City, and…
+
+288
+00:36:28.120 --> 00:36:31.290
+Anat Caspi: These are the kinds of elements that are in there.
+
+289
+00:36:31.410 --> 00:36:48.360
+Anat Caspi: it needs to have metadata. We care about where the data came from, and who looked at it last, and like, if we're gonna do some kind of functionality on this dataset, we're gonna do it as a whole. So TDI does have functionality in managing a data set.
+
+290
+00:36:48.610 --> 00:36:51.550
+Anat Caspi: But you're much more focused on, like.
+
+291
+00:36:51.590 --> 00:37:09.830
+Anat Caspi: the whole inventory, so the types of functions that we currently can do in TDEI for a whole data set, and importantly, like, the point is, like, you do this whole function and you don't look, right? So, for example, you can attach inclines to all
+
+292
+00:37:09.830 --> 00:37:18.289
+Anat Caspi: the line work in a data set in the TDI, because essentially what we do for them is we go to the U.S.
+
+293
+00:37:18.340 --> 00:37:21.670
+Anat Caspi: Geological Society USGS dataset.
+
+294
+00:37:21.740 --> 00:37:23.760
+Anat Caspi: And we grab…
+
+295
+00:37:24.020 --> 00:37:34.630
+Anat Caspi: the, digital elevation at the start and the end of that line, and we infer, like, oh, okay, this is a 5.6 grade
+
+296
+00:37:34.840 --> 00:37:42.210
+Anat Caspi: incline, and that is a 3.2 grade incline, you know? So those are the kinds of things that you can do
+
+297
+00:37:42.360 --> 00:37:49.139
+Anat Caspi: in the TDI, because it functions over the entire dataset. You didn't touch any single line
+
+298
+00:37:49.260 --> 00:37:52.350
+Anat Caspi: On your own, or inspected on your own.
+
+299
+00:37:52.720 --> 00:37:55.390
+Anat Caspi: The purposes of workspaces
+
+300
+00:37:56.300 --> 00:38:14.219
+Anat Caspi: you know, you sat in some of these meetings with different cities. Some of them first want to be able to look at each data element on its own, and of course, workspaces is not needed for that. They can go download the data and look at it in their own favorites.
+
+301
+00:38:14.450 --> 00:38:19.340
+Anat Caspi: GIS viewer, but we give them the opportunity to do that inside.
+
+302
+00:38:19.520 --> 00:38:21.060
+Anat Caspi: workspaces.
+
+303
+00:38:21.630 --> 00:38:25.859
+Anat Caspi: I mean, they can also take a look at that in OS Connect Viewer.
+
+304
+00:38:26.160 --> 00:38:32.010
+Anat Caspi: without any sign-up or anything like that. But if they want to be able to manipulate those line work.
+
+305
+00:38:32.130 --> 00:38:35.399
+Anat Caspi: Or do anything on a per-element basis.
+
+306
+00:38:35.810 --> 00:38:37.799
+Anat Caspi: That's where the sandbox…
+
+307
+00:38:38.930 --> 00:38:53.840
+Anat Caspi: becomes relevant. So, functionally, the people who are going to be more interested in the sandbox are going to be the GIS people, not the people who are, like, managing their data inventory, which are more, like.
+
+308
+00:38:54.120 --> 00:38:59.350
+Anat Caspi: the… I'm trying to think of who we met with that…
+
+309
+00:38:59.790 --> 00:39:08.520
+Anat Caspi: is doing more of the inventory and less the GIS work. I think the guy from Newcastle is more like that.
+
+310
+00:39:09.030 --> 00:39:14.270
+Anat Caspi: I mean, they do some GIS stuff, but he was saying that he has somebody else in the…
+
+311
+00:39:14.380 --> 00:39:19.019
+Anat Caspi: back office that does more of the GIS, and that he does more of the…
+
+312
+00:39:19.130 --> 00:39:24.309
+Anat Caspi: management of all the public works data sets. So, so he would be more…
+
+313
+00:39:24.530 --> 00:39:31.070
+Anat Caspi: a client of the TDEI, functionally, whereas The… his back office…
+
+314
+00:39:31.190 --> 00:39:46.340
+Anat Caspi: mate that does more of the GIS work would be in workspaces. And one thing that's important to note, too, is, Amy called it transfer the data to the sandbox. It's actually a copy.
+
+315
+00:39:46.870 --> 00:39:52.190
+Anat Caspi: So, when they're dealing… with, workspaces…
+
+316
+00:39:52.510 --> 00:40:02.039
+Anat Caspi: in the sandbox, their sandbox is their own copy that diverged from the TDI as soon as they said, create a workspace.
+
+317
+00:40:02.330 --> 00:40:04.790
+Anat Caspi: So, if somebody goes in, if his…
+
+318
+00:40:05.140 --> 00:40:11.909
+Anat Caspi: Buddy goes in and changes anything in the metadata, at the TDEI level, or…
+
+319
+00:40:12.610 --> 00:40:15.610
+Anat Caspi: puts up a new version of the TDI data.
+
+320
+00:40:16.030 --> 00:40:21.130
+Anat Caspi: Then they're not necessarily… synchronize anymore.
+
+321
+00:40:21.890 --> 00:40:33.129
+Anat Caspi: So, the function… of workspaces, Is to have, like, coordinated ways of doing… Work in a sandbox.
+
+322
+00:40:33.560 --> 00:40:42.330
+Anat Caspi: in massaging the data, like, you know, what we hoped Commas would do would be to use this toolset to import their own
+
+323
+00:40:42.850 --> 00:40:45.380
+Anat Caspi: data set from commas.
+
+324
+00:40:45.520 --> 00:40:53.990
+Anat Caspi: and integrate it here, but of course, they're gonna do that somewhere else. We're just giving people a toolset, like the Port Townsend guy.
+
+325
+00:40:55.010 --> 00:41:02.700
+Anat Caspi: because they don't have, like, ArcGIS, it's… they have, like, a limited… set of…
+
+326
+00:41:03.250 --> 00:41:09.440
+Anat Caspi: Tools to be able to manipulate the element-wise…
+
+327
+00:41:09.940 --> 00:41:16.420
+Anat Caspi: data sets. So if he wants to comment on that one section of town that he said they were gonna…
+
+328
+00:41:16.590 --> 00:41:24.120
+Anat Caspi: Create a… a project for… This is the right place to do it.
+
+329
+00:41:24.250 --> 00:41:36.719
+Anat Caspi: But it is important to remind people that, you know, they have now created their own copy of this thing that's sitting in their own private data set, and if they want to
+
+330
+00:41:37.740 --> 00:41:47.320
+Anat Caspi: push it up to visibility for others, it's really best to do it once you export all of your changes back up to the TEA.
+
+331
+00:41:50.120 --> 00:41:59.349
+Anat Caspi: I will also say this is where the tool sets that King County Metro had before, that they commissioned.
+
+332
+00:41:59.480 --> 00:42:04.449
+Anat Caspi: Previously, that's where that set of tools kind of fell from.
+
+333
+00:42:04.980 --> 00:42:07.600
+Anat Caspi: And that's why they haven't been able to share.
+
+334
+00:42:07.870 --> 00:42:11.309
+Anat Caspi: So, another function of this is, like, sharing back
+
+335
+00:42:11.780 --> 00:42:15.189
+Anat Caspi: Unsiloing the data that you have.
+
+336
+00:42:15.330 --> 00:42:21.390
+Anat Caspi: Because a lot of times, Especially…
+
+337
+00:42:22.090 --> 00:42:29.449
+Anat Caspi: King County Metro has been collecting sidewalks data for a long time out of their password review team, if you remember.
+
+338
+00:42:29.600 --> 00:42:39.789
+Anat Caspi: Nick Wilson, who was… With us a few years back. He does that for… In day-to-day work.
+
+339
+00:42:39.990 --> 00:42:44.989
+Anat Caspi: But they don't have a way to push that back out to the public.
+
+340
+00:42:45.750 --> 00:42:54.970
+Anat Caspi: And so, that's why… somebody like Massey Widener would be interested in this functionality, so again, like.
+
+341
+00:42:55.390 --> 00:43:00.180
+Anat Caspi: Kind of thinking about what is… Their operational day-to-day…
+
+342
+00:43:00.510 --> 00:43:08.059
+Anat Caspi: Stuff and things they think about in order to give meaning to One tool over another.
+
+343
+00:43:20.920 --> 00:43:23.480
+Anat Caspi: I'm done. Thanks.
+
+344
+00:43:24.580 --> 00:43:34.950
+Amy Kate Bordenave: No, thank you for the additional context and clarification. I was just updating some of our notes in that time.
+
+345
+00:43:35.540 --> 00:43:41.310
+Amy Kate Bordenave: So, let's talk about creating a workspace. So how do…
+
+346
+00:43:41.530 --> 00:43:53.159
+Amy Kate Bordenave: How do we actually get to the point where we have data that we can edit with these different tools? Well, option one is directly from the TDEI.
+
+347
+00:43:53.280 --> 00:43:59.920
+Amy Kate Bordenave: So, I am going to sign in with my…
+
+348
+00:44:01.360 --> 00:44:13.300
+Amy Kate Bordenave: demo, and sorry, I should have been using the demo account the whole time, that way your screen recording would have the demo user and not mine, sorry about that.
+
+349
+00:44:14.640 --> 00:44:27.020
+Amy Kate Bordenave: But yeah, so you can take… so, like, let's say we go to the, workspaces… well, that's not gonna have any released ones. We'll go to global, we'll go to this one.
+
+350
+00:44:29.130 --> 00:44:41.729
+Amy Kate Bordenave: And then, from the datasets, either from the ones in the project, like this, what you would do is you would click the action and open in workspaces.
+
+351
+00:44:42.190 --> 00:44:48.139
+Amy Kate Bordenave: And so, as Anat mentioned, this would… Take a copy of…
+
+352
+00:44:48.400 --> 00:44:54.010
+Amy Kate Bordenave: This current dataset and version, so this would be,
+
+353
+00:44:54.220 --> 00:45:00.779
+Amy Kate Bordenave: like, version 2, and this would open it up in workspaces.
+
+354
+00:45:01.170 --> 00:45:10.390
+Amy Kate Bordenave: The other option is to use the Create Workspace button here, and then it gives you a few options. So you can start from
+
+355
+00:45:10.640 --> 00:45:16.679
+Amy Kate Bordenave: a blank one with no data at all. You can start from…
+
+356
+00:45:17.060 --> 00:45:25.260
+Amy Kate Bordenave: the TDEI, which this is another way of doing what we just showed, but starting in workspaces instead of starting from the TDEI.
+
+357
+00:45:25.870 --> 00:45:33.889
+Amy Kate Bordenave: You could… Create, and you get to choose which of your project groups you open it under.
+
+358
+00:45:34.370 --> 00:45:45.430
+Amy Kate Bordenave: And then you can filter… From any of these… Petal…
+
+359
+00:45:46.210 --> 00:45:48.010
+Amy Kate Bordenave: At some point, render a map.
+
+360
+00:45:49.980 --> 00:45:52.780
+Amy Kate Bordenave: And shows the other information here.
+
+361
+00:45:53.620 --> 00:45:57.509
+Amy Kate Bordenave: Or, you can do it from a…
+
+362
+00:45:57.760 --> 00:46:00.650
+Amy Kate Bordenave: Open Sidewalks data file on your computer.
+
+363
+00:46:02.760 --> 00:46:17.930
+Amy Kate Bordenave: So those are the… those are the ways to create a workspace. You can start in either workspaces, or if there's a specific one that you want to open from the TDEI, you can start from the TDEI.
+
+364
+00:46:19.670 --> 00:46:22.269
+Amy Kate Bordenave: Or start from blank, or a local file.
+
+365
+00:46:25.430 --> 00:46:35.500
+Amy Kate Bordenave: There's a little help tab here, which opens up the TCAT Wiki Workspaces page.
+
+366
+00:46:36.960 --> 00:46:39.840
+Amy Kate Bordenave: And there's also a help desk email.
+
+367
+00:46:44.830 --> 00:46:49.859
+Amy Kate Bordenave: The main… the main view of workspaces is really this dashboard.
+
+368
+00:46:50.150 --> 00:46:54.869
+Amy Kate Bordenave: So we're going, and there's also a new workspace button here as well.
+
+369
+00:46:55.310 --> 00:46:57.160
+Amy Kate Bordenave: And we've covered…
+
+370
+00:46:57.620 --> 00:47:09.730
+Amy Kate Bordenave: The review view, we've covered the export and the settings, the map component, the metadata here, the project group picker.
+
+371
+00:47:09.840 --> 00:47:16.839
+Amy Kate Bordenave: And the different ones here. One nice thing… this reminds me, I'll put this down as a…
+
+372
+00:47:20.840 --> 00:47:26.020
+Amy Kate Bordenave: So you can actually link…
+
+373
+00:47:26.980 --> 00:47:35.449
+Amy Kate Bordenave: to this exact page, and I'll make a work item for exposing it in the URL.
+
+374
+00:47:35.550 --> 00:47:38.580
+Amy Kate Bordenave: But if you go to Settings…
+
+375
+00:47:39.470 --> 00:47:49.770
+Amy Kate Bordenave: And this is useful because, like, let's say you're talking with someone at a jurisdiction or an agency, and you want to link them directly to a project
+
+376
+00:47:49.890 --> 00:47:57.869
+Amy Kate Bordenave: or, I'm sorry, a workspace that's open in workspaces, you can just send them a link to the dashboard.
+
+377
+00:47:58.020 --> 00:48:03.550
+Amy Kate Bordenave: So that's just this. However, it'll… by default, it won't…
+
+378
+00:48:03.840 --> 00:48:11.029
+Amy Kate Bordenave: have the one that you're trying to direct them to selected. You can change that by…
+
+379
+00:48:11.430 --> 00:48:20.479
+Amy Kate Bordenave: If you open the settings, so I went Dashboard, and then Settings.
+
+380
+00:48:20.690 --> 00:48:30.710
+Amy Kate Bordenave: And in the URL here, what you'll see is this workspace number. In this case, it's 77, and so if you sent a link.
+
+381
+00:48:31.060 --> 00:48:36.979
+Amy Kate Bordenave: To dashboard, question mark, workspace equals 77.
+
+382
+00:48:37.780 --> 00:48:41.250
+Amy Kate Bordenave: Instead of just taking them to the dashboard.
+
+383
+00:48:41.360 --> 00:48:44.350
+Amy Kate Bordenave: It'll take them directly to…
+
+384
+00:48:44.650 --> 00:48:58.599
+Amy Kate Bordenave: this one being selected. So I'll make a work item for… or, I mean, if you think it's a good idea or not, but it would be nice to be able to just click one, and then it automatically updates to include the number.
+
+385
+00:49:00.020 --> 00:49:01.639
+Amy Kate Bordenave: And then you can link it to people.
+
+386
+00:49:02.580 --> 00:49:09.329
+Amy Kate Bordenave: But yeah, so next is editing.
+
+387
+00:49:09.600 --> 00:49:18.769
+Amy Kate Bordenave: We've had a new addition, because we have, Brian on the team, the developer of Rapid.
+
+388
+00:49:19.080 --> 00:49:28.720
+Amy Kate Bordenave: We have the ability now to open a workspace using Rapid 2, the existing one, or Rapid 3, which is, like, the upcoming version.
+
+389
+00:49:29.940 --> 00:49:39.679
+Amy Kate Bordenave: Rapid is… an OSM editor that's been adapted to work with workspaces.
+
+390
+00:49:39.880 --> 00:49:49.649
+Amy Kate Bordenave: And as the… as the TCAT wiki… the shows for…
+
+391
+00:49:49.870 --> 00:49:55.319
+Amy Kate Bordenave: The workspaces, there's multiple editors.
+
+392
+00:49:55.680 --> 00:50:02.550
+Amy Kate Bordenave: And so we have Aviv Scout Route being the mobile one, Rapid being the web-based one.
+
+393
+00:50:02.740 --> 00:50:16.689
+Amy Kate Bordenave: And then, because of our flexibility with kind of wrapping the OSM APIs in the modified workspaces format, you can also use desktop editors like Jossum.
+
+394
+00:50:18.260 --> 00:50:20.409
+Amy Kate Bordenave: But the main focus here
+
+395
+00:50:20.750 --> 00:50:31.420
+Amy Kate Bordenave: at least in workspaces, is editing at the desktop level. And back to Anat's point about, you know, who's the user for this, right? Who is this aimed at?
+
+396
+00:50:33.680 --> 00:50:51.770
+Amy Kate Bordenave: In the contractor work reporting flow, if the contractor is on the ground, they finish a project, they fill out the form in Aviv Scout Route, well, the web-based platform here is where
+
+397
+00:50:51.900 --> 00:51:01.629
+Amy Kate Bordenave: Someone like a manager would be able to, as we showed previously, review those edits, but then also make geometry changes.
+
+398
+00:51:04.520 --> 00:51:13.079
+Amy Kate Bordenave: So we're gonna use Rapid 2 right now, just to demonstrate, because it's more stable. I did find it…
+
+399
+00:51:13.310 --> 00:51:14.719
+Amy Kate Bordenave: I did some…
+
+400
+00:51:15.900 --> 00:51:26.699
+Amy Kate Bordenave: editing yesterday, and so has Maddie, and we found some issues. So we're just gonna use the current Rapid 2, since that one is more stable.
+
+401
+00:51:27.770 --> 00:51:39.319
+Amy Kate Bordenave: But for example, I just opened this workspace, and what you see, if you're familiar with any of the OSM editing, is a nearly identical
+
+402
+00:51:39.830 --> 00:51:44.370
+Amy Kate Bordenave: Setup. It's just that…
+
+403
+00:51:44.840 --> 00:51:53.889
+Amy Kate Bordenave: There's not data for the whole world, as there is for OSM, it's just for the data that you…
+
+404
+00:51:54.430 --> 00:51:58.159
+Amy Kate Bordenave: opened. So, I'm gonna look at Bremerton here.
+
+405
+00:51:59.510 --> 00:52:06.700
+Amy Kate Bordenave: And so you can see as I zoom in, this is a typical OSM editing view.
+
+406
+00:52:07.020 --> 00:52:10.229
+Amy Kate Bordenave: of the Bremerton dataset.
+
+407
+00:52:10.350 --> 00:52:16.799
+Amy Kate Bordenave: So, for example, yesterday, I was going through and I was adding the POIs,
+
+408
+00:52:23.100 --> 00:52:38.429
+Amy Kate Bordenave: Oh, yeah, here's an example. So, like, this is one, where there's this… there's this list of GAD POIs, and so I've been mapping those, the entrances, so that they can be targeted by
+
+409
+00:52:38.890 --> 00:52:41.609
+Amy Kate Bordenave: the Aviv Scout Route app.
+
+410
+00:52:41.800 --> 00:52:46.949
+Amy Kate Bordenave: And the pathways leading to them, so that we can map those for VIFA.
+
+411
+00:52:47.980 --> 00:53:05.580
+Amy Kate Bordenave: But at this point, it's just a pretty standard OSM editor. You can make geometry changes, like, let's say I looked into this and found that, oh, it doesn't actually have this bend in it, you could, you know, play around with the geometry.
+
+412
+00:53:05.840 --> 00:53:09.600
+Amy Kate Bordenave: Change the tags, map new things…
+
+413
+00:53:10.950 --> 00:53:16.099
+Amy Kate Bordenave: I'm not sure how in-depth we want to go. We are at the hour mark.
+
+414
+00:53:17.350 --> 00:53:23.900
+Amy Kate Bordenave: But yeah, this is the editing view in Rapid.
+
+415
+00:53:31.330 --> 00:53:36.270
+Amy Kate Bordenave: Do you have any… any questions? Any parts that weren't clear?
+
+416
+00:53:37.770 --> 00:53:40.410
+Amy Kate Bordenave: Let me know what you'd like me to cover.
+
+417
+00:53:42.600 --> 00:53:50.999
+Anat Caspi: I want to see how you bring in an external dataset. So, the whole use case for us
+
+418
+00:53:51.210 --> 00:53:56.830
+Anat Caspi: In workspaces is… A city brings down…
+
+419
+00:53:57.130 --> 00:54:01.010
+Anat Caspi: the TDI dataset into a sandbox, the workspace.
+
+420
+00:54:01.210 --> 00:54:06.650
+Anat Caspi: And then they want to join it with their curb ramp ramp data, or their…
+
+421
+00:54:07.890 --> 00:54:22.110
+Anat Caspi: crash data, or something else, and we do understand that right now you can't do a whole import in here. The whole import has to happen in the TDI, but if they want to see what it overlays like.
+
+422
+00:54:22.690 --> 00:54:25.149
+Anat Caspi: This is the place to join.
+
+423
+00:54:25.900 --> 00:54:26.980
+Anat Caspi: So how…
+
+424
+00:54:26.980 --> 00:54:27.570
+Amy Kate Bordenave: Yeah.
+
+425
+00:54:27.570 --> 00:54:28.540
+Anat Caspi: do that.
+
+426
+00:54:28.540 --> 00:54:39.379
+Amy Kate Bordenave: Let's do this using the Seattle curb ramps data. Well, that might be too big of a… you know what?
+
+427
+00:54:39.380 --> 00:54:40.890
+Anat Caspi: Yeah, it's all Danish.
+
+428
+00:54:41.130 --> 00:54:47.530
+Amy Kate Bordenave: Burmerton… Does Bremerton have, like, a GIS?
+
+429
+00:54:47.530 --> 00:54:49.230
+Anat Caspi: I don't know, that's a good question.
+
+430
+00:54:49.230 --> 00:54:50.120
+Amy Kate Bordenave: Let's find out.
+
+431
+00:54:55.070 --> 00:54:57.390
+Amy Kate Bordenave: We've got…
+
+432
+00:54:58.130 --> 00:55:05.270
+Anat Caspi: Actually, Ryan, are you aware of crash data in Bellevue? Bellevue is smaller.
+
+433
+00:55:06.790 --> 00:55:24.120
+Ryan Liu: Well, Bellevue's actually larger, I'm pretty sure, in terms of, I think, both population and the land area, but, crash data, you know, I have it across, I think, 5 years, for the whole state.
+
+434
+00:55:25.680 --> 00:55:32.950
+Anat Caspi: Oh, we didn't know that. Okay, so can you stop Bremerton so that Amy is able to use it?
+
+435
+00:55:33.580 --> 00:55:39.609
+Ryan Liu: Well, I'm gonna have to take some time for me to, like, edit it down, so…
+
+436
+00:55:39.610 --> 00:55:45.339
+Anat Caspi: Okay, I'm just curious, how did you get the whole state? Did you request it from WSDOT, or it came from…
+
+437
+00:55:46.100 --> 00:55:46.960
+Anat Caspi: Somewhere else.
+
+438
+00:55:46.960 --> 00:55:56.050
+Ryan Liu: So, the crash data, I was able to get it, from Washington State Patrol's website.
+
+439
+00:55:59.480 --> 00:56:00.580
+Anat Caspi: I see.
+
+440
+00:56:01.050 --> 00:56:01.840
+Ryan Liu: Yeah.
+
+441
+00:56:02.240 --> 00:56:08.849
+Anat Caspi: Can you please point, shame to that, because he's been struggling
+
+442
+00:56:09.480 --> 00:56:14.029
+Anat Caspi: he was filling out forms at WSDOT's level, because they have…
+
+443
+00:56:14.520 --> 00:56:20.810
+Anat Caspi: their own crash data that they publish, but they won't publish it openly, they put it behind a wall.
+
+444
+00:56:21.160 --> 00:56:23.830
+Anat Caspi: So yeah, it's an application.
+
+445
+00:56:24.740 --> 00:56:25.620
+Ryan Liu: Okay, yes.
+
+446
+00:56:25.620 --> 00:56:29.289
+Anat Caspi: Do you know what time period your 5 years were for?
+
+447
+00:56:29.840 --> 00:56:37.019
+Ryan Liu: I don't remember off the top of my head, but, I can go check on it.
+
+448
+00:56:37.020 --> 00:56:42.980
+Anat Caspi: So, that's great. So, if you're able to do that, that's great. Just send us both an email so that we can…
+
+449
+00:56:42.980 --> 00:56:43.410
+Ryan Liu: Yep.
+
+450
+00:56:43.410 --> 00:56:45.749
+Anat Caspi: Also, compare to see why.
+
+451
+00:56:46.200 --> 00:56:48.539
+Anat Caspi: Wash dots might be different.
+
+452
+00:56:49.420 --> 00:56:50.170
+Ryan Liu: Sure.
+
+453
+00:56:50.660 --> 00:56:51.769
+Anat Caspi: Cool, thank you.
+
+454
+00:57:02.590 --> 00:57:07.540
+Amy Kate Bordenave: Okay, so I'm… I'm poking around. I didn't see much on the…
+
+455
+00:57:08.850 --> 00:57:13.009
+Amy Kate Bordenave: Bremerton won, or at least not in a format that I'm really familiar with.
+
+456
+00:57:13.120 --> 00:57:21.610
+Amy Kate Bordenave: However, it looks like Tacoma has a sidewalks dataset. This is also…
+
+457
+00:57:22.660 --> 00:57:39.430
+Amy Kate Bordenave: Maybe bigger than what I really want, but we'll see. I'm gonna download this as a GeoJSON, that was really fast. Okay. So here's a workflow for… let me switch to…
+
+458
+00:57:40.050 --> 00:57:59.289
+Amy Kate Bordenave: Tacoma… here's a workflow that a more, you know, like Ganat said, that back office GIS person might use, where they have this existing data, so this was just from data.tacoma.gov, and the most…
+
+459
+00:57:59.290 --> 00:58:10.939
+Amy Kate Bordenave: supported file format is GeoJSON, so they have an existing dataset of sidewalk center lines. Of course, we can see that there's no connections, at least
+
+460
+00:58:12.980 --> 00:58:15.110
+Amy Kate Bordenave: Not that much.
+
+461
+00:58:16.550 --> 00:58:27.670
+Amy Kate Bordenave: But, so we downloaded this as GeoJSON, and now in Rapid, I'm going to open the Tacoma dataset.
+
+462
+00:58:27.850 --> 00:58:37.260
+Amy Kate Bordenave: And gonna edit this in… In this case, I think I do wanna… let me try Rapid 3.
+
+463
+00:58:41.660 --> 00:58:56.470
+Amy Kate Bordenave: So I'm gonna open this, discard any changes. We'll see that we have the data in Tacoma, and now I'd like to open the data that I just downloaded.
+
+464
+00:58:57.940 --> 00:59:00.169
+Amy Kate Bordenave: So, let me grab that.
+
+465
+00:59:09.540 --> 00:59:10.600
+Amy Kate Bordenave: Okay.
+
+466
+00:59:11.560 --> 00:59:15.070
+Amy Kate Bordenave: So, I'm gonna open Map Data…
+
+467
+00:59:15.690 --> 00:59:28.050
+Amy Kate Bordenave: And what we want to bring in is custom map data. So you can drag and drop a data file onto the page, or you can click this button to go through the
+
+468
+00:59:28.180 --> 00:59:30.059
+Amy Kate Bordenave: The setup,
+
+469
+00:59:30.090 --> 00:59:40.150
+Amy Kate Bordenave: So we're gonna choose, and you can put in a URL, which is cool. You can also select, and as you see here, this is the
+
+470
+00:59:40.150 --> 00:59:50.359
+Amy Kate Bordenave: data types, so I'm gonna click and grab sidewalks.geoJSON, which I just downloaded, and hit OK.
+
+471
+00:59:50.490 --> 00:59:56.519
+Amy Kate Bordenave: And it'll take a second to add it. That was actually very fast, impressively quick.
+
+472
+00:59:58.820 --> 01:00:02.760
+Amy Kate Bordenave: And so now what we have… I'm gonna zoom in here…
+
+473
+01:00:09.000 --> 01:00:11.509
+Amy Kate Bordenave: Let's say, for example, that…
+
+474
+01:00:11.700 --> 01:00:24.200
+Amy Kate Bordenave: based on the imagery that we had, maybe we didn't have… and I'm not gonna save these changes, but, let's say we didn't have this sidewalk that they had just…
+
+475
+01:00:24.930 --> 01:00:30.479
+Amy Kate Bordenave: Okay, well, now the performance, not so perfect.
+
+476
+01:00:33.150 --> 01:00:38.129
+Amy Kate Bordenave: But, like, let's say, you know, we didn't have this sidewalk in the OS Connect.
+
+477
+01:00:38.300 --> 01:00:41.849
+Amy Kate Bordenave: Can't be deleted because not enough of it is currently visible, okay.
+
+478
+01:00:51.360 --> 01:00:58.899
+Amy Kate Bordenave: Okay, so a little laggy. This is a pretty big data set to be loading. But let's say that, you know, we didn't have…
+
+479
+01:00:59.360 --> 01:01:03.609
+Amy Kate Bordenave: This will pretend newly constructed sidewalk. Well…
+
+480
+01:01:03.730 --> 01:01:15.560
+Amy Kate Bordenave: If we click on this, which is the data that was brought in, we can see that it inherits all of this information that was present in here.
+
+481
+01:01:16.330 --> 01:01:20.420
+Amy Kate Bordenave: So when we looked at this, it had all of these data fields.
+
+482
+01:01:24.730 --> 01:01:29.310
+Amy Kate Bordenave: And then… once we… oop, wrong tab. Once we load that into…
+
+483
+01:01:29.680 --> 01:01:34.120
+Amy Kate Bordenave: Rapid, we can see that it still has all those fields.
+
+484
+01:01:34.330 --> 01:01:50.909
+Amy Kate Bordenave: And the next step, so as Anat mentioned, right now, this is useful as a reference for viewing. Coming soon, we'll be able to actually add this feature into
+
+485
+01:01:51.440 --> 01:02:02.219
+Amy Kate Bordenave: the map directly from here. Right now, the only ones that can be added directly in are the, kind of, official
+
+486
+01:02:02.380 --> 01:02:12.460
+Amy Kate Bordenave: The official ones in Rapid. So, for example, I'm gonna toggle on here, Overture Places.
+
+487
+01:02:12.580 --> 01:02:15.429
+Amy Kate Bordenave: And… we'll see…
+
+488
+01:02:19.910 --> 01:02:21.149
+Amy Kate Bordenave: That's loading.
+
+489
+01:02:27.550 --> 01:02:28.260
+Amy Kate Bordenave: Nope.
+
+490
+01:02:34.260 --> 01:02:35.949
+Amy Kate Bordenave: My tab froze.
+
+491
+01:03:00.020 --> 01:03:02.609
+Amy Kate Bordenave: Yeah, the performance for that one kind of died.
+
+492
+01:03:03.340 --> 01:03:11.419
+Amy Kate Bordenave: But as an example, just to show what this does look like…
+
+493
+01:03:13.110 --> 01:03:20.999
+Amy Kate Bordenave: Turn on Overture Places, and you can see that it's in the same color, right? So this… this is, like, the… the external…
+
+494
+01:03:21.400 --> 01:03:26.630
+Amy Kate Bordenave: External data, and you'd be able to… Add this in…
+
+495
+01:03:28.590 --> 01:03:36.600
+Amy Kate Bordenave: From here. So the goal is that we'll have that same functionality, But in… this, which…
+
+496
+01:03:39.200 --> 01:03:43.429
+Amy Kate Bordenave: Does that… does that make sense? The idea here is that,
+
+497
+01:03:43.520 --> 01:03:55.369
+Amy Kate Bordenave: Rapid will soon not be limited to just the, like, officially vetted Esri-provided datasets, or the ones that go through the Meta service.
+
+498
+01:03:55.370 --> 01:04:07.829
+Amy Kate Bordenave: People will be able to bring their own data by just dragging and dropping GeoJSON files onto Rapid in workspaces, and then can edit that data
+
+499
+01:04:08.750 --> 01:04:10.560
+Amy Kate Bordenave: directly through Rapid.
+
+500
+01:04:14.100 --> 01:04:24.609
+Amy Kate Bordenave: But that's how that workflow would work. Going to existing data, like an open data portal, downloading it as a GeoJSON,
+
+501
+01:04:24.740 --> 01:04:29.639
+Amy Kate Bordenave: And then opening up… Custom map data.
+
+502
+01:04:30.680 --> 01:04:35.760
+Amy Kate Bordenave: Loading… a GeoJSON file, like this.
+
+503
+01:04:35.890 --> 01:04:40.620
+Amy Kate Bordenave: And then having it show up on the map, able to be added.
+
+504
+01:04:49.270 --> 01:04:53.810
+Amy Kate Bordenave: Alright, any other questions that come to mind?
+
+505
+01:05:08.940 --> 01:05:11.460
+Amy Kate Bordenave: Or anything else you would like to see?
+
+506
+01:05:12.210 --> 01:05:13.350
+Amy Kate Bordenave: Demoed?
+
+507
+01:05:16.750 --> 01:05:21.390
+Amy Kate Bordenave: I can run through this if we wanna have extra content.
+
+508
+01:05:27.610 --> 01:05:28.730
+Anat Caspi: Run through what?
+
+509
+01:05:31.960 --> 01:05:37.359
+Amy Kate Bordenave: Sorry, I have open, importing OSM data into Workspace's, tutorial.
+
+510
+01:05:39.590 --> 01:05:40.869
+Anat Caspi: Oh, sure, let's do that.
+
+511
+01:05:44.500 --> 01:05:47.649
+Amy Kate Bordenave: Alright, so I'm gonna send a link to this.
+
+512
+01:05:49.360 --> 01:06:03.840
+Amy Kate Bordenave: But this is a tutorial focused mainly towards external developers, and this is Workspaces tutorial for importing OSM data into workspaces.
+
+513
+01:06:06.890 --> 01:06:10.529
+Amy Kate Bordenave: So, why might you want to do this?
+
+514
+01:06:11.610 --> 01:06:16.630
+Amy Kate Bordenave: For example, let's say that there's,
+
+515
+01:06:16.790 --> 01:06:23.620
+Amy Kate Bordenave: you know, an area that's not in OS Connect, maybe not even in Washington.
+
+516
+01:06:23.830 --> 01:06:35.750
+Amy Kate Bordenave: And you want to be able to open, the current data in OSM, either for the sidewalks, or for POIs, or whatever the case may be, the type of data that you want.
+
+517
+01:06:35.880 --> 01:06:44.179
+Amy Kate Bordenave: There's a pretty easy workflow for getting that into workspaces. And so, step one…
+
+518
+01:06:44.580 --> 01:06:49.240
+Amy Kate Bordenave: is downloading the area of interest from OSM.
+
+519
+01:06:49.620 --> 01:06:58.390
+Amy Kate Bordenave: There is an OSMUS charter project, this is an official Sort of supported project.
+
+520
+01:06:58.730 --> 01:07:02.140
+Amy Kate Bordenave: By OSM US, it's called Slice OSM.
+
+521
+01:07:02.300 --> 01:07:22.049
+Amy Kate Bordenave: And basically what that does is, rather than the older, traditional workflow of downloading huge parts of OSM and then sort of filtering and cutting out the region that you want, Slice OSM lets you download just the region that you want.
+
+522
+01:07:22.110 --> 01:07:28.370
+Amy Kate Bordenave: So I'm gonna use Covington… As an example, we're gonna open…
+
+523
+01:07:28.630 --> 01:07:32.000
+Amy Kate Bordenave: OSM by the slice, or Slice OSM.
+
+524
+01:07:32.480 --> 01:07:37.660
+Amy Kate Bordenave: And let's search for… Covington.
+
+525
+01:07:43.720 --> 01:07:49.060
+Amy Kate Bordenave: This is Covington… Washington.
+
+526
+01:07:49.240 --> 01:08:07.360
+Amy Kate Bordenave: And step one, as we covered, is just to open it, to search for a location, or use the map to navigate, and then we're going to draw a bounding box. Doesn't have to be a box, actually, but I'm gonna draw a box around the area that we want to download.
+
+527
+01:08:07.520 --> 01:08:10.420
+Amy Kate Bordenave: So let's say I want…
+
+528
+01:08:11.830 --> 01:08:21.319
+Amy Kate Bordenave: See, there's the shape tools up here, so rectangle is obviously the simplest, and you'll notice that
+
+529
+01:08:21.740 --> 01:08:33.029
+Amy Kate Bordenave: This shaded area pops up, so this is everything, so you can think of things as being split into tiles. This is kind of the minimum size.
+
+530
+01:08:33.029 --> 01:08:43.580
+Amy Kate Bordenave: tile, so you'll get all of this data when you download. But you can also, you know, choose freeform shapes, you don't have to.
+
+531
+01:08:44.260 --> 01:08:51.199
+Amy Kate Bordenave: And then it'll update and only grab the tiles that it needs to grab in order to do this.
+
+532
+01:08:51.359 --> 01:09:08.869
+Amy Kate Bordenave: So this could be helpful, for example, if we're pulling data from OSM. I remember we did a circle around Arlington, for one of the conferences. This would have been a really easy way to get a circle or a radius, you know, maybe this is the convention center or wherever.
+
+533
+01:09:08.870 --> 01:09:20.860
+Amy Kate Bordenave: and you want a radius around that, this is one way to do that. And you can see that this is very recent data from OSM, so this, in this case, it's 4 minutes ago, I believe it's hourly replication.
+
+534
+01:09:21.979 --> 01:09:33.929
+Amy Kate Bordenave: And… I am… If you select the shape and hit backspace, it deletes it.
+
+535
+01:09:34.990 --> 01:09:37.900
+Amy Kate Bordenave: And I'm just gonna draw a simple rectangle.
+
+536
+01:09:38.080 --> 01:09:38.790
+Amy Kate Bordenave: Here.
+
+537
+01:09:41.130 --> 01:09:52.309
+Amy Kate Bordenave: You can also paste in a bounding box, so if you use something like, geojson.io, which is the map box.
+
+538
+01:09:52.720 --> 01:09:57.420
+Amy Kate Bordenave: Service…
+
+539
+01:09:57.590 --> 01:10:00.950
+Amy Kate Bordenave: Which, I guess there's an updated version. Cool.
+
+540
+01:10:03.440 --> 01:10:14.310
+Amy Kate Bordenave: But similarly, you know, you could, bing 10… If you wanted the whole… City…
+
+541
+01:10:27.810 --> 01:10:32.010
+Amy Kate Bordenave: Let me see they changed how this works. Excuse me.
+
+542
+01:10:33.960 --> 01:10:34.770
+Amy Kate Bordenave: Hmm.
+
+543
+01:10:36.350 --> 01:10:44.569
+Amy Kate Bordenave: Point being, you'd be able to… to grab a bounding box like this, and you can just paste that in.
+
+544
+01:10:46.720 --> 01:10:47.670
+Amy Kate Bordenave: to here.
+
+545
+01:10:47.780 --> 01:10:55.050
+Amy Kate Bordenave: Give it a name, so I'm gonna say USWA Covington, and then you click Generate Slice.
+
+546
+01:10:56.020 --> 01:11:15.490
+Amy Kate Bordenave: This'll go through its process of getting everything, and then having it ready for download, and so just following along, we opened up SliceOSM, searched for a location, drew a bounding box, and gave it a name, and then clicked generate slice.
+
+547
+01:11:15.650 --> 01:11:19.780
+Amy Kate Bordenave: And then… we're going to… Download.
+
+548
+01:11:21.720 --> 01:11:26.650
+Amy Kate Bordenave: So that gets… that downloads a .osm.pbf file.
+
+549
+01:11:28.430 --> 01:11:31.409
+Amy Kate Bordenave: Which we now want to get into…
+
+550
+01:11:31.980 --> 01:11:37.369
+Amy Kate Bordenave: OSW format. So, we're gonna use the TDEI portal.
+
+551
+01:11:38.160 --> 01:11:47.099
+Amy Kate Bordenave: And this goes to Anat's point, how the TDI portal is going to be used to manage things at the dataset level.
+
+552
+01:11:47.670 --> 01:11:52.269
+Amy Kate Bordenave: So we're not looking at individual objects here, we're looking at the entire dataset.
+
+553
+01:11:52.600 --> 01:11:55.670
+Amy Kate Bordenave: And we're gonna open up the TDI portal.
+
+554
+01:11:56.600 --> 01:12:12.410
+Amy Kate Bordenave: And we want to convert, so there's a convert job in the DDEI portal that can take in the OSM PBF file that we just downloaded and convert it to,
+
+555
+01:12:12.980 --> 01:12:14.630
+Amy Kate Bordenave: zip.
+
+556
+01:12:14.990 --> 01:12:20.450
+Amy Kate Bordenave: which we can then upload. So we're gonna open up the TDEI portal.
+
+557
+01:12:23.230 --> 01:12:29.549
+Amy Kate Bordenave: I'm gonna do this in the workspaces testing project group, just as a demo.
+
+558
+01:12:30.860 --> 01:12:36.209
+Amy Kate Bordenave: We go to jobs, which we covered in a…
+
+559
+01:12:36.390 --> 01:12:43.350
+Amy Kate Bordenave: previous talk, but if you want, this also has a link to…
+
+560
+01:12:44.140 --> 01:12:50.310
+Amy Kate Bordenave: the TDEI portal user manual job section, which explains all the details.
+
+561
+01:12:50.500 --> 01:12:53.979
+Amy Kate Bordenave: of how to use these things. But we're gonna…
+
+562
+01:12:54.080 --> 01:12:57.529
+Amy Kate Bordenave: gloss over that, because it is pretty straightforward.
+
+563
+01:12:57.700 --> 01:13:04.140
+Amy Kate Bordenave: Log in to TDI Portal, go to jobs, Select Create Job.
+
+564
+01:13:04.390 --> 01:13:05.890
+Amy Kate Bordenave: We're gonna convert.
+
+565
+01:13:07.270 --> 01:13:17.049
+Amy Kate Bordenave: And the source format is going to be OSM, the target format is OSW, and we want to attach…
+
+566
+01:13:17.820 --> 01:13:19.470
+Amy Kate Bordenave: What we just downloaded.
+
+567
+01:13:19.700 --> 01:13:22.150
+Amy Kate Bordenave: And then hit… Create.
+
+568
+01:13:23.360 --> 01:13:28.359
+Amy Kate Bordenave: And so that will create the job, which is now… here.
+
+569
+01:13:28.850 --> 01:13:31.969
+Amy Kate Bordenave: This is a pretty small one, so it shouldn't take too long.
+
+570
+01:13:33.320 --> 01:13:36.119
+Amy Kate Bordenave: But, just following these…
+
+571
+01:13:36.590 --> 01:13:46.459
+Amy Kate Bordenave: You go to the job page, wait for the dataset reformat job to finish, and then we're going to download the result.
+
+572
+01:13:55.040 --> 01:13:58.090
+Amy Kate Bordenave: So, this is still running, let's just give it a second.
+
+573
+01:14:07.680 --> 01:14:19.319
+Amy Kate Bordenave: And the plan here is we're going to go into workspaces, we're going to… Create a workspace.
+
+574
+01:14:19.640 --> 01:14:22.710
+Amy Kate Bordenave: And we're gonna do it from File.
+
+575
+01:14:37.610 --> 01:14:45.259
+Amy Kate Bordenave: And so you select your settings here, I'm just gonna put it into workspaces Testing. It's an open sidewalks.
+
+576
+01:14:45.950 --> 01:14:46.990
+Amy Kate Bordenave: format.
+
+577
+01:14:47.420 --> 01:14:55.219
+Amy Kate Bordenave: data file… We're gonna click refresh, looks like it's still converting it. Shouldn't take too much longer.
+
+578
+01:15:16.180 --> 01:15:28.190
+Amy Kate Bordenave: And this does note that this can take anywhere from a few seconds to several minutes. It really depends on the size of the area and how densely mapped it is.
+
+579
+01:15:56.150 --> 01:15:58.250
+Amy Kate Bordenave: Okay, the job is complete.
+
+580
+01:15:58.950 --> 01:16:03.939
+Amy Kate Bordenave: And the result is that this download result button appears.
+
+581
+01:16:04.380 --> 01:16:08.900
+Amy Kate Bordenave: And I'm gonna click that. That downloads this zip file.
+
+582
+01:16:09.370 --> 01:16:17.119
+Amy Kate Bordenave: Which now, when I go… Into workspaces, that's the file I'm gonna pick, so that's zip.
+
+583
+01:16:18.820 --> 01:16:27.239
+Amy Kate Bordenave: And we give it a name, gave it a project group, identify that it's an open sidewalks file, and we're gonna create the workspace.
+
+584
+01:16:29.000 --> 01:16:32.440
+Amy Kate Bordenave: So this also will likely take a couple minutes.
+
+585
+01:16:32.560 --> 01:16:42.050
+Amy Kate Bordenave: But in the background, it's kind of processing things and setting up the workspace for us.
+
+586
+01:16:42.830 --> 01:16:44.929
+Amy Kate Bordenave: Any… any questions?
+
+587
+01:16:49.380 --> 01:16:52.709
+Amy Kate Bordenave: And you'll see in a minute, once it's done, I'll open it up and show…
+
+588
+01:16:53.000 --> 01:16:58.050
+Amy Kate Bordenave: How that can now be edited in workspaces.
+
+589
+01:18:14.130 --> 01:18:18.090
+Amy Kate Bordenave: Anat, do you have ideas about…
+
+590
+01:18:18.410 --> 01:18:23.710
+Amy Kate Bordenave: What teams you want set up for the GAD workspaces?
+
+591
+01:18:24.430 --> 01:18:33.560
+Anat Caspi: Yeah, just Bremerton, Seattle, and Tacoma, but we don't… unfortunately, different people signed up for all three locations, like.
+
+592
+01:18:34.730 --> 01:18:44.230
+Anat Caspi: Dorian signed up for Bremerton and Tacoma, but clearly he's gonna be in Tacoma. So I think they didn't… we can't tell until the day of, is the issue.
+
+593
+01:18:49.600 --> 01:18:57.480
+Anat Caspi: But Kunal's gonna reach out to folks today, so maybe we will get a little bit better information.
+
+594
+01:19:04.650 --> 01:19:06.470
+Amy Kate Bordenave: Now that this… oh, sorry, go ahead.
+
+595
+01:19:06.910 --> 01:19:11.690
+Anat Caspi: I'm wondering if it makes sense to just create the teams and then add people to them.
+
+596
+01:19:12.530 --> 01:19:13.570
+Anat Caspi: Later.
+
+597
+01:19:15.210 --> 01:19:17.059
+Amy Kate Bordenave: That made sense to me.
+
+598
+01:19:19.450 --> 01:19:24.670
+Anat Caspi: But you… can you do it through this interface, or right now it's all just backend?
+
+599
+01:19:25.020 --> 01:19:34.370
+Amy Kate Bordenave: I believe right now it's all backend. Definitely can't do it in… Prod.
+
+600
+01:19:37.390 --> 01:19:44.640
+Anat Caspi: Okay. I mean, it's not a big deal. It's just, it will help us when we do… the leaderboard…
+
+601
+01:19:45.050 --> 01:19:46.240
+Anat Caspi: thing…
+
+602
+01:19:47.440 --> 01:19:53.529
+Anat Caspi: We'd be able to show, like, which team is doing what.
+
+603
+01:19:53.980 --> 01:19:54.790
+Amy Kate Bordenave: I see.
+
+604
+01:19:56.450 --> 01:19:57.780
+Amy Kate Bordenave: Alright.
+
+605
+01:19:58.020 --> 01:20:02.320
+Anat Caspi: What I discovered yesterday was that the leaderboard,
+
+606
+01:20:02.490 --> 01:20:10.929
+Anat Caspi: Yes, it's behind a security wall, which is great, but also, there's no linking to a particular view?
+
+607
+01:20:11.600 --> 01:20:12.920
+Amy Kate Bordenave: Correct, yeah.
+
+608
+01:20:12.920 --> 01:20:17.560
+Anat Caspi: So… everybody has to navigate,
+
+609
+01:20:18.240 --> 01:20:21.439
+Anat Caspi: So that's another thing we should maybe want to think about.
+
+610
+01:20:21.680 --> 01:20:23.660
+Anat Caspi: Because if we want to post…
+
+611
+01:20:24.610 --> 01:20:29.630
+Anat Caspi: Updates and things, like, sometimes it's easier to have a unique link, you know?
+
+612
+01:20:30.900 --> 01:20:32.020
+Amy Kate Bordenave: I agree.
+
+613
+01:20:32.500 --> 01:20:33.180
+Anat Caspi: Yeah.
+
+614
+01:20:34.040 --> 01:20:40.619
+Amy Kate Bordenave: Alright, so we now see that this has finished creating.
+
+615
+01:20:41.280 --> 01:20:46.270
+Amy Kate Bordenave: So we've got this open Covington…
+
+616
+01:20:47.470 --> 01:21:03.519
+Amy Kate Bordenave: workspace, which now has all of the same functions. So you could go into settings, if you wanted people to contribute via a vScout route, you could turn this on and set a quest definition, set a URL,
+
+617
+01:21:03.650 --> 01:21:08.340
+Amy Kate Bordenave: the team's… One, as we mentioned, is currently blank.
+
+618
+01:21:11.430 --> 01:21:15.660
+Amy Kate Bordenave: But from… This one.
+
+619
+01:21:16.090 --> 01:21:17.420
+Amy Kate Bordenave: We edit…
+
+620
+01:21:21.120 --> 01:21:28.500
+Amy Kate Bordenave: And look for Covington… I don't remember exactly… oh, here it is. Okay.
+
+621
+01:21:30.840 --> 01:21:33.479
+Amy Kate Bordenave: We now have the data that…
+
+622
+01:21:34.190 --> 01:21:37.829
+Amy Kate Bordenave: is an OSM directly available here?
+
+623
+01:21:38.680 --> 01:21:40.150
+Amy Kate Bordenave: in workspaces.
+
+624
+01:21:42.940 --> 01:21:44.380
+Amy Kate Bordenave: So, it takes a minute.
+
+625
+01:21:44.560 --> 01:21:49.180
+Amy Kate Bordenave: But overall, hopefully a… Pretty painless.
+
+626
+01:21:50.520 --> 01:21:57.410
+Amy Kate Bordenave: Painless process of getting things from OSM into workspaces.
+
+627
+01:22:08.240 --> 01:22:16.110
+Amy Kate Bordenave: And then, since we're here, I can actually demo the… Deletion of a workspace.
+
+628
+01:22:16.490 --> 01:22:17.340
+Anat Caspi: The what?
+
+629
+01:22:17.340 --> 01:22:20.510
+Amy Kate Bordenave: I said the deletion of a workspace.
+
+630
+01:22:21.540 --> 01:22:28.170
+Amy Kate Bordenave: It's under Settings… You can click delete, but then you have to confirm by typing in… Delete.
+
+631
+01:22:29.700 --> 01:22:30.830
+Amy Kate Bordenave: I'm not clicking.
+
+632
+01:22:39.000 --> 01:22:40.010
+Amy Kate Bordenave: That's it?
+
+633
+01:22:44.920 --> 01:22:48.420
+Amy Kate Bordenave: I mentioned it, so I guess we won't go through it.
+
+634
+01:22:49.010 --> 01:22:50.820
+Amy Kate Bordenave: But there's also…
+
+635
+01:22:51.350 --> 01:23:01.630
+Amy Kate Bordenave: a way to export a workspace. This is really targeted at the developers, but for example, if you needed to
+
+636
+01:23:02.330 --> 01:23:08.450
+Amy Kate Bordenave: dump the contents in OSM format from a workspace, say, to use it
+
+637
+01:23:08.660 --> 01:23:15.830
+Amy Kate Bordenave: to use, like, a different tool for editing it, we do have a guide that covers that as well.
+
+638
+01:23:16.830 --> 01:23:25.119
+Amy Kate Bordenave: And there's, there's a script in the TDEI tools repository that I manage.
+
+639
+01:23:25.300 --> 01:23:32.300
+Amy Kate Bordenave: which will… It's this workspace export script.
+
+640
+01:23:33.400 --> 01:23:36.770
+Amy Kate Bordenave: So people can save the data locally if they need to.
+
+641
+01:23:38.130 --> 01:23:41.150
+Amy Kate Bordenave: So yeah, I won't go through all the details there, but…
+
+642
+01:23:42.200 --> 01:23:52.099
+Amy Kate Bordenave: it is possible to directly export from workspaces into a local file without exporting to TDEI
+
+643
+01:23:53.350 --> 01:23:55.979
+Amy Kate Bordenave: And as a, as a published dataset.
+
+644
+01:24:16.920 --> 01:24:25.650
+Amy Kate Bordenave: Alright, thanks for… Joining for this overview of workspaces, I would be…
+
+645
+01:24:26.070 --> 01:24:32.999
+Amy Kate Bordenave: especially happy to hear, from Mara or Tanisha, if you have any
+
+646
+01:24:33.240 --> 01:24:44.109
+Amy Kate Bordenave: suggestions, or think that certain things need better documentation, or better explanations, that would be really helpful.
+
+647
+01:24:44.700 --> 01:24:45.830
+Amy Kate Bordenave: Just let me know.
+
+648
+01:24:51.460 --> 01:24:52.040
+Amara Schermerhorn: Thank you.
+
+649
+01:24:52.040 --> 01:24:57.110
+Anat Caspi: Yeah, so I have a bunch of questions that I put up,
+
+650
+01:24:57.870 --> 01:25:04.759
+Anat Caspi: I would like to check it in as stubs to the wiki. What are your thoughts?
+
+651
+01:25:08.340 --> 01:25:11.959
+Amy Kate Bordenave: Well, I'm sorry, can you say that again?
+
+652
+01:25:12.300 --> 01:25:16.920
+Anat Caspi: I have a bunch of user questions that I would like to put up on…
+
+653
+01:25:17.030 --> 01:25:21.670
+Anat Caspi: As stubs on the wiki, so that we can just fill in those pages.
+
+654
+01:25:22.870 --> 01:25:24.669
+Amy Kate Bordenave: as steps on the wiki?
+
+655
+01:25:24.670 --> 01:25:25.820
+Anat Caspi: Stubs. Stubs.
+
+656
+01:25:25.820 --> 01:25:31.180
+Amy Kate Bordenave: Oh, okay, I see. Thank you. I couldn't make that out.
+
+657
+01:25:33.030 --> 01:25:36.580
+Amy Kate Bordenave: The… well, like, what are… what are the… what are the questions?
+
+658
+01:25:42.550 --> 01:25:46.270
+Anat Caspi: So, Oh…
+
+659
+01:25:50.680 --> 01:25:52.980
+Anat Caspi: I have about 300 of them.
+
+660
+01:25:53.270 --> 01:25:55.520
+Anat Caspi: Let's see…
+
+661
+01:26:01.040 --> 01:26:09.580
+Anat Caspi: So, largely, they're on, like, there's a getting started bunch of questions, there's the user manual,
+
+662
+01:26:09.720 --> 01:26:14.180
+Anat Caspi: Like, sort of ex… expansion,
+
+663
+01:26:14.630 --> 01:26:19.570
+Anat Caspi: There's, then… let's see, okay.
+
+664
+01:26:22.540 --> 01:26:24.440
+Anat Caspi: Hmm, I see.
+
+665
+01:26:25.230 --> 01:26:26.630
+Anat Caspi: Where's my…
+
+666
+01:26:42.450 --> 01:26:43.880
+Anat Caspi: Oh, shoot.
+
+667
+01:26:50.750 --> 01:26:52.200
+Anat Caspi: Okay…
+
+668
+01:26:54.430 --> 01:27:07.789
+Anat Caspi: So, starting with, like, what is OS Connect? And then there are, like, 10 questions on that, and then understanding the viewer, there are, like, 15 questions on that. Types of things are, like…
+
+669
+01:27:07.800 --> 01:27:14.839
+Anat Caspi: what am I looking at in this viewer? What do the colors mean? What are different map layers? What are some sidewalks?
+
+670
+01:27:15.550 --> 01:27:18.529
+Anat Caspi: And why are some of them disconnected?
+
+671
+01:27:18.950 --> 01:27:25.319
+Anat Caspi: Why do some areas appear incomplete? What does this selected feature represent?
+
+672
+01:27:25.920 --> 01:27:33.560
+Anat Caspi: How do I search for a jurisdiction? How do I download data?
+
+673
+01:27:34.770 --> 01:27:40.569
+Anat Caspi: Which, some of them have the manual work, but there are no, like, direct questions on those.
+
+674
+01:27:41.750 --> 01:27:49.410
+Anat Caspi: And so, when we get to the workspaces…
+
+675
+01:28:07.140 --> 01:28:13.419
+Anat Caspi: Scroll down… But the question is still functional. How do you want this?
+
+676
+01:28:20.540 --> 01:28:24.319
+Amy Kate Bordenave: Do you, do you have the questions list in a doc?
+
+677
+01:28:25.690 --> 01:28:26.150
+Anat Caspi: Sure.
+
+678
+01:28:26.150 --> 01:28:26.790
+Amy Kate Bordenave: Somewhere.
+
+679
+01:28:26.790 --> 01:28:27.420
+Anat Caspi: Yes.
+
+680
+01:28:31.190 --> 01:28:35.229
+Anat Caspi: I actually… it looks like I didn't get a chance to get through the…
+
+681
+01:28:36.070 --> 01:28:40.769
+Anat Caspi: Walk sheds questions. So far, I have mostly other…
+
+682
+01:28:45.970 --> 01:28:55.660
+Anat Caspi: Yeah, so I can give them in a doc, but I'd like us to do this in a systematic way, so what's the right approach?
+
+683
+01:29:00.810 --> 01:29:06.000
+Amy Kate Bordenave: I feel, I feel like I need to see the questions to understand the problem.
+
+684
+01:29:07.780 --> 01:29:08.570
+Anat Caspi: Okay.
+
+685
+01:29:17.590 --> 01:29:24.410
+Anat Caspi: there… basically, like, FAQ type of questions, and…
+
+686
+01:29:24.600 --> 01:29:27.239
+Anat Caspi: My sense is that we want…
+
+687
+01:29:27.700 --> 01:29:43.819
+Anat Caspi: to change around the Zensical TOML, to kind of accommodate a more journey type of approach, as a… the manuals are great, they're there. As you had pointed out, they have a very specific function.
+
+688
+01:29:44.120 --> 01:29:46.109
+Anat Caspi: But they're not serving.
+
+689
+01:29:47.340 --> 01:29:48.180
+Anat Caspi: R.
+
+690
+01:29:48.570 --> 01:29:49.680
+Anat Caspi: Customers.
+
+691
+01:29:50.350 --> 01:29:53.519
+Anat Caspi: Because they don't know how to approach manual stuff.
+
+692
+01:29:53.850 --> 01:29:59.729
+Anat Caspi: So we need to approach things with a kind of a question-forward kind of way.
+
+693
+01:30:13.930 --> 01:30:18.519
+Anat Caspi: Alright, think about it, and we can, devise a plan.
+
+694
+01:30:19.330 --> 01:30:21.849
+Amy Kate Bordenave: Well, do you have the link?
+
+695
+01:30:22.950 --> 01:30:23.860
+Anat Caspi: the link?
+
+696
+01:30:24.030 --> 01:30:25.939
+Amy Kate Bordenave: To the list of questions?
+
+697
+01:30:26.960 --> 01:30:28.199
+Anat Caspi: No, I haven't.
+
+698
+01:30:28.350 --> 01:30:30.850
+Anat Caspi: locally, for me, I can put it up.
+
+699
+01:30:31.180 --> 01:30:31.860
+Anat Caspi: Okay.
+
+700
+01:30:33.290 --> 01:30:35.770
+Anat Caspi: Okay, I'll send it to you, I'll put it in a ticket.
+
+701
+01:30:41.280 --> 01:30:48.500
+Anat Caspi: But more importantly, like, we need to think about the systemic way to float these. It's not just about, like, what is the question?
+
+702
+01:30:58.680 --> 01:31:06.329
+Anat Caspi: I think we're done with this session. Brian, if you don't mind staying behind, I have…
+
+703
+01:31:06.510 --> 01:31:08.309
+Anat Caspi: I would like that.
+
+704
+01:31:08.460 --> 01:31:15.170
+Anat Caspi: To go back to the QAQC report and understand the recent changes, if you don't mind?
+
+705
+01:31:16.840 --> 01:31:18.469
+Ryan Liu: Oh, sir.
+
+706
+01:31:20.700 --> 01:31:21.430
+Anat Caspi: Cool.
+
+707
+01:31:22.950 --> 01:31:29.580
+Anat Caspi: So I… I do want to see… do you have examples of the two… different…
+
+708
+01:31:29.970 --> 01:31:34.540
+Anat Caspi: Before and after reports on the betweenness.
+
+709
+01:31:38.860 --> 01:31:54.230
+Ryan Liu: I'll try to find an example of, like, one of the older ones. You know, they update whenever we run them, so… but… but I'll… I'll see if I still have some of those, older versions.
+
+710
+01:31:56.050 --> 01:31:58.840
+Anat Caspi: I have the gold one, if.
+
+711
+01:32:01.710 --> 01:32:05.870
+Ryan Liu: That's probably the most recent one, right?
+
+712
+01:32:06.030 --> 01:32:08.860
+Anat Caspi: No, I have… I have a whole bunch of them throughout.
+
+713
+01:32:08.860 --> 01:32:09.500
+Ryan Liu: -Oh.
+
+714
+01:32:09.500 --> 01:32:10.229
+Anat Caspi: The last few…
+
+715
+01:32:10.230 --> 01:32:10.760
+Ryan Liu: Great.
+
+716
+01:32:11.180 --> 01:32:16.039
+Ryan Liu: Okay, well, let me see if I haven't…
+
+717
+01:32:16.210 --> 01:32:23.090
+Ryan Liu: older version, as well, that I can… Do some comparisons for.
+
+718
+01:32:39.500 --> 01:32:44.949
+Anat Caspi: I have an April 30th, and let's see what else I have…
+
+719
+01:33:38.950 --> 01:33:46.490
+Anat Caspi: The… okay, how about this? I'll bring it up. So, as far as the most recent one…
+
+720
+01:33:48.260 --> 01:33:52.720
+Anat Caspi: It's on OS Connect or somewhere, or in the Azure blog.
+
+721
+01:33:53.680 --> 01:34:03.340
+Ryan Liu: That should be on the Azure blob. I don't think it's on OS Connect, because, you know, this is a special dataset for,
+
+722
+01:34:03.340 --> 01:34:04.320
+Anat Caspi: school year?
+
+723
+01:34:04.620 --> 01:34:06.979
+Ryan Liu: Yeah, so it's not part of OSC.
+
+724
+01:34:07.080 --> 01:34:07.970
+Ryan Liu: connect.
+
+725
+01:34:08.560 --> 01:34:22.739
+Ryan Liu: But, yeah, I, I pulled up the most recent, version, and it looks like you have the one from April 30th, so we can do some comparisons of those.
+
+726
+01:34:23.830 --> 01:34:26.429
+Anat Caspi: Okay, well, I want to see them side by side, so…
+
+727
+01:34:26.430 --> 01:34:30.840
+Ryan Liu: Well, yeah, well, okay, I can…
+
+728
+01:34:30.840 --> 01:34:33.920
+Anat Caspi: So, I'll email you the one I have.
+
+729
+01:34:34.150 --> 01:34:35.150
+Ryan Liu: Sure.
+
+730
+01:35:04.620 --> 01:35:13.480
+Anat Caspi: Unfortunately, it's the PDF, it's not the… The HTML, but it's okay.
+
+731
+01:35:13.480 --> 01:35:15.240
+Ryan Liu: Oh, yeah, no worries.
+
+732
+01:35:29.050 --> 01:35:30.669
+Anat Caspi: Okay, it's sent to you.
+
+733
+01:35:31.670 --> 01:35:33.630
+Ryan Liu: Okay, perfect.
+
+734
+01:35:39.010 --> 01:35:42.040
+Anat Caspi: Oh my god, what presentation do I have today?
+
+735
+01:35:43.960 --> 01:35:45.790
+Anat Caspi: But not in Grace?
+
+736
+01:35:46.840 --> 01:35:49.480
+Anat Caspi: Oh, boy, okay.
+
+737
+01:35:50.750 --> 01:35:53.820
+Anat Caspi: I need to figure out where I'm presenting.
+
+738
+01:35:55.440 --> 01:35:58.640
+Anat Caspi: Puget Zone Regional Council.
+
+739
+01:36:00.310 --> 01:36:01.850
+Anat Caspi: Oh my gosh.
+
+740
+01:36:07.150 --> 01:36:10.549
+Amy Kate Bordenave: We can move our meeting to whenever you want.
+
+741
+01:36:14.320 --> 01:36:21.230
+Anat Caspi: Yeah, that's not even the worst of my problems right now. Holy crap.
+
+742
+01:36:34.040 --> 01:36:36.389
+Anat Caspi: Zoom. Okay, at least there's a Zoom.
+
+743
+01:36:37.320 --> 01:36:39.330
+Anat Caspi: It's attend.
+
+744
+01:36:41.080 --> 01:36:43.689
+Amy Kate Bordenave: Only got 10 minutes. Yeah. Fuck.
+
+745
+01:36:43.950 --> 01:36:44.970
+Anat Caspi: Okay.
+
+746
+01:36:45.970 --> 01:36:49.689
+Amy Kate Bordenave: Don't worry about me, I have money to fill my time, don't worry about that.
+
+747
+01:36:49.690 --> 01:36:55.450
+Anat Caspi: So… Ryan, if you could just send me a side-by-side comp, so we can see it.
+
+748
+01:36:55.450 --> 01:37:02.060
+Ryan Liu: Sure. Okay, yeah, I don't see the report in my email just yet.
+
+749
+01:37:08.090 --> 01:37:14.499
+Anat Caspi: Alright, it will happen. Okay, I will drop back so I can prep for this thing. Thank you, everybody.
+
+750
+01:37:15.110 --> 01:37:16.800
+Ryan Liu: Yeah, thank you.
+
+751
+01:37:17.460 --> 01:37:18.760
+Anat Caspi: Yes. TeamCare.
+
