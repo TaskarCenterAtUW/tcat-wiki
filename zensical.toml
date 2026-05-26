@@ -113,6 +113,14 @@ combine_header_slug = true
 [project.markdown_extensions.pymdownx.tasklist]
 custom_checkbox = true
 [project.markdown_extensions.pymdownx.tilde]
+[project.markdown_extensions.zensical.extensions.glightbox]
+auto = true
+auto_themed = true
+width = "100%"
+height = "100%"
+skip_classes = []
+auto_caption = true
+caption_position = "left"
 
 #region Extras
 [[project.extra.social]]

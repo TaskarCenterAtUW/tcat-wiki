@@ -150,14 +150,14 @@ At the very bottom of the screen, a horizontal bar displays a color gradient lab
 
 <div class="only-light">
 <img-comparison-slider>
-  <img slot="first" src="../../../resources/images/accessmap/user-manual/interface/incline-bar-min-light.png" alt="Incline bar at minimum settings" />
-  <img slot="second" src="../../../resources/images/accessmap/user-manual/interface/incline-bar-max-light.png" alt="Incline bar at maximum settings" />
+  <img class="off-glb" slot="first" src="../../../resources/images/accessmap/user-manual/interface/incline-bar-min-light.png" alt="Incline bar at minimum settings" />
+  <img class="off-glb" slot="second" src="../../../resources/images/accessmap/user-manual/interface/incline-bar-max-light.png" alt="Incline bar at maximum settings" />
 </img-comparison-slider>
 </div>
 <div class="only-dark">
 <img-comparison-slider>
-  <img slot="first" src="../../../resources/images/accessmap/user-manual/interface/incline-bar-min-dark.png" alt="Incline bar at minimum settings" />
-  <img slot="second" src="../../../resources/images/accessmap/user-manual/interface/incline-bar-max-dark.png" alt="Incline bar at maximum settings" />
+  <img class="off-glb" slot="first" src="../../../resources/images/accessmap/user-manual/interface/incline-bar-min-dark.png" alt="Incline bar at minimum settings" />
+  <img class="off-glb" slot="second" src="../../../resources/images/accessmap/user-manual/interface/incline-bar-max-dark.png" alt="Incline bar at maximum settings" />
 </img-comparison-slider>
 </div>
 
@@ -201,14 +201,14 @@ At the bottom of the sidebar (below the profile panel), the **Trip options** sec
 
 <div class="only-light">
 <img-comparison-slider>
-  <img slot="first" src="../../../resources/images/accessmap/user-manual/interface/time-open-light.png" alt="Route through building when open" />
-  <img slot="second" src="../../../resources/images/accessmap/user-manual/interface/time-closed-light.png" alt="Route around building when closed" />
+  <img class="off-glb" slot="first" src="../../../resources/images/accessmap/user-manual/interface/time-open-light.png" alt="Route through building when open" />
+  <img class="off-glb" slot="second" src="../../../resources/images/accessmap/user-manual/interface/time-closed-light.png" alt="Route around building when closed" />
 </img-comparison-slider>
 </div>
 <div class="only-dark">
 <img-comparison-slider>
-  <img slot="first" src="../../../resources/images/accessmap/user-manual/interface/time-open-dark.png" alt="Route through building when open" />
-  <img slot="second" src="../../../resources/images/accessmap/user-manual/interface/time-closed-dark.png" alt="Route around building when closed" />
+  <img class="off-glb" slot="first" src="../../../resources/images/accessmap/user-manual/interface/time-open-dark.png" alt="Route through building when open" />
+  <img class="off-glb" slot="second" src="../../../resources/images/accessmap/user-manual/interface/time-closed-dark.png" alt="Route around building when closed" />
 </img-comparison-slider>
 </div>
 

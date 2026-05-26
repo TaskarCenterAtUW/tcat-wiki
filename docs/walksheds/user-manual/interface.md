@@ -110,14 +110,14 @@ At the very bottom of the screen, a horizontal bar displays a color gradient lab
 
 <div class="only-light">
 <img-comparison-slider>
-  <img slot="first" src="../../../resources/images/walksheds/user-manual/interface/incline-bar-min-light.png" alt="Incline bar at minimum steepness settings" />
-  <img slot="second" src="../../../resources/images/walksheds/user-manual/interface/incline-bar-max-light.png" alt="Incline bar at maximum steepness settings" />
+  <img class="off-glb" slot="first" src="../../../resources/images/walksheds/user-manual/interface/incline-bar-min-light.png" alt="Incline bar at minimum steepness settings" />
+  <img class="off-glb" slot="second" src="../../../resources/images/walksheds/user-manual/interface/incline-bar-max-light.png" alt="Incline bar at maximum steepness settings" />
 </img-comparison-slider>
 </div>
 <div class="only-dark">
 <img-comparison-slider>
-  <img slot="first" src="../../../resources/images/walksheds/user-manual/interface/incline-bar-min-dark.png" alt="Incline bar at minimum steepness settings" />
-  <img slot="second" src="../../../resources/images/walksheds/user-manual/interface/incline-bar-max-dark.png" alt="Incline bar at maximum steepness settings" />
+  <img class="off-glb" slot="first" src="../../../resources/images/walksheds/user-manual/interface/incline-bar-min-dark.png" alt="Incline bar at minimum steepness settings" />
+  <img class="off-glb" slot="second" src="../../../resources/images/walksheds/user-manual/interface/incline-bar-max-dark.png" alt="Incline bar at maximum steepness settings" />
 </img-comparison-slider>
 </div>
 
