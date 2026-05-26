@@ -150,14 +150,14 @@ At the very bottom of the screen, a horizontal bar displays a color gradient lab
 
 <div class="only-light">
 <img-comparison-slider>
-  <img class="off-glb" slot="first" src="../../../resources/images/accessmap/user-manual/interface/incline-bar-min-light.png" alt="Incline bar at minimum settings" />
-  <img class="off-glb" slot="second" src="../../../resources/images/accessmap/user-manual/interface/incline-bar-max-light.png" alt="Incline bar at maximum settings" />
+  <img class="off-glb" slot="first" src="../../resources/images/accessmap/user-manual/interface/incline-bar-min-light.png" alt="Incline bar at minimum settings" />
+  <img class="off-glb" slot="second" src="../../resources/images/accessmap/user-manual/interface/incline-bar-max-light.png" alt="Incline bar at maximum settings" />
 </img-comparison-slider>
 </div>
 <div class="only-dark">
 <img-comparison-slider>
-  <img class="off-glb" slot="first" src="../../../resources/images/accessmap/user-manual/interface/incline-bar-min-dark.png" alt="Incline bar at minimum settings" />
-  <img class="off-glb" slot="second" src="../../../resources/images/accessmap/user-manual/interface/incline-bar-max-dark.png" alt="Incline bar at maximum settings" />
+  <img class="off-glb" slot="first" src="../../resources/images/accessmap/user-manual/interface/incline-bar-min-dark.png" alt="Incline bar at minimum settings" />
+  <img class="off-glb" slot="second" src="../../resources/images/accessmap/user-manual/interface/incline-bar-max-dark.png" alt="Incline bar at maximum settings" />
 </img-comparison-slider>
 </div>
 
