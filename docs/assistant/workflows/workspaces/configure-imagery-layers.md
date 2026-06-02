@@ -65,8 +65,8 @@ Procedural detail and screenshots: [Workspace Settings](../../../workspaces/user
 
 - The definition is a **list of basemap options** (names + tile template URLs), following the [AVIV ScoutRoute Custom Imagery schema](https://raw.githubusercontent.com/TaskarCenterAtUW/asr-imagery-list/refs/heads/main/schema/schema.json).
 - Example structure: [asr-imagery-list example](https://raw.githubusercontent.com/TaskarCenterAtUW/asr-imagery-list/refs/heads/main/examples/example.json).
-- Workshop demos included a minimal list using **standard OSM raster basemaps**; jurisdictions can add orthophotos or other **raster tile** sources they are licensed to use.
-- **Raster tiles only** for custom imagery at the time of the workshop (image tiles, not vector style JSON). Vector vs raster distinction matters for OSM editing elsewhere, but custom workspace imagery is for **background visualization**, not selectable map objects.
+- demos included a minimal list using **standard OSM raster basemaps**; jurisdictions can add orthophotos or other **raster tile** sources they are licensed to use.
+- **Raster tiles only** for custom imagery (image tiles, not vector style JSON). Vector vs raster distinction matters for OSM editing elsewhere, but custom workspace imagery is for **background visualization**, not selectable map objects.
 
 **Who sees which layers**
 
@@ -76,13 +76,13 @@ Procedural detail and screenshots: [Workspace Settings](../../../workspaces/user
 **Paste vs URL (product gap)**
 
 - **Quest definitions** can be pasted in full or loaded from an external URL.
-- **Custom imagery** must be pasted **in full** in the Imagery JSON box; a **custom imagery URL** field was not available at workshop time (planned UX improvement). Do not tell users they can point Settings at a GitHub HTML page instead of raw JSON—invalid JSON can break workspace configuration (similar lesson raised for quest URLs).
+- **Custom imagery** must be pasted **in full** in the Imagery JSON box; a **custom imagery URL** (is a planned UX improvement). Do not tell users they can point Settings at a GitHub HTML page instead of raw JSON—invalid JSON can break workspace configuration (similar lesson raised for quest URLs).
 
 **Licensing and access**
 
 - Teams may self-host definitions in their own repos or paste project-specific JSON.
 - Tile endpoints must be reachable by client apps; confirm whether URLs require API keys, VPN, or referer restrictions with your provider and TCAT support.
-- Prefer sources you have rights to redistribute to field volunteers (workshop highlighted public-domain examples).
+- Prefer sources you have rights to redistribute to field volunteers.
 
 **Relationship to other editing surfaces**
 
@@ -100,7 +100,7 @@ Basemaps are **context for human mapping**: you move sidewalk or crossing geomet
 - **Not automatic feature extraction** — New pavement visible on aerials still requires manual digitizing and tagging.
 - **Not guaranteed in Rapid** — Saving imagery JSON does not by itself change which layers appear inside embedded Rapid until product behavior says otherwise; confirm with current release notes.
 - **Not proof of conditions** — A clear aerial does not document ADA compliance, slope, or tactile paving without field verification and attributes.
-- **Not vector tile styling** — Custom imagery list is for raster tile templates, not MapLibre style JSON (vector discussion in the workshop was educational, not the supported custom-imagery format).
+- **Not vector tile styling** — Custom imagery list is for raster tile templates, not MapLibre style JSON.
 
 ## How To Use This
 
