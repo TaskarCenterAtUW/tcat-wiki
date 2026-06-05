@@ -7,6 +7,7 @@
 *[ACM]: Association for Computing Machinery
 *[ADA]: Americans with Disabilities Act
 *[ADS]: Aging and Disability Services
+*[AFN]: Access and Functional Needs
 *[AI]: Artificial Intelligence
 *[AKB]: Assistant Knowledge Base
 *[API]: Application Programming Interface
@@ -36,6 +37,8 @@
 *[Cal-ITP]: California Integrated Travel Project
 *[CC0]: Creative Commons Zero
 *[CDP]: Census-Designated Place
+*[CIEP]: Coalition on Inclusive Emergency Planning
+*[CMIST]: Communications, Maintaining Health, Independence, Support, Safety, and Self-Determination, and Transportation
 *[CMP]: Congestion Management Process
 *[CNG]: Cloud-Native Geospatial Forum
 *[COE]: College of Engineering
@@ -249,6 +252,7 @@
 *[WAGISA]: Washington GIS Association
 *[WAI]: Web Accessibility Initiative
 *[WAI-ARIA]: Web Accessibility Initiative – Accessible Rich Internet Applications
+*[WASILC]: Washington Statewide Independent Living Council
 *[WCAG]: Web Content Accessibility Guidelines
 *[WFS]: Web Feature Service
 *[WGS]: World Geodetic System
