@@ -126,6 +126,5 @@ Embeddings, vector stores, and LLM API calls are **out of scope** for this repos
 
 ## Related
 
-- [RAG README](README.md)
 - [Assistant Knowledge Base overview](index.md)
 - [Dispatch](dispatch.md)

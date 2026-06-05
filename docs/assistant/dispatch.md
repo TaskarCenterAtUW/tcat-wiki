@@ -26,7 +26,6 @@ assistant_behavior:
 related_pages:
   - assistant/index.md
   - assistant/schema.md
-  - assistant/README.md
 ---
 
 # Assistant Knowledge Base — Dispatch
