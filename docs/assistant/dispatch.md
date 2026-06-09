@@ -1,32 +1,36 @@
 ---
 title: Assistant Knowledge Base — Dispatch
+tags:
+    - Assistant
 slug: assistant-dispatch
 doc_type: workflow
 products:
-  - OS-CONNECT
-  - AccessMap
-  - Walksheds
-  - TDEI
-  - Workspaces
+    - OS-CONNECT
+    - AccessMap
+    - Walksheds
+    - TDEI
+    - Workspaces
 audiences:
-  - developer
+    - developer
 topics:
-  - assistant-layer
-  - governance
+    - assistant-layer
+    - governance
 risk_level: low
 authority_level: official
 review_status: draft
 last_reviewed: 2026-06-05
 retrieval_priority: high
 assistant_behavior:
-  allow_inference: false
-  requires_citation: false
-  abstain_if_missing_context: false
-  do_not_claim: []
+    allow_inference: false
+    requires_citation: false
+    abstain_if_missing_context: false
+    do_not_claim: []
 related_pages:
-  - assistant/index.md
-  - assistant/schema.md
+    - assistant/index.md
+    - assistant/schema.md
 ---
+
+<!-- @format -->
 
 # Assistant Knowledge Base — Dispatch
 

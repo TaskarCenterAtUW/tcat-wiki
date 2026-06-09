@@ -1,6 +1,10 @@
 ---
 title: Assistant Knowledge Base article schema
+tags:
+    - Assistant
 ---
+
+<!-- @format -->
 
 # Assistant Knowledge Base article schema
 

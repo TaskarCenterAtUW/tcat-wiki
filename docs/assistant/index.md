@@ -1,39 +1,43 @@
 ---
 title: Assistant Knowledge Base
+tags:
+    - Assistant
 slug: assistant-knowledge-base
 doc_type: concept
 products:
-  - OS-CONNECT
-  - AccessMap
-  - Walksheds
-  - TDEI
-  - Workspaces
+    - OS-CONNECT
+    - AccessMap
+    - Walksheds
+    - TDEI
+    - Workspaces
 audiences:
-  - planner
-  - jurisdiction
-  - advocate
-  - public
+    - planner
+    - jurisdiction
+    - advocate
+    - public
 topics:
-  - assistant-layer
-  - governance
-  - RAG
+    - assistant-layer
+    - governance
+    - RAG
 risk_level: low
 authority_level: explanatory
 review_status: draft
 last_reviewed: 2026-06-04
 retrieval_priority: high
 assistant_behavior:
-  allow_inference: false
-  requires_citation: true
-  abstain_if_missing_context: true
-  do_not_claim:
-    - This layer replaces official product manuals or legal advice.
+    allow_inference: false
+    requires_citation: true
+    abstain_if_missing_context: true
+    do_not_claim:
+        - This layer replaces official product manuals or legal advice.
 related_pages:
-  - assistant/dispatch.md
-  - assistant/schema.md
-  - assistant/policies/public-vs-internal-content.md
-  - assistant/policies/assistant-abstention.md
+    - assistant/dispatch.md
+    - assistant/schema.md
+    - assistant/policies/public-vs-internal-content.md
+    - assistant/policies/assistant-abstention.md
 ---
+
+<!-- @format -->
 
 # Assistant Knowledge Base
 
@@ -68,7 +72,7 @@ Public assistants need concise answers, explicit limits on claims, and pointers 
 
 ## Example
 
-A public assistant receives: *"Can I use OS-CONNECT data for an ADA transition plan?"* It retrieves [os-connect/can-os-connect-be-used-for-ada-transition-planning.md](os-connect/can-os-connect-be-used-for-ada-transition-planning.md), notes `risk_level: medium`, checks `assistant_behavior.abstain_if_missing_context`, and cites the page when answering.
+A public assistant receives: _"Can I use OS-CONNECT data for an ADA transition plan?"_ It retrieves [os-connect/can-os-connect-be-used-for-ada-transition-planning.md](os-connect/can-os-connect-be-used-for-ada-transition-planning.md), notes `risk_level: medium`, checks `assistant_behavior.abstain_if_missing_context`, and cites the page when answering.
 
 ## Assistant Guidance
 

@@ -81,11 +81,11 @@ Concept pages provide definitional grounding; always supplement them with produc
 
 ## Planned Pages
 
-| File                                     | Concept                                                         |
-|------------------------------------------|-----------------------------------------------------------------|
-| `concepts/accessibility-islands.md`      | Isolated accessible zones disconnected from the broader network |
-| `concepts/accessmap-routing.md`          | How AccessMap applies mobility-profile-aware routing            |
-| `concepts/ada-compliance-boundaries.md`  | What assistants may and may not say about ADA compliance        |
-| `concepts/completeness.md`               | What network completeness scores mean and their limits          |
-| `concepts/connected-pedestrian-graph.md` | The routable pedestrian network model underlying TCAT tools     |
-| `concepts/walksheds.md`                  | The walkshed concept: network-based reachability analysis       |
+| File | Concept |
+|------|---------|
+| `concepts/accessibility-islands.md` | Isolated accessible zones disconnected from the broader network |
+| `concepts/accessmap-routing.md` | How AccessMap applies mobility-profile-aware routing |
+| `concepts/ada-compliance-boundaries.md` | What assistants may and may not say about ADA compliance |
+| `concepts/completeness.md` | What network completeness scores mean and their limits |
+| `concepts/connected-pedestrian-graph.md` | The routable pedestrian network model underlying TCAT tools |
+| `concepts/walksheds.md` | The walkshed concept: network-based reachability analysis |
