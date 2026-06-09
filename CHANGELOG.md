@@ -13,6 +13,7 @@ This project adheres to [Semantic Versioning](https://semver.org/) and
 
 - **Core**: Upgrade Zensical to 0.0.45
 - **Core**: Update build and deployment workflow to publish Assistant Knowledge Base pages as both user-facing Zensical-built HTML and raw Markdown
+- **Core**: Add support for "Assistant" page tag
 
 ### Fixes
 
