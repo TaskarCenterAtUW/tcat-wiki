@@ -72,8 +72,6 @@ This page should be fetched fresh rather than cached aggressively; its registry 
 - [Assistant Knowledge Base Overview](index.md)
 - [Article Schema](schema.md)
 
----
-
 ## Status Legend
 
 | Status | Meaning |
@@ -81,8 +79,6 @@ This page should be fetched fresh rather than cached aggressively; its registry 
 | `stub` | Placeholder file exists in RAG staging; content is TODO |
 | `draft` | Content authored; awaiting TCAT editorial review |
 | `reviewed` | Reviewed and approved by TCAT staff |
-
----
 
 ## Registry
 
@@ -93,8 +89,6 @@ This page should be fetched fresh rather than cached aggressively; its registry 
 | `index.md` | concept | draft |
 | `dispatch.md` | workflow | draft |
 | `schema.md` | schema | draft |
-
----
 
 ### `workspaces/` — Workspaces
 
@@ -246,8 +240,6 @@ See [workspaces/index.md](workspaces/index.md) for a richer, annotated listing.
 | `workspaces/workflows/review-workspace-edits.md` | stub |
 | `workspaces/workflows/use-workspaces-for-community-validation.md` | stub |
 | `workspaces/workflows/use-workspaces-for-jurisdiction-stewardship.md` | stub |
-
----
 
 ### `os-connect/` — OS-CONNECT
 
@@ -487,8 +479,6 @@ See [os-connect/index.md](os-connect/index.md) for a richer, annotated listing.
 | `os-connect/why-should-the-public-care-about-pedestrian-data.md` | stub |
 | `os-connect/why-was-os-connect-created.md` | stub |
 
----
-
 ### `accessmap/` — AccessMap
 
 See [accessmap/index.md](accessmap/index.md) for a richer, annotated listing.
@@ -562,8 +552,6 @@ See [accessmap/index.md](accessmap/index.md) for a richer, annotated listing.
 | `accessmap/why-does-accessmap-differ-from-here-routing.md` | stub |
 | `accessmap/why-might-accessmap-choose-a-longer-route.md` | stub |
 
----
-
 ### `walksheds/` — Walksheds
 
 See [walksheds/index.md](walksheds/index.md) for a richer, annotated listing.
@@ -625,8 +613,6 @@ See [walksheds/index.md](walksheds/index.md) for a richer, annotated listing.
 | `walksheds/why-are-some-destinations-excluded.md` | stub |
 | `walksheds/why-are-walksheds-more-accurate-than-straight-line-distance.md` | stub |
 
----
-
 ### `tdei/` — TDEI
 
 | File | Status |
@@ -649,8 +635,6 @@ See [walksheds/index.md](walksheds/index.md) for a richer, annotated listing.
 | `tdei/where-can-i-download-the-data.md` | stub |
 | `tdei/where-do-i-download-os-connect-data.md` | stub |
 | `tdei/why-might-a-test-dataset-appear-in-the-portal.md` | stub |
-
----
 
 ### `support/` — Cross-Product Support
 
@@ -687,8 +671,6 @@ See [walksheds/index.md](walksheds/index.md) for a richer, annotated listing.
 | `support/who-should-external-partners-contact-for-os-connect-data-questions.md` | stub |
 | `support/who-should-external-partners-contact-for-tdei-support.md` | stub |
 
----
-
 ### `concepts/` — Cross-Product Concepts
 
 | File | Status |
@@ -700,8 +682,6 @@ See [walksheds/index.md](walksheds/index.md) for a richer, annotated listing.
 | `concepts/completeness.md` | stub |
 | `concepts/connected-pedestrian-graph.md` | stub |
 | `concepts/walksheds.md` | stub |
-
----
 
 ### `policies/` — Cross-Product Policies
 
@@ -716,8 +696,6 @@ See [walksheds/index.md](walksheds/index.md) for a richer, annotated listing.
 | `policies/public-vs-internal-content.md` | stub |
 | `policies/what-are-the-risks-of-automated-accessibility-analysis.md` | stub |
 
----
-
 ### `workflows/` — Cross-Product Workflows
 
 | File | Status |
@@ -730,8 +708,6 @@ See [walksheds/index.md](walksheds/index.md) for a richer, annotated listing.
 | `workflows/use-os-connect-for-ada-transition-planning.md` | stub |
 | `workflows/use-walksheds-for-safe-routes-to-school.md` | stub |
 
----
-
 ### `glossary/` — Glossary
 
 | File | Status |
@@ -739,13 +715,9 @@ See [walksheds/index.md](walksheds/index.md) for a richer, annotated listing.
 | `glossary/index.md` | stub |
 | `glossary/terms.md` | stub |
 
----
-
 ### `intents/` — Assistant Intents
 
 | File | Status |
 |------|--------|
 | `intents/index.md` | draft |
 | `intents/support-intents.md` | stub |
-
----
