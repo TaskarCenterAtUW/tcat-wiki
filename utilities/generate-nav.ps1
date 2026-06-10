@@ -49,6 +49,7 @@ $script:titleMap = @{
     'workspaces'      = 'Workspaces'
     'index'           = ''
     'os-connect'      = 'OS-CONNECT'
+    'assistant'       = 'Knowledge Base'
 }
 
 <#
