@@ -52,17 +52,17 @@ Assistants may describe what a product shows (for example, a route preference or
 
 ## What This Does Not Mean
 
-- Not permission to dismiss ADA obligations because “the map looks fine.”
+- Not permission to dismiss ADA obligations because "the map looks fine."
 - Not a statement that TCAT or the University of Washington certifies sites.
 - Not guidance on litigation strategy or enforcement.
 
 ## How To Use This
 
-Train retrieval filters to prefer this concept when questions mention “ADA,” “legal,” “liable,” or “compliance proof.” Pair answers with [ADA safety and legal boundaries](../policies/ada-safety-legal-boundaries.md) for policy-level wording.
+Train retrieval filters to prefer this concept when questions mention "ADA," "legal," "liable," or "compliance proof." Pair answers with [ADA safety and legal boundaries](../policies/ada-safety-legal-boundaries.md) for policy-level wording.
 
 ## Example
 
-A user asks, “Does AccessMap prove my city is ADA compliant?” The correct pattern is: “No. AccessMap helps with pedestrian routing preferences; compliance requires professional evaluation of facilities and programs.”
+A user asks, "Does AccessMap prove my city is ADA compliant?" The correct pattern is: "No. AccessMap helps with pedestrian routing preferences; compliance requires professional evaluation of facilities and programs."
 
 ## Assistant Guidance
 

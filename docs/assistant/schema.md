@@ -52,7 +52,7 @@ Body content after frontmatter MUST use this heading scaffold so chunks stay str
 
 1. `# [Page Title]` — matches reader expectation; may mirror `title` frontmatter.
 2. `## Short Answer` — one to three short paragraphs; optimized for direct assistant replies.
-3. `## Significance` — operational, institutional, or public-education importance (**do not** use “Why This Matters” as the heading text).
+3. `## Significance` — operational, institutional, or public-education importance (**do not** use "Why This Matters" as the heading text).
 4. `## What This Means` — practical definition or resolution of the question.
 5. `## What This Does Not Mean` — boundaries, non-claims, common misinterpretations.
 6. `## How To Use This` — planners, jurisdictions, advocates, public users, or integrators.

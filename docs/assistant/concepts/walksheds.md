@@ -53,7 +53,7 @@ Results depend on graph data, cost functions, and scenario settings. Comparing w
 
 ## How To Use This
 
-Use walksheds to explore “who or what is within reach” for scenarios, then ground decisions in local engineering, policy, and engagement.
+Use walksheds to explore "who or what is within reach" for scenarios, then ground decisions in local engineering, policy, and engagement.
 
 ## Example
 

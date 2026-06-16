@@ -40,7 +40,7 @@ Completeness describes how thoroughly pedestrian-relevant features are represent
 
 ## Significance
 
-Jurisdictions use completeness language in snapshots and plans. Misreading it as “we are done” or “we are ADA compliant” creates liability and public trust issues. A shared definition keeps planners, advocates, and residents aligned.
+Jurisdictions use completeness language in snapshots and plans. Misreading it as "we are done" or "we are ADA compliant" creates liability and public trust issues. A shared definition keeps planners, advocates, and residents aligned.
 
 ## What This Means
 
@@ -58,7 +58,7 @@ Use completeness to prioritize data improvement and to communicate progress. Pai
 
 ## Example
 
-A county shows rising completeness after a mapping campaign. That supports “more of the modeled network is present,” not “all sidewalks meet ADA standards.”
+A county shows rising completeness after a mapping campaign. That supports "more of the modeled network is present," not "all sidewalks meet ADA standards."
 
 ## Assistant Guidance
 

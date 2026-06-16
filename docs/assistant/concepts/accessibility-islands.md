@@ -63,7 +63,7 @@ Two dense corridors each have full local sidewalk coverage but lack a tagged cro
 
 ## Assistant Guidance
 
-Use neutral, technical language. If asked “why can’t I get there,” explain islanding as one common cause and suggest reporting data issues through the appropriate product channel. Do not guess at a specific user’s location without data.
+Use neutral, technical language. If asked "why can’t I get there," explain islanding as one common cause and suggest reporting data issues through the appropriate product channel. Do not guess at a specific user’s location without data.
 
 ## Related Concepts
 

@@ -40,7 +40,7 @@ The connected pedestrian graph is the set of walkable edges and nodes—sidewalk
 
 ## Significance
 
-Many public questions about “missing routes” or “wrong walksheds” are graph questions. Explaining the graph shifts conversations from app bugs alone to data stewardship and design standards.
+Many public questions about "missing routes" or "wrong walksheds" are graph questions. Explaining the graph shifts conversations from app bugs alone to data stewardship and design standards.
 
 ## What This Means
 
@@ -53,7 +53,7 @@ Edges carry attributes (slope, surface, crossing type, etc.) that affect whether
 
 ## How To Use This
 
-When scoping improvements, trace graph components and critical connectors. When communicating with the public, distinguish “not routable in the app” from “physically impossible to walk.”
+When scoping improvements, trace graph components and critical connectors. When communicating with the public, distinguish "not routable in the app" from "physically impossible to walk."
 
 ## Example
 

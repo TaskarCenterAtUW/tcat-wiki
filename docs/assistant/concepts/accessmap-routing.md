@@ -39,7 +39,7 @@ AccessMap plans pedestrian routes using the available network, elevation and slo
 
 ## Significance
 
-Users interpret “longer” or “stranger” routes as errors. Explaining multi-criteria routing reduces support burden and sets realistic expectations for public assistants.
+Users interpret "longer" or "stranger" routes as errors. Explaining multi-criteria routing reduces support burden and sets realistic expectations for public assistants.
 
 ## What This Means
 
