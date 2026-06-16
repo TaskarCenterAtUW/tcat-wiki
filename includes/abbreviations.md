@@ -59,7 +59,7 @@
 *[DOT]: Department of Transportation
 *[DSB]: Department of Services for the Blind
 *[DSM]: Digital Surface Model
-*[DTD] Document Type Definition
+*[DTD]: Document Type Definition
 *[DTM]: Digital Terrain Model
 *[DXF]: Drawing Exchange Format
 *[EFA]: Equity Focus Area
@@ -265,5 +265,5 @@
 *[WTSC]: Washington Traffic Safety Commission
 *[WSP]: Washington State Proviso
 *[WWWC]: World Wide Web Consortium
-*[XEE] XML External Entity
+*[XEE]: XML External Entity
 *[XML]: Extensible Markup Language
