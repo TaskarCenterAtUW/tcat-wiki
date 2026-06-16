@@ -14,7 +14,7 @@ This guide explains how to contribute to the TCAT Wiki.
 
 Note that, while minor external contributions are welcome, this guide is primarily intended for use by TCAT/GS staff.
 
-_For a list of all guides on the TCAT Wiki, refer to the [Guides List](guides-list/index.md)._
+_For a list of all guides on the TCAT Wiki, refer to the [Guides List](https://taskarcenteratuw.github.io/tcat-wiki/guides-list/)._
 
 ---
 
