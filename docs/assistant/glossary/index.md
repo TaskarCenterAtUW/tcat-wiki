@@ -21,7 +21,7 @@ topics:
 risk_level: low
 authority_level: explanatory
 review_status: draft
-last_reviewed: 2026-06-09
+last_reviewed: 2026-06-16
 retrieval_priority: medium
 assistant_behavior:
     allow_inference: false
