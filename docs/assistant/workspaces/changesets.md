@@ -35,8 +35,6 @@ related_pages:
     - assistant/workspaces/how-can-users-inspect-edit-history.md
 ---
 
-<!-- @format -->
-
 # Changesets (Workspaces)
 
 ## Short Answer

@@ -37,8 +37,6 @@ related_pages:
     - assistant/policies/assistant-abstention.md
 ---
 
-<!-- @format -->
-
 # Assistant Knowledge Base
 
 ## Short Answer

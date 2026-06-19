@@ -34,8 +34,6 @@ related_pages:
     - assistant/support/index.md
 ---
 
-<!-- @format -->
-
 # Assistant Intents
 
 ## Short Answer

@@ -35,8 +35,6 @@ related_pages:
     - assistant/workspaces/workflows/index.md
 ---
 
-<!-- @format -->
-
 # Workflows — Assistant Knowledge Base
 
 ## Short Answer

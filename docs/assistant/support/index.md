@@ -33,8 +33,6 @@ related_pages:
     - assistant/dispatch.md
 ---
 
-<!-- @format -->
-
 # Support Q&A — Assistant Knowledge Base
 
 ## Short Answer
@@ -57,7 +55,7 @@ Many real-world questions from planners, agencies, and the public do not map cle
 
 ## How To Use This
 
-**Agents**: For ecosystem-comparison questions, retrieve `support/ecosystem-differences-tdei-os-connect-opensidewalks-osm-accessmap-walksheds-gtfs.md` or `support/what-is-the-difference-between-tdei-os-connect-opensidewalks-and-openstreetmap.md`. For Office House / Mappy Hours questions, retrieve `support/when-should-partners-be-referred-to-mappy-hours-versus-direct-technical-support.md`.
+**Agents**: For ecosystem-comparison questions, retrieve `support/ecosystem-differences-tdei-os-connect-opensidewalks-osm-accessmap-walksheds-gtfs.md` or `support/what-is-the-difference-between-tdei-os-connect-opensidewalks-and-openstreetmap.md`. For Office House / Mappy Hours questions, retrieve `support/when-should-someone-be-referred-to-mappy-hours-versus-receiving-direct-support.md`.
 
 ## Example
 

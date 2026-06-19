@@ -4,8 +4,6 @@ tags:
     - Assistant
 ---
 
-<!-- @format -->
-
 # Assistant Knowledge Base article schema
 
 This document is the authoring contract for [`docs/assistant/`](../assistant/index.md) pages that feed `utilities/export_rag.py` and future indexing pipelines. Product manuals elsewhere in `docs/` keep their existing conventions; only assistant-layer pages must follow this schema end-to-end.

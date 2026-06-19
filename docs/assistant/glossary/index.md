@@ -36,8 +36,6 @@ related_pages:
     - assistant/glossary/terms.md
 ---
 
-<!-- @format -->
-
 # Glossary — Assistant Knowledge Base
 
 ## Short Answer

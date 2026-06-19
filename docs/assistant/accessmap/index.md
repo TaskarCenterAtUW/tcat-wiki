@@ -34,8 +34,6 @@ related_pages:
     - assistant/walksheds/index.md
 ---
 
-<!-- @format -->
-
 # AccessMap — Assistant Knowledge Base
 
 ## Short Answer

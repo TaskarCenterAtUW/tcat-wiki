@@ -35,8 +35,6 @@ related_pages:
     - assistant/os-connect/index.md
 ---
 
-<!-- @format -->
-
 # Workspaces — Assistant Knowledge Base
 
 ## Short Answer

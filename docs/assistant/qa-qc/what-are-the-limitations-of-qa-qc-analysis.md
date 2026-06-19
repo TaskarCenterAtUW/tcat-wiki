@@ -39,8 +39,6 @@ related_pages:
     - assistant/os-connect/is-completeness-the-same-as-ada-compliance.md
 ---
 
-<!-- @format -->
-
 # What Are the Limitations of QA/QC Analysis?
 
 ## Short Answer
@@ -85,8 +83,8 @@ Cite this page whenever a user asks whether QA/QC results constitute current or 
 
 ## Related Concepts
 
-- [QA/QC knowledge base](index.md)
+- [OS-CONNECT knowledge base](../os-connect/index.md)
 - [OS-CONNECT knowledge base](../os-connect/index.md)
 - [What is the QA/QC report?](../os-connect/what-is-the-qa-qc-report.md)
 - [What does completeness mean?](../os-connect/what-does-completeness-mean.md)
-- [Is completeness the same as ADA compliance?](../os-connect/is-completeness-the-same-as-ada-compliance.md)
+- [Is completeness the same as ADA compliance?](../os-connect/is-completeness-ada-compliance.md)

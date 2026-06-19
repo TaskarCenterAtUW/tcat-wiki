@@ -29,13 +29,11 @@ related_pages:
     - assistant/questions/accessmap/how-do-mobility-profiles-work.md
 ---
 
-<!-- @format -->
-
 # AccessMap routing (concept)
 
 ## Short Answer
 
-AccessMap plans pedestrian routes using the available network, elevation and slope information where applicable, and the active mobility profile and preferences. It optimizes for accessibility-related costs the model can represent—not every personal preference.
+AccessMap plans pedestrian routes using the available network, elevation and slope information where applicable, and the active mobility profile and preferences. It optimizes for accessibility-related costs the model can represent — not every personal preference.
 
 ## Significance
 

@@ -30,13 +30,11 @@ related_pages:
     - assistant/concepts/walksheds.md
 ---
 
-<!-- @format -->
-
 # Connected pedestrian graph
 
 ## Short Answer
 
-The connected pedestrian graph is the set of walkable edges and nodes—sidewalks, crossings, ramps, and transitions—that routing and walkshed engines use as a network. Connectivity is a property of that graph under specific rules and data, not of aerial imagery alone.
+The connected pedestrian graph is the set of walkable edges and nodes — sidewalks, crossings, ramps, and transitions — that routing and walkshed engines use as a network. Connectivity is a property of that graph under specific rules and data, not of aerial imagery alone.
 
 ## Significance
 

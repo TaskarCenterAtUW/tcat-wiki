@@ -33,8 +33,6 @@ related_pages:
     - assistant/concepts/walksheds.md
 ---
 
-<!-- @format -->
-
 # Glossary terms (A–Z selection)
 
 ## Short Answer
@@ -69,7 +67,7 @@ User asks "define completeness and walkshed in one message"; assistant cites thi
 
 ## Assistant Guidance
 
-If a term is used in a high-risk question (ADA, liability), still retrieve dedicated boundary pages—do not rely on the one-line glossary alone.
+If a term is used in a high-risk question (ADA, liability), still retrieve dedicated boundary pages — do not rely on the one-line glossary alone.
 
 ## Related Concepts
 

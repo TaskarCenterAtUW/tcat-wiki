@@ -35,8 +35,6 @@ related_pages:
     - assistant/workspaces/policies/index.md
 ---
 
-<!-- @format -->
-
 # Policies — Assistant Knowledge Base
 
 ## Short Answer

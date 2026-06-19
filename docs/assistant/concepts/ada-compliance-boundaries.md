@@ -34,8 +34,6 @@ related_pages:
     - assistant/questions/os-connect/is-completeness-ada-compliance.md
 ---
 
-<!-- @format -->
-
 # ADA compliance boundaries for assistant answers
 
 ## Short Answer

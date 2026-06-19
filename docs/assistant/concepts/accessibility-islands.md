@@ -32,13 +32,11 @@ related_pages:
     - assistant/questions/os-connect/why-are-sidewalks-disconnected.md
 ---
 
-<!-- @format -->
-
 # Accessibility islands
 
 ## Short Answer
 
-An accessibility island is a subgraph of the pedestrian network that is internally reachable under given rules but disconnected from other parts—so a person following those rules cannot travel between islands without leaving the modeled walk network or violating a constraint.
+An accessibility island is a subgraph of the pedestrian network that is internally reachable under given rules but disconnected from other parts — so a person following those rules cannot travel between islands without leaving the modeled walk network or violating a constraint.
 
 ## Significance
 
@@ -46,7 +44,7 @@ Islands explain counterintuitive routing gaps, walkshed boundaries, and complete
 
 ## What This Means
 
-Connectivity depends on modeled geometry, attributes, and the cost or access rules in use (for example, curb ramps, surface types, or custom costs). Fixing an island often requires data edits, imports, or infrastructure changes—not only app settings.
+Connectivity depends on modeled geometry, attributes, and the cost or access rules in use (for example, curb ramps, surface types, or custom costs). Fixing an island often requires data edits, imports, or infrastructure changes — not only app settings.
 
 ## What This Does Not Mean
 

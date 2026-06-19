@@ -36,8 +36,6 @@ related_pages:
     - assistant/accessmap/index.md
 ---
 
-<!-- @format -->
-
 # OS-CONNECT — Assistant Knowledge Base
 
 ## Short Answer

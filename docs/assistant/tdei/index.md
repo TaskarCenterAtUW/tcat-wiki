@@ -34,8 +34,6 @@ related_pages:
     - assistant/os-connect/index.md
 ---
 
-<!-- @format -->
-
 # TDEI — Assistant Knowledge Base
 
 ## Short Answer

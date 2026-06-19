@@ -33,8 +33,6 @@ related_pages:
     - assistant/dispatch.md
 ---
 
-<!-- @format -->
-
 # Workspaces Workflows — Assistant Knowledge Base
 
 ## Short Answer

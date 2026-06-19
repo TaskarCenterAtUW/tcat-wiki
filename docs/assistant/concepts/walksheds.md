@@ -30,13 +30,11 @@ related_pages:
     - assistant/workflows/use-walksheds-for-safe-routes-to-school.md
 ---
 
-<!-- @format -->
-
 # Walksheds (concept)
 
 ## Short Answer
 
-A walkshed is the area reachable from an origin along the pedestrian network within a budget—time, distance, or a custom cost—under chosen preferences. It is an analytical footprint, not a regulatory zone by itself.
+A walkshed is the area reachable from an origin along the pedestrian network within a budget — time, distance, or a custom cost — under chosen preferences. It is an analytical footprint, not a regulatory zone by itself.
 
 ## Significance
 

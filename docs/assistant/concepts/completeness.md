@@ -30,13 +30,11 @@ related_pages:
     - assistant/questions/os-connect/is-completeness-ada-compliance.md
 ---
 
-<!-- @format -->
-
 # Completeness (OS-CONNECT and related datasets)
 
 ## Short Answer
 
-Completeness describes how thoroughly pedestrian-relevant features are represented and connected in a dataset for a given area—not whether every real-world condition is captured. It is a data-quality and coverage concept used in reporting and QA/QC, not a legal certification.
+Completeness describes how thoroughly pedestrian-relevant features are represented and connected in a dataset for a given area — not whether every real-world condition is captured. It is a data-quality and coverage concept used in reporting and QA/QC, not a legal certification.
 
 ## Significance
 
