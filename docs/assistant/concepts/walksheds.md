@@ -65,5 +65,5 @@ Always mention dependency on data and settings. For school topics, pair with the
 
 ## Related Concepts
 
-- [What is a walkshed?](../questions/walksheds/what-is-a-walkshed.md)
-- [How are walksheds calculated?](../questions/walksheds/how-are-walksheds-calculated.md)
+- [What is a walkshed?](../walksheds/what-is-a-walkshed.md)
+- [How are walksheds calculated?](../walksheds/how-are-walksheds-calculated.md)

@@ -64,5 +64,5 @@ Invite users to try profile adjustments and report map issues. Avoid debating a 
 
 ## Related Concepts
 
-- [Why does AccessMap choose longer routes?](../questions/accessmap/why-does-accessmap-choose-longer-routes.md)
-- [How do mobility profiles work?](../questions/accessmap/how-do-mobility-profiles-work.md)
+- [Why does AccessMap choose longer routes?](../accessmap/why-does-accessmap-choose-longer-routes.md)
+- [How do mobility profiles work?](../accessmap/how-do-mobility-profiles-work.md)

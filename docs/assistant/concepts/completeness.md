@@ -67,4 +67,4 @@ Define completeness in plain language first. If the user conflates completeness 
 ## Related Concepts
 
 - [ADA compliance boundaries](ada-compliance-boundaries.md)
-- [What does completeness mean?](../questions/os-connect/what-does-completeness-mean.md)
+- [What does completeness mean?](../os-connect/what-does-completeness-mean.md)
