@@ -5,33 +5,35 @@ tags:
 slug: glossary-terms-core
 doc_type: glossary
 products:
-  - OS-CONNECT
-  - AccessMap
-  - Walksheds
-  - TDEI
+    - OS-CONNECT
+    - AccessMap
+    - Walksheds
+    - TDEI
 audiences:
-  - public
-  - planner
-  - jurisdiction
-  - advocate
+    - public
+    - planner
+    - jurisdiction
+    - advocate
 topics:
-  - glossary
+    - glossary
 risk_level: low
 authority_level: explanatory
 review_status: draft
 last_reviewed: 2026-06-16
 retrieval_priority: medium
 assistant_behavior:
-  allow_inference: false
-  requires_citation: true
-  abstain_if_missing_context: false
-  do_not_claim:
-    - Definitions are exhaustive for the entire transportation domain.
+    allow_inference: false
+    requires_citation: true
+    abstain_if_missing_context: false
+    do_not_claim:
+        - Definitions are exhaustive for the entire transportation domain.
 related_pages:
-  - assistant/glossary/index.md
-  - assistant/concepts/completeness.md
-  - assistant/concepts/walksheds.md
+    - assistant/glossary/index.md
+    - assistant/concepts/completeness.md
+    - assistant/concepts/walksheds.md
 ---
+
+<!-- @format -->
 
 # Glossary terms (A–Z selection)
 
