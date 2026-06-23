@@ -127,6 +127,8 @@ This section of the guide explains how to set up a Windows environment for contr
 
         5. [Even Better TOML](https://marketplace.visualstudio.com/items?itemName=tamasfe.even-better-toml)
 
+        6. [Zensical Studio](https://marketplace.visualstudio.com/items?itemName=zensical.zensical-studio)
+
 2. Clone the repository
 
     ```powershell
