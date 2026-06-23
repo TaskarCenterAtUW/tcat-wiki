@@ -7,18 +7,13 @@ Changes to the TCAT Wiki are documented here.
 This project adheres to [Semantic Versioning](https://semver.org/) and
 [Conventional Commits](https://www.conventionalcommits.org/).
 
-## Unreleased v12.0.0 (2026-06-16)
+## v12.0.0 (2026-06-23)
 
 ### Features
 
-- **Core**: Upgrade Zensical to 0.0.45
+- **Core**: Add assistant knowledge base
 - **Core**: Update build and deployment workflow to publish Assistant Knowledge Base pages as both user-facing Zensical-built HTML and raw Markdown
-- **Core**: Add support for "Assistant" page tag
-- **Core**: Add config file for Zensical Studio
-
-### Fixes
-
-- 
+- **Core**: Upgrade Zensical to 0.0.46
 
 ## v11.12.1 (2026-06-02)
 
