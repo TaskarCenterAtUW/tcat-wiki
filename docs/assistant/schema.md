@@ -23,7 +23,7 @@ Every file under `docs/assistant/` SHOULD include all of the following keys. Use
 |-------|------|---------|
 | `title` | string | Human-readable title; used in nav and exports. |
 | `slug` | string | Stable identifier independent of file renames; use lowercase kebab-case. |
-| `doc_type` | enum | One of: `question`, `concept`, `workflow`, `policy`, `glossary`. Workflow pages may also catalog RAG **intents** (see `assistant/intents/`) and helpline **backlogs** (`assistant/backlog/`). |
+| `doc_type` | enum | One of: `question`, `concept`, `workflow`, `policy`, `glossary`, `workshop`. |
 | `products` | list | Subset of product tags, for example `OS-CONNECT`, `AccessMap`, `Walksheds`, `TDEI`, `Workspaces`. |
 | `audiences` | list | Intended readers: `planner`, `jurisdiction`, `advocate`, `public`, etc. |
 | `topics` | list | Free-form retrieval tags (short slugs). |
@@ -34,6 +34,31 @@ Every file under `docs/assistant/` SHOULD include all of the following keys. Use
 | `retrieval_priority` | enum | `low`, `medium`, `high` — suggested ranking boost for retrieval. |
 | `assistant_behavior` | map | See below. |
 | `related_pages` | list | Paths relative to `docs/` (for example `assistant/concepts/completeness.md`). |
+
+### Top-level sections
+
+`aviv-scoutroute`
+`accessmap`
+`iospointmapper`
+`flexr`
+`livability`
+`opensidewalks`
+`os-connect`
+`qa-qc`
+`rapid`
+`tdei`
+`walksheds`
+`waykeeper`
+`workspaces`
+
+### `doc_type` listing
+
+`question`
+`concept`
+`workflow`
+`policy`
+`glossary`
+`workshop`
 
 ### `assistant_behavior` map
 

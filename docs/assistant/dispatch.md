@@ -18,7 +18,7 @@ topics:
 risk_level: low
 authority_level: official
 review_status: draft
-last_reviewed: 2026-06-05
+last_reviewed: 2026-06-18
 retrieval_priority: high
 assistant_behavior:
     allow_inference: false
@@ -225,11 +225,6 @@ See [workspaces/index.md](workspaces/index.md) for a richer, annotated listing.
 | File | Status |
 |------|--------|
 | `workspaces/policies/index.md` | stub |
-| `workspaces/policies/workspace-abstention-boundaries.md` | stub |
-| `workspaces/policies/workspace-data-freshness.md` | stub |
-| `workspaces/policies/workspace-editing-authority.md` | stub |
-| `workspaces/policies/workspace-export-and-publication-caveats.md` | stub |
-| `workspaces/policies/workspace-public-vs-private-data.md` | stub |
 
 #### Workflows
 
@@ -253,7 +248,7 @@ See [os-connect/index.md](os-connect/index.md) for a richer, annotated listing.
 |------|--------|
 | `os-connect/index.md` | draft |
 | `os-connect/can-agencies-provide-their-own-sidewalk-or-curb-ramp-data-for-integration.md` | stub |
-| `os-connect/can-agencies-submit-bulk-corrections-or-priority-areas-for-review.md` | stub |
+| `os-connect/can-agencies-submit-priority-areas-for-review.md` | stub |
 | `os-connect/can-ai-automatically-detect-curb-ramps.md` | stub |
 | `os-connect/can-ai-automatically-identify-pedestrian-barriers.md` | stub |
 | `os-connect/can-ai-estimate-sidewalk-quality.md` | stub |
@@ -318,17 +313,15 @@ See [os-connect/index.md](os-connect/index.md) for a richer, annotated listing.
 | `os-connect/how-do-i-import-os-connect-osw-geojson-into-arcgis.md` | stub |
 | `os-connect/how-do-i-report-an-error-in-os-connect-data.md` | stub |
 | `os-connect/how-do-i-search-for-a-jurisdiction.md` | stub |
-| `os-connect/how-do-opensidewalks-mapping-efforts-relate-to-local-community-mapping-groups-such-as-maptime-la.md` | stub |
+| `os-connect/how-do-opensidewalks-mapping-efforts-relate-to-local-community-mapping-groups-such-as-maptimela.md` | stub |
 | `os-connect/how-does-os-connect-support-accessibility-equity.md` | stub |
 | `os-connect/how-does-os-connect-support-mobility-justice.md` | stub |
 | `os-connect/how-does-this-improve-accessibility.md` | stub |
 | `os-connect/how-does-this-improve-mobility-equity.md` | stub |
 | `os-connect/how-does-this-improve-safety.md` | stub |
-| `os-connect/how-is-a-walkshed-calculated.md` | stub |
 | `os-connect/how-is-os-connect-different-from-openstreetmap.md` | stub |
 | `os-connect/how-is-os-connect-related-to-tdei.md` | stub |
 | `os-connect/how-long-do-corrections-take-to-appear-in-a-public-release.md` | stub |
-| `os-connect/how-long-does-it-take-for-a-correction-to-appear-in-a-public-release.md` | stub |
 | `os-connect/how-often-is-the-dataset-updated.md` | stub |
 | `os-connect/how-should-accessibility-advocates-contribute.md` | stub |
 | `os-connect/how-should-accessibility-tradeoffs-be-communicated.md` | stub |
@@ -344,13 +337,12 @@ See [os-connect/index.md](os-connect/index.md) for a richer, annotated listing.
 | `os-connect/how-should-jurisdictions-maintain-updates.md` | stub |
 | `os-connect/how-should-jurisdictions-participate-in-stewardship.md` | stub |
 | `os-connect/how-should-mpos-contribute.md` | stub |
+| `os-connect/how-should-transit-agencies-contribute.md` | stub |
 | `os-connect/how-should-municipalities-interpret-completeness-scores.md` | stub |
 | `os-connect/how-should-planners-validate-the-data.md` | stub |
-| `os-connect/how-should-separately-mapped-sidewalks-be-associated-with-street-names-in-openstreetmap.md` | stub |
 | `os-connect/how-should-separately-mapped-sidewalks-be-associated-with-street-names-in-osm.md` | stub |
 | `os-connect/how-was-os-connect-collected.md` | stub |
 | `os-connect/is-completeness-ada-compliance.md` | stub |
-| `os-connect/is-completeness-the-same-as-ada-compliance.md` | stub |
 | `os-connect/is-this-a-statewide-inventory.md` | stub |
 | `os-connect/what-accessibility-information-is-missing-from-os-connect.md` | stub |
 | `os-connect/what-additional-data-is-needed-for-ada-transition-plans.md` | stub |
@@ -361,7 +353,6 @@ See [os-connect/index.md](os-connect/index.md) for a richer, annotated listing.
 | `os-connect/what-are-the-different-map-layers.md` | stub |
 | `os-connect/what-are-the-jurisdiction-engagement-pathways.md` | stub |
 | `os-connect/what-are-the-jurisdiction-participation-pathways.md` | stub |
-| `os-connect/what-are-the-limitations-of-qa-qc-analysis.md` | stub |
 | `os-connect/what-are-the-risks-of-relying-solely-on-automated-data.md` | stub |
 | `os-connect/what-attributes-are-collected-for-crossings.md` | stub |
 | `os-connect/what-attributes-are-collected-for-curb-ramps.md` | stub |
@@ -370,7 +361,6 @@ See [os-connect/index.md](os-connect/index.md) for a richer, annotated listing.
 | `os-connect/what-attributes-are-included-for-sidewalks-crossings-curb-ramps-and-related-pedestrian-features.md` | stub |
 | `os-connect/what-attributes-are-required-vs-recommended.md` | stub |
 | `os-connect/what-comes-after-statewide-collection.md` | stub |
-| `os-connect/what-comes-after-statewide-inventories.md` | stub |
 | `os-connect/what-confidence-measures-exist.md` | stub |
 | `os-connect/what-coordinate-system-is-used.md` | stub |
 | `os-connect/what-do-the-colors-mean.md` | stub |
@@ -380,7 +370,6 @@ See [os-connect/index.md](os-connect/index.md) for a richer, annotated listing.
 | `os-connect/what-does-centrality-mean.md` | stub |
 | `os-connect/what-does-completeness-mean.md` | stub |
 | `os-connect/what-does-connected-pedestrian-graph-mean.md` | stub |
-| `os-connect/what-does-connectedness-mean.md` | stub |
 | `os-connect/what-does-crossing-count-mean.md` | stub |
 | `os-connect/what-does-it-mean-that-os-connect-uses-the-opensidewalks-schema.md` | stub |
 | `os-connect/what-does-long-term-stewardship-actually-require-operationally.md` | stub |
@@ -401,10 +390,8 @@ See [os-connect/index.md](os-connect/index.md) for a richer, annotated listing.
 | `os-connect/what-happens-when-jurisdictions-disagree-with-the-data.md` | stub |
 | `os-connect/what-information-should-agencies-include-when-reporting-a-data-issue.md` | stub |
 | `os-connect/what-is-a-crossing-edge.md` | stub |
-| `os-connect/what-is-a-multimodal-accessibility-analysis.md` | stub |
 | `os-connect/what-is-a-node-versus-an-edge.md` | stub |
 | `os-connect/what-is-a-routable-graph.md` | stub |
-| `os-connect/what-is-a-walkshed.md` | stub |
 | `os-connect/what-is-an-accessibility-attribute.md` | stub |
 | `os-connect/what-is-an-accessibility-island.md` | stub |
 | `os-connect/what-is-an-interoperable-accessibility-ecosystem.md` | stub |
@@ -514,7 +501,6 @@ See [accessmap/index.md](accessmap/index.md) for a richer, annotated listing.
 | `accessmap/how-can-cities-use-accessmap-operationally.md` | stub |
 | `accessmap/how-can-schools-use-accessmap.md` | stub |
 | `accessmap/how-can-users-report-routing-problems.md` | stub |
-| `accessmap/how-do-accessibility-profiles-reveal-hidden-inequities.md` | stub |
 | `accessmap/how-do-local-datasets-improve-routing-quality.md` | stub |
 | `accessmap/how-do-missing-curb-ramps-affect-route-selection.md` | stub |
 | `accessmap/how-do-mobility-profiles-work.md` | stub |
@@ -536,7 +522,6 @@ See [accessmap/index.md](accessmap/index.md) for a richer, annotated listing.
 | `accessmap/what-does-avoid-steep-slopes-mean.md` | stub |
 | `accessmap/what-does-edge-betweenness-reveal-operationally.md` | stub |
 | `accessmap/what-does-it-mean-to-route-using-accessibility-preferences.md` | stub |
-| `accessmap/what-does-node-centrality-reveal-operationally.md` | stub |
 | `accessmap/what-future-capabilities-are-planned-for-accessmap.md` | stub |
 | `accessmap/what-happens-when-accessibility-data-is-missing.md` | stub |
 | `accessmap/what-happens-when-sidewalks-are-disconnected.md` | stub |
@@ -554,7 +539,6 @@ See [accessmap/index.md](accessmap/index.md) for a richer, annotated listing.
 | `accessmap/why-does-accessmap-differ-from-apple-maps.md` | stub |
 | `accessmap/why-does-accessmap-differ-from-google-maps.md` | stub |
 | `accessmap/why-does-accessmap-differ-from-here-routing.md` | stub |
-| `accessmap/why-might-accessmap-choose-a-longer-route.md` | stub |
 
 ### `walksheds/` — Walksheds
 
@@ -640,11 +624,20 @@ See [walksheds/index.md](walksheds/index.md) for a richer, annotated listing.
 | `tdei/where-do-i-download-os-connect-data.md` | stub |
 | `tdei/why-might-a-test-dataset-appear-in-the-portal.md` | stub |
 
+### `qa-qc/` — QA/QC
+
+| File | Status |
+|------|--------|
+| `qa-qc/what-are-the-limitations-of-qa-qc-analysis.md` | draft |
+| `qa-qc/what-does-edge-betweenness-reveal-operationally.md` | stub |
+| `qa-qc/what-does-node-centrality-reveal-operationally.md` | stub |
+
 ### `support/` — Cross-Product Support
 
 | File | Status |
 |------|--------|
 | `support/index.md` | draft |
+| `support/helpline-faq-backlog.md` | draft |
 | `support/are-sound-transit-or-other-agencies-publishing-gtfs-pathways-data.md` | stub |
 | `support/can-agencies-or-community-groups-attend-mappy-hours.md` | stub |
 | `support/ecosystem-differences-tdei-os-connect-opensidewalks-osm-accessmap-walksheds-gtfs.md` | stub |
@@ -665,7 +658,6 @@ See [walksheds/index.md](walksheds/index.md) for a richer, annotated listing.
 | `support/what-should-agencies-do-if-gtfs-pathways-data-are-missing-but-pedestrian-data-exist-in-osm-or-os-connect.md` | stub |
 | `support/what-should-staff-avoid-saying-in-external-technical-support-emails.md` | stub |
 | `support/what-should-staff-do-when-they-do-not-know-the-answer-to-a-partner-s-question.md` | stub |
-| `support/when-should-partners-be-referred-to-mappy-hours-versus-direct-technical-support.md` | stub |
 | `support/when-should-someone-be-referred-to-mappy-hours-versus-receiving-direct-support.md` | stub |
 | `support/which-dataset-and-format-should-an-agency-use-for-pedestrian-walkway-data-in-arcgis.md` | stub |
 | `support/which-dataset-should-i-use-if-i-need-pedestrian-walkway-data-for-planning.md` | stub |
@@ -692,6 +684,11 @@ See [walksheds/index.md](walksheds/index.md) for a richer, annotated listing.
 | File | Status |
 |------|--------|
 | `policies/index.md` | draft |
+| `policies/workspace-abstention-boundaries.md` | stub |
+| `policies/workspace-data-freshness.md` | stub |
+| `policies/workspace-editing-authority.md` | stub |
+| `policies/workspace-export-and-publication-caveats.md` | stub |
+| `policies/workspace-public-vs-private-data.md` | stub |
 | `policies/ada-safety-legal-boundaries.md` | stub |
 | `policies/assistant-abstention.md` | stub |
 | `policies/assistant-policy-questions-index.md` | stub |
