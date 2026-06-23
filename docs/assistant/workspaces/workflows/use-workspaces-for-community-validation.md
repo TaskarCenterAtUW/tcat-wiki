@@ -1,23 +1,25 @@
 ---
-title: "What does \"connectedness\" mean?"
+title: "Use Workspaces for community validation"
 tags:
     - Assistant
-slug: what-does-connectedness-mean
-doc_type: question
+slug: use-workspaces-for-community-validation
+doc_type: workflow
 products:
-    - OS-CONNECT
+    - Workspaces
 audiences:
     - planner
     - jurisdiction
     - advocate
     - public
 topics:
-    - connectivity
+    - workspaces
+    - collaborative-accessibility-editing
+    - public-support
 risk_level: medium
-authority_level: explanatory
+authority_level: draft
 review_status: stub
-last_reviewed: ""
-retrieval_priority: high
+last_reviewed:
+retrieval_priority: medium
 assistant_behavior:
     allow_inference: false
     requires_citation: true
@@ -26,7 +28,7 @@ assistant_behavior:
 related_pages: []
 ---
 
-# What does "connectedness" mean?
+# Use Workspaces for community validation
 
 ## Short Answer
 
