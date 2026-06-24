@@ -13,7 +13,7 @@ This site explains how to use the open-source transportation accessibility **too
 ### What's Your Goal?
 
 | If you want to… | Use                                                                                                  |
-|-----------------|------------------------------------------------------------------------------------------------------|
+| :-------------- | :--------------------------------------------------------------------------------------------------- |
 | **View**        | [OS-CONNECT Data Viewer](os-connect/data-viewer/index.md) — a view-only map; no GIS required         |
 | **Download**    | [TDEI Portal](tdei/portal/index.md) — manage accounts, API keys, and access controls                 |
 | **Plan**        | [Walksheds](walksheds/index.md) — scenario planning, project proposal evaluation, and prioritization |

@@ -23,7 +23,7 @@ The `quest_query` attribute of an AVIV ScoutRoute long form quest definition is 
 For example, to get all ways, simply enter the query: `ways`
 
 | Expression                   | \[matches] returns `true` if element...                                                                                   |
-|:-----------------------------|:--------------------------------------------------------------------------------------------------------------------------|
+| :--------------------------- | :------------------------------------------------------------------------------------------------------------------------ |
 | `shop`                       | has a tag with key `shop`                                                                                                 |
 | `!shop`                      | doesn't have a tag with key `shop`                                                                                        |
 | `shop = car`                 | has a tag with key `shop` whose value is `car`                                                                            |
@@ -53,7 +53,7 @@ Note that regexes have to match the whole string, i.e. `~shop\|craft` does not m
 ### Equivalent expressions
 
 | Expression                  | Equivalent Expression                                    |
-|:----------------------------|:---------------------------------------------------------|
+| :-------------------------- | :------------------------------------------------------- |
 | `shop and shop = boat`      | `shop = boat`                                            |
 | `!shop or shop != boat`     | `shop != boat`                                           |
 | `shop = car or shop = boat` | `shop ~ car\|boat`                                       |

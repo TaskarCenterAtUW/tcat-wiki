@@ -28,7 +28,7 @@ The **Jobs** section lists all processing jobs you have access to within the TDE
 Each job entry displays:
 
 | Column           | Description                                                                                                                   |
-|:-----------------|:------------------------------------------------------------------------------------------------------------------------------|
+| :--------------- | :---------------------------------------------------------------------------------------------------------------------------- |
 | **Job Type**     | The type of processing operation                                                                                              |
 | **Job Id**       | A unique numeric identifier; select it to view full job details                                                               |
 | **Submitted By** | The email address of the user who submitted the job                                                                           |
@@ -43,7 +43,7 @@ Each job entry displays:
 The filter bar at the top of the Jobs page provides the following controls:
 
 | Control           | Options                                                                                                                                                                                                                                            |
-|:------------------|:---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| :---------------- | :------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | **Search Job Id** | Search by numeric job ID                                                                                                                                                                                                                           |
 | **Job Type**      | All, Clone Dataset, Confidence - Calculate, Filter Dataset by BBox, Dataset Incline Tag, Dataset Publish, Dataset Reformat, Dataset Road Tag, Dataset Spatial Join, Dataset Union, Dataset Upload, Dataset Validate, Edit Metadata, Quality Metric |
 | **Status**        | All, Completed, Failed, In-Progress, Abandoned                                                                                                                                                                                                     |
@@ -71,7 +71,7 @@ Once submitted, the job will appear in the Jobs list and can be tracked by its J
 The following job types are available in the **Create New Job** form. Select a job type below for details on its inputs.
 
 | Job Type                                                            | Description                                                  |
-|:--------------------------------------------------------------------|:-------------------------------------------------------------|
+| :------------------------------------------------------------------ | :----------------------------------------------------------- |
 | [OSW - Validate](osw-validate.md)                                   | Validate an OSW dataset                                      |
 | [Flex - Validate](flex-validate.md)                                 | Validate a GTFS-Flex dataset                                 |
 | [Pathways - Validate](pathways-validate.md)                         | Validate a GTFS-Pathways dataset                             |

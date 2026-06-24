@@ -32,7 +32,7 @@ The Walksheds tool interface consists of two main areas: the **sidebar** on the 
 The left sidebar is the primary control panel for the Walksheds tool. It contains the following tabs:
 
 | Tab                      | Icon            | Purpose                                                                                                                 |
-|:-------------------------|:----------------|:------------------------------------------------------------------------------------------------------------------------|
+| :----------------------- | :-------------- | :---------------------------------------------------------------------------------------------------------------------- |
 | **Walkshed Preferences** | Network graph   | Search for an address and configure walkshed preferences. Refer to [Mobility Profiles and Preferences](preferences.md). |
 | **Edits**                | Pencil          | Review, manage, or remove [Edits](edits.md) and saved [Scenarios](scenarios.md).                                        |
 | **Datasets**             | Settings (gear) | Select a TDEI dataset and build the routing graph. Refer to [Datasets](datasets.md).                                    |
@@ -45,7 +45,7 @@ The left sidebar is the primary control panel for the Walksheds tool. It contain
 Select the **Main Menu** button (☰ "hamburger" icon) at the top left of the sidebar to open a panel with the following options:
 
 | Option      | Description                                             |
-|:------------|:--------------------------------------------------------|
+| :---------- | :------------------------------------------------------ |
 | **About**   | Opens a popup with information about the Walksheds tool |
 | **Contact** | Opens a popup with contact and support information      |
 

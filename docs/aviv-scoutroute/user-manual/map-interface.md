@@ -39,7 +39,7 @@ The AVIV ScoutRoute map displays an overhead view of the workspace area. The app
 Understanding these terms will help you complete quests accurately:
 
 | Term                     | Definition                                                                                                                     |
-|:-------------------------|:-------------------------------------------------------------------------------------------------------------------------------|
+| :----------------------- | :----------------------------------------------------------------------------------------------------------------------------- |
 | **Crossing** (Crosswalk) | A designated pedestrian path between curbs, crossing a road; these are spaces shared with vehicles                             |
 | **Curb**                 | The edge where a sidewalk meets the road                                                                                       |
 | **Curb Extension**       | An area where the curb extends into the street; shortens crossing distances, calms traffic, and improves pedestrian visibility |
@@ -56,7 +56,7 @@ Understanding these terms will help you complete quests accurately:
 Quests appear as icons on the map. Each icon type represents a different type of feature, such as:
 
 | Quest Type   | Appearance                                                           | Scope                                                                    | Example Questions                                        |
-|:-------------|:---------------------------------------------------------------------|:-------------------------------------------------------------------------|:---------------------------------------------------------|
+| :----------- | :------------------------------------------------------------------- | :----------------------------------------------------------------------- | :------------------------------------------------------- |
 | **Sidewalk** | A path icon separating two differently colored areas (grey and blue) | A sidewalk segment along a road, often from one intersection to the next | Surface material, width, obstructions along the sidewalk |
 | **Crossing** | A white pedestrian figure in a crossing on a blue background         | A single crosswalk at an intersection or a mid-block crossing            | Crossing markings, pedestrian signals, audio cues        |
 | **Curb**     | A white wheelchair at a curb on a blue background                    | A specific curb point at the start of a crossing                         | Curb ramp presence, tactile paving, curb height          |

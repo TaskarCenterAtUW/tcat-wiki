@@ -97,7 +97,7 @@ Once you've selected a workspace, you'll see the main map interface:
 <!-- IMAGE PLACEHOLDER: Main map interface | ../../resources/images/aviv-scoutroute/ios/map-interface-light.png#only-light{ width="300" } -->
 
 | Element                | Description                                                            |
-|:-----------------------|:-----------------------------------------------------------------------|
+| :--------------------- | :--------------------------------------------------------------------- |
 | **Map View**           | The central area showing the workspace and background                  |
 | **Quest Icons**        | Icons on the map representing available quests (data collection tasks) |
 | **Screen Reader Mode** | List-based quest view instead of map                                   |
@@ -114,7 +114,7 @@ A **quest** is a small data collection task prompting you to provide information
 Common examples of types of features you'll be asked about include:
 
 | Quest Type   | Icon                                             | Description                          |
-|:-------------|:-------------------------------------------------|:-------------------------------------|
+| :----------- | :----------------------------------------------- | :----------------------------------- |
 | **Sidewalk** | Path icon with grey/blue areas                   | Questions about sidewalk segments    |
 | **Crossing** | White pedestrian in crosswalk on blue background | Questions about pedestrian crossings |
 | **Curb**     | White wheelchair at curb on blue background      | Questions about curbs and ramps      |

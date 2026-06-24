@@ -71,7 +71,7 @@ To close a quest without answering:
 The way you answer depends on the quest type. Common input methods include:
 
 | Input Type               | How to Answer                                             |
-|:-------------------------|:----------------------------------------------------------|
+| :----------------------- | :-------------------------------------------------------- |
 | **Single Choice**        | Tap one option; it will be highlighted with a pink border |
 | **Multiple Choice**      | Tap one or more options; selected items show pink borders |
 | **Numeric Entry**        | Use the on-screen keypad to enter a number                |

@@ -25,7 +25,7 @@ The Walksheds tool includes several pre-defined **mobility profiles**, each desi
 Open the **Walkshed Preferences tab** in the left sidebar and select a profile to apply it.
 
 | Profile                | Description                                                                                                                        |
-|:-----------------------|:-----------------------------------------------------------------------------------------------------------------------------------|
+| :--------------------- | :--------------------------------------------------------------------------------------------------------------------------------- |
 | **Manual wheelchair**  | Optimized for manual wheelchair users — conservative slope limits and raised curb and stair avoidance enabled                      |
 | **Powered wheelchair** | Optimized for powered wheelchair users — similar obstacle avoidance to the Manual wheelchair profile, with a higher base speed     |
 | **Cane**               | Optimized for users who rely on a cane or walking aid — moderate slope limits with raised curb and stair avoidance enabled         |
@@ -51,7 +51,7 @@ Selecting the **Custom** profile unlocks individual preference controls. These d
 #### Slope
 
 | Preference                     | Description                                                                                                                 |
-|:-------------------------------|:----------------------------------------------------------------------------------------------------------------------------|
+| :----------------------------- | :-------------------------------------------------------------------------------------------------------------------------- |
 | **Maximum uphill steepness**   | The steepest uphill incline (as a percentage) included in the walkshed. Edges exceeding this grade are excluded entirely.   |
 | **Maximum downhill steepness** | The steepest downhill incline (as a percentage) included in the walkshed. Edges exceeding this grade are excluded entirely. |
 
@@ -60,7 +60,7 @@ Slope affects not only whether an edge is included, but also the travel speed as
 #### Obstacles and Crossings
 
 | Preference                        | Description                                                                                                           |
-|:----------------------------------|:----------------------------------------------------------------------------------------------------------------------|
+| :-------------------------------- | :-------------------------------------------------------------------------------------------------------------------- |
 | **Avoid raised curbs and stairs** | When enabled, paths with raised curbs and stairs that may be impassable for some users are excluded from the network. |
 
 With the default cost function, crossings add a fixed 30-second time penalty to account for waiting and crossing time.
@@ -68,7 +68,7 @@ With the default cost function, crossings add a fixed 30-second time penalty to 
 #### Street Avoidance
 
 | Preference                  | Description                                                                                                                                                                           |
-|:----------------------------|:--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| :-------------------------- | :------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
 | **Street avoidance factor** | Controls how strongly the tool avoids routing along streets rather than dedicated pedestrian infrastructure. A value near `1` avoids streets; `0` treats streets like any other path. |
 
 Different street classifications receive different cost multipliers at the same avoidance level. Pedestrian streets and living streets are always treated as penalty-free. Service roads receive a mild penalty; residential streets a somewhat higher one; other road types the highest.

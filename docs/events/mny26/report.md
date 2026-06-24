@@ -14,7 +14,7 @@ tags:
 On January 19th, 2026, Taskar Center for Accessible Technology (TCAT) hosted **Mappy New Year 2026**, a virtual event focused on improving pedestrian infrastructure data to support accessibility-focused routing in **Tacoma, WA**.
 
 | Detail       | Info                      |
-|--------------|---------------------------|
+| :----------- | :------------------------ |
 | **Date**     | January 19th, 2026        |
 | **Time**     | 9:00 AM PT – 12:00+ PM PT |
 | **Format**   | virtual                   |
@@ -29,7 +29,7 @@ Mappers contributed to **[Project #1017 — Tacoma, WA, US: Pedestrian Infrastru
 #### Mapping Statistics
 
 | Metric                 | Value                                |
-|------------------------|--------------------------------------|
+| :--------------------- | :----------------------------------- |
 | **Edits**              | 1,376 map edits across 31 changesets |
 | **Footways mapped**    | 17.6 miles total length              |
 | **Crossings mapped**   | 308 crossing ways                    |

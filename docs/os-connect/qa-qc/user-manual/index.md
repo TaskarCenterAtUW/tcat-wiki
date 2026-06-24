@@ -37,14 +37,14 @@ Instead, this QA/QC framework adopts a multi-pronged approach rooted in the lite
 
 ---
 
-``` mermaid
+```mermaid
 flowchart LR
     %% Left branches
     P_Rel[Relational] --- Position
     P_Int[Intrinsic] --- Position
     Position --- J1(( ))
     Geometry --- J1
-    
+
     F_Int[Intrinsic] --- Feature
     F_Con[Connectedness] --- Feature
     N_Int[Intrinsic] --- Network
@@ -53,13 +53,13 @@ flowchart LR
     Network --- Completeness
     Completeness --- J2(( ))
     Logical --- J2
-    
+
     %% Center
     J1 --- DQ((Data Quality))
     J2 --- DQ
     DQ --- J3(( ))
     DQ --- J4(( ))
-    
+
     %% Right branches
     J3 --- Thematic
     J3 --- Usability
@@ -68,7 +68,7 @@ flowchart LR
     Thematic --- Classification
     Temporal --- Lineage
     Temporal --- Te_Attr[Attributes]
-    
+
     J4 --- MR[Mapper Reputation]
     J4 --- Semantic
     MR --- Individual

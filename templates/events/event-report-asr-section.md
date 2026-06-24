@@ -1,3 +1,5 @@
+<!-- @format -->
+
 ### Walkabout
 
 Participants walked a route through {{ASR_TARGET_AREA}} using **AVIV ScoutRoute** to collect on-the-ground pedestrian infrastructure observations, submitted to the **{{ASR_WORKSPACE_NAME}}** workspace.
@@ -13,7 +15,7 @@ Participants walked a route through {{ASR_TARGET_AREA}} using **AVIV ScoutRoute*
 #### Walkabout Statistics
 
 | Metric              | Value                     |
-|---------------------|---------------------------|
+| :------------------ | :------------------------ |
 | **Contributors**    | {{ASR_CONTRIBUTOR_COUNT}} |
 | **Total elements**  | {{ASR_TOTAL_ELEMENTS}}    |
 | **Nodes submitted** | {{ASR_NODE_COUNT}}        |

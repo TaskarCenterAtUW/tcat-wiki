@@ -1,3 +1,5 @@
+<!-- @format -->
+
 ### OSM Mapping
 
 Mappers contributed to **[Project #{{TM_PROJECT_ID}} — {{TM_PROJECT_NAME}}]({{TM_PROJECT_URL}})** via the OSM US Tasking Manager, adding pedestrian infrastructure data to OpenStreetMap.
@@ -7,7 +9,7 @@ Mappers contributed to **[Project #{{TM_PROJECT_ID}} — {{TM_PROJECT_NAME}}]({{
 #### Mapping Statistics
 
 | Metric                 | Value                                                                |
-|------------------------|----------------------------------------------------------------------|
+| :--------------------- | :------------------------------------------------------------------- |
 | **Edits**              | {{TM_EDIT_COUNT}} map edits across {{TM_CHANGESET_COUNT}} changesets |
 | **Footways mapped**    | {{TM_FOOTWAY_MILES}} miles total length                              |
 | **Crossings mapped**   | {{TM_CROSSING_COUNT}} crossing ways                                  |

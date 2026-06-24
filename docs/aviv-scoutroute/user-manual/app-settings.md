@@ -58,7 +58,7 @@ The menu (three stacked horizontal bars) provides quick access to key features f
 **Menu options:**
 
 | Option                 | Description                            |
-|:-----------------------|:---------------------------------------|
+| :--------------------- | :------------------------------------- |
 | **Close** (++x++)      | Close the hamburger menu               |
 | **Settings** (gear)    | Open the Settings menu                 |
 | **Download data here** | Download map data for the current area |
@@ -138,7 +138,7 @@ In the menu, select the **Settings (gear icon)** to open the Settings menu.
 The Settings menu is organized into categories:
 
 | Category          | Description                                   |
-|:------------------|:----------------------------------------------|
+| :---------------- | :-------------------------------------------- |
 | **Quests**        | Quest selection and display order             |
 | **Communication** | Data upload and sync settings                 |
 | **Display**       | Theme, map controls, and screen behavior      |
@@ -183,7 +183,7 @@ Control which quest types appear on the map and their priority order.
 Toggle automatic upload of completed quest answers.
 
 | Setting                          | Description                                                                                                 |
-|:---------------------------------|:------------------------------------------------------------------------------------------------------------|
+| :------------------------------- | :---------------------------------------------------------------------------------------------------------- |
 | **Upload answers automatically** | When enabled, quest answers sync immediately; when disabled, answers are stored locally until manual upload |
 
 ---
@@ -193,7 +193,7 @@ Toggle automatic upload of completed quest answers.
 Configure the visual appearance and behavior of the app.
 
 | Setting                   | Description                                             |
-|:--------------------------|:--------------------------------------------------------|
+| :------------------------ | :------------------------------------------------------ |
 | **Theme**                 | Choose between light, dark, or follow-system theme      |
 | **Show map zoom buttons** | Toggle on-screen zoom controls (+/−) on the map         |
 | **Keep screen on**        | Prevent the screen from dimming during mapping sessions |
@@ -205,7 +205,7 @@ Configure the visual appearance and behavior of the app.
 Access cache management and options for hidden quests.
 
 | Setting                   | Description                                         |
-|:--------------------------|:----------------------------------------------------|
+| :------------------------ | :-------------------------------------------------- |
 | **Delete cache**          | Clear locally cached map data to free storage space |
 | **Restore hidden quests** | Unhide all previously hidden quests at once         |
 

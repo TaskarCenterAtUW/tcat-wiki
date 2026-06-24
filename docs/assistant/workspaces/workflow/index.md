@@ -33,6 +33,8 @@ related_pages:
     - assistant/dispatch.md
 ---
 
+<!-- @format -->
+
 # Workspaces Workflows — Assistant Knowledge Base
 
 ## Short Answer
@@ -77,13 +79,13 @@ Workflow answers should always note the sandbox boundary: changes made in Worksp
 
 ## Planned Pages
 
-| File | Workflow |
-|------|----------|
-| `workspaces/workflows/configure-imagery-layers.md` | Setting up imagery sources in a workspace |
-| `workspaces/workflows/create-a-workspace-from-tdei.md` | Creating a new workspace from an existing TDEI dataset |
-| `workspaces/workflows/edit-accessibility-features-in-a-workspace.md` | Editing sidewalks, crossings, and curb ramps in a workspace |
-| `workspaces/workflows/export-workspace-edits-to-tdei.md` | Exporting completed workspace edits to TDEI for publication |
-| `workspaces/workflows/invite-a-team-to-a-workspace.md` | Inviting collaborators to a workspace |
-| `workspaces/workflows/review-workspace-edits.md` | Manager review of edits before export |
-| `workspaces/workflows/use-workspaces-for-community-validation.md` | Running a community mapping session using Workspaces |
+| File                                                                  | Workflow                                                    |
+| :-------------------------------------------------------------------- | :---------------------------------------------------------- |
+| `workspaces/workflows/configure-imagery-layers.md`                    | Setting up imagery sources in a workspace                   |
+| `workspaces/workflows/create-a-workspace-from-tdei.md`                | Creating a new workspace from an existing TDEI dataset      |
+| `workspaces/workflows/edit-accessibility-features-in-a-workspace.md`  | Editing sidewalks, crossings, and curb ramps in a workspace |
+| `workspaces/workflows/export-workspace-edits-to-tdei.md`              | Exporting completed workspace edits to TDEI for publication |
+| `workspaces/workflows/invite-a-team-to-a-workspace.md`                | Inviting collaborators to a workspace                       |
+| `workspaces/workflows/review-workspace-edits.md`                      | Manager review of edits before export                       |
+| `workspaces/workflows/use-workspaces-for-community-validation.md`     | Running a community mapping session using Workspaces        |
 | `workspaces/workflows/use-workspaces-for-jurisdiction-stewardship.md` | Ongoing stewardship workflow for jurisdiction data managers |

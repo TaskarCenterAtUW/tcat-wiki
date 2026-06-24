@@ -65,6 +65,7 @@ A multi‑tenant data sharing and exchange platform that supports the full lifec
 TCAT architecture has three layers: data generation tools (such as AVIV ScoutRoute, Rapid, and Prophet) which feed into the TDEI Core, which handles ingestion, validation, metadata, quality checks, access control, publishing, APIs, and more. Data then flows to consumer apps (such as AccessMap, Walksheds, Audiom, and Conveyal).
 
 <div id="tdei-arch" markdown>
+
 ```mermaid
 %%{init: {'theme': 'base', 'themeVariables': {'darkMode': false, 'primaryTextColor': '#000000', 'secondaryTextColor': '#000000', 'tertiaryTextColor': '#000000', 'nodeTextColor': '#000000', 'lineColor': '#666666', 'textColor': '#000000', 'mainBkg': '#ffffff', 'clusterBkg': '#f5f5f5', 'clusterBorder': '#cccccc', 'titleColor': '#000000'}}}%%
 flowchart LR
@@ -124,6 +125,7 @@ flowchart LR
     class TEN tenant
     class AM,WS,AUD,CVL app
 ```
+
 </div>
 
 ---

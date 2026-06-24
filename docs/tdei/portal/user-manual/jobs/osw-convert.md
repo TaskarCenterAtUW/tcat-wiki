@@ -31,7 +31,7 @@ Converts an OSW dataset to OSM format, or vice versa.
 <div class="full-width" markdown>
 
 | Field                | Required | Description              | Format / Options                                                                        |
-|:---------------------|:---------|:-------------------------|:----------------------------------------------------------------------------------------|
+| :------------------- | :------- | :----------------------- | :-------------------------------------------------------------------------------------- |
 | **Source Format**    | Yes      | Format of the input file | `OSW` or `OSM`                                                                          |
 | **Target Format**    | Yes      | Desired output format    | `OSW` or `OSM`                                                                          |
 | **Attach data file** | Yes      | Dataset file to convert  | Source Format = OSM:<br>`.pbf`, `.osm`, or `.xml`<br><br>Source Format = OSW:<br>`.zip` |

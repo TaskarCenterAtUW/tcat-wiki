@@ -33,7 +33,7 @@ To view dataset boundaries, ensure the **Boundaries** toggle is enabled in the [
 Left-click in a dataset boundary polygon to view a popup containing details about that dataset:
 
 | Field              | Description                                                         |
-|:-------------------|:--------------------------------------------------------------------|
+| :----------------- | :------------------------------------------------------------------ |
 | **Name**           | The name of the dataset (typically a jurisdiction name)             |
 | **Uploaded**       | The date the dataset was uploaded to the TDEI platform              |
 | **Version**        | The version number of the dataset                                   |

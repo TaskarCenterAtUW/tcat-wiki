@@ -42,6 +42,8 @@ related_pages:
     - aviv-scoutroute/index.md
 ---
 
+<!-- @format -->
+
 # Configure imagery layers in a workspace
 
 ## Short Answer
@@ -88,10 +90,10 @@ Procedural detail and screenshots: [Workspace Settings](../../../workspaces/user
 
 **Relationship to other editing surfaces**
 
-| Surface | Imagery source |
-|--------|----------------|
-| AVIV ScoutRoute | Workspace **Imagery JSON Definition** |
-| Rapid / JOSM in Workspaces | Editor basemap controls (OSM-style); not driven by the same Settings JSON |
+| Surface                    | Imagery source                                                                                                       |
+| :------------------------- | :------------------------------------------------------------------------------------------------------------------- |
+| AVIV ScoutRoute            | Workspace **Imagery JSON Definition**                                                                                |
+| Rapid / JOSM in Workspaces | Editor basemap controls (OSM-style); not driven by the same Settings JSON                                            |
 | Reference GeoJSON in Rapid | Separate overlay for comparison — not basemap tiles ([edit workflow](edit-accessibility-features-in-a-workspace.md)) |
 
 Basemaps are **context for human mapping**: you move sidewalk or crossing geometry against the background; the basemap does not auto-create network features.
@@ -134,12 +136,12 @@ A city loads a workspace from the latest OS-CONNECT TDEI release. The project le
 - If asked for "imagery URL only," note the workshop gap (paste full JSON today; URL support may ship later — confirm with TCAT).
 - Warn against pasting GitHub **web** links instead of raw JSON content for any Settings JSON field.
 - For "can I use our ArcGIS tile server," abstain on auth/CORS specifics; suggest a small test workspace and staff verification.
-- Pair with [imagery layers concept](../../workspaces/imagery-layers.md) *(stub)* when authored.
+- Pair with [imagery layers concept](../../workspaces/imagery-layers.md) _(stub)_ when authored.
 
 ## Related Concepts
 
 - [Create a workspace from TDEI](create-a-workspace-from-tdei.md)
 - [Edit accessibility features in a workspace](edit-accessibility-features-in-a-workspace.md)
-- [Imagery layers (Workspaces)](../../workspaces/imagery-layers.md) *(stub — author in Phase B)*
+- [Imagery layers (Workspaces)](../../workspaces/imagery-layers.md) _(stub — author in Phase B)_
 - [Workspace Settings (guide)](../../../workspaces/user-manual/workspace-settings.md)
 - [AVIV ScoutRoute](../../../aviv-scoutroute/index.md)

@@ -49,6 +49,8 @@ related_pages:
     - aviv-scoutroute/index.md
 ---
 
+<!-- @format -->
+
 # Edit accessibility features in a workspace
 
 ## Short Answer
@@ -63,11 +65,11 @@ Workspaces is where per-feature stewardship happens. TDEI handles whole-dataset 
 
 **Editors (choose by role and task)**
 
-| Editor | Typical use | Notes from workshop |
-|--------|-------------|---------------------|
-| [Rapid](../../../rapid/index.md) | Web-based editing in the browser | Workspaces supports **Rapid 2** and **Rapid 3**; Rapid 2 was used as the more stable option when demoing |
-| [JOSM](../../../josm/index.md) | Desktop editing | Works because Workspaces exposes modified OSM-style APIs |
-| [AVIV ScoutRoute](../../../aviv-scoutroute/index.md) | Mobile / field-style capture | Often used for on-the-ground reporting; managers may follow up in Rapid for geometry |
+| Editor                                               | Typical use                      | Notes from workshop                                                                                      |
+| :--------------------------------------------------- | :------------------------------- | :------------------------------------------------------------------------------------------------------- |
+| [Rapid](../../../rapid/index.md)                     | Web-based editing in the browser | Workspaces supports **Rapid 2** and **Rapid 3**; Rapid 2 was used as the more stable option when demoing |
+| [JOSM](../../../josm/index.md)                       | Desktop editing                  | Works because Workspaces exposes modified OSM-style APIs                                                 |
+| [AVIV ScoutRoute](../../../aviv-scoutroute/index.md) | Mobile / field-style capture     | Often used for on-the-ground reporting; managers may follow up in Rapid for geometry                     |
 
 Open a workspace from the dashboard, then launch the editor (for example **Open in Rapid 2**). The map shows **only that workspace’s data**, not the global OSM planet — otherwise the experience matches familiar OSM editing (zoom, select features, edit geometry, edit tags, add features).
 
@@ -108,9 +110,9 @@ Open a workspace from the dashboard, then launch the editor (for example **Open 
 1. [Create or open a workspace](create-a-workspace-from-tdei.md) with the correct TDEI dataset version and project group.
 2. Confirm **imagery** and optional **ScoutRoute** settings if field teams are involved.
 3. Choose an editor:
-   - **Field / volunteer capture** → Aviv ScoutRoute (published workspaces only, per settings).
-   - **Desktop GIS editing** → JOSM or Rapid.
-   - **Manager geometry fixes** → Rapid after reviewing ScoutRoute or contractor submissions.
+    - **Field / volunteer capture** → Aviv ScoutRoute (published workspaces only, per settings).
+    - **Desktop GIS editing** → JOSM or Rapid.
+    - **Manager geometry fixes** → Rapid after reviewing ScoutRoute or contractor submissions.
 4. Edit features against imagery; use **reference GeoJSON** only as a guide unless your process explicitly promotes reconciled features into the network.
 5. Run **Review** on changesets before export; document sources where the UI supports it.
 6. Continue to [review](review-workspace-edits.md) and [export](export-workspace-edits-to-tdei.md) workflows when edits are ready for upstream release.
@@ -140,5 +142,5 @@ A jurisdiction opens a Bremerton OS-CONNECT workspace in Rapid 2. A planner load
 - [Review workspace edits](review-workspace-edits.md)
 - [Private OSM (Workspaces)](../../workspaces/private-osm.md)
 - [Multi-source stewardship](../../workspaces/multi-source-stewardship.md)
-- [Workspace editors](../../workspaces/workspace-editors.md) *(stub — author next)*
-- [How are accessibility features edited?](../../workspaces/how-are-accessibility-features-edited.md) *(stub — author next)*
+- [Workspace editors](../../workspaces/workspace-editors.md) _(stub — author next)_
+- [How are accessibility features edited?](../../workspaces/how-are-accessibility-features-edited.md) _(stub — author next)_

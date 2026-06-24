@@ -35,6 +35,8 @@ related_pages:
     - assistant/workspaces/workflows/index.md
 ---
 
+<!-- @format -->
+
 # Workflows — Assistant Knowledge Base
 
 ## Short Answer
@@ -78,11 +80,11 @@ Workflow pages often involve external stakeholder coordination (jurisdiction sta
 
 ## Planned Pages
 
-| File | Workflow |
-|------|----------|
-| `workflows/review-community-feedback.md` | How to review and act on community-submitted data corrections |
-| `workflows/support-answer-patterns.md` | Communication patterns for staff responding to external partner questions |
-| `workflows/update-jurisdiction-data.md` | How jurisdictions submit and track data updates |
-| `workflows/use-accessmap-for-public-engagement.md` | Using AccessMap in community meetings and public-facing planning |
-| `workflows/use-os-connect-for-ada-transition-planning.md` | Integrating OS-CONNECT data into ADA transition plan workflows |
-| `workflows/use-walksheds-for-safe-routes-to-school.md` | Using Walksheds for SRTS analysis and grant applications |
+| File                                                      | Workflow                                                                  |
+| :-------------------------------------------------------- | :------------------------------------------------------------------------ |
+| `workflows/review-community-feedback.md`                  | How to review and act on community-submitted data corrections             |
+| `workflows/support-answer-patterns.md`                    | Communication patterns for staff responding to external partner questions |
+| `workflows/update-jurisdiction-data.md`                   | How jurisdictions submit and track data updates                           |
+| `workflows/use-accessmap-for-public-engagement.md`        | Using AccessMap in community meetings and public-facing planning          |
+| `workflows/use-os-connect-for-ada-transition-planning.md` | Integrating OS-CONNECT data into ADA transition plan workflows            |
+| `workflows/use-walksheds-for-safe-routes-to-school.md`    | Using Walksheds for SRTS analysis and grant applications                  |

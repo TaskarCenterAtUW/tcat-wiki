@@ -31,7 +31,7 @@ Merges spatial data from two datasets by unifying overlapping nodes, edges, and 
 <div class="full-width" markdown>
 
 | Field                 | Required | Description                                                                            |
-|:----------------------|:---------|:---------------------------------------------------------------------------------------|
+| :-------------------- | :------- | :------------------------------------------------------------------------------------- |
 | **First Dataset Id**  | Yes      | Dataset id defined to be unioned                                                       |
 | **Second Dataset Id** | Yes      | Dataset id defined to be unioned                                                       |
 | **Proximity**         | No       | Proximity value to identify equivalent nodes in meters. Default value is `0.5` meters. |
