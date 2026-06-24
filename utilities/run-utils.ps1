@@ -35,13 +35,16 @@
 .PARAMETER TestsOnly
     Run only Phase 1 (Pester tests) without running the utilities.
 
-.PARAMETER SkipLinkCheck
+.PARAMETER SkipInternalLinksCheck
+    Skip internal link checking in Phase 2. Useful for quick iterations.
+
+.PARAMETER SkipExternalLinksCheck
     Skip external link checking in Phase 2 (internal links are still checked). Useful for quick iterations.
     Mutually exclusive with -NoCache.
 
 .PARAMETER NoCache
     Force fresh external link checks by bypassing the cache. Passes -NoCache to check-links.ps1.
-    Mutually exclusive with -SkipLinkCheck.
+    Mutually exclusive with -SkipExternalLinksCheck.
 
 .EXAMPLE
     .\run-utils.ps1
@@ -56,8 +59,12 @@
     Skips tests and runs utilities directly.
 
 .EXAMPLE
-    .\run-utils.ps1 -SkipLinkCheck
+    .\run-utils.ps1 -SkipExternalLinksCheck
     Runs tests and utilities, but skips external link checking (internal links still checked).
+
+.EXAMPLE
+    .\run-utils.ps1 -SkipInternalLinksCheck
+    Runs tests and utilities, but skips internal link checking (external links still checked).
 
 .EXAMPLE
     .\run-utils.ps1 -NoCache
@@ -67,14 +74,15 @@
 param(
     [switch]$SkipTests,
     [switch]$TestsOnly,
-    [switch]$SkipLinkCheck,
+    [switch]$SkipInternalLinksCheck,
+    [switch]$SkipExternalLinksCheck,
     [switch]$NoCache
 )
 
 # Validate mutually exclusive parameters
-if ($SkipLinkCheck -and $NoCache) {
-    Write-Host "ERROR: -SkipLinkCheck and -NoCache cannot be used together." -ForegroundColor Red
-    Write-Host "  -SkipLinkCheck: Skips external link checking entirely (only internal links checked)" -ForegroundColor Yellow
+if ($SkipExternalLinksCheck -and $NoCache) {
+    Write-Host "ERROR: -SkipExternalLinksCheck and -NoCache cannot be used together." -ForegroundColor Red
+    Write-Host "  -SkipExternalLinksCheck: Skips external link checking entirely" -ForegroundColor Yellow
     Write-Host "  -NoCache: Forces fresh external link checks (bypasses cache)" -ForegroundColor Yellow
     exit 1
 }
@@ -368,11 +376,31 @@ if (-not $TestsOnly) {
 
     # 3. Check links
     $linkCheckScript = Join-Path $utilPath "check-links.ps1"
-    if ($SkipLinkCheck) {
-        # Only check internal links when -SkipLinkCheck is used
-        Write-Host "  Step 3/3: Checking internal links only (-SkipLinkCheck)" -ForegroundColor Cyan
+    if ($SkipInternalLinksCheck -and $SkipExternalLinksCheck) {
+        # Skip link checking entirely
+        Write-Host "  Step 3/3: Skipping link check (-SkipInternalLinksCheck -SkipExternalLinksCheck)" -ForegroundColor Yellow
+    } elseif ($SkipExternalLinksCheck) {
+        # Only check internal links when -SkipExternalLinksCheck is used
+        Write-Host "  Step 3/3: Checking internal links only (-SkipExternalLinksCheck)" -ForegroundColor Cyan
         Write-Host ""
         & $linkCheckScript -internal
+        if ($LASTEXITCODE -ne 0) {
+            Write-Host ""
+            Write-Host "==========================================="
+            Write-Host "PHASE 2 FAILED at Step 3" -ForegroundColor Red
+            exit 1
+        }
+    } elseif ($SkipInternalLinksCheck) {
+        # Only check external links when -SkipInternalLinksCheck is used
+        if ($NoCache) {
+            Write-Host "  Step 3/3: Checking external links only (-SkipInternalLinksCheck -NoCache)" -ForegroundColor Cyan
+            Write-Host ""
+            & $linkCheckScript -external -NoCache
+        } else {
+            Write-Host "  Step 3/3: Checking external links only (-SkipInternalLinksCheck)" -ForegroundColor Cyan
+            Write-Host ""
+            & $linkCheckScript -external
+        }
         if ($LASTEXITCODE -ne 0) {
             Write-Host ""
             Write-Host "==========================================="
