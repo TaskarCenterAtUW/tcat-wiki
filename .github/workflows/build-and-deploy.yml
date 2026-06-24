@@ -27,7 +27,33 @@ jobs:
           python-version: 3.x
           cache: pip
       - run: python -m pip install zensical
+      - run: |
+          mv docs/assistant /tmp/assistant-md
+          python3 - <<'EOF'
+          import os, shutil, re
+
+          src = '/tmp/assistant-md'
+          dst = 'docs/assistant'
+
+          for root, dirs, files in os.walk(src):
+              for fname in files:
+                  if not fname.endswith('.md'):
+                      continue
+                  src_file = os.path.join(root, fname)
+                  with open(src_file, encoding='utf-8') as f:
+                      content = f.read()
+                  if content.startswith('---'):
+                      end = content.find('---', 3)
+                      if end != -1:
+                          fm = content[3:end]
+                          if re.search(r'^\s*review_status\s*:\s*reviewed\s*$', fm, re.MULTILINE):
+                              rel = os.path.relpath(src_file, src)
+                              dst_file = os.path.join(dst, rel)
+                              os.makedirs(os.path.dirname(dst_file), exist_ok=True)
+                              shutil.copy2(src_file, dst_file)
+          EOF
       - run: zensical build --clean
+      - run: cp -r /tmp/assistant-md/. site/assistant/
       - uses: actions/upload-pages-artifact@v5
         with:
           path: site

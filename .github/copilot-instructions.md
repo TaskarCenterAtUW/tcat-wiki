@@ -308,7 +308,7 @@ Invoke-Pester .\check-links.Tests.ps1 -ExcludeTag "Network" -Output Minimal # Sk
     - Use `- Guide` tag for regular guide pages
     - Use `- User Manual` tag for user manual index files (e.g., `user-manual/index.md`)
     - Use `- Tutorial` tag for tutorial guides (short tutorials focused on specific goals or use cases)
-2. **Other Tags**: Use additional tags for filtering; supported tags: "OSW 0.2", "OSW 0.3", "OSW 0.4", "Internal", "External", "Developer", "User"
+2. **Other Tags**: Use additional tags for filtering; supported tags: "OSW 0.2", "OSW 0.3", "OSW 0.4", "Internal", "External", "Developer", "User", "Assistant"
 3. **Abbreviations**: Wrap acronyms normally (e.g., "OSW", "TDEI", "JOSM"); abbreviations plugin auto-links them
 
 ### Frontmatter Title Pattern

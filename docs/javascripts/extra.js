@@ -61,6 +61,7 @@ const titleMapSource = {
     tm: "Tasking Manager",
 
     // --- UI & Navigation Terms ---
+    "assistant": "Knowledge Base",
     "guides list": "Guides List",
     "how to": "How To",
     "log in": "Log In",

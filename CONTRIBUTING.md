@@ -14,7 +14,7 @@ This guide explains how to contribute to the TCAT Wiki.
 
 Note that, while minor external contributions are welcome, this guide is primarily intended for use by TCAT/GS staff.
 
-_For a list of all guides on the TCAT Wiki, refer to the [Guides List](guides-list/index.md)._
+_For a list of all guides on the TCAT Wiki, refer to the [Guides List](https://taskarcenteratuw.github.io/tcat-wiki/guides-list/)._
 
 ---
 
@@ -126,6 +126,8 @@ This section of the guide explains how to set up a Windows environment for contr
         4. [YAML](https://marketplace.visualstudio.com/items?itemName=redhat.vscode-yaml)
 
         5. [Even Better TOML](https://marketplace.visualstudio.com/items?itemName=tamasfe.even-better-toml)
+
+        6. [Zensical Studio](https://marketplace.visualstudio.com/items?itemName=zensical.zensical-studio)
 
 2. Clone the repository
 

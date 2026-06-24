@@ -62,7 +62,7 @@ This section estimates how far a person can travel on the pedestrian network sta
 
 **What's a walkshed?**
 
-A walkshed is the area that can be reached within a short walking distance (typically 5 or 10 minutes) from a starting location, following real paths like sidewalks and crosswalks—not "as-the-crow-flies" distances.
+A walkshed is the area that can be reached within a short walking distance (typically 5 or 10 minutes) from a starting location, following real paths like sidewalks and crosswalks — not "as-the-crow-flies" distances.
 
 **How it works:**
 
@@ -166,13 +166,13 @@ Key concepts and definitions:
 - **Importance of Sidewalks or Crossings:** Some paths or intersections are more critical than others because they connect many parts of the network. The report includes measures that help identify these key links:
     - **Path Usage Frequency (Betweenness):** Shows which sidewalk segments are used most often in the shortest routes. These are often "critical links."
     - **Intersection Importance (Degree)**: Indicates how many sidewalk segments connect to each intersection. Higher values mean more connectivity.
-    - **Resilience to Disruptions:** The report also shows whether access is evenly distributed or overly dependent on a few key segments—this can help assess how resilient the network is to construction, damage, or closures.
+    - **Resilience to Disruptions:** The report also shows whether access is evenly distributed or overly dependent on a few key segments — this can help assess how resilient the network is to construction, damage, or closures.
 
 **How to use this section:**
 
 This section evaluates how well the pedestrian network is connected and which parts of the network are critical for the overall structure.
 
-These network-based metrics evaluate the **role and importance of each path or intersection** within the larger pedestrian network. These metrics can help planners and local governments focus maintenance or upgrades where they will have the greatest impact—such as repairing a crossing that connects two neighborhoods or fixing a broken curb ramp that limits access to a school.
+These network-based metrics evaluate the **role and importance of each path or intersection** within the larger pedestrian network. These metrics can help planners and local governments focus maintenance or upgrades where they will have the greatest impact — such as repairing a crossing that connects two neighborhoods or fixing a broken curb ramp that limits access to a school.
 
 The connectivity metrics include:
 
@@ -184,7 +184,7 @@ The connectivity metrics include:
     - How to use traversability to identify data quality issues:
         - Detect intersections with zero traversability that may lack required connections or have misclassified curb features.
         - Spot mismatches between modeled traversability and real-world expectations, which may signal mistagged or missing curb ramps or crossings.
-        - Use histograms to identify systemic gaps—e.g., large numbers of intersections with partial or no traversability suggest systematic omissions in tagging or curb data.
+        - Use histograms to identify systemic gaps — e.g., large numbers of intersections with partial or no traversability suggest systematic omissions in tagging or curb data.
 - **Degree Centrality:**
   Number of directly connected paths at a node; indicates local accessibility. Effectively counts how many other paths connect to each node in the pedestrian network.
     - OS-CONNECT report includes: Average score, histogram, and spatial distribution.
@@ -192,13 +192,13 @@ The connectivity metrics include:
         - Low degree centrality at intersections expected to be well-connected may indicate missing connecting segments.
         - Isolated clusters of high or low degree centrality could reflect inconsistent application of footway or sidewalk features or fragmentation in the graph due to topology errors, which is a flaw with the data.
 - **Eigenvector Centrality:**
-  Importance of nodes based on connections to other highly connected nodes. Effectively measures the importance of a node based on its connections to other well-connected nodes—similar to how well-integrated it is within the network.
+  Importance of nodes based on connections to other highly connected nodes. Effectively measures the importance of a node based on its connections to other well-connected nodes — similar to how well-integrated it is within the network.
     - OS-CONNECT report includes: Average score, histogram, and spatial distribution.
     - How to use eigenvector centrality to identify data quality issues:
         - A low eigenvector centrality in central areas may suggest disconnected links or misaligned node attributes that prevent propagation, which is a data issue.
         - High eigenvector spikes in otherwise sparse networks may indicate artifacts of data modeling (e.g., duplicate links or routing loops).
 - **Node and Edge Betweenness Centrality:**
-  Measures the extent to which nodes or edges serve as bridges across the network—critical for identifying key connectors or potential bottlenecks. Effectively measures how often a path or node lies on shortest paths between other parts of the network—indicating how critical it is to the overall structure.
+  Measures the extent to which nodes or edges serve as bridges across the network — critical for identifying key connectors or potential bottlenecks. Effectively measures how often a path or node lies on shortest paths between other parts of the network — indicating how critical it is to the overall structure.
     - OS-CONNECT report includes:
         - Average and standard deviation values for both nodes and edges.
         - Histograms and maps to visualize central paths.
