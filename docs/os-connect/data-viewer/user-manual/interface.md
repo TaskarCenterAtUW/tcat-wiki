@@ -27,7 +27,7 @@ The OS-CONNECT Data Viewer displays an interactive map of the OS-CONNECT pedestr
 The interface consists of the following key elements:
 
 | Element               | Location    | Description                                                                           |
-|:----------------------|:------------|:--------------------------------------------------------------------------------------|
+| :-------------------- | :---------- | :------------------------------------------------------------------------------------ |
 | **Map View**          | Center      | The main interactive map displaying pedestrian network features                       |
 | **Zoom Controls**     | Top left    | Plus (++plus++) and minus (++minus++) buttons for zooming in and out                  |
 | **Base Map Toggle**   | Top left    | Switches between Raster and Imagery base maps (exclusive — only one active at a time) |
@@ -45,7 +45,7 @@ The interface consists of the following key elements:
 The Data Viewer offers two base map options, accessible via the toggle in the top-left corner of the map. The toggle is **exclusive** — only one base map can be active at a time.
 
 | Base Map    | Description                                                                                       |
-|:------------|:--------------------------------------------------------------------------------------------------|
+| :---------- | :------------------------------------------------------------------------------------------------ |
 | **Raster**  | A light CartoDB Positron street map (default). Best for clearly viewing the data features.        |
 | **Imagery** | Aerial/satellite imagery. Useful for comparing mapped features against real-world infrastructure. |
 
@@ -83,7 +83,7 @@ Both toggles operate independently — you can view data features with or withou
 The legend is displayed in the bottom-left corner of the map and identifies the color used for each feature type:
 
 | Color      | Feature Type        |
-|:-----------|:--------------------|
+| :--------- | :------------------ |
 | Light blue | Sidewalk            |
 | Yellow     | Crossing (Marked)   |
 | Tan/orange | Crossing (Unmarked) |

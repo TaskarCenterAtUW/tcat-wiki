@@ -31,7 +31,7 @@ Validates a GTFS-Flex dataset to check the correctness of data.
 <div class="full-width" markdown>
 
 | Field                | Required | Description                   | Format |
-|:---------------------|:---------|:------------------------------|:-------|
+| :------------------- | :------- | :---------------------------- | :----- |
 | **Attach data file** | Yes      | GTFS-Flex dataset to validate | `.zip` |
 
 </div>

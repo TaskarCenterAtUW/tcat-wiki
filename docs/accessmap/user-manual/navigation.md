@@ -28,7 +28,7 @@ To open the Directions panel, select **Directions** from the [route summary bar]
 Each direction card may include:
 
 | Element                 | Description                                   | Example                                                                 |
-|:------------------------|:----------------------------------------------|:------------------------------------------------------------------------|
+| :---------------------- | :-------------------------------------------- | :---------------------------------------------------------------------- |
 | **Instruction**         | A turn-by-turn direction                      | "Start by heading northeast"                                            |
 | **Feature description** | The type and location of the path segment     | "Use the sidewalk. Sidewalk NW of University Street"                    |
 | **Surface**             | The surface material of the segment           | Concrete, Asphalt                                                       |
@@ -81,7 +81,7 @@ To receive alerts through your screen reader:
 #### Alert Types
 
 | Alert Type          | When It Fires                                                                                         |
-|:--------------------|:------------------------------------------------------------------------------------------------------|
+| :------------------ | :---------------------------------------------------------------------------------------------------- |
 | **Surface alerts**  | When the path surface changes (e.g., from asphalt to gravel or concrete)                              |
 | **Incline alerts**  | When the route transitions to a notably uphill or downhill section                                    |
 | **Building alerts** | When the route passes nearby buildings                                                                |

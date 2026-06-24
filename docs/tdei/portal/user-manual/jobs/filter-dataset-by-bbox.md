@@ -31,7 +31,7 @@ Returns a subgraph of a dataset that falls within a specified bounding box, defi
 <div class="full-width" markdown>
 
 | Field               | Required | Description                                          | Format / Options |
-|:--------------------|:---------|:-----------------------------------------------------|:-----------------|
+| :------------------ | :------- | :--------------------------------------------------- | :--------------- |
 | **TDEI Dataset Id** | Yes      | Dataset ID to which the bounding box will be applied | —                |
 | **File Type**       | Yes      | Dataset output file type                             | `OSM` or `OSW`   |
 
@@ -42,7 +42,7 @@ Returns a subgraph of a dataset that falls within a specified bounding box, defi
 <div class="full-width" markdown>
 
 | Coordinate | Description                 | Format          |
-|:-----------|:----------------------------|:----------------|
+| :--------- | :-------------------------- | :-------------- |
 | **West**   | West coordinate (longitude) | Decimal degrees |
 | **South**  | South coordinate (latitude) | Decimal degrees |
 | **East**   | East coordinate (longitude) | Decimal degrees |

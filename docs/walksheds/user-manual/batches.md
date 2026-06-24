@@ -34,7 +34,7 @@ The **Batch** tab in the left sidebar allows you to run multiple walksheds in a 
 Upload a CSV file with the following columns:
 
 | Column              | Type    | Description                                                |
-|:--------------------|:--------|:-----------------------------------------------------------|
+| :------------------ | :------ | :--------------------------------------------------------- |
 | `lon`               | float   | Longitude of the origin point                              |
 | `lat`               | float   | Latitude of the origin point                               |
 | `maxuphill`         | float   | Maximum uphill slope (as a decimal, e.g. `0.08` for 8%)    |

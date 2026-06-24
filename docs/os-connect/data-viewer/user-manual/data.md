@@ -41,7 +41,7 @@ When you zoom in to **zoom level 16 or higher**, you can hover over (or tap on t
 The popup displays the following attributes when available:
 
 | Attribute          | Description                                                     | Example Values               |
-|:-------------------|:----------------------------------------------------------------|:-----------------------------|
+| :----------------- | :-------------------------------------------------------------- | :--------------------------- |
 | **highway**        | The type of way                                                 | `footway`                    |
 | **footway**        | The sub-classification of the footway                           | `sidewalk`, `crossing`       |
 | **kerb**           | The type of curb                                                | `lowered`, `flush`, `raised` |

@@ -31,7 +31,7 @@ Validates an OSW dataset to check the correctness of data.
 <div class="full-width" markdown>
 
 | Field                | Required | Description             | Format |
-|:---------------------|:---------|:------------------------|:-------|
+| :------------------- | :------- | :---------------------- | :----- |
 | **Attach data file** | Yes      | OSW dataset to validate | `.zip` |
 
 </div>

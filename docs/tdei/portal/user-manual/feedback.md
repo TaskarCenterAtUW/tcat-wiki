@@ -28,7 +28,7 @@ The **Feedback** page lets Points of Contact view and manage feedback that has b
 The page displays four summary cards at the top:
 
 | Card                 | Description                                                         |
-|:---------------------|:--------------------------------------------------------------------|
+| :------------------- | :------------------------------------------------------------------ |
 | **Total Feedback**   | The total number of feedback submissions received                   |
 | **Turn Around Time** | The average time to resolve feedback items                          |
 | **Overdue**          | The number of feedback items that have exceeded their response time |
@@ -41,7 +41,7 @@ The page displays four summary cards at the top:
 Use the following controls to search and filter the feedback list:
 
 | Control                        | Description                                                |
-|:-------------------------------|:-----------------------------------------------------------|
+| :----------------------------- | :--------------------------------------------------------- |
 | **Search Feedback By Dataset** | Search for feedback by dataset name                        |
 | **Status**                     | Filter by feedback status (All Status, or specific states) |
 | **Submitted After**            | Show only feedback submitted after a given date            |

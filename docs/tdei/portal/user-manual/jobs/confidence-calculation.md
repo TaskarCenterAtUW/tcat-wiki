@@ -31,7 +31,7 @@ Calculates the confidence score for a dataset. An optional sub-regions GeoJSON f
 <div class="full-width" markdown>
 
 | Field                     | Required | Description                                                        | Format     |
-|:--------------------------|:---------|:-------------------------------------------------------------------|:-----------|
+| :------------------------ | :------- | :----------------------------------------------------------------- | :--------- |
 | **TDEI Dataset Id**       | Yes      | Dataset id of the dataset for which confidence is to be calculated | —          |
 | **Attach Subregion File** | No       | Sub regions GeoJSON file for which confidence to be calculated     | `.geojson` |
 

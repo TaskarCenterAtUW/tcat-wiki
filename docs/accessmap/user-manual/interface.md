@@ -32,8 +32,8 @@ The AccessMap interface consists of two main areas: the **sidebar** on the left,
 The left sidebar is the primary control panel for AccessMap. It contains:
 
 | Element             | Location      | Description                                                                       |
-|:--------------------|:--------------|:----------------------------------------------------------------------------------|
-| **Main Menu**       | Top left      | Opens the main menu (☰ "hamburger" icon)                                          |
+| :------------------ | :------------ | :-------------------------------------------------------------------------------- |
+| **Main Menu**       | Top left      | Opens the main menu (☰ "hamburger" icon)                                         |
 | **Region Selector** | Top bar       | Displays the currently selected region (e.g., "Seattle, WA"); select to switch    |
 | **Tasks**           | Top bar       | Opens the tasks panel, showing how the data collection process was organized      |
 | **Search Bar**      | Below top bar | Search for an address or location to use as a waypoint in your route              |
@@ -46,7 +46,7 @@ The left sidebar is the primary control panel for AccessMap. It contains:
 Select the **Main Menu** button (☰) at the top left of the sidebar to open a panel with the following options:
 
 | Option                    | Description                                                      |
-|:--------------------------|:-----------------------------------------------------------------|
+| :------------------------ | :--------------------------------------------------------------- |
 | **About**                 | Opens a popup with information about AccessMap                   |
 | **Contact**               | Opens a popup with contact information                           |
 | **Tracking for research** | Toggle to opt in or out of anonymous usage tracking for research |
@@ -172,7 +172,7 @@ At the very bottom of the screen, a horizontal bar displays a color gradient lab
 You can tap or click on any feature on the map — such as a sidewalk, crossing, or curb ramp — to view its details. A **popup** appears at the bottom of the screen showing:
 
 | Field           | Description                                            | Example                      |
-|:----------------|:-------------------------------------------------------|:-----------------------------|
+| :-------------- | :----------------------------------------------------- | :--------------------------- |
 | **Type**        | The kind of feature (shown as the popup title)         | Sidewalk                     |
 | **Description** | A human-readable description of the feature's location | Sidewalk SE of Lenora Street |
 | **Incline**     | The slope grade of the feature, as a percentage        | 4%                           |
@@ -181,7 +181,7 @@ You can tap or click on any feature on the map — such as a sidewalk, crossing,
 The popup also provides three action buttons:
 
 | Button              | Description                                                        |
-|:--------------------|:-------------------------------------------------------------------|
+| :------------------ | :----------------------------------------------------------------- |
 | **Route From Here** | Sets this feature's location as the route origin (waypoint A)      |
 | **Route To Here**   | Sets this feature's location as the route destination (waypoint B) |
 | **Share Feedback**  | Opens the [Share Feedback](feedback.md) form for this feature      |

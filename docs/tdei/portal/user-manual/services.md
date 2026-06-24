@@ -52,7 +52,7 @@ To create a new service, select **Create Service** (top right). This opens the *
 Fill in the following fields:
 
 | Field                  | Description                                                                                                                                    | Required |
-|:-----------------------|:-----------------------------------------------------------------------------------------------------------------------------------------------|:---------|
+| :--------------------- | :--------------------------------------------------------------------------------------------------------------------------------------------- | :------- |
 | **Project Group Name** | Pre-filled with the current project group; read-only                                                                                           | —        |
 | **Service Name**       | A name for the new service                                                                                                                     | Yes      |
 | **Service Type**       | The type of data this service handles: `OSW`, `Flex`, or `Pathways`                                                                            | Yes      |

@@ -84,7 +84,7 @@ A **Route** summary bar also appears at the bottom of the map showing:
 The summary bar provides two buttons:
 
 | Button         | Description                                                                                            |
-|:---------------|:-------------------------------------------------------------------------------------------------------|
+| :------------- | :----------------------------------------------------------------------------------------------------- |
 | **Directions** | Opens the [Directions panel](navigation.md#directions-panel) with step-by-step navigation instructions |
 | **Trip Info**  | Opens the [Trip Information panel](#trip-information) with route statistics and an elevation profile   |
 
@@ -98,7 +98,7 @@ The summary bar provides two buttons:
 Select **Trip Info** from the route summary bar to open the Trip Information panel. This panel provides a detailed overview of the planned route:
 
 | Section                        | Description                                                                         |
-|:-------------------------------|:------------------------------------------------------------------------------------|
+| :----------------------------- | :---------------------------------------------------------------------------------- |
 | **Experienced elevation gain** | A chart showing elevation (height in meters) over distance (meters) along the route |
 | **Total distance**             | The total length of the route in meters                                             |
 | **Estimated time**             | The estimated travel time based on your mobility profile                            |

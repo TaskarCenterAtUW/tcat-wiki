@@ -399,20 +399,17 @@ function hello() {
 #### Tables
 
 ```
-| Header 1 | Header 2 | Header 3 |
-|----------|----------|----------|
-| Row 1    | Data     | Data     |
-| Row 2    | Data     | Data     |
+| Header 1 (Left Aligned) | Header 2 (Center Aligned) | Header 3 (Right Aligned) |
+| :---------------------- | :-----------------------: | -----------------------: |
+| General Text            |           Label           |                   Number |
+| Row 2                   |          Content          |                     Data |
+| Row 3                   |          Content          |                     Data |
 ```
 
 #### Horizontal rule
 
 ```
 ---
-or
-***
-or
-___
 ```
 
 #### Task lists

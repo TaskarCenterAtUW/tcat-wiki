@@ -578,7 +578,7 @@ Describe "Edge Cases" {
         It "Should handle links in tables" {
             $content = @"
 | Name | Link |
-|------|------|
+| :--- | :--- |
 | Test | [Click](test.md) |
 "@
             $links = Get-MarkdownLinks -content $content

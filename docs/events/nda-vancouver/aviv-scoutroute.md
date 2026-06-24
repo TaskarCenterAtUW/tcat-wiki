@@ -161,7 +161,7 @@ This section covers the use of the AVIV ScoutRoute mobile application at the Cla
 Quests in AVIV ScoutRoute are small pieces of information to gather about the built environment. Each quest type is represented by a circular icon on the map:
 
 |             Icon              | Quest Type          | Description                                                 |
-|:-----------------------------:|:--------------------|:------------------------------------------------------------|
+| :---------------------------: | :------------------ | :---------------------------------------------------------- |
 |              Bus              | **Bus Stops**       | Quests about a bus stop location                            |
 |   Pedestrian inside pathway   | **Sidewalks**       | Covers a stretch of the pedestrian sidepath along the road  |
 | Pedestrian on marked crossing | **Crossings**       | Pertains to a crossing that intersects with vehicle traffic |

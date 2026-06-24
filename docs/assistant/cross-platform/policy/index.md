@@ -35,6 +35,8 @@ related_pages:
     - assistant/workspaces/policies/index.md
 ---
 
+<!-- @format -->
+
 # Policies — Assistant Knowledge Base
 
 ## Short Answer
@@ -78,12 +80,12 @@ Retrieve policy pages proactively for any question involving compliance, data au
 
 ## Planned Pages
 
-| File | Scope |
-|------|-------|
-| `policies/ada-safety-legal-boundaries.md` | What assistants may/may not say about ADA compliance |
-| `policies/assistant-abstention.md` | When and how to abstain from answering |
-| `policies/assistant-policy-questions-index.md` | Index of all policy-related questions |
-| `policies/data-freshness.md` | How to communicate data currency limitations |
-| `policies/how-should-ai-outputs-be-validated.md` | Requirements for human review of AI-generated content |
-| `policies/public-vs-internal-content.md` | What is appropriate for public vs. internal RAG pipelines |
-| `policies/what-are-the-risks-of-automated-accessibility-analysis.md` | Risk framing for AI-assisted analysis |
+| File                                                                 | Scope                                                     |
+| :------------------------------------------------------------------- | :-------------------------------------------------------- |
+| `policies/ada-safety-legal-boundaries.md`                            | What assistants may/may not say about ADA compliance      |
+| `policies/assistant-abstention.md`                                   | When and how to abstain from answering                    |
+| `policies/assistant-policy-questions-index.md`                       | Index of all policy-related questions                     |
+| `policies/data-freshness.md`                                         | How to communicate data currency limitations              |
+| `policies/how-should-ai-outputs-be-validated.md`                     | Requirements for human review of AI-generated content     |
+| `policies/public-vs-internal-content.md`                             | What is appropriate for public vs. internal RAG pipelines |
+| `policies/what-are-the-risks-of-automated-accessibility-analysis.md` | Risk framing for AI-assisted analysis                     |

@@ -39,7 +39,7 @@ As a **Point of Contact (`poc`)**, the Members page shows a list of all members 
 Each member entry displays:
 
 | Column              | Description                                                |
-|:--------------------|:-----------------------------------------------------------|
+| :------------------ | :--------------------------------------------------------- |
 | **Name & Email Id** | The member's display name and registered email address     |
 | **Contact Number**  | The member's phone number, if provided during registration |
 | **Roles**           | The member's assigned roles                                |
@@ -76,7 +76,7 @@ To add a new user to your project group:
 ### Roles
 
 | Role                        | Description                                                          |
-|:----------------------------|:---------------------------------------------------------------------|
+| :-------------------------- | :------------------------------------------------------------------- |
 | **member**                  | A standard project group member with limited permissions             |
 | **poc**                     | Responsible for the management of the project group                  |
 | **osw_data_generator**      | OSW Data generator — can publish datasets for the project group      |

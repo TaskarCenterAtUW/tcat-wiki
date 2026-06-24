@@ -39,7 +39,7 @@ The Walkshed Information panel displays statistics about the pedestrian network 
 Counts and percentages for the features within the walkshed:
 
 | Statistic                    | Description                                                        |
-|:-----------------------------|:-------------------------------------------------------------------|
+| :--------------------------- | :----------------------------------------------------------------- |
 | Number of footways           | Count of footway edges in the walkshed                             |
 | Number of sidewalks          | Count of sidewalk edges in the walkshed                            |
 | Number of crossings          | Total crossings (marked + unmarked)                                |

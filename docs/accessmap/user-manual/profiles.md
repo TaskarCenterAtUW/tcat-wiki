@@ -28,7 +28,7 @@ The profile panel is located in the [sidebar](interface.md#sidebar). Select a pr
 ![Profile selection panel](../../resources/images/accessmap/user-manual/profiles/profiles-dark.png#only-dark)
 
 | Profile                | Description                                                                                                                        |
-|:-----------------------|:-----------------------------------------------------------------------------------------------------------------------------------|
+| :--------------------- | :--------------------------------------------------------------------------------------------------------------------------------- |
 | **Manual wheelchair**  | Optimized for manual wheelchair users — avoids steep inclines, raised curbs, and inaccessible crossings                            |
 | **Powered wheelchair** | Optimized for powered wheelchair users — allows somewhat steeper inclines than the manual wheelchair profile                       |
 | **Support cane**       | Optimized for users who use a cane or walking aid — higher slope tolerance and permits raised curbs and stairs                     |
@@ -51,7 +51,7 @@ Selecting the **Custom** profile unlocks individual preference controls. These l
 #### Routing Preferences
 
 | Preference                     | Description                                                                                                                                         |
-|:-------------------------------|:----------------------------------------------------------------------------------------------------------------------------------------------------|
+| :----------------------------- | :-------------------------------------------------------------------------------------------------------------------------------------------------- |
 | **Maximum uphill steepness**   | The steepest uphill incline (as a percentage) AccessMap will include in a route. Lower values produce flatter routes.                               |
 | **Maximum downhill steepness** | The steepest downhill incline (as a percentage) AccessMap will include in a route. Lower values produce flatter routes.                             |
 | **Street avoidance factor**    | Controls how strongly AccessMap avoids routing on streets without sidewalks. A value of `1` avoids streets; `0` treats streets like any other path. |
@@ -71,7 +71,7 @@ Selecting the **Custom** profile unlocks individual preference controls. These l
 These settings are particularly relevant for blind and low-vision users using a screen reader:
 
 | Setting                | Description                                                                                                           |
-|:-----------------------|:----------------------------------------------------------------------------------------------------------------------|
+| :--------------------- | :-------------------------------------------------------------------------------------------------------------------- |
 | **Landmarks Distance** | The maximum distance (in meters) from the route within which nearby landmarks are included in step-by-step directions |
 | **Surface alerts**     | Alerts when the surface type changes along the route (e.g., from concrete to gravel)                                  |
 | **Incline alerts**     | Alerts when the route transitions to a notably uphill or downhill section                                             |

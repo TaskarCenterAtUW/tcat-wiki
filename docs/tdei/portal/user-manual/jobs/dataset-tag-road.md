@@ -31,7 +31,7 @@ Associates sidewalks from a target dataset with the road network from a source d
 <div class="full-width" markdown>
 
 | Field                 | Required | Description                                         |
-|:----------------------|:---------|:----------------------------------------------------|
+| :-------------------- | :------- | :-------------------------------------------------- |
 | **Source Dataset Id** | Yes      | Dataset from which the road network to be retrieved |
 | **Target Dataset Id** | Yes      | Dataset for which the road network is to be tagged  |
 

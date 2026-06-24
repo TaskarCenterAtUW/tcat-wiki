@@ -14,7 +14,7 @@ tags:
 From March 9th-13th, 2026, the Taskar Center for Accessible Technology (TCAT) presented two talks, engaged the community from a table in the Exhibit Hall, and hosted several **CSUN 2026 Walkabouts**, in-person mini-events focused on demonstrating the on-the-ground data collection process and gathering feedback on AccessMap and the AVIV ScoutRoute app in **Anaheim, CA**.
 
 | Detail       | Info                 |
-|--------------|----------------------|
+| :----------- | :------------------- |
 | **Date**     | March 9th-13th, 2026 |
 | **Format**   | in-person            |
 | **Location** | Anaheim, CA          |
@@ -34,7 +34,7 @@ Anaheim Marriott to Anaheim GardenWalk
 #### Walkabout Statistics
 
 | Metric              | Value  |
-|---------------------|--------|
+| :------------------ | :----- |
 | **Contributors**    | 8      |
 | **Total elements**  | 16     |
 | **Nodes submitted** | 5      |

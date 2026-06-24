@@ -164,7 +164,7 @@ While completing quests in AVIV ScoutRoute, you'll encounter different types of 
 ### Quest Type Summary
 
 | Quest Type           | Input Method         | When to Use                               |
-|:---------------------|:---------------------|:------------------------------------------|
+| :------------------- | :------------------- | :---------------------------------------- |
 | **Exclusive Choice** | Tap one option       | When only one answer can be correct       |
 | **Numeric Entry**    | Keypad input         | For measurements and counts               |
 | **Multi-Select**     | Tap multiple options | When multiple conditions may apply        |
