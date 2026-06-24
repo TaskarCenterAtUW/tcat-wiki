@@ -734,7 +734,7 @@ nav = [
             {"Why is the dataset not global like OSM?" = "assistant/workspaces/why-is-the-dataset-not-global-like-osm.md"},
             {"Why is Workspaces compatible with OSM tools?" = "assistant/workspaces/why-is-workspaces-compatible-with-osm-tools.md"},
             {"Why must imagery use raw JSON links?" = "assistant/workspaces/why-must-imagery-use-raw-json-links.md"},
-            {"Policies" = [ "assistant/workspaces/policies/index.md" ]},
+            {"Policy" = [ "assistant/workspaces/policy/index.md" ]},
             {"Workflow" = [
                 "assistant/workspaces/workflow/index.md",
                 {"Configure imagery layers in a workspace" = "assistant/workspaces/workflow/configure-imagery-layers.md"},

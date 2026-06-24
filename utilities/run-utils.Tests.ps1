@@ -222,16 +222,20 @@ Describe "Script Structure" {
         $scriptContent | Should -Match '\[switch\]\$TestsOnly'
     }
 
-    It "Should have SkipLinkCheck parameter" {
-        $scriptContent | Should -Match '\[switch\]\$SkipLinkCheck'
+    It "Should have SkipInternalLinksCheck parameter" {
+        $scriptContent | Should -Match '\[switch\]\$SkipInternalLinksCheck'
+    }
+
+    It "Should have SkipExternalLinksCheck parameter" {
+        $scriptContent | Should -Match '\[switch\]\$SkipExternalLinksCheck'
     }
 
     It "Should have NoCache parameter" {
         $scriptContent | Should -Match '\[switch\]\$NoCache'
     }
 
-    It "Should validate mutual exclusivity of SkipLinkCheck and NoCache" {
-        $scriptContent | Should -Match 'SkipLinkCheck.*NoCache.*cannot be used together'
+    It "Should validate mutual exclusivity of SkipExternalLinksCheck and NoCache" {
+        $scriptContent | Should -Match 'SkipExternalLinksCheck.*NoCache.*cannot be used together'
     }
 
     It "Should reference generate-guides-lists.ps1" {
