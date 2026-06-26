@@ -2,7 +2,7 @@
 title: "How often is the dataset updated?"
 tags:
     - Assistant
-slug: how-often-is-the-dataset-updated
+slug: update-cadence
 doc_type: question
 products:
     - OS-CONNECT

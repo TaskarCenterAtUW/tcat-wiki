@@ -2,7 +2,7 @@
 title: "How are trails handled?"
 tags:
     - Assistant
-slug: how-are-trails-handled
+slug: trail-handling
 doc_type: question
 products:
     - OS-CONNECT

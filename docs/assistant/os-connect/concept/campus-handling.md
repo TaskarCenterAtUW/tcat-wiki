@@ -2,7 +2,7 @@
 title: "How are campuses handled?"
 tags:
     - Assistant
-slug: how-are-campuses-handled
+slug: campus-handling
 doc_type: question
 products:
     - OS-CONNECT

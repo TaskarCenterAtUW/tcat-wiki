@@ -2,7 +2,7 @@
 title: "What is a routable graph?"
 tags:
     - Assistant
-slug: what-is-a-routable-graph
+slug: routable-graph
 doc_type: question
 products:
     - OS-CONNECT

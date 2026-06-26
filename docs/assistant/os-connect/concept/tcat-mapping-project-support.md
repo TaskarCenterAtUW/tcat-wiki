@@ -2,7 +2,7 @@
 title: "Can TCAT help set up a sidewalk-mapping project in the OSM US Tasking Manager?"
 tags:
     - Assistant
-slug: can-tcat-help-set-up-a-sidewalk-mapping-project-in-the-osm-us-tasking-manager
+slug: tcat-mapping-project-support
 doc_type: question
 products:
     - OS-CONNECT

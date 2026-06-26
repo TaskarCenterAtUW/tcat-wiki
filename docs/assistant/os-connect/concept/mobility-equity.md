@@ -2,7 +2,7 @@
 title: "How does this improve mobility equity?"
 tags:
     - Assistant
-slug: how-does-this-improve-mobility-equity
+slug: mobility-equity
 doc_type: question
 products:
     - OS-CONNECT

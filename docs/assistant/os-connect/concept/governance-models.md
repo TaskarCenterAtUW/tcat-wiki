@@ -2,7 +2,7 @@
 title: "What governance models are possible?"
 tags:
     - Assistant
-slug: what-governance-models-are-possible
+slug: governance-models
 doc_type: question
 products:
     - OS-CONNECT

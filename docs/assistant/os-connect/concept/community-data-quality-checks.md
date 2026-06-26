@@ -2,7 +2,7 @@
 title: "What quality checks are needed before community-mapped data can support planning or routing?"
 tags:
     - Assistant
-slug: what-quality-checks-are-needed-before-community-mapped-data-can-support-planning-or-routing
+slug: community-data-quality-checks
 doc_type: question
 products:
     - OS-CONNECT

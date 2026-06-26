@@ -2,7 +2,7 @@
 title: "Is this a statewide inventory?"
 tags:
     - Assistant
-slug: is-this-a-statewide-inventory
+slug: statewide-inventory
 doc_type: question
 products:
     - OS-CONNECT

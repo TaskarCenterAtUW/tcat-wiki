@@ -2,7 +2,7 @@
 title: "How are curb ramps identified?"
 tags:
     - Assistant
-slug: how-are-curb-ramps-identified
+slug: curb-ramp-identification
 doc_type: question
 products:
     - OS-CONNECT

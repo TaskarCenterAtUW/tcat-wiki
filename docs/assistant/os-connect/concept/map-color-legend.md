@@ -2,7 +2,7 @@
 title: "What do the colors mean?"
 tags:
     - Assistant
-slug: what-do-the-colors-mean
+slug: map-color-legend
 doc_type: question
 products:
     - OS-CONNECT

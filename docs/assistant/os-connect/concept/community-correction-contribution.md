@@ -2,7 +2,7 @@
 title: "How can community members contribute corrections?"
 tags:
     - Assistant
-slug: how-can-community-members-contribute-corrections
+slug: community-correction-contribution
 doc_type: question
 products:
     - OS-CONNECT

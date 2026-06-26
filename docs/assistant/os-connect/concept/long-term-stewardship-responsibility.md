@@ -2,7 +2,7 @@
 title: "Who is responsible for long-term stewardship?"
 tags:
     - Assistant
-slug: who-is-responsible-for-long-term-stewardship
+slug: long-term-stewardship-responsibility
 doc_type: question
 products:
     - OS-CONNECT

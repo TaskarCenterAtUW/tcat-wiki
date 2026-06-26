@@ -2,7 +2,7 @@
 title: "What kinds of errors are most common?"
 tags:
     - Assistant
-slug: what-kinds-of-errors-are-most-common
+slug: common-errors
 doc_type: question
 products:
     - OS-CONNECT

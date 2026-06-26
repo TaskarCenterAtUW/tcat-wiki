@@ -2,7 +2,7 @@
 title: "How should transit agencies contribute?"
 tags:
     - Assistant
-slug: how-should-transit-agencies-contribute
+slug: transit-agency-contribution
 doc_type: question
 products:
     - OS-CONNECT

@@ -2,7 +2,7 @@
 title: "How can communities use walksheds to advocate for change?"
 tags:
     - Assistant
-slug: how-can-communities-use-walksheds-to-advocate-for-change
+slug: walkshed-advocacy
 doc_type: question
 products:
     - OS-CONNECT

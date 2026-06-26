@@ -2,7 +2,7 @@
 title: "Do reported issues automatically update the public dataset?"
 tags:
     - Assistant
-slug: do-reported-issues-automatically-update-the-public-dataset
+slug: issue-report-auto-update
 doc_type: question
 products:
     - OS-CONNECT

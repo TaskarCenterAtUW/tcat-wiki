@@ -2,7 +2,7 @@
 title: "How are community comments reviewed?"
 tags:
     - Assistant
-slug: how-are-community-comments-reviewed
+slug: community-comment-review
 doc_type: question
 products:
     - OS-CONNECT

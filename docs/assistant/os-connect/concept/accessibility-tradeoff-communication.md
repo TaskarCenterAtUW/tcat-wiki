@@ -2,7 +2,7 @@
 title: "How should accessibility tradeoffs be communicated?"
 tags:
     - Assistant
-slug: how-should-accessibility-tradeoffs-be-communicated
+slug: accessibility-tradeoff-communication
 doc_type: question
 products:
     - OS-CONNECT

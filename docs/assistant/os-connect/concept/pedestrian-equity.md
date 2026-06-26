@@ -2,7 +2,7 @@
 title: "What makes pedestrian infrastructure equitable?"
 tags:
     - Assistant
-slug: what-makes-pedestrian-infrastructure-equitable
+slug: pedestrian-equity
 doc_type: question
 products:
     - OS-CONNECT

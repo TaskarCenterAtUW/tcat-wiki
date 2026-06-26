@@ -2,7 +2,7 @@
 title: "What comes after statewide collection?"
 tags:
     - Assistant
-slug: what-comes-after-statewide-collection
+slug: post-collection-next-steps
 doc_type: question
 products:
     - OS-CONNECT

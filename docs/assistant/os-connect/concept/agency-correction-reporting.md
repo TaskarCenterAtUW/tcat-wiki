@@ -2,7 +2,7 @@
 title: "How should agencies report corrections?"
 tags:
     - Assistant
-slug: how-should-agencies-report-corrections
+slug: agency-correction-reporting
 doc_type: question
 products:
     - OS-CONNECT

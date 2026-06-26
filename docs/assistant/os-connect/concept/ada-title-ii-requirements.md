@@ -2,7 +2,7 @@
 title: "What does ADA Title II Part B require?"
 tags:
     - Assistant
-slug: what-does-ada-title-ii-part-b-require
+slug: ada-title-ii-requirements
 doc_type: question
 products:
     - OS-CONNECT

@@ -2,7 +2,7 @@
 title: "What are the risks of relying solely on automated data?"
 tags:
     - Assistant
-slug: what-are-the-risks-of-relying-solely-on-automated-data
+slug: automated-data-risks
 doc_type: question
 products:
     - OS-CONNECT

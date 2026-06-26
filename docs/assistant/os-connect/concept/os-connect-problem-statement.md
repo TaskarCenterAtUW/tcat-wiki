@@ -2,7 +2,7 @@
 title: "What problem is OS-CONNECT trying to solve?"
 tags:
     - Assistant
-slug: what-problem-is-os-connect-trying-to-solve
+slug: os-connect-problem-statement
 doc_type: question
 products:
     - OS-CONNECT

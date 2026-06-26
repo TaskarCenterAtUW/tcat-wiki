@@ -2,7 +2,7 @@
 title: "How does this improve accessibility?"
 tags:
     - Assistant
-slug: how-does-this-improve-accessibility
+slug: accessibility-improvement
 doc_type: question
 products:
     - OS-CONNECT

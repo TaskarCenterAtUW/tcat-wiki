@@ -2,7 +2,7 @@
 title: "How is OS-CONNECT different from OpenStreetMap?"
 tags:
     - Assistant
-slug: how-is-os-connect-different-from-openstreetmap
+slug: os-connect-vs-openstreetmap
 doc_type: question
 products:
     - OS-CONNECT

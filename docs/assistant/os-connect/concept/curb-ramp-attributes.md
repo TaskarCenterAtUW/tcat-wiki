@@ -2,7 +2,7 @@
 title: "What attributes are collected for curb ramps?"
 tags:
     - Assistant
-slug: what-attributes-are-collected-for-curb-ramps
+slug: curb-ramp-attributes
 doc_type: question
 products:
     - OS-CONNECT

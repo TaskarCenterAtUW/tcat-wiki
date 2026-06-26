@@ -2,7 +2,7 @@
 title: "What is the difference between street:name=* and is_sidepath:of:name=*?"
 tags:
     - Assistant
-slug: what-is-the-difference-between-street-name-and-is-sidepath-of-name
+slug: street-name-vs-sidepath-name
 doc_type: question
 products:
     - OS-CONNECT

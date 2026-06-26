@@ -2,7 +2,7 @@
 title: "What lessons could other states adopt?"
 tags:
     - Assistant
-slug: what-lessons-could-other-states-adopt
+slug: cross-state-lessons
 doc_type: question
 products:
     - OS-CONNECT

@@ -2,7 +2,7 @@
 title: "What kinds of pedestrian infrastructure are included?"
 tags:
     - Assistant
-slug: what-kinds-of-pedestrian-infrastructure-are-included
+slug: included-infrastructure-types
 doc_type: question
 products:
     - OS-CONNECT

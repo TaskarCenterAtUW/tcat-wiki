@@ -2,7 +2,7 @@
 title: "What does long-term stewardship actually require operationally?"
 tags:
     - Assistant
-slug: what-does-long-term-stewardship-actually-require-operationally
+slug: long-term-stewardship-requirements
 doc_type: question
 products:
     - OS-CONNECT

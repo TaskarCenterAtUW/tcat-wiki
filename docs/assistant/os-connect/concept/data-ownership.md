@@ -2,7 +2,7 @@
 title: "Who owns OS-CONNECT data?"
 tags:
     - Assistant
-slug: who-owns-os-connect-data
+slug: data-ownership
 doc_type: question
 products:
     - OS-CONNECT

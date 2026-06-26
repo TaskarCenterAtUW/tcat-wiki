@@ -2,7 +2,7 @@
 title: "Who is responsible for updates?"
 tags:
     - Assistant
-slug: who-is-responsible-for-updates
+slug: update-responsibility
 doc_type: question
 products:
     - OS-CONNECT

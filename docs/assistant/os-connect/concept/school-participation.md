@@ -2,7 +2,7 @@
 title: "How can schools participate?"
 tags:
     - Assistant
-slug: how-can-schools-participate
+slug: school-participation
 doc_type: question
 products:
     - OS-CONNECT

@@ -2,7 +2,7 @@
 title: "What should agencies do if they need a correction sooner than the next public release?"
 tags:
     - Assistant
-slug: what-should-agencies-do-if-they-need-a-correction-sooner-than-the-next-public-release
+slug: urgent-correction-process
 doc_type: question
 products:
     - OS-CONNECT

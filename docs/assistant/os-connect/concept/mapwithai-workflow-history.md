@@ -2,7 +2,7 @@
 title: "What happened to the older OpenSidewalks / MapWith.ai Tasking Manager workflow?"
 tags:
     - Assistant
-slug: what-happened-to-the-older-opensidewalks-mapwith-ai-tasking-manager-workflow
+slug: mapwithai-workflow-history
 doc_type: question
 products:
     - OS-CONNECT

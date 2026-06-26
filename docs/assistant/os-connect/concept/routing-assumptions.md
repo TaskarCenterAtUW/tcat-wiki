@@ -2,7 +2,7 @@
 title: "What routing assumptions are used?"
 tags:
     - Assistant
-slug: what-routing-assumptions-are-used
+slug: routing-assumptions
 doc_type: question
 products:
     - OS-CONNECT

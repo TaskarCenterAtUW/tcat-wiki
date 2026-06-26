@@ -2,7 +2,7 @@
 title: "What information should agencies include when reporting a data issue?"
 tags:
     - Assistant
-slug: what-information-should-agencies-include-when-reporting-a-data-issue
+slug: data-issue-reporting-requirements
 doc_type: question
 products:
     - OS-CONNECT

@@ -2,7 +2,7 @@
 title: "How does OS-CONNECT support accessibility equity?"
 tags:
     - Assistant
-slug: how-does-os-connect-support-accessibility-equity
+slug: accessibility-equity
 doc_type: question
 products:
     - OS-CONNECT

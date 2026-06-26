@@ -2,7 +2,7 @@
 title: "What is the relationship between OS-CONNECT and local GIS?"
 tags:
     - Assistant
-slug: what-is-the-relationship-between-os-connect-and-local-gis
+slug: os-connect-local-gis-relationship
 doc_type: question
 products:
     - OS-CONNECT

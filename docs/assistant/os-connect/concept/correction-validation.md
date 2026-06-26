@@ -2,7 +2,7 @@
 title: "How are agency-submitted corrections validated?"
 tags:
     - Assistant
-slug: how-are-agency-submitted-corrections-validated
+slug: correction-validation
 doc_type: question
 products:
     - OS-CONNECT

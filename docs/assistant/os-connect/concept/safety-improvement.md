@@ -2,7 +2,7 @@
 title: "How does this improve safety?"
 tags:
     - Assistant
-slug: how-does-this-improve-safety
+slug: safety-improvement
 doc_type: question
 products:
     - OS-CONNECT

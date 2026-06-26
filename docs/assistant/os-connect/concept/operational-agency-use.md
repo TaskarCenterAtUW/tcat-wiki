@@ -2,7 +2,7 @@
 title: "How should agencies use this data operationally?"
 tags:
     - Assistant
-slug: how-should-agencies-use-this-data-operationally
+slug: operational-agency-use
 doc_type: question
 products:
     - OS-CONNECT

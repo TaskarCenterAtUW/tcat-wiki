@@ -2,7 +2,7 @@
 title: "Can an agency submit a batch of known corrections instead of reporting one issue at a time?"
 tags:
     - Assistant
-slug: can-an-agency-submit-a-batch-of-known-corrections-instead-of-reporting-one-issue-at-a-time
+slug: batch-correction-alternatives
 doc_type: question
 products:
     - OS-CONNECT

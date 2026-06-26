@@ -2,7 +2,7 @@
 title: "What is a node versus an edge?"
 tags:
     - Assistant
-slug: what-is-a-node-versus-an-edge
+slug: node-vs-edge
 doc_type: question
 products:
     - OS-CONNECT

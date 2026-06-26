@@ -2,7 +2,7 @@
 title: "How could national accessibility data standards evolve?"
 tags:
     - Assistant
-slug: how-could-national-accessibility-data-standards-evolve
+slug: national-data-standards-evolution
 doc_type: question
 products:
     - OS-CONNECT

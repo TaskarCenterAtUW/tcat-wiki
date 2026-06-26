@@ -2,7 +2,7 @@
 title: "Why are z-scores used?"
 tags:
     - Assistant
-slug: why-are-z-scores-used
+slug: z-score-usage
 doc_type: question
 products:
     - OS-CONNECT

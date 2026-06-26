@@ -2,7 +2,7 @@
 title: "How should field validation be incorporated?"
 tags:
     - Assistant
-slug: how-should-field-validation-be-incorporated
+slug: field-validation
 doc_type: question
 products:
     - OS-CONNECT

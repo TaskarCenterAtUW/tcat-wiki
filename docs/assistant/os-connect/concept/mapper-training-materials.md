@@ -2,7 +2,7 @@
 title: "What training materials are available for new sidewalk mappers?"
 tags:
     - Assistant
-slug: what-training-materials-are-available-for-new-sidewalk-mappers
+slug: mapper-training-materials
 doc_type: question
 products:
     - OS-CONNECT

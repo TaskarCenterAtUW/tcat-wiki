@@ -2,7 +2,7 @@
 title: "How can disability communities contribute?"
 tags:
     - Assistant
-slug: how-can-disability-communities-contribute
+slug: disability-community-contribution
 doc_type: question
 products:
     - OS-CONNECT

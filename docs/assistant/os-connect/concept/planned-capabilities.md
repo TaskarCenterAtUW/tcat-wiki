@@ -2,7 +2,7 @@
 title: "What future capabilities are planned for OS-CONNECT?"
 tags:
     - Assistant
-slug: what-future-capabilities-are-planned-for-os-connect
+slug: planned-capabilities
 doc_type: question
 products:
     - OS-CONNECT

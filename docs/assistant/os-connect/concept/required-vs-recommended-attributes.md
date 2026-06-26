@@ -2,7 +2,7 @@
 title: "What attributes are required vs recommended?"
 tags:
     - Assistant
-slug: what-attributes-are-required-vs-recommended
+slug: required-vs-recommended-attributes
 doc_type: question
 products:
     - OS-CONNECT

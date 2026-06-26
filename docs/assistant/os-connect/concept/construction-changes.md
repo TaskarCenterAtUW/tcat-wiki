@@ -2,7 +2,7 @@
 title: "How are construction changes handled?"
 tags:
     - Assistant
-slug: how-are-construction-changes-handled
+slug: construction-changes
 doc_type: question
 products:
     - OS-CONNECT

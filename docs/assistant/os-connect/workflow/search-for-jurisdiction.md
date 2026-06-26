@@ -2,7 +2,7 @@
 title: "How do I search for a jurisdiction?"
 tags:
     - Assistant
-slug: how-do-i-search-for-a-jurisdiction
+slug: search-for-jurisdiction
 doc_type: question
 products:
     - OS-CONNECT
@@ -25,6 +25,8 @@ assistant_behavior:
     do_not_claim: []
 related_pages: []
 ---
+
+<!-- @format -->
 
 # How do I search for a jurisdiction?
 

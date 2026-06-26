@@ -2,7 +2,7 @@
 title: "What kinds of errors should be reported through the OS-CONNECT Viewer?"
 tags:
     - Assistant
-slug: what-kinds-of-errors-should-be-reported-through-the-os-connect-viewer
+slug: reportable-errors
 doc_type: question
 products:
     - OS-CONNECT

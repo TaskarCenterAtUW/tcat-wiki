@@ -2,7 +2,7 @@
 title: "Can this data support Vision Zero?"
 tags:
     - Assistant
-slug: can-this-data-support-vision-zero
+slug: vision-zero
 doc_type: question
 products:
     - OS-CONNECT

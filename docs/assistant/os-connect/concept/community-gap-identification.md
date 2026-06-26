@@ -2,7 +2,7 @@
 title: "How can communities identify accessibility gaps?"
 tags:
     - Assistant
-slug: how-can-communities-identify-accessibility-gaps
+slug: community-gap-identification
 doc_type: question
 products:
     - OS-CONNECT

@@ -2,7 +2,7 @@
 title: "Can AI estimate sidewalk quality?"
 tags:
     - Assistant
-slug: can-ai-estimate-sidewalk-quality
+slug: ai-sidewalk-quality-estimation
 doc_type: question
 products:
     - OS-CONNECT

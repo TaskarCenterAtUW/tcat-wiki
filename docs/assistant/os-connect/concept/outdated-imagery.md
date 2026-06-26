@@ -2,7 +2,7 @@
 title: "What happens when imagery is outdated?"
 tags:
     - Assistant
-slug: what-happens-when-imagery-is-outdated
+slug: outdated-imagery
 doc_type: question
 products:
     - OS-CONNECT

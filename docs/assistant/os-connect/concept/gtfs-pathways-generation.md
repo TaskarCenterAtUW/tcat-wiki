@@ -2,7 +2,7 @@
 title: "Can OS-CONNECT generate GTFS Pathways data?"
 tags:
     - Assistant
-slug: can-os-connect-generate-gtfs-pathways-data
+slug: gtfs-pathways-generation
 doc_type: question
 products:
     - OS-CONNECT

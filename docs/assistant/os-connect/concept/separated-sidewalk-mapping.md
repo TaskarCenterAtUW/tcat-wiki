@@ -2,7 +2,7 @@
 title: "What should mappers do when a sidewalk is separated from the road geometry?"
 tags:
     - Assistant
-slug: what-should-mappers-do-when-a-sidewalk-is-separated-from-the-road-geometry
+slug: separated-sidewalk-mapping
 doc_type: question
 products:
     - OS-CONNECT

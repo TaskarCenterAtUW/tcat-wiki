@@ -2,7 +2,7 @@
 title: "What attributes are collected for sidewalks?"
 tags:
     - Assistant
-slug: what-attributes-are-collected-for-sidewalks
+slug: sidewalk-attributes
 doc_type: question
 products:
     - OS-CONNECT

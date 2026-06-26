@@ -2,7 +2,7 @@
 title: "What happens after I submit an issue report?"
 tags:
     - Assistant
-slug: what-happens-after-i-submit-an-issue-report
+slug: issue-report-follow-up
 doc_type: question
 products:
     - OS-CONNECT

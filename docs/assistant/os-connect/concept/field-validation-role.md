@@ -2,7 +2,7 @@
 title: "What role did field validation play?"
 tags:
     - Assistant
-slug: what-role-did-field-validation-play
+slug: field-validation-role
 doc_type: question
 products:
     - OS-CONNECT

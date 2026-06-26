@@ -2,7 +2,7 @@
 title: "Can mapping volunteers contribute data that agencies can use?"
 tags:
     - Assistant
-slug: can-mapping-volunteers-contribute-data-that-agencies-can-use
+slug: volunteer-data-contribution
 doc_type: question
 products:
     - OS-CONNECT

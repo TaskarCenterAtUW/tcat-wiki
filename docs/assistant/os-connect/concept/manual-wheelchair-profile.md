@@ -2,7 +2,7 @@
 title: 'What is the "manual wheelchair" profile?'
 tags:
     - Assistant
-slug: what-is-the-manual-wheelchair-profile
+slug: manual-wheelchair-profile
 doc_type: question
 products:
     - OS-CONNECT

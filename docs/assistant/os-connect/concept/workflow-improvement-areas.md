@@ -2,7 +2,7 @@
 title: "What operational workflows still need improvement?"
 tags:
     - Assistant
-slug: what-operational-workflows-still-need-improvement
+slug: workflow-improvement-areas
 doc_type: question
 products:
     - OS-CONNECT

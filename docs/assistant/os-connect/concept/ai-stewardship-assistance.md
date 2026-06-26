@@ -2,7 +2,7 @@
 title: "How can AI assist stewardship?"
 tags:
     - Assistant
-slug: how-can-ai-assist-stewardship
+slug: ai-stewardship-assistance
 doc_type: question
 products:
     - OS-CONNECT

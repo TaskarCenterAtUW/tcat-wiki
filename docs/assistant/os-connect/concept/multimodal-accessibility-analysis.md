@@ -2,7 +2,7 @@
 title: "What is multimodal accessibility analysis?"
 tags:
     - Assistant
-slug: what-is-multimodal-accessibility-analysis
+slug: multimodal-accessibility-analysis
 doc_type: question
 products:
     - OS-CONNECT
@@ -25,6 +25,8 @@ assistant_behavior:
     do_not_claim: []
 related_pages: []
 ---
+
+<!-- @format -->
 
 # What is multimodal accessibility analysis?
 

@@ -2,7 +2,7 @@
 title: "Why are disconnected pedestrian datasets a problem?"
 tags:
     - Assistant
-slug: why-are-disconnected-pedestrian-datasets-a-problem
+slug: disconnected-dataset-problem
 doc_type: question
 products:
     - OS-CONNECT

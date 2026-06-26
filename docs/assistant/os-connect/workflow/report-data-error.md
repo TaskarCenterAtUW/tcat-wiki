@@ -2,7 +2,7 @@
 title: "How do I report an error in OS-CONNECT data?"
 tags:
     - Assistant
-slug: how-do-i-report-an-error-in-os-connect-data
+slug: report-data-error
 doc_type: question
 products:
     - OS-CONNECT
@@ -26,6 +26,8 @@ assistant_behavior:
     do_not_claim: []
 related_pages: []
 ---
+
+<!-- @format -->
 
 # How do I report an error in OS-CONNECT data?
 

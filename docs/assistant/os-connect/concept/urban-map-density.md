@@ -2,7 +2,7 @@
 title: "Why is the map slow or dense in urban areas?"
 tags:
     - Assistant
-slug: why-is-the-map-slow-or-dense-in-urban-areas
+slug: urban-map-density
 doc_type: question
 products:
     - OS-CONNECT

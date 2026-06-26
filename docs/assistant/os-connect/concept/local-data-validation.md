@@ -2,7 +2,7 @@
 title: "How should agencies validate the data locally?"
 tags:
     - Assistant
-slug: how-should-agencies-validate-the-data-locally
+slug: local-data-validation
 doc_type: question
 products:
     - OS-CONNECT

@@ -2,7 +2,7 @@
 title: "Why do street names matter for walking directions?"
 tags:
     - Assistant
-slug: why-do-street-names-matter-for-walking-directions
+slug: street-name-routing-importance
 doc_type: question
 products:
     - OS-CONNECT

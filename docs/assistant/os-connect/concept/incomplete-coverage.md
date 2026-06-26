@@ -2,7 +2,7 @@
 title: "Why do some areas appear incomplete?"
 tags:
     - Assistant
-slug: why-do-some-areas-appear-incomplete
+slug: incomplete-coverage
 doc_type: question
 products:
     - OS-CONNECT

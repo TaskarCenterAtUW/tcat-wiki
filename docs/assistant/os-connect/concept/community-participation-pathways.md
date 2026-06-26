@@ -2,7 +2,7 @@
 title: "What are the community participation pathways?"
 tags:
     - Assistant
-slug: what-are-the-community-participation-pathways
+slug: community-participation-pathways
 doc_type: question
 products:
     - OS-CONNECT

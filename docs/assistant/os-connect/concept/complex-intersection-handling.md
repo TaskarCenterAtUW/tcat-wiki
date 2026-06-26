@@ -2,7 +2,7 @@
 title: "How are complex intersections handled?"
 tags:
     - Assistant
-slug: how-are-complex-intersections-handled
+slug: complex-intersection-handling
 doc_type: question
 products:
     - OS-CONNECT

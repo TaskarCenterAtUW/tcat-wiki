@@ -2,7 +2,7 @@
 title: 'What does "participatory mapping" mean?'
 tags:
     - Assistant
-slug: what-does-participatory-mapping-mean
+slug: participatory-mapping
 doc_type: question
 products:
     - OS-CONNECT

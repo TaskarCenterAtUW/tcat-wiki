@@ -2,7 +2,7 @@
 title: "Why do some features have missing values?"
 tags:
     - Assistant
-slug: why-do-some-features-have-missing-values
+slug: missing-attribute-values
 doc_type: question
 products:
     - OS-CONNECT

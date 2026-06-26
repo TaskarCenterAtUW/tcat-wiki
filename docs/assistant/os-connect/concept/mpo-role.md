@@ -2,7 +2,7 @@
 title: "What role could MPOs play?"
 tags:
     - Assistant
-slug: what-role-could-mpos-play
+slug: mpo-role
 doc_type: question
 products:
     - OS-CONNECT

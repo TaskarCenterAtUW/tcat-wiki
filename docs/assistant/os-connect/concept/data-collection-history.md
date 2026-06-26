@@ -2,7 +2,7 @@
 title: "How was OS-CONNECT collected?"
 tags:
     - Assistant
-slug: how-was-os-connect-collected
+slug: data-collection-history
 doc_type: question
 products:
     - OS-CONNECT

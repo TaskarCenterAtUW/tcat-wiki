@@ -2,7 +2,7 @@
 title: "Can I use this in ArcGIS or QGIS?"
 tags:
     - Assistant
-slug: can-i-use-this-in-arcgis-or-qgis
+slug: gis-software-compatibility
 doc_type: question
 products:
     - OS-CONNECT

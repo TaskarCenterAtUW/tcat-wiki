@@ -2,7 +2,7 @@
 title: "How do I download data from the viewer?"
 tags:
     - Assistant
-slug: how-do-i-download-data-from-the-viewer
+slug: download-data
 doc_type: question
 products:
     - OS-CONNECT
@@ -25,6 +25,8 @@ assistant_behavior:
     do_not_claim: []
 related_pages: []
 ---
+
+<!-- @format -->
 
 # How do I download data from the viewer?
 

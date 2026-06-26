@@ -2,7 +2,7 @@
 title: "How can advocacy organizations participate?"
 tags:
     - Assistant
-slug: how-can-advocacy-organizations-participate
+slug: advocacy-participation
 doc_type: question
 products:
     - OS-CONNECT

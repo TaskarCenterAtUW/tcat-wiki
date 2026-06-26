@@ -2,7 +2,7 @@
 title: "How are rural areas handled?"
 tags:
     - Assistant
-slug: how-are-rural-areas-handled
+slug: rural-area-handling
 doc_type: question
 products:
     - OS-CONNECT

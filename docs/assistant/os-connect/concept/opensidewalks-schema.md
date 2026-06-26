@@ -2,7 +2,7 @@
 title: "What is the OpenSidewalks schema?"
 tags:
     - Assistant
-slug: what-is-the-opensidewalks-schema
+slug: opensidewalks-schema
 doc_type: question
 products:
     - OS-CONNECT

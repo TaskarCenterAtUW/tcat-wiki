@@ -2,7 +2,7 @@
 title: "What kinds of pedestrian infrastructure are not included?"
 tags:
     - Assistant
-slug: what-kinds-of-pedestrian-infrastructure-are-not-included
+slug: excluded-infrastructure-types
 doc_type: question
 products:
     - OS-CONNECT

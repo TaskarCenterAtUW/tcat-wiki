@@ -2,7 +2,7 @@
 title: "Can this data support Safe Routes to School?"
 tags:
     - Assistant
-slug: can-this-data-support-safe-routes-to-school
+slug: safe-routes-to-school
 doc_type: question
 products:
     - OS-CONNECT

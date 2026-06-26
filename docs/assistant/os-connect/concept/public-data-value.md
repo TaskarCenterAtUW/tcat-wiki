@@ -2,7 +2,7 @@
 title: "Why should the public care about pedestrian data?"
 tags:
     - Assistant
-slug: why-should-the-public-care-about-pedestrian-data
+slug: public-data-value
 doc_type: question
 products:
     - OS-CONNECT

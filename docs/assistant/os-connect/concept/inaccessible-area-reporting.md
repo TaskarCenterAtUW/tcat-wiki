@@ -2,7 +2,7 @@
 title: "How can people report inaccessible areas?"
 tags:
     - Assistant
-slug: how-can-people-report-inaccessible-areas
+slug: inaccessible-area-reporting
 doc_type: question
 products:
     - OS-CONNECT

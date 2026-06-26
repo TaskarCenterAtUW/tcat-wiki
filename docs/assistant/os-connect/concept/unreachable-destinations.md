@@ -2,7 +2,7 @@
 title: "Why are some destinations unreachable?"
 tags:
     - Assistant
-slug: why-are-some-destinations-unreachable
+slug: unreachable-destinations
 doc_type: question
 products:
     - OS-CONNECT

@@ -2,7 +2,7 @@
 title: "How do I connect this to GIS software?"
 tags:
     - Assistant
-slug: how-do-i-connect-this-to-gis-software
+slug: connect-to-gis
 doc_type: question
 products:
     - OS-CONNECT
@@ -25,6 +25,8 @@ assistant_behavior:
     do_not_claim: []
 related_pages: []
 ---
+
+<!-- @format -->
 
 # How do I connect this to GIS software?
 

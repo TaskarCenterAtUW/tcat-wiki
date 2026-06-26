@@ -2,7 +2,7 @@
 title: "How should separately mapped sidewalks be associated with street names in OSM?"
 tags:
     - Assistant
-slug: how-should-separately-mapped-sidewalks-be-associated-with-street-names-in-osm
+slug: sidewalk-street-name-association
 doc_type: question
 products:
     - OS-CONNECT

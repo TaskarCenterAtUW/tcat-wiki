@@ -2,7 +2,7 @@
 title: "How should planners validate the data?"
 tags:
     - Assistant
-slug: how-should-planners-validate-the-data
+slug: planner-data-validation
 doc_type: question
 products:
     - OS-CONNECT

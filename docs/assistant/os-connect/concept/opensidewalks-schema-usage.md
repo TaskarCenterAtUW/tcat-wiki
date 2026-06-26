@@ -2,7 +2,7 @@
 title: "What does it mean that OS-CONNECT uses the OpenSidewalks schema?"
 tags:
     - Assistant
-slug: what-does-it-mean-that-os-connect-uses-the-opensidewalks-schema
+slug: opensidewalks-schema-usage
 doc_type: question
 products:
     - OS-CONNECT

@@ -2,7 +2,7 @@
 title: "How should conflicting data sources be handled?"
 tags:
     - Assistant
-slug: how-should-conflicting-data-sources-be-handled
+slug: conflicting-data-sources
 doc_type: question
 products:
     - OS-CONNECT

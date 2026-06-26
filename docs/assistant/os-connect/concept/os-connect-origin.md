@@ -2,7 +2,7 @@
 title: "Why was OS-CONNECT created?"
 tags:
     - Assistant
-slug: why-was-os-connect-created
+slug: os-connect-origin
 doc_type: question
 products:
     - OS-CONNECT

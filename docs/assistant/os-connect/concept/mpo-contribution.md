@@ -2,7 +2,7 @@
 title: "How should MPOs contribute?"
 tags:
     - Assistant
-slug: how-should-mpos-contribute
+slug: mpo-contribution
 doc_type: question
 products:
     - OS-CONNECT

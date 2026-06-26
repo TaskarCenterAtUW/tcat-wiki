@@ -2,7 +2,7 @@
 title: "What does this selected feature represent?"
 tags:
     - Assistant
-slug: what-does-this-selected-feature-represent
+slug: feature-selection-display
 doc_type: question
 products:
     - OS-CONNECT

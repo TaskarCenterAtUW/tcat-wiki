@@ -2,7 +2,7 @@
 title: "How should jurisdictions maintain updates?"
 tags:
     - Assistant
-slug: how-should-jurisdictions-maintain-updates
+slug: jurisdiction-update-maintenance
 doc_type: question
 products:
     - OS-CONNECT

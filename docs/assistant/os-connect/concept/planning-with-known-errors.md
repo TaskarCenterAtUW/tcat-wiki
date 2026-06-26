@@ -2,7 +2,7 @@
 title: "How should agencies treat OS-CONNECT data in planning workflows when known errors exist?"
 tags:
     - Assistant
-slug: how-should-agencies-treat-os-connect-data-in-planning-workflows-when-known-errors-exist
+slug: planning-with-known-errors
 doc_type: question
 products:
     - OS-CONNECT

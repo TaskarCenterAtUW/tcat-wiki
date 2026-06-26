@@ -2,7 +2,7 @@
 title: "What licensing governs the data?"
 tags:
     - Assistant
-slug: what-licensing-governs-the-data
+slug: data-licensing
 doc_type: question
 products:
     - OS-CONNECT

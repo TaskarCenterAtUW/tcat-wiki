@@ -2,7 +2,7 @@
 title: "What attributes are collected for crossings?"
 tags:
     - Assistant
-slug: what-attributes-are-collected-for-crossings
+slug: crossing-attributes
 doc_type: question
 products:
     - OS-CONNECT

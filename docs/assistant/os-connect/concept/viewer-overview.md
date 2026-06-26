@@ -2,7 +2,7 @@
 title: "What am I looking at in this viewer?"
 tags:
     - Assistant
-slug: what-am-i-looking-at-in-this-viewer
+slug: viewer-overview
 doc_type: question
 products:
     - OS-CONNECT

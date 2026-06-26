@@ -2,7 +2,7 @@
 title: "What lessons has Washington learned?"
 tags:
     - Assistant
-slug: what-lessons-has-washington-learned
+slug: washington-lessons
 doc_type: question
 products:
     - OS-CONNECT

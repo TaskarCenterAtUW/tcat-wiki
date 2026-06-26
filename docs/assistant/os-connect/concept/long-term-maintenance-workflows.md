@@ -2,7 +2,7 @@
 title: "What workflows support long-term maintenance?"
 tags:
     - Assistant
-slug: what-workflows-support-long-term-maintenance
+slug: long-term-maintenance-workflows
 doc_type: question
 products:
     - OS-CONNECT

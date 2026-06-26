@@ -2,7 +2,7 @@
 title: "What accessibility information is missing from OS-CONNECT?"
 tags:
     - Assistant
-slug: what-accessibility-information-is-missing-from-os-connect
+slug: missing-accessibility-information
 doc_type: question
 products:
     - OS-CONNECT

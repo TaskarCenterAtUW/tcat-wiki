@@ -2,7 +2,7 @@
 title: "What role could crowdsourcing play?"
 tags:
     - Assistant
-slug: what-role-could-crowdsourcing-play
+slug: crowdsourcing-role
 doc_type: question
 products:
     - OS-CONNECT

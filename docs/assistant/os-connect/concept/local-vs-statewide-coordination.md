@@ -2,7 +2,7 @@
 title: "What is the relationship between local ownership and statewide coordination?"
 tags:
     - Assistant
-slug: what-is-the-relationship-between-local-ownership-and-statewide-coordination
+slug: local-vs-statewide-coordination
 doc_type: question
 products:
     - OS-CONNECT

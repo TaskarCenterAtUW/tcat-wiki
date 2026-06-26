@@ -2,7 +2,7 @@
 title: 'What does "width" mean in the dataset?'
 tags:
     - Assistant
-slug: what-does-width-mean-in-the-dataset
+slug: width-attribute
 doc_type: question
 products:
     - OS-CONNECT

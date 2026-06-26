@@ -2,7 +2,7 @@
 title: "How can trip planners use sidewalk street-name tags to produce better walking instructions?"
 tags:
     - Assistant
-slug: how-can-trip-planners-use-sidewalk-street-name-tags-to-produce-better-walking-instructions
+slug: street-name-tags-for-routing
 doc_type: question
 products:
     - OS-CONNECT

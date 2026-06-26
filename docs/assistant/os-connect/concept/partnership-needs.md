@@ -2,7 +2,7 @@
 title: "What kinds of partnerships are needed?"
 tags:
     - Assistant
-slug: what-kinds-of-partnerships-are-needed
+slug: partnership-needs
 doc_type: question
 products:
     - OS-CONNECT

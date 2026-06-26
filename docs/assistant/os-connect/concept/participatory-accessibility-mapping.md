@@ -2,7 +2,7 @@
 title: "What is participatory accessibility mapping?"
 tags:
     - Assistant
-slug: what-is-participatory-accessibility-mapping
+slug: participatory-accessibility-mapping
 doc_type: question
 products:
     - OS-CONNECT

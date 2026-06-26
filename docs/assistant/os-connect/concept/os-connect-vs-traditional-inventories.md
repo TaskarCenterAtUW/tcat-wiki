@@ -2,7 +2,7 @@
 title: "What makes OS-CONNECT different from traditional inventories?"
 tags:
     - Assistant
-slug: what-makes-os-connect-different-from-traditional-inventories
+slug: os-connect-vs-traditional-inventories
 doc_type: question
 products:
     - OS-CONNECT

@@ -2,7 +2,7 @@
 title: "What is a crossing edge?"
 tags:
     - Assistant
-slug: what-is-a-crossing-edge
+slug: crossing-edge
 doc_type: question
 products:
     - OS-CONNECT

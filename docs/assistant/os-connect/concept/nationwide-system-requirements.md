@@ -2,7 +2,7 @@
 title: "What would a nationwide OS-CONNECT-like system require?"
 tags:
     - Assistant
-slug: what-would-a-nationwide-os-connect-like-system-require
+slug: nationwide-system-requirements
 doc_type: question
 products:
     - OS-CONNECT

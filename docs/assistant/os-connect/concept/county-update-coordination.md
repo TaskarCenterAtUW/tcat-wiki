@@ -2,7 +2,7 @@
 title: "How should counties coordinate updates?"
 tags:
     - Assistant
-slug: how-should-counties-coordinate-updates
+slug: county-update-coordination
 doc_type: question
 products:
     - OS-CONNECT

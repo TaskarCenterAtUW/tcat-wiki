@@ -2,7 +2,7 @@
 title: "How should accessibility advocates contribute?"
 tags:
     - Assistant
-slug: how-should-accessibility-advocates-contribute
+slug: advocate-contribution
 doc_type: question
 products:
     - OS-CONNECT

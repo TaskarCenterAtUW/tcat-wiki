@@ -2,7 +2,7 @@
 title: "What is the QA/QC report?"
 tags:
     - Assistant
-slug: what-is-the-qa-qc-report
+slug: qa-qc-report
 doc_type: question
 products:
     - OS-CONNECT

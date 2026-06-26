@@ -2,7 +2,7 @@
 title: "What is OS-CONNECT?"
 tags:
     - Assistant
-slug: what-is-os-connect
+slug: os-connect
 doc_type: question
 products:
     - OS-CONNECT

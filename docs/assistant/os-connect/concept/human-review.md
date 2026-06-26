@@ -2,7 +2,7 @@
 title: "How should human review be incorporated?"
 tags:
     - Assistant
-slug: how-should-human-review-be-incorporated
+slug: human-review
 doc_type: question
 products:
     - OS-CONNECT

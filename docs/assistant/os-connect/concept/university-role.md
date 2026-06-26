@@ -2,7 +2,7 @@
 title: "What role could universities play?"
 tags:
     - Assistant
-slug: what-role-could-universities-play
+slug: university-role
 doc_type: question
 products:
     - OS-CONNECT

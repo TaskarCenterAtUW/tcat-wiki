@@ -2,7 +2,7 @@
 title: "How does OS-CONNECT support mobility justice?"
 tags:
     - Assistant
-slug: how-does-os-connect-support-mobility-justice
+slug: mobility-justice
 doc_type: question
 products:
     - OS-CONNECT

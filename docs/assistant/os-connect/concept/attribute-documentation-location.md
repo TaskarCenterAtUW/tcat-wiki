@@ -2,7 +2,7 @@
 title: "Where are OpenSidewalks attribute definitions documented?"
 tags:
     - Assistant
-slug: where-are-opensidewalks-attribute-definitions-documented
+slug: attribute-documentation-location
 doc_type: question
 products:
     - OS-CONNECT

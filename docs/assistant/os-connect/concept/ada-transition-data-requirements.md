@@ -2,7 +2,7 @@
 title: "What additional data is needed for ADA transition plans?"
 tags:
     - Assistant
-slug: what-additional-data-is-needed-for-ada-transition-plans
+slug: ada-transition-data-requirements
 doc_type: question
 products:
     - OS-CONNECT

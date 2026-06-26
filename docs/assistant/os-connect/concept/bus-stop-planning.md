@@ -2,7 +2,7 @@
 title: "Can OS-CONNECT support bus stop planning?"
 tags:
     - Assistant
-slug: can-os-connect-support-bus-stop-planning
+slug: bus-stop-planning
 doc_type: question
 products:
     - OS-CONNECT

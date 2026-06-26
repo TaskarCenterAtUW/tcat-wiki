@@ -2,7 +2,7 @@
 title: "What are the jurisdiction participation pathways?"
 tags:
     - Assistant
-slug: what-are-the-jurisdiction-participation-pathways
+slug: jurisdiction-participation-pathways
 doc_type: question
 products:
     - OS-CONNECT

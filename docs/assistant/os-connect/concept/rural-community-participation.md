@@ -2,7 +2,7 @@
 title: "How can rural communities participate?"
 tags:
     - Assistant
-slug: how-can-rural-communities-participate
+slug: rural-community-participation
 doc_type: question
 products:
     - OS-CONNECT

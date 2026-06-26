@@ -2,7 +2,7 @@
 title: "Can OS-CONNECT support service planning and reliability analysis?"
 tags:
     - Assistant
-slug: can-os-connect-support-service-planning-and-reliability-analysis
+slug: service-planning
 doc_type: question
 products:
     - OS-CONNECT

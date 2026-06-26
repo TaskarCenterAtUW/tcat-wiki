@@ -2,7 +2,7 @@
 title: "What is context-aware routing?"
 tags:
     - Assistant
-slug: what-is-context-aware-routing
+slug: context-aware-routing
 doc_type: question
 products:
     - OS-CONNECT

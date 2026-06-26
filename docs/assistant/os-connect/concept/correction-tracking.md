@@ -2,7 +2,7 @@
 title: "How are corrections tracked across releases?"
 tags:
     - Assistant
-slug: how-are-corrections-tracked-across-releases
+slug: correction-tracking
 doc_type: question
 products:
     - OS-CONNECT

@@ -2,7 +2,7 @@
 title: "Who reviews submitted issue reports?"
 tags:
     - Assistant
-slug: who-reviews-submitted-issue-reports
+slug: issue-report-reviewers
 doc_type: question
 products:
     - OS-CONNECT

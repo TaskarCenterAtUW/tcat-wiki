@@ -2,7 +2,7 @@
 title: "How do OpenSidewalks mapping efforts relate to local community mapping groups such as Maptime LA?"
 tags:
     - Assistant
-slug: how-do-opensidewalks-mapping-efforts-relate-to-local-community-mapping-groups-such-as-maptimela
+slug: opensidewalks-community-mapping-groups
 doc_type: question
 products:
     - OS-CONNECT

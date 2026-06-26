@@ -2,7 +2,7 @@
 title: "What role did imagery play?"
 tags:
     - Assistant
-slug: what-role-did-imagery-play
+slug: imagery-role
 doc_type: question
 products:
     - OS-CONNECT

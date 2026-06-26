@@ -2,7 +2,7 @@
 title: "Does a correction update OS-CONNECT, OpenStreetMap, TDEI, or all of them?"
 tags:
     - Assistant
-slug: does-a-correction-update-os-connect-openstreetmap-tdei-or-all-of-them
+slug: correction-propagation
 doc_type: question
 products:
     - OS-CONNECT

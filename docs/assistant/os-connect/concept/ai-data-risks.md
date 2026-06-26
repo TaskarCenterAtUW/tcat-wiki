@@ -2,7 +2,7 @@
 title: "What risks exist in AI-generated accessibility data?"
 tags:
     - Assistant
-slug: what-risks-exist-in-ai-generated-accessibility-data
+slug: ai-data-risks
 doc_type: question
 products:
     - OS-CONNECT
