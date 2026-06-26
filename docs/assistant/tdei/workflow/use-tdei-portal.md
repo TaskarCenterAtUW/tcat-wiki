@@ -28,6 +28,8 @@ related_pages:
     - tdei/portal/user-manual/index.md
 ---
 
+<!-- @format -->
+
 # How do I use the TDEI portal?
 
 ## Short Answer

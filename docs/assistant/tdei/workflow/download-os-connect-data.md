@@ -29,6 +29,8 @@ related_pages:
     - tdei/portal/tutorial/download-os-connect.md
 ---
 
+<!-- @format -->
+
 # Where do I download OS-CONNECT data?
 
 ## Short Answer

@@ -26,6 +26,8 @@ assistant_behavior:
 related_pages: []
 ---
 
+<!-- @format -->
+
 # Where can I download the data?
 
 ## Short Answer

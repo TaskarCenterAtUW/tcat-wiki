@@ -27,6 +27,8 @@ assistant_behavior:
 related_pages: []
 ---
 
+<!-- @format -->
+
 # How do I know whether a dataset is current?
 
 ## Short Answer
