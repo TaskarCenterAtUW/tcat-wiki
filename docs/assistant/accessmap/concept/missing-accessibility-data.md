@@ -2,7 +2,7 @@
 title: "What happens when accessibility data is missing?"
 tags:
     - Assistant
-slug: what-happens-when-accessibility-data-is-missing
+slug: missing-accessibility-data
 doc_type: question
 products:
     - AccessMap
@@ -25,6 +25,8 @@ assistant_behavior:
     do_not_claim: []
 related_pages: []
 ---
+
+<!-- @format -->
 
 # What happens when accessibility data is missing?
 

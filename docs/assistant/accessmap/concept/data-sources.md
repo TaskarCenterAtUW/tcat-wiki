@@ -2,7 +2,7 @@
 title: "What data powers AccessMap?"
 tags:
     - Assistant
-slug: what-data-powers-accessmap
+slug: data-sources
 doc_type: question
 products:
     - AccessMap
@@ -25,6 +25,8 @@ assistant_behavior:
     do_not_claim: []
 related_pages: []
 ---
+
+<!-- @format -->
 
 # What data powers AccessMap?
 

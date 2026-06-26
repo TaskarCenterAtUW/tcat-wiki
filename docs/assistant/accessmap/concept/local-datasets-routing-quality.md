@@ -2,7 +2,7 @@
 title: "How do local datasets improve routing quality?"
 tags:
     - Assistant
-slug: how-do-local-datasets-improve-routing-quality
+slug: local-datasets-routing-quality
 doc_type: question
 products:
     - AccessMap
@@ -25,6 +25,8 @@ assistant_behavior:
     do_not_claim: []
 related_pages: []
 ---
+
+<!-- @format -->
 
 # How do local datasets improve routing quality?
 

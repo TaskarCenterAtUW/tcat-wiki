@@ -2,7 +2,7 @@
 title: "How can schools use AccessMap?"
 tags:
     - Assistant
-slug: how-can-schools-use-accessmap
+slug: school-use
 doc_type: question
 products:
     - AccessMap
@@ -25,6 +25,8 @@ assistant_behavior:
     do_not_claim: []
 related_pages: []
 ---
+
+<!-- @format -->
 
 # How can schools use AccessMap?
 

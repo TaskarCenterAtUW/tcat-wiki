@@ -2,7 +2,7 @@
 title: "What does it mean to route using accessibility preferences?"
 tags:
     - Assistant
-slug: what-does-it-mean-to-route-using-accessibility-preferences
+slug: accessibility-preference-routing
 doc_type: question
 products:
     - AccessMap
@@ -26,6 +26,8 @@ assistant_behavior:
     do_not_claim: []
 related_pages: []
 ---
+
+<!-- @format -->
 
 # What does it mean to route using accessibility preferences?
 

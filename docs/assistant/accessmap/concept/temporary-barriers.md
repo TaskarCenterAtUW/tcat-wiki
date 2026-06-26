@@ -2,7 +2,7 @@
 title: "Can temporary barriers be represented?"
 tags:
     - Assistant
-slug: can-temporary-barriers-be-represented
+slug: temporary-barriers
 doc_type: question
 products:
     - AccessMap
@@ -25,6 +25,8 @@ assistant_behavior:
     do_not_claim: []
 related_pages: []
 ---
+
+<!-- @format -->
 
 # Can temporary barriers be represented?
 

@@ -2,7 +2,7 @@
 title: "Why does AccessMap differ from Google Maps?"
 tags:
     - Assistant
-slug: why-does-accessmap-differ-from-google-maps
+slug: google-maps-design-rationale
 doc_type: question
 products:
     - AccessMap
@@ -25,6 +25,8 @@ assistant_behavior:
     do_not_claim: []
 related_pages: []
 ---
+
+<!-- @format -->
 
 # Why does AccessMap differ from Google Maps?
 

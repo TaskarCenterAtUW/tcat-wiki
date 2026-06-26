@@ -2,7 +2,7 @@
 title: "How do steep slopes affect route selection?"
 tags:
     - Assistant
-slug: how-do-steep-slopes-affect-route-selection
+slug: steep-slopes-effect
 doc_type: question
 products:
     - AccessMap
@@ -26,6 +26,8 @@ assistant_behavior:
     do_not_claim: []
 related_pages: []
 ---
+
+<!-- @format -->
 
 # How do steep slopes affect route selection?
 

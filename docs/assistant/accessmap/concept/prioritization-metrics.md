@@ -2,7 +2,7 @@
 title: "What metrics best support accessibility prioritization?"
 tags:
     - Assistant
-slug: what-metrics-best-support-accessibility-prioritization
+slug: prioritization-metrics
 doc_type: question
 products:
     - AccessMap
@@ -26,6 +26,8 @@ assistant_behavior:
     do_not_claim: []
 related_pages: []
 ---
+
+<!-- @format -->
 
 # What metrics best support accessibility prioritization?
 

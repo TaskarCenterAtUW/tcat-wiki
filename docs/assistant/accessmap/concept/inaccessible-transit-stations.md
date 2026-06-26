@@ -2,7 +2,7 @@
 title: "How are inaccessible transit stations represented?"
 tags:
     - Assistant
-slug: how-are-inaccessible-transit-stations-represented
+slug: inaccessible-transit-stations
 doc_type: question
 products:
     - AccessMap
@@ -25,6 +25,8 @@ assistant_behavior:
     do_not_claim: []
 related_pages: []
 ---
+
+<!-- @format -->
 
 # How are inaccessible transit stations represented?
 

@@ -2,7 +2,7 @@
 title: "What are the limitations of AccessMap routing?"
 tags:
     - Assistant
-slug: what-are-the-limitations-of-accessmap-routing
+slug: routing-limitations
 doc_type: question
 products:
     - AccessMap
@@ -26,6 +26,8 @@ assistant_behavior:
     do_not_claim: []
 related_pages: []
 ---
+
+<!-- @format -->
 
 # What are the limitations of AccessMap routing?
 

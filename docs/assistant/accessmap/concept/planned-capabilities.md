@@ -2,7 +2,7 @@
 title: "What future capabilities are planned for AccessMap?"
 tags:
     - Assistant
-slug: what-future-capabilities-are-planned-for-accessmap
+slug: planned-capabilities
 doc_type: question
 products:
     - AccessMap
@@ -25,6 +25,8 @@ assistant_behavior:
     do_not_claim: []
 related_pages: []
 ---
+
+<!-- @format -->
 
 # What future capabilities are planned for AccessMap?
 

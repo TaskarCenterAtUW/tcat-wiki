@@ -2,7 +2,7 @@
 title: "What is GTFS-Pathways?"
 tags:
     - Assistant
-slug: what-is-gtfs-pathways
+slug: gtfs-pathways
 doc_type: question
 products:
     - AccessMap
@@ -25,6 +25,8 @@ assistant_behavior:
     do_not_claim: []
 related_pages: []
 ---
+
+<!-- @format -->
 
 # What is GTFS-Pathways?
 

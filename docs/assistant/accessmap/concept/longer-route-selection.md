@@ -2,7 +2,7 @@
 title: Why does AccessMap choose longer routes?
 tags:
     - Assistant
-slug: why-accessmap-longer-routes
+slug: longer-route-selection
 doc_type: question
 products:
     - AccessMap
@@ -26,6 +26,8 @@ related_pages:
     - assistant/concepts/accessmap-routing.md
     - assistant/accessmap/how-do-mobility-profiles-work.md
 ---
+
+<!-- @format -->
 
 # Why does AccessMap choose longer routes?
 

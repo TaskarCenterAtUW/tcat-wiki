@@ -1,8 +1,8 @@
 ---
-title: "What does \"avoid steep slopes\" mean?"
+title: 'What does "avoid steep slopes" mean?'
 tags:
     - Assistant
-slug: what-does-avoid-steep-slopes-mean
+slug: avoid-steep-slopes
 doc_type: question
 products:
     - AccessMap
@@ -25,6 +25,8 @@ assistant_behavior:
     do_not_claim: []
 related_pages: []
 ---
+
+<!-- @format -->
 
 # What does "avoid steep slopes" mean?
 

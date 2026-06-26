@@ -2,7 +2,7 @@
 title: "How can users report routing problems?"
 tags:
     - Assistant
-slug: how-can-users-report-routing-problems
+slug: report-routing-problems
 doc_type: question
 products:
     - AccessMap
@@ -25,6 +25,8 @@ assistant_behavior:
     do_not_claim: []
 related_pages: []
 ---
+
+<!-- @format -->
 
 # How can users report routing problems?
 

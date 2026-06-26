@@ -2,7 +2,7 @@
 title: "What role does field validation play?"
 tags:
     - Assistant
-slug: what-role-does-field-validation-play
+slug: field-validation
 doc_type: question
 products:
     - AccessMap
@@ -25,6 +25,8 @@ assistant_behavior:
     do_not_claim: []
 related_pages: []
 ---
+
+<!-- @format -->
 
 # What role does field validation play?
 

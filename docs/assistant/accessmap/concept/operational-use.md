@@ -2,7 +2,7 @@
 title: "How can cities use AccessMap operationally?"
 tags:
     - Assistant
-slug: how-can-cities-use-accessmap-operationally
+slug: operational-use
 doc_type: question
 products:
     - AccessMap
@@ -25,6 +25,8 @@ assistant_behavior:
     do_not_claim: []
 related_pages: []
 ---
+
+<!-- @format -->
 
 # How can cities use AccessMap operationally?
 

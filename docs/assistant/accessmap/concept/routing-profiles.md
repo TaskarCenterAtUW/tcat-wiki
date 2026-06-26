@@ -2,7 +2,7 @@
 title: "What routing profiles are available?"
 tags:
     - Assistant
-slug: what-routing-profiles-are-available
+slug: routing-profiles
 doc_type: question
 products:
     - AccessMap
@@ -25,6 +25,8 @@ assistant_behavior:
     do_not_claim: []
 related_pages: []
 ---
+
+<!-- @format -->
 
 # What routing profiles are available?
 

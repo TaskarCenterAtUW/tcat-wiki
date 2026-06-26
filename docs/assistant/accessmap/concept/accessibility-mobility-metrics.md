@@ -2,7 +2,7 @@
 title: "What metrics matter most for accessible mobility?"
 tags:
     - Assistant
-slug: what-metrics-matter-most-for-accessible-mobility
+slug: accessibility-mobility-metrics
 doc_type: question
 products:
     - AccessMap
@@ -25,6 +25,8 @@ assistant_behavior:
     do_not_claim: []
 related_pages: []
 ---
+
+<!-- @format -->
 
 # What metrics matter most for accessible mobility?
 

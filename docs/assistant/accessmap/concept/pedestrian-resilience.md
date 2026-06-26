@@ -2,7 +2,7 @@
 title: "What is pedestrian resilience?"
 tags:
     - Assistant
-slug: what-is-pedestrian-resilience
+slug: pedestrian-resilience
 doc_type: question
 products:
     - AccessMap
@@ -25,6 +25,8 @@ assistant_behavior:
     do_not_claim: []
 related_pages: []
 ---
+
+<!-- @format -->
 
 # What is pedestrian resilience?
 

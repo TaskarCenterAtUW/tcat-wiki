@@ -2,7 +2,7 @@
 title: "What happens when sidewalks are disconnected?"
 tags:
     - Assistant
-slug: what-happens-when-sidewalks-are-disconnected
+slug: disconnected-sidewalks
 doc_type: question
 products:
     - AccessMap
@@ -25,6 +25,8 @@ assistant_behavior:
     do_not_claim: []
 related_pages: []
 ---
+
+<!-- @format -->
 
 # What happens when sidewalks are disconnected?
 

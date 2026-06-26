@@ -2,7 +2,7 @@
 title: "How are slopes incorporated into routing?"
 tags:
     - Assistant
-slug: how-are-slopes-incorporated-into-routing
+slug: slope-routing
 doc_type: question
 products:
     - AccessMap
@@ -26,6 +26,8 @@ assistant_behavior:
     do_not_claim: []
 related_pages: []
 ---
+
+<!-- @format -->
 
 # How are slopes incorporated into routing?
 

@@ -2,7 +2,7 @@
 title: "How often is AccessMap updated?"
 tags:
     - Assistant
-slug: how-often-is-accessmap-updated
+slug: update-cadence
 doc_type: question
 products:
     - AccessMap
@@ -25,6 +25,8 @@ assistant_behavior:
     do_not_claim: []
 related_pages: []
 ---
+
+<!-- @format -->
 
 # How often is AccessMap updated?
 

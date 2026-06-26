@@ -2,7 +2,7 @@
 title: "What is AccessMap?"
 tags:
     - Assistant
-slug: what-is-accessmap
+slug: accessmap
 doc_type: question
 products:
     - AccessMap
@@ -25,6 +25,8 @@ assistant_behavior:
     do_not_claim: []
 related_pages: []
 ---
+
+<!-- @format -->
 
 # What is AccessMap?
 

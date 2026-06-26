@@ -2,7 +2,7 @@
 title: "What are routing tradeoffs?"
 tags:
     - Assistant
-slug: what-are-routing-tradeoffs
+slug: routing-tradeoffs
 doc_type: question
 products:
     - AccessMap
@@ -25,6 +25,8 @@ assistant_behavior:
     do_not_claim: []
 related_pages: []
 ---
+
+<!-- @format -->
 
 # What are routing tradeoffs?
 

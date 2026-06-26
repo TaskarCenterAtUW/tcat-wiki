@@ -2,7 +2,7 @@
 title: How do mobility profiles work?
 tags:
     - Assistant
-slug: how-mobility-profiles-work
+slug: mobility-profiles
 doc_type: question
 products:
     - AccessMap
@@ -26,6 +26,8 @@ related_pages:
     - assistant/concepts/accessmap-routing.md
     - accessmap/user-manual/profiles.md
 ---
+
+<!-- @format -->
 
 # How do mobility profiles work?
 

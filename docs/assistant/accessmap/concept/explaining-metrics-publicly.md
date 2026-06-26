@@ -2,7 +2,7 @@
 title: "How can agencies explain these metrics publicly?"
 tags:
     - Assistant
-slug: how-can-agencies-explain-these-metrics-publicly
+slug: explaining-metrics-publicly
 doc_type: question
 products:
     - AccessMap
@@ -25,6 +25,8 @@ assistant_behavior:
     do_not_claim: []
 related_pages: []
 ---
+
+<!-- @format -->
 
 # How can agencies explain these metrics publicly?
 

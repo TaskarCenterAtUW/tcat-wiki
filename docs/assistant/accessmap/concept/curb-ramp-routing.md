@@ -2,7 +2,7 @@
 title: "How are curb ramps incorporated into routing?"
 tags:
     - Assistant
-slug: how-are-curb-ramps-incorporated-into-routing
+slug: curb-ramp-routing
 doc_type: question
 products:
     - AccessMap
@@ -26,6 +26,8 @@ assistant_behavior:
     do_not_claim: []
 related_pages: []
 ---
+
+<!-- @format -->
 
 # How are curb ramps incorporated into routing?
 

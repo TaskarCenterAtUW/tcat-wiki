@@ -2,7 +2,7 @@
 title: "How can AccessMap support emergency planning?"
 tags:
     - Assistant
-slug: how-can-accessmap-support-emergency-planning
+slug: emergency-planning
 doc_type: question
 products:
     - AccessMap
@@ -25,6 +25,8 @@ assistant_behavior:
     do_not_claim: []
 related_pages: []
 ---
+
+<!-- @format -->
 
 # How can AccessMap support emergency planning?
 

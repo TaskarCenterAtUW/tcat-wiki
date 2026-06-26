@@ -2,7 +2,7 @@
 title: "Can AccessMap support powered wheelchair users?"
 tags:
     - Assistant
-slug: can-accessmap-support-powered-wheelchair-users
+slug: powered-wheelchair-support
 doc_type: question
 products:
     - AccessMap
@@ -26,6 +26,8 @@ assistant_behavior:
     do_not_claim: []
 related_pages: []
 ---
+
+<!-- @format -->
 
 # Can AccessMap support powered wheelchair users?
 

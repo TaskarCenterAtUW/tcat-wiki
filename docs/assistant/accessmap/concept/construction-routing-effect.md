@@ -2,7 +2,7 @@
 title: "How does construction affect routing?"
 tags:
     - Assistant
-slug: how-does-construction-affect-routing
+slug: construction-routing-effect
 doc_type: question
 products:
     - AccessMap
@@ -26,6 +26,8 @@ assistant_behavior:
     do_not_claim: []
 related_pages: []
 ---
+
+<!-- @format -->
 
 # How does construction affect routing?
 

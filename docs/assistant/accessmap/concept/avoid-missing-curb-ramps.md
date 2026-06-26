@@ -1,8 +1,8 @@
 ---
-title: "What does \"avoid missing curb ramps\" mean?"
+title: 'What does "avoid missing curb ramps" mean?'
 tags:
     - Assistant
-slug: what-does-avoid-missing-curb-ramps-mean
+slug: avoid-missing-curb-ramps
 doc_type: question
 products:
     - AccessMap
@@ -25,6 +25,8 @@ assistant_behavior:
     do_not_claim: []
 related_pages: []
 ---
+
+<!-- @format -->
 
 # What does "avoid missing curb ramps" mean?
 

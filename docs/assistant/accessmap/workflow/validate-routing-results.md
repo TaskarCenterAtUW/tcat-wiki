@@ -2,7 +2,7 @@
 title: "How should municipalities validate routing results?"
 tags:
     - Assistant
-slug: how-should-municipalities-validate-routing-results
+slug: validate-routing-results
 doc_type: question
 products:
     - AccessMap
@@ -25,6 +25,8 @@ assistant_behavior:
     do_not_claim: []
 related_pages: []
 ---
+
+<!-- @format -->
 
 # How should municipalities validate routing results?
 

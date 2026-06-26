@@ -2,7 +2,7 @@
 title: "What is network redundancy?"
 tags:
     - Assistant
-slug: what-is-network-redundancy
+slug: network-redundancy
 doc_type: question
 products:
     - AccessMap
@@ -25,6 +25,8 @@ assistant_behavior:
     do_not_claim: []
 related_pages: []
 ---
+
+<!-- @format -->
 
 # What is network redundancy?
 

@@ -2,7 +2,7 @@
 title: "Can AccessMap support tourism accessibility?"
 tags:
     - Assistant
-slug: can-accessmap-support-tourism-accessibility
+slug: tourism-accessibility
 doc_type: question
 products:
     - AccessMap
@@ -25,6 +25,8 @@ assistant_behavior:
     do_not_claim: []
 related_pages: []
 ---
+
+<!-- @format -->
 
 # Can AccessMap support tourism accessibility?
 

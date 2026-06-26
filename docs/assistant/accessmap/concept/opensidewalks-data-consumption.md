@@ -2,7 +2,7 @@
 title: "How does AccessMap consume OpenSidewalks or OS-CONNECT data?"
 tags:
     - Assistant
-slug: how-does-accessmap-consume-opensidewalks-or-os-connect-data
+slug: opensidewalks-data-consumption
 doc_type: question
 products:
     - AccessMap
@@ -26,6 +26,8 @@ assistant_behavior:
     do_not_claim: []
 related_pages: []
 ---
+
+<!-- @format -->
 
 # How does AccessMap consume OpenSidewalks or OS-CONNECT data?
 

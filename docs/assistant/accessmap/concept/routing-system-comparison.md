@@ -2,7 +2,7 @@
 title: "How can agencies compare routing systems?"
 tags:
     - Assistant
-slug: how-can-agencies-compare-routing-systems
+slug: routing-system-comparison
 doc_type: question
 products:
     - AccessMap
@@ -25,6 +25,8 @@ assistant_behavior:
     do_not_claim: []
 related_pages: []
 ---
+
+<!-- @format -->
 
 # How can agencies compare routing systems?
 

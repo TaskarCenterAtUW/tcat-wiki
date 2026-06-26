@@ -2,7 +2,7 @@
 title: "Can AccessMap support hospitals or medical campuses?"
 tags:
     - Assistant
-slug: can-accessmap-support-hospitals-or-medical-campuses
+slug: hospital-campus-support
 doc_type: question
 products:
     - AccessMap
@@ -25,6 +25,8 @@ assistant_behavior:
     do_not_claim: []
 related_pages: []
 ---
+
+<!-- @format -->
 
 # Can AccessMap support hospitals or medical campuses?
 

@@ -2,7 +2,7 @@
 title: "What accessibility assumptions are built into AccessMap?"
 tags:
     - Assistant
-slug: what-accessibility-assumptions-are-built-into-accessmap
+slug: accessibility-assumptions
 doc_type: question
 products:
     - AccessMap
@@ -25,6 +25,8 @@ assistant_behavior:
     do_not_claim: []
 related_pages: []
 ---
+
+<!-- @format -->
 
 # What accessibility assumptions are built into AccessMap?
 

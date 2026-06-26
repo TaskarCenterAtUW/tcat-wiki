@@ -2,7 +2,7 @@
 title: "Can AccessMap support campus accessibility?"
 tags:
     - Assistant
-slug: can-accessmap-support-campus-accessibility
+slug: campus-accessibility
 doc_type: question
 products:
     - AccessMap
@@ -25,6 +25,8 @@ assistant_behavior:
     do_not_claim: []
 related_pages: []
 ---
+
+<!-- @format -->
 
 # Can AccessMap support campus accessibility?
 

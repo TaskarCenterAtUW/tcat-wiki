@@ -2,7 +2,7 @@
 title: "How can agencies identify critical pedestrian corridors?"
 tags:
     - Assistant
-slug: how-can-agencies-identify-critical-pedestrian-corridors
+slug: critical-pedestrian-corridors
 doc_type: question
 products:
     - AccessMap
@@ -25,6 +25,8 @@ assistant_behavior:
     do_not_claim: []
 related_pages: []
 ---
+
+<!-- @format -->
 
 # How can agencies identify critical pedestrian corridors?
 

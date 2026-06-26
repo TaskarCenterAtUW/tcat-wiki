@@ -2,7 +2,7 @@
 title: "What accessibility needs does AccessMap support?"
 tags:
     - Assistant
-slug: what-accessibility-needs-does-accessmap-support
+slug: accessibility-needs
 doc_type: question
 products:
     - AccessMap
@@ -25,6 +25,8 @@ assistant_behavior:
     do_not_claim: []
 related_pages: []
 ---
+
+<!-- @format -->
 
 # What accessibility needs does AccessMap support?
 
