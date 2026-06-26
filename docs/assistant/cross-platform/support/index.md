@@ -33,6 +33,8 @@ related_pages:
     - assistant/dispatch.md
 ---
 
+<!-- @format -->
+
 # Support Q&A — Assistant Knowledge Base
 
 ## Short Answer
@@ -67,7 +69,7 @@ For cross-product questions, synthesize answers from multiple pages when needed,
 
 ## Related Concepts
 
-- [OS-CONNECT knowledge base](../os-connect/index.md)
-- [TDEI knowledge base](../tdei/index.md)
-- [Workspaces knowledge base](../workspaces/index.md)
-- [Dispatch — full file registry](../dispatch.md)
+- [OS-CONNECT knowledge base](../../os-connect/index.md)
+- [TDEI knowledge base](../../tdei/index.md)
+- [Workspaces knowledge base](../../workspaces/index.md)
+- [Dispatch — full file registry](../../dispatch.md)
