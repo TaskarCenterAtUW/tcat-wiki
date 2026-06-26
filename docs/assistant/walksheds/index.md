@@ -33,6 +33,8 @@ related_pages:
     - assistant/accessmap/index.md
 ---
 
+<!-- @format -->
+
 # Walksheds — Assistant Knowledge Base
 
 ## Short Answer
@@ -72,5 +74,5 @@ When presenting walkshed results as evidence for policy decisions, include a cav
 
 - [OS-CONNECT knowledge base](../os-connect/index.md) — underlying pedestrian data
 - [AccessMap knowledge base](../accessmap/index.md) — point-to-point routing
-- [Cross-product support](../support/index.md)
+- [Cross-product support](../cross-platform/support/index.md)
 - [Dispatch — full file registry](../dispatch.md)

@@ -31,6 +31,8 @@ related_pages:
     - assistant/backlog/helpline-faq-backlog.md
 ---
 
+<!-- @format -->
+
 # Support intents (RAG routing)
 
 ## Short Answer
@@ -49,7 +51,7 @@ Support staff ask operational questions in the moment and may phrase similar que
 
 **Retrieve these pages:**
 
-- [what-is-the-difference-between-tdei-os-connect-opensidewalks-and-openstreetmap](support/what-is-the-difference-between-tdei-os-connect-opensidewalks-and-openstreetmap.md)
+- [what-is-the-difference-between-tdei-os-connect-opensidewalks-and-openstreetmap](cross-platform/support/what-is-the-difference-between-tdei-os-connect-opensidewalks-and-openstreetmap.md)
 - [what-is-tdei](tdei/what-is-tdei.md)
 - [what-is-os-connect](os-connect/what-is-os-connect.md)
 - [what-is-opensidewalks](os-connect/what-is-opensidewalks.md)
@@ -60,8 +62,8 @@ Support staff ask operational questions in the moment and may phrase similar que
 
 **Retrieve these pages:**
 
-- [which-dataset-and-format-should-an-agency-use-for-pedestrian-walkway-data-in-arcgis](support/which-dataset-and-format-should-an-agency-use-for-pedestrian-walkway-data-in-arcgis.md)
-- [which-dataset-should-i-use-if-i-need-pedestrian-walkway-data-for-planning](support/which-dataset-should-i-use-if-i-need-pedestrian-walkway-data-for-planning.md)
+- [which-dataset-and-format-should-an-agency-use-for-pedestrian-walkway-data-in-arcgis](cross-platform/support/which-dataset-and-format-should-an-agency-use-for-pedestrian-walkway-data-in-arcgis.md)
+- [which-dataset-should-i-use-if-i-need-pedestrian-walkway-data-for-planning](cross-platform/support/which-dataset-should-i-use-if-i-need-pedestrian-walkway-data-for-planning.md)
 
 ### `guide-download`
 
@@ -139,7 +141,7 @@ Support staff ask operational questions in the moment and may phrase similar que
 
 **Retrieve these pages:**
 
-- [how-do-i-know-whether-a-dataset-is-authoritative](support/how-do-i-know-whether-a-dataset-is-authoritative.md)
+- [how-do-i-know-whether-a-dataset-is-authoritative](cross-platform/support/how-do-i-know-whether-a-dataset-is-authoritative.md)
 
 ### `explain-gtfs-pathways-relationship`
 
@@ -147,7 +149,7 @@ Support staff ask operational questions in the moment and may phrase similar que
 
 **Retrieve these pages:**
 
-- [how-is-os-connect-different-from-gtfs-pathways](support/how-is-os-connect-different-from-gtfs-pathways.md)
+- [how-is-os-connect-different-from-gtfs-pathways](cross-platform/support/how-is-os-connect-different-from-gtfs-pathways.md)
 
 ### `check-gtfs-pathways-availability`
 
@@ -155,7 +157,7 @@ Support staff ask operational questions in the moment and may phrase similar que
 
 **Retrieve these pages:**
 
-- [how-can-i-tell-whether-a-gtfs-feed-includes-pathways-txt](support/how-can-i-tell-whether-a-gtfs-feed-includes-pathways-txt.md)
+- [how-can-i-tell-whether-a-gtfs-feed-includes-pathways-txt](cross-platform/support/how-can-i-tell-whether-a-gtfs-feed-includes-pathways-txt.md)
 
 ### `support-trip-planning-vendors`
 
@@ -204,7 +206,7 @@ Support staff ask operational questions in the moment and may phrase similar que
 
 **Retrieve these pages:**
 
-- [how-is-accessmap-different-from-walksheds](support/how-is-accessmap-different-from-walksheds.md)
+- [how-is-accessmap-different-from-walksheds](cross-platform/support/how-is-accessmap-different-from-walksheds.md)
 
 ### `support-stop-planning`
 
@@ -212,7 +214,7 @@ Support staff ask operational questions in the moment and may phrase similar que
 
 **Retrieve these pages:**
 
-- [how-can-os-connect-and-walksheds-support-bus-stop-planning](support/how-can-os-connect-and-walksheds-support-bus-stop-planning.md)
+- [how-can-os-connect-and-walksheds-support-bus-stop-planning](cross-platform/support/how-can-os-connect-and-walksheds-support-bus-stop-planning.md)
 
 ### `support-event-accessibility`
 
@@ -276,7 +278,7 @@ Support staff ask operational questions in the moment and may phrase similar que
 
 **Retrieve these pages:**
 
-- [when-should-someone-be-referred-to-mappy-hours-versus-receiving-direct-support](support/when-should-someone-be-referred-to-mappy-hours-versus-receiving-direct-support.md)
+- [when-should-someone-be-referred-to-mappy-hours-versus-receiving-direct-support](cross-platform/support/when-should-someone-be-referred-to-mappy-hours-versus-receiving-direct-support.md)
 
 ### `decide-direct-support-vs-office-hours`
 
@@ -284,7 +286,7 @@ Support staff ask operational questions in the moment and may phrase similar que
 
 **Retrieve these pages:**
 
-- [when-should-someone-be-referred-to-mappy-hours-versus-receiving-direct-support](support/when-should-someone-be-referred-to-mappy-hours-versus-receiving-direct-support.md)
+- [when-should-someone-be-referred-to-mappy-hours-versus-receiving-direct-support](cross-platform/support/when-should-someone-be-referred-to-mappy-hours-versus-receiving-direct-support.md)
 
 ### `draft-professional-support-response`
 
@@ -304,7 +306,6 @@ Support staff ask operational questions in the moment and may phrase similar que
 
 **Retrieve these pages:**
 
-
 ### `manage-uncertainty`
 
 **Example query:** Rewrite this answer so it does not overstate what we know.
@@ -312,7 +313,6 @@ Support staff ask operational questions in the moment and may phrase similar que
 **Suggested pattern:** `answer-when-uncertain`
 
 **Retrieve these pages:**
-
 
 ### `preserve-relationship-continuity`
 
@@ -322,14 +322,13 @@ Support staff ask operational questions in the moment and may phrase similar que
 
 **Retrieve these pages:**
 
-
 ### `identify-ownership`
 
 **Example query:** This question crosses data, portal, and mapping workflows. Who should own the follow-up?
 
 **Retrieve these pages:**
 
-- [who-owns-follow-up-when-a-partner-asks-a-question-that-crosses-tools-or-teams](support/who-owns-follow-up-when-a-partner-asks-a-question-that-crosses-tools-or-teams.md)
+- [who-owns-follow-up-when-a-partner-asks-a-question-that-crosses-tools-or-teams](cross-platform/support/who-owns-follow-up-when-a-partner-asks-a-question-that-crosses-tools-or-teams.md)
 
 ### `propose-next-step`
 
@@ -339,7 +338,7 @@ Support staff ask operational questions in the moment and may phrase similar que
 
 **Retrieve these pages:**
 
-- [what-should-staff-do-when-they-do-not-know-the-answer-to-a-partner-s-question](support/what-should-staff-do-when-they-do-not-know-the-answer-to-a-partner-s-question.md)
+- [what-should-staff-do-when-they-do-not-know-the-answer-to-a-partner-s-question](cross-platform/support/what-should-staff-do-when-they-do-not-know-the-answer-to-a-partner-s-question.md)
 
 ## What This Means
 

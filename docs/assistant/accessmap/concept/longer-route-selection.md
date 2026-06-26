@@ -62,5 +62,5 @@ Explain multi-criteria optimization in plain language. Avoid telling users their
 
 ## Related Concepts
 
-- [AccessMap routing (concept)](../concepts/accessmap-routing.md)
-- [How do mobility profiles work?](how-do-mobility-profiles-work.md)
+- [AccessMap routing (concept)](route-calculation.md)
+- [How do mobility profiles work?](mobility-profiles.md)

@@ -37,6 +37,8 @@ related_pages:
     - assistant/policies/assistant-abstention.md
 ---
 
+<!-- @format -->
+
 # Assistant Knowledge Base
 
 ## Short Answer
@@ -89,4 +91,4 @@ When a user asks a general question about TCAT products, consult the relevant se
 - [Policies](policies/index.md)
 - [Workflows](cross-platform/workflows/index.md)
 - [Glossary](cross-platform/glossary/index.md)
-- [Support Q&A](support/index.md)
+- [Support Q&A](cross-platform/support/index.md)

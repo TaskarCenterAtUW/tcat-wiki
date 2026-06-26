@@ -50,7 +50,7 @@ Profiles change which edges are traversable or how expensive they are in the rou
 
 ## How To Use This
 
-Cite the [AccessMap profiles manual](../../accessmap/user-manual/profiles.md) for authoritative UI behavior.
+Cite the [AccessMap profiles manual](user-manual/) for authoritative UI behavior.
 
 ## Example
 
