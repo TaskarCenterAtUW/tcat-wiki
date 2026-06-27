@@ -23,7 +23,7 @@ _For a list of all guides on the TCAT Wiki, refer to the [Guides List](../../../
 The **Datasets** section lists datasets available within the TDEI system. It has two tabs:
 
 | Tab                       | Description                                                                 |
-|:--------------------------|:----------------------------------------------------------------------------|
+| :------------------------ | :-------------------------------------------------------------------------- |
 | **My Project Datasets**   | Datasets belonging to your currently active project group                   |
 | **All Released Datasets** | All datasets that have been publicly released across the entire TDEI system |
 
@@ -33,7 +33,7 @@ The **Datasets** section lists datasets available within the TDEI system. It has
 Each dataset entry displays:
 
 | Field                  | Description                                                                           |
-|:-----------------------|:--------------------------------------------------------------------------------------|
+| :--------------------- | :------------------------------------------------------------------------------------ |
 | **Dataset Name**       | The name of the dataset, with upload timestamp and version number                     |
 | **Project Group**      | The project group the dataset belongs to                                              |
 | **Service Name**       | The service the dataset is associated with                                            |
@@ -51,7 +51,7 @@ Use the **Type** dropdown to quickly filter the list by dataset type (`All`, `OS
 For more specific filtering, select the **Filter** button to expand the filter panel:
 
 | Filter            | Description                                 |
-|:------------------|:--------------------------------------------|
+| :---------------- | :------------------------------------------ |
 | **Dataset**       | Search by dataset name                      |
 | **Project Group** | Filter by project group name                |
 | **Service**       | Filter by service name                      |
@@ -84,7 +84,7 @@ Select **Clear** next to any field to reset that filter, or use **Sort by** to c
 Select the **action menu** (⋮) on the right side of any dataset row to access the following actions:
 
 | Action                 | Description                                                                                                |
-|:-----------------------|:-----------------------------------------------------------------------------------------------------------|
+| :--------------------- | :--------------------------------------------------------------------------------------------------------- |
 | **Open in Workspaces** | Opens the dataset in the [Workspaces](../../../workspaces/index.md) editing platform                       |
 | **Download Metadata**  | Downloads the metadata associated with the dataset                                                         |
 | **Clone Dataset**      | Creates a copy of the dataset, allowing you to make changes without affecting the original                 |

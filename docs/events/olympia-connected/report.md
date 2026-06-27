@@ -14,7 +14,7 @@ tags:
 On February 12th, 2026, MaptimeSEA and the Taskar Center for Accessible Technology (TCAT) hosted **Olympia, Connected: Mapping for Mobility in OpenStreetMap**, an in-person event focused on improving pedestrian infrastructure data to support accessibility-focused routing in **Olympia, WA**.
 
 | Detail       | Info                                                         |
-|--------------|--------------------------------------------------------------|
+| :----------- | :----------------------------------------------------------- |
 | **Date**     | February 12th, 2026                                          |
 | **Time**     | 6:00 PM PT – 8:00 PM PT                                      |
 | **Format**   | in-person                                                    |
@@ -29,7 +29,7 @@ Mappers contributed to **[Project #1083 — Olympia, WA, US: Pedestrian Infrastr
 #### Mapping Statistics
 
 | Metric                 | Value                              |
-|------------------------|------------------------------------|
+| :--------------------- | :--------------------------------- |
 | **Edits**              | 237 map edits across 13 changesets |
 | **Footways mapped**    | 5.1 miles total length             |
 | **Crossings mapped**   | 25 crossing ways                   |

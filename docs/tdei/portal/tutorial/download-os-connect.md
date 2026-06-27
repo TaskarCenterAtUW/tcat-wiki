@@ -55,7 +55,7 @@ After logging in, you will land on the **Dashboard**. The Dashboard displays you
 Select the **Filter** button to narrow down the dataset list. You can filter by:
 
 | Filter            | Description                                        |
-|:------------------|:---------------------------------------------------|
+| :---------------- | :------------------------------------------------- |
 | **Dataset**       | Search by dataset name                             |
 | **Project Group** | **Filter by `TCAT_WSP_PG`**                        |
 | **Service**       | Filter by service name                             |

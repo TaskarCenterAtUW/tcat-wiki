@@ -33,6 +33,8 @@ related_pages:
     - assistant/dispatch.md
 ---
 
+<!-- @format -->
+
 # Workspaces Policies — Assistant Knowledge Base
 
 ## Short Answer
@@ -75,10 +77,10 @@ Always enforce the sandbox boundary in Workspaces answers. Edits are not publish
 
 ## Planned Pages
 
-| File | Scope |
-|------|-------|
-| `workspaces/policies/workspace-abstention-boundaries.md` | When to abstain from answering Workspaces questions |
-| `workspaces/policies/workspace-data-freshness.md` | How to communicate workspace data currency limitations |
-| `workspaces/policies/workspace-editing-authority.md` | Who has authority to edit and publish workspace data |
+| File                                                              | Scope                                                           |
+| :---------------------------------------------------------------- | :-------------------------------------------------------------- |
+| `workspaces/policies/workspace-abstention-boundaries.md`          | When to abstain from answering Workspaces questions             |
+| `workspaces/policies/workspace-data-freshness.md`                 | How to communicate workspace data currency limitations          |
+| `workspaces/policies/workspace-editing-authority.md`              | Who has authority to edit and publish workspace data            |
 | `workspaces/policies/workspace-export-and-publication-caveats.md` | Caveats about the workspace export and TDEI publication process |
-| `workspaces/policies/workspace-public-vs-private-data.md` | What data is public vs. private in Workspaces |
+| `workspaces/policies/workspace-public-vs-private-data.md`         | What data is public vs. private in Workspaces                   |

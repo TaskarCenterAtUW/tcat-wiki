@@ -15,7 +15,7 @@ OS-CONNECT is a comprehensive, high-resolution, and connected pedestrian network
 OS-CONNECT dataset names end with a suffix that indicates the type of area the dataset covers:
 
 | Suffix   | Coverage                  | Example             |
-|----------|---------------------------|---------------------|
+| :------- | :------------------------ | :------------------ |
 | `City`   | A city or town            | WSP_Wenatchee_City  |
 | `UGA`    | An urban growth area      | WSP_Burlington_UGA  |
 | `UI`     | Unincorporated areas      | WSP_Pend_Orielle_UI |

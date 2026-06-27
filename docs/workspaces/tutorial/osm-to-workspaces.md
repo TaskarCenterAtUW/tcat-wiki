@@ -57,7 +57,7 @@ Use the [TDEI Portal](https://portal.tdei.us/jobs) to create and run a new **OSW
 
 ### Step 3: Upload to Workspaces
 
-1. Navigate to [Create Workspace from File](https://workspaces.sidewalks.washington.edu/workspace/create/file) and sign in. Alternatively, use the top navigation: **Create Workspace** > **From File** > **Start**.
+1. Navigate to [Create Workspace from File](https://workspaces.sidewalks.washington.edu/workspace/create/file) and sign in. Alternatively, use the top navigation: **Create Workspace** \> **From File** \> **Start**.
 
 2. Fill in the **Workspace Title** and **Project Group**, set **Dataset Type** to **OpenSidewalks**, and upload the `<JobId>.zip` from the previous step. Select **Create Workspace**.
 
@@ -66,9 +66,7 @@ Use the [TDEI Portal](https://portal.tdei.us/jobs) to create and run a new **OSW
 
 3. The page will show **Converting dataset...** while the file is processed, followed by **Initializing workspace...** and then **Importing dataset to workspace...** before the process completes and the page automatically refreshes.
 
-    !!! question "Taking a while?"
-
-        This process can take anywhere from a few seconds to several minutes, depending on the size of the area and the density of mapped features.
+!!! question "Taking a while? This process can take anywhere from a few seconds to several minutes, depending on the size of the area and the density of mapped features."
 
 4. Once complete, you will be taken to the dashboard with the newly created workspace selected.
 

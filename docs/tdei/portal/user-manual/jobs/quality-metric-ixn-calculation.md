@@ -31,7 +31,7 @@ Calculates the intersection quality metric for a dataset. An optional intersecti
 <div class="full-width" markdown>
 
 | Field                   | Required | Description                                                                                        | Format     |
-|:------------------------|:---------|:---------------------------------------------------------------------------------------------------|:-----------|
+| :---------------------- | :------- | :------------------------------------------------------------------------------------------------- | :--------- |
 | **TDEI Dataset Id**     | Yes      | Dataset id of the dataset for which Intersection Quality metric is to be calculated                | —          |
 | **Attach GeoJson file** | No       | _(Optional)_ GeoJSON intersection polygon file to be used to calculate intersection quality metric | `.geojson` |
 

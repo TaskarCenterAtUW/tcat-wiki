@@ -74,7 +74,7 @@ Crossings are paths pedestrians traverse to cross streets.
 Search for these presets in the Rapid Editor:
 
 | Crossing Type                   | Rapid Preset        | Tags                                                             |
-|---------------------------------|---------------------|------------------------------------------------------------------|
+| :------------------------------ | :------------------ | :--------------------------------------------------------------- |
 | **Marked** (has painted lines)  | "Marked Crosswalk"  | `highway=footway` + `footway=crossing` + `crossing:markings=yes` |
 | **Unmarked** (no painted lines) | "Unmarked Crossing" | `highway=footway` + `footway=crossing` + `crossing:markings=no`  |
 
@@ -90,7 +90,7 @@ The middle point where the crossing intersects the roadway should be tagged:
 If you'd like to add additional detail that is important for accessibility-focused routing:
 
 | Tag                | Values                 | Description                   |
-|--------------------|------------------------|-------------------------------|
+| :----------------- | :--------------------- | :---------------------------- |
 | `crossing:signals` | `yes` / `no`           | Are there pedestrian signals? |
 | `crossing:island`  | `yes` / `no`           | Is there a pedestrian island? |
 | `surface`          | `concrete` / `asphalt` | Crossing surface material     |
@@ -108,7 +108,7 @@ The endpoints of your crossing line are curb nodes. Select each endpoint and tag
 #### Tagging
 
 | Curb Type   | Rapid Preset   | Tags                            | Description            |
-|-------------|----------------|---------------------------------|------------------------|
+| :---------- | :------------- | :------------------------------ | :--------------------- |
 | **Lowered** | "Lowered Curb" | `barrier=kerb` + `kerb=lowered` | Curb ramp present      |
 | **Raised**  | "Raised Curb"  | `barrier=kerb` + `kerb=raised`  | Standard curb, no ramp |
 | **Flush**   | "Flush Curb"   | `barrier=kerb` + `kerb=flush`   | Level with street      |
@@ -116,7 +116,7 @@ The endpoints of your crossing line are curb nodes. Select each endpoint and tag
 #### Additional Curb Tags
 
 | Tag              | Values       | Description                         |
-|------------------|--------------|-------------------------------------|
+| :--------------- | :----------- | :---------------------------------- |
 | `tactile_paving` | `yes` / `no` | Detectable warning surface presence |
 
 ---
@@ -134,13 +134,13 @@ Sidewalks are pedestrian paths along streets.
 #### Tagging
 
 | Feature      | Rapid Preset | Tags                                   |
-|--------------|--------------|----------------------------------------|
+| :----------- | :----------- | :------------------------------------- |
 | **Sidewalk** | "Sidewalk"   | `highway=footway` + `footway=sidewalk` |
 
 #### Additional Sidewalk Tags
 
 | Tag       | Values                 | Description      |
-|-----------|------------------------|------------------|
+| :-------- | :--------------------- | :--------------- |
 | `surface` | `concrete` / `asphalt` | Surface material |
 
 #### Important Rules
@@ -166,7 +166,7 @@ Optionally, the short sidewalk **connector** segments between sidewalk centerlin
 #### Tagging
 
 | Feature      | Rapid Preset | Tags                                   |
-|--------------|--------------|----------------------------------------|
+| :----------- | :----------- | :------------------------------------- |
 | **Sidewalk** | "Sidewalk"   | `highway=footway` + `footway=sidewalk` |
 
 ---
@@ -176,7 +176,7 @@ Optionally, the short sidewalk **connector** segments between sidewalk centerlin
 #### Essentials
 
 | Feature          | Tags                                                                  |
-|------------------|-----------------------------------------------------------------------|
+| :--------------- | :-------------------------------------------------------------------- |
 | Sidewalk (Line)  | `highway=footway` + `footway=sidewalk`                                |
 | Crossing (Line)  | `highway=footway` + `footway=crossing` + `crossing:markings=yes`/`no` |
 | Crossing (Point) | `highway=crossing` + `crossing:markings=yes`/`no`                     |
@@ -185,7 +185,7 @@ Optionally, the short sidewalk **connector** segments between sidewalk centerlin
 #### Details
 
 | Tag                | Applies To           | Values                |
-|--------------------|----------------------|-----------------------|
+| :----------------- | :------------------- | :-------------------- |
 | `surface`          | Sidewalks, Crossings | `concrete`, `asphalt` |
 | `crossing:signals` | Crossings            | `yes`, `no`           |
 | `tactile_paving`   | Curbs                | `yes`, `no`           |

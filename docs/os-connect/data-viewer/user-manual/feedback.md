@@ -41,7 +41,7 @@ If you notice a data issue — such as a missing sidewalk, incorrect curb type, 
 4. The **Report Issue** form opens with the following fields:
 
 | Field                   | Description                                                | Required |
-|:------------------------|:-----------------------------------------------------------|:---------|
+| :---------------------- | :--------------------------------------------------------- | :------- |
 | **Latitude, Longitude** | The coordinates of the marker (greyed out, non-adjustable) | Auto     |
 | **Issue Description**   | A text field to describe the data issue                    | Yes      |
 | **Email ID**            | Your email address, for any follow-up                      | Yes      |

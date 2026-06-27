@@ -73,7 +73,7 @@ Before validating, check the **History** tab to see:
 **Common Issues:**
 
 | Issue                          | How to Fix                                   |
-|--------------------------------|----------------------------------------------|
+| :----------------------------- | :------------------------------------------- |
 | Crossing not connected to road | Drag the middle node to connect to the road  |
 | Missing curb nodes             | Add `barrier=kerb` + `kerb=*` to endpoints   |
 | Wrong marking tag              | Check imagery and update `crossing:markings` |
@@ -87,7 +87,7 @@ Before validating, check the **History** tab to see:
 **Common Issues:**
 
 | Issue                                  | How to Fix                                                                              |
-|----------------------------------------|-----------------------------------------------------------------------------------------|
+| :------------------------------------- | :-------------------------------------------------------------------------------------- |
 | Curb directly at sidewalk intersection | Move curbs to actual location and connect sidewalk to curb via a short sidewalk footway |
 | Wrong curb type                        | Check street-level imagery if available                                                 |
 | Missing `barrier=kerb`                 | Add the tag to complete the feature                                                     |
@@ -101,7 +101,7 @@ Before validating, check the **History** tab to see:
 **Common Issues:**
 
 | Issue                          | How to Fix                             |
-|--------------------------------|----------------------------------------|
+| :----------------------------- | :------------------------------------- |
 | Sidewalk not on centerline     | Move nodes to center the line          |
 | Missing connection to driveway | Add a shared node where they intersect |
 

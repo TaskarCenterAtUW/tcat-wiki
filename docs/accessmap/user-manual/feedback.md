@@ -33,7 +33,7 @@ To report an issue with a specific map feature (such as a sidewalk, crossing, or
 Select one or more issue types by checking the relevant boxes:
 
 | Checkbox                                  | Use When                                                        |
-|:------------------------------------------|:----------------------------------------------------------------|
+| :---------------------------------------- | :-------------------------------------------------------------- |
 | **The feature is located somewhere else** | The feature exists but is mapped in the wrong location          |
 | **Inaccurate information**                | An attribute is incorrect (e.g., wrong surface type or incline) |
 | **Add something that's missing**          | A real-world feature is not represented in the data             |
@@ -52,7 +52,7 @@ To report an issue with a specific segment of a planned route, open the [Directi
 Select one or more issue types by checking the relevant boxes:
 
 | Checkbox                                | Use When                                                         |
-|:----------------------------------------|:-----------------------------------------------------------------|
+| :-------------------------------------- | :--------------------------------------------------------------- |
 | **Inaccurate GPS**                      | Your GPS position does not align with the route shown on the map |
 | **This part of the path is inaccurate** | The described path segment does not match real-world conditions  |
 | **Add something that's missing**        | Relevant information about the step is absent                    |

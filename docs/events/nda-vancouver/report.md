@@ -14,7 +14,7 @@ tags:
 On January 20th, 2026, the Nondrivers Alliance (NDA) and the Taskar Center for Accessible Technology (TCAT) hosted **Clark County Walk/Roll Event**, an in-person event focused on improving pedestrian infrastructure data in Vancouver, WA for accessibility-focused routing in **Vancouver, WA**.
 
 | Detail       | Info                       |
-|--------------|----------------------------|
+| :----------- | :------------------------- |
 | **Date**     | January 20th, 2026         |
 | **Format**   | in-person                  |
 | **Location** | Gaiser Hall, Vancouver, WA |
@@ -34,7 +34,7 @@ Gaiser Hall to Washington Street
 #### Walkabout Statistics
 
 | Metric              | Value  |
-|---------------------|--------|
+| :------------------ | :----- |
 | **Contributors**    | 22     |
 | **Total elements**  | 141    |
 | **Nodes submitted** | 37     |

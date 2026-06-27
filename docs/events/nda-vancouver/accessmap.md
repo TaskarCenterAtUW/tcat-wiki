@@ -100,7 +100,7 @@ This viewer displays the OS-CONNECT database - a standardized collection of side
 ### Differences Between AccessMap Comments and AVIV ScoutRoute Quests
 
 | Feature      | AccessMap Comments                            | AVIV ScoutRoute Quests                               |
-|:-------------|:----------------------------------------------|:-----------------------------------------------------|
+| :----------- | :-------------------------------------------- | :--------------------------------------------------- |
 | **Purpose**  | Free-form notes about barriers or experiences | Structured data collection about specific features   |
 | **Format**   | Text descriptions                             | Multiple choice, numeric entry, structured responses |
 | **Use Case** | Reporting issues, sharing observations        | Adding detailed feature attributes                   |

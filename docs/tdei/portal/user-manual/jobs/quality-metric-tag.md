@@ -31,7 +31,7 @@ Calculates quality metrics on dataset element tags. Tags are the specific attrib
 <div class="full-width" markdown>
 
 | Field               | Required | Description                                                    | Format  |
-|:--------------------|:---------|:---------------------------------------------------------------|:--------|
+| :------------------ | :------- | :------------------------------------------------------------- | :------ |
 | **TDEI Dataset Id** | Yes      | Dataset ID for calculating the quality metrics of element tags | —       |
 | **Attach File**     | Yes      | OSW dataset element tag list                                   | `.json` |
 

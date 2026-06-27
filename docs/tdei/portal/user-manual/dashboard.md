@@ -28,7 +28,7 @@ After logging in, you will be taken to the **Dashboard**. The dashboard is the m
 The dashboard shows:
 
 | Field             | Description                                                                                     |
-|:------------------|:------------------------------------------------------------------------------------------------|
+| :---------------- | :---------------------------------------------------------------------------------------------- |
 | **Project Group** | The name of your currently active project group                                                 |
 | **Roles**         | Your role(s) within the current project group (e.g., `member`)                                  |
 | **Project Id**    | The unique identifier for your project group; select the copy icon to copy it to your clipboard |
@@ -41,7 +41,7 @@ The dashboard shows:
 Your **API key** is displayed on the dashboard in a masked field. Use the buttons next to it to manage it:
 
 | Button      | Description                                         |
-|:------------|:----------------------------------------------------|
+| :---------- | :-------------------------------------------------- |
 | **Show**    | Reveals or hides your API key                       |
 | **Copy**    | Copies the API key to your clipboard                |
 | **Refresh** | Regenerates your API key, replacing the current one |
