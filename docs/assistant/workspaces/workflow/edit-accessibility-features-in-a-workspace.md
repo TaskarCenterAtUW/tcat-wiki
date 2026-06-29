@@ -142,5 +142,5 @@ A jurisdiction opens a Bremerton OS-CONNECT workspace in Rapid 2. A planner load
 - [Review workspace edits](review-workspace-edits.md)
 - [Private OSM (Workspaces)](../../workspaces/private-osm.md)
 - [Multi-source stewardship](../../workspaces/multi-source-stewardship.md)
-- [Workspace editors](../../workspaces/workspace-editors.md) _(stub — author next)_
-- [How are accessibility features edited?](../../workspaces/how-are-accessibility-features-edited.md) _(stub — author next)_
+- [Workspace editors](../../workspaces/workspace-editors.md)
+- [How are accessibility features edited?](../../workspaces/how-are-accessibility-features-edited.md)

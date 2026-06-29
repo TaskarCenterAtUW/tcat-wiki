@@ -41,6 +41,8 @@ related_pages:
     - workspaces/user-manual/workspace-settings.md
 ---
 
+<!-- @format -->
+
 # Invite a team to a workspace
 
 ## Short Answer
@@ -71,7 +73,7 @@ Teams are **separate from** TDEI Project Group membership and roles (RBAC). Proj
 4. **Open Settings** for that workspace.
 5. **Switch to the Teams section** in the settings panel.
 
-   _The following steps are confirmed from the stage environment:_
+    _The following steps are confirmed from the stage environment:_
 
 6. Select the **New Team** button.
 7. In the **"Create a Team"** popup, enter a **Team Name**.
@@ -141,5 +143,5 @@ A transit agency creates a workspace for a downtown accessibility survey. The pr
 - [Review workspace edits](review-workspace-edits.md)
 - [Configure imagery layers](configure-imagery-layers.md)
 - [Project groups (Workspaces)](../../workspaces/project-groups.md)
-- [How do team invitations work?](../../workspaces/how-do-team-invitations-work.md) *(stub — author next)*
+- [How do team invitations work?](../../workspaces/how-do-team-invitations-work.md)
 - [Workspace Settings](../../../workspaces/user-manual/workspace-settings.md)

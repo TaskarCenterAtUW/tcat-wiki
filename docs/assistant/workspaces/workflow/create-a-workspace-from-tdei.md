@@ -129,9 +129,9 @@ A city has an OS-CONNECT pedestrian dataset for its service area stored in TDEI 
 ## Related Concepts
 
 - [Private OSM (Workspaces)](../../workspaces/private-osm.md)
-- [Workspace sandbox](../../workspaces/workspace-sandbox.md) _(stub — author next)_
-- [Dataset lineage (Workspaces and TDEI)](../../workspaces/dataset-lineage.md) _(stub — author next)_
-- [TDEI vs Workspaces](../../workspaces/tdei-vs-workspaces.md) _(stub — author next)_
-- [How do I create a workspace from TDEI?](../../workspaces/how-do-i-create-a-workspace-from-tdei.md) _(stub — author next)_
-- [What happens when I create a workspace from a TDEI dataset?](../../workspaces/what-happens-when-i-create-a-workspace-from-a-tdei-dataset.md) _(stub — author next)_
+- [Workspace sandbox](../../workspaces/workspace-sandbox.md)
+- [Dataset lineage (Workspaces and TDEI)](../../workspaces/dataset-lineage.md)
+- [TDEI vs Workspaces](../../workspaces/tdei-vs-workspaces.md)
+- [How do I create a workspace from TDEI?](../../workspaces/how-do-i-create-a-workspace-from-tdei.md)
+- [What happens when I create a workspace from a TDEI dataset?](../../workspaces/what-happens-when-i-create-a-workspace-from-a-tdei-dataset.md)
 - [Workspaces (product overview)](../../../workspaces/index.md)
