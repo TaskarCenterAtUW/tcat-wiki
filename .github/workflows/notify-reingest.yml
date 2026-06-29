@@ -10,7 +10,7 @@
 # Auth: this POSTs to a DIFFERENT repo's /dispatches, which the built-in GITHUB_TOKEN
 # cannot do (it is scoped to this repo only). It needs INGEST_DISPATCH_TOKEN — a
 # fine-grained PAT scoped to TDEI-osconnect-viewer-chatbot with Contents: read & write.
-name: Notify corpus reingest
+name: Notify Corpus Reingest
 on:
   push:
     branches:
