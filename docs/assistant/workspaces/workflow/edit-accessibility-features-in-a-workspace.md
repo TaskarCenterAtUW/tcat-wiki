@@ -132,7 +132,7 @@ A jurisdiction opens a Bremerton OS-CONNECT workspace in Rapid 2. A planner load
 - Clarify **editor choice** (Rapid vs JOSM vs ScoutRoute) and **role** (field vs desktop vs manager).
 - Separate **reference overlay** from **authoritative ingest** (TDEI jobs vs in-map reconciliation).
 - Do not promise **Rapid 3** or **drag-to-merge reference data** without checking current release notes.
-- For "is this ADA compliant," redirect to [ADA compliance boundaries](../../concepts/ada-compliance-boundaries.md) and abstain on legal proof.
+- For "is this ADA compliant," redirect to [ADA compliance boundaries](../../cross-platform/concept/ada-compliance-boundaries.md) and abstain on legal proof.
 - If the user describes attribute experiments on walksheds or routing outcomes, note that **Walksheds** and **AccessMap** consume released network data — they are downstream of workspace editing and export, not the same in-browser edit surface.
 - Point procedural detail to [Workspaces overview](../../../workspaces/index.md) and editor manuals; avoid inventing tag keys or UI labels.
 
@@ -140,7 +140,7 @@ A jurisdiction opens a Bremerton OS-CONNECT workspace in Rapid 2. A planner load
 
 - [Create a workspace from TDEI](create-a-workspace-from-tdei.md)
 - [Review workspace edits](review-workspace-edits.md)
-- [Private OSM (Workspaces)](../../workspaces/private-osm.md)
-- [Multi-source stewardship](../../workspaces/multi-source-stewardship.md)
-- [Workspace editors](../../workspaces/workspace-editors.md)
-- [How are accessibility features edited?](../../workspaces/how-are-accessibility-features-edited.md)
+- [Private OSM (Workspaces)](../concept/private-osm.md)
+- [Multi-source stewardship](../concept/multi-source-stewardship.md)
+- [Workspace editors](../concept/compatible-editors.md)
+- [How are accessibility features edited?](../concept/accessibility-feature-editing.md)

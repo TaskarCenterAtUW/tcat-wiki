@@ -97,7 +97,7 @@ Once contributors scan the QR code or follow the link and log in, their subseque
 
 - **Not an access-control mechanism** — Teams do not grant or revoke permissions to edit a workspace. They are attribution labels only. Contributors do not need to join a team to edit; teams simply let managers differentiate who did what.
 - **Not a role or permission system** — Workspace teams are separate from the TDEI RBAC system (roles, project group memberships). See [Review workspace edits](review-workspace-edits.md) for the review/changeset UI.
-- **Not the same as TDEI Project Groups** — Project groups are a TDEI-level organizational structure (see [Project groups](../../workspaces/project-groups.md)). Workspace teams are workspace-scoped attribution labels and are independent of project group membership.
+- **Not the same as TDEI Project Groups** — Project groups are a TDEI-level organizational structure (see [Project groups](../concept/project-groups.md)). Workspace teams are workspace-scoped attribution labels and are independent of project group membership.
 - **Not a permanent authentication credential** — Sharing a link or QR code is an attribution aid, not a password, API key, or permission grant.
 - **Not required for solo editing** — You can edit a workspace without creating or joining any team. Teams are only needed when you want to differentiate activity between groups.
 - **Not available in production yet** — This workflow is only on the stage environment. Confirm deployment status before directing users.
@@ -131,10 +131,10 @@ A transit agency creates a workspace for a downtown accessibility survey. The pr
 - **Always confirm deployment status** before directing users to this workflow. The feature is on stage only as of June 2026; do not assume production availability.
 - If a user asks about inviting teams on the production site, state clearly that the feature is not yet deployed there and suggest they confirm with TCAT.
 - **Teams are attribution labels, not access control.** If a user asks whether team invites grant edit permissions, clarify the distinction.
-- Distinguish **workspace teams** from **TDEI Project Groups** when users confuse the two concepts. Link to the [Project groups](../../workspaces/project-groups.md) concept page.
+- Distinguish **workspace teams** from **TDEI Project Groups** when users confuse the two concepts. Link to the [Project groups](../concept/project-groups.md) concept page.
 - The example link (`workspaces-stage.sidewalks.washington.edu/workspace/1893/teams/7`) is illustrative; workspace and team IDs will differ per workspace. Do not hardcode specific IDs in answers.
 - For questions about review and filtering by team, refer to [Review workspace edits](review-workspace-edits.md).
-- The [How do team invitations work?](../../workspaces/how-do-team-invitations-work.md) question stub is a companion page for assistant Q&A — link there when a user asks a direct question about team invitations.
+- The [How do team invitations work?](../concept/team-invitations.md) question stub is a companion page for assistant Q&A — link there when a user asks a direct question about team invitations.
 
 ## Related Concepts
 
@@ -142,6 +142,6 @@ A transit agency creates a workspace for a downtown accessibility survey. The pr
 - [Edit accessibility features in a workspace](edit-accessibility-features-in-a-workspace.md)
 - [Review workspace edits](review-workspace-edits.md)
 - [Configure imagery layers](configure-imagery-layers.md)
-- [Project groups (Workspaces)](../../workspaces/project-groups.md)
-- [How do team invitations work?](../../workspaces/how-do-team-invitations-work.md)
+- [Project groups (Workspaces)](../concept/project-groups.md)
+- [How do team invitations work?](../concept/team-invitations.md)
 - [Workspace Settings](../../../workspaces/user-manual/workspace-settings.md)

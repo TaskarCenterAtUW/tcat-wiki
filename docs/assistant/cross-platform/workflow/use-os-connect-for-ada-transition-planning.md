@@ -29,6 +29,8 @@ related_pages:
     - os-connect/qa-qc/user-manual/index.md
 ---
 
+<!-- @format -->
+
 # Use OS-CONNECT for ADA transition planning (workflow)
 
 ## Short Answer
@@ -65,5 +67,5 @@ Present as high-level steps only. Insert mandatory caveats about legal review. A
 
 ## Related Concepts
 
-- [ADA compliance boundaries](../concepts/ada-compliance-boundaries.md)
-- [Completeness](../concepts/completeness.md)
+- [ADA compliance boundaries](../concept/ada-compliance-boundaries.md)
+- [Completeness](../concept/completeness.md)

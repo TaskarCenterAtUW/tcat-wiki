@@ -32,6 +32,8 @@ related_pages:
     - assistant/policies/assistant-abstention.md
 ---
 
+<!-- @format -->
+
 # ADA, safety, and legal boundaries (policy)
 
 ## Short Answer
@@ -57,7 +59,7 @@ Include this page in mandatory retrieval sets for compliance-related intents, ev
 
 ## Example
 
-Benchmark: queries containing "ADA," "DOJ," "liable," or "sue" should retrieve this page or [ADA compliance boundaries](../concepts/ada-compliance-boundaries.md) before answering.
+Benchmark: queries containing "ADA," "DOJ," "liable," or "sue" should retrieve this page or [ADA compliance boundaries](../concept/ada-compliance-boundaries.md) before answering.
 
 ## Assistant Guidance
 
@@ -65,5 +67,5 @@ Hard gate: first sentence must reinforce limits before helpful information. Use 
 
 ## Related Concepts
 
-- [ADA compliance boundaries](../concepts/ada-compliance-boundaries.md)
+- [ADA compliance boundaries](../concept/ada-compliance-boundaries.md)
 - [Assistant abstention](assistant-abstention.md)

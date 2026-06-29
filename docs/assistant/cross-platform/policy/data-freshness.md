@@ -31,6 +31,8 @@ related_pages:
     - assistant/workflows/update-jurisdiction-data.md
 ---
 
+<!-- @format -->
+
 # Data freshness and versioning for assistants
 
 ## Short Answer
@@ -64,4 +66,4 @@ Prefer "check the in-app or portal indicator and release notes" patterns. Use ab
 
 ## Related Concepts
 
-- [Update jurisdiction data](../workflows/update-jurisdiction-data.md)
+- [Update jurisdiction data](../workflow/update-jurisdiction-data.md)

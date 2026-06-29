@@ -34,6 +34,8 @@ related_pages:
     - assistant/questions/os-connect/is-completeness-ada-compliance.md
 ---
 
+<!-- @format -->
+
 # ADA compliance boundaries for assistant answers
 
 ## Short Answer
@@ -56,7 +58,7 @@ Assistants may describe what a product shows (for example, a route preference or
 
 ## How To Use This
 
-Train retrieval filters to prefer this concept when questions mention "ADA," "legal," "liable," or "compliance proof." Pair answers with [ADA safety and legal boundaries](../policies/ada-safety-legal-boundaries.md) for policy-level wording.
+Train retrieval filters to prefer this concept when questions mention "ADA," "legal," "liable," or "compliance proof." Pair answers with [ADA safety and legal boundaries](../policy/ada-safety-legal-boundaries.md) for policy-level wording.
 
 ## Example
 
@@ -68,5 +70,5 @@ Use firm abstention language for compliance proof questions. Offer adjacent help
 
 ## Related Concepts
 
-- [ADA safety and legal boundaries](../policies/ada-safety-legal-boundaries.md)
+- [ADA safety and legal boundaries](../policy/ada-safety-legal-boundaries.md)
 - [Completeness](completeness.md)

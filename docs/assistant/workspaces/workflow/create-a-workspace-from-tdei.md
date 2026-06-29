@@ -123,15 +123,15 @@ A city has an OS-CONNECT pedestrian dataset for its service area stored in TDEI 
 - Ask for **project group**, **dataset ID**, and **version** when troubleshooting "wrong" or stale data.
 - Distinguish **TDEI dataset managers** (inventory, releases, jobs) from **Workspaces editors** (feature-level GIS work)—both may be the same person in small agencies.
 - Point procedural detail to the [TCAT Wiki Workspaces section](../../index.md) and TDEI portal user manual for jobs and registration; do not invent UI labels beyond what documentation and the cited workshop materials describe.
-- For export, publication, and legal or ADA claims, defer to [export workflow](export-workspace-edits-to-tdei.md) and [ADA compliance boundaries](../../concepts/ada-compliance-boundaries.md).
+- For export, publication, and legal or ADA claims, defer to [export workflow](export-workspace-edits-to-tdei.md) and [ADA compliance boundaries](../../cross-platform/concept/ada-compliance-boundaries.md).
 - If environment, permissions, or release timing are unknown, **abstain** from stating what the user will see or when data will go live.
 
 ## Related Concepts
 
-- [Private OSM (Workspaces)](../../workspaces/private-osm.md)
-- [Workspace sandbox](../../workspaces/workspace-sandbox.md)
-- [Dataset lineage (Workspaces and TDEI)](../../workspaces/dataset-lineage.md)
-- [TDEI vs Workspaces](../../workspaces/tdei-vs-workspaces.md)
-- [How do I create a workspace from TDEI?](../../workspaces/how-do-i-create-a-workspace-from-tdei.md)
-- [What happens when I create a workspace from a TDEI dataset?](../../workspaces/what-happens-when-i-create-a-workspace-from-a-tdei-dataset.md)
+- [Private OSM (Workspaces)](../concept/private-osm.md)
+- [Workspace sandbox](../concept/sandbox.md)
+- [Dataset lineage (Workspaces and TDEI)](../concept/dataset-lineage.md)
+- [TDEI vs Workspaces](../concept/tdei-vs-workspaces.md)
+- [How do I create a workspace from TDEI?](create-workspace-from-tdei.md)
+- [What happens when I create a workspace from a TDEI dataset?](../concept/workspace-creation-mechanics.md)
 - [Workspaces (product overview)](../../../workspaces/index.md)

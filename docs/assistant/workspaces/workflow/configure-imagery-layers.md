@@ -136,12 +136,12 @@ A city loads a workspace from the latest OS-CONNECT TDEI release. The project le
 - If asked for "imagery URL only," note the workshop gap (paste full JSON today; URL support may ship later — confirm with TCAT).
 - Warn against pasting GitHub **web** links instead of raw JSON content for any Settings JSON field.
 - For "can I use our ArcGIS tile server," abstain on auth/CORS specifics; suggest a small test workspace and staff verification.
-- Pair with [imagery layers concept](../../workspaces/imagery-layers.md) _(stub)_ when authored.
+- Pair with [imagery layers concept](../concept/imagery-layers.md) _(stub)_ when authored.
 
 ## Related Concepts
 
 - [Create a workspace from TDEI](create-a-workspace-from-tdei.md)
 - [Edit accessibility features in a workspace](edit-accessibility-features-in-a-workspace.md)
-- [Imagery layers (Workspaces)](../../workspaces/imagery-layers.md) _(stub — author in Phase B)_
+- [Imagery layers (Workspaces)](../concept/imagery-layers.md)
 - [Workspace Settings (guide)](../../../workspaces/user-manual/workspace-settings.md)
 - [AVIV ScoutRoute](../../../aviv-scoutroute/index.md)

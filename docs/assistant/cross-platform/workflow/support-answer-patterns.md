@@ -39,7 +39,7 @@ related_pages:
 
 ## Short Answer
 
-Five reusable response structures for helpline and Question Board replies. Pair them with factual pages under `docs/assistant/questions/` and [support intents](../intents/support-intents.md) so staff retrieve both **what to say** and **how to say it**.
+Five reusable response structures for helpline and Question Board replies. Pair them with factual pages under `docs/assistant/questions/` and [support intents](../intents.md) so staff retrieve both **what to say** and **how to say it**.
 
 ## Significance
 
@@ -63,13 +63,13 @@ Operational questions need consistent tone, explicit uncertainty, and clear next
 ## How To Use This
 
 1. Classify the partner message (data error, download help, ecosystem confusion, etc.).
-2. Pick the matching intent from [Support intents](../intents/support-intents.md).
+2. Pick the matching intent from [Support intents](../../intents.md).
 3. Retrieve factual bullets from the linked question page(s).
 4. Apply the pattern structure when drafting email or chat.
 
 ## Example
 
-A county asks how long a viewer-reported fix takes. Use **`answer-when-uncertain`** if release timing is unknown: state the public release model, note that timelines vary by validation queue, name who will confirm, and link [How long do corrections take to appear in a public release?](../os-connect/how-long-do-corrections-take-to-appear-in-a-public-release.md).
+A county asks how long a viewer-reported fix takes. Use **`answer-when-uncertain`** if release timing is unknown: state the public release model, note that timelines vary by validation queue, name who will confirm, and link [How long do corrections take to appear in a public release?](../../os-connect/concept/update-cadence.md).
 
 ## Assistant Guidance
 
@@ -77,6 +77,5 @@ When generating drafts, label which pattern was applied. If `review_status: draf
 
 ## Related Concepts
 
-- [Support intents](../intents/support-intents.md)
-- [Helpline FAQ backlog](../backlog/helpline-faq-backlog.md)
-- [Assistant abstention](../policies/assistant-abstention.md)
+- [Support intents](../../intents.md)
+- [Assistant abstention](../policy/assistant-abstention.md)

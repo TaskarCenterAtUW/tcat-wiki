@@ -35,6 +35,8 @@ related_pages:
     - assistant/os-connect/index.md
 ---
 
+<!-- @format -->
+
 # Workspaces — Assistant Knowledge Base
 
 ## Short Answer
@@ -75,7 +77,6 @@ For any question about whether an edit in Workspaces affects TDEI or OS-CONNECT 
 
 - [TDEI knowledge base](../tdei/index.md)
 - [OS-CONNECT knowledge base](../os-connect/index.md)
-- [Cross-product concepts](../concepts/index.md)
-- [Workspaces policies](policies/index.md)
-- [Workspaces workflows](workflows/index.md)
+- [Cross-product concepts](../cross-platform/concept/index.md)
+- [Workspaces workflows](workflow/index.md)
 - [Dispatch — full file registry](../dispatch.md)

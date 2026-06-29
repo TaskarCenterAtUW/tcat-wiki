@@ -51,12 +51,12 @@ Without explicit policy pages, assistants may over-claim — stating that OS-CON
 
 - Pages in `policies/` are authoritative behavioral constraints for all assistants consuming this knowledge base.
 - Every page in `docs/assistant/` references relevant policy pages in its `related_pages` frontmatter.
-- Product-specific policies (e.g., Workspaces abstention boundaries, export caveats) are in [workspaces/policies/](../workspaces/policies/index.md).
+- Product-specific policies (e.g., Workspaces abstention boundaries, export caveats) are in the `index.md` file under each topic (e.g., [workspaces/index.md](../../workspaces/index.md).
 
 ## What This Does Not Mean
 
 - Policy pages do not replace legal counsel, engineering sign-off, or official ADA determinations from qualified authorities.
-- These policies are scoped to AI assistant behavior; they do not govern human staff communications (see [workflows/support-answer-patterns.md](../workflows/support-answer-patterns.md) for staff guidance).
+- These policies are scoped to AI assistant behavior; they do not govern human staff communications (see [workflow/support-answer-patterns.md](../workflow/support-answer-patterns.md) for staff guidance).
 
 ## How To Use This
 
@@ -74,9 +74,9 @@ Retrieve policy pages proactively for any question involving compliance, data au
 
 ## Related Concepts
 
-- [Workspaces policies](../workspaces/policies/index.md)
-- [Concepts — ADA compliance boundaries](../concepts/index.md)
-- [Dispatch — full file registry](../dispatch.md)
+- [Workspaces policies](../../workspaces/index.md)
+- [Concepts — ADA compliance boundaries](../concept/index.md)
+- [Dispatch — full file registry](../../dispatch.md)
 
 ## Planned Pages
 

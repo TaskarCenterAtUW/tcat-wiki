@@ -41,7 +41,7 @@ related_pages:
 
 ## Short Answer
 
-This section contains cross-product workflow pages describing common operational tasks that involve multiple TCAT tools — such as reviewing community feedback, updating jurisdiction data, using AccessMap for public engagement, and using OS-CONNECT for ADA transition planning. Workspaces-specific workflows are in [workspaces/workflows/](../workspaces/workflows/index.md).
+This section contains cross-product workflow pages describing common operational tasks that involve multiple TCAT tools — such as reviewing community feedback, updating jurisdiction data, using AccessMap for public engagement, and using OS-CONNECT for ADA transition planning. Workspaces-specific workflows are in `workspaces/workflow/`.
 
 ## Significance
 
@@ -62,7 +62,7 @@ Workflow pages answer "how do I do X?" questions that span more than one product
 
 **Agents**: Match user queries to the closest workflow page. For OS-CONNECT ADA planning questions, retrieve `workflows/use-os-connect-for-ada-transition-planning.md`. For public engagement, retrieve `workflows/use-accessmap-for-public-engagement.md`.
 
-**Authors**: Six workflow pages are planned at the cross-product level. Additional Workspaces-specific workflows are in [workspaces/workflows/](../workspaces/workflows/index.md).
+**Authors**: Workspaces-specific workflows are here in `workspaces/workflow/`.
 
 ## Example
 
@@ -74,9 +74,8 @@ Workflow pages often involve external stakeholder coordination (jurisdiction sta
 
 ## Related Concepts
 
-- [Workspaces workflows](../workspaces/workflows/index.md)
-- [Policies](../policies/index.md)
-- [Dispatch — full file registry](../dispatch.md)
+- [Policies](../policy/index.md)
+- [Dispatch — full file registry](../../dispatch.md)
 
 ## Planned Pages
 
