@@ -27,8 +27,7 @@ assistant_behavior:
     abstain_if_missing_context: true
     do_not_claim: []
 related_pages:
-    - assistant/workflows/support-answer-patterns.md
-    - assistant/backlog/helpline-faq-backlog.md
+    - assistant/support/workflow/support-answer-patterns.md
 ---
 
 <!-- @format -->
@@ -51,10 +50,10 @@ Support staff ask operational questions in the moment and may phrase similar que
 
 **Retrieve these pages:**
 
-- [what-is-the-difference-between-tdei-os-connect-opensidewalks-and-openstreetmap](cross-platform/support/what-is-the-difference-between-tdei-os-connect-opensidewalks-and-openstreetmap.md)
-- [what-is-tdei](tdei/what-is-tdei.md)
-- [what-is-os-connect](os-connect/what-is-os-connect.md)
-- [what-is-opensidewalks](os-connect/what-is-opensidewalks.md)
+- [tdei-os-connect-osm-differences](support/concept/tdei-os-connect-osm-differences.md)
+- [tdei](tdei/concept/tdei.md)
+- [os-connect](os-connect/concept/os-connect.md)
+- [opensidewalks](os-connect/concept/opensidewalks.md)
 
 ### `recommend-dataset`
 
@@ -62,8 +61,8 @@ Support staff ask operational questions in the moment and may phrase similar que
 
 **Retrieve these pages:**
 
-- [which-dataset-and-format-should-an-agency-use-for-pedestrian-walkway-data-in-arcgis](cross-platform/support/which-dataset-and-format-should-an-agency-use-for-pedestrian-walkway-data-in-arcgis.md)
-- [which-dataset-should-i-use-if-i-need-pedestrian-walkway-data-for-planning](cross-platform/support/which-dataset-should-i-use-if-i-need-pedestrian-walkway-data-for-planning.md)
+- [choose-dataset-for-arcgis](support/workflow/choose-dataset-for-arcgis.md)
+- [choose-dataset-for-planning](support/workflow/choose-dataset-for-planning.md)
 
 ### `guide-download`
 
@@ -71,9 +70,9 @@ Support staff ask operational questions in the moment and may phrase similar que
 
 **Retrieve these pages:**
 
-- [what-should-i-do-if-a-dataset-appears-mislabeled-or-downloads-the-wrong-file](tdei/what-should-i-do-if-a-dataset-appears-mislabeled-or-downloads-the-wrong-file.md)
-- [where-do-i-download-os-connect-data](tdei/where-do-i-download-os-connect-data.md)
-- [what-does-released-dataset-mean-in-tdei](tdei/what-does-released-dataset-mean-in-tdei.md)
+- [mislabeled-dataset-handling](tdei/concept/mislabeled-dataset-handling.md)
+- [download-os-connect-data](tdei/workflow/download-os-connect-data.md)
+- [released-dataset](tdei/concept/released-dataset.md)
 
 ### `explain-osw-format`
 
@@ -81,8 +80,8 @@ Support staff ask operational questions in the moment and may phrase similar que
 
 **Retrieve these pages:**
 
-- [what-files-are-included-in-an-osw-download](tdei/what-files-are-included-in-an-osw-download.md)
-- [what-are-edges-and-nodes-in-the-osw-download](tdei/what-are-edges-and-nodes-in-the-osw-download.md)
+- [osw-download-contents](tdei/concept/osw-download-contents.md)
+- [osw-edges-and-nodes](tdei/concept/osw-edges-and-nodes.md)
 
 ### `support-arcgis-use`
 
@@ -90,8 +89,8 @@ Support staff ask operational questions in the moment and may phrase similar que
 
 **Retrieve these pages:**
 
-- [how-do-i-import-os-connect-osw-geojson-into-arcgis](os-connect/how-do-i-import-os-connect-osw-geojson-into-arcgis.md)
-- [can-os-connect-data-be-used-in-arcgis](os-connect/can-i-use-this-in-arcgis-or-qgis.md)
+- [import-into-arcgis](os-connect/workflow/import-into-arcgis.md)
+- [gis-software-compatibility](os-connect/concept/gis-software-compatibility.md)
 
 ### `handle-mislabeled-datasets`
 
@@ -99,7 +98,7 @@ Support staff ask operational questions in the moment and may phrase similar que
 
 **Retrieve these pages:**
 
-- [what-should-i-do-if-a-dataset-appears-mislabeled-or-downloads-the-wrong-file](tdei/what-should-i-do-if-a-dataset-appears-mislabeled-or-downloads-the-wrong-file.md)
+- [mislabeled-dataset-handling](tdei/concept/mislabeled-dataset-handling.md)
 
 ### `explain-issue-reporting`
 
@@ -107,8 +106,8 @@ Support staff ask operational questions in the moment and may phrase similar que
 
 **Retrieve these pages:**
 
-- [how-do-i-report-an-error-in-os-connect-data](os-connect/how-do-i-report-an-error-in-os-connect-data.md)
-- [what-kinds-of-errors-should-be-reported-through-the-os-connect-viewer](os-connect/what-kinds-of-errors-should-be-reported-through-the-os-connect-viewer.md)
+- [report-data-error](os-connect/workflow/report-data-error.md)
+- [reportable-errors](os-connect/concept/reportable-errors.md)
 
 ### `explain-correction-lifecycle`
 
@@ -116,8 +115,8 @@ Support staff ask operational questions in the moment and may phrase similar que
 
 **Retrieve these pages:**
 
-- [how-long-do-corrections-take-to-appear-in-a-public-release](os-connect/how-long-do-corrections-take-to-appear-in-a-public-release.md)
-- [what-happens-after-i-submit-an-issue-report](os-connect/what-happens-after-i-submit-an-issue-report.md)
+- [correction-release-lag](os-connect/concept/correction-release-lag.md)
+- [issue-report-follow-up](os-connect/concept/issue-report-follow-up.md)
 
 ### `distinguish-release-from-review`
 
@@ -125,7 +124,7 @@ Support staff ask operational questions in the moment and may phrase similar que
 
 **Retrieve these pages:**
 
-- [do-reported-issues-automatically-update-the-public-dataset](os-connect/do-reported-issues-automatically-update-the-public-dataset.md)
+- [issue-report-auto-update](os-connect/concept/issue-report-auto-update.md)
 
 ### `handle-bulk-corrections`
 
@@ -133,7 +132,7 @@ Support staff ask operational questions in the moment and may phrase similar que
 
 **Retrieve these pages:**
 
-- [can-agencies-submit-bulk-corrections-or-priority-areas-for-review](os-connect/can-agencies-submit-bulk-corrections-or-priority-areas-for-review.md)
+- [bulk-correction-submission](os-connect/concept/bulk-correction-submission.md)
 
 ### `validate-authority`
 
@@ -141,7 +140,7 @@ Support staff ask operational questions in the moment and may phrase similar que
 
 **Retrieve these pages:**
 
-- [how-do-i-know-whether-a-dataset-is-authoritative](cross-platform/support/how-do-i-know-whether-a-dataset-is-authoritative.md)
+- [dataset-authority](support/concept/dataset-authority.md)
 
 ### `explain-gtfs-pathways-relationship`
 
@@ -149,7 +148,7 @@ Support staff ask operational questions in the moment and may phrase similar que
 
 **Retrieve these pages:**
 
-- [how-is-os-connect-different-from-gtfs-pathways](cross-platform/support/how-is-os-connect-different-from-gtfs-pathways.md)
+- [os-connect-vs-gtfs-pathways](support/concept/os-connect-vs-gtfs-pathways.md)
 
 ### `check-gtfs-pathways-availability`
 
@@ -157,7 +156,7 @@ Support staff ask operational questions in the moment and may phrase similar que
 
 **Retrieve these pages:**
 
-- [how-can-i-tell-whether-a-gtfs-feed-includes-pathways-txt](cross-platform/support/how-can-i-tell-whether-a-gtfs-feed-includes-pathways-txt.md)
+- [check-gtfs-feed-pathways](support/workflow/check-gtfs-feed-pathways.md)
 
 ### `support-trip-planning-vendors`
 
@@ -165,7 +164,7 @@ Support staff ask operational questions in the moment and may phrase similar que
 
 **Retrieve these pages:**
 
-- [what-should-trip-planning-vendors-do-when-osm-pedestrian-paths-do-not-include-street-names](os-connect/what-should-trip-planning-vendors-do-when-osm-pedestrian-paths-do-not-include-street-names.md)
+- [missing-street-names-for-vendors](os-connect/concept/missing-street-names-for-vendors.md)
 
 ### `explain-osm-sidewalk-naming-tags`
 
@@ -173,7 +172,7 @@ Support staff ask operational questions in the moment and may phrase similar que
 
 **Retrieve these pages:**
 
-- [what-is-the-difference-between-street-name-and-is-sidepath-of-name](os-connect/what-is-the-difference-between-street-name-and-is-sidepath-of-name.md)
+- [street-name-vs-sidepath-name](os-connect/concept/street-name-vs-sidepath-name.md)
 
 ### `recommend-osm-tagging-practice`
 
@@ -181,7 +180,7 @@ Support staff ask operational questions in the moment and may phrase similar que
 
 **Retrieve these pages:**
 
-- [which-sidewalk-to-street-name-tagging-pattern-is-currently-recommended](os-connect/which-sidewalk-to-street-name-tagging-pattern-is-currently-recommended.md)
+- [recommended-sidewalk-tagging-pattern](os-connect/concept/recommended-sidewalk-tagging-pattern.md)
 
 ### `connect-mapping-to-routing`
 
@@ -189,7 +188,7 @@ Support staff ask operational questions in the moment and may phrase similar que
 
 **Retrieve these pages:**
 
-- [why-do-street-names-matter-for-walking-directions](os-connect/why-do-street-names-matter-for-walking-directions.md)
+- [street-name-routing-importance](os-connect/concept/street-name-routing-importance.md)
 
 ### `explain-walksheds`
 
@@ -197,8 +196,8 @@ Support staff ask operational questions in the moment and may phrase similar que
 
 **Retrieve these pages:**
 
-- [what-is-a-walkshed](walksheds/what-is-a-walkshed.md)
-- [how-does-walksheds-use-os-connect-data](walksheds/how-does-walksheds-use-os-connect-data.md)
+- [walkshed](walksheds/concept/walkshed.md)
+- [os-connect-data-usage](walksheds/concept/os-connect-data-usage.md)
 
 ### `explain-accessmap`
 
@@ -206,7 +205,7 @@ Support staff ask operational questions in the moment and may phrase similar que
 
 **Retrieve these pages:**
 
-- [how-is-accessmap-different-from-walksheds](cross-platform/support/how-is-accessmap-different-from-walksheds.md)
+- [accessmap-vs-walksheds](support/concept/accessmap-vs-walksheds.md)
 
 ### `support-stop-planning`
 
@@ -214,7 +213,7 @@ Support staff ask operational questions in the moment and may phrase similar que
 
 **Retrieve these pages:**
 
-- [how-can-os-connect-and-walksheds-support-bus-stop-planning](cross-platform/support/how-can-os-connect-and-walksheds-support-bus-stop-planning.md)
+- [os-connect-walksheds-bus-stop-planning](support/concept/os-connect-walksheds-bus-stop-planning.md)
 
 ### `support-event-accessibility`
 
@@ -222,7 +221,7 @@ Support staff ask operational questions in the moment and may phrase similar que
 
 **Retrieve these pages:**
 
-- [can-os-connect-support-fifa-or-major-event-accessibility-planning](os-connect/can-os-connect-support-fifa-or-major-event-accessibility-planning.md)
+- [major-event-accessibility-planning](os-connect/concept/major-event-accessibility-planning.md)
 
 ### `support-school-access`
 
@@ -230,7 +229,7 @@ Support staff ask operational questions in the moment and may phrase similar que
 
 **Retrieve these pages:**
 
-- [can-os-connect-support-pedestrian-access-analysis-around-schools-clinics-grocery-stores-and-other-destinations](os-connect/can-os-connect-support-pedestrian-access-analysis-around-schools-clinics-grocery-stores-and-other-destinations.md)
+- [destination-access-analysis](os-connect/concept/destination-access-analysis.md)
 
 ### `explain-community-mapping-pathways`
 
@@ -238,7 +237,7 @@ Support staff ask operational questions in the moment and may phrase similar que
 
 **Retrieve these pages:**
 
-- [can-tcat-help-set-up-a-sidewalk-mapping-project-in-the-osm-us-tasking-manager](os-connect/can-tcat-help-set-up-a-sidewalk-mapping-project-in-the-osm-us-tasking-manager.md)
+- [tcat-mapping-project-support](os-connect/concept/tcat-mapping-project-support.md)
 
 ### `explain-tasking-manager-status`
 
@@ -246,7 +245,7 @@ Support staff ask operational questions in the moment and may phrase similar que
 
 **Retrieve these pages:**
 
-- [what-happened-to-the-older-opensidewalks-mapwithai-tasking-manager-workflow](os-connect/what-happened-to-the-older-opensidewalks-mapwithai-tasking-manager-workflow.md)
+- [mapwithai-workflow-history](os-connect/concept/mapwithai-workflow-history.md)
 
 ### `onboard-new-mappers`
 
@@ -254,7 +253,7 @@ Support staff ask operational questions in the moment and may phrase similar que
 
 **Retrieve these pages:**
 
-- [what-training-materials-are-available-for-new-sidewalk-mappers](os-connect/what-training-materials-are-available-for-new-sidewalk-mappers.md)
+- [mapper-training-materials](os-connect/concept/mapper-training-materials.md)
 
 ### `decide-mapping-priorities`
 
@@ -262,7 +261,7 @@ Support staff ask operational questions in the moment and may phrase similar que
 
 **Retrieve these pages:**
 
-- [how-should-communities-decide-which-areas-to-map-first](os-connect/how-should-communities-decide-which-areas-to-map-first.md)
+- [mapping-prioritization](os-connect/concept/mapping-prioritization.md)
 
 ### `explain-data-quality-expectations`
 
@@ -270,7 +269,7 @@ Support staff ask operational questions in the moment and may phrase similar que
 
 **Retrieve these pages:**
 
-- [what-makes-community-mapped-sidewalk-data-usable-for-agency-workflows](os-connect/what-makes-community-mapped-sidewalk-data-usable-for-agency-workflows.md)
+- [community-data-usability](os-connect/concept/community-data-usability.md)
 
 ### `refer-to-mappy-hours`
 
@@ -278,7 +277,7 @@ Support staff ask operational questions in the moment and may phrase similar que
 
 **Retrieve these pages:**
 
-- [when-should-someone-be-referred-to-mappy-hours-versus-receiving-direct-support](cross-platform/support/when-should-someone-be-referred-to-mappy-hours-versus-receiving-direct-support.md)
+- [mappy-hours-referral-decision](support/workflow/mappy-hours-referral-decision.md)
 
 ### `decide-direct-support-vs-office-hours`
 
@@ -286,7 +285,7 @@ Support staff ask operational questions in the moment and may phrase similar que
 
 **Retrieve these pages:**
 
-- [when-should-someone-be-referred-to-mappy-hours-versus-receiving-direct-support](cross-platform/support/when-should-someone-be-referred-to-mappy-hours-versus-receiving-direct-support.md)
+- [mappy-hours-referral-decision](support/workflow/mappy-hours-referral-decision.md)
 
 ### `draft-professional-support-response`
 
@@ -296,7 +295,7 @@ Support staff ask operational questions in the moment and may phrase similar que
 
 **Retrieve these pages:**
 
-- [how-long-do-corrections-take-to-appear-in-a-public-release](os-connect/how-long-do-corrections-take-to-appear-in-a-public-release.md)
+- [correction-release-lag](os-connect/concept/correction-release-lag.md)
 
 ### `soften-support-tone`
 
@@ -328,7 +327,7 @@ Support staff ask operational questions in the moment and may phrase similar que
 
 **Retrieve these pages:**
 
-- [who-owns-follow-up-when-a-partner-asks-a-question-that-crosses-tools-or-teams](cross-platform/support/who-owns-follow-up-when-a-partner-asks-a-question-that-crosses-tools-or-teams.md)
+- [cross-team-followup-ownership](support/concept/cross-team-followup-ownership.md)
 
 ### `propose-next-step`
 
@@ -338,7 +337,7 @@ Support staff ask operational questions in the moment and may phrase similar que
 
 **Retrieve these pages:**
 
-- [what-should-staff-do-when-they-do-not-know-the-answer-to-a-partner-s-question](cross-platform/support/what-should-staff-do-when-they-do-not-know-the-answer-to-a-partner-s-question.md)
+- [handle-unknown-questions](support/workflow/handle-unknown-questions.md)
 
 ## What This Means
 

@@ -29,6 +29,8 @@ assistant_behavior:
 related_pages: []
 ---
 
+<!-- @format -->
+
 # How are edits attributed to users?
 
 ## Short Answer

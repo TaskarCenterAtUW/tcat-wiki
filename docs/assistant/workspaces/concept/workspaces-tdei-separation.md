@@ -28,6 +28,8 @@ assistant_behavior:
 related_pages: []
 ---
 
+<!-- @format -->
+
 # Why does Workspaces exist separately from TDEI?
 
 ## Short Answer

@@ -29,6 +29,8 @@ assistant_behavior:
 related_pages: []
 ---
 
+<!-- @format -->
+
 # What is RAPID 2 versus RAPID 3?
 
 ## Short Answer

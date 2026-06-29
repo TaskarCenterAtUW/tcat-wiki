@@ -29,6 +29,8 @@ assistant_behavior:
 related_pages: []
 ---
 
+<!-- @format -->
+
 # What metadata is stored with a workspace?
 
 ## Short Answer

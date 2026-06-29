@@ -29,6 +29,8 @@ assistant_behavior:
 related_pages: []
 ---
 
+<!-- @format -->
+
 # What is the benefit of using existing OSM editors?
 
 ## Short Answer

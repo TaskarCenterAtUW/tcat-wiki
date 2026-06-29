@@ -29,6 +29,8 @@ assistant_behavior:
 related_pages: []
 ---
 
+<!-- @format -->
+
 # What happens when I create a workspace from a TDEI dataset?
 
 ## Short Answer

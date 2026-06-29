@@ -29,6 +29,8 @@ assistant_behavior:
 related_pages: []
 ---
 
+<!-- @format -->
+
 # How are edits uploaded back to TDEI?
 
 ## Short Answer

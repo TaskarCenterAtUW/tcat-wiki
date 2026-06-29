@@ -29,6 +29,8 @@ assistant_behavior:
 related_pages: []
 ---
 
+<!-- @format -->
+
 # When should a city use Workspaces instead of GIS software?
 
 ## Short Answer

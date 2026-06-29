@@ -75,5 +75,5 @@ For any claim about whether a route is "accessible" for a specific user, note th
 
 - [OS-CONNECT knowledge base](../os-connect/index.md) — underlying pedestrian data
 - [Walksheds knowledge base](../walksheds/index.md) — reachability analysis
-- [Cross-product support](../cross-platform/support/index.md)
+- [Cross-product support](../support/index.md)
 - [Dispatch — full file registry](../dispatch.md)

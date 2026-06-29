@@ -29,6 +29,8 @@ assistant_behavior:
 related_pages: []
 ---
 
+<!-- @format -->
+
 # Why do imagery resources differ between workspaces?
 
 ## Short Answer

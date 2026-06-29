@@ -1,5 +1,5 @@
 ---
-title: "What does \"completeness\" mean?"
+title: 'What does "completeness" mean?'
 tags:
     - Assistant
 slug: what-does-completeness-mean
@@ -25,6 +25,8 @@ assistant_behavior:
     do_not_claim: []
 related_pages: []
 ---
+
+<!-- @format -->
 
 # What does "completeness" mean?
 

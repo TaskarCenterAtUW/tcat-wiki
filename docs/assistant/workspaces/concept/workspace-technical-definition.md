@@ -28,6 +28,8 @@ assistant_behavior:
 related_pages: []
 ---
 
+<!-- @format -->
+
 # What is a workspace in technical terms?
 
 ## Short Answer

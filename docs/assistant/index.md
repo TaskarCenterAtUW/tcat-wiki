@@ -72,7 +72,7 @@ Public assistants need concise answers, explicit limits on claims, and pointers 
 
 ## Example
 
-A public assistant receives: _"Can I use OS-CONNECT data for an ADA transition plan?"_ It retrieves [os-connect/can-os-connect-be-used-for-ada-transition-planning.md](os-connect/can-os-connect-be-used-for-ada-transition-planning.md), notes `risk_level: medium`, checks `assistant_behavior.abstain_if_missing_context`, and cites the page when answering.
+A public assistant receives: _"Can I use OS-CONNECT data for an ADA transition plan?"_ It retrieves [os-connect/ada-transition-planning.md](os-connect/concept/ada-transition-planning.md), notes `risk_level: medium`, checks `assistant_behavior.abstain_if_missing_context`, and cites the page when answering.
 
 ## Assistant Guidance
 
@@ -87,8 +87,3 @@ When a user asks a general question about TCAT products, consult the relevant se
 - [AccessMap knowledge base](accessmap/index.md)
 - [Walksheds knowledge base](walksheds/index.md)
 - [TDEI knowledge base](tdei/index.md)
-- [Cross-product concepts](cross-platform/concepts/index.md)
-- [Policies](policies/index.md)
-- [Workflows](cross-platform/workflows/index.md)
-- [Glossary](cross-platform/glossary/index.md)
-- [Support Q&A](cross-platform/support/index.md)

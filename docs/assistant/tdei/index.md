@@ -75,5 +75,5 @@ Always distinguish TDEI (the data exchange infrastructure and portal) from OS-CO
 
 - [Workspaces knowledge base](../workspaces/index.md)
 - [OS-CONNECT knowledge base](../os-connect/index.md)
-- [Cross-product support](../cross-platform/support/index.md)
+- [Cross-product support](../support/index.md)
 - [Dispatch — full file registry](../dispatch.md)

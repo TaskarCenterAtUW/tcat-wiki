@@ -29,6 +29,8 @@ assistant_behavior:
 related_pages: []
 ---
 
+<!-- @format -->
+
 # What limitations exist compared to OpenStreetMap?
 
 ## Short Answer

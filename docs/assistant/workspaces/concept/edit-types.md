@@ -29,6 +29,8 @@ assistant_behavior:
 related_pages: []
 ---
 
+<!-- @format -->
+
 # What kinds of edits can be made in Workspaces?
 
 ## Short Answer

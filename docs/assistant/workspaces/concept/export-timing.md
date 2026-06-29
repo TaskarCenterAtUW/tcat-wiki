@@ -29,6 +29,8 @@ assistant_behavior:
 related_pages: []
 ---
 
+<!-- @format -->
+
 # When should edits be exported back to TDEI?
 
 ## Short Answer

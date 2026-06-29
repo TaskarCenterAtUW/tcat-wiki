@@ -29,6 +29,8 @@ assistant_behavior:
 related_pages: []
 ---
 
+<!-- @format -->
+
 # What workflows are best suited for Workspaces?
 
 ## Short Answer

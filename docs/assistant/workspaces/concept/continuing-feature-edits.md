@@ -29,6 +29,8 @@ assistant_behavior:
 related_pages: []
 ---
 
+<!-- @format -->
+
 # How can users continue editing an existing feature?
 
 ## Short Answer

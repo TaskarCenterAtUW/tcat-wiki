@@ -28,6 +28,8 @@ assistant_behavior:
 related_pages: []
 ---
 
+<!-- @format -->
+
 # What is the relationship between Workspaces and OS-CONNECT?
 
 ## Short Answer

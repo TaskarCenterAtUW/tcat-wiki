@@ -29,6 +29,8 @@ assistant_behavior:
 related_pages: []
 ---
 
+<!-- @format -->
+
 # Is Workspaces connected to the public OSM database?
 
 ## Short Answer

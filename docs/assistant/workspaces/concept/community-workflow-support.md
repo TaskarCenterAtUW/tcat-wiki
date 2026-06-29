@@ -29,6 +29,8 @@ assistant_behavior:
 related_pages: []
 ---
 
+<!-- @format -->
+
 # What kinds of community workflows are supported?
 
 ## Short Answer

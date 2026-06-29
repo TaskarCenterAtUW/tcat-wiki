@@ -1,5 +1,5 @@
 ---
-title: "What does \"connected pedestrian graph\" mean?"
+title: 'What does "connected pedestrian graph" mean?'
 tags:
     - Assistant
 slug: what-does-connected-pedestrian-graph-mean
@@ -25,6 +25,8 @@ assistant_behavior:
     do_not_claim: []
 related_pages: []
 ---
+
+<!-- @format -->
 
 # What does "connected pedestrian graph" mean?
 

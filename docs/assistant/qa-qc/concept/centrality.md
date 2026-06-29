@@ -1,5 +1,5 @@
 ---
-title: "What does \"centrality\" mean?"
+title: 'What does "centrality" mean?'
 tags:
     - Assistant
 slug: what-does-centrality-mean
@@ -25,6 +25,8 @@ assistant_behavior:
     do_not_claim: []
 related_pages: []
 ---
+
+<!-- @format -->
 
 # What does "centrality" mean?
 

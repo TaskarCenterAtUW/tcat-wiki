@@ -29,6 +29,8 @@ assistant_behavior:
 related_pages: []
 ---
 
+<!-- @format -->
+
 # Why is Workspaces compatible with OSM tools?
 
 ## Short Answer

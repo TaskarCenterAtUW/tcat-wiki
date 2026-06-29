@@ -1,5 +1,5 @@
 ---
-title: "What does \"node centrality\" reveal operationally?"
+title: 'What does "node centrality" reveal operationally?'
 tags:
     - Assistant
 slug: what-does-node-centrality-reveal-operationally
@@ -25,6 +25,8 @@ assistant_behavior:
     do_not_claim: []
 related_pages: []
 ---
+
+<!-- @format -->
 
 # What does "node centrality" reveal operationally?
 

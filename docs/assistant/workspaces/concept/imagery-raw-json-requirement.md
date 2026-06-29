@@ -29,6 +29,8 @@ assistant_behavior:
 related_pages: []
 ---
 
+<!-- @format -->
+
 # Why must imagery use raw JSON links?
 
 ## Short Answer

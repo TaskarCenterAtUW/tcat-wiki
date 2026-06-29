@@ -29,6 +29,8 @@ assistant_behavior:
 related_pages: []
 ---
 
+<!-- @format -->
+
 # How should jurisdictions publish updates?
 
 ## Short Answer

@@ -29,6 +29,8 @@ assistant_behavior:
 related_pages: []
 ---
 
+<!-- @format -->
+
 # What happens if imagery is configured incorrectly?
 
 ## Short Answer

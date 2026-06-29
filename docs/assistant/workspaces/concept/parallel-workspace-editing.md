@@ -29,6 +29,8 @@ assistant_behavior:
 related_pages: []
 ---
 
+<!-- @format -->
+
 # What happens if two groups edit separate copies?
 
 ## Short Answer

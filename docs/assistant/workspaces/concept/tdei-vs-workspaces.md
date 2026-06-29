@@ -27,6 +27,8 @@ assistant_behavior:
 related_pages: []
 ---
 
+<!-- @format -->
+
 # TDEI vs Workspaces
 
 ## Short Answer

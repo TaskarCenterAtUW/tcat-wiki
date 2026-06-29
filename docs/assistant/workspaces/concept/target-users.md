@@ -28,6 +28,8 @@ assistant_behavior:
 related_pages: []
 ---
 
+<!-- @format -->
+
 # What kinds of users are Workspaces designed for?
 
 ## Short Answer

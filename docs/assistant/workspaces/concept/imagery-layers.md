@@ -28,6 +28,8 @@ assistant_behavior:
 related_pages: []
 ---
 
+<!-- @format -->
+
 # Imagery layers (Workspaces)
 
 ## Short Answer

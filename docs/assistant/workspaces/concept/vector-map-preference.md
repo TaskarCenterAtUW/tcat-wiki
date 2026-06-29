@@ -29,6 +29,8 @@ assistant_behavior:
 related_pages: []
 ---
 
+<!-- @format -->
+
 # Why are vector maps preferred for accessibility editing?
 
 ## Short Answer

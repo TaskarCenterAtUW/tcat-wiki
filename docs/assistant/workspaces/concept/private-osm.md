@@ -28,6 +28,8 @@ assistant_behavior:
 related_pages: []
 ---
 
+<!-- @format -->
+
 # Private OSM (Workspaces)
 
 ## Short Answer

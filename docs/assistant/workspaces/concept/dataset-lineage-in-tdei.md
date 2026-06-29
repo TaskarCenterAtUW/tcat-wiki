@@ -29,6 +29,8 @@ assistant_behavior:
 related_pages: []
 ---
 
+<!-- @format -->
+
 # What is dataset lineage in TDEI?
 
 ## Short Answer

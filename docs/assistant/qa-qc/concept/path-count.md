@@ -1,5 +1,5 @@
 ---
-title: "What does \"path count\" mean?"
+title: 'What does "path count" mean?'
 tags:
     - Assistant
 slug: what-does-path-count-mean
@@ -25,6 +25,8 @@ assistant_behavior:
     do_not_claim: []
 related_pages: []
 ---
+
+<!-- @format -->
 
 # What does "path count" mean?
 

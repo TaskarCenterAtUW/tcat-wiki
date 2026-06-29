@@ -29,6 +29,8 @@ assistant_behavior:
 related_pages: []
 ---
 
+<!-- @format -->
+
 # Is a workspace a copy or the original dataset?
 
 ## Short Answer

@@ -29,6 +29,8 @@ assistant_behavior:
 related_pages: []
 ---
 
+<!-- @format -->
+
 # How does Workspaces emulate OSM APIs?
 
 ## Short Answer

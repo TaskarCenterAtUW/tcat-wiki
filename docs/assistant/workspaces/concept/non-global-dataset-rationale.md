@@ -29,6 +29,8 @@ assistant_behavior:
 related_pages: []
 ---
 
+<!-- @format -->
+
 # Why is the dataset not global like OSM?
 
 ## Short Answer

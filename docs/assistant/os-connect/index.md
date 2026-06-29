@@ -52,7 +52,7 @@ OS-CONNECT is TCAT's most frequently queried public-facing product. Planners, ju
 
 - Pages in `os-connect/` address specific questions about the OS-CONNECT viewer, the underlying dataset, correction reporting, data attributes, and use cases.
 - Over 200 question stubs cover viewer UI, data attributes, correction workflows, community engagement, AI-assisted stewardship, equity analysis, and long-term maintenance.
-- Several questions overlap with [Walksheds](../walksheds/index.md), [AccessMap](../accessmap/index.md), and [TDEI](../tdei/index.md) — cross-product support questions are in [support/](../cross-platform/support/index.md).
+- Several questions overlap with [Walksheds](../walksheds/index.md), [AccessMap](../accessmap/index.md), and [TDEI](../tdei/index.md) — cross-product support questions are in [support/](../support/index.md).
 
 ## What This Does Not Mean
 
@@ -76,6 +76,6 @@ For questions about whether OS-CONNECT data satisfies a legal requirement, alway
 - [Walksheds knowledge base](../walksheds/index.md)
 - [AccessMap knowledge base](../accessmap/index.md)
 - [TDEI knowledge base](../tdei/index.md)
-- [Cross-product support](../cross-platform/support/index.md)
-- [Policies — ADA and safety boundaries](../cross-platform/policy/index.md)
+- [Cross-product support](../support/index.md)
+- [Policies — ADA and safety boundaries](../cross-platform/index.md)
 - [Dispatch — full file registry](../dispatch.md)

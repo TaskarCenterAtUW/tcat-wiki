@@ -26,6 +26,8 @@ assistant_behavior:
 related_pages: []
 ---
 
+<!-- @format -->
+
 # What is eigenvector centrality?
 
 ## Short Answer

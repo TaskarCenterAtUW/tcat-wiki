@@ -29,6 +29,8 @@ assistant_behavior:
 related_pages: []
 ---
 
+<!-- @format -->
+
 # How does a workspace diverge from the original dataset?
 
 ## Short Answer

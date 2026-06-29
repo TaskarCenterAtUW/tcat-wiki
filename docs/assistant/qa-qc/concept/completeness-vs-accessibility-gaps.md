@@ -27,6 +27,8 @@ assistant_behavior:
 related_pages: []
 ---
 
+<!-- @format -->
+
 # Why can a city have high completeness but still accessibility gaps?
 
 ## Short Answer

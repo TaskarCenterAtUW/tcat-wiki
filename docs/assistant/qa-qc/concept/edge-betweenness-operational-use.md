@@ -1,5 +1,5 @@
 ---
-title: "What does \"edge betweenness\" reveal operationally?"
+title: 'What does "edge betweenness" reveal operationally?'
 tags:
     - Assistant
 slug: what-does-edge-betweenness-reveal-operationally
@@ -25,6 +25,8 @@ assistant_behavior:
     do_not_claim: []
 related_pages: []
 ---
+
+<!-- @format -->
 
 # What does "edge betweenness" reveal operationally?
 
