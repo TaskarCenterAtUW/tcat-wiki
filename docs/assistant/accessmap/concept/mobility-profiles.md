@@ -63,4 +63,4 @@ Encourage experimentation with profiles and preferences, and abstain from medica
 ## Related Concepts
 
 - [AccessMap routing (concept)](../concepts/accessmap-routing.md)
-- [Why does AccessMap choose longer routes?](why-does-accessmap-choose-longer-routes.md)
+- [Why does AccessMap choose longer routes?](accessible-routes-appear-longer.md)

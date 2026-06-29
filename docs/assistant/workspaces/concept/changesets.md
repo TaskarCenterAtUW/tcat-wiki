@@ -35,6 +35,8 @@ related_pages:
     - assistant/workspaces/how-can-users-inspect-edit-history.md
 ---
 
+<!-- @format -->
+
 # Changesets (Workspaces)
 
 ## Short Answer
@@ -78,8 +80,7 @@ Cite this page whenever a user asks what a changeset is in the context of Worksp
 
 ## Related Concepts
 
-- [Workspaces knowledge base](index.md)
-- [How are changesets tracked?](how-are-changesets-tracked.md)
-- [How can edits be audited?](how-can-edits-be-audited.md)
-- [What metadata is stored for edits?](what-metadata-is-stored-for-edits.md)
-- [How can users inspect edit history?](how-can-users-inspect-edit-history.md)
+- [How are changesets tracked?](changeset-tracking.md)
+- [How can edits be audited?](edit-auditing.md)
+- [What metadata is stored for edits?](edit-metadata.md)
+- [How can users inspect edit history?](edit-history.md)
