@@ -1,0 +1,47 @@
+# @format
+
+# Notify the OS-Connect chatbot to re-ingest the corpus when the docs change.
+#
+# The chatbot's ingest job clones THIS repo directly (public, no creds) and embeds
+# docs/ — so we fire on a git push to main, not on the Pages deploy (the published
+# site is irrelevant to ingest). Re-ingest is a full re-embed/upsert and the receiver
+# is gated by RAG_INGEST_ENABLED, so an extra notify is harmless.
+#
+# Auth: this POSTs to a DIFFERENT repo's /dispatches, which the built-in GITHUB_TOKEN
+# cannot do (it is scoped to this repo only). It needs INGEST_DISPATCH_TOKEN — a
+# fine-grained PAT scoped to TDEI-osconnect-viewer-chatbot with Contents: read & write.
+name: Notify Corpus Reingest
+on:
+  push:
+    branches:
+      - main
+    paths:
+      - "docs/**"
+  workflow_dispatch:
+concurrency:
+  group: notify-reingest
+  cancel-in-progress: false
+permissions:
+  contents: read
+jobs:
+  notify:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Dispatch corpus-updated to chatbot ingest
+        env:
+          TOKEN: ${{ secrets.INGEST_DISPATCH_TOKEN }}
+          # client_payload is INFORMATIONAL only — the receiver treats it as untrusted
+          # and ignores it (it ingests CORPUS_REF from its own env, not the payload).
+          PAYLOAD: '{"event_type":"corpus-updated","client_payload":{"ref":"${{ github.sha }}","source":"tcat-wiki"}}'
+        run: |
+          if [ -z "$TOKEN" ]; then
+            echo "::error::INGEST_DISPATCH_TOKEN is not set — cannot notify the chatbot repo." >&2
+            exit 1
+          fi
+          curl -sS --fail-with-body -X POST \
+            -H "Authorization: Bearer $TOKEN" \
+            -H "Accept: application/vnd.github+json" \
+            -H "X-GitHub-Api-Version: 2022-11-28" \
+            https://api.github.com/repos/TaskarCenterAtUW/TDEI-osconnect-viewer-chatbot/dispatches \
+            -d "$PAYLOAD"
+          echo "Dispatched corpus-updated for ${{ github.sha }}."
