@@ -16,7 +16,7 @@ On January 19th, 2026, Taskar Center for Accessible Technology (TCAT) hosted **M
 | Detail       | Info                      |
 | :----------- | :------------------------ |
 | **Date**     | January 19th, 2026        |
-| **Time**     | 9:00 AM PT – 12:00+ PM PT |
+| **Time**     | 9:00 AM PT - 12:00+ PM PT |
 | **Format**   | virtual                   |
 | **Location** | Zoom                      |
 

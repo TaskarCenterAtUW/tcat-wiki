@@ -9,7 +9,7 @@ aviv_scoutroute_event: false # true if the event uses AVIV ScoutRoute / Workspac
 # ── Common event properties (used by report intro/outro) ─────────────
 event_name: "Full Event Name" # Full event name as it appears in the report title
 event_date: "Month Nth, YYYY" # Human-readable event date (e.g. "February 12th, 2026")
-event_time_range: "H:MM AM PT – H:MM PM PT" # Display time range; use local timezone abbreviation
+event_time_range: "H:MM AM PT - H:MM PM PT" # Display time range; use local timezone abbreviation
 event_format: virtual # (virtual | in-person)
 event_location: "Virtual (Platform) | Venue Name, City, ST" # Zoom URL or physical venue name + address
 target_area: "City, ST" # Geographic area being mapped/surveyed (used throughout the report)
@@ -48,7 +48,7 @@ Brief description of the event.
 ### Event Details
 
 - **Date**: Month Nth, YYYY
-- **Time**: H:MM AM PT – H:MM PM PT
+- **Time**: H:MM AM PT - H:MM PM PT
 - **Location**: Virtual ([Zoom](https://washington.zoom.us/j/XXXXXXXXX))
 - **TCAT Calendar**: [Event Name](https://tcat.cs.washington.edu/events/event-slug/)
 

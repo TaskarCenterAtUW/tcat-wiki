@@ -109,7 +109,7 @@ Once contributors scan the QR code or follow the link and log in, their subseque
 1. Ensure you have a **Workspaces account** and belong to the correct project group.
 2. [Create a workspace](create-a-workspace-from-tdei.md) or open an existing one.
 3. Open **Settings → Teams**.
-4. Create a team with a descriptive name (for example "Curb Ramp Survey – Team A").
+4. Create a team with a descriptive name (for example "Curb Ramp Survey - Team A").
 5. Share the **QR code** or **link** with the contributors assigned to that task.
 6. Contributors scan the QR code or open the link to associate themselves with the team.
 7. Their edits are now attributed to that team in the Workspaces review view.
@@ -117,14 +117,14 @@ Once contributors scan the QR code or follow the link and log in, their subseque
 **Practical tips for managers**
 
 - Name teams according to the task or scope they are assigned to (for example by geography, feature type, or shift), so the attribution is meaningful in review.
-- You can create multiple teams per workspace — for example "Team 1 – Downtown Sidewalks" and "Team 2 – Downtown Crossings"—to separate workstreams.
+- You can create multiple teams per workspace — for example "Team 1 - Downtown Sidewalks" and "Team 2 - Downtown Crossings"—to separate workstreams.
 - The shared link follows the format `https://workspaces-stage.sidewalks.washington.edu/workspace/{id}/teams/{team_id}` — you can copy and send it through email, chat, or printed materials.
 - Download the QR code for physical handouts at events or field meetings.
 - Confirm with TCAT whether this feature has been promoted to production before publishing instructions that reference the stage URL.
 
 ## Example
 
-A transit agency creates a workspace for a downtown accessibility survey. The project lead creates two teams in **Settings → Teams**: "Team 1 – Curb Ramps" and "Team 2 – Sidewalk Connectivity." At an event, Team 1 volunteers scan the QR code for their team and field-edit curb ramp data in AVIV ScoutRoute; Team 2 volunteers scan a different QR code and map sidewalk connections. Later, the manager opens the review view, filters by team, and inspects each group's changesets separately — seeing clearly which edits came from which team without having to ask contributors to self-report their assignments.
+A transit agency creates a workspace for a downtown accessibility survey. The project lead creates two teams in **Settings → Teams**: "Team 1 - Curb Ramps" and "Team 2 - Sidewalk Connectivity." At an event, Team 1 volunteers scan the QR code for their team and field-edit curb ramp data in AVIV ScoutRoute; Team 2 volunteers scan a different QR code and map sidewalk connections. Later, the manager opens the review view, filters by team, and inspects each group's changesets separately — seeing clearly which edits came from which team without having to ask contributors to self-report their assignments.
 
 ## Assistant Guidance
 

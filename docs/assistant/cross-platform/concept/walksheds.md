@@ -30,6 +30,8 @@ related_pages:
     - assistant/workflows/use-walksheds-for-safe-routes-to-school.md
 ---
 
+<!-- @format -->
+
 # Walksheds (concept)
 
 ## Short Answer
@@ -38,7 +40,7 @@ A walkshed is the area reachable from an origin along the pedestrian network wit
 
 ## Significance
 
-Walksheds support prioritization, equity conversations, and Safe Routes to School–style planning when paired with local policy. Mislabeling them as approvals or safety certifications undermines trust.
+Walksheds support prioritization, equity conversations, and Safe Routes to School-style planning when paired with local policy. Mislabeling them as approvals or safety certifications undermines trust.
 
 ## What This Means
 

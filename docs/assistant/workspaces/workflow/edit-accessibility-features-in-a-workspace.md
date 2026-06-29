@@ -92,7 +92,7 @@ Open a workspace from the dashboard, then launch the editor (for example **Open 
 
 **Review and attribution**
 
-- Use the workspace **Review** view (role-dependent) to walk changesets in an OSM-changeset–style UI: who edited, which editor, sources used, and when.
+- Use the workspace **Review** view (role-dependent) to walk changesets in an OSM-changeset-style UI: who edited, which editor, sources used, and when.
 - Large initial imports can produce very large changesets; filters and smaller workspaces are easier to QA.
 
 ## What This Does Not Mean

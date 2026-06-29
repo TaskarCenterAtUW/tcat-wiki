@@ -9,7 +9,7 @@ aviv_scoutroute_event: true # true if the event uses AVIV ScoutRoute / Workspace
 # ── Common event properties (used by report intro/outro) ─────────────
 event_name: "Clark County Walk/Roll Event" # Full event name as it appears in the report title
 event_date: "January 20th, 2026" # Human-readable event date (e.g. "February 12th, 2026")
-# event_time_range: "H:MM AM PT – H:MM PM PT" # Display time range; use local timezone abbreviation
+# event_time_range: "H:MM AM PT - H:MM PM PT" # Display time range; use local timezone abbreviation
 event_format: in-person # (virtual | in-person)
 event_location: "Gaiser Hall, Vancouver, WA" # Zoom or physical venue name + address
 target_area: "Vancouver, WA" # Geographic area being mapped/surveyed (used throughout the report)

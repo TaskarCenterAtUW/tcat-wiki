@@ -251,7 +251,7 @@
 *[WA]: Washington (state)
 *[WAGISA]: Washington GIS Association
 *[WAI]: Web Accessibility Initiative
-*[WAI-ARIA]: Web Accessibility Initiative – Accessible Rich Internet Applications
+*[WAI-ARIA]: Web Accessibility Initiative - Accessible Rich Internet Applications
 *[WASILC]: Washington Statewide Independent Living Council
 *[WCAG]: Web Content Accessibility Guidelines
 *[WFS]: Web Feature Service

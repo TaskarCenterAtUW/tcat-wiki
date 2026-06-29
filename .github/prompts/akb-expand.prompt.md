@@ -69,7 +69,7 @@ One to three short paragraphs. This is the text an assistant will surface direct
 
 ### `## Significance`
 
-One paragraph (2–4 sentences) explaining why this topic matters to planners, jurisdictions, advocates, the public, or other identified audiences. Focus on operational or civic importance. Do not use the heading "Why This Matters".
+One paragraph (2-4 sentences) explaining why this topic matters to planners, jurisdictions, advocates, the public, or other identified audiences. Focus on operational or civic importance. Do not use the heading "Why This Matters".
 
 ### `## What This Means`
 

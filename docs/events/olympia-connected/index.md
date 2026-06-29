@@ -9,7 +9,7 @@ aviv_scoutroute_event: false # true if the event uses AVIV ScoutRoute / Workspac
 # ── Common event properties (used by report intro/outro) ─────────────
 event_name: "Olympia, Connected: Mapping for Mobility in OpenStreetMap" # Full event name as it appears in the report title
 event_date: "February 12th, 2026" # Human-readable event date (e.g. "February 12th, 2026")
-event_time_range: "6:00 PM PT – 8:00 PM PT" # Display time range; use local timezone abbreviation
+event_time_range: "6:00 PM PT - 8:00 PM PT" # Display time range; use local timezone abbreviation
 event_format: in-person # (virtual | in-person)
 event_location: "HRDG 143, John and Judy Harding Building, Seattle University" # Zoom URL or physical venue name + address
 target_area: "Olympia, WA" # Geographic area being mapped/surveyed (used throughout the report)
