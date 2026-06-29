@@ -77,5 +77,5 @@ For questions about whether OS-CONNECT data satisfies a legal requirement, alway
 - [AccessMap knowledge base](../accessmap/index.md)
 - [TDEI knowledge base](../tdei/index.md)
 - [Cross-product support](../cross-platform/support/index.md)
-- [Policies — ADA and safety boundaries](../policies/index.md)
+- [Policies — ADA and safety boundaries](../cross-platform/policy/index.md)
 - [Dispatch — full file registry](../dispatch.md)

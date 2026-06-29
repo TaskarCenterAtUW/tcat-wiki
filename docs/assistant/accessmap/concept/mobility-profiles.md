@@ -50,7 +50,7 @@ Profiles change which edges are traversable or how expensive they are in the rou
 
 ## How To Use This
 
-Cite the [AccessMap profiles manual](user-manual/) for authoritative UI behavior.
+Cite the [AccessMap User Manual's profiles section](../../../../docs/accessmap/user-manual/profiles.md) for authoritative UI behavior.
 
 ## Example
 
@@ -62,5 +62,5 @@ Encourage experimentation with profiles and preferences, and abstain from medica
 
 ## Related Concepts
 
-- [AccessMap routing (concept)](../concepts/accessmap-routing.md)
+- [AccessMap routing (concept)](../../cross-platform/concept/accessmap-routing.md)
 - [Why does AccessMap choose longer routes?](accessible-routes-appear-longer.md)

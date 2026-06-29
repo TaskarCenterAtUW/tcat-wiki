@@ -39,6 +39,8 @@ related_pages:
     - collaborative-accessibility-editing
 ---
 
+<!-- @format -->
+
 # Multi-Source Stewardship (Workspaces)
 
 ## Short Answer
@@ -52,6 +54,7 @@ This means users do not need to rely only on manual feature-by-feature editing. 
 Multi-source stewardship is central to the value of Workspaces because accessibility data is rarely complete, current, or authoritative from a single source.
 
 Pedestrian and accessibility information may come from:
+
 - existing sidewalk inventories,
 - machine-learning-derived extractions,
 - field audits,
@@ -67,6 +70,7 @@ Workspaces provides a controlled environment where these sources can be compared
 ## What This Means
 
 In a Workspaces workflow, teams may use multiple sources of information to support editing and review. These sources can help identify:
+
 - missing sidewalks,
 - incorrect geometry,
 - curb ramp gaps,
@@ -79,6 +83,7 @@ In a Workspaces workflow, teams may use multiple sources of information to suppo
 The workspace acts as a staging and review environment. It allows users to inspect differences, make corrections, document sources, and prepare updates for broader publication workflows.
 
 Multi-source stewardship can include:
+
 - importing supplementary datasets,
 - referencing imagery layers,
 - reviewing machine-generated features,
@@ -89,6 +94,7 @@ Multi-source stewardship can include:
 ## What This Does Not Mean
 
 Multi-source stewardship does not mean:
+
 - every imported dataset is automatically authoritative,
 - imported records should be accepted without review,
 - Workspaces automatically resolves conflicts between datasets,
@@ -114,6 +120,7 @@ Recommended workflow:
 8. Export only reviewed and approved edits.
 
 This workflow is especially useful for:
+
 - jurisdiction data maintenance,
 - OS-CONNECT update review,
 - community validation campaigns,
@@ -127,6 +134,7 @@ This workflow is especially useful for:
 A city wants to improve sidewalk and curb ramp data near several transit stops.
 
 The team creates a workspace from an OS-CONNECT-derived dataset. They then add:
+
 - a local curb ramp inventory,
 - machine-generated sidewalk detections,
 - community-reported access barriers,
@@ -140,6 +148,7 @@ Only reviewed edits are exported into the broader TDEI workflow.
 ## Assistant Guidance
 
 When explaining multi-source stewardship, the assistant should:
+
 - clarify that Workspaces supports more than manual element-by-element editing,
 - explain that supplementary layers can support review and enrichment,
 - distinguish between imported/reference data and authoritative published data,
@@ -151,10 +160,10 @@ If the assistant cannot determine the source, freshness, or review status of a l
 ## Related Concepts
 
 - [Private OSM](private-osm.md)
-- [Workspace Sandbox](workspace-sandbox.md)
+- [Workspace Sandbox](sandbox.md)
 - [Dataset Lineage](dataset-lineage.md)
-- [Workspace Export](workspace-export.md)
-- [Collaborative Accessibility Editing](collaborative-accessibility-editing.md)
+- [Workspace Export](../workflow/export-workspace.md)
+- [Collaborative Accessibility Editing](collaborative-editing.md)
 - Data Freshness (see assistant policies)
 - Publication Workflow (see export and TDEI release docs)
 - Review and QA/QC (see changesets and review workflows)

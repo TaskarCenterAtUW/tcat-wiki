@@ -63,4 +63,4 @@ Give a high-level map of capabilities, then defer to the manual for clicks and f
 
 ## Related Concepts
 
-- [Where do I download OS-CONNECT data?](where-do-i-download-os-connect-data.md)
+- [Where do I download OS-CONNECT data?](download-os-connect-data.md)

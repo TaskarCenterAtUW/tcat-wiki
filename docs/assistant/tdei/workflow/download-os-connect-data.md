@@ -64,4 +64,4 @@ Do not invent URLs or API shapes. Cite the tutorial and abstain if the user's en
 
 ## Related Concepts
 
-- [How do I use the TDEI portal?](how-do-i-use-the-tdei-portal.md)
+- [How do I use the TDEI portal?](use-tdei-portal.md)
