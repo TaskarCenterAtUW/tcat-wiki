@@ -165,7 +165,7 @@ Other products may use additional topic slugs (for example `gtfs-pathways`, `com
 - `source_url` — placeholder string beginning with `PLACEHOLDER_SITE_URL/`; replace in your deployment using `site_url` from `zensical.toml` and your HTML permalink rules.
 - `content` — Markdown body after the closing `---` of the YAML frontmatter (full page text for the first iteration; section-aware splitting may come later).
 
-Embeddings, vector stores, and LLM API calls are **out of scope** for this repository’s default tooling.
+Embeddings, vector stores, and LLM API calls are **out of scope** for this repository's default tooling.
 
 ## Related
 

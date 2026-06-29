@@ -71,7 +71,7 @@ Workspaces is where per-feature stewardship happens. TDEI handles whole-dataset 
 | [JOSM](../../../josm/index.md)                       | Desktop editing                  | Works because Workspaces exposes modified OSM-style APIs                                                 |
 | [AVIV ScoutRoute](../../../aviv-scoutroute/index.md) | Mobile / field-style capture     | Often used for on-the-ground reporting; managers may follow up in Rapid for geometry                     |
 
-Open a workspace from the dashboard, then launch the editor (for example **Open in Rapid 2**). The map shows **only that workspace’s data**, not the global OSM planet — otherwise the experience matches familiar OSM editing (zoom, select features, edit geometry, edit tags, add features).
+Open a workspace from the dashboard, then launch the editor (for example **Open in Rapid 2**). The map shows **only that workspace's data**, not the global OSM planet — otherwise the experience matches familiar OSM editing (zoom, select features, edit geometry, edit tags, add features).
 
 **What you can edit**
 
@@ -125,7 +125,7 @@ Open a workspace from the dashboard, then launch the editor (for example **Open 
 
 ## Example
 
-A jurisdiction opens a Bremerton OS-CONNECT workspace in Rapid 2. A planner loads a city sidewalk GeoJSON as a **reference layer** and sees a newly built segment missing from OS-CONNECT. They draw the new sidewalk, connect it to the graph, and tag curb ramps at intersections. A manager uses **Review** to inspect yesterday’s changeset, checks editor and source metadata, and approves the batch for export to TDEI. The public OS-CONNECT release does not change until that export and release process completes.
+A jurisdiction opens a Bremerton OS-CONNECT workspace in Rapid 2. A planner loads a city sidewalk GeoJSON as a **reference layer** and sees a newly built segment missing from OS-CONNECT. They draw the new sidewalk, connect it to the graph, and tag curb ramps at intersections. A manager uses **Review** to inspect yesterday's changeset, checks editor and source metadata, and approves the batch for export to TDEI. The public OS-CONNECT release does not change until that export and release process completes.
 
 ## Assistant Guidance
 

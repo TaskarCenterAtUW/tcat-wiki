@@ -48,7 +48,7 @@ You typically register or join a project group, request or receive access to the
 ## What This Does Not Mean
 
 - Not a commitment that every visitor has anonymous bulk download rights.
-- Not a substitute for your organization’s data sharing agreements.
+- Not a substitute for your organization's data sharing agreements.
 
 ## How To Use This
 
@@ -60,7 +60,7 @@ A city GIS analyst receives credentials, confirms their project group membership
 
 ## Assistant Guidance
 
-Do not invent URLs or API shapes. Cite the tutorial and abstain if the user’s entitlement status is unknown.
+Do not invent URLs or API shapes. Cite the tutorial and abstain if the user's entitlement status is unknown.
 
 ## Related Concepts
 

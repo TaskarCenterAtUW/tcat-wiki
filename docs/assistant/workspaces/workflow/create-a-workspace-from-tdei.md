@@ -45,11 +45,13 @@ related_pages:
     - workspaces/index.md
 ---
 
+<!-- @format -->
+
 # Create a workspace from TDEI
 
 ## Short Answer
 
-To create a workspace from TDEI, open a dataset that is already stored in the [TDEI portal](https://portal.tdei.us/) and use **Open in Workspaces** (or the equivalent action on that dataset). Workspaces copies the **current TDEI dataset version** into a private editing sandbox. Edits happen in Workspaces first; they do not change the TDEI release until you export or upload through your jurisdiction’s publication workflow.
+To create a workspace from TDEI, open a dataset that is already stored in the [TDEI portal](https://portal.tdei.us/) and use **Open in Workspaces** (or the equivalent action on that dataset). Workspaces copies the **current TDEI dataset version** into a private editing sandbox. Edits happen in Workspaces first; they do not change the TDEI release until you export or upload through your jurisdiction's publication workflow.
 
 You can also start from the Workspaces dashboard (**Create Workspace** → **From TDEI**), pick a project group, and select the dataset — same outcome, different starting screen.
 
@@ -97,7 +99,7 @@ TDEI is built to manage **whole datasets** (inventory, metadata, jobs, releases)
 3. On the workspace dashboard, note **from TDEI dataset ID** and **version** for audit trails and support questions.
 4. Configure workspace settings if needed (title, external app publish toggles, imagery JSON — see the [Workspaces user manual](../../../workspaces/user-manual/workspace-settings.md)).
 5. Edit in the chosen editor; coordinate teams so multiple groups do not assume they are editing the same live TDEI release without communication.
-6. Run review in Workspaces, then follow your jurisdiction’s steps to **export to TDEI** and publish or download as required.
+6. Run review in Workspaces, then follow your jurisdiction's steps to **export to TDEI** and publish or download as required.
 
 **When TDEI is the right starting point**
 
@@ -113,7 +115,7 @@ TDEI is built to manage **whole datasets** (inventory, metadata, jobs, releases)
 
 ## Example
 
-A city has an OS-CONNECT pedestrian dataset for its service area stored in TDEI at version 2. A GIS analyst opens that dataset in the TDEI portal and selects **Open in Workspaces**. Workspaces creates a new workspace under the city’s project group with **from TDEI dataset ID** and **version 2** shown on the dashboard. The analyst edits curb ramps and crossings in Rapid over several weeks. The TDEI release remains unchanged until the team completes review and performs an export back to TDEI. Meanwhile, if TDEI publishes version 3, the existing workspace still reflects version 2 unless the team deliberately creates a new workspace from the newer release.
+A city has an OS-CONNECT pedestrian dataset for its service area stored in TDEI at version 2. A GIS analyst opens that dataset in the TDEI portal and selects **Open in Workspaces**. Workspaces creates a new workspace under the city's project group with **from TDEI dataset ID** and **version 2** shown on the dashboard. The analyst edits curb ramps and crossings in Rapid over several weeks. The TDEI release remains unchanged until the team completes review and performs an export back to TDEI. Meanwhile, if TDEI publishes version 3, the existing workspace still reflects version 2 unless the team deliberately creates a new workspace from the newer release.
 
 ## Assistant Guidance
 
@@ -127,9 +129,9 @@ A city has an OS-CONNECT pedestrian dataset for its service area stored in TDEI 
 ## Related Concepts
 
 - [Private OSM (Workspaces)](../../workspaces/private-osm.md)
-- [Workspace sandbox](../../workspaces/workspace-sandbox.md) *(stub — author next)*
-- [Dataset lineage (Workspaces and TDEI)](../../workspaces/dataset-lineage.md) *(stub — author next)*
-- [TDEI vs Workspaces](../../workspaces/tdei-vs-workspaces.md) *(stub — author next)*
-- [How do I create a workspace from TDEI?](../../workspaces/how-do-i-create-a-workspace-from-tdei.md) *(stub — author next)*
-- [What happens when I create a workspace from a TDEI dataset?](../../workspaces/what-happens-when-i-create-a-workspace-from-a-tdei-dataset.md) *(stub — author next)*
+- [Workspace sandbox](../../workspaces/workspace-sandbox.md) _(stub — author next)_
+- [Dataset lineage (Workspaces and TDEI)](../../workspaces/dataset-lineage.md) _(stub — author next)_
+- [TDEI vs Workspaces](../../workspaces/tdei-vs-workspaces.md) _(stub — author next)_
+- [How do I create a workspace from TDEI?](../../workspaces/how-do-i-create-a-workspace-from-tdei.md) _(stub — author next)_
+- [What happens when I create a workspace from a TDEI dataset?](../../workspaces/what-happens-when-i-create-a-workspace-from-a-tdei-dataset.md) _(stub — author next)_
 - [Workspaces (product overview)](../../../workspaces/index.md)

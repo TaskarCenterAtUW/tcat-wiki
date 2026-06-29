@@ -53,7 +53,7 @@ Operational questions need consistent tone, explicit uncertainty, and clear next
 | `answer-when-uncertain`            | Needs internal verification                                   | What is known → what is not confirmed → who is checking → interim guidance                   |
 | `respond-to-data-error`            | User reports a suspected error                                | Thank them → issue category → reporting path → review lifecycle → agency-scale follow-up     |
 | `explain-tool-without-overselling` | Mentioning Walksheds, AccessMap, Mappy Hours, Tasking Manager | Connect to use case → what it does → limitations → next step                                 |
-| `reconnect-prior-collaborator`     | Long-running relationship                                     | Acknowledge prior context → current update → answer today’s question → concrete continuation |
+| `reconnect-prior-collaborator`     | Long-running relationship                                     | Acknowledge prior context → current update → answer today's question → concrete continuation |
 
 ## What This Does Not Mean
 

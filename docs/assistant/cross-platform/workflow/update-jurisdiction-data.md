@@ -29,6 +29,8 @@ related_pages:
     - tdei/portal/user-manual/datasets.md
 ---
 
+<!-- @format -->
+
 # Update jurisdiction data through TDEI and OS-CONNECT pipelines
 
 ## Short Answer
@@ -48,7 +50,7 @@ Public assistants should not invent upload URLs or credential flows; this workfl
 
 ## What This Does Not Mean
 
-- Not a tutorial replacement for the portal manual’s click-level detail.
+- Not a tutorial replacement for the portal manual's click-level detail.
 - Not permission to bypass access controls.
 
 ## How To Use This

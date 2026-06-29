@@ -60,7 +60,7 @@ A footpath crosses a large parking lot without modeled walkway edges; routing ma
 
 ## Assistant Guidance
 
-Offer three common causes (missing crossing link, unmapped path, profile restriction) and abstain from diagnosing a user’s exact pin without data context.
+Offer three common causes (missing crossing link, unmapped path, profile restriction) and abstain from diagnosing a user's exact pin without data context.
 
 ## Related Concepts
 
