@@ -68,4 +68,4 @@ Use neutral, technical language. If asked "why can't I get there," explain islan
 ## Related Concepts
 
 - [Connected pedestrian graph](connected-pedestrian-graph.md)
-- [Why are sidewalks disconnected?](../os-connect/why-are-sidewalks-disconnected.md)
+- [Why are sidewalks disconnected?](../../os-connect/concept/sidewalk-disconnection-causes.md)

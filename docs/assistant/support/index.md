@@ -72,4 +72,4 @@ For cross-product questions, synthesize answers from multiple pages when needed,
 - [OS-CONNECT knowledge base](../../os-connect/index.md)
 - [TDEI knowledge base](../../tdei/index.md)
 - [Workspaces knowledge base](../../workspaces/index.md)
-- [Dispatch — full file registry](../../dispatch.md)
+- [Dispatch — full file registry](../dispatch.md)

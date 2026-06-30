@@ -73,6 +73,4 @@ Concept pages provide definitional grounding; always supplement them with produc
 
 ## Related Concepts
 
-- [Policies](../policy/index.md)
-- [Workspaces concepts](../workspaces/index.md)
-- [Dispatch — full file registry](../dispatch.md)
+- [Dispatch — full file registry](../../dispatch.md)
