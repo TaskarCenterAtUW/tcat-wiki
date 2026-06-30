@@ -30,8 +30,6 @@ assistant_behavior:
 
 <!-- @format -->
 
-     [How can walksheds support SRTS?](../walksheds/how-can-walksheds-support-srts.md)
-
 # Use Walksheds for Safe Routes to School
 
 ## Short Answer
