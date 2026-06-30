@@ -67,4 +67,4 @@ Stay at the conceptual level; deep links should target the datasets and jobs man
 
 ## Related Concepts
 
-- [Where do I download OS-CONNECT data?](../tdei/where-do-i-download-os-connect-data.md)
+- [Where do I download OS-CONNECT data?](../../tdei/workflow/download-os-connect-data.md)

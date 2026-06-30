@@ -50,7 +50,7 @@ Cross-product concepts — such as the connected pedestrian graph, accessibility
 ## What This Means
 
 - Pages in `concepts/` address ideas that cut across at least two TCAT products or that are prerequisite knowledge for understanding product-specific questions.
-- Workspaces-specific concepts (sandbox governance, dataset lineage, imagery layers, etc.) are in [workspaces/](../workspaces/index.md), colocated with the Workspaces question pages.
+- Workspaces-specific concepts (sandbox governance, dataset lineage, imagery layers, etc.) are in `workspaces/concept/`.
 
 ## What This Does Not Mean
 

@@ -74,7 +74,6 @@ Workflow pages often involve external stakeholder coordination (jurisdiction sta
 
 ## Related Concepts
 
-- [Policies](../policy/index.md)
 - [Dispatch — full file registry](../../dispatch.md)
 
 ## Planned Pages

@@ -39,7 +39,7 @@ related_pages:
 
 ## Short Answer
 
-Five reusable response structures for helpline and Question Board replies. Pair them with factual pages under `docs/assistant/questions/` and [support intents](../intents.md) so staff retrieve both **what to say** and **how to say it**.
+Five reusable response structures for helpline and Question Board replies. Pair them with factual pages under `docs/assistant/questions/` and [support intents](../../intents.md) so staff retrieve both **what to say** and **how to say it**.
 
 ## Significance
 
@@ -78,4 +78,3 @@ When generating drafts, label which pattern was applied. If `review_status: draf
 ## Related Concepts
 
 - [Support intents](../../intents.md)
-- [Assistant abstention](../policy/assistant-abstention.md)

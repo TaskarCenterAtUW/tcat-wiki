@@ -68,4 +68,4 @@ Emphasize engagement and engineering follow-up. Abstain on district policy manda
 
 ## Related Concepts
 
-- [How can walksheds support SRTS?](../walksheds/how-can-walksheds-support-srts.md)
+- [How can walksheds support SRTS?](../../walksheds/concept/safe-routes-to-school.md)
