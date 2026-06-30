@@ -201,14 +201,14 @@ At the bottom of the sidebar (below the profile panel), the **Trip options** sec
 
 <div class="only-light">
 <img-comparison-slider>
-  <img class="off-glb" slot="first" src="../../../resources/images/accessmap/user-manual/interface/time-open-light.png" alt="Route through building when open" />
-  <img class="off-glb" slot="second" src="../../../resources/images/accessmap/user-manual/interface/time-closed-light.png" alt="Route around building when closed" />
+  <img class="off-glb" slot="first" src="../../resources/images/accessmap/user-manual/interface/time-open-light.png" alt="Route through building when open" />
+  <img class="off-glb" slot="second" src="../../resources/images/accessmap/user-manual/interface/time-closed-light.png" alt="Route around building when closed" />
 </img-comparison-slider>
 </div>
 <div class="only-dark">
 <img-comparison-slider>
-  <img class="off-glb" slot="first" src="../../../resources/images/accessmap/user-manual/interface/time-open-dark.png" alt="Route through building when open" />
-  <img class="off-glb" slot="second" src="../../../resources/images/accessmap/user-manual/interface/time-closed-dark.png" alt="Route around building when closed" />
+  <img class="off-glb" slot="first" src="../../resources/images/accessmap/user-manual/interface/time-open-dark.png" alt="Route through building when open" />
+  <img class="off-glb" slot="second" src="../../resources/images/accessmap/user-manual/interface/time-closed-dark.png" alt="Route around building when closed" />
 </img-comparison-slider>
 </div>
 
