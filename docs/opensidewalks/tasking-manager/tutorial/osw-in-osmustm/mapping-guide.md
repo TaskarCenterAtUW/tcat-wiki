@@ -94,14 +94,14 @@ The default background imagery in most locations is **Bing Maps Aerial**. If the
 
 <div class="only-light">
 <img-comparison-slider>
-    <img class="off-glb" slot="first" src="../../../../../resources/images/opensidewalks/tasking-manager/tutorials/osw-in-osmustm/mapping-guide/06-aerial-bing-light.png" alt="Rapid editor displaying Bing Maps Aerial background imagery, showing an aerial view of an intersection with existing sidewalk and crossing features." />
-    <img class="off-glb" slot="second" src="../../../../../resources/images/opensidewalks/tasking-manager/tutorials/osw-in-osmustm/mapping-guide/07-aerial-mapbox-light.png" alt="The same intersection as the left panel, this time displaying Mapbox Satellite background imagery, which may show higher or lower resolution depending on the area." />
+    <img class="off-glb" slot="first" src="../../../../resources/images/opensidewalks/tasking-manager/tutorials/osw-in-osmustm/mapping-guide/06-aerial-bing-light.png" alt="Rapid editor displaying Bing Maps Aerial background imagery, showing an aerial view of an intersection with existing sidewalk and crossing features." />
+    <img class="off-glb" slot="second" src="../../../../resources/images/opensidewalks/tasking-manager/tutorials/osw-in-osmustm/mapping-guide/07-aerial-mapbox-light.png" alt="The same intersection as the left panel, this time displaying Mapbox Satellite background imagery, which may show higher or lower resolution depending on the area." />
 </img-comparison-slider>
 </div>
 <div class="only-dark">
 <img-comparison-slider>
-    <img class="off-glb" slot="first" src="../../../../../resources/images/opensidewalks/tasking-manager/tutorials/osw-in-osmustm/mapping-guide/06-aerial-bing-dark.png" alt="Rapid editor displaying Bing Maps Aerial background imagery, showing an aerial view of an intersection with existing sidewalk and crossing features." />
-    <img class="off-glb" slot="second" src="../../../../../resources/images/opensidewalks/tasking-manager/tutorials/osw-in-osmustm/mapping-guide/07-aerial-mapbox-dark.png" alt="The same intersection as the left panel, this time displaying Mapbox Satellite background imagery, which may show higher or lower resolution depending on the area." />
+    <img class="off-glb" slot="first" src="../../../../resources/images/opensidewalks/tasking-manager/tutorials/osw-in-osmustm/mapping-guide/06-aerial-bing-dark.png" alt="Rapid editor displaying Bing Maps Aerial background imagery, showing an aerial view of an intersection with existing sidewalk and crossing features." />
+    <img class="off-glb" slot="second" src="../../../../resources/images/opensidewalks/tasking-manager/tutorials/osw-in-osmustm/mapping-guide/07-aerial-mapbox-dark.png" alt="The same intersection as the left panel, this time displaying Mapbox Satellite background imagery, which may show higher or lower resolution depending on the area." />
 </img-comparison-slider>
 </div>
 
@@ -113,14 +113,14 @@ Different aerial imagery layers are often shifted slightly from one to another, 
 
 <div class="only-light">
 <img-comparison-slider>
-    <img class="off-glb" slot="first" src="../../../../../resources/images/opensidewalks/tasking-manager/tutorials/osw-in-osmustm/mapping-guide/08-alignment-bing-light.png" alt="Rapid editor showing existing sidewalk and road features visibly offset from the Bing aerial imagery, with the Imagery Offset control showing 0,0." />
-    <img class="off-glb" slot="second" src="../../../../../resources/images/opensidewalks/tasking-manager/tutorials/osw-in-osmustm/mapping-guide/09-alignment-mapbox-light.png" alt="The same view after switching to Mapbox imagery and adjusting the offset, with the sidewalk and road features now correctly aligned to the imagery." />
+    <img class="off-glb" slot="first" src="../../../../resources/images/opensidewalks/tasking-manager/tutorials/osw-in-osmustm/mapping-guide/08-alignment-bing-light.png" alt="Rapid editor showing existing sidewalk and road features visibly offset from the Bing aerial imagery, with the Imagery Offset control showing 0,0." />
+    <img class="off-glb" slot="second" src="../../../../resources/images/opensidewalks/tasking-manager/tutorials/osw-in-osmustm/mapping-guide/09-alignment-mapbox-light.png" alt="The same view after switching to Mapbox imagery and adjusting the offset, with the sidewalk and road features now correctly aligned to the imagery." />
 </img-comparison-slider>
 </div>
 <div class="only-dark">
 <img-comparison-slider>
-    <img class="off-glb" slot="first" src="../../../../../resources/images/opensidewalks/tasking-manager/tutorials/osw-in-osmustm/mapping-guide/08-alignment-bing-dark.png" alt="Rapid editor showing existing sidewalk and road features visibly offset from the Bing aerial imagery, with the Imagery Offset control showing 0,0." />
-    <img class="off-glb" slot="second" src="../../../../../resources/images/opensidewalks/tasking-manager/tutorials/osw-in-osmustm/mapping-guide/09-alignment-mapbox-dark.png" alt="The same view after switching to Mapbox imagery and adjusting the offset, with the sidewalk and road features now correctly aligned to the imagery." />
+    <img class="off-glb" slot="first" src="../../../../resources/images/opensidewalks/tasking-manager/tutorials/osw-in-osmustm/mapping-guide/08-alignment-bing-dark.png" alt="Rapid editor showing existing sidewalk and road features visibly offset from the Bing aerial imagery, with the Imagery Offset control showing 0,0." />
+    <img class="off-glb" slot="second" src="../../../../resources/images/opensidewalks/tasking-manager/tutorials/osw-in-osmustm/mapping-guide/09-alignment-mapbox-dark.png" alt="The same view after switching to Mapbox imagery and adjusting the offset, with the sidewalk and road features now correctly aligned to the imagery." />
 </img-comparison-slider>
 </div>
 

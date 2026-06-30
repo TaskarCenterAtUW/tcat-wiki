@@ -6,6 +6,12 @@ Changes to the TCAT Wiki are documented here.
 
 This project adheres to [Semantic Versioning](https://semver.org/) and [Conventional Commits](https://www.conventionalcommits.org/).
 
+## v12.4.1 (2026-06-30)
+
+### Fixes
+
+- **Docs**: Fix broken image comparison sliders
+
 ## v12.4.0 (2026-06-30)
 
 ### Features
