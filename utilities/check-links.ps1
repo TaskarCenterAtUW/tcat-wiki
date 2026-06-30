@@ -170,6 +170,7 @@ function Test-ExternalUrlValid {
         "*firebase*"
         "*osm.workspaces-stage.sidewalks.washington.edu/api*"
         "*join.slack.com*"
+        "*accessmap.app*"
     )
 
     foreach ($domain in $skipDomains) {
@@ -389,6 +390,7 @@ if ($external) {
                 "*firebase*"
                 "*osm.workspaces-stage.sidewalks.washington.edu/api*"
                 "*join.slack.com*"
+                "*accessmap.app*"
             )
 
             $skipped = $false
