@@ -30,6 +30,8 @@ related_pages:
     - assistant/questions/os-connect/is-completeness-ada-compliance.md
 ---
 
+<!-- @format -->
+
 # Completeness (OS-CONNECT and related datasets)
 
 ## Short Answer
@@ -65,4 +67,4 @@ Define completeness in plain language first. If the user conflates completeness 
 ## Related Concepts
 
 - [ADA compliance boundaries](ada-compliance-boundaries.md)
-- [What does completeness mean?](../os-connect/what-does-completeness-mean.md)
+- [What does completeness mean?](../../qa-qc/concept/completeness.md)

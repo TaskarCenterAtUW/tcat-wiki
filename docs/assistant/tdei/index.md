@@ -34,6 +34,8 @@ related_pages:
     - assistant/os-connect/index.md
 ---
 
+<!-- @format -->
+
 # TDEI — Assistant Knowledge Base
 
 ## Short Answer
@@ -47,7 +49,7 @@ TDEI is frequently misunderstood as synonymous with OS-CONNECT or with the Works
 ## What This Means
 
 - Pages in `tdei/` address the TDEI portal UI, data downloads, file formats, API access, dataset versioning, and project groups.
-- For questions about how data moves from Workspaces into TDEI, see [workspaces/workflows/](../workspaces/workflows/index.md).
+- For questions about how data moves from Workspaces into TDEI, see [workspaces/workflow/](../workspaces/workflow/index.md).
 - For questions about the published viewer experience, see [os-connect/](../os-connect/index.md).
 
 ## What This Does Not Mean

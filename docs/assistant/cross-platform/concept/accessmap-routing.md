@@ -29,6 +29,8 @@ related_pages:
     - assistant/questions/accessmap/how-do-mobility-profiles-work.md
 ---
 
+<!-- @format -->
+
 # AccessMap routing (concept)
 
 ## Short Answer
@@ -46,7 +48,7 @@ Different profiles avoid or penalize features differently (for example, steep gr
 ## What This Does Not Mean
 
 - Not a guarantee of real-time construction, closure, or enforcement conditions unless separately indicated in product documentation.
-- Not medical advice tailored to an individual’s condition.
+- Not medical advice tailored to an individual's condition.
 
 ## How To Use This
 
@@ -58,9 +60,9 @@ A wheelchair user sees a longer route that avoids a short but steep segment the 
 
 ## Assistant Guidance
 
-Invite users to try profile adjustments and report map issues. Avoid debating a user’s lived experience of a route; acknowledge that models simplify reality.
+Invite users to try profile adjustments and report map issues. Avoid debating a user's lived experience of a route; acknowledge that models simplify reality.
 
 ## Related Concepts
 
-- [Why does AccessMap choose longer routes?](../accessmap/why-does-accessmap-choose-longer-routes.md)
-- [How do mobility profiles work?](../accessmap/how-do-mobility-profiles-work.md)
+- [Why does AccessMap choose longer routes?](../../accessmap/concept/accessible-routes-appear-longer.md)
+- [How do mobility profiles work?](../../accessmap/concept/mobility-profiles.md)

@@ -9,7 +9,7 @@ aviv_scoutroute_event: true # true if the event uses AVIV ScoutRoute / Workspace
 # ── Common event properties (used by report intro/outro) ─────────────
 event_name: "CSUN 2026 Walkabout" # Full event name as it appears in the report title
 event_date: "March 9th-13th, 2026" # Human-readable event date (e.g. "February 12th, 2026")
-# event_time_range: "H:MM AM PT – H:MM PM PT" # Display time range; use local timezone abbreviation
+# event_time_range: "H:MM AM PT - H:MM PM PT" # Display time range; use local timezone abbreviation
 event_format: in-person # (virtual | in-person)
 event_location: "Anaheim, CA" # Physical venue name + address
 target_area: "Anaheim, CA" # Geographic area being mapped/surveyed (used throughout the report)
@@ -38,7 +38,7 @@ Staff from the Taskar Center for Accessible Technology (TCAT) are attending the 
 
 ### Event Details
 
-- **Date(s)**: March 9th–13th, 2026
+- **Date(s)**: March 9th-13th, 2026
 - **Location**: Anaheim, CA
 
 ### Purpose

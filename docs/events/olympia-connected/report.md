@@ -16,7 +16,7 @@ On February 12th, 2026, MaptimeSEA and the Taskar Center for Accessible Technolo
 | Detail       | Info                                                         |
 | :----------- | :----------------------------------------------------------- |
 | **Date**     | February 12th, 2026                                          |
-| **Time**     | 6:00 PM PT – 8:00 PM PT                                      |
+| **Time**     | 6:00 PM PT - 8:00 PM PT                                      |
 | **Format**   | in-person                                                    |
 | **Location** | HRDG 143, John and Judy Harding Building, Seattle University |
 

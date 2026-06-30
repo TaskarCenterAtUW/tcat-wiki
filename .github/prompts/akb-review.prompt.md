@@ -5,6 +5,8 @@ argument-hint: "Path to docs/assistant/**/*.md to review, or leave blank to revi
 agent: "AKB Reviewer"
 ---
 
+<!-- @format -->
+
 Review the specified Assistant Knowledge Base article in `docs/assistant/` against the schema in `docs/assistant/schema.md`.
 
 Requirements:

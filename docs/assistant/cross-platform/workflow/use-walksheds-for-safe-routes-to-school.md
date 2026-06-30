@@ -27,7 +27,11 @@ assistant_behavior:
     - assistant/walksheds/how-can-walksheds-support-srts.md
     - walksheds/user-manual/scenarios.md
 ---
+
+<!-- @format -->
+
      [How can walksheds support SRTS?](../walksheds/how-can-walksheds-support-srts.md)
+
 # Use Walksheds for Safe Routes to School
 
 ## Short Answer
@@ -41,7 +45,7 @@ Walksheds makes accessibility-aware reachability legible to non-GIS partners whe
 ## What This Means
 
 1. Confirm dataset vintage and graph sources with stakeholders.
-2. Configure profiles and costs aligned to your program’s equity goals.
+2. Configure profiles and costs aligned to your program's equity goals.
 3. Run baseline and alternative scenarios for the same origins.
 4. Pair maps with qualitative crossing stress knowledge and community workshops.
 
@@ -64,4 +68,4 @@ Emphasize engagement and engineering follow-up. Abstain on district policy manda
 
 ## Related Concepts
 
-- [How can walksheds support SRTS?](../walksheds/how-can-walksheds-support-srts.md)
+- [How can walksheds support SRTS?](../../walksheds/concept/safe-routes-to-school.md)

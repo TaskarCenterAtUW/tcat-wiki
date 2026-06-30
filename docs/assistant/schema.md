@@ -21,28 +21,43 @@ This document is the authoring contract for [`docs/assistant/`](../assistant/ind
 
 Every file under `docs/assistant/` SHOULD include all of the following keys. Use sensible defaults (for example `draft` review status) rather than omitting keys.
 
-| Field                | Type                | Purpose                                                                                           |
-| :------------------- | :------------------ | :------------------------------------------------------------------------------------------------ |
-| `title`              | string              | Human-readable title; used in nav and exports.                                                    |
-| `slug`               | string              | Stable identifier independent of file renames; use lowercase kebab-case.                          |
-| `doc_type`           | enum                | One of: `question`, `concept`, `workflow`, `policy`, `glossary`, `workshop`.                      |
-| `products`           | list                | Subset of product tags, for example `OS-CONNECT`, `AccessMap`, `Walksheds`, `TDEI`, `Workspaces`. |
-| `audiences`          | list                | Intended readers: `planner`, `jurisdiction`, `advocate`, `public`, etc.                           |
-| `topics`             | list                | Free-form retrieval tags (short slugs).                                                           |
-| `risk_level`         | enum                | `low`, `medium`, `high` — legal/safety sensitivity for filtering.                                 |
-| `authority_level`    | enum                | `official`, `explanatory`, `draft` — how strongly the org stands behind wording.                  |
-| `review_status`      | enum                | `draft` or `reviewed`.                                                                            |
-| `last_reviewed`      | date (`YYYY-MM-DD`) | Last human editorial pass on the page (not git mtime).                                            |
-| `retrieval_priority` | enum                | `low`, `medium`, `high` — suggested ranking boost for retrieval.                                  |
-| `assistant_behavior` | map                 | See below.                                                                                        |
-| `related_pages`      | list                | Paths relative to `docs/` (for example `assistant/concepts/completeness.md`).                     |
+| Field                | Type   | Purpose                                                                                                                           |
+| :------------------- | :----- | :-------------------------------------------------------------------------------------------------------------------------------- |
+| `title`              | string | Human-readable title; used in nav and exports.                                                                                    |
+| `slug`               | string | Matches the file's basename exactly (e.g. `accessibility-assumptions` for `accessibility-assumptions.md`).                        |
+| `doc_type`           | enum   | One of: `concept`, `workflow`, `policy`. See below.                                                                               |
+| `questions`          | list   | Optional. Natural-language phrasings a user might ask that this article answers. Used as retrieval anchors by indexing pipelines. |
+| `products`           | list   | Subset of product tags, for example `OS-CONNECT`, `AccessMap`, `Walksheds`, `TDEI`, `Workspaces`.                                 |
+| `audiences`          | list   | Intended readers: `planner`, `jurisdiction`, `advocate`, `public`, etc.                                                           |
+| `topics`             | list   | Free-form retrieval tags (short slugs).                                                                                           |
+| `risk_level`         | enum   | `low`, `medium`, `high` — legal/safety sensitivity for filtering.                                                                 |
+| `authority_level`    | enum   | `official`, `explanatory`, `draft` — how strongly the org stands behind wording.                                                  |
+| `review_status`      | enum   | `stub`, `draft`, or `reviewed`.                                                                                                   |
+| `last_reviewed`      | date   | (`YYYY-MM-DD`) Last human editorial pass on the page (not git mtime).                                                             |
+| `retrieval_priority` | enum   | `low`, `medium`, `high` — suggested ranking boost for retrieval.                                                                  |
+| `assistant_behavior` | map    | See below.                                                                                                                        |
+| `related_pages`      | list   | Paths relative to `docs/` (for example `assistant/workspaces/concept/changesets.md`).                                             |
 
-### Top-level sections
+### Directory structure
 
-`aviv-scoutroute`
+Each top-level topic section follows the same layout:
+
+```
+docs/assistant/{topic}/
+    index.md          # doc_type: policy — consolidates policy content for this topic
+    concept/          # doc_type: concept articles
+        *.md
+    workflow/         # doc_type: workflow articles
+        *.md
+```
+
+Top-level sections:
+
 `accessmap`
-`iospointmapper`
+`aviv-scoutroute`
+`cross-platform`
 `flexr`
+`iospointmapper`
 `livability`
 `opensidewalks`
 `os-connect`
@@ -53,14 +68,13 @@ Every file under `docs/assistant/` SHOULD include all of the following keys. Use
 `waykeeper`
 `workspaces`
 
-### `doc_type` listing
+### `doc_type` values
 
-`question`
-`concept`
-`workflow`
-`policy`
-`glossary`
-`workshop`
+| Value      | Location            | Naming pattern                                                           | Purpose                                                                                                                                                                    |
+| :--------- | :------------------ | :----------------------------------------------------------------------- | :------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| `concept`  | `{topic}/concept/`  | Noun-phrase slug: `dataset-lineage.md`, `mobility-profiles.md`           | Explanatory knowledge: what X is, how X works, why X exists. Covers both broad conceptual background and simple term definitions.                                          |
+| `workflow` | `{topic}/workflow/` | Verb-phrase slug: `create-workspace-from-tdei.md`, `export-workspace.md` | Step-by-step procedures with a discrete user outcome.                                                                                                                      |
+| `policy`   | `{topic}/index.md`  | One `index.md` per topic                                                 | Rules, constraints, and governance statements for that topic. A topic's single `index.md` carries `doc_type: policy` and consolidates all policy content for that section. |
 
 ### `assistant_behavior` map
 
@@ -91,13 +105,13 @@ Optional subheadings under these sections are allowed if they do not duplicate o
 
 First-class `products` values for assistant-layer pages:
 
-| Product      | Typical `doc_type` mix              | Notes                                             |
-| :----------- | :---------------------------------- | :------------------------------------------------ |
-| `OS-CONNECT` | question, concept, workflow         | Pedestrian network data and viewer                |
-| `AccessMap`  | question, concept                   | Accessibility-aware routing                       |
-| `Walksheds`  | question, concept                   | Reachability analysis                             |
-| `TDEI`       | question, workflow                  | Portal, APIs, releases                            |
-| `Workspaces` | question, concept, workflow, policy | Collaborative editing, sandboxing, export to TDEI |
+| Product      | Notes                                             |
+| :----------- | :------------------------------------------------ |
+| `OS-CONNECT` | Pedestrian network data and viewer                |
+| `AccessMap`  | Accessibility-aware routing                       |
+| `Walksheds`  | Reachability analysis                             |
+| `TDEI`       | Portal, APIs, releases                            |
+| `Workspaces` | Collaborative editing, sandboxing, export to TDEI |
 
 ## Controlled vocabulary (`topics`)
 
@@ -143,7 +157,7 @@ Other products may use additional topic slugs (for example `gtfs-pathways`, `com
 
 `utilities/export_rag.py` emits one JSON object per line (JSONL). Each record includes at minimum:
 
-- `path` — POSIX path relative to `docs/` (for example `assistant/concepts/completeness.md`).
+- `path` — POSIX path relative to `docs/` (for example `assistant/qa-qc/concept/completeness.md`).
 - `title`, `slug`, `doc_type`, `products`, `audiences`, `topics`
 - `risk_level`, `authority_level`, `retrieval_priority`
 - `review_status`, `last_reviewed` when present in frontmatter
@@ -151,7 +165,7 @@ Other products may use additional topic slugs (for example `gtfs-pathways`, `com
 - `source_url` — placeholder string beginning with `PLACEHOLDER_SITE_URL/`; replace in your deployment using `site_url` from `zensical.toml` and your HTML permalink rules.
 - `content` — Markdown body after the closing `---` of the YAML frontmatter (full page text for the first iteration; section-aware splitting may come later).
 
-Embeddings, vector stores, and LLM API calls are **out of scope** for this repository’s default tooling.
+Embeddings, vector stores, and LLM API calls are **out of scope** for this repository's default tooling.
 
 ## Related
 

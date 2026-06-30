@@ -32,6 +32,8 @@ related_pages:
     - assistant/questions/os-connect/why-are-sidewalks-disconnected.md
 ---
 
+<!-- @format -->
+
 # Accessibility islands
 
 ## Short Answer
@@ -49,7 +51,7 @@ Connectivity depends on modeled geometry, attributes, and the cost or access rul
 ## What This Does Not Mean
 
 - Not every disconnected appearance on a basemap implies an island in the routed graph; basemap tiles can differ from routing data.
-- Not a moral judgment about a community’s commitment to access.
+- Not a moral judgment about a community's commitment to access.
 
 ## How To Use This
 
@@ -61,9 +63,9 @@ Two dense corridors each have full local sidewalk coverage but lack a tagged cro
 
 ## Assistant Guidance
 
-Use neutral, technical language. If asked "why can’t I get there," explain islanding as one common cause and suggest reporting data issues through the appropriate product channel. Do not guess at a specific user’s location without data.
+Use neutral, technical language. If asked "why can't I get there," explain islanding as one common cause and suggest reporting data issues through the appropriate product channel. Do not guess at a specific user's location without data.
 
 ## Related Concepts
 
 - [Connected pedestrian graph](connected-pedestrian-graph.md)
-- [Why are sidewalks disconnected?](../os-connect/why-are-sidewalks-disconnected.md)
+- [Why are sidewalks disconnected?](../../os-connect/concept/sidewalk-disconnection-causes.md)

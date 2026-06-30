@@ -2,7 +2,7 @@
 title: OS-CONNECT — Assistant Knowledge Base
 tags:
     - Assistant
-slug: assistant-os-connect
+slug: index
 doc_type: concept
 products:
     - OS-CONNECT
@@ -35,6 +35,8 @@ related_pages:
     - assistant/walksheds/index.md
     - assistant/accessmap/index.md
 ---
+
+<!-- @format -->
 
 # OS-CONNECT — Assistant Knowledge Base
 
@@ -75,5 +77,5 @@ For questions about whether OS-CONNECT data satisfies a legal requirement, alway
 - [AccessMap knowledge base](../accessmap/index.md)
 - [TDEI knowledge base](../tdei/index.md)
 - [Cross-product support](../support/index.md)
-- [Policies — ADA and safety boundaries](../policies/index.md)
+- [Policies — ADA and safety boundaries](../cross-platform/index.md)
 - [Dispatch — full file registry](../dispatch.md)

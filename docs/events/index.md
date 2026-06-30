@@ -76,7 +76,7 @@ Visit the [CSUN 2026](csun26/index.md) page for more information!
 
 **Organizers:** [TCAT](https://tcat.cs.washington.edu/)
 
-**Time:** February 26th & 27th, 2026 | 9:00 AM PT – 4:00 PM PT
+**Time:** February 26th & 27th, 2026 | 9:00 AM PT - 4:00 PM PT
 
 **Location:** Hybrid
 

@@ -30,6 +30,8 @@ related_pages:
     - assistant/concepts/walksheds.md
 ---
 
+<!-- @format -->
+
 # Connected pedestrian graph
 
 ## Short Answer
@@ -55,7 +57,7 @@ When scoping improvements, trace graph components and critical connectors. When 
 
 ## Example
 
-A campus path exists on the ground but is not in OS-CONNECT; the routing graph may omit it until mapped and validated through the jurisdiction’s pipeline.
+A campus path exists on the ground but is not in OS-CONNECT; the routing graph may omit it until mapped and validated through the jurisdiction's pipeline.
 
 ## Assistant Guidance
 

@@ -2,7 +2,7 @@
 title: AccessMap — Assistant Knowledge Base
 tags:
     - Assistant
-slug: assistant-accessmap
+slug: index
 doc_type: concept
 products:
     - AccessMap
@@ -33,6 +33,8 @@ related_pages:
     - assistant/os-connect/index.md
     - assistant/walksheds/index.md
 ---
+
+<!-- @format -->
 
 # AccessMap — Assistant Knowledge Base
 

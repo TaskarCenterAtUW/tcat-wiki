@@ -29,6 +29,8 @@ related_pages:
     - accessmap/user-manual/route-planning.md
 ---
 
+<!-- @format -->
+
 # Use AccessMap for public engagement
 
 ## Short Answer
@@ -65,4 +67,4 @@ Suggest facilitators pre-test demo addresses to avoid dead air from data gaps.
 
 ## Related Concepts
 
-- [How do mobility profiles work?](../accessmap/how-do-mobility-profiles-work.md)
+- [How do mobility profiles work?](../../accessmap/concept/mobility-profiles.md)

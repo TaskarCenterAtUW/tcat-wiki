@@ -35,6 +35,8 @@ related_pages:
     - assistant/glossary/index.md
 ---
 
+<!-- @format -->
+
 # Concepts — Assistant Knowledge Base
 
 ## Short Answer
@@ -48,17 +50,16 @@ Cross-product concepts — such as the connected pedestrian graph, accessibility
 ## What This Means
 
 - Pages in `concepts/` address ideas that cut across at least two TCAT products or that are prerequisite knowledge for understanding product-specific questions.
-- Workspaces-specific concepts (sandbox governance, dataset lineage, imagery layers, etc.) are in [workspaces/](../workspaces/index.md), colocated with the Workspaces question pages.
-- Term definitions for the glossary are in [glossary/](../glossary/index.md).
+- Workspaces-specific concepts (sandbox governance, dataset lineage, imagery layers, etc.) are in `workspaces/concept/`.
 
 ## What This Does Not Mean
 
-- Concept pages are not procedure guides; for procedural content, see [workflows/](../workflows/index.md) or the relevant product section.
+- Concept pages are not procedure guides; for procedural content, see [workflow/](../workflow/index.md) or the relevant product section.
 - Definitions here are scoped to assistant-layer usage; product manuals take precedence for authoritative technical definitions.
 
 ## How To Use This
 
-**Agents**: For questions about what a term means, check [glossary/](../glossary/index.md) first, then retrieve the matching concept page for deeper context. Concept pages carry `retrieval_priority: medium` and supplement rather than replace product-specific pages.
+**Agents**: For questions about what a term means, retrieve the matching concept page for context. Concept pages carry `retrieval_priority: medium` and supplement rather than replace product-specific pages.
 
 **Authors**: Six concepts are planned. Start with `completeness.md` and `connected-pedestrian-graph.md`, which are referenced across many OS-CONNECT and Walksheds questions.
 
@@ -72,7 +73,4 @@ Concept pages provide definitional grounding; always supplement them with produc
 
 ## Related Concepts
 
-- [Glossary](../glossary/index.md)
-- [Policies](../policies/index.md)
-- [Workspaces concepts](../workspaces/index.md)
-- [Dispatch — full file registry](../dispatch.md)
+- [Dispatch — full file registry](../../dispatch.md)

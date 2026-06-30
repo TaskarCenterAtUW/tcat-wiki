@@ -49,7 +49,7 @@ Workspaces users — jurisdiction staff, advocates, GIS technicians — frequent
 
 - Pages in `workspaces/workflows/` describe task sequences for common Workspaces operations.
 - For conceptual questions about Workspaces features, see the [Workspaces knowledge base](../index.md).
-- For cross-product workflows (e.g., OS-CONNECT for ADA planning), see [workflows/](../../workflows/index.md).
+- For cross-product workflows (e.g., OS-CONNECT for ADA planning), see [workflows/](../../cross-platform/workflow/index.md).
 
 ## What This Does Not Mean
 
@@ -73,8 +73,8 @@ Workflow answers should always note the sandbox boundary: changes made in Worksp
 ## Related Concepts
 
 - [Workspaces knowledge base](../index.md)
-- [Workspaces policies](../policies/index.md)
-- [Cross-product workflows](../../workflows/index.md)
+- [Workspaces policies](../index.md)
+- [Cross-product workflows](../../cross-platform/workflow/index.md)
 - [Dispatch — full file registry](../../dispatch.md)
 
 ## Planned Pages

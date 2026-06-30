@@ -71,7 +71,7 @@ Workspaces is where per-feature stewardship happens. TDEI handles whole-dataset 
 | [JOSM](../../../josm/index.md)                       | Desktop editing                  | Works because Workspaces exposes modified OSM-style APIs                                                 |
 | [AVIV ScoutRoute](../../../aviv-scoutroute/index.md) | Mobile / field-style capture     | Often used for on-the-ground reporting; managers may follow up in Rapid for geometry                     |
 
-Open a workspace from the dashboard, then launch the editor (for example **Open in Rapid 2**). The map shows **only that workspace’s data**, not the global OSM planet — otherwise the experience matches familiar OSM editing (zoom, select features, edit geometry, edit tags, add features).
+Open a workspace from the dashboard, then launch the editor (for example **Open in Rapid 2**). The map shows **only that workspace's data**, not the global OSM planet — otherwise the experience matches familiar OSM editing (zoom, select features, edit geometry, edit tags, add features).
 
 **What you can edit**
 
@@ -92,7 +92,7 @@ Open a workspace from the dashboard, then launch the editor (for example **Open 
 
 **Review and attribution**
 
-- Use the workspace **Review** view (role-dependent) to walk changesets in an OSM-changeset–style UI: who edited, which editor, sources used, and when.
+- Use the workspace **Review** view (role-dependent) to walk changesets in an OSM-changeset-style UI: who edited, which editor, sources used, and when.
 - Large initial imports can produce very large changesets; filters and smaller workspaces are easier to QA.
 
 ## What This Does Not Mean
@@ -125,14 +125,14 @@ Open a workspace from the dashboard, then launch the editor (for example **Open 
 
 ## Example
 
-A jurisdiction opens a Bremerton OS-CONNECT workspace in Rapid 2. A planner loads a city sidewalk GeoJSON as a **reference layer** and sees a newly built segment missing from OS-CONNECT. They draw the new sidewalk, connect it to the graph, and tag curb ramps at intersections. A manager uses **Review** to inspect yesterday’s changeset, checks editor and source metadata, and approves the batch for export to TDEI. The public OS-CONNECT release does not change until that export and release process completes.
+A jurisdiction opens a Bremerton OS-CONNECT workspace in Rapid 2. A planner loads a city sidewalk GeoJSON as a **reference layer** and sees a newly built segment missing from OS-CONNECT. They draw the new sidewalk, connect it to the graph, and tag curb ramps at intersections. A manager uses **Review** to inspect yesterday's changeset, checks editor and source metadata, and approves the batch for export to TDEI. The public OS-CONNECT release does not change until that export and release process completes.
 
 ## Assistant Guidance
 
 - Clarify **editor choice** (Rapid vs JOSM vs ScoutRoute) and **role** (field vs desktop vs manager).
 - Separate **reference overlay** from **authoritative ingest** (TDEI jobs vs in-map reconciliation).
 - Do not promise **Rapid 3** or **drag-to-merge reference data** without checking current release notes.
-- For "is this ADA compliant," redirect to [ADA compliance boundaries](../../concepts/ada-compliance-boundaries.md) and abstain on legal proof.
+- For "is this ADA compliant," redirect to [ADA compliance boundaries](../../cross-platform/concept/ada-compliance-boundaries.md) and abstain on legal proof.
 - If the user describes attribute experiments on walksheds or routing outcomes, note that **Walksheds** and **AccessMap** consume released network data — they are downstream of workspace editing and export, not the same in-browser edit surface.
 - Point procedural detail to [Workspaces overview](../../../workspaces/index.md) and editor manuals; avoid inventing tag keys or UI labels.
 
@@ -140,7 +140,7 @@ A jurisdiction opens a Bremerton OS-CONNECT workspace in Rapid 2. A planner load
 
 - [Create a workspace from TDEI](create-a-workspace-from-tdei.md)
 - [Review workspace edits](review-workspace-edits.md)
-- [Private OSM (Workspaces)](../../workspaces/private-osm.md)
-- [Multi-source stewardship](../../workspaces/multi-source-stewardship.md)
-- [Workspace editors](../../workspaces/workspace-editors.md) _(stub — author next)_
-- [How are accessibility features edited?](../../workspaces/how-are-accessibility-features-edited.md) _(stub — author next)_
+- [Private OSM (Workspaces)](../concept/private-osm.md)
+- [Multi-source stewardship](../concept/multi-source-stewardship.md)
+- [Workspace editors](../concept/compatible-editors.md)
+- [How are accessibility features edited?](../concept/accessibility-feature-editing.md)

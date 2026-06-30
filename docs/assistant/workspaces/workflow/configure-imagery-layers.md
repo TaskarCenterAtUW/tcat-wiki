@@ -74,7 +74,7 @@ Procedural detail and screenshots: [Workspace Settings](../../../workspaces/user
 
 **Who sees which layers**
 
-- Layers appear in ScoutRoute’s **imagery layer control** (map interface). Available backgrounds depend on what was configured for **that workspace** (see [AVIV ScoutRoute](../../../aviv-scoutroute/index.md) user manual).
+- Layers appear in ScoutRoute's **imagery layer control** (map interface). Available backgrounds depend on what was configured for **that workspace** (see [AVIV ScoutRoute](../../../aviv-scoutroute/index.md) user manual).
 - Configure **Publish this Workspace for external apps** in the same Settings area so ScoutRoute can access the workspace.
 
 **Paste vs URL (product gap)**
@@ -111,7 +111,7 @@ Basemaps are **context for human mapping**: you move sidewalk or crossing geomet
 **Recommended flow**
 
 1. [Create or open a workspace](create-a-workspace-from-tdei.md) for the jurisdiction and dataset version.
-2. Draft imagery JSON using the schema and an example from [asr-imagery-list](https://github.com/TaskarCenterAtUW/asr-imagery-list) (or your agency’s fork).
+2. Draft imagery JSON using the schema and an example from [asr-imagery-list](https://github.com/TaskarCenterAtUW/asr-imagery-list) (or your agency's fork).
 3. Paste or drag-and-drop into **Imagery JSON Definition** → **Save**.
 4. Enable **Publish this Workspace for external apps** if ScoutRoute teams should map now.
 5. Optionally configure **AVIV ScoutRoute Long Form Quest Definitions** in the same External Apps section (separate JSON).
@@ -127,7 +127,7 @@ Basemaps are **context for human mapping**: you move sidewalk or crossing geomet
 
 ## Example
 
-A city loads a workspace from the latest OS-CONNECT TDEI release. The project lead pastes imagery JSON with two raster layers: a public-domain orthophoto tile service and OpenStreetMap standard tiles. After **Save** and **Publish**, volunteers in ScoutRoute switch to the orthophoto to map a new crossing, while a GIS analyst in Rapid uses the editor’s basemap plus a city sidewalk GeoJSON reference to reconcile linework before export.
+A city loads a workspace from the latest OS-CONNECT TDEI release. The project lead pastes imagery JSON with two raster layers: a public-domain orthophoto tile service and OpenStreetMap standard tiles. After **Save** and **Publish**, volunteers in ScoutRoute switch to the orthophoto to map a new crossing, while a GIS analyst in Rapid uses the editor's basemap plus a city sidewalk GeoJSON reference to reconcile linework before export.
 
 ## Assistant Guidance
 
@@ -136,12 +136,12 @@ A city loads a workspace from the latest OS-CONNECT TDEI release. The project le
 - If asked for "imagery URL only," note the workshop gap (paste full JSON today; URL support may ship later — confirm with TCAT).
 - Warn against pasting GitHub **web** links instead of raw JSON content for any Settings JSON field.
 - For "can I use our ArcGIS tile server," abstain on auth/CORS specifics; suggest a small test workspace and staff verification.
-- Pair with [imagery layers concept](../../workspaces/imagery-layers.md) _(stub)_ when authored.
+- Pair with [imagery layers concept](../concept/imagery-layers.md) _(stub)_ when authored.
 
 ## Related Concepts
 
 - [Create a workspace from TDEI](create-a-workspace-from-tdei.md)
 - [Edit accessibility features in a workspace](edit-accessibility-features-in-a-workspace.md)
-- [Imagery layers (Workspaces)](../../workspaces/imagery-layers.md) _(stub — author in Phase B)_
+- [Imagery layers (Workspaces)](../concept/imagery-layers.md)
 - [Workspace Settings (guide)](../../../workspaces/user-manual/workspace-settings.md)
 - [AVIV ScoutRoute](../../../aviv-scoutroute/index.md)

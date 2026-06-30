@@ -31,6 +31,8 @@ related_pages:
     - assistant/workflows/update-jurisdiction-data.md
 ---
 
+<!-- @format -->
+
 # Review community feedback (cross-product workflow)
 
 ## Short Answer
