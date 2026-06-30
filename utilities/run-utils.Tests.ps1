@@ -249,6 +249,14 @@ Describe "Script Structure" {
     It "Should reference check-links.ps1" {
         $scriptContent | Should -Match 'check-links\.ps1'
     }
+
+    It "Should reference build-glossary.py" {
+        $scriptContent | Should -Match 'build-glossary\.py'
+    }
+
+    It "Should reference venv Python executable" {
+        $scriptContent | Should -Match '\.venv.*Scripts.*python'
+    }
 }
 
 # ==============================================================================
@@ -277,6 +285,109 @@ Describe "Integration Tests" -Tag "Integration" {
 # ==============================================================================
 # EDGE CASE TESTS
 # ==============================================================================
+
+# ==============================================================================
+# BUILD-GLOSSARY TESTS
+# ==============================================================================
+
+Describe "Build-Glossary" {
+    BeforeAll {
+        $script:repoRoot = Join-Path $PSScriptRoot ".."
+        $script:glossaryScript = Join-Path $PSScriptRoot "build-glossary.py"
+        $script:inputPath = Join-Path $repoRoot "includes" "abbreviations.md"
+        $script:outputPath = Join-Path $repoRoot "docs" "assistant" "cross-platform" "concept" "abbreviations.md"
+    }
+
+    Context "Required files exist" {
+        It "build-glossary.py should exist in utilities directory" {
+            Test-Path $glossaryScript | Should -Be $true
+        }
+
+        It "Input abbreviations.md should exist" {
+            Test-Path $inputPath | Should -Be $true
+        }
+
+        It "Output directory should exist" {
+            Test-Path (Split-Path $outputPath -Parent) | Should -Be $true
+        }
+    }
+
+    Context "Script content" {
+        BeforeAll {
+            $script:pyContent = Get-Content $glossaryScript -Raw
+        }
+
+        It "Should define INPUT_PATH pointing to includes/abbreviations.md" {
+            $pyContent | Should -Match 'includes.*abbreviations\.md'
+        }
+
+        It "Should define OUTPUT_PATH under docs/assistant/cross-platform/concept" {
+            $pyContent | Should -Match 'cross-platform.*concept.*abbreviations\.md'
+        }
+
+        It "Should parse abbreviation entries with ABBR_RE pattern" {
+            $pyContent | Should -Match 'ABBR_RE'
+        }
+
+        It "Should include required schema frontmatter keys" {
+            $pyContent | Should -Match 'doc_type'
+            $pyContent | Should -Match 'slug'
+            $pyContent | Should -Match 'review_status'
+            $pyContent | Should -Match 'last_reviewed'
+            $pyContent | Should -Match 'assistant_behavior'
+        }
+
+        It "Should include all required body sections" {
+            $pyContent | Should -Match '## Short Answer'
+            $pyContent | Should -Match '## Significance'
+            $pyContent | Should -Match '## What This Means'
+            $pyContent | Should -Match '## What This Does Not Mean'
+            $pyContent | Should -Match '## How To Use This'
+            $pyContent | Should -Match '## Example'
+            $pyContent | Should -Match '## Assistant Guidance'
+            $pyContent | Should -Match '## Related Concepts'
+        }
+    }
+
+    Context "Generated output" {
+        BeforeAll {
+            # Run build-glossary.py and capture the output file
+            $pythonExe = Join-Path $PSScriptRoot ".." ".venv" "Scripts" "python.exe"
+            if (-not (Test-Path $pythonExe)) {
+                $pythonExe = "python"
+            }
+            & $pythonExe $glossaryScript 2>&1 | Out-Null
+            $script:outputExists = Test-Path $outputPath
+            if ($outputExists) {
+                $script:outputContent = Get-Content $outputPath -Raw
+            }
+        }
+
+        It "Should produce an output file" {
+            $outputExists | Should -Be $true
+        }
+
+        It "Should contain valid YAML frontmatter" {
+            $outputContent | Should -Match '^---'
+            $outputContent | Should -Match 'slug: abbreviations'
+            $outputContent | Should -Match 'doc_type: concept'
+        }
+
+        It "Should contain the abbreviations table" {
+            $outputContent | Should -Match '\| Abbreviation \| Expansion \|'
+        }
+
+        It "Should include known abbreviations" {
+            $outputContent | Should -Match '\| OSW \|'
+            $outputContent | Should -Match '\| TCAT \|'
+            $outputContent | Should -Match '\| TDEI \|'
+        }
+
+        It "Should include the @format comment" {
+            $outputContent | Should -Match '<!-- @format -->'
+        }
+    }
+}
 
 Describe "Edge Cases" {
     Context "Script with no exit code" {

@@ -1,0 +1,359 @@
+---
+title: Abbreviations and Acronyms Glossary
+tags:
+    - Assistant
+slug: abbreviations
+doc_type: concept
+questions:
+    - What does an abbreviation mean?
+    - What does <acronym> stand for?
+    - What is <abbreviation> short for?
+    - What does TCAT stand for?
+    - What does OSW stand for?
+    - What does TDEI stand for?
+    - What does OS-CONNECT stand for?
+products:
+    - AccessMap
+    - AVIV ScoutRoute
+    - OpenSidewalks
+    - OS-CONNECT
+    - QA/QC Reports
+    - Rapid
+    - TDEI
+    - Walksheds
+    - WayKeeper
+    - Workspaces
+audiences:
+    - planner
+    - jurisdiction
+    - advocate
+    - public
+topics:
+    - glossary
+    - abbreviations
+    - acronyms
+risk_level: low
+authority_level: official
+review_status: reviewed
+last_reviewed: 2026-06-30
+retrieval_priority: high
+assistant_behavior:
+    allow_inference: false
+    requires_citation: false
+    abstain_if_missing_context: false
+    do_not_claim:
+        - This list is exhaustive of all possible abbreviations in the domain.
+        - No other meanings are possible for these abbreviations.
+        - Abbreviations not listed here have no accepted expansion.
+related_pages: []
+---
+
+<!-- @format -->
+
+# Abbreviations and Acronyms Glossary
+
+## Short Answer
+
+This page lists all 269 abbreviations, acronyms, and initialisms used across TCAT Wiki documentation and TCAT platforms and tools.
+
+## Significance
+
+TCAT documentation spans transportation, accessibility, geospatial, and software domains, each with their own vocabulary. A shared, machine-readable glossary helps all audiences — planners, advocates, developers, and the public — interpret documentation correctly without specialist background, and allows assistants to resolve abbreviations precisely.
+
+## What This Means
+
+The table below maps each abbreviated form to its full expansion. Entries are sorted alphabetically and sourced directly from `includes/abbreviations.md`, the single source of truth for all abbreviations used site-wide.
+
+| Abbreviation | Expansion |
+| :----------- | :-------- |
+| 2FA | Two-Factor Authentication |
+| 3DEP | 3D Elevation Program |
+| A11y | Accessibility |
+| AADT | Annual Average Daily Traffic |
+| AASHTO | American Association of State Highway and Transportation Officials |
+| ABA | Architectural Barriers Act |
+| ACM | Association for Computing Machinery |
+| ADA | Americans with Disabilities Act |
+| ADS | Aging and Disability Services |
+| AFN | Access and Functional Needs |
+| AI | Artificial Intelligence |
+| AKB | Assistant Knowledge Base |
+| API | Application Programming Interface |
+| APS | Accessible Pedestrian Signal |
+| ARIA | Accessible Rich Internet Applications |
+| ARNOLD | All Road Network of Linear Referenced Data |
+| ASR | AVIV ScoutRoute |
+| AST | Abstract Syntax Tree |
+| AT-DaWG | Active Transportation Data Working Group |
+| ATP | Active Transportation Plan |
+| ATSAC | Cooper Jones Active Transportation Safety Advisory Council |
+| ATSC | Cooper Jones Active Transportation Safety Council |
+| ATTRI | Accessible Transportation Technologies Research Initiative |
+| AVIV | Accessibility Verification, Improved Validation |
+| AVIV SR | AVIV ScoutRoute |
+| BART | Bay Area Rapid Transit |
+| BBox | Bounding Box |
+| BLV | Blind and Low-Vision |
+| BRT | Bus Rapid Transit |
+| BSAC | Cooper Jones Bicyclist Safety Advisory Council |
+| BTS | Bureau of Transportation Statistics |
+| CAD | Computer-Aided Design |
+| CADD | Computer-Aided Design and Drafting |
+| Cal-ITP | California Integrated Travel Project |
+| CALACT | California Association of Coordinated Transportation |
+| CC0 | Creative Commons Zero |
+| CCMS | Component Content Management System |
+| CDP | Census-Designated Place |
+| CHIIR | Conference on Human Information Interaction and Retrieval |
+| CIEP | Coalition on Inclusive Emergency Planning |
+| CMIST | Communications, Maintaining Health, Independence, Support, Safety, and Self-Determination, and Transportation |
+| CMP | Congestion Management Process |
+| CNG | Cloud-Native Geospatial Forum |
+| COE | College of Engineering |
+| COG | Cloud Optimized GeoTIFF |
+| CRAB | Washington State County Road Administration Board |
+| CREATE | Center for Research and Education on Accessible Technology and Experiences |
+| CRS | Coordinate Reference System |
+| CSE | Computer Science and Engineering |
+| CSS | Cascading Style Sheets |
+| CSUN | California State University, Northridge |
+| CSV | Comma-Separated Values |
+| CTANW | Community Transportation Association of the Northwest |
+| CUGOS | Cascadia Users of Geospatial Open Source |
+| DE-9IM | Dimensionally Extended Nine-Intersection Model |
+| DEM | Digital Elevation Model |
+| DESA | Department of Economic and Social Affairs |
+| DITA | Darwin Information Typing Architecture |
+| DOT | Department of Transportation |
+| DSB | Department of Services for the Blind |
+| DSM | Digital Surface Model |
+| DTD | Document Type Definition |
+| DTM | Digital Terrain Model |
+| DXF | Drawing Exchange Format |
+| EFA | Equity Focus Area |
+| EPSG | European Petroleum Survey Group |
+| ETL | Extract, Transform, Load |
+| ETRS89 | European Terrestrial Reference System 1989 |
+| FDE | Fundamental Data Elements |
+| FGTS | Freight & Goods Transportation System |
+| FHWA | Federal Highway Administration |
+| FIFA | Fédération Internationale de Football Association |
+| FNS | Food and Nutrition Service |
+| FQHC | Federally Qualified Health Center |
+| FTA | Federal Transit Administration |
+| G3ict | Global Initiative for Inclusive Information and Communication Technologies |
+| GAAD | Global Accessibility Awareness Day |
+| GATIS | General Active Transportation Infrastructure Specification |
+| GERS | Global Entity Reference System |
+| GIG | GoInfoGame |
+| GIS | Geographic Information System |
+| GIS-T | Geospatial Information Systems for Transportation |
+| GML | Geography Markup Language |
+| GNSS | Global Navigation Satellite System |
+| GOFS | General On-Demand Transit Feed Specification |
+| GPS | Global Positioning System |
+| GPX | GPS Exchange Format |
+| GS | Gaussian Solutions |
+| GTFS | General Transit Feed Specification |
+| GTFS-Flex | General Transit Feed Specification, Flex Extension |
+| GTFS-Pathways | General Transit Feed Specification, Pathways Extension |
+| GWF | Geospatial World Forum |
+| HAWK | High-Intensity Activated Crosswalk Beacon |
+| HCI | Human-Computer Interaction |
+| HCIR | Human Computer Information Retrieval |
+| HCT | High-Capacity Transit |
+| HIN | High Injury Network |
+| HOT | Humanitarian OpenStreetMap Team |
+| HOV | High Occupancy Vehicle |
+| HTML | Hypertext Markup Language |
+| HuskyADAPT | Accessible Design And Play Technology |
+| HxGN | Hexagon (aerial imagery provider) |
+| IDW | Inverse Distance Weighting |
+| IIiX | Information Interaction in Context |
+| IoU | Intersection over Union |
+| IRB | Internal Review Board |
+| ISB | Industrial Service Boundary |
+| ISTEA | Intermodal Surface Transportation Efficiency Act of 1991 |
+| ITS | Intelligent Transportation System |
+| IXN | Intersection / Intersection Traversability Metric |
+| JCDL | Joint Conference on Digital Libraries |
+| JOSM | Java OpenStreetMap Editor |
+| JSON | JavaScript Object Notation |
+| JSX | JavaScript XML |
+| KML | Keyhole Markup Language |
+| KPI | Key Performance Indicator |
+| lat | Latitude |
+| LFQD | Long Form Quest Definition |
+| LiDAR | Light Detection and Ranging |
+| LoD | Level of Detail |
+| lon | Longitude |
+| LoS | Line of Sight |
+| LRS | Linear Referencing System |
+| LRTP | Long-Range Transportation Plan |
+| MBTA | Massachusetts Bay Transportation Authority |
+| MCP | Model Context Protocol |
+| MDIP | Mobility Data Interoperability Principles |
+| MDOT | Michigan Department of Transportation |
+| MGRS | Military Grid Reference System |
+| MIC | Manufacturing Industrial Center |
+| MIRE | Model Inventory of Roadway Elements |
+| ML | Machine Learning |
+| MnDOT | Minnesota Department of Transportation |
+| MNY26 | Mappy New Year 2026 |
+| MOD | Mobility-on-Demand |
+| MOU | Memorandum of Understanding |
+| MP | MultiPolygon |
+| MPO | Metropolitan Planning Organization |
+| MUTCD | Manual on Uniform Traffic Control Devices |
+| MVT | Mapbox Vector Tile |
+| NACTO | National Association of City Transportation Officials |
+| NAD27 | North American Datum 1927 |
+| NAD83 | North American Datum 1983 |
+| NC-BPAID | National Collaboration on Bicycle, Pedestrian, and Accessibility Infrastructure Data |
+| NCDOT | North Carolina Department of Transportation |
+| NCHRP | National Cooperative Highway Research Program |
+| NDA | Nondrivers Alliance |
+| NDVI | Normalized Difference Vegetation Index |
+| NEMT | Non-Emergency Medical Transportation |
+| NetCDF | Network Common Data Form |
+| NHS | National Highway System |
+| NHTSA | National Highway Traffic Safety Administration |
+| NIR | Near-Infrared |
+| NYPL | New York Public Library |
+| OD | Origin-Destination |
+| ODOT | Oregon Department of Transportation |
+| OGC | Open Geospatial Consortium |
+| OMF | Open Mobility Foundation |
+| ORCA | One Regional Card for All |
+| OS-CONNECT | OpenSidewalks COnsistent Network for accessible Navigation and Equitable Connectivity through Transit |
+| OSM | OpenStreetMap |
+| OSMF | OpenStreetMap Foundation |
+| OSMUS | OpenStreetMap US |
+| OSW | OpenSidewalks |
+| OSWMH | OpenSidewalks Mappy Hours |
+| OTP | OpenThePaths / OpenTripPlanner |
+| OTP25 | OpenThePaths 2025 |
+| OTP26 | OpenThePaths 2026 |
+| PED XING | Pedestrian Crossing |
+| PII | Personally Identifiable Information |
+| POI | Point of Interest |
+| POIs | Points of Interest |
+| PROWAG | Public Right-of-Way Accessibility Guidelines |
+| PSAC | Pedestrian Safety Advisory Council |
+| PSRC | Puget Sound Regional Council |
+| PWG | Pedestrian Working Group |
+| QA | Quality Assurance |
+| QC | Quality Control |
+| RAG | Retrieval-Augmented Generation |
+| RCTO | Regional Concept for Transportation Operations |
+| RCW | Revised Code of Washington |
+| RGC | Regional Growth Center |
+| ROW | Right of Way |
+| RRFB | Rectangular Rapid Flashing Beacon |
+| RSO | Registered Student Organization |
+| RTAN | Regional Transportation Accessibility Network |
+| RTD | Denver Regional Transportation District |
+| RTPO | Regional Transportation Planning Organization |
+| SAFETEA-LU | Safe, Accountable, Flexible, Efficient Transportation Equity Act: A Legacy for Users |
+| SAM | Segment Anything Model |
+| SAM-Road | Segment Anything Model for Road Network Graph Extraction |
+| SCLIO | Specialized Community-Led Impact Opportunity |
+| SDI | Spatial Data Infrastructure |
+| SDOT | Seattle Department of Transportation |
+| SHSP | Strategic Highway Safety Plan |
+| SIGIR | Special Interest Group on Information Retrieval |
+| SLAM | Simultaneous Location and Mapping |
+| SLD | Styled Layer Descriptor |
+| SNAP | Supplemental Nutrition Assistance Program |
+| SNG | Seattle Neighborhood Greenways |
+| SOV | Single Occupancy Vehicle |
+| SOW | Statement of Work |
+| SPS | Seattle Public Schools |
+| SRID | Spatial Reference System Identifier |
+| SRTS | Safe Routes to School |
+| SS4A | Safe Streets and Roads for All |
+| SSA | Seattle Streets Alliance |
+| STAC | SpatioTemporal Asset Catalog |
+| STAR | Smart Transportation Applications and Research |
+| STIP | State Transportation Improvement Program |
+| SUMC | Shared User Mobility Conference / Shared Use Mobility Center |
+| SVEA | Snoqualmie Valley Economic Alliance |
+| SVG | Scalable Vector Graphics |
+| TAM | Transportation Asset Management |
+| TAMP | Transportation Asset Management Plan |
+| TANF | Temporary Assistance for Needy Families |
+| TCAT | Taskar Center for Accessible Technology |
+| TCAT_WSP_PG | Taskar Center for Accessible Technology Washington State Proviso Project Group |
+| TCRP | Transit Cooperative Research Program |
+| TDEI | Transportation Data Exchange Initiative |
+| TDM | Transportation Demand Management |
+| TEA-21 | Transportation Equity Act for the 21st Century |
+| TFTF | Transportation Funding Task Force |
+| TIB | Transportation Improvement Board |
+| TIN | Triangulated Irregular Network |
+| TIP | Transportation Improvement Program |
+| TMA | Transportation Management Areas |
+| TMS | Tile Map Service |
+| TOD | Time of Day |
+| TRAILS | Trail Routing, Analysis, and Information Linkage System |
+| TRB | Transportation Research Board |
+| TSP | Transportation Service Provider / Transportation Safety Planning |
+| TTS | Text-to-Speech |
+| TVM | Ticket Vending Machine |
+| TxDOT | Texas Department of Transportation |
+| UGA | Urban Growth Area |
+| UI | User Interface / Unincorporated |
+| UN | United Nations |
+| UNDESA | United Nations Department of Economic and Social Affairs |
+| US | United States |
+| USDA | United States Department of Agriculture |
+| USDOT | United States Department of Transportation |
+| USGS | United States Geological Survey |
+| UTM | Universal Transverse Mercator |
+| UW | University of Washington |
+| UX | User Experience |
+| V2X | Vehicle-to-Everything |
+| VGI | Volunteered Geographic Information |
+| VMT | Vehicle Miles Traveled |
+| W3C | World Wide Web Consortium |
+| WA | Washington (state) |
+| WAGISA | Washington GIS Association |
+| WAI | Web Accessibility Initiative |
+| WAI-ARIA | Web Accessibility Initiative - Accessible Rich Internet Applications |
+| WASILC | Washington Statewide Independent Living Council |
+| WCAG | Web Content Accessibility Guidelines |
+| WFS | Web Feature Service |
+| WGS | World Geodetic System |
+| WIC | Special Supplemental Nutrition Program for Women, Infants, and Children |
+| WKB | Well-Known Binary |
+| WKT | Well-Known Text |
+| WMS | Web Map Service |
+| WMTS | Web Map Tile Service |
+| WSDOT | Washington State Department of Transportation |
+| WSP | Washington State Proviso |
+| WTSC | Washington Traffic Safety Commission |
+| WWWC | World Wide Web Consortium |
+| XEE | XML External Entity |
+| XML | Extensible Markup Language |
+
+## What This Does Not Mean
+
+- Entries listed here are not endorsements of or official definitions for external organizations (for example, FHWA, AASHTO, or UN).
+- Expansions reflect TCAT internal usage, which may differ from general-domain usage for ambiguous abbreviations.
+- This list does not cover every possible abbreviation used in external data sources or third-party tools integrated with TCAT platforms.
+
+## How To Use This
+
+Look up an unfamiliar abbreviation by scanning or searching the table above. For product-specific or schema-specific meanings, follow links in the relevant product documentation.
+
+## Example
+
+A planner reviewing an OS-CONNECT data export sees the column label "CRS". Looking up CRS in this glossary returns "Coordinate Reference System", clarifying that this field stores the spatial projection of the dataset.
+
+## Assistant Guidance
+
+When a user asks what an abbreviation means or an acronym stands for, retrieve the matching row from this glossary and return the expansion directly. Do not infer expansions for abbreviations not present in this table; instead, acknowledge the ambiguity and suggest the user check the relevant product documentation or contact the TCAT team.
+
+## Related Concepts
+
+- [Dispatch](../../dispatch.md)

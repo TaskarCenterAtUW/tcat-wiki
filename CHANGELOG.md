@@ -6,6 +6,16 @@ Changes to the TCAT Wiki are documented here.
 
 This project adheres to [Semantic Versioning](https://semver.org/) and [Conventional Commits](https://www.conventionalcommits.org/).
 
+## v12.4.0 (2026-06-30)
+
+### Features
+
+- **Docs**: Add abbreviations and acronyms glossary with automated build process integrated into utility runner script
+
+### Fixes
+
+- **Docs**: Fix links
+
 ## v12.3.0 (2026-06-29)
 
 ### Features

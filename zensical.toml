@@ -260,6 +260,7 @@ nav = [
             "assistant/cross-platform/index.md",
             {"Concept" = [
                 "assistant/cross-platform/concept/index.md",
+                {"Abbreviations and Acronyms Glossary" = "assistant/cross-platform/concept/abbreviations.md"},
                 {"Accessibility islands" = "assistant/cross-platform/concept/accessibility-islands.md"},
                 {"AccessMap routing (concept)" = "assistant/cross-platform/concept/accessmap-routing.md"},
                 {"ADA compliance boundaries for assistant answers" = "assistant/cross-platform/concept/ada-compliance-boundaries.md"},

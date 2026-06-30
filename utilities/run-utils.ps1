@@ -352,20 +352,29 @@ if (-not $TestsOnly) {
     Write-Host "---------------------------------"
     Write-Host ""
 
-    # 1. Generate guides lists
-    $guidesListScript = Join-Path $utilPath "generate-guides-lists.ps1"
-    if (-not (Invoke-UtilityScript -ScriptPath $guidesListScript -Description "Step 1/3: Generating guides lists")) {
+    # 1. Build assistant glossary
+    $glossaryScript = Join-Path $utilPath "build-glossary.py"
+    $pythonExe = Join-Path $utilPath ".." ".venv" "Scripts" "python.exe"
+    if (-not (Test-Path $pythonExe)) {
+        $pythonExe = "python"  # fallback to system Python
+    }
+    Write-Host "  Step 1/4: Building assistant glossary" -ForegroundColor Cyan
+    Write-Host ""
+    & $pythonExe $glossaryScript
+    if ($LASTEXITCODE -ne 0) {
         Write-Host ""
         Write-Host "==========================================="
         Write-Host "PHASE 2 FAILED at Step 1" -ForegroundColor Red
         exit 1
     }
+    Write-Host ""
+    Write-Host "  ✓ COMPLETED: build-glossary.py" -ForegroundColor Green
 
     Write-Host ""
 
-    # 2. Generate navigation
-    $navScript = Join-Path $utilPath "generate-nav.ps1"
-    if (-not (Invoke-UtilityScript -ScriptPath $navScript -Description "Step 2/3: Generating navigation")) {
+    # 2. Generate guides lists
+    $guidesListScript = Join-Path $utilPath "generate-guides-lists.ps1"
+    if (-not (Invoke-UtilityScript -ScriptPath $guidesListScript -Description "Step 2/4: Generating guides lists")) {
         Write-Host ""
         Write-Host "==========================================="
         Write-Host "PHASE 2 FAILED at Step 2" -ForegroundColor Red
@@ -374,56 +383,67 @@ if (-not $TestsOnly) {
 
     Write-Host ""
 
-    # 3. Check links
+    # 3. Generate navigation
+    $navScript = Join-Path $utilPath "generate-nav.ps1"
+    if (-not (Invoke-UtilityScript -ScriptPath $navScript -Description "Step 3/4: Generating navigation")) {
+        Write-Host ""
+        Write-Host "==========================================="
+        Write-Host "PHASE 2 FAILED at Step 3" -ForegroundColor Red
+        exit 1
+    }
+
+    Write-Host ""
+
+    # 4. Check links
     $linkCheckScript = Join-Path $utilPath "check-links.ps1"
     if ($SkipInternalLinksCheck -and $SkipExternalLinksCheck) {
         # Skip link checking entirely
-        Write-Host "  Step 3/3: Skipping link check (-SkipInternalLinksCheck -SkipExternalLinksCheck)" -ForegroundColor Yellow
+        Write-Host "  Step 4/4: Skipping link check (-SkipInternalLinksCheck -SkipExternalLinksCheck)" -ForegroundColor Yellow
     } elseif ($SkipExternalLinksCheck) {
         # Only check internal links when -SkipExternalLinksCheck is used
-        Write-Host "  Step 3/3: Checking internal links only (-SkipExternalLinksCheck)" -ForegroundColor Cyan
+        Write-Host "  Step 4/4: Checking internal links only (-SkipExternalLinksCheck)" -ForegroundColor Cyan
         Write-Host ""
         & $linkCheckScript -internal
         if ($LASTEXITCODE -ne 0) {
             Write-Host ""
             Write-Host "==========================================="
-            Write-Host "PHASE 2 FAILED at Step 3" -ForegroundColor Red
+            Write-Host "PHASE 2 FAILED at Step 4" -ForegroundColor Red
             exit 1
         }
     } elseif ($SkipInternalLinksCheck) {
         # Only check external links when -SkipInternalLinksCheck is used
         if ($NoCache) {
-            Write-Host "  Step 3/3: Checking external links only (-SkipInternalLinksCheck -NoCache)" -ForegroundColor Cyan
+            Write-Host "  Step 4/4: Checking external links only (-SkipInternalLinksCheck -NoCache)" -ForegroundColor Cyan
             Write-Host ""
             & $linkCheckScript -external -NoCache
         } else {
-            Write-Host "  Step 3/3: Checking external links only (-SkipInternalLinksCheck)" -ForegroundColor Cyan
+            Write-Host "  Step 4/4: Checking external links only (-SkipInternalLinksCheck)" -ForegroundColor Cyan
             Write-Host ""
             & $linkCheckScript -external
         }
         if ($LASTEXITCODE -ne 0) {
             Write-Host ""
             Write-Host "==========================================="
-            Write-Host "PHASE 2 FAILED at Step 3" -ForegroundColor Red
+            Write-Host "PHASE 2 FAILED at Step 4" -ForegroundColor Red
             exit 1
         }
     } elseif ($NoCache) {
         # Check all links with fresh cache
-        Write-Host "  Step 3/3: Checking all links (-NoCache)" -ForegroundColor Cyan
+        Write-Host "  Step 4/4: Checking all links (-NoCache)" -ForegroundColor Cyan
         Write-Host ""
         & $linkCheckScript -NoCache
         if ($LASTEXITCODE -ne 0) {
             Write-Host ""
             Write-Host "==========================================="
-            Write-Host "PHASE 2 FAILED at Step 3" -ForegroundColor Red
+            Write-Host "PHASE 2 FAILED at Step 4" -ForegroundColor Red
             exit 1
         }
     } else {
         # Check both internal and external links (with cache)
-        if (-not (Invoke-UtilityScript -ScriptPath $linkCheckScript -Description "Step 3/3: Checking all links")) {
+        if (-not (Invoke-UtilityScript -ScriptPath $linkCheckScript -Description "Step 4/4: Checking all links")) {
             Write-Host ""
             Write-Host "==========================================="
-            Write-Host "PHASE 2 FAILED at Step 3" -ForegroundColor Red
+            Write-Host "PHASE 2 FAILED at Step 4" -ForegroundColor Red
             exit 1
         }
     }
