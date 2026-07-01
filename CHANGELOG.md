@@ -6,6 +6,13 @@ Changes to the TCAT Wiki are documented here.
 
 This project adheres to [Semantic Versioning](https://semver.org/) and [Conventional Commits](https://www.conventionalcommits.org/).
 
+## v12.5.0 (2026-07-01)
+
+### Features
+
+- **Core**: Add AKB transcript ingestion pipeline
+    - Details: _Added `utilities/akb-compress-transcript.py` to strip VTT headers, timestamps, and blank lines from WebVTT transcripts, producing a clean `.compressed.txt` file. Added `.github/prompts/akb-ingest-transcript.prompt.md` and `.github/agents/akb-transcript-ingester.agent.md` to power the `/akb-ingest-transcript` command, which compresses a transcript, analyzes it against the AKB `dispatch.md` and `schema.md`, proposes bucketed new-article and update changes in chat, and applies them after user approval._
+
 ## v12.4.1 (2026-06-30)
 
 ### Fixes
