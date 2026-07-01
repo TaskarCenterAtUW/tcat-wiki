@@ -21,7 +21,7 @@ topics:
 risk_level: medium
 authority_level: official
 review_status: draft
-last_reviewed: 2026-06-09
+last_reviewed: 2026-07-01
 retrieval_priority: high
 assistant_behavior:
     allow_inference: false
@@ -49,9 +49,8 @@ Without explicit policy pages, assistants may over-claim — stating that OS-CON
 
 ## What This Means
 
-- Pages in `policies/` are authoritative behavioral constraints for all assistants consuming this knowledge base.
-- Every page in `docs/assistant/` references relevant policy pages in its `related_pages` frontmatter.
-- Product-specific policies (e.g., Workspaces abstention boundaries, export caveats) are in the `index.md` file under each topic (e.g., [workspaces/index.md](../workspaces/index.md).
+- **Concepts** (`concept/`) address ideas that cut across at least two TCAT products — such as the connected pedestrian graph, accessibility islands, data completeness, and ADA compliance boundaries. Workspaces-specific concepts (sandbox governance, dataset lineage, imagery layers) are in `workspaces/concept/`.
+- **Workflows** (`workflow/`) describe task sequences, actor roles, and tool involvement for common cross-product tasks — such as reviewing community feedback, updating jurisdiction data, using AccessMap for public engagement, and using OS-CONNECT for ADA transition planning. Workspaces-specific workflows are in `workspaces/workflow/`. Staff communication patterns are in `workflow/support-answer-patterns.md`.
 
 ## What This Does Not Mean
 
@@ -60,7 +59,7 @@ Without explicit policy pages, assistants may over-claim — stating that OS-CON
 
 ## How To Use This
 
-**Agents**: Before answering any question touching ADA compliance, legal authority, data accuracy, or internal information, retrieve the relevant policy page. Treat policy pages as hard constraints: if a `do_not_claim` item matches what you would otherwise say, abstain or reframe.
+**Agents**: Before answering any question touching ADA compliance, legal authority, data accuracy, or internal information, retrieve the relevant policy page. Treat policy pages as hard constraints: if a `do_not_claim` item matches what you would otherwise say, abstain or reframe. For definitional questions ("what is X?"), retrieve the matching page from `concept/`; supplement with product-specific pages when the question has an operational context — for example, accessibility islands → `concept/accessibility-islands.md`, then `walksheds/what-are-accessibility-islands-in-walkshed-analysis.md`. For "how do I do X?" questions spanning multiple tools, match to the closest page in `workflow/` — for example, ADA planning → `workflow/use-os-connect-for-ada-transition-planning.md`; public engagement → `workflow/use-accessmap-for-public-engagement.md`; SRTS → `workflow/use-walksheds-for-safe-routes-to-school.md`.
 
 **Authors**: Policy pages have `authority_level: official` and require TCAT editorial review. Draft pages should be marked `review_status: draft` until approved. Use `risk_level: high` for pages touching legal or safety content.
 
@@ -70,15 +69,16 @@ An agent is about to answer: _"Is this data ADA-compliant?"_ It retrieves `polic
 
 ## Assistant Guidance
 
-Retrieve policy pages proactively for any question involving compliance, data authority, AI-generated content, or internal information. Do not rely solely on per-page `assistant_behavior` fields; cross-check with the relevant policy page for the authoritative constraint.
+Retrieve policy pages proactively for any question involving compliance, data authority, AI-generated content, or internal information. Do not rely solely on per-page `assistant_behavior` fields; cross-check with the relevant policy page for the authoritative constraint. Concept pages provide definitional grounding; always supplement them with product-specific pages when a user's question has an operational context. Workflow pages often involve external stakeholder coordination; when presenting a workflow, note which steps require human judgment or external approval, and which are tool-assisted.
 
 ## Related Concepts
 
 - [Workspaces policies](../workspaces/index.md)
-- [Concepts — ADA compliance boundaries](concept/index.md)
 - [Dispatch — full file registry](../dispatch.md)
 
 ## Planned Pages
+
+**Concepts**
 
 | File                                                                | Scope                                                     |
 | :------------------------------------------------------------------ | :-------------------------------------------------------- |
@@ -88,3 +88,14 @@ Retrieve policy pages proactively for any question involving compliance, data au
 | `concept/how-should-ai-outputs-be-validated.md`                     | Requirements for human review of AI-generated content     |
 | `concept/public-vs-internal-content.md`                             | What is appropriate for public vs. internal RAG pipelines |
 | `concept/what-are-the-risks-of-automated-accessibility-analysis.md` | Risk framing for AI-assisted analysis                     |
+
+**Workflows**
+
+| File                                                     | Workflow                                                                  |
+| :------------------------------------------------------- | :------------------------------------------------------------------------ |
+| `workflow/review-community-feedback.md`                  | How to review and act on community-submitted data corrections             |
+| `workflow/support-answer-patterns.md`                    | Communication patterns for staff responding to external partner questions |
+| `workflow/update-jurisdiction-data.md`                   | How jurisdictions submit and track data updates                           |
+| `workflow/use-accessmap-for-public-engagement.md`        | Using AccessMap in community meetings and public-facing planning          |
+| `workflow/use-os-connect-for-ada-transition-planning.md` | Integrating OS-CONNECT data into ADA transition plan workflows            |
+| `workflow/use-walksheds-for-safe-routes-to-school.md`    | Using Walksheds for SRTS analysis and grant applications                  |

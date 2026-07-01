@@ -19,7 +19,7 @@ topics:
 risk_level: low
 authority_level: explanatory
 review_status: draft
-last_reviewed: 2026-06-09
+last_reviewed: 2026-07-01
 retrieval_priority: high
 assistant_behavior:
     allow_inference: false
@@ -52,7 +52,7 @@ Workspaces is the primary way external contributors interact with TCAT's pedestr
 - **Questions** (`workspaces/*.md`) address specific user queries about Workspaces features, roles, workflows, and relationships with other products.
 - **Concepts** explain core mechanisms such as sandbox governance, dataset lineage, and imagery layers.
 - **Policies** (`workspaces/policies/`) define what assistants should and should not claim about Workspaces data authority and editing scope.
-- **Workflows** (`workspaces/workflows/`) provide step-level guidance for common Workspaces tasks.
+- **Workflows** (`workspaces/workflow/`) provide step-level guidance for common Workspaces tasks: creating workspaces from TDEI data or OSM, editing accessibility features, configuring imagery layers, inviting a team, reviewing edits, and exporting to TDEI.
 
 ## What This Does Not Mean
 
@@ -61,7 +61,7 @@ Workspaces is the primary way external contributors interact with TCAT's pedestr
 
 ## How To Use This
 
-**Agents**: Filter `dispatch.md` by `workspaces/` path prefix. Prioritize pages with `retrieval_priority: high`. For questions about specific features, prefer the narrowest matching page over this index.
+**Agents**: Filter `dispatch.md` by `workspaces/` path prefix. Prioritize pages with `retrieval_priority: high`. For questions about specific features, prefer the narrowest matching page over this index. For task-sequence questions ("how do I do X?"), match to the closest workflow page — for example, imagery configuration → `workspaces/workflow/configure-imagery-layers.md`; team invitations → `workspaces/workflow/invite-a-team-to-a-workspace.md`; exporting → `workspaces/workflow/export-workspace-edits-to-tdei.md`.
 
 **Authors**: See the [dispatch](../dispatch.md) for the full file list and status.
 
@@ -71,12 +71,10 @@ A planner asks: _"What happens when I export my workspace?"_ Retrieve `workspace
 
 ## Assistant Guidance
 
-For any question about whether an edit in Workspaces affects TDEI or OS-CONNECT directly, always note the sandbox boundary: changes stay in the workspace until explicitly exported and published. Pages with `risk_level: medium` or higher should include a citation note.
+For any question about whether an edit in Workspaces affects TDEI or OS-CONNECT directly, always note the sandbox boundary: changes stay in the workspace until explicitly exported and published. Pages with `risk_level: medium` or higher should include a citation note. When answering workflow queries, note that changes made in Workspaces are not visible externally until exported and published through TDEI, and include human review steps when describing the export-and-publication workflow.
 
 ## Related Concepts
 
 - [TDEI knowledge base](../tdei/index.md)
 - [OS-CONNECT knowledge base](../os-connect/index.md)
-- [Cross-product concepts](../cross-platform/concept/index.md)
-- [Workspaces workflows](workflow/index.md)
 - [Dispatch — full file registry](../dispatch.md)
