@@ -2,7 +2,7 @@
 title: Assistant Knowledge Base
 tags:
     - Assistant
-slug: assistant-knowledge-base
+slug: assistant-index
 doc_type: concept
 products:
     - OS-CONNECT

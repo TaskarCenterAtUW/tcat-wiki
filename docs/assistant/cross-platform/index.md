@@ -2,7 +2,7 @@
 title: Policies — Assistant Knowledge Base
 tags:
     - Assistant
-slug: assistant-policies
+slug: cross-platform-index
 doc_type: policy
 products:
     - OS-CONNECT

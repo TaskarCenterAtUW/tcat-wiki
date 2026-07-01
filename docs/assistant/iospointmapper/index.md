@@ -2,7 +2,7 @@
 title: iOSPointMapper — Assistant Knowledge Base
 tags:
     - Assistant
-slug: index
+slug: iospointmapper-index
 doc_type: concept
 products:
     - iOSPointMapper

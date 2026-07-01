@@ -2,7 +2,7 @@
 title: Workspaces — Assistant Knowledge Base
 tags:
     - Assistant
-slug: assistant-workspaces
+slug: workspaces-index
 doc_type: concept
 products:
     - Workspaces

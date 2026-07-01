@@ -2,7 +2,7 @@
 title: TDEI — Assistant Knowledge Base
 tags:
     - Assistant
-slug: assistant-tdei
+slug: tdei-index
 doc_type: concept
 products:
     - TDEI

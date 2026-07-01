@@ -2,7 +2,7 @@
 title: Walksheds — Assistant Knowledge Base
 tags:
     - Assistant
-slug: assistant-walksheds
+slug: walksheds-index
 doc_type: concept
 products:
     - Walksheds

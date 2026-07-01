@@ -2,7 +2,7 @@
 title: QA/QC — Assistant Knowledge Base
 tags:
     - Assistant
-slug: index
+slug: qa-qc-index
 doc_type: concept
 products:
     - OS-CONNECT

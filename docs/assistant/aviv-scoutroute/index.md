@@ -2,7 +2,7 @@
 title: AVIV ScoutRoute — Assistant Knowledge Base
 tags:
     - Assistant
-slug: index
+slug: aviv-scoutroute-index
 doc_type: concept
 products:
     - AVIV ScoutRoute

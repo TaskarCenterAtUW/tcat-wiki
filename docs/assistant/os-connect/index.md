@@ -2,7 +2,7 @@
 title: OS-CONNECT — Assistant Knowledge Base
 tags:
     - Assistant
-slug: index
+slug: os-connect-index
 doc_type: concept
 products:
     - OS-CONNECT

@@ -2,7 +2,7 @@
 title: Support Q&A — Assistant Knowledge Base
 tags:
     - Assistant
-slug: index
+slug: support-index
 doc_type: concept
 products:
     - OS-CONNECT

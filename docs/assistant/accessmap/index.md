@@ -2,7 +2,7 @@
 title: AccessMap — Assistant Knowledge Base
 tags:
     - Assistant
-slug: index
+slug: accessmap-index
 doc_type: concept
 products:
     - AccessMap
