@@ -2,7 +2,7 @@
 title: "How can walksheds identify crossing gaps?"
 tags:
     - Assistant
-slug: how-can-walksheds-identify-crossing-gaps
+slug: crossing-gap-identification
 doc_type: question
 products:
     - Walksheds

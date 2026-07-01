@@ -2,7 +2,7 @@
 title: "How can walksheds compare infrastructure scenarios?"
 tags:
     - Assistant
-slug: how-can-walksheds-compare-infrastructure-scenarios
+slug: infrastructure-scenario-comparison
 doc_type: question
 products:
     - Walksheds

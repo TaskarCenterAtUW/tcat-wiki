@@ -2,7 +2,7 @@
 title: "What is a project group in TDEI?"
 tags:
     - Assistant
-slug: what-is-a-project-group-in-tdei
+slug: project-group
 doc_type: question
 products:
     - TDEI
@@ -26,6 +26,8 @@ assistant_behavior:
     do_not_claim: []
 related_pages: []
 ---
+
+<!-- @format -->
 
 # What is a project group in TDEI?
 

@@ -2,7 +2,7 @@
 title: "When should edits be exported back to TDEI?"
 tags:
     - Assistant
-slug: when-should-edits-be-exported-back-to-tdei
+slug: export-timing
 doc_type: question
 products:
     - Workspaces

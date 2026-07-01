@@ -2,7 +2,7 @@
 title: "How do project groups work?"
 tags:
     - Assistant
-slug: how-do-project-groups-work
+slug: project-group-operations
 doc_type: question
 products:
     - Workspaces

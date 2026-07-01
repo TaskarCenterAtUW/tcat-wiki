@@ -2,7 +2,7 @@
 title: "Why do imagery resources differ between workspaces?"
 tags:
     - Assistant
-slug: why-do-imagery-resources-differ-between-workspaces
+slug: imagery-resource-variation
 doc_type: question
 products:
     - Workspaces

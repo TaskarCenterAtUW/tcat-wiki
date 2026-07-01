@@ -2,7 +2,7 @@
 title: "What assumptions should planners understand?"
 tags:
     - Assistant
-slug: what-assumptions-should-planners-understand
+slug: planner-assumptions
 doc_type: question
 products:
     - Walksheds

@@ -2,7 +2,7 @@
 title: "How are releases versioned?"
 tags:
     - Assistant
-slug: how-are-releases-versioned
+slug: release-versioning
 doc_type: question
 products:
     - TDEI
@@ -25,6 +25,8 @@ assistant_behavior:
     do_not_claim: []
 related_pages: []
 ---
+
+<!-- @format -->
 
 # How are releases versioned?
 

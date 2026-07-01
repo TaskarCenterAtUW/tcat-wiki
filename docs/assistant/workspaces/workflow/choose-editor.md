@@ -2,7 +2,7 @@
 title: "Which editor should I use?"
 tags:
     - Assistant
-slug: which-editor-should-i-use
+slug: choose-editor
 doc_type: question
 products:
     - Workspaces

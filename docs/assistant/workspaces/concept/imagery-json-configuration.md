@@ -2,7 +2,7 @@
 title: "What is the imagery JSON configuration?"
 tags:
     - Assistant
-slug: what-is-the-imagery-json-configuration
+slug: imagery-json-configuration
 doc_type: question
 products:
     - Workspaces

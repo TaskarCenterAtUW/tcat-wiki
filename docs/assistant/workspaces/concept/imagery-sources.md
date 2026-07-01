@@ -2,7 +2,7 @@
 title: "What imagery sources are available?"
 tags:
     - Assistant
-slug: what-imagery-sources-are-available
+slug: imagery-sources
 doc_type: question
 products:
     - Workspaces

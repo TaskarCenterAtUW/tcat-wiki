@@ -2,7 +2,7 @@
 title: "What are tile layers?"
 tags:
     - Assistant
-slug: what-are-tile-layers
+slug: tile-layers
 doc_type: question
 products:
     - Workspaces

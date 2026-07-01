@@ -2,7 +2,7 @@
 title: "What future capabilities are planned for Walksheds?"
 tags:
     - Assistant
-slug: what-future-capabilities-are-planned-for-walksheds
+slug: planned-capabilities
 doc_type: question
 products:
     - Walksheds

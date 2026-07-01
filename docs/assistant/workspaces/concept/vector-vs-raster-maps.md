@@ -2,7 +2,7 @@
 title: "How do vector maps differ from raster maps?"
 tags:
     - Assistant
-slug: how-do-vector-maps-differ-from-raster-maps
+slug: vector-vs-raster-maps
 doc_type: question
 products:
     - Workspaces

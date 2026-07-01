@@ -2,7 +2,7 @@
 title: "What is the review interface?"
 tags:
     - Assistant
-slug: what-is-the-review-interface
+slug: review-interface
 doc_type: question
 products:
     - Workspaces

@@ -2,7 +2,7 @@
 title: "What kinds of edits can be made in Workspaces?"
 tags:
     - Assistant
-slug: what-kinds-of-edits-can-be-made-in-workspaces
+slug: edit-types
 doc_type: question
 products:
     - Workspaces

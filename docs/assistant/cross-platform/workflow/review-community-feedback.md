@@ -2,7 +2,7 @@
 title: Review community feedback (cross-product workflow)
 tags:
     - Assistant
-slug: workflow-review-community-feedback
+slug: review-community-feedback
 doc_type: workflow
 products:
     - OS-CONNECT

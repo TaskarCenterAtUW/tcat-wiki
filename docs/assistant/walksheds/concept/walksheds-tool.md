@@ -2,7 +2,7 @@
 title: "What is the Walksheds tool?"
 tags:
     - Assistant
-slug: what-is-the-walksheds-tool
+slug: walksheds-tool
 doc_type: question
 products:
     - Walksheds

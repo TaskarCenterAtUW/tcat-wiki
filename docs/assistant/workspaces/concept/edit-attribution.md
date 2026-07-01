@@ -2,7 +2,7 @@
 title: "How are edits attributed to users?"
 tags:
     - Assistant
-slug: how-are-edits-attributed-to-users
+slug: edit-attribution
 doc_type: question
 products:
     - Workspaces

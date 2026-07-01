@@ -2,7 +2,7 @@
 title: "What are teams in Workspaces?"
 tags:
     - Assistant
-slug: what-are-teams-in-workspaces
+slug: teams
 doc_type: question
 products:
     - Workspaces

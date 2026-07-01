@@ -2,7 +2,7 @@
 title: "What sources were used for an edit?"
 tags:
     - Assistant
-slug: what-sources-were-used-for-an-edit
+slug: edit-source-tracking
 doc_type: question
 products:
     - Workspaces

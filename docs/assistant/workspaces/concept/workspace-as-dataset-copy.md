@@ -2,7 +2,7 @@
 title: "Is a workspace a copy or the original dataset?"
 tags:
     - Assistant
-slug: is-a-workspace-a-copy-or-the-original-dataset
+slug: workspace-as-dataset-copy
 doc_type: question
 products:
     - Workspaces

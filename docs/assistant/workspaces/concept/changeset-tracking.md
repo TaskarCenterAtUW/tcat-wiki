@@ -2,7 +2,7 @@
 title: "How are changesets tracked?"
 tags:
     - Assistant
-slug: how-are-changesets-tracked
+slug: changeset-tracking
 doc_type: question
 products:
     - Workspaces

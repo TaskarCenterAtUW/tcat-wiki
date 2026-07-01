@@ -2,7 +2,7 @@
 title: "What does sandbox mean in Workspaces?"
 tags:
     - Assistant
-slug: what-does-sandbox-mean-in-workspaces
+slug: sandbox
 doc_type: question
 products:
     - Workspaces

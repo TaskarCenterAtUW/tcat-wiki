@@ -2,7 +2,7 @@
 title: "How do managers interact with Workspaces?"
 tags:
     - Assistant
-slug: how-do-managers-interact-with-workspaces
+slug: manager-role
 doc_type: question
 products:
     - Workspaces

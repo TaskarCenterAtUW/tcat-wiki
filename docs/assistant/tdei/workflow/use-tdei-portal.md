@@ -2,7 +2,7 @@
 title: How do I use the TDEI portal?
 tags:
     - Assistant
-slug: how-use-tdei-portal
+slug: use-tdei-portal
 doc_type: question
 products:
     - TDEI

@@ -2,7 +2,7 @@
 title: "What is a project group?"
 tags:
     - Assistant
-slug: what-is-a-project-group
+slug: project-group-definition
 doc_type: question
 products:
     - Workspaces

@@ -2,7 +2,7 @@
 title: Update jurisdiction data through TDEI and OS-CONNECT pipelines
 tags:
     - Assistant
-slug: workflow-update-jurisdiction-data
+slug: update-jurisdiction-data
 doc_type: workflow
 products:
     - OS-CONNECT

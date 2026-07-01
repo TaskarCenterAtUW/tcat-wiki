@@ -2,7 +2,7 @@
 title: "How can walksheds support hospital access analysis?"
 tags:
     - Assistant
-slug: how-can-walksheds-support-hospital-access-analysis
+slug: hospital-access-analysis
 doc_type: question
 products:
     - Walksheds

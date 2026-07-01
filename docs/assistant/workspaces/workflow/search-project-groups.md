@@ -2,7 +2,7 @@
 title: "How do I search for project groups?"
 tags:
     - Assistant
-slug: how-do-i-search-for-project-groups
+slug: search-project-groups
 doc_type: question
 products:
     - Workspaces

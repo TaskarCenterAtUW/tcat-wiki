@@ -2,7 +2,7 @@
 title: Use OS-CONNECT for ADA transition planning (workflow)
 tags:
     - Assistant
-slug: workflow-os-connect-ada-transition
+slug: use-os-connect-for-ada-transition-planning
 doc_type: workflow
 products:
     - OS-CONNECT

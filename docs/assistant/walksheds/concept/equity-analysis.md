@@ -2,7 +2,7 @@
 title: "How can walksheds support equity analysis?"
 tags:
     - Assistant
-slug: how-can-walksheds-support-equity-analysis
+slug: equity-analysis
 doc_type: question
 products:
     - Walksheds

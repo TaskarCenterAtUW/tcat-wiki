@@ -2,7 +2,7 @@
 title: "How can walksheds identify pedestrian bottlenecks?"
 tags:
     - Assistant
-slug: how-can-walksheds-identify-pedestrian-bottlenecks
+slug: pedestrian-bottleneck-identification
 doc_type: question
 products:
     - Walksheds

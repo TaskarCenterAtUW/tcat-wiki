@@ -2,7 +2,7 @@
 title: "Is Workspaces connected to the public OSM database?"
 tags:
     - Assistant
-slug: is-workspaces-connected-to-the-public-osm-database
+slug: osm-connection
 doc_type: question
 products:
     - Workspaces

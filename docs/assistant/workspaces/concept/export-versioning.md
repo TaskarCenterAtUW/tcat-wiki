@@ -2,7 +2,7 @@
 title: "What versioning occurs during export?"
 tags:
     - Assistant
-slug: what-versioning-occurs-during-export
+slug: export-versioning
 doc_type: question
 products:
     - Workspaces

@@ -2,7 +2,7 @@
 title: "What is edge betweenness?"
 tags:
     - Assistant
-slug: what-is-edge-betweenness
+slug: edge-betweenness
 doc_type: question
 products:
     - OS-CONNECT

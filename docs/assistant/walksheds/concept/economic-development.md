@@ -2,7 +2,7 @@
 title: "How can walksheds support economic development?"
 tags:
     - Assistant
-slug: how-can-walksheds-support-economic-development
+slug: economic-development
 doc_type: question
 products:
     - Walksheds

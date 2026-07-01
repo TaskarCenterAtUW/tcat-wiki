@@ -2,7 +2,7 @@
 title: "How can users trace the source dataset?"
 tags:
     - Assistant
-slug: how-can-users-trace-the-source-dataset
+slug: source-dataset-tracing
 doc_type: question
 products:
     - Workspaces

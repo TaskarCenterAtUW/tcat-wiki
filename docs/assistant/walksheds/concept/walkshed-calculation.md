@@ -2,7 +2,7 @@
 title: "How are walksheds calculated?"
 tags:
     - Assistant
-slug: how-are-walksheds-calculated
+slug: walkshed-calculation
 doc_type: question
 products:
     - Walksheds

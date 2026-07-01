@@ -2,7 +2,7 @@
 title: "How can users identify who made a change?"
 tags:
     - Assistant
-slug: how-can-users-identify-who-made-a-change
+slug: change-authorship
 doc_type: question
 products:
     - Workspaces

@@ -2,7 +2,7 @@
 title: "Why are some destinations excluded?"
 tags:
     - Assistant
-slug: why-are-some-destinations-excluded
+slug: destination-exclusion
 doc_type: question
 products:
     - Walksheds

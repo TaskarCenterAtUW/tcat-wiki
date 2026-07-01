@@ -2,7 +2,7 @@
 title: "When should edits remain private?"
 tags:
     - Assistant
-slug: when-should-edits-remain-private
+slug: keeping-edits-private
 doc_type: question
 products:
     - Workspaces

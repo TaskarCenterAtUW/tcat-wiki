@@ -2,7 +2,7 @@
 title: "Where can I download the data?"
 tags:
     - Assistant
-slug: where-can-i-download-the-data
+slug: download-data
 doc_type: question
 products:
     - TDEI

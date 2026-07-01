@@ -2,7 +2,7 @@
 title: "How does Workspaces support QA review?"
 tags:
     - Assistant
-slug: how-does-workspaces-support-qa-review
+slug: qa-review-support
 doc_type: question
 products:
     - Workspaces

@@ -2,7 +2,7 @@
 title: 'What does "completeness" mean?'
 tags:
     - Assistant
-slug: what-does-completeness-mean
+slug: completeness
 doc_type: question
 products:
     - OS-CONNECT

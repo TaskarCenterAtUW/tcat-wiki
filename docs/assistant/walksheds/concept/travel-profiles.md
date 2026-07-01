@@ -2,7 +2,7 @@
 title: "What travel profiles are available in Walksheds?"
 tags:
     - Assistant
-slug: what-travel-profiles-are-available-in-walksheds
+slug: travel-profiles
 doc_type: question
 products:
     - Walksheds

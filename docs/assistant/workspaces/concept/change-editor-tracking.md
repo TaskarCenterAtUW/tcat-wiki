@@ -2,7 +2,7 @@
 title: "What editor created a change?"
 tags:
     - Assistant
-slug: what-editor-created-a-change
+slug: change-editor-tracking
 doc_type: question
 products:
     - Workspaces

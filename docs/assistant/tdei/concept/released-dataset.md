@@ -1,8 +1,8 @@
 ---
-title: "What does \"released dataset\" mean in TDEI?"
+title: 'What does "released dataset" mean in TDEI?'
 tags:
     - Assistant
-slug: what-does-released-dataset-mean-in-tdei
+slug: released-dataset
 doc_type: question
 products:
     - TDEI
@@ -26,6 +26,8 @@ assistant_behavior:
     do_not_claim: []
 related_pages: []
 ---
+
+<!-- @format -->
 
 # What does "released dataset" mean in TDEI?
 

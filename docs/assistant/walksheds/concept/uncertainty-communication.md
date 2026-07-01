@@ -2,7 +2,7 @@
 title: "How should uncertainty be communicated in walkshed outputs?"
 tags:
     - Assistant
-slug: how-should-uncertainty-be-communicated-in-walkshed-outputs
+slug: uncertainty-communication
 doc_type: question
 products:
     - Walksheds

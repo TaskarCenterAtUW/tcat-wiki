@@ -2,7 +2,7 @@
 title: "What workflows are best suited for Workspaces?"
 tags:
     - Assistant
-slug: what-workflows-are-best-suited-for-workspaces
+slug: recommended-workflows
 doc_type: question
 products:
     - Workspaces

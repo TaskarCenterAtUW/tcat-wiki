@@ -2,7 +2,7 @@
 title: "How do crossings affect walksheds?"
 tags:
     - Assistant
-slug: how-do-crossings-affect-walksheds
+slug: crossing-effects
 doc_type: question
 products:
     - Walksheds

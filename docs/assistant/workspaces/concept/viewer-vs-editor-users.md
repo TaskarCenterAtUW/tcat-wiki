@@ -2,7 +2,7 @@
 title: "What is the difference between viewer users and editor users?"
 tags:
     - Assistant
-slug: what-is-the-difference-between-viewer-users-and-editor-users
+slug: viewer-vs-editor-users
 doc_type: question
 products:
     - Workspaces

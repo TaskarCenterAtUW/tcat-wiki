@@ -2,7 +2,7 @@
 title: 'What does "node centrality" reveal operationally?'
 tags:
     - Assistant
-slug: what-does-node-centrality-reveal-operationally
+slug: node-centrality-operational-use
 doc_type: question
 products:
     - OS-CONNECT

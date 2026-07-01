@@ -2,7 +2,7 @@
 title: "How can walksheds support Vision Zero?"
 tags:
     - Assistant
-slug: how-can-walksheds-support-vision-zero
+slug: vision-zero
 doc_type: question
 products:
     - Walksheds

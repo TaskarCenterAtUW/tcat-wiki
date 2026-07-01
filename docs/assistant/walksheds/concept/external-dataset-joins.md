@@ -2,7 +2,7 @@
 title: "Can Walksheds be joined with census, crash, or internal agency datasets?"
 tags:
     - Assistant
-slug: can-walksheds-be-joined-with-census-crash-or-internal-agency-datasets
+slug: external-dataset-joins
 doc_type: question
 products:
     - Walksheds

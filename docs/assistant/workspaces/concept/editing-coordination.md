@@ -2,7 +2,7 @@
 title: "How can multiple people coordinate editing?"
 tags:
     - Assistant
-slug: how-can-multiple-people-coordinate-editing
+slug: editing-coordination
 doc_type: question
 products:
     - Workspaces

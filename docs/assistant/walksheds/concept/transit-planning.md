@@ -2,7 +2,7 @@
 title: "How can walksheds support transit planning?"
 tags:
     - Assistant
-slug: how-can-walksheds-support-transit-planning
+slug: transit-planning
 doc_type: question
 products:
     - Walksheds

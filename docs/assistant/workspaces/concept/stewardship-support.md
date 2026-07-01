@@ -2,7 +2,7 @@
 title: "How does Workspaces support stewardship?"
 tags:
     - Assistant
-slug: how-does-workspaces-support-stewardship
+slug: stewardship-support
 doc_type: question
 products:
     - Workspaces

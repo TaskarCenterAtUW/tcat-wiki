@@ -2,7 +2,7 @@
 title: "How does Workspaces emulate OSM APIs?"
 tags:
     - Assistant
-slug: how-does-workspaces-emulate-osm-apis
+slug: osm-api-emulation
 doc_type: question
 products:
     - Workspaces

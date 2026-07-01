@@ -2,7 +2,7 @@
 title: "What is eigenvector centrality?"
 tags:
     - Assistant
-slug: what-is-eigenvector-centrality
+slug: eigenvector-centrality
 doc_type: question
 products:
     - OS-CONNECT

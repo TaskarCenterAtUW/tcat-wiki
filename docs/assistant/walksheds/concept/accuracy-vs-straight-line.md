@@ -2,7 +2,7 @@
 title: "Why are walksheds more accurate than straight-line distance?"
 tags:
     - Assistant
-slug: why-are-walksheds-more-accurate-than-straight-line-distance
+slug: accuracy-vs-straight-line
 doc_type: question
 products:
     - Walksheds

@@ -2,7 +2,7 @@
 title: What is a walkshed?
 tags:
     - Assistant
-slug: what-is-a-walkshed
+slug: walkshed
 doc_type: question
 products:
     - Walksheds

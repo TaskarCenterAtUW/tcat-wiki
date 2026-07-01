@@ -2,7 +2,7 @@
 title: "What file formats are available?"
 tags:
     - Assistant
-slug: what-file-formats-are-available
+slug: file-formats
 doc_type: question
 products:
     - TDEI
@@ -25,6 +25,8 @@ assistant_behavior:
     do_not_claim: []
 related_pages: []
 ---
+
+<!-- @format -->
 
 # What file formats are available?
 

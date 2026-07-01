@@ -2,7 +2,7 @@
 title: "What files are included in an OSW download?"
 tags:
     - Assistant
-slug: what-files-are-included-in-an-osw-download
+slug: osw-download-contents
 doc_type: question
 products:
     - TDEI
@@ -27,6 +27,8 @@ assistant_behavior:
     do_not_claim: []
 related_pages: []
 ---
+
+<!-- @format -->
 
 # What files are included in an OSW download?
 
