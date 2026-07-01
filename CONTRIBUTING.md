@@ -309,6 +309,35 @@ For creating image annotations with a consistent style, follow these guidelines.
 
 1. Create QR codes using [Project Nayuki's QR Code generator library](https://github.com/nayuki/QR-Code-generator).
 
+#### Assistant Knowledge Base (AKB)
+
+The AKB transcript ingestion pipeline extracts domain knowledge from meeting transcripts and proposes changes to `docs/assistant/`.
+
+1. Download the Zoom transcript (`.txt` VTT format) and save it under `local-storage/transcripts/`.
+
+2. In VS Code Copilot Chat (agent mode), run:
+
+    ```
+    /akb-ingest-transcript local-storage/transcripts/<filename>.txt
+    ```
+
+    The agent compresses the transcript (stripping timestamps and VTT headers), reads `docs/assistant/dispatch.md` and `docs/assistant/schema.md`, then outputs a bucketed proposal of **New articles** and **Updates**.
+
+3. Review the proposal in chat. Request any changes — the agent will iterate until you reach agreement.
+
+4. Approve the plan. The agent creates or edits files in `docs/assistant/` accordingly.
+
+5. Review all proposed file edits using VS Code's standard agentic edit review flow before accepting.
+
+The script `utilities/akb-compress-transcript.py` can also be run independently to produce a clean `.compressed.txt` file alongside any transcript:
+
+```powershell
+# Ensure venv is activated first!
+.\.venv\Scripts\Activate.ps1
+
+python .\utilities\akb-compress-transcript.py local-storage\transcripts\<filename>.txt
+```
+
 #### Event Statistics
 
 The event report system generates post-event summary reports.
