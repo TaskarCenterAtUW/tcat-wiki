@@ -259,7 +259,6 @@ nav = [
         {"Cross Platform" = [
             "assistant/cross-platform/index.md",
             {"Concept" = [
-                "assistant/cross-platform/concept/index.md",
                 {"Abbreviations and Acronyms Glossary" = "assistant/cross-platform/concept/abbreviations.md"},
                 {"Accessibility islands" = "assistant/cross-platform/concept/accessibility-islands.md"},
                 {"AccessMap routing (concept)" = "assistant/cross-platform/concept/accessmap-routing.md"},
@@ -275,7 +274,6 @@ nav = [
                 {"What are the risks of automated accessibility analysis?" = "assistant/cross-platform/concept/what-are-the-risks-of-automated-accessibility-analysis.md"}
             ]},
             {"Workflow" = [
-                "assistant/cross-platform/workflow/index.md",
                 {"Review community feedback (cross-product workflow)" = "assistant/cross-platform/workflow/review-community-feedback.md"},
                 {"Support answer patterns" = "assistant/cross-platform/workflow/support-answer-patterns.md"},
                 {"Update jurisdiction data through TDEI and OS-CONNECT pipelines" = "assistant/cross-platform/workflow/update-jurisdiction-data.md"},
@@ -568,7 +566,7 @@ nav = [
                 {"What is the difference between downloading OSW format and OSM format?" = "assistant/tdei/concept/osw-vs-osm-format.md"},
                 {"What is a project group in TDEI?" = "assistant/tdei/concept/project-group.md"},
                 {"How are releases versioned?" = "assistant/tdei/concept/release-versioning.md"},
-                {"What does \\\"released dataset\\\" mean in TDEI?" = "assistant/tdei/concept/released-dataset.md"},
+                {"What does \"released dataset\" mean in TDEI?" = "assistant/tdei/concept/released-dataset.md"},
                 {"TDEI" = "assistant/tdei/concept/tdei.md"},
                 {"Why might a test dataset appear in the portal?" = "assistant/tdei/concept/test-dataset-in-portal.md"}
             ]},
@@ -749,7 +747,6 @@ nav = [
                 {"Workspaces" = "assistant/workspaces/concept/workspaces.md"}
             ]},
             {"Workflow" = [
-                "assistant/workspaces/workflow/index.md",
                 {"Which editor should I use?" = "assistant/workspaces/workflow/choose-editor.md"},
                 {"Configure imagery layers in a workspace" = "assistant/workspaces/workflow/configure-imagery-layers.md"},
                 {"Create a workspace from TDEI" = "assistant/workspaces/workflow/create-a-workspace-from-tdei.md"},

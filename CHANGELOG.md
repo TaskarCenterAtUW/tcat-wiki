@@ -6,6 +6,12 @@ Changes to the TCAT Wiki are documented here.
 
 This project adheres to [Semantic Versioning](https://semver.org/) and [Conventional Commits](https://www.conventionalcommits.org/).
 
+## v12.5.1 (2026-07-01)
+
+### Fixes
+
+- **Docs**: Update knowledge base article slugs and fix broken links
+
 ## v12.5.0 (2026-07-01)
 
 ### Features
