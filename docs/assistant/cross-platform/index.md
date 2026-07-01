@@ -65,7 +65,7 @@ Without explicit policy pages, assistants may over-claim — stating that OS-CON
 
 ## Example
 
-An agent is about to answer: _"Is this data ADA-compliant?"_ It retrieves `policies/ada-safety-legal-boundaries.md`, finds `do_not_claim: ["OS-CONNECT data constitutes an official ADA compliance inventory"]`, and reformulates the answer to explain what the data does and does not represent.
+An agent is about to answer: _"Is this data ADA-compliant?"_ It retrieves `concept/ada-safety-legal-boundaries.md`, finds `do_not_claim: ["OS-CONNECT data constitutes an official ADA compliance inventory"]`, and reformulates the answer to explain what the data does and does not represent.
 
 ## Assistant Guidance
 

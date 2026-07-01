@@ -29,7 +29,7 @@ assistant_behavior:
         - Any tool or dataset proves ADA compliance for a facility or program.
         - Routing or walkshed results constitute legal advice.
 related_pages:
-    - assistant/policies/ada-safety-legal-boundaries.md
+    - assistant/cross-platform/index.md
     - assistant/concepts/completeness.md
     - assistant/questions/os-connect/is-completeness-ada-compliance.md
 ---

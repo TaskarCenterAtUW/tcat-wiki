@@ -33,8 +33,8 @@ assistant_behavior:
 related_pages:
     - assistant/dispatch.md
     - assistant/schema.md
-    - assistant/policies/public-vs-internal-content.md
-    - assistant/policies/assistant-abstention.md
+    - assistant/cross-platform/index.md
+    - assistant/support/index.md
 ---
 
 <!-- @format -->

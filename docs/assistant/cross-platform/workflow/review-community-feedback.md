@@ -27,7 +27,7 @@ assistant_behavior:
     do_not_claim:
         - All feedback items are verified bugs in the core dataset.
 related_pages:
-    - assistant/policies/data-freshness.md
+    - assistant/cross-platform/index.md
     - assistant/workflows/update-jurisdiction-data.md
 ---
 
