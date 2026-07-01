@@ -65,7 +65,7 @@ An agency partner asks: _"Which dataset should I use for pedestrian walkway data
 
 ## Assistant Guidance
 
-For cross-product questions, synthesize answers from multiple pages when needed, but cite each source page individually. When a question crosses into compliance or legal territory, defer to `policies/ada-safety-legal-boundaries.md` and note the appropriate limitations.
+For cross-product questions, synthesize answers from multiple pages when needed, but cite each source page individually. When a question crosses into compliance or legal territory, defer to the policy guidance in `cross-platform/index.md` and note the appropriate limitations.
 
 ## Related Concepts
 

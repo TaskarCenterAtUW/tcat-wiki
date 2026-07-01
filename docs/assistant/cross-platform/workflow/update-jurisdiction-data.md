@@ -25,7 +25,7 @@ assistant_behavior:
         - A specific turnaround time for publication without citing active policy.
 related_pages:
     - assistant/tdei/how-do-i-use-the-tdei-portal.md
-    - assistant/policies/data-freshness.md
+    - assistant/cross-platform/index.md
     - tdei/portal/user-manual/datasets.md
 ---
 

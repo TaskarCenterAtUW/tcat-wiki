@@ -68,7 +68,7 @@ A Safe Routes to School coordinator asks: _"Can Walksheds show us which kids can
 
 ## Assistant Guidance
 
-When presenting walkshed results as evidence for policy decisions, include a caveat that walksheds reflect the network in the dataset at the time of calculation; real-world conditions may differ. For questions involving specific regulatory thresholds (ADA, PROWAG), refer to `policies/ada-safety-legal-boundaries.md`.
+When presenting walkshed results as evidence for policy decisions, include a caveat that walksheds reflect the network in the dataset at the time of calculation; real-world conditions may differ. For questions involving specific regulatory thresholds (ADA, PROWAG), refer to the policy guidance in `cross-platform/index.md`.
 
 ## Related Concepts
 

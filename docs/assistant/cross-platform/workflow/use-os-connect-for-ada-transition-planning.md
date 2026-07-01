@@ -25,7 +25,7 @@ assistant_behavior:
         - This workflow guarantees a legally sufficient transition plan.
 related_pages:
     - assistant/concepts/ada-compliance-boundaries.md
-    - assistant/policies/ada-safety-legal-boundaries.md
+    - assistant/cross-platform/index.md
     - os-connect/qa-qc/user-manual/index.md
 ---
 

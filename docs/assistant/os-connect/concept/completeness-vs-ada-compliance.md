@@ -28,7 +28,7 @@ assistant_behavior:
 related_pages:
     - assistant/concepts/completeness.md
     - assistant/concepts/ada-compliance-boundaries.md
-    - assistant/policies/ada-safety-legal-boundaries.md
+    - assistant/cross-platform/index.md
 ---
 
 <!-- @format -->
