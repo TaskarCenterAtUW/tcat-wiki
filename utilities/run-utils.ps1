@@ -353,7 +353,7 @@ if (-not $TestsOnly) {
     Write-Host ""
 
     # 1. Build assistant glossary
-    $glossaryScript = Join-Path $utilPath "build-glossary.py"
+    $glossaryScript = Join-Path $utilPath "akb-build-glossary.py"
     $pythonExe = Join-Path $utilPath ".." ".venv" "Scripts" "python.exe"
     if (-not (Test-Path $pythonExe)) {
         $pythonExe = "python"  # fallback to system Python
@@ -368,7 +368,7 @@ if (-not $TestsOnly) {
         exit 1
     }
     Write-Host ""
-    Write-Host "  ✓ COMPLETED: build-glossary.py" -ForegroundColor Green
+    Write-Host "  ✓ COMPLETED: akb-build-glossary.py" -ForegroundColor Green
 
     Write-Host ""
 
