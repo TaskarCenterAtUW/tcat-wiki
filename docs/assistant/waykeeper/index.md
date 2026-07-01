@@ -2,7 +2,7 @@
 title: Waykeeper — Assistant Knowledge Base
 tags:
     - Assistant
-slug: index
+slug: waykeeper-index
 doc_type: concept
 products:
     - Waykeeper

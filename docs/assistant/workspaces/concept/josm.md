@@ -2,7 +2,7 @@
 title: "What is JOSM?"
 tags:
     - Assistant
-slug: what-is-josm
+slug: josm
 doc_type: question
 products:
     - Workspaces

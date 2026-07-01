@@ -2,7 +2,7 @@
 title: "Why are vector maps preferred for accessibility editing?"
 tags:
     - Assistant
-slug: why-are-vector-maps-preferred-for-accessibility-editing
+slug: vector-map-preference
 doc_type: question
 products:
     - Workspaces

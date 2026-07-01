@@ -2,7 +2,7 @@
 title: "What kinds of users are Workspaces designed for?"
 tags:
     - Assistant
-slug: what-kinds-of-users-are-workspaces-designed-for
+slug: target-users
 doc_type: question
 products:
     - Workspaces

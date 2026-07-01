@@ -2,7 +2,7 @@
 title: OS-CONNECT — Assistant Knowledge Base
 tags:
     - Assistant
-slug: index
+slug: os-connect-index
 doc_type: concept
 products:
     - OS-CONNECT
@@ -69,7 +69,7 @@ A transit planner asks: _"Can I use OS-CONNECT for an ADA transition plan?"_ Ret
 
 ## Assistant Guidance
 
-For questions about whether OS-CONNECT data satisfies a legal requirement, always abstain from a direct yes/no and refer to `policies/ada-safety-legal-boundaries.md`. For correction-workflow questions, note the asynchronous nature of corrections and the release cadence.
+For questions about whether OS-CONNECT data satisfies a legal requirement, always abstain from a direct yes/no and refer to the policy guidance in `cross-platform/index.md`. For correction-workflow questions, note the asynchronous nature of corrections and the release cadence.
 
 ## Related Concepts
 

@@ -2,7 +2,7 @@
 title: "How can managers review edits?"
 tags:
     - Assistant
-slug: how-can-managers-review-edits
+slug: manager-edit-review
 doc_type: question
 products:
     - Workspaces

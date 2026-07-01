@@ -2,7 +2,7 @@
 title: "Collaborative accessibility editing"
 tags:
     - Assistant
-slug: collaborative-accessibility-editing
+slug: collaborative-editing
 doc_type: concept
 products:
     - Workspaces

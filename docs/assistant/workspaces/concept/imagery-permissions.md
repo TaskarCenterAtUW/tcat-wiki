@@ -2,7 +2,7 @@
 title: "How are imagery permissions handled?"
 tags:
     - Assistant
-slug: how-are-imagery-permissions-handled
+slug: imagery-permissions
 doc_type: question
 products:
     - Workspaces

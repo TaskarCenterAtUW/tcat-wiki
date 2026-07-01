@@ -250,7 +250,7 @@ Describe "Script Structure" {
         $scriptContent | Should -Match 'check-links\.ps1'
     }
 
-    It "Should reference build-glossary.py" {
+    It "Should reference akb-build-glossary.py" {
         $scriptContent | Should -Match 'build-glossary\.py'
     }
 
@@ -293,13 +293,13 @@ Describe "Integration Tests" -Tag "Integration" {
 Describe "Build-Glossary" {
     BeforeAll {
         $script:repoRoot = Join-Path $PSScriptRoot ".."
-        $script:glossaryScript = Join-Path $PSScriptRoot "build-glossary.py"
+        $script:glossaryScript = Join-Path $PSScriptRoot "akb-build-glossary.py"
         $script:inputPath = Join-Path $repoRoot "includes" "abbreviations.md"
         $script:outputPath = Join-Path $repoRoot "docs" "assistant" "cross-platform" "concept" "abbreviations.md"
     }
 
     Context "Required files exist" {
-        It "build-glossary.py should exist in utilities directory" {
+        It "akb-build-glossary.py should exist in utilities directory" {
             Test-Path $glossaryScript | Should -Be $true
         }
 
@@ -351,7 +351,7 @@ Describe "Build-Glossary" {
 
     Context "Generated output" {
         BeforeAll {
-            # Run build-glossary.py and capture the output file
+            # Run akb-build-glossary.py and capture the output file
             $pythonExe = Join-Path $PSScriptRoot ".." ".venv" "Scripts" "python.exe"
             if (-not (Test-Path $pythonExe)) {
                 $pythonExe = "python"

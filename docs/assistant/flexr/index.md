@@ -2,7 +2,7 @@
 title: Flexr — Assistant Knowledge Base
 tags:
     - Assistant
-slug: index
+slug: flexr-index
 doc_type: concept
 products:
     - Flexr

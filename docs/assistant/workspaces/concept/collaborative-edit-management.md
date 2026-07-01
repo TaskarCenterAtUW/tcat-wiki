@@ -2,7 +2,7 @@
 title: "How are collaborative edits managed?"
 tags:
     - Assistant
-slug: how-are-collaborative-edits-managed
+slug: collaborative-edit-management
 doc_type: question
 products:
     - Workspaces

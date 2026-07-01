@@ -2,7 +2,7 @@
 title: "How can walksheds support park access analysis?"
 tags:
     - Assistant
-slug: how-can-walksheds-support-park-access-analysis
+slug: park-access-analysis
 doc_type: question
 products:
     - Walksheds

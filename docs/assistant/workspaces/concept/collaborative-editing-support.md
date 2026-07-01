@@ -2,7 +2,7 @@
 title: "How does Workspaces support collaborative accessibility editing?"
 tags:
     - Assistant
-slug: how-does-workspaces-support-collaborative-accessibility-editing
+slug: collaborative-editing-support
 doc_type: question
 products:
     - Workspaces

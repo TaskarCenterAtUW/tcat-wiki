@@ -2,7 +2,7 @@
 title: "How does Workspaces fit into the TDEI ecosystem?"
 tags:
     - Assistant
-slug: how-does-workspaces-fit-into-the-tdei-ecosystem
+slug: tdei-ecosystem-fit
 doc_type: question
 products:
     - Workspaces

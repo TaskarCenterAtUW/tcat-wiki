@@ -2,7 +2,7 @@
 title: "How do I create a workspace from TDEI?"
 tags:
     - Assistant
-slug: how-do-i-create-a-workspace-from-tdei
+slug: create-workspace-from-tdei
 doc_type: question
 products:
     - Workspaces

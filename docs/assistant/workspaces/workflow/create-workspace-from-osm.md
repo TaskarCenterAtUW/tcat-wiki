@@ -2,7 +2,7 @@
 title: "How do I create a workspace from existing OSM data?"
 tags:
     - Assistant
-slug: how-do-i-create-a-workspace-from-existing-osm-data
+slug: create-workspace-from-osm
 doc_type: question
 products:
     - Workspaces

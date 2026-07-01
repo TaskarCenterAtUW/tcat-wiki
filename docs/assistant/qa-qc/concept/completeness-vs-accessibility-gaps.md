@@ -2,7 +2,7 @@
 title: "Why can a city have high completeness but still accessibility gaps?"
 tags:
     - Assistant
-slug: why-can-a-city-have-high-completeness-but-still-accessibility-gaps
+slug: completeness-vs-accessibility-gaps
 doc_type: question
 products:
     - OS-CONNECT

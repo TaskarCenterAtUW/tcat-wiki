@@ -2,7 +2,7 @@
 title: "What are the limitations of walkshed analysis?"
 tags:
     - Assistant
-slug: what-are-the-limitations-of-walkshed-analysis
+slug: walkshed-limitations
 doc_type: question
 products:
     - Walksheds

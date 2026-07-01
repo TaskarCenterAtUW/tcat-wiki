@@ -2,7 +2,7 @@
 title: Where do I download OS-CONNECT data?
 tags:
     - Assistant
-slug: where-download-os-connect-data
+slug: download-os-connect-data
 doc_type: question
 products:
     - OS-CONNECT

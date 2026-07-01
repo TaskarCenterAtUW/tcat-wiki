@@ -2,7 +2,7 @@
 title: "What tools work with Workspaces?"
 tags:
     - Assistant
-slug: what-tools-work-with-workspaces
+slug: compatible-tools
 doc_type: question
 products:
     - Workspaces

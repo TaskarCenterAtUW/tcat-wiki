@@ -2,7 +2,7 @@
 title: "How do I know whether a dataset is current?"
 tags:
     - Assistant
-slug: how-do-i-know-whether-a-dataset-is-current
+slug: check-dataset-currency
 doc_type: question
 products:
     - TDEI

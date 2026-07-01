@@ -28,7 +28,7 @@ assistant_behavior:
     do_not_claim:
         - These patterns authorize legal conclusions or guaranteed timelines without verification.
 related_pages:
-    - assistant/policies/assistant-abstention.md
+    - assistant/support/index.md
     - assistant/intents/support-intents.md
     - assistant/support/helpline-faq-backlog.md
 ---

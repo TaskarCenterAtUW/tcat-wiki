@@ -2,7 +2,7 @@
 title: "Why does Workspaces exist separately from TDEI?"
 tags:
     - Assistant
-slug: why-does-workspaces-exist-separately-from-tdei
+slug: workspaces-tdei-separation
 doc_type: question
 products:
     - Workspaces

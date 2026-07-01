@@ -2,7 +2,7 @@
 title: "How can walksheds support Complete Streets planning?"
 tags:
     - Assistant
-slug: how-can-walksheds-support-complete-streets-planning
+slug: complete-streets-planning
 doc_type: question
 products:
     - Walksheds

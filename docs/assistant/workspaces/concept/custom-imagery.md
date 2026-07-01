@@ -2,7 +2,7 @@
 title: "Can custom imagery be added?"
 tags:
     - Assistant
-slug: can-custom-imagery-be-added
+slug: custom-imagery
 doc_type: question
 products:
     - Workspaces

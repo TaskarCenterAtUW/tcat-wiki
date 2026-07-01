@@ -2,7 +2,7 @@
 title: "How can users inspect edit history?"
 tags:
     - Assistant
-slug: how-can-users-inspect-edit-history
+slug: edit-history
 doc_type: question
 products:
     - Workspaces

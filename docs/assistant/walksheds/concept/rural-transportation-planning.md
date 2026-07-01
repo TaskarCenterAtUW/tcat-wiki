@@ -2,7 +2,7 @@
 title: "How can walksheds support rural transportation planning?"
 tags:
     - Assistant
-slug: how-can-walksheds-support-rural-transportation-planning
+slug: rural-transportation-planning
 doc_type: question
 products:
     - Walksheds

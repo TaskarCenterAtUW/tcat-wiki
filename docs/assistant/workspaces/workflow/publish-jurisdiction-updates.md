@@ -2,7 +2,7 @@
 title: "How should jurisdictions publish updates?"
 tags:
     - Assistant
-slug: how-should-jurisdictions-publish-updates
+slug: publish-jurisdiction-updates
 doc_type: question
 products:
     - Workspaces

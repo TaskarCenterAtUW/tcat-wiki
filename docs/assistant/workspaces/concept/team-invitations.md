@@ -2,7 +2,7 @@
 title: "How do team invitations work?"
 tags:
     - Assistant
-slug: how-do-team-invitations-work
+slug: team-invitations
 doc_type: question
 products:
     - Workspaces

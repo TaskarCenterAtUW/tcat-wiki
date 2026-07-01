@@ -2,7 +2,7 @@
 title: "Why must imagery use raw JSON links?"
 tags:
     - Assistant
-slug: why-must-imagery-use-raw-json-links
+slug: imagery-raw-json-requirement
 doc_type: question
 products:
     - Workspaces

@@ -2,7 +2,7 @@
 title: 'What is "max_cost"?'
 tags:
     - Assistant
-slug: what-is-max-cost
+slug: max-cost
 doc_type: question
 products:
     - Walksheds

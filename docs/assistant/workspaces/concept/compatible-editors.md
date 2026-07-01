@@ -2,7 +2,7 @@
 title: "What editors work with Workspaces?"
 tags:
     - Assistant
-slug: what-editors-work-with-workspaces
+slug: compatible-editors
 doc_type: question
 products:
     - Workspaces

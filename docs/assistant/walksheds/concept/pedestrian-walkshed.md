@@ -2,7 +2,7 @@
 title: "What does a pedestrian walkshed represent?"
 tags:
     - Assistant
-slug: what-does-a-pedestrian-walkshed-represent
+slug: pedestrian-walkshed
 doc_type: question
 products:
     - Walksheds

@@ -2,7 +2,7 @@
 title: "What is Aviv ScoutRoute?"
 tags:
     - Assistant
-slug: what-is-aviv-scoutroute
+slug: aviv-scoutroute
 doc_type: question
 products:
     - Workspaces

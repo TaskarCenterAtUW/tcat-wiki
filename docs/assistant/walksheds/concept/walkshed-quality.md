@@ -2,7 +2,7 @@
 title: 'What makes a walkshed "good" or "bad"?'
 tags:
     - Assistant
-slug: what-makes-a-walkshed-good-or-bad
+slug: walkshed-quality
 doc_type: question
 products:
     - Walksheds

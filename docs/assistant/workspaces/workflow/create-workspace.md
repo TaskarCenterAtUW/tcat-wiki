@@ -2,7 +2,7 @@
 title: "How do I create a workspace?"
 tags:
     - Assistant
-slug: how-do-i-create-a-workspace
+slug: create-workspace
 doc_type: question
 products:
     - Workspaces

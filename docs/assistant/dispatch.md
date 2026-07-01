@@ -2,7 +2,7 @@
 title: Assistant Knowledge Base — Dispatch
 tags:
     - Assistant
-slug: assistant-dispatch
+slug: dispatch
 doc_type: workflow
 products:
     - OS-CONNECT

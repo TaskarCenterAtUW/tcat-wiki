@@ -2,7 +2,7 @@
 title: Livability — Assistant Knowledge Base
 tags:
     - Assistant
-slug: index
+slug: livability-index
 doc_type: concept
 products:
     - Livability

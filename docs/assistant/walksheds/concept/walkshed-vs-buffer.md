@@ -2,7 +2,7 @@
 title: "How is a walkshed different from a buffer?"
 tags:
     - Assistant
-slug: how-is-a-walkshed-different-from-a-buffer
+slug: walkshed-vs-buffer
 doc_type: question
 products:
     - Walksheds

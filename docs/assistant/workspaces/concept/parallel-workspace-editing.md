@@ -2,7 +2,7 @@
 title: "What happens if two groups edit separate copies?"
 tags:
     - Assistant
-slug: what-happens-if-two-groups-edit-separate-copies
+slug: parallel-workspace-editing
 doc_type: question
 products:
     - Workspaces

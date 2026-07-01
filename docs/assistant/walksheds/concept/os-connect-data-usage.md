@@ -2,7 +2,7 @@
 title: "How does Walksheds use OS-CONNECT data?"
 tags:
     - Assistant
-slug: how-does-walksheds-use-os-connect-data
+slug: os-connect-data-usage
 doc_type: question
 products:
     - Walksheds

@@ -2,7 +2,7 @@
 title: Support intents (RAG routing)
 tags:
     - Assistant
-slug: support-intents
+slug: intents
 doc_type: workflow
 products:
     - OS-CONNECT

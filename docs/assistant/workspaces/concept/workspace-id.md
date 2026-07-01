@@ -2,7 +2,7 @@
 title: "What is the workspace ID used for?"
 tags:
     - Assistant
-slug: what-is-the-workspace-id-used-for
+slug: workspace-id
 doc_type: question
 products:
     - Workspaces

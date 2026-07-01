@@ -2,7 +2,7 @@
 title: "How can Walksheds help analyze access to bus stops?"
 tags:
     - Assistant
-slug: how-can-walksheds-help-analyze-access-to-bus-stops
+slug: bus-stop-access-analysis
 doc_type: question
 products:
     - Walksheds

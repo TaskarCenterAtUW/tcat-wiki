@@ -2,7 +2,7 @@
 title: "What accessibility profiles are supported?"
 tags:
     - Assistant
-slug: what-accessibility-profiles-are-supported
+slug: accessibility-profiles
 doc_type: question
 products:
     - Walksheds

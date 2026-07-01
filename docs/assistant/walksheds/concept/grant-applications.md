@@ -2,7 +2,7 @@
 title: "How can walksheds support grant applications?"
 tags:
     - Assistant
-slug: how-can-walksheds-support-grant-applications
+slug: grant-applications
 doc_type: question
 products:
     - Walksheds

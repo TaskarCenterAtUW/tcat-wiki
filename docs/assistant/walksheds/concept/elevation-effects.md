@@ -2,7 +2,7 @@
 title: "How does elevation affect walksheds?"
 tags:
     - Assistant
-slug: how-does-elevation-affect-walksheds
+slug: elevation-effects
 doc_type: question
 products:
     - Walksheds

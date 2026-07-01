@@ -2,7 +2,7 @@
 title: "What is RAPID?"
 tags:
     - Assistant
-slug: what-is-rapid
+slug: rapid
 doc_type: question
 products:
     - Workspaces

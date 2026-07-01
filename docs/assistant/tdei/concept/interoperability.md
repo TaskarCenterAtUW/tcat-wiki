@@ -2,7 +2,7 @@
 title: "How does TDEI support interoperability?"
 tags:
     - Assistant
-slug: how-does-tdei-support-interoperability
+slug: interoperability
 doc_type: question
 products:
     - TDEI
@@ -25,6 +25,8 @@ assistant_behavior:
     do_not_claim: []
 related_pages: []
 ---
+
+<!-- @format -->
 
 # How does TDEI support interoperability?
 

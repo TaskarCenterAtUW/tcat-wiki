@@ -2,7 +2,7 @@
 title: "What is the difference between downloading OSW format and OSM format?"
 tags:
     - Assistant
-slug: what-is-the-difference-between-downloading-osw-format-and-osm-format
+slug: osw-vs-osm-format
 doc_type: question
 products:
     - TDEI
@@ -26,6 +26,8 @@ assistant_behavior:
     do_not_claim: []
 related_pages: []
 ---
+
+<!-- @format -->
 
 # What is the difference between downloading OSW format and OSM format?
 

@@ -2,7 +2,7 @@
 title: "What is the dataset identifier?"
 tags:
     - Assistant
-slug: what-is-the-dataset-identifier
+slug: dataset-identifier
 doc_type: question
 products:
     - TDEI
@@ -25,6 +25,8 @@ assistant_behavior:
     do_not_claim: []
 related_pages: []
 ---
+
+<!-- @format -->
 
 # What is the dataset identifier?
 

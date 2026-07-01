@@ -2,7 +2,7 @@
 title: Rapid — Assistant Knowledge Base
 tags:
     - Assistant
-slug: index
+slug: rapid-index
 doc_type: concept
 products:
     - Rapid

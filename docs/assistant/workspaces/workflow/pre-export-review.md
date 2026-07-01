@@ -2,7 +2,7 @@
 title: "How should review happen before export?"
 tags:
     - Assistant
-slug: how-should-review-happen-before-export
+slug: pre-export-review
 doc_type: question
 products:
     - Workspaces

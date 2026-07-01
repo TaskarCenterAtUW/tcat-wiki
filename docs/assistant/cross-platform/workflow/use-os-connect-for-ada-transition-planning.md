@@ -2,7 +2,7 @@
 title: Use OS-CONNECT for ADA transition planning (workflow)
 tags:
     - Assistant
-slug: workflow-os-connect-ada-transition
+slug: use-os-connect-for-ada-transition-planning
 doc_type: workflow
 products:
     - OS-CONNECT
@@ -25,7 +25,7 @@ assistant_behavior:
         - This workflow guarantees a legally sufficient transition plan.
 related_pages:
     - assistant/concepts/ada-compliance-boundaries.md
-    - assistant/policies/ada-safety-legal-boundaries.md
+    - assistant/cross-platform/index.md
     - os-connect/qa-qc/user-manual/index.md
 ---
 

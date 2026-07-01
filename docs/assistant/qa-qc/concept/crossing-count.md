@@ -2,7 +2,7 @@
 title: 'What does "crossing count" mean?'
 tags:
     - Assistant
-slug: what-does-crossing-count-mean
+slug: crossing-count
 doc_type: question
 products:
     - OS-CONNECT

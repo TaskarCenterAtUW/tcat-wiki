@@ -2,7 +2,7 @@
 title: "What happens after export to TDEI?"
 tags:
     - Assistant
-slug: what-happens-after-export-to-tdei
+slug: post-export-behavior
 doc_type: question
 products:
     - Workspaces

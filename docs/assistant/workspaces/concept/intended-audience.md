@@ -2,7 +2,7 @@
 title: "Who is Workspaces intended for?"
 tags:
     - Assistant
-slug: who-is-workspaces-intended-for
+slug: intended-audience
 doc_type: question
 products:
     - Workspaces

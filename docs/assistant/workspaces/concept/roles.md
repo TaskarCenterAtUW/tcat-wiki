@@ -2,7 +2,7 @@
 title: "What roles exist in Workspaces?"
 tags:
     - Assistant
-slug: what-roles-exist-in-workspaces
+slug: roles
 doc_type: question
 products:
     - Workspaces

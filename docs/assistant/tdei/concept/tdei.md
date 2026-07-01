@@ -2,7 +2,7 @@
 title: "What is TDEI?"
 tags:
     - Assistant
-slug: what-is-tdei
+slug: tdei
 doc_type: question
 products:
     - TDEI
@@ -25,6 +25,8 @@ assistant_behavior:
     do_not_claim: []
 related_pages: []
 ---
+
+<!-- @format -->
 
 # What is TDEI?
 

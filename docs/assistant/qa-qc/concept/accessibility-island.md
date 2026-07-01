@@ -2,7 +2,7 @@
 title: "What is an accessibility island?"
 tags:
     - Assistant
-slug: what-is-an-accessibility-island
+slug: accessibility-island
 doc_type: question
 products:
     - OS-CONNECT

@@ -2,7 +2,7 @@
 title: OpenSidewalks — Assistant Knowledge Base
 tags:
     - Assistant
-slug: index
+slug: opensidewalks-index
 doc_type: concept
 products:
     - OpenSidewalks

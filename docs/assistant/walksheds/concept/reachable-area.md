@@ -2,7 +2,7 @@
 title: 'What does "reachable area" mean?'
 tags:
     - Assistant
-slug: what-does-reachable-area-mean
+slug: reachable-area
 doc_type: question
 products:
     - Walksheds

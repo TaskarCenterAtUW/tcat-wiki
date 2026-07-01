@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""build-glossary.py - Generate assistant knowledge base glossary from abbreviations.md.
+"""akb-build-glossary.py - Generate assistant knowledge base glossary from abbreviations.md.
 
 Input:  includes/abbreviations.md  (Markdown abbreviations plugin syntax)
 Output: docs/assistant/cross-platform/concept/abbreviations.md

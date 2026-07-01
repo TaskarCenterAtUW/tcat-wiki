@@ -2,7 +2,7 @@
 title: "When should a city use Workspaces instead of GIS software?"
 tags:
     - Assistant
-slug: when-should-a-city-use-workspaces-instead-of-gis-software
+slug: workspaces-vs-gis-decision
 doc_type: question
 products:
     - Workspaces

@@ -2,7 +2,7 @@
 title: "Who can review edits?"
 tags:
     - Assistant
-slug: who-can-review-edits
+slug: edit-reviewers
 doc_type: question
 products:
     - Workspaces

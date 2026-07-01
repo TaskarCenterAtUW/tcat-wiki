@@ -2,7 +2,7 @@
 title: "How do technical GIS staff interact with Workspaces?"
 tags:
     - Assistant
-slug: how-do-technical-gis-staff-interact-with-workspaces
+slug: gis-staff-role
 doc_type: question
 products:
     - Workspaces

@@ -2,7 +2,7 @@
 title: "How can walksheds identify underserved areas?"
 tags:
     - Assistant
-slug: how-can-walksheds-identify-underserved-areas
+slug: underserved-area-identification
 doc_type: question
 products:
     - Walksheds

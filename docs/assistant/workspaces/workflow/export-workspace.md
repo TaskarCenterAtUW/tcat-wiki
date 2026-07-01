@@ -2,7 +2,7 @@
 title: "How do I export a workspace?"
 tags:
     - Assistant
-slug: how-do-i-export-a-workspace
+slug: export-workspace
 doc_type: question
 products:
     - Workspaces

@@ -2,7 +2,7 @@
 title: Use Walksheds for Safe Routes to School
 tags:
     - Assistant
-slug: workflow-walksheds-srts
+slug: use-walksheds-for-safe-routes-to-school
 doc_type: workflow
 products:
     - Walksheds

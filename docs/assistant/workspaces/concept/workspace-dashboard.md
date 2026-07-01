@@ -2,7 +2,7 @@
 title: "What does the workspace dashboard show?"
 tags:
     - Assistant
-slug: what-does-the-workspace-dashboard-show
+slug: workspace-dashboard
 doc_type: question
 products:
     - Workspaces

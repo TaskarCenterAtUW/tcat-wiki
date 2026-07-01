@@ -2,7 +2,7 @@
 title: "Why is Workspaces compatible with OSM tools?"
 tags:
     - Assistant
-slug: why-is-workspaces-compatible-with-osm-tools
+slug: osm-tool-compatibility-rationale
 doc_type: question
 products:
     - Workspaces

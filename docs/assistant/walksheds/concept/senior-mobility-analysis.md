@@ -2,7 +2,7 @@
 title: "How can walksheds support senior mobility analysis?"
 tags:
     - Assistant
-slug: how-can-walksheds-support-senior-mobility-analysis
+slug: senior-mobility-analysis
 doc_type: question
 products:
     - Walksheds

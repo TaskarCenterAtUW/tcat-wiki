@@ -2,7 +2,7 @@
 title: "What is Workspaces?"
 tags:
     - Assistant
-slug: what-is-workspaces
+slug: workspaces
 doc_type: question
 products:
     - Workspaces

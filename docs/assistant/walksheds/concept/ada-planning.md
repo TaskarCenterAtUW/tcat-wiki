@@ -2,7 +2,7 @@
 title: "How can walksheds support ADA planning?"
 tags:
     - Assistant
-slug: how-can-walksheds-support-ada-planning
+slug: ada-planning
 doc_type: question
 products:
     - Walksheds

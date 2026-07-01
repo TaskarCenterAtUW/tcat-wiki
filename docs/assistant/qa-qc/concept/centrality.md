@@ -2,7 +2,7 @@
 title: 'What does "centrality" mean?'
 tags:
     - Assistant
-slug: what-does-centrality-mean
+slug: centrality
 doc_type: question
 products:
     - OS-CONNECT

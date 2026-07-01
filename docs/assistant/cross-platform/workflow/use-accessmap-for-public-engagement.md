@@ -2,7 +2,7 @@
 title: Use AccessMap for public engagement
 tags:
     - Assistant
-slug: workflow-accessmap-engagement
+slug: use-accessmap-for-public-engagement
 doc_type: workflow
 products:
     - AccessMap

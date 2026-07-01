@@ -2,7 +2,7 @@
 title: "What is the difference between a pedestrian walkshed and a wheelchair-user walkshed?"
 tags:
     - Assistant
-slug: what-is-the-difference-between-a-pedestrian-walkshed-and-a-wheelchair-user-walkshed
+slug: pedestrian-vs-wheelchair-walkshed
 doc_type: question
 products:
     - Walksheds

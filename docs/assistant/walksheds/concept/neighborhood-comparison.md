@@ -2,7 +2,7 @@
 title: "How can agencies compare neighborhoods?"
 tags:
     - Assistant
-slug: how-can-agencies-compare-neighborhoods
+slug: neighborhood-comparison
 doc_type: question
 products:
     - Walksheds

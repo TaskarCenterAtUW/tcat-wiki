@@ -2,7 +2,7 @@
 title: "What happens during export?"
 tags:
     - Assistant
-slug: what-happens-during-export
+slug: export-process
 doc_type: question
 products:
     - Workspaces

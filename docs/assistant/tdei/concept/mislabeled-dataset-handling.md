@@ -2,7 +2,7 @@
 title: "What should I do if a dataset appears mislabeled or downloads the wrong file?"
 tags:
     - Assistant
-slug: what-should-i-do-if-a-dataset-appears-mislabeled-or-downloads-the-wrong-file
+slug: mislabeled-dataset-handling
 doc_type: question
 products:
     - TDEI
@@ -27,6 +27,8 @@ assistant_behavior:
     do_not_claim: []
 related_pages: []
 ---
+
+<!-- @format -->
 
 # What should I do if a dataset appears mislabeled or downloads the wrong file?
 

@@ -2,7 +2,7 @@
 title: "What is the benefit of using existing OSM editors?"
 tags:
     - Assistant
-slug: what-is-the-benefit-of-using-existing-osm-editors
+slug: osm-editor-benefits
 doc_type: question
 products:
     - Workspaces

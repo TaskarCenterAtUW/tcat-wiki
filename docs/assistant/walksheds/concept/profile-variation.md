@@ -2,7 +2,7 @@
 title: "Why do different profiles produce different walksheds?"
 tags:
     - Assistant
-slug: why-do-different-profiles-produce-different-walksheds
+slug: profile-variation
 doc_type: question
 products:
     - OS-CONNECT

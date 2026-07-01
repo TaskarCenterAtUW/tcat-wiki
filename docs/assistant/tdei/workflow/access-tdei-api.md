@@ -2,7 +2,7 @@
 title: "How do I access the TDEI API?"
 tags:
     - Assistant
-slug: how-do-i-access-the-tdei-api
+slug: access-tdei-api
 doc_type: question
 products:
     - TDEI
