@@ -1,11 +1,11 @@
 ---
-title: Livability — Assistant Knowledge Base
+title: LivAbility — Assistant Knowledge Base
 tags:
     - Assistant
 slug: livability-index
-doc_type: concept
+doc_type: policy
 products:
-    - Livability
+    - LivAbility
 audiences:
     - planner
     - jurisdiction
@@ -13,11 +13,12 @@ audiences:
     - public
 topics:
     - tdei-ecosystem
-risk_level: low
-authority_level: explanatory
+    - accessibility-analysis
+risk_level: high
+authority_level: draft
 review_status: stub
-last_reviewed: 2026-06-29
-retrieval_priority: medium
+last_reviewed: 2026-07-02
+retrieval_priority: high
 assistant_behavior:
     allow_inference: false
     requires_citation: true

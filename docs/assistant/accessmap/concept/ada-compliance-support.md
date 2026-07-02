@@ -15,7 +15,7 @@ topics:
     - ada
     - compliance
 risk_level: high
-authority_level: explanatory
+authority_level: draft
 review_status: stub
 last_reviewed: ""
 retrieval_priority: high

@@ -1,9 +1,9 @@
 ---
-title: AVIV ScoutRoute — Assistant Knowledge Base
+title: "How do I answer a quest in AVIV ScoutRoute?"
 tags:
     - Assistant
-slug: aviv-scoutroute-index
-doc_type: policy
+slug: answer-quest
+doc_type: workflow
 products:
     - AVIV ScoutRoute
 audiences:
@@ -12,26 +12,23 @@ audiences:
     - advocate
     - public
 topics:
-    - tdei-ecosystem
     - field-data-collection
-risk_level: high
+risk_level: low
 authority_level: draft
 review_status: stub
-last_reviewed: 2026-07-02
-retrieval_priority: high
+last_reviewed: ""
+retrieval_priority: medium
 assistant_behavior:
     allow_inference: false
     requires_citation: true
-    abstain_if_missing_context: false
+    abstain_if_missing_context: true
     do_not_claim: []
-related_pages:
-    - assistant/index.md
-    - assistant/dispatch.md
+related_pages: []
 ---
 
 <!-- @format -->
 
-# AVIV ScoutRoute — Assistant Knowledge Base
+# How do I record a route in AVIV ScoutRoute?
 
 ## Short Answer
 

@@ -1,37 +1,34 @@
 ---
-title: AVIV ScoutRoute — Assistant Knowledge Base
+title: "What devices are compatible with iOSPointMapper?"
 tags:
     - Assistant
-slug: aviv-scoutroute-index
-doc_type: policy
+slug: device-compatibility
+doc_type: concept
 products:
-    - AVIV ScoutRoute
+    - iOSPointMapper
 audiences:
     - planner
     - jurisdiction
     - advocate
     - public
 topics:
-    - tdei-ecosystem
-    - field-data-collection
-risk_level: high
+    - device-compatibility
+risk_level: low
 authority_level: draft
 review_status: stub
 last_reviewed: 2026-07-02
-retrieval_priority: high
+retrieval_priority: medium
 assistant_behavior:
     allow_inference: false
     requires_citation: true
-    abstain_if_missing_context: false
+    abstain_if_missing_context: true
     do_not_claim: []
-related_pages:
-    - assistant/index.md
-    - assistant/dispatch.md
+related_pages: []
 ---
 
 <!-- @format -->
 
-# AVIV ScoutRoute — Assistant Knowledge Base
+# What devices are compatible with iOSPointMapper?
 
 ## Short Answer
 

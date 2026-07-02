@@ -1,9 +1,9 @@
 ---
-title: Support Q&A — Assistant Knowledge Base
+title: Support — Assistant Knowledge Base
 tags:
     - Assistant
 slug: support-index
-doc_type: concept
+doc_type: policy
 products:
     - OS-CONNECT
     - AccessMap
@@ -18,7 +18,7 @@ audiences:
 topics:
     - assistant-layer
     - tdei-ecosystem
-risk_level: low
+risk_level: high
 authority_level: explanatory
 review_status: draft
 last_reviewed: 2026-06-09

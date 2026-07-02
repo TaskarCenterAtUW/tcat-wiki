@@ -3,7 +3,7 @@ title: Workspaces — Assistant Knowledge Base
 tags:
     - Assistant
 slug: workspaces-index
-doc_type: concept
+doc_type: policy
 products:
     - Workspaces
 audiences:

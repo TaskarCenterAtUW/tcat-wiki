@@ -1,37 +1,34 @@
 ---
-title: AVIV ScoutRoute — Assistant Knowledge Base
+title: "How do I select a mobility profile in LivAbility?"
 tags:
     - Assistant
-slug: aviv-scoutroute-index
-doc_type: policy
+slug: select-mobility-profile
+doc_type: workflow
 products:
-    - AVIV ScoutRoute
+    - Livability
 audiences:
     - planner
     - jurisdiction
     - advocate
     - public
 topics:
-    - tdei-ecosystem
-    - field-data-collection
-risk_level: high
+    - mobility-profiles
+risk_level: medium
 authority_level: draft
 review_status: stub
-last_reviewed: 2026-07-02
-retrieval_priority: high
+last_reviewed: ""
+retrieval_priority: medium
 assistant_behavior:
     allow_inference: false
     requires_citation: true
-    abstain_if_missing_context: false
+    abstain_if_missing_context: true
     do_not_claim: []
-related_pages:
-    - assistant/index.md
-    - assistant/dispatch.md
+related_pages: []
 ---
 
 <!-- @format -->
 
-# AVIV ScoutRoute — Assistant Knowledge Base
+# How do I select a mobility profile in LivAbility?
 
 ## Short Answer
 

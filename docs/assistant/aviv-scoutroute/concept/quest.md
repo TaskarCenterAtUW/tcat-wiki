@@ -1,9 +1,9 @@
 ---
-title: AVIV ScoutRoute — Assistant Knowledge Base
+title: "What is a quest in AVIV ScoutRoute?"
 tags:
     - Assistant
-slug: aviv-scoutroute-index
-doc_type: policy
+slug: quest
+doc_type: concept
 products:
     - AVIV ScoutRoute
 audiences:
@@ -12,26 +12,24 @@ audiences:
     - advocate
     - public
 topics:
-    - tdei-ecosystem
+    - quests
     - field-data-collection
-risk_level: high
+risk_level: low
 authority_level: draft
 review_status: stub
 last_reviewed: 2026-07-02
-retrieval_priority: high
+retrieval_priority: medium
 assistant_behavior:
     allow_inference: false
     requires_citation: true
-    abstain_if_missing_context: false
+    abstain_if_missing_context: true
     do_not_claim: []
-related_pages:
-    - assistant/index.md
-    - assistant/dispatch.md
+related_pages: []
 ---
 
 <!-- @format -->
 
-# AVIV ScoutRoute — Assistant Knowledge Base
+# What is a quest in AVIV ScoutRoute?
 
 ## Short Answer
 

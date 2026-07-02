@@ -14,10 +14,10 @@ audiences:
 topics:
     - routing
 risk_level: medium
-authority_level: explanatory
+authority_level: draft
 review_status: stub
-last_reviewed: ""
-retrieval_priority: high
+last_reviewed: 2026-07-02
+retrieval_priority: medium
 assistant_behavior:
     allow_inference: false
     requires_citation: true

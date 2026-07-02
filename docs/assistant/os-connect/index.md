@@ -3,7 +3,7 @@ title: OS-CONNECT — Assistant Knowledge Base
 tags:
     - Assistant
 slug: os-connect-index
-doc_type: concept
+doc_type: policy
 products:
     - OS-CONNECT
 audiences:
@@ -16,7 +16,7 @@ topics:
     - tdei-ecosystem
     - dataset-lineage
     - accessibility-data
-risk_level: low
+risk_level: high
 authority_level: explanatory
 review_status: draft
 last_reviewed: 2026-06-09

@@ -14,9 +14,9 @@ audiences:
 topics:
     - metrics
 risk_level: medium
-authority_level: explanatory
+authority_level: draft
 review_status: stub
-last_reviewed: ""
+last_reviewed: 2026-07-02
 retrieval_priority: high
 assistant_behavior:
     allow_inference: false
