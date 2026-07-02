@@ -267,3 +267,4 @@
 *[WWWC]: World Wide Web Consortium
 *[XEE]: XML External Entity
 *[XML]: Extensible Markup Language
+*[XR]: Extended Reality
