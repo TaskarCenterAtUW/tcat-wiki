@@ -111,6 +111,8 @@ Top-level sections:
 
 For `do_not_claim`, each entry reads in context as a complete false statement. Example: `do_not_claim` (that) `"Completeness is the same as ADA compliance"` (not `do_not_claim` (that) `"Completeness is not the same as ADA compliance"`). Used for evaluation guardrails and prompt grounding.
 
+Every entry should correspond to a boundary stated or implied in the page's `## What This Does Not Mean` section — `do_not_claim` is the machine-readable distillation of that section, not a substitute for it. Used for evaluation guardrails and prompt grounding.
+
 ## Required Markdown sections (in order)
 
 Body content after frontmatter MUST use this heading scaffold so chunks stay structurally aligned for splitting or section-aware retrieval:
@@ -119,7 +121,7 @@ Body content after frontmatter MUST use this heading scaffold so chunks stay str
 2. `## Short Answer` — one to three short paragraphs; optimized for direct assistant replies.
 3. `## Significance` — operational, institutional, or public-education importance (**do not** use "Why This Matters" as the heading text).
 4. `## What This Means` — practical definition or resolution of the question.
-5. `## What This Does Not Mean` — boundaries, non-claims, common misinterpretations.
+5. `## What This Does Not Mean` — boundaries, non-claims, and common misinterpretations, written as human-readable prose with explanation. The main boundaries here should also appear as entries in the `do_not_claim` frontmatter — that field is the machine-readable distillation of this section.
 6. `## How To Use This` — planners, jurisdictions, advocates, public users, or integrators.
 7. `## Example` — one concrete scenario.
 8. `## Assistant Guidance` — explicit behavior for chatbots: caveats, abstention, citation needs.
