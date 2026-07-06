@@ -39,7 +39,7 @@ Consequences for authors:
   `stub`, a `draft`, or anything under `support/`). Such links are treated as
   authoring errors and fail the build.
 - `dispatch.md` is a generated registry of the agent layer, produced by
-  `utilities/generate-assistant-dispatch.py`. Do not manually edit it.
+  `utilities/akb-generate-dispatch.py`. Do not manually edit it.
 
 ## YAML frontmatter (required keys)
 
@@ -184,5 +184,5 @@ Other products may use additional topic slugs (for example `gtfs-pathways`, `com
 ## Related
 
 - [Assistant Knowledge Base overview](index.md)
-- Dispatch registry — generated agent-layer artifact served at `https://taskarcenteratuw.github.io/tcat-wiki/assistant/dispatch.md` (produced by `utilities/generate-assistant-dispatch.py`; not hand-authored).
+- Dispatch registry — generated agent-layer artifact served at `https://taskarcenteratuw.github.io/tcat-wiki/assistant/dispatch.md` (produced by `utilities/akb-generate-dispatch.py`; not hand-authored).
 - [Intents](intents.md) - TPatterns of user queries that map to specific knowledge-base pages.

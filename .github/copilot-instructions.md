@@ -105,6 +105,18 @@ You'll know the venv is activated when you see `(.venv)` at the beginning of you
 
 ### Build & Preview Local Site
 
+The site publishes **two parallel layers** at the same URL space: a **human layer**
+(Zensical-built HTML — only `review_status: reviewed` assistant pages outside
+`assistant/support/` are included) and an **agent layer** (every assistant page,
+all statuses, served as raw `.md` at the same URL). See
+`docs/assistant/schema.md` for the full contract and `utilities/build-site.py`
+for the orchestrator that produces both layers.
+
+**Do not run `zensical serve` directly against the committed `zensical.toml`** —
+it reads `docs_dir = docs`, which shows every assistant stub/draft page that
+never actually deploys. Always use the local serve wrapper instead, which
+builds the same `human-docs/` layer that gets deployed:
+
 ```powershell
 # First time only: create and activate virtual environment
 python -m venv .venv
@@ -113,14 +125,51 @@ python -m venv .venv
 # Install dependencies from requirements.txt
 pip install -r requirements.txt
 
-# Run the local development server (venv must be activated)
-zensical serve  # http://localhost:8000
+# Prepare the two-layer build and serve a deploy-parity local preview (venv must be activated)
+.\utilities\serve.ps1  # http://localhost:8000
 
 # Deactivate when done
 deactivate
 ```
 
-**Note**: The `.venv/` directory is excluded from git and should not be committed.
+**Note**: The `.venv/` directory, plus the generated `human-docs/`, `agent-docs/`,
+and `zensical.build.toml` build artifacts, are excluded from git and should not
+be committed.
+
+**Important**: The local preview does not live-reload across the human/agent
+split — editing a file under `docs/` will not update the running preview. Stop
+the server (Ctrl+C) and re-run `.\utilities\serve.ps1` to refresh.
+
+#### Two-layer build orchestrator (`utilities/build-site.py`)
+
+```powershell
+# Ensure venv is activated first!
+.\.venv\Scripts\Activate.ps1
+
+# Prep only: produces human-docs/, agent-docs/, zensical.build.toml (no build)
+python utilities/build-site.py
+
+# Prep, then `zensical build -c`, then overlay agent-docs .md files onto site/
+python utilities/build-site.py --build
+
+# Prep, then `zensical serve -f zensical.build.toml` (equivalent to utilities/serve.ps1)
+python utilities/build-site.py --serve
+```
+
+The orchestrator: copies `docs/` into `human-docs/` and `agent-docs/`; deletes
+`assistant/support/` and non-`reviewed` assistant pages from `human-docs/`;
+**fails the build** (non-zero exit, listing offending pages) if a reviewed
+human-docs page links to a page that was filtered out — this is treated as an
+authoring error, not something to silently rewrite; regenerates
+`assistant/dispatch.md` inside `agent-docs/` via
+`utilities/akb-generate-dispatch.py`; strips agent-irrelevant Markdown syntax
+(images, the `<!-- @format -->` pragma, `<img-comparison-slider>` blocks) from
+`agent-docs/`; and writes `zensical.build.toml` (a copy of `zensical.toml` with
+`docs_dir` pointed at `human-docs/`). The committed `zensical.toml` is never
+mutated and always keeps `docs_dir = "docs"` for day-to-day authoring.
+
+CI (`.github/workflows/build-and-deploy.yml`) runs `python utilities/build-site.py --build`
+to produce the deployed `site/`.
 
 ### Regenerate Navigation After Adding Files
 
@@ -280,7 +329,7 @@ cd utilities
 
 **Note**: `-SkipLinkCheck` and `-NoCache` are mutually exclusive.
 
-**Why**: This script ensures all utilities are tested before running, then executes them in the correct order: `generate-guides-lists.ps1` → `generate-nav.ps1` → `check-links.ps1`. It's the recommended way to update the entire documentation structure.
+**Why**: This script ensures all utilities are tested before running (Pester suites, then the Python pytest suites for `akb-generate-dispatch.py` and `build-site.py`), then executes them in the correct order: `akb-build-glossary.py` → `generate-guides-lists.ps1` → `generate-nav.ps1` → `check-links.ps1` → `build-site.py` (prep only). It's the recommended way to update the entire documentation structure and validate deploy parity locally.
 
 ### Run Pester Tests
 
@@ -299,6 +348,17 @@ Invoke-Pester .\check-links.Tests.ps1 -ExcludeTag "Network" -Output Minimal # Sk
 ```
 
 **Note**: Pester v5+ is required. Install with: `Install-Module -Name Pester -Force -SkipPublisherCheck`
+
+### Run Python Tests
+
+The Python utilities (`akb-generate-dispatch.py`, `build-site.py`) have pytest suites:
+
+```powershell
+# Ensure venv is activated first!
+.\.venv\Scripts\Activate.ps1
+
+python -m pytest utilities -q
+```
 
 ## Project-Specific Conventions
 
@@ -493,8 +553,14 @@ Refer to the official Zensical documentation, which is hosted online at https://
 
 ### Key Files for Reference
 
-- `zensical.toml`: Main config; nav section auto-updated by scripts
-- `utilities/run-utils.ps1`: Master utility runner - tests and runs all utilities in sequence
+- `zensical.toml`: Main config; nav section auto-updated by scripts. `docs_dir` always stays `"docs"` here — do not edit it to point elsewhere.
+- `zensical.build.toml`: **Generated** (gitignored) — a copy of `zensical.toml` with `docs_dir = "human-docs"`, produced by `utilities/build-site.py`
+- `utilities/build-site.py`: Two-layer build orchestrator — copy/filter/dispatch/strip/config/build/overlay; see "Build & Preview Local Site" above
+- `utilities/test_build_site.py`: Pytest suite for the build orchestrator
+- `utilities/akb-generate-dispatch.py`: Generates `docs/assistant/dispatch.md` (and, via the orchestrator, `agent-docs/assistant/dispatch.md`) from the assistant knowledge-base file tree; **never hand-edit `dispatch.md`**
+- `utilities/test_akb_generate_dispatch.py`: Pytest suite for the dispatch generator
+- `utilities/serve.ps1`: Local serve wrapper — runs the two-layer build prep then `zensical serve -f zensical.build.toml` for a deploy-parity preview
+- `utilities/run-utils.ps1`: Master utility runner - tests and runs all utilities in sequence (Pester + pytest, then the generator/link-check/build-prep pipeline)
 - `utilities/run-utils.Tests.ps1`: Pester tests for utility runner
 - `utilities/generate-guides-lists.ps1`: Creates guide index markdown files
 - `utilities/generate-guides-lists.Tests.ps1`: Pester tests for guides lists generator
@@ -502,6 +568,7 @@ Refer to the official Zensical documentation, which is hosted online at https://
 - `utilities/generate-nav.Tests.ps1`: Pester tests for nav generator
 - `utilities/check-links.ps1`: PowerShell validation of links (not standard CI integration)
 - `utilities/check-links.Tests.ps1`: Pester tests for link checker
+- `utilities/akb-build-glossary.py`: Generates the assistant abbreviations glossary from `includes/abbreviations.md`
 - `utilities/process-screenshot.py`: Generates themed light/dark screenshot variants with borders, shadows, and maximum lossless PNG compression
 - `utilities/generate-event-report.py`: Orchestrator — reads frontmatter, runs stats generators, fills templates, writes report
 - `utilities/event-reports/generate-tm-event-stats.py`: TM stats generator — fetches Tasking Manager/Overpass statistics, writes JSON
@@ -520,3 +587,6 @@ Refer to the official Zensical documentation, which is hosted online at https://
 - `templates/content/subpage.md`: Golden sample for tutorial and user manual subpages
 - `/includes/abbreviations.md`: Global acronym definitions
 - `/resources/stylesheets/extra.css`: Theming
+- `docs/assistant/schema.md`: Authoring contract for `docs/assistant/` pages, including the human-layer vs. agent-layer build split
+- `docs/llms.txt`: Site overview for LLM consumers; documents the agent-layer `.md` convention
+- `overrides/main.html`: Site-wide template override; renders the `<link rel="alternate" type="text/markdown">` agent-redirect hint in `extrahead`

@@ -35,7 +35,7 @@ topics:
 risk_level: low
 authority_level: official
 review_status: reviewed
-last_reviewed: 2026-07-01
+last_reviewed: 2026-07-06
 retrieval_priority: high
 assistant_behavior:
     allow_inference: false
@@ -54,7 +54,7 @@ related_pages: []
 
 ## Short Answer
 
-This page lists all 269 abbreviations, acronyms, and initialisms used across TCAT Wiki documentation and TCAT platforms and tools.
+This page lists all 270 abbreviations, acronyms, and initialisms used across TCAT Wiki documentation and TCAT platforms and tools.
 
 ## Significance
 
@@ -335,6 +335,7 @@ The table below maps each abbreviated form to its full expansion. Entries are so
 | WWWC | World Wide Web Consortium |
 | XEE | XML External Entity |
 | XML | Extensible Markup Language |
+| XR | Extended Reality |
 
 ## What This Does Not Mean
 
@@ -356,4 +357,4 @@ When a user asks what an abbreviation means or an acronym stands for, retrieve t
 
 ## Related Concepts
 
-- [Dispatch](../../dispatch.md)
+- Dispatch registry — generated agent-layer artifact served at `https://taskarcenteratuw.github.io/tcat-wiki/assistant/dispatch.md` (not linked here directly; `dispatch.md` is agent-layer only and is not part of the human-facing build).
