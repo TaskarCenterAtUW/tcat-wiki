@@ -3,7 +3,7 @@ title: "How are basemaps loaded?"
 tags:
     - Assistant
 slug: basemap-loading
-doc_type: question
+doc_type: concept
 products:
     - Workspaces
 audiences:

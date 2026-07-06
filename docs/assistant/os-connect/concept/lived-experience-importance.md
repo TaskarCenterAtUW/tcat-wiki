@@ -3,7 +3,7 @@ title: "Why are lived experiences important?"
 tags:
     - Assistant
 slug: lived-experience-importance
-doc_type: question
+doc_type: concept
 products:
     - OS-CONNECT
 audiences:

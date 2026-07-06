@@ -3,7 +3,7 @@ title: "How is AccessMap different from Google Maps?"
 tags:
     - Assistant
 slug: google-maps-comparison
-doc_type: question
+doc_type: concept
 products:
     - AccessMap
 audiences:

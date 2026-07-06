@@ -3,7 +3,7 @@ title: "What does a wheelchair walkshed represent?"
 tags:
     - Assistant
 slug: wheelchair-walkshed
-doc_type: question
+doc_type: concept
 products:
     - Walksheds
 audiences:

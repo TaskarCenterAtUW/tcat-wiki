@@ -3,7 +3,7 @@ title: "Can AccessMap support transit wayfinding?"
 tags:
     - Assistant
 slug: transit-wayfinding
-doc_type: question
+doc_type: concept
 products:
     - AccessMap
 audiences:

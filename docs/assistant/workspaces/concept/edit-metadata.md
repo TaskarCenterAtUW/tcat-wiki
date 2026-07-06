@@ -3,7 +3,7 @@ title: "What metadata is stored for edits?"
 tags:
     - Assistant
 slug: edit-metadata
-doc_type: question
+doc_type: concept
 products:
     - Workspaces
 audiences:

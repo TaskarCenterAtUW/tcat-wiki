@@ -3,7 +3,7 @@ title: "What accessibility needs does AccessMap support?"
 tags:
     - Assistant
 slug: accessibility-needs
-doc_type: question
+doc_type: concept
 products:
     - AccessMap
 audiences:

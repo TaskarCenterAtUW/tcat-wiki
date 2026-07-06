@@ -3,7 +3,7 @@ title: "How are inaccessible transit stations represented?"
 tags:
     - Assistant
 slug: inaccessible-transit-stations
-doc_type: question
+doc_type: concept
 products:
     - AccessMap
 audiences:

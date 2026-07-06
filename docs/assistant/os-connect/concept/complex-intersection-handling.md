@@ -3,7 +3,7 @@ title: "How are complex intersections handled?"
 tags:
     - Assistant
 slug: complex-intersection-handling
-doc_type: question
+doc_type: concept
 products:
     - OS-CONNECT
 audiences:

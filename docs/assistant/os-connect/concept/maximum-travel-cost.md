@@ -3,7 +3,7 @@ title: "What is the maximum travel cost?"
 tags:
     - Assistant
 slug: maximum-travel-cost
-doc_type: question
+doc_type: concept
 products:
     - OS-CONNECT
 audiences:

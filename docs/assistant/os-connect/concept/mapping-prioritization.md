@@ -3,7 +3,7 @@ title: "How should communities decide which areas to map first?"
 tags:
     - Assistant
 slug: mapping-prioritization
-doc_type: question
+doc_type: concept
 products:
     - OS-CONNECT
 audiences:

@@ -3,7 +3,7 @@ title: "Who owns OS-CONNECT data?"
 tags:
     - Assistant
 slug: data-ownership
-doc_type: question
+doc_type: concept
 products:
     - OS-CONNECT
 audiences:

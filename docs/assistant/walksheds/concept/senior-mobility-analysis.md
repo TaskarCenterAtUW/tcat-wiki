@@ -3,7 +3,7 @@ title: "How can walksheds support senior mobility analysis?"
 tags:
     - Assistant
 slug: senior-mobility-analysis
-doc_type: question
+doc_type: concept
 products:
     - Walksheds
 audiences:

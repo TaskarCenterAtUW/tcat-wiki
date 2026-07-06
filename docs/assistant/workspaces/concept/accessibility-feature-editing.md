@@ -3,7 +3,7 @@ title: "How are accessibility features edited?"
 tags:
     - Assistant
 slug: accessibility-feature-editing
-doc_type: question
+doc_type: concept
 products:
     - Workspaces
 audiences:

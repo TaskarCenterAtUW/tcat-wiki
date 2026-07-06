@@ -3,7 +3,7 @@ title: "Why do different profiles produce different walksheds?"
 tags:
     - Assistant
 slug: profile-variation
-doc_type: question
+doc_type: concept
 products:
     - OS-CONNECT
 audiences:

@@ -3,7 +3,7 @@ title: "What are QR code invites used for?"
 tags:
     - Assistant
 slug: qr-code-invites
-doc_type: question
+doc_type: concept
 products:
     - Workspaces
 audiences:

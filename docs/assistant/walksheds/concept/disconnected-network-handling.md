@@ -3,7 +3,7 @@ title: "How are disconnected networks handled?"
 tags:
     - Assistant
 slug: disconnected-network-handling
-doc_type: question
+doc_type: concept
 products:
     - Walksheds
 audiences:

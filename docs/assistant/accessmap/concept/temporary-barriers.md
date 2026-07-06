@@ -3,7 +3,7 @@ title: "Can temporary barriers be represented?"
 tags:
     - Assistant
 slug: temporary-barriers
-doc_type: question
+doc_type: concept
 products:
     - AccessMap
 audiences:

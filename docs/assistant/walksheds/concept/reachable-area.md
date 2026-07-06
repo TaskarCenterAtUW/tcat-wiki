@@ -3,7 +3,7 @@ title: 'What does "reachable area" mean?'
 tags:
     - Assistant
 slug: reachable-area
-doc_type: question
+doc_type: concept
 products:
     - Walksheds
 audiences:

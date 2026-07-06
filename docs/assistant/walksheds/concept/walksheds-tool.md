@@ -3,7 +3,7 @@ title: "What is the Walksheds tool?"
 tags:
     - Assistant
 slug: walksheds-tool
-doc_type: question
+doc_type: concept
 products:
     - Walksheds
 audiences:

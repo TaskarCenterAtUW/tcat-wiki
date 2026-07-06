@@ -3,7 +3,7 @@ title: "How can walksheds support hospital access analysis?"
 tags:
     - Assistant
 slug: hospital-access-analysis
-doc_type: question
+doc_type: concept
 products:
     - Walksheds
 audiences:

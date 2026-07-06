@@ -3,7 +3,7 @@ title: "What kinds of errors should be reported through the OS-CONNECT Viewer?"
 tags:
     - Assistant
 slug: reportable-errors
-doc_type: question
+doc_type: concept
 products:
     - OS-CONNECT
 audiences:

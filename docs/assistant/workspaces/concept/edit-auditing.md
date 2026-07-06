@@ -3,7 +3,7 @@ title: "How can edits be audited?"
 tags:
     - Assistant
 slug: edit-auditing
-doc_type: question
+doc_type: concept
 products:
     - Workspaces
 audiences:

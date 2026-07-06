@@ -3,7 +3,7 @@ title: "How are walksheds calculated?"
 tags:
     - Assistant
 slug: walkshed-calculation
-doc_type: question
+doc_type: concept
 products:
     - Walksheds
 audiences:

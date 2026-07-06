@@ -3,7 +3,7 @@ title: "How can Walksheds help analyze access to bus stops?"
 tags:
     - Assistant
 slug: bus-stop-access-analysis
-doc_type: question
+doc_type: concept
 products:
     - Walksheds
 audiences:

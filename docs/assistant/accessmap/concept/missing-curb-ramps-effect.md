@@ -3,7 +3,7 @@ title: "How do missing curb ramps affect route selection?"
 tags:
     - Assistant
 slug: missing-curb-ramps-effect
-doc_type: question
+doc_type: concept
 products:
     - AccessMap
 audiences:

@@ -3,7 +3,7 @@ title: "What is the dataset identifier?"
 tags:
     - Assistant
 slug: dataset-identifier
-doc_type: question
+doc_type: concept
 products:
     - TDEI
 audiences:

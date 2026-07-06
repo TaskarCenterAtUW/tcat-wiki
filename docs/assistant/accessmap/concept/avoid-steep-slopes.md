@@ -3,7 +3,7 @@ title: 'What does "avoid steep slopes" mean?'
 tags:
     - Assistant
 slug: avoid-steep-slopes
-doc_type: question
+doc_type: concept
 products:
     - AccessMap
 audiences:

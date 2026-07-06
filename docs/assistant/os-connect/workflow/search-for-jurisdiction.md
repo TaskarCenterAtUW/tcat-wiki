@@ -3,7 +3,7 @@ title: "How do I search for a jurisdiction?"
 tags:
     - Assistant
 slug: search-for-jurisdiction
-doc_type: question
+doc_type: workflow
 products:
     - OS-CONNECT
 audiences:

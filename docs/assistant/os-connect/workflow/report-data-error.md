@@ -3,7 +3,7 @@ title: "How do I report an error in OS-CONNECT data?"
 tags:
     - Assistant
 slug: report-data-error
-doc_type: question
+doc_type: workflow
 products:
     - OS-CONNECT
 audiences:

@@ -3,7 +3,7 @@ title: "What kinds of errors are most common?"
 tags:
     - Assistant
 slug: common-errors
-doc_type: question
+doc_type: concept
 products:
     - OS-CONNECT
 audiences:

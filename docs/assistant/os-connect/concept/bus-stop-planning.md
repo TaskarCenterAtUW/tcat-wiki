@@ -3,7 +3,7 @@ title: "Can OS-CONNECT support bus stop planning?"
 tags:
     - Assistant
 slug: bus-stop-planning
-doc_type: question
+doc_type: concept
 products:
     - OS-CONNECT
 audiences:

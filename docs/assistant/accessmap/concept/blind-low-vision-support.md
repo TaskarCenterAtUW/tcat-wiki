@@ -3,7 +3,7 @@ title: "Can AccessMap support blind or low-vision users?"
 tags:
     - Assistant
 slug: blind-low-vision-support
-doc_type: question
+doc_type: concept
 products:
     - AccessMap
 audiences:

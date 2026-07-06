@@ -3,7 +3,7 @@ title: "What attributes are collected for curb ramps?"
 tags:
     - Assistant
 slug: curb-ramp-attributes
-doc_type: question
+doc_type: concept
 products:
     - OS-CONNECT
 audiences:

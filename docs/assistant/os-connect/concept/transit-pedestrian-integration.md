@@ -3,7 +3,7 @@ title: "How could transit and pedestrian systems integrate more deeply?"
 tags:
     - Assistant
 slug: transit-pedestrian-integration
-doc_type: question
+doc_type: concept
 products:
     - OS-CONNECT
 audiences:

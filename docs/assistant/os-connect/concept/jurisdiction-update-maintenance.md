@@ -3,7 +3,7 @@ title: "How should jurisdictions maintain updates?"
 tags:
     - Assistant
 slug: jurisdiction-update-maintenance
-doc_type: question
+doc_type: concept
 products:
     - OS-CONNECT
 audiences:

@@ -3,7 +3,7 @@ title: Safe Routes to School (SRTS)
 tags:
     - Assistant
 slug: safe-routes-to-school
-doc_type: question
+doc_type: concept
 products:
     - Walksheds
 audiences:

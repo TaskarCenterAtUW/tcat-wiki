@@ -3,7 +3,7 @@ title: "Can mapping volunteers contribute data that agencies can use?"
 tags:
     - Assistant
 slug: volunteer-data-contribution
-doc_type: question
+doc_type: concept
 products:
     - OS-CONNECT
 audiences:

@@ -3,7 +3,7 @@ title: "What happens when I create a workspace from a TDEI dataset?"
 tags:
     - Assistant
 slug: workspace-creation-mechanics
-doc_type: question
+doc_type: concept
 products:
     - Workspaces
 audiences:

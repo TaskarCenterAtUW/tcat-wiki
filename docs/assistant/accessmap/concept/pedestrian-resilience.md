@@ -3,7 +3,7 @@ title: "What is pedestrian resilience?"
 tags:
     - Assistant
 slug: pedestrian-resilience
-doc_type: question
+doc_type: concept
 products:
     - AccessMap
 audiences:

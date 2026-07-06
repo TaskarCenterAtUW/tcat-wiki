@@ -3,7 +3,7 @@ title: "How should review happen before export?"
 tags:
     - Assistant
 slug: pre-export-review
-doc_type: question
+doc_type: workflow
 products:
     - Workspaces
 audiences:

@@ -3,7 +3,7 @@ title: "What role did field validation play?"
 tags:
     - Assistant
 slug: field-validation-role
-doc_type: question
+doc_type: concept
 products:
     - OS-CONNECT
 audiences:

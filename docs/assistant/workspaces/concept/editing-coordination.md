@@ -3,7 +3,7 @@ title: "How can multiple people coordinate editing?"
 tags:
     - Assistant
 slug: editing-coordination
-doc_type: question
+doc_type: concept
 products:
     - Workspaces
 audiences:

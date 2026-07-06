@@ -3,7 +3,7 @@ title: "How are private facilities handled?"
 tags:
     - Assistant
 slug: private-facilities
-doc_type: question
+doc_type: concept
 products:
     - OS-CONNECT
 audiences:

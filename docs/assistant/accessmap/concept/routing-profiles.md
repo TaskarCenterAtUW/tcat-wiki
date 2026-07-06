@@ -3,7 +3,7 @@ title: "What routing profiles are available?"
 tags:
     - Assistant
 slug: routing-profiles
-doc_type: question
+doc_type: concept
 products:
     - AccessMap
 audiences:

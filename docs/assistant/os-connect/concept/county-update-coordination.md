@@ -3,7 +3,7 @@ title: "How should counties coordinate updates?"
 tags:
     - Assistant
 slug: county-update-coordination
-doc_type: question
+doc_type: concept
 products:
     - OS-CONNECT
 audiences:

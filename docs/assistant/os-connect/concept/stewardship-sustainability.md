@@ -3,7 +3,7 @@ title: "How could accessibility stewardship become sustainable?"
 tags:
     - Assistant
 slug: stewardship-sustainability
-doc_type: question
+doc_type: concept
 products:
     - OS-CONNECT
 audiences:

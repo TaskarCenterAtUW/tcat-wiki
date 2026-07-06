@@ -3,7 +3,7 @@ title: "How can cities use AccessMap operationally?"
 tags:
     - Assistant
 slug: operational-use
-doc_type: question
+doc_type: concept
 products:
     - AccessMap
 audiences:

@@ -3,7 +3,7 @@ title: "Who is Workspaces intended for?"
 tags:
     - Assistant
 slug: intended-audience
-doc_type: question
+doc_type: concept
 products:
     - Workspaces
 audiences:

@@ -3,7 +3,7 @@ title: "Can this data support transit accessibility analysis?"
 tags:
     - Assistant
 slug: transit-accessibility-analysis
-doc_type: question
+doc_type: concept
 products:
     - OS-CONNECT
 audiences:

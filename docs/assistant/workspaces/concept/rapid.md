@@ -3,7 +3,7 @@ title: "What is RAPID?"
 tags:
     - Assistant
 slug: rapid
-doc_type: question
+doc_type: concept
 products:
     - Workspaces
 audiences:

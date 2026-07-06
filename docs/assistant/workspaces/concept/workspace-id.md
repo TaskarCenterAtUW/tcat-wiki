@@ -3,7 +3,7 @@ title: "What is the workspace ID used for?"
 tags:
     - Assistant
 slug: workspace-id
-doc_type: question
+doc_type: concept
 products:
     - Workspaces
 audiences:

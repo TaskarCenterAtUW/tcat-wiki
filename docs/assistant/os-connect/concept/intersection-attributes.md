@@ -3,7 +3,7 @@ title: "What attributes are collected for intersections?"
 tags:
     - Assistant
 slug: intersection-attributes
-doc_type: question
+doc_type: concept
 products:
     - OS-CONNECT
 audiences:

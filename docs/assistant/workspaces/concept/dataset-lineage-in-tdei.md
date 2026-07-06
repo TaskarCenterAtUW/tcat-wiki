@@ -3,7 +3,7 @@ title: "What is dataset lineage in TDEI?"
 tags:
     - Assistant
 slug: dataset-lineage-in-tdei
-doc_type: question
+doc_type: concept
 products:
     - Workspaces
 audiences:

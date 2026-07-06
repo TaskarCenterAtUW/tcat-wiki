@@ -3,7 +3,7 @@ title: "What governance models are possible?"
 tags:
     - Assistant
 slug: governance-models
-doc_type: question
+doc_type: concept
 products:
     - OS-CONNECT
 audiences:

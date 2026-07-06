@@ -3,7 +3,7 @@ title: "How are pedestrian-only facilities handled?"
 tags:
     - Assistant
 slug: pedestrian-only-facilities
-doc_type: question
+doc_type: concept
 products:
     - OS-CONNECT
 audiences:

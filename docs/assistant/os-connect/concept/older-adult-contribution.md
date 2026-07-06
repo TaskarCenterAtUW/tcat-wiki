@@ -3,7 +3,7 @@ title: "How can older adults contribute?"
 tags:
     - Assistant
 slug: older-adult-contribution
-doc_type: question
+doc_type: concept
 products:
     - OS-CONNECT
 audiences:

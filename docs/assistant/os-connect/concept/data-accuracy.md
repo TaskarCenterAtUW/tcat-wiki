@@ -3,7 +3,7 @@ title: "How accurate is the data?"
 tags:
     - Assistant
 slug: data-accuracy
-doc_type: question
+doc_type: concept
 products:
     - OS-CONNECT
 audiences:

@@ -3,7 +3,7 @@ title: "How should planners prioritize pedestrian investments?"
 tags:
     - Assistant
 slug: prioritize-pedestrian-investments
-doc_type: question
+doc_type: workflow
 products:
     - AccessMap
 audiences:

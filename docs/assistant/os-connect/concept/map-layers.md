@@ -3,7 +3,7 @@ title: "What are the different map layers?"
 tags:
     - Assistant
 slug: map-layers
-doc_type: question
+doc_type: concept
 products:
     - OS-CONNECT
 audiences:

@@ -3,7 +3,7 @@ title: "Why do some areas appear incomplete?"
 tags:
     - Assistant
 slug: incomplete-coverage
-doc_type: question
+doc_type: concept
 products:
     - OS-CONNECT
 audiences:

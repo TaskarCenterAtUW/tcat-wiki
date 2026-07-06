@@ -3,7 +3,7 @@ title: "What response time should external partners expect?"
 tags:
     - Assistant
 slug: partner-response-time
-doc_type: question
+doc_type: concept
 products:
     - OS-CONNECT
     - AccessMap

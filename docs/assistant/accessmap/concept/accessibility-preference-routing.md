@@ -3,7 +3,7 @@ title: "What does it mean to route using accessibility preferences?"
 tags:
     - Assistant
 slug: accessibility-preference-routing
-doc_type: question
+doc_type: concept
 products:
     - AccessMap
 audiences:

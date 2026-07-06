@@ -3,7 +3,7 @@ title: What is a walkshed?
 tags:
     - Assistant
 slug: walkshed
-doc_type: question
+doc_type: concept
 products:
     - Walksheds
 audiences:

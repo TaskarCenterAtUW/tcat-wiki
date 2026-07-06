@@ -3,7 +3,7 @@ title: "How do OpenSidewalks mapping efforts relate to local community mapping g
 tags:
     - Assistant
 slug: opensidewalks-community-mapping-groups
-doc_type: question
+doc_type: concept
 products:
     - OS-CONNECT
 audiences:

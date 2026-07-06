@@ -3,7 +3,7 @@ title: "How can AccessMap support public engagement?"
 tags:
     - Assistant
 slug: public-engagement
-doc_type: question
+doc_type: concept
 products:
     - AccessMap
 audiences:

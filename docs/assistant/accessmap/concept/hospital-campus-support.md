@@ -3,7 +3,7 @@ title: "Can AccessMap support hospitals or medical campuses?"
 tags:
     - Assistant
 slug: hospital-campus-support
-doc_type: question
+doc_type: concept
 products:
     - AccessMap
 audiences:

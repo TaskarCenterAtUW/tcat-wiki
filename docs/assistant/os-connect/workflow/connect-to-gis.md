@@ -3,7 +3,7 @@ title: "How do I connect this to GIS software?"
 tags:
     - Assistant
 slug: connect-to-gis
-doc_type: question
+doc_type: workflow
 products:
     - OS-CONNECT
 audiences:

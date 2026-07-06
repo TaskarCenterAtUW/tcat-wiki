@@ -3,7 +3,7 @@ title: "Why does AccessMap differ from Apple Maps?"
 tags:
     - Assistant
 slug: comparison-apple-maps
-doc_type: question
+doc_type: concept
 products:
     - AccessMap
 audiences:

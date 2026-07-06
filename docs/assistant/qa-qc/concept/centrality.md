@@ -3,7 +3,7 @@ title: 'What does "centrality" mean?'
 tags:
     - Assistant
 slug: centrality
-doc_type: question
+doc_type: concept
 products:
     - OS-CONNECT
 audiences:

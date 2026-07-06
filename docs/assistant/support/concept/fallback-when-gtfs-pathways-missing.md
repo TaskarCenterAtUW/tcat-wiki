@@ -3,7 +3,7 @@ title: "What should agencies do if GTFS Pathways data are missing but pedestrian
 tags:
     - Assistant
 slug: fallback-when-gtfs-pathways-missing
-doc_type: question
+doc_type: concept
 products:
     - OS-CONNECT
     - AccessMap

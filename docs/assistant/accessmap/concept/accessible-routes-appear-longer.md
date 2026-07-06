@@ -3,7 +3,7 @@ title: "Why do accessibility-aware routes sometimes appear longer?"
 tags:
     - Assistant
 slug: accessible-routes-appear-longer
-doc_type: question
+doc_type: concept
 products:
     - AccessMap
 audiences:

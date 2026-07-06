@@ -3,7 +3,7 @@ title: "What comes after statewide collection?"
 tags:
     - Assistant
 slug: post-collection-next-steps
-doc_type: question
+doc_type: concept
 products:
     - OS-CONNECT
 audiences:

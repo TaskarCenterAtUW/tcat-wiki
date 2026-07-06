@@ -3,7 +3,7 @@ title: "Who owns follow-up when a partner asks a question that crosses tools or 
 tags:
     - Assistant
 slug: cross-team-followup-ownership
-doc_type: question
+doc_type: concept
 products:
     - OS-CONNECT
     - AccessMap

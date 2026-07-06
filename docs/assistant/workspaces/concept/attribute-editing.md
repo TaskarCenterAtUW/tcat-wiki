@@ -3,7 +3,7 @@ title: "Can attribute data be edited?"
 tags:
     - Assistant
 slug: attribute-editing
-doc_type: question
+doc_type: concept
 products:
     - Workspaces
 audiences:

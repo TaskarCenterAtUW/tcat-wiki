@@ -3,7 +3,7 @@ title: "What is the ASR imagery list repo?"
 tags:
     - Assistant
 slug: asr-imagery-list-repo
-doc_type: question
+doc_type: concept
 products:
     - Workspaces
 audiences:

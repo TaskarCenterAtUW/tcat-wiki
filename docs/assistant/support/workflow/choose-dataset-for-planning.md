@@ -3,7 +3,7 @@ title: "Which dataset should I use if I need pedestrian walkway data for plannin
 tags:
     - Assistant
 slug: choose-dataset-for-planning
-doc_type: question
+doc_type: workflow
 products:
     - OS-CONNECT
     - AccessMap

@@ -3,7 +3,7 @@ title: "What role does field validation play?"
 tags:
     - Assistant
 slug: field-validation
-doc_type: question
+doc_type: concept
 products:
     - AccessMap
 audiences:

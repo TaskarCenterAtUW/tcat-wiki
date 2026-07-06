@@ -3,7 +3,7 @@ title: "What is AccessMap?"
 tags:
     - Assistant
 slug: accessmap
-doc_type: question
+doc_type: concept
 products:
     - AccessMap
 audiences:

@@ -3,7 +3,7 @@ title: "What is OpenSidewalks?"
 tags:
     - Assistant
 slug: opensidewalks
-doc_type: question
+doc_type: concept
 products:
     - OS-CONNECT
 audiences:

@@ -3,7 +3,7 @@ title: "What is network redundancy?"
 tags:
     - Assistant
 slug: network-redundancy
-doc_type: question
+doc_type: concept
 products:
     - AccessMap
 audiences:

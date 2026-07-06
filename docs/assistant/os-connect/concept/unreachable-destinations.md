@@ -3,7 +3,7 @@ title: "Why are some destinations unreachable?"
 tags:
     - Assistant
 slug: unreachable-destinations
-doc_type: question
+doc_type: concept
 products:
     - OS-CONNECT
 audiences:

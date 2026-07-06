@@ -3,7 +3,7 @@ title: "What is the relationship between Workspaces and the TDEI portal?"
 tags:
     - Assistant
 slug: workspaces-tdei-portal-relationship
-doc_type: question
+doc_type: concept
 products:
     - Workspaces
 audiences:

@@ -3,7 +3,7 @@ title: "What is the review interface?"
 tags:
     - Assistant
 slug: review-interface
-doc_type: question
+doc_type: concept
 products:
     - Workspaces
 audiences:

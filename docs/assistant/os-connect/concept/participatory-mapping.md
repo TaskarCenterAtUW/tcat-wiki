@@ -3,7 +3,7 @@ title: 'What does "participatory mapping" mean?'
 tags:
     - Assistant
 slug: participatory-mapping
-doc_type: question
+doc_type: concept
 products:
     - OS-CONNECT
 audiences:

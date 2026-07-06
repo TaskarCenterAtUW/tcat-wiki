@@ -3,7 +3,7 @@ title: "How can walksheds support Vision Zero?"
 tags:
     - Assistant
 slug: vision-zero
-doc_type: question
+doc_type: concept
 products:
     - Walksheds
 audiences:

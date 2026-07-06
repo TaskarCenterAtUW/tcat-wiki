@@ -3,7 +3,7 @@ title: 'What is "max_cost"?'
 tags:
     - Assistant
 slug: max-cost
-doc_type: question
+doc_type: concept
 products:
     - Walksheds
 audiences:

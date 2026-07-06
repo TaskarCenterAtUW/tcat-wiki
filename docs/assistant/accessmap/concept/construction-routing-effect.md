@@ -3,7 +3,7 @@ title: "How does construction affect routing?"
 tags:
     - Assistant
 slug: construction-routing-effect
-doc_type: question
+doc_type: concept
 products:
     - AccessMap
 audiences:

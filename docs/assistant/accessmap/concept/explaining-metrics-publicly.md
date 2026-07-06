@@ -3,7 +3,7 @@ title: "How can agencies explain these metrics publicly?"
 tags:
     - Assistant
 slug: explaining-metrics-publicly
-doc_type: question
+doc_type: concept
 products:
     - AccessMap
 audiences:

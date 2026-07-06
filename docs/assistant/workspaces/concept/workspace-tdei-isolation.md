@@ -3,7 +3,7 @@ title: "Does editing a workspace change the TDEI dataset?"
 tags:
     - Assistant
 slug: workspace-tdei-isolation
-doc_type: question
+doc_type: concept
 products:
     - Workspaces
 audiences:

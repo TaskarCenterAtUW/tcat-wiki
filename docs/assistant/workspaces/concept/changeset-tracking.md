@@ -3,7 +3,7 @@ title: "How are changesets tracked?"
 tags:
     - Assistant
 slug: changeset-tracking
-doc_type: question
+doc_type: concept
 products:
     - Workspaces
 audiences:

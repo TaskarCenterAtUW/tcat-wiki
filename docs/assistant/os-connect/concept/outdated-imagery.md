@@ -3,7 +3,7 @@ title: "What happens when imagery is outdated?"
 tags:
     - Assistant
 slug: outdated-imagery
-doc_type: question
+doc_type: concept
 products:
     - OS-CONNECT
 audiences:

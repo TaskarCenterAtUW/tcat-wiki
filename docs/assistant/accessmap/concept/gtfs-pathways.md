@@ -3,7 +3,7 @@ title: "What is GTFS-Pathways?"
 tags:
     - Assistant
 slug: gtfs-pathways
-doc_type: question
+doc_type: concept
 products:
     - AccessMap
 audiences:

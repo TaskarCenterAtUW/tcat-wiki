@@ -3,7 +3,7 @@ title: "How can communities use walksheds to advocate for change?"
 tags:
     - Assistant
 slug: walkshed-advocacy
-doc_type: question
+doc_type: concept
 products:
     - OS-CONNECT
 audiences:

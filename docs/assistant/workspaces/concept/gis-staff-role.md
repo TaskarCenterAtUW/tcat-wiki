@@ -3,7 +3,7 @@ title: "How do technical GIS staff interact with Workspaces?"
 tags:
     - Assistant
 slug: gis-staff-role
-doc_type: question
+doc_type: concept
 products:
     - Workspaces
 audiences:

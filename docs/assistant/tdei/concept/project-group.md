@@ -3,7 +3,7 @@ title: "What is a project group in TDEI?"
 tags:
     - Assistant
 slug: project-group
-doc_type: question
+doc_type: concept
 products:
     - TDEI
 audiences:

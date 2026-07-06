@@ -3,7 +3,7 @@ title: "What role could open-source communities play?"
 tags:
     - Assistant
 slug: open-source-community-role
-doc_type: question
+doc_type: concept
 products:
     - OS-CONNECT
 audiences:

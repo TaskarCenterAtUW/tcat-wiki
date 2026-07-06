@@ -3,7 +3,7 @@ title: "What should staff avoid saying in external technical-support emails?"
 tags:
     - Assistant
 slug: staff-email-antipatterns
-doc_type: question
+doc_type: concept
 products:
     - OS-CONNECT
     - AccessMap

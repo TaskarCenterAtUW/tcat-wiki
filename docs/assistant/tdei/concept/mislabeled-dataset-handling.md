@@ -3,7 +3,7 @@ title: "What should I do if a dataset appears mislabeled or downloads the wrong 
 tags:
     - Assistant
 slug: mislabeled-dataset-handling
-doc_type: question
+doc_type: concept
 products:
     - TDEI
 audiences:

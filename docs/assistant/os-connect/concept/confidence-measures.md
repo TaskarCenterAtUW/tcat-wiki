@@ -3,7 +3,7 @@ title: "What confidence measures exist?"
 tags:
     - Assistant
 slug: confidence-measures
-doc_type: question
+doc_type: concept
 products:
     - OS-CONNECT
 audiences:

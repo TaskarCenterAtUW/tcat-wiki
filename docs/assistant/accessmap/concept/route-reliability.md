@@ -3,7 +3,7 @@ title: "What is route reliability?"
 tags:
     - Assistant
 slug: route-reliability
-doc_type: question
+doc_type: concept
 products:
     - AccessMap
 audiences:

@@ -3,7 +3,7 @@ title: "Can OS-CONNECT support capital planning?"
 tags:
     - Assistant
 slug: capital-planning
-doc_type: question
+doc_type: concept
 products:
     - OS-CONNECT
 audiences:

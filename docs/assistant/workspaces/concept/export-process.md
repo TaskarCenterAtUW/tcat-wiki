@@ -3,7 +3,7 @@ title: "What happens during export?"
 tags:
     - Assistant
 slug: export-process
-doc_type: question
+doc_type: concept
 products:
     - Workspaces
 audiences:

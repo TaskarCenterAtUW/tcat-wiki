@@ -3,7 +3,7 @@ title: "What coordinate system is used?"
 tags:
     - Assistant
 slug: coordinate-system
-doc_type: question
+doc_type: concept
 products:
     - OS-CONNECT
 audiences:

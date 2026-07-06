@@ -3,7 +3,7 @@ title: "How should staff introduce related tools without making the answer feel 
 tags:
     - Assistant
 slug: introduce-related-tools
-doc_type: question
+doc_type: workflow
 products:
     - OS-CONNECT
     - AccessMap

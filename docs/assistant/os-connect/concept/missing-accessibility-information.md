@@ -3,7 +3,7 @@ title: "What accessibility information is missing from OS-CONNECT?"
 tags:
     - Assistant
 slug: missing-accessibility-information
-doc_type: question
+doc_type: concept
 products:
     - OS-CONNECT
 audiences:

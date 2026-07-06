@@ -3,7 +3,7 @@ title: "Does a correction update OS-CONNECT, OpenStreetMap, TDEI, or all of them
 tags:
     - Assistant
 slug: correction-propagation
-doc_type: question
+doc_type: concept
 products:
     - OS-CONNECT
 audiences:

@@ -3,7 +3,7 @@ title: "What happens when data becomes outdated?"
 tags:
     - Assistant
 slug: outdated-data-handling
-doc_type: question
+doc_type: concept
 products:
     - OS-CONNECT
 audiences:

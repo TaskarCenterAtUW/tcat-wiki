@@ -3,7 +3,7 @@ title: "Can this data support Safe Routes to School?"
 tags:
     - Assistant
 slug: safe-routes-to-school
-doc_type: question
+doc_type: concept
 products:
     - OS-CONNECT
 audiences:

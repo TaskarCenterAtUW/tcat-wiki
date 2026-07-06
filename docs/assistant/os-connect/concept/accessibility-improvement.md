@@ -3,7 +3,7 @@ title: "How does this improve accessibility?"
 tags:
     - Assistant
 slug: accessibility-improvement
-doc_type: question
+doc_type: concept
 products:
     - OS-CONNECT
 audiences:

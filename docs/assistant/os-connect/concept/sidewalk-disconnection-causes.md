@@ -3,7 +3,7 @@ title: Why are sidewalks disconnected on the map?
 tags:
     - Assistant
 slug: sidewalk-disconnection-causes
-doc_type: question
+doc_type: concept
 products:
     - OS-CONNECT
     - AccessMap

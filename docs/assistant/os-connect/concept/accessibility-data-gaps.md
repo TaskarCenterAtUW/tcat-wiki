@@ -3,7 +3,7 @@ title: "What gaps still exist in accessibility data?"
 tags:
     - Assistant
 slug: accessibility-data-gaps
-doc_type: question
+doc_type: concept
 products:
     - OS-CONNECT
 audiences:

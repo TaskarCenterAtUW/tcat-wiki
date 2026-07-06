@@ -3,7 +3,7 @@ title: "How can walksheds support emergency resilience planning?"
 tags:
     - Assistant
 slug: emergency-resilience-planning
-doc_type: question
+doc_type: concept
 products:
     - Walksheds
 audiences:

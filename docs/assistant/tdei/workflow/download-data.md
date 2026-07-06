@@ -3,7 +3,7 @@ title: "Where can I download the data?"
 tags:
     - Assistant
 slug: download-data
-doc_type: question
+doc_type: workflow
 products:
     - TDEI
 audiences:

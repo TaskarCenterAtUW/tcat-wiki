@@ -3,7 +3,7 @@ title: "How can users continue editing an existing feature?"
 tags:
     - Assistant
 slug: continuing-feature-edits
-doc_type: question
+doc_type: concept
 products:
     - Workspaces
 audiences:

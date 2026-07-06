@@ -3,7 +3,7 @@ title: "Can routing systems personalize accessibility preferences?"
 tags:
     - Assistant
 slug: routing-personalization
-doc_type: question
+doc_type: concept
 products:
     - OS-CONNECT
 audiences:

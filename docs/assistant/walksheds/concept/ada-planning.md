@@ -3,7 +3,7 @@ title: "How can walksheds support ADA planning?"
 tags:
     - Assistant
 slug: ada-planning
-doc_type: question
+doc_type: concept
 products:
     - Walksheds
 audiences:

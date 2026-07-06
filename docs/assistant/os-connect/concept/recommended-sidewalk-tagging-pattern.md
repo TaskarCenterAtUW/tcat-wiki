@@ -3,7 +3,7 @@ title: "Which sidewalk-to-street-name tagging pattern is currently recommended?"
 tags:
     - Assistant
 slug: recommended-sidewalk-tagging-pattern
-doc_type: question
+doc_type: concept
 products:
     - OS-CONNECT
 audiences:

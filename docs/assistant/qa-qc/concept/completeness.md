@@ -3,7 +3,7 @@ title: 'What does "completeness" mean?'
 tags:
     - Assistant
 slug: completeness
-doc_type: question
+doc_type: concept
 products:
     - OS-CONNECT
 audiences:

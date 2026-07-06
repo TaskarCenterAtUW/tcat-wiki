@@ -3,7 +3,7 @@ title: "How can users report routing problems?"
 tags:
     - Assistant
 slug: report-routing-problems
-doc_type: question
+doc_type: workflow
 products:
     - AccessMap
 audiences:

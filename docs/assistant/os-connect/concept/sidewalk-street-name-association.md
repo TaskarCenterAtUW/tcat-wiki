@@ -3,7 +3,7 @@ title: "How should separately mapped sidewalks be associated with street names i
 tags:
     - Assistant
 slug: sidewalk-street-name-association
-doc_type: question
+doc_type: concept
 products:
     - OS-CONNECT
 audiences:

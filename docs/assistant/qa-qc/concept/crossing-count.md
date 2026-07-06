@@ -3,7 +3,7 @@ title: 'What does "crossing count" mean?'
 tags:
     - Assistant
 slug: crossing-count
-doc_type: question
+doc_type: concept
 products:
     - OS-CONNECT
 audiences:

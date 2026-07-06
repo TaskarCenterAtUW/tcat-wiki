@@ -3,7 +3,7 @@ title: "How should jurisdictions participate in stewardship?"
 tags:
     - Assistant
 slug: jurisdiction-stewardship
-doc_type: question
+doc_type: concept
 products:
     - OS-CONNECT
 audiences:

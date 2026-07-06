@@ -3,7 +3,7 @@ title: "How are edits attributed to users?"
 tags:
     - Assistant
 slug: edit-attribution
-doc_type: question
+doc_type: concept
 products:
     - Workspaces
 audiences:

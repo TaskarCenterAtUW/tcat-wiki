@@ -3,7 +3,7 @@ title: "How should transit agencies contribute?"
 tags:
     - Assistant
 slug: transit-agency-contribution
-doc_type: question
+doc_type: concept
 products:
     - OS-CONNECT
 audiences:

@@ -3,7 +3,7 @@ title: "How was OS-CONNECT collected?"
 tags:
     - Assistant
 slug: data-collection-history
-doc_type: question
+doc_type: concept
 products:
     - OS-CONNECT
 audiences:

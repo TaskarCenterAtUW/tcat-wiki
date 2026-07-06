@@ -3,7 +3,7 @@ title: "How do elevation constraints affect routing?"
 tags:
     - Assistant
 slug: elevation-routing-effects
-doc_type: question
+doc_type: concept
 products:
     - OS-CONNECT
 audiences:

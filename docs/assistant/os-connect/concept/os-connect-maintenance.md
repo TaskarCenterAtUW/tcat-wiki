@@ -3,7 +3,7 @@ title: "Who maintains OS-CONNECT?"
 tags:
     - Assistant
 slug: os-connect-maintenance
-doc_type: question
+doc_type: concept
 products:
     - OS-CONNECT
 audiences:

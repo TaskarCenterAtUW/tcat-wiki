@@ -3,7 +3,7 @@ title: "How are campuses handled?"
 tags:
     - Assistant
 slug: campus-handling
-doc_type: question
+doc_type: concept
 products:
     - OS-CONNECT
 audiences:

@@ -3,7 +3,7 @@ title: "How can walksheds support school accessibility analysis?"
 tags:
     - Assistant
 slug: school-accessibility-analysis
-doc_type: question
+doc_type: concept
 products:
     - Walksheds
 audiences:

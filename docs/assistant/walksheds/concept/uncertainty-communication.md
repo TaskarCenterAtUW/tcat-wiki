@@ -3,7 +3,7 @@ title: "How should uncertainty be communicated in walkshed outputs?"
 tags:
     - Assistant
 slug: uncertainty-communication
-doc_type: question
+doc_type: concept
 products:
     - Walksheds
 audiences:

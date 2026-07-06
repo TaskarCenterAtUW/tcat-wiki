@@ -3,7 +3,7 @@ title: "What files are included in an OSW download?"
 tags:
     - Assistant
 slug: osw-download-contents
-doc_type: question
+doc_type: concept
 products:
     - TDEI
 audiences:

@@ -3,7 +3,7 @@ title: "How can agencies compare routing systems?"
 tags:
     - Assistant
 slug: routing-system-comparison
-doc_type: question
+doc_type: concept
 products:
     - AccessMap
 audiences:

@@ -3,7 +3,7 @@ title: "What file formats are available?"
 tags:
     - Assistant
 slug: file-formats
-doc_type: question
+doc_type: concept
 products:
     - TDEI
 audiences:

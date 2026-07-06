@@ -3,7 +3,7 @@ title: "How should human review be incorporated?"
 tags:
     - Assistant
 slug: human-review
-doc_type: question
+doc_type: concept
 products:
     - OS-CONNECT
 audiences:

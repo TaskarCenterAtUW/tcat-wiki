@@ -3,7 +3,7 @@ title: "What kinds of edits can be made in Workspaces?"
 tags:
     - Assistant
 slug: edit-types
-doc_type: question
+doc_type: concept
 products:
     - Workspaces
 audiences:

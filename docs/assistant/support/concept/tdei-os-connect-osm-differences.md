@@ -3,7 +3,7 @@ title: "What is the difference between TDEI, OS-CONNECT, OpenSidewalks, and Open
 tags:
     - Assistant
 slug: tdei-os-connect-osm-differences
-doc_type: question
+doc_type: concept
 products:
     - OS-CONNECT
     - AccessMap

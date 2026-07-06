@@ -3,7 +3,7 @@ title: "Can AccessMap support ADA compliance workflows?"
 tags:
     - Assistant
 slug: ada-compliance-support
-doc_type: question
+doc_type: concept
 products:
     - AccessMap
 audiences:

@@ -3,7 +3,7 @@ title: "How do I create a workspace from existing OSM data?"
 tags:
     - Assistant
 slug: create-workspace-from-osm
-doc_type: question
+doc_type: workflow
 products:
     - Workspaces
 audiences:

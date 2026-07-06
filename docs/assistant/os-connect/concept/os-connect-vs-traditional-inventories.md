@@ -3,7 +3,7 @@ title: "What makes OS-CONNECT different from traditional inventories?"
 tags:
     - Assistant
 slug: os-connect-vs-traditional-inventories
-doc_type: question
+doc_type: concept
 products:
     - OS-CONNECT
 audiences:

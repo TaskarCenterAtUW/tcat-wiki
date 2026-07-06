@@ -3,7 +3,7 @@ title: "What are imagery layers?"
 tags:
     - Assistant
 slug: imagery-layer-overview
-doc_type: question
+doc_type: concept
 products:
     - Workspaces
 audiences:

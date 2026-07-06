@@ -3,7 +3,7 @@ title: "What metrics best support accessibility prioritization?"
 tags:
     - Assistant
 slug: prioritization-metrics
-doc_type: question
+doc_type: concept
 products:
     - AccessMap
 audiences:

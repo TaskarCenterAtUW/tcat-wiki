@@ -3,7 +3,7 @@ title: "What role did machine learning play?"
 tags:
     - Assistant
 slug: machine-learning-role
-doc_type: question
+doc_type: concept
 products:
     - OS-CONNECT
 audiences:

@@ -3,7 +3,7 @@ title: "What sources were used for an edit?"
 tags:
     - Assistant
 slug: edit-source-tracking
-doc_type: question
+doc_type: concept
 products:
     - Workspaces
 audiences:

@@ -3,7 +3,7 @@ title: 'What does "edge betweenness" reveal operationally?'
 tags:
     - Assistant
 slug: edge-betweenness-operational-use
-doc_type: question
+doc_type: concept
 products:
     - OS-CONNECT
 audiences:

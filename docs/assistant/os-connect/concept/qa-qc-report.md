@@ -3,7 +3,7 @@ title: "What is the QA/QC report?"
 tags:
     - Assistant
 slug: qa-qc-report
-doc_type: question
+doc_type: concept
 products:
     - OS-CONNECT
 audiences:

@@ -3,7 +3,7 @@ title: "How does Workspaces support stewardship?"
 tags:
     - Assistant
 slug: stewardship-support
-doc_type: question
+doc_type: concept
 products:
     - Workspaces
 audiences:

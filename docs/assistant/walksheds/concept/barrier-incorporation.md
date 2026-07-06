@@ -3,7 +3,7 @@ title: "How are barriers incorporated?"
 tags:
     - Assistant
 slug: barrier-incorporation
-doc_type: question
+doc_type: concept
 products:
     - Walksheds
 audiences:

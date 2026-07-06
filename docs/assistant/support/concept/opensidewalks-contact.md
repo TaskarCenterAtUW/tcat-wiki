@@ -3,7 +3,7 @@ title: "Who should external partners contact for OpenSidewalks mapping questions
 tags:
     - Assistant
 slug: opensidewalks-contact
-doc_type: question
+doc_type: concept
 products:
     - OS-CONNECT
     - AccessMap

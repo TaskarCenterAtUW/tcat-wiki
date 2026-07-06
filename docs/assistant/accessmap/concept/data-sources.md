@@ -3,7 +3,7 @@ title: "What data powers AccessMap?"
 tags:
     - Assistant
 slug: data-sources
-doc_type: question
+doc_type: concept
 products:
     - AccessMap
 audiences:

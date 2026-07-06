@@ -3,7 +3,7 @@ title: "How can planners compare accessibility before and after improvements?"
 tags:
     - Assistant
 slug: before-after-comparison
-doc_type: question
+doc_type: concept
 products:
     - Walksheds
 audiences:

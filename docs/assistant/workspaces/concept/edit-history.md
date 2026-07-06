@@ -3,7 +3,7 @@ title: "How can users inspect edit history?"
 tags:
     - Assistant
 slug: edit-history
-doc_type: question
+doc_type: concept
 products:
     - Workspaces
 audiences:

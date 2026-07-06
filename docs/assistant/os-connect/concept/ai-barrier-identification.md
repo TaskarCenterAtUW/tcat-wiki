@@ -3,7 +3,7 @@ title: "Can AI automatically identify pedestrian barriers?"
 tags:
     - Assistant
 slug: ai-barrier-identification
-doc_type: question
+doc_type: concept
 products:
     - OS-CONNECT
 audiences:

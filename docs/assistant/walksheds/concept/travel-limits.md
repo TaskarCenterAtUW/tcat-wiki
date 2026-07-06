@@ -3,7 +3,7 @@ title: "What travel limits are used?"
 tags:
     - Assistant
 slug: travel-limits
-doc_type: question
+doc_type: concept
 products:
     - Walksheds
 audiences:

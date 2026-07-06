@@ -3,7 +3,7 @@ title: "Can agencies submit priority areas for review?"
 tags:
     - Assistant
 slug: bulk-correction-submission
-doc_type: question
+doc_type: concept
 products:
     - OS-CONNECT
 audiences:

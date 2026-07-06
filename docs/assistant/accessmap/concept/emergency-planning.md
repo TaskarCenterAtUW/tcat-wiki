@@ -3,7 +3,7 @@ title: "How can AccessMap support emergency planning?"
 tags:
     - Assistant
 slug: emergency-planning
-doc_type: question
+doc_type: concept
 products:
     - AccessMap
 audiences:

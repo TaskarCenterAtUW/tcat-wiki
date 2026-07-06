@@ -3,7 +3,7 @@ title: "How do I search for project groups?"
 tags:
     - Assistant
 slug: search-project-groups
-doc_type: question
+doc_type: workflow
 products:
     - Workspaces
 audiences:

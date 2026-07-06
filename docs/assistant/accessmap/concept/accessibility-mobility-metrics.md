@@ -3,7 +3,7 @@ title: "What metrics matter most for accessible mobility?"
 tags:
     - Assistant
 slug: accessibility-mobility-metrics
-doc_type: question
+doc_type: concept
 products:
     - AccessMap
 audiences:

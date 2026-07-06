@@ -3,7 +3,7 @@ title: "How can this data support freedom of movement for nondrivers?"
 tags:
     - Assistant
 slug: nondriver-mobility
-doc_type: question
+doc_type: concept
 products:
     - OS-CONNECT
 audiences:

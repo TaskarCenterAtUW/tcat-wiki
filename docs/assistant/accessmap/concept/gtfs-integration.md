@@ -3,7 +3,7 @@ title: "Can AccessMap integrate with GTFS?"
 tags:
     - Assistant
 slug: gtfs-integration
-doc_type: question
+doc_type: concept
 products:
     - AccessMap
 audiences:

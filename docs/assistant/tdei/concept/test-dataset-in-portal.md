@@ -3,7 +3,7 @@ title: "Why might a test dataset appear in the portal?"
 tags:
     - Assistant
 slug: test-dataset-in-portal
-doc_type: question
+doc_type: concept
 products:
     - TDEI
 audiences:

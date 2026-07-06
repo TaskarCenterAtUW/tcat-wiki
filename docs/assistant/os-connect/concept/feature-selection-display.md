@@ -3,7 +3,7 @@ title: "What does this selected feature represent?"
 tags:
     - Assistant
 slug: feature-selection-display
-doc_type: question
+doc_type: concept
 products:
     - OS-CONNECT
 audiences:

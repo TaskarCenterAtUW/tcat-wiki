@@ -3,7 +3,7 @@ title: "What is the difference between street:name=* and is_sidepath:of:name=*?"
 tags:
     - Assistant
 slug: street-name-vs-sidepath-name
-doc_type: question
+doc_type: concept
 products:
     - OS-CONNECT
 audiences:

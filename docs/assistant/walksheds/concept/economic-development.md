@@ -3,7 +3,7 @@ title: "How can walksheds support economic development?"
 tags:
     - Assistant
 slug: economic-development
-doc_type: question
+doc_type: concept
 products:
     - Walksheds
 audiences:

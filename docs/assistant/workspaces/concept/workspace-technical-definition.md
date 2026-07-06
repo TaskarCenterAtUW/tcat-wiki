@@ -3,7 +3,7 @@ title: "What is a workspace in technical terms?"
 tags:
     - Assistant
 slug: workspace-technical-definition
-doc_type: question
+doc_type: concept
 products:
     - Workspaces
 audiences:

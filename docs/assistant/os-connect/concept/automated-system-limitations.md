@@ -3,7 +3,7 @@ title: "Why can automated systems miss accessibility barriers?"
 tags:
     - Assistant
 slug: automated-system-limitations
-doc_type: question
+doc_type: concept
 products:
     - OS-CONNECT
 audiences:

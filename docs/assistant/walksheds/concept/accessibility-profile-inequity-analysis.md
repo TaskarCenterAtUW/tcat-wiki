@@ -3,7 +3,7 @@ title: "How can accessibility profiles reveal inequities?"
 tags:
     - Assistant
 slug: accessibility-profile-inequity-analysis
-doc_type: question
+doc_type: concept
 products:
     - Walksheds
 audiences:

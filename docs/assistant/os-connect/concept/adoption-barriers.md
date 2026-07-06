@@ -3,7 +3,7 @@ title: "What are the biggest barriers to adoption?"
 tags:
     - Assistant
 slug: adoption-barriers
-doc_type: question
+doc_type: concept
 products:
     - OS-CONNECT
 audiences:

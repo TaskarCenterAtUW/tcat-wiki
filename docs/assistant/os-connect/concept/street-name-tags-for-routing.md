@@ -3,7 +3,7 @@ title: "How can trip planners use sidewalk street-name tags to produce better wa
 tags:
     - Assistant
 slug: street-name-tags-for-routing
-doc_type: question
+doc_type: concept
 products:
     - OS-CONNECT
 audiences:

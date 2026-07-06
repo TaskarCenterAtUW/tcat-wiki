@@ -3,7 +3,7 @@ title: "How does OS-CONNECT support accessibility equity?"
 tags:
     - Assistant
 slug: accessibility-equity
-doc_type: question
+doc_type: concept
 products:
     - OS-CONNECT
 audiences:

@@ -3,7 +3,7 @@ title: "How are releases versioned?"
 tags:
     - Assistant
 slug: release-versioning
-doc_type: question
+doc_type: concept
 products:
     - TDEI
 audiences:

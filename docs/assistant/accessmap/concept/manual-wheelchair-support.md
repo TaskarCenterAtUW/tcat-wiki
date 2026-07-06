@@ -3,7 +3,7 @@ title: "Can AccessMap support manual wheelchair users?"
 tags:
     - Assistant
 slug: manual-wheelchair-support
-doc_type: question
+doc_type: concept
 products:
     - AccessMap
 audiences:

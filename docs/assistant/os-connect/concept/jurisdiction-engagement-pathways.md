@@ -3,7 +3,7 @@ title: "What are the jurisdiction engagement pathways?"
 tags:
     - Assistant
 slug: jurisdiction-engagement-pathways
-doc_type: question
+doc_type: concept
 products:
     - OS-CONNECT
 audiences:

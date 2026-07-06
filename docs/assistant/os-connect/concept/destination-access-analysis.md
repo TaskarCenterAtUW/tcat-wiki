@@ -3,7 +3,7 @@ title: "Can OS-CONNECT support pedestrian access analysis around schools, clinic
 tags:
     - Assistant
 slug: destination-access-analysis
-doc_type: question
+doc_type: concept
 products:
     - OS-CONNECT
     - Walksheds

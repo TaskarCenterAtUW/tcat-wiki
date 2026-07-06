@@ -3,7 +3,7 @@ title: "Does export overwrite the original dataset?"
 tags:
     - Assistant
 slug: export-overwrite-behavior
-doc_type: question
+doc_type: concept
 products:
     - Workspaces
 audiences:

@@ -3,7 +3,7 @@ title: "How can walksheds support Complete Streets planning?"
 tags:
     - Assistant
 slug: complete-streets-planning
-doc_type: question
+doc_type: concept
 products:
     - Walksheds
 audiences:

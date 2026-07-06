@@ -3,7 +3,7 @@ title: "How are disconnected sidewalks identified?"
 tags:
     - Assistant
 slug: disconnected-sidewalk-identification
-doc_type: question
+doc_type: concept
 products:
     - OS-CONNECT
 audiences:

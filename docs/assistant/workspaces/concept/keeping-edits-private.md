@@ -3,7 +3,7 @@ title: "When should edits remain private?"
 tags:
     - Assistant
 slug: keeping-edits-private
-doc_type: question
+doc_type: concept
 products:
     - Workspaces
 audiences:
