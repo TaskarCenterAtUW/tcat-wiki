@@ -16,7 +16,7 @@ topics:
 risk_level: low
 authority_level: draft
 review_status: stub
-last_reviewed: 2026-07-006
+last_reviewed: 2026-07-06
 retrieval_priority: medium
 assistant_behavior:
     allow_inference: false
