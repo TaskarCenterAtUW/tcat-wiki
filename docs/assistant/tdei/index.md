@@ -3,7 +3,7 @@ title: TDEI — Assistant Knowledge Base
 tags:
     - Assistant
 slug: tdei-index
-doc_type: concept
+doc_type: policy
 products:
     - TDEI
 audiences:
@@ -18,7 +18,7 @@ topics:
 risk_level: low
 authority_level: explanatory
 review_status: draft
-last_reviewed: 2026-06-09
+last_reviewed: 2026-07-06
 retrieval_priority: high
 assistant_behavior:
     allow_inference: false

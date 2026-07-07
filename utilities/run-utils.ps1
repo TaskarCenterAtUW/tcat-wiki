@@ -15,8 +15,11 @@
     This script performs two phases:
 
     PHASE 1: Runs Pester tests for all utility scripts to ensure they are working correctly,
-    then runs the Python pytest suites for the Python utilities (akb-generate-dispatch.py,
-    build-site.py). The Pester tests are run in this order:
+    then regenerates docs/assistant/dispatch.md (akb-generate-dispatch.py) so it reflects the
+    current docs/assistant/ tree, then runs the Python pytest suites for the Python utilities
+    (test_akb_content.py cross-validates docs/assistant/ against dispatch.md, so the registry
+    must be regenerated before those checks run or they will fail against a stale registry).
+    The Pester tests are run in this order:
     1. run-utils.Tests.ps1 (self-check)
     2. generate-guides-lists.Tests.ps1
     3. generate-nav.Tests.ps1
@@ -347,15 +350,35 @@ if (-not $SkipTests) {
 
     Write-Host ""
 
-    # Also run the Python pytest suites for the Python utilities
-    # (akb-generate-dispatch.py, build-site.py).
-    Write-Host "  Running Python pytest suites" -ForegroundColor Cyan
-    Write-Host ""
-
     $pythonExe = Join-Path $utilPath ".." ".venv" "Scripts" "python.exe"
     if (-not (Test-Path $pythonExe)) {
         $pythonExe = "python"  # fallback to system Python
     }
+
+    # Regenerate docs/assistant/dispatch.md BEFORE the pytest suites run.
+    # test_akb_content.py cross-validates the real docs/assistant/ tree
+    # against the committed dispatch.md registry, so a stale registry (one
+    # that hasn't been re-run since articles were added/removed/re-statused)
+    # would make those checks fail even when the content itself is correct.
+    $dispatchScript = Join-Path $utilPath "akb-generate-dispatch.py"
+    Write-Host "  Regenerating docs/assistant/dispatch.md" -ForegroundColor Cyan
+    Write-Host ""
+    & $pythonExe $dispatchScript
+    if ($LASTEXITCODE -ne 0) {
+        Write-Host ""
+        Write-Host "==========================================="
+        Write-Host "PHASE 1 FAILED: could not regenerate dispatch.md" -ForegroundColor Red
+        Write-Host ""
+        exit 1
+    }
+    Write-Host ""
+    Write-Host "  ✓ COMPLETED: akb-generate-dispatch.py" -ForegroundColor Green
+    Write-Host ""
+
+    # Also run the Python pytest suites for the Python utilities
+    # (akb-generate-dispatch.py, build-site.py).
+    Write-Host "  Running Python pytest suites" -ForegroundColor Cyan
+    Write-Host ""
 
     & $pythonExe -m pytest $utilPath -q
     if ($LASTEXITCODE -ne 0) {

@@ -665,7 +665,7 @@ nav = [
         {"Waykeeper" = [
             "assistant/waykeeper/index.md",
             {"Concept" = [ {"What is Waykeeper?" = "assistant/waykeeper/concept/waykeeper.md"} ]},
-            {"Workflow" = [ {"How do I use Waykeeper?" = "assistant/waykeeper/workflow/submit-waykeeper-report.md"} ]}
+            {"Workflow" = [ {"How do I use Waykeeper?" = "assistant/waykeeper/workflow/use-waykeeper.md"} ]}
         ]},
         {"Workspaces" = [
             "assistant/workspaces/index.md",

@@ -361,6 +361,34 @@ python .\utilities\event-reports\generate-asr-event-stats.py --event nda-vancouv
 
 Run with `--help` for all available options.
 
+#### Deployment Checklist
+
+Before opening a pull request (or merging to `main`), run through this checklist to confirm the site is ready to deploy:
+
+1. Activate the virtual environment
+
+    ```powershell
+    .\.venv\Scripts\Activate.ps1
+    ```
+
+2. Run all utility tests and regenerate guides lists, navigation, and link checks
+
+    ```powershell
+    cd utilities
+    .\run-utils.ps1
+    ```
+
+3. Preview the deploy-parity build locally and spot-check changed pages
+
+    ```powershell
+    cd ..
+    .\utilities\serve.ps1
+    ```
+
+4. Commit any generated changes (e.g., updated `guides-list/` indices or `zensical.toml` nav) alongside your content changes
+
+5. Push the branch and open a pull request to `main`
+
 ### Markdown Guide
 
 #### Headers

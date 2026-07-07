@@ -3,7 +3,7 @@ title: "How do I use QA/QC Reports to identify accessibility islands?"
 tags:
     - Assistant
 slug: identify-accessibility-islands
-doc_type: concept
+doc_type: workflow
 products:
     - QA/QC
     - OS-CONNECT
@@ -16,7 +16,7 @@ topics:
 risk_level: medium
 authority_level: draft
 review_status: stub
-last_reviewed: 2026-07-02
+last_reviewed: 2026-07-06
 retrieval_priority: medium
 assistant_behavior:
     allow_inference: false
