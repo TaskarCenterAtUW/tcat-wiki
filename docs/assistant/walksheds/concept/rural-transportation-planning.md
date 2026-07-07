@@ -3,7 +3,7 @@ title: "How can walksheds support rural transportation planning?"
 tags:
     - Assistant
 slug: rural-transportation-planning
-doc_type: question
+doc_type: concept
 products:
     - Walksheds
 audiences:

@@ -1,9 +1,9 @@
 ---
-title: "What is TDEI?"
+title: "What is the TDEI?"
 tags:
     - Assistant
 slug: tdei
-doc_type: question
+doc_type: concept
 products:
     - TDEI
 audiences:
@@ -14,9 +14,9 @@ audiences:
 topics:
     - tdei-overview
 risk_level: medium
-authority_level: explanatory
+authority_level: draft
 review_status: stub
-last_reviewed: ""
+last_reviewed: 2026-07-02
 retrieval_priority: high
 assistant_behavior:
     allow_inference: false

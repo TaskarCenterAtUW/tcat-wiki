@@ -3,7 +3,7 @@ title: "How can walksheds support grant applications?"
 tags:
     - Assistant
 slug: grant-applications
-doc_type: question
+doc_type: concept
 products:
     - Walksheds
 audiences:

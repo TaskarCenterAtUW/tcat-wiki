@@ -3,7 +3,7 @@ title: "How should jurisdictions publish updates?"
 tags:
     - Assistant
 slug: publish-jurisdiction-updates
-doc_type: question
+doc_type: workflow
 products:
     - Workspaces
 audiences:

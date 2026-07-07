@@ -3,7 +3,7 @@ title: "What attributes are collected for crossings?"
 tags:
     - Assistant
 slug: crossing-attributes
-doc_type: question
+doc_type: concept
 products:
     - OS-CONNECT
 audiences:

@@ -3,7 +3,7 @@ title: "How should agencies treat OS-CONNECT data in planning workflows when kno
 tags:
     - Assistant
 slug: planning-with-known-errors
-doc_type: question
+doc_type: concept
 products:
     - OS-CONNECT
 audiences:

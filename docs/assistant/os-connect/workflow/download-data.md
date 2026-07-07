@@ -3,7 +3,7 @@ title: "How do I download data from the viewer?"
 tags:
     - Assistant
 slug: download-data
-doc_type: question
+doc_type: workflow
 products:
     - OS-CONNECT
 audiences:

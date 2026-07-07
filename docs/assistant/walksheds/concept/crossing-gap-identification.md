@@ -3,7 +3,7 @@ title: "How can walksheds identify crossing gaps?"
 tags:
     - Assistant
 slug: crossing-gap-identification
-doc_type: question
+doc_type: concept
 products:
     - Walksheds
 audiences:

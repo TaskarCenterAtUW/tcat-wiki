@@ -3,7 +3,7 @@ title: "How can residents participate?"
 tags:
     - Assistant
 slug: resident-participation
-doc_type: question
+doc_type: concept
 products:
     - OS-CONNECT
 audiences:

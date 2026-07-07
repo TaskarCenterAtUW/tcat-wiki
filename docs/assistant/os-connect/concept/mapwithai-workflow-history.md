@@ -3,7 +3,7 @@ title: "What happened to the older OpenSidewalks / MapWith.ai Tasking Manager wo
 tags:
     - Assistant
 slug: mapwithai-workflow-history
-doc_type: question
+doc_type: concept
 products:
     - OS-CONNECT
 audiences:

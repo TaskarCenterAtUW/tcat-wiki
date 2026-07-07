@@ -3,7 +3,7 @@ title: "How can schools use AccessMap?"
 tags:
     - Assistant
 slug: school-use
-doc_type: question
+doc_type: concept
 products:
     - AccessMap
 audiences:

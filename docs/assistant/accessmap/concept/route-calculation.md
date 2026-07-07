@@ -3,7 +3,7 @@ title: "How does AccessMap calculate accessible routes?"
 tags:
     - Assistant
 slug: route-calculation
-doc_type: question
+doc_type: concept
 products:
     - AccessMap
 audiences:

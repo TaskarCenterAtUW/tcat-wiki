@@ -3,7 +3,7 @@ title: 'What does "released dataset" mean in TDEI?'
 tags:
     - Assistant
 slug: released-dataset
-doc_type: question
+doc_type: concept
 products:
     - TDEI
 audiences:

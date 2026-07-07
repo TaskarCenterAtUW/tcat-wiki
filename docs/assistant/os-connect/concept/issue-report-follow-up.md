@@ -3,7 +3,7 @@ title: "What happens after I submit an issue report?"
 tags:
     - Assistant
 slug: issue-report-follow-up
-doc_type: question
+doc_type: concept
 products:
     - OS-CONNECT
 audiences:

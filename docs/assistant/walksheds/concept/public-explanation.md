@@ -3,7 +3,7 @@ title: "What are good public-facing ways to explain walksheds?"
 tags:
     - Assistant
 slug: public-explanation
-doc_type: question
+doc_type: concept
 products:
     - Walksheds
 audiences:

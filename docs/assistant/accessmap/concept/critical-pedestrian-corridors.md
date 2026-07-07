@@ -3,7 +3,7 @@ title: "How can agencies identify critical pedestrian corridors?"
 tags:
     - Assistant
 slug: critical-pedestrian-corridors
-doc_type: question
+doc_type: concept
 products:
     - AccessMap
 audiences:

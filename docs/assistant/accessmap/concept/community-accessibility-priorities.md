@@ -3,7 +3,7 @@ title: "Can communities define accessibility priorities?"
 tags:
     - Assistant
 slug: community-accessibility-priorities
-doc_type: question
+doc_type: concept
 products:
     - AccessMap
 audiences:

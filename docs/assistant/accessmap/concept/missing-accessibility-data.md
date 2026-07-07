@@ -3,7 +3,7 @@ title: "What happens when accessibility data is missing?"
 tags:
     - Assistant
 slug: missing-accessibility-data
-doc_type: question
+doc_type: concept
 products:
     - AccessMap
 audiences:

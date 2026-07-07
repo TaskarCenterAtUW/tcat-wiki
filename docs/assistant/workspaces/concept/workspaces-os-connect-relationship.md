@@ -3,7 +3,7 @@ title: "What is the relationship between Workspaces and OS-CONNECT?"
 tags:
     - Assistant
 slug: workspaces-os-connect-relationship
-doc_type: question
+doc_type: concept
 products:
     - Workspaces
 audiences:

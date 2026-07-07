@@ -3,7 +3,7 @@ title: "How do imagery layers work in Workspaces?"
 tags:
     - Assistant
 slug: imagery-layer-mechanics
-doc_type: question
+doc_type: concept
 products:
     - Workspaces
 audiences:

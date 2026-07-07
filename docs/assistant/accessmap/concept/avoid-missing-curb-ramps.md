@@ -3,7 +3,7 @@ title: 'What does "avoid missing curb ramps" mean?'
 tags:
     - Assistant
 slug: avoid-missing-curb-ramps
-doc_type: question
+doc_type: concept
 products:
     - AccessMap
 audiences:
@@ -14,7 +14,7 @@ audiences:
 topics:
     - routing-preferences
 risk_level: medium
-authority_level: explanatory
+authority_level: draft
 review_status: stub
 last_reviewed: ""
 retrieval_priority: high

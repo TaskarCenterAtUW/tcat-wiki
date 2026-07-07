@@ -58,6 +58,18 @@ Data flow: AVIV ScoutRoute, Rapid editor, and Prophet generate data → TDEI Cor
 - [AccessMap User Manual](https://taskarcenteratuw.github.io/tcat-wiki/accessmap/user-manual/): How to use AccessMap for accessible, customized pedestrian routing
 - [Walksheds User Manual](https://taskarcenteratuw.github.io/tcat-wiki/walksheds/user-manual/): How to use the TDEI Walksheds tool for scenario planning and infrastructure prioritization
 
+## Assistant Knowledge Base (agent layer)
+
+Every page on this site is also served as raw Markdown at the same URL with an
+`.md` extension (e.g. `https://taskarcenteratuw.github.io/tcat-wiki/accessmap/index.md`
+alongside `.../accessmap/`), regardless of whether that page has been reviewed for
+human-facing publication. HTML pages carry a `<link rel="alternate" type="text/markdown">`
+hint pointing to their `.md` counterpart.
+
+- [Assistant Knowledge Base — Dispatch](https://taskarcenteratuw.github.io/tcat-wiki/assistant/dispatch.md): Generated registry of every article in the assistant knowledge base (all authoring statuses); fetch this first to enumerate available agent-layer pages
+- [Assistant Knowledge Base Overview](https://taskarcenteratuw.github.io/tcat-wiki/assistant/index.md): Purpose and scope of the assistant knowledge base
+- [Assistant Knowledge Base Article Schema](https://taskarcenteratuw.github.io/tcat-wiki/assistant/schema.md): Authoring contract, frontmatter fields, and the human-layer vs. agent-layer build split
+
 ## Optional
 
 - [Abbreviations Glossary](https://raw.githubusercontent.com/TaskarCenterAtUW/tcat-wiki/refs/heads/main/includes/abbreviations.md): Full glossary of 100+ acronyms and abbreviations used across TCAT tools and documentation

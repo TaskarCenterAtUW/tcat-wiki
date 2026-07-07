@@ -3,7 +3,7 @@ title: "Can this data support curb ramp inventories?"
 tags:
     - Assistant
 slug: curb-ramp-inventories
-doc_type: question
+doc_type: concept
 products:
     - OS-CONNECT
 audiences:

@@ -3,7 +3,7 @@ title: "How can walksheds identify underserved areas?"
 tags:
     - Assistant
 slug: underserved-area-identification
-doc_type: question
+doc_type: concept
 products:
     - Walksheds
 audiences:

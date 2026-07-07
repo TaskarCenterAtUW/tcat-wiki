@@ -3,7 +3,7 @@ title: "What role could crowdsourcing play?"
 tags:
     - Assistant
 slug: crowdsourcing-role
-doc_type: question
+doc_type: concept
 products:
     - OS-CONNECT
 audiences:

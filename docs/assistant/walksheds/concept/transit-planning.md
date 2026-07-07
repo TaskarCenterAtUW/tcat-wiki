@@ -3,7 +3,7 @@ title: "How can walksheds support transit planning?"
 tags:
     - Assistant
 slug: transit-planning
-doc_type: question
+doc_type: concept
 products:
     - Walksheds
 audiences:

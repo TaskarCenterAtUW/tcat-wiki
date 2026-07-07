@@ -3,7 +3,7 @@ title: "How does this improve safety?"
 tags:
     - Assistant
 slug: safety-improvement
-doc_type: question
+doc_type: concept
 products:
     - OS-CONNECT
 audiences:

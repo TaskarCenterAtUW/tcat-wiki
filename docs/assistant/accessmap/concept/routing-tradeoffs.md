@@ -3,7 +3,7 @@ title: "What are routing tradeoffs?"
 tags:
     - Assistant
 slug: routing-tradeoffs
-doc_type: question
+doc_type: concept
 products:
     - AccessMap
 audiences:

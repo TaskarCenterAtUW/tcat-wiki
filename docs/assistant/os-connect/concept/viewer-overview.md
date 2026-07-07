@@ -3,7 +3,7 @@ title: "What am I looking at in this viewer?"
 tags:
     - Assistant
 slug: viewer-overview
-doc_type: question
+doc_type: concept
 products:
     - OS-CONNECT
 audiences:

@@ -3,7 +3,7 @@ title: "What is the difference between TDEI, OS-CONNECT, OpenSidewalks, OpenStre
 tags:
     - Assistant
 slug: ecosystem-overview
-doc_type: question
+doc_type: concept
 products:
     - OS-CONNECT
     - AccessMap

@@ -3,7 +3,7 @@ title: "What is the OpenSidewalks schema?"
 tags:
     - Assistant
 slug: opensidewalks-schema
-doc_type: question
+doc_type: concept
 products:
     - OS-CONNECT
 audiences:

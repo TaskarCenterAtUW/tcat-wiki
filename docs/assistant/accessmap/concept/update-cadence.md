@@ -3,7 +3,7 @@ title: "How often is AccessMap updated?"
 tags:
     - Assistant
 slug: update-cadence
-doc_type: question
+doc_type: concept
 products:
     - AccessMap
 audiences:

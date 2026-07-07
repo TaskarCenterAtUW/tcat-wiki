@@ -3,7 +3,7 @@ title: "Can TCAT help set up a sidewalk-mapping project in the OSM US Tasking Ma
 tags:
     - Assistant
 slug: tcat-mapping-project-support
-doc_type: question
+doc_type: concept
 products:
     - OS-CONNECT
 audiences:

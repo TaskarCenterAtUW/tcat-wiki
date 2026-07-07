@@ -3,7 +3,7 @@ title: "What lessons could other states adopt?"
 tags:
     - Assistant
 slug: cross-state-lessons
-doc_type: question
+doc_type: concept
 products:
     - OS-CONNECT
 audiences:

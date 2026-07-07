@@ -3,7 +3,7 @@ title: How do I use the TDEI portal?
 tags:
     - Assistant
 slug: use-tdei-portal
-doc_type: question
+doc_type: workflow
 products:
     - TDEI
 audiences:

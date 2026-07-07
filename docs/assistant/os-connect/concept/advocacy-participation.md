@@ -3,7 +3,7 @@ title: "How can advocacy organizations participate?"
 tags:
     - Assistant
 slug: advocacy-participation
-doc_type: question
+doc_type: concept
 products:
     - OS-CONNECT
 audiences:

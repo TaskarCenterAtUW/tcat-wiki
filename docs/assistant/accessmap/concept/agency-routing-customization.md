@@ -3,7 +3,7 @@ title: "Can agencies customize routing profiles?"
 tags:
     - Assistant
 slug: agency-routing-customization
-doc_type: question
+doc_type: concept
 products:
     - AccessMap
 audiences:
@@ -14,7 +14,7 @@ audiences:
 topics:
     - profiles
 risk_level: medium
-authority_level: explanatory
+authority_level: draft
 review_status: stub
 last_reviewed: ""
 retrieval_priority: high

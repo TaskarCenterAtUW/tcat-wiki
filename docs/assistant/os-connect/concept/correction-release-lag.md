@@ -3,7 +3,7 @@ title: "How long do corrections take to appear in a public release?"
 tags:
     - Assistant
 slug: correction-release-lag
-doc_type: question
+doc_type: concept
 products:
     - OS-CONNECT
 audiences:

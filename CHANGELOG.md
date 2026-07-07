@@ -6,6 +6,12 @@ Changes to the TCAT Wiki are documented here.
 
 This project adheres to [Semantic Versioning](https://semver.org/) and [Conventional Commits](https://www.conventionalcommits.org/).
 
+## v13.0.0 (2026-07-06)
+
+### Features
+
+- **Core**: Refactor build system to publish two parallel layers: Zensical-built human-facing HTML docs + assistant-optimized Markdown
+
 ## v12.5.1 (2026-07-01)
 
 ### Fixes

@@ -1,8 +1,20 @@
-.cache/
-.venv/
-site/
-local-storage/
-utilities/.link-cache.json
-__pycache__
-.DS_Store
+# Project
 tcat-wiki.code-workspace
+local-storage/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Python
+.venv/
+__pycache__/
+.pytest_cache/
+
+# Output
+.cache/
+utilities/.link-cache.json
+site/
+human-docs/
+agent-docs/
+zensical.build.toml

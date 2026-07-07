@@ -3,7 +3,7 @@ title: "How are crossings inferred?"
 tags:
     - Assistant
 slug: crossing-inference
-doc_type: question
+doc_type: concept
 products:
     - OS-CONNECT
 audiences:

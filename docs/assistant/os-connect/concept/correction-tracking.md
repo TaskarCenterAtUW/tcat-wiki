@@ -3,7 +3,7 @@ title: "How are corrections tracked across releases?"
 tags:
     - Assistant
 slug: correction-tracking
-doc_type: question
+doc_type: concept
 products:
     - OS-CONNECT
 audiences:

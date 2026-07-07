@@ -3,7 +3,7 @@ title: "How should an agency cite OS-CONNECT or TDEI data?"
 tags:
     - Assistant
 slug: data-citation
-doc_type: question
+doc_type: concept
 products:
     - OS-CONNECT
     - AccessMap

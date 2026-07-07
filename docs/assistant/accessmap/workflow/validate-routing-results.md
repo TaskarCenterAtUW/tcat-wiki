@@ -3,7 +3,7 @@ title: "How should municipalities validate routing results?"
 tags:
     - Assistant
 slug: validate-routing-results
-doc_type: question
+doc_type: workflow
 products:
     - AccessMap
 audiences:

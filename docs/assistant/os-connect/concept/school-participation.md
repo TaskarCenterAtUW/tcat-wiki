@@ -3,7 +3,7 @@ title: "How can schools participate?"
 tags:
     - Assistant
 slug: school-participation
-doc_type: question
+doc_type: concept
 products:
     - OS-CONNECT
 audiences:

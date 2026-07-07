@@ -3,7 +3,7 @@ title: "Why are POIs grouped together?"
 tags:
     - Assistant
 slug: poi-grouping-rationale
-doc_type: question
+doc_type: concept
 products:
     - OS-CONNECT
 audiences:

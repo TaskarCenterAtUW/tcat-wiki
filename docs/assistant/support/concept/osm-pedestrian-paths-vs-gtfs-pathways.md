@@ -3,7 +3,7 @@ title: "What is the relationship between pedestrian paths in OpenStreetMap and G
 tags:
     - Assistant
 slug: osm-pedestrian-paths-vs-gtfs-pathways
-doc_type: question
+doc_type: concept
 products:
     - OS-CONNECT
     - AccessMap

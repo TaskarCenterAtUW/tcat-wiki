@@ -3,7 +3,7 @@ title: "How are community comments reviewed?"
 tags:
     - Assistant
 slug: community-comment-review
-doc_type: question
+doc_type: concept
 products:
     - OS-CONNECT
 audiences:

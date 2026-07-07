@@ -3,7 +3,7 @@ title: "What does sandbox mean in Workspaces?"
 tags:
     - Assistant
 slug: sandbox
-doc_type: question
+doc_type: concept
 products:
     - Workspaces
 audiences:

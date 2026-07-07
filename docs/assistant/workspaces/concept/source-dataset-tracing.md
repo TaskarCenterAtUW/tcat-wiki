@@ -3,7 +3,7 @@ title: "How can users trace the source dataset?"
 tags:
     - Assistant
 slug: source-dataset-tracing
-doc_type: question
+doc_type: concept
 products:
     - Workspaces
 audiences:

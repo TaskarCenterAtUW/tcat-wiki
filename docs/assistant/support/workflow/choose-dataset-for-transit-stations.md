@@ -3,7 +3,7 @@ title: "Which dataset should I use if I need transit-station pathway data?"
 tags:
     - Assistant
 slug: choose-dataset-for-transit-stations
-doc_type: question
+doc_type: workflow
 products:
     - OS-CONNECT
     - AccessMap

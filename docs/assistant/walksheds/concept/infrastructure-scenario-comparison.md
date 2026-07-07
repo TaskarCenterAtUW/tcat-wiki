@@ -3,7 +3,7 @@ title: "How can walksheds compare infrastructure scenarios?"
 tags:
     - Assistant
 slug: infrastructure-scenario-comparison
-doc_type: question
+doc_type: concept
 products:
     - Walksheds
 audiences:

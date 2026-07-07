@@ -3,7 +3,7 @@ title: "What quality checks are needed before community-mapped data can support 
 tags:
     - Assistant
 slug: community-data-quality-checks
-doc_type: question
+doc_type: concept
 products:
     - OS-CONNECT
 audiences:

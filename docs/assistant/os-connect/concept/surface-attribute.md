@@ -3,7 +3,7 @@ title: 'What does "surface" mean?'
 tags:
     - Assistant
 slug: surface-attribute
-doc_type: question
+doc_type: concept
 products:
     - OS-CONNECT
 audiences:

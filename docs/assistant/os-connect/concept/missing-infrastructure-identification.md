@@ -3,7 +3,7 @@ title: "How can communities identify missing infrastructure?"
 tags:
     - Assistant
 slug: missing-infrastructure-identification
-doc_type: question
+doc_type: concept
 products:
     - OS-CONNECT
 audiences:

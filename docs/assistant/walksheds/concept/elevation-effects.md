@@ -3,7 +3,7 @@ title: "How does elevation affect walksheds?"
 tags:
     - Assistant
 slug: elevation-effects
-doc_type: question
+doc_type: concept
 products:
     - Walksheds
 audiences:

@@ -3,7 +3,7 @@ title: "How do I create a workspace?"
 tags:
     - Assistant
 slug: create-workspace
-doc_type: question
+doc_type: workflow
 products:
     - Workspaces
 audiences:

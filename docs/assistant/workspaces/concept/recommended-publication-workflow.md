@@ -3,7 +3,7 @@ title: "What is the recommended publication workflow?"
 tags:
     - Assistant
 slug: recommended-publication-workflow
-doc_type: question
+doc_type: concept
 products:
     - Workspaces
 audiences:

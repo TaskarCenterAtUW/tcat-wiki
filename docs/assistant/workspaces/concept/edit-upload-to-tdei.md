@@ -3,7 +3,7 @@ title: "How are edits uploaded back to TDEI?"
 tags:
     - Assistant
 slug: edit-upload-to-tdei
-doc_type: question
+doc_type: concept
 products:
     - Workspaces
 audiences:

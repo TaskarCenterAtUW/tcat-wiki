@@ -3,7 +3,7 @@ title: 'What does "path count" mean?'
 tags:
     - Assistant
 slug: path-count
-doc_type: question
+doc_type: concept
 products:
     - OS-CONNECT
 audiences:

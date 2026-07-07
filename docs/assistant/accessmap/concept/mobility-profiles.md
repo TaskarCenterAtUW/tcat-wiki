@@ -3,7 +3,7 @@ title: How do mobility profiles work?
 tags:
     - Assistant
 slug: mobility-profiles
-doc_type: question
+doc_type: concept
 products:
     - AccessMap
 audiences:

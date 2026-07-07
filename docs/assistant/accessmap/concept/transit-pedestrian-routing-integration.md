@@ -3,7 +3,7 @@ title: "How does transit accessibility integrate with pedestrian routing?"
 tags:
     - Assistant
 slug: transit-pedestrian-routing-integration
-doc_type: question
+doc_type: concept
 products:
     - AccessMap
 audiences:

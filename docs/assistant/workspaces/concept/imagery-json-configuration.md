@@ -3,7 +3,7 @@ title: "What is the imagery JSON configuration?"
 tags:
     - Assistant
 slug: imagery-json-configuration
-doc_type: question
+doc_type: concept
 products:
     - Workspaces
 audiences:

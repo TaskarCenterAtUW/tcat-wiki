@@ -3,7 +3,7 @@ title: 'What does "width" mean in the dataset?'
 tags:
     - Assistant
 slug: width-attribute
-doc_type: question
+doc_type: concept
 products:
     - OS-CONNECT
 audiences:

@@ -3,7 +3,7 @@ title: "Who can review edits?"
 tags:
     - Assistant
 slug: edit-reviewers
-doc_type: question
+doc_type: concept
 products:
     - Workspaces
 audiences:

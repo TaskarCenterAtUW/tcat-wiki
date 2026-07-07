@@ -3,7 +3,7 @@ title: AVIV ScoutRoute — Assistant Knowledge Base
 tags:
     - Assistant
 slug: aviv-scoutroute-index
-doc_type: concept
+doc_type: policy
 products:
     - AVIV ScoutRoute
 audiences:
@@ -13,11 +13,12 @@ audiences:
     - public
 topics:
     - tdei-ecosystem
-risk_level: low
-authority_level: explanatory
+    - field-data-collection
+risk_level: high
+authority_level: draft
 review_status: stub
-last_reviewed: 2026-06-29
-retrieval_priority: medium
+last_reviewed: 2026-07-02
+retrieval_priority: high
 assistant_behavior:
     allow_inference: false
     requires_citation: true

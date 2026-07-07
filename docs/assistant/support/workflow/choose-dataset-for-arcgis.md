@@ -3,7 +3,7 @@ title: "Which dataset and format should an agency use for pedestrian walkway dat
 tags:
     - Assistant
 slug: choose-dataset-for-arcgis
-doc_type: question
+doc_type: workflow
 products:
     - OS-CONNECT
     - AccessMap

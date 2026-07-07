@@ -3,7 +3,7 @@ title: "What are the community engagement pathways?"
 tags:
     - Assistant
 slug: community-engagement-pathways
-doc_type: question
+doc_type: concept
 products:
     - OS-CONNECT
 audiences:

@@ -3,7 +3,7 @@ title: "What metadata is stored with a workspace?"
 tags:
     - Assistant
 slug: workspace-metadata
-doc_type: question
+doc_type: concept
 products:
     - Workspaces
 audiences:

@@ -3,7 +3,7 @@ title: "What does private OSM mean?"
 tags:
     - Assistant
 slug: private-osm-explained
-doc_type: question
+doc_type: concept
 products:
     - Workspaces
 audiences:

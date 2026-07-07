@@ -3,7 +3,7 @@ title: "Can an agency submit a batch of known corrections instead of reporting o
 tags:
     - Assistant
 slug: batch-correction-alternatives
-doc_type: question
+doc_type: concept
 products:
     - OS-CONNECT
 audiences:

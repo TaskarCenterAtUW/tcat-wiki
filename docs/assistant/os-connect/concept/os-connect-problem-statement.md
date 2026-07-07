@@ -3,7 +3,7 @@ title: "What problem is OS-CONNECT trying to solve?"
 tags:
     - Assistant
 slug: os-connect-problem-statement
-doc_type: question
+doc_type: concept
 products:
     - OS-CONNECT
 audiences:

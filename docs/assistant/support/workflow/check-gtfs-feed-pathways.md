@@ -3,7 +3,7 @@ title: "How can I tell whether a GTFS feed includes pathways.txt?"
 tags:
     - Assistant
 slug: check-gtfs-feed-pathways
-doc_type: question
+doc_type: workflow
 products:
     - OS-CONNECT
     - AccessMap

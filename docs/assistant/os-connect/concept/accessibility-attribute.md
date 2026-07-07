@@ -3,7 +3,7 @@ title: "What is an accessibility attribute?"
 tags:
     - Assistant
 slug: accessibility-attribute
-doc_type: question
+doc_type: concept
 products:
     - OS-CONNECT
 audiences:

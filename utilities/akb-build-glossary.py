@@ -157,7 +157,9 @@ relevant product documentation or contact the TCAT team.
 
 ## Related Concepts
 
-- [Dispatch](../../dispatch.md)
+- Dispatch registry — generated agent-layer artifact served at \
+`https://taskarcenteratuw.github.io/tcat-wiki/assistant/dispatch.md` (not linked here \
+directly; `dispatch.md` is agent-layer only and is not part of the human-facing build).
 """
 
     return frontmatter + "\n\n" + body

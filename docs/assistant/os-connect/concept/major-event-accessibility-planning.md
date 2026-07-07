@@ -3,7 +3,7 @@ title: "Can OS-CONNECT support FIFA or major-event accessibility planning?"
 tags:
     - Assistant
 slug: major-event-accessibility-planning
-doc_type: question
+doc_type: concept
 products:
     - OS-CONNECT
 audiences:

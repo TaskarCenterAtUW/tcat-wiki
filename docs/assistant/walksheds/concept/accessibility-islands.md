@@ -3,7 +3,7 @@ title: "What are accessibility islands in walkshed analysis?"
 tags:
     - Assistant
 slug: accessibility-islands
-doc_type: question
+doc_type: concept
 products:
     - Walksheds
 audiences:

@@ -3,7 +3,7 @@ title: "How does AccessMap consume OpenSidewalks or OS-CONNECT data?"
 tags:
     - Assistant
 slug: opensidewalks-data-consumption
-doc_type: question
+doc_type: concept
 products:
     - AccessMap
 audiences:

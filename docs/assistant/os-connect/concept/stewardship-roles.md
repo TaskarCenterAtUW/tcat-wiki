@@ -3,7 +3,7 @@ title: "What operational roles are needed for stewardship?"
 tags:
     - Assistant
 slug: stewardship-roles
-doc_type: question
+doc_type: concept
 products:
     - OS-CONNECT
 audiences:

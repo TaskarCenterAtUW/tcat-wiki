@@ -3,7 +3,7 @@ title: "How do I access the TDEI API?"
 tags:
     - Assistant
 slug: access-tdei-api
-doc_type: question
+doc_type: workflow
 products:
     - TDEI
 audiences:

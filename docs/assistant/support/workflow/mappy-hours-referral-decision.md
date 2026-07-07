@@ -3,7 +3,7 @@ title: "When should someone be referred to Mappy Hours versus receiving direct s
 tags:
     - Assistant
 slug: mappy-hours-referral-decision
-doc_type: question
+doc_type: workflow
 products:
     - OS-CONNECT
     - AccessMap

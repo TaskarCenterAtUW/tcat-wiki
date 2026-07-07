@@ -3,7 +3,7 @@ title: "What limitations exist compared to OpenStreetMap?"
 tags:
     - Assistant
 slug: workspaces-osm-limitations
-doc_type: question
+doc_type: concept
 products:
     - Workspaces
 audiences:

@@ -3,7 +3,7 @@ title: "What assumptions should planners understand?"
 tags:
     - Assistant
 slug: planner-assumptions
-doc_type: question
+doc_type: concept
 products:
     - Walksheds
 audiences:

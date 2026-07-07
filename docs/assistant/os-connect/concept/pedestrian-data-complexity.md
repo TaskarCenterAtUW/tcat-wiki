@@ -3,7 +3,7 @@ title: "What makes pedestrian data uniquely complex?"
 tags:
     - Assistant
 slug: pedestrian-data-complexity
-doc_type: question
+doc_type: concept
 products:
     - OS-CONNECT
 audiences:

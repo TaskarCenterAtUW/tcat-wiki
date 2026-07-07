@@ -3,7 +3,7 @@ title: Is completeness ADA compliance?
 tags:
     - Assistant
 slug: completeness-vs-ada-compliance
-doc_type: question
+doc_type: concept
 products:
     - OS-CONNECT
 audiences:

@@ -1,23 +1,25 @@
 ---
-title: Flexr — Assistant Knowledge Base
+title: FleXR — Assistant Knowledge Base
 tags:
     - Assistant
 slug: flexr-index
-doc_type: concept
+doc_type: policy
 products:
-    - Flexr
+    - FleXR
 audiences:
     - planner
     - jurisdiction
     - advocate
     - public
 topics:
-    - tdei-ecosystem
-risk_level: low
-authority_level: explanatory
+    - xr-accessibility
+    - assistive-input
+    - webxr
+risk_level: high
+authority_level: draft
 review_status: stub
-last_reviewed: 2026-06-29
-retrieval_priority: medium
+last_reviewed: 2026-07-02
+retrieval_priority: high
 assistant_behavior:
     allow_inference: false
     requires_citation: true
@@ -30,7 +32,7 @@ related_pages:
 
 <!-- @format -->
 
-# Flexr — Assistant Knowledge Base
+# FleXR — Assistant Knowledge Base
 
 ## Short Answer
 

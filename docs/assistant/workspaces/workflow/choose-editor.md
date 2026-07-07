@@ -3,7 +3,7 @@ title: "Which editor should I use?"
 tags:
     - Assistant
 slug: choose-editor
-doc_type: question
+doc_type: workflow
 products:
     - Workspaces
 audiences:

@@ -3,7 +3,7 @@ title: AccessMap — Assistant Knowledge Base
 tags:
     - Assistant
 slug: accessmap-index
-doc_type: concept
+doc_type: policy
 products:
     - AccessMap
 audiences:
@@ -15,7 +15,7 @@ topics:
     - accessibility-data
     - editing-tools
     - tdei-ecosystem
-risk_level: low
+risk_level: high
 authority_level: explanatory
 review_status: draft
 last_reviewed: 2026-06-09

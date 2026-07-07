@@ -3,7 +3,7 @@ title: "How can an agency confirm that a submitted correction was incorporated?"
 tags:
     - Assistant
 slug: correction-confirmation
-doc_type: question
+doc_type: concept
 products:
     - OS-CONNECT
 audiences:

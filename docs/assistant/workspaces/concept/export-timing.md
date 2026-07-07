@@ -3,7 +3,7 @@ title: "When should edits be exported back to TDEI?"
 tags:
     - Assistant
 slug: export-timing
-doc_type: question
+doc_type: concept
 products:
     - Workspaces
 audiences:

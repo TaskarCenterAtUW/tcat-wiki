@@ -3,7 +3,7 @@ title: "How can advocacy groups use OS-CONNECT?"
 tags:
     - Assistant
 slug: advocacy-group-use
-doc_type: question
+doc_type: concept
 products:
     - OS-CONNECT
 audiences:

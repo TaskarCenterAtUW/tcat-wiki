@@ -3,7 +3,7 @@ title: "How should MPOs contribute?"
 tags:
     - Assistant
 slug: mpo-contribution
-doc_type: question
+doc_type: concept
 products:
     - OS-CONNECT
 audiences:

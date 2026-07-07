@@ -3,7 +3,7 @@ title: "What role could states play in stewardship?"
 tags:
     - Assistant
 slug: state-stewardship-role
-doc_type: question
+doc_type: concept
 products:
     - OS-CONNECT
 audiences:

@@ -3,7 +3,7 @@ title: "Can multiple workspaces exist from the same dataset?"
 tags:
     - Assistant
 slug: multiple-workspaces-per-dataset
-doc_type: question
+doc_type: concept
 products:
     - Workspaces
 audiences:

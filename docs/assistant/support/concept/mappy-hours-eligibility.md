@@ -3,7 +3,7 @@ title: "Can agencies or community groups attend Mappy Hours?"
 tags:
     - Assistant
 slug: mappy-hours-eligibility
-doc_type: question
+doc_type: concept
 products:
     - OS-CONNECT
     - AccessMap

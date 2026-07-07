@@ -3,7 +3,7 @@ title: "What attributes are included for sidewalks, crossings, curb ramps, and r
 tags:
     - Assistant
 slug: pedestrian-feature-attributes
-doc_type: question
+doc_type: concept
 products:
     - OS-CONNECT
 audiences:

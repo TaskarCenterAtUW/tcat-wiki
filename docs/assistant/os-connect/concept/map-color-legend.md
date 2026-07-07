@@ -3,7 +3,7 @@ title: "What do the colors mean?"
 tags:
     - Assistant
 slug: map-color-legend
-doc_type: question
+doc_type: concept
 products:
     - OS-CONNECT
 audiences:

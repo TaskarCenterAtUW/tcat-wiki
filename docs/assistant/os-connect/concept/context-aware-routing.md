@@ -3,7 +3,7 @@ title: "What is context-aware routing?"
 tags:
     - Assistant
 slug: context-aware-routing
-doc_type: question
+doc_type: concept
 products:
     - OS-CONNECT
 audiences:

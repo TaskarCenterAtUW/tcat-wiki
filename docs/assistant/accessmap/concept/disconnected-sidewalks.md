@@ -3,7 +3,7 @@ title: "What happens when sidewalks are disconnected?"
 tags:
     - Assistant
 slug: disconnected-sidewalks
-doc_type: question
+doc_type: concept
 products:
     - AccessMap
 audiences:

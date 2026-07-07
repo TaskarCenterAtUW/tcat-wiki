@@ -3,7 +3,7 @@ title: "How can users identify who made a change?"
 tags:
     - Assistant
 slug: change-authorship
-doc_type: question
+doc_type: concept
 products:
     - Workspaces
 audiences:

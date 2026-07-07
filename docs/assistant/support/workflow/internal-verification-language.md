@@ -3,7 +3,7 @@ title: "What language should staff use when a question requires internal verific
 tags:
     - Assistant
 slug: internal-verification-language
-doc_type: question
+doc_type: workflow
 products:
     - OS-CONNECT
     - AccessMap

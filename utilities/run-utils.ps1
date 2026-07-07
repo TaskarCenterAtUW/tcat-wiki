@@ -2,8 +2,8 @@
 # This script is designed to be run in a PowerShell environment.
 
 # Name: TCAT Wiki - Utility Runner
-# Version: 4.0.0
-# Date: 2026-03-06
+# Version: 5.0.0
+# Date: 2026-07-06
 # Author: Amy Bordenave, Taskar Center for Accessible Technology, University of Washington
 # License: CC-BY-ND 4.0 International
 
@@ -14,8 +14,12 @@
 .DESCRIPTION
     This script performs two phases:
 
-    PHASE 1: Runs Pester tests for all utility scripts to ensure they are working correctly.
-    The tests are run in this order:
+    PHASE 1: Runs Pester tests for all utility scripts to ensure they are working correctly,
+    then regenerates docs/assistant/dispatch.md (akb-generate-dispatch.py) so it reflects the
+    current docs/assistant/ tree, then runs the Python pytest suites for the Python utilities
+    (test_akb_content.py cross-validates docs/assistant/ against dispatch.md, so the registry
+    must be regenerated before those checks run or they will fail against a stale registry).
+    The Pester tests are run in this order:
     1. run-utils.Tests.ps1 (self-check)
     2. generate-guides-lists.Tests.ps1
     3. generate-nav.Tests.ps1
@@ -24,9 +28,13 @@
     If any test fails, the script exits with an error code.
 
     PHASE 2: Runs the utility scripts in sequence:
-    1. generate-guides-lists.ps1 - Generates guide sections in index.md files
-    2. generate-nav.ps1 - Updates navigation in zensical.toml
-    3. check-links.ps1 - Validates all links in documentation
+    1. akb-build-glossary.py - Generates the assistant abbreviations glossary
+    2. generate-guides-lists.ps1 - Generates guide sections in index.md files
+    3. generate-nav.ps1 - Updates navigation in zensical.toml
+    4. check-links.ps1 - Validates all links in documentation
+    5. build-site.py - Prepares the two-layer build (human-docs/, agent-docs/,
+       zensical.build.toml) for deploy-parity local validation. Prep only; does
+       not run `zensical build` or `serve` (use utilities/serve.ps1 for that).
 
 .PARAMETER SkipTests
     Skip Phase 1 (Pester tests) and run utilities directly.
@@ -341,6 +349,49 @@ if (-not $SkipTests) {
     }
 
     Write-Host ""
+
+    $pythonExe = Join-Path $utilPath ".." ".venv" "Scripts" "python.exe"
+    if (-not (Test-Path $pythonExe)) {
+        $pythonExe = "python"  # fallback to system Python
+    }
+
+    # Regenerate docs/assistant/dispatch.md BEFORE the pytest suites run.
+    # test_akb_content.py cross-validates the real docs/assistant/ tree
+    # against the committed dispatch.md registry, so a stale registry (one
+    # that hasn't been re-run since articles were added/removed/re-statused)
+    # would make those checks fail even when the content itself is correct.
+    $dispatchScript = Join-Path $utilPath "akb-generate-dispatch.py"
+    Write-Host "  Regenerating docs/assistant/dispatch.md" -ForegroundColor Cyan
+    Write-Host ""
+    & $pythonExe $dispatchScript
+    if ($LASTEXITCODE -ne 0) {
+        Write-Host ""
+        Write-Host "==========================================="
+        Write-Host "PHASE 1 FAILED: could not regenerate dispatch.md" -ForegroundColor Red
+        Write-Host ""
+        exit 1
+    }
+    Write-Host ""
+    Write-Host "  ✓ COMPLETED: akb-generate-dispatch.py" -ForegroundColor Green
+    Write-Host ""
+
+    # Also run the Python pytest suites for the Python utilities
+    # (akb-generate-dispatch.py, build-site.py).
+    Write-Host "  Running Python pytest suites" -ForegroundColor Cyan
+    Write-Host ""
+
+    & $pythonExe -m pytest $utilPath -q
+    if ($LASTEXITCODE -ne 0) {
+        Write-Host ""
+        Write-Host "==========================================="
+        Write-Host "PHASE 1 FAILED: pytest suite(s) did not pass" -ForegroundColor Red
+        Write-Host ""
+        exit 1
+    }
+
+    Write-Host ""
+    Write-Host "  ✓ PASSED: pytest suites" -ForegroundColor Green
+    Write-Host ""
 }
 
 # ==============================================================================
@@ -358,7 +409,7 @@ if (-not $TestsOnly) {
     if (-not (Test-Path $pythonExe)) {
         $pythonExe = "python"  # fallback to system Python
     }
-    Write-Host "  Step 1/4: Building assistant glossary" -ForegroundColor Cyan
+    Write-Host "  Step 1/5: Building assistant glossary" -ForegroundColor Cyan
     Write-Host ""
     & $pythonExe $glossaryScript
     if ($LASTEXITCODE -ne 0) {
@@ -374,7 +425,7 @@ if (-not $TestsOnly) {
 
     # 2. Generate guides lists
     $guidesListScript = Join-Path $utilPath "generate-guides-lists.ps1"
-    if (-not (Invoke-UtilityScript -ScriptPath $guidesListScript -Description "Step 2/4: Generating guides lists")) {
+    if (-not (Invoke-UtilityScript -ScriptPath $guidesListScript -Description "Step 2/5: Generating guides lists")) {
         Write-Host ""
         Write-Host "==========================================="
         Write-Host "PHASE 2 FAILED at Step 2" -ForegroundColor Red
@@ -385,7 +436,7 @@ if (-not $TestsOnly) {
 
     # 3. Generate navigation
     $navScript = Join-Path $utilPath "generate-nav.ps1"
-    if (-not (Invoke-UtilityScript -ScriptPath $navScript -Description "Step 3/4: Generating navigation")) {
+    if (-not (Invoke-UtilityScript -ScriptPath $navScript -Description "Step 3/5: Generating navigation")) {
         Write-Host ""
         Write-Host "==========================================="
         Write-Host "PHASE 2 FAILED at Step 3" -ForegroundColor Red
@@ -398,10 +449,10 @@ if (-not $TestsOnly) {
     $linkCheckScript = Join-Path $utilPath "check-links.ps1"
     if ($SkipInternalLinksCheck -and $SkipExternalLinksCheck) {
         # Skip link checking entirely
-        Write-Host "  Step 4/4: Skipping link check (-SkipInternalLinksCheck -SkipExternalLinksCheck)" -ForegroundColor Yellow
+        Write-Host "  Step 4/5: Skipping link check (-SkipInternalLinksCheck -SkipExternalLinksCheck)" -ForegroundColor Yellow
     } elseif ($SkipExternalLinksCheck) {
         # Only check internal links when -SkipExternalLinksCheck is used
-        Write-Host "  Step 4/4: Checking internal links only (-SkipExternalLinksCheck)" -ForegroundColor Cyan
+        Write-Host "  Step 4/5: Checking internal links only (-SkipExternalLinksCheck)" -ForegroundColor Cyan
         Write-Host ""
         & $linkCheckScript -internal
         if ($LASTEXITCODE -ne 0) {
@@ -413,11 +464,11 @@ if (-not $TestsOnly) {
     } elseif ($SkipInternalLinksCheck) {
         # Only check external links when -SkipInternalLinksCheck is used
         if ($NoCache) {
-            Write-Host "  Step 4/4: Checking external links only (-SkipInternalLinksCheck -NoCache)" -ForegroundColor Cyan
+            Write-Host "  Step 4/5: Checking external links only (-SkipInternalLinksCheck -NoCache)" -ForegroundColor Cyan
             Write-Host ""
             & $linkCheckScript -external -NoCache
         } else {
-            Write-Host "  Step 4/4: Checking external links only (-SkipInternalLinksCheck)" -ForegroundColor Cyan
+            Write-Host "  Step 4/5: Checking external links only (-SkipInternalLinksCheck)" -ForegroundColor Cyan
             Write-Host ""
             & $linkCheckScript -external
         }
@@ -429,7 +480,7 @@ if (-not $TestsOnly) {
         }
     } elseif ($NoCache) {
         # Check all links with fresh cache
-        Write-Host "  Step 4/4: Checking all links (-NoCache)" -ForegroundColor Cyan
+        Write-Host "  Step 4/5: Checking all links (-NoCache)" -ForegroundColor Cyan
         Write-Host ""
         & $linkCheckScript -NoCache
         if ($LASTEXITCODE -ne 0) {
@@ -440,13 +491,30 @@ if (-not $TestsOnly) {
         }
     } else {
         # Check both internal and external links (with cache)
-        if (-not (Invoke-UtilityScript -ScriptPath $linkCheckScript -Description "Step 4/4: Checking all links")) {
+        if (-not (Invoke-UtilityScript -ScriptPath $linkCheckScript -Description "Step 4/5: Checking all links")) {
             Write-Host ""
             Write-Host "==========================================="
             Write-Host "PHASE 2 FAILED at Step 4" -ForegroundColor Red
             exit 1
         }
     }
+
+    Write-Host ""
+
+    # 5. Two-layer build prep (deploy-parity local build: human-docs/, agent-docs/,
+    #    zensical.build.toml). Prep only - does not run `zensical build` or `serve`.
+    $buildSiteScript = Join-Path $utilPath "build-site.py"
+    Write-Host "  Step 5/5: Preparing two-layer build (human-docs/, agent-docs/)" -ForegroundColor Cyan
+    Write-Host ""
+    & $pythonExe $buildSiteScript
+    if ($LASTEXITCODE -ne 0) {
+        Write-Host ""
+        Write-Host "==========================================="
+        Write-Host "PHASE 2 FAILED at Step 5" -ForegroundColor Red
+        exit 1
+    }
+    Write-Host ""
+    Write-Host "  ✓ COMPLETED: build-site.py" -ForegroundColor Green
 
     Write-Host ""
     Write-Host "PHASE 2 COMPLETE: All utilities ran successfully" -ForegroundColor Green

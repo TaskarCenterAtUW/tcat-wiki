@@ -3,7 +3,7 @@ title: "Why does pedestrian data matter statewide?"
 tags:
     - Assistant
 slug: statewide-data-importance
-doc_type: question
+doc_type: concept
 products:
     - OS-CONNECT
 audiences:

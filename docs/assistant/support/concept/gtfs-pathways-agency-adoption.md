@@ -3,7 +3,7 @@ title: "Are Sound Transit or other agencies publishing GTFS Pathways data?"
 tags:
     - Assistant
 slug: gtfs-pathways-agency-adoption
-doc_type: question
+doc_type: concept
 products:
     - OS-CONNECT
     - AccessMap

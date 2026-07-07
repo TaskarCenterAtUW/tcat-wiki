@@ -3,7 +3,7 @@ title: "How do local datasets improve routing quality?"
 tags:
     - Assistant
 slug: local-datasets-routing-quality
-doc_type: question
+doc_type: concept
 products:
     - AccessMap
 audiences:

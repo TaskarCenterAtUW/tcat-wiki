@@ -3,7 +3,7 @@ title: "How should staff explain uncertainty without sounding evasive?"
 tags:
     - Assistant
 slug: communicate-uncertainty
-doc_type: question
+doc_type: workflow
 products:
     - OS-CONNECT
     - AccessMap

@@ -3,7 +3,7 @@ title: "How are curb ramps incorporated into routing?"
 tags:
     - Assistant
 slug: curb-ramp-routing
-doc_type: question
+doc_type: concept
 products:
     - AccessMap
 audiences:

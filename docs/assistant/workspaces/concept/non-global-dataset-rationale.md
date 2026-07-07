@@ -3,7 +3,7 @@ title: "Why is the dataset not global like OSM?"
 tags:
     - Assistant
 slug: non-global-dataset-rationale
-doc_type: question
+doc_type: concept
 products:
     - Workspaces
 audiences:

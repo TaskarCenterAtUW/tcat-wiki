@@ -3,7 +3,7 @@ title: "What is an interoperable accessibility ecosystem?"
 tags:
     - Assistant
 slug: interoperable-accessibility-ecosystem
-doc_type: question
+doc_type: concept
 products:
     - OS-CONNECT
 audiences:

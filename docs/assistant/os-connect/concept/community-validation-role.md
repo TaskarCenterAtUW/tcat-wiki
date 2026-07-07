@@ -3,7 +3,7 @@ title: "What role did community validation play?"
 tags:
     - Assistant
 slug: community-validation-role
-doc_type: question
+doc_type: concept
 products:
     - OS-CONNECT
 audiences:

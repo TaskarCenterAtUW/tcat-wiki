@@ -3,7 +3,7 @@ title: "How can walksheds support equity analysis?"
 tags:
     - Assistant
 slug: equity-analysis
-doc_type: question
+doc_type: concept
 products:
     - Walksheds
 audiences:

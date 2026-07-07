@@ -3,7 +3,7 @@ title: "How are slopes incorporated into routing?"
 tags:
     - Assistant
 slug: slope-routing
-doc_type: question
+doc_type: concept
 products:
     - AccessMap
 audiences:

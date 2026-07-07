@@ -3,7 +3,7 @@ title: "Can AccessMap support campus accessibility?"
 tags:
     - Assistant
 slug: campus-accessibility
-doc_type: question
+doc_type: concept
 products:
     - AccessMap
 audiences:

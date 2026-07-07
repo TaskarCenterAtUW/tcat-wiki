@@ -3,7 +3,7 @@ title: "Can AI help prioritize infrastructure investment?"
 tags:
     - Assistant
 slug: ai-infrastructure-prioritization
-doc_type: question
+doc_type: concept
 products:
     - OS-CONNECT
 audiences:

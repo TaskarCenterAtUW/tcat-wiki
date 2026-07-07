@@ -3,7 +3,7 @@ title: "What makes accessibility data difficult to maintain?"
 tags:
     - Assistant
 slug: data-maintenance-challenges
-doc_type: question
+doc_type: concept
 products:
     - OS-CONNECT
 audiences:

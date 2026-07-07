@@ -3,7 +3,7 @@ title: "Who should external partners contact for OS-CONNECT data questions?"
 tags:
     - Assistant
 slug: os-connect-contact
-doc_type: question
+doc_type: concept
 products:
     - OS-CONNECT
     - AccessMap

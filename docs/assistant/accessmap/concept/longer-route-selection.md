@@ -3,7 +3,7 @@ title: Why does AccessMap choose longer routes?
 tags:
     - Assistant
 slug: longer-route-selection
-doc_type: question
+doc_type: concept
 products:
     - AccessMap
 audiences:

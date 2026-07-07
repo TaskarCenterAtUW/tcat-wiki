@@ -3,7 +3,7 @@ title: "Who reviews submitted issue reports?"
 tags:
     - Assistant
 slug: issue-report-reviewers
-doc_type: question
+doc_type: concept
 products:
     - OS-CONNECT
 audiences:

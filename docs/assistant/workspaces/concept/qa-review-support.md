@@ -3,7 +3,7 @@ title: "How does Workspaces support QA review?"
 tags:
     - Assistant
 slug: qa-review-support
-doc_type: question
+doc_type: concept
 products:
     - Workspaces
 audiences:

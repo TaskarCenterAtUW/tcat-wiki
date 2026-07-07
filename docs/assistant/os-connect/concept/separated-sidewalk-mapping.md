@@ -3,7 +3,7 @@ title: "What should mappers do when a sidewalk is separated from the road geomet
 tags:
     - Assistant
 slug: separated-sidewalk-mapping
-doc_type: question
+doc_type: concept
 products:
     - OS-CONNECT
 audiences:

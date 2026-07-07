@@ -3,7 +3,7 @@ title: "What are edges and nodes in the OSW download?"
 tags:
     - Assistant
 slug: osw-edges-and-nodes
-doc_type: question
+doc_type: concept
 products:
     - TDEI
 audiences:

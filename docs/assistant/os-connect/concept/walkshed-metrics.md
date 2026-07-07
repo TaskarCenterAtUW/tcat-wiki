@@ -3,7 +3,7 @@ title: "What do walkshed metrics represent?"
 tags:
     - Assistant
 slug: walkshed-metrics
-doc_type: question
+doc_type: concept
 products:
     - OS-CONNECT
 audiences:

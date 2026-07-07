@@ -3,7 +3,7 @@ title: "What is the difference between the viewer and the TDEI portal?"
 tags:
     - Assistant
 slug: viewer-vs-tdei-portal
-doc_type: question
+doc_type: concept
 products:
     - OS-CONNECT
 audiences:

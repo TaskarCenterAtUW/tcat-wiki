@@ -3,7 +3,7 @@ title: "What makes community-mapped sidewalk data usable for agency workflows?"
 tags:
     - Assistant
 slug: community-data-usability
-doc_type: question
+doc_type: concept
 products:
     - OS-CONNECT
 audiences:

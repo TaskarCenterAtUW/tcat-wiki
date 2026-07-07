@@ -3,7 +3,7 @@ title: 'What makes a walkshed "good" or "bad"?'
 tags:
     - Assistant
 slug: walkshed-quality
-doc_type: question
+doc_type: concept
 products:
     - Walksheds
 audiences:

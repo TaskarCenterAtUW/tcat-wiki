@@ -3,7 +3,7 @@ title: "What happens if two groups edit separate copies?"
 tags:
     - Assistant
 slug: parallel-workspace-editing
-doc_type: question
+doc_type: concept
 products:
     - Workspaces
 audiences:

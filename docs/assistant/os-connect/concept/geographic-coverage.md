@@ -3,7 +3,7 @@ title: "What geographic areas are covered?"
 tags:
     - Assistant
 slug: geographic-coverage
-doc_type: question
+doc_type: concept
 products:
     - OS-CONNECT
 audiences:

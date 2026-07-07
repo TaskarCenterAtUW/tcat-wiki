@@ -1,0 +1,364 @@
+"""Pytest suite validating the real docs/assistant/ knowledge base content.
+
+Unlike test_akb_generate_dispatch.py and test_build_site.py (which use
+temp fixture trees), these tests validate the actual authored content
+under docs/assistant/ against the authoring contract in
+docs/assistant/schema.md, and cross-check it against the generated
+docs/assistant/dispatch.md registry.
+"""
+
+import re
+from collections import defaultdict
+from pathlib import Path
+
+import pytest
+
+REPO_ROOT = Path(__file__).parent.parent
+ASSISTANT_DIR = REPO_ROOT / "docs" / "assistant"
+DISPATCH_PATH = ASSISTANT_DIR / "dispatch.md"
+
+# Top-level files that live directly in the assistant root and are never
+# treated as topic directories (mirrors akb-generate-dispatch.py).
+TOP_LEVEL_PEERS = {"index.md", "dispatch.md", "schema.md", "intents.md"}
+
+DOC_TYPE_SUBDIRS = ("concept", "workflow")
+
+REQUIRED_SECTIONS = [
+    "## Short Answer",
+    "## Significance",
+    "## What This Means",
+    "## What This Does Not Mean",
+    "## How To Use This",
+    "## Example",
+    "## Assistant Guidance",
+    "## Related Concepts",
+]
+
+VALID_REVIEW_STATUSES = {"stub", "draft", "reviewed"}
+VALID_RISK_LEVELS = {"low", "medium", "high"}
+VALID_AUTHORITY_LEVELS = {"draft", "explanatory", "official"}
+VALID_RETRIEVAL_PRIORITIES = {"low", "medium", "high"}
+
+FRONTMATTER_RE = re.compile(r"^---\s*\n(.*?)\n---\s*\n", re.DOTALL)
+ROW_RE = re.compile(r"^\|\s*`([^`]+\.md)`\s*\|\s*(\S+)\s*\|")
+HEADING_RE = re.compile(r"^(#{2,4})\s+(.*)$")
+BASE_RE = re.compile(r"^Base:\s*`([^`]+)`")
+
+
+def parse_frontmatter(text):
+    """Parse simple top-level ``key: value`` YAML frontmatter into a dict.
+
+    Mirrors the parser in utilities/akb-generate-dispatch.py: only scalar
+    top-level keys are captured, not nested maps/lists.
+    """
+    match = FRONTMATTER_RE.match(text)
+    if not match:
+        return {}
+    props = {}
+    for line in match.group(1).split("\n"):
+        if not line or line[0] in " \t#-":
+            continue
+        if ":" not in line:
+            continue
+        key, _, value = line.partition(":")
+        key = key.strip()
+        value = value.strip()
+        if len(value) >= 2 and value[0] in "'\"" and value[-1] == value[0]:
+            value = value[1:-1]
+        if value:
+            props[key] = value
+    return props
+
+
+def topic_dirs():
+    """Every subdirectory of docs/assistant/ (each is a topic)."""
+    if not ASSISTANT_DIR.is_dir():
+        return []
+    return sorted(p for p in ASSISTANT_DIR.iterdir() if p.is_dir())
+
+
+def all_topic_articles():
+    """Yield (topic_name, doc_type, path) for every index.md/concept/workflow file.
+
+    doc_type is "policy" for a topic's own index.md, else "concept"/"workflow"
+    based on which subdirectory the file lives in.
+    """
+    for topic in topic_dirs():
+        index_path = topic / "index.md"
+        if index_path.exists():
+            yield topic.name, "policy", index_path
+        for sub in DOC_TYPE_SUBDIRS:
+            subdir = topic / sub
+            if subdir.is_dir():
+                for f in sorted(subdir.glob("*.md")):
+                    yield topic.name, sub, f
+
+
+ARTICLES = list(all_topic_articles())
+ARTICLE_IDS = [
+    f"{topic}/{doc_type}/{path.name}" for topic, doc_type, path in ARTICLES
+]
+
+
+def rel(path: Path) -> str:
+    """POSIX-style path relative to ASSISTANT_DIR, for comparison with dispatch.md."""
+    return path.relative_to(ASSISTANT_DIR).as_posix()
+
+
+# =============================================================================
+# Directory structure
+# =============================================================================
+
+def test_topics_exist():
+    assert topic_dirs(), "No topic directories found under docs/assistant/"
+
+
+def test_topic_dirs_have_only_expected_children():
+    expected = {"index.md", "concept", "workflow"}
+    bad = []
+    for topic in topic_dirs():
+        children = {p.name for p in topic.iterdir()}
+        if children != expected:
+            bad.append((topic.name, sorted(children)))
+    assert not bad, f"Topic dirs with unexpected children (want exactly {expected}): {bad}"
+
+
+def test_every_topic_has_index_md():
+    missing = [t.name for t in topic_dirs() if not (t / "index.md").exists()]
+    assert not missing, f"Topics missing index.md: {missing}"
+
+
+def test_no_index_md_inside_concept_or_workflow():
+    stray = []
+    for topic in topic_dirs():
+        for sub in DOC_TYPE_SUBDIRS:
+            subdir = topic / sub
+            if subdir.is_dir() and (subdir / "index.md").exists():
+                stray.append(rel(subdir / "index.md"))
+    assert not stray, f"index.md found inside concept/ or workflow/ subdirectories: {stray}"
+
+
+def test_no_stray_files_at_assistant_root():
+    """Every file directly under docs/assistant/ must be a known top-level peer."""
+    stray = []
+    for entry in ASSISTANT_DIR.iterdir():
+        if entry.is_file() and entry.name not in TOP_LEVEL_PEERS:
+            stray.append(entry.name)
+    assert not stray, f"Unexpected files directly under docs/assistant/: {stray}"
+
+
+# =============================================================================
+# Per-article frontmatter checks
+# =============================================================================
+
+@pytest.mark.parametrize("topic,doc_type,path", ARTICLES, ids=ARTICLE_IDS)
+def test_slug_matches_filename_or_topic_index(topic, doc_type, path):
+    fm = parse_frontmatter(path.read_text(encoding="utf-8"))
+    slug = fm.get("slug")
+    if doc_type == "policy":
+        expected = f"{topic}-index"
+        assert slug == expected, f"{rel(path)}: slug '{slug}' != expected '{expected}'"
+    else:
+        assert slug == path.stem, f"{rel(path)}: slug '{slug}' != filename '{path.stem}'"
+
+
+@pytest.mark.parametrize("topic,doc_type,path", ARTICLES, ids=ARTICLE_IDS)
+def test_doc_type_matches_location(topic, doc_type, path):
+    fm = parse_frontmatter(path.read_text(encoding="utf-8"))
+    assert fm.get("doc_type") == doc_type, (
+        f"{rel(path)}: doc_type '{fm.get('doc_type')}' != expected '{doc_type}' "
+        f"(based on its location on disk)"
+    )
+
+
+@pytest.mark.parametrize("topic,doc_type,path", ARTICLES, ids=ARTICLE_IDS)
+def test_required_sections_present_and_ordered(topic, doc_type, path):
+    text = path.read_text(encoding="utf-8")
+    body = FRONTMATTER_RE.sub("", text, count=1)
+    assert re.search(r"(?m)^# ", body), f"{rel(path)}: missing an H1 title"
+    positions = []
+    for section in REQUIRED_SECTIONS:
+        idx = body.find(section)
+        assert idx != -1, f"{rel(path)}: missing required section '{section}'"
+        positions.append(idx)
+    assert positions == sorted(
+        positions), f"{rel(path)}: required sections are out of order"
+
+
+@pytest.mark.parametrize("topic,doc_type,path", ARTICLES, ids=ARTICLE_IDS)
+def test_frontmatter_enum_values_valid(topic, doc_type, path):
+    fm = parse_frontmatter(path.read_text(encoding="utf-8"))
+    assert fm.get("review_status") in VALID_REVIEW_STATUSES, (
+        f"{rel(path)}: invalid review_status {fm.get('review_status')!r}"
+    )
+    assert fm.get("risk_level") in VALID_RISK_LEVELS, (
+        f"{rel(path)}: invalid risk_level {fm.get('risk_level')!r}"
+    )
+    assert fm.get("authority_level") in VALID_AUTHORITY_LEVELS, (
+        f"{rel(path)}: invalid authority_level {fm.get('authority_level')!r}"
+    )
+    assert fm.get("retrieval_priority") in VALID_RETRIEVAL_PRIORITIES, (
+        f"{rel(path)}: invalid retrieval_priority {fm.get('retrieval_priority')!r}"
+    )
+
+
+@pytest.mark.parametrize("topic,doc_type,path", ARTICLES, ids=ARTICLE_IDS)
+def test_title_is_present(topic, doc_type, path):
+    fm = parse_frontmatter(path.read_text(encoding="utf-8"))
+    assert fm.get("title"), f"{rel(path)}: missing or empty title"
+
+
+# =============================================================================
+# Slug collisions
+# =============================================================================
+
+def test_slug_collisions_within_and_across_topics():
+    """Flag slug collisions between two articles of the *same* doc_type in the
+    *same* topic.
+
+    Articles are addressed by their full path (topic/doc_type/filename), not
+    by slug alone, so a bare slug is never required to be globally unique.
+    Collisions across topics, and collisions between a concept/ and a
+    workflow/ article sharing a slug within the same topic, are both
+    expected/allowed and are not flagged. Only a same-topic, same-doc_type
+    collision indicates two files that would be ambiguous to each other
+    within their own directory (e.g. duplicate filenames), which is flagged.
+    """
+    by_topic_type_slug = defaultdict(list)
+    for topic, doc_type, path in ARTICLES:
+        if doc_type == "policy":
+            continue
+        fm = parse_frontmatter(path.read_text(encoding="utf-8"))
+        by_topic_type_slug[(topic, doc_type, fm.get("slug"))].append(path)
+
+    same_topic_same_type = [
+        (key, [rel(p) for p in paths])
+        for key, paths in by_topic_type_slug.items()
+        if len(paths) > 1
+    ]
+
+    assert not same_topic_same_type, (
+        f"Slug collisions within the same topic and doc_type: {same_topic_same_type}"
+    )
+
+
+# =============================================================================
+# dispatch.md cross-validation
+# =============================================================================
+
+def parse_dispatch_rows(text):
+    """Return a list of (heading_stack, file_path, status) for each table row.
+
+    heading_stack is a tuple of enclosing heading texts (H2-H4), most recent
+    last, so rows can be grouped/attributed regardless of the exact heading
+    depth/format used by the registry. file_path is resolved against the most
+    recent preceding "Base: `assistant/{topic}/{doc_type}/`" line, so it is
+    comparable to the ASSISTANT_DIR-relative paths produced by rel() (matching
+    how a consuming agent would actually resolve each row: Base + filename).
+    A bare filename with no preceding Base line is left unresolved (as-is).
+    """
+    stack = []
+    base = None
+    rows = []
+    for line in text.splitlines():
+        hm = HEADING_RE.match(line)
+        if hm:
+            level = len(hm.group(1))
+            title = hm.group(2).strip()
+            stack = [s for s in stack if s[0] < level]
+            stack.append((level, title))
+            continue
+        bm = BASE_RE.match(line)
+        if bm:
+            base = bm.group(1).removeprefix("assistant/")
+            continue
+        rm = ROW_RE.match(line)
+        if rm:
+            fname = rm.group(1)
+            file_path = f"{base}{fname}" if base else fname
+            rows.append((tuple(t for _, t in stack), file_path, rm.group(2)))
+    return rows
+
+
+@pytest.fixture(scope="module")
+def dispatch_text():
+    assert DISPATCH_PATH.exists(), "docs/assistant/dispatch.md not found"
+    return DISPATCH_PATH.read_text(encoding="utf-8")
+
+
+@pytest.fixture(scope="module")
+def dispatch_rows(dispatch_text):
+    registry = dispatch_text.split("## Registry", 1)[-1]
+    return parse_dispatch_rows(registry)
+
+
+def test_dispatch_frontmatter_is_valid(dispatch_text):
+    fm = parse_frontmatter(dispatch_text)
+    assert fm.get("slug") == "dispatch"
+    assert fm.get("review_status") in VALID_REVIEW_STATUSES
+
+
+def test_dispatch_has_no_rows_for_nonexistent_files(dispatch_rows):
+    missing = []
+    for heading_stack, file_path, _status in dispatch_rows:
+        if not (ASSISTANT_DIR / file_path).exists():
+            missing.append((file_path, heading_stack))
+    assert not missing, (
+        f"dispatch.md lists {len(missing)} file(s) that do not exist on disk "
+        f"(stale/orphaned rows). First 20: {missing[:20]}"
+    )
+
+
+def test_dispatch_has_no_duplicate_rows(dispatch_rows):
+    counts = defaultdict(int)
+    for _heading_stack, file_path, _status in dispatch_rows:
+        counts[file_path] += 1
+    dupes = {path: n for path, n in counts.items() if n > 1}
+    assert not dupes, f"dispatch.md lists the same file more than once: {dupes}"
+
+
+def test_dispatch_lists_every_topic_article_exactly_once(dispatch_rows):
+    """Every concept/workflow article has exactly one registry table row.
+
+    Topic index.md files (doc_type "policy") are intentionally excluded: the
+    generator links them via a "See [topic/index.md]" prose line rather than
+    a table row, per akb-generate-dispatch.py's render_topic().
+    """
+    listed_counts = defaultdict(int)
+    for _heading_stack, file_path, _status in dispatch_rows:
+        listed_counts[file_path] += 1
+
+    absent_or_duplicated = []
+    for topic, doc_type, path in ARTICLES:
+        if doc_type == "policy":
+            continue
+        path_key = rel(path)
+        count = listed_counts.get(path_key, 0)
+        if count != 1:
+            absent_or_duplicated.append((path_key, count))
+    assert not absent_or_duplicated, (
+        f"{len(absent_or_duplicated)} article(s) under docs/assistant/ missing from "
+        "dispatch.md (count 0), or listed more than once (count > 1). "
+        f"First 20: {absent_or_duplicated[:20]}"
+    )
+
+
+def test_dispatch_review_status_matches_frontmatter(dispatch_rows):
+    row_status = {}
+    for _heading_stack, file_path, status in dispatch_rows:
+        row_status[file_path] = status
+
+    mismatches = []
+    for topic, doc_type, path in ARTICLES:
+        path_key = rel(path)
+        if path_key not in row_status:
+            continue  # already reported by test_dispatch_lists_every_topic_article_exactly_once
+        fm = parse_frontmatter(path.read_text(encoding="utf-8"))
+        actual_status = fm.get("review_status", "stub")
+        if row_status[path_key] != actual_status:
+            mismatches.append((path_key, row_status[path_key], actual_status))
+    assert not mismatches, (
+        f"dispatch.md review_status disagrees with file frontmatter for "
+        f"{len(mismatches)} file(s) (path, dispatch_status, actual_status). "
+        f"First 20: {mismatches[:20]}"
+    )

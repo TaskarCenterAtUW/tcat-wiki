@@ -3,7 +3,7 @@ title: "Can geometry be edited?"
 tags:
     - Assistant
 slug: geometry-editing
-doc_type: question
+doc_type: concept
 products:
     - Workspaces
 audiences:

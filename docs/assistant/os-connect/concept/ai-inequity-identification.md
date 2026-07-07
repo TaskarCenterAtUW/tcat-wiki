@@ -3,7 +3,7 @@ title: "Can AI help identify accessibility inequities?"
 tags:
     - Assistant
 slug: ai-inequity-identification
-doc_type: question
+doc_type: concept
 products:
     - OS-CONNECT
 audiences:

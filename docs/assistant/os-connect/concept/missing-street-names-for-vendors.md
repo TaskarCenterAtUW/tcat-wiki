@@ -3,7 +3,7 @@ title: "What should trip-planning vendors do when OSM pedestrian paths do not in
 tags:
     - Assistant
 slug: missing-street-names-for-vendors
-doc_type: question
+doc_type: concept
 products:
     - OS-CONNECT
 audiences:

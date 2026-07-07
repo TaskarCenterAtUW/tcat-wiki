@@ -3,7 +3,7 @@ title: "Can Walksheds be joined with census, crash, or internal agency datasets?
 tags:
     - Assistant
 slug: external-dataset-joins
-doc_type: question
+doc_type: concept
 products:
     - Walksheds
 audiences:

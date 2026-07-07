@@ -3,7 +3,7 @@ title: "What should agencies do if they need a correction sooner than the next p
 tags:
     - Assistant
 slug: urgent-correction-process
-doc_type: question
+doc_type: concept
 products:
     - OS-CONNECT
 audiences:

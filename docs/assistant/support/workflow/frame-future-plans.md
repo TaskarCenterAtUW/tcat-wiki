@@ -3,7 +3,7 @@ title: "How should staff distinguish current functionality from future plans?"
 tags:
     - Assistant
 slug: frame-future-plans
-doc_type: question
+doc_type: workflow
 products:
     - OS-CONNECT
     - AccessMap

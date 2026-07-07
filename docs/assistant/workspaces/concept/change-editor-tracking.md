@@ -3,7 +3,7 @@ title: "What editor created a change?"
 tags:
     - Assistant
 slug: change-editor-tracking
-doc_type: question
+doc_type: concept
 products:
     - Workspaces
 audiences:

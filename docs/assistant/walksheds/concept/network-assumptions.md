@@ -3,7 +3,7 @@ title: "What network assumptions are used?"
 tags:
     - Assistant
 slug: network-assumptions
-doc_type: question
+doc_type: concept
 products:
     - Walksheds
 audiences:

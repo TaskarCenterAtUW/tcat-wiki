@@ -3,7 +3,7 @@ title: OpenSidewalks — Assistant Knowledge Base
 tags:
     - Assistant
 slug: opensidewalks-index
-doc_type: concept
+doc_type: policy
 products:
     - OpenSidewalks
 audiences:
@@ -14,11 +14,11 @@ audiences:
 topics:
     - tdei-ecosystem
     - accessibility-data
-risk_level: low
-authority_level: explanatory
+risk_level: high
+authority_level: draft
 review_status: stub
-last_reviewed: 2026-06-29
-retrieval_priority: medium
+last_reviewed: 2026-07-02
+retrieval_priority: high
 assistant_behavior:
     allow_inference: false
     requires_citation: true

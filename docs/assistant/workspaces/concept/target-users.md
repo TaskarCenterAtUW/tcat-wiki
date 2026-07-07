@@ -3,7 +3,7 @@ title: "What kinds of users are Workspaces designed for?"
 tags:
     - Assistant
 slug: target-users
-doc_type: question
+doc_type: concept
 products:
     - Workspaces
 audiences:

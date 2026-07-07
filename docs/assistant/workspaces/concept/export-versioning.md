@@ -3,7 +3,7 @@ title: "What versioning occurs during export?"
 tags:
     - Assistant
 slug: export-versioning
-doc_type: question
+doc_type: concept
 products:
     - Workspaces
 audiences:

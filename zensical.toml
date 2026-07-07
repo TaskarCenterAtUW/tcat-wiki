@@ -255,7 +255,11 @@ nav = [
                 {"How should municipalities validate routing results?" = "assistant/accessmap/workflow/validate-routing-results.md"}
             ]}
         ]},
-        {"AVIV ScoutRoute" = [ "assistant/aviv-scoutroute/index.md" ]},
+        {"AVIV ScoutRoute" = [
+            "assistant/aviv-scoutroute/index.md",
+            {"Concept" = [ {"What is a quest in AVIV ScoutRoute?" = "assistant/aviv-scoutroute/concept/quest.md"} ]},
+            {"Workflow" = [ {"How do I answer a quest in AVIV ScoutRoute?" = "assistant/aviv-scoutroute/workflow/answer-quest.md"} ]}
+        ]},
         {"Cross Platform" = [
             "assistant/cross-platform/index.md",
             {"Concept" = [
@@ -282,10 +286,26 @@ nav = [
                 {"Use Walksheds for Safe Routes to School" = "assistant/cross-platform/workflow/use-walksheds-for-safe-routes-to-school.md"}
             ]}
         ]},
-        {"Flexr" = [ "assistant/flexr/index.md" ]},
-        {"Iospointmapper" = [ "assistant/iospointmapper/index.md" ]},
-        {"Livability" = [ "assistant/livability/index.md" ]},
-        {"OpenSidewalks" = [ "assistant/opensidewalks/index.md" ]},
+        {"Flexr" = [
+            "assistant/flexr/index.md",
+            {"Concept" = [ {"What is FleXR?" = "assistant/flexr/concept/flexr.md"} ]},
+            {"Workflow" = [ {"How do I get involved with FleXR?" = "assistant/flexr/workflow/get-involved-with-flexr.md"} ]}
+        ]},
+        {"Iospointmapper" = [
+            "assistant/iospointmapper/index.md",
+            {"Concept" = [ {"What devices are compatible with iOSPointMapper?" = "assistant/iospointmapper/concept/device-compatibility.md"} ]},
+            {"Workflow" = [ {"How do I start collecting data using iOSPointMapper?" = "assistant/iospointmapper/workflow/start-collecting-data.md"} ]}
+        ]},
+        {"Livability" = [
+            "assistant/livability/index.md",
+            {"Concept" = [ {"What is the source for the POIs in LivAbility?" = "assistant/livability/concept/poi-source.md"} ]},
+            {"Workflow" = [ {"How do I select a mobility profile in LivAbility?" = "assistant/livability/workflow/select-mobility-profile.md"} ]}
+        ]},
+        {"OpenSidewalks" = [
+            "assistant/opensidewalks/index.md",
+            {"Concept" = [ {"What is the OpenSidewalks data schema?" = "assistant/opensidewalks/concept/opensidewalks-schema.md"} ]},
+            {"Workflow" = [ {"Where do I find the latest version of the OpenSidewalks schema?" = "assistant/opensidewalks/workflow/find-latest-version.md"} ]}
+        ]},
         {"OS-CONNECT" = [
             "assistant/os-connect/index.md",
             {"Concept" = [
@@ -516,9 +536,14 @@ nav = [
                 {"What does \"node centrality\" reveal operationally?" = "assistant/qa-qc/concept/node-centrality-operational-use.md"},
                 {"What does \"path count\" mean?" = "assistant/qa-qc/concept/path-count.md"},
                 {"What Are the Limitations of QA/QC Analysis?" = "assistant/qa-qc/concept/qa-qc-limitations.md"}
-            ]}
+            ]},
+            {"Workflow" = [ {"How do I use QA/QC Reports to identify accessibility islands?" = "assistant/qa-qc/workflow/identify-accessibility-islands.md"} ]}
         ]},
-        {"Rapid" = [ "assistant/rapid/index.md" ]},
+        {"Rapid" = [
+            "assistant/rapid/index.md",
+            {"Concept" = [ {"Rapid" = "assistant/rapid/concept/rapid.md"} ]},
+            {"Workflow" = [ {"How do I add a sidewalk using Rapid?" = "assistant/rapid/workflow/add-sidewalk-using-rapid.md"} ]}
+        ]},
         {"Support" = [
             "assistant/support/index.md",
             {"Concept" = [
@@ -634,9 +659,14 @@ nav = [
                 {"What is a walkshed?" = "assistant/walksheds/concept/walkshed.md"},
                 {"What is the Walksheds tool?" = "assistant/walksheds/concept/walksheds-tool.md"},
                 {"What does a wheelchair walkshed represent?" = "assistant/walksheds/concept/wheelchair-walkshed.md"}
-            ]}
+            ]},
+            {"Workflow" = [ {"How do I generate a walkshed?" = "assistant/walksheds/workflow/generate-walkshed.md"} ]}
         ]},
-        {"Waykeeper" = [ "assistant/waykeeper/index.md" ]},
+        {"Waykeeper" = [
+            "assistant/waykeeper/index.md",
+            {"Concept" = [ {"What is Waykeeper?" = "assistant/waykeeper/concept/waykeeper.md"} ]},
+            {"Workflow" = [ {"How do I use Waykeeper?" = "assistant/waykeeper/workflow/use-waykeeper.md"} ]}
+        ]},
         {"Workspaces" = [
             "assistant/workspaces/index.md",
             {"Concept" = [

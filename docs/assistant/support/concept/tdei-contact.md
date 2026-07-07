@@ -3,7 +3,7 @@ title: "Who should external partners contact for TDEI support?"
 tags:
     - Assistant
 slug: tdei-contact
-doc_type: question
+doc_type: concept
 products:
     - OS-CONNECT
     - AccessMap

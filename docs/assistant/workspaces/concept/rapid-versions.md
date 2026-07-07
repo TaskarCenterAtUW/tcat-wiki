@@ -3,7 +3,7 @@ title: "What is RAPID 2 versus RAPID 3?"
 tags:
     - Assistant
 slug: rapid-versions
-doc_type: question
+doc_type: concept
 products:
     - Workspaces
 audiences:

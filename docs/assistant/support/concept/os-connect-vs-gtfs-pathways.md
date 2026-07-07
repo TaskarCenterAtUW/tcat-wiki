@@ -3,7 +3,7 @@ title: "How is OS-CONNECT different from GTFS Pathways?"
 tags:
     - Assistant
 slug: os-connect-vs-gtfs-pathways
-doc_type: question
+doc_type: concept
 products:
     - OS-CONNECT
     - AccessMap

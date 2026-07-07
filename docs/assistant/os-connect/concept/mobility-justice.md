@@ -3,7 +3,7 @@ title: "How does OS-CONNECT support mobility justice?"
 tags:
     - Assistant
 slug: mobility-justice
-doc_type: question
+doc_type: concept
 products:
     - OS-CONNECT
 audiences:

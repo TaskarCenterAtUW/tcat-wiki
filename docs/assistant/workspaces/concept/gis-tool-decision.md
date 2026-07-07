@@ -3,7 +3,7 @@ title: "When should a city use external GIS tools?"
 tags:
     - Assistant
 slug: gis-tool-decision
-doc_type: question
+doc_type: concept
 products:
     - Workspaces
 audiences:

@@ -3,7 +3,7 @@ title: "How is OS-CONNECT related to TDEI?"
 tags:
     - Assistant
 slug: os-connect-tdei-relationship
-doc_type: question
+doc_type: concept
 products:
     - OS-CONNECT
 audiences:

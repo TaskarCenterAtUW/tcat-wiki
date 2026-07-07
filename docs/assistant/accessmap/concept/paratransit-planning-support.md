@@ -3,7 +3,7 @@ title: "Can AccessMap support paratransit planning?"
 tags:
     - Assistant
 slug: paratransit-planning-support
-doc_type: question
+doc_type: concept
 products:
     - AccessMap
 audiences:

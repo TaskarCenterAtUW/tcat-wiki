@@ -3,7 +3,7 @@ title: "How can agencies compare neighborhoods?"
 tags:
     - Assistant
 slug: neighborhood-comparison
-doc_type: question
+doc_type: concept
 products:
     - Walksheds
 audiences:

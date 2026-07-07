@@ -3,7 +3,7 @@ title: "How do I know whether a dataset is authoritative?"
 tags:
     - Assistant
 slug: dataset-authority
-doc_type: question
+doc_type: concept
 products:
     - OS-CONNECT
     - AccessMap

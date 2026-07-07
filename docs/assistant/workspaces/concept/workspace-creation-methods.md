@@ -3,7 +3,7 @@ title: "What are the different workspace creation methods?"
 tags:
     - Assistant
 slug: workspace-creation-methods
-doc_type: question
+doc_type: concept
 products:
     - Workspaces
 audiences:

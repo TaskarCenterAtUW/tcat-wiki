@@ -3,7 +3,7 @@ title: "How can OS-CONNECT and Walksheds support bus stop planning?"
 tags:
     - Assistant
 slug: os-connect-walksheds-bus-stop-planning
-doc_type: question
+doc_type: concept
 products:
     - OS-CONNECT
     - AccessMap

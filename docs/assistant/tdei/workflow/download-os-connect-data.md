@@ -3,7 +3,7 @@ title: Where do I download OS-CONNECT data?
 tags:
     - Assistant
 slug: download-os-connect-data
-doc_type: question
+doc_type: workflow
 products:
     - OS-CONNECT
     - TDEI

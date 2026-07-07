@@ -3,7 +3,7 @@ title: "How can walksheds support downtown revitalization?"
 tags:
     - Assistant
 slug: downtown-revitalization
-doc_type: question
+doc_type: concept
 products:
     - Walksheds
 audiences:

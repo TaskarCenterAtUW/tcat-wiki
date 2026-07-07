@@ -3,7 +3,7 @@ title: "How should conflicting data sources be handled?"
 tags:
     - Assistant
 slug: conflicting-data-sources
-doc_type: question
+doc_type: concept
 products:
     - OS-CONNECT
 audiences:

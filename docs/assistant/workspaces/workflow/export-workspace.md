@@ -3,7 +3,7 @@ title: "How do I export a workspace?"
 tags:
     - Assistant
 slug: export-workspace
-doc_type: question
+doc_type: workflow
 products:
     - Workspaces
 audiences:

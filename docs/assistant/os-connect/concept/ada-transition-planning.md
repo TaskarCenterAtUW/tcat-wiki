@@ -3,7 +3,7 @@ title: "Can OS-CONNECT be used for ADA transition planning?"
 tags:
     - Assistant
 slug: ada-transition-planning
-doc_type: question
+doc_type: concept
 products:
     - OS-CONNECT
 audiences:

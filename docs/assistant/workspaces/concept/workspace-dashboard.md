@@ -3,7 +3,7 @@ title: "What does the workspace dashboard show?"
 tags:
     - Assistant
 slug: workspace-dashboard
-doc_type: question
+doc_type: concept
 products:
     - Workspaces
 audiences:

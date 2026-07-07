@@ -3,7 +3,7 @@ title: "What role could advocacy groups play?"
 tags:
     - Assistant
 slug: advocacy-group-role
-doc_type: question
+doc_type: concept
 products:
     - OS-CONNECT
 audiences:

@@ -3,7 +3,7 @@ title: "How should municipalities interpret completeness scores?"
 tags:
     - Assistant
 slug: completeness-score-interpretation
-doc_type: question
+doc_type: concept
 products:
     - OS-CONNECT
 audiences:

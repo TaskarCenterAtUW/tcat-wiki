@@ -3,7 +3,7 @@ title: "How can local governments use community feedback?"
 tags:
     - Assistant
 slug: community-feedback-use
-doc_type: question
+doc_type: concept
 products:
     - OS-CONNECT
 audiences:

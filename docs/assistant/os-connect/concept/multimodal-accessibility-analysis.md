@@ -3,7 +3,7 @@ title: "What is multimodal accessibility analysis?"
 tags:
     - Assistant
 slug: multimodal-accessibility-analysis
-doc_type: question
+doc_type: concept
 products:
     - OS-CONNECT
 audiences:

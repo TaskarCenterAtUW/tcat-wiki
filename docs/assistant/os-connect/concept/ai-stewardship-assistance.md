@@ -3,7 +3,7 @@ title: "How can AI assist stewardship?"
 tags:
     - Assistant
 slug: ai-stewardship-assistance
-doc_type: question
+doc_type: concept
 products:
     - OS-CONNECT
 audiences:

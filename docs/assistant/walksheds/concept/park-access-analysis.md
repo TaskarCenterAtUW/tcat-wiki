@@ -3,7 +3,7 @@ title: "How can walksheds support park access analysis?"
 tags:
     - Assistant
 slug: park-access-analysis
-doc_type: question
+doc_type: concept
 products:
     - Walksheds
 audiences:

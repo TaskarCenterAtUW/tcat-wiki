@@ -3,7 +3,7 @@ title: "How does TDEI support interoperability?"
 tags:
     - Assistant
 slug: interoperability
-doc_type: question
+doc_type: concept
 products:
     - TDEI
 audiences:

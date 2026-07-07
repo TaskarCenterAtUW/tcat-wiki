@@ -3,7 +3,7 @@ title: "How does a workspace diverge from the original dataset?"
 tags:
     - Assistant
 slug: workspace-dataset-divergence
-doc_type: question
+doc_type: concept
 products:
     - Workspaces
 audiences:

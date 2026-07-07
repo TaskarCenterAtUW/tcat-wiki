@@ -3,7 +3,7 @@ title: "Why does Workspaces emulate OSM editing?"
 tags:
     - Assistant
 slug: osm-editing-emulation-rationale
-doc_type: question
+doc_type: concept
 products:
     - Workspaces
 audiences:

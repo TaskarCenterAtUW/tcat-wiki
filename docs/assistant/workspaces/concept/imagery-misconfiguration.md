@@ -3,7 +3,7 @@ title: "What happens if imagery is configured incorrectly?"
 tags:
     - Assistant
 slug: imagery-misconfiguration
-doc_type: question
+doc_type: concept
 products:
     - Workspaces
 audiences:

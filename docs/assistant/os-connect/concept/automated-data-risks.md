@@ -3,7 +3,7 @@ title: "What are the risks of relying solely on automated data?"
 tags:
     - Assistant
 slug: automated-data-risks
-doc_type: question
+doc_type: concept
 products:
     - OS-CONNECT
 audiences:

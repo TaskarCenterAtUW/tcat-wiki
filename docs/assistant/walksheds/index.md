@@ -3,7 +3,7 @@ title: Walksheds — Assistant Knowledge Base
 tags:
     - Assistant
 slug: walksheds-index
-doc_type: concept
+doc_type: policy
 products:
     - Walksheds
 audiences:
@@ -14,7 +14,7 @@ audiences:
 topics:
     - accessibility-data
     - tdei-ecosystem
-risk_level: low
+risk_level: high
 authority_level: explanatory
 review_status: draft
 last_reviewed: 2026-06-09

@@ -3,7 +3,7 @@ title: "Can agencies provide their own sidewalk or curb-ramp data for integratio
 tags:
     - Assistant
 slug: agency-data-integration
-doc_type: question
+doc_type: concept
 products:
     - OS-CONNECT
 audiences:

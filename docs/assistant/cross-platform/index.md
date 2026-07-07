@@ -1,14 +1,22 @@
 ---
-title: Policies — Assistant Knowledge Base
+title: Cross-Platform — Assistant Knowledge Base
 tags:
     - Assistant
 slug: cross-platform-index
 doc_type: policy
 products:
-    - OS-CONNECT
     - AccessMap
-    - Walksheds
+    - AVIV ScoutRoute
+    - FleXR
+    - iOSPointMapper
+    - LivAbility
+    - OpenSidewalks
+    - OS-CONNECT
+    - QA/QC Reports
+    - Rapid
     - TDEI
+    - Walksheds
+    - Waykeeper
     - Workspaces
 audiences:
     - planner
@@ -18,10 +26,10 @@ audiences:
 topics:
     - assistant-layer
     - governance
-risk_level: medium
-authority_level: official
+risk_level: high
+authority_level: explanatory
 review_status: draft
-last_reviewed: 2026-07-01
+last_reviewed: 2026-07-02
 retrieval_priority: high
 assistant_behavior:
     allow_inference: false
@@ -32,7 +40,6 @@ assistant_behavior:
 related_pages:
     - assistant/index.md
     - assistant/dispatch.md
-    - assistant/workspaces/index.md
 ---
 
 <!-- @format -->

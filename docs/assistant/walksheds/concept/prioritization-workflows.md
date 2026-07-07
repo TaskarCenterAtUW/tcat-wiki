@@ -3,7 +3,7 @@ title: "How can walksheds support prioritization workflows?"
 tags:
     - Assistant
 slug: prioritization-workflows
-doc_type: question
+doc_type: concept
 products:
     - Walksheds
 audiences:

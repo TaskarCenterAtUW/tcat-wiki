@@ -3,7 +3,7 @@ title: "What should staff do when they do not know the answer to a partner's que
 tags:
     - Assistant
 slug: handle-unknown-questions
-doc_type: question
+doc_type: workflow
 products:
     - OS-CONNECT
     - AccessMap

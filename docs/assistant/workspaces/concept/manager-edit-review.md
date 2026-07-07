@@ -3,7 +3,7 @@ title: "How can managers review edits?"
 tags:
     - Assistant
 slug: manager-edit-review
-doc_type: question
+doc_type: concept
 products:
     - Workspaces
 audiences:

@@ -3,7 +3,7 @@ title: "What are the limitations of AccessMap routing?"
 tags:
     - Assistant
 slug: routing-limitations
-doc_type: question
+doc_type: concept
 products:
     - AccessMap
 audiences:

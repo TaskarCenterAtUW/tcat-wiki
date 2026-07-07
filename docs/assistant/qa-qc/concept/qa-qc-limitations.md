@@ -3,7 +3,7 @@ title: "What Are the Limitations of QA/QC Analysis?"
 tags:
     - Assistant
 slug: qa-qc-limitations
-doc_type: question
+doc_type: concept
 products:
     - OS-CONNECT
     - Walksheds

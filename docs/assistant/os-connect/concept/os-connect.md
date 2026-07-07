@@ -3,7 +3,7 @@ title: "What is OS-CONNECT?"
 tags:
     - Assistant
 slug: os-connect
-doc_type: question
+doc_type: concept
 products:
     - OS-CONNECT
 audiences:

@@ -3,7 +3,7 @@ title: "What role could MPOs play?"
 tags:
     - Assistant
 slug: mpo-role
-doc_type: question
+doc_type: concept
 products:
     - OS-CONNECT
 audiences:

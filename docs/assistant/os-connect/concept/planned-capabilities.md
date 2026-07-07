@@ -3,7 +3,7 @@ title: "What future capabilities are planned for OS-CONNECT?"
 tags:
     - Assistant
 slug: planned-capabilities
-doc_type: question
+doc_type: concept
 products:
     - OS-CONNECT
 audiences:

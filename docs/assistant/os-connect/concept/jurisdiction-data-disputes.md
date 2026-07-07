@@ -3,7 +3,7 @@ title: "What happens when jurisdictions disagree with the data?"
 tags:
     - Assistant
 slug: jurisdiction-data-disputes
-doc_type: question
+doc_type: concept
 products:
     - OS-CONNECT
 audiences:

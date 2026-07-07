@@ -3,7 +3,7 @@ title: "Why does AccessMap differ from HERE routing?"
 tags:
     - Assistant
 slug: here-routing-comparison
-doc_type: question
+doc_type: concept
 products:
     - AccessMap
 audiences:

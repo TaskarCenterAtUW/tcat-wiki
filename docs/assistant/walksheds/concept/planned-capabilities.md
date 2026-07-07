@@ -3,7 +3,7 @@ title: "What future capabilities are planned for Walksheds?"
 tags:
     - Assistant
 slug: planned-capabilities
-doc_type: question
+doc_type: concept
 products:
     - Walksheds
 audiences:

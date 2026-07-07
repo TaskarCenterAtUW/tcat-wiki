@@ -3,7 +3,7 @@ title: "How could national accessibility data standards evolve?"
 tags:
     - Assistant
 slug: national-data-standards-evolution
-doc_type: question
+doc_type: concept
 products:
     - OS-CONNECT
 audiences:

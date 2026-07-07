@@ -3,7 +3,7 @@ title: "What kinds of community workflows are supported?"
 tags:
     - Assistant
 slug: community-workflow-support
-doc_type: question
+doc_type: concept
 products:
     - Workspaces
 audiences:

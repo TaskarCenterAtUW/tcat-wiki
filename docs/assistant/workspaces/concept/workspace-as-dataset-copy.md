@@ -3,7 +3,7 @@ title: "Is a workspace a copy or the original dataset?"
 tags:
     - Assistant
 slug: workspace-as-dataset-copy
-doc_type: question
+doc_type: concept
 products:
     - Workspaces
 audiences:

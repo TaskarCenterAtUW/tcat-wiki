@@ -3,7 +3,7 @@ title: "Can AI automatically detect curb ramps?"
 tags:
     - Assistant
 slug: ai-curb-ramp-detection
-doc_type: question
+doc_type: concept
 products:
     - OS-CONNECT
 audiences:

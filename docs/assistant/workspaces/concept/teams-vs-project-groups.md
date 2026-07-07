@@ -3,7 +3,7 @@ title: "How do teams differ from project groups?"
 tags:
     - Assistant
 slug: teams-vs-project-groups
-doc_type: question
+doc_type: concept
 products:
     - Workspaces
 audiences:

@@ -3,7 +3,7 @@ title: "Can AccessMap support tourism accessibility?"
 tags:
     - Assistant
 slug: tourism-accessibility
-doc_type: question
+doc_type: concept
 products:
     - AccessMap
 audiences:

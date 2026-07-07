@@ -3,7 +3,7 @@ title: 'What does "connected pedestrian graph" mean?'
 tags:
     - Assistant
 slug: connected-pedestrian-graph
-doc_type: question
+doc_type: concept
 products:
     - OS-CONNECT
 audiences:

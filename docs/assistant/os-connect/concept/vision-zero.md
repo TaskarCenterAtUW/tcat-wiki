@@ -3,7 +3,7 @@ title: "Can this data support Vision Zero?"
 tags:
     - Assistant
 slug: vision-zero
-doc_type: question
+doc_type: concept
 products:
     - OS-CONNECT
 audiences:

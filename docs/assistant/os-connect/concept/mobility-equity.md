@@ -3,7 +3,7 @@ title: "How does this improve mobility equity?"
 tags:
     - Assistant
 slug: mobility-equity
-doc_type: question
+doc_type: concept
 products:
     - OS-CONNECT
 audiences:
