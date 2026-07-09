@@ -2,6 +2,10 @@
 title: Assistant Knowledge Base article schema
 tags:
     - Assistant
+slug: schema
+doc_type: concept
+questions:
+    - What is the schema for the TCAT Wiki Assistant Knowledge Base articles?
 products:
     - AccessMap
     - AVIV ScoutRoute
@@ -17,6 +21,23 @@ products:
     - Walksheds
     - WayKeeper
     - Workspaces
+audiences:
+    - developer
+topics:
+    - support
+    - governance
+    - assistant-behavior
+risk_level: high
+authority_level: official
+review_status: reviewed
+last_reviewed: 2026-07-08
+retrieval_priority: high
+assistant_behavior:
+    allow_inference: false
+    requires_citation: false
+    abstain_if_missing_context: true
+    do_not_claim:
+        -
 related_pages:
     - assistant/index.md
     - assistant/dispatch.md

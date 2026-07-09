@@ -14,11 +14,13 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/),
 - **Docs**: Restructure the AKB schema's controlled `topics` vocabulary into themed tables covering every product area
 - **Docs**: Standardize the "Related Concepts" section across `assistant/index.md`, `assistant/schema.md`, `assistant/intents.md`, and the generated `assistant/dispatch.md` to link to each other with shared, consistent text; update `utilities/akb-generate-dispatch.py` accordingly
 - **Core**: Add `test_akb_content.py` tests validating that every AKB article's `products` and `topics` frontmatter values exactly match the controlled vocabularies in `assistant/schema.md`
+- **Docs**: Add full frontmatter to AKB schema doc
 
 ### Fixes
 
 - **Docs**: Compact the dispatch registry's status legend table formatting
 - **Docs**: Fix AKB article `products` frontmatter values that did not match the schema's canonical casing (`Waykeeper` → `WayKeeper`, `Livability` → `LivAbility`, `Flexr` → `FleXR`, `QA/QC`/`QA/QC Reports` → `QA-QC Reports`)
+- **Docs**: Update AKB article `products` frontmatter values for AKB root docs
 
 ## v13.0.0 (2026-07-06)
 
