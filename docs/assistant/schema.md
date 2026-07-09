@@ -190,7 +190,7 @@ First-class `products` values for assistant-layer pages:
 | `WayKeeper`       | `waykeeper`       | Navigation layer for TCAT's resources      |
 | `Workspaces`      | `workspaces`      | Collaborative editing and sandboxing       |
 
-`Slug` is the matching kebab-case `docs/assistant/{topic}/` directory name for that product, also usable as its corresponding `topics` entry (see [Topic tags](#topic-tags)).
+`Slug` is the matching kebab-case `docs/assistant/{topic}/` directory name for that product, also usable as its corresponding `topics` entry (see [Product slugs](#product-slugs)).
 
 ## Topic tags (`topics`)
 
