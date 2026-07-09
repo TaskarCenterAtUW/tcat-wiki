@@ -133,13 +133,22 @@ Optional subheadings under these sections are allowed if they do not duplicate o
 
 First-class `products` values for assistant-layer pages:
 
-| Product      | Notes                                             |
-| :----------- | :------------------------------------------------ |
-| `OS-CONNECT` | Pedestrian network data and viewer                |
-| `AccessMap`  | Accessibility-aware routing                       |
-| `Walksheds`  | Reachability analysis                             |
-| `TDEI`       | Portal, APIs, releases                            |
-| `Workspaces` | Collaborative editing, sandboxing, export to TDEI |
+| Product           | Notes                                      |
+| :---------------- | :----------------------------------------- |
+| `AccessMap`       | Accessibility-aware routing                |
+| `AVIV ScoutRoute` | Mobile survey application                  |
+| `Cross-Platform`  | Multi-platform shared functionality        |
+| `FleXR`           | WebXR plugin for custom input methods      |
+| `iOSPointMapper`  | Semi-automated data collection on iOS      |
+| `LivAbility`      | Community livability assessment platform   |
+| `OpenSidewalks`   | Pedestrian network schema and standards    |
+| `OS-CONNECT`      | WA pedestrian network data and viewer      |
+| `QA-QC Reports`   | QA/QC reports for OS-CONNECT datasets      |
+| `Rapid`           | Fast web-based OSM editor                  |
+| `TDEI`            | Portal, APIs, dataset storage and releases |
+| `Walksheds`       | Reachability analysis platform             |
+| `WayKeeper`       | Navigation layer for TCAT's resources      |
+| `Workspaces`      | Collaborative editing and sandboxing       |
 
 ## Controlled vocabulary (`topics`)
 
