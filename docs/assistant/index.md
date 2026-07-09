@@ -31,10 +31,9 @@ assistant_behavior:
     do_not_claim:
         - This layer replaces official product manuals or legal advice.
 related_pages:
-    - assistant/dispatch.md
     - assistant/schema.md
-    - assistant/cross-platform/index.md
-    - assistant/support/index.md
+    - assistant/dispatch.md
+    - assistant/intents.md
 ---
 
 <!-- @format -->
@@ -80,10 +79,6 @@ When a user asks a general question about TCAT products, consult the relevant se
 
 ## Related Concepts
 
-- [Dispatch — full registry and authoring status](dispatch.md)
-- [Schema — authoring contract for assistant knowledge base pages](schema.md)
-- [Workspaces knowledge base](workspaces/index.md)
-- [OS-CONNECT knowledge base](os-connect/index.md)
-- [AccessMap knowledge base](accessmap/index.md)
-- [Walksheds knowledge base](walksheds/index.md)
-- [TDEI knowledge base](tdei/index.md)
+- [Assistant Knowledge Base Schema](schema.md) — Authoring contract for Assistant Knowledge Base articles
+- [Assistant Knowledge Base Dispatch](dispatch.md) — Generated registry of all pages in the knowledge base
+- [Assistant Knowledge Base Intents](intents.md) — Mapping of retrieval intents to article paths

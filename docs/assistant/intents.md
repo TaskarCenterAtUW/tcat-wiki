@@ -28,6 +28,9 @@ assistant_behavior:
     do_not_claim: []
 related_pages:
     - assistant/support/workflow/support-answer-patterns.md
+    - assistant/index.md
+    - assistant/schema.md
+    - assistant/dispatch.md
 ---
 
 <!-- @format -->
@@ -364,4 +367,6 @@ Intents are metadata for retrieval pipelines, not content for end users. Do not 
 
 ## Related Concepts
 
-- [Dispatch](dispatch.md)
+- [Assistant Knowledge Base Index](index.md) — Overview of this retrieval-oriented TCAT knowledge base
+- [Assistant Knowledge Base Schema](schema.md) — Authoring contract for Assistant Knowledge Base articles
+- [Assistant Knowledge Base Dispatch](dispatch.md) — Generated registry of all pages in the knowledge base

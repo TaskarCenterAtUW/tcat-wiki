@@ -2,6 +2,10 @@
 title: Assistant Knowledge Base article schema
 tags:
     - Assistant
+related_pages:
+    - assistant/index.md
+    - assistant/dispatch.md
+    - assistant/intents.md
 ---
 
 <!-- @format -->
@@ -247,8 +251,8 @@ Strongly prefer a term from this list. Only add a new slug if none of these fit;
 
 Other pages may use additional topic slugs not listed here only when nothing above fits; keep new tags kebab-case, add them to the matching theme table above, and keep them consistent within a product family.
 
-## Related
+## Related Concepts
 
-- [Assistant Knowledge Base overview](index.md)
-- Dispatch registry — generated agent-layer artifact served at `https://taskarcenteratuw.github.io/tcat-wiki/assistant/dispatch.md` (produced by `utilities/akb-generate-dispatch.py`; not hand-authored).
-- [Intents](intents.md) - TPatterns of user queries that map to specific knowledge-base pages.
+- [Assistant Knowledge Base Index](index.md) — Overview of this retrieval-oriented TCAT knowledge base
+- [Assistant Knowledge Base Dispatch](dispatch.md) — Generated registry of all pages in the knowledge base
+- [Assistant Knowledge Base Intents](intents.md) — Mapping of retrieval intents to article paths
