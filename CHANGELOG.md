@@ -13,6 +13,7 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/),
 - **Docs**: Expand the AKB schema's product tags table to list all 14 first-class products, and align the generated dispatch registry's `products` frontmatter to match
 - **Docs**: Restructure the AKB schema's controlled `topics` vocabulary into themed tables covering every product area
 - **Docs**: Standardize the "Related Concepts" section across `assistant/index.md`, `assistant/schema.md`, `assistant/intents.md`, and the generated `assistant/dispatch.md` to link to each other with shared, consistent text; update `utilities/akb-generate-dispatch.py` accordingly
+- **Core**: Add `test_akb_content.py` tests validating that every AKB article's `products` and `topics` frontmatter values exactly match the controlled vocabularies in `assistant/schema.md`
 
 ### Fixes
 

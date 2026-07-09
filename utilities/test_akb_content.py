@@ -16,6 +16,7 @@ import pytest
 REPO_ROOT = Path(__file__).parent.parent
 ASSISTANT_DIR = REPO_ROOT / "docs" / "assistant"
 DISPATCH_PATH = ASSISTANT_DIR / "dispatch.md"
+SCHEMA_PATH = ASSISTANT_DIR / "schema.md"
 
 # Top-level files that live directly in the assistant root and are never
 # treated as topic directories (mirrors akb-generate-dispatch.py).
@@ -68,6 +69,53 @@ def parse_frontmatter(text):
         if value:
             props[key] = value
     return props
+
+
+LIST_ITEM_RE = re.compile(r"^\s*-\s*(.+)$")
+
+
+def parse_frontmatter_list(text, key):
+    """Parse a top-level ``key:``-introduced YAML block list into a list of strings.
+
+    Only handles the simple block-list style used throughout docs/assistant/
+    (``key:`` on its own line, followed by indented ``- value`` lines), which
+    mirrors how ``products``/``topics`` are actually authored. An inline
+    ``key: []`` (empty list) or missing key both yield ``[]``.
+    """
+    match = FRONTMATTER_RE.match(text)
+    if not match:
+        return []
+    lines = match.group(1).split("\n")
+    items = []
+    in_list = False
+    for line in lines:
+        stripped = line.strip()
+        if not in_list:
+            if stripped == f"{key}:":
+                in_list = True
+            continue
+        if line and line[0] in " \t":
+            m = LIST_ITEM_RE.match(line)
+            if not m:
+                break
+            value = m.group(1).strip()
+            if len(value) >= 2 and value[0] in "'\"" and value[-1] == value[0]:
+                value = value[1:-1]
+            items.append(value)
+        else:
+            break
+    return items
+
+
+CODE_TABLE_CELL_RE = re.compile(r"^\|\s*`([^`]+)`\s*\|", re.MULTILINE)
+
+
+def extract_schema_vocab(schema_text, start_heading, end_heading):
+    """Return the set of backtick-quoted values in table rows between two headings."""
+    start_idx = schema_text.index(start_heading) + len(start_heading)
+    end_idx = schema_text.index(end_heading, start_idx)
+    section = schema_text[start_idx:end_idx]
+    return set(CODE_TABLE_CELL_RE.findall(section))
 
 
 def topic_dirs():
@@ -206,6 +254,48 @@ def test_frontmatter_enum_values_valid(topic, doc_type, path):
 def test_title_is_present(topic, doc_type, path):
     fm = parse_frontmatter(path.read_text(encoding="utf-8"))
     assert fm.get("title"), f"{rel(path)}: missing or empty title"
+
+
+# =============================================================================
+# products/topics controlled vocabulary (docs/assistant/schema.md)
+# =============================================================================
+
+@pytest.fixture(scope="module")
+def schema_products():
+    schema_text = SCHEMA_PATH.read_text(encoding="utf-8")
+    return extract_schema_vocab(schema_text, "## Product tags", "## Controlled vocabulary")
+
+
+@pytest.fixture(scope="module")
+def schema_topics():
+    schema_text = SCHEMA_PATH.read_text(encoding="utf-8")
+    return extract_schema_vocab(
+        schema_text, "## Controlled vocabulary (`topics`)", "## Related Concepts"
+    )
+
+
+@pytest.mark.parametrize("topic,doc_type,path", ARTICLES, ids=ARTICLE_IDS)
+def test_products_match_schema_vocabulary(topic, doc_type, path, schema_products):
+    text = path.read_text(encoding="utf-8")
+    products = parse_frontmatter_list(text, "products")
+    assert products, f"{rel(path)}: missing or empty products list"
+    unknown = [p for p in products if p not in schema_products]
+    assert not unknown, (
+        f"{rel(path)}: products {unknown} not in docs/assistant/schema.md's "
+        "Product tags table"
+    )
+
+
+@pytest.mark.parametrize("topic,doc_type,path", ARTICLES, ids=ARTICLE_IDS)
+def test_topics_match_schema_vocabulary(topic, doc_type, path, schema_topics):
+    text = path.read_text(encoding="utf-8")
+    topics = parse_frontmatter_list(text, "topics")
+    assert topics, f"{rel(path)}: missing or empty topics list"
+    unknown = [t for t in topics if t not in schema_topics]
+    assert not unknown, (
+        f"{rel(path)}: topics {unknown} not in docs/assistant/schema.md's "
+        "controlled vocabulary tables"
+    )
 
 
 # =============================================================================
