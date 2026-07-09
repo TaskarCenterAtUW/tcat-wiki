@@ -5,7 +5,7 @@ tags:
 slug: waykeeper-index
 doc_type: policy
 products:
-    - Waykeeper
+    - WayKeeper
 audiences:
     - planner
     - jurisdiction

@@ -18,6 +18,7 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/),
 ### Fixes
 
 - **Docs**: Compact the dispatch registry's status legend table formatting
+- **Docs**: Fix AKB article `products` frontmatter values that did not match the schema's canonical casing (`Waykeeper` → `WayKeeper`, `Livability` → `LivAbility`, `Flexr` → `FleXR`, `QA/QC`/`QA/QC Reports` → `QA-QC Reports`)
 
 ## v13.0.0 (2026-07-06)
 

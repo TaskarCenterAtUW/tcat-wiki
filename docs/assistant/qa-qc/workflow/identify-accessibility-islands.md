@@ -5,7 +5,7 @@ tags:
 slug: identify-accessibility-islands
 doc_type: workflow
 products:
-    - QA/QC
+    - QA-QC Reports
     - OS-CONNECT
 audiences:
     - planner

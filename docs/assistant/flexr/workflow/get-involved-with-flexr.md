@@ -8,7 +8,7 @@ questions:
     - How do I participate in the FleXR user study?
     - How do I integrate FleXR into my A-Frame application?
 products:
-    - Flexr
+    - FleXR
 audiences:
     - developer
     - advocate

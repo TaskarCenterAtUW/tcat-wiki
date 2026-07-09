@@ -12,11 +12,11 @@ products:
     - LivAbility
     - OpenSidewalks
     - OS-CONNECT
-    - QA/QC Reports
+    - QA-QC Reports
     - Rapid
     - TDEI
     - Walksheds
-    - Waykeeper
+    - WayKeeper
     - Workspaces
 audiences:
     - planner

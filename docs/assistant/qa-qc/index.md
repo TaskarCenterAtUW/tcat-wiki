@@ -5,7 +5,7 @@ tags:
 slug: qa-qc-index
 doc_type: policy
 products:
-    - QA/QC Reports
+    - QA-QC Reports
     - OS-CONNECT
     - TDEI
 audiences:

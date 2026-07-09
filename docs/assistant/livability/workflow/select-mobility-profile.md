@@ -5,7 +5,7 @@ tags:
 slug: select-mobility-profile
 doc_type: workflow
 products:
-    - Livability
+    - LivAbility
 audiences:
     - planner
     - jurisdiction
