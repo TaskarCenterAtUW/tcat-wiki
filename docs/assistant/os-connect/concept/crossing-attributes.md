@@ -14,7 +14,7 @@ audiences:
 topics:
     - os-connect
     - crossings
-    - attributes
+    - editing
 risk_level: medium
 authority_level: explanatory
 review_status: stub

@@ -11,8 +11,7 @@ audiences:
     - jurisdiction
 topics:
     - tdei
-    - TDEI
-    - accounts
+    - roles
 risk_level: low
 authority_level: explanatory
 review_status: draft

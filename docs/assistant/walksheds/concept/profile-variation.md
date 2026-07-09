@@ -14,7 +14,7 @@ audiences:
     - public
 topics:
     - walksheds
-    - profiles
+    - mobility-profiles
     - os-connect
 risk_level: medium
 authority_level: explanatory

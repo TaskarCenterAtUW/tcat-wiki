@@ -13,8 +13,7 @@ audiences:
     - public
 topics:
     - accessmap
-    - profiles
-    - wheelchair
+    - mobility-profiles
 risk_level: high
 authority_level: explanatory
 review_status: stub

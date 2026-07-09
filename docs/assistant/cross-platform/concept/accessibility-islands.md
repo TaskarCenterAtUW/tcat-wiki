@@ -14,8 +14,7 @@ audiences:
     - advocate
     - public
 topics:
-    - network-topology
-    - pedestrian-graph
+    - graph-metrics
     - os-connect
     - accessmap
     - walksheds

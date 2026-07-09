@@ -15,7 +15,7 @@ audiences:
     - advocate
     - public
 topics:
-    - citation
+    - assistant-behavior
     - governance
     - os-connect
     - accessmap

@@ -15,7 +15,7 @@ audiences:
 topics:
     - qa-qc
     - completeness
-    - accessibility
+    - accessibility-data
     - os-connect
 risk_level: medium
 authority_level: explanatory

@@ -13,7 +13,7 @@ audiences:
     - public
 topics:
     - tdei
-    - downloads
+    - export
     - formats
 risk_level: medium
 authority_level: explanatory

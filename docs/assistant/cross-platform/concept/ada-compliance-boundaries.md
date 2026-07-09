@@ -15,7 +15,7 @@ audiences:
     - public
 topics:
     - legal-boundaries
-    - accessibility
+    - accessibility-data
     - os-connect
     - accessmap
     - walksheds

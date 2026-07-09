@@ -10,7 +10,7 @@ audiences:
     - jurisdiction
     - planner
 topics:
-    - ADA
+    - ada
     - planning
     - os-connect
 risk_level: high

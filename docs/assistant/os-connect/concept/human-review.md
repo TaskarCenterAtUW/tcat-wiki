@@ -13,7 +13,7 @@ audiences:
     - public
 topics:
     - os-connect
-    - validation
+    - data-quality
     - ai
 risk_level: high
 authority_level: explanatory

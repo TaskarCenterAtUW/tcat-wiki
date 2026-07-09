@@ -15,8 +15,8 @@ audiences:
     - advocate
     - public
 topics:
-    - gtfs-pathways
-    - openstreetmap
+    - gtfs
+    - osm-interoperability
     - os-connect
     - accessmap
     - walksheds

@@ -13,7 +13,7 @@ audiences:
     - advocate
 topics:
     - os-connect
-    - network-topology
+    - graph-metrics
     - data-quality
     - accessmap
     - walksheds

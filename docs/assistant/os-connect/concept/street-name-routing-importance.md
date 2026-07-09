@@ -13,9 +13,8 @@ audiences:
     - public
 topics:
     - os-connect
-    - openstreetmap
+    - osm-interoperability
     - routing
-    - navigation
 risk_level: medium
 authority_level: explanatory
 review_status: stub

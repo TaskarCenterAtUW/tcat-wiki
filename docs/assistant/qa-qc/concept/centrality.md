@@ -14,7 +14,7 @@ audiences:
     - public
 topics:
     - qa-qc
-    - centrality
+    - graph-metrics
     - os-connect
 risk_level: medium
 authority_level: explanatory

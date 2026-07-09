@@ -14,7 +14,7 @@ audiences:
 topics:
     - os-connect
     - ada
-    - legal
+    - legal-boundaries
 risk_level: high
 authority_level: explanatory
 review_status: stub

@@ -12,8 +12,7 @@ audiences:
     - jurisdiction
 topics:
     - tdei
-    - TDEI
-    - downloads
+    - export
     - os-connect
 risk_level: low
 authority_level: official

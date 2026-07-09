@@ -14,7 +14,7 @@ audiences:
 topics:
     - livability
     - tdei-ecosystem
-    - accessibility-analysis
+    - accessibility-metrics
 risk_level: high
 authority_level: draft
 review_status: stub

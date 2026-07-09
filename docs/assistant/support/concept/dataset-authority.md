@@ -15,7 +15,7 @@ audiences:
     - advocate
     - public
 topics:
-    - authority
+    - editing-authority
     - governance
     - os-connect
     - accessmap

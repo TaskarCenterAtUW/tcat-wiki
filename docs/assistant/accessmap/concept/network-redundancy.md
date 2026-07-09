@@ -13,7 +13,7 @@ audiences:
     - public
 topics:
     - accessmap
-    - network
+    - graph-metrics
 risk_level: medium
 authority_level: explanatory
 review_status: stub

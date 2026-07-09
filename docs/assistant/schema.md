@@ -236,6 +236,24 @@ This duplicates the `products` list in slug form so a page's owning section is f
 | `releases`               | Dataset releases, versioning, and publication in TDEI   |
 | `publication-workflow`   | Review, export, and release of edits into the ecosystem |
 | `public-vs-private-data` | Public release vs. private sandbox boundaries           |
+| `comparison`             | Comparative analysis across datasets or tools           |
+| `overview`               | High-level product or dataset overview                  |
+| `connectivity`           | Network connectivity and data linkages                  |
+| `limitations`            | Known limitations and constraints                       |
+| `os-connect-overview`    | OS-CONNECT system overview and architecture             |
+| `arcgis`                 | ArcGIS integration and compatibility                    |
+| `documentation`          | User guides and technical documentation                 |
+| `licensing`              | Data licensing and usage rights                         |
+| `standards`              | Standards adherence and compliance                      |
+| `open-source`            | Open-source software and communities                    |
+| `opensidewalks-overview` | OpenSidewalks system overview and architecture          |
+| `complexity`             | System or data complexity considerations                |
+| `assumptions`            | Assumptions and dependencies                            |
+| `publishers`             | Data publishers and data provenance                     |
+| `tdei-overview`          | TDEI system overview and architecture                   |
+| `glossary`               | Terminology and glossary definitions                    |
+| `abbreviations`          | Acronyms and abbreviations                              |
+| `acronyms`               | Extended acronym definitions and meanings               |
 
 ### Editing & collaboration
 
@@ -260,6 +278,9 @@ This duplicates the `products` list in slug form so a page's owning section is f
 | `imagery`                  | Imagery layers, sources, permissions                             |
 | `basemaps`                 | Basemap and tile loading                                         |
 | `configuration`            | Tool and workspace configuration                                 |
+| `issue-reporting`          | Reporting and tracking issues and errors                         |
+| `conflicts`                | Conflict resolution and merge handling                           |
+| `ownership`                | Data and content ownership and stewardship                       |
 
 ### Accessibility & routing
 
@@ -274,6 +295,15 @@ This duplicates the `products` list in slug form so a page's owning section is f
 | `equity`                | Equity analysis across accessibility profiles or communities |
 | `scoring`               | Community livability assessment and scoring                  |
 | `accessibility-metrics` | Quantified accessibility or livability indicators            |
+| `elevation`             | Elevation data and terrain analysis                          |
+| `curb-ramps`            | Curb ramp inventory and accessibility                        |
+| `crossings`             | Street crossing infrastructure and accessibility             |
+| `intersections`         | Intersection geometry and accessibility                      |
+| `destinations`          | Destination accessibility and proximity analysis             |
+| `sidewalks`             | Sidewalk inventory and connectivity                          |
+| `slope`                 | Slope and grade data for accessibility                       |
+| `trails`                | Trail networks and pedestrian pathways                       |
+| `buffers`               | Buffer zones and walking distance analysis                   |
 
 ### Field data collection & mobile tools
 
@@ -286,17 +316,67 @@ This duplicates the `products` list in slug form so a page's owning section is f
 | `xr-accessibility`      | XR/AR accessibility tooling                                |
 | `assistive-input`       | Alternative/assistive input methods for XR or mobile tools |
 | `webxr`                 | WebXR platform-specific concerns                           |
+| `tasking-manager`       | Tasking Manager project setup and coordination             |
+| `automation`            | Automated data collection and processing                   |
+| `testing`               | Testing workflows and quality assurance                    |
 
 ### Planning & analysis
 
-| Topic              | Use for                                                        |
-| :----------------- | :------------------------------------------------------------- |
-| `planning`         | Infrastructure, capital, and transition planning               |
-| `ada`              | ADA-related planning, requirements, or compliance context      |
-| `legal-boundaries` | Legal or compliance boundaries assistants must not overstate   |
-| `prioritization`   | Ranking or prioritizing pedestrian investments                 |
-| `ai`               | AI/ML-assisted analysis, generation, or risk                   |
-| `graph-metrics`    | Network/graph analysis metrics (centrality, betweenness, etc.) |
+| Topic                  | Use for                                                        |
+| :--------------------- | :------------------------------------------------------------- |
+| `planning`             | Infrastructure, capital, and transition planning               |
+| `ada`                  | ADA-related planning, requirements, or compliance context      |
+| `legal-boundaries`     | Legal or compliance boundaries assistants must not overstate   |
+| `prioritization`       | Ranking or prioritizing pedestrian investments                 |
+| `ai`                   | AI/ML-assisted analysis, generation, or risk                   |
+| `graph-metrics`        | Network/graph analysis metrics (centrality, betweenness, etc.) |
+| `community`            | Community engagement and participation                         |
+| `communication`        | Communication strategies and outreach                          |
+| `gis`                  | GIS tools and spatial analysis                                 |
+| `roadmap`              | Product roadmaps and strategic direction                       |
+| `advocacy`             | Advocacy and policy support                                    |
+| `contacts`             | Contact databases and organizational structure                 |
+| `construction`         | Construction projects and impacts                              |
+| `schools`              | School-related planning and data                               |
+| `risk`                 | Risk assessment and management                                 |
+| `strategy`             | Strategic planning and implementation                          |
+| `rural`                | Rural-specific planning considerations                         |
+| `campus`               | Campus-specific planning and walkability                       |
+| `emergency`            | Emergency response and resilience planning                     |
+| `health`               | Health outcomes and public health implications                 |
+| `vision-zero`          | Vision Zero and traffic safety initiatives                     |
+| `vendors`              | Vendor management and procurement                              |
+| `mpo`                  | Metropolitan Planning Organization activities                  |
+| `mappy-hours`          | Mappy Hours accessibility audit events                         |
+| `economic-development` | Economic development and business impacts                      |
+| `cost`                 | Cost-benefit analysis and budgeting                            |
+| `resilience`           | Resilience and adaptation planning                             |
+| `tourism`              | Tourism accessibility and promotion                            |
+| `helpline`             | Helpline and user support services                             |
+| `adoption`             | Technology adoption and implementation                         |
+| `capital`              | Capital improvement and funding                                |
+| `maintenance`          | Maintenance and stewardship                                    |
+| `other-states`         | Examples and practices from other states                       |
+| `events`               | Events and community gatherings                                |
+| `training`             | Training programs and capacity building                        |
+| `national`             | National-level initiatives and standards                       |
+| `partnerships`         | Partnerships and collaboration agreements                      |
+| `private-property`     | Private property considerations                                |
+| `srts`                 | Safe Routes To School initiatives                              |
+| `safety`               | Pedestrian and traffic safety                                  |
+| `sustainability`       | Sustainable transportation and land use                        |
+| `universities`         | University-related planning and walkability                    |
+| `washington`           | Washington state-specific context                              |
+| `sla`                  | Service level agreements and performance metrics               |
+| `escalation`           | Escalation procedures and issue resolution                     |
+| `before-after`         | Before-and-after analysis and impact assessment                |
+| `complete-streets`     | Complete streets and street design                             |
+| `grants`               | Grant funding and sources                                      |
+| `scenarios`            | Scenario planning and modeling                                 |
+| `parks`                | Park planning and greenspace accessibility                     |
+| `bottlenecks`          | Identifying and addressing bottlenecks                         |
+| `interpretation`       | Data interpretation and visualization                          |
+| `agencies`             | Agency coordination and inter-organizational workflows         |
 
 ### Support, feedback & governance
 

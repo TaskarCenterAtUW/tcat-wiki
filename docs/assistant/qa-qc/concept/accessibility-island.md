@@ -14,7 +14,7 @@ audiences:
     - public
 topics:
     - qa-qc
-    - accessibility-islands
+    - accessibility-data
     - os-connect
 risk_level: medium
 authority_level: explanatory

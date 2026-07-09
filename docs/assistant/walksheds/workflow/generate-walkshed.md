@@ -13,7 +13,6 @@ audiences:
     - public
 topics:
     - walksheds
-    - walkshed-analysis
     - routing
 risk_level: medium
 authority_level: draft

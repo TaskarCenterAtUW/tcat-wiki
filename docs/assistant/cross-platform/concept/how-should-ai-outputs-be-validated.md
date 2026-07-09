@@ -16,7 +16,7 @@ audiences:
     - public
 topics:
     - ai
-    - validation
+    - data-quality
     - os-connect
     - accessmap
     - walksheds

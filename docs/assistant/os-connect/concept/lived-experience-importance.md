@@ -13,7 +13,7 @@ audiences:
     - public
 topics:
     - os-connect
-    - lived-experience
+    - equity
 risk_level: medium
 authority_level: explanatory
 review_status: stub

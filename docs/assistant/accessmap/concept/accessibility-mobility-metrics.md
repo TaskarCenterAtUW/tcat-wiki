@@ -13,7 +13,7 @@ audiences:
     - public
 topics:
     - accessmap
-    - metrics
+    - accessibility-metrics
 risk_level: medium
 authority_level: draft
 review_status: stub

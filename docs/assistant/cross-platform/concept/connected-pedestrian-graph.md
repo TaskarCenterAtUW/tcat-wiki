@@ -13,7 +13,7 @@ audiences:
     - jurisdiction
     - advocate
 topics:
-    - network-topology
+    - graph-metrics
     - os-connect
     - accessmap
     - walksheds

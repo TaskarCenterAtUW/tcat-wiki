@@ -13,7 +13,7 @@ audiences:
     - public
 topics:
     - walksheds
-    - accessibility-islands
+    - accessibility-data
 risk_level: medium
 authority_level: explanatory
 review_status: stub

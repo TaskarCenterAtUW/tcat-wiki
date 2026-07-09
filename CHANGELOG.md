@@ -11,6 +11,7 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/),
 ### Features
 
 - **Docs**: Add to abbreviations list
+- **Docs**: Add new `topics` slugs to the AKB schema's themed vocabulary tables
 - **Docs**: Add a `Slug` column to the AKB schema's Product tags table (matching each product's `docs/assistant/{topic}/` directory name), rename the `topics` section to "Topic tags", and add a "Product slugs" table duplicating those slugs as first-class `topics` values, with a short rationale for the intentional duplication
 - **Core**: Add `test_akb_content.py` tests, enforcing that (1) the first `products` entry for single-product topic folders matches that folder's owning product, (2) the first `topics` entry matches the parent topic folder's own slug, and (3) every `products` entry has its schema slug present somewhere in `topics`; `cross-platform/` and `support/` are exempt from checks 1-2 as cross-cutting, multi-product sections
 - **Docs**: Expand the AKB schema's product tags table to list all first-class products, and align the generated dispatch registry's `products` frontmatter to match
@@ -21,6 +22,7 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/),
 
 ### Fixes
 
+- **Docs**: Rename or case-normalize non-conforming `topics` values in AKB articles to match the schema's updated controlled vocabulary
 - **Docs**: Reorder AKB article `products`/`topics` frontmatter so the first `products` entry matches the owning product for the article's parent topic folder, the first `topics` entry matches that folder's slug, and every listed product's slug is present in `topics`, per the new `test_akb_content.py` checks; regenerate `assistant/dispatch.md` afterward
 - **Docs**: Fix a stray `QA/QC Reports` `products` value (should be `QA-QC Reports`) and its missing `qa-qc` `topics` slug in `assistant/cross-platform/concept/abbreviations.md`
 - **Docs**: Compact the dispatch registry's status legend table formatting

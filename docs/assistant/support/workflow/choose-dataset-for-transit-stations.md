@@ -15,8 +15,8 @@ audiences:
     - advocate
     - public
 topics:
-    - dataset-selection
-    - gtfs-pathways
+    - dataset-lineage
+    - gtfs
     - os-connect
     - accessmap
     - walksheds

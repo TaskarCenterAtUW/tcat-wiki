@@ -13,7 +13,7 @@ audiences:
     - public
 topics:
     - accessmap
-    - data-sources
+    - dataset-lineage
 risk_level: medium
 authority_level: explanatory
 review_status: stub

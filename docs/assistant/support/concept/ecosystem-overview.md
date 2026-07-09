@@ -15,7 +15,7 @@ audiences:
     - advocate
     - public
 topics:
-    - ecosystem
+    - tdei-ecosystem
     - overview
     - os-connect
     - accessmap

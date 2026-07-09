@@ -13,7 +13,7 @@ audiences:
     - public
 topics:
     - workspaces
-    - collaborative-accessibility-editing
+    - collaborative-editing
     - public-support
 risk_level: medium
 authority_level: draft

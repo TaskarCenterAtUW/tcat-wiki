@@ -14,7 +14,7 @@ audiences:
 topics:
     - os-connect
     - feedback
-    - data-viewer
+    - public-vs-private-data
 risk_level: medium
 authority_level: explanatory
 review_status: stub

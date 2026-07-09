@@ -13,8 +13,8 @@ audiences:
     - public
 topics:
     - os-connect
-    - openstreetmap
-    - tagging
+    - osm-interoperability
+    - editing
 risk_level: medium
 authority_level: explanatory
 review_status: stub

@@ -17,10 +17,9 @@ topics:
     - os-connect
     - planning
     - destinations
-    - pedestrian-access
+    - accessibility-data
     - walksheds
-    - accessibility-analysis
-    - destinations
+    - accessibility-metrics
     - accessmap
 risk_level: medium
 authority_level: explanatory

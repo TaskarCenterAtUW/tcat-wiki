@@ -14,7 +14,6 @@ audiences:
 topics:
     - walksheds
     - transit
-    - bus-stops
 risk_level: medium
 authority_level: explanatory
 review_status: stub

@@ -25,7 +25,7 @@ audiences:
     - advocate
     - public
 topics:
-    - assistant-layer
+    - assistant-behavior
     - governance
     - accessmap
     - aviv-scoutroute

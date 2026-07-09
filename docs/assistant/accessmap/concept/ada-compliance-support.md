@@ -14,7 +14,6 @@ audiences:
 topics:
     - accessmap
     - ada
-    - compliance
 risk_level: high
 authority_level: draft
 review_status: stub

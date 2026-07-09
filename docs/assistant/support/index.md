@@ -16,7 +16,7 @@ audiences:
     - advocate
     - public
 topics:
-    - assistant-layer
+    - assistant-behavior
     - tdei-ecosystem
     - os-connect
     - accessmap

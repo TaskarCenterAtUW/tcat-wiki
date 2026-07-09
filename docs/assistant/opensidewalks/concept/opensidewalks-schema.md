@@ -13,7 +13,7 @@ audiences:
     - public
 topics:
     - opensidewalks
-    - data-schema
+    - formats
     - accessibility-data
 risk_level: medium
 authority_level: draft

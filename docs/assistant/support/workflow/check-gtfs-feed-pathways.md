@@ -15,8 +15,8 @@ audiences:
     - advocate
     - public
 topics:
-    - gtfs-pathways
-    - validation
+    - gtfs
+    - data-quality
     - os-connect
     - accessmap
     - walksheds

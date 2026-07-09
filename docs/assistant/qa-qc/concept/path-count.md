@@ -14,7 +14,6 @@ audiences:
     - public
 topics:
     - qa-qc
-    - qaqc
     - os-connect
 risk_level: medium
 authority_level: explanatory

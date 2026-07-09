@@ -14,7 +14,7 @@ audiences:
 topics:
     - workspaces
     - teams
-    - collaboration
+    - collaborative-editing
     - roles
 risk_level: low
 authority_level: draft

@@ -13,7 +13,7 @@ audiences:
     - public
 topics:
     - walksheds
-    - uncertainty
+    - data-quality
 risk_level: high
 authority_level: explanatory
 review_status: stub

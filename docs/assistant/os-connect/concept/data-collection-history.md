@@ -13,7 +13,7 @@ audiences:
     - public
 topics:
     - os-connect
-    - collection
+    - field-data-collection
 risk_level: medium
 authority_level: explanatory
 review_status: stub

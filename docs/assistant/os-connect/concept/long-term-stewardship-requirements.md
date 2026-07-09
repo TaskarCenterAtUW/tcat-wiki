@@ -13,7 +13,7 @@ audiences:
     - public
 topics:
     - os-connect
-    - operations
+    - operational-workflows
 risk_level: medium
 authority_level: explanatory
 review_status: stub

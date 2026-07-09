@@ -12,7 +12,7 @@ audiences:
     - jurisdiction
 topics:
     - qa-qc
-    - data-review
+    - review
     - os-connect
 risk_level: medium
 authority_level: draft

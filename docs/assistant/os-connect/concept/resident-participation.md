@@ -13,7 +13,7 @@ audiences:
     - public
 topics:
     - os-connect
-    - participation
+    - collaborative-editing
 risk_level: medium
 authority_level: explanatory
 review_status: stub

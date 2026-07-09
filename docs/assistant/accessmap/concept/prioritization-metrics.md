@@ -13,8 +13,8 @@ audiences:
     - public
 topics:
     - accessmap
-    - metrics
-    - accessibility
+    - accessibility-metrics
+    - accessibility-data
 risk_level: medium
 authority_level: explanatory
 review_status: stub

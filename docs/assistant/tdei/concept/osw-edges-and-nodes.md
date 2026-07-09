@@ -13,9 +13,9 @@ audiences:
     - public
 topics:
     - tdei
-    - downloads
-    - routing-graph
-    - osw
+    - export
+    - graph-metrics
+    - opensidewalks
 risk_level: medium
 authority_level: explanatory
 review_status: stub

@@ -13,7 +13,7 @@ audiences:
     - public
 topics:
     - os-connect
-    - openstreetmap
+    - osm-interoperability
     - routing
     - vendors
 risk_level: medium

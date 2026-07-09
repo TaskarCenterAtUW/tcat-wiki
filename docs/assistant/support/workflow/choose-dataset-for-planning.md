@@ -15,7 +15,7 @@ audiences:
     - advocate
     - public
 topics:
-    - dataset-selection
+    - dataset-lineage
     - planning
     - os-connect
     - accessmap

@@ -14,7 +14,7 @@ audiences:
 topics:
     - os-connect
     - ada
-    - data-gaps
+    - completeness
 risk_level: high
 authority_level: explanatory
 review_status: stub
