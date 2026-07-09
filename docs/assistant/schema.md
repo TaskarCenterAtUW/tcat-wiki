@@ -169,32 +169,57 @@ Body content after frontmatter MUST use this heading scaffold so chunks stay str
 
 Optional subheadings under these sections are allowed if they do not duplicate or replace the canonical nine headings.
 
-## Product tags
+## Product tags (`products`)
 
 First-class `products` values for assistant-layer pages:
 
-| Product           | Notes                                      |
-| :---------------- | :----------------------------------------- |
-| `AccessMap`       | Accessibility-aware routing                |
-| `AVIV ScoutRoute` | Mobile survey application                  |
-| `Cross-Platform`  | Multi-platform shared functionality        |
-| `FleXR`           | WebXR plugin for custom input methods      |
-| `iOSPointMapper`  | Semi-automated data collection on iOS      |
-| `LivAbility`      | Community livability assessment platform   |
-| `OpenSidewalks`   | Pedestrian network schema and standards    |
-| `OS-CONNECT`      | WA pedestrian network data and viewer      |
-| `QA-QC Reports`   | QA/QC reports for OS-CONNECT datasets      |
-| `Rapid`           | Fast web-based OSM editor                  |
-| `TDEI`            | Portal, APIs, dataset storage and releases |
-| `Walksheds`       | Reachability analysis platform             |
-| `WayKeeper`       | Navigation layer for TCAT's resources      |
-| `Workspaces`      | Collaborative editing and sandboxing       |
+| Product           | Slug              | Notes                                      |
+| :---------------- | :---------------- | :----------------------------------------- |
+| `AccessMap`       | `accessmap`       | Accessibility-aware routing                |
+| `AVIV ScoutRoute` | `aviv-scoutroute` | Mobile survey application                  |
+| `Cross-Platform`  | `cross-platform`  | Multi-platform shared functionality        |
+| `FleXR`           | `flexr`           | WebXR plugin for custom input methods      |
+| `iOSPointMapper`  | `iospointmapper`  | Semi-automated data collection on iOS      |
+| `LivAbility`      | `livability`      | Community livability assessment platform   |
+| `OpenSidewalks`   | `opensidewalks`   | Pedestrian network schema and standards    |
+| `OS-CONNECT`      | `os-connect`      | WA pedestrian network data and viewer      |
+| `QA-QC Reports`   | `qa-qc`           | QA/QC reports for OS-CONNECT datasets      |
+| `Rapid`           | `rapid`           | Fast web-based OSM editor                  |
+| `TDEI`            | `tdei`            | Portal, APIs, dataset storage and releases |
+| `Walksheds`       | `walksheds`       | Reachability analysis platform             |
+| `WayKeeper`       | `waykeeper`       | Navigation layer for TCAT's resources      |
+| `Workspaces`      | `workspaces`      | Collaborative editing and sandboxing       |
 
-## Controlled vocabulary (`topics`)
+`Slug` is the matching kebab-case `docs/assistant/{topic}/` directory name for that product, also usable as its corresponding `topics` entry (see [Topic tags](#topic-tags)).
 
-This is the **prescribed vocabulary going forward** — the set of kebab-case slugs authors should draw from when tagging `topics`, regardless of how many pages currently use a given term. It intentionally covers every product in [Product tags](#product-tags), including thin sections (LivAbility, FleXR, iOSPointMapper, WayKeeper) so that early pages in those areas are tagged consistently with where each product is headed, not just where it is today.
+## Topic tags (`topics`)
+
+This is the **prescribed vocabulary going forward** — the set of kebab-case slugs authors should draw from when tagging `topics`, regardless of how many pages currently use a given term. It intentionally covers every product in [Product tags](#product-tags-products), including thin sections (LivAbility, FleXR, iOSPointMapper, WayKeeper) so that early pages in those areas are tagged consistently with where each product is headed, not just where it is today.
 
 Strongly prefer a term from this list. Only add a new slug if none of these fit; and if you do, add it to the relevant theme table below in the same pull request. Themes are cross-cutting — any topic may be combined with any product's pages when relevant.
+
+### Product slugs
+
+Every value from the [Product tags](#product-tags-products) table's `Slug` column is also a valid `topics` entry, used to tag a page with its owning product/section for retrieval:
+
+| Topic             |
+| :---------------- |
+| `accessmap`       |
+| `aviv-scoutroute` |
+| `cross-platform`  |
+| `flexr`           |
+| `iospointmapper`  |
+| `livability`      |
+| `opensidewalks`   |
+| `os-connect`      |
+| `qa-qc`           |
+| `rapid`           |
+| `tdei`            |
+| `walksheds`       |
+| `waykeeper`       |
+| `workspaces`      |
+
+This duplicates the `products` list in slug form so a page's owning section is filterable from `topics` alone (e.g. by a retrieval pipeline that only indexes `topics`), without requiring a `products`-to-slug lookup elsewhere.
 
 ### Ecosystem & data lifecycle
 
