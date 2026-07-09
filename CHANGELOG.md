@@ -22,6 +22,7 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/),
 
 ### Fixes
 
+- **Core**: Remove explicit Python Markdown association settings file, no longer needed as of Zensical Studio 0.1.2
 - **Docs**: Rename or case-normalize non-conforming `topics` values in AKB articles to match the schema's updated controlled vocabulary
 - **Docs**: Reorder AKB article `products`/`topics` frontmatter so the first `products` entry matches the owning product for the article's parent topic folder, the first `topics` entry matches that folder's slug, and every listed product's slug is present in `topics`, per the new `test_akb_content.py` checks; regenerate `assistant/dispatch.md` afterward
 - **Docs**: Fix a stray `QA/QC Reports` `products` value (should be `QA-QC Reports`) and its missing `qa-qc` `topics` slug in `assistant/cross-platform/concept/abbreviations.md`
