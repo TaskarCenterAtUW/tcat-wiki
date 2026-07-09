@@ -10,7 +10,9 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/),
 
 ### Features
 
-- **Docs**: Expand the AKB schema's product tags table to list all 14 first-class products, and align the generated dispatch registry's `products` frontmatter to match
+- **Docs**: Add a `Slug` column to the AKB schema's Product tags table (matching each product's `docs/assistant/{topic}/` directory name), rename the `topics` section to "Topic tags", and add a "Product slugs" table duplicating those slugs as first-class `topics` values, with a short rationale for the intentional duplication
+- **Core**: Add `test_akb_content.py` tests, enforcing that (1) the first `products` entry for single-product topic folders matches that folder's owning product, (2) the first `topics` entry matches the parent topic folder's own slug, and (3) every `products` entry has its schema slug present somewhere in `topics`; `cross-platform/` and `support/` are exempt from checks 1-2 as cross-cutting, multi-product sections
+- **Docs**: Expand the AKB schema's product tags table to list all first-class products, and align the generated dispatch registry's `products` frontmatter to match
 - **Docs**: Restructure the AKB schema's controlled `topics` vocabulary into themed tables covering every product area
 - **Docs**: Standardize the "Related Concepts" section across `assistant/index.md`, `assistant/schema.md`, `assistant/intents.md`, and the generated `assistant/dispatch.md` to link to each other with shared, consistent text; update `utilities/akb-generate-dispatch.py` accordingly
 - **Core**: Add `test_akb_content.py` tests validating that every AKB article's `products` and `topics` frontmatter values exactly match the controlled vocabularies in `assistant/schema.md`
@@ -19,7 +21,7 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/),
 ### Fixes
 
 - **Docs**: Compact the dispatch registry's status legend table formatting
-- **Docs**: Fix AKB article `products` frontmatter values that did not match the schema's canonical casing (`Waykeeper` → `WayKeeper`, `Livability` → `LivAbility`, `Flexr` → `FleXR`, `QA/QC`/`QA/QC Reports` → `QA-QC Reports`)
+- **Docs**: Fix AKB article `products` frontmatter values that did not match the schema's canonical casing
 - **Docs**: Update AKB article `products` frontmatter values for AKB root docs
 
 ## v13.0.0 (2026-07-06)
