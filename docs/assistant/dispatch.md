@@ -87,11 +87,11 @@ This page should be fetched fresh rather than cached aggressively; its registry 
 
 ## Status Legend
 
-| Status     | Meaning                                                  |
-| :--------- | :-------------------------------------------------------- |
-| `stub`     | Frontmatter and heading scaffold exist; body is `TODO`   |
-| `draft`    | Content authored; awaiting TCAT editorial review         |
-| `reviewed` | Reviewed and approved by TCAT staff                      |
+| Status | Meaning |
+| :--------- | :------ |
+| `stub` | Frontmatter and heading scaffold exist; body is `TODO` |
+| `draft` | Content authored; awaiting TCAT editorial review |
+| `reviewed` | Reviewed and approved by TCAT staff |
 
 ## Registry
 
