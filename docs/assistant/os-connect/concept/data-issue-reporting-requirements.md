@@ -12,6 +12,7 @@ audiences:
     - advocate
     - public
 topics:
+    - os-connect
     - feedback
     - agencies
 risk_level: medium

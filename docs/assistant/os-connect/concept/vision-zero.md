@@ -12,6 +12,7 @@ audiences:
     - advocate
     - public
 topics:
+    - os-connect
     - vision-zero
     - planning
 risk_level: medium

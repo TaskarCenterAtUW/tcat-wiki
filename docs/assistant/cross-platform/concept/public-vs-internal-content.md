@@ -14,6 +14,10 @@ audiences:
     - planner
 topics:
     - governance
+    - os-connect
+    - accessmap
+    - walksheds
+    - tdei
 risk_level: medium
 authority_level: draft
 review_status: draft

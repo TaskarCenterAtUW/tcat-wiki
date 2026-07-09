@@ -16,6 +16,9 @@ audiences:
 topics:
     - legal-boundaries
     - accessibility
+    - os-connect
+    - accessmap
+    - walksheds
 risk_level: high
 authority_level: explanatory
 review_status: draft

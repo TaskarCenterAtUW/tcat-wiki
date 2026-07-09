@@ -12,6 +12,7 @@ audiences:
     - advocate
     - public
 topics:
+    - walksheds
     - wheelchair
 risk_level: high
 authority_level: explanatory

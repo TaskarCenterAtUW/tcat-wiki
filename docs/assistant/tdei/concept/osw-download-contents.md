@@ -12,6 +12,7 @@ audiences:
     - advocate
     - public
 topics:
+    - tdei
     - downloads
     - formats
     - osw

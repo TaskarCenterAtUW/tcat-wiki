@@ -12,6 +12,7 @@ audiences:
     - advocate
     - public
 topics:
+    - os-connect
     - ada
     - legal
 risk_level: high

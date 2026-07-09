@@ -12,6 +12,7 @@ audiences:
     - advocate
     - public
 topics:
+    - os-connect
     - elevation
     - routing
 risk_level: medium

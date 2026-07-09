@@ -12,6 +12,7 @@ audiences:
     - advocate
     - public
 topics:
+    - tdei
     - tdei-ecosystem
     - dataset-lineage
     - publication-workflow

@@ -20,6 +20,8 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/),
 
 ### Fixes
 
+- **Docs**: Reorder AKB article `products`/`topics` frontmatter so the first `products` entry matches the owning product for the article's parent topic folder, the first `topics` entry matches that folder's slug, and every listed product's slug is present in `topics`, per the new `test_akb_content.py` checks; regenerate `assistant/dispatch.md` afterward
+- **Docs**: Fix a stray `QA/QC Reports` `products` value (should be `QA-QC Reports`) and its missing `qa-qc` `topics` slug in `assistant/cross-platform/concept/abbreviations.md`
 - **Docs**: Compact the dispatch registry's status legend table formatting
 - **Docs**: Fix AKB article `products` frontmatter values that did not match the schema's canonical casing
 - **Docs**: Update AKB article `products` frontmatter values for AKB root docs

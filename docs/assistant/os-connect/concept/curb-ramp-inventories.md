@@ -12,6 +12,7 @@ audiences:
     - advocate
     - public
 topics:
+    - os-connect
     - curb-ramps
     - planning
 risk_level: medium

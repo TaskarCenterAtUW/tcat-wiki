@@ -12,6 +12,7 @@ audiences:
     - advocate
     - public
 topics:
+    - rapid
     - editing-tools
     - mapping
 risk_level: low

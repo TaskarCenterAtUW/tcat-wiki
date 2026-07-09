@@ -19,6 +19,7 @@ topics:
     - tdei-ecosystem
     - sandbox-governance
     - dataset-lineage
+    - tdei
 risk_level: low
 authority_level: draft
 review_status: draft

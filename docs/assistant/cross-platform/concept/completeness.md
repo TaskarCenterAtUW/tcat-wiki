@@ -13,6 +13,7 @@ audiences:
 topics:
     - data-quality
     - OS-CONNECT
+    - os-connect
 risk_level: medium
 authority_level: explanatory
 review_status: draft

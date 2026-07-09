@@ -5,14 +5,16 @@ tags:
 slug: download-os-connect-data
 doc_type: workflow
 products:
-    - OS-CONNECT
     - TDEI
+    - OS-CONNECT
 audiences:
     - planner
     - jurisdiction
 topics:
+    - tdei
     - TDEI
     - downloads
+    - os-connect
 risk_level: low
 authority_level: official
 review_status: draft

@@ -13,6 +13,7 @@ audiences:
 topics:
     - qa-qc
     - data-review
+    - os-connect
 risk_level: medium
 authority_level: draft
 review_status: stub

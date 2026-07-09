@@ -17,6 +17,10 @@ audiences:
 topics:
     - authority
     - governance
+    - os-connect
+    - accessmap
+    - walksheds
+    - tdei
 risk_level: medium
 authority_level: explanatory
 review_status: stub

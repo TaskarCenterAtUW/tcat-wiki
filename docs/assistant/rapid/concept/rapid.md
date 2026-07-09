@@ -12,6 +12,7 @@ audiences:
     - advocate
     - public
 topics:
+    - rapid
     - editing-tools
 risk_level: low
 authority_level: draft

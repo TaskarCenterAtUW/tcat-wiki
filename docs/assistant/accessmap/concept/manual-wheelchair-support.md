@@ -12,6 +12,7 @@ audiences:
     - advocate
     - public
 topics:
+    - accessmap
     - profiles
     - wheelchair
 risk_level: high

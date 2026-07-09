@@ -14,8 +14,11 @@ audiences:
     - advocate
     - public
 topics:
+    - qa-qc
     - tdei-ecosystem
     - accessibility-data
+    - os-connect
+    - tdei
 risk_level: high
 authority_level: draft
 review_status: stub

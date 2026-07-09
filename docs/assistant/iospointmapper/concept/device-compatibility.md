@@ -12,6 +12,7 @@ audiences:
     - advocate
     - public
 topics:
+    - iospointmapper
     - device-compatibility
 risk_level: low
 authority_level: draft

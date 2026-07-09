@@ -12,6 +12,7 @@ audiences:
     - advocate
     - public
 topics:
+    - walksheds
     - pedestrian
 risk_level: medium
 authority_level: explanatory

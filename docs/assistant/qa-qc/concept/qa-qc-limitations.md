@@ -5,6 +5,7 @@ tags:
 slug: qa-qc-limitations
 doc_type: concept
 products:
+    - QA-QC Reports
     - OS-CONNECT
     - Walksheds
 audiences:
@@ -17,6 +18,8 @@ topics:
     - completeness
     - data-freshness
     - accessibility-data
+    - os-connect
+    - walksheds
 risk_level: medium
 authority_level: explanatory
 review_status: draft

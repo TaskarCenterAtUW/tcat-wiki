@@ -12,6 +12,7 @@ audiences:
     - advocate
     - public
 topics:
+    - tdei
     - interoperability
 risk_level: medium
 authority_level: explanatory

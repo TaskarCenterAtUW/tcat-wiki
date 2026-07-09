@@ -12,8 +12,11 @@ audiences:
     - public
     - advocate
 topics:
+    - os-connect
     - network-topology
     - data-quality
+    - accessmap
+    - walksheds
 risk_level: low
 authority_level: explanatory
 review_status: draft

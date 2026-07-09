@@ -14,12 +14,14 @@ audiences:
     - advocate
     - public
 topics:
+    - os-connect
     - planning
     - destinations
     - pedestrian-access
     - walksheds
     - accessibility-analysis
     - destinations
+    - accessmap
 risk_level: medium
 authority_level: explanatory
 review_status: draft

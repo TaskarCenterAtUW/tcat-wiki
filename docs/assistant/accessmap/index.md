@@ -12,6 +12,7 @@ audiences:
     - advocate
     - public
 topics:
+    - accessmap
     - accessibility-data
     - editing-tools
     - tdei-ecosystem

@@ -12,6 +12,7 @@ audiences:
     - advocate
     - public
 topics:
+    - os-connect
     - openstreetmap
     - vendors
 risk_level: medium

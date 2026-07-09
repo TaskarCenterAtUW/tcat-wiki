@@ -12,6 +12,7 @@ audiences:
     - advocate
     - public
 topics:
+    - accessmap
     - routing-preferences
 risk_level: medium
 authority_level: draft

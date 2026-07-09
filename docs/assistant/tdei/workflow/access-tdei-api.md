@@ -12,6 +12,7 @@ audiences:
     - advocate
     - public
 topics:
+    - tdei
     - api
 risk_level: medium
 authority_level: explanatory

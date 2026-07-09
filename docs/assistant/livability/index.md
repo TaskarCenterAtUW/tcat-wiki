@@ -12,6 +12,7 @@ audiences:
     - advocate
     - public
 topics:
+    - livability
     - tdei-ecosystem
     - accessibility-analysis
 risk_level: high

@@ -12,6 +12,7 @@ audiences:
     - advocate
     - public
 topics:
+    - rapid
     - editing-tools
     - tdei-ecosystem
 risk_level: high

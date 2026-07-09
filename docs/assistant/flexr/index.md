@@ -12,6 +12,7 @@ audiences:
     - advocate
     - public
 topics:
+    - flexr
     - xr-accessibility
     - assistive-input
     - webxr

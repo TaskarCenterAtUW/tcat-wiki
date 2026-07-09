@@ -10,6 +10,7 @@ audiences:
     - planner
     - jurisdiction
 topics:
+    - tdei
     - TDEI
     - accounts
 risk_level: low

@@ -12,6 +12,7 @@ audiences:
     - advocate
     - public
 topics:
+    - aviv-scoutroute
     - quests
     - field-data-collection
 risk_level: low

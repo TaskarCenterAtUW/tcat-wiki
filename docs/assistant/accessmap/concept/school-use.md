@@ -12,6 +12,7 @@ audiences:
     - advocate
     - public
 topics:
+    - accessmap
     - schools
 risk_level: medium
 authority_level: explanatory

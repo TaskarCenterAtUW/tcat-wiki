@@ -12,6 +12,7 @@ audiences:
 topics:
     - ADA
     - planning
+    - os-connect
 risk_level: high
 authority_level: explanatory
 review_status: draft

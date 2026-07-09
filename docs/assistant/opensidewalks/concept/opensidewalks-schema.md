@@ -12,6 +12,7 @@ audiences:
     - advocate
     - public
 topics:
+    - opensidewalks
     - data-schema
     - accessibility-data
 risk_level: medium

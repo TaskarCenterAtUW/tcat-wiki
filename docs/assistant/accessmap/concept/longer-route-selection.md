@@ -10,6 +10,7 @@ audiences:
     - public
     - advocate
 topics:
+    - accessmap
     - routing
 risk_level: low
 authority_level: explanatory

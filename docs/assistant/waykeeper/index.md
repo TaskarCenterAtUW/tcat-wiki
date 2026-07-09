@@ -12,6 +12,7 @@ audiences:
     - advocate
     - public
 topics:
+    - waykeeper
     - tdei-ecosystem
 risk_level: high
 authority_level: draft

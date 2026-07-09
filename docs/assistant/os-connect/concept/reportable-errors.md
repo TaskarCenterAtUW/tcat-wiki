@@ -12,6 +12,7 @@ audiences:
     - advocate
     - public
 topics:
+    - os-connect
     - feedback
     - data-viewer
 risk_level: medium

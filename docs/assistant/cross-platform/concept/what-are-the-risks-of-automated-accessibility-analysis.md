@@ -17,6 +17,10 @@ audiences:
 topics:
     - ai
     - risk
+    - os-connect
+    - accessmap
+    - walksheds
+    - tdei
 risk_level: high
 authority_level: explanatory
 review_status: stub

@@ -12,6 +12,7 @@ audiences:
     - advocate
     - public
 topics:
+    - walksheds
     - rural
 risk_level: medium
 authority_level: explanatory

@@ -17,6 +17,10 @@ audiences:
 topics:
     - governance
     - assistant-behavior
+    - os-connect
+    - accessmap
+    - walksheds
+    - tdei
 risk_level: high
 authority_level: draft
 review_status: draft

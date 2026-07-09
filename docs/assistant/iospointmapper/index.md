@@ -12,6 +12,7 @@ audiences:
     - advocate
     - public
 topics:
+    - iospointmapper
     - tdei-ecosystem
     - data-collection
     - field-data-collection

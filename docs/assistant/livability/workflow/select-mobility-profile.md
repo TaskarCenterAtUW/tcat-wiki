@@ -12,6 +12,7 @@ audiences:
     - advocate
     - public
 topics:
+    - livability
     - mobility-profiles
 risk_level: medium
 authority_level: draft
