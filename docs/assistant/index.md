@@ -5,10 +5,19 @@ tags:
 slug: assistant-index
 doc_type: concept
 products:
-    - OS-CONNECT
     - AccessMap
-    - Walksheds
+    - AVIV ScoutRoute
+    - Cross-Platform
+    - FleXR
+    - iOSPointMapper
+    - LivAbility
+    - OpenSidewalks
+    - OS-CONNECT
+    - QA-QC Reports
+    - Rapid
     - TDEI
+    - Walksheds
+    - WayKeeper
     - Workspaces
 audiences:
     - planner
@@ -22,7 +31,7 @@ topics:
 risk_level: low
 authority_level: explanatory
 review_status: draft
-last_reviewed: 2026-06-04
+last_reviewed: 2026-07-08
 retrieval_priority: high
 assistant_behavior:
     allow_inference: false

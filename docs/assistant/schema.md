@@ -2,6 +2,21 @@
 title: Assistant Knowledge Base article schema
 tags:
     - Assistant
+products:
+    - AccessMap
+    - AVIV ScoutRoute
+    - Cross-Platform
+    - FleXR
+    - iOSPointMapper
+    - LivAbility
+    - OpenSidewalks
+    - OS-CONNECT
+    - QA-QC Reports
+    - Rapid
+    - TDEI
+    - Walksheds
+    - WayKeeper
+    - Workspaces
 related_pages:
     - assistant/index.md
     - assistant/dispatch.md

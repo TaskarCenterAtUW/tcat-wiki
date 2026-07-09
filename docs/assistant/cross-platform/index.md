@@ -7,6 +7,7 @@ doc_type: policy
 products:
     - AccessMap
     - AVIV ScoutRoute
+    - Cross-Platform
     - FleXR
     - iOSPointMapper
     - LivAbility
