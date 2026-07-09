@@ -2,9 +2,21 @@
 
 # Changelog
 
-Changes to the TCAT Wiki are documented here.
+All notable changes to this project will be documented in this file.
 
-This project adheres to [Semantic Versioning](https://semver.org/) and [Conventional Commits](https://www.conventionalcommits.org/).
+The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/), and this project adheres to [Semantic Versioning](https://semver.org/) and [Conventional Commits](https://www.conventionalcommits.org/).
+
+## Unreleased
+
+### Features
+
+- **Docs**: Expand the AKB schema's product tags table to list all 14 first-class products, and align the generated dispatch registry's `products` frontmatter to match
+- **Docs**: Restructure the AKB schema's controlled `topics` vocabulary into themed tables covering every product area
+- **Docs**: Standardize the "Related Concepts" section across `assistant/index.md`, `assistant/schema.md`, `assistant/intents.md`, and the generated `assistant/dispatch.md` to link to each other with shared, consistent text; update `utilities/akb-generate-dispatch.py` accordingly
+
+### Fixes
+
+- **Docs**: Compact the dispatch registry's status legend table formatting
 
 ## v13.0.0 (2026-07-06)
 
