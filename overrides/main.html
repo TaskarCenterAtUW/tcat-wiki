@@ -1,15 +1,17 @@
 <!-- @format -->
 
-{% extends "base.html" %} {% block extrahead %} {#- Agent redirect: an invisible
-hint (not rendered, no visual or a11y impact) pointing external
-agents/assistants at the raw-Markdown copy of this page, served at the same URL
-with an .md extension by the two-layer build (see utilities/build-site.py and
-docs/assistant/schema.md). page.edit_url always contains the docs-relative
-source path after the configured edit_uri ("edit/main/docs/"), which matches the
-relative path used by the agent-docs overlay onto site/, regardless of the
-docs_dir actually used for this build (human-docs during a real build). -#} {%
-if page.edit_url and config.site_url %} {% set md_relpath = page.edit_url |
-replace(config.repo_url ~ "/" ~ config.edit_uri, "") | trim("/") %}
+{% extends "base.html" %} {% block extrahead %} {#- Agent alternate: an
+invisible hint (not rendered, no visual or a11y impact) pointing external
+agents/assistants at the raw-Markdown copy of this page. The agent URL is the
+docs-relative source path, including its .md filename; it is not derived by
+appending .md to the human URL. This distinction preserves index.md for agents
+when navigation.indexes gives people a directory URL. page.edit_url always
+contains the docs-relative source path after the configured edit_uri
+("edit/main/docs/"), which matches the relative path used by the agent-docs
+overlay onto site/, regardless of the docs_dir actually used for this build
+(human-docs during a real build). -#} {% if page.edit_url and config.site_url %}
+{% set md_relpath = page.edit_url | replace(config.repo_url ~ "/" ~
+config.edit_uri, "") | trim("/") %}
 <link
     rel="alternate"
     type="text/markdown"

@@ -75,25 +75,15 @@ This document is the authoring contract for [`docs/assistant/`](../assistant/ind
 
 The site publishes two parallel layers at the same URL space:
 
-- **Human layer** — Zensical-built HTML pages. Inside `docs/assistant/`, only
-  `review_status: reviewed` pages outside `support/` are built to HTML.
-- **Agent layer** — every assistant page is served as raw Markdown at the same URL
-  with an `.md` extension (for example
-  `https://taskarcenteratuw.github.io/tcat-wiki/assistant/qa-qc/concept/completeness.md`),
-  regardless of `review_status`, including `support/` pages and stubs.
+- **Human layer** — Zensical-built HTML pages. Inside `docs/assistant/`, only `review_status: reviewed` pages outside `support/` are built to HTML.
+- **Agent layer** — every assistant page is served as raw Markdown at its docs-relative source path, including the `.md` filename (for example `https://taskarcenteratuw.github.io/tcat-wiki/assistant/qa-qc/concept/completeness.md`), regardless of `review_status`, including `support/` pages and stubs. Human index-page URLs omit `index`, while agent URLs retain it: the human URL `https://taskarcenteratuw.github.io/tcat-wiki/accessmap/` corresponds to the agent URL `https://taskarcenteratuw.github.io/tcat-wiki/accessmap/index.md`.
 
 Consequences for authors:
 
-- `review_status` controls human-layer visibility: `stub` and `draft` pages are
-  agent-only; a page appears as an HTML page only once it is `reviewed`.
-- Because every page is served as raw `.md`, stubs MUST still contain valid
-  frontmatter and the required heading scaffold (with `TODO` placeholders) so the
-  `.md` resolves to well-formed content.
-- A `reviewed` human page MUST NOT link to a page that is not built to HTML (a
-  `stub`, a `draft`, or anything under `support/`). Such links are treated as
-  authoring errors and fail the build.
-- `dispatch.md` is a generated registry of the agent layer, produced by
-  `utilities/akb-generate-dispatch.py`. Do not manually edit it.
+- `review_status` controls human-layer visibility: `stub` and `draft` pages are agent-only; a page appears as an HTML page only once it is `reviewed`.
+- Because every page is served as raw `.md` at its docs-relative source path, stubs MUST still contain valid frontmatter and the required heading scaffold (with `TODO` placeholders) so the `.md` resolves to well-formed content.
+- A `reviewed` human page MUST NOT link to a page that is not built to HTML (a `stub`, a `draft`, or anything under `support/`). Such links are treated as authoring errors and fail the build.
+- `dispatch.md` is a generated registry of the agent layer, produced by `utilities/akb-generate-dispatch.py`. Do not manually edit it.
 
 ## YAML frontmatter (required keys)
 

@@ -194,6 +194,7 @@ def test_overlay_agent_layer_places_files_at_expected_paths(tmp_path, fixture_do
     agent_dir = tmp_path / "agent-docs"
     site_dir = tmp_path / "site"
     bs.copy_layers(fixture_docs, tmp_path / "human-docs", agent_dir)
+    write_page(agent_dir / "accessmap" / "index.md", body="# AccessMap\n")
     site_dir.mkdir()
 
     copied = bs.overlay_agent_layer(agent_dir, site_dir)
@@ -201,6 +202,10 @@ def test_overlay_agent_layer_places_files_at_expected_paths(tmp_path, fixture_do
     assert "assistant/support/index.md" in copied
     assert (site_dir / "assistant" / "support" / "index.md").exists()
     assert (site_dir / "index.md").exists()
+    # navigation.indexes may publish the human page at /accessmap/, but the
+    # agent layer preserves its docs-relative source path for a stable URL.
+    assert "accessmap/index.md" in copied
+    assert (site_dir / "accessmap" / "index.md").exists()
 
 
 def test_clean_generated_removes_existing_artifacts(tmp_path):

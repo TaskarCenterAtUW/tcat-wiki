@@ -23,6 +23,7 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/),
 
 ### Fixes
 
+- **Core**: Document and test that agent-layer URLs preserve docs-relative source paths, including `index.md`, while human index pages retain directory URLs
 - **Core**: Handle interrupted site preparation and local preview serving without printing a Python traceback
 - **Core**: Remove explicit Python Markdown association settings file, no longer needed as of Zensical Studio 0.1.2
 - **Docs**: Rename or case-normalize non-conforming `topics` values in AKB articles to match the schema's updated controlled vocabulary
