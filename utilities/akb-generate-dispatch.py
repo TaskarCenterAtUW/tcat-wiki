@@ -18,6 +18,7 @@ the agent-docs/ copy).
 import argparse
 import re
 import sys
+from collections import Counter
 from datetime import date
 from pathlib import Path
 
@@ -34,6 +35,9 @@ DOC_TYPE_SECTIONS = [
     ("concept", "Concepts"),
     ("workflow", "Workflows"),
 ]
+
+# Statuses appear in the legend in this order.
+STATUS_ORDER = ("stub", "draft", "reviewed")
 
 FRONTMATTER_RE = re.compile(r"^---\s*\n(.*?)\n---\s*\n", re.DOTALL)
 
@@ -141,11 +145,7 @@ This page should be fetched fresh rather than cached aggressively; its registry 
 
 ## Status Legend
 
-| Status | Meaning |
-| :--------- | :------ |
-| `stub` | Frontmatter and heading scaffold exist; body is `TODO` |
-| `draft` | Content authored; awaiting TCAT editorial review |
-| `reviewed` | Reviewed and approved by TCAT staff |
+{status_legend}
 
 ## Registry
 
@@ -224,6 +224,29 @@ def scan_topics(assistant_dir: Path):
     return topics
 
 
+def count_statuses(topics):
+    """Return article counts grouped by review status across all topic sections."""
+    counts = Counter()
+    for topic in topics:
+        for doc_type, _label in DOC_TYPE_SECTIONS:
+            counts.update(status for _filename,
+                          status in topic["sections"][doc_type])
+    return counts
+
+
+def render_status_legend(counts):
+    """Return the status legend table, including live article counts."""
+    meanings = {
+        "stub": "Frontmatter and heading scaffold exist; body is `TODO`",
+        "draft": "Content authored; awaiting TCAT editorial review",
+        "reviewed": "Reviewed and approved by TCAT staff",
+    }
+    lines = ["| Status | Count | Meaning |", "| :----- | ----: | :------ |"]
+    for status in STATUS_ORDER:
+        lines.append(f"| `{status}` | {counts[status]} | {meanings[status]} |")
+    return "\n".join(lines)
+
+
 def render_topic(topic):
     """Return the Markdown block (H2 + H3 sections) for a single topic dict."""
     lines = [f"## {topic['title']}", ""]
@@ -265,7 +288,9 @@ def build_dispatch(assistant_dir: Path, today: str | None = None) -> str:
         today = date.today().isoformat()
     topics = scan_topics(assistant_dir)
     frontmatter = FRONTMATTER_TEMPLATE.format(last_reviewed=today)
-    return frontmatter + BODY_PREFIX + render_registry(topics)
+    body_prefix = BODY_PREFIX.format(
+        status_legend=render_status_legend(count_statuses(topics)))
+    return frontmatter + body_prefix + render_registry(topics)
 
 
 def write_dispatch(assistant_dir: Path, today: str | None = None) -> Path:

@@ -6,6 +6,12 @@ All notable changes to this project will be documented in this file.
 
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/), and this project adheres to [Semantic Versioning](https://semver.org/) and [Conventional Commits](https://www.conventionalcommits.org/).
 
+## v13.2.0 (2026-07-10)
+
+### Features
+
+- **Core**: Add per-status article counts to the generated Assistant Knowledge Base dispatch status legend
+
 ## v13.1.0 (2026-07-09)
 
 ### Features

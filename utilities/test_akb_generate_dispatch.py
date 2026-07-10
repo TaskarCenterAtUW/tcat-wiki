@@ -99,6 +99,15 @@ def test_status_reflects_frontmatter(assistant_dir):
     assert "| `do-a-thing.md` | draft |" in content
 
 
+def test_status_legend_includes_article_counts(assistant_dir):
+    content = gad.build_dispatch(assistant_dir, today="2026-07-06")
+    legend = content.split("## Status Legend", 1)[1].split("## Registry", 1)[0]
+    assert "| Status | Count | Meaning |" in legend
+    assert "| `stub` | 1 |" in legend
+    assert "| `draft` | 1 |" in legend
+    assert "| `reviewed` | 1 |" in legend
+
+
 def test_empty_subdir_section_omitted(assistant_dir):
     content = gad.build_dispatch(assistant_dir, today="2026-07-06")
     # alpha has no workflow/ articles -> no "### Workflows" under Alpha section
