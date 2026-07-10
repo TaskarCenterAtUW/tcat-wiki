@@ -10,6 +10,7 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/),
 
 ### Features
 
+- **Core**: Upgrade Zensical to 0.0.50
 - **Docs**: Add to abbreviations list
 - **Docs**: Add new `topics` slugs to the AKB schema's themed vocabulary tables
 - **Docs**: Add a `Slug` column to the AKB schema's Product tags table (matching each product's `docs/assistant/{topic}/` directory name), rename the `topics` section to "Topic tags", and add a "Product slugs" table duplicating those slugs as first-class `topics` values, with a short rationale for the intentional duplication
