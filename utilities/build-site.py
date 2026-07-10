@@ -356,6 +356,19 @@ def main(argv=None):
 
     try:
         prepare()
+
+        if args.build:
+            run_zensical_build()
+            overlay_agent_layer()
+            print(f"Build complete: {SITE_DIR}")
+        elif args.serve:
+            run_zensical_serve()
+        else:
+            print(
+                f"Prep complete: {HUMAN_DOCS_DIR}, {AGENT_DOCS_DIR}, {BUILD_CONFIG_PATH}")
+    except KeyboardInterrupt:
+        print("\nOperation canceled.", file=sys.stderr)
+        return 130
     except HumanDocsValidationError as exc:
         print(
             "error: reviewed human-docs page(s) link to an unbuilt assistant "
@@ -366,16 +379,6 @@ def main(argv=None):
         for offending_page, link_target in exc.errors:
             print(f"  {offending_page} -> {link_target}", file=sys.stderr)
         return 1
-
-    if args.build:
-        run_zensical_build()
-        overlay_agent_layer()
-        print(f"Build complete: {SITE_DIR}")
-    elif args.serve:
-        run_zensical_serve()
-    else:
-        print(
-            f"Prep complete: {HUMAN_DOCS_DIR}, {AGENT_DOCS_DIR}, {BUILD_CONFIG_PATH}")
 
     return 0
 

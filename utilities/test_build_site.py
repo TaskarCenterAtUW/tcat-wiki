@@ -34,7 +34,8 @@ def fixture_docs(tmp_path):
     docs = tmp_path / "docs"
 
     # Non-assistant page, never touched by the filter.
-    write_page(docs / "index.md", body="# Welcome\n\n![Logo](resources/logo.png)\n")
+    write_page(docs / "index.md",
+               body="# Welcome\n\n![Logo](resources/logo.png)\n")
 
     # Assistant top-level peers.
     write_page(docs / "assistant" / "index.md",
@@ -65,12 +66,12 @@ def test_copy_layers_does_not_mutate_source(tmp_path, fixture_docs):
     human_dir = tmp_path / "human-docs"
     agent_dir = tmp_path / "agent-docs"
     original_files = sorted(p.relative_to(fixture_docs)
-                             for p in fixture_docs.rglob("*.md"))
+                            for p in fixture_docs.rglob("*.md"))
 
     bs.copy_layers(fixture_docs, human_dir, agent_dir)
 
     after_files = sorted(p.relative_to(fixture_docs)
-                          for p in fixture_docs.rglob("*.md"))
+                         for p in fixture_docs.rglob("*.md"))
     assert original_files == after_files
     assert (human_dir / "assistant" / "support" / "index.md").exists()
     assert (agent_dir / "assistant" / "support" / "index.md").exists()
@@ -83,9 +84,11 @@ def test_filter_removes_support_and_non_reviewed(tmp_path, fixture_docs):
     info = bs.filter_human_docs(human_dir)
 
     assert not (human_dir / "assistant" / "support").exists()
-    assert not (human_dir / "assistant" / "alpha" / "concept" / "stub-page.md").exists()
+    assert not (human_dir / "assistant" / "alpha" /
+                "concept" / "stub-page.md").exists()
     assert not (human_dir / "assistant" / "dispatch.md").exists()  # draft
-    assert (human_dir / "assistant" / "alpha" / "concept" / "reviewed-page.md").exists()
+    assert (human_dir / "assistant" / "alpha" /
+            "concept" / "reviewed-page.md").exists()
     assert (human_dir / "assistant" / "alpha" / "index.md").exists()
     assert "assistant/support/index.md" in info["removed"]
     assert "assistant/dispatch.md" in info["removed"]
@@ -122,7 +125,8 @@ def test_agent_docs_retains_all_statuses_and_dispatch(tmp_path, fixture_docs):
     bs.copy_layers(fixture_docs, tmp_path / "human-docs", agent_dir)
 
     assert (agent_dir / "assistant" / "support" / "index.md").exists()
-    assert (agent_dir / "assistant" / "alpha" / "concept" / "stub-page.md").exists()
+    assert (agent_dir / "assistant" / "alpha" /
+            "concept" / "stub-page.md").exists()
 
     output_path = bs.generate_dispatch(agent_dir)
     assert output_path == agent_dir / "assistant" / "dispatch.md"
@@ -160,7 +164,8 @@ def test_strip_agent_docs_applies_to_all_files(tmp_path, fixture_docs):
 
     bs.strip_agent_docs(agent_dir)
 
-    assistant_index = (agent_dir / "assistant" / "index.md").read_text(encoding="utf-8")
+    assistant_index = (agent_dir / "assistant" /
+                       "index.md").read_text(encoding="utf-8")
     assert "@format" not in assistant_index
 
     root_index = (agent_dir / "index.md").read_text(encoding="utf-8")
@@ -175,7 +180,8 @@ def test_write_build_config_overrides_docs_dir_only(tmp_path):
     )
     build_config = tmp_path / "zensical.build.toml"
 
-    bs.write_build_config(source_config, build_config, docs_dir_name="human-docs")
+    bs.write_build_config(source_config, build_config,
+                          docs_dir_name="human-docs")
 
     import tomlkit
     doc = tomlkit.parse(build_config.read_text(encoding="utf-8"))
@@ -249,3 +255,24 @@ def test_prepare_raises_on_broken_link(tmp_path, fixture_docs):
             source_config,
             tmp_path / "zensical.build.toml",
         )
+
+
+def test_main_handles_keyboard_interrupt_during_prepare(monkeypatch, capsys):
+    def interrupt():
+        raise KeyboardInterrupt
+
+    monkeypatch.setattr(bs, "prepare", interrupt)
+
+    assert bs.main([]) == 130
+    assert capsys.readouterr().err == "\nOperation canceled.\n"
+
+
+def test_main_handles_keyboard_interrupt_during_serve(monkeypatch, capsys):
+    def interrupt():
+        raise KeyboardInterrupt
+
+    monkeypatch.setattr(bs, "prepare", lambda: None)
+    monkeypatch.setattr(bs, "run_zensical_serve", interrupt)
+
+    assert bs.main(["--serve"]) == 130
+    assert capsys.readouterr().err == "\nOperation canceled.\n"
