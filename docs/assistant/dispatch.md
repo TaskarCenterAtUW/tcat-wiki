@@ -27,7 +27,7 @@ topics:
 risk_level: low
 authority_level: official
 review_status: draft
-last_reviewed: 2026-07-09
+last_reviewed: 2026-07-10
 retrieval_priority: high
 assistant_behavior:
     allow_inference: false
@@ -96,11 +96,11 @@ This page should be fetched fresh rather than cached aggressively; its registry 
 
 ## Status Legend
 
-| Status | Meaning |
-| :--------- | :------ |
-| `stub` | Frontmatter and heading scaffold exist; body is `TODO` |
-| `draft` | Content authored; awaiting TCAT editorial review |
-| `reviewed` | Reviewed and approved by TCAT staff |
+| Status | Count | Meaning |
+| :----- | ----: | :------ |
+| `stub` | 500 | Frontmatter and heading scaffold exist; body is `TODO` |
+| `draft` | 34 | Content authored; awaiting TCAT editorial review |
+| `reviewed` | 1 | Reviewed and approved by TCAT staff |
 
 ## Registry
 

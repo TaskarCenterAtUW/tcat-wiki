@@ -49,7 +49,7 @@ topics:
 risk_level: low
 authority_level: official
 review_status: reviewed
-last_reviewed: 2026-07-09
+last_reviewed: 2026-07-10
 retrieval_priority: high
 assistant_behavior:
     allow_inference: false
