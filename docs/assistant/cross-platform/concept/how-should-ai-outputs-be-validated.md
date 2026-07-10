@@ -16,7 +16,11 @@ audiences:
     - public
 topics:
     - ai
-    - validation
+    - data-quality
+    - os-connect
+    - accessmap
+    - walksheds
+    - tdei
 risk_level: high
 authority_level: explanatory
 review_status: stub

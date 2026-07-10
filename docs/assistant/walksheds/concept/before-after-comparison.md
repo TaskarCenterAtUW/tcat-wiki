@@ -12,6 +12,7 @@ audiences:
     - advocate
     - public
 topics:
+    - walksheds
     - before-after
 risk_level: medium
 authority_level: explanatory

@@ -12,9 +12,10 @@ audiences:
     - advocate
     - public
 topics:
-    - downloads
-    - routing-graph
-    - osw
+    - tdei
+    - export
+    - graph-metrics
+    - opensidewalks
 risk_level: medium
 authority_level: explanatory
 review_status: stub

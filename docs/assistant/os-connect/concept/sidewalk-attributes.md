@@ -12,8 +12,9 @@ audiences:
     - advocate
     - public
 topics:
+    - os-connect
     - sidewalks
-    - attributes
+    - editing
 risk_level: medium
 authority_level: explanatory
 review_status: stub

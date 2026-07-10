@@ -12,6 +12,7 @@ audiences:
     - advocate
     - public
 topics:
+    - tdei
     - tdei-overview
 risk_level: medium
 authority_level: draft

@@ -12,7 +12,8 @@ audiences:
     - advocate
     - public
 topics:
-    - uncertainty
+    - walksheds
+    - data-quality
 risk_level: high
 authority_level: explanatory
 review_status: stub

@@ -12,7 +12,8 @@ audiences:
     - advocate
     - public
 topics:
-    - downloads
+    - os-connect
+    - export
 risk_level: medium
 authority_level: explanatory
 review_status: stub

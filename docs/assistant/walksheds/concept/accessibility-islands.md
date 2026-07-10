@@ -12,7 +12,8 @@ audiences:
     - advocate
     - public
 topics:
-    - accessibility-islands
+    - walksheds
+    - accessibility-data
 risk_level: medium
 authority_level: explanatory
 review_status: stub

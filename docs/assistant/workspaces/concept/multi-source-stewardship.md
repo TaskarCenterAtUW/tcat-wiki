@@ -16,7 +16,7 @@ topics:
     - multi-source-stewardship
     - sandbox-governance
     - dataset-lineage
-    - collaborative-accessibility-editing
+    - collaborative-editing
 risk_level: medium
 authority_level: draft
 review_status: draft

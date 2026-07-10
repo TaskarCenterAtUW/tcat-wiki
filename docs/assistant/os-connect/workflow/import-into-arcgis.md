@@ -12,9 +12,10 @@ audiences:
     - advocate
     - public
 topics:
+    - os-connect
     - gis
     - arcgis
-    - imports
+    - data-collection
 risk_level: medium
 authority_level: explanatory
 review_status: stub

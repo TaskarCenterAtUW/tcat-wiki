@@ -12,7 +12,8 @@ audiences:
     - advocate
     - public
 topics:
-    - schema
+    - os-connect
+    - formats
 risk_level: medium
 authority_level: explanatory
 review_status: stub

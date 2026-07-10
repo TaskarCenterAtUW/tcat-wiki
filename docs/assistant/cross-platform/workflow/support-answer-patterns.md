@@ -16,6 +16,10 @@ topics:
     - support
     - helpline
     - communication
+    - os-connect
+    - accessmap
+    - walksheds
+    - tdei
 risk_level: medium
 authority_level: draft
 review_status: draft

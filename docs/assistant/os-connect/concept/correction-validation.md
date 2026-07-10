@@ -12,8 +12,9 @@ audiences:
     - advocate
     - public
 topics:
+    - os-connect
     - feedback
-    - validation
+    - data-quality
 risk_level: medium
 authority_level: explanatory
 review_status: stub

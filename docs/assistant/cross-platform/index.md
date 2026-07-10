@@ -7,16 +7,17 @@ doc_type: policy
 products:
     - AccessMap
     - AVIV ScoutRoute
+    - Cross-Platform
     - FleXR
     - iOSPointMapper
     - LivAbility
     - OpenSidewalks
     - OS-CONNECT
-    - QA/QC Reports
+    - QA-QC Reports
     - Rapid
     - TDEI
     - Walksheds
-    - Waykeeper
+    - WayKeeper
     - Workspaces
 audiences:
     - planner
@@ -24,8 +25,22 @@ audiences:
     - advocate
     - public
 topics:
-    - assistant-layer
+    - assistant-behavior
     - governance
+    - accessmap
+    - aviv-scoutroute
+    - cross-platform
+    - flexr
+    - iospointmapper
+    - livability
+    - opensidewalks
+    - os-connect
+    - qa-qc
+    - rapid
+    - tdei
+    - walksheds
+    - waykeeper
+    - workspaces
 risk_level: high
 authority_level: explanatory
 review_status: draft

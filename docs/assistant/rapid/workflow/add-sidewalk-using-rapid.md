@@ -12,8 +12,9 @@ audiences:
     - advocate
     - public
 topics:
+    - rapid
     - editing-tools
-    - mapping
+    - collaborative-editing
 risk_level: low
 authority_level: draft
 review_status: stub

@@ -12,7 +12,8 @@ audiences:
     - advocate
     - public
 topics:
-    - engagement
+    - accessmap
+    - collaborative-editing
 risk_level: medium
 authority_level: explanatory
 review_status: stub

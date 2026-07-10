@@ -12,9 +12,10 @@ audiences:
     - advocate
     - public
 topics:
-    - downloads
+    - tdei
+    - export
     - formats
-    - osw
+    - opensidewalks
 risk_level: medium
 authority_level: explanatory
 review_status: stub

@@ -12,7 +12,8 @@ audiences:
     - advocate
     - public
 topics:
-    - versioning
+    - tdei
+    - releases
 risk_level: medium
 authority_level: explanatory
 review_status: stub

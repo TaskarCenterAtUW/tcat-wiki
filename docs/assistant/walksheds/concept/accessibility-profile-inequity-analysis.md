@@ -12,8 +12,9 @@ audiences:
     - advocate
     - public
 topics:
+    - walksheds
     - equity
-    - profiles
+    - mobility-profiles
 risk_level: medium
 authority_level: explanatory
 review_status: stub

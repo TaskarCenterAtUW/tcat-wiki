@@ -5,7 +5,7 @@ tags:
 slug: waykeeper
 doc_type: concept
 products:
-    - Waykeeper
+    - WayKeeper
 audiences:
     - planner
     - jurisdiction

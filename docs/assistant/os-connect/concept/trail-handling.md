@@ -12,6 +12,7 @@ audiences:
     - advocate
     - public
 topics:
+    - os-connect
     - trails
 risk_level: high
 authority_level: explanatory

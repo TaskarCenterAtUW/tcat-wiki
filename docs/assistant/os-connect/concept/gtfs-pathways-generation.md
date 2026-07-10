@@ -12,8 +12,9 @@ audiences:
     - advocate
     - public
 topics:
-    - gtfs-pathways
-    - exports
+    - os-connect
+    - gtfs
+    - export
 risk_level: medium
 authority_level: explanatory
 review_status: stub

@@ -12,6 +12,7 @@ audiences:
     - advocate
     - public
 topics:
+    - accessmap
     - data-freshness
 risk_level: medium
 authority_level: explanatory

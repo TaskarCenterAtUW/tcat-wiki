@@ -2,11 +2,7 @@
 
 > Documentation for transportation accessibility tools developed by the Taskar Center for Accessible Technology (TCAT) at the University of Washington. Covers OS-CONNECT (WA State pedestrian network dataset), TDEI (the platform), OpenSidewalks (the data schema), AccessMap (accessible routing), Walksheds (network analysis), Workspaces (editing tools), and AVIV ScoutRoute (mobile crowdsourcing app).
 
-TCAT develops open-source tools and data infrastructure to improve pedestrian
-accessibility and mobility for people with disabilities. The core dataset is
-OS-CONNECT — a high-resolution connected pedestrian network (sidewalks, crossings,
-curb ramps, and related features) for Washington State, stored and served via the
-TDEI platform using the OpenSidewalks schema.
+TCAT develops open-source tools and data infrastructure to improve pedestrian accessibility and mobility for people with disabilities. The core dataset is OS-CONNECT — a high-resolution connected pedestrian network (sidewalks, crossings, curb ramps, and related features) for Washington State, stored and served via the TDEI platform using the OpenSidewalks schema.
 
 Key acronyms:
 
@@ -60,11 +56,7 @@ Data flow: AVIV ScoutRoute, Rapid editor, and Prophet generate data → TDEI Cor
 
 ## Assistant Knowledge Base (agent layer)
 
-Every page on this site is also served as raw Markdown at the same URL with an
-`.md` extension (e.g. `https://taskarcenteratuw.github.io/tcat-wiki/accessmap/index.md`
-alongside `.../accessmap/`), regardless of whether that page has been reviewed for
-human-facing publication. HTML pages carry a `<link rel="alternate" type="text/markdown">`
-hint pointing to their `.md` counterpart.
+Every page on this site is also served as raw Markdown at its docs-relative source path, including its `.md` filename. This is not always the human URL with `.md` appended: human index-page URLs omit `index`, while agent URLs retain it. For example, `https://taskarcenteratuw.github.io/tcat-wiki/accessmap/` corresponds to `https://taskarcenteratuw.github.io/tcat-wiki/accessmap/index.md`. This applies regardless of whether the page has been reviewed for human-facing publication. HTML pages carry a `<link rel="alternate" type="text/markdown">` hint pointing to the canonical agent URL; agents following a human-page URL should use that hint.
 
 - [Assistant Knowledge Base — Dispatch](https://taskarcenteratuw.github.io/tcat-wiki/assistant/dispatch.md): Generated registry of every article in the assistant knowledge base (all authoring statuses); fetch this first to enumerate available agent-layer pages
 - [Assistant Knowledge Base Overview](https://taskarcenteratuw.github.io/tcat-wiki/assistant/index.md): Purpose and scope of the assistant knowledge base

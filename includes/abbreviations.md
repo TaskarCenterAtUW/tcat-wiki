@@ -102,6 +102,7 @@
 *[HxGN]: Hexagon (aerial imagery provider)
 *[IDW]: Inverse Distance Weighting
 *[IIiX]: Information Interaction in Context
+*[IMCL]: International Making Cities Livable
 *[IoU]: Intersection over Union
 *[IRB]: Internal Review Board
 *[ISB]: Industrial Service Boundary

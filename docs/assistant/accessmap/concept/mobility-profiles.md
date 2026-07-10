@@ -10,6 +10,7 @@ audiences:
     - public
     - advocate
 topics:
+    - accessmap
     - mobility-profiles
 risk_level: medium
 authority_level: explanatory

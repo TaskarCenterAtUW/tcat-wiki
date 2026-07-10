@@ -12,7 +12,8 @@ audiences:
     - advocate
     - public
 topics:
-    - data-sources
+    - accessmap
+    - dataset-lineage
 risk_level: medium
 authority_level: explanatory
 review_status: stub

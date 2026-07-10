@@ -12,8 +12,9 @@ audiences:
     - advocate
     - public
 topics:
+    - os-connect
     - opensidewalks
-    - schema
+    - formats
     - documentation
 risk_level: medium
 authority_level: explanatory

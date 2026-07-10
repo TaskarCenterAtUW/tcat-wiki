@@ -2,9 +2,36 @@
 
 # Changelog
 
-Changes to the TCAT Wiki are documented here.
+All notable changes to this project will be documented in this file.
 
-This project adheres to [Semantic Versioning](https://semver.org/) and [Conventional Commits](https://www.conventionalcommits.org/).
+The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/), and this project adheres to [Semantic Versioning](https://semver.org/) and [Conventional Commits](https://www.conventionalcommits.org/).
+
+## v13.1.0 (2026-07-09)
+
+### Features
+
+- **Core**: Upgrade Zensical to 0.0.50
+- **Docs**: Add to abbreviations list
+- **Docs**: Add new `topics` slugs to the AKB schema's themed vocabulary tables
+- **Docs**: Add a `Slug` column to the AKB schema's Product tags table (matching each product's `docs/assistant/{topic}/` directory name), rename the `topics` section to "Topic tags", and add a "Product slugs" table duplicating those slugs as first-class `topics` values, with a short rationale for the intentional duplication
+- **Core**: Add `test_akb_content.py` tests, enforcing that (1) the first `products` entry for single-product topic folders matches that folder's owning product, (2) the first `topics` entry matches the parent topic folder's own slug, and (3) every `products` entry has its schema slug present somewhere in `topics`; `cross-platform/` and `support/` are exempt from checks 1-2 as cross-cutting, multi-product sections
+- **Docs**: Expand the AKB schema's product tags table to list all first-class products, and align the generated dispatch registry's `products` frontmatter to match
+- **Docs**: Restructure the AKB schema's controlled `topics` vocabulary into themed tables covering every product area
+- **Docs**: Standardize the "Related Concepts" section across `assistant/index.md`, `assistant/schema.md`, `assistant/intents.md`, and the generated `assistant/dispatch.md` to link to each other with shared, consistent text; update `utilities/akb-generate-dispatch.py` accordingly
+- **Core**: Add `test_akb_content.py` tests validating that every AKB article's `products` and `topics` frontmatter values exactly match the controlled vocabularies in `assistant/schema.md`
+- **Docs**: Add full frontmatter to AKB schema doc
+
+### Fixes
+
+- **Core**: Document and test that agent-layer URLs preserve docs-relative source paths, including `index.md`, while human index pages retain directory URLs
+- **Core**: Handle interrupted site preparation and local preview serving without printing a Python traceback
+- **Core**: Remove explicit Python Markdown association settings file, no longer needed as of Zensical Studio 0.1.2
+- **Docs**: Rename or case-normalize non-conforming `topics` values in AKB articles to match the schema's updated controlled vocabulary
+- **Docs**: Reorder AKB article `products`/`topics` frontmatter so the first `products` entry matches the owning product for the article's parent topic folder, the first `topics` entry matches that folder's slug, and every listed product's slug is present in `topics`, per the new `test_akb_content.py` checks; regenerate `assistant/dispatch.md` afterward
+- **Docs**: Fix a stray `QA/QC Reports` `products` value (should be `QA-QC Reports`) and its missing `qa-qc` `topics` slug in `assistant/cross-platform/concept/abbreviations.md`
+- **Docs**: Compact the dispatch registry's status legend table formatting
+- **Docs**: Fix AKB article `products` frontmatter values that did not match the schema's canonical casing
+- **Docs**: Update AKB article `products` frontmatter values for AKB root docs
 
 ## v13.0.0 (2026-07-06)
 

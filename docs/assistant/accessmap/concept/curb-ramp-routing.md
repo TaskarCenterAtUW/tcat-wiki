@@ -12,6 +12,7 @@ audiences:
     - advocate
     - public
 topics:
+    - accessmap
     - curb-ramps
     - routing
 risk_level: medium

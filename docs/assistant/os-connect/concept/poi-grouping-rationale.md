@@ -12,7 +12,8 @@ audiences:
     - advocate
     - public
 topics:
-    - qaqc
+    - os-connect
+    - qa-qc
 risk_level: medium
 authority_level: explanatory
 review_status: stub

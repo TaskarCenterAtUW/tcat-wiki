@@ -12,8 +12,9 @@ audiences:
     - advocate
     - public
 topics:
+    - accessmap
     - transit
-    - accessibility
+    - accessibility-data
 risk_level: medium
 authority_level: explanatory
 review_status: stub

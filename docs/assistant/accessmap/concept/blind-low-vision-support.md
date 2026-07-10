@@ -12,7 +12,8 @@ audiences:
     - advocate
     - public
 topics:
-    - blind-low-vision
+    - accessmap
+    - mobility-profiles
 risk_level: medium
 authority_level: draft
 review_status: stub

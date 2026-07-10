@@ -14,7 +14,7 @@ audiences:
 topics:
     - walksheds
     - gis
-    - analysis
+    - graph-metrics
 risk_level: high
 authority_level: explanatory
 review_status: stub

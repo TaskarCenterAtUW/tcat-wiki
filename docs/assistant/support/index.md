@@ -16,8 +16,13 @@ audiences:
     - advocate
     - public
 topics:
-    - assistant-layer
+    - assistant-behavior
     - tdei-ecosystem
+    - os-connect
+    - accessmap
+    - walksheds
+    - tdei
+    - workspaces
 risk_level: high
 authority_level: explanatory
 review_status: draft

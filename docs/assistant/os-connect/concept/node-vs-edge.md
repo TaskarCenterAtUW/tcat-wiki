@@ -12,7 +12,8 @@ audiences:
     - advocate
     - public
 topics:
-    - routing-graph
+    - os-connect
+    - graph-metrics
 risk_level: medium
 authority_level: explanatory
 review_status: stub

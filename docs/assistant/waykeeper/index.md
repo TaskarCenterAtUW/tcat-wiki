@@ -5,13 +5,14 @@ tags:
 slug: waykeeper-index
 doc_type: policy
 products:
-    - Waykeeper
+    - WayKeeper
 audiences:
     - planner
     - jurisdiction
     - advocate
     - public
 topics:
+    - waykeeper
     - tdei-ecosystem
 risk_level: high
 authority_level: draft

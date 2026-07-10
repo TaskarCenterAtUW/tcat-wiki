@@ -16,12 +16,19 @@ import pytest
 REPO_ROOT = Path(__file__).parent.parent
 ASSISTANT_DIR = REPO_ROOT / "docs" / "assistant"
 DISPATCH_PATH = ASSISTANT_DIR / "dispatch.md"
+SCHEMA_PATH = ASSISTANT_DIR / "schema.md"
 
 # Top-level files that live directly in the assistant root and are never
 # treated as topic directories (mirrors akb-generate-dispatch.py).
 TOP_LEVEL_PEERS = {"index.md", "dispatch.md", "schema.md", "intents.md"}
 
 DOC_TYPE_SUBDIRS = ("concept", "workflow")
+
+# Cross-cutting topic directories whose pages legitimately span multiple
+# products with no single "owning" product/topic-folder match. Exempt from
+# the products/topics first-entry-matches-parent-topic-folder checks below
+# (but still subject to test_all_products_have_matching_topic_slug).
+EXEMPT_TOPIC_DIRS = {"cross-platform", "support"}
 
 REQUIRED_SECTIONS = [
     "## Short Answer",
@@ -68,6 +75,53 @@ def parse_frontmatter(text):
         if value:
             props[key] = value
     return props
+
+
+LIST_ITEM_RE = re.compile(r"^\s*-\s*(.+)$")
+
+
+def parse_frontmatter_list(text, key):
+    """Parse a top-level ``key:``-introduced YAML block list into a list of strings.
+
+    Only handles the simple block-list style used throughout docs/assistant/
+    (``key:`` on its own line, followed by indented ``- value`` lines), which
+    mirrors how ``products``/``topics`` are actually authored. An inline
+    ``key: []`` (empty list) or missing key both yield ``[]``.
+    """
+    match = FRONTMATTER_RE.match(text)
+    if not match:
+        return []
+    lines = match.group(1).split("\n")
+    items = []
+    in_list = False
+    for line in lines:
+        stripped = line.strip()
+        if not in_list:
+            if stripped == f"{key}:":
+                in_list = True
+            continue
+        if line and line[0] in " \t":
+            m = LIST_ITEM_RE.match(line)
+            if not m:
+                break
+            value = m.group(1).strip()
+            if len(value) >= 2 and value[0] in "'\"" and value[-1] == value[0]:
+                value = value[1:-1]
+            items.append(value)
+        else:
+            break
+    return items
+
+
+CODE_TABLE_CELL_RE = re.compile(r"^\|\s*`([^`]+)`\s*\|", re.MULTILINE)
+
+
+def extract_schema_vocab(schema_text, start_heading, end_heading):
+    """Return the set of backtick-quoted values in table rows between two headings."""
+    start_idx = schema_text.index(start_heading) + len(start_heading)
+    end_idx = schema_text.index(end_heading, start_idx)
+    section = schema_text[start_idx:end_idx]
+    return set(CODE_TABLE_CELL_RE.findall(section))
 
 
 def topic_dirs():
@@ -206,6 +260,149 @@ def test_frontmatter_enum_values_valid(topic, doc_type, path):
 def test_title_is_present(topic, doc_type, path):
     fm = parse_frontmatter(path.read_text(encoding="utf-8"))
     assert fm.get("title"), f"{rel(path)}: missing or empty title"
+
+
+# =============================================================================
+# products/topics controlled vocabulary (docs/assistant/schema.md)
+# =============================================================================
+
+@pytest.fixture(scope="module")
+def schema_products():
+    schema_text = SCHEMA_PATH.read_text(encoding="utf-8")
+    return extract_schema_vocab(schema_text, "## Product tags", "## Topic tags")
+
+
+@pytest.fixture(scope="module")
+def schema_topics():
+    schema_text = SCHEMA_PATH.read_text(encoding="utf-8")
+    return extract_schema_vocab(
+        schema_text, "## Topic tags (`topics`)", "## Related Concepts"
+    )
+
+
+@pytest.fixture(scope="module")
+def schema_product_slugs():
+    """Return a dict mapping each schema Product name to its Slug column value.
+
+    Parses the ``## Product tags`` table's ``Product`` and ``Slug`` columns
+    directly (rather than reusing ``extract_schema_vocab``, which only
+    captures a single backtick-quoted column per row).
+    """
+    schema_text = SCHEMA_PATH.read_text(encoding="utf-8")
+    start_idx = schema_text.index("## Product tags")
+    end_idx = schema_text.index("## Topic tags", start_idx)
+    section = schema_text[start_idx:end_idx]
+    row_re = re.compile(r"^\|\s*`([^`]+)`\s*\|\s*`([^`]+)`\s*\|", re.MULTILINE)
+    return dict(row_re.findall(section))
+
+
+@pytest.mark.parametrize("topic,doc_type,path", ARTICLES, ids=ARTICLE_IDS)
+def test_products_match_schema_vocabulary(topic, doc_type, path, schema_products):
+    text = path.read_text(encoding="utf-8")
+    products = parse_frontmatter_list(text, "products")
+    assert products, f"{rel(path)}: missing or empty products list"
+    unknown = [p for p in products if p not in schema_products]
+    assert not unknown, (
+        f"{rel(path)}: products {unknown} not in docs/assistant/schema.md's "
+        "Product tags table"
+    )
+
+
+@pytest.mark.parametrize("topic,doc_type,path", ARTICLES, ids=ARTICLE_IDS)
+def test_topics_match_schema_vocabulary(topic, doc_type, path, schema_topics):
+    text = path.read_text(encoding="utf-8")
+    topics = parse_frontmatter_list(text, "topics")
+    assert topics, f"{rel(path)}: missing or empty topics list"
+    unknown = [t for t in topics if t not in schema_topics]
+    assert not unknown, (
+        f"{rel(path)}: topics {unknown} not in docs/assistant/schema.md's "
+        "controlled vocabulary tables"
+    )
+
+
+@pytest.mark.parametrize(
+    "topic,doc_type,path",
+    [(t, d, p) for t, d, p in ARTICLES if t not in EXEMPT_TOPIC_DIRS],
+    ids=[i for (t, _, _), i in zip(ARTICLES, ARTICLE_IDS) if t not in EXEMPT_TOPIC_DIRS],
+)
+def test_first_product_matches_parent_topic_folder(topic, doc_type, path, schema_product_slugs):
+    """The first ``products`` entry must be the product owning this topic folder.
+
+    Every article lives under ``docs/assistant/{topic}/``, and every
+    single-product topic folder corresponds 1:1 with a `Product` row in the
+    schema's Product tags table (matched via that row's `Slug` column). The
+    first entry in `products` must be that product, though the list is not
+    limited to it (a page may also cite other related products further down
+    the list). ``cross-platform`` and ``support`` are cross-cutting sections
+    with no single owning product and are exempt (see EXEMPT_TOPIC_DIRS).
+    """
+    expected_product = next(
+        (product for product, slug in schema_product_slugs.items() if slug == topic), None
+    )
+    assert expected_product, (
+        f"{rel(path)}: topic folder '{topic}' has no matching Slug in "
+        "docs/assistant/schema.md's Product tags table"
+    )
+    text = path.read_text(encoding="utf-8")
+    products = parse_frontmatter_list(text, "products")
+    assert products, f"{rel(path)}: missing or empty products list"
+    assert products[0] == expected_product, (
+        f"{rel(path)}: first products entry '{products[0]}' != expected "
+        f"'{expected_product}' (based on parent topic folder '{topic}')"
+    )
+
+
+@pytest.mark.parametrize(
+    "topic,doc_type,path",
+    [(t, d, p) for t, d, p in ARTICLES if t not in EXEMPT_TOPIC_DIRS],
+    ids=[i for (t, _, _), i in zip(ARTICLES, ARTICLE_IDS) if t not in EXEMPT_TOPIC_DIRS],
+)
+def test_first_topic_matches_parent_topic_folder(topic, doc_type, path):
+    """The first ``topics`` entry must be the parent topic folder's own slug.
+
+    Checked purely against in-file frontmatter (no schema lookup needed):
+    since test_first_product_matches_parent_topic_folder already guarantees
+    the first `products` entry is correct for this topic folder, the first
+    `topics` entry just needs to equal the topic folder name itself, which is
+    also that product's slug. ``cross-platform`` and ``support`` are exempt
+    (see EXEMPT_TOPIC_DIRS).
+    """
+    text = path.read_text(encoding="utf-8")
+    topics = parse_frontmatter_list(text, "topics")
+    assert topics, f"{rel(path)}: missing or empty topics list"
+    assert topics[0] == topic, (
+        f"{rel(path)}: first topics entry '{topics[0]}' != expected "
+        f"'{topic}' (parent topic folder name)"
+    )
+
+
+@pytest.mark.parametrize("topic,doc_type,path", ARTICLES, ids=ARTICLE_IDS)
+def test_all_products_have_matching_topic_slug(topic, doc_type, path, schema_product_slugs):
+    """Every ``products`` entry must have its slug equivalent present in ``topics``.
+
+    Applies to all articles, including cross-platform/ and support/: for each
+    product listed, that product's schema `Slug` (docs/assistant/schema.md's
+    Product tags table) must also appear somewhere in the page's `topics`
+    list, so a page's full set of owning products is discoverable from
+    `topics` alone.
+    """
+    text = path.read_text(encoding="utf-8")
+    products = parse_frontmatter_list(text, "products")
+    topics = parse_frontmatter_list(text, "topics")
+    assert products, f"{rel(path)}: missing or empty products list"
+    assert topics, f"{rel(path)}: missing or empty topics list"
+    missing = []
+    for product in products:
+        slug = schema_product_slugs.get(product)
+        if slug is None:
+            # Already reported by test_products_match_schema_vocabulary.
+            continue
+        if slug not in topics:
+            missing.append((product, slug))
+    assert not missing, (
+        f"{rel(path)}: products missing their slug in topics (product, expected_slug): "
+        f"{missing}"
+    )
 
 
 # =============================================================================

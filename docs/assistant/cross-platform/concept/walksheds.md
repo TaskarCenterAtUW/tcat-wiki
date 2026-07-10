@@ -12,7 +12,7 @@ audiences:
     - advocate
 topics:
     - walksheds
-    - accessibility
+    - accessibility-data
 risk_level: medium
 authority_level: explanatory
 review_status: draft

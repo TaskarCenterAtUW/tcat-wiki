@@ -12,7 +12,8 @@ audiences:
     - advocate
     - public
 topics:
-    - profiles
+    - accessmap
+    - mobility-profiles
 risk_level: medium
 authority_level: draft
 review_status: stub

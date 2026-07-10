@@ -5,7 +5,7 @@ tags:
 slug: use-waykeeper
 doc_type: workflow
 products:
-    - Waykeeper
+    - WayKeeper
 audiences:
     - planner
     - jurisdiction

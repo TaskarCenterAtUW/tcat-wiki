@@ -12,7 +12,8 @@ audiences:
     - advocate
     - public
 topics:
-    - lived-experience
+    - os-connect
+    - equity
 risk_level: medium
 authority_level: explanatory
 review_status: stub

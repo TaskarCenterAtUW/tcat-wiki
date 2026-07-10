@@ -12,6 +12,7 @@ audiences:
     - advocate
     - public
 topics:
+    - iospointmapper
     - data-collection
     - field-data-collection
 risk_level: low

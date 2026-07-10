@@ -12,7 +12,8 @@ audiences:
     - advocate
     - public
 topics:
-    - profiles
+    - os-connect
+    - mobility-profiles
 risk_level: medium
 authority_level: explanatory
 review_status: stub

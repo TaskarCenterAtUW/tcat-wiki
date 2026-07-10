@@ -5,10 +5,19 @@ tags:
 slug: dispatch
 doc_type: workflow
 products:
-    - OS-CONNECT
     - AccessMap
-    - Walksheds
+    - AVIV ScoutRoute
+    - Cross-Platform
+    - FleXR
+    - iOSPointMapper
+    - LivAbility
+    - OpenSidewalks
+    - OS-CONNECT
+    - QA-QC Reports
+    - Rapid
     - TDEI
+    - Walksheds
+    - WayKeeper
     - Workspaces
 audiences:
     - developer
@@ -18,7 +27,7 @@ topics:
 risk_level: low
 authority_level: official
 review_status: draft
-last_reviewed: 2026-07-06
+last_reviewed: 2026-07-09
 retrieval_priority: high
 assistant_behavior:
     allow_inference: false
@@ -81,17 +90,17 @@ This page should be fetched fresh rather than cached aggressively; its registry 
 
 ## Related Concepts
 
-- [Assistant Knowledge Base Overview](index.md)
-- [Article Schema](schema.md)
-- [Intents](intents.md)
+- [Assistant Knowledge Base Index](index.md) — Overview of this retrieval-oriented TCAT knowledge base
+- [Assistant Knowledge Base Schema](schema.md) — Authoring contract for Assistant Knowledge Base articles
+- [Assistant Knowledge Base Intents](intents.md) — Mapping of retrieval intents to article paths
 
 ## Status Legend
 
-| Status     | Meaning                                                  |
-| :--------- | :-------------------------------------------------------- |
-| `stub`     | Frontmatter and heading scaffold exist; body is `TODO`   |
-| `draft`    | Content authored; awaiting TCAT editorial review         |
-| `reviewed` | Reviewed and approved by TCAT staff                      |
+| Status | Meaning |
+| :--------- | :------ |
+| `stub` | Frontmatter and heading scaffold exist; body is `TODO` |
+| `draft` | Content authored; awaiting TCAT editorial review |
+| `reviewed` | Reviewed and approved by TCAT staff |
 
 ## Registry
 

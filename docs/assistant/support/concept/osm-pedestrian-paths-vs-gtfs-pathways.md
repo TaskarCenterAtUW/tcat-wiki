@@ -15,8 +15,12 @@ audiences:
     - advocate
     - public
 topics:
-    - gtfs-pathways
-    - openstreetmap
+    - gtfs
+    - osm-interoperability
+    - os-connect
+    - accessmap
+    - walksheds
+    - tdei
 risk_level: medium
 authority_level: explanatory
 review_status: stub

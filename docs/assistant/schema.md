@@ -2,6 +2,60 @@
 title: Assistant Knowledge Base article schema
 tags:
     - Assistant
+slug: schema
+doc_type: concept
+questions:
+    - What is the schema for the TCAT Wiki Assistant Knowledge Base articles?
+products:
+    - AccessMap
+    - AVIV ScoutRoute
+    - Cross-Platform
+    - FleXR
+    - iOSPointMapper
+    - LivAbility
+    - OpenSidewalks
+    - OS-CONNECT
+    - QA-QC Reports
+    - Rapid
+    - TDEI
+    - Walksheds
+    - WayKeeper
+    - Workspaces
+audiences:
+    - developer
+topics:
+    - support
+    - governance
+    - assistant-behavior
+    - accessmap
+    - aviv-scoutroute
+    - cross-platform
+    - flexr
+    - iospointmapper
+    - livability
+    - opensidewalks
+    - os-connect
+    - qa-qc
+    - rapid
+    - tdei
+    - walksheds
+    - waykeeper
+    - workspaces
+risk_level: high
+authority_level: official
+review_status: draft
+last_reviewed: 2026-07-09
+retrieval_priority: high
+assistant_behavior:
+    allow_inference: false
+    requires_citation: false
+    abstain_if_missing_context: true
+    do_not_claim:
+        -
+related_pages:
+    - assistant/index.md
+    - assistant/dispatch.md
+    - assistant/intents.md
 ---
 
 <!-- @format -->
@@ -21,25 +75,15 @@ This document is the authoring contract for [`docs/assistant/`](../assistant/ind
 
 The site publishes two parallel layers at the same URL space:
 
-- **Human layer** — Zensical-built HTML pages. Inside `docs/assistant/`, only
-  `review_status: reviewed` pages outside `support/` are built to HTML.
-- **Agent layer** — every assistant page is served as raw Markdown at the same URL
-  with an `.md` extension (for example
-  `https://taskarcenteratuw.github.io/tcat-wiki/assistant/qa-qc/concept/completeness.md`),
-  regardless of `review_status`, including `support/` pages and stubs.
+- **Human layer** — Zensical-built HTML pages. Inside `docs/assistant/`, only `review_status: reviewed` pages outside `support/` are built to HTML.
+- **Agent layer** — every assistant page is served as raw Markdown at its docs-relative source path, including the `.md` filename (for example `https://taskarcenteratuw.github.io/tcat-wiki/assistant/qa-qc/concept/completeness.md`), regardless of `review_status`, including `support/` pages and stubs. Human index-page URLs omit `index`, while agent URLs retain it: the human URL `https://taskarcenteratuw.github.io/tcat-wiki/accessmap/` corresponds to the agent URL `https://taskarcenteratuw.github.io/tcat-wiki/accessmap/index.md`.
 
 Consequences for authors:
 
-- `review_status` controls human-layer visibility: `stub` and `draft` pages are
-  agent-only; a page appears as an HTML page only once it is `reviewed`.
-- Because every page is served as raw `.md`, stubs MUST still contain valid
-  frontmatter and the required heading scaffold (with `TODO` placeholders) so the
-  `.md` resolves to well-formed content.
-- A `reviewed` human page MUST NOT link to a page that is not built to HTML (a
-  `stub`, a `draft`, or anything under `support/`). Such links are treated as
-  authoring errors and fail the build.
-- `dispatch.md` is a generated registry of the agent layer, produced by
-  `utilities/akb-generate-dispatch.py`. Do not manually edit it.
+- `review_status` controls human-layer visibility: `stub` and `draft` pages are agent-only; a page appears as an HTML page only once it is `reviewed`.
+- Because every page is served as raw `.md` at its docs-relative source path, stubs MUST still contain valid frontmatter and the required heading scaffold (with `TODO` placeholders) so the `.md` resolves to well-formed content.
+- A `reviewed` human page MUST NOT link to a page that is not built to HTML (a `stub`, a `draft`, or anything under `support/`). Such links are treated as authoring errors and fail the build.
+- `dispatch.md` is a generated registry of the agent layer, produced by `utilities/akb-generate-dispatch.py`. Do not manually edit it.
 
 ## YAML frontmatter (required keys)
 
@@ -129,60 +173,231 @@ Body content after frontmatter MUST use this heading scaffold so chunks stay str
 
 Optional subheadings under these sections are allowed if they do not duplicate or replace the canonical nine headings.
 
-## Product tags
+## Product tags (`products`)
 
 First-class `products` values for assistant-layer pages:
 
-| Product      | Notes                                             |
-| :----------- | :------------------------------------------------ |
-| `OS-CONNECT` | Pedestrian network data and viewer                |
-| `AccessMap`  | Accessibility-aware routing                       |
-| `Walksheds`  | Reachability analysis                             |
-| `TDEI`       | Portal, APIs, releases                            |
-| `Workspaces` | Collaborative editing, sandboxing, export to TDEI |
+| Product           | Slug              | Notes                                      |
+| :---------------- | :---------------- | :----------------------------------------- |
+| `AccessMap`       | `accessmap`       | Accessibility-aware routing                |
+| `AVIV ScoutRoute` | `aviv-scoutroute` | Mobile survey application                  |
+| `Cross-Platform`  | `cross-platform`  | Multi-platform shared functionality        |
+| `FleXR`           | `flexr`           | WebXR plugin for custom input methods      |
+| `iOSPointMapper`  | `iospointmapper`  | Semi-automated data collection on iOS      |
+| `LivAbility`      | `livability`      | Community livability assessment platform   |
+| `OpenSidewalks`   | `opensidewalks`   | Pedestrian network schema and standards    |
+| `OS-CONNECT`      | `os-connect`      | WA pedestrian network data and viewer      |
+| `QA-QC Reports`   | `qa-qc`           | QA/QC reports for OS-CONNECT datasets      |
+| `Rapid`           | `rapid`           | Fast web-based OSM editor                  |
+| `TDEI`            | `tdei`            | Portal, APIs, dataset storage and releases |
+| `Walksheds`       | `walksheds`       | Reachability analysis platform             |
+| `WayKeeper`       | `waykeeper`       | Navigation layer for TCAT's resources      |
+| `Workspaces`      | `workspaces`      | Collaborative editing and sandboxing       |
 
-## Controlled vocabulary (`topics`)
+`Slug` is the matching kebab-case `docs/assistant/{topic}/` directory name for that product, also usable as its corresponding `topics` entry (see [Product slugs](#product-slugs)).
 
-Use short kebab-case slugs in frontmatter `topics` lists. Prefer terms from this set when they apply; add new tags sparingly and document them here.
+## Topic tags (`topics`)
 
-| Topic                                 | Use for                                                                         |
-| :------------------------------------ | :------------------------------------------------------------------------------ |
-| `workspaces`                          | All Workspaces assistant pages (required baseline)                              |
-| `tdei-ecosystem`                      | How Workspaces relates to TDEI and sibling products                             |
-| `sandbox-governance`                  | Sandboxed copies, divergence, private editing                                   |
-| `multi-source-stewardship`            | Collaborative review and enrichment of a workspace using multiple input sources |
-| `dataset-lineage`                     | Source datasets, traceability, versioning                                       |
-| `publication-workflow`                | Review, export, release to TDEI                                                 |
-| `workspace-management`                | Dashboard, IDs, lifecycle                                                       |
-| `onboarding`                          | Creating workspaces, getting started                                            |
-| `project-groups`                      | TDEI project groups vs workspace teams                                          |
-| `editing`                             | Geometry, attributes, accessibility features                                    |
-| `osm-interoperability`                | OSM API emulation, editors, private OSM                                         |
-| `vector-data`                         | Vector vs raster, non-global datasets                                           |
-| `editing-tools`                       | Rapid, JOSM, AVIV ScoutRoute                                                    |
-| `accessibility-data`                  | Accessibility feature editing                                                   |
-| `imagery`                             | Imagery layers, sources, permissions                                            |
-| `basemaps`                            | Basemap and tile loading                                                        |
-| `configuration`                       | Imagery JSON and workspace config                                               |
-| `collaboration`                       | Multi-user editing coordination                                                 |
-| `teams`                               | Teams, invites, QR codes                                                        |
-| `roles`                               | Manager, editor, reviewer roles                                                 |
-| `review`                              | Review UI and QA workflows                                                      |
-| `changesets`                          | Changeset tracking and history                                                  |
-| `qa-qc`                               | Quality assurance in workspaces                                                 |
-| `export`                              | Exporting workspace edits                                                       |
-| `collaborative-accessibility-editing` | Community and agency collaborative mapping                                      |
-| `stewardship`                         | Jurisdiction maintenance workflows                                              |
-| `operational-workflows`               | Who should use Workspaces vs GIS                                                |
-| `public-support`                      | External partner and helpline context                                           |
-| `public-vs-private-data`              | Public release vs private sandbox (policy)                                      |
-| `editing-authority`                   | Who may edit or approve (policy)                                                |
-| `data-freshness`                      | Currency and staleness (policy)                                                 |
+This is the **prescribed vocabulary going forward** — the set of kebab-case slugs authors should draw from when tagging `topics`, regardless of how many pages currently use a given term. It intentionally covers every product in [Product tags](#product-tags-products), including thin sections (LivAbility, FleXR, iOSPointMapper, WayKeeper) so that early pages in those areas are tagged consistently with where each product is headed, not just where it is today.
 
-Other products may use additional topic slugs (for example `gtfs-pathways`, `completeness`); keep tags consistent within a product family.
+Strongly prefer a term from this list. Only add a new slug if none of these fit; and if you do, add it to the relevant theme table below in the same pull request. Themes are cross-cutting — any topic may be combined with any product's pages when relevant.
 
-## Related
+### Product slugs
 
-- [Assistant Knowledge Base overview](index.md)
-- Dispatch registry — generated agent-layer artifact served at `https://taskarcenteratuw.github.io/tcat-wiki/assistant/dispatch.md` (produced by `utilities/akb-generate-dispatch.py`; not hand-authored).
-- [Intents](intents.md) - TPatterns of user queries that map to specific knowledge-base pages.
+Every value from the [Product tags](#product-tags-products) table's `Slug` column is also a valid `topics` entry, used to tag a page with its owning product/section for retrieval:
+
+| Topic             |
+| :---------------- |
+| `accessmap`       |
+| `aviv-scoutroute` |
+| `cross-platform`  |
+| `flexr`           |
+| `iospointmapper`  |
+| `livability`      |
+| `opensidewalks`   |
+| `os-connect`      |
+| `qa-qc`           |
+| `rapid`           |
+| `tdei`            |
+| `walksheds`       |
+| `waykeeper`       |
+| `workspaces`      |
+
+This duplicates the `products` list in slug form so a page's owning section is filterable from `topics` alone (e.g. by a retrieval pipeline that only indexes `topics`), without requiring a `products`-to-slug lookup elsewhere.
+
+### Ecosystem & data lifecycle
+
+| Topic                    | Use for                                                 |
+| :----------------------- | :------------------------------------------------------ |
+| `tdei-ecosystem`         | How a product relates to TDEI and sibling products      |
+| `dataset-lineage`        | Source datasets, traceability, versioning               |
+| `data-freshness`         | Currency, staleness, and update cadence                 |
+| `data-quality`           | Accuracy, confidence, and reliability of data           |
+| `completeness`           | Coverage gaps vs. full data capture                     |
+| `vector-data`            | Vector vs. raster data, non-global dataset handling     |
+| `interoperability`       | OSW/OSM format compatibility, cross-tool data exchange  |
+| `formats`                | File formats and schema structures                      |
+| `releases`               | Dataset releases, versioning, and publication in TDEI   |
+| `publication-workflow`   | Review, export, and release of edits into the ecosystem |
+| `public-vs-private-data` | Public release vs. private sandbox boundaries           |
+| `comparison`             | Comparative analysis across datasets or tools           |
+| `overview`               | High-level product or dataset overview                  |
+| `connectivity`           | Network connectivity and data linkages                  |
+| `limitations`            | Known limitations and constraints                       |
+| `os-connect-overview`    | OS-CONNECT system overview and architecture             |
+| `arcgis`                 | ArcGIS integration and compatibility                    |
+| `documentation`          | User guides and technical documentation                 |
+| `licensing`              | Data licensing and usage rights                         |
+| `standards`              | Standards adherence and compliance                      |
+| `open-source`            | Open-source software and communities                    |
+| `opensidewalks-overview` | OpenSidewalks system overview and architecture          |
+| `complexity`             | System or data complexity considerations                |
+| `assumptions`            | Assumptions and dependencies                            |
+| `publishers`             | Data publishers and data provenance                     |
+| `tdei-overview`          | TDEI system overview and architecture                   |
+| `glossary`               | Terminology and glossary definitions                    |
+| `abbreviations`          | Acronyms and abbreviations                              |
+| `acronyms`               | Extended acronym definitions and meanings               |
+
+### Editing & collaboration
+
+| Topic                      | Use for                                                          |
+| :------------------------- | :--------------------------------------------------------------- |
+| `editing-tools`            | Rapid, JOSM, AVIV ScoutRoute, and other editors                  |
+| `editing`                  | Geometry, attributes, and accessibility feature editing          |
+| `editing-authority`        | Who may edit or approve changes                                  |
+| `osm-interoperability`     | OSM API emulation, editors, private OSM model                    |
+| `teams`                    | Teams, invites, QR codes                                         |
+| `roles`                    | Manager, editor, reviewer roles                                  |
+| `sandbox-governance`       | Sandboxed copies, divergence, private editing                    |
+| `workspace-management`     | Dashboard, IDs, lifecycle of a workspace                         |
+| `onboarding`               | Creating a workspace or project, getting started                 |
+| `project-groups`           | TDEI project groups vs. workspace teams                          |
+| `multi-source-stewardship` | Collaborative review and enrichment using multiple input sources |
+| `collaborative-editing`    | Community and agency collaborative mapping                       |
+| `review`                   | Review UI and QA workflows                                       |
+| `changesets`               | Changeset tracking and history                                   |
+| `qa-qc`                    | Quality assurance and review workflows                           |
+| `export`                   | Exporting edits to TDEI or other destinations                    |
+| `imagery`                  | Imagery layers, sources, permissions                             |
+| `basemaps`                 | Basemap and tile loading                                         |
+| `configuration`            | Tool and workspace configuration                                 |
+| `issue-reporting`          | Reporting and tracking issues and errors                         |
+| `conflicts`                | Conflict resolution and merge handling                           |
+| `ownership`                | Data and content ownership and stewardship                       |
+
+### Accessibility & routing
+
+| Topic                   | Use for                                                      |
+| :---------------------- | :----------------------------------------------------------- |
+| `accessibility-data`    | Accessibility feature data                                   |
+| `routing`               | Route calculation, preferences, and tradeoffs                |
+| `mobility-profiles`     | Wheelchair, low-vision, and other user profiles              |
+| `walksheds`             | Reachability and walkshed analysis                           |
+| `transit`               | Transit stop access and pedestrian-transit integration       |
+| `gtfs`                  | GTFS, GTFS-Flex, and GTFS-Pathways integration               |
+| `equity`                | Equity analysis across accessibility profiles or communities |
+| `scoring`               | Community livability assessment and scoring                  |
+| `accessibility-metrics` | Quantified accessibility or livability indicators            |
+| `elevation`             | Elevation data and terrain analysis                          |
+| `curb-ramps`            | Curb ramp inventory and accessibility                        |
+| `crossings`             | Street crossing infrastructure and accessibility             |
+| `intersections`         | Intersection geometry and accessibility                      |
+| `destinations`          | Destination accessibility and proximity analysis             |
+| `sidewalks`             | Sidewalk inventory and connectivity                          |
+| `slope`                 | Slope and grade data for accessibility                       |
+| `trails`                | Trail networks and pedestrian pathways                       |
+| `buffers`               | Buffer zones and walking distance analysis                   |
+
+### Field data collection & mobile tools
+
+| Topic                   | Use for                                                    |
+| :---------------------- | :--------------------------------------------------------- |
+| `field-data-collection` | Surveying, mapping, and data capture in the field          |
+| `data-collection`       | General survey and collection workflows                    |
+| `quests`                | AVIV ScoutRoute quest-based data collection                |
+| `device-compatibility`  | Supported devices, OS versions, hardware requirements      |
+| `xr-accessibility`      | XR/AR accessibility tooling                                |
+| `assistive-input`       | Alternative/assistive input methods for XR or mobile tools |
+| `webxr`                 | WebXR platform-specific concerns                           |
+| `tasking-manager`       | Tasking Manager project setup and coordination             |
+| `automation`            | Automated data collection and processing                   |
+| `testing`               | Testing workflows and quality assurance                    |
+
+### Planning & analysis
+
+| Topic                  | Use for                                                        |
+| :--------------------- | :------------------------------------------------------------- |
+| `planning`             | Infrastructure, capital, and transition planning               |
+| `ada`                  | ADA-related planning, requirements, or compliance context      |
+| `legal-boundaries`     | Legal or compliance boundaries assistants must not overstate   |
+| `prioritization`       | Ranking or prioritizing pedestrian investments                 |
+| `ai`                   | AI/ML-assisted analysis, generation, or risk                   |
+| `graph-metrics`        | Network/graph analysis metrics (centrality, betweenness, etc.) |
+| `community`            | Community engagement and participation                         |
+| `communication`        | Communication strategies and outreach                          |
+| `gis`                  | GIS tools and spatial analysis                                 |
+| `roadmap`              | Product roadmaps and strategic direction                       |
+| `advocacy`             | Advocacy and policy support                                    |
+| `contacts`             | Contact databases and organizational structure                 |
+| `construction`         | Construction projects and impacts                              |
+| `schools`              | School-related planning and data                               |
+| `risk`                 | Risk assessment and management                                 |
+| `strategy`             | Strategic planning and implementation                          |
+| `rural`                | Rural-specific planning considerations                         |
+| `campus`               | Campus-specific planning and walkability                       |
+| `emergency`            | Emergency response and resilience planning                     |
+| `health`               | Health outcomes and public health implications                 |
+| `vision-zero`          | Vision Zero and traffic safety initiatives                     |
+| `vendors`              | Vendor management and procurement                              |
+| `mpo`                  | Metropolitan Planning Organization activities                  |
+| `mappy-hours`          | Mappy Hours accessibility audit events                         |
+| `economic-development` | Economic development and business impacts                      |
+| `cost`                 | Cost-benefit analysis and budgeting                            |
+| `resilience`           | Resilience and adaptation planning                             |
+| `tourism`              | Tourism accessibility and promotion                            |
+| `helpline`             | Helpline and user support services                             |
+| `adoption`             | Technology adoption and implementation                         |
+| `capital`              | Capital improvement and funding                                |
+| `maintenance`          | Maintenance and stewardship                                    |
+| `other-states`         | Examples and practices from other states                       |
+| `events`               | Events and community gatherings                                |
+| `training`             | Training programs and capacity building                        |
+| `national`             | National-level initiatives and standards                       |
+| `partnerships`         | Partnerships and collaboration agreements                      |
+| `private-property`     | Private property considerations                                |
+| `srts`                 | Safe Routes To School initiatives                              |
+| `safety`               | Pedestrian and traffic safety                                  |
+| `sustainability`       | Sustainable transportation and land use                        |
+| `universities`         | University-related planning and walkability                    |
+| `washington`           | Washington state-specific context                              |
+| `sla`                  | Service level agreements and performance metrics               |
+| `escalation`           | Escalation procedures and issue resolution                     |
+| `before-after`         | Before-and-after analysis and impact assessment                |
+| `complete-streets`     | Complete streets and street design                             |
+| `grants`               | Grant funding and sources                                      |
+| `scenarios`            | Scenario planning and modeling                                 |
+| `parks`                | Park planning and greenspace accessibility                     |
+| `bottlenecks`          | Identifying and addressing bottlenecks                         |
+| `interpretation`       | Data interpretation and visualization                          |
+| `agencies`             | Agency coordination and inter-organizational workflows         |
+
+### Support, feedback & governance
+
+| Topic                   | Use for                                                    |
+| :---------------------- | :--------------------------------------------------------- |
+| `feedback`              | Reporting errors, issues, or corrections                   |
+| `support`               | Helpline and partner support interactions                  |
+| `governance`            | Assistant-layer policy, abstention, and content governance |
+| `assistant-behavior`    | Assistant guardrails, abstention rules                     |
+| `stewardship`           | Jurisdiction or agency data maintenance                    |
+| `operational-workflows` | Who should use which tool for a given operational need     |
+| `public-support`        | External partner and helpline context                      |
+
+Other pages may use additional topic slugs not listed here only when nothing above fits; keep new tags kebab-case, add them to the matching theme table above, and keep them consistent within a product family.
+
+## Related Concepts
+
+- [Assistant Knowledge Base Index](index.md) — Overview of this retrieval-oriented TCAT knowledge base
+- [Assistant Knowledge Base Dispatch](dispatch.md) — Generated registry of all pages in the knowledge base
+- [Assistant Knowledge Base Intents](intents.md) — Mapping of retrieval intents to article paths

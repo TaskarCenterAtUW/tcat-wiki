@@ -12,7 +12,7 @@ audiences:
     - advocate
     - public
 topics:
-    - reachability
+    - walksheds
 risk_level: medium
 authority_level: explanatory
 review_status: stub

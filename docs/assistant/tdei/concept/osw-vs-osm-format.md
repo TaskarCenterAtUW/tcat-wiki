@@ -12,7 +12,8 @@ audiences:
     - advocate
     - public
 topics:
-    - downloads
+    - tdei
+    - export
     - formats
 risk_level: medium
 authority_level: explanatory

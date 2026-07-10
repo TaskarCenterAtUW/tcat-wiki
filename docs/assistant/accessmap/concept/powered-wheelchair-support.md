@@ -12,8 +12,8 @@ audiences:
     - advocate
     - public
 topics:
-    - profiles
-    - wheelchair
+    - accessmap
+    - mobility-profiles
 risk_level: high
 authority_level: explanatory
 review_status: stub

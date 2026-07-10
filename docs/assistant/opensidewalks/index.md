@@ -12,6 +12,7 @@ audiences:
     - advocate
     - public
 topics:
+    - opensidewalks
     - tdei-ecosystem
     - accessibility-data
 risk_level: high

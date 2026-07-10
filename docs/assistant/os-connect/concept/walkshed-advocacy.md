@@ -12,6 +12,7 @@ audiences:
     - advocate
     - public
 topics:
+    - os-connect
     - advocacy
     - walksheds
 risk_level: medium

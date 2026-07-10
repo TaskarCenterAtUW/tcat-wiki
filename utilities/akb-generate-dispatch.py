@@ -46,10 +46,19 @@ tags:
 slug: dispatch
 doc_type: workflow
 products:
-    - OS-CONNECT
     - AccessMap
-    - Walksheds
+    - AVIV ScoutRoute
+    - Cross-Platform
+    - FleXR
+    - iOSPointMapper
+    - LivAbility
+    - OpenSidewalks
+    - OS-CONNECT
+    - QA-QC Reports
+    - Rapid
     - TDEI
+    - Walksheds
+    - WayKeeper
     - Workspaces
 audiences:
     - developer
@@ -126,17 +135,17 @@ This page should be fetched fresh rather than cached aggressively; its registry 
 
 ## Related Concepts
 
-- [Assistant Knowledge Base Overview](index.md)
-- [Article Schema](schema.md)
-- [Intents](intents.md)
+- [Assistant Knowledge Base Index](index.md) — Overview of this retrieval-oriented TCAT knowledge base
+- [Assistant Knowledge Base Schema](schema.md) — Authoring contract for Assistant Knowledge Base articles
+- [Assistant Knowledge Base Intents](intents.md) — Mapping of retrieval intents to article paths
 
 ## Status Legend
 
-| Status     | Meaning                                                  |
-| :--------- | :-------------------------------------------------------- |
-| `stub`     | Frontmatter and heading scaffold exist; body is `TODO`   |
-| `draft`    | Content authored; awaiting TCAT editorial review         |
-| `reviewed` | Reviewed and approved by TCAT staff                      |
+| Status | Meaning |
+| :--------- | :------ |
+| `stub` | Frontmatter and heading scaffold exist; body is `TODO` |
+| `draft` | Content authored; awaiting TCAT editorial review |
+| `reviewed` | Reviewed and approved by TCAT staff |
 
 ## Registry
 
@@ -286,7 +295,8 @@ def main(argv=None):
 
     assistant_dir = args.assistant_dir.resolve()
     if not assistant_dir.is_dir():
-        print(f"error: assistant directory not found: {assistant_dir}", file=sys.stderr)
+        print(
+            f"error: assistant directory not found: {assistant_dir}", file=sys.stderr)
         return 1
 
     if args.print_only:

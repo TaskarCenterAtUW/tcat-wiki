@@ -5,13 +5,14 @@ tags:
 slug: select-mobility-profile
 doc_type: workflow
 products:
-    - Livability
+    - LivAbility
 audiences:
     - planner
     - jurisdiction
     - advocate
     - public
 topics:
+    - livability
     - mobility-profiles
 risk_level: medium
 authority_level: draft

@@ -12,7 +12,7 @@ audiences:
     - advocate
     - public
 topics:
-    - walkshed-analysis
+    - walksheds
     - routing
 risk_level: medium
 authority_level: draft

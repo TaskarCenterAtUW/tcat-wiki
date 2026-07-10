@@ -17,7 +17,7 @@ products:
     - AVIV ScoutRoute
     - OpenSidewalks
     - OS-CONNECT
-    - QA/QC Reports
+    - QA-QC Reports
     - Rapid
     - TDEI
     - Walksheds
@@ -32,10 +32,24 @@ topics:
     - glossary
     - abbreviations
     - acronyms
+    - accessmap
+    - aviv-scoutroute
+    - cross-platform
+    - flexr
+    - iospointmapper
+    - livability
+    - opensidewalks
+    - os-connect
+    - qa-qc
+    - rapid
+    - tdei
+    - walksheds
+    - waykeeper
+    - workspaces
 risk_level: low
 authority_level: official
 review_status: reviewed
-last_reviewed: 2026-07-06
+last_reviewed: 2026-07-09
 retrieval_priority: high
 assistant_behavior:
     allow_inference: false
@@ -54,7 +68,7 @@ related_pages: []
 
 ## Short Answer
 
-This page lists all 270 abbreviations, acronyms, and initialisms used across TCAT Wiki documentation and TCAT platforms and tools.
+This page lists all 271 abbreviations, acronyms, and initialisms used across TCAT Wiki documentation and TCAT platforms and tools.
 
 ## Significance
 
@@ -170,6 +184,7 @@ The table below maps each abbreviated form to its full expansion. Entries are so
 | HxGN | Hexagon (aerial imagery provider) |
 | IDW | Inverse Distance Weighting |
 | IIiX | Information Interaction in Context |
+| IMCL | International Making Cities Livable |
 | IoU | Intersection over Union |
 | IRB | Internal Review Board |
 | ISB | Industrial Service Boundary |

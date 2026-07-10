@@ -12,7 +12,8 @@ audiences:
     - advocate
     - public
 topics:
-    - validation
+    - os-connect
+    - data-quality
     - ai
 risk_level: high
 authority_level: explanatory

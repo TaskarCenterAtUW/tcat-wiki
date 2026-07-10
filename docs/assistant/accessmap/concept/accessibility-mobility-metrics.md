@@ -12,7 +12,8 @@ audiences:
     - advocate
     - public
 topics:
-    - metrics
+    - accessmap
+    - accessibility-metrics
 risk_level: medium
 authority_level: draft
 review_status: stub

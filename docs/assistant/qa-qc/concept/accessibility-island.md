@@ -5,6 +5,7 @@ tags:
 slug: accessibility-island
 doc_type: concept
 products:
+    - QA-QC Reports
     - OS-CONNECT
 audiences:
     - planner
@@ -12,7 +13,9 @@ audiences:
     - advocate
     - public
 topics:
-    - accessibility-islands
+    - qa-qc
+    - accessibility-data
+    - os-connect
 risk_level: medium
 authority_level: explanatory
 review_status: stub

@@ -12,8 +12,9 @@ audiences:
     - advocate
     - public
 topics:
-    - openstreetmap
-    - mapping
+    - os-connect
+    - osm-interoperability
+    - collaborative-editing
 risk_level: medium
 authority_level: explanatory
 review_status: stub

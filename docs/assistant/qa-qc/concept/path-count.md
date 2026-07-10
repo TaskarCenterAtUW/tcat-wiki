@@ -5,6 +5,7 @@ tags:
 slug: path-count
 doc_type: concept
 products:
+    - QA-QC Reports
     - OS-CONNECT
 audiences:
     - planner
@@ -12,7 +13,8 @@ audiences:
     - advocate
     - public
 topics:
-    - qaqc
+    - qa-qc
+    - os-connect
 risk_level: medium
 authority_level: explanatory
 review_status: stub

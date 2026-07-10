@@ -12,6 +12,7 @@ audiences:
     - advocate
     - public
 topics:
+    - aviv-scoutroute
     - tdei-ecosystem
     - field-data-collection
 risk_level: high

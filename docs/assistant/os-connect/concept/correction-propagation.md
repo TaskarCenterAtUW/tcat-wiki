@@ -12,9 +12,10 @@ audiences:
     - advocate
     - public
 topics:
+    - os-connect
     - feedback
     - stewardship
-    - openstreetmap
+    - osm-interoperability
 risk_level: medium
 authority_level: explanatory
 review_status: stub

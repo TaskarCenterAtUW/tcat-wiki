@@ -5,7 +5,7 @@ tags:
 slug: poi-source
 doc_type: concept
 products:
-    - Livability
+    - LivAbility
 audiences:
     - planner
     - jurisdiction

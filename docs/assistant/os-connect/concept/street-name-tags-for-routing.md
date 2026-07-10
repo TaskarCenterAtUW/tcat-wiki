@@ -12,7 +12,8 @@ audiences:
     - advocate
     - public
 topics:
-    - openstreetmap
+    - os-connect
+    - osm-interoperability
     - routing
     - vendors
 risk_level: medium

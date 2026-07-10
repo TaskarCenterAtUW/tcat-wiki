@@ -11,6 +11,7 @@ audiences:
     - advocate
     - public
 topics:
+    - os-connect
     - completeness
     - legal-boundaries
 risk_level: high

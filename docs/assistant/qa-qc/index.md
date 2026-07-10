@@ -5,7 +5,7 @@ tags:
 slug: qa-qc-index
 doc_type: policy
 products:
-    - QA/QC Reports
+    - QA-QC Reports
     - OS-CONNECT
     - TDEI
 audiences:
@@ -14,8 +14,11 @@ audiences:
     - advocate
     - public
 topics:
+    - qa-qc
     - tdei-ecosystem
     - accessibility-data
+    - os-connect
+    - tdei
 risk_level: high
 authority_level: draft
 review_status: stub

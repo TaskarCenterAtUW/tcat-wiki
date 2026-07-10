@@ -12,6 +12,7 @@ audiences:
     - advocate
     - public
 topics:
+    - walksheds
     - accessibility-data
     - tdei-ecosystem
 risk_level: high

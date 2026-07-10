@@ -12,7 +12,8 @@ audiences:
     - advocate
     - public
 topics:
-    - calculation
+    - walksheds
+    - graph-metrics
 risk_level: medium
 authority_level: explanatory
 review_status: stub

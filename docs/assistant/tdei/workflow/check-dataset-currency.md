@@ -12,6 +12,7 @@ audiences:
     - advocate
     - public
 topics:
+    - tdei
     - data-freshness
     - releases
 risk_level: medium

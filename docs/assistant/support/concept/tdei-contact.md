@@ -17,6 +17,9 @@ audiences:
 topics:
     - contacts
     - tdei
+    - os-connect
+    - accessmap
+    - walksheds
 risk_level: medium
 authority_level: explanatory
 review_status: stub

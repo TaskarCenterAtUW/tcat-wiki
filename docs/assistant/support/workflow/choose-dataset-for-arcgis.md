@@ -15,9 +15,13 @@ audiences:
     - advocate
     - public
 topics:
-    - dataset-selection
+    - dataset-lineage
     - arcgis
     - planning
+    - os-connect
+    - accessmap
+    - walksheds
+    - tdei
 risk_level: medium
 authority_level: explanatory
 review_status: stub

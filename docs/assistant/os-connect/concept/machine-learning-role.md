@@ -12,7 +12,8 @@ audiences:
     - advocate
     - public
 topics:
-    - machine-learning
+    - os-connect
+    - ai
 risk_level: medium
 authority_level: explanatory
 review_status: stub

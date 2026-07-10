@@ -13,7 +13,7 @@ audiences:
     - public
 topics:
     - workspaces
-    - collaboration
+    - collaborative-editing
     - teams
     - roles
 risk_level: medium

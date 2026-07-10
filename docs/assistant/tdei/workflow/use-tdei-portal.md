@@ -10,8 +10,8 @@ audiences:
     - planner
     - jurisdiction
 topics:
-    - TDEI
-    - accounts
+    - tdei
+    - roles
 risk_level: low
 authority_level: explanatory
 review_status: draft
