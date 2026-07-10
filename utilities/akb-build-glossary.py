@@ -72,7 +72,7 @@ products:
     - AVIV ScoutRoute
     - OpenSidewalks
     - OS-CONNECT
-    - QA/QC Reports
+    - QA-QC Reports
     - Rapid
     - TDEI
     - Walksheds
@@ -87,6 +87,20 @@ topics:
     - glossary
     - abbreviations
     - acronyms
+    - accessmap
+    - aviv-scoutroute
+    - cross-platform
+    - flexr
+    - iospointmapper
+    - livability
+    - opensidewalks
+    - os-connect
+    - qa-qc
+    - rapid
+    - tdei
+    - walksheds
+    - waykeeper
+    - workspaces
 risk_level: low
 authority_level: official
 review_status: reviewed

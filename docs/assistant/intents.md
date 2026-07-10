@@ -26,6 +26,21 @@ topics:
     - support
     - intent
     - helpline
+    - assistant-behavior
+    - accessmap
+    - aviv-scoutroute
+    - cross-platform
+    - flexr
+    - iospointmapper
+    - livability
+    - opensidewalks
+    - os-connect
+    - qa-qc
+    - rapid
+    - tdei
+    - walksheds
+    - waykeeper
+    - workspaces
 risk_level: low
 authority_level: draft
 review_status: draft

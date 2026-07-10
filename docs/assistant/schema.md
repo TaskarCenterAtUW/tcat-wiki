@@ -27,10 +27,24 @@ topics:
     - support
     - governance
     - assistant-behavior
+    - accessmap
+    - aviv-scoutroute
+    - cross-platform
+    - flexr
+    - iospointmapper
+    - livability
+    - opensidewalks
+    - os-connect
+    - qa-qc
+    - rapid
+    - tdei
+    - walksheds
+    - waykeeper
+    - workspaces
 risk_level: high
 authority_level: official
-review_status: reviewed
-last_reviewed: 2026-07-08
+review_status: draft
+last_reviewed: 2026-07-09
 retrieval_priority: high
 assistant_behavior:
     allow_inference: false

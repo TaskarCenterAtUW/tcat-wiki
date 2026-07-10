@@ -27,7 +27,21 @@ audiences:
 topics:
     - assistant-layer
     - governance
-    - RAG
+    - assistant-behavior
+    - accessmap
+    - aviv-scoutroute
+    - cross-platform
+    - flexr
+    - iospointmapper
+    - livability
+    - opensidewalks
+    - os-connect
+    - qa-qc
+    - rapid
+    - tdei
+    - walksheds
+    - waykeeper
+    - workspaces
 risk_level: low
 authority_level: explanatory
 review_status: draft
