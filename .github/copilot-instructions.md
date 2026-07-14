@@ -106,7 +106,7 @@ You'll know the venv is activated when you see `(.venv)` at the beginning of you
 ### Build & Preview Local Site
 
 The site publishes **two parallel layers** at the same URL space: a **human layer**
-(Zensical-built HTML — only `review_status: reviewed` assistant pages outside
+(Zensical-built HTML — only `publication_status: published` assistant pages outside
 `assistant/support/` are included) and an **agent layer** (every assistant page,
 all statuses, served as raw `.md` at the same URL). See
 `docs/assistant/schema.md` for the full contract and `utilities/build-site.py`
@@ -157,8 +157,8 @@ python utilities/build-site.py --serve
 ```
 
 The orchestrator: copies `docs/` into `human-docs/` and `agent-docs/`; deletes
-`assistant/support/` and non-`reviewed` assistant pages from `human-docs/`;
-**fails the build** (non-zero exit, listing offending pages) if a reviewed
+`assistant/support/` and non-`published` assistant pages from `human-docs/`;
+**fails the build** (non-zero exit, listing offending pages) if a published
 human-docs page links to a page that was filtered out — this is treated as an
 authoring error, not something to silently rewrite; regenerates
 `assistant/dispatch.md` inside `agent-docs/` via

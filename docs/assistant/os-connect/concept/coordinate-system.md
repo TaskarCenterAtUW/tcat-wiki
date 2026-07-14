@@ -1,22 +1,22 @@
 ---
 title: "What coordinate system is used?"
-tags:
-    - Assistant
 slug: coordinate-system
 doc_type: concept
-products:
-    - OS-CONNECT
+questions:
+    - What coordinate system is used?
 audiences:
     - planner
     - jurisdiction
     - advocate
     - public
+products:
+    - OS-CONNECT
 topics:
     - os-connect
     - gis
 risk_level: medium
 authority_level: explanatory
-review_status: stub
+publication_status: stub
 last_reviewed: ""
 retrieval_priority: high
 assistant_behavior:
@@ -25,6 +25,8 @@ assistant_behavior:
     abstain_if_missing_context: true
     do_not_claim: []
 related_pages: []
+tags:
+    - Assistant
 ---
 
 <!-- @format -->

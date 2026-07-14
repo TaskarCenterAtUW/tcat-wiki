@@ -1,20 +1,20 @@
 ---
 title: Support — Assistant Knowledge Base
-tags:
-    - Assistant
 slug: support-index
 doc_type: policy
+questions:
+    - What support topics does this knowledge base cover?
+audiences:
+    - planner
+    - jurisdiction
+    - advocate
+    - public
 products:
     - OS-CONNECT
     - AccessMap
     - Walksheds
     - TDEI
     - Workspaces
-audiences:
-    - planner
-    - jurisdiction
-    - advocate
-    - public
 topics:
     - assistant-behavior
     - tdei-ecosystem
@@ -25,7 +25,7 @@ topics:
     - workspaces
 risk_level: high
 authority_level: explanatory
-review_status: draft
+publication_status: draft
 last_reviewed: 2026-06-09
 retrieval_priority: high
 assistant_behavior:
@@ -36,6 +36,8 @@ assistant_behavior:
 related_pages:
     - assistant/index.md
     - assistant/dispatch.md
+tags:
+    - Assistant
 ---
 
 <!-- @format -->

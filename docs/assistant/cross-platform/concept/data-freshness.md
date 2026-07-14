@@ -1,18 +1,18 @@
 ---
 title: Data freshness and versioning for assistants
-tags:
-    - Assistant
 slug: data-freshness
 doc_type: concept
+questions:
+    - How do data freshness and versioning affect assistants?
+audiences:
+    - jurisdiction
+    - planner
+    - advocate
 products:
     - OS-CONNECT
     - AccessMap
     - Walksheds
     - TDEI
-audiences:
-    - jurisdiction
-    - planner
-    - advocate
 topics:
     - data-quality
     - os-connect
@@ -21,7 +21,7 @@ topics:
     - tdei
 risk_level: medium
 authority_level: explanatory
-review_status: draft
+publication_status: draft
 last_reviewed: 2026-05-11
 retrieval_priority: high
 assistant_behavior:
@@ -33,6 +33,8 @@ assistant_behavior:
 related_pages:
     - assistant/cross-platform/concept/assistant-abstention.md
     - assistant/cross-platform/workflow/update-jurisdiction-data.md
+tags:
+    - Assistant
 ---
 
 <!-- @format -->

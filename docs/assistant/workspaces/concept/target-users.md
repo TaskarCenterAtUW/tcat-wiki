@@ -1,23 +1,23 @@
 ---
 title: "What kinds of users are Workspaces designed for?"
-tags:
-    - Assistant
 slug: target-users
 doc_type: concept
-products:
-    - Workspaces
+questions:
+    - What kinds of users are Workspaces designed for?
 audiences:
     - planner
     - jurisdiction
     - advocate
     - public
+products:
+    - Workspaces
 topics:
     - workspaces
     - tdei-ecosystem
     - public-support
 risk_level: low
-authority_level: draft
-review_status: stub
+authority_level: provisional
+publication_status: stub
 last_reviewed:
 retrieval_priority: medium
 assistant_behavior:
@@ -26,6 +26,8 @@ assistant_behavior:
     abstain_if_missing_context: true
     do_not_claim: []
 related_pages: []
+tags:
+    - Assistant
 ---
 
 <!-- @format -->

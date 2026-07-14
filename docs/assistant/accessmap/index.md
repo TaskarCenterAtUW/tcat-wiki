@@ -1,16 +1,16 @@
 ---
 title: AccessMap — Assistant Knowledge Base
-tags:
-    - Assistant
 slug: accessmap-index
 doc_type: policy
-products:
-    - AccessMap
+questions:
+    - What assistant-facing information and policies are covered in the AccessMap knowledge base?
 audiences:
     - planner
     - jurisdiction
     - advocate
     - public
+products:
+    - AccessMap
 topics:
     - accessmap
     - accessibility-data
@@ -18,7 +18,7 @@ topics:
     - tdei-ecosystem
 risk_level: high
 authority_level: explanatory
-review_status: draft
+publication_status: draft
 last_reviewed: 2026-06-09
 retrieval_priority: high
 assistant_behavior:
@@ -33,6 +33,8 @@ related_pages:
     - assistant/dispatch.md
     - assistant/os-connect/index.md
     - assistant/walksheds/index.md
+tags:
+    - Assistant
 ---
 
 <!-- @format -->

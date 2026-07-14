@@ -1,16 +1,16 @@
 ---
 title: "Multi-Source Stewardship (Workspaces)"
-tags:
-    - Assistant
 slug: multi-source-stewardship
 doc_type: concept
-products:
-    - Workspaces
+questions:
+    - What is Multi-Source Stewardship in Workspaces?
 audiences:
     - planner
     - jurisdiction
     - advocate
     - public
+products:
+    - Workspaces
 topics:
     - workspaces
     - multi-source-stewardship
@@ -18,8 +18,8 @@ topics:
     - dataset-lineage
     - collaborative-editing
 risk_level: medium
-authority_level: draft
-review_status: draft
+authority_level: provisional
+publication_status: draft
 last_reviewed:
 retrieval_priority: high
 assistant_behavior:
@@ -37,6 +37,8 @@ related_pages:
     - dataset-lineage
     - workspace-export
     - collaborative-accessibility-editing
+tags:
+    - Assistant
 ---
 
 <!-- @format -->

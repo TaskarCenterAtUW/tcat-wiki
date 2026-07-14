@@ -1,24 +1,24 @@
 ---
 title: "How does Workspaces support QA review?"
-tags:
-    - Assistant
 slug: qa-review-support
 doc_type: concept
-products:
-    - Workspaces
+questions:
+    - How does Workspaces support QA review?
 audiences:
     - planner
     - jurisdiction
     - advocate
     - public
+products:
+    - Workspaces
 topics:
     - workspaces
     - review
     - changesets
     - qa-qc
 risk_level: medium
-authority_level: draft
-review_status: stub
+authority_level: provisional
+publication_status: stub
 last_reviewed:
 retrieval_priority: medium
 assistant_behavior:
@@ -27,6 +27,8 @@ assistant_behavior:
     abstain_if_missing_context: true
     do_not_claim: []
 related_pages: []
+tags:
+    - Assistant
 ---
 
 <!-- @format -->

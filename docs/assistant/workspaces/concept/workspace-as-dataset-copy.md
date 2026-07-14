@@ -1,24 +1,24 @@
 ---
 title: "Is a workspace a copy or the original dataset?"
-tags:
-    - Assistant
 slug: workspace-as-dataset-copy
 doc_type: concept
-products:
-    - Workspaces
+questions:
+    - Is a workspace a copy or the original dataset?
 audiences:
     - planner
     - jurisdiction
     - advocate
     - public
+products:
+    - Workspaces
 topics:
     - workspaces
     - sandbox-governance
     - dataset-lineage
     - publication-workflow
 risk_level: medium
-authority_level: draft
-review_status: stub
+authority_level: provisional
+publication_status: stub
 last_reviewed:
 retrieval_priority: medium
 assistant_behavior:
@@ -27,6 +27,8 @@ assistant_behavior:
     abstain_if_missing_context: true
     do_not_claim: []
 related_pages: []
+tags:
+    - Assistant
 ---
 
 <!-- @format -->

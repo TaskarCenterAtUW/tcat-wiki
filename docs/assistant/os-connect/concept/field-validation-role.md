@@ -1,22 +1,22 @@
 ---
 title: "What role did field validation play?"
-tags:
-    - Assistant
 slug: field-validation-role
 doc_type: concept
-products:
-    - OS-CONNECT
+questions:
+    - What role did field validation play?
 audiences:
     - planner
     - jurisdiction
     - advocate
     - public
+products:
+    - OS-CONNECT
 topics:
     - os-connect
     - data-quality
 risk_level: medium
 authority_level: explanatory
-review_status: stub
+publication_status: stub
 last_reviewed: ""
 retrieval_priority: high
 assistant_behavior:
@@ -25,6 +25,8 @@ assistant_behavior:
     abstain_if_missing_context: true
     do_not_claim: []
 related_pages: []
+tags:
+    - Assistant
 ---
 
 <!-- @format -->

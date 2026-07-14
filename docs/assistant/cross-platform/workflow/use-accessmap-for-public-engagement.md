@@ -1,22 +1,22 @@
 ---
 title: Use AccessMap for public engagement
-tags:
-    - Assistant
 slug: use-accessmap-for-public-engagement
 doc_type: workflow
-products:
-    - AccessMap
+questions:
+    - How can AccessMap be used for public engagement?
 audiences:
     - advocate
     - jurisdiction
     - planner
+products:
+    - AccessMap
 topics:
     - collaborative-editing
     - routing
     - accessmap
 risk_level: low
 authority_level: explanatory
-review_status: draft
+publication_status: draft
 last_reviewed: 2026-05-11
 retrieval_priority: medium
 assistant_behavior:
@@ -28,6 +28,8 @@ assistant_behavior:
 related_pages:
     - assistant/accessmap/what-is-accessmap.md
     - accessmap/user-manual/route-planning.md
+tags:
+    - Assistant
 ---
 
 <!-- @format -->

@@ -1,11 +1,11 @@
 ---
 title: Assistant Knowledge Base article schema
-tags:
-    - Assistant
 slug: schema
 doc_type: concept
 questions:
     - What is the schema for the TCAT Wiki Assistant Knowledge Base articles?
+audiences:
+    - developer
 products:
     - AccessMap
     - AVIV ScoutRoute
@@ -21,8 +21,6 @@ products:
     - Walksheds
     - WayKeeper
     - Workspaces
-audiences:
-    - developer
 topics:
     - support
     - governance
@@ -43,8 +41,8 @@ topics:
     - workspaces
 risk_level: high
 authority_level: official
-review_status: draft
-last_reviewed: 2026-07-09
+publication_status: draft
+last_reviewed: 2026-07-13
 retrieval_priority: high
 assistant_behavior:
     allow_inference: false
@@ -56,6 +54,8 @@ related_pages:
     - assistant/index.md
     - assistant/dispatch.md
     - assistant/intents.md
+tags:
+    - Assistant
 ---
 
 <!-- @format -->
@@ -67,7 +67,7 @@ This document is the authoring contract for [`docs/assistant/`](../assistant/ind
 ## Design goals
 
 - **Citation grounding**: metadata flags when an answer must cite retrieved text, not paraphrase from memory alone.
-- **Governance**: `risk_level`, `authority_level`, and `review_status` let operators filter or gate high-stakes content.
+- **Governance**: `risk_level`, `authority_level`, and `publication_status` let operators filter or gate high-stakes content.
 - **Retrieval control**: `retrieval_priority` and `topics` tune ranking without rewriting prose for every deployment.
 - **Abstention**: `assistant_behavior` encodes per-page guardrails for public assistants.
 
@@ -75,36 +75,36 @@ This document is the authoring contract for [`docs/assistant/`](../assistant/ind
 
 The site publishes two parallel layers at the same URL space:
 
-- **Human layer** — Zensical-built HTML pages. Inside `docs/assistant/`, only `review_status: reviewed` pages outside `support/` are built to HTML.
-- **Agent layer** — every assistant page is served as raw Markdown at its docs-relative source path, including the `.md` filename (for example `https://taskarcenteratuw.github.io/tcat-wiki/assistant/qa-qc/concept/completeness.md`), regardless of `review_status`, including `support/` pages and stubs. Human index-page URLs omit `index`, while agent URLs retain it: the human URL `https://taskarcenteratuw.github.io/tcat-wiki/accessmap/` corresponds to the agent URL `https://taskarcenteratuw.github.io/tcat-wiki/accessmap/index.md`.
+- **Human layer** — Zensical-built HTML pages. Inside `docs/assistant/`, only `publication_status: published` pages outside `support/` are built to HTML.
+- **Agent layer** — every assistant page is served as raw Markdown at its docs-relative source path, including the `.md` filename (for example `https://taskarcenteratuw.github.io/tcat-wiki/assistant/qa-qc/concept/completeness.md`), regardless of `publication_status`, including `support/` pages and stubs. Human index-page URLs omit `index`, while agent URLs retain it: the human URL `https://taskarcenteratuw.github.io/tcat-wiki/accessmap/` corresponds to the agent URL `https://taskarcenteratuw.github.io/tcat-wiki/accessmap/index.md`.
 
 Consequences for authors:
 
-- `review_status` controls human-layer visibility: `stub` and `draft` pages are agent-only; a page appears as an HTML page only once it is `reviewed`.
+- `publication_status` controls human-layer visibility: `stub`, `draft`, and `archived` pages are agent-only; a page appears as an HTML page only once it is `published`.
 - Because every page is served as raw `.md` at its docs-relative source path, stubs MUST still contain valid frontmatter and the required heading scaffold (with `TODO` placeholders) so the `.md` resolves to well-formed content.
-- A `reviewed` human page MUST NOT link to a page that is not built to HTML (a `stub`, a `draft`, or anything under `support/`). Such links are treated as authoring errors and fail the build.
+- A `published` human page MUST NOT link to a page that is not built to HTML (a `stub`, a `draft`, an `archived` page, or anything under `support/`). Such links are treated as authoring errors and fail the build.
 - `dispatch.md` is a generated registry of the agent layer, produced by `utilities/akb-generate-dispatch.py`. Do not manually edit it.
 
 ## YAML frontmatter (required keys)
 
-Every file under `docs/assistant/` SHOULD include all of the following keys. Use sensible defaults (for example `draft` review status) rather than omitting keys.
+Every file under `docs/assistant/` MUST include all of the following keys. Use sensible defaults (for example `draft` publication status) rather than omitting keys.
 
-| Field                | Type   | Details                                                                            | Example                                             |
-| :------------------- | :----- | :--------------------------------------------------------------------------------- | :-------------------------------------------------- |
-| `title`              | string | Human-readable title                                                               | `What is a workspace?`                              |
-| `slug`               | string | Matches the file's basename exactly                                                | `workspace`                                         |
-| `doc_type`           | enum   | `concept`, `workflow`, or `policy` — determined by path                            | `concept`                                           |
-| `questions`          | list   | What a user might ask that this article answers                                    | `- What is a workspace?`                            |
-| `products`           | list   | Relevant product tags                                                              | `- Workspaces` `- TDEI`                             |
-| `audiences`          | list   | Intended readers                                                                   | `- developer` `- jurisdiction`                      |
-| `topics`             | list   | Free-form retrieval tags                                                           | `- workspaces` `- sandbox-governance`               |
-| `risk_level`         | enum   | `low`, `medium`, or `high` — legal/safety sensitivity                              | `low`                                               |
-| `authority_level`    | enum   | `draft`, `explanatory`, or `official` — how strongly the org stands behind content | `explanatory`                                       |
-| `review_status`      | enum   | `stub`, `draft`, or `reviewed` — controls human-layer visibility                   | `draft`                                             |
-| `last_reviewed`      | date   | `YYYY-MM-DD` — last human editorial pass on the page                               | `2026-07-01`                                        |
-| `retrieval_priority` | enum   | `low`, `medium`, or `high` — suggested ranking boost for retrieval                 | `high`                                              |
-| `assistant_behavior` | map    | See below                                                                          | `allow_inference: false` `requires_citation: true`  |
-| `related_pages`      | list   | Paths relative to `docs/`                                                          | `- assistant/workspaces/concept/dataset-lineage.md` |
+| Field                | Type   | Details                                                                                  | Example                                             |
+| :------------------- | :----- | :--------------------------------------------------------------------------------------- | :-------------------------------------------------- |
+| `title`              | string | Human-readable title                                                                     | `What is a workspace?`                              |
+| `slug`               | string | Matches the file's basename exactly                                                      | `workspace`                                         |
+| `doc_type`           | enum   | `concept`, `workflow`, or `policy` — determined by path                                  | `concept`                                           |
+| `questions`          | list   | What a user might ask that this article answers                                          | `- What is a workspace?`                            |
+| `products`           | list   | Relevant product tags                                                                    | `- Workspaces` `- TDEI`                             |
+| `audiences`          | list   | Intended readers                                                                         | `- developer` `- jurisdiction`                      |
+| `topics`             | list   | Free-form retrieval tags                                                                 | `- workspaces` `- sandbox-governance`               |
+| `risk_level`         | enum   | `low`, `medium`, or `high` — legal/safety sensitivity                                    | `low`                                               |
+| `authority_level`    | enum   | `provisional`, `explanatory`, or `official` — how strongly the org stands behind content | `explanatory`                                       |
+| `publication_status` | enum   | `stub`, `draft`, `published`, or `archived` — controls human-layer visibility            | `draft`                                             |
+| `last_reviewed`      | date   | `YYYY-MM-DD` — last human editorial pass on the page                                     | `2026-07-01`                                        |
+| `retrieval_priority` | enum   | `low`, `medium`, or `high` — suggested ranking boost for retrieval                       | `high`                                              |
+| `assistant_behavior` | map    | See below                                                                                | `allow_inference: false` `requires_citation: true`  |
+| `related_pages`      | list   | Paths relative to `docs/`                                                                | `- assistant/workspaces/concept/dataset-lineage.md` |
 
 ### Directory structure
 

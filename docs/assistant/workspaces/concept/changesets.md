@@ -1,23 +1,23 @@
 ---
 title: "Changesets (Workspaces)"
-tags:
-    - Assistant
 slug: changesets
 doc_type: concept
-products:
-    - Workspaces
+questions:
+    - What are changesets in Workspaces?
 audiences:
     - planner
     - jurisdiction
     - advocate
     - public
+products:
+    - Workspaces
 topics:
     - workspaces
     - changesets
     - review
 risk_level: medium
-authority_level: draft
-review_status: draft
+authority_level: provisional
+publication_status: draft
 last_reviewed: 2026-06-16
 retrieval_priority: medium
 assistant_behavior:
@@ -33,6 +33,8 @@ related_pages:
     - assistant/workspaces/how-can-edits-be-audited.md
     - assistant/workspaces/what-metadata-is-stored-for-edits.md
     - assistant/workspaces/how-can-users-inspect-edit-history.md
+tags:
+    - Assistant
 ---
 
 <!-- @format -->

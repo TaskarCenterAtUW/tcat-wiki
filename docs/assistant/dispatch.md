@@ -1,9 +1,11 @@
 ---
 title: Assistant Knowledge Base — Dispatch
-tags:
-    - Assistant
 slug: dispatch
 doc_type: workflow
+questions:
+    - What articles are available in the TCAT Wiki Assistant Knowledge Base?
+audiences:
+    - developer
 products:
     - AccessMap
     - AVIV ScoutRoute
@@ -19,15 +21,13 @@ products:
     - Walksheds
     - WayKeeper
     - Workspaces
-audiences:
-    - developer
 topics:
     - assistant-layer
     - governance
 risk_level: low
 authority_level: official
-review_status: draft
-last_reviewed: 2026-07-10
+publication_status: draft
+last_reviewed: 2026-07-13
 retrieval_priority: high
 assistant_behavior:
     allow_inference: false
@@ -38,6 +38,8 @@ related_pages:
     - assistant/index.md
     - assistant/schema.md
     - assistant/intents.md
+tags:
+    - Assistant
 ---
 
 <!-- @format -->
@@ -62,7 +64,7 @@ A stable registry decouples retrieval pipelines from the filesystem. Authors use
 ## What This Means
 
 - Every article that physically exists in `docs/assistant/` has a row in this registry; nothing here is aspirational.
-- **Status** is one of: `stub` (placeholder exists, body is `TODO`), `draft` (content authored, awaiting review), or `reviewed` (approved by TCAT staff).
+- **Publication status** is one of: `stub` (placeholder exists, body is `TODO`), `draft` (content authored, awaiting review), `published` (available in the human layer), or `archived` (retained for agents but not published).
 - Every page listed here is served as raw Markdown at the same URL with an `.md` extension, regardless of status. See [schema](schema.md) for the human-layer vs. agent-layer distinction.
 - Section index files (e.g., `workspaces/index.md`) carry that topic's policy content and per-topic assistant guidance.
 
@@ -76,7 +78,7 @@ A stable registry decouples retrieval pipelines from the filesystem. Authors use
 
 **Agents**: Fetch `dispatch.md`, parse the registry tables, filter by `Status` or topic heading, then retrieve individual pages by constructing their URL as `https://taskarcenteratuw.github.io/tcat-wiki/` + the `Base:` path shown under the relevant heading + the filename in the table.
 
-**Authors**: Write or edit files directly under `docs/assistant/`; do not hand-edit this file. Re-run `utilities/akb-generate-dispatch.py` (or the full `utilities/build-site.py` pipeline) to refresh the registry after adding a page or changing its `review_status`.
+**Authors**: Write or edit files directly under `docs/assistant/`; do not hand-edit this file. Re-run `utilities/akb-generate-dispatch.py` (or the full `utilities/build-site.py` pipeline) to refresh the registry after adding a page or changing its `publication_status`.
 
 **Maintainers**: This file is a generated build artifact. To change its structure, edit `utilities/akb-generate-dispatch.py`.
 
@@ -100,7 +102,8 @@ This page should be fetched fresh rather than cached aggressively; its registry 
 | :----- | ----: | :------ |
 | `stub` | 500 | Frontmatter and heading scaffold exist; body is `TODO` |
 | `draft` | 34 | Content authored; awaiting TCAT editorial review |
-| `reviewed` | 1 | Reviewed and approved by TCAT staff |
+| `published` | 1 | Available in the human-facing site |
+| `archived` | 0 | Retained for agents but not published |
 
 ## Registry
 
@@ -213,7 +216,7 @@ Base: `assistant/cross-platform/concept/`
 
 | File | Status |
 | :--- | :----- |
-| `abbreviations.md` | reviewed |
+| `abbreviations.md` | published |
 | `accessibility-islands.md` | draft |
 | `accessmap-routing.md` | draft |
 | `ada-compliance-boundaries.md` | draft |

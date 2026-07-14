@@ -1,18 +1,16 @@
 ---
 title: "What is FleXR?"
-tags:
-    - Assistant
 slug: flexr
 doc_type: concept
 questions:
     - What is FleXR?
     - How does FleXR help people with motor disabilities use XR applications?
-products:
-    - FleXR
 audiences:
     - developer
     - advocate
     - public
+products:
+    - FleXR
 topics:
     - flexr
     - xr-accessibility
@@ -20,7 +18,7 @@ topics:
     - webxr
 risk_level: low
 authority_level: explanatory
-review_status: draft
+publication_status: draft
 last_reviewed: 2026-07-02
 retrieval_priority: medium
 assistant_behavior:
@@ -33,6 +31,8 @@ assistant_behavior:
 related_pages:
     - assistant/flexr/index.md
     - assistant/flexr/workflow/get-involved-with-flexr.md
+tags:
+    - Assistant
 ---
 
 <!-- @format -->

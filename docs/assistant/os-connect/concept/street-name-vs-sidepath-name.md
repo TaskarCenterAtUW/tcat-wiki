@@ -1,23 +1,23 @@
 ---
 title: "What is the difference between street:name=* and is_sidepath:of:name=*?"
-tags:
-    - Assistant
 slug: street-name-vs-sidepath-name
 doc_type: concept
-products:
-    - OS-CONNECT
+questions:
+    - What is the difference between street:name=* and is_sidepath:of:name=*?
 audiences:
     - planner
     - jurisdiction
     - advocate
     - public
+products:
+    - OS-CONNECT
 topics:
     - os-connect
     - osm-interoperability
     - editing
 risk_level: medium
 authority_level: explanatory
-review_status: stub
+publication_status: stub
 last_reviewed: ""
 retrieval_priority: high
 assistant_behavior:
@@ -26,6 +26,8 @@ assistant_behavior:
     abstain_if_missing_context: true
     do_not_claim: []
 related_pages: []
+tags:
+    - Assistant
 ---
 
 <!-- @format -->

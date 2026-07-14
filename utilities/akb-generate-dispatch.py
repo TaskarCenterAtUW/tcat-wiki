@@ -4,7 +4,7 @@
 Scans an assistant knowledge-base directory (default: docs/assistant/) for
 topic subdirectories, each containing an index.md plus concept/ and workflow/
 subdirectories of articles, and writes a dispatch.md registry file listing
-every article on disk together with its `review_status` frontmatter value.
+every article on disk together with its `publication_status` frontmatter value.
 
 dispatch.md is a GENERATED build artifact. It must never be hand-edited;
 re-run this script (directly, or via utilities/build-site.py) whenever a
@@ -37,7 +37,7 @@ DOC_TYPE_SECTIONS = [
 ]
 
 # Statuses appear in the legend in this order.
-STATUS_ORDER = ("stub", "draft", "reviewed")
+STATUS_ORDER = ("stub", "draft", "published", "archived")
 
 FRONTMATTER_RE = re.compile(r"^---\s*\n(.*?)\n---\s*\n", re.DOTALL)
 
@@ -45,10 +45,12 @@ FRONTMATTER_RE = re.compile(r"^---\s*\n(.*?)\n---\s*\n", re.DOTALL)
 # with today's date at generation time; every other field is fixed.
 FRONTMATTER_TEMPLATE = """---
 title: Assistant Knowledge Base — Dispatch
-tags:
-    - Assistant
 slug: dispatch
 doc_type: workflow
+questions:
+    - What articles are available in the TCAT Wiki Assistant Knowledge Base?
+audiences:
+    - developer
 products:
     - AccessMap
     - AVIV ScoutRoute
@@ -64,14 +66,12 @@ products:
     - Walksheds
     - WayKeeper
     - Workspaces
-audiences:
-    - developer
 topics:
     - assistant-layer
     - governance
 risk_level: low
 authority_level: official
-review_status: draft
+publication_status: draft
 last_reviewed: {last_reviewed}
 retrieval_priority: high
 assistant_behavior:
@@ -83,6 +83,8 @@ related_pages:
     - assistant/index.md
     - assistant/schema.md
     - assistant/intents.md
+tags:
+    - Assistant
 ---
 """
 
@@ -111,7 +113,7 @@ A stable registry decouples retrieval pipelines from the filesystem. Authors use
 ## What This Means
 
 - Every article that physically exists in `docs/assistant/` has a row in this registry; nothing here is aspirational.
-- **Status** is one of: `stub` (placeholder exists, body is `TODO`), `draft` (content authored, awaiting review), or `reviewed` (approved by TCAT staff).
+- **Publication status** is one of: `stub` (placeholder exists, body is `TODO`), `draft` (content authored, awaiting review), `published` (available in the human layer), or `archived` (retained for agents but not published).
 - Every page listed here is served as raw Markdown at the same URL with an `.md` extension, regardless of status. See [schema](schema.md) for the human-layer vs. agent-layer distinction.
 - Section index files (e.g., `workspaces/index.md`) carry that topic's policy content and per-topic assistant guidance.
 
@@ -125,7 +127,7 @@ A stable registry decouples retrieval pipelines from the filesystem. Authors use
 
 **Agents**: Fetch `dispatch.md`, parse the registry tables, filter by `Status` or topic heading, then retrieve individual pages by constructing their URL as `https://taskarcenteratuw.github.io/tcat-wiki/` + the `Base:` path shown under the relevant heading + the filename in the table.
 
-**Authors**: Write or edit files directly under `docs/assistant/`; do not hand-edit this file. Re-run `utilities/akb-generate-dispatch.py` (or the full `utilities/build-site.py` pipeline) to refresh the registry after adding a page or changing its `review_status`.
+**Authors**: Write or edit files directly under `docs/assistant/`; do not hand-edit this file. Re-run `utilities/akb-generate-dispatch.py` (or the full `utilities/build-site.py` pipeline) to refresh the registry after adding a page or changing its `publication_status`.
 
 **Maintainers**: This file is a generated build artifact. To change its structure, edit `utilities/akb-generate-dispatch.py`.
 
@@ -157,7 +159,7 @@ def parse_frontmatter(text):
 
     Only extracts simple ``key: value`` pairs at zero indentation (not nested
     maps or lists), which is sufficient for reading ``title`` and
-    ``review_status``.
+    ``publication_status``.
     """
     match = FRONTMATTER_RE.match(text)
     if not match:
@@ -201,7 +203,7 @@ def scan_topic(topic_dir: Path):
         if doc_dir.is_dir():
             for md_file in sorted(doc_dir.glob("*.md"), key=lambda p: p.name):
                 fm = parse_frontmatter(md_file.read_text(encoding="utf-8"))
-                status = fm.get("review_status", "stub")
+                status = fm.get("publication_status", "stub")
                 rows.append((md_file.name, status))
         sections[doc_type] = rows
 
@@ -225,7 +227,7 @@ def scan_topics(assistant_dir: Path):
 
 
 def count_statuses(topics):
-    """Return article counts grouped by review status across all topic sections."""
+    """Return article counts grouped by publication status across all topic sections."""
     counts = Counter()
     for topic in topics:
         for doc_type, _label in DOC_TYPE_SECTIONS:
@@ -239,7 +241,8 @@ def render_status_legend(counts):
     meanings = {
         "stub": "Frontmatter and heading scaffold exist; body is `TODO`",
         "draft": "Content authored; awaiting TCAT editorial review",
-        "reviewed": "Reviewed and approved by TCAT staff",
+        "published": "Available in the human-facing site",
+        "archived": "Retained for agents but not published",
     }
     lines = ["| Status | Count | Meaning |", "| :----- | ----: | :------ |"]
     for status in STATUS_ORDER:

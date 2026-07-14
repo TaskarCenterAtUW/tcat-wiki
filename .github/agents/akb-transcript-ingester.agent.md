@@ -51,7 +51,7 @@ For each identified item, determine:
 - **Doc type** — `concept` (what something is or means) or `workflow` (how to do something)
 - **New or update** — check `dispatch.md` first (source of truth); fall back to filesystem scan of `docs/assistant/**/*.md`
 - **Confidence** — use judgment: include content stated with conversational hedging ("I think") without flagging it; flag content that was explicitly unresolved or contradicted during the conversation with `<!-- TODO: verify — unresolved in transcript -->`
-- **Stubs** — if an important topic was raised but left unresolved or explicitly called out as needing follow-up research, propose a stub article (review_status: stub) capturing what is known and flagging what is unknown
+- **Stubs** — if an important topic was raised but left unresolved or explicitly called out as needing follow-up research, propose a stub article (publication_status: stub) capturing what is known and flagging what is unknown
 
 ## Step 4 — Output the proposal
 
@@ -79,7 +79,7 @@ Then ask: **"Do you want to make any changes to this plan, or should I proceed w
 
 - If the user requests changes, discuss and revise the plan in chat until there is shared agreement.
 - If the user approves, make all the proposed edits:
-    - For **new articles**: create the file with complete schema-compliant frontmatter and all nine required body sections. Set `review_status: stub` if the content is incomplete. Set `review_status: draft` otherwise.
+    - For **new articles**: create the file with complete schema-compliant frontmatter and all nine required body sections. Set `publication_status: stub` if the content is incomplete. Set `publication_status: draft` otherwise.
     - For **updates**: read the existing file, then add or amend the relevant sections only. Do not rewrite sections that are not affected.
     - Update `dispatch.md`.
 

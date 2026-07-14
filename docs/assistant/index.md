@@ -44,7 +44,7 @@ topics:
     - workspaces
 risk_level: low
 authority_level: explanatory
-review_status: draft
+publication_status: draft
 last_reviewed: 2026-07-08
 retrieval_priority: high
 assistant_behavior:
@@ -88,7 +88,7 @@ Public assistants need concise answers, explicit limits on claims, and pointers 
 
 **External AI agents**: Retrieve pages by URL path (`https://taskarcenteratuw.github.io/tcat-wiki/assistant/**/*.md`). Start with [dispatch.md](dispatch.md) to enumerate available pages and their authoring status. Parse YAML frontmatter for metadata-aware retrieval.
 
-**Content authors**: Follow the [schema](schema.md) and refer to the [dispatch](dispatch.md) file. Use `review_status: draft` until another human TCAT editor has approved the page.
+**Content authors**: Follow the [schema](schema.md) and refer to the [dispatch](dispatch.md) file. Use `publication_status: draft` until another human TCAT editor has approved the page.
 
 **Integrators**: All pages are valid Markdown with YAML frontmatter. The `assistant_behavior` map encodes per-page guardrails. `retrieval_priority` suggests ranking adjustments. `do_not_claim` provides hard-negative strings for evaluation and prompt grounding.
 
@@ -98,7 +98,7 @@ A public assistant receives: _"Can I use OS-CONNECT data for an ADA transition p
 
 ## Assistant Guidance
 
-When a user asks a general question about TCAT products, consult the relevant section index first to identify the most targeted page. Prefer pages with `review_status: reviewed` and `authority_level: official` over drafts. For pages with `risk_level: high`, always cite the source and note that the answer does not constitute legal or engineering advice.
+When a user asks a general question about TCAT products, consult the relevant section index first to identify the most targeted page. Prefer pages with `publication_status: published` and `authority_level: official` over drafts. For pages with `risk_level: high`, always cite the source and note that the answer does not constitute legal or engineering advice.
 
 ## Related Concepts
 

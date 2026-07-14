@@ -1,17 +1,17 @@
 ---
 title: Connected pedestrian graph
-tags:
-    - Assistant
 slug: connected-pedestrian-graph
 doc_type: concept
-products:
-    - OS-CONNECT
-    - AccessMap
-    - Walksheds
+questions:
+    - What is a connected pedestrian graph?
 audiences:
     - planner
     - jurisdiction
     - advocate
+products:
+    - OS-CONNECT
+    - AccessMap
+    - Walksheds
 topics:
     - graph-metrics
     - os-connect
@@ -19,7 +19,7 @@ topics:
     - walksheds
 risk_level: low
 authority_level: explanatory
-review_status: draft
+publication_status: draft
 last_reviewed: 2026-06-16
 retrieval_priority: high
 assistant_behavior:
@@ -31,6 +31,8 @@ assistant_behavior:
 related_pages:
     - assistant/concepts/accessibility-islands.md
     - assistant/concepts/walksheds.md
+tags:
+    - Assistant
 ---
 
 <!-- @format -->

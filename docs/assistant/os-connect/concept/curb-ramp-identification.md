@@ -1,22 +1,22 @@
 ---
 title: "How are curb ramps identified?"
-tags:
-    - Assistant
 slug: curb-ramp-identification
 doc_type: concept
-products:
-    - OS-CONNECT
+questions:
+    - How are curb ramps identified?
 audiences:
     - planner
     - jurisdiction
     - advocate
     - public
+products:
+    - OS-CONNECT
 topics:
     - os-connect
     - curb-ramps
 risk_level: medium
 authority_level: explanatory
-review_status: stub
+publication_status: stub
 last_reviewed: ""
 retrieval_priority: high
 assistant_behavior:
@@ -25,6 +25,8 @@ assistant_behavior:
     abstain_if_missing_context: true
     do_not_claim: []
 related_pages: []
+tags:
+    - Assistant
 ---
 
 <!-- @format -->

@@ -1,17 +1,17 @@
 ---
 title: Review community feedback (cross-product workflow)
-tags:
-    - Assistant
 slug: review-community-feedback
 doc_type: workflow
+questions:
+    - How should community feedback be reviewed across products?
+audiences:
+    - jurisdiction
+    - planner
 products:
     - OS-CONNECT
     - AccessMap
     - Walksheds
     - TDEI
-audiences:
-    - jurisdiction
-    - planner
 topics:
     - feedback
     - governance
@@ -21,7 +21,7 @@ topics:
     - tdei
 risk_level: medium
 authority_level: explanatory
-review_status: draft
+publication_status: draft
 last_reviewed: 2026-05-11
 retrieval_priority: medium
 assistant_behavior:
@@ -33,6 +33,8 @@ assistant_behavior:
 related_pages:
     - assistant/cross-platform/index.md
     - assistant/workflows/update-jurisdiction-data.md
+tags:
+    - Assistant
 ---
 
 <!-- @format -->

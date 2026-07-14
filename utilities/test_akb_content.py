@@ -12,6 +12,7 @@ from collections import defaultdict
 from pathlib import Path
 
 import pytest
+import yaml
 
 REPO_ROOT = Path(__file__).parent.parent
 ASSISTANT_DIR = REPO_ROOT / "docs" / "assistant"
@@ -41,9 +42,9 @@ REQUIRED_SECTIONS = [
     "## Related Concepts",
 ]
 
-VALID_REVIEW_STATUSES = {"stub", "draft", "reviewed"}
+VALID_PUBLICATION_STATUSES = {"stub", "draft", "published", "archived"}
 VALID_RISK_LEVELS = {"low", "medium", "high"}
-VALID_AUTHORITY_LEVELS = {"draft", "explanatory", "official"}
+VALID_AUTHORITY_LEVELS = {"provisional", "explanatory", "official"}
 VALID_RETRIEVAL_PRIORITIES = {"low", "medium", "high"}
 
 FRONTMATTER_RE = re.compile(r"^---\s*\n(.*?)\n---\s*\n", re.DOTALL)
@@ -242,8 +243,8 @@ def test_required_sections_present_and_ordered(topic, doc_type, path):
 @pytest.mark.parametrize("topic,doc_type,path", ARTICLES, ids=ARTICLE_IDS)
 def test_frontmatter_enum_values_valid(topic, doc_type, path):
     fm = parse_frontmatter(path.read_text(encoding="utf-8"))
-    assert fm.get("review_status") in VALID_REVIEW_STATUSES, (
-        f"{rel(path)}: invalid review_status {fm.get('review_status')!r}"
+    assert fm.get("publication_status") in VALID_PUBLICATION_STATUSES, (
+        f"{rel(path)}: invalid publication_status {fm.get('publication_status')!r}"
     )
     assert fm.get("risk_level") in VALID_RISK_LEVELS, (
         f"{rel(path)}: invalid risk_level {fm.get('risk_level')!r}"
@@ -323,7 +324,8 @@ def test_topics_match_schema_vocabulary(topic, doc_type, path, schema_topics):
 @pytest.mark.parametrize(
     "topic,doc_type,path",
     [(t, d, p) for t, d, p in ARTICLES if t not in EXEMPT_TOPIC_DIRS],
-    ids=[i for (t, _, _), i in zip(ARTICLES, ARTICLE_IDS) if t not in EXEMPT_TOPIC_DIRS],
+    ids=[i for (t, _, _), i in zip(ARTICLES, ARTICLE_IDS)
+         if t not in EXEMPT_TOPIC_DIRS],
 )
 def test_first_product_matches_parent_topic_folder(topic, doc_type, path, schema_product_slugs):
     """The first ``products`` entry must be the product owning this topic folder.
@@ -355,7 +357,8 @@ def test_first_product_matches_parent_topic_folder(topic, doc_type, path, schema
 @pytest.mark.parametrize(
     "topic,doc_type,path",
     [(t, d, p) for t, d, p in ARTICLES if t not in EXEMPT_TOPIC_DIRS],
-    ids=[i for (t, _, _), i in zip(ARTICLES, ARTICLE_IDS) if t not in EXEMPT_TOPIC_DIRS],
+    ids=[i for (t, _, _), i in zip(ARTICLES, ARTICLE_IDS)
+         if t not in EXEMPT_TOPIC_DIRS],
 )
 def test_first_topic_matches_parent_topic_folder(topic, doc_type, path):
     """The first ``topics`` entry must be the parent topic folder's own slug.
@@ -492,7 +495,7 @@ def dispatch_rows(dispatch_text):
 def test_dispatch_frontmatter_is_valid(dispatch_text):
     fm = parse_frontmatter(dispatch_text)
     assert fm.get("slug") == "dispatch"
-    assert fm.get("review_status") in VALID_REVIEW_STATUSES
+    assert fm.get("publication_status") in VALID_PUBLICATION_STATUSES
 
 
 def test_dispatch_has_no_rows_for_nonexistent_files(dispatch_rows):
@@ -540,7 +543,7 @@ def test_dispatch_lists_every_topic_article_exactly_once(dispatch_rows):
     )
 
 
-def test_dispatch_review_status_matches_frontmatter(dispatch_rows):
+def test_dispatch_publication_status_matches_frontmatter(dispatch_rows):
     row_status = {}
     for _heading_stack, file_path, status in dispatch_rows:
         row_status[file_path] = status
@@ -551,11 +554,11 @@ def test_dispatch_review_status_matches_frontmatter(dispatch_rows):
         if path_key not in row_status:
             continue  # already reported by test_dispatch_lists_every_topic_article_exactly_once
         fm = parse_frontmatter(path.read_text(encoding="utf-8"))
-        actual_status = fm.get("review_status", "stub")
+        actual_status = fm.get("publication_status", "stub")
         if row_status[path_key] != actual_status:
             mismatches.append((path_key, row_status[path_key], actual_status))
     assert not mismatches, (
-        f"dispatch.md review_status disagrees with file frontmatter for "
+        f"dispatch.md publication_status disagrees with file frontmatter for "
         f"{len(mismatches)} file(s) (path, dispatch_status, actual_status). "
         f"First 20: {mismatches[:20]}"
     )

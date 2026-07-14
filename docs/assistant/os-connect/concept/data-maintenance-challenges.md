@@ -1,22 +1,22 @@
 ---
 title: "What makes accessibility data difficult to maintain?"
-tags:
-    - Assistant
 slug: data-maintenance-challenges
 doc_type: concept
-products:
-    - OS-CONNECT
+questions:
+    - What makes accessibility data difficult to maintain?
 audiences:
     - planner
     - jurisdiction
     - advocate
     - public
+products:
+    - OS-CONNECT
 topics:
     - os-connect
     - maintenance
 risk_level: high
 authority_level: explanatory
-review_status: stub
+publication_status: stub
 last_reviewed: ""
 retrieval_priority: high
 assistant_behavior:
@@ -25,6 +25,8 @@ assistant_behavior:
     abstain_if_missing_context: true
     do_not_claim: []
 related_pages: []
+tags:
+    - Assistant
 ---
 
 <!-- @format -->

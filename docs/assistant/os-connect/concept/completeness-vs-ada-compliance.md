@@ -1,22 +1,22 @@
 ---
 title: Is completeness ADA compliance?
-tags:
-    - Assistant
 slug: completeness-vs-ada-compliance
 doc_type: concept
-products:
-    - OS-CONNECT
+questions:
+    - Is completeness ADA compliance?
 audiences:
     - jurisdiction
     - advocate
     - public
+products:
+    - OS-CONNECT
 topics:
     - os-connect
     - completeness
     - legal-boundaries
 risk_level: high
 authority_level: explanatory
-review_status: draft
+publication_status: draft
 last_reviewed: 2026-06-19
 retrieval_priority: high
 assistant_behavior:
@@ -30,6 +30,8 @@ related_pages:
     - assistant/concepts/completeness.md
     - assistant/concepts/ada-compliance-boundaries.md
     - assistant/cross-platform/index.md
+tags:
+    - Assistant
 ---
 
 <!-- @format -->

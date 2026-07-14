@@ -1,22 +1,22 @@
 ---
 title: "How should municipalities validate routing results?"
-tags:
-    - Assistant
 slug: validate-routing-results
 doc_type: workflow
-products:
-    - AccessMap
+questions:
+    - How should municipalities validate routing results?
 audiences:
     - planner
     - jurisdiction
     - advocate
     - public
+products:
+    - AccessMap
 topics:
     - accessmap
     - data-quality
 risk_level: medium
 authority_level: explanatory
-review_status: stub
+publication_status: stub
 last_reviewed: ""
 retrieval_priority: high
 assistant_behavior:
@@ -25,6 +25,8 @@ assistant_behavior:
     abstain_if_missing_context: true
     do_not_claim: []
 related_pages: []
+tags:
+    - Assistant
 ---
 
 <!-- @format -->

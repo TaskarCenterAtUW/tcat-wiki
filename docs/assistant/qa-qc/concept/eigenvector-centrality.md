@@ -1,24 +1,24 @@
 ---
 title: "What is eigenvector centrality?"
-tags:
-    - Assistant
 slug: eigenvector-centrality
 doc_type: concept
-products:
-    - QA-QC Reports
-    - OS-CONNECT
+questions:
+    - What is eigenvector centrality?
 audiences:
     - planner
     - jurisdiction
     - advocate
     - public
+products:
+    - QA-QC Reports
+    - OS-CONNECT
 topics:
     - qa-qc
     - graph-metrics
     - os-connect
 risk_level: medium
 authority_level: explanatory
-review_status: stub
+publication_status: stub
 last_reviewed: ""
 retrieval_priority: medium
 assistant_behavior:
@@ -27,6 +27,8 @@ assistant_behavior:
     abstain_if_missing_context: true
     do_not_claim: []
 related_pages: []
+tags:
+    - Assistant
 ---
 
 <!-- @format -->

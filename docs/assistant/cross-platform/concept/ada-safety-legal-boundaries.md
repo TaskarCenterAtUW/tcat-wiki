@@ -1,19 +1,19 @@
 ---
 title: ADA, safety, and legal boundaries (policy)
-tags:
-    - Assistant
 slug: ada-safety-legal-boundaries
 doc_type: concept
-products:
-    - OS-CONNECT
-    - AccessMap
-    - Walksheds
-    - TDEI
+questions:
+    - What are the ADA, safety, and legal boundaries for assistant answers?
 audiences:
     - jurisdiction
     - planner
     - advocate
     - public
+products:
+    - OS-CONNECT
+    - AccessMap
+    - Walksheds
+    - TDEI
 topics:
     - legal-boundaries
     - os-connect
@@ -21,8 +21,8 @@ topics:
     - walksheds
     - tdei
 risk_level: high
-authority_level: draft
-review_status: draft
+authority_level: provisional
+publication_status: draft
 last_reviewed: 2026-05-11
 retrieval_priority: high
 assistant_behavior:
@@ -34,6 +34,8 @@ assistant_behavior:
 related_pages:
     - assistant/cross-platform/concept/ada-compliance-boundaries.md
     - assistant/cross-platform/concept/assistant-abstention.md
+tags:
+    - Assistant
 ---
 
 <!-- @format -->

@@ -1,18 +1,18 @@
 ---
 title: ADA compliance boundaries for assistant answers
-tags:
-    - Assistant
 slug: ada-compliance-boundaries
 doc_type: concept
-products:
-    - OS-CONNECT
-    - AccessMap
-    - Walksheds
+questions:
+    - What are the ADA compliance boundaries for assistant answers?
 audiences:
     - planner
     - jurisdiction
     - advocate
     - public
+products:
+    - OS-CONNECT
+    - AccessMap
+    - Walksheds
 topics:
     - legal-boundaries
     - accessibility-data
@@ -21,7 +21,7 @@ topics:
     - walksheds
 risk_level: high
 authority_level: explanatory
-review_status: draft
+publication_status: draft
 last_reviewed: 2026-06-16
 retrieval_priority: high
 assistant_behavior:
@@ -35,6 +35,8 @@ related_pages:
     - assistant/cross-platform/index.md
     - assistant/concepts/completeness.md
     - assistant/questions/os-connect/is-completeness-ada-compliance.md
+tags:
+    - Assistant
 ---
 
 <!-- @format -->

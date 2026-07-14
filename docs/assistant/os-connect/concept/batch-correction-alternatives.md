@@ -1,23 +1,23 @@
 ---
 title: "Can an agency submit a batch of known corrections instead of reporting one issue at a time?"
-tags:
-    - Assistant
 slug: batch-correction-alternatives
 doc_type: concept
-products:
-    - OS-CONNECT
+questions:
+    - Can an agency submit a batch of known corrections instead of reporting one issue at a time?
 audiences:
     - planner
     - jurisdiction
     - advocate
     - public
+products:
+    - OS-CONNECT
 topics:
     - os-connect
     - feedback
     - agencies
 risk_level: medium
 authority_level: explanatory
-review_status: stub
+publication_status: stub
 last_reviewed: ""
 retrieval_priority: high
 assistant_behavior:
@@ -26,6 +26,8 @@ assistant_behavior:
     abstain_if_missing_context: true
     do_not_claim: []
 related_pages: []
+tags:
+    - Assistant
 ---
 
 <!-- @format -->

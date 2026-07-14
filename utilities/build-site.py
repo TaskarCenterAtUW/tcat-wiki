@@ -4,8 +4,8 @@
 Produces two parallel copies of docs/ used to build/serve the site:
 
   - human-docs/  Filtered copy. Removes docs/assistant/support/ entirely and
-                 any docs/assistant/**/*.md whose review_status frontmatter is
-                 not "reviewed". Zensical builds the HTML site from this copy.
+                 any docs/assistant/**/*.md whose publication_status frontmatter
+                 is not "published". Zensical builds the HTML site from this copy.
   - agent-docs/  Full copy (all review statuses, including support/). The
                  assistant dispatch registry is regenerated into this copy,
                  and each Markdown file has agent-irrelevant syntax (images,
@@ -26,7 +26,7 @@ file's repo):
     python utilities/build-site.py --build     # prep, then `zensical build -c`, then overlay
     python utilities/build-site.py --serve     # prep, then `zensical serve` (blocking)
 
-Exits non-zero, with a list of offending pages, if a reviewed human-docs page
+Exits non-zero, with a list of offending pages, if a published human-docs page
 links to an assistant page that was filtered out of the human layer (a stub,
 a draft, or anything under assistant/support/) — this is treated as an
 authoring error, per the project's human/agent layer split (see
@@ -71,7 +71,7 @@ _EXCESS_BLANK_LINES_RE = re.compile(r"\n{3,}")
 
 
 class HumanDocsValidationError(Exception):
-    """Raised when a reviewed human-docs page links to an unbuilt assistant page.
+    """Raised when a published human-docs page links to an unbuilt assistant page.
 
     ``errors`` is a list of (offending_page, link_target) tuples, both given
     as paths relative to the human-docs root, suitable for direct printing.
@@ -141,18 +141,18 @@ def copy_layers(docs_dir=DOCS_DIR, human_dir=HUMAN_DOCS_DIR, agent_dir=AGENT_DOC
 # Step 2: filter human-docs
 # =============================================================================
 
-def delete_non_reviewed_assistant_pages(human_dir):
-    """Remove assistant/support/ and any non-reviewed assistant page from human_dir.
+def delete_non_published_assistant_pages(human_dir):
+    """Remove assistant/support/ and any non-published assistant page from human_dir.
 
     Returns a dict with keys:
       - "removed": sorted list of removed file paths, relative to human_dir
-      - "non_reviewed_index_topics": sorted list of topic dir names (relative
-        to assistant/) whose index.md was removed for being non-reviewed
+            - "non_published_index_topics": sorted list of topic dir names (relative
+                to assistant/) whose index.md was removed for not being published
         (these topics will have no human-facing landing page)
     """
     assistant_dir = human_dir / ASSISTANT_SUBDIR
     removed = []
-    non_reviewed_index_topics = []
+    non_published_index_topics = []
 
     support_dir = assistant_dir / SUPPORT_SUBDIR
     if support_dir.is_dir():
@@ -166,17 +166,17 @@ def delete_non_reviewed_assistant_pages(human_dir):
                 continue  # already removed as part of support/ above
             frontmatter = parse_frontmatter(
                 md_file.read_text(encoding="utf-8"))
-            if frontmatter.get("review_status") != "reviewed":
+            if frontmatter.get("publication_status") != "published":
                 if md_file.name == "index.md":
                     topic = md_file.parent.relative_to(assistant_dir)
                     if str(topic) != ".":
-                        non_reviewed_index_topics.append(topic.as_posix())
+                        non_published_index_topics.append(topic.as_posix())
                 removed.append(md_file.relative_to(human_dir).as_posix())
                 md_file.unlink()
 
     return {
         "removed": sorted(removed),
-        "non_reviewed_index_topics": sorted(non_reviewed_index_topics),
+        "non_published_index_topics": sorted(non_published_index_topics),
     }
 
 
@@ -223,15 +223,15 @@ def find_broken_assistant_links(human_dir):
 def filter_human_docs(human_dir=HUMAN_DOCS_DIR):
     """Filter human_dir in place; raise HumanDocsValidationError on broken links.
 
-    Returns the same info dict as delete_non_reviewed_assistant_pages() on
+    Returns the same info dict as delete_non_published_assistant_pages() on
     success.
     """
-    info = delete_non_reviewed_assistant_pages(human_dir)
-    if info["non_reviewed_index_topics"]:
+    info = delete_non_published_assistant_pages(human_dir)
+    if info["non_published_index_topics"]:
         print(
-            "warning: the following assistant topics have a non-reviewed "
+            "warning: the following assistant topics have a non-published "
             "index.md and will have no human-facing landing page: "
-            + ", ".join(info["non_reviewed_index_topics"]),
+            + ", ".join(info["non_published_index_topics"]),
             file=sys.stderr,
         )
     errors = find_broken_assistant_links(human_dir)
@@ -327,7 +327,7 @@ def prepare(docs_dir=DOCS_DIR, human_dir=HUMAN_DOCS_DIR, agent_dir=AGENT_DOCS_DI
             source_config=SOURCE_CONFIG_PATH, build_config=BUILD_CONFIG_PATH):
     """Run the full prep pipeline: clean, copy, filter, dispatch, strip, config.
 
-    Raises HumanDocsValidationError if a reviewed human page links to an
+    Raises HumanDocsValidationError if a published human page links to an
     unbuilt assistant page.
     """
     clean_generated(human_dir, agent_dir, build_config)
@@ -371,9 +371,9 @@ def main(argv=None):
         return 130
     except HumanDocsValidationError as exc:
         print(
-            "error: reviewed human-docs page(s) link to an unbuilt assistant "
+            "error: published human-docs page(s) link to an unbuilt assistant "
             "page (stub, draft, or support/). Fix the source link or change "
-            "the target page's review_status:",
+            "the target page's publication_status:",
             file=sys.stderr,
         )
         for offending_page, link_target in exc.errors:

@@ -1,22 +1,22 @@
 ---
 title: AccessMap routing (concept)
-tags:
-    - Assistant
 slug: accessmap-routing
 doc_type: concept
-products:
-    - AccessMap
+questions:
+    - What is AccessMap routing?
 audiences:
     - public
     - advocate
     - planner
+products:
+    - AccessMap
 topics:
     - routing
     - mobility-profiles
     - accessmap
 risk_level: medium
 authority_level: explanatory
-review_status: draft
+publication_status: draft
 last_reviewed: 2026-06-16
 retrieval_priority: high
 assistant_behavior:
@@ -28,6 +28,8 @@ assistant_behavior:
 related_pages:
     - assistant/questions/accessmap/why-does-accessmap-choose-longer-routes.md
     - assistant/questions/accessmap/how-do-mobility-profiles-work.md
+tags:
+    - Assistant
 ---
 
 <!-- @format -->

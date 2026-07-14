@@ -254,6 +254,14 @@ Describe "Script Structure" {
         $scriptContent | Should -Match 'build-glossary\.py'
     }
 
+    It "Should run the Python pytest suites" {
+        $scriptContent | Should -Match '-m pytest'
+    }
+
+    It "Should include the AKB content validation suite in the pytest path" {
+        $scriptContent | Should -Match 'test_akb_content\.py'
+    }
+
     It "Should reference venv Python executable" {
         $scriptContent | Should -Match '\.venv.*Scripts.*python'
     }
@@ -332,7 +340,7 @@ Describe "Build-Glossary" {
         It "Should include required schema frontmatter keys" {
             $pyContent | Should -Match 'doc_type'
             $pyContent | Should -Match 'slug'
-            $pyContent | Should -Match 'review_status'
+            $pyContent | Should -Match 'publication_status'
             $pyContent | Should -Match 'last_reviewed'
             $pyContent | Should -Match 'assistant_behavior'
         }

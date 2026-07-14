@@ -1,23 +1,23 @@
 ---
 title: LivAbility — Assistant Knowledge Base
-tags:
-    - Assistant
 slug: livability-index
 doc_type: policy
-products:
-    - LivAbility
+questions:
+    - What assistant-facing information and policies are covered in the LivAbility knowledge base?
 audiences:
     - planner
     - jurisdiction
     - advocate
     - public
+products:
+    - LivAbility
 topics:
     - livability
     - tdei-ecosystem
     - accessibility-metrics
 risk_level: high
-authority_level: draft
-review_status: stub
+authority_level: provisional
+publication_status: stub
 last_reviewed: 2026-07-02
 retrieval_priority: high
 assistant_behavior:
@@ -28,6 +28,8 @@ assistant_behavior:
 related_pages:
     - assistant/index.md
     - assistant/dispatch.md
+tags:
+    - Assistant
 ---
 
 <!-- @format -->

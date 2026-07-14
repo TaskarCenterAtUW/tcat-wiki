@@ -1,24 +1,24 @@
 ---
 title: "How do teams differ from project groups?"
-tags:
-    - Assistant
 slug: teams-vs-project-groups
 doc_type: concept
-products:
-    - Workspaces
+questions:
+    - How do teams differ from project groups?
 audiences:
     - planner
     - jurisdiction
     - advocate
     - public
+products:
+    - Workspaces
 topics:
     - workspaces
     - collaborative-editing
     - teams
     - roles
 risk_level: low
-authority_level: draft
-review_status: stub
+authority_level: provisional
+publication_status: stub
 last_reviewed:
 retrieval_priority: medium
 assistant_behavior:
@@ -27,6 +27,8 @@ assistant_behavior:
     abstain_if_missing_context: true
     do_not_claim: []
 related_pages: []
+tags:
+    - Assistant
 ---
 
 <!-- @format -->

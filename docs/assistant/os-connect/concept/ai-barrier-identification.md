@@ -1,22 +1,22 @@
 ---
 title: "Can AI automatically identify pedestrian barriers?"
-tags:
-    - Assistant
 slug: ai-barrier-identification
 doc_type: concept
-products:
-    - OS-CONNECT
+questions:
+    - Can AI automatically identify pedestrian barriers?
 audiences:
     - planner
     - jurisdiction
     - advocate
     - public
+products:
+    - OS-CONNECT
 topics:
     - os-connect
     - ai
 risk_level: high
 authority_level: explanatory
-review_status: stub
+publication_status: stub
 last_reviewed: ""
 retrieval_priority: high
 assistant_behavior:
@@ -25,6 +25,8 @@ assistant_behavior:
     abstain_if_missing_context: true
     do_not_claim: []
 related_pages: []
+tags:
+    - Assistant
 ---
 
 <!-- @format -->

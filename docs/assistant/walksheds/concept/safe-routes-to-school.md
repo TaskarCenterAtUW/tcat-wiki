@@ -1,21 +1,21 @@
 ---
 title: Safe Routes to School (SRTS)
-tags:
-    - Assistant
 slug: safe-routes-to-school
 doc_type: concept
-products:
-    - Walksheds
+questions:
+    - What is Safe Routes to School (SRTS)?
 audiences:
     - planner
     - jurisdiction
     - advocate
+products:
+    - Walksheds
 topics:
     - walksheds
     - srts
 risk_level: medium
 authority_level: explanatory
-review_status: draft
+publication_status: draft
 last_reviewed: 2026-05-11
 retrieval_priority: medium
 assistant_behavior:
@@ -27,6 +27,8 @@ assistant_behavior:
 related_pages:
     - assistant/workflows/use-walksheds-for-safe-routes-to-school.md
     - assistant/questions/walksheds/what-is-a-walkshed.md
+tags:
+    - Assistant
 ---
 
 <!-- @format -->

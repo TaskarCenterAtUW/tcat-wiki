@@ -1,23 +1,23 @@
 ---
 title: "What should trip-planning vendors do when OSM pedestrian paths do not include street names?"
-tags:
-    - Assistant
 slug: missing-street-names-for-vendors
 doc_type: concept
-products:
-    - OS-CONNECT
+questions:
+    - What should trip-planning vendors do when OSM pedestrian paths do not include street names?
 audiences:
     - planner
     - jurisdiction
     - advocate
     - public
+products:
+    - OS-CONNECT
 topics:
     - os-connect
     - osm-interoperability
     - vendors
 risk_level: medium
 authority_level: explanatory
-review_status: stub
+publication_status: stub
 last_reviewed: ""
 retrieval_priority: high
 assistant_behavior:
@@ -26,6 +26,8 @@ assistant_behavior:
     abstain_if_missing_context: true
     do_not_claim: []
 related_pages: []
+tags:
+    - Assistant
 ---
 
 <!-- @format -->

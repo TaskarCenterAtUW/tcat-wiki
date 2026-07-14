@@ -1,22 +1,22 @@
 ---
 title: "How do I select a mobility profile in LivAbility?"
-tags:
-    - Assistant
 slug: select-mobility-profile
 doc_type: workflow
-products:
-    - LivAbility
+questions:
+    - How do I select a mobility profile in LivAbility?
 audiences:
     - planner
     - jurisdiction
     - advocate
     - public
+products:
+    - LivAbility
 topics:
     - livability
     - mobility-profiles
 risk_level: medium
-authority_level: draft
-review_status: stub
+authority_level: provisional
+publication_status: stub
 last_reviewed: ""
 retrieval_priority: medium
 assistant_behavior:
@@ -25,6 +25,8 @@ assistant_behavior:
     abstain_if_missing_context: true
     do_not_claim: []
 related_pages: []
+tags:
+    - Assistant
 ---
 
 <!-- @format -->

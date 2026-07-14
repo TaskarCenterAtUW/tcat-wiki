@@ -1,24 +1,24 @@
 ---
 title: "Why must imagery use raw JSON links?"
-tags:
-    - Assistant
 slug: imagery-raw-json-requirement
 doc_type: concept
-products:
-    - Workspaces
+questions:
+    - Why must imagery use raw JSON links?
 audiences:
     - planner
     - jurisdiction
     - advocate
     - public
+products:
+    - Workspaces
 topics:
     - workspaces
     - imagery
     - basemaps
     - configuration
 risk_level: medium
-authority_level: draft
-review_status: stub
+authority_level: provisional
+publication_status: stub
 last_reviewed:
 retrieval_priority: medium
 assistant_behavior:
@@ -27,6 +27,8 @@ assistant_behavior:
     abstain_if_missing_context: true
     do_not_claim: []
 related_pages: []
+tags:
+    - Assistant
 ---
 
 <!-- @format -->

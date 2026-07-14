@@ -1,22 +1,22 @@
 ---
 title: "What is a project group in TDEI?"
-tags:
-    - Assistant
 slug: project-group
 doc_type: concept
-products:
-    - TDEI
+questions:
+    - What is a project group in TDEI?
 audiences:
     - planner
     - jurisdiction
     - advocate
     - public
+products:
+    - TDEI
 topics:
     - tdei
     - project-groups
 risk_level: medium
 authority_level: explanatory
-review_status: stub
+publication_status: stub
 last_reviewed: ""
 retrieval_priority: high
 assistant_behavior:
@@ -25,6 +25,8 @@ assistant_behavior:
     abstain_if_missing_context: true
     do_not_claim: []
 related_pages: []
+tags:
+    - Assistant
 ---
 
 <!-- @format -->

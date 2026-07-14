@@ -1,22 +1,22 @@
 ---
 title: "How could national accessibility data standards evolve?"
-tags:
-    - Assistant
 slug: national-data-standards-evolution
 doc_type: concept
-products:
-    - OS-CONNECT
+questions:
+    - How could national accessibility data standards evolve?
 audiences:
     - planner
     - jurisdiction
     - advocate
     - public
+products:
+    - OS-CONNECT
 topics:
     - os-connect
     - standards
 risk_level: medium
 authority_level: explanatory
-review_status: stub
+publication_status: stub
 last_reviewed: ""
 retrieval_priority: high
 assistant_behavior:
@@ -25,6 +25,8 @@ assistant_behavior:
     abstain_if_missing_context: true
     do_not_claim: []
 related_pages: []
+tags:
+    - Assistant
 ---
 
 <!-- @format -->

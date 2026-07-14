@@ -1,22 +1,22 @@
 ---
 title: "What is the TDEI?"
-tags:
-    - Assistant
 slug: tdei
 doc_type: concept
-products:
-    - TDEI
+questions:
+    - What is the TDEI?
 audiences:
     - planner
     - jurisdiction
     - advocate
     - public
+products:
+    - TDEI
 topics:
     - tdei
     - tdei-overview
 risk_level: medium
-authority_level: draft
-review_status: stub
+authority_level: provisional
+publication_status: stub
 last_reviewed: 2026-07-02
 retrieval_priority: high
 assistant_behavior:
@@ -25,6 +25,8 @@ assistant_behavior:
     abstain_if_missing_context: true
     do_not_claim: []
 related_pages: []
+tags:
+    - Assistant
 ---
 
 <!-- @format -->

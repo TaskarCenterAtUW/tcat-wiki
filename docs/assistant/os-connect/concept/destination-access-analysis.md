@@ -1,18 +1,18 @@
 ---
 title: "Can OS-CONNECT support pedestrian access analysis around schools, clinics, grocery stores, and other destinations?"
-tags:
-    - Assistant
 slug: destination-access-analysis
 doc_type: concept
-products:
-    - OS-CONNECT
-    - Walksheds
-    - AccessMap
+questions:
+    - Can OS-CONNECT support pedestrian access analysis around schools, clinics, grocery stores, and other destinations?
 audiences:
     - planner
     - jurisdiction
     - advocate
     - public
+products:
+    - OS-CONNECT
+    - Walksheds
+    - AccessMap
 topics:
     - os-connect
     - planning
@@ -23,7 +23,7 @@ topics:
     - accessmap
 risk_level: medium
 authority_level: explanatory
-review_status: draft
+publication_status: draft
 last_reviewed: 2026-06-22
 retrieval_priority: high
 assistant_behavior:
@@ -42,6 +42,8 @@ related_pages:
     - connected-pedestrian-graph
     - data-freshness
     - ada-compliance-boundaries
+tags:
+    - Assistant
 ---
 
 <!-- @format -->

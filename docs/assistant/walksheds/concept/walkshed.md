@@ -1,20 +1,20 @@
 ---
 title: What is a walkshed?
-tags:
-    - Assistant
 slug: walkshed
 doc_type: concept
-products:
-    - Walksheds
+questions:
+    - What is a walkshed?
 audiences:
     - planner
     - jurisdiction
     - advocate
+products:
+    - Walksheds
 topics:
     - walksheds
 risk_level: low
 authority_level: explanatory
-review_status: draft
+publication_status: draft
 last_reviewed: 2026-06-19
 retrieval_priority: high
 assistant_behavior:
@@ -26,6 +26,8 @@ assistant_behavior:
 related_pages:
     - assistant/concepts/walksheds.md
     - walksheds/index.md
+tags:
+    - Assistant
 ---
 
 <!-- @format -->

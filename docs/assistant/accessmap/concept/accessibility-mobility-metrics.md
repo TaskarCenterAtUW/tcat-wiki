@@ -1,22 +1,22 @@
 ---
 title: "What metrics matter most for accessible mobility?"
-tags:
-    - Assistant
 slug: accessibility-mobility-metrics
 doc_type: concept
-products:
-    - AccessMap
+questions:
+    - What metrics matter most for accessible mobility?
 audiences:
     - planner
     - jurisdiction
     - advocate
     - public
+products:
+    - AccessMap
 topics:
     - accessmap
     - accessibility-metrics
 risk_level: medium
-authority_level: draft
-review_status: stub
+authority_level: provisional
+publication_status: stub
 last_reviewed: 2026-07-02
 retrieval_priority: high
 assistant_behavior:
@@ -25,6 +25,8 @@ assistant_behavior:
     abstain_if_missing_context: true
     do_not_claim: []
 related_pages: []
+tags:
+    - Assistant
 ---
 
 <!-- @format -->

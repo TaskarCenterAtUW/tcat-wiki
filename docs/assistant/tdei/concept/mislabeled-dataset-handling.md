@@ -1,23 +1,23 @@
 ---
 title: "What should I do if a dataset appears mislabeled or downloads the wrong file?"
-tags:
-    - Assistant
 slug: mislabeled-dataset-handling
 doc_type: concept
-products:
-    - TDEI
+questions:
+    - What should I do if a dataset appears mislabeled or downloads the wrong file?
 audiences:
     - planner
     - jurisdiction
     - advocate
     - public
+products:
+    - TDEI
 topics:
     - tdei
     - support
     - export
 risk_level: medium
 authority_level: explanatory
-review_status: stub
+publication_status: stub
 last_reviewed: ""
 retrieval_priority: high
 assistant_behavior:
@@ -26,6 +26,8 @@ assistant_behavior:
     abstain_if_missing_context: true
     do_not_claim: []
 related_pages: []
+tags:
+    - Assistant
 ---
 
 <!-- @format -->

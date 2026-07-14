@@ -1,16 +1,16 @@
 ---
 title: TDEI — Assistant Knowledge Base
-tags:
-    - Assistant
 slug: tdei-index
 doc_type: policy
-products:
-    - TDEI
+questions:
+    - What assistant-facing information and policies are covered in the TDEI knowledge base?
 audiences:
     - planner
     - jurisdiction
     - advocate
     - public
+products:
+    - TDEI
 topics:
     - tdei
     - tdei-ecosystem
@@ -18,7 +18,7 @@ topics:
     - publication-workflow
 risk_level: low
 authority_level: explanatory
-review_status: draft
+publication_status: draft
 last_reviewed: 2026-07-06
 retrieval_priority: high
 assistant_behavior:
@@ -33,6 +33,8 @@ related_pages:
     - assistant/dispatch.md
     - assistant/workspaces/index.md
     - assistant/os-connect/index.md
+tags:
+    - Assistant
 ---
 
 <!-- @format -->

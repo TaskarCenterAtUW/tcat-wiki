@@ -1,17 +1,17 @@
 ---
 title: "Create a workspace from TDEI"
-tags:
-    - Assistant
 slug: create-a-workspace-from-tdei
 doc_type: workflow
-products:
-    - Workspaces
-    - TDEI
+questions:
+    - How do I create a workspace from TDEI?
 audiences:
     - planner
     - jurisdiction
     - advocate
     - public
+products:
+    - Workspaces
+    - TDEI
 topics:
     - workspaces
     - onboarding
@@ -21,8 +21,8 @@ topics:
     - dataset-lineage
     - tdei
 risk_level: low
-authority_level: draft
-review_status: draft
+authority_level: provisional
+publication_status: draft
 last_reviewed: 2026-05-22
 retrieval_priority: medium
 assistant_behavior:
@@ -44,6 +44,8 @@ related_pages:
     - assistant/questions/workspaces/is-a-workspace-a-copy-or-the-original-dataset.md
     - assistant/questions/workspaces/does-editing-a-workspace-change-the-tdei-dataset.md
     - workspaces/index.md
+tags:
+    - Assistant
 ---
 
 <!-- @format -->

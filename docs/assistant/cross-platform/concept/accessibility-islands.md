@@ -1,18 +1,18 @@
 ---
 title: Accessibility islands
-tags:
-    - Assistant
 slug: accessibility-islands
 doc_type: concept
-products:
-    - OS-CONNECT
-    - AccessMap
-    - Walksheds
+questions:
+    - What are accessibility islands?
 audiences:
     - planner
     - jurisdiction
     - advocate
     - public
+products:
+    - OS-CONNECT
+    - AccessMap
+    - Walksheds
 topics:
     - graph-metrics
     - os-connect
@@ -20,7 +20,7 @@ topics:
     - walksheds
 risk_level: medium
 authority_level: explanatory
-review_status: draft
+publication_status: draft
 last_reviewed: 2026-06-16
 retrieval_priority: medium
 assistant_behavior:
@@ -32,6 +32,8 @@ assistant_behavior:
 related_pages:
     - assistant/concepts/connected-pedestrian-graph.md
     - assistant/questions/os-connect/why-are-sidewalks-disconnected.md
+tags:
+    - Assistant
 ---
 
 <!-- @format -->

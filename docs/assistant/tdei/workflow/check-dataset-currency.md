@@ -1,23 +1,23 @@
 ---
 title: "How do I know whether a dataset is current?"
-tags:
-    - Assistant
 slug: check-dataset-currency
 doc_type: workflow
-products:
-    - TDEI
+questions:
+    - How do I know whether a dataset is current?
 audiences:
     - planner
     - jurisdiction
     - advocate
     - public
+products:
+    - TDEI
 topics:
     - tdei
     - data-freshness
     - releases
 risk_level: medium
 authority_level: explanatory
-review_status: stub
+publication_status: stub
 last_reviewed: ""
 retrieval_priority: high
 assistant_behavior:
@@ -26,6 +26,8 @@ assistant_behavior:
     abstain_if_missing_context: true
     do_not_claim: []
 related_pages: []
+tags:
+    - Assistant
 ---
 
 <!-- @format -->

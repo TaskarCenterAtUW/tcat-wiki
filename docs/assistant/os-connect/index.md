@@ -1,16 +1,16 @@
 ---
 title: OS-CONNECT — Assistant Knowledge Base
-tags:
-    - Assistant
 slug: os-connect-index
 doc_type: policy
-products:
-    - OS-CONNECT
+questions:
+    - What assistant-facing information and policies are covered in the OS-CONNECT knowledge base?
 audiences:
     - planner
     - jurisdiction
     - advocate
     - public
+products:
+    - OS-CONNECT
 topics:
     - os-connect
     - workspaces
@@ -19,7 +19,7 @@ topics:
     - accessibility-data
 risk_level: high
 authority_level: explanatory
-review_status: draft
+publication_status: draft
 last_reviewed: 2026-06-09
 retrieval_priority: high
 assistant_behavior:
@@ -35,6 +35,8 @@ related_pages:
     - assistant/workspaces/index.md
     - assistant/walksheds/index.md
     - assistant/accessmap/index.md
+tags:
+    - Assistant
 ---
 
 <!-- @format -->

@@ -1,18 +1,18 @@
 ---
 title: QA/QC — Assistant Knowledge Base
-tags:
-    - Assistant
 slug: qa-qc-index
 doc_type: policy
-products:
-    - QA-QC Reports
-    - OS-CONNECT
-    - TDEI
+questions:
+    - What assistant-facing information and policies are covered in the QA/QC knowledge base?
 audiences:
     - planner
     - jurisdiction
     - advocate
     - public
+products:
+    - QA-QC Reports
+    - OS-CONNECT
+    - TDEI
 topics:
     - qa-qc
     - tdei-ecosystem
@@ -20,8 +20,8 @@ topics:
     - os-connect
     - tdei
 risk_level: high
-authority_level: draft
-review_status: stub
+authority_level: provisional
+publication_status: stub
 last_reviewed: 2026-07-02
 retrieval_priority: high
 assistant_behavior:
@@ -32,6 +32,8 @@ assistant_behavior:
 related_pages:
     - assistant/index.md
     - assistant/dispatch.md
+tags:
+    - Assistant
 ---
 
 <!-- @format -->

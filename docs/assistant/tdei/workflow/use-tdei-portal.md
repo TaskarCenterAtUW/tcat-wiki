@@ -1,20 +1,20 @@
 ---
 title: How do I use the TDEI portal?
-tags:
-    - Assistant
 slug: use-tdei-portal
 doc_type: workflow
-products:
-    - TDEI
+questions:
+    - How do I use the TDEI portal?
 audiences:
     - planner
     - jurisdiction
+products:
+    - TDEI
 topics:
     - tdei
     - roles
 risk_level: low
 authority_level: explanatory
-review_status: draft
+publication_status: draft
 last_reviewed: 2026-05-11
 retrieval_priority: high
 assistant_behavior:
@@ -26,6 +26,8 @@ assistant_behavior:
 related_pages:
     - assistant/questions/tdei/where-do-i-download-os-connect-data.md
     - tdei/portal/user-manual/index.md
+tags:
+    - Assistant
 ---
 
 <!-- @format -->

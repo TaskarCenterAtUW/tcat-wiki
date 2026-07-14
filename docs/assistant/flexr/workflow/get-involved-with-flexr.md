@@ -1,18 +1,16 @@
 ---
 title: "How do I get involved with FleXR?"
-tags:
-    - Assistant
 slug: get-involved-with-flexr
 doc_type: workflow
 questions:
     - How do I participate in the FleXR user study?
     - How do I integrate FleXR into my A-Frame application?
-products:
-    - FleXR
 audiences:
     - developer
     - advocate
     - public
+products:
+    - FleXR
 topics:
     - flexr
     - xr-accessibility
@@ -20,7 +18,7 @@ topics:
     - webxr
 risk_level: low
 authority_level: explanatory
-review_status: draft
+publication_status: draft
 last_reviewed: 2026-07-02
 retrieval_priority: medium
 assistant_behavior:
@@ -32,6 +30,8 @@ assistant_behavior:
 related_pages:
     - assistant/flexr/index.md
     - assistant/flexr/concept/what-is-flexr.md
+tags:
+    - Assistant
 ---
 
 <!-- @format -->

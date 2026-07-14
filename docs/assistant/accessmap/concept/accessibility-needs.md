@@ -1,22 +1,22 @@
 ---
 title: "What accessibility needs does AccessMap support?"
-tags:
-    - Assistant
 slug: accessibility-needs
 doc_type: concept
-products:
-    - AccessMap
+questions:
+    - What accessibility needs does AccessMap support?
 audiences:
     - planner
     - jurisdiction
     - advocate
     - public
+products:
+    - AccessMap
 topics:
     - accessmap
     - accessibility-data
 risk_level: medium
-authority_level: draft
-review_status: stub
+authority_level: provisional
+publication_status: stub
 last_reviewed: ""
 retrieval_priority: high
 assistant_behavior:
@@ -25,6 +25,8 @@ assistant_behavior:
     abstain_if_missing_context: true
     do_not_claim: []
 related_pages: []
+tags:
+    - Assistant
 ---
 
 <!-- @format -->

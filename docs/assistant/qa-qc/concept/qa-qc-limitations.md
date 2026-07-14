@@ -1,18 +1,18 @@
 ---
 title: "What Are the Limitations of QA/QC Analysis?"
-tags:
-    - Assistant
 slug: qa-qc-limitations
 doc_type: concept
-products:
-    - QA-QC Reports
-    - OS-CONNECT
-    - Walksheds
+questions:
+    - What Are the Limitations of QA/QC Analysis?
 audiences:
     - planner
     - jurisdiction
     - advocate
     - public
+products:
+    - QA-QC Reports
+    - OS-CONNECT
+    - Walksheds
 topics:
     - qa-qc
     - completeness
@@ -22,7 +22,7 @@ topics:
     - walksheds
 risk_level: medium
 authority_level: explanatory
-review_status: draft
+publication_status: draft
 last_reviewed: 2026-06-16
 retrieval_priority: high
 assistant_behavior:
@@ -40,6 +40,8 @@ related_pages:
     - assistant/os-connect/what-is-the-qa-qc-report.md
     - assistant/os-connect/what-does-completeness-mean.md
     - assistant/os-connect/is-completeness-the-same-as-ada-compliance.md
+tags:
+    - Assistant
 ---
 
 <!-- @format -->
