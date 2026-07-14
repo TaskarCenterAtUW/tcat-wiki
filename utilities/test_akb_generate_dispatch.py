@@ -20,14 +20,14 @@ sys.modules["akb_generate_dispatch"] = gad
 spec.loader.exec_module(gad)
 
 
-def write_article(path: Path, title: str, review_status: str, body: str = "TODO"):
+def write_article(path: Path, title: str, publication_status: str, body: str = "TODO"):
     path.parent.mkdir(parents=True, exist_ok=True)
     path.write_text(
         f"""---
 title: {title}
 slug: {path.stem}
 doc_type: concept
-review_status: {review_status}
+publication_status: {publication_status}
 ---
 
 # {title}
@@ -62,7 +62,7 @@ def assistant_dir(tmp_path):
         encoding="utf-8",
     )
     write_article(root / "alpha" / "concept" / "what-is-alpha.md",
-                  "What is Alpha?", "reviewed")
+                  "What is Alpha?", "published")
     write_article(root / "alpha" / "concept" / "why-alpha.md",
                   "Why Alpha?", "stub")
 
@@ -94,7 +94,7 @@ def test_topic_headings_and_index_link(assistant_dir):
 
 def test_status_reflects_frontmatter(assistant_dir):
     content = gad.build_dispatch(assistant_dir, today="2026-07-06")
-    assert "| `what-is-alpha.md` | reviewed |" in content
+    assert "| `what-is-alpha.md` | published |" in content
     assert "| `why-alpha.md` | stub |" in content
     assert "| `do-a-thing.md` | draft |" in content
 
@@ -105,7 +105,7 @@ def test_status_legend_includes_article_counts(assistant_dir):
     assert "| Status | Count | Meaning |" in legend
     assert "| `stub` | 1 |" in legend
     assert "| `draft` | 1 |" in legend
-    assert "| `reviewed` | 1 |" in legend
+    assert "| `published` | 1 |" in legend
 
 
 def test_empty_subdir_section_omitted(assistant_dir):

@@ -1,31 +1,34 @@
 ---
 title: Use Walksheds for Safe Routes to School
-tags:
-    - Assistant
 slug: use-walksheds-for-safe-routes-to-school
 doc_type: workflow
-products:
-    - Walksheds
+questions:
+    - How can Walksheds be used for Safe Routes to School?
 audiences:
     - jurisdiction
     - planner
     - advocate
+products:
+    - Walksheds
 topics:
     - walksheds
     - srts
 risk_level: medium
 authority_level: explanatory
-review_status: draft
+publication_status: draft
 last_reviewed: 2026-05-11
 retrieval_priority: medium
 assistant_behavior:
     allow_inference: false
     requires_citation: true
     abstain_if_missing_context: true
-        - assistant/walksheds/how-can-walksheds-support-srts.md
+    do_not_claim:
         - Walkshed polygons alone determine which students may walk to school.
+related_pages:
     - assistant/walksheds/how-can-walksheds-support-srts.md
     - walksheds/user-manual/scenarios.md
+tags:
+    - Assistant
 ---
 
 <!-- @format -->

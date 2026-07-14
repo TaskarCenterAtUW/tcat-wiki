@@ -1,19 +1,19 @@
 ---
 title: Assistant abstention and escalation
-tags:
-    - Assistant
 slug: assistant-abstention
 doc_type: concept
-products:
-    - OS-CONNECT
-    - AccessMap
-    - Walksheds
-    - TDEI
+questions:
+    - When should an assistant abstain or escalate?
 audiences:
     - planner
     - jurisdiction
     - advocate
     - public
+products:
+    - OS-CONNECT
+    - AccessMap
+    - Walksheds
+    - TDEI
 topics:
     - governance
     - assistant-behavior
@@ -22,8 +22,8 @@ topics:
     - walksheds
     - tdei
 risk_level: high
-authority_level: draft
-review_status: draft
+authority_level: provisional
+publication_status: draft
 last_reviewed: 2026-05-11
 retrieval_priority: high
 assistant_behavior:
@@ -35,6 +35,8 @@ assistant_behavior:
 related_pages:
     - assistant/cross-platform/concept/public-vs-internal-content.md
     - assistant/cross-platform/concept/ada-safety-legal-boundaries.md
+tags:
+    - Assistant
 ---
 
 <!-- @format -->

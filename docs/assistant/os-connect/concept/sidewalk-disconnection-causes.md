@@ -1,16 +1,16 @@
 ---
 title: Why are sidewalks disconnected on the map?
-tags:
-    - Assistant
 slug: sidewalk-disconnection-causes
 doc_type: concept
+questions:
+    - Why are sidewalks disconnected on the map?
+audiences:
+    - public
+    - advocate
 products:
     - OS-CONNECT
     - AccessMap
     - Walksheds
-audiences:
-    - public
-    - advocate
 topics:
     - os-connect
     - graph-metrics
@@ -19,7 +19,7 @@ topics:
     - walksheds
 risk_level: low
 authority_level: explanatory
-review_status: draft
+publication_status: draft
 last_reviewed: 2026-06-19
 retrieval_priority: medium
 assistant_behavior:
@@ -31,6 +31,8 @@ assistant_behavior:
 related_pages:
     - assistant/concepts/accessibility-islands.md
     - assistant/concepts/connected-pedestrian-graph.md
+tags:
+    - Assistant
 ---
 
 <!-- @format -->

@@ -1,23 +1,23 @@
 ---
 title: "What is the difference between downloading OSW format and OSM format?"
-tags:
-    - Assistant
 slug: osw-vs-osm-format
 doc_type: concept
-products:
-    - TDEI
+questions:
+    - What is the difference between downloading OSW format and OSM format?
 audiences:
     - planner
     - jurisdiction
     - advocate
     - public
+products:
+    - TDEI
 topics:
     - tdei
     - export
     - formats
 risk_level: medium
 authority_level: explanatory
-review_status: stub
+publication_status: stub
 last_reviewed: ""
 retrieval_priority: high
 assistant_behavior:
@@ -26,6 +26,8 @@ assistant_behavior:
     abstain_if_missing_context: true
     do_not_claim: []
 related_pages: []
+tags:
+    - Assistant
 ---
 
 <!-- @format -->

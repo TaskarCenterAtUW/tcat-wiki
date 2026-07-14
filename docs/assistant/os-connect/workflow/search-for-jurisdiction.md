@@ -1,22 +1,22 @@
 ---
 title: "How do I search for a jurisdiction?"
-tags:
-    - Assistant
 slug: search-for-jurisdiction
 doc_type: workflow
-products:
-    - OS-CONNECT
+questions:
+    - How do I search for a jurisdiction?
 audiences:
     - planner
     - jurisdiction
     - advocate
     - public
+products:
+    - OS-CONNECT
 topics:
     - os-connect
     - public-vs-private-data
 risk_level: medium
 authority_level: explanatory
-review_status: stub
+publication_status: stub
 last_reviewed: ""
 retrieval_priority: high
 assistant_behavior:
@@ -25,6 +25,8 @@ assistant_behavior:
     abstain_if_missing_context: true
     do_not_claim: []
 related_pages: []
+tags:
+    - Assistant
 ---
 
 <!-- @format -->

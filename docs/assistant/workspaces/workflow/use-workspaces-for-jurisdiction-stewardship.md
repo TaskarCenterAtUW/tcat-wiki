@@ -1,23 +1,23 @@
 ---
 title: "Use Workspaces for jurisdiction stewardship"
-tags:
-    - Assistant
 slug: use-workspaces-for-jurisdiction-stewardship
 doc_type: workflow
-products:
-    - Workspaces
+questions:
+    - How can I use Workspaces for jurisdiction stewardship?
 audiences:
     - planner
     - jurisdiction
     - advocate
     - public
+products:
+    - Workspaces
 topics:
     - workspaces
     - stewardship
     - operational-workflows
 risk_level: medium
-authority_level: draft
-review_status: stub
+authority_level: provisional
+publication_status: stub
 last_reviewed:
 retrieval_priority: medium
 assistant_behavior:
@@ -26,6 +26,8 @@ assistant_behavior:
     abstain_if_missing_context: true
     do_not_claim: []
 related_pages: []
+tags:
+    - Assistant
 ---
 
 <!-- @format -->

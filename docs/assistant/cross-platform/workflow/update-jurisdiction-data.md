@@ -1,22 +1,22 @@
 ---
 title: Update jurisdiction data through TDEI and OS-CONNECT pipelines
-tags:
-    - Assistant
 slug: update-jurisdiction-data
 doc_type: workflow
-products:
-    - OS-CONNECT
-    - TDEI
+questions:
+    - How can jurisdiction data be updated through TDEI and OS-CONNECT pipelines?
 audiences:
     - jurisdiction
     - planner
+products:
+    - OS-CONNECT
+    - TDEI
 topics:
     - stewardship
     - os-connect
     - tdei
 risk_level: medium
 authority_level: explanatory
-review_status: draft
+publication_status: draft
 last_reviewed: 2026-05-11
 retrieval_priority: high
 assistant_behavior:
@@ -29,6 +29,8 @@ related_pages:
     - assistant/tdei/how-do-i-use-the-tdei-portal.md
     - assistant/cross-platform/index.md
     - tdei/portal/user-manual/datasets.md
+tags:
+    - Assistant
 ---
 
 <!-- @format -->

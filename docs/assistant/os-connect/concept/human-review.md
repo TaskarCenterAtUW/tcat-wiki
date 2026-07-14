@@ -1,23 +1,23 @@
 ---
 title: "How should human review be incorporated?"
-tags:
-    - Assistant
 slug: human-review
 doc_type: concept
-products:
-    - OS-CONNECT
+questions:
+    - How should human review be incorporated?
 audiences:
     - planner
     - jurisdiction
     - advocate
     - public
+products:
+    - OS-CONNECT
 topics:
     - os-connect
     - data-quality
     - ai
 risk_level: high
 authority_level: explanatory
-review_status: stub
+publication_status: stub
 last_reviewed: ""
 retrieval_priority: high
 assistant_behavior:
@@ -26,6 +26,8 @@ assistant_behavior:
     abstain_if_missing_context: true
     do_not_claim: []
 related_pages: []
+tags:
+    - Assistant
 ---
 
 <!-- @format -->

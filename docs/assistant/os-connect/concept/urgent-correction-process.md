@@ -1,23 +1,23 @@
 ---
 title: "What should agencies do if they need a correction sooner than the next public release?"
-tags:
-    - Assistant
 slug: urgent-correction-process
 doc_type: concept
-products:
-    - OS-CONNECT
+questions:
+    - What should agencies do if they need a correction sooner than the next public release?
 audiences:
     - planner
     - jurisdiction
     - advocate
     - public
+products:
+    - OS-CONNECT
 topics:
     - os-connect
     - feedback
     - releases
 risk_level: medium
 authority_level: explanatory
-review_status: stub
+publication_status: stub
 last_reviewed: ""
 retrieval_priority: high
 assistant_behavior:
@@ -26,6 +26,8 @@ assistant_behavior:
     abstain_if_missing_context: true
     do_not_claim: []
 related_pages: []
+tags:
+    - Assistant
 ---
 
 <!-- @format -->

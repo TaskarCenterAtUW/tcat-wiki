@@ -19,11 +19,11 @@ sys.modules["build_site"] = bs
 spec.loader.exec_module(bs)
 
 
-def write_page(path: Path, review_status: str | None = None, body: str = "# Title\n\nBody.\n"):
+def write_page(path: Path, publication_status: str | None = None, body: str = "# Title\n\nBody.\n"):
     path.parent.mkdir(parents=True, exist_ok=True)
     frontmatter = "---\ntitle: Test\n"
-    if review_status is not None:
-        frontmatter += f"review_status: {review_status}\n"
+    if publication_status is not None:
+        frontmatter += f"publication_status: {publication_status}\n"
     frontmatter += "---\n\n"
     path.write_text(frontmatter + body, encoding="utf-8")
 
@@ -39,25 +39,26 @@ def fixture_docs(tmp_path):
 
     # Assistant top-level peers.
     write_page(docs / "assistant" / "index.md",
-               review_status="reviewed", body="# Assistant\n\n<!-- @format -->\n\nBody.\n")
-    write_page(docs / "assistant" / "schema.md", review_status="reviewed")
-    write_page(docs / "assistant" / "dispatch.md", review_status="draft")
+               publication_status="published", body="# Assistant\n\n<!-- @format -->\n\nBody.\n")
+    write_page(docs / "assistant" / "schema.md",
+               publication_status="published")
+    write_page(docs / "assistant" / "dispatch.md", publication_status="draft")
 
-    # Topic "alpha": reviewed index + a reviewed concept page (linked from index)
+    # Topic "alpha": published index + a published concept page (linked from index)
     # + a stub concept page.
     write_page(
         docs / "assistant" / "alpha" / "index.md",
-        review_status="reviewed",
-        body="# Alpha\n\nSee [reviewed page](concept/reviewed-page.md).\n",
+        publication_status="published",
+        body="# Alpha\n\nSee [published page](concept/published-page.md).\n",
     )
-    write_page(docs / "assistant" / "alpha" / "concept" / "reviewed-page.md",
-               review_status="reviewed")
+    write_page(docs / "assistant" / "alpha" / "concept" / "published-page.md",
+               publication_status="published")
     write_page(docs / "assistant" / "alpha" / "concept" / "stub-page.md",
-               review_status="stub")
+               publication_status="stub")
 
-    # assistant/support/ - always removed regardless of review_status.
+    # assistant/support/ - always removed regardless of publication status.
     write_page(docs / "assistant" / "support" / "index.md",
-               review_status="reviewed")
+               publication_status="published")
 
     return docs
 
@@ -77,7 +78,7 @@ def test_copy_layers_does_not_mutate_source(tmp_path, fixture_docs):
     assert (agent_dir / "assistant" / "support" / "index.md").exists()
 
 
-def test_filter_removes_support_and_non_reviewed(tmp_path, fixture_docs):
+def test_filter_removes_support_and_non_published(tmp_path, fixture_docs):
     human_dir = tmp_path / "human-docs"
     bs.copy_layers(fixture_docs, human_dir, tmp_path / "agent-docs")
 
@@ -88,17 +89,17 @@ def test_filter_removes_support_and_non_reviewed(tmp_path, fixture_docs):
                 "concept" / "stub-page.md").exists()
     assert not (human_dir / "assistant" / "dispatch.md").exists()  # draft
     assert (human_dir / "assistant" / "alpha" /
-            "concept" / "reviewed-page.md").exists()
+            "concept" / "published-page.md").exists()
     assert (human_dir / "assistant" / "alpha" / "index.md").exists()
     assert "assistant/support/index.md" in info["removed"]
     assert "assistant/dispatch.md" in info["removed"]
 
 
-def test_filter_fails_when_reviewed_page_links_to_removed_page(tmp_path, fixture_docs):
+def test_filter_fails_when_published_page_links_to_removed_page(tmp_path, fixture_docs):
     # Make the alpha index link to the stub page (which will be removed).
     write_page(
         fixture_docs / "assistant" / "alpha" / "index.md",
-        review_status="reviewed",
+        publication_status="published",
         body="# Alpha\n\nSee [stub page](concept/stub-page.md).\n",
     )
     human_dir = tmp_path / "human-docs"
@@ -113,10 +114,10 @@ def test_filter_fails_when_reviewed_page_links_to_removed_page(tmp_path, fixture
     assert link_target == "concept/stub-page.md"
 
 
-def test_filter_passes_when_links_only_target_reviewed_pages(tmp_path, fixture_docs):
+def test_filter_passes_when_links_only_target_published_pages(tmp_path, fixture_docs):
     human_dir = tmp_path / "human-docs"
     bs.copy_layers(fixture_docs, human_dir, tmp_path / "agent-docs")
-    # Should not raise: alpha/index.md only links to reviewed-page.md.
+    # Should not raise: alpha/index.md only links to published-page.md.
     bs.filter_human_docs(human_dir)
 
 
@@ -133,7 +134,7 @@ def test_agent_docs_retains_all_statuses_and_dispatch(tmp_path, fixture_docs):
     content = output_path.read_text(encoding="utf-8")
     assert "GENERATED FILE" in content
     assert "`stub-page.md`" in content
-    assert "`reviewed-page.md`" in content
+    assert "`published-page.md`" in content
 
 
 def test_strip_removes_images_pragma_and_slider(tmp_path):
@@ -245,7 +246,7 @@ def test_prepare_end_to_end(tmp_path, fixture_docs):
 def test_prepare_raises_on_broken_link(tmp_path, fixture_docs):
     write_page(
         fixture_docs / "assistant" / "alpha" / "index.md",
-        review_status="reviewed",
+        publication_status="published",
         body="# Alpha\n\nSee [stub page](concept/stub-page.md).\n",
     )
     source_config = tmp_path / "zensical.toml"

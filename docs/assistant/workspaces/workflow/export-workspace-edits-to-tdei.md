@@ -1,23 +1,23 @@
 ---
 title: "Export workspace edits to TDEI"
-tags:
-    - Assistant
 slug: export-workspace-edits-to-tdei
 doc_type: workflow
-products:
-    - Workspaces
+questions:
+    - How do I export workspace edits to TDEI?
 audiences:
     - planner
     - jurisdiction
     - advocate
     - public
+products:
+    - Workspaces
 topics:
     - workspaces
     - export
     - publication-workflow
 risk_level: high
-authority_level: draft
-review_status: stub
+authority_level: provisional
+publication_status: stub
 last_reviewed:
 retrieval_priority: medium
 assistant_behavior:
@@ -26,6 +26,8 @@ assistant_behavior:
     abstain_if_missing_context: true
     do_not_claim: []
 related_pages: []
+tags:
+    - Assistant
 ---
 
 <!-- @format -->

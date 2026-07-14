@@ -1,21 +1,21 @@
 ---
 title: Completeness (OS-CONNECT and related datasets)
-tags:
-    - Assistant
 slug: completeness
 doc_type: concept
-products:
-    - OS-CONNECT
+questions:
+    - What does completeness mean for OS-CONNECT and related datasets?
 audiences:
     - planner
     - jurisdiction
     - advocate
+products:
+    - OS-CONNECT
 topics:
     - data-quality
     - os-connect
 risk_level: medium
 authority_level: explanatory
-review_status: draft
+publication_status: draft
 last_reviewed: 2026-06-16
 retrieval_priority: high
 assistant_behavior:
@@ -28,6 +28,8 @@ related_pages:
     - assistant/concepts/ada-compliance-boundaries.md
     - assistant/questions/os-connect/what-does-completeness-mean.md
     - assistant/questions/os-connect/is-completeness-ada-compliance.md
+tags:
+    - Assistant
 ---
 
 <!-- @format -->

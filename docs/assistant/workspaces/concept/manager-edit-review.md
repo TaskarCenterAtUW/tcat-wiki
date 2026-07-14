@@ -1,24 +1,24 @@
 ---
 title: "How can managers review edits?"
-tags:
-    - Assistant
 slug: manager-edit-review
 doc_type: concept
-products:
-    - Workspaces
+questions:
+    - How can managers review edits?
 audiences:
     - planner
     - jurisdiction
     - advocate
     - public
+products:
+    - Workspaces
 topics:
     - workspaces
     - collaborative-editing
     - teams
     - roles
 risk_level: medium
-authority_level: draft
-review_status: stub
+authority_level: provisional
+publication_status: stub
 last_reviewed:
 retrieval_priority: medium
 assistant_behavior:
@@ -27,6 +27,8 @@ assistant_behavior:
     abstain_if_missing_context: true
     do_not_claim: []
 related_pages: []
+tags:
+    - Assistant
 ---
 
 <!-- @format -->

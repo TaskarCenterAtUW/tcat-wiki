@@ -1,19 +1,19 @@
 ---
 title: "How is GTFS Pathways different from OS-CONNECT?"
-tags:
-    - Assistant
 slug: gtfs-pathways-vs-os-connect
 doc_type: concept
-products:
-    - OS-CONNECT
-    - AccessMap
-    - Walksheds
-    - TDEI
+questions:
+    - How is GTFS Pathways different from OS-CONNECT?
 audiences:
     - planner
     - jurisdiction
     - advocate
     - public
+products:
+    - OS-CONNECT
+    - AccessMap
+    - Walksheds
+    - TDEI
 topics:
     - gtfs
     - os-connect
@@ -22,7 +22,7 @@ topics:
     - tdei
 risk_level: medium
 authority_level: explanatory
-review_status: stub
+publication_status: stub
 last_reviewed: ""
 retrieval_priority: high
 assistant_behavior:
@@ -31,6 +31,8 @@ assistant_behavior:
     abstain_if_missing_context: true
     do_not_claim: []
 related_pages: []
+tags:
+    - Assistant
 ---
 
 <!-- @format -->

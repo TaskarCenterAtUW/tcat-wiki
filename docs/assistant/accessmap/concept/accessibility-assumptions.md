@@ -1,22 +1,22 @@
 ---
 title: "What accessibility assumptions are built into AccessMap?"
-tags:
-    - Assistant
 slug: accessibility-assumptions
 doc_type: concept
-products:
-    - AccessMap
+questions:
+    - What accessibility assumptions are built into AccessMap?
 audiences:
     - planner
     - jurisdiction
     - advocate
     - public
+products:
+    - AccessMap
 topics:
     - accessmap
     - routing
 risk_level: medium
-authority_level: draft
-review_status: stub
+authority_level: provisional
+publication_status: stub
 last_reviewed: 2026-07-02
 retrieval_priority: medium
 assistant_behavior:
@@ -25,6 +25,8 @@ assistant_behavior:
     abstain_if_missing_context: true
     do_not_claim: []
 related_pages: []
+tags:
+    - Assistant
 ---
 
 <!-- @format -->

@@ -1,24 +1,24 @@
 ---
 title: "What limitations exist compared to OpenStreetMap?"
-tags:
-    - Assistant
 slug: workspaces-osm-limitations
 doc_type: concept
-products:
-    - Workspaces
+questions:
+    - What limitations exist compared to OpenStreetMap?
 audiences:
     - planner
     - jurisdiction
     - advocate
     - public
+products:
+    - Workspaces
 topics:
     - workspaces
     - osm-interoperability
     - vector-data
     - editing-tools
 risk_level: medium
-authority_level: draft
-review_status: stub
+authority_level: provisional
+publication_status: stub
 last_reviewed:
 retrieval_priority: medium
 assistant_behavior:
@@ -27,6 +27,8 @@ assistant_behavior:
     abstain_if_missing_context: true
     do_not_claim: []
 related_pages: []
+tags:
+    - Assistant
 ---
 
 <!-- @format -->

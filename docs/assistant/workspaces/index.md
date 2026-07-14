@@ -1,16 +1,16 @@
 ---
 title: Workspaces — Assistant Knowledge Base
-tags:
-    - Assistant
 slug: workspaces-index
 doc_type: policy
-products:
-    - Workspaces
+questions:
+    - What assistant-facing information and policies are covered in the Workspaces knowledge base?
 audiences:
     - planner
     - jurisdiction
     - advocate
     - public
+products:
+    - Workspaces
 topics:
     - workspaces
     - tdei-ecosystem
@@ -18,7 +18,7 @@ topics:
     - editing-tools
 risk_level: low
 authority_level: explanatory
-review_status: draft
+publication_status: draft
 last_reviewed: 2026-07-01
 retrieval_priority: high
 assistant_behavior:
@@ -33,6 +33,8 @@ related_pages:
     - assistant/dispatch.md
     - assistant/tdei/index.md
     - assistant/os-connect/index.md
+tags:
+    - Assistant
 ---
 
 <!-- @format -->

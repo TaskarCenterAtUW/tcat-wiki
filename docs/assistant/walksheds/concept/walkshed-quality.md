@@ -1,22 +1,22 @@
 ---
 title: 'What makes a walkshed "good" or "bad"?'
-tags:
-    - Assistant
 slug: walkshed-quality
 doc_type: concept
-products:
-    - Walksheds
+questions:
+    - What makes a walkshed "good" or "bad"?
 audiences:
     - planner
     - jurisdiction
     - advocate
     - public
+products:
+    - Walksheds
 topics:
     - walksheds
     - interpretation
 risk_level: medium
 authority_level: explanatory
-review_status: stub
+publication_status: stub
 last_reviewed: ""
 retrieval_priority: high
 assistant_behavior:
@@ -25,6 +25,8 @@ assistant_behavior:
     abstain_if_missing_context: true
     do_not_claim: []
 related_pages: []
+tags:
+    - Assistant
 ---
 
 <!-- @format -->

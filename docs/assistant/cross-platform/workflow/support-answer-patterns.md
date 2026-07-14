@@ -1,17 +1,17 @@
 ---
 title: Support answer patterns
-tags:
-    - Assistant
 slug: support-answer-patterns
 doc_type: workflow
+questions:
+    - What patterns should support answers follow?
+audiences:
+    - planner
+    - jurisdiction
 products:
     - OS-CONNECT
     - AccessMap
     - Walksheds
     - TDEI
-audiences:
-    - planner
-    - jurisdiction
 topics:
     - support
     - helpline
@@ -21,8 +21,8 @@ topics:
     - walksheds
     - tdei
 risk_level: medium
-authority_level: draft
-review_status: draft
+authority_level: provisional
+publication_status: draft
 last_reviewed: 2026-05-18
 retrieval_priority: high
 assistant_behavior:
@@ -35,6 +35,8 @@ related_pages:
     - assistant/support/index.md
     - assistant/intents/support-intents.md
     - assistant/support/helpline-faq-backlog.md
+tags:
+    - Assistant
 ---
 
 <!-- @format -->
@@ -77,7 +79,7 @@ A county asks how long a viewer-reported fix takes. Use **`answer-when-uncertain
 
 ## Assistant Guidance
 
-When generating drafts, label which pattern was applied. If `review_status: draft` sources are retrieved, disclose that wording is not yet organizationally reviewed.
+When generating drafts, label which pattern was applied. If `publication_status: draft` sources are retrieved, disclose that wording is not yet organizationally reviewed.
 
 ## Related Concepts
 

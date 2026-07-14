@@ -1,22 +1,22 @@
 ---
 title: "How are inaccessible transit stations represented?"
-tags:
-    - Assistant
 slug: inaccessible-transit-stations
 doc_type: concept
-products:
-    - AccessMap
+questions:
+    - How are inaccessible transit stations represented?
 audiences:
     - planner
     - jurisdiction
     - advocate
     - public
+products:
+    - AccessMap
 topics:
     - accessmap
     - transit
 risk_level: medium
 authority_level: explanatory
-review_status: stub
+publication_status: stub
 last_reviewed: ""
 retrieval_priority: high
 assistant_behavior:
@@ -25,6 +25,8 @@ assistant_behavior:
     abstain_if_missing_context: true
     do_not_claim: []
 related_pages: []
+tags:
+    - Assistant
 ---
 
 <!-- @format -->

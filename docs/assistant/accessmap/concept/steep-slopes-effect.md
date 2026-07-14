@@ -1,23 +1,23 @@
 ---
 title: "How do steep slopes affect route selection?"
-tags:
-    - Assistant
 slug: steep-slopes-effect
 doc_type: concept
-products:
-    - AccessMap
+questions:
+    - How do steep slopes affect route selection?
 audiences:
     - planner
     - jurisdiction
     - advocate
     - public
+products:
+    - AccessMap
 topics:
     - accessmap
     - slope
     - routing
 risk_level: medium
 authority_level: explanatory
-review_status: stub
+publication_status: stub
 last_reviewed: ""
 retrieval_priority: high
 assistant_behavior:
@@ -26,6 +26,8 @@ assistant_behavior:
     abstain_if_missing_context: true
     do_not_claim: []
 related_pages: []
+tags:
+    - Assistant
 ---
 
 <!-- @format -->

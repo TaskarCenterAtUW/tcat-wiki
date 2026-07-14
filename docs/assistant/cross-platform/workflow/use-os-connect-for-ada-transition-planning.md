@@ -1,21 +1,21 @@
 ---
 title: Use OS-CONNECT for ADA transition planning (workflow)
-tags:
-    - Assistant
 slug: use-os-connect-for-ada-transition-planning
 doc_type: workflow
-products:
-    - OS-CONNECT
+questions:
+    - How can OS-CONNECT be used for ADA transition planning?
 audiences:
     - jurisdiction
     - planner
+products:
+    - OS-CONNECT
 topics:
     - ada
     - planning
     - os-connect
 risk_level: high
 authority_level: explanatory
-review_status: draft
+publication_status: draft
 last_reviewed: 2026-05-11
 retrieval_priority: medium
 assistant_behavior:
@@ -28,6 +28,8 @@ related_pages:
     - assistant/concepts/ada-compliance-boundaries.md
     - assistant/cross-platform/index.md
     - os-connect/qa-qc/user-manual/index.md
+tags:
+    - Assistant
 ---
 
 <!-- @format -->

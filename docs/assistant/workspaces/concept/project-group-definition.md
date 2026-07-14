@@ -1,24 +1,24 @@
 ---
 title: "What is a project group?"
-tags:
-    - Assistant
 slug: project-group-definition
 doc_type: concept
-products:
-    - Workspaces
+questions:
+    - What is a project group?
 audiences:
     - planner
     - jurisdiction
     - advocate
     - public
+products:
+    - Workspaces
 topics:
     - workspaces
     - onboarding
     - project-groups
     - workspace-management
 risk_level: low
-authority_level: draft
-review_status: stub
+authority_level: provisional
+publication_status: stub
 last_reviewed:
 retrieval_priority: medium
 assistant_behavior:
@@ -27,6 +27,8 @@ assistant_behavior:
     abstain_if_missing_context: true
     do_not_claim: []
 related_pages: []
+tags:
+    - Assistant
 ---
 
 <!-- @format -->

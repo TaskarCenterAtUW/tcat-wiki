@@ -6,6 +6,25 @@ All notable changes to this project will be documented in this file.
 
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/), and this project adheres to [Semantic Versioning](https://semver.org/) and [Conventional Commits](https://www.conventionalcommits.org/).
 
+## v13.3.0 (2026-07-13)
+
+### Features
+
+- **Core**: Validate that every Assistant Knowledge Base Markdown file has valid YAML frontmatter containing all schema-required keys in the correct order, and include the check in the utility test runner
+
+### Fixes
+
+- **Core**: Update Assistant Knowledge Base frontmatter enum tests to validate the current `publication_status` and `authority_level` schema fields
+
+- **Core**: Complete missing AKB frontmatter keys and normalize required-key ordering across all assistant articles
+- **Core**: Fix the glossary generator's AKB frontmatter key order
+- **Core**: Replace AKB `review_status` with `publication_status` and migrate publication-aware generators, build filtering, tests, and articles
+- **Core**: Replace the ambiguous `draft` authority level with `provisional`
+- **Docs**: Ensure every Assistant Knowledge Base `questions` entry is phrased as an article-relevant question
+- **Docs**: Update product-folder index questions to describe their assistant-facing structure and policies rather than product definitions
+- **Core**: Repair malformed YAML frontmatter in the Safe Routes to School Walksheds workflow article
+-
+
 ## v13.2.0 (2026-07-10)
 
 ### Features

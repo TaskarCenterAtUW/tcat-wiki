@@ -55,8 +55,6 @@ def build_output(entries: list[tuple[str, str]]) -> str:
     frontmatter = f"""\
 ---
 title: Abbreviations and Acronyms Glossary
-tags:
-    - Assistant
 slug: abbreviations
 doc_type: concept
 questions:
@@ -67,6 +65,11 @@ questions:
     - What does OSW stand for?
     - What does TDEI stand for?
     - What does OS-CONNECT stand for?
+audiences:
+    - planner
+    - jurisdiction
+    - advocate
+    - public
 products:
     - AccessMap
     - AVIV ScoutRoute
@@ -78,11 +81,6 @@ products:
     - Walksheds
     - WayKeeper
     - Workspaces
-audiences:
-    - planner
-    - jurisdiction
-    - advocate
-    - public
 topics:
     - glossary
     - abbreviations
@@ -103,7 +101,7 @@ topics:
     - workspaces
 risk_level: low
 authority_level: official
-review_status: reviewed
+publication_status: published
 last_reviewed: {today}
 retrieval_priority: high
 assistant_behavior:
@@ -115,6 +113,8 @@ assistant_behavior:
         - No other meanings are possible for these abbreviations.
         - Abbreviations not listed here have no accepted expansion.
 related_pages: []
+tags:
+    - Assistant
 ---"""
 
     body = f"""\

@@ -1,22 +1,22 @@
 ---
 title: "What data powers AccessMap?"
-tags:
-    - Assistant
 slug: data-sources
 doc_type: concept
-products:
-    - AccessMap
+questions:
+    - What data powers AccessMap?
 audiences:
     - planner
     - jurisdiction
     - advocate
     - public
+products:
+    - AccessMap
 topics:
     - accessmap
     - dataset-lineage
 risk_level: medium
 authority_level: explanatory
-review_status: stub
+publication_status: stub
 last_reviewed: ""
 retrieval_priority: high
 assistant_behavior:
@@ -25,6 +25,8 @@ assistant_behavior:
     abstain_if_missing_context: true
     do_not_claim: []
 related_pages: []
+tags:
+    - Assistant
 ---
 
 <!-- @format -->

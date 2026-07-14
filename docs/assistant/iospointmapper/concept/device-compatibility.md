@@ -1,22 +1,22 @@
 ---
 title: "What devices are compatible with iOSPointMapper?"
-tags:
-    - Assistant
 slug: device-compatibility
 doc_type: concept
-products:
-    - iOSPointMapper
+questions:
+    - What devices are compatible with iOSPointMapper?
 audiences:
     - planner
     - jurisdiction
     - advocate
     - public
+products:
+    - iOSPointMapper
 topics:
     - iospointmapper
     - device-compatibility
 risk_level: low
-authority_level: draft
-review_status: stub
+authority_level: provisional
+publication_status: stub
 last_reviewed: 2026-07-02
 retrieval_priority: medium
 assistant_behavior:
@@ -25,6 +25,8 @@ assistant_behavior:
     abstain_if_missing_context: true
     do_not_claim: []
 related_pages: []
+tags:
+    - Assistant
 ---
 
 <!-- @format -->

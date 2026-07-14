@@ -1,24 +1,24 @@
 ---
 title: "Configure imagery layers in a workspace"
-tags:
-    - Assistant
 slug: configure-imagery-layers
 doc_type: workflow
-products:
-    - Workspaces
+questions:
+    - How do I configure imagery layers in a workspace?
 audiences:
     - planner
     - jurisdiction
     - advocate
     - public
+products:
+    - Workspaces
 topics:
     - workspaces
     - imagery
     - configuration
     - aviv-scoutroute
 risk_level: medium
-authority_level: draft
-review_status: draft
+authority_level: provisional
+publication_status: draft
 last_reviewed: 2026-05-22
 retrieval_priority: medium
 assistant_behavior:
@@ -40,6 +40,8 @@ related_pages:
     - assistant/questions/workspaces/what-is-imagery-json.md
     - workspaces/user-manual/workspace-settings.md
     - aviv-scoutroute/index.md
+tags:
+    - Assistant
 ---
 
 <!-- @format -->

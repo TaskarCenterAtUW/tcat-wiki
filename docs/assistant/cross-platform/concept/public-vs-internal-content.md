@@ -1,17 +1,17 @@
 ---
 title: Public vs internal content
-tags:
-    - Assistant
 slug: public-vs-internal-content
 doc_type: concept
+questions:
+    - How does public content differ from internal content?
+audiences:
+    - jurisdiction
+    - planner
 products:
     - OS-CONNECT
     - AccessMap
     - Walksheds
     - TDEI
-audiences:
-    - jurisdiction
-    - planner
 topics:
     - governance
     - os-connect
@@ -19,8 +19,8 @@ topics:
     - walksheds
     - tdei
 risk_level: medium
-authority_level: draft
-review_status: draft
+authority_level: provisional
+publication_status: draft
 last_reviewed: 2026-05-11
 retrieval_priority: high
 assistant_behavior:
@@ -32,6 +32,8 @@ assistant_behavior:
 related_pages:
     - assistant/cross-platform/concept/assistant-abstention.md
     - assistant/index.md
+tags:
+    - Assistant
 ---
 
 <!-- @format -->
@@ -48,7 +50,7 @@ Prevents accidental indexing of sensitive material and sets expectations for wha
 
 ## What This Means
 
-Authors mark `authority_level` and `review_status` honestly. Operators restrict crawlers and export scripts to approved roots (`docs/assistant/`, published product paths).
+Authors mark `authority_level` and `publication_status` honestly. Operators restrict crawlers and export scripts to approved roots (`docs/assistant/`, published product paths).
 
 ## What This Does Not Mean
 
@@ -61,11 +63,11 @@ Pair with access controls on internal wikis; never symlink private notes into `d
 
 ## Example
 
-A draft policy page may remain `review_status: draft` with `authority_level: draft` so downstream systems down-rank or exclude it.
+A draft policy page may remain `publication_status: draft` with `authority_level: provisional` so downstream systems down-rank or exclude it.
 
 ## Assistant Guidance
 
-If retrieval surfaces `draft` policy without a user question that warrants it, prefer reviewed pages. Never expose internal-only URLs.
+If retrieval surfaces `draft` policy without a user question that warrants it, prefer published pages. Never expose internal-only URLs.
 
 ## Related Concepts
 

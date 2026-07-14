@@ -1,16 +1,16 @@
 ---
 title: "Does a correction update OS-CONNECT, OpenStreetMap, TDEI, or all of them?"
-tags:
-    - Assistant
 slug: correction-propagation
 doc_type: concept
-products:
-    - OS-CONNECT
+questions:
+    - Does a correction update OS-CONNECT, OpenStreetMap, TDEI, or all of them?
 audiences:
     - planner
     - jurisdiction
     - advocate
     - public
+products:
+    - OS-CONNECT
 topics:
     - os-connect
     - feedback
@@ -18,7 +18,7 @@ topics:
     - osm-interoperability
 risk_level: medium
 authority_level: explanatory
-review_status: stub
+publication_status: stub
 last_reviewed: ""
 retrieval_priority: high
 assistant_behavior:
@@ -27,6 +27,8 @@ assistant_behavior:
     abstain_if_missing_context: true
     do_not_claim: []
 related_pages: []
+tags:
+    - Assistant
 ---
 
 <!-- @format -->

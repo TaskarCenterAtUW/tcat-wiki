@@ -1,23 +1,23 @@
 ---
 title: "Can mapping volunteers contribute data that agencies can use?"
-tags:
-    - Assistant
 slug: volunteer-data-contribution
 doc_type: concept
-products:
-    - OS-CONNECT
+questions:
+    - Can mapping volunteers contribute data that agencies can use?
 audiences:
     - planner
     - jurisdiction
     - advocate
     - public
+products:
+    - OS-CONNECT
 topics:
     - os-connect
     - community
     - stewardship
 risk_level: medium
 authority_level: explanatory
-review_status: stub
+publication_status: stub
 last_reviewed: ""
 retrieval_priority: high
 assistant_behavior:
@@ -26,6 +26,8 @@ assistant_behavior:
     abstain_if_missing_context: true
     do_not_claim: []
 related_pages: []
+tags:
+    - Assistant
 ---
 
 <!-- @format -->

@@ -1,23 +1,23 @@
 ---
 title: "What is the OpenSidewalks data schema?"
-tags:
-    - Assistant
 slug: opensidewalks-schema
 doc_type: concept
-products:
-    - OpenSidewalks
+questions:
+    - What is the OpenSidewalks data schema?
 audiences:
     - planner
     - jurisdiction
     - advocate
     - public
+products:
+    - OpenSidewalks
 topics:
     - opensidewalks
     - formats
     - accessibility-data
 risk_level: medium
-authority_level: draft
-review_status: stub
+authority_level: provisional
+publication_status: stub
 last_reviewed: 2026-07-02
 retrieval_priority: high
 assistant_behavior:
@@ -26,6 +26,8 @@ assistant_behavior:
     abstain_if_missing_context: true
     do_not_claim: []
 related_pages: []
+tags:
+    - Assistant
 ---
 
 <!-- @format -->

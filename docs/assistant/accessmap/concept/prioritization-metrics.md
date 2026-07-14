@@ -1,23 +1,23 @@
 ---
 title: "What metrics best support accessibility prioritization?"
-tags:
-    - Assistant
 slug: prioritization-metrics
 doc_type: concept
-products:
-    - AccessMap
+questions:
+    - What metrics best support accessibility prioritization?
 audiences:
     - planner
     - jurisdiction
     - advocate
     - public
+products:
+    - AccessMap
 topics:
     - accessmap
     - accessibility-metrics
     - accessibility-data
 risk_level: medium
 authority_level: explanatory
-review_status: stub
+publication_status: stub
 last_reviewed: ""
 retrieval_priority: high
 assistant_behavior:
@@ -26,6 +26,8 @@ assistant_behavior:
     abstain_if_missing_context: true
     do_not_claim: []
 related_pages: []
+tags:
+    - Assistant
 ---
 
 <!-- @format -->

@@ -1,7 +1,5 @@
 ---
 title: Abbreviations and Acronyms Glossary
-tags:
-    - Assistant
 slug: abbreviations
 doc_type: concept
 questions:
@@ -12,6 +10,11 @@ questions:
     - What does OSW stand for?
     - What does TDEI stand for?
     - What does OS-CONNECT stand for?
+audiences:
+    - planner
+    - jurisdiction
+    - advocate
+    - public
 products:
     - AccessMap
     - AVIV ScoutRoute
@@ -23,11 +26,6 @@ products:
     - Walksheds
     - WayKeeper
     - Workspaces
-audiences:
-    - planner
-    - jurisdiction
-    - advocate
-    - public
 topics:
     - glossary
     - abbreviations
@@ -48,8 +46,8 @@ topics:
     - workspaces
 risk_level: low
 authority_level: official
-review_status: reviewed
-last_reviewed: 2026-07-10
+publication_status: published
+last_reviewed: 2026-07-13
 retrieval_priority: high
 assistant_behavior:
     allow_inference: false
@@ -60,6 +58,8 @@ assistant_behavior:
         - No other meanings are possible for these abbreviations.
         - Abbreviations not listed here have no accepted expansion.
 related_pages: []
+tags:
+    - Assistant
 ---
 
 <!-- @format -->

@@ -1,21 +1,21 @@
 ---
 title: Walksheds (concept)
-tags:
-    - Assistant
 slug: walksheds
 doc_type: concept
-products:
-    - Walksheds
+questions:
+    - What are walksheds?
 audiences:
     - planner
     - jurisdiction
     - advocate
+products:
+    - Walksheds
 topics:
     - walksheds
     - accessibility-data
 risk_level: medium
 authority_level: explanatory
-review_status: draft
+publication_status: draft
 last_reviewed: 2026-06-16
 retrieval_priority: high
 assistant_behavior:
@@ -28,6 +28,8 @@ related_pages:
     - assistant/questions/walksheds/what-is-a-walkshed.md
     - assistant/questions/walksheds/how-are-walksheds-calculated.md
     - assistant/workflows/use-walksheds-for-safe-routes-to-school.md
+tags:
+    - Assistant
 ---
 
 <!-- @format -->

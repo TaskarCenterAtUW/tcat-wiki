@@ -39,7 +39,7 @@ Using the stub's existing frontmatter as the starting point, fill in or confirm 
 - `topics` — select from the controlled vocabulary in the schema. Add no more than five tags. Choose the most specific applicable tags.
 - `risk_level` — `low` by default. Use `medium` if the page touches ADA compliance, legal authority, data accuracy claims, or correction workflows. Use `high` only for pages with direct legal or safety consequences.
 - `authority_level` — `explanatory` by default. Use `draft` while content is in progress.
-- `review_status` — always set to `draft` for new pages.
+- `publication_status` — always set to `draft` for new pages.
 - `last_reviewed` — set to today's date in `YYYY-MM-DD` format.
 - `retrieval_priority` — `high` for the most important pages in a section, `medium` for most pages, `low` for supporting or supplementary content.
 - `assistant_behavior`:
@@ -112,7 +112,7 @@ Before writing the file, check:
 
 1. All nine headings are present and in order.
 2. Every required frontmatter field is populated (no empty strings, no `null`).
-3. `review_status` is `draft`.
+3. `publication_status` is `draft`.
 4. `last_reviewed` is today's date.
 5. `do_not_claim` items (if any) are complete declarative sentences.
 6. `related_pages` paths use the `docs/`-relative format, not file-system paths.

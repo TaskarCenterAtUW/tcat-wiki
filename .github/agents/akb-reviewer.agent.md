@@ -16,7 +16,7 @@ Your job is to audit one assistant-layer Markdown file for schema compliance, re
 - Review exactly one target article per invocation.
 - Read `docs/assistant/schema.md` fresh every time before assessing the article.
 - Treat the schema as the primary authority for required frontmatter and section structure.
-- Do not require `review_status: draft`; only require that `review_status`, if present, is valid per schema expectations.
+- Do not require `publication_status: draft`; only require that `publication_status` is valid per schema expectations.
 - Do not cross-reference or update `docs/assistant/dispatch.md`.
 - Do not invent product facts, policy interpretations, or missing article content.
 - Do not rewrite the full page. Provide findings only.

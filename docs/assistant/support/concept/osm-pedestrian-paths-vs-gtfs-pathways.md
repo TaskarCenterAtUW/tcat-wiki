@@ -1,19 +1,19 @@
 ---
 title: "What is the relationship between pedestrian paths in OpenStreetMap and GTFS Pathways?"
-tags:
-    - Assistant
 slug: osm-pedestrian-paths-vs-gtfs-pathways
 doc_type: concept
-products:
-    - OS-CONNECT
-    - AccessMap
-    - Walksheds
-    - TDEI
+questions:
+    - What is the relationship between pedestrian paths in OpenStreetMap and GTFS Pathways?
 audiences:
     - planner
     - jurisdiction
     - advocate
     - public
+products:
+    - OS-CONNECT
+    - AccessMap
+    - Walksheds
+    - TDEI
 topics:
     - gtfs
     - osm-interoperability
@@ -23,7 +23,7 @@ topics:
     - tdei
 risk_level: medium
 authority_level: explanatory
-review_status: stub
+publication_status: stub
 last_reviewed: ""
 retrieval_priority: high
 assistant_behavior:
@@ -32,6 +32,8 @@ assistant_behavior:
     abstain_if_missing_context: true
     do_not_claim: []
 related_pages: []
+tags:
+    - Assistant
 ---
 
 <!-- @format -->

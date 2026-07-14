@@ -1,22 +1,22 @@
 ---
 title: "How does elevation affect walksheds?"
-tags:
-    - Assistant
 slug: elevation-effects
 doc_type: concept
-products:
-    - Walksheds
+questions:
+    - How does elevation affect walksheds?
 audiences:
     - planner
     - jurisdiction
     - advocate
     - public
+products:
+    - Walksheds
 topics:
     - walksheds
     - elevation
 risk_level: medium
 authority_level: explanatory
-review_status: stub
+publication_status: stub
 last_reviewed: ""
 retrieval_priority: high
 assistant_behavior:
@@ -25,6 +25,8 @@ assistant_behavior:
     abstain_if_missing_context: true
     do_not_claim: []
 related_pages: []
+tags:
+    - Assistant
 ---
 
 <!-- @format -->

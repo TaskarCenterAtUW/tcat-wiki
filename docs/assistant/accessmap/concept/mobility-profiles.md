@@ -1,20 +1,20 @@
 ---
 title: How do mobility profiles work?
-tags:
-    - Assistant
 slug: mobility-profiles
 doc_type: concept
-products:
-    - AccessMap
+questions:
+    - How do mobility profiles work?
 audiences:
     - public
     - advocate
+products:
+    - AccessMap
 topics:
     - accessmap
     - mobility-profiles
 risk_level: medium
 authority_level: explanatory
-review_status: draft
+publication_status: draft
 last_reviewed: 2026-06-19
 retrieval_priority: high
 assistant_behavior:
@@ -26,6 +26,8 @@ assistant_behavior:
 related_pages:
     - assistant/concepts/accessmap-routing.md
     - accessmap/user-manual/profiles.md
+tags:
+    - Assistant
 ---
 
 <!-- @format -->

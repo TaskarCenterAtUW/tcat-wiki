@@ -1,24 +1,24 @@
 ---
 title: "What happens after export to TDEI?"
-tags:
-    - Assistant
 slug: post-export-behavior
 doc_type: concept
-products:
-    - Workspaces
+questions:
+    - What happens after export to TDEI?
 audiences:
     - planner
     - jurisdiction
     - advocate
     - public
+products:
+    - Workspaces
 topics:
     - workspaces
     - export
     - publication-workflow
     - dataset-lineage
 risk_level: high
-authority_level: draft
-review_status: stub
+authority_level: provisional
+publication_status: stub
 last_reviewed:
 retrieval_priority: medium
 assistant_behavior:
@@ -27,6 +27,8 @@ assistant_behavior:
     abstain_if_missing_context: true
     do_not_claim: []
 related_pages: []
+tags:
+    - Assistant
 ---
 
 <!-- @format -->

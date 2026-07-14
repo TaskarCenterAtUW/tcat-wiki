@@ -1,9 +1,14 @@
 ---
 title: Cross-Platform — Assistant Knowledge Base
-tags:
-    - Assistant
 slug: cross-platform-index
 doc_type: policy
+questions:
+    - What cross-platform topics does the knowledge base cover?
+audiences:
+    - planner
+    - jurisdiction
+    - advocate
+    - public
 products:
     - AccessMap
     - AVIV ScoutRoute
@@ -19,11 +24,6 @@ products:
     - Walksheds
     - WayKeeper
     - Workspaces
-audiences:
-    - planner
-    - jurisdiction
-    - advocate
-    - public
 topics:
     - assistant-behavior
     - governance
@@ -43,7 +43,7 @@ topics:
     - workspaces
 risk_level: high
 authority_level: explanatory
-review_status: draft
+publication_status: draft
 last_reviewed: 2026-07-02
 retrieval_priority: high
 assistant_behavior:
@@ -55,6 +55,8 @@ assistant_behavior:
 related_pages:
     - assistant/index.md
     - assistant/dispatch.md
+tags:
+    - Assistant
 ---
 
 <!-- @format -->
@@ -83,7 +85,7 @@ Without explicit policy pages, assistants may over-claim — stating that OS-CON
 
 **Agents**: Before answering any question touching ADA compliance, legal authority, data accuracy, or internal information, retrieve the relevant policy page. Treat policy pages as hard constraints: if a `do_not_claim` item matches what you would otherwise say, abstain or reframe. For definitional questions ("what is X?"), retrieve the matching page from `concept/`; supplement with product-specific pages when the question has an operational context — for example, accessibility islands → `concept/accessibility-islands.md`, then `walksheds/what-are-accessibility-islands-in-walkshed-analysis.md`. For "how do I do X?" questions spanning multiple tools, match to the closest page in `workflow/` — for example, ADA planning → `workflow/use-os-connect-for-ada-transition-planning.md`; public engagement → `workflow/use-accessmap-for-public-engagement.md`; SRTS → `workflow/use-walksheds-for-safe-routes-to-school.md`.
 
-**Authors**: Policy pages have `authority_level: official` and require TCAT editorial review. Draft pages should be marked `review_status: draft` until approved. Use `risk_level: high` for pages touching legal or safety content.
+**Authors**: Policy pages have `authority_level: official` and require TCAT editorial review. Draft pages should be marked `publication_status: draft` until approved. Use `risk_level: high` for pages touching legal or safety content.
 
 ## Example
 

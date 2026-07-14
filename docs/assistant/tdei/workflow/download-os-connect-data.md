@@ -1,22 +1,22 @@
 ---
 title: Where do I download OS-CONNECT data?
-tags:
-    - Assistant
 slug: download-os-connect-data
 doc_type: workflow
-products:
-    - TDEI
-    - OS-CONNECT
+questions:
+    - Where do I download OS-CONNECT data?
 audiences:
     - planner
     - jurisdiction
+products:
+    - TDEI
+    - OS-CONNECT
 topics:
     - tdei
     - export
     - os-connect
 risk_level: low
 authority_level: official
-review_status: draft
+publication_status: draft
 last_reviewed: 2026-05-11
 retrieval_priority: high
 assistant_behavior:
@@ -28,6 +28,8 @@ assistant_behavior:
 related_pages:
     - assistant/questions/tdei/how-do-i-use-the-tdei-portal.md
     - tdei/portal/tutorial/download-os-connect.md
+tags:
+    - Assistant
 ---
 
 <!-- @format -->

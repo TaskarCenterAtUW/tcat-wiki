@@ -1,23 +1,23 @@
 ---
 title: Walksheds — Assistant Knowledge Base
-tags:
-    - Assistant
 slug: walksheds-index
 doc_type: policy
-products:
-    - Walksheds
+questions:
+    - What assistant-facing information and policies are covered in the Walksheds knowledge base?
 audiences:
     - planner
     - jurisdiction
     - advocate
     - public
+products:
+    - Walksheds
 topics:
     - walksheds
     - accessibility-data
     - tdei-ecosystem
 risk_level: high
 authority_level: explanatory
-review_status: draft
+publication_status: draft
 last_reviewed: 2026-06-09
 retrieval_priority: high
 assistant_behavior:
@@ -32,6 +32,8 @@ related_pages:
     - assistant/dispatch.md
     - assistant/os-connect/index.md
     - assistant/accessmap/index.md
+tags:
+    - Assistant
 ---
 
 <!-- @format -->

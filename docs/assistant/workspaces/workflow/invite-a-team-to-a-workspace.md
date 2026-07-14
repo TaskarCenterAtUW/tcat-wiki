@@ -1,24 +1,24 @@
 ---
 title: "Invite a team to a workspace"
-tags:
-    - Assistant
 slug: invite-a-team-to-a-workspace
 doc_type: workflow
-products:
-    - Workspaces
+questions:
+    - How do I invite a team to a workspace?
 audiences:
     - planner
     - jurisdiction
     - advocate
     - public
+products:
+    - Workspaces
 topics:
     - workspaces
     - teams
     - collaborative-editing
     - roles
 risk_level: low
-authority_level: draft
-review_status: draft
+authority_level: provisional
+publication_status: draft
 last_reviewed: 2026-06-03
 retrieval_priority: medium
 assistant_behavior:
@@ -39,6 +39,8 @@ related_pages:
     - assistant/questions/workspaces/how-do-team-invitations-work.md
     - workspaces/index.md
     - workspaces/user-manual/workspace-settings.md
+tags:
+    - Assistant
 ---
 
 <!-- @format -->

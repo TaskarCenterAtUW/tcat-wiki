@@ -1,19 +1,19 @@
 ---
 title: "Which dataset should I use if I need pedestrian walkway data for planning?"
-tags:
-    - Assistant
 slug: choose-dataset-for-planning
 doc_type: workflow
-products:
-    - OS-CONNECT
-    - AccessMap
-    - Walksheds
-    - TDEI
+questions:
+    - Which dataset should I use if I need pedestrian walkway data for planning?
 audiences:
     - planner
     - jurisdiction
     - advocate
     - public
+products:
+    - OS-CONNECT
+    - AccessMap
+    - Walksheds
+    - TDEI
 topics:
     - dataset-lineage
     - planning
@@ -23,7 +23,7 @@ topics:
     - tdei
 risk_level: medium
 authority_level: explanatory
-review_status: stub
+publication_status: stub
 last_reviewed: ""
 retrieval_priority: high
 assistant_behavior:
@@ -32,6 +32,8 @@ assistant_behavior:
     abstain_if_missing_context: true
     do_not_claim: []
 related_pages: []
+tags:
+    - Assistant
 ---
 
 <!-- @format -->

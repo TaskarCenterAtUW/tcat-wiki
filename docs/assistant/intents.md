@@ -42,8 +42,8 @@ topics:
     - waykeeper
     - workspaces
 risk_level: low
-authority_level: draft
-review_status: draft
+authority_level: provisional
+publication_status: draft
 last_reviewed: 2026-05-18
 retrieval_priority: high
 assistant_behavior:

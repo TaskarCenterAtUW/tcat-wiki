@@ -1,16 +1,16 @@
 ---
 title: "Edit accessibility features in a workspace"
-tags:
-    - Assistant
 slug: edit-accessibility-features-in-a-workspace
 doc_type: workflow
-products:
-    - Workspaces
+questions:
+    - How do I edit accessibility features in a workspace?
 audiences:
     - planner
     - jurisdiction
     - advocate
     - public
+products:
+    - Workspaces
 topics:
     - workspaces
     - editing
@@ -18,8 +18,8 @@ topics:
     - osm-interoperability
     - multi-source-stewardship
 risk_level: medium
-authority_level: draft
-review_status: draft
+authority_level: provisional
+publication_status: draft
 last_reviewed: 2026-05-22
 retrieval_priority: medium
 assistant_behavior:
@@ -47,6 +47,8 @@ related_pages:
     - rapid/index.md
     - josm/index.md
     - aviv-scoutroute/index.md
+tags:
+    - Assistant
 ---
 
 <!-- @format -->
