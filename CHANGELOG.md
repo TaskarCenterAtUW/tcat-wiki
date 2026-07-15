@@ -6,6 +6,12 @@ All notable changes to this project will be documented in this file.
 
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/), and this project adheres to [Semantic Versioning](https://semver.org/) and [Conventional Commits](https://www.conventionalcommits.org/).
 
+## v13.4.0 (2026-07-15)
+
+### Features
+
+- **Core**: Add OpenSidewalks logo
+
 ## v13.3.0 (2026-07-13)
 
 ### Features
@@ -23,7 +29,6 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/),
 - **Docs**: Ensure every Assistant Knowledge Base `questions` entry is phrased as an article-relevant question
 - **Docs**: Update product-folder index questions to describe their assistant-facing structure and policies rather than product definitions
 - **Core**: Repair malformed YAML frontmatter in the Safe Routes to School Walksheds workflow article
--
 
 ## v13.2.0 (2026-07-10)
 
