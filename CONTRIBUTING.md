@@ -73,31 +73,15 @@ fix/docs-walksheds/2048-fix-typo
 2. Make commits using conventional commit format
 3. Open a pull request to `main` and merge it
 
-#### Changelog & Tagging a Release
+#### Changelog
 
-Changelog entries and version tags are managed manually, not on every PR merge. Do this whenever a meaningful set of changes has landed on `main`:
+[CHANGELOG.md](CHANGELOG.md) is the sole update-tracking record. Its `## Unreleased` section is commented out and is not tracked. Record only versioned release updates; do not create or use Git tags or GitHub releases for update tracking.
 
-1. In VS Code Copilot Chat (agent mode), run:
+1. Use the repository's [changelog skill](.agents/skills/update-changelog/SKILL.md) when preparing a versioned release entry from the relevant unrecorded commits.
 
-    ```
-    /changelog
-    ```
+2. Review the generated entry, including any commits omitted under the skill's inclusion rules or that appear miscategorized.
 
-    The prompt reads the commit history since the last tag, determines the correct [Semantic Version](https://semver.org/) bump, and prepends a new `### Features` / `### Fixes` entry to `CHANGELOG.md`.
-
-2. Review the generated entry — the prompt will flag any commits it omitted or that looked miscategorized.
-
-3. Commit the changelog update to `main`:
-
-    ```
-    chore: update changelog for vX.Y.Z
-    ```
-
-4. On the GitHub website, go to **Releases** → **Draft a new release**.
-    1. In **Choose a tag**, type the new version (e.g. `v11.1.0`) and select **Create new tag on publish**.
-    2. Set the title to `vX.Y.Z`.
-    3. Paste the release summary as the description.
-    4. Click **Publish release**.
+3. Commit the versioned changelog update.
 
 ### Getting Started (Windows 10/11)
 
@@ -193,7 +177,7 @@ Both flags can be used together to exclude a guide from all guides lists.
 
 Use the golden samples in [templates/content/README.md](templates/content/README.md) rather than live docs pages when checking content structure and formatting.
 
-The full editor-facing guide lives in [.github/instructions/content-style.instructions.md](.github/instructions/content-style.instructions.md). Apply these conventions when writing or revising content in `docs/`:
+The full editor-facing guide lives in [.agents/instructions/content-style.instructions.md](.agents/instructions/content-style.instructions.md). Apply these conventions when writing or revising content in `docs/`:
 
 - Choose the closest golden sample before drafting or reviewing:
     - [templates/content/topic-index.md](templates/content/topic-index.md) for topic landing pages
@@ -315,13 +299,7 @@ The AKB transcript ingestion pipeline extracts domain knowledge from meeting tra
 
 1. Download the Zoom transcript (`.txt` VTT format) and save it under `local-storage/transcripts/`.
 
-2. In VS Code Copilot Chat (agent mode), run:
-
-    ```
-    /akb-ingest-transcript local-storage/transcripts/<filename>.txt
-    ```
-
-    The agent compresses the transcript (stripping timestamps and VTT headers), reads `docs/assistant/dispatch.md` and `docs/assistant/schema.md`, then outputs a bucketed proposal of **New articles** and **Updates**.
+2. Use the repository's [AKB transcript-ingestion skill](.agents/skills/akb-ingest-transcript/SKILL.md) with `local-storage/transcripts/<filename>.txt`. The agent compresses the transcript (stripping timestamps and VTT headers), reads `docs/assistant/dispatch.md` and `docs/assistant/schema.md`, then outputs a bucketed proposal of **New articles** and **Updates**.
 
 3. Review the proposal in chat. Request any changes — the agent will iterate until you reach agreement.
 
