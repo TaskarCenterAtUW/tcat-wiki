@@ -1,6 +1,7 @@
 ---
+name: akb-expand-stub
 description: Expand a minimal human-provided answer into a schema-compliant assistant knowledge base page
-agent: agent
+disable-model-invocation: true
 ---
 
 <!-- @format -->
@@ -38,9 +39,9 @@ Using the stub's existing frontmatter as the starting point, fill in or confirm 
 - `audiences` — list several relevant audiences (`planner`, `jurisdiction`, `advocate`, `public`, `developer`, etc.) unless the content is clearly specialist-only.
 - `topics` — select from the controlled vocabulary in the schema. Add no more than five tags. Choose the most specific applicable tags.
 - `risk_level` — `low` by default. Use `medium` if the page touches ADA compliance, legal authority, data accuracy claims, or correction workflows. Use `high` only for pages with direct legal or safety consequences.
-- `authority_level` — `explanatory` by default. Use `draft` while content is in progress.
-- `publication_status` — always set to `draft` for new pages.
-- `last_reviewed` — set to today's date in `YYYY-MM-DD` format.
+- `authority_level` — `explanatory` by default. Use only the schema's valid values: `provisional`, `explanatory`, or `official`; `draft` is a publication status, not an authority level.
+- `publication_status` — set to `draft` for a newly expanded stub unless the human explicitly directs another schema-valid status.
+- `last_reviewed` — preserve an existing value. If it is absent, request the date of the last human editorial pass; do not represent an agent edit as human review.
 - `retrieval_priority` — `high` for the most important pages in a section, `medium` for most pages, `low` for supporting or supplementary content.
 - `assistant_behavior`:
     - `allow_inference: false` for all pages (default).
@@ -101,10 +102,9 @@ Two to five sentences of explicit behavioral instructions for chatbots consuming
 
 ### `## Related Concepts`
 
-An unordered list of Markdown links to related pages. Format each as:
-`- [Link text](relative-path-from-this-file-to-target.md)`
+An unordered list of Markdown links to related pages. Compute each link relative to the page being authored, not to this skill file. For example, a page in `assistant/os-connect/concept/` uses `../index.md` for its section-index target.
 
-Always link the section index (e.g. `[OS-CONNECT knowledge base](index.md)`). Add two to four additional links to adjacent pages in `docs/assistant/dispatch.md` that are thematically related.
+Always link the section index. Add two to four additional links to adjacent pages in `docs/assistant/dispatch.md` that are thematically related.
 
 ## Step 4 — Validate before writing
 
@@ -112,8 +112,8 @@ Before writing the file, check:
 
 1. All nine headings are present and in order.
 2. Every required frontmatter field is populated (no empty strings, no `null`).
-3. `publication_status` is `draft`.
-4. `last_reviewed` is today's date.
+3. `publication_status` is schema-valid and matches the user's direction; it defaults to `draft` for a newly expanded stub.
+4. `last_reviewed` is preserved or supplied by the human editorial process; an agent edit did not create a false review date.
 5. `do_not_claim` items (if any) are complete declarative sentences.
 6. `related_pages` paths use the `docs/`-relative format, not file-system paths.
 7. The `## Short Answer` does not contradict the user's minimal answer.
@@ -127,7 +127,13 @@ Write the completed file to the path given by the user. Overwrite the stub entir
 
 ## Step 6 — Update dispatch.md
 
-Open `docs/assistant/dispatch.md`. Find the row for this file in the appropriate section table and change its `Status` from `stub` to `draft`. Use `replace_string_in_file` — do not rewrite the entire dispatch file.
+Regenerate the registry instead of hand-editing it:
+
+```powershell
+python utilities/akb-generate-dispatch.py
+```
+
+If the repository's generator requires a different documented invocation, follow its current usage. Never manually edit generated `docs/assistant/dispatch.md`.
 
 ## Step 7 — Confirm
 
@@ -137,7 +143,7 @@ Tell the user:
 - The `doc_type`, `risk_level`, and `retrieval_priority` values chosen and a very brief reasoning for each.
 - Any `do_not_claim` items added, so the user can verify they are accurate.
 - Whether `abstain_if_missing_context` was set to `true` and why.
-- The dispatch status updated from `stub` → `draft`.
+- That the generated dispatch registry was refreshed.
 
 If the user's minimal answer left any factual gap that would require TCAT staff knowledge to fill (e.g. a specific correction timeline, a named contact, a URL), flag it explicitly so the user can supply it in a follow-up review and editing phase.
 
