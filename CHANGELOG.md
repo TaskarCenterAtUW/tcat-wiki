@@ -12,12 +12,20 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/),
 ### Features
 
 - **Core**:
+- **Docs**:
 
 ### Fixes
 
 - **Core**:
+- **Docs**:
 
 -->
+
+## v14.1.0 (2026-07-16)
+
+### Features
+
+- **Docs**: Add assistant guidance for TDEI dataset lineage, source and derivative datasets, external attributes, integration workflows, and Workspaces project group roles
 
 ## v14.0.0 (2026-07-16)
 

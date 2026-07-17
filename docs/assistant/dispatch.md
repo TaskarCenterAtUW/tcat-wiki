@@ -101,7 +101,7 @@ This page should be fetched fresh rather than cached aggressively; its registry 
 | Status | Count | Meaning |
 | :----- | ----: | :------ |
 | `stub` | 500 | Frontmatter and heading scaffold exist; body is `TODO` |
-| `draft` | 34 | Content authored; awaiting TCAT editorial review |
+| `draft` | 38 | Content authored; awaiting TCAT editorial review |
 | `published` | 1 | Available in the human-facing site |
 | `archived` | 0 | Retained for agents but not published |
 
@@ -313,6 +313,7 @@ Base: `assistant/opensidewalks/concept/`
 
 | File | Status |
 | :--- | :----- |
+| `external-attributes.md` | draft |
 | `opensidewalks-schema.md` | stub |
 
 ### Workflows
@@ -666,6 +667,7 @@ Base: `assistant/tdei/concept/`
 | `project-group.md` | stub |
 | `release-versioning.md` | stub |
 | `released-dataset.md` | stub |
+| `source-and-derivative-datasets.md` | draft |
 | `tdei.md` | stub |
 | `test-dataset-in-portal.md` | stub |
 
@@ -679,6 +681,7 @@ Base: `assistant/tdei/workflow/`
 | `check-dataset-currency.md` | stub |
 | `download-data.md` | stub |
 | `download-os-connect-data.md` | draft |
+| `integrate-external-geospatial-data.md` | draft |
 | `use-tdei-portal.md` | draft |
 
 ## Walksheds — Assistant Knowledge Base
@@ -844,6 +847,7 @@ Base: `assistant/workspaces/concept/`
 | `post-export-behavior.md` | stub |
 | `private-osm-explained.md` | stub |
 | `private-osm.md` | stub |
+| `project-group-and-workspace-roles.md` | draft |
 | `project-group-definition.md` | stub |
 | `project-group-operations.md` | stub |
 | `project-groups.md` | stub |

@@ -303,7 +303,10 @@ nav = [
         ]},
         {"OpenSidewalks" = [
             "assistant/opensidewalks/index.md",
-            {"Concept" = [ {"What is the OpenSidewalks data schema?" = "assistant/opensidewalks/concept/opensidewalks-schema.md"} ]},
+            {"Concept" = [
+                {"How can the OpenSidewalks schema support external attributes?" = "assistant/opensidewalks/concept/external-attributes.md"},
+                {"What is the OpenSidewalks data schema?" = "assistant/opensidewalks/concept/opensidewalks-schema.md"}
+            ]},
             {"Workflow" = [ {"Where do I find the latest version of the OpenSidewalks schema?" = "assistant/opensidewalks/workflow/find-latest-version.md"} ]}
         ]},
         {"OS-CONNECT" = [
@@ -592,6 +595,7 @@ nav = [
                 {"What is a project group in TDEI?" = "assistant/tdei/concept/project-group.md"},
                 {"How are releases versioned?" = "assistant/tdei/concept/release-versioning.md"},
                 {"What does \"released dataset\" mean in TDEI?" = "assistant/tdei/concept/released-dataset.md"},
+                {"What is the relationship between source and derivative datasets in TDEI?" = "assistant/tdei/concept/source-and-derivative-datasets.md"},
                 {"TDEI" = "assistant/tdei/concept/tdei.md"},
                 {"Why might a test dataset appear in the portal?" = "assistant/tdei/concept/test-dataset-in-portal.md"}
             ]},
@@ -600,6 +604,7 @@ nav = [
                 {"How do I know whether a dataset is current?" = "assistant/tdei/workflow/check-dataset-currency.md"},
                 {"Where can I download the data?" = "assistant/tdei/workflow/download-data.md"},
                 {"Where do I download OS-CONNECT data?" = "assistant/tdei/workflow/download-os-connect-data.md"},
+                {"How do I integrate external geospatial data with TDEI?" = "assistant/tdei/workflow/integrate-external-geospatial-data.md"},
                 {"How do I use the TDEI portal?" = "assistant/tdei/workflow/use-tdei-portal.md"}
             ]}
         ]},
@@ -731,6 +736,7 @@ nav = [
                 {"What happens after export to TDEI?" = "assistant/workspaces/concept/post-export-behavior.md"},
                 {"What does private OSM mean?" = "assistant/workspaces/concept/private-osm-explained.md"},
                 {"Private OSM (Workspaces)" = "assistant/workspaces/concept/private-osm.md"},
+                {"How do TDEI project group roles differ from Workspaces roles?" = "assistant/workspaces/concept/project-group-and-workspace-roles.md"},
                 {"What is a project group?" = "assistant/workspaces/concept/project-group-definition.md"},
                 {"How do project groups work?" = "assistant/workspaces/concept/project-group-operations.md"},
                 {"Project groups (Workspaces)" = "assistant/workspaces/concept/project-groups.md"},
