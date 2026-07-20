@@ -1,4 +1,4 @@
-zensical==0.0.50
+zensical==0.0.51
 pillow
 pytest
 pyyaml
