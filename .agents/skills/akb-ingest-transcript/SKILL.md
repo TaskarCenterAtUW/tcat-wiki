@@ -19,7 +19,7 @@ Process the transcript at `$args`. This skill is for TCAT Office Hours and other
 - Do not rewrite existing article sections that are unrelated to the transcript evidence.
 - Do not run unrelated utilities, build the site, check links, or create a commit.
 - Read the current schema and dispatch on every invocation; do not rely on cached instructions.
-- Never use uncommon special characters; for example the more standard apostrophe `'` instead of `’`.
+- Never use uncommon special characters; for example, use the more standard apostrophe `'` instead of `’`.
 
 ## Phase 1 — Prepare the evidence
 
