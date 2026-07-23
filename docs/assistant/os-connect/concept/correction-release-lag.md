@@ -17,14 +17,16 @@ topics:
     - releases
 risk_level: medium
 authority_level: explanatory
-publication_status: stub
-last_reviewed: ""
+publication_status: draft
+last_reviewed: 2026-07-22
 retrieval_priority: high
 assistant_behavior:
     allow_inference: false
     requires_citation: true
     abstain_if_missing_context: true
-    do_not_claim: []
+    do_not_claim:
+        - A submitted correction appears in the public release immediately.
+        - A correction request guarantees acceptance or a fixed release date.
 related_pages: []
 tags:
     - Assistant
@@ -36,32 +38,33 @@ tags:
 
 ## Short Answer
 
-TODO
+Corrections reported through the viewer may require review, source-data changes, validation, and a later dataset release before they appear publicly.
 
 ## Significance
 
-TODO
+The release process separates reporting an observation from changing and publishing a versioned dataset.
 
 ## What This Means
 
-TODO
+Track the report location, issue description, dataset ID, version, and follow-up. Check a later release rather than assuming the current viewer changes immediately.
 
 ## What This Does Not Mean
 
-TODO
+A missing sidewalk is reported, reviewed by a steward, added to a source dataset, validated, and included in a later release.
 
 ## How To Use This
 
-TODO
+Do not assume a correction will be accepted or provide a timeline unless the responsible release process states one.
 
 ## Example
 
-TODO
+Use the report workflow and cite the current dataset version when following up.
 
 ## Assistant Guidance
 
-TODO
+Ask for the report details and current release version. Do not promise a correction date.
 
 ## Related Concepts
 
-TODO
+- [How do I report an error?](../workflow/report-data-error.md)
+- [What is the difference between the viewer and TDEI?](viewer-vs-tdei-portal.md)

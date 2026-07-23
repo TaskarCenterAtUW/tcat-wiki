@@ -16,14 +16,15 @@ topics:
     - formats
 risk_level: medium
 authority_level: explanatory
-publication_status: stub
+publication_status: draft
 last_reviewed: ""
 retrieval_priority: high
 assistant_behavior:
     allow_inference: false
     requires_citation: true
     abstain_if_missing_context: true
-    do_not_claim: []
+    do_not_claim:
+        - Every TDEI job accepts every listed file extension.
 related_pages: []
 tags:
     - Assistant
@@ -35,32 +36,32 @@ tags:
 
 ## Short Answer
 
-TODO
+TDEI supports multiple transportation-data formats, including OSW, OSM, GTFS-Flex, GTFS-Pathways, GeoJSON, and job-specific archive or source formats.
 
 ## Significance
 
-TODO
+The format identifies what kind of sub-document a project is maintaining. OpenSidewalks, GTFS Pathways, and GTFS-Flex also correspond to different generator roles. Choosing the wrong service type can make a workflow or output misleading.
 
 ## What This Means
 
-TODO
+Current documentation identifies `.zip` for OSW validation or conversion, `.pbf`, `.osm`, or `.xml` for OSM input to OSW conversion, and `.geojson` for optional spatial inputs such as IXN polygons. Dataset download choices are dataset-specific.
 
 ## What This Does Not Mean
 
-TODO
+An extension alone does not establish schema validity or semantic compatibility, and every job does not accept every extension.
 
 ## How To Use This
 
-TODO
+Check the job or download dialog and the target consumer before choosing a format. Preserve the source and record conversions.
 
 ## Example
 
-TODO
+A sidewalk inventory uses an OpenSidewalks service, while an indoor station network uses GTFS Pathways. An on-demand service area uses GTFS-Flex.
 
 ## Assistant Guidance
 
-TODO
+Ask what data the user is maintaining before recommending a format. Verify current TDEI documentation for exact service names and requirements.
 
 ## Related Concepts
 
-TODO
+- [How do TDEI services relate to project groups?](services-and-project-groups.md)

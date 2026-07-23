@@ -32,7 +32,7 @@ assistant_behavior:
         - All feedback items are verified bugs in the core dataset.
 related_pages:
     - assistant/cross-platform/index.md
-    - assistant/workflows/update-jurisdiction-data.md
+    - assistant/cross-platform/workflow/update-jurisdiction-data.md
 tags:
     - Assistant
 ---

@@ -26,7 +26,7 @@ assistant_behavior:
     do_not_claim:
         - Data is available without portal registration if policy requires it.
 related_pages:
-    - assistant/questions/tdei/how-do-i-use-the-tdei-portal.md
+    - assistant/tdei/workflow/use-tdei-portal.md
     - tdei/portal/tutorial/download-os-connect.md
 tags:
     - Assistant

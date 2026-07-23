@@ -25,8 +25,8 @@ assistant_behavior:
     do_not_claim:
         - Walksheds alone satisfies federal or state SRTS reporting requirements without local process.
 related_pages:
-    - assistant/workflows/use-walksheds-for-safe-routes-to-school.md
-    - assistant/questions/walksheds/what-is-a-walkshed.md
+    - assistant/cross-platform/workflow/use-walksheds-for-safe-routes-to-school.md
+    - assistant/walksheds/concept/walkshed.md
 tags:
     - Assistant
 ---

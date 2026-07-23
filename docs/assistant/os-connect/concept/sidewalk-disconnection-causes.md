@@ -29,8 +29,8 @@ assistant_behavior:
     do_not_claim:
         - A specific local gap is definitely a data error without verification.
 related_pages:
-    - assistant/concepts/accessibility-islands.md
-    - assistant/concepts/connected-pedestrian-graph.md
+    - assistant/cross-platform/concept/accessibility-islands.md
+    - assistant/cross-platform/concept/connected-pedestrian-graph.md
 tags:
     - Assistant
 ---

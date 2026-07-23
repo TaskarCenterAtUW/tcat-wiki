@@ -16,14 +16,15 @@ topics:
     - completeness
 risk_level: medium
 authority_level: explanatory
-publication_status: stub
-last_reviewed: ""
+publication_status: draft
+last_reviewed: 2026-07-22
 retrieval_priority: high
 assistant_behavior:
     allow_inference: false
     requires_citation: true
     abstain_if_missing_context: true
-    do_not_claim: []
+    do_not_claim:
+        - Washington State coverage means every jurisdiction has the same completeness or current data.
 related_pages: []
 tags:
     - Assistant
@@ -35,32 +36,33 @@ tags:
 
 ## Short Answer
 
-TODO
+OS-CONNECT is a Washington State pedestrian network dataset organized into jurisdictional boundaries such as cities, urban growth areas, unincorporated areas, counties, and census-designated places.
 
 ## Significance
 
-TODO
+Coverage boundaries help users identify which dataset and jurisdiction they are interpreting.
 
 ## What This Means
 
-TODO
+Use the boundary layer and dataset naming suffixes to distinguish coverage. The source documentation describes coverage across more than 320 cities and counties, but current availability should be checked in the viewer.
 
 ## What This Does Not Mean
 
-TODO
+A boundary does not guarantee complete pedestrian data within the area or equal coverage across jurisdictions.
 
 ## How To Use This
 
-TODO
+Check the specific boundary, dataset ID, version, upload date, and QA/QC report for the area of interest.
 
 ## Example
 
-TODO
+A county dataset and a city dataset overlap geographically but represent different dataset scopes and should not be compared without checking their metadata.
 
 ## Assistant Guidance
 
-TODO
+Ask for the exact dataset name and boundary type. Avoid treating the statewide description as proof of current local coverage.
 
 ## Related Concepts
 
-TODO
+- [What is OS-CONNECT?](os-connect.md)
+- [How do I search for a jurisdiction?](../workflow/search-for-jurisdiction.md)

@@ -58,6 +58,7 @@ Walksheds is used by planning agencies, MPOs, and advocates who need spatial evi
 
 - Walksheds analysis does not substitute for engineering site assessments or official ADA transition plan inventories.
 - A high-reachability walkshed does not imply that all infrastructure within it meets accessibility standards.
+- A missing highlighted edge is not necessarily physically absent; it may be outside the budget, excluded by preferences, disconnected, or missing from the dataset.
 
 ## How To Use This
 

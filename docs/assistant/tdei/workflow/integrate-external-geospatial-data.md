@@ -59,7 +59,7 @@ This workflow gives a jurisdiction a controlled path from an existing geodatabas
 
 ## What This Means
 
-1. Prepare or convert the source data into the format required by the target workflow, commonly GeoJSON for OpenSidewalks data.
+1. Prepare or convert the source data into the format required by the target workflow, commonly GeoJSON for OpenSidewalks data. Treat conversion, validation, and review as separate steps.
 2. Clearly distinguish edge and node files or layers when the OpenSidewalks workflow requires both.
 3. Preserve partner-specific fields with the `ext:` convention where appropriate, then validate the complete dataset.
 4. Upload the prepared dataset to TDEI with the required account and project-group permissions.

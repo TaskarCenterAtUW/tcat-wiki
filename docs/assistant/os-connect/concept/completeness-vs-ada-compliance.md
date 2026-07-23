@@ -27,8 +27,8 @@ assistant_behavior:
         - High completeness implies ADA compliance.
         - Low completeness implies automatic ADA violations.
 related_pages:
-    - assistant/concepts/completeness.md
-    - assistant/concepts/ada-compliance-boundaries.md
+    - assistant/cross-platform/concept/completeness.md
+    - assistant/cross-platform/concept/ada-compliance-boundaries.md
     - assistant/cross-platform/index.md
 tags:
     - Assistant
@@ -48,7 +48,7 @@ This is one of the highest-risk public confusions. Clear denial language protect
 
 ## What This Means
 
-Completeness can inform where to invest in better data, which indirectly supports better planning for accessibility — but it does not adjudicate legal compliance.
+Completeness can inform where to invest in better data, which indirectly supports better planning for accessibility — but it does not adjudicate legal compliance. It also does not measure whether the recorded attributes are correct.
 
 ## What This Does Not Mean
 

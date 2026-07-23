@@ -47,7 +47,7 @@ topics:
 risk_level: low
 authority_level: official
 publication_status: published
-last_reviewed: 2026-07-16
+last_reviewed: 2026-07-22
 retrieval_priority: high
 assistant_behavior:
     allow_inference: false
@@ -68,7 +68,7 @@ tags:
 
 ## Short Answer
 
-This page lists all 271 abbreviations, acronyms, and initialisms used across TCAT Wiki documentation and TCAT platforms and tools.
+This page lists all 272 abbreviations, acronyms, and initialisms used across TCAT Wiki documentation and TCAT platforms and tools.
 
 ## Significance
 
@@ -209,6 +209,7 @@ The table below maps each abbreviated form to its full expansion. Entries are so
 | MCP | Model Context Protocol |
 | MDIP | Mobility Data Interoperability Principles |
 | MDOT | Michigan Department of Transportation |
+| MEF | Maximum Extent Feasible |
 | MGRS | Military Grid Reference System |
 | MIC | Manufacturing Industrial Center |
 | MIRE | Model Inventory of Roadway Elements |

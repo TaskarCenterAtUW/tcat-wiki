@@ -16,15 +16,20 @@ topics:
     - routing
 risk_level: medium
 authority_level: explanatory
-publication_status: stub
-last_reviewed: ""
+publication_status: draft
+last_reviewed: 2026-07-22
 retrieval_priority: high
 assistant_behavior:
     allow_inference: false
     requires_citation: true
     abstain_if_missing_context: true
-    do_not_claim: []
-related_pages: []
+    do_not_claim:
+        - AccessMap's estimated time is a guaranteed travel time.
+        - AccessMap route calculations prove that every mapped segment is usable now.
+related_pages:
+    - mobility-profiles.md
+    - profile-responsive-map.md
+    - ../../../accessmap/user-manual/route-planning.md
 tags:
     - Assistant
 ---
@@ -35,32 +40,33 @@ tags:
 
 ## Short Answer
 
-TODO
+AccessMap calculates a pedestrian route from selected waypoints using the selected mobility profile and available network data. The result includes a map route and summary information such as distance, estimated time, elevation, and steepest grades.
 
 ## Significance
 
-TODO
+The calculation makes route comparisons more useful for people whose travel is affected by slope, barriers, surface, streets, or other mapped conditions.
 
 ## What This Means
 
-TODO
+Users set an origin and destination, choose a profile or Custom preferences, and review the route. The Trip Information panel can show experienced elevation gain, total distance, estimated time, and steepest uphill and downhill inclines. Changing preferences can produce a different route.
 
 ## What This Does Not Mean
 
-TODO
+A calculation is not an accessibility audit, a guarantee of current conditions, or a promise that the estimated time will match a particular traveler.
 
 ## How To Use This
 
-TODO
+Review the map, legend, route summary, and Trip Information panel before travel. Compare settings when the first result does not fit the user's needs.
 
 ## Example
 
-TODO
+A user lowers the maximum uphill steepness, recalculates the route, and compares the new distance and elevation profile with the earlier result.
 
 ## Assistant Guidance
 
-TODO
+Ask for the region, endpoints, profile, and relevant preferences when diagnosing a route. Cite the user manual for current interface behavior.
 
 ## Related Concepts
 
-TODO
+- [How do mobility profiles work?](mobility-profiles.md)
+- [How does AccessMap respond to mobility profiles?](profile-responsive-map.md)

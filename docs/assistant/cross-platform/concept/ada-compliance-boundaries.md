@@ -33,8 +33,8 @@ assistant_behavior:
         - Routing or walkshed results constitute legal advice.
 related_pages:
     - assistant/cross-platform/index.md
-    - assistant/concepts/completeness.md
-    - assistant/questions/os-connect/is-completeness-ada-compliance.md
+    - assistant/cross-platform/concept/completeness.md
+    - assistant/cross-platform/concept/ada-compliance-boundaries.md
 tags:
     - Assistant
 ---

@@ -29,6 +29,12 @@ def compress_transcript(input_path: Path) -> Path:
     timestamp = re.compile(
         r"^\d{2}:\d{2}:\d{2}\.\d{3}\s*-->\s*\d{2}:\d{2}:\d{2}\.\d{3}")
     blank = re.compile(r"^\s*$")
+    filler_speech = re.compile(
+        r"(?:,\s*)?"
+        r"(?:\b(?:um+|uh+|hmm+)\b|\b(?:uh[- ]huh|mm[- ]hmm)\b)"
+        r"(?:\s*(?:,|…|\.{3}|[.!?;:]))*\s*",
+        re.IGNORECASE,
+    )
 
     for line in lines:
         if webvtt_header.match(line):
@@ -39,7 +45,13 @@ def compress_transcript(input_path: Path) -> Path:
             continue
         if blank.match(line):
             continue
-        speaker_lines.append(line.strip())
+
+        # Keep a separator where the filler was removed. Otherwise text on
+        # either side of a filler can be joined together ("reportsbut").
+        cleaned_line = filler_speech.sub(" ", line).strip()
+        cleaned_line = re.sub(r"[ \t]{2,}", " ", cleaned_line)
+        if cleaned_line and not re.search(r":\s*$", cleaned_line):
+            speaker_lines.append(cleaned_line)
 
     def abbreviate_speaker(line: str) -> str:
         """Reduce the speaker name to uppercase initials.

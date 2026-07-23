@@ -16,14 +16,16 @@ topics:
     - tdei-overview
 risk_level: medium
 authority_level: provisional
-publication_status: stub
+publication_status: draft
 last_reviewed: 2026-07-02
 retrieval_priority: high
 assistant_behavior:
     allow_inference: false
     requires_citation: true
     abstain_if_missing_context: true
-    do_not_claim: []
+    do_not_claim:
+        - TDEI is the same product as OS-CONNECT or Workspaces.
+        - TDEI publication proves that transportation data is complete or current.
 related_pages: []
 tags:
     - Assistant
@@ -35,32 +37,34 @@ tags:
 
 ## Short Answer
 
-TODO
+TDEI is the Transportation Data Exchange Initiative: shared infrastructure and standards for collecting, validating, managing, publishing, and consuming transportation datasets.
 
 ## Significance
 
-TODO
+TDEI connects data producers, stewards, and consumers through common metadata, formats, versioning, access controls, quality checks, APIs, and publication workflows.
 
 ## What This Means
 
-TODO
+Tools such as Workspaces, Rapid, AVIV ScoutRoute, JOSM, and iOSPointMapper can produce or edit data. TDEI Core handles ingestion, validation, metadata, lineage, quality checks, access control, publishing, and APIs. Applications such as OS-CONNECT, AccessMap, and Walksheds consume resulting data.
 
 ## What This Does Not Mean
 
-TODO
+TDEI is not one dataset, one editor, or a guarantee that every dataset is public, complete, current, or suitable for a particular decision.
 
 ## How To Use This
 
-TODO
+Identify whether the question concerns the portal, API, project group, dataset, job, release, or consumer application. Record the dataset ID, version, source, and intended use.
 
 ## Example
 
-TODO
+A data producer validates an OpenSidewalks file in TDEI, publishes a release, and a consumer downloads an appropriate representation for analysis.
 
 ## Assistant Guidance
 
-TODO
+Distinguish TDEI from OS-CONNECT and Workspaces in every answer. Ask for the relevant role, dataset state, and portal environment.
 
 ## Related Concepts
 
-TODO
+- [TDEI architecture](tdei-architecture.md)
+- [What is a released dataset?](released-dataset.md)
+- [What is a project group?](project-group.md)

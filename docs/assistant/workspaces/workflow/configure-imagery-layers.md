@@ -32,12 +32,10 @@ assistant_behavior:
         - Any tile URL works regardless of authentication, CORS, or licensing
         - Custom imagery by URL is available when only paste-in JSON is documented
 related_pages:
-    - assistant/workflows/workspaces/create-a-workspace-from-tdei.md
-    - assistant/workflows/workspaces/edit-accessibility-features-in-a-workspace.md
-    - assistant/concepts/workspaces/imagery-layers.md
-    - assistant/questions/workspaces/how-do-imagery-layers-work.md
-    - assistant/questions/workspaces/can-custom-imagery-be-added.md
-    - assistant/questions/workspaces/what-is-imagery-json.md
+    - assistant/workspaces/workflow/create-workspace-from-tdei-dataset.md
+    - assistant/workspaces/workflow/edit-accessibility-features-in-a-workspace.md
+    - assistant/workspaces/concept/imagery-layer-definition.md
+    - assistant/workspaces/concept/custom-imagery-configuration.md
     - workspaces/user-manual/workspace-settings.md
     - aviv-scoutroute/index.md
 tags:

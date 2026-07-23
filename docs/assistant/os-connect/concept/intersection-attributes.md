@@ -17,14 +17,15 @@ topics:
     - editing
 risk_level: medium
 authority_level: explanatory
-publication_status: stub
-last_reviewed: ""
+publication_status: draft
+last_reviewed: 2026-07-22
 retrieval_priority: high
 assistant_behavior:
     allow_inference: false
     requires_citation: true
     abstain_if_missing_context: true
-    do_not_claim: []
+    do_not_claim:
+        - An IXN score is a legal accessibility determination.
 related_pages: []
 tags:
     - Assistant
@@ -36,32 +37,33 @@ tags:
 
 ## Short Answer
 
-TODO
+OS-CONNECT QA/QC intersection metrics use mapped sidewalk availability, crossings, curb-ramp conditions, connectivity, and crossing distance to estimate modeled intersection traversability.
 
 ## Significance
 
-TODO
+Intersection metrics help identify possible network gaps and data-quality problems at important pedestrian decision points.
 
 ## What This Means
 
-TODO
+The documented IXN score ranges from 0 to 1. A score of 0 indicates no modeled traversable direction, intermediate values indicate some feasible approaches or exits, and 1 indicates all evaluated directions meet the model's criteria.
 
 ## What This Does Not Mean
 
-TODO
+The score represents the modeled dataset and rules. It does not prove that an intersection is safe, accessible to every person, or compliant with ADA requirements.
 
 ## How To Use This
 
-TODO
+Review the score with the map, tags, geometry, and local knowledge. Investigate zero or unexpected scores for missing connections, curb features, or crossings.
 
 ## Example
 
-TODO
+A zero score in a busy intersection may indicate missing curb ramps, a disconnected crossing, or a misclassified feature that needs QA.
 
 ## Assistant Guidance
 
-TODO
+Ask for the report version, score definition, and jurisdiction. Do not convert a modeled score directly into a legal or lived-experience conclusion.
 
 ## Related Concepts
 
-TODO
+- [Why does connectivity depend on geometry?](connectivity-depends-on-geometry.md)
+- [What do walkshed metrics represent?](walkshed-metrics.md)

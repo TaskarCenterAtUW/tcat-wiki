@@ -69,7 +69,7 @@ This section contains cross-product policy pages that govern what assistants may
 
 ## Significance
 
-Without explicit policy pages, assistants may over-claim — stating that OS-CONNECT data constitutes an ADA inventory, or that Walksheds results guarantee barrier-free access. Policy pages encode hard guardrails that reduce legal and reputational risk for TCAT and its partners.
+Without explicit policy pages, assistants may over-claim — stating that OS-CONNECT data constitutes an ADA inventory, or that Walksheds results guarantee barrier-free access. Policy pages provide retrieval guidance and cautionary guardrails that reduce legal and reputational risk for TCAT and its partners.
 
 ## What This Means
 
@@ -83,9 +83,9 @@ Without explicit policy pages, assistants may over-claim — stating that OS-CON
 
 ## How To Use This
 
-**Agents**: Before answering any question touching ADA compliance, legal authority, data accuracy, or internal information, retrieve the relevant policy page. Treat policy pages as hard constraints: if a `do_not_claim` item matches what you would otherwise say, abstain or reframe. For definitional questions ("what is X?"), retrieve the matching page from `concept/`; supplement with product-specific pages when the question has an operational context — for example, accessibility islands → `concept/accessibility-islands.md`, then `walksheds/what-are-accessibility-islands-in-walkshed-analysis.md`. For "how do I do X?" questions spanning multiple tools, match to the closest page in `workflow/` — for example, ADA planning → `workflow/use-os-connect-for-ada-transition-planning.md`; public engagement → `workflow/use-accessmap-for-public-engagement.md`; SRTS → `workflow/use-walksheds-for-safe-routes-to-school.md`.
+**Agents**: Before answering any question touching ADA compliance, legal authority, data accuracy, or internal information, retrieve the relevant policy page. Draft or explanatory policy pages provide provisional retrieval guidance and must not override published official content. If a `do_not_claim` item matches what you would otherwise say, abstain or reframe; when guidance conflicts, prefer the published page with the higher authority level and cite the source. For definitional questions ("what is X?"), retrieve the matching page from `concept/`; supplement with product-specific pages when the question has an operational context. For "how do I do X?" questions spanning multiple tools, match to the closest page in `workflow/`.
 
-**Authors**: Policy pages have `authority_level: official` and require TCAT editorial review. Draft pages should be marked `publication_status: draft` until approved. Use `risk_level: high` for pages touching legal or safety content.
+**Authors**: Policy pages intended as official constraints require TCAT editorial review and `authority_level: official`. Until approved, keep them marked `publication_status: draft` and describe their guidance as provisional rather than authoritative. Use `risk_level: high` for pages touching legal or safety content.
 
 ## Example
 

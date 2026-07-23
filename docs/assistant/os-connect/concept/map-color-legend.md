@@ -16,15 +16,18 @@ topics:
     - public-vs-private-data
 risk_level: medium
 authority_level: explanatory
-publication_status: stub
-last_reviewed: ""
+publication_status: draft
+last_reviewed: 2026-07-22
 retrieval_priority: high
 assistant_behavior:
     allow_inference: false
     requires_citation: true
     abstain_if_missing_context: true
-    do_not_claim: []
-related_pages: []
+    do_not_claim:
+        - OS-CONNECT map colors are universal accessibility ratings.
+related_pages:
+    - map-layers.md
+    - included-infrastructure-types.md
 tags:
     - Assistant
 ---
@@ -35,32 +38,33 @@ tags:
 
 ## Short Answer
 
-TODO
+The current viewer legend uses colors to distinguish Sidewalk, Crossing Marked, Crossing Unmarked, Footway, Kerb Lowered, Kerb Flushed, Kerb Raised, Traffic Island, and Others.
 
 ## Significance
 
-TODO
+Colors help users identify feature types quickly while exploring a dense map.
 
 ## What This Means
 
-TODO
+The supplied current legend shows light blue for Sidewalk, pale yellow for Crossing Marked, pale tan for Crossing Unmarked, dark green for Footway, teal for Kerb Lowered, dark blue-purple for Kerb Flushed, magenta-purple for Kerb Raised, violet for Traffic Island, and gray for Others.
 
 ## What This Does Not Mean
 
-TODO
+A color identifies the viewer category, not the quality, safety, accessibility, or legal status of a feature.
 
 ## How To Use This
 
-TODO
+Use the legend together with the selected feature's attributes and dataset metadata.
 
 ## Example
 
-TODO
+A user sees a magenta-purple line and checks the legend and popup before deciding whether it represents a raised kerb.
 
 ## Assistant Guidance
 
-TODO
+If colors differ from this description, treat the live viewer legend as authoritative and report the viewer version or screenshot.
 
 ## Related Concepts
 
-TODO
+- [What are the different map layers?](map-layers.md)
+- [What feature types are included?](included-infrastructure-types.md)

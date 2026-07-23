@@ -51,11 +51,11 @@ Whether an `ext:` field is retained, shared, or released is a dataset-stewardshi
 
 ## Significance
 
-Source data may contain local maintenance or planning information that is useful to retain but is not a standard OpenSidewalks attribute. The `ext:` convention preserves that distinction and supports clearer dataset lineage.
+Source data may contain local maintenance or planning information that is useful to retain but is not a standard OpenSidewalks attribute. The `ext:` convention preserves that distinction, supports regional flexibility, and supports clearer dataset lineage.
 
 ## What This Means
 
-- Map standardized information to the applicable OpenSidewalks core fields.
+- Map standardized information to the applicable OpenSidewalks core fields; `ext:` fields do not replace semantic mapping.
 - Prefix retained partner-specific keys with `ext:`.
 - Review external fields independently when creating a derivative or release dataset.
 - Confirm supported names, types, and consumer behavior against the current schema and tools.

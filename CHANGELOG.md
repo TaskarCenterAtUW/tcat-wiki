@@ -11,7 +11,7 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/),
 
 ### Features
 
-- **Core**: Bump Zensical to 0.0.51
+- **Core**:
 - **Docs**:
 
 ### Fixes
@@ -20,6 +20,18 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/),
 - **Docs**:
 
 -->
+
+## v14.2.0 (2026-07-22)
+
+### Features
+
+- **Core**: Bump Zensical to 0.0.51
+- **Docs**: Ingest TCAT Office Hours transcripts into Assistant Knowledge Base content
+- **Docs**: Ingest TCAT Wiki content into Assistant Knowledge Base content
+
+### Fixes
+
+- **Core**: Improve transcript compression utility's filtering of filler speech patterns
 
 ## v14.1.0 (2026-07-16)
 

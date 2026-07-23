@@ -32,11 +32,10 @@ assistant_behavior:
         - QR codes or invitation links automatically expire or can be revoked from the UI
         - Creating a team is required before editing or viewing a workspace
 related_pages:
-    - assistant/workflows/workspaces/create-a-workspace-from-tdei.md
-    - assistant/workflows/workspaces/edit-accessibility-features-in-a-workspace.md
-    - assistant/workflows/workspaces/configure-imagery-layers.md
-    - assistant/concepts/workspaces/project-groups.md
-    - assistant/questions/workspaces/how-do-team-invitations-work.md
+    - assistant/workspaces/workflow/create-workspace-from-tdei-dataset.md
+    - assistant/workspaces/workflow/edit-accessibility-features-in-a-workspace.md
+    - assistant/workspaces/workflow/configure-imagery-layers.md
+    - assistant/tdei/concept/project-group.md
     - workspaces/index.md
     - workspaces/user-manual/workspace-settings.md
 tags:
@@ -49,13 +48,13 @@ tags:
 
 ## Short Answer
 
-Workspaces uses **Teams** as an **attribution label** to track which group of collaborators made which edits. Teams are not an access-control or permission system — they let managers differentiate activity (for example "Team 1 worked on Task A; Team 2 worked on Task B"). To create a team: open Workspaces, log in, switch to the correct project group if needed, select the workspace, open **Settings**, navigate to the **Teams** section, select **New Team**, enter a name, and select **Create**. A **QR code** and shareable link are then available so contributors can associate themselves with that team and have their edits attributed accordingly.
+The stage Workspaces interface includes a **Teams** section where a manager can create a team and open a QR/share dialog. The observed interface does not establish whether teams control access, associate contributors, attribute edits, or support review filtering. To inspect the available controls: open Workspaces, log in, switch to the correct project group if needed, select the workspace, open **Settings**, navigate to the **Teams** section, select **New Team**, enter a name, and select **Create**.
 
 > ⚠️ **This feature is currently deployed on the stage environment only.** Teams functionality is not yet available on the production Workspaces site. Confirm the current deployment status with TCAT before directing users to this workflow.
 
 ## Significance
 
-Workspaces supports multi-user editing where different groups may work on different tasks within the same workspace — for example, one team surveys curb ramps while another maps sidewalk connectivity. Teams provide an attribution mechanism so managers can distinguish which edits came from which group, without mixing the two scopes of work in the review or changeset view. The QR code and shareable link make it easy for contributors to join the team that matches their assigned task.
+Workspaces supports multi-user editing, and the stage interface exposes a Teams control. The available evidence confirms the control sequence and a QR/share dialog, but does not confirm the feature's operational semantics or production availability.
 
 Teams are **separate from** TDEI Project Group membership and roles (RBAC). Project groups are a TDEI-level organizational structure; workspace teams are simply labels on edits for attribution and differentiation.
 
@@ -75,7 +74,7 @@ Teams are **separate from** TDEI Project Group membership and roles (RBAC). Proj
 4. **Open Settings** for that workspace.
 5. **Switch to the Teams section** in the settings panel.
 
-    _The following steps are confirmed from the stage environment:_
+    _The following controls were observed in the stage environment; their operational effect is not confirmed:_
 
 6. Select the **New Team** button.
 7. In the **"Create a Team"** popup, enter a **Team Name**.
@@ -87,21 +86,14 @@ Teams are **separate from** TDEI Project Group membership and roles (RBAC). Proj
     - **Download QR Code** button to save the QR image.
     - **Close** button to dismiss the popup.
 
-Example link format:
-
-```
-https://workspaces-stage.sidewalks.washington.edu/workspace/1893/teams/7
-```
-
-Once contributors scan the QR code or follow the link and log in, their subsequent edits in that workspace are attributed to that team. Managers can then filter or review edits by team in the changeset or review views.
+The observed dialog includes a QR code, a shareable link, a **Download QR Code** button, and a **Close** button. Do not infer from these controls that contributor association, edit attribution, permissions, or review filtering is available.
 
 ## What This Does Not Mean
 
-- **Not an access-control mechanism** — Teams do not grant or revoke permissions to edit a workspace. They are attribution labels only. Contributors do not need to join a team to edit; teams simply let managers differentiate who did what.
-- **Not a role or permission system** — Workspace teams are separate from the TDEI RBAC system (roles, project group memberships). See [Review workspace edits](review-workspace-edits.md) for the review/changeset UI.
-- **Not the same as TDEI Project Groups** — Project groups are a TDEI-level organizational structure (see [Project groups](../concept/project-groups.md)). Workspace teams are workspace-scoped attribution labels and are independent of project group membership.
-- **Not a permanent authentication credential** — Sharing a link or QR code is an attribution aid, not a password, API key, or permission grant.
-- **Not required for solo editing** — You can edit a workspace without creating or joining any team. Teams are only needed when you want to differentiate activity between groups.
+- **Not confirmed as an access-control mechanism** — The observed stage interface does not establish whether Teams grant or revoke permissions.
+- **Not confirmed as a role or permission system** — Do not equate Teams with TDEI roles or project-group membership without current product documentation.
+- **Not confirmed as an attribution system** — The observed QR/share dialog does not establish how edits or contributors are recorded.
+- **Not a basis for credential assumptions** — Do not treat a QR code or link as a password, API key, or permission grant.
 - **Not available in production yet** — This workflow is only on the stage environment. Confirm deployment status before directing users.
 
 ## How To Use This
@@ -113,30 +105,25 @@ Once contributors scan the QR code or follow the link and log in, their subseque
 3. Open **Settings → Teams**.
 4. Create a team with a descriptive name (for example "Curb Ramp Survey - Team A").
 5. Share the **QR code** or **link** with the contributors assigned to that task.
-6. Contributors scan the QR code or open the link to associate themselves with the team.
-7. Their edits are now attributed to that team in the Workspaces review view.
+6. Confirm the current behavior with TCAT before distributing the QR code or link or relying on it for project operations.
 
 **Practical tips for managers**
 
-- Name teams according to the task or scope they are assigned to (for example by geography, feature type, or shift), so the attribution is meaningful in review.
-- You can create multiple teams per workspace — for example "Team 1 - Downtown Sidewalks" and "Team 2 - Downtown Crossings"—to separate workstreams.
-- The shared link follows the format `https://workspaces-stage.sidewalks.washington.edu/workspace/{id}/teams/{team_id}` — you can copy and send it through email, chat, or printed materials.
-- Download the QR code for physical handouts at events or field meetings.
+- Use descriptive team names only if the feature's intended operational use has been confirmed.
+- Do not rely on the displayed link or QR code for access, attribution, or review workflows until those behaviors are documented.
 - Confirm with TCAT whether this feature has been promoted to production before publishing instructions that reference the stage URL.
 
 ## Example
 
-A transit agency creates a workspace for a downtown accessibility survey. The project lead creates two teams in **Settings → Teams**: "Team 1 - Curb Ramps" and "Team 2 - Sidewalk Connectivity." At an event, Team 1 volunteers scan the QR code for their team and field-edit curb ramp data in AVIV ScoutRoute; Team 2 volunteers scan a different QR code and map sidewalk connections. Later, the manager opens the review view, filters by team, and inspects each group's changesets separately — seeing clearly which edits came from which team without having to ask contributors to self-report their assignments.
+A transit agency inspects the stage Teams interface while preparing a downtown accessibility survey. The project lead opens **Settings → Teams**, creates a team, and records the controls displayed in the resulting QR/share dialog. The agency confirms the intended semantics with TCAT before distributing the link or using the feature for field operations.
 
 ## Assistant Guidance
 
 - **Always confirm deployment status** before directing users to this workflow. The feature is on stage only as of June 2026; do not assume production availability.
 - If a user asks about inviting teams on the production site, state clearly that the feature is not yet deployed there and suggest they confirm with TCAT.
-- **Teams are attribution labels, not access control.** If a user asks whether team invites grant edit permissions, clarify the distinction.
-- Distinguish **workspace teams** from **TDEI Project Groups** when users confuse the two concepts. Link to the [Project groups](../concept/project-groups.md) concept page.
-- The example link (`workspaces-stage.sidewalks.washington.edu/workspace/1893/teams/7`) is illustrative; workspace and team IDs will differ per workspace. Do not hardcode specific IDs in answers.
-- For questions about review and filtering by team, refer to [Review workspace edits](review-workspace-edits.md).
-- The [How do team invitations work?](../concept/team-invitations.md) question stub is a companion page for assistant Q&A — link there when a user asks a direct question about team invitations.
+- Do not claim that Teams provide access control, contributor association, edit attribution, or review filtering until those behaviors are confirmed.
+- Distinguish **workspace teams** from **TDEI Project Groups** and avoid inferring a relationship from the stage UI.
+- Do not reproduce a specific stage workspace/team URL in answers.
 
 ## Related Concepts
 

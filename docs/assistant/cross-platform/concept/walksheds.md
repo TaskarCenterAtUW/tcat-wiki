@@ -25,9 +25,9 @@ assistant_behavior:
     do_not_claim:
         - A walkshed guarantees safety or optimal school placement.
 related_pages:
-    - assistant/questions/walksheds/what-is-a-walkshed.md
-    - assistant/questions/walksheds/how-are-walksheds-calculated.md
-    - assistant/workflows/use-walksheds-for-safe-routes-to-school.md
+    - assistant/walksheds/concept/walkshed.md
+    - assistant/walksheds/concept/walkshed-application-architecture.md
+    - assistant/cross-platform/workflow/use-walksheds-for-safe-routes-to-school.md
 tags:
     - Assistant
 ---

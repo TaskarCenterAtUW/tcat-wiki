@@ -26,8 +26,8 @@ assistant_behavior:
     do_not_claim:
         - AccessMap always picks the objectively best route for every user in the real world.
 related_pages:
-    - assistant/questions/accessmap/why-does-accessmap-choose-longer-routes.md
-    - assistant/questions/accessmap/how-do-mobility-profiles-work.md
+    - assistant/accessmap/concept/accessible-routes-appear-longer.md
+    - assistant/accessmap/concept/mobility-profiles.md
 tags:
     - Assistant
 ---

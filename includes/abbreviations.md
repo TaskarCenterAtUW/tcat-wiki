@@ -127,6 +127,7 @@
 *[MCP]: Model Context Protocol
 *[MDIP]: Mobility Data Interoperability Principles
 *[MDOT]: Michigan Department of Transportation
+*[MEF]: Maximum Extent Feasible
 *[MGRS]: Military Grid Reference System
 *[MIC]: Manufacturing Industrial Center
 *[MIRE]: Model Inventory of Roadway Elements
