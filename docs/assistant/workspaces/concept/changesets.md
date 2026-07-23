@@ -54,7 +54,7 @@ Changesets provide the audit trail for every modification made inside a Workspac
 - Every upload of edits to a workspace creates exactly one changeset, grouping all the modifications from that upload session.
 - A changeset can include any mix of edit types — geometry adjustments and attribute updates — across multiple features.
 - Changeset metadata typically includes the editor's identity, a timestamp, a user-supplied comment describing the purpose of the edits, and references to the imagery or data sources used.
-- Changesets are visible to workspace members through the review interface and editor history panels, where reviewers can inspect individual edit details.
+- Changesets are visible to workspace members through the review interface and editor history panels, where reviewers can inspect individual edit details. Android-originated changesets with an open or invalid closed date may require current-version troubleshooting.
 - Changesets are the unit of review: a manager or reviewer can open a changeset, examine each edit within it, and accept or flag issues before the workspace is exported to TDEI.
 
 ## What This Does Not Mean

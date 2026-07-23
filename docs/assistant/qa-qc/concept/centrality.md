@@ -37,32 +37,32 @@ tags:
 
 ## Short Answer
 
-TODO
+Centrality describes the relative importance of a feature within the mapped pedestrian graph. In these reports, it is measured on analysis units centered on pedestrian-network nodes or endpoints.
 
 ## Significance
 
-TODO
+It helps identify connected, depended-on, or influential parts of the network.
 
 ## What This Means
 
-TODO
+Different centrality metrics answer different questions, such as direct connections, route dependence, or connections to important neighbors.
 
 ## What This Does Not Mean
 
-TODO
+Centrality does not by itself measure safety, demand, condition, ADA compliance, or project priority.
 
 ## How To Use This
 
-TODO
+Read the metric definition and unit before interpreting a value.
 
 ## Example
 
-TODO
+Node betweenness can highlight an intersection through which many modeled routes pass, while degree centrality counts direct links.
 
 ## Assistant Guidance
 
-TODO
+Ask which centrality metric and dataset version are involved. Do not treat centrality terms as interchangeable.
 
 ## Related Concepts
 
-TODO
+- [How do QA/QC centrality metrics differ?](centrality-metric-selection.md)

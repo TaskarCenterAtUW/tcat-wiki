@@ -1,9 +1,9 @@
 ---
-title: 'What does "path count" mean?'
+title: 'What does "path count" mean in QA/QC reports?'
 slug: path-count
 doc_type: concept
 questions:
-    - What does "path count" mean?
+    - What does path count mean in QA/QC reports?
 audiences:
     - planner
     - jurisdiction
@@ -15,9 +15,11 @@ products:
 topics:
     - qa-qc
     - os-connect
+    - walksheds
+    - accessibility-metrics
 risk_level: medium
-authority_level: explanatory
-publication_status: stub
+authority_level: provisional
+publication_status: draft
 last_reviewed: ""
 retrieval_priority: high
 assistant_behavior:
@@ -32,36 +34,36 @@ tags:
 
 <!-- @format -->
 
-# What does "path count" mean?
+# What does "path count" mean in QA/QC reports?
 
 ## Short Answer
 
-TODO
+Path count is the number of deduplicated mapped features reachable within merged POI-origin walksheds for a profile.
 
 ## Significance
 
-TODO
+It summarizes reachable network elements rather than the total inventory.
 
 ## What This Means
 
-TODO
+Counts can include sidewalks, crossings, curbs, and related features within the modeled walksheds.
 
 ## What This Does Not Mean
 
-TODO
+An overlapping feature is not counted once for every POI, and the value is not a citywide count of every feature.
 
 ## How To Use This
 
-TODO
+Read the count with its profile, POI set, budget, and dataset version.
 
 ## Example
 
-TODO
+A sidewalk reached from two nearby POIs contributes once after overlapping walksheds are merged.
 
 ## Assistant Guidance
 
-TODO
+Distinguish path count from total feature count and ask which profile and origins were used.
 
 ## Related Concepts
 
-TODO
+- [What are the limits of POI-origin walkshed analysis?](../../walksheds/concept/poi-origin-analysis-limits.md)

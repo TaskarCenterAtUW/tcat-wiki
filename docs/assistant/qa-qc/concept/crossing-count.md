@@ -1,9 +1,9 @@
 ---
-title: 'What does "crossing count" mean?'
+title: 'What does "crossing count" mean in QA/QC reports?'
 slug: crossing-count
 doc_type: concept
 questions:
-    - What does "crossing count" mean?
+    - What does crossing count mean in QA/QC reports?
 audiences:
     - planner
     - jurisdiction
@@ -15,9 +15,11 @@ products:
 topics:
     - qa-qc
     - os-connect
+    - walksheds
+    - crossings
 risk_level: medium
-authority_level: explanatory
-publication_status: stub
+authority_level: provisional
+publication_status: draft
 last_reviewed: ""
 retrieval_priority: high
 assistant_behavior:
@@ -32,36 +34,36 @@ tags:
 
 <!-- @format -->
 
-# What does "crossing count" mean?
+# What does "crossing count" mean in QA/QC reports?
 
 ## Short Answer
 
-TODO
+Crossing count is the number of deduplicated crossings reachable within merged POI-origin walksheds for a profile.
 
 ## Significance
 
-TODO
+It describes reachable crossing infrastructure rather than the complete crossing inventory.
 
 ## What This Means
 
-TODO
+Interpret the value with the profile, origins, budget, and dataset version.
 
 ## What This Does Not Mean
 
-TODO
+Overlapping walksheds do not multiply-count the same crossing, and the value is not the citywide crossing total.
 
 ## How To Use This
 
-TODO
+Compare crossing counts only when the walkshed inputs are comparable.
 
 ## Example
 
-TODO
+A crossing reachable from several nearby POIs contributes once after the walksheds are merged.
 
 ## Assistant Guidance
 
-TODO
+Distinguish reachable crossing count from total crossing count.
 
 ## Related Concepts
 
-TODO
+- [What does path count mean in QA/QC reports?](path-count.md)

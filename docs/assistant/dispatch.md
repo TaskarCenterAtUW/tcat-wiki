@@ -27,7 +27,7 @@ topics:
 risk_level: low
 authority_level: official
 publication_status: draft
-last_reviewed: 2026-07-16
+last_reviewed: 2026-07-22
 retrieval_priority: high
 assistant_behavior:
     allow_inference: false
@@ -100,8 +100,8 @@ This page should be fetched fresh rather than cached aggressively; its registry 
 
 | Status | Count | Meaning |
 | :----- | ----: | :------ |
-| `stub` | 500 | Frontmatter and heading scaffold exist; body is `TODO` |
-| `draft` | 34 | Content authored; awaiting TCAT editorial review |
+| `stub` | 457 | Frontmatter and heading scaffold exist; body is `TODO` |
+| `draft` | 309 | Content authored; awaiting TCAT editorial review |
 | `published` | 1 | Available in the human-facing site |
 | `archived` | 0 | Retained for agents but not published |
 
@@ -122,22 +122,26 @@ Base: `assistant/accessmap/concept/`
 | `accessibility-needs.md` | stub |
 | `accessibility-preference-routing.md` | stub |
 | `accessible-routes-appear-longer.md` | stub |
-| `accessmap.md` | stub |
+| `accessmap.md` | draft |
 | `ada-compliance-support.md` | stub |
 | `agency-routing-customization.md` | stub |
 | `avoid-missing-curb-ramps.md` | stub |
 | `avoid-steep-slopes.md` | stub |
-| `blind-low-vision-support.md` | stub |
+| `blind-low-vision-support.md` | draft |
 | `campus-accessibility.md` | stub |
+| `combined-crossing-accessibility.md` | draft |
 | `community-accessibility-priorities.md` | stub |
 | `comparison-apple-maps.md` | stub |
 | `construction-routing-effect.md` | stub |
+| `coverage-outside-washington.md` | draft |
 | `critical-pedestrian-corridors.md` | stub |
+| `crossing-links.md` | draft |
 | `curb-ramp-routing.md` | stub |
-| `data-sources.md` | stub |
+| `data-sources.md` | draft |
 | `disconnected-sidewalks.md` | stub |
 | `emergency-planning.md` | stub |
 | `explaining-metrics-publicly.md` | stub |
+| `feature-feedback.md` | draft |
 | `field-validation.md` | stub |
 | `google-maps-comparison.md` | stub |
 | `google-maps-design-rationale.md` | stub |
@@ -160,8 +164,10 @@ Base: `assistant/accessmap/concept/`
 | `planned-capabilities.md` | stub |
 | `powered-wheelchair-support.md` | stub |
 | `prioritization-metrics.md` | stub |
+| `profile-responsive-map.md` | draft |
 | `public-engagement.md` | stub |
-| `route-calculation.md` | stub |
+| `route-calculation.md` | draft |
+| `route-planning-and-navigation.md` | draft |
 | `route-reliability.md` | stub |
 | `routing-limitations.md` | stub |
 | `routing-profiles.md` | stub |
@@ -170,7 +176,7 @@ Base: `assistant/accessmap/concept/`
 | `school-use.md` | stub |
 | `slope-routing.md` | stub |
 | `steep-slopes-effect.md` | stub |
-| `temporary-barriers.md` | stub |
+| `temporary-barriers.md` | draft |
 | `tourism-accessibility.md` | stub |
 | `transit-pedestrian-routing-integration.md` | stub |
 | `transit-wayfinding.md` | stub |
@@ -182,8 +188,10 @@ Base: `assistant/accessmap/workflow/`
 
 | File | Status |
 | :--- | :----- |
+| `follow-a-route-with-location.md` | draft |
+| `plan-and-share-a-route.md` | draft |
 | `prioritize-pedestrian-investments.md` | stub |
-| `report-routing-problems.md` | stub |
+| `report-routing-problems.md` | draft |
 | `validate-routing-results.md` | stub |
 
 ## AVIV ScoutRoute — Assistant Knowledge Base
@@ -196,7 +204,24 @@ Base: `assistant/aviv-scoutroute/concept/`
 
 | File | Status |
 | :--- | :----- |
-| `quest.md` | stub |
+| `app-enabled-workspaces.md` | draft |
+| `aviv-scoutroute.md` | draft |
+| `conditional-team-questions.md` | draft |
+| `field-observation.md` | draft |
+| `group-quest-selection.md` | draft |
+| `numeric-quest-input.md` | draft |
+| `numeric-quest-validation.md` | draft |
+| `offline-data-and-upload.md` | draft |
+| `quest-contributions.md` | draft |
+| `quest-definition-application.md` | draft |
+| `quest-definition-element-icons.md` | draft |
+| `quest-definition-element-targeting.md` | draft |
+| `quest-definition-picture-questions.md` | draft |
+| `quest-definition-query-syntax.md` | draft |
+| `quest-dependency-evaluators.md` | draft |
+| `quest-input-types.md` | draft |
+| `quest-visibility-and-local-state.md` | draft |
+| `quest.md` | draft |
 
 ### Workflows
 
@@ -204,7 +229,14 @@ Base: `assistant/aviv-scoutroute/workflow/`
 
 | File | Status |
 | :--- | :----- |
-| `answer-quest.md` | stub |
+| `answer-quest.md` | draft |
+| `complete-and-submit-a-quest.md` | draft |
+| `design-conditional-follow-up-quests.md` | draft |
+| `install-aviv-scoutroute.md` | draft |
+| `join-a-project-and-find-quests.md` | draft |
+| `manage-quest-visibility.md` | draft |
+| `undo-a-quest-submission.md` | draft |
+| `update-quest-definition-in-workspace.md` | draft |
 
 ## Cross-Platform — Assistant Knowledge Base
 
@@ -225,10 +257,20 @@ Base: `assistant/cross-platform/concept/`
 | `completeness.md` | draft |
 | `connected-pedestrian-graph.md` | draft |
 | `data-freshness.md` | draft |
+| `data-viewer-portal-workspaces-relationship.md` | draft |
+| `documentation-audience-baseline.md` | draft |
+| `documentation-guide-types.md` | draft |
+| `help-desk-questions-as-knowledge-sources.md` | draft |
 | `how-should-ai-outputs-be-validated.md` | stub |
+| `knowledge-base-domain-review.md` | draft |
+| `mobile-and-web-validation-differences.md` | draft |
 | `public-vs-internal-content.md` | draft |
+| `qa-qc-report-audience.md` | draft |
+| `rural-pedestrian-data-value.md` | draft |
+| `topic-based-assistant-content.md` | draft |
 | `walksheds.md` | draft |
 | `what-are-the-risks-of-automated-accessibility-analysis.md` | stub |
+| `workspaces-user-audience.md` | draft |
 
 ### Workflows
 
@@ -236,6 +278,8 @@ Base: `assistant/cross-platform/workflow/`
 
 | File | Status |
 | :--- | :----- |
+| `report-product-issues.md` | draft |
+| `review-assistant-article-stubs.md` | draft |
 | `review-community-feedback.md` | draft |
 | `support-answer-patterns.md` | draft |
 | `update-jurisdiction-data.md` | draft |
@@ -313,7 +357,25 @@ Base: `assistant/opensidewalks/concept/`
 
 | File | Status |
 | :--- | :----- |
-| `opensidewalks-schema.md` | stub |
+| `adjacent-and-custom-entities.md` | draft |
+| `connector-segment-tagging.md` | draft |
+| `coordinate-system-and-serialization.md` | draft |
+| `dataset-metadata-and-provenance.md` | draft |
+| `ext-attributes-and-regional-flexibility.md` | draft |
+| `external-attributes.md` | draft |
+| `external-data-overlay-boundary.md` | draft |
+| `mapping-imagery-limitations.md` | draft |
+| `maximum-extent-feasible.md` | draft |
+| `network-entities.md` | draft |
+| `network-topology.md` | draft |
+| `opensidewalks-schema.md` | draft |
+| `opensidewalks.md` | draft |
+| `point-and-line-feature-workflows.md` | draft |
+| `regional-dataset-derivatives.md` | draft |
+| `roadside-surface-preferences.md` | draft |
+| `tasking-manager-roles.md` | draft |
+| `tdei-schema-validation.md` | draft |
+| `workspace-editing-tools.md` | draft |
 
 ### Workflows
 
@@ -321,7 +383,12 @@ Base: `assistant/opensidewalks/workflow/`
 
 | File | Status |
 | :--- | :----- |
-| `find-latest-version.md` | stub |
+| `add-custom-points-to-osw.md` | draft |
+| `convert-sidewalk-centerlines-to-osw.md` | draft |
+| `find-latest-version.md` | draft |
+| `generate-task-polygons.md` | draft |
+| `map-osw-features-in-tasking-manager.md` | draft |
+| `validate-osw-tasking-manager-edits.md` | draft |
 
 ## OS-CONNECT — Assistant Knowledge Base
 
@@ -355,7 +422,7 @@ Base: `assistant/os-connect/concept/`
 | `ai-infrastructure-prioritization.md` | stub |
 | `ai-sidewalk-quality-estimation.md` | stub |
 | `ai-stewardship-assistance.md` | stub |
-| `attribute-documentation-location.md` | stub |
+| `attribute-documentation-location.md` | draft |
 | `automated-data-risks.md` | stub |
 | `automated-system-limitations.md` | stub |
 | `batch-correction-alternatives.md` | stub |
@@ -363,6 +430,7 @@ Base: `assistant/os-connect/concept/`
 | `bus-stop-planning.md` | stub |
 | `campus-handling.md` | stub |
 | `capital-planning.md` | stub |
+| `centrality-metrics.md` | draft |
 | `common-errors.md` | stub |
 | `community-comment-review.md` | stub |
 | `community-correction-contribution.md` | stub |
@@ -373,17 +441,18 @@ Base: `assistant/os-connect/concept/`
 | `community-gap-identification.md` | stub |
 | `community-participation-pathways.md` | stub |
 | `community-validation-role.md` | stub |
-| `completeness-score-interpretation.md` | stub |
+| `completeness-score-interpretation.md` | draft |
 | `completeness-vs-ada-compliance.md` | draft |
 | `complex-intersection-handling.md` | stub |
 | `confidence-measures.md` | stub |
 | `conflicting-data-sources.md` | stub |
+| `connectivity-depends-on-geometry.md` | draft |
 | `construction-changes.md` | stub |
 | `context-aware-routing.md` | stub |
 | `coordinate-system.md` | stub |
 | `correction-confirmation.md` | stub |
 | `correction-propagation.md` | stub |
-| `correction-release-lag.md` | stub |
+| `correction-release-lag.md` | draft |
 | `correction-tracking.md` | stub |
 | `correction-validation.md` | stub |
 | `county-update-coordination.md` | stub |
@@ -407,20 +476,20 @@ Base: `assistant/os-connect/concept/`
 | `disconnected-sidewalk-identification.md` | stub |
 | `elevation-routing-effects.md` | stub |
 | `excluded-infrastructure-types.md` | stub |
-| `feature-selection-display.md` | stub |
+| `feature-selection-display.md` | draft |
 | `field-validation-role.md` | stub |
 | `field-validation.md` | stub |
-| `geographic-coverage.md` | stub |
+| `geographic-coverage.md` | draft |
 | `gis-software-compatibility.md` | stub |
 | `governance-models.md` | stub |
 | `gtfs-pathways-generation.md` | stub |
 | `human-review.md` | stub |
 | `imagery-role.md` | stub |
 | `inaccessible-area-reporting.md` | stub |
-| `included-infrastructure-types.md` | stub |
+| `included-infrastructure-types.md` | draft |
 | `incomplete-coverage.md` | stub |
 | `interoperable-accessibility-ecosystem.md` | stub |
-| `intersection-attributes.md` | stub |
+| `intersection-attributes.md` | draft |
 | `issue-report-auto-update.md` | stub |
 | `issue-report-follow-up.md` | stub |
 | `issue-report-reviewers.md` | stub |
@@ -438,8 +507,8 @@ Base: `assistant/os-connect/concept/`
 | `machine-learning-role.md` | stub |
 | `major-event-accessibility-planning.md` | stub |
 | `manual-wheelchair-profile.md` | stub |
-| `map-color-legend.md` | stub |
-| `map-layers.md` | stub |
+| `map-color-legend.md` | draft |
+| `map-layers.md` | draft |
 | `mapper-training-materials.md` | stub |
 | `mapping-prioritization.md` | stub |
 | `mapwithai-workflow-history.md` | stub |
@@ -471,9 +540,9 @@ Base: `assistant/os-connect/concept/`
 | `os-connect-tdei-relationship.md` | stub |
 | `os-connect-vs-openstreetmap.md` | stub |
 | `os-connect-vs-traditional-inventories.md` | stub |
-| `os-connect.md` | stub |
+| `os-connect.md` | draft |
 | `outdated-data-handling.md` | stub |
-| `outdated-imagery.md` | stub |
+| `outdated-imagery.md` | draft |
 | `participatory-accessibility-mapping.md` | stub |
 | `participatory-mapping.md` | stub |
 | `partnership-needs.md` | stub |
@@ -488,9 +557,10 @@ Base: `assistant/os-connect/concept/`
 | `post-collection-next-steps.md` | stub |
 | `private-facilities.md` | stub |
 | `public-data-value.md` | stub |
-| `qa-qc-report.md` | stub |
+| `qa-qc-report-infrastructure.md` | draft |
+| `qa-qc-report.md` | draft |
 | `recommended-sidewalk-tagging-pattern.md` | stub |
-| `reportable-errors.md` | stub |
+| `reportable-errors.md` | draft |
 | `required-vs-recommended-attributes.md` | stub |
 | `resident-participation.md` | stub |
 | `routable-graph.md` | stub |
@@ -526,12 +596,12 @@ Base: `assistant/os-connect/concept/`
 | `update-responsibility.md` | stub |
 | `urban-map-density.md` | stub |
 | `urgent-correction-process.md` | stub |
-| `viewer-overview.md` | stub |
-| `viewer-vs-tdei-portal.md` | stub |
+| `viewer-overview.md` | draft |
+| `viewer-vs-tdei-portal.md` | draft |
 | `vision-zero.md` | stub |
 | `volunteer-data-contribution.md` | stub |
 | `walkshed-advocacy.md` | stub |
-| `walkshed-metrics.md` | stub |
+| `walkshed-metrics.md` | draft |
 | `washington-lessons.md` | stub |
 | `width-attribute.md` | stub |
 | `workflow-improvement-areas.md` | stub |
@@ -544,10 +614,11 @@ Base: `assistant/os-connect/workflow/`
 | File | Status |
 | :--- | :----- |
 | `connect-to-gis.md` | stub |
-| `download-data.md` | stub |
+| `download-data.md` | draft |
 | `import-into-arcgis.md` | stub |
-| `report-data-error.md` | stub |
-| `search-for-jurisdiction.md` | stub |
+| `report-connectivity-data-error.md` | draft |
+| `report-data-error.md` | draft |
+| `search-for-jurisdiction.md` | draft |
 
 ## QA/QC — Assistant Knowledge Base
 
@@ -560,17 +631,60 @@ Base: `assistant/qa-qc/concept/`
 | File | Status |
 | :--- | :----- |
 | `accessibility-island.md` | stub |
+| `attribute-completeness.md` | draft |
+| `attribute-presence-vs-feature-completeness.md` | draft |
+| `before-after-walkshed-analysis.md` | draft |
+| `bottleneck-hotspots.md` | draft |
+| `centrality-and-redundancy.md` | draft |
+| `centrality-metric-selection.md` | draft |
+| `centrality-sampling-and-repeatability.md` | draft |
+| `centrality-tile-generation.md` | draft |
 | `centrality.md` | stub |
 | `completeness-vs-accessibility-gaps.md` | stub |
 | `completeness.md` | stub |
+| `conditional-attribute-completeness.md` | draft |
 | `connected-pedestrian-graph.md` | stub |
-| `crossing-count.md` | stub |
+| `crossing-count.md` | draft |
+| `curb-completeness-metrics.md` | draft |
+| `degree-centrality.md` | draft |
+| `edge-betweenness-centrality.md` | draft |
 | `edge-betweenness-operational-use.md` | stub |
 | `edge-betweenness.md` | stub |
+| `eigenvector-centrality-display.md` | draft |
+| `eigenvector-centrality-interpretation.md` | draft |
+| `eigenvector-centrality-network-importance.md` | draft |
 | `eigenvector-centrality.md` | stub |
+| `field-verification-hotspots.md` | draft |
+| `intersection-quality-metric.md` | draft |
+| `local-poi-corrections.md` | draft |
+| `metric-boundaries.md` | draft |
+| `metric-coverage-and-interpretation.md` | draft |
+| `node-betweenness-centrality.md` | draft |
+| `node-betweenness-operational-use.md` | draft |
 | `node-centrality-operational-use.md` | stub |
-| `path-count.md` | stub |
+| `path-count.md` | draft |
+| `poi-density-and-prioritization.md` | draft |
+| `point-of-interest-sources.md` | draft |
+| `presence-percent.md` | draft |
+| `project-completeness-standard.md` | draft |
+| `project-completeness-vs-ada-compliance.md` | draft |
+| `projection-for-walkshed-lengths.md` | draft |
+| `qa-qc-analysis-limitations.md` | draft |
 | `qa-qc-limitations.md` | draft |
+| `qa-qc-visual-accessibility.md` | draft |
+| `quality-metrics-and-local-priorities.md` | draft |
+| `quality-scoring-boundaries.md` | draft |
+| `report-data-sources.md` | draft |
+| `report-feature-counts-and-lengths.md` | draft |
+| `report-glossary.md` | draft |
+| `report-map-interpretation.md` | draft |
+| `report-provenance.md` | draft |
+| `report-purpose-and-limitations.md` | draft |
+| `report-scope-by-jurisdiction.md` | draft |
+| `small-dataset-limitations.md` | draft |
+| `task-grid-overlays.md` | draft |
+| `walkshed-profile-assumptions.md` | draft |
+| `walkshed-profile-comparison.md` | draft |
 
 ### Workflows
 
@@ -579,6 +693,8 @@ Base: `assistant/qa-qc/workflow/`
 | File | Status |
 | :--- | :----- |
 | `identify-accessibility-islands.md` | stub |
+| `interpret-report-sections.md` | draft |
+| `use-report-for-ada-planning.md` | draft |
 
 ## Rapid — Assistant Knowledge Base
 
@@ -656,17 +772,49 @@ Base: `assistant/tdei/concept/`
 
 | File | Status |
 | :--- | :----- |
+| `api-key-rotation.md` | draft |
+| `dataset-download-formats.md` | draft |
 | `dataset-identifier.md` | stub |
-| `file-formats.md` | stub |
+| `dataset-level-vs-feature-level-operations.md` | draft |
+| `dataset-purpose-and-representation.md` | draft |
+| `dataset-version-selection.md` | draft |
+| `dataset-visibility.md` | draft |
+| `derived-dataset-lineage.md` | draft |
+| `environment-separation.md` | draft |
+| `external-attribute-release.md` | draft |
+| `feedback-management.md` | draft |
+| `file-formats.md` | draft |
 | `interoperability.md` | stub |
+| `interval-survey-points.md` | draft |
+| `job-confidence-calculation.md` | draft |
+| `job-dataset-tag-road.md` | draft |
+| `job-dataset-union.md` | draft |
+| `job-filter-dataset-by-bbox.md` | draft |
+| `job-flex-validate.md` | draft |
+| `job-osw-convert.md` | draft |
+| `job-osw-validate.md` | draft |
+| `job-pathways-validate.md` | draft |
+| `job-processing.md` | draft |
+| `job-quality-metric-ixn.md` | draft |
+| `job-quality-metric-tag.md` | draft |
+| `job-spatial-join.md` | draft |
+| `jurisdiction-dataset-coverage.md` | draft |
 | `mislabeled-dataset-handling.md` | stub |
 | `osw-download-contents.md` | stub |
 | `osw-edges-and-nodes.md` | stub |
 | `osw-vs-osm-format.md` | stub |
-| `project-group.md` | stub |
+| `portal-dashboard.md` | draft |
+| `project-group-roles.md` | draft |
+| `project-group.md` | draft |
 | `release-versioning.md` | stub |
+| `released-dataset-viewer.md` | draft |
 | `released-dataset.md` | stub |
-| `tdei.md` | stub |
+| `services-and-project-groups.md` | draft |
+| `source-and-derivative-datasets.md` | draft |
+| `tdei-architecture.md` | draft |
+| `tdei-job-processing.md` | draft |
+| `tdei-services.md` | draft |
+| `tdei.md` | draft |
 | `test-dataset-in-portal.md` | stub |
 
 ### Workflows
@@ -675,11 +823,19 @@ Base: `assistant/tdei/workflow/`
 
 | File | Status |
 | :--- | :----- |
-| `access-tdei-api.md` | stub |
+| `access-tdei-api.md` | draft |
 | `check-dataset-currency.md` | stub |
-| `download-data.md` | stub |
+| `conflate-jurisdiction-datasets.md` | draft |
+| `convert-geodatabase-to-osw-data.md` | draft |
+| `convert-osm-pbf-to-osw.md` | draft |
+| `create-and-monitor-tdei-job.md` | draft |
+| `download-data.md` | draft |
 | `download-os-connect-data.md` | draft |
+| `download-os-connect-dataset.md` | draft |
+| `integrate-external-geospatial-data.md` | draft |
+| `register-and-verify-tdei-account.md` | draft |
 | `use-tdei-portal.md` | draft |
+| `validate-osw-dataset.md` | draft |
 
 ## Walksheds — Assistant Knowledge Base
 
@@ -693,7 +849,7 @@ Base: `assistant/walksheds/concept/`
 | :--- | :----- |
 | `accessibility-islands.md` | stub |
 | `accessibility-profile-inequity-analysis.md` | stub |
-| `accessibility-profiles.md` | stub |
+| `accessibility-profiles.md` | draft |
 | `accuracy-vs-straight-line.md` | stub |
 | `ada-planning.md` | stub |
 | `barrier-incorporation.md` | stub |
@@ -723,6 +879,7 @@ Base: `assistant/walksheds/concept/`
 | `pedestrian-walkshed.md` | stub |
 | `planned-capabilities.md` | stub |
 | `planner-assumptions.md` | stub |
+| `poi-origin-analysis-limits.md` | draft |
 | `prioritization-workflows.md` | stub |
 | `profile-variation.md` | stub |
 | `public-explanation.md` | stub |
@@ -737,9 +894,37 @@ Base: `assistant/walksheds/concept/`
 | `uncertainty-communication.md` | stub |
 | `underserved-area-identification.md` | stub |
 | `vision-zero.md` | stub |
+| `walkshed-application-architecture.md` | draft |
+| `walkshed-attribute-availability.md` | draft |
+| `walkshed-batch-amenity-input.md` | draft |
+| `walkshed-batch-concurrency.md` | draft |
+| `walkshed-batch-failures.md` | draft |
+| `walkshed-batch-input.md` | draft |
+| `walkshed-batch-output.md` | draft |
+| `walkshed-batch-profiles.md` | draft |
 | `walkshed-calculation.md` | stub |
+| `walkshed-cost-factors.md` | draft |
+| `walkshed-cost-function.md` | draft |
+| `walkshed-custom-cost-function-contract.md` | draft |
+| `walkshed-custom-cost-functions.md` | draft |
+| `walkshed-data-connectivity.md` | draft |
+| `walkshed-data-issue-workflow.md` | draft |
+| `walkshed-default-cost-model.md` | draft |
+| `walkshed-edge-attributes.md` | draft |
+| `walkshed-edit-history.md` | draft |
+| `walkshed-edit-limitations.md` | draft |
+| `walkshed-feature-edits.md` | draft |
+| `walkshed-interface-organization.md` | draft |
 | `walkshed-limitations.md` | stub |
+| `walkshed-map-symbols.md` | draft |
+| `walkshed-point-features.md` | draft |
 | `walkshed-quality.md` | stub |
+| `walkshed-result-statistics.md` | draft |
+| `walkshed-router-building.md` | draft |
+| `walkshed-router-processing.md` | draft |
+| `walkshed-scenario-statistics.md` | draft |
+| `walkshed-scenarios.md` | draft |
+| `walkshed-travel-cost.md` | draft |
 | `walkshed-vs-buffer.md` | stub |
 | `walkshed.md` | draft |
 | `walksheds-tool.md` | stub |
@@ -751,7 +936,16 @@ Base: `assistant/walksheds/workflow/`
 
 | File | Status |
 | :--- | :----- |
-| `generate-walkshed.md` | stub |
+| `build-walkshed-router.md` | draft |
+| `compare-walkshed-profiles.md` | draft |
+| `create-walkshed-scenario.md` | draft |
+| `generate-walkshed.md` | draft |
+| `inspect-and-edit-walkshed-feature.md` | draft |
+| `model-infrastructure-change.md` | draft |
+| `run-batch-walksheds.md` | draft |
+| `run-walkshed-batch-from-csv.md` | draft |
+| `save-and-compare-walkshed-scenarios.md` | draft |
+| `select-walkshed-dataset.md` | draft |
 
 ## Waykeeper — Assistant Knowledge Base
 
@@ -799,6 +993,7 @@ Base: `assistant/workspaces/concept/`
 | `compatible-editors.md` | stub |
 | `compatible-tools.md` | stub |
 | `continuing-feature-edits.md` | stub |
+| `custom-imagery-configuration.md` | draft |
 | `custom-imagery.md` | stub |
 | `dataset-lineage-in-tdei.md` | stub |
 | `dataset-lineage.md` | stub |
@@ -815,10 +1010,14 @@ Base: `assistant/workspaces/concept/`
 | `export-process.md` | stub |
 | `export-timing.md` | stub |
 | `export-versioning.md` | stub |
+| `format-specific-data-generator-roles.md` | draft |
 | `geometry-editing.md` | stub |
 | `gis-staff-role.md` | stub |
 | `gis-tool-decision.md` | stub |
 | `imagery-json-configuration.md` | stub |
+| `imagery-layer-access.md` | draft |
+| `imagery-layer-configuration-boundaries.md` | draft |
+| `imagery-layer-definition.md` | draft |
 | `imagery-layer-mechanics.md` | stub |
 | `imagery-layer-overview.md` | stub |
 | `imagery-layers.md` | stub |
@@ -828,13 +1027,16 @@ Base: `assistant/workspaces/concept/`
 | `imagery-resource-variation.md` | stub |
 | `imagery-sources.md` | stub |
 | `intended-audience.md` | stub |
+| `internal-qa-qc-data-access.md` | draft |
 | `josm.md` | stub |
 | `keeping-edits-private.md` | stub |
 | `manager-edit-review.md` | stub |
 | `manager-role.md` | stub |
+| `mobile-point-feature-creation.md` | draft |
 | `multi-source-stewardship.md` | draft |
 | `multiple-workspaces-per-dataset.md` | stub |
 | `non-global-dataset-rationale.md` | stub |
+| `notes-as-field-issue-reports.md` | draft |
 | `osm-api-emulation.md` | stub |
 | `osm-connection.md` | stub |
 | `osm-editing-emulation-rationale.md` | stub |
@@ -844,13 +1046,19 @@ Base: `assistant/workspaces/concept/`
 | `post-export-behavior.md` | stub |
 | `private-osm-explained.md` | stub |
 | `private-osm.md` | stub |
+| `project-group-and-workspace-roles.md` | draft |
 | `project-group-definition.md` | stub |
 | `project-group-operations.md` | stub |
+| `project-group-referral-access.md` | draft |
 | `project-groups.md` | stub |
+| `public-availability-of-quest-photos.md` | draft |
 | `qa-review-support.md` | stub |
 | `qr-code-invites.md` | stub |
+| `quest-definition-url-requirements.md` | draft |
+| `rapid-imagery-integration.md` | draft |
 | `rapid-versions.md` | stub |
 | `rapid.md` | stub |
+| `raster-and-vector-basemaps.md` | draft |
 | `recommended-publication-workflow.md` | stub |
 | `recommended-workflows.md` | stub |
 | `review-interface.md` | stub |
@@ -862,32 +1070,48 @@ Base: `assistant/workspaces/concept/`
 | `tdei-ecosystem-fit.md` | stub |
 | `tdei-vs-workspaces.md` | stub |
 | `team-invitations.md` | stub |
-| `teams-vs-project-groups.md` | stub |
+| `teams-vs-project-groups.md` | draft |
 | `teams.md` | stub |
 | `tile-layers.md` | stub |
 | `vector-map-preference.md` | stub |
 | `vector-vs-raster-maps.md` | stub |
 | `viewer-vs-editor-users.md` | stub |
 | `workspace-abstention-boundaries.md` | stub |
+| `workspace-and-tdei-boundary.md` | draft |
+| `workspace-app-access-default.md` | draft |
 | `workspace-as-dataset-copy.md` | stub |
+| `workspace-as-private-osm.md` | draft |
+| `workspace-availability-for-new-mappers.md` | draft |
+| `workspace-copy-and-divergence.md` | draft |
 | `workspace-creation-mechanics.md` | stub |
 | `workspace-creation-methods.md` | stub |
 | `workspace-dashboard.md` | stub |
 | `workspace-data-freshness.md` | stub |
 | `workspace-dataset-divergence.md` | stub |
+| `workspace-duplicate-copy-risk.md` | draft |
 | `workspace-editing-authority.md` | stub |
+| `workspace-editing-boundary.md` | draft |
 | `workspace-export-and-publication-caveats.md` | stub |
+| `workspace-extract.md` | draft |
 | `workspace-id.md` | stub |
+| `workspace-metadata-and-lineage.md` | draft |
 | `workspace-metadata.md` | stub |
-| `workspace-public-vs-private-data.md` | stub |
+| `workspace-per-project-model.md` | draft |
+| `workspace-public-vs-private-data.md` | draft |
+| `workspace-review-and-publication-gates.md` | draft |
+| `workspace-review-interface.md` | draft |
+| `workspace-roles-and-project-roles.md` | draft |
+| `workspace-source-options.md` | draft |
 | `workspace-tdei-isolation.md` | stub |
+| `workspace-team-membership.md` | draft |
+| `workspace-teams.md` | draft |
 | `workspace-technical-definition.md` | stub |
 | `workspaces-os-connect-relationship.md` | stub |
 | `workspaces-osm-limitations.md` | stub |
 | `workspaces-tdei-portal-relationship.md` | stub |
 | `workspaces-tdei-separation.md` | stub |
 | `workspaces-vs-gis-decision.md` | stub |
-| `workspaces.md` | stub |
+| `workspaces.md` | draft |
 
 ### Workflows
 
@@ -896,17 +1120,25 @@ Base: `assistant/workspaces/workflow/`
 | File | Status |
 | :--- | :----- |
 | `choose-editor.md` | stub |
+| `configure-app-enabled-workspace.md` | draft |
 | `configure-imagery-layers.md` | draft |
 | `create-a-workspace-from-tdei.md` | draft |
-| `create-workspace-from-osm.md` | stub |
+| `create-workspace-from-osm.md` | draft |
+| `create-workspace-from-tdei-dataset.md` | draft |
 | `create-workspace-from-tdei.md` | stub |
 | `create-workspace.md` | stub |
 | `edit-accessibility-features-in-a-workspace.md` | draft |
 | `export-workspace-edits-to-tdei.md` | stub |
-| `export-workspace.md` | stub |
+| `export-workspace-locally.md` | draft |
+| `export-workspace-to-tdei.md` | draft |
+| `export-workspace.md` | draft |
+| `import-external-geojson-for-reference.md` | draft |
+| `import-osm-data-into-workspaces.md` | draft |
 | `invite-a-team-to-a-workspace.md` | draft |
+| `open-dataset-for-inspection.md` | draft |
 | `pre-export-review.md` | stub |
 | `publish-jurisdiction-updates.md` | stub |
+| `review-quest-contributions.md` | draft |
 | `review-workspace-edits.md` | stub |
 | `search-project-groups.md` | stub |
 | `use-workspaces-for-community-validation.md` | stub |

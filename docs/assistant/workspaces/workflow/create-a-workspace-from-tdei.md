@@ -35,14 +35,12 @@ assistant_behavior:
         - Opening a workspace edits the public OpenStreetMap database
         - Every partner has permission to open every TDEI dataset in Workspaces
 related_pages:
-    - assistant/concepts/workspaces/private-osm.md
-    - assistant/concepts/workspaces/workspace-sandbox.md
-    - assistant/concepts/workspaces/dataset-lineage.md
-    - assistant/concepts/workspaces/tdei-vs-workspaces.md
-    - assistant/questions/workspaces/how-do-i-create-a-workspace-from-tdei.md
-    - assistant/questions/workspaces/what-happens-when-i-create-a-workspace-from-a-tdei-dataset.md
-    - assistant/questions/workspaces/is-a-workspace-a-copy-or-the-original-dataset.md
-    - assistant/questions/workspaces/does-editing-a-workspace-change-the-tdei-dataset.md
+    - assistant/workspaces/concept/workspace-as-private-osm.md
+    - assistant/workspaces/concept/workspaces.md
+    - assistant/workspaces/concept/workspace-metadata-and-lineage.md
+    - assistant/workspaces/concept/workspace-and-tdei-boundary.md
+    - assistant/workspaces/workflow/create-workspace-from-tdei-dataset.md
+    - assistant/workspaces/concept/workspace-copy-and-divergence.md
     - workspaces/index.md
 tags:
     - Assistant

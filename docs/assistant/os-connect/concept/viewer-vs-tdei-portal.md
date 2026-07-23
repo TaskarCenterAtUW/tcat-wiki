@@ -17,14 +17,15 @@ topics:
     - public-vs-private-data
 risk_level: medium
 authority_level: explanatory
-publication_status: stub
-last_reviewed: ""
+publication_status: draft
+last_reviewed: 2026-07-22
 retrieval_priority: high
 assistant_behavior:
     allow_inference: false
     requires_citation: true
     abstain_if_missing_context: true
-    do_not_claim: []
+    do_not_claim:
+        - The public viewer provides every TDEI dataset-management function.
 related_pages: []
 tags:
     - Assistant
@@ -36,32 +37,33 @@ tags:
 
 ## Short Answer
 
-TODO
+The OS-CONNECT Data Viewer is for exploring rendered network data, while TDEI provides dataset storage, identifiers, versions, validation, and management workflows.
 
 ## Significance
 
-TODO
+The distinction helps users choose the right tool for inspection, download, correction context, or dataset administration.
 
 ## What This Means
 
-TODO
+Use the viewer to search boundaries, inspect features, view QA/QC links, and report issues. Use TDEI context for dataset IDs, versions, uploads, validation, and broader data-management operations.
 
 ## What This Does Not Mean
 
-TODO
+A viewer display is not the same as editing or administering the source dataset.
 
 ## How To Use This
 
-TODO
+Start in the viewer for a map question and follow the dataset ID or report link when the question concerns source data or management.
 
 ## Example
 
-TODO
+A user copies a TDEI Dataset ID from a viewer boundary popup before asking an administrator about a versioned dataset.
 
 ## Assistant Guidance
 
-TODO
+Ask whether the user needs visualization, a download, validation, or dataset administration.
 
 ## Related Concepts
 
-TODO
+- [What am I looking at in the viewer?](viewer-overview.md)
+- [How do I download data?](../workflow/download-data.md)

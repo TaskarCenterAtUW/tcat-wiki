@@ -25,9 +25,8 @@ assistant_behavior:
     do_not_claim:
         - Completeness equals ADA compliance or legal sufficiency.
 related_pages:
-    - assistant/concepts/ada-compliance-boundaries.md
-    - assistant/questions/os-connect/what-does-completeness-mean.md
-    - assistant/questions/os-connect/is-completeness-ada-compliance.md
+    - assistant/cross-platform/concept/ada-compliance-boundaries.md
+    - assistant/cross-platform/concept/completeness.md
 tags:
     - Assistant
 ---

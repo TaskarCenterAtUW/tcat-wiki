@@ -29,8 +29,8 @@ assistant_behavior:
     do_not_claim:
         - The graph matches every informal desire line or off-street private path.
 related_pages:
-    - assistant/concepts/accessibility-islands.md
-    - assistant/concepts/walksheds.md
+    - assistant/cross-platform/concept/accessibility-islands.md
+    - assistant/cross-platform/concept/walksheds.md
 tags:
     - Assistant
 ---

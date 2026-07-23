@@ -24,7 +24,7 @@ assistant_behavior:
     do_not_claim:
         - A walkshed is a government-approved school boundary.
 related_pages:
-    - assistant/concepts/walksheds.md
+    - assistant/cross-platform/concept/walksheds.md
     - walksheds/index.md
 tags:
     - Assistant
@@ -36,7 +36,7 @@ tags:
 
 ## Short Answer
 
-A walkshed is the region reachable from a starting point along the pedestrian network within a defined budget — such as time, distance, or a custom cost — given your scenario settings in the Walksheds tool.
+A walkshed is the region reachable from a starting point along the pedestrian network within a defined travel-time or cost budget, given the selected dataset, profile, and scenario settings.
 
 ## Significance
 
@@ -44,12 +44,12 @@ Sets baseline vocabulary for Safe Routes and equity conversations that use reach
 
 ## What This Means
 
-Changing budgets, profiles, or datasets changes the polygon. Walksheds are analytical outputs, not moral rankings of neighborhoods.
+Changing budgets, profiles, datasets, or network edits changes the result. Walksheds are analytical outputs, not moral rankings of neighborhoods.
 
 ## What This Does Not Mean
 
 - Not a population density map by itself.
-- Not proof that every street inside the polygon is comfortable for every user.
+- Not proof that every location inside an enclosing visualization is reachable or comfortable for every user.
 
 ## How To Use This
 

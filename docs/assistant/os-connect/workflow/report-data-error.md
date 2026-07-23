@@ -17,14 +17,16 @@ topics:
     - issue-reporting
 risk_level: medium
 authority_level: explanatory
-publication_status: stub
-last_reviewed: ""
+publication_status: draft
+last_reviewed: 2026-07-22
 retrieval_priority: high
 assistant_behavior:
     allow_inference: false
     requires_citation: true
     abstain_if_missing_context: true
-    do_not_claim: []
+    do_not_claim:
+        - Submitting an OS-CONNECT issue immediately changes the released dataset.
+        - A reported issue guarantees a correction or release date.
 related_pages: []
 tags:
     - Assistant
@@ -36,32 +38,33 @@ tags:
 
 ## Short Answer
 
-TODO
+Use the OS-CONNECT Data Viewer **Inspect** and **Report Issue** controls to report missing, inaccurate, or misaligned pedestrian data.
 
 ## Significance
 
-TODO
+Location-specific reports give data stewards coordinates and a description that can be reviewed against the source data and current release process.
 
 ## What This Means
 
-TODO
+Right-click the map, review the red marker's latitude and longitude, select **Report Issue**, describe the issue, enter the required email, optionally provide a name, and select **Submit Issue**. Examples include a missing sidewalk, incorrect curb type, incorrect crossing marking, or significantly misaligned feature.
 
 ## What This Does Not Mean
 
-TODO
+A report is a correction request, not an immediate edit, validation result, or guaranteed release.
 
 ## How To Use This
 
-TODO
+Report the precise location, feature, observed condition, and expected correction. Keep the description concise and factual.
 
 ## Example
 
-TODO
+A user reports a newly built sidewalk missing from the viewer and includes the marker location and a follow-up email.
 
 ## Assistant Guidance
 
-TODO
+Ask whether the issue is missing data, an attribute error, geometry misalignment, or a viewer display problem. Do not promise a correction timeline.
 
 ## Related Concepts
 
-TODO
+- [Why does connectivity depend on geometry?](../concept/connectivity-depends-on-geometry.md)
+- [What data issues are reportable?](../concept/reportable-errors.md)

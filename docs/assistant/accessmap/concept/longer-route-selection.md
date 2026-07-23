@@ -24,7 +24,7 @@ assistant_behavior:
     do_not_claim:
         - The shortest car route is always the correct comparison baseline.
 related_pages:
-    - assistant/concepts/accessmap-routing.md
+    - assistant/cross-platform/concept/accessmap-routing.md
     - assistant/accessmap/how-do-mobility-profiles-work.md
 tags:
     - Assistant

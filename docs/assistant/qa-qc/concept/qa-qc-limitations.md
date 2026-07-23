@@ -37,9 +37,9 @@ assistant_behavior:
 related_pages:
     - assistant/qa-qc/index.md
     - assistant/os-connect/index.md
-    - assistant/os-connect/what-is-the-qa-qc-report.md
-    - assistant/os-connect/what-does-completeness-mean.md
-    - assistant/os-connect/is-completeness-the-same-as-ada-compliance.md
+    - assistant/os-connect/concept/qa-qc-report.md
+    - assistant/cross-platform/concept/completeness.md
+    - assistant/cross-platform/concept/ada-compliance-boundaries.md
 tags:
     - Assistant
 ---
@@ -50,7 +50,7 @@ tags:
 
 ## Short Answer
 
-The QA/QC analysis for OS-CONNECT has several important limitations. First, the analysis is based on 2023 aerial imagery, so it reflects conditions as they appeared at that time in aerial imagery and cannot guarantee the current real-world state of pedestrian infrastructure. Second, the completeness metrics in the report measure how well pedestrian network elements are tagged against OS-CONNECT schema requirements — not whether those elements meet ADA accessibility standards. Third, the Walkshed metrics in Section 4 of the report are calculated only from points of interest (POIs), not from all possible origin locations, meaning they represent a POI-based view of pedestrian reachability rather than a comprehensive accessibility map. Users should understand these boundaries when interpreting QA/QC results for planning or advocacy purposes.
+The QA/QC analysis for OS-CONNECT has several important limitations. Imagery vintage and dataset release vary by report, so users must check report provenance before interpreting the analysis as current. The completeness metrics measure how well pedestrian network elements are tagged against OS-CONNECT schema requirements — not whether those elements meet ADA accessibility standards. Walkshed metrics may be calculated only from points of interest (POIs), not from all possible origin locations, so users should verify the report's methodology before treating them as a comprehensive accessibility map.
 
 ## Significance
 
@@ -58,23 +58,23 @@ Understanding the limitations of QA/QC analysis is critical for planners, jurisd
 
 ## What This Means
 
-- The QA/QC report reflects a snapshot of how well the pedestrian network data was tagged as of 2023 — it is not a live or continuously updated assessment.
+- The QA/QC report reflects a snapshot tied to its documented imagery, dataset release, and processing date — it is not a live or continuously updated assessment.
 - Completeness scores measure schema conformance (are the OS-CONNECT attributes populated?), not the physical accessibility of sidewalks, crossings, or curb ramps in the real world.
 - Walkshed metrics in the QA/QC report are calculated from POIs only, so areas not near an included POI may appear to have less reachability than they actually have for residents walking to other destinations.
-- Changes to on-the-ground infrastructure — new sidewalks, curb ramps, or construction detours — that occurred after 2023 are not always reflected in the analysis.
+- Changes to on-the-ground infrastructure — new sidewalks, curb ramps, or construction detours — that occurred after the report's source imagery or dataset release are not always reflected in the analysis.
 
 ## What This Does Not Mean
 
 - It does not mean the QA/QC report can be used to certify ADA compliance or demonstrate regulatory conformance.
 - It does not mean that a high completeness score indicates a barrier-free pedestrian environment — gaps in the real world may still exist even when tags are complete.
 - It does not mean Walkshed-based metrics cover all possible walking destinations; they are limited to the POIs included in the analysis.
-- It does not mean the data reflects current conditions; infrastructure may have changed since the 2023 imagery was captured.
+- It does not mean the data reflects current conditions; infrastructure may have changed since the report's source imagery was captured or dataset was released.
 
 ## How To Use This
 
 **Planners**: Use QA/QC completeness scores to identify areas where OS-CONNECT data may be under-tagged and in need of enrichment, but do not substitute them for field-verified ADA compliance assessments. Cross-reference the report's findings with local knowledge of recent infrastructure changes.
 
-**Jurisdictions**: Recognize that the data's 2023 vintage means your own more recent sidewalk projects, curb ramp installations, or street redesigns may not appear in the QA/QC analysis. Use the report as a baseline for stewardship prioritization, not as a current-state inventory.
+**Jurisdictions**: Check the report's documented imagery and dataset vintage; more recent sidewalk projects, curb ramp installations, or street redesigns may not appear in the QA/QC analysis. Use the report as a baseline for stewardship prioritization, not as a current-state inventory.
 
 **Advocates**: Use Walkshed metrics to highlight connectivity gaps to key POIs, but understand that the analysis may not include all destinations relevant to your community. Supplement with direct community knowledge when making the case for infrastructure investment.
 

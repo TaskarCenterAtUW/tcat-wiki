@@ -16,15 +16,19 @@ topics:
     - os-connect-overview
 risk_level: medium
 authority_level: explanatory
-publication_status: stub
-last_reviewed: ""
+publication_status: draft
+last_reviewed: 2026-07-22
 retrieval_priority: high
 assistant_behavior:
     allow_inference: false
     requires_citation: true
     abstain_if_missing_context: true
-    do_not_claim: []
-related_pages: []
+    do_not_claim:
+        - OS-CONNECT is an official ADA compliance inventory.
+        - An OS-CONNECT dataset is complete or current everywhere.
+related_pages:
+    - ../index.md
+    - viewer-overview.md
 tags:
     - Assistant
 ---
@@ -35,32 +39,33 @@ tags:
 
 ## Short Answer
 
-TODO
+OS-CONNECT is a high-resolution, connected pedestrian network dataset for Washington State. It describes sidewalks, crossings, footways, curbs, traffic islands, and related infrastructure.
 
 ## Significance
 
-TODO
+Connected network data supports pedestrian routing, accessibility analysis, transportation planning, and data-quality review.
 
 ## What This Means
 
-TODO
+Dataset names use suffixes such as `City`, `UGA`, `UI`, `County`, and `CDP` to indicate the covered area. The data is published through TDEI and explored through the OS-CONNECT Data Viewer.
 
 ## What This Does Not Mean
 
-TODO
+OS-CONNECT does not certify legal compliance, physical accessibility, or current conditions. Coverage and attributes depend on the dataset version, source, and jurisdiction.
 
 ## How To Use This
 
-TODO
+Check the dataset boundary, upload date, version, TDEI ID, and QA/QC report before using data for planning or analysis.
 
 ## Example
 
-TODO
+A planner searches for a city dataset, inspects its pedestrian features, opens its QA/QC report, and checks the dataset version before analysis.
 
 ## Assistant Guidance
 
-TODO
+Ask for the jurisdiction, dataset ID or name, version, timestamp, and intended use. Do not answer legal compliance questions from OS-CONNECT metrics alone.
 
 ## Related Concepts
 
-TODO
+- [What am I looking at in the viewer?](viewer-overview.md)
+- [How should completeness scores be interpreted?](completeness-score-interpretation.md)

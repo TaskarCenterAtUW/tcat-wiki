@@ -33,16 +33,13 @@ assistant_behavior:
         - Edits in Workspaces immediately update OS-CONNECT, TDEI releases, or public OpenStreetMap
         - Using Rapid 3 is always more stable than Rapid 2 in every environment
 related_pages:
-    - assistant/workflows/workspaces/create-a-workspace-from-tdei.md
-    - assistant/workflows/workspaces/review-workspace-edits.md
-    - assistant/concepts/workspaces/private-osm.md
-    - assistant/concepts/workspaces/multi-source-stewardship.md
-    - assistant/concepts/workspaces/workspace-editors.md
-    - assistant/concepts/workspaces/collaborative-accessibility-editing.md
-    - assistant/questions/workspaces/what-editors-work-with-workspaces.md
-    - assistant/questions/workspaces/how-are-accessibility-features-edited.md
-    - assistant/questions/workspaces/can-geometry-be-edited.md
-    - assistant/questions/workspaces/can-attribute-data-be-edited.md
+    - assistant/workspaces/workflow/create-workspace-from-tdei-dataset.md
+    - assistant/workspaces/workflow/review-workspace-edits.md
+    - assistant/workspaces/concept/workspace-as-private-osm.md
+    - assistant/workspaces/concept/workspace-source-options.md
+    - assistant/workspaces/concept/workspace-editing-tools.md
+    - assistant/workspaces/concept/workspace-editing-boundary.md
+    - assistant/workspaces/concept/workspace-feature-edits.md
     - workspaces/index.md
     - rapid/index.md
     - josm/index.md

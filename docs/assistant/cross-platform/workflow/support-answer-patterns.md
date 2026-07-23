@@ -45,7 +45,7 @@ tags:
 
 ## Short Answer
 
-Five reusable response structures for helpline and Question Board replies. Pair them with factual pages under `docs/assistant/questions/` and [support intents](../../intents.md) so staff retrieve both **what to say** and **how to say it**.
+Five reusable response structures for helpline and Question Board replies. Pair them with factual pages under `docs/assistant/{topic}/concept/` and `docs/assistant/{topic}/workflow/`, and with [support intents](../../intents.md), so staff retrieve both **what to say** and **how to say it**.
 
 ## Significance
 
@@ -53,13 +53,14 @@ Operational questions need consistent tone, explicit uncertainty, and clear next
 
 ## What This Means
 
-| Pattern ID                         | When to use                                                   | Structure                                                                                    |
-| :--------------------------------- | :------------------------------------------------------------ | :------------------------------------------------------------------------------------------- |
-| `answer-known-operational`         | Answer is verified                                            | Direct answer → brief explanation → link if needed → next step                               |
-| `answer-when-uncertain`            | Needs internal verification                                   | What is known → what is not confirmed → who is checking → interim guidance                   |
-| `respond-to-data-error`            | User reports a suspected error                                | Thank them → issue category → reporting path → review lifecycle → agency-scale follow-up     |
-| `explain-tool-without-overselling` | Mentioning Walksheds, AccessMap, Mappy Hours, Tasking Manager | Connect to use case → what it does → limitations → next step                                 |
-| `reconnect-prior-collaborator`     | Long-running relationship                                     | Acknowledge prior context → current update → answer today's question → concrete continuation |
+| Pattern ID                          | When to use                                                   | Structure                                                                                    |
+| :---------------------------------- | :------------------------------------------------------------ | :------------------------------------------------------------------------------------------- |
+| `answer-known-operational`          | Answer is verified                                            | Direct answer → brief explanation → link if needed → next step                               |
+| `answer-when-uncertain`             | Needs internal verification                                   | What is known → what is not confirmed → who is checking → interim guidance                   |
+| `respond-to-data-error`             | User reports a suspected error                                | Thank them → issue category → reporting path → review lifecycle → agency-scale follow-up     |
+| `report-reproducible-product-issue` | User reports a reproducible app or web problem                | Gather context → reproduce → capture evidence → route to support → avoid release promises    |
+| `explain-tool-without-overselling`  | Mentioning Walksheds, AccessMap, Mappy Hours, Tasking Manager | Connect to use case → what it does → limitations → next step                                 |
+| `reconnect-prior-collaborator`      | Long-running relationship                                     | Acknowledge prior context → current update → answer today's question → concrete continuation |
 
 ## What This Does Not Mean
 
@@ -73,9 +74,13 @@ Operational questions need consistent tone, explicit uncertainty, and clear next
 3. Retrieve factual bullets from the linked question page(s).
 4. Apply the pattern structure when drafting email or chat.
 
+For a new reproducible product issue thread, include the current help desk address and relevant staff as instructed. Record the product, platform, device, version, workspace or dataset, steps, expected result, observed result, and available screenshots or identifiers; keep subsequent replies in the existing thread.
+
 ## Example
 
 A county asks how long a viewer-reported fix takes. Use **`answer-when-uncertain`** if release timing is unknown: state the public release model, note that timelines vary by validation queue, name who will confirm, and link [How long do corrections take to appear in a public release?](../../os-connect/concept/update-cadence.md).
+
+A user reports that a numeric value is flagged but still submitted. Use **`report-reproducible-product-issue`**: collect the app version and platform, reproduce the behavior, attach evidence, and avoid promising a fix date.
 
 ## Assistant Guidance
 

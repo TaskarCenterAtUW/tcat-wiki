@@ -24,7 +24,7 @@ assistant_behavior:
     do_not_claim:
         - Step-by-step UI details without naming the manual version.
 related_pages:
-    - assistant/questions/tdei/where-do-i-download-os-connect-data.md
+    - assistant/tdei/workflow/download-os-connect-data.md
     - tdei/portal/user-manual/index.md
 tags:
     - Assistant
