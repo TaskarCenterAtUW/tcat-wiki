@@ -47,7 +47,7 @@ topics:
 risk_level: low
 authority_level: official
 publication_status: published
-last_reviewed: 2026-07-22
+last_reviewed: 2026-07-24
 retrieval_priority: high
 assistant_behavior:
     allow_inference: false
@@ -68,7 +68,7 @@ tags:
 
 ## Short Answer
 
-This page lists all 272 abbreviations, acronyms, and initialisms used across TCAT Wiki documentation and TCAT platforms and tools.
+This page lists all 273 abbreviations, acronyms, and initialisms used across TCAT Wiki documentation and TCAT platforms and tools.
 
 ## Significance
 
@@ -269,6 +269,7 @@ The table below maps each abbreviated form to its full expansion. Entries are so
 | RSO | Registered Student Organization |
 | RTAN | Regional Transportation Accessibility Network |
 | RTD | Denver Regional Transportation District |
+| RTOR | Right Turn on Red |
 | RTPO | Regional Transportation Planning Organization |
 | SAFETEA-LU | Safe, Accountable, Flexible, Efficient Transportation Equity Act: A Legacy for Users |
 | SAM | Segment Anything Model |
