@@ -187,6 +187,7 @@
 *[RSO]: Registered Student Organization
 *[RTAN]: Regional Transportation Accessibility Network
 *[RTD]: Denver Regional Transportation District
+*[RTOR]: Right Turn on Red
 *[RTPO]: Regional Transportation Planning Organization
 *[SAFETEA-LU]: Safe, Accountable, Flexible, Efficient Transportation Equity Act: A Legacy for Users
 *[SAM]: Segment Anything Model

@@ -27,7 +27,7 @@ topics:
 risk_level: low
 authority_level: official
 publication_status: draft
-last_reviewed: 2026-07-22
+last_reviewed: 2026-07-24
 retrieval_priority: high
 assistant_behavior:
     allow_inference: false
@@ -100,8 +100,8 @@ This page should be fetched fresh rather than cached aggressively; its registry 
 
 | Status | Count | Meaning |
 | :----- | ----: | :------ |
-| `stub` | 457 | Frontmatter and heading scaffold exist; body is `TODO` |
-| `draft` | 309 | Content authored; awaiting TCAT editorial review |
+| `stub` | 451 | Frontmatter and heading scaffold exist; body is `TODO` |
+| `draft` | 316 | Content authored; awaiting TCAT editorial review |
 | `published` | 1 | Available in the human-facing site |
 | `archived` | 0 | Retained for agents but not published |
 
@@ -146,7 +146,7 @@ Base: `assistant/accessmap/concept/`
 | `google-maps-comparison.md` | stub |
 | `google-maps-design-rationale.md` | stub |
 | `gtfs-integration.md` | stub |
-| `gtfs-pathways.md` | stub |
+| `gtfs-pathways.md` | draft |
 | `here-routing-comparison.md` | stub |
 | `hospital-campus-support.md` | stub |
 | `inaccessible-transit-stations.md` | stub |
@@ -264,6 +264,7 @@ Base: `assistant/cross-platform/concept/`
 | `how-should-ai-outputs-be-validated.md` | stub |
 | `knowledge-base-domain-review.md` | draft |
 | `mobile-and-web-validation-differences.md` | draft |
+| `os-connect-vs-gtfs-pathways.md` | draft |
 | `public-vs-internal-content.md` | draft |
 | `qa-qc-report-audience.md` | draft |
 | `rural-pedestrian-data-value.md` | draft |
@@ -427,7 +428,6 @@ Base: `assistant/os-connect/concept/`
 | `automated-system-limitations.md` | stub |
 | `batch-correction-alternatives.md` | stub |
 | `bulk-correction-submission.md` | stub |
-| `bus-stop-planning.md` | stub |
 | `campus-handling.md` | stub |
 | `capital-planning.md` | stub |
 | `centrality-metrics.md` | draft |
@@ -490,7 +490,7 @@ Base: `assistant/os-connect/concept/`
 | `incomplete-coverage.md` | stub |
 | `interoperable-accessibility-ecosystem.md` | stub |
 | `intersection-attributes.md` | draft |
-| `issue-report-auto-update.md` | stub |
+| `issue-report-auto-update.md` | draft |
 | `issue-report-follow-up.md` | stub |
 | `issue-report-reviewers.md` | stub |
 | `jurisdiction-data-disputes.md` | stub |
@@ -613,12 +613,14 @@ Base: `assistant/os-connect/workflow/`
 
 | File | Status |
 | :--- | :----- |
+| `bus-stop-planning.md` | draft |
 | `connect-to-gis.md` | stub |
 | `download-data.md` | draft |
 | `import-into-arcgis.md` | stub |
 | `report-connectivity-data-error.md` | draft |
 | `report-data-error.md` | draft |
 | `search-for-jurisdiction.md` | draft |
+| `support-pedestrian-access-analysis-around-destinations.md` | draft |
 
 ## QA/QC — Assistant Knowledge Base
 
@@ -641,6 +643,7 @@ Base: `assistant/qa-qc/concept/`
 | `centrality-tile-generation.md` | draft |
 | `centrality.md` | stub |
 | `completeness-vs-accessibility-gaps.md` | stub |
+| `completeness-vs-ada-compliance.md` | draft |
 | `completeness.md` | stub |
 | `conditional-attribute-completeness.md` | draft |
 | `connected-pedestrian-graph.md` | stub |
@@ -733,12 +736,10 @@ Base: `assistant/support/concept/`
 | `ecosystem-overview.md` | stub |
 | `fallback-when-gtfs-pathways-missing.md` | stub |
 | `gtfs-pathways-agency-adoption.md` | stub |
-| `gtfs-pathways-vs-os-connect.md` | stub |
+| `helpline-answers.md` | draft |
 | `mappy-hours-eligibility.md` | stub |
 | `opensidewalks-contact.md` | stub |
 | `os-connect-contact.md` | stub |
-| `os-connect-vs-gtfs-pathways.md` | stub |
-| `os-connect-walksheds-bus-stop-planning.md` | stub |
 | `osm-pedestrian-paths-vs-gtfs-pathways.md` | stub |
 | `partner-response-time.md` | stub |
 | `staff-email-antipatterns.md` | stub |

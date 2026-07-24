@@ -1,5 +1,5 @@
 ---
-title: "What is AccessMap?"
+title: What is AccessMap?
 slug: accessmap
 doc_type: concept
 questions:
@@ -15,9 +15,9 @@ topics:
     - accessmap
     - overview
 risk_level: medium
-authority_level: provisional
+authority_level: explanatory
 publication_status: draft
-last_reviewed: 2026-07-22
+last_reviewed: 2026-07-24
 retrieval_priority: high
 assistant_behavior:
     allow_inference: false
@@ -39,7 +39,7 @@ tags:
 
 ## Short Answer
 
-AccessMap is a free, web-based pedestrian trip planner developed by TCAT. It supports accessibility-aware multimodal routing using pedestrian network information such as paths, crossings, curb ramps, barriers, and elevation.
+AccessMap is a free, web-based pedestrian trip planner developed by TCAT. It supports accessibility-aware multimodal routing using pedestrian network information such as sidewalks, crossings, curb ramps, barriers, and elevation.
 
 ## Significance
 
@@ -47,11 +47,11 @@ AccessMap lets travelers compare route options using mobility profiles and prefe
 
 ## What This Means
 
-Users can select a region, choose or customize a mobility profile, set waypoints, review route and elevation information, follow directions with device location, and submit feedback. The application uses OpenSidewalks and OpenStreetMap data.
+Users can select a region, choose or customize a mobility profile, set waypoints, review route and elevation information, preview or follow real-time directions with device location, and submit feedback. The application uses OpenSidewalks and OpenStreetMap data.
 
 ## What This Does Not Mean
 
-Coverage and feature accuracy depend on the available regional data. A route result is informational and does not certify physical accessibility or replace judgment about current conditions.
+Coverage and feature accuracy depend on the available regional data. A route result is informational and does not legally certify physical accessibility or replace judgment about current conditions.
 
 ## How To Use This
 
@@ -59,11 +59,11 @@ Use AccessMap to plan and compare pedestrian routes, identify mapped constraints
 
 ## Example
 
-A traveler selects a wheelchair profile, sets an origin and destination, reviews steep sections and route statistics, and changes preferences if the result does not fit their needs.
+A traveler selects a wheelchair profile, sets an origin and destination, reviews steep sections and route statistics, and changes preferences if the result does not fit their individual needs.
 
 ## Assistant Guidance
 
-State the region and profile when explaining a result. Do not infer that an unmapped barrier is absent, and recommend checking conditions directly when safety or critical access is involved.
+State the region and profile when explaining a result. Do not infer that an unmapped feature or barrier is absent. Recommend using best judgment around current conditions.
 
 ## Related Concepts
 
