@@ -100,8 +100,8 @@ This page should be fetched fresh rather than cached aggressively; its registry 
 
 | Status | Count | Meaning |
 | :----- | ----: | :------ |
-| `stub` | 454 | Frontmatter and heading scaffold exist; body is `TODO` |
-| `draft` | 312 | Content authored; awaiting TCAT editorial review |
+| `stub` | 452 | Frontmatter and heading scaffold exist; body is `TODO` |
+| `draft` | 313 | Content authored; awaiting TCAT editorial review |
 | `published` | 1 | Available in the human-facing site |
 | `archived` | 0 | Retained for agents but not published |
 
@@ -428,7 +428,6 @@ Base: `assistant/os-connect/concept/`
 | `automated-system-limitations.md` | stub |
 | `batch-correction-alternatives.md` | stub |
 | `bulk-correction-submission.md` | stub |
-| `bus-stop-planning.md` | stub |
 | `campus-handling.md` | stub |
 | `capital-planning.md` | stub |
 | `centrality-metrics.md` | draft |
@@ -614,6 +613,7 @@ Base: `assistant/os-connect/workflow/`
 
 | File | Status |
 | :--- | :----- |
+| `bus-stop-planning.md` | draft |
 | `connect-to-gis.md` | stub |
 | `download-data.md` | draft |
 | `import-into-arcgis.md` | stub |
@@ -738,7 +738,6 @@ Base: `assistant/support/concept/`
 | `mappy-hours-eligibility.md` | stub |
 | `opensidewalks-contact.md` | stub |
 | `os-connect-contact.md` | stub |
-| `os-connect-walksheds-bus-stop-planning.md` | stub |
 | `osm-pedestrian-paths-vs-gtfs-pathways.md` | stub |
 | `partner-response-time.md` | stub |
 | `staff-email-antipatterns.md` | stub |

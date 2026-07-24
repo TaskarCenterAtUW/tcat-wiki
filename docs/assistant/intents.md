@@ -235,13 +235,13 @@ Support staff ask operational questions in the moment and may phrase similar que
 
 - [accessmap-vs-walksheds](support/concept/accessmap-vs-walksheds.md)
 
-### `support-stop-planning`
+### `support-bus-stop-planning`
 
 **Example query:** How can OS-CONNECT and Walksheds help with bus stop placement or access analysis?
 
 **Retrieve these pages:**
 
-- [os-connect-walksheds-bus-stop-planning](support/concept/os-connect-walksheds-bus-stop-planning.md)
+- [bus-stop-planning](os-connect/workflow/bus-stop-planning.md)
 
 ### `support-event-accessibility`
 
