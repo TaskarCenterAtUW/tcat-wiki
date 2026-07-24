@@ -1,9 +1,9 @@
 ---
-title: Safe Routes to School (SRTS)
+title: How can walksheds support Safe Routes to School (SRTS)?
 slug: safe-routes-to-school
 doc_type: concept
 questions:
-    - What is Safe Routes to School (SRTS)?
+    - How can walksheds support Safe Routes to School?
 audiences:
     - planner
     - jurisdiction
@@ -16,14 +16,14 @@ topics:
 risk_level: medium
 authority_level: explanatory
 publication_status: draft
-last_reviewed: 2026-05-11
+last_reviewed: 2026-07-24
 retrieval_priority: medium
 assistant_behavior:
     allow_inference: false
     requires_citation: true
     abstain_if_missing_context: true
     do_not_claim:
-        - Walksheds alone satisfies federal or state SRTS reporting requirements without local process.
+        - Walksheds alone satisfies SRTS requirements.
 related_pages:
     - assistant/cross-platform/workflow/use-walksheds-for-safe-routes-to-school.md
     - assistant/walksheds/concept/walkshed.md
@@ -33,11 +33,11 @@ tags:
 
 <!-- @format -->
 
-# How can walksheds support Safe Routes to School (SRTS)
+# How can Walksheds support Safe Routes to School (SRTS)?
 
 ## Short Answer
 
-Walksheds helps visualize who can reach a school under different walking assumptions, compare scenarios (for example infrastructure investments), and communicate reachability gaps. It supports analysis; local SRTS programs still set policy, engagement, and engineering priorities.
+Walksheds helps visualize who can reach a school under different travel constraints, compare scenarios (for example, infrastructure investments), and communicate reachability gaps.
 
 ## Significance
 
@@ -45,24 +45,23 @@ SRTS stakeholders need analytics that respect accessibility, not only distance r
 
 ## What This Means
 
-Use walksheds to prioritize counters, crossing treatments, or education campaigns where modeled reachability is low for priority profiles.
+Use Walksheds to inform prioritization of improvements where modeled reachability is low for priority profiles.
 
 ## What This Does Not Mean
 
 - Not a substitute for crossing guard programs, enforcement, or curriculum.
-- Not a waiver for community engagement with families.
 
 ## How To Use This
 
-Pair walkshed maps with qualitative knowledge about traffic stress and student needs.
+Pair Walkshed analysis with qualitative knowledge about levels of traffic stress and local student needs.
 
 ## Example
 
-A district compares walksheds before and after a proposed crossing improvement to see how many student-weighted origins gain a low-cost path.
+A district compares Walksheds before and after a proposed crossing improvement to see how many student-weighted origins gain a low-cost path.
 
 ## Assistant Guidance
 
-Frame walksheds as one input among many. Abstain from promising safety outcomes; cite local engineering review.
+Frame Walksheds as one input among many. Abstain from promising safety outcomes; cite local engineering review.
 
 ## Related Concepts
 
