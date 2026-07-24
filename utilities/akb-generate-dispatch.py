@@ -300,7 +300,7 @@ def write_dispatch(assistant_dir: Path, today: str | None = None) -> Path:
     """Generate dispatch.md content and write it into assistant_dir. Return the path written."""
     content = build_dispatch(assistant_dir, today=today)
     output_path = assistant_dir / "dispatch.md"
-    output_path.write_text(content, encoding="utf-8", newline="\n")
+    output_path.write_text(content, encoding="utf-8", newline="\r\n")
     return output_path
 
 
