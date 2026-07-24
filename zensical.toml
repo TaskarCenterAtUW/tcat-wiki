@@ -598,7 +598,8 @@ nav = [
                 {"How do I import OS-CONNECT / OSW GeoJSON into ArcGIS?" = "assistant/os-connect/workflow/import-into-arcgis.md"},
                 {"How do I report a connectivity error in OS-CONNECT?" = "assistant/os-connect/workflow/report-connectivity-data-error.md"},
                 {"How do I report an error in OS-CONNECT data?" = "assistant/os-connect/workflow/report-data-error.md"},
-                {"How do I search for a jurisdiction?" = "assistant/os-connect/workflow/search-for-jurisdiction.md"}
+                {"How do I search for a jurisdiction?" = "assistant/os-connect/workflow/search-for-jurisdiction.md"},
+                {"Can OS-CONNECT support pedestrian access analysis around destinations?" = "assistant/os-connect/workflow/support-pedestrian-access-analysis-around-destinations.md"}
             ]}
         ]},
         {"Qa Qc" = [

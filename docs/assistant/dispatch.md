@@ -101,7 +101,7 @@ This page should be fetched fresh rather than cached aggressively; its registry 
 | Status | Count | Meaning |
 | :----- | ----: | :------ |
 | `stub` | 451 | Frontmatter and heading scaffold exist; body is `TODO` |
-| `draft` | 314 | Content authored; awaiting TCAT editorial review |
+| `draft` | 315 | Content authored; awaiting TCAT editorial review |
 | `published` | 1 | Available in the human-facing site |
 | `archived` | 0 | Retained for agents but not published |
 
@@ -620,6 +620,7 @@ Base: `assistant/os-connect/workflow/`
 | `report-connectivity-data-error.md` | draft |
 | `report-data-error.md` | draft |
 | `search-for-jurisdiction.md` | draft |
+| `support-pedestrian-access-analysis-around-destinations.md` | draft |
 
 ## QA/QC — Assistant Knowledge Base
 
