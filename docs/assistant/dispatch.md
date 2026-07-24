@@ -100,8 +100,8 @@ This page should be fetched fresh rather than cached aggressively; its registry 
 
 | Status | Count | Meaning |
 | :----- | ----: | :------ |
-| `stub` | 452 | Frontmatter and heading scaffold exist; body is `TODO` |
-| `draft` | 313 | Content authored; awaiting TCAT editorial review |
+| `stub` | 451 | Frontmatter and heading scaffold exist; body is `TODO` |
+| `draft` | 314 | Content authored; awaiting TCAT editorial review |
 | `published` | 1 | Available in the human-facing site |
 | `archived` | 0 | Retained for agents but not published |
 
@@ -490,7 +490,7 @@ Base: `assistant/os-connect/concept/`
 | `incomplete-coverage.md` | stub |
 | `interoperable-accessibility-ecosystem.md` | stub |
 | `intersection-attributes.md` | draft |
-| `issue-report-auto-update.md` | stub |
+| `issue-report-auto-update.md` | draft |
 | `issue-report-follow-up.md` | stub |
 | `issue-report-reviewers.md` | stub |
 | `jurisdiction-data-disputes.md` | stub |
