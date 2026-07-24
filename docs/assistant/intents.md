@@ -176,7 +176,7 @@ Support staff ask operational questions in the moment and may phrase similar que
 
 **Retrieve these pages:**
 
-- [os-connect-vs-gtfs-pathways](support/concept/os-connect-vs-gtfs-pathways.md)
+- [os-connect-vs-gtfs-pathways](cross-platform/concept/os-connect-vs-gtfs-pathways.md)
 
 ### `check-gtfs-pathways-availability`
 
