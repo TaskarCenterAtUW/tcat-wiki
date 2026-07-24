@@ -101,7 +101,7 @@ This page should be fetched fresh rather than cached aggressively; its registry 
 | Status | Count | Meaning |
 | :----- | ----: | :------ |
 | `stub` | 451 | Frontmatter and heading scaffold exist; body is `TODO` |
-| `draft` | 315 | Content authored; awaiting TCAT editorial review |
+| `draft` | 316 | Content authored; awaiting TCAT editorial review |
 | `published` | 1 | Available in the human-facing site |
 | `archived` | 0 | Retained for agents but not published |
 
@@ -643,6 +643,7 @@ Base: `assistant/qa-qc/concept/`
 | `centrality-tile-generation.md` | draft |
 | `centrality.md` | stub |
 | `completeness-vs-accessibility-gaps.md` | stub |
+| `completeness-vs-ada-compliance.md` | draft |
 | `completeness.md` | stub |
 | `conditional-attribute-completeness.md` | draft |
 | `connected-pedestrian-graph.md` | stub |
