@@ -1,5 +1,5 @@
 ---
-title: "What is OS-CONNECT?"
+title: What is OS-CONNECT?
 slug: os-connect
 doc_type: concept
 questions:
@@ -17,7 +17,7 @@ topics:
 risk_level: medium
 authority_level: explanatory
 publication_status: draft
-last_reviewed: 2026-07-22
+last_reviewed: 2026-07-24
 retrieval_priority: high
 assistant_behavior:
     allow_inference: false
@@ -39,7 +39,7 @@ tags:
 
 ## Short Answer
 
-OS-CONNECT is a high-resolution, connected pedestrian network dataset for Washington State. It describes sidewalks, crossings, footways, curbs, traffic islands, and related infrastructure.
+OS-CONNECT is a high-resolution, connected pedestrian network dataset for Washington State. It describes sidewalks, crossings, footways, curbs, traffic islands, and related pedestrian infrastructure.
 
 ## Significance
 
@@ -47,7 +47,7 @@ Connected network data supports pedestrian routing, accessibility analysis, tran
 
 ## What This Means
 
-Dataset names use suffixes such as `City`, `UGA`, `UI`, `County`, and `CDP` to indicate the covered area. The data is published through TDEI and explored through the OS-CONNECT Data Viewer.
+Dataset names use suffixes such as `City`, `UGA`, `UI`, `County`, and `CDP` to indicate the covered area. The data is published through TDEI and can be explored using the OS-CONNECT Data Viewer.
 
 ## What This Does Not Mean
 
@@ -55,11 +55,11 @@ OS-CONNECT does not certify legal compliance, physical accessibility, or current
 
 ## How To Use This
 
-Check the dataset boundary, upload date, version, TDEI ID, and QA/QC report before using data for planning or analysis.
+Check the dataset or extract for its geographic scope, upload date, version, and its QA/QC report before using data for planning or analysis.
 
 ## Example
 
-A planner searches for a city dataset, inspects its pedestrian features, opens its QA/QC report, and checks the dataset version before analysis.
+A planner searches for a city dataset, inspects its pedestrian features, opens its QA/QC report, and checks the dataset version before using OS-CONNECT data to support analysis or planning workflows.
 
 ## Assistant Guidance
 
