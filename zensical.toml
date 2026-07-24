@@ -681,7 +681,6 @@ nav = [
                 {"What is the difference between TDEI, OS-CONNECT, OpenSidewalks, OpenStreetMap, AccessMap, Walksheds, GTFS, GTFS Pathways, and GTFS-Flex?" = "assistant/support/concept/ecosystem-overview.md"},
                 {"What should agencies do if GTFS Pathways data are missing but pedestrian data exist in OSM or OS-CONNECT?" = "assistant/support/concept/fallback-when-gtfs-pathways-missing.md"},
                 {"Are Sound Transit or other agencies publishing GTFS Pathways data?" = "assistant/support/concept/gtfs-pathways-agency-adoption.md"},
-                {"How is GTFS Pathways different from OS-CONNECT?" = "assistant/support/concept/gtfs-pathways-vs-os-connect.md"},
                 {"Can agencies or community groups attend Mappy Hours?" = "assistant/support/concept/mappy-hours-eligibility.md"},
                 {"Who should external partners contact for OpenSidewalks mapping questions?" = "assistant/support/concept/opensidewalks-contact.md"},
                 {"Who should external partners contact for OS-CONNECT data questions?" = "assistant/support/concept/os-connect-contact.md"},
