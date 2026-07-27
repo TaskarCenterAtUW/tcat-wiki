@@ -27,7 +27,7 @@ topics:
 risk_level: low
 authority_level: official
 publication_status: draft
-last_reviewed: 2026-07-24
+last_reviewed: 2026-07-27
 retrieval_priority: high
 assistant_behavior:
     allow_inference: false
@@ -101,7 +101,7 @@ This page should be fetched fresh rather than cached aggressively; its registry 
 | Status | Count | Meaning |
 | :----- | ----: | :------ |
 | `stub` | 451 | Frontmatter and heading scaffold exist; body is `TODO` |
-| `draft` | 316 | Content authored; awaiting TCAT editorial review |
+| `draft` | 317 | Content authored; awaiting TCAT editorial review |
 | `published` | 1 | Available in the human-facing site |
 | `archived` | 0 | Retained for agents but not published |
 
@@ -470,6 +470,7 @@ Base: `assistant/os-connect/concept/`
 | `data-licensing.md` | stub |
 | `data-maintenance-challenges.md` | stub |
 | `data-ownership.md` | stub |
+| `dataset-scope-relationships.md` | draft |
 | `destination-access-analysis.md` | draft |
 | `disability-community-contribution.md` | stub |
 | `disconnected-dataset-problem.md` | stub |

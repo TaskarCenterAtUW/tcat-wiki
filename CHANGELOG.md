@@ -8,12 +8,12 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/),
 
 <!--
 
-## Unreleased
+## Unreleased: v14.4.0 (2026-07-27)
 
 ### Features
 
 - **Core**:
-- **Docs**:
+- **Docs**: Update Assistant Knowledge Base articles
 
 ### Fixes
 
