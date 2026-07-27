@@ -14,6 +14,7 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/),
 
 - **Core**:
 - **Docs**: Update Assistant Knowledge Base articles
+- **Docs**: Update os-connect/#dataset-name-suffixes with info about dataset relationships
 
 ### Fixes
 
