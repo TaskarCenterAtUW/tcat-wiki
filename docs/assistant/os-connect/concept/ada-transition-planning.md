@@ -1,5 +1,5 @@
 ---
-title: "Can OS-CONNECT be used for ADA transition planning?"
+title: Can OS-CONNECT be used for ADA transition planning?
 slug: ada-transition-planning
 doc_type: concept
 questions:
@@ -17,15 +17,19 @@ topics:
     - planning
 risk_level: high
 authority_level: explanatory
-publication_status: stub
-last_reviewed: ""
-retrieval_priority: high
+publication_status: draft
+last_reviewed: 2026-07-28
+retrieval_priority: medium
 assistant_behavior:
     allow_inference: false
     requires_citation: true
     abstain_if_missing_context: true
-    do_not_claim: []
-related_pages: []
+    do_not_claim:
+        - OS-CONNECT alone produces a legally sufficient ADA transition plan.
+        - OS-CONNECT data certifies accessibility or current field conditions.
+related_pages:
+    - assistant/cross-platform/concept/ada-compliance-boundaries.md
+    - assistant/os-connect/qa-qc/user-manual/index.md
 tags:
     - Assistant
 ---
@@ -36,32 +40,33 @@ tags:
 
 ## Short Answer
 
-TODO
+Yes. OS-CONNECT can support ADA transition planning as a screening or inventory input. It is not a transition plan and does not establish compliance.
 
 ## Significance
 
-TODO
+Transition planning requires documented barriers, priorities, responsibilities, and applicable legal and technical review. OS-CONNECT can help identify modeled pedestrian-network gaps for further investigation.
 
 ## What This Means
 
-TODO
+Use OS-CONNECT to identify possible gaps, then combine its results with agency ownership, legal scope, curb-ramp and sidewalk inventories, field observations, and prioritization criteria.
 
 ## What This Does Not Mean
 
-TODO
+OS-CONNECT does not certify accessibility, prove current conditions, replace field review, or satisfy every transition-plan requirement by itself.
 
 ## How To Use This
 
-TODO
+Document the dataset version and limitations, validate important locations on the ground, and have qualified agency staff determine what evidence the plan requires.
 
 ## Example
 
-TODO
+An agency identifies possible gaps near public facilities in OS-CONNECT, schedules field verification, and assigns responsible facilities before drafting or updating its plan.
 
 ## Assistant Guidance
 
-TODO
+Because this is a high-risk planning topic, cite the source and avoid legal conclusions. Ask for the jurisdiction and intended planning use when details affect the answer.
 
 ## Related Concepts
 
-TODO
+- [ADA compliance boundaries](../../cross-platform/concept/ada-compliance-boundaries.md)
+- [OS-CONNECT QA/QC documentation](../../os-connect/qa-qc/user-manual/index.md)
