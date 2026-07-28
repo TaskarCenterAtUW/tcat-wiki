@@ -8,12 +8,12 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/),
 
 <!--
 
-## Unreleased
+## Unreleased: v14.5.0 (2026-07-28)
 
 ### Features
 
 - **Core**:
-- **Docs**:
+- **Docs**: 
 
 ### Fixes
 
@@ -21,6 +21,14 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/),
 - **Docs**:
 
 -->
+
+## v14.4.0 (2026-07-27)
+
+### Features
+
+- **Docs**: Update Assistant Knowledge Base articles
+- **Docs**: Update os-connect/#dataset-name-suffixes with info about dataset relationships
+- **Docs**: Refresh os-connect/data-viewer/user-manual/feedback
 
 ## v14.3.0 (2026-07-24)
 
