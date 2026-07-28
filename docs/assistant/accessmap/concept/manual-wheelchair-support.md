@@ -15,7 +15,7 @@ topics:
     - accessmap
     - mobility-profiles
 risk_level: high
-authority_level: explanatory
+authority_level: provisional
 publication_status: stub
 last_reviewed: ""
 retrieval_priority: high

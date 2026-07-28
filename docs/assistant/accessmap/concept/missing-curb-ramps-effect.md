@@ -16,7 +16,7 @@ topics:
     - curb-ramps
     - routing
 risk_level: medium
-authority_level: explanatory
+authority_level: provisional
 publication_status: stub
 last_reviewed: ""
 retrieval_priority: high
