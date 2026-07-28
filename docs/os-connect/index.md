@@ -25,6 +25,10 @@ OS-CONNECT dataset names end with a suffix that indicates the type of area the d
 ![The TDEI portal's All Released Datasets list filtered to OSW type, showing five example datasets whose names use the suffixes City, UGA, UI, County, and CDP.](../resources/images/os-connect/suffixes-light.png#only-light)
 ![The TDEI portal's All Released Datasets list filtered to OSW type, showing five example datasets whose names use the suffixes City, UGA, UI, County, and CDP.](../resources/images/os-connect/suffixes-dark.png#only-dark)
 
+!!! info
+
+    The `County` dataset is the broadest scope and includes the county's cities, urban growth areas (`UGA`), unincorporated areas (`UI`), and census-designated places (`CDP`). `City` datasets cover individual cities or towns, while `UGA` and `CDP` datasets represent types of unincorporated areas and are both included in the `UI` scope. These datasets can overlap geographically, but they are created and uploaded independently, so an update to one scope does not automatically update another.
+
 ---
 
 ### Guides

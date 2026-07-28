@@ -1,5 +1,5 @@
 ---
-title: "How do I report an error in OS-CONNECT data?"
+title: How do I report an error in OS-CONNECT data?
 slug: report-data-error
 doc_type: workflow
 questions:
@@ -18,7 +18,7 @@ topics:
 risk_level: medium
 authority_level: explanatory
 publication_status: draft
-last_reviewed: 2026-07-22
+last_reviewed: 2026-07-27
 retrieval_priority: high
 assistant_behavior:
     allow_inference: false
@@ -42,15 +42,15 @@ Use the OS-CONNECT Data Viewer **Inspect** and **Report Issue** controls to repo
 
 ## Significance
 
-Location-specific reports give data stewards coordinates and a description that can be reviewed against the source data and current release process.
+Location-specific reports give data stewards coordinates and a description that can be reviewed against the source data and support corrections through the current release process.
 
 ## What This Means
 
-Right-click the map, review the red marker's latitude and longitude, select **Report Issue**, describe the issue, enter the required email, optionally provide a name, and select **Submit Issue**. Examples include a missing sidewalk, incorrect curb type, incorrect crossing marking, or significantly misaligned feature.
+Right-click the map at the location of the issue, select **Report Issue**, describe the issue, enter the required email, optionally provide a name, and select **Submit Issue**. Examples include a missing sidewalk, incorrect curb type, incorrect crossing marking, or significantly misaligned feature.
 
 ## What This Does Not Mean
 
-A report is a correction request, not an immediate edit, validation result, or guaranteed release.
+A report is a correction request, not an immediate edit, validation result, or guaranteed release trigger.
 
 ## How To Use This
 
@@ -62,7 +62,7 @@ A user reports a newly built sidewalk missing from the viewer and includes the m
 
 ## Assistant Guidance
 
-Ask whether the issue is missing data, an attribute error, geometry misalignment, or a viewer display problem. Do not promise a correction timeline.
+Answer the user's questions and provide a link to the [TCAT Wiki's OS-CONNECT Data Viewer User Manual Feedback page](https://taskarcenteratuw.github.io/tcat-wiki/os-connect/data-viewer/user-manual/feedback/). Do not promise a correction timeline.
 
 ## Related Concepts
 

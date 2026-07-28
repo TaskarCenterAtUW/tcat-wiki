@@ -25,7 +25,8 @@ You can right-click anywhere on the map at any zoom level to open an **Inspect**
 - **Latitude** and **Longitude** of the marker
 - A **Report Issue** button
 
-![Inspect popup showing coordinates and Report Issue button](../../../resources/images/os-connect/data-viewer/user-manual/feedback/inspect.png){ width="826" }
+![Inspect popup showing coordinates and Report Issue button](../../../resources/images/os-connect/data-viewer/user-manual/feedback/inspect-light.png#only-light)
+![Inspect popup showing coordinates and Report Issue button](../../../resources/images/os-connect/data-viewer/user-manual/feedback/inspect-dark.png#only-dark)
 
 ---
 
@@ -35,30 +36,34 @@ If you notice a data issue — such as a missing sidewalk, incorrect curb type, 
 
 #### How to Report an Issue
 
-1. **Right-click** anywhere on the map (at any zoom level) to open the inspect popup
-2. A red marker appears at the selected location, showing the latitude and longitude
-3. Select the **Report Issue** button
-4. The **Report Issue** form opens with the following fields:
+1.  **Right-click** anywhere on the map (at any zoom level) to open the inspect popup
+2.  A red marker appears at the selected location, showing the latitude and longitude
 
-| Field                   | Description                                                | Required |
-| :---------------------- | :--------------------------------------------------------- | :------- |
-| **Latitude, Longitude** | The coordinates of the marker (greyed out, non-adjustable) | Auto     |
-| **Issue Description**   | A text field to describe the data issue                    | Yes      |
-| **Email ID**            | Your email address, for any follow-up                      | Yes      |
-| **Name**                | Your name (optional)                                       | No       |
+    !!! note
 
-5. Fill in the required fields and select **Submit Issue** (or select **Close** to cancel)
+        The coordinates are captured automatically from the marker location and cannot be edited. Focus your description on what is wrong or missing at that location.
 
-![Report Issue form](../../../resources/images/os-connect/data-viewer/user-manual/feedback/report.png){ width="826" }
+3.  Select the **Report Issue** button
+4.  The **Report Issue** form opens with the following fields:
 
-!!! note
+    | Field                   | Description                                                | Required |
+    | :---------------------- | :--------------------------------------------------------- | :------- |
+    | **Latitude, Longitude** | The coordinates of the marker (greyed out, non-adjustable) | Auto     |
+    | **Issue Description**   | A text field to describe the data issue                    | Yes      |
+    | **Email ID**            | Your email address, for any follow-up                      | Yes      |
+    | **Name**                | Your name (optional)                                       | No       |
 
-    The coordinates are captured automatically from the marker location and cannot be edited. Focus your description on what is wrong or missing at that location.
+    !!! tip "Writing Effective Reports"
 
-!!! tip "Writing Effective Reports"
+        Be specific and concise in your description. Good examples:
 
-    Be specific and concise in your description. Good examples:
+        - _"A newly built sidewalk along the west side of this road is missing"_
+        - _"This crossing is labeled as unmarked, but it actually has zebra markings"_
+        - _"There is a raised curb here that is not shown in the data"_
 
-    - _"A newly built sidewalk along the west side of this road is missing"_
-    - _"This crossing is labeled as unmarked, but it actually has zebra markings"_
-    - _"There is a raised curb here that is not shown in the data"_
+5.  Fill in the required fields and select **Submit Issue** (or select **Close** to cancel)
+
+![Report Issue popup showing coordinates and text entry boxes for Issue Description, Email ID, and Name](../../../resources/images/os-connect/data-viewer/user-manual/feedback/report-light.png#only-light)
+![Report Issue popup showing coordinates and text entry boxes for Issue Description, Email ID, and Name](../../../resources/images/os-connect/data-viewer/user-manual/feedback/report-dark.png#only-dark)
+
+!!! success "Success! An **Issue submitted successfully!** popup will appear at the bottom of the screen."
