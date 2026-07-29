@@ -29,7 +29,9 @@ assistant_behavior:
     abstain_if_missing_context: true
     do_not_claim:
         - A maximum-extent-feasible value by itself establishes legal compliance.
-related_pages: []
+related_pages:
+    - assistant/opensidewalks/index.md
+    - assistant/aviv-scoutroute/concept/quest.md
 tags:
     - Assistant
 ---

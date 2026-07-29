@@ -26,7 +26,9 @@ assistant_behavior:
     abstain_if_missing_context: true
     do_not_claim:
         - AccessMap can follow a route without location permission or an available device location.
-related_pages: []
+related_pages:
+    - assistant/accessmap/index.md
+    - assistant/accessmap/workflow/plan-and-share-a-route.md
 tags:
     - Assistant
 ---

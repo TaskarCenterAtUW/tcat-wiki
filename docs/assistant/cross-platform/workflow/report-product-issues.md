@@ -33,7 +33,9 @@ assistant_behavior:
     abstain_if_missing_context: true
     do_not_claim:
         - A reported issue has a guaranteed fix or release date.
-related_pages: []
+related_pages:
+    - assistant/cross-platform/index.md
+    - assistant/cross-platform/workflow/support-answer-patterns.md
 tags:
     - Assistant
 ---

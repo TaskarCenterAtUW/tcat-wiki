@@ -26,7 +26,10 @@ assistant_behavior:
     abstain_if_missing_context: true
     do_not_claim:
         - An IXN score is a legal accessibility determination.
-related_pages: []
+related_pages:
+    - assistant/os-connect/index.md
+    - assistant/os-connect/concept/connectivity-depends-on-geometry.md
+    - assistant/os-connect/concept/walkshed-metrics.md
 tags:
     - Assistant
 ---

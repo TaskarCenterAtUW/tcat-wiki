@@ -28,7 +28,9 @@ assistant_behavior:
     abstain_if_missing_context: true
     do_not_claim:
         - Small communities benefit only when they have large sidewalk inventories.
-related_pages: []
+related_pages:
+    - assistant/cross-platform/index.md
+    - assistant/accessmap/concept/coverage-outside-washington.md
 tags:
     - Assistant
 ---

@@ -25,7 +25,9 @@ assistant_behavior:
     abstain_if_missing_context: true
     do_not_claim:
         - Conditional follow-up quests can be added without testing the consuming app.
-related_pages: []
+related_pages:
+    - assistant/aviv-scoutroute/index.md
+    - assistant/aviv-scoutroute/concept/conditional-team-questions.md
 tags:
     - Assistant
 ---

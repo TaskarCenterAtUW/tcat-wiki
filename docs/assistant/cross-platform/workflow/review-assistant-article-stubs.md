@@ -24,7 +24,9 @@ assistant_behavior:
     abstain_if_missing_context: true
     do_not_claim:
         - AI expansion is a substitute for human subject-matter review.
-related_pages: []
+related_pages:
+    - assistant/cross-platform/index.md
+    - assistant/cross-platform/concept/topic-based-assistant-content.md
 tags:
     - Assistant
 ---

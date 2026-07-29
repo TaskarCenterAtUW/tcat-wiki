@@ -25,7 +25,10 @@ assistant_behavior:
     abstain_if_missing_context: true
     do_not_claim:
         - Downloading data from the viewer guarantees that it is current or complete.
-related_pages: []
+related_pages:
+    - assistant/os-connect/index.md
+    - assistant/os-connect/concept/viewer-vs-tdei-portal.md
+    - assistant/os-connect/concept/os-connect.md
 tags:
     - Assistant
 ---

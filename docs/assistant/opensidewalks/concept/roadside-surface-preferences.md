@@ -26,7 +26,9 @@ assistant_behavior:
     abstain_if_missing_context: true
     do_not_claim:
         - A roadside surface label guarantees that a route is usable in every season.
-related_pages: []
+related_pages:
+    - assistant/opensidewalks/index.md
+    - assistant/accessmap/concept/profile-responsive-map.md
 tags:
     - Assistant
 ---

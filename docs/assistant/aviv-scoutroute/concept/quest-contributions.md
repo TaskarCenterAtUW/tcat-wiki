@@ -28,7 +28,9 @@ assistant_behavior:
     abstain_if_missing_context: true
     do_not_claim:
         - Answering a quest replaces the entire source dataset.
-related_pages: []
+related_pages:
+    - assistant/aviv-scoutroute/index.md
+    - assistant/aviv-scoutroute/workflow/join-a-project-and-find-quests.md
 tags:
     - Assistant
 ---

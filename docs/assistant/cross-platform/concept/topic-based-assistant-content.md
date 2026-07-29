@@ -24,7 +24,9 @@ assistant_behavior:
     abstain_if_missing_context: true
     do_not_claim:
         - A broad page is always a better retrieval source than an atomic answer.
-related_pages: []
+related_pages:
+    - assistant/cross-platform/index.md
+    - assistant/cross-platform/concept/documentation-guide-types.md
 tags:
     - Assistant
 ---

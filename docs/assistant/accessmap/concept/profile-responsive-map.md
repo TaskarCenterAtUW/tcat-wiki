@@ -27,7 +27,9 @@ assistant_behavior:
     abstain_if_missing_context: true
     do_not_claim:
         - AccessMap displays one fixed accessibility interpretation for every traveler.
-related_pages: []
+related_pages:
+    - assistant/accessmap/index.md
+    - assistant/accessmap/concept/accessmap.md
 tags:
     - Assistant
 ---

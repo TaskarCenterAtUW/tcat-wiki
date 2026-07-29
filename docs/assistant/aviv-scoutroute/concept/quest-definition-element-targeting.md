@@ -25,7 +25,9 @@ assistant_behavior:
     abstain_if_missing_context: true
     do_not_claim:
         - A quest definition targets every feature without a matching element query.
-related_pages: []
+related_pages:
+    - assistant/aviv-scoutroute/index.md
+    - assistant/aviv-scoutroute/concept/quest-definition-application.md
 tags:
     - Assistant
 ---

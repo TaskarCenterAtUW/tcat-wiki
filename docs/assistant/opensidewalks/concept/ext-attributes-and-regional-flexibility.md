@@ -26,7 +26,9 @@ assistant_behavior:
     abstain_if_missing_context: true
     do_not_claim:
         - An ext attribute is part of the OpenSidewalks baseline schema.
-related_pages: []
+related_pages:
+    - assistant/opensidewalks/index.md
+    - assistant/opensidewalks/concept/external-attributes.md
 tags:
     - Assistant
 ---

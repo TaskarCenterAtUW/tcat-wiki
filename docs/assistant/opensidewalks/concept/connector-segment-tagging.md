@@ -27,7 +27,9 @@ assistant_behavior:
     abstain_if_missing_context: true
     do_not_claim:
         - The crossing_link tag is the universal or final OpenSidewalks tagging rule.
-related_pages: []
+related_pages:
+    - assistant/opensidewalks/index.md
+    - assistant/accessmap/concept/crossing-links.md
 tags:
     - Assistant
 ---
