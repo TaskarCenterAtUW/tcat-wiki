@@ -4,6 +4,7 @@ slug: bulk-correction-submission
 doc_type: concept
 questions:
     - Can agencies submit priority areas for review?
+    - Can agencies submit bulk corrections or priority areas for review?
 audiences:
     - planner
     - jurisdiction

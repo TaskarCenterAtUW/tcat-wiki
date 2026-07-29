@@ -4,6 +4,7 @@ slug: accessibility-profile-inequity-analysis
 doc_type: concept
 questions:
     - How can accessibility profiles reveal inequities?
+    - How do accessibility profiles reveal hidden inequities?
 audiences:
     - planner
     - jurisdiction

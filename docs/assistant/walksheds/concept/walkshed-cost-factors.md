@@ -4,6 +4,8 @@ slug: walkshed-cost-factors
 doc_type: concept
 questions:
     - What factors affect Walksheds travel cost?
+    - What does "street avoidance" mean?
+    - What does "avoid curbs" mean?
 audiences:
     - planner
     - developer

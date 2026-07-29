@@ -4,6 +4,7 @@ slug: mappy-hours-referral-decision
 doc_type: workflow
 questions:
     - When should someone be referred to Mappy Hours versus receiving direct support?
+    - When should partners be referred to Mappy Hours versus direct technical support?
 audiences:
     - planner
     - jurisdiction

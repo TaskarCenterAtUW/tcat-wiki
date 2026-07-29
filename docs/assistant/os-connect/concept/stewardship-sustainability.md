@@ -4,6 +4,7 @@ slug: stewardship-sustainability
 doc_type: concept
 questions:
     - How could accessibility stewardship become sustainable?
+    - How can stewardship remain sustainable after funding ends?
 audiences:
     - planner
     - jurisdiction

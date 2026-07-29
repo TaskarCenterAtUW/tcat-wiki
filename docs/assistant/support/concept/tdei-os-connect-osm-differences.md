@@ -4,6 +4,7 @@ slug: tdei-os-connect-osm-differences
 doc_type: concept
 questions:
     - What is the difference between TDEI, OS-CONNECT, OpenSidewalks, and OpenStreetMap?
+    - Is OS-CONNECT the same as OpenStreetMap data?
 audiences:
     - planner
     - jurisdiction

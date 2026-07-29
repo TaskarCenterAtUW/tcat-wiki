@@ -4,6 +4,7 @@ slug: sidewalk-street-name-association
 doc_type: concept
 questions:
     - How should separately mapped sidewalks be associated with street names in OSM?
+    - How should separately mapped sidewalks be associated with street names in OpenStreetMap?
 audiences:
     - planner
     - jurisdiction

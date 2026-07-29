@@ -4,6 +4,7 @@ slug: statewide-inventory
 doc_type: concept
 questions:
     - Is this a statewide inventory?
+    - What comes after statewide inventories?
 audiences:
     - planner
     - jurisdiction
