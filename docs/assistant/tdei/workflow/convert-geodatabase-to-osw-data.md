@@ -51,7 +51,7 @@ Inspect the source conventions, map known fields to OpenSidewalks fields, preser
 
 ## What This Does Not Mean
 
-A converter does not automatically understand every agency’s field names or produce release-ready data. The discussed script was based on a sample dataset and may need changes.
+A converter does not automatically understand every agency's field names or produce release-ready data. The discussed script was based on a sample dataset and may need changes.
 
 ## How To Use This
 

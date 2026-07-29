@@ -64,7 +64,7 @@ Use the current project referral link or QR code when provided. If no workspace 
 
 ## Example
 
-A volunteer scans a project-group referral code for a Seattle campaign, registers, and then sees the campaign’s app-enabled workspace and its available quests.
+A volunteer scans a project-group referral code for a Seattle campaign, registers, and then sees the campaign's app-enabled workspace and its available quests.
 
 ## Assistant Guidance
 

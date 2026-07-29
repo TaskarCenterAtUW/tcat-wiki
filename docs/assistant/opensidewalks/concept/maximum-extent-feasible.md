@@ -46,7 +46,7 @@ In the discussion, "maximum extent feasible" described an agency-documented allo
 
 ## Significance
 
-Recording the approved practical limit can distinguish a documented constraint from an unexplained deficiency. It should remain tied to the responsible agency’s records.
+Recording the approved practical limit can distinguish a documented constraint from an unexplained deficiency. It should remain tied to the responsible agency's records.
 
 ## What This Means
 
@@ -66,7 +66,7 @@ A sidewalk target is four feet, but an agency approval documents a three-foot-te
 
 ## Assistant Guidance
 
-Use the transcript only as provisional context. Abstain from legal conclusions and request the jurisdiction’s governing documentation.
+Use the transcript only as provisional context. Abstain from legal conclusions and request the jurisdiction's governing documentation.
 
 ## Related Concepts
 
