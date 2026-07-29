@@ -1,5 +1,5 @@
 ---
-title: 'What does "crossing count" mean in QA/QC reports?'
+title: What does crossing count mean in QA/QC reports?
 slug: crossing-count
 doc_type: concept
 questions:
