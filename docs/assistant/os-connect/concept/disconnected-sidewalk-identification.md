@@ -4,6 +4,7 @@ slug: disconnected-sidewalk-identification
 doc_type: concept
 questions:
     - How are disconnected sidewalks identified?
+    - Why are some sidewalks disconnected?
 audiences:
     - planner
     - jurisdiction

@@ -24,7 +24,9 @@ assistant_behavior:
     abstain_if_missing_context: true
     do_not_claim:
         - AI expansion can replace domain-expert review of ambiguous answers.
-related_pages: []
+related_pages:
+    - assistant/cross-platform/index.md
+    - assistant/cross-platform/workflow/review-assistant-article-stubs.md
 tags:
     - Assistant
 ---

@@ -26,7 +26,10 @@ assistant_behavior:
     abstain_if_missing_context: true
     do_not_claim:
         - The public viewer provides every TDEI dataset-management function.
-related_pages: []
+related_pages:
+    - assistant/os-connect/index.md
+    - assistant/os-connect/concept/viewer-overview.md
+    - assistant/os-connect/workflow/download-data.md
 tags:
     - Assistant
 ---

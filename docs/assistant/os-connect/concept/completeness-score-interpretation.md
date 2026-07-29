@@ -26,7 +26,10 @@ assistant_behavior:
     do_not_claim:
         - A completeness score measures the accuracy of the recorded attributes.
         - A completeness score establishes ADA compliance.
-related_pages: []
+related_pages:
+    - assistant/os-connect/index.md
+    - assistant/os-connect/concept/qa-qc-report.md
+    - assistant/os-connect/concept/completeness-vs-ada-compliance.md
 tags:
     - Assistant
 ---

@@ -27,7 +27,9 @@ assistant_behavior:
     abstain_if_missing_context: true
     do_not_claim:
         - QA/QC reports are intended only for technical developers.
-related_pages: []
+related_pages:
+    - assistant/cross-platform/index.md
+    - assistant/qa-qc/concept/report-purpose-and-limitations.md
 tags:
     - Assistant
 ---

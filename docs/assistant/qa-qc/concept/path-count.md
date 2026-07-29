@@ -4,6 +4,7 @@ slug: path-count
 doc_type: concept
 questions:
     - What does path count mean in QA/QC reports?
+    - What does "path count" mean?
 audiences:
     - planner
     - jurisdiction

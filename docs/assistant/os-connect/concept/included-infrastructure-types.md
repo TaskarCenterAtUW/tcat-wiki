@@ -25,7 +25,9 @@ assistant_behavior:
     abstain_if_missing_context: true
     do_not_claim:
         - The viewer includes every type of pedestrian infrastructure in every jurisdiction.
-related_pages: []
+related_pages:
+    - assistant/os-connect/index.md
+    - assistant/os-connect/concept/attribute-documentation-location.md
 tags:
     - Assistant
 ---

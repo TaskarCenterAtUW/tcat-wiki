@@ -4,6 +4,7 @@ slug: gis-software-compatibility
 doc_type: concept
 questions:
     - Can I use this in ArcGIS or QGIS?
+    - Can OS-CONNECT data be used in ArcGIS?
 audiences:
     - planner
     - jurisdiction

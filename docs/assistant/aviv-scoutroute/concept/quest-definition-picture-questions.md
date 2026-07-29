@@ -25,7 +25,9 @@ assistant_behavior:
     abstain_if_missing_context: true
     do_not_claim:
         - Quest photos are private to the project team without checking the current workflow.
-related_pages: []
+related_pages:
+    - assistant/aviv-scoutroute/index.md
+    - assistant/workspaces/concept/public-availability-of-quest-photos.md
 tags:
     - Assistant
 ---

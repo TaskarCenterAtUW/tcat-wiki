@@ -26,7 +26,9 @@ assistant_behavior:
     do_not_claim:
         - A page labeled OSW 0.3 is necessarily the latest OpenSidewalks schema.
         - A schema is suitable for a consumer without checking its version and requirements.
-related_pages: []
+related_pages:
+    - assistant/opensidewalks/index.md
+    - assistant/opensidewalks/concept/opensidewalks-schema.md
 tags:
     - Assistant
 ---

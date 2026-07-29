@@ -51,7 +51,7 @@ Project datasets may remain private to project-group members while they are prep
 
 ## What This Does Not Mean
 
-The viewer does not make private or unreleased datasets public. A dataset’s release and visibility settings still control whether it appears.
+The viewer does not make private or unreleased datasets public. A dataset's release and visibility settings still control whether it appears.
 
 ## How To Use This
 

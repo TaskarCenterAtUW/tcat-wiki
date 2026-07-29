@@ -27,7 +27,9 @@ assistant_behavior:
     abstain_if_missing_context: true
     do_not_claim:
         - Reporting a connectivity error immediately changes the OS-CONNECT dataset.
-related_pages: []
+related_pages:
+    - assistant/os-connect/index.md
+    - assistant/walksheds/concept/walkshed-edit-limitations.md
 tags:
     - Assistant
 ---

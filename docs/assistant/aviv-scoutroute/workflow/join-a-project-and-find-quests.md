@@ -30,7 +30,10 @@ assistant_behavior:
     abstain_if_missing_context: true
     do_not_claim:
         - Downloading AVIV ScoutRoute automatically provides a local quest.
-related_pages: []
+related_pages:
+    - assistant/aviv-scoutroute/index.md
+    - assistant/aviv-scoutroute/concept/quest.md
+    - assistant/workspaces/concept/workspace-availability-for-new-mappers.md
 tags:
     - Assistant
 ---
@@ -61,7 +64,7 @@ Use the current project referral link or QR code when provided. If no workspace 
 
 ## Example
 
-A volunteer scans a project-group referral code for a Seattle campaign, registers, and then sees the campaign’s app-enabled workspace and its available quests.
+A volunteer scans a project-group referral code for a Seattle campaign, registers, and then sees the campaign's app-enabled workspace and its available quests.
 
 ## Assistant Guidance
 

@@ -25,7 +25,9 @@ assistant_behavior:
     abstain_if_missing_context: true
     do_not_claim:
         - A contributor's organizational team determines every question they can answer.
-related_pages: []
+related_pages:
+    - assistant/aviv-scoutroute/index.md
+    - assistant/aviv-scoutroute/concept/quest-dependency-evaluators.md
 tags:
     - Assistant
 ---

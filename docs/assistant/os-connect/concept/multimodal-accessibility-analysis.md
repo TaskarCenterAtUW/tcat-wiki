@@ -4,6 +4,7 @@ slug: multimodal-accessibility-analysis
 doc_type: concept
 questions:
     - What is multimodal accessibility analysis?
+    - What is a multimodal accessibility analysis?
 audiences:
     - planner
     - jurisdiction

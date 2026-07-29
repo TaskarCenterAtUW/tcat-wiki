@@ -27,7 +27,10 @@ assistant_behavior:
     do_not_claim:
         - A smaller modeled walkshed proves that a person cannot travel in the jurisdiction.
         - A walkshed result measures physical accessibility independently of the dataset.
-related_pages: []
+related_pages:
+    - assistant/os-connect/index.md
+    - assistant/os-connect/concept/completeness-score-interpretation.md
+    - assistant/os-connect/concept/qa-qc-report.md
 tags:
     - Assistant
 ---

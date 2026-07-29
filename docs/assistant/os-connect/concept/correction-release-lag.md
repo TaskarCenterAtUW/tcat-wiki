@@ -4,6 +4,7 @@ slug: correction-release-lag
 doc_type: concept
 questions:
     - How long do corrections take to appear in a public release?
+    - How long does it take for a correction to appear in a public release?
 audiences:
     - planner
     - jurisdiction
