@@ -233,7 +233,8 @@
 *[TRAILS]: Trail Routing, Analysis, and Information Linkage System
 *[TRB]: Transportation Research Board
 *[TSP]: Transportation Service Provider / Transportation Safety Planning
-*[TTS]: Text-to-Speech
+*[TTL]: Time to Live
+*[TTS]: Text to Speech
 *[TVM]: Ticket Vending Machine
 *[TxDOT]: Texas Department of Transportation
 *[UGA]: Urban Growth Area
