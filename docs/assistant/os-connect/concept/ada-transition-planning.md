@@ -69,4 +69,4 @@ Because this is a high-risk planning topic, cite the source and avoid legal conc
 ## Related Concepts
 
 - [ADA compliance boundaries](../../cross-platform/concept/ada-compliance-boundaries.md)
-- [OS-CONNECT QA/QC documentation](../../os-connect/qa-qc/user-manual/index.md)
+- [OS-CONNECT QA/QC documentation](../../../os-connect/qa-qc/user-manual/index.md)
