@@ -31,6 +31,8 @@ assistant_behavior:
 related_pages:
     - opensidewalks-schema.md
     - network-topology.md
+    - adjacent-entities.md
+    - custom-entities.md
     - adjacent-and-custom-entities.md
 tags:
     - Assistant
@@ -71,4 +73,6 @@ Ask whether the feature is intended to be routable, adjacent, or custom. Cite th
 ## Related Concepts
 
 - [What is the OpenSidewalks data schema?](opensidewalks-schema.md)
-- [How are adjacent and custom entities used?](adjacent-and-custom-entities.md)
+- [What are Adjacent Entities in OpenSidewalks?](adjacent-entities.md)
+- [What are Custom Entities in OpenSidewalks?](custom-entities.md)
+- [How do Adjacent and Custom Entities differ?](adjacent-vs-custom-entities.md)

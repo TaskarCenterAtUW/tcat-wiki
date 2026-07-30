@@ -74,5 +74,5 @@ Ask which schema version and consumer are involved, what the source feature repr
 ## Related Concepts
 
 - [What are Adjacent Entities in OpenSidewalks?](adjacent-entities.md)
-- [How do Adjacent and Custom Entities differ?](adjacent-and-custom-entities.md)
+- [How do Adjacent and Custom Entities differ?](adjacent-vs-custom-entities.md)
 - [How do I add Custom Points?](../workflow/add-custom-points-to-osw.md)

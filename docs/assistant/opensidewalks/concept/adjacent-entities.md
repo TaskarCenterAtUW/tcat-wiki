@@ -73,5 +73,5 @@ Ask which schema version and consumer are involved. Confirm that the feature mat
 ## Related Concepts
 
 - [What are Custom Entities in OpenSidewalks?](custom-entities.md)
-- [How do Adjacent and Custom Entities differ?](adjacent-and-custom-entities.md)
+- [How do Adjacent and Custom Entities differ?](adjacent-vs-custom-entities.md)
 - [What entities does the OpenSidewalks Schema define?](network-entities.md)
