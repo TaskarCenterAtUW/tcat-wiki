@@ -1,5 +1,5 @@
 ---
-title: "How do I manage AVIV ScoutRoute quest visibility?"
+title: How do I manage AVIV ScoutRoute quest visibility?
 slug: manage-quest-visibility
 doc_type: workflow
 questions:

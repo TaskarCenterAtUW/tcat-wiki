@@ -1,5 +1,5 @@
 ---
-title: "How do I build a Walksheds router?"
+title: How do I build a Walksheds router?
 slug: build-walkshed-router
 doc_type: workflow
 questions:

@@ -1,5 +1,5 @@
 ---
-title: "How should QA/QC report maps be interpreted?"
+title: How should QA/QC report maps be interpreted?
 slug: report-map-interpretation
 doc_type: concept
 questions:

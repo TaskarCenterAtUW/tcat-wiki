@@ -1,5 +1,5 @@
 ---
-title: "What is the difference between raster and vector basemaps?"
+title: What is the difference between raster and vector basemaps?
 slug: raster-and-vector-basemaps
 doc_type: concept
 questions:

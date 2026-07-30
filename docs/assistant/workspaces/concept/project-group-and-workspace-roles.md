@@ -1,5 +1,5 @@
 ---
-title: "How do TDEI project group roles differ from Workspaces roles?"
+title: How do TDEI project group roles differ from Workspaces roles?
 slug: project-group-and-workspace-roles
 doc_type: concept
 questions:

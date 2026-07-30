@@ -1,5 +1,5 @@
 ---
-title: "What input types are available in AVIV ScoutRoute quests?"
+title: What input types are available in AVIV ScoutRoute quests?
 slug: quest-input-types
 doc_type: concept
 questions:

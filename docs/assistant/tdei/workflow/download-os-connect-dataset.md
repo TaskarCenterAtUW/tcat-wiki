@@ -1,5 +1,5 @@
 ---
-title: "How do I download an OS-CONNECT dataset from TDEI?"
+title: How do I download an OS-CONNECT dataset from TDEI?
 slug: download-os-connect-dataset
 doc_type: workflow
 questions:

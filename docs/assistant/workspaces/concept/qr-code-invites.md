@@ -1,5 +1,5 @@
 ---
-title: "What are QR code invites used for?"
+title: What are QR code invites used for?
 slug: qr-code-invites
 doc_type: concept
 questions:

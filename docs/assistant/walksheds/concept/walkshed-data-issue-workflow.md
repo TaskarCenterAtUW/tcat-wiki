@@ -1,5 +1,5 @@
 ---
-title: "What should I do when Walksheds reveals a data issue?"
+title: What should I do when Walksheds reveals a data issue?
 slug: walkshed-data-issue-workflow
 doc_type: concept
 questions:

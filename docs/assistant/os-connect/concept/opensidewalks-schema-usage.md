@@ -1,5 +1,5 @@
 ---
-title: "What does it mean that OS-CONNECT uses the OpenSidewalks schema?"
+title: What does it mean that OS-CONNECT uses the OpenSidewalks schema?
 slug: opensidewalks-schema-usage
 doc_type: concept
 questions:
@@ -18,7 +18,7 @@ topics:
 risk_level: medium
 authority_level: explanatory
 publication_status: stub
-last_reviewed: ""
+last_reviewed:
 retrieval_priority: high
 assistant_behavior:
     allow_inference: false

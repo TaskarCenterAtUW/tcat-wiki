@@ -1,5 +1,5 @@
 ---
-title: "Which source attributes can Walksheds use?"
+title: Which source attributes can Walksheds use?
 slug: walkshed-attribute-availability
 doc_type: concept
 questions:

@@ -1,5 +1,5 @@
 ---
-title: "How do I run batch walksheds?"
+title: How do I run batch walksheds?
 slug: run-batch-walksheds
 doc_type: workflow
 questions:

@@ -1,5 +1,5 @@
 ---
-title: "What attributes are included for sidewalks, crossings, curb ramps, and related pedestrian features?"
+title: What attributes are included for sidewalks, crossings, curb ramps, and related pedestrian features?
 slug: pedestrian-feature-attributes
 doc_type: concept
 questions:
@@ -18,7 +18,7 @@ topics:
 risk_level: medium
 authority_level: explanatory
 publication_status: stub
-last_reviewed: ""
+last_reviewed:
 retrieval_priority: high
 assistant_behavior:
     allow_inference: false

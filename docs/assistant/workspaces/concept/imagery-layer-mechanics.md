@@ -1,5 +1,5 @@
 ---
-title: "How do imagery layers work in Workspaces?"
+title: How do imagery layers work in Workspaces?
 slug: imagery-layer-mechanics
 doc_type: concept
 questions:

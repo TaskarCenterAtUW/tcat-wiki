@@ -1,5 +1,5 @@
 ---
-title: "How do I create a workspace from a TDEI dataset?"
+title: How do I create a workspace from a TDEI dataset?
 slug: create-workspace-from-tdei-dataset
 doc_type: workflow
 questions:

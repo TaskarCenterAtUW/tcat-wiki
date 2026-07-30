@@ -1,5 +1,5 @@
 ---
-title: "How can QA/QC reports compare before and after scenarios?"
+title: How can QA/QC reports compare before and after scenarios?
 slug: before-after-walkshed-analysis
 doc_type: concept
 questions:

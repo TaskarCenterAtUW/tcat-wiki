@@ -1,5 +1,5 @@
 ---
-title: "How are curb ramps incorporated into routing?"
+title: How are curb ramps incorporated into routing?
 slug: curb-ramp-routing
 doc_type: concept
 questions:
@@ -18,7 +18,7 @@ topics:
 risk_level: medium
 authority_level: provisional
 publication_status: stub
-last_reviewed: ""
+last_reviewed:
 retrieval_priority: high
 assistant_behavior:
     allow_inference: false

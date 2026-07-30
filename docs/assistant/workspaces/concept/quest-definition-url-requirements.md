@@ -1,5 +1,5 @@
 ---
-title: "What URL can a workspace use for a quest definition?"
+title: What URL can a workspace use for a quest definition?
 slug: quest-definition-url-requirements
 doc_type: concept
 questions:

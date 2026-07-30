@@ -1,5 +1,5 @@
 ---
-title: "What does eigenvector centrality say about network importance?"
+title: What does eigenvector centrality say about network importance?
 slug: eigenvector-centrality-network-importance
 doc_type: concept
 questions:

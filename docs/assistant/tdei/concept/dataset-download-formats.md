@@ -1,5 +1,5 @@
 ---
-title: "Which formats can a TDEI dataset download use?"
+title: Which formats can a TDEI dataset download use?
 slug: dataset-download-formats
 doc_type: concept
 questions:

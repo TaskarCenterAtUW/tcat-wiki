@@ -1,5 +1,5 @@
 ---
-title: "What does the intersection quality metric measure?"
+title: What does the intersection quality metric measure?
 slug: intersection-quality-metric
 doc_type: concept
 questions:

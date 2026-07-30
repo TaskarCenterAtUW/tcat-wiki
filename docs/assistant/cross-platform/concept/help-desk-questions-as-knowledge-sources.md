@@ -1,5 +1,5 @@
 ---
-title: "Which help-desk questions belong in the Assistant Knowledge Base?"
+title: Which help-desk questions belong in the Assistant Knowledge Base?
 slug: help-desk-questions-as-knowledge-sources
 doc_type: concept
 questions:

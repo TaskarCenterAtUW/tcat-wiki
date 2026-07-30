@@ -1,5 +1,5 @@
 ---
-title: "How can a workspace diverge from its source dataset?"
+title: How can a workspace diverge from its source dataset?
 slug: workspace-copy-and-divergence
 doc_type: concept
 questions:

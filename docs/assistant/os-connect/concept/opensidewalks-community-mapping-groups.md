@@ -1,5 +1,5 @@
 ---
-title: "How do OpenSidewalks mapping efforts relate to local community mapping groups such as Maptime LA?"
+title: How do OpenSidewalks mapping efforts relate to local community mapping groups such as Maptime LA?
 slug: opensidewalks-community-mapping-groups
 doc_type: concept
 questions:
@@ -18,7 +18,7 @@ topics:
 risk_level: medium
 authority_level: explanatory
 publication_status: stub
-last_reviewed: ""
+last_reviewed:
 retrieval_priority: high
 assistant_behavior:
     allow_inference: false

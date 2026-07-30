@@ -1,5 +1,5 @@
 ---
-title: "How do I register and verify a TDEI account?"
+title: How do I register and verify a TDEI account?
 slug: register-and-verify-tdei-account
 doc_type: workflow
 questions:

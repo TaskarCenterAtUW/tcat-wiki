@@ -1,5 +1,5 @@
 ---
-title: "What does the TDEI OSW Convert job do?"
+title: What does the TDEI OSW Convert job do?
 slug: job-osw-convert
 doc_type: concept
 questions:

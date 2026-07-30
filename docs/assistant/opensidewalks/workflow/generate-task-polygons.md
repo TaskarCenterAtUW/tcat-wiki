@@ -1,5 +1,5 @@
 ---
-title: "How do I generate OpenSidewalks Tasking Manager polygons?"
+title: How do I generate OpenSidewalks Tasking Manager polygons?
 slug: generate-task-polygons
 doc_type: workflow
 questions:

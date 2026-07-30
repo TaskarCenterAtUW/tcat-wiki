@@ -1,5 +1,5 @@
 ---
-title: "Where do QA/QC report points of interest come from?"
+title: Where do QA/QC report points of interest come from?
 slug: point-of-interest-sources
 doc_type: concept
 questions:

@@ -1,5 +1,5 @@
 ---
-title: "What does presence percent mean in QA/QC reports?"
+title: What does presence percent mean in QA/QC reports?
 slug: presence-percent
 doc_type: concept
 questions:

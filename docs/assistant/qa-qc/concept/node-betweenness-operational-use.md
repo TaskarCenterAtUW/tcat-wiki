@@ -1,5 +1,5 @@
 ---
-title: "How can node betweenness support operations?"
+title: How can node betweenness support operations?
 slug: node-betweenness-operational-use
 doc_type: concept
 questions:

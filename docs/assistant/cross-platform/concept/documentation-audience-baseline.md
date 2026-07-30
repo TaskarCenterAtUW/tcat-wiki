@@ -1,5 +1,5 @@
 ---
-title: "What audience baseline can guide TCAT documentation?"
+title: What audience baseline can guide TCAT documentation?
 slug: documentation-audience-baseline
 doc_type: concept
 questions:

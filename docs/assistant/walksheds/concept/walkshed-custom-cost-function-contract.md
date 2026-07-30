@@ -1,5 +1,5 @@
 ---
-title: "What is the Walksheds custom cost-function contract?"
+title: What is the Walksheds custom cost-function contract?
 slug: walkshed-custom-cost-function-contract
 doc_type: concept
 questions:

@@ -1,5 +1,5 @@
 ---
-title: "What Are the Limitations of QA/QC Analysis?"
+title: What Are the Limitations of QA/QC Analysis?
 slug: qa-qc-limitations
 doc_type: concept
 questions:

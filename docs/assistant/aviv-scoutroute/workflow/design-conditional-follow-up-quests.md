@@ -1,5 +1,5 @@
 ---
-title: "How do I design conditional follow-up quests?"
+title: How do I design conditional follow-up quests?
 slug: design-conditional-follow-up-quests
 doc_type: workflow
 questions:

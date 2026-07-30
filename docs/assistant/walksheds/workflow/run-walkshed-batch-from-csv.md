@@ -1,5 +1,5 @@
 ---
-title: "How do I run a Walksheds batch from CSV?"
+title: How do I run a Walksheds batch from CSV?
 slug: run-walkshed-batch-from-csv
 doc_type: workflow
 questions:

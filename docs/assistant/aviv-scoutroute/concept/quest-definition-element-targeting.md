@@ -1,5 +1,5 @@
 ---
-title: "How do quest definitions target element types?"
+title: How do quest definitions target element types?
 slug: quest-definition-element-targeting
 doc_type: concept
 questions:

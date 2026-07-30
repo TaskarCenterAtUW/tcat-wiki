@@ -68,7 +68,7 @@ tags:
 
 ## Short Answer
 
-This page lists all 273 abbreviations, acronyms, and initialisms used across TCAT Wiki documentation and TCAT platforms and tools.
+This page lists all 274 abbreviations, acronyms, and initialisms used across TCAT Wiki documentation and TCAT platforms and tools.
 
 ## Significance
 
@@ -315,7 +315,8 @@ The table below maps each abbreviated form to its full expansion. Entries are so
 | TRAILS | Trail Routing, Analysis, and Information Linkage System |
 | TRB | Transportation Research Board |
 | TSP | Transportation Service Provider / Transportation Safety Planning |
-| TTS | Text-to-Speech |
+| TTL | Time to Live |
+| TTS | Text to Speech |
 | TVM | Ticket Vending Machine |
 | TxDOT | Texas Department of Transportation |
 | UGA | Urban Growth Area |

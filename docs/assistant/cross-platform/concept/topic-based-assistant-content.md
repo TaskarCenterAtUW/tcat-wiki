@@ -1,5 +1,5 @@
 ---
-title: "What is topic-based Assistant Knowledge Base content?"
+title: What is topic-based Assistant Knowledge Base content?
 slug: topic-based-assistant-content
 doc_type: concept
 questions:

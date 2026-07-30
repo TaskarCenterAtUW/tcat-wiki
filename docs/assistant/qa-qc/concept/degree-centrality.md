@@ -1,5 +1,5 @@
 ---
-title: "What does degree centrality mean in pedestrian-network reports?"
+title: What does degree centrality mean in pedestrian-network reports?
 slug: degree-centrality
 doc_type: concept
 questions:

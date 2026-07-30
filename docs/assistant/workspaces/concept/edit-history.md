@@ -1,5 +1,5 @@
 ---
-title: "How can users inspect edit history?"
+title: How can users inspect edit history?
 slug: edit-history
 doc_type: concept
 questions:

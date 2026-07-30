@@ -1,5 +1,5 @@
 ---
-title: "Can attribute data be edited?"
+title: Can attribute data be edited?
 slug: attribute-editing
 doc_type: concept
 questions:

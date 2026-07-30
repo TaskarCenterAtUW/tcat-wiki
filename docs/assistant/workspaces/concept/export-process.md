@@ -1,5 +1,5 @@
 ---
-title: "What happens during export?"
+title: What happens during export?
 slug: export-process
 doc_type: concept
 questions:

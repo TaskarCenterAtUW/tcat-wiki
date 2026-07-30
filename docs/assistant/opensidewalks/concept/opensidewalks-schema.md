@@ -1,5 +1,5 @@
 ---
-title: "What is the OpenSidewalks data schema?"
+title: What is the OpenSidewalks data schema?
 slug: opensidewalks-schema
 doc_type: concept
 questions:

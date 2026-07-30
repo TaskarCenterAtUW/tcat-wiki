@@ -1,5 +1,5 @@
 ---
-title: "What is the TDEI released-dataset viewer?"
+title: What is the TDEI released-dataset viewer?
 slug: released-dataset-viewer
 doc_type: concept
 questions:

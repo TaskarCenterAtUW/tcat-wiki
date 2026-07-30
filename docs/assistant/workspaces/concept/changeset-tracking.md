@@ -1,5 +1,5 @@
 ---
-title: "How are changesets tracked?"
+title: How are changesets tracked?
 slug: changeset-tracking
 doc_type: concept
 questions:

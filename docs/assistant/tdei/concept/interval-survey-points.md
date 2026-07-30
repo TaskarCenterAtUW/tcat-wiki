@@ -1,5 +1,5 @@
 ---
-title: "How should interval survey points be represented?"
+title: How should interval survey points be represented?
 slug: interval-survey-points
 doc_type: concept
 questions:

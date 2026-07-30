@@ -1,5 +1,5 @@
 ---
-title: "What does maximum extent feasible mean in accessibility data?"
+title: What does maximum extent feasible mean in accessibility data?
 slug: maximum-extent-feasible
 doc_type: concept
 questions:

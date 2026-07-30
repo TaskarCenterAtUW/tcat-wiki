@@ -1,5 +1,5 @@
 ---
-title: "What are imagery-layer configuration boundaries?"
+title: What are imagery-layer configuration boundaries?
 slug: imagery-layer-configuration-boundaries
 doc_type: concept
 questions:

@@ -1,5 +1,5 @@
 ---
-title: "Where are TDEI datasets edited?"
+title: Where are TDEI datasets edited?
 slug: workspace-editing-boundary
 doc_type: concept
 questions:

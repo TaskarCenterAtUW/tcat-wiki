@@ -1,5 +1,5 @@
 ---
-title: "Who uses Workspaces?"
+title: Who uses Workspaces?
 slug: workspaces-user-audience
 doc_type: concept
 questions:

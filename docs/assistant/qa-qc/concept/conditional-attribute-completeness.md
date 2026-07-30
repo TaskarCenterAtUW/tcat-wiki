@@ -1,5 +1,5 @@
 ---
-title: "Why can conditional attribute completeness be low?"
+title: Why can conditional attribute completeness be low?
 slug: conditional-attribute-completeness
 doc_type: concept
 questions:

@@ -1,5 +1,5 @@
 ---
-title: "What is RAPID 2 versus RAPID 3?"
+title: What is RAPID 2 versus RAPID 3?
 slug: rapid-versions
 doc_type: concept
 questions:

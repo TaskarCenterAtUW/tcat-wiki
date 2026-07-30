@@ -1,5 +1,5 @@
 ---
-title: "What statistics does Walksheds provide?"
+title: What statistics does Walksheds provide?
 slug: walkshed-result-statistics
 doc_type: concept
 questions:

@@ -1,5 +1,5 @@
 ---
-title: "Why may QA/QC metric areas differ from jurisdiction boundaries?"
+title: Why may QA/QC metric areas differ from jurisdiction boundaries?
 slug: metric-boundaries
 doc_type: concept
 questions:

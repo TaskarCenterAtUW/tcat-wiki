@@ -1,5 +1,5 @@
 ---
-title: "How are Walksheds batch outputs handled?"
+title: How are Walksheds batch outputs handled?
 slug: walkshed-batch-output
 doc_type: concept
 questions:

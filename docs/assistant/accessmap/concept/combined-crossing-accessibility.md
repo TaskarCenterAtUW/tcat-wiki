@@ -1,5 +1,5 @@
 ---
-title: "How does AccessMap represent crossing accessibility?"
+title: How does AccessMap represent crossing accessibility?
 slug: combined-crossing-accessibility
 doc_type: concept
 questions:

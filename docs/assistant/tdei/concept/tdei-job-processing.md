@@ -1,5 +1,5 @@
 ---
-title: "What are TDEI processing jobs?"
+title: What are TDEI processing jobs?
 slug: tdei-job-processing
 doc_type: concept
 questions:

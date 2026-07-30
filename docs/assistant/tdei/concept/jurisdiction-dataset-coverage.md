@@ -1,5 +1,5 @@
 ---
-title: "How do TDEI jurisdiction datasets differ in coverage?"
+title: How do TDEI jurisdiction datasets differ in coverage?
 slug: jurisdiction-dataset-coverage
 doc_type: concept
 questions:

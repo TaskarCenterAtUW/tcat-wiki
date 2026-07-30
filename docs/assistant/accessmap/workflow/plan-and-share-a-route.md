@@ -1,5 +1,5 @@
 ---
-title: "How do I plan and share an AccessMap route?"
+title: How do I plan and share an AccessMap route?
 slug: plan-and-share-a-route
 doc_type: workflow
 questions:

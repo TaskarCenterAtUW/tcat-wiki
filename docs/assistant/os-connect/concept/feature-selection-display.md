@@ -1,5 +1,5 @@
 ---
-title: "What does this selected feature represent?"
+title: What does this selected feature represent?
 slug: feature-selection-display
 doc_type: concept
 questions:

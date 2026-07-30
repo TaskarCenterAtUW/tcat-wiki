@@ -1,5 +1,5 @@
 ---
-title: "How is TDEI organized?"
+title: How is TDEI organized?
 slug: tdei-architecture
 doc_type: concept
 questions:

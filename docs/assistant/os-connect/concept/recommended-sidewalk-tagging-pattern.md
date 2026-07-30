@@ -1,5 +1,5 @@
 ---
-title: "Which sidewalk-to-street-name tagging pattern is currently recommended?"
+title: Which sidewalk-to-street-name tagging pattern is currently recommended?
 slug: recommended-sidewalk-tagging-pattern
 doc_type: concept
 questions:
@@ -18,7 +18,7 @@ topics:
 risk_level: medium
 authority_level: explanatory
 publication_status: stub
-last_reviewed: ""
+last_reviewed:
 retrieval_priority: high
 assistant_behavior:
     allow_inference: false

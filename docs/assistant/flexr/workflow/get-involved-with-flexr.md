@@ -1,5 +1,5 @@
 ---
-title: "How do I get involved with FleXR?"
+title: How do I get involved with FleXR?
 slug: get-involved-with-flexr
 doc_type: workflow
 questions:

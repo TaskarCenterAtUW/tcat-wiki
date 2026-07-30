@@ -1,5 +1,5 @@
 ---
-title: "Can custom imagery be added?"
+title: Can custom imagery be added?
 slug: custom-imagery
 doc_type: concept
 questions:

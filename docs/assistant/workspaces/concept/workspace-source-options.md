@@ -1,5 +1,5 @@
 ---
-title: "What sources can create a workspace?"
+title: What sources can create a workspace?
 slug: workspace-source-options
 doc_type: concept
 questions:

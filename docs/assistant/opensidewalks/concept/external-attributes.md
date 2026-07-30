@@ -1,5 +1,5 @@
 ---
-title: "How can the OpenSidewalks schema support external attributes?"
+title: How can the OpenSidewalks schema support external attributes?
 slug: external-attributes
 doc_type: concept
 questions:

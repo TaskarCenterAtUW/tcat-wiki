@@ -1,5 +1,5 @@
 ---
-title: "Review workspace edits"
+title: Review workspace edits
 slug: review-workspace-edits
 doc_type: workflow
 questions:

@@ -1,5 +1,5 @@
 ---
-title: "What tools work with Workspaces?"
+title: What tools work with Workspaces?
 slug: compatible-tools
 doc_type: concept
 questions:

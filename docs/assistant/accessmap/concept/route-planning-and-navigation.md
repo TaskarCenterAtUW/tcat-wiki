@@ -1,5 +1,5 @@
 ---
-title: "What is the difference between route planning and navigation in AccessMap?"
+title: What is the difference between route planning and navigation in AccessMap?
 slug: route-planning-and-navigation
 doc_type: concept
 questions:

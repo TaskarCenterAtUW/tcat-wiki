@@ -1,5 +1,5 @@
 ---
-title: "How are TDEI environments separated?"
+title: How are TDEI environments separated?
 slug: environment-separation
 doc_type: concept
 questions:

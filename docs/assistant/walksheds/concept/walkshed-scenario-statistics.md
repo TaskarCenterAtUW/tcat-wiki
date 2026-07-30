@@ -1,5 +1,5 @@
 ---
-title: "What statistics can Walksheds scenarios compare?"
+title: What statistics can Walksheds scenarios compare?
 slug: walkshed-scenario-statistics
 doc_type: concept
 questions:

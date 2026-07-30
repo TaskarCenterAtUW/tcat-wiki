@@ -1,5 +1,5 @@
 ---
-title: "Use Workspaces for community validation"
+title: Use Workspaces for community validation
 slug: use-workspaces-for-community-validation
 doc_type: workflow
 questions:

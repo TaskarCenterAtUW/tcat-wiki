@@ -1,5 +1,5 @@
 ---
-title: "Dataset lineage (Workspaces and TDEI)"
+title: Dataset lineage (Workspaces and TDEI)
 slug: dataset-lineage
 doc_type: concept
 questions:

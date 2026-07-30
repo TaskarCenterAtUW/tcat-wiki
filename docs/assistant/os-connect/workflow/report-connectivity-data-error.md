@@ -1,5 +1,5 @@
 ---
-title: "How do I report a connectivity error in OS-CONNECT?"
+title: How do I report a connectivity error in OS-CONNECT?
 slug: report-connectivity-data-error
 doc_type: workflow
 questions:

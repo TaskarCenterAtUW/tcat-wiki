@@ -1,5 +1,5 @@
 ---
-title: "What are the different workspace creation methods?"
+title: What are the different workspace creation methods?
 slug: workspace-creation-methods
 doc_type: concept
 questions:

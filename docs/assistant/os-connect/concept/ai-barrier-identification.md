@@ -1,5 +1,5 @@
 ---
-title: "Can AI automatically identify pedestrian barriers?"
+title: Can AI automatically identify pedestrian barriers?
 slug: ai-barrier-identification
 doc_type: concept
 questions:
@@ -17,7 +17,7 @@ topics:
 risk_level: high
 authority_level: explanatory
 publication_status: stub
-last_reviewed: ""
+last_reviewed:
 retrieval_priority: high
 assistant_behavior:
     allow_inference: false

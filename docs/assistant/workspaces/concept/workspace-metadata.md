@@ -1,5 +1,5 @@
 ---
-title: "What metadata is stored with a workspace?"
+title: What metadata is stored with a workspace?
 slug: workspace-metadata
 doc_type: concept
 questions:

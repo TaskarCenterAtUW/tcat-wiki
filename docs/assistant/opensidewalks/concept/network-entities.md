@@ -1,5 +1,5 @@
 ---
-title: "What entities does the OpenSidewalks Schema define?"
+title: What entities does the OpenSidewalks Schema define?
 slug: network-entities
 doc_type: concept
 questions:

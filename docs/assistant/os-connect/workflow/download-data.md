@@ -1,5 +1,5 @@
 ---
-title: "How do I download data from the viewer?"
+title: How do I download data from the viewer?
 slug: download-data
 doc_type: workflow
 questions:

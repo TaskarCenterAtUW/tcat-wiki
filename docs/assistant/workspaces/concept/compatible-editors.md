@@ -1,5 +1,5 @@
 ---
-title: "What editors work with Workspaces?"
+title: What editors work with Workspaces?
 slug: compatible-editors
 doc_type: concept
 questions:

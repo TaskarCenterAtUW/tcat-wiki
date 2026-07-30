@@ -1,5 +1,5 @@
 ---
-title: "How do I interpret QA/QC report sections?"
+title: How do I interpret QA/QC report sections?
 slug: interpret-report-sections
 doc_type: workflow
 questions:

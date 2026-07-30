@@ -1,5 +1,5 @@
 ---
-title: "Workspaces data freshness"
+title: Workspaces data freshness
 slug: workspace-data-freshness
 doc_type: concept
 questions:

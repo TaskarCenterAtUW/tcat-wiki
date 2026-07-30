@@ -1,5 +1,5 @@
 ---
-title: "What are teams in Workspaces?"
+title: What are teams in Workspaces?
 slug: teams
 doc_type: concept
 questions:

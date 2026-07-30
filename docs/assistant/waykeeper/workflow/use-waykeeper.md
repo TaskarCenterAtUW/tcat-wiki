@@ -1,5 +1,5 @@
 ---
-title: "How do I use Waykeeper?"
+title: How do I use Waykeeper?
 slug: use-waykeeper
 doc_type: workflow
 questions:

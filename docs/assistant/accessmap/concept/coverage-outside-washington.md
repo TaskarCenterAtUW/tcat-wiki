@@ -1,5 +1,5 @@
 ---
-title: "How does AccessMap coverage outside Washington work?"
+title: How does AccessMap coverage outside Washington work?
 slug: coverage-outside-washington
 doc_type: concept
 questions:

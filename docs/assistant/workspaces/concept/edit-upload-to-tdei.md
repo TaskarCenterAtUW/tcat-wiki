@@ -1,5 +1,5 @@
 ---
-title: "How are edits uploaded back to TDEI?"
+title: How are edits uploaded back to TDEI?
 slug: edit-upload-to-tdei
 doc_type: concept
 questions:

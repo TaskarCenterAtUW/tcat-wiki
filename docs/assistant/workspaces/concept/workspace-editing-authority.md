@@ -1,5 +1,5 @@
 ---
-title: "Workspaces editing authority"
+title: Workspaces editing authority
 slug: workspace-editing-authority
 doc_type: concept
 questions:

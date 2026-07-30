@@ -1,5 +1,5 @@
 ---
-title: "How do I validate OpenSidewalks edits in the Tasking Manager?"
+title: How do I validate OpenSidewalks edits in the Tasking Manager?
 slug: validate-osw-tasking-manager-edits
 doc_type: workflow
 questions:

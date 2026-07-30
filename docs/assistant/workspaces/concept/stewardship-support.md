@@ -1,5 +1,5 @@
 ---
-title: "How does Workspaces support stewardship?"
+title: How does Workspaces support stewardship?
 slug: stewardship-support
 doc_type: concept
 questions:

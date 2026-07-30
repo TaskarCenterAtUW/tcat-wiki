@@ -1,5 +1,5 @@
 ---
-title: "What happens when I create a workspace from a TDEI dataset?"
+title: What happens when I create a workspace from a TDEI dataset?
 slug: workspace-creation-mechanics
 doc_type: concept
 questions:

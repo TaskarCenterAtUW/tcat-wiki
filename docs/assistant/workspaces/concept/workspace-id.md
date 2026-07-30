@@ -1,5 +1,5 @@
 ---
-title: "What is the workspace ID used for?"
+title: What is the workspace ID used for?
 slug: workspace-id
 doc_type: concept
 questions:

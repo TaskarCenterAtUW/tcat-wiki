@@ -1,5 +1,5 @@
 ---
-title: "What should staff do when they do not know the answer to a partner's question?"
+title: What should staff do when they do not know the answer to a partner's question?
 slug: handle-unknown-questions
 doc_type: workflow
 questions:
@@ -24,7 +24,7 @@ topics:
 risk_level: medium
 authority_level: explanatory
 publication_status: stub
-last_reviewed: ""
+last_reviewed:
 retrieval_priority: high
 assistant_behavior:
     allow_inference: false

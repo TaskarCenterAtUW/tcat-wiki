@@ -1,5 +1,5 @@
 ---
-title: "What is Workspaces as a private OSM environment?"
+title: What is Workspaces as a private OSM environment?
 slug: workspace-as-private-osm
 doc_type: concept
 questions:

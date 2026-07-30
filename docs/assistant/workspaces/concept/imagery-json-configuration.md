@@ -1,5 +1,5 @@
 ---
-title: "What is the imagery JSON configuration?"
+title: What is the imagery JSON configuration?
 slug: imagery-json-configuration
 doc_type: concept
 questions:

@@ -1,5 +1,5 @@
 ---
-title: "How do Workspaces roles differ from project-group roles?"
+title: How do Workspaces roles differ from project-group roles?
 slug: workspace-roles-and-project-roles
 doc_type: concept
 questions:

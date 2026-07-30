@@ -1,5 +1,5 @@
 ---
-title: "What is FleXR?"
+title: What is FleXR?
 slug: flexr
 doc_type: concept
 questions:

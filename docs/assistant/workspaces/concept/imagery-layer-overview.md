@@ -1,5 +1,5 @@
 ---
-title: "What are imagery layers?"
+title: What are imagery layers?
 slug: imagery-layer-overview
 doc_type: concept
 questions:

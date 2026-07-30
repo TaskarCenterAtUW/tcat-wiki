@@ -1,5 +1,5 @@
 ---
-title: "How should imagery be used when mapping OpenSidewalks features?"
+title: How should imagery be used when mapping OpenSidewalks features?
 slug: mapping-imagery-limitations
 doc_type: concept
 questions:

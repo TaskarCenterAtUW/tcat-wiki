@@ -1,5 +1,5 @@
 ---
-title: "How do project-group referrals provide workspace access?"
+title: How do project-group referrals provide workspace access?
 slug: project-group-referral-access
 doc_type: concept
 questions:

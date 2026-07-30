@@ -1,5 +1,5 @@
 ---
-title: "What are point features in Walksheds?"
+title: What are point features in Walksheds?
 slug: walkshed-point-features
 doc_type: concept
 questions:

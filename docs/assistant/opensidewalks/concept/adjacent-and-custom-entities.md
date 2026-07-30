@@ -1,5 +1,5 @@
 ---
-title: "How are adjacent and custom entities used in OpenSidewalks?"
+title: How are adjacent and custom entities used in OpenSidewalks?
 slug: adjacent-and-custom-entities
 doc_type: concept
 questions:
@@ -26,7 +26,8 @@ assistant_behavior:
     abstain_if_missing_context: true
     do_not_claim:
         - Every adjacent entity is a traversable part of the OpenSidewalks graph.
-        - Custom fields have standard schema semantics without an ext: prefix.
+        - Custom entities are routable graph elements merely because they use OpenSidewalks geometry types.
+        - Additional fields have standard schema semantics without an ext: prefix.
 related_pages:
     - network-entities.md
     - dataset-metadata-and-provenance.md
@@ -41,7 +42,7 @@ tags:
 
 ## Short Answer
 
-Adjacent entities describe features near the pedestrian network, while Custom Entities and `ext:` fields preserve user-defined information beyond the predefined schema.
+Adjacent Entities describe features near the pedestrian network. Custom Entities are user-defined Point, LineString, or Polygon features that extend the schema beyond the predefined Core and Adjacent categories. Additional fields that are not defined by the schema use the `ext:` prefix.
 
 ## Significance
 
@@ -49,23 +50,25 @@ These mechanisms add useful environmental and regional information without incor
 
 ## What This Means
 
-Adjacent Points, Lines, and Polygons can represent benches, hydrants, walls, fences, planters, and other nearby features. Custom entities use user-defined geometry types, and additional attributes should use the `ext:` prefix. Custom Points can represent non-routable features such as bus stops.
+Adjacent Entities have three geometry models: Points, Lines, and Polygons. They describe features that are relevant to the pedestrian network but are not represented as graph elements. Examples include benches or hydrants as Points, walls or fences as Lines, and planters as Polygons. Their relationship to other dataset features is spatial.
+
+Custom Entities also have three geometry models: Custom Points, Custom Lines, and Custom Polygons. They are user-defined features for data that does not fit a predefined Core or Adjacent entity. Each entity needs a unique `_id`, and fields not defined by the schema must use the `ext:` prefix. Custom Points can represent non-routable features such as bus stops.
 
 ## What This Does Not Mean
 
-Adjacent or custom data does not automatically create network connectivity or acquire the semantics of a standard field.
+Adjacent or custom data does not automatically create network connectivity or become part of the traversable graph. A geometry type alone does not determine the complete entity meaning, and an `ext:` field is not automatically a standardized OpenSidewalks field.
 
 ## How To Use This
 
-Use predefined fields when they fit, preserve source attributes with `ext:`, assign unique `_id` values, and document the source and intended interpretation.
+First decide whether the feature belongs in the Core network, describes an adjacent feature, or requires a Custom Entity. Use a predefined entity and field when one fits. Otherwise, assign a unique `_id`, use the geometry model that matches the source feature, preserve nonstandard source attributes with `ext:`, and document the source and intended interpretation. Check the applicable schema version and validate the resulting dataset.
 
 ## Example
 
-A GTFS bus stop becomes a Custom Point with a unique `_id`, WGS-84 coordinates, and fields such as `ext:stop_id` and `ext:stop_name`.
+A GTFS bus stop becomes a Custom Point with a unique `_id`, WGS-84 coordinates in GeoJSON order, and fields such as `ext:stop_id` and `ext:stop_name`. It remains a nearby, non-routable feature; it does not create an Edge or connect the pedestrian graph.
 
 ## Assistant Guidance
 
-Ask whether the feature needs to be routable and whether a standard entity already exists before recommending a custom extension.
+Ask which schema version and consumer are involved. Then ask whether the feature needs to be a routable graph element, whether a predefined Core or Adjacent entity already exists, and which source attributes must be preserved. Do not infer routability or standardized meaning from geometry or an `ext:` field alone. Cite the applicable schema documentation.
 
 ## Related Concepts
 

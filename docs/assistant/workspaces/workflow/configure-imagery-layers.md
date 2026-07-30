@@ -1,5 +1,5 @@
 ---
-title: "Configure imagery layers in a workspace"
+title: Configure imagery layers in a workspace
 slug: configure-imagery-layers
 doc_type: workflow
 questions:

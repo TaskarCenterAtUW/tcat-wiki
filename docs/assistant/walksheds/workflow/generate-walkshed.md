@@ -1,5 +1,5 @@
 ---
-title: "How do I generate a walkshed?"
+title: How do I generate a walkshed?
 slug: generate-walkshed
 doc_type: workflow
 questions:

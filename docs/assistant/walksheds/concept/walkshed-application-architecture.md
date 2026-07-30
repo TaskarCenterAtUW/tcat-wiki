@@ -1,5 +1,5 @@
 ---
-title: "How is the Walksheds tool organized?"
+title: How is the Walksheds tool organized?
 slug: walkshed-application-architecture
 doc_type: concept
 questions:

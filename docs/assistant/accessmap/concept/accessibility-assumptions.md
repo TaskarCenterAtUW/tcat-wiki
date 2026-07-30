@@ -1,5 +1,5 @@
 ---
-title: "What accessibility assumptions are built into AccessMap?"
+title: What accessibility assumptions are built into AccessMap?
 slug: accessibility-assumptions
 doc_type: concept
 questions:

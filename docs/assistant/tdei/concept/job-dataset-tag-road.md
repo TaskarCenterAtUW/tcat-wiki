@@ -1,5 +1,5 @@
 ---
-title: "What does the TDEI Dataset Tag Road job do?"
+title: What does the TDEI Dataset Tag Road job do?
 slug: job-dataset-tag-road
 doc_type: concept
 questions:

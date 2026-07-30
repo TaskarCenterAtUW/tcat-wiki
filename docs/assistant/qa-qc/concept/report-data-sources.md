@@ -1,5 +1,5 @@
 ---
-title: "What source information appears in a QA/QC report?"
+title: What source information appears in a QA/QC report?
 slug: report-data-sources
 doc_type: concept
 questions:

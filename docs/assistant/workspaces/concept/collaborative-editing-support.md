@@ -1,5 +1,5 @@
 ---
-title: "How does Workspaces support collaborative accessibility editing?"
+title: How does Workspaces support collaborative accessibility editing?
 slug: collaborative-editing-support
 doc_type: concept
 questions:

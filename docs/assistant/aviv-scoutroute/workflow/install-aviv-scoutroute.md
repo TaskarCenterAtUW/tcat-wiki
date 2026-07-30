@@ -1,5 +1,5 @@
 ---
-title: "How do I install AVIV ScoutRoute?"
+title: How do I install AVIV ScoutRoute?
 slug: install-aviv-scoutroute
 doc_type: workflow
 questions:

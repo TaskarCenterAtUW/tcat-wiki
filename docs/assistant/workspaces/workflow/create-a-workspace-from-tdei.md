@@ -1,5 +1,5 @@
 ---
-title: "Create a workspace from TDEI"
+title: Create a workspace from TDEI
 slug: create-a-workspace-from-tdei
 doc_type: workflow
 questions:

@@ -1,5 +1,5 @@
 ---
-title: "What does long-term stewardship actually require operationally?"
+title: What does long-term stewardship actually require operationally?
 slug: long-term-stewardship-requirements
 doc_type: concept
 questions:
@@ -17,7 +17,7 @@ topics:
 risk_level: medium
 authority_level: explanatory
 publication_status: stub
-last_reviewed: ""
+last_reviewed:
 retrieval_priority: high
 assistant_behavior:
     allow_inference: false

@@ -1,5 +1,5 @@
 ---
-title: "What is the QA/QC report glossary for?"
+title: What is the QA/QC report glossary for?
 slug: report-glossary
 doc_type: concept
 questions:

@@ -1,5 +1,5 @@
 ---
-title: "How do I access the TDEI API?"
+title: How do I access the TDEI API?
 slug: access-tdei-api
 doc_type: workflow
 questions:
@@ -17,7 +17,7 @@ topics:
 risk_level: medium
 authority_level: explanatory
 publication_status: draft
-last_reviewed: ""
+last_reviewed:
 retrieval_priority: high
 assistant_behavior:
     allow_inference: false

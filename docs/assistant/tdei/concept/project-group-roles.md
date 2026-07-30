@@ -1,5 +1,5 @@
 ---
-title: "What roles can members have in a TDEI project group?"
+title: What roles can members have in a TDEI project group?
 slug: project-group-roles
 doc_type: concept
 questions:

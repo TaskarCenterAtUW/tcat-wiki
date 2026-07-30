@@ -1,5 +1,5 @@
 ---
-title: "How do I answer a quest in AVIV ScoutRoute?"
+title: How do I answer a quest in AVIV ScoutRoute?
 slug: answer-quest
 doc_type: workflow
 questions:

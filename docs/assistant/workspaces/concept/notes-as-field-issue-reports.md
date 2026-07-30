@@ -1,5 +1,5 @@
 ---
-title: "How can field notes report missing infrastructure?"
+title: How can field notes report missing infrastructure?
 slug: notes-as-field-issue-reports
 doc_type: concept
 questions:

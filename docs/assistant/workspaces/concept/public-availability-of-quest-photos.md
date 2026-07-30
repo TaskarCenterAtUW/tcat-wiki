@@ -1,5 +1,5 @@
 ---
-title: "Who can access photos collected through quests?"
+title: Who can access photos collected through quests?
 slug: public-availability-of-quest-photos
 doc_type: concept
 questions:

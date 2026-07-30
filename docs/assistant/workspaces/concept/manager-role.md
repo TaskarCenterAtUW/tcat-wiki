@@ -1,5 +1,5 @@
 ---
-title: "How do managers interact with Workspaces?"
+title: How do managers interact with Workspaces?
 slug: manager-role
 doc_type: concept
 questions:

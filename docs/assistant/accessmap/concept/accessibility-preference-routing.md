@@ -1,5 +1,5 @@
 ---
-title: "What does it mean to route using accessibility preferences?"
+title: What does it mean to route using accessibility preferences?
 slug: accessibility-preference-routing
 doc_type: concept
 questions:
@@ -17,7 +17,7 @@ topics:
 risk_level: medium
 authority_level: provisional
 publication_status: stub
-last_reviewed: ""
+last_reviewed:
 retrieval_priority: high
 assistant_behavior:
     allow_inference: false

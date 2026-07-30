@@ -1,5 +1,5 @@
 ---
-title: "How can users trace the source dataset?"
+title: How can users trace the source dataset?
 slug: source-dataset-tracing
 doc_type: concept
 questions:

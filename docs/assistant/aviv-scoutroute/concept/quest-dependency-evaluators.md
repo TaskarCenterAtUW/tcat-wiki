@@ -1,5 +1,5 @@
 ---
-title: "Can quest dependencies use numeric comparisons?"
+title: Can quest dependencies use numeric comparisons?
 slug: quest-dependency-evaluators
 doc_type: concept
 questions:

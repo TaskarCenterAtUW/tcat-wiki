@@ -1,5 +1,5 @@
 ---
-title: "Why can standardized pedestrian data help small communities?"
+title: Why can standardized pedestrian data help small communities?
 slug: rural-pedestrian-data-value
 doc_type: concept
 questions:

@@ -1,5 +1,5 @@
 ---
-title: "How do I create a workspace?"
+title: How do I create a workspace?
 slug: create-workspace
 doc_type: workflow
 questions:

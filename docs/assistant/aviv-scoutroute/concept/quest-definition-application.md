@@ -1,5 +1,5 @@
 ---
-title: "How is a quest definition applied?"
+title: How is a quest definition applied?
 slug: quest-definition-application
 doc_type: concept
 questions:

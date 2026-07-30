@@ -1,5 +1,5 @@
 ---
-title: "What does ADA Title II Part B require?"
+title: What does ADA Title II Part B require?
 slug: ada-title-ii-requirements
 doc_type: concept
 questions:
@@ -18,7 +18,7 @@ topics:
 risk_level: high
 authority_level: explanatory
 publication_status: stub
-last_reviewed: ""
+last_reviewed:
 retrieval_priority: high
 assistant_behavior:
     allow_inference: false

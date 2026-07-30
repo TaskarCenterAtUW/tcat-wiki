@@ -1,5 +1,5 @@
 ---
-title: "What do the colors mean?"
+title: What do the colors mean?
 slug: map-color-legend
 doc_type: concept
 questions:

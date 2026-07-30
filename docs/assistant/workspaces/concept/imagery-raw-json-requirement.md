@@ -1,5 +1,5 @@
 ---
-title: "Why must imagery use raw JSON links?"
+title: Why must imagery use raw JSON links?
 slug: imagery-raw-json-requirement
 doc_type: concept
 questions:

@@ -1,5 +1,5 @@
 ---
-title: "What are current Walksheds editing limitations?"
+title: What are current Walksheds editing limitations?
 slug: walkshed-edit-limitations
 doc_type: concept
 questions:

@@ -1,5 +1,5 @@
 ---
-title: "Workspaces export and publication caveats"
+title: Workspaces export and publication caveats
 slug: workspace-export-and-publication-caveats
 doc_type: concept
 questions:

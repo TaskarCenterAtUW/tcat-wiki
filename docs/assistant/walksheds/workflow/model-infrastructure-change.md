@@ -1,5 +1,5 @@
 ---
-title: "How can I model an infrastructure change in Walksheds?"
+title: How can I model an infrastructure change in Walksheds?
 slug: model-infrastructure-change
 doc_type: workflow
 questions:

@@ -1,5 +1,5 @@
 ---
-title: "What kinds of errors should be reported through the OS-CONNECT Viewer?"
+title: What kinds of errors should be reported through the OS-CONNECT Viewer?
 slug: reportable-errors
 doc_type: concept
 questions:

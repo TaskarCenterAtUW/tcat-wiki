@@ -1,5 +1,5 @@
 ---
-title: "How do I add Custom Points to an OpenSidewalks dataset?"
+title: How do I add Custom Points to an OpenSidewalks dataset?
 slug: add-custom-points-to-osw
 doc_type: workflow
 questions:

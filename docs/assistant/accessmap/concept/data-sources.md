@@ -1,5 +1,5 @@
 ---
-title: "What data powers AccessMap?"
+title: What data powers AccessMap?
 slug: data-sources
 doc_type: concept
 questions:

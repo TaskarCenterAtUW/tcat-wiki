@@ -1,5 +1,5 @@
 ---
-title: "What files are included in an OSW download?"
+title: What files are included in an OSW download?
 slug: osw-download-contents
 doc_type: concept
 questions:
@@ -19,7 +19,7 @@ topics:
 risk_level: medium
 authority_level: explanatory
 publication_status: stub
-last_reviewed: ""
+last_reviewed:
 retrieval_priority: high
 assistant_behavior:
     allow_inference: false

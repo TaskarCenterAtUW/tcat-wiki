@@ -1,5 +1,5 @@
 ---
-title: "How do I create and compare Walksheds scenarios?"
+title: How do I create and compare Walksheds scenarios?
 slug: create-walkshed-scenario
 doc_type: workflow
 questions:

@@ -1,5 +1,5 @@
 ---
-title: "Who is Workspaces intended for?"
+title: Who is Workspaces intended for?
 slug: intended-audience
 doc_type: concept
 questions:

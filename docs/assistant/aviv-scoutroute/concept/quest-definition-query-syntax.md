@@ -1,5 +1,5 @@
 ---
-title: "What syntax does an AVIV ScoutRoute quest query use?"
+title: What syntax does an AVIV ScoutRoute quest query use?
 slug: quest-definition-query-syntax
 doc_type: concept
 questions:

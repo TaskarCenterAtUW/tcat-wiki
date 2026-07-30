@@ -1,5 +1,5 @@
 ---
-title: "Can AccessMap support campus accessibility?"
+title: Can AccessMap support campus accessibility?
 slug: campus-accessibility
 doc_type: concept
 questions:
@@ -17,7 +17,7 @@ topics:
 risk_level: medium
 authority_level: provisional
 publication_status: stub
-last_reviewed: ""
+last_reviewed:
 retrieval_priority: high
 assistant_behavior:
     allow_inference: false

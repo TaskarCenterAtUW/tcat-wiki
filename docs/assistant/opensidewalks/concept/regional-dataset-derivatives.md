@@ -1,5 +1,5 @@
 ---
-title: "How can regional OS-CONNECT derivatives serve different uses?"
+title: How can regional OS-CONNECT derivatives serve different uses?
 slug: regional-dataset-derivatives
 doc_type: concept
 questions:

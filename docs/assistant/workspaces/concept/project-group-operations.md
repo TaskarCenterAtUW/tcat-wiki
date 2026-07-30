@@ -1,5 +1,5 @@
 ---
-title: "How do project groups work?"
+title: How do project groups work?
 slug: project-group-operations
 doc_type: concept
 questions:

@@ -1,5 +1,5 @@
 ---
-title: "How should QA/QC metrics and local priorities be combined?"
+title: How should QA/QC metrics and local priorities be combined?
 slug: quality-metrics-and-local-priorities
 doc_type: concept
 questions:

@@ -1,5 +1,5 @@
 ---
-title: "What is a workspace-per-project model?"
+title: What is a workspace-per-project model?
 slug: workspace-per-project-model
 doc_type: concept
 questions:

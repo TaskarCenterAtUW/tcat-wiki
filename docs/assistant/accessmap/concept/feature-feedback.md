@@ -1,5 +1,5 @@
 ---
-title: "How can I submit feedback about an AccessMap feature?"
+title: How can I submit feedback about an AccessMap feature?
 slug: feature-feedback
 doc_type: concept
 questions:

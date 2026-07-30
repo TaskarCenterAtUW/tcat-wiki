@@ -1,5 +1,5 @@
 ---
-title: "What is the boundary between an external overlay and workspace data?"
+title: What is the boundary between an external overlay and workspace data?
 slug: external-data-overlay-boundary
 doc_type: concept
 questions:

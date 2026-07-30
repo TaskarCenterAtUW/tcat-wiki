@@ -1,5 +1,5 @@
 ---
-title: "Why should duplicate workspace copies be avoided?"
+title: Why should duplicate workspace copies be avoided?
 slug: workspace-duplicate-copy-risk
 doc_type: concept
 questions:

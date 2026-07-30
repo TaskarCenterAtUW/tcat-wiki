@@ -1,5 +1,5 @@
 ---
-title: "How is TDEI dataset feedback managed?"
+title: How is TDEI dataset feedback managed?
 slug: feedback-management
 doc_type: concept
 questions:

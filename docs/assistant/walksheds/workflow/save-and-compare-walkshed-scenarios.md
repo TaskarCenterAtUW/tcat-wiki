@@ -1,5 +1,5 @@
 ---
-title: "How do I save and compare Walksheds scenarios?"
+title: How do I save and compare Walksheds scenarios?
 slug: save-and-compare-walkshed-scenarios
 doc_type: workflow
 questions:

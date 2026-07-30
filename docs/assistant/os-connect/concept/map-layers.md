@@ -1,5 +1,5 @@
 ---
-title: "What are the different map layers?"
+title: What are the different map layers?
 slug: map-layers
 doc_type: concept
 questions:

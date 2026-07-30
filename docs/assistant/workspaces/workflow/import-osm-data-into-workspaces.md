@@ -1,5 +1,5 @@
 ---
-title: "How can OSM data be imported into Workspaces?"
+title: How can OSM data be imported into Workspaces?
 slug: import-osm-data-into-workspaces
 doc_type: workflow
 questions:

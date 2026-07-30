@@ -1,5 +1,5 @@
 ---
-title: "What can the Workspaces review interface show?"
+title: What can the Workspaces review interface show?
 slug: workspace-review-interface
 doc_type: concept
 questions:

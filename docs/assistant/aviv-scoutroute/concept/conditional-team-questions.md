@@ -1,5 +1,5 @@
 ---
-title: "How can quests ask about optional team contributions?"
+title: How can quests ask about optional team contributions?
 slug: conditional-team-questions
 doc_type: concept
 questions:

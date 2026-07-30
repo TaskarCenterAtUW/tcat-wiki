@@ -1,5 +1,5 @@
 ---
-title: "How are numeric quest values validated?"
+title: How are numeric quest values validated?
 slug: numeric-quest-validation
 doc_type: concept
 questions:

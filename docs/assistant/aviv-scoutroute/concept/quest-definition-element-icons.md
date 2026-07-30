@@ -1,5 +1,5 @@
 ---
-title: "How are AVIV ScoutRoute quest element icons selected?"
+title: How are AVIV ScoutRoute quest element icons selected?
 slug: quest-definition-element-icons
 doc_type: concept
 questions:

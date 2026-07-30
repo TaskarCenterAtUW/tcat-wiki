@@ -1,5 +1,5 @@
 ---
-title: "Use Workspaces for jurisdiction stewardship"
+title: Use Workspaces for jurisdiction stewardship
 slug: use-workspaces-for-jurisdiction-stewardship
 doc_type: workflow
 questions:

@@ -1,5 +1,5 @@
 ---
-title: "What input does Walksheds batch processing use?"
+title: What input does Walksheds batch processing use?
 slug: walkshed-batch-input
 doc_type: concept
 questions:

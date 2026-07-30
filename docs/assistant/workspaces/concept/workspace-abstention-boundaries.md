@@ -1,5 +1,5 @@
 ---
-title: "Workspaces abstention boundaries"
+title: Workspaces abstention boundaries
 slug: workspace-abstention-boundaries
 doc_type: concept
 questions:

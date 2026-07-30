@@ -1,5 +1,5 @@
 ---
-title: "How do I complete and submit an AVIV ScoutRoute quest?"
+title: How do I complete and submit an AVIV ScoutRoute quest?
 slug: complete-and-submit-a-quest
 doc_type: workflow
 questions:

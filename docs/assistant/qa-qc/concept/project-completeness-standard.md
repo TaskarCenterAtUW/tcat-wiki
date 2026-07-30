@@ -1,5 +1,5 @@
 ---
-title: "What is the QA/QC project completeness standard?"
+title: What is the QA/QC project completeness standard?
 slug: project-completeness-standard
 doc_type: concept
 questions:

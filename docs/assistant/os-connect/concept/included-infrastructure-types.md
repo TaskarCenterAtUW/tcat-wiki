@@ -1,5 +1,5 @@
 ---
-title: "What kinds of pedestrian infrastructure are included?"
+title: What kinds of pedestrian infrastructure are included?
 slug: included-infrastructure-types
 doc_type: concept
 questions:

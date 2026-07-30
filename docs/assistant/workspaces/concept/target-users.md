@@ -1,5 +1,5 @@
 ---
-title: "What kinds of users are Workspaces designed for?"
+title: What kinds of users are Workspaces designed for?
 slug: target-users
 doc_type: concept
 questions:

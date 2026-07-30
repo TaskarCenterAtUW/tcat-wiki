@@ -1,5 +1,5 @@
 ---
-title: "What is the boundary between Workspaces and TDEI?"
+title: What is the boundary between Workspaces and TDEI?
 slug: workspace-and-tdei-boundary
 doc_type: concept
 questions:

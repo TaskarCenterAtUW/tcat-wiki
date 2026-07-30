@@ -1,5 +1,5 @@
 ---
-title: "Is a workspace a copy or the original dataset?"
+title: Is a workspace a copy or the original dataset?
 slug: workspace-as-dataset-copy
 doc_type: concept
 questions:

@@ -1,5 +1,5 @@
 ---
-title: "How should municipalities interpret completeness scores?"
+title: How should municipalities interpret completeness scores?
 slug: completeness-score-interpretation
 doc_type: concept
 questions:

@@ -1,5 +1,5 @@
 ---
-title: "Invite a team to a workspace"
+title: Invite a team to a workspace
 slug: invite-a-team-to-a-workspace
 doc_type: workflow
 questions:

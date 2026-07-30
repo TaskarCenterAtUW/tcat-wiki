@@ -1,5 +1,5 @@
 ---
-title: "Where do I find the latest version of the OpenSidewalks schema?"
+title: Where do I find the latest version of the OpenSidewalks schema?
 slug: find-latest-version
 doc_type: workflow
 questions:

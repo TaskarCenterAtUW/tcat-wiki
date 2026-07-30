@@ -1,5 +1,5 @@
 ---
-title: "Export workspace edits to TDEI"
+title: Export workspace edits to TDEI
 slug: export-workspace-edits-to-tdei
 doc_type: workflow
 questions:

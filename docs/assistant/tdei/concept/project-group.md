@@ -1,5 +1,5 @@
 ---
-title: "What is a project group in TDEI?"
+title: What is a project group in TDEI?
 slug: project-group
 doc_type: concept
 questions:
@@ -17,7 +17,7 @@ topics:
 risk_level: medium
 authority_level: explanatory
 publication_status: draft
-last_reviewed: ""
+last_reviewed:
 retrieval_priority: high
 assistant_behavior:
     allow_inference: false

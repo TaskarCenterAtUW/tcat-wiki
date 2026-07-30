@@ -1,5 +1,5 @@
 ---
-title: "Where is a Walksheds router built?"
+title: Where is a Walksheds router built?
 slug: walkshed-router-processing
 doc_type: concept
 questions:

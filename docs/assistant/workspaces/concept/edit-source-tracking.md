@@ -1,5 +1,5 @@
 ---
-title: "What sources were used for an edit?"
+title: What sources were used for an edit?
 slug: edit-source-tracking
 doc_type: concept
 questions:

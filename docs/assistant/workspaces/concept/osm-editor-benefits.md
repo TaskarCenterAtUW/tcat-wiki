@@ -1,5 +1,5 @@
 ---
-title: "What is the benefit of using existing OSM editors?"
+title: What is the benefit of using existing OSM editors?
 slug: osm-editor-benefits
 doc_type: concept
 questions:

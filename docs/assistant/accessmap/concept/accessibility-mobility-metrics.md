@@ -1,5 +1,5 @@
 ---
-title: "What metrics matter most for accessible mobility?"
+title: What metrics matter most for accessible mobility?
 slug: accessibility-mobility-metrics
 doc_type: concept
 questions:

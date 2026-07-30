@@ -1,5 +1,5 @@
 ---
-title: "How do profiles work in Walksheds batch requests?"
+title: How do profiles work in Walksheds batch requests?
 slug: walkshed-batch-profiles
 doc_type: concept
 questions:

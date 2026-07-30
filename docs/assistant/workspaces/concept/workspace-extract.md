@@ -1,5 +1,5 @@
 ---
-title: "What is a workspace extract?"
+title: What is a workspace extract?
 slug: workspace-extract
 doc_type: concept
 questions:

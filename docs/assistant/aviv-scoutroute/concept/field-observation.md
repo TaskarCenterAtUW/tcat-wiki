@@ -1,5 +1,5 @@
 ---
-title: "Why should AVIV ScoutRoute quests be answered from direct observation?"
+title: Why should AVIV ScoutRoute quests be answered from direct observation?
 slug: field-observation
 doc_type: concept
 questions:

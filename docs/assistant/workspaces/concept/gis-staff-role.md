@@ -1,5 +1,5 @@
 ---
-title: "How do technical GIS staff interact with Workspaces?"
+title: How do technical GIS staff interact with Workspaces?
 slug: gis-staff-role
 doc_type: concept
 questions:

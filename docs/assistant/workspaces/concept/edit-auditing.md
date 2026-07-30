@@ -1,5 +1,5 @@
 ---
-title: "How can edits be audited?"
+title: How can edits be audited?
 slug: edit-auditing
 doc_type: concept
 questions:

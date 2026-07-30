@@ -1,5 +1,5 @@
 ---
-title: "How can quest definitions request photographs?"
+title: How can quest definitions request photographs?
 slug: quest-definition-picture-questions
 doc_type: concept
 questions:

@@ -1,5 +1,5 @@
 ---
-title: "How do teams differ from project groups?"
+title: How do teams differ from project groups?
 slug: teams-vs-project-groups
 doc_type: concept
 questions:

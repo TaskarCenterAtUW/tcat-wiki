@@ -1,5 +1,5 @@
 ---
-title: "How do I create a workspace from existing OSM data?"
+title: How do I create a workspace from existing OSM data?
 slug: create-workspace-from-osm
 doc_type: workflow
 questions:

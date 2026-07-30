@@ -1,5 +1,5 @@
 ---
-title: "What does the TDEI Flex Validate job do?"
+title: What does the TDEI Flex Validate job do?
 slug: job-flex-validate
 doc_type: concept
 questions:

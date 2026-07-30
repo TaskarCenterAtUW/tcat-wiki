@@ -1,5 +1,5 @@
 ---
-title: "How do I select a mobility profile in LivAbility?"
+title: How do I select a mobility profile in LivAbility?
 slug: select-mobility-profile
 doc_type: workflow
 questions:
@@ -17,7 +17,7 @@ topics:
 risk_level: medium
 authority_level: provisional
 publication_status: stub
-last_reviewed: ""
+last_reviewed:
 retrieval_priority: medium
 assistant_behavior:
     allow_inference: false

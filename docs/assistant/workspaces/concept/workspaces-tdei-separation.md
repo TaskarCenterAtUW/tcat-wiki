@@ -1,5 +1,5 @@
 ---
-title: "Why does Workspaces exist separately from TDEI?"
+title: Why does Workspaces exist separately from TDEI?
 slug: workspaces-tdei-separation
 doc_type: concept
 questions:

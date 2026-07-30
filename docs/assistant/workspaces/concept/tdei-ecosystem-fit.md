@@ -1,5 +1,5 @@
 ---
-title: "How does Workspaces fit into the TDEI ecosystem?"
+title: How does Workspaces fit into the TDEI ecosystem?
 slug: tdei-ecosystem-fit
 doc_type: concept
 questions:

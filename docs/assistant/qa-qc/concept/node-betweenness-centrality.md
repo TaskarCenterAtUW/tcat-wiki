@@ -1,5 +1,5 @@
 ---
-title: "What does node betweenness centrality mean?"
+title: What does node betweenness centrality mean?
 slug: node-betweenness-centrality
 doc_type: concept
 questions:

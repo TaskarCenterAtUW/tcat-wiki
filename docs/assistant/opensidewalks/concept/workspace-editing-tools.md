@@ -1,5 +1,5 @@
 ---
-title: "Which tools can edit OpenSidewalks workspaces?"
+title: Which tools can edit OpenSidewalks workspaces?
 slug: workspace-editing-tools
 doc_type: concept
 questions:

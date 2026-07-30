@@ -1,5 +1,5 @@
 ---
-title: "What topology rules apply to the OpenSidewalks network?"
+title: What topology rules apply to the OpenSidewalks network?
 slug: network-topology
 doc_type: concept
 questions:

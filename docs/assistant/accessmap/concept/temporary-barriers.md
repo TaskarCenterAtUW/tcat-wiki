@@ -1,5 +1,5 @@
 ---
-title: "Can temporary barriers be represented?"
+title: Can temporary barriers be represented?
 slug: temporary-barriers
 doc_type: concept
 questions:

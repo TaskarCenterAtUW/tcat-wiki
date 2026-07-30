@@ -1,5 +1,5 @@
 ---
-title: "What curb metrics appear in QA/QC reports?"
+title: What curb metrics appear in QA/QC reports?
 slug: curb-completeness-metrics
 doc_type: concept
 questions:

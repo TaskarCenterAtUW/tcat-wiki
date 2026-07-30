@@ -1,5 +1,5 @@
 ---
-title: "What is a workspace imagery-layer definition?"
+title: What is a workspace imagery-layer definition?
 slug: imagery-layer-definition
 doc_type: concept
 questions:

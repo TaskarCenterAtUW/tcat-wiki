@@ -1,5 +1,5 @@
 ---
-title: "What does the TDEI Spatial Join job do?"
+title: What does the TDEI Spatial Join job do?
 slug: job-spatial-join
 doc_type: concept
 questions:

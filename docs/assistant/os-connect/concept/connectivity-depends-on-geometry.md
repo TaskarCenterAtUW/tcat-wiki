@@ -1,5 +1,5 @@
 ---
-title: "Why does OS-CONNECT connectivity depend on geometry?"
+title: Why does OS-CONNECT connectivity depend on geometry?
 slug: connectivity-depends-on-geometry
 doc_type: concept
 questions:

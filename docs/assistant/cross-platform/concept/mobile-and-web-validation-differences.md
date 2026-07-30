@@ -1,5 +1,5 @@
 ---
-title: "How can validation differ between mobile apps and Workspaces?"
+title: How can validation differ between mobile apps and Workspaces?
 slug: mobile-and-web-validation-differences
 doc_type: concept
 questions:

@@ -1,5 +1,5 @@
 ---
-title: "How does AccessMap respond to mobility profiles?"
+title: How does AccessMap respond to mobility profiles?
 slug: profile-responsive-map
 doc_type: concept
 questions:

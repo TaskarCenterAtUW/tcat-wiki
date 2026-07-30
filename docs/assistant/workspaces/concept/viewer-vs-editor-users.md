@@ -1,5 +1,5 @@
 ---
-title: "What is the difference between viewer users and editor users?"
+title: What is the difference between viewer users and editor users?
 slug: viewer-vs-editor-users
 doc_type: concept
 questions:

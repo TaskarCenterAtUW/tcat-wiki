@@ -1,5 +1,5 @@
 ---
-title: "What workflows are best suited for Workspaces?"
+title: What workflows are best suited for Workspaces?
 slug: recommended-workflows
 doc_type: concept
 questions:

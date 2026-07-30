@@ -1,5 +1,5 @@
 ---
-title: "How should review happen before export?"
+title: How should review happen before export?
 slug: pre-export-review
 doc_type: workflow
 questions:

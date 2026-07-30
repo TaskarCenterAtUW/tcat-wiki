@@ -1,5 +1,5 @@
 ---
-title: "How do point and line feature workflows differ?"
+title: How do point and line feature workflows differ?
 slug: point-and-line-feature-workflows
 doc_type: concept
 questions:

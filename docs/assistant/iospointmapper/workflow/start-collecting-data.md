@@ -1,5 +1,5 @@
 ---
-title: "How do I start collecting data using iOSPointMapper?"
+title: How do I start collecting data using iOSPointMapper?
 slug: start-collecting-data
 doc_type: workflow
 questions:

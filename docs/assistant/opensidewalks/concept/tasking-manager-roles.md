@@ -1,5 +1,5 @@
 ---
-title: "What roles exist in the OSM US Tasking Manager?"
+title: What roles exist in the OSM US Tasking Manager?
 slug: tasking-manager-roles
 doc_type: concept
 questions:

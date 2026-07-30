@@ -1,5 +1,5 @@
 ---
-title: "What is RAPID?"
+title: What is RAPID?
 slug: rapid
 doc_type: concept
 questions:

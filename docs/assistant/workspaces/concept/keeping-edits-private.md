@@ -1,5 +1,5 @@
 ---
-title: "When should edits remain private?"
+title: When should edits remain private?
 slug: keeping-edits-private
 doc_type: concept
 questions:

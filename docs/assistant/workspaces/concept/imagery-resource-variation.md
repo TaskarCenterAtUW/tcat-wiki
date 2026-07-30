@@ -1,5 +1,5 @@
 ---
-title: "Why do imagery resources differ between workspaces?"
+title: Why do imagery resources differ between workspaces?
 slug: imagery-resource-variation
 doc_type: concept
 questions:

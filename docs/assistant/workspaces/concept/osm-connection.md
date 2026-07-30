@@ -1,5 +1,5 @@
 ---
-title: "Is Workspaces connected to the public OSM database?"
+title: Is Workspaces connected to the public OSM database?
 slug: osm-connection
 doc_type: concept
 questions:

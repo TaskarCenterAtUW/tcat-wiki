@@ -1,5 +1,5 @@
 ---
-title: "What is the relationship between Workspaces and the TDEI portal?"
+title: What is the relationship between Workspaces and the TDEI portal?
 slug: workspaces-tdei-portal-relationship
 doc_type: concept
 questions:
