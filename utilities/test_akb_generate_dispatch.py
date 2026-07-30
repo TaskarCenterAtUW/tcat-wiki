@@ -20,7 +20,8 @@ sys.modules["akb_generate_dispatch"] = gad
 spec.loader.exec_module(gad)
 
 
-def write_article(path: Path, title: str, publication_status: str, body: str = "TODO"):
+def write_article(path: Path, title: str, publication_status: str,
+                  authority_level: str = "provisional", body: str = "TODO"):
     path.parent.mkdir(parents=True, exist_ok=True)
     path.write_text(
         f"""---
@@ -28,6 +29,7 @@ title: {title}
 slug: {path.stem}
 doc_type: concept
 publication_status: {publication_status}
+authority_level: {authority_level}
 ---
 
 # {title}
@@ -62,13 +64,13 @@ def assistant_dir(tmp_path):
         encoding="utf-8",
     )
     write_article(root / "alpha" / "concept" / "what-is-alpha.md",
-                  "What is Alpha?", "published")
+                  "What is Alpha?", "published", "official")
     write_article(root / "alpha" / "concept" / "why-alpha.md",
-                  "Why Alpha?", "stub")
+                  "Why Alpha?", "stub", "explanatory")
 
     # Topic "beta": no index.md (title falls back to dir name), has workflow only.
     write_article(root / "beta" / "workflow" / "do-a-thing.md",
-                  "Do A Thing", "draft")
+                  "Do A Thing", "draft", "provisional")
 
     return root
 
@@ -106,6 +108,16 @@ def test_status_legend_includes_article_counts(assistant_dir):
     assert "| `stub` | 1 |" in legend
     assert "| `draft` | 1 |" in legend
     assert "| `published` | 1 |" in legend
+
+
+def test_authority_legend_includes_article_counts(assistant_dir):
+    content = gad.build_dispatch(assistant_dir, today="2026-07-06")
+    legend = content.split("## Authority Legend", 1)[
+        1].split("## Registry", 1)[0]
+    assert "| Authority level | Count | Meaning |" in legend
+    assert "| `provisional` | 1 |" in legend
+    assert "| `explanatory` | 1 |" in legend
+    assert "| `official` | 1 |" in legend
 
 
 def test_empty_subdir_section_omitted(assistant_dir):

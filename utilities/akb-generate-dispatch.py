@@ -4,7 +4,8 @@
 Scans an assistant knowledge-base directory (default: docs/assistant/) for
 topic subdirectories, each containing an index.md plus concept/ and workflow/
 subdirectories of articles, and writes a dispatch.md registry file listing
-every article on disk together with its `publication_status` frontmatter value.
+every article on disk together with its `publication_status` and
+`authority_level` frontmatter values.
 
 dispatch.md is a GENERATED build artifact. It must never be hand-edited;
 re-run this script (directly, or via utilities/build-site.py) whenever a
@@ -38,6 +39,7 @@ DOC_TYPE_SECTIONS = [
 
 # Statuses appear in the legend in this order.
 STATUS_ORDER = ("stub", "draft", "published", "archived")
+AUTHORITY_ORDER = ("provisional", "explanatory", "official")
 
 FRONTMATTER_RE = re.compile(r"^---\s*\n(.*?)\n---\s*\n", re.DOTALL)
 
@@ -149,6 +151,10 @@ This page should be fetched fresh rather than cached aggressively; its registry 
 
 {status_legend}
 
+## Authority Legend
+
+{authority_legend}
+
 ## Registry
 
 """
@@ -159,7 +165,7 @@ def parse_frontmatter(text):
 
     Only extracts simple ``key: value`` pairs at zero indentation (not nested
     maps or lists), which is sufficient for reading ``title`` and
-    ``publication_status``.
+    ``publication_status`` and ``authority_level``.
     """
     match = FRONTMATTER_RE.match(text)
     if not match:
@@ -204,7 +210,8 @@ def scan_topic(topic_dir: Path):
             for md_file in sorted(doc_dir.glob("*.md"), key=lambda p: p.name):
                 fm = parse_frontmatter(md_file.read_text(encoding="utf-8"))
                 status = fm.get("publication_status", "stub")
-                rows.append((md_file.name, status))
+                authority = fm.get("authority_level", "provisional")
+                rows.append((md_file.name, status, authority))
         sections[doc_type] = rows
 
     return {
@@ -231,8 +238,18 @@ def count_statuses(topics):
     counts = Counter()
     for topic in topics:
         for doc_type, _label in DOC_TYPE_SECTIONS:
-            counts.update(status for _filename,
-                          status in topic["sections"][doc_type])
+            counts.update(status for _filename, status, _authority
+                          in topic["sections"][doc_type])
+    return counts
+
+
+def count_authority_levels(topics):
+    """Return article counts grouped by authority level across all topic sections."""
+    counts = Counter()
+    for topic in topics:
+        for doc_type, _label in DOC_TYPE_SECTIONS:
+            counts.update(authority for _filename, _status, authority
+                          in topic["sections"][doc_type])
     return counts
 
 
@@ -247,6 +264,21 @@ def render_status_legend(counts):
     lines = ["| Status | Count | Meaning |", "| :----- | ----: | :------ |"]
     for status in STATUS_ORDER:
         lines.append(f"| `{status}` | {counts[status]} | {meanings[status]} |")
+    return "\n".join(lines)
+
+
+def render_authority_legend(counts):
+    """Return the authority legend table, including live article counts."""
+    meanings = {
+        "provisional": "Early or limited-confidence guidance",
+        "explanatory": "Established explanation without formal policy authority",
+        "official": "Formally endorsed organizational guidance",
+    }
+    lines = ["| Authority level | Count | Meaning |",
+             "| :-------------- | ----: | :------ |"]
+    for authority in AUTHORITY_ORDER:
+        lines.append(
+            f"| `{authority}` | {counts[authority]} | {meanings[authority]} |")
     return "\n".join(lines)
 
 
@@ -272,7 +304,7 @@ def render_topic(topic):
         lines.append("")
         lines.append("| File | Status |")
         lines.append("| :--- | :----- |")
-        for fname, status in rows:
+        for fname, status, _authority in rows:
             lines.append(f"| `{fname}` | {status} |")
         lines.append("")
 
@@ -292,7 +324,8 @@ def build_dispatch(assistant_dir: Path, today: str | None = None) -> str:
     topics = scan_topics(assistant_dir)
     frontmatter = FRONTMATTER_TEMPLATE.format(last_reviewed=today)
     body_prefix = BODY_PREFIX.format(
-        status_legend=render_status_legend(count_statuses(topics)))
+        status_legend=render_status_legend(count_statuses(topics)),
+        authority_legend=render_authority_legend(count_authority_levels(topics)))
     return frontmatter + body_prefix + render_registry(topics)
 
 
