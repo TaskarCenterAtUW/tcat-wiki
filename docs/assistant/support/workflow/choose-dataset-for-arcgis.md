@@ -1,5 +1,5 @@
 ---
-title: "Which dataset and format should an agency use for pedestrian walkway data in ArcGIS?"
+title: Which dataset and format should an agency use for pedestrian walkway data in ArcGIS?
 slug: choose-dataset-for-arcgis
 doc_type: workflow
 questions:
@@ -23,9 +23,9 @@ topics:
     - walksheds
     - tdei
 risk_level: medium
-authority_level: explanatory
+authority_level: provisional
 publication_status: stub
-last_reviewed: ""
+last_reviewed:
 retrieval_priority: high
 assistant_behavior:
     allow_inference: false

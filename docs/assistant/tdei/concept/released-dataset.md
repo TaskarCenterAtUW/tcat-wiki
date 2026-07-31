@@ -1,9 +1,9 @@
 ---
-title: 'What does "released dataset" mean in TDEI?'
+title: What is a released dataset in TDEI?
 slug: released-dataset
 doc_type: concept
 questions:
-    - What does "released dataset" mean in TDEI?
+    - What is a released dataset in TDEI?
 audiences:
     - planner
     - jurisdiction
@@ -15,9 +15,9 @@ topics:
     - tdei
     - releases
 risk_level: medium
-authority_level: explanatory
+authority_level: provisional
 publication_status: stub
-last_reviewed: ""
+last_reviewed:
 retrieval_priority: high
 assistant_behavior:
     allow_inference: false
@@ -31,7 +31,7 @@ tags:
 
 <!-- @format -->
 
-# What does "released dataset" mean in TDEI?
+# What is a released dataset in TDEI?
 
 ## Short Answer
 
