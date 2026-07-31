@@ -1,5 +1,5 @@
 ---
-title: "How do I import OS-CONNECT / OSW GeoJSON into ArcGIS?"
+title: How do I import OS-CONNECT / OSW GeoJSON into ArcGIS?
 slug: import-into-arcgis
 doc_type: workflow
 questions:
@@ -19,7 +19,7 @@ topics:
 risk_level: medium
 authority_level: explanatory
 publication_status: stub
-last_reviewed: ""
+last_reviewed:
 retrieval_priority: high
 assistant_behavior:
     allow_inference: false

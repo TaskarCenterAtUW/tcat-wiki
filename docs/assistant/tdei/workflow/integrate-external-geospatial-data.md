@@ -1,5 +1,5 @@
 ---
-title: "How do I integrate external geospatial data with TDEI?"
+title: How do I integrate external geospatial data with TDEI?
 slug: integrate-external-geospatial-data
 doc_type: workflow
 questions:

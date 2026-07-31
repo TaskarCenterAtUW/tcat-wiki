@@ -1,5 +1,5 @@
 ---
-title: "How can managers review edits?"
+title: How can managers review edits?
 slug: manager-edit-review
 doc_type: concept
 questions:

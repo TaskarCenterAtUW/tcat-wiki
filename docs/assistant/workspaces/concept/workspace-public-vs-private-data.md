@@ -1,5 +1,5 @@
 ---
-title: "Workspaces public vs private data"
+title: Workspaces public vs private data
 slug: workspace-public-vs-private-data
 doc_type: concept
 questions:

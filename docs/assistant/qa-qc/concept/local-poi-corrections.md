@@ -1,5 +1,5 @@
 ---
-title: "How can local POIs be added to QA/QC analysis?"
+title: How can local POIs be added to QA/QC analysis?
 slug: local-poi-corrections
 doc_type: concept
 questions:

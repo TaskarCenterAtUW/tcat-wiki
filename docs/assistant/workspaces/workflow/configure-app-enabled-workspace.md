@@ -1,5 +1,5 @@
 ---
-title: "How do I configure an app-enabled workspace?"
+title: How do I configure an app-enabled workspace?
 slug: configure-app-enabled-workspace
 doc_type: workflow
 questions:

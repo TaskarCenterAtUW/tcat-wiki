@@ -1,5 +1,5 @@
 ---
-title: "What is edge betweenness?"
+title: What is edge betweenness?
 slug: edge-betweenness
 doc_type: concept
 questions:
@@ -19,7 +19,7 @@ topics:
 risk_level: medium
 authority_level: explanatory
 publication_status: stub
-last_reviewed: ""
+last_reviewed:
 retrieval_priority: medium
 assistant_behavior:
     allow_inference: false

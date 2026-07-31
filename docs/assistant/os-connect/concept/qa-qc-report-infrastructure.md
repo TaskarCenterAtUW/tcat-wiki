@@ -1,5 +1,5 @@
 ---
-title: "How are OS-CONNECT QA/QC reports generated?"
+title: How are OS-CONNECT QA/QC reports generated?
 slug: qa-qc-report-infrastructure
 doc_type: concept
 questions:

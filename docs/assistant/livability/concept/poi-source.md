@@ -1,5 +1,5 @@
 ---
-title: "What is the source for the POIs in LivAbility?"
+title: What is the source for the POIs in LivAbility?
 slug: poi-source
 doc_type: concept
 questions:

@@ -1,5 +1,5 @@
 ---
-title: "What roles exist in Workspaces?"
+title: What roles exist in Workspaces?
 slug: roles
 doc_type: concept
 questions:

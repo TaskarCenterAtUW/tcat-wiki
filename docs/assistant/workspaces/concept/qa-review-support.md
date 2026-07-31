@@ -1,5 +1,5 @@
 ---
-title: "How does Workspaces support QA review?"
+title: How does Workspaces support QA review?
 slug: qa-review-support
 doc_type: concept
 questions:

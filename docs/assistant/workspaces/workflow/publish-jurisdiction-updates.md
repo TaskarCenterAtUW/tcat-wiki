@@ -1,5 +1,5 @@
 ---
-title: "How should jurisdictions publish updates?"
+title: How should jurisdictions publish updates?
 slug: publish-jurisdiction-updates
 doc_type: workflow
 questions:

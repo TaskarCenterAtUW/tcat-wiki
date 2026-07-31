@@ -1,5 +1,5 @@
 ---
-title: "How does centrality sampling affect repeatability?"
+title: How does centrality sampling affect repeatability?
 slug: centrality-sampling-and-repeatability
 doc_type: concept
 questions:

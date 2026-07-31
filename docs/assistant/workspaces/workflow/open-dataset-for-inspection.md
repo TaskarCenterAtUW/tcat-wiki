@@ -1,5 +1,5 @@
 ---
-title: "How do I open a TDEI dataset for inspection?"
+title: How do I open a TDEI dataset for inspection?
 slug: open-dataset-for-inspection
 doc_type: workflow
 questions:

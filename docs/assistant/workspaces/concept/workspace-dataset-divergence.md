@@ -1,5 +1,5 @@
 ---
-title: "How does a workspace diverge from the original dataset?"
+title: How does a workspace diverge from the original dataset?
 slug: workspace-dataset-divergence
 doc_type: concept
 questions:

@@ -1,5 +1,5 @@
 ---
-title: "How do I map OpenSidewalks features in the Tasking Manager?"
+title: How do I map OpenSidewalks features in the Tasking Manager?
 slug: map-osw-features-in-tasking-manager
 doc_type: workflow
 questions:

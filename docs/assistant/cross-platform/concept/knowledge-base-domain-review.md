@@ -1,5 +1,5 @@
 ---
-title: "Why does AKB content need domain-expert review?"
+title: Why does AKB content need domain-expert review?
 slug: knowledge-base-domain-review
 doc_type: concept
 questions:

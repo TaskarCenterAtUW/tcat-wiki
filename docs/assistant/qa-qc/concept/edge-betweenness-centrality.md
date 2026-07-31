@@ -1,5 +1,5 @@
 ---
-title: "What does edge betweenness centrality mean?"
+title: What does edge betweenness centrality mean?
 slug: edge-betweenness-centrality
 doc_type: concept
 questions:

@@ -1,5 +1,5 @@
 ---
-title: "How do I update a quest definition in a workspace?"
+title: How do I update a quest definition in a workspace?
 slug: update-quest-definition-in-workspace
 doc_type: workflow
 questions:

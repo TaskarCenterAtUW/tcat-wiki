@@ -1,5 +1,5 @@
 ---
-title: "How do vector maps differ from raster maps?"
+title: How do vector maps differ from raster maps?
 slug: vector-vs-raster-maps
 doc_type: concept
 questions:

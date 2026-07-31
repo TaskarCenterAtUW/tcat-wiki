@@ -1,5 +1,5 @@
 ---
-title: "What edge attributes can Walksheds cost functions use?"
+title: What edge attributes can Walksheds cost functions use?
 slug: walkshed-edge-attributes
 doc_type: concept
 questions:

@@ -1,5 +1,5 @@
 ---
-title: "How can connector segments be distinguished in OpenSidewalks mapping?"
+title: How can connector segments be distinguished in OpenSidewalks mapping?
 slug: connector-segment-tagging
 doc_type: concept
 questions:

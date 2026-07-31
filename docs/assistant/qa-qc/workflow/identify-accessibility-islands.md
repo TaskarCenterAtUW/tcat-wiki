@@ -1,5 +1,5 @@
 ---
-title: "How do I use QA/QC Reports to identify accessibility islands?"
+title: How do I use QA/QC Reports to identify accessibility islands?
 slug: identify-accessibility-islands
 doc_type: workflow
 questions:

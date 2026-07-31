@@ -1,5 +1,5 @@
 ---
-title: "Can AccessMap support powered wheelchair users?"
+title: Can AccessMap support powered wheelchair users?
 slug: powered-wheelchair-support
 doc_type: concept
 questions:
@@ -17,7 +17,7 @@ topics:
 risk_level: high
 authority_level: provisional
 publication_status: stub
-last_reviewed: ""
+last_reviewed:
 retrieval_priority: high
 assistant_behavior:
     allow_inference: false

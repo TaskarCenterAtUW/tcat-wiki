@@ -1,5 +1,5 @@
 ---
-title: "Can communities define accessibility priorities?"
+title: Can communities define accessibility priorities?
 slug: community-accessibility-priorities
 doc_type: concept
 questions:
@@ -17,7 +17,7 @@ topics:
 risk_level: medium
 authority_level: provisional
 publication_status: stub
-last_reviewed: ""
+last_reviewed:
 retrieval_priority: high
 assistant_behavior:
     allow_inference: false

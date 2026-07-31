@@ -1,5 +1,5 @@
 ---
-title: "Multi-Source Stewardship (Workspaces)"
+title: Multi-Source Stewardship (Workspaces)
 slug: multi-source-stewardship
 doc_type: concept
 questions:

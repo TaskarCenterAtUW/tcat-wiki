@@ -1,5 +1,5 @@
 ---
-title: "How does Workspaces team membership differ from project access?"
+title: How does Workspaces team membership differ from project access?
 slug: workspace-team-membership
 doc_type: concept
 questions:

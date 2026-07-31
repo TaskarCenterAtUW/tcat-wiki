@@ -1,5 +1,5 @@
 ---
-title: "What is the relationship between Workspaces and OS-CONNECT?"
+title: What is the relationship between Workspaces and OS-CONNECT?
 slug: workspaces-os-connect-relationship
 doc_type: concept
 questions:

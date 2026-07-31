@@ -1,5 +1,5 @@
 ---
-title: "What kinds of edits can be made in Workspaces?"
+title: What kinds of edits can be made in Workspaces?
 slug: edit-types
 doc_type: concept
 questions:

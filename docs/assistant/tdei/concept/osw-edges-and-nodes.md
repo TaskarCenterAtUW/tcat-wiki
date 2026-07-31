@@ -1,5 +1,5 @@
 ---
-title: "What are edges and nodes in the OSW download?"
+title: What are edges and nodes in the OSW download?
 slug: osw-edges-and-nodes
 doc_type: concept
 questions:
@@ -19,7 +19,7 @@ topics:
 risk_level: medium
 authority_level: explanatory
 publication_status: stub
-last_reviewed: ""
+last_reviewed:
 retrieval_priority: high
 assistant_behavior:
     allow_inference: false

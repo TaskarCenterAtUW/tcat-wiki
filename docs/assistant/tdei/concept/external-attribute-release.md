@@ -1,5 +1,5 @@
 ---
-title: "How are ext attributes handled at release?"
+title: How are ext attributes handled at release?
 slug: external-attribute-release
 doc_type: concept
 questions:

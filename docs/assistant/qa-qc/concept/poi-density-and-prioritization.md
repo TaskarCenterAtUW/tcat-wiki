@@ -1,9 +1,9 @@
 ---
-title: "How can POI density inform QA/QC priorities?"
+title: How can POI density inform priorities?
 slug: poi-density-and-prioritization
 doc_type: concept
 questions:
-    - How can POI density inform QA/QC priorities?
+    - How can POI density inform priorities?
 audiences:
     - planner
     - jurisdiction
@@ -13,13 +13,12 @@ products:
 topics:
     - qa-qc
     - os-connect
-    - os-connect
     - prioritization
     - destinations
 risk_level: medium
 authority_level: provisional
 publication_status: draft
-last_reviewed: 2026-07-22
+last_reviewed: 2026-07-30
 retrieval_priority: high
 assistant_behavior:
     allow_inference: false
@@ -27,7 +26,8 @@ assistant_behavior:
     abstain_if_missing_context: true
     do_not_claim:
         - A high POI-density area is automatically the highest-priority project.
-related_pages: []
+related_pages:
+    - assistant/qa-qc/concept/bottleneck-hotspots.md
 tags:
     - Assistant
 ---
@@ -38,19 +38,19 @@ tags:
 
 ## Short Answer
 
-POI-density maps show where destinations cluster and where network improvements may benefit more destinations.
+POI-density maps show where mapped destinations cluster and where network improvements may benefit more destinations.
 
 ## Significance
 
-They add destination context to network-quality analysis.
+They add destination context to network-quality and connectivity analysis.
 
 ## What This Means
 
-Use density with connectivity, completeness, local priorities, and field knowledge.
+Use density with connectivity, completeness, POI-source coverage, local priorities, and field knowledge.
 
 ## What This Does Not Mean
 
-Density alone does not establish need, safety, or project priority.
+Density alone does not establish need, safety, demand, or project priority.
 
 ## How To Use This
 

@@ -1,5 +1,5 @@
 ---
-title: "What kinds of community workflows are supported?"
+title: What kinds of community workflows are supported?
 slug: community-workflow-support
 doc_type: concept
 questions:

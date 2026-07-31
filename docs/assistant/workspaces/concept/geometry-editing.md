@@ -1,5 +1,5 @@
 ---
-title: "Can geometry be edited?"
+title: Can geometry be edited?
 slug: geometry-editing
 doc_type: concept
 questions:

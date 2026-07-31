@@ -1,5 +1,5 @@
 ---
-title: "Where are OpenSidewalks attribute definitions documented?"
+title: Where are OpenSidewalks attribute definitions documented?
 slug: attribute-documentation-location
 doc_type: concept
 questions:

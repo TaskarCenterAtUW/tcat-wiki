@@ -258,6 +258,7 @@ This duplicates the `products` list in slug form so a page's owning section is f
 | `glossary`               | Terminology and glossary definitions                    |
 | `abbreviations`          | Acronyms and abbreviations                              |
 | `acronyms`               | Extended acronym definitions and meanings               |
+| `openstreetmap`          | OpenStreetMap and how it relates to TCAT's work         |
 
 ### Editing & collaboration
 

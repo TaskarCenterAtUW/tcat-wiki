@@ -1,5 +1,5 @@
 ---
-title: "How should Assistant Knowledge Base article stubs be reviewed?"
+title: How should Assistant Knowledge Base article stubs be reviewed?
 slug: review-assistant-article-stubs
 doc_type: workflow
 questions:

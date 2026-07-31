@@ -1,5 +1,5 @@
 ---
-title: "What are workspace review and publication gates?"
+title: What are workspace review and publication gates?
 slug: workspace-review-and-publication-gates
 doc_type: concept
 questions:

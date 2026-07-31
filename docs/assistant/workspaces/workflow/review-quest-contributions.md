@@ -1,5 +1,5 @@
 ---
-title: "How do I review AVIV ScoutRoute contributions in Workspaces?"
+title: How do I review AVIV ScoutRoute contributions in Workspaces?
 slug: review-quest-contributions
 doc_type: workflow
 questions:

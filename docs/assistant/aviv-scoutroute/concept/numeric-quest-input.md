@@ -1,5 +1,5 @@
 ---
-title: "What input limitations affect numeric quests?"
+title: What input limitations affect numeric quests?
 slug: numeric-quest-input
 doc_type: concept
 questions:

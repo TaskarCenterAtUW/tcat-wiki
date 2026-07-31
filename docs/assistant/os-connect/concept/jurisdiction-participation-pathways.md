@@ -1,5 +1,5 @@
 ---
-title: "What are the jurisdiction participation pathways?"
+title: What are the jurisdiction participation pathways?
 slug: jurisdiction-participation-pathways
 doc_type: concept
 questions:
@@ -17,7 +17,7 @@ topics:
 risk_level: medium
 authority_level: explanatory
 publication_status: stub
-last_reviewed: ""
+last_reviewed:
 retrieval_priority: high
 assistant_behavior:
     allow_inference: false

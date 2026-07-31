@@ -1,5 +1,5 @@
 ---
-title: "How do I undo an AVIV ScoutRoute quest submission?"
+title: How do I undo an AVIV ScoutRoute quest submission?
 slug: undo-a-quest-submission
 doc_type: workflow
 questions:

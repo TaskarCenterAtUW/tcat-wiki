@@ -1,5 +1,5 @@
 ---
-title: "Why can a city have high completeness but still accessibility gaps?"
+title: Why can a city have high completeness but still accessibility gaps?
 slug: completeness-vs-accessibility-gaps
 doc_type: concept
 questions:
@@ -20,7 +20,7 @@ topics:
 risk_level: medium
 authority_level: explanatory
 publication_status: stub
-last_reviewed: ""
+last_reviewed:
 retrieval_priority: high
 assistant_behavior:
     allow_inference: false

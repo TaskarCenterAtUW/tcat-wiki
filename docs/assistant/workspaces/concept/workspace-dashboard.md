@@ -1,5 +1,5 @@
 ---
-title: "What does the workspace dashboard show?"
+title: What does the workspace dashboard show?
 slug: workspace-dashboard
 doc_type: concept
 questions:

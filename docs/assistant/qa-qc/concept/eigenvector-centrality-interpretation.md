@@ -1,5 +1,5 @@
 ---
-title: "How should eigenvector centrality be interpreted?"
+title: How should eigenvector centrality be interpreted?
 slug: eigenvector-centrality-interpretation
 doc_type: concept
 questions:

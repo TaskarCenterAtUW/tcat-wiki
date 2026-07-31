@@ -1,5 +1,5 @@
 ---
-title: "What does the TDEI IXN quality-metric job do?"
+title: What does the TDEI IXN quality-metric job do?
 slug: job-quality-metric-ixn
 doc_type: concept
 questions:

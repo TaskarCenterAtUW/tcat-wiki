@@ -1,5 +1,5 @@
 ---
-title: "What is the QA/QC report?"
+title: What is the QA/QC report?
 slug: qa-qc-report
 doc_type: concept
 questions:

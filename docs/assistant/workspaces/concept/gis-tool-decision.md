@@ -1,5 +1,5 @@
 ---
-title: "When should a city use external GIS tools?"
+title: When should a city use external GIS tools?
 slug: gis-tool-decision
 doc_type: concept
 questions:

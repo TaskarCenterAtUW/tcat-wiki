@@ -1,5 +1,5 @@
 ---
-title: "How should QA/QC report maps support visual accessibility?"
+title: How should QA/QC report maps support visual accessibility?
 slug: qa-qc-visual-accessibility
 doc_type: concept
 questions:

@@ -1,5 +1,5 @@
 ---
-title: "What are the boundaries of QA/QC quality scoring?"
+title: What are the boundaries of QA/QC quality scoring?
 slug: quality-scoring-boundaries
 doc_type: concept
 questions:

@@ -1,5 +1,5 @@
 ---
-title: "What are QA/QC bottleneck hotspots?"
+title: What are QA/QC bottleneck hotspots?
 slug: bottleneck-hotspots
 doc_type: concept
 questions:
@@ -16,10 +16,11 @@ topics:
     - bottlenecks
     - prioritization
     - connectivity
+    - accessibility-metrics
 risk_level: medium
 authority_level: provisional
 publication_status: draft
-last_reviewed: 2026-07-22
+last_reviewed: 2026-07-30
 retrieval_priority: high
 assistant_behavior:
     allow_inference: false
@@ -27,7 +28,8 @@ assistant_behavior:
     abstain_if_missing_context: true
     do_not_claim:
         - A QA/QC bottleneck hotspot is automatically a recommended project.
-related_pages: []
+related_pages:
+    - assistant/qa-qc/concept/poi-density-and-prioritization.md
 tags:
     - Assistant
 ---
@@ -46,15 +48,15 @@ They identify places where improvements may have broad network effects.
 
 ## What This Means
 
-A hotspot is a candidate for investigation and prioritization, combining modeled route dependence, low traversability, and standardized component scores.
+A hotspot combines modeled route dependence with modeled traversal difficulty. A report may derive it by converting traversability to a barrier score, standardizing both signals, and combining them for within-report comparison.
 
 ## What This Does Not Mean
 
-It is not a final design, safety determination, or funding decision.
+It is not a confirmed field problem, final design, safety determination, or funding decision.
 
 ## How To Use This
 
-Review the underlying POIs, connectivity, data quality, and local priorities.
+Review the underlying centrality and traversability values, POIs, connectivity, data quality, and local priorities.
 
 ## Example
 

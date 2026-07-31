@@ -1,5 +1,5 @@
 ---
-title: "What does sandbox mean in Workspaces?"
+title: What does sandbox mean in Workspaces?
 slug: sandbox
 doc_type: concept
 questions:

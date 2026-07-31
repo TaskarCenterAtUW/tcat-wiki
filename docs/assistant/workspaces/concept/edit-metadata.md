@@ -1,5 +1,5 @@
 ---
-title: "What metadata is stored for edits?"
+title: What metadata is stored for edits?
 slug: edit-metadata
 doc_type: concept
 questions:

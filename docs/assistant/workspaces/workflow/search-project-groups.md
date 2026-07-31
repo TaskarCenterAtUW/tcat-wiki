@@ -1,5 +1,5 @@
 ---
-title: "How do I search for project groups?"
+title: How do I search for project groups?
 slug: search-project-groups
 doc_type: workflow
 questions:

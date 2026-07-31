@@ -1,5 +1,5 @@
 ---
-title: "What jurisdictions can have QA/QC reports?"
+title: What jurisdictions can have QA/QC reports?
 slug: report-scope-by-jurisdiction
 doc_type: concept
 questions:

@@ -1,5 +1,5 @@
 ---
-title: "How do QA/QC centrality metrics differ?"
+title: How do QA/QC centrality metrics differ?
 slug: centrality-metric-selection
 doc_type: concept
 questions:

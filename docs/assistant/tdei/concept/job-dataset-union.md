@@ -1,5 +1,5 @@
 ---
-title: "What does the TDEI Dataset Union job do?"
+title: What does the TDEI Dataset Union job do?
 slug: job-dataset-union
 doc_type: concept
 questions:

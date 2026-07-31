@@ -1,5 +1,5 @@
 ---
-title: "Why can AVIV ScoutRoute quests be hidden or unavailable?"
+title: Why can AVIV ScoutRoute quests be hidden or unavailable?
 slug: quest-visibility-and-local-state
 doc_type: concept
 questions:

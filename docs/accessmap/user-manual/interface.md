@@ -35,7 +35,6 @@ The left sidebar is the primary control panel for AccessMap. It contains:
 | :------------------ | :------------ | :-------------------------------------------------------------------------------- |
 | **Main Menu**       | Top left      | Opens the main menu (☰ "hamburger" icon)                                         |
 | **Region Selector** | Top bar       | Displays the currently selected region (e.g., "Seattle, WA"); select to switch    |
-| **Tasks**           | Top bar       | Opens the tasks panel, showing how the data collection process was organized      |
 | **Search Bar**      | Below top bar | Search for an address or location to use as a waypoint in your route              |
 | **Profile Panel**   | Below search  | Select a pre-defined mobility profile or customize individual routing preferences |
 

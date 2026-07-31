@@ -1,5 +1,5 @@
 ---
-title: "How do I export a workspace?"
+title: How do I export a workspace?
 slug: export-workspace
 doc_type: workflow
 questions:

@@ -1,5 +1,5 @@
 ---
-title: "TDEI vs Workspaces"
+title: TDEI vs Workspaces
 slug: tdei-vs-workspaces
 doc_type: concept
 questions:

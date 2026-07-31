@@ -1,5 +1,5 @@
 ---
-title: "What happens when imagery is outdated?"
+title: What happens when imagery is outdated?
 slug: outdated-imagery
 doc_type: concept
 questions:

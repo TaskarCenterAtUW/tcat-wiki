@@ -1,5 +1,5 @@
 ---
-title: "What training materials are available for new sidewalk mappers?"
+title: What training materials are available for new sidewalk mappers?
 slug: mapper-training-materials
 doc_type: concept
 questions:
@@ -18,7 +18,7 @@ topics:
 risk_level: high
 authority_level: explanatory
 publication_status: stub
-last_reviewed: ""
+last_reviewed:
 retrieval_priority: high
 assistant_behavior:
     allow_inference: false

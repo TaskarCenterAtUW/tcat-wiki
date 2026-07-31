@@ -1,5 +1,5 @@
 ---
-title: "How do I add a sidewalk using Rapid?"
+title: How do I add a sidewalk using Rapid?
 slug: add-sidewalk-using-rapid
 doc_type: workflow
 questions:

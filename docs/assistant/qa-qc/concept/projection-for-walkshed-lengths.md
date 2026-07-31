@@ -1,5 +1,5 @@
 ---
-title: "Which projection supports regional walkshed length calculations?"
+title: Which projection supports regional walkshed length calculations?
 slug: projection-for-walkshed-lengths
 doc_type: concept
 questions:

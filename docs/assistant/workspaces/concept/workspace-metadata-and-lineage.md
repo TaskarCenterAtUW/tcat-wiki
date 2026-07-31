@@ -1,5 +1,5 @@
 ---
-title: "What metadata identifies a workspace?"
+title: What metadata identifies a workspace?
 slug: workspace-metadata-and-lineage
 doc_type: concept
 questions:

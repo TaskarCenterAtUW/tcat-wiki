@@ -1,5 +1,5 @@
 ---
-title: "What is a project group?"
+title: What is a project group?
 slug: project-group-definition
 doc_type: concept
 questions:

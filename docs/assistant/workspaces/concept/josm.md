@@ -1,5 +1,5 @@
 ---
-title: "What is JOSM?"
+title: What is JOSM?
 slug: josm
 doc_type: concept
 questions:

@@ -1,5 +1,5 @@
 ---
-title: "How do I convert an OSM PBF file to OpenSidewalks format?"
+title: How do I convert an OSM PBF file to OpenSidewalks format?
 slug: convert-osm-pbf-to-osw
 doc_type: workflow
 questions:

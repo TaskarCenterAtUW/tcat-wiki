@@ -1,5 +1,5 @@
 ---
-title: "Why do QA/QC reports show feature counts and lengths?"
+title: Why do QA/QC reports show feature counts and lengths?
 slug: report-feature-counts-and-lengths
 doc_type: concept
 questions:

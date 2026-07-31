@@ -1,5 +1,5 @@
 ---
-title: "How do I join a project and find quests in AVIV ScoutRoute?"
+title: How do I join a project and find quests in AVIV ScoutRoute?
 slug: join-a-project-and-find-quests
 doc_type: workflow
 questions:

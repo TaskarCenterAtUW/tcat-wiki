@@ -1,5 +1,5 @@
 ---
-title: "Project groups (Workspaces)"
+title: Project groups (Workspaces)
 slug: project-groups
 doc_type: concept
 questions:

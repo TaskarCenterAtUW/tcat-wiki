@@ -1,5 +1,5 @@
 ---
-title: "How can users identify who made a change?"
+title: How can users identify who made a change?
 slug: change-authorship
 doc_type: concept
 questions:

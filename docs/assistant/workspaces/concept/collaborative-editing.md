@@ -1,5 +1,5 @@
 ---
-title: "Collaborative accessibility editing"
+title: Collaborative accessibility editing
 slug: collaborative-editing
 doc_type: concept
 questions:

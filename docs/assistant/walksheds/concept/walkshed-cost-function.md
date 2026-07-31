@@ -1,5 +1,5 @@
 ---
-title: "How does the Walksheds cost function work?"
+title: How does the Walksheds cost function work?
 slug: walkshed-cost-function
 doc_type: concept
 questions:

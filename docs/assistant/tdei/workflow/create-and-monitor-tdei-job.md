@@ -1,5 +1,5 @@
 ---
-title: "How do I create and monitor a TDEI job?"
+title: How do I create and monitor a TDEI job?
 slug: create-and-monitor-tdei-job
 doc_type: workflow
 questions:

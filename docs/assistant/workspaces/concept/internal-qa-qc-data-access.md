@@ -1,5 +1,5 @@
 ---
-title: "How is internal QA/QC supporting data accessed?"
+title: How is internal QA/QC supporting data accessed?
 slug: internal-qa-qc-data-access
 doc_type: concept
 questions:

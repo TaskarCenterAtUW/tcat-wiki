@@ -1,5 +1,5 @@
 ---
-title: "How should Walksheds batch failures be interpreted?"
+title: How should Walksheds batch failures be interpreted?
 slug: walkshed-batch-failures
 doc_type: concept
 questions:

@@ -1,5 +1,5 @@
 ---
-title: "Who can see a TDEI dataset?"
+title: Who can see a TDEI dataset?
 slug: dataset-visibility
 doc_type: concept
 questions:

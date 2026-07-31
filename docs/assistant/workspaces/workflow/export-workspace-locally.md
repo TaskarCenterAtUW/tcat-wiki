@@ -1,5 +1,5 @@
 ---
-title: "How can I export workspace data to a local file?"
+title: How can I export workspace data to a local file?
 slug: export-workspace-locally
 doc_type: workflow
 questions:

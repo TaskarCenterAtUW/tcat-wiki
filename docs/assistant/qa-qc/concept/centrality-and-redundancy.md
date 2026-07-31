@@ -1,5 +1,5 @@
 ---
-title: "How can centrality reveal a need for network redundancy?"
+title: How can centrality reveal a need for network redundancy?
 slug: centrality-and-redundancy
 doc_type: concept
 questions:

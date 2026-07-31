@@ -1,5 +1,5 @@
 ---
-title: "How do I inspect and edit a Walksheds feature?"
+title: How do I inspect and edit a Walksheds feature?
 slug: inspect-and-edit-walkshed-feature
 doc_type: workflow
 questions:

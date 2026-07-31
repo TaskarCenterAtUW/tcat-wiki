@@ -1,5 +1,5 @@
 ---
-title: "Why does network connectivity matter in Walksheds?"
+title: Why does network connectivity matter in Walksheds?
 slug: walkshed-data-connectivity
 doc_type: concept
 questions:

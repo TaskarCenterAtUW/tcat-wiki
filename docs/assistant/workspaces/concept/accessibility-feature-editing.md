@@ -1,5 +1,5 @@
 ---
-title: "How are accessibility features edited?"
+title: How are accessibility features edited?
 slug: accessibility-feature-editing
 doc_type: concept
 questions:

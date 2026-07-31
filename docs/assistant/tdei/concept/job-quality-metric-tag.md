@@ -1,5 +1,5 @@
 ---
-title: "What does the TDEI Quality Metric Tag job do?"
+title: What does the TDEI Quality Metric Tag job do?
 slug: job-quality-metric-tag
 doc_type: concept
 questions:

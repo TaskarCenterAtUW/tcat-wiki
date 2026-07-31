@@ -1,5 +1,5 @@
 ---
-title: "How does imagery configuration differ between AVIV ScoutRoute and Rapid?"
+title: How does imagery configuration differ between AVIV ScoutRoute and Rapid?
 slug: rapid-imagery-integration
 doc_type: concept
 questions:

@@ -1,5 +1,5 @@
 ---
-title: "How does TDEI validate OpenSidewalks data?"
+title: How does TDEI validate OpenSidewalks data?
 slug: tdei-schema-validation
 doc_type: concept
 questions:

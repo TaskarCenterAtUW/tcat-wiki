@@ -1,5 +1,5 @@
 ---
-title: "What is the difference between the viewer and the TDEI portal?"
+title: What is the difference between the viewer and the TDEI portal?
 slug: viewer-vs-tdei-portal
 doc_type: concept
 questions:

@@ -1,5 +1,5 @@
 ---
-title: "What travel profiles are available in Walksheds?"
+title: What travel profiles are available in Walksheds?
 slug: travel-profiles
 doc_type: concept
 questions:
@@ -16,15 +16,17 @@ topics:
     - mobility-profiles
 risk_level: medium
 authority_level: explanatory
-publication_status: stub
-last_reviewed: ""
+publication_status: draft
+last_reviewed: 2026-07-31
 retrieval_priority: high
 assistant_behavior:
     allow_inference: false
     requires_citation: true
     abstain_if_missing_context: true
-    do_not_claim: []
-related_pages: []
+    do_not_claim:
+        - Profile availability or meaning can be inferred from a similarly named setting in another product.
+    related_pages:
+        - assistant/walksheds/concept/pedestrian-vs-wheelchair-walkshed.md
 tags:
     - Assistant
 ---
@@ -35,32 +37,32 @@ tags:
 
 ## Short Answer
 
-TODO
+Walksheds provides travel profiles that model different pedestrian access assumptions, including general pedestrian and manual-wheelchair-oriented travel where supported by the current tool configuration.
 
 ## Significance
 
-TODO
+Profiles make assumptions visible instead of hiding them in one generic distance measure.
 
 ## What This Means
 
-TODO
+Record the selected profile, constraints, maximum cost, dataset, and origin when comparing outputs.
 
 ## What This Does Not Mean
 
-TODO
+Profile names do not represent every mobility experience or guarantee accessibility.
 
 ## How To Use This
 
-TODO
+Use the current interface and documentation to verify available profile names and settings.
 
 ## Example
 
-TODO
+A planner runs the same stop with pedestrian and wheelchair-oriented profiles and compares reachable area.
 
 ## Assistant Guidance
 
-TODO
+Do not infer profile availability or meaning from a similarly named setting in another TCAT product.
 
 ## Related Concepts
 
-TODO
+- [Pedestrian versus wheelchair walkshed](pedestrian-vs-wheelchair-walkshed.md)

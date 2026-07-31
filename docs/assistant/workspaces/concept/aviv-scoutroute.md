@@ -1,5 +1,5 @@
 ---
-title: "What is Aviv ScoutRoute?"
+title: What is Aviv ScoutRoute?
 slug: aviv-scoutroute
 doc_type: concept
 questions:

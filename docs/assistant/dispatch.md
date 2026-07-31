@@ -27,7 +27,7 @@ topics:
 risk_level: low
 authority_level: official
 publication_status: draft
-last_reviewed: 2026-07-28
+last_reviewed: 2026-07-31
 retrieval_priority: high
 assistant_behavior:
     allow_inference: false
@@ -100,10 +100,18 @@ This page should be fetched fresh rather than cached aggressively; its registry 
 
 | Status | Count | Meaning |
 | :----- | ----: | :------ |
-| `stub` | 450 | Frontmatter and heading scaffold exist; body is `TODO` |
-| `draft` | 318 | Content authored; awaiting TCAT editorial review |
+| `stub` | 434 | Frontmatter and heading scaffold exist; body is `TODO` |
+| `draft` | 343 | Content authored; awaiting TCAT editorial review |
 | `published` | 1 | Available in the human-facing site |
 | `archived` | 0 | Retained for agents but not published |
+
+## Authority Legend
+
+| Authority level | Count | Meaning |
+| :-------------- | ----: | :------ |
+| `provisional` | 414 | Early or limited-confidence guidance |
+| `explanatory` | 362 | Established explanation without formal policy authority |
+| `official` | 2 | Formally endorsed organizational guidance |
 
 ## Registry
 
@@ -358,9 +366,11 @@ Base: `assistant/opensidewalks/concept/`
 
 | File | Status |
 | :--- | :----- |
-| `adjacent-and-custom-entities.md` | draft |
+| `adjacent-entities.md` | draft |
+| `adjacent-vs-custom-entities.md` | draft |
 | `connector-segment-tagging.md` | draft |
 | `coordinate-system-and-serialization.md` | draft |
+| `custom-entities.md` | draft |
 | `dataset-metadata-and-provenance.md` | draft |
 | `ext-attributes-and-regional-flexibility.md` | draft |
 | `external-attributes.md` | draft |
@@ -408,7 +418,7 @@ Base: `assistant/os-connect/concept/`
 | `accessibility-tradeoff-communication.md` | stub |
 | `ada-title-ii-requirements.md` | stub |
 | `ada-transition-data-requirements.md` | stub |
-| `ada-transition-planning.md` | stub |
+| `ada-transition-planning.md` | draft |
 | `adoption-barriers.md` | stub |
 | `advocacy-group-role.md` | stub |
 | `advocacy-group-use.md` | stub |
@@ -450,8 +460,8 @@ Base: `assistant/os-connect/concept/`
 | `construction-changes.md` | stub |
 | `context-aware-routing.md` | stub |
 | `coordinate-system.md` | stub |
-| `correction-confirmation.md` | stub |
-| `correction-propagation.md` | stub |
+| `correction-confirmation.md` | draft |
+| `correction-propagation.md` | draft |
 | `correction-release-lag.md` | draft |
 | `correction-tracking.md` | stub |
 | `correction-validation.md` | stub |
@@ -584,7 +594,7 @@ Base: `assistant/os-connect/concept/`
 | `stewardship-sustainability.md` | stub |
 | `street-name-routing-importance.md` | stub |
 | `street-name-tags-for-routing.md` | stub |
-| `street-name-vs-sidepath-name.md` | stub |
+| `street-name-vs-is-sidepath-of-name.md` | draft |
 | `surface-attribute.md` | stub |
 | `tcat-mapping-project-support.md` | stub |
 | `trail-handling.md` | stub |
@@ -651,6 +661,7 @@ Base: `assistant/qa-qc/concept/`
 | `crossing-count.md` | draft |
 | `curb-completeness-metrics.md` | draft |
 | `degree-centrality.md` | draft |
+| `disconnected-poi.md` | draft |
 | `edge-betweenness-centrality.md` | draft |
 | `edge-betweenness-operational-use.md` | stub |
 | `edge-betweenness.md` | stub |
@@ -660,14 +671,18 @@ Base: `assistant/qa-qc/concept/`
 | `eigenvector-centrality.md` | stub |
 | `field-verification-hotspots.md` | draft |
 | `intersection-quality-metric.md` | draft |
+| `intersection-tile.md` | draft |
 | `local-poi-corrections.md` | draft |
+| `log-normalized-value.md` | draft |
 | `metric-boundaries.md` | draft |
 | `metric-coverage-and-interpretation.md` | draft |
 | `node-betweenness-centrality.md` | draft |
 | `node-betweenness-operational-use.md` | draft |
 | `node-centrality-operational-use.md` | stub |
+| `normalized-value.md` | draft |
 | `path-count.md` | draft |
 | `poi-density-and-prioritization.md` | draft |
+| `poi-density.md` | draft |
 | `point-of-interest-sources.md` | draft |
 | `presence-percent.md` | draft |
 | `project-completeness-standard.md` | draft |
@@ -684,11 +699,14 @@ Base: `assistant/qa-qc/concept/`
 | `report-map-interpretation.md` | draft |
 | `report-provenance.md` | draft |
 | `report-purpose-and-limitations.md` | draft |
+| `report-question-sections.md` | draft |
 | `report-scope-by-jurisdiction.md` | draft |
 | `small-dataset-limitations.md` | draft |
 | `task-grid-overlays.md` | draft |
+| `traversability.md` | draft |
 | `walkshed-profile-assumptions.md` | draft |
 | `walkshed-profile-comparison.md` | draft |
+| `z-score.md` | draft |
 
 ### Workflows
 
@@ -737,15 +755,14 @@ Base: `assistant/support/concept/`
 | `ecosystem-overview.md` | stub |
 | `fallback-when-gtfs-pathways-missing.md` | stub |
 | `gtfs-pathways-agency-adoption.md` | stub |
-| `helpline-answers.md` | draft |
 | `mappy-hours-eligibility.md` | stub |
 | `opensidewalks-contact.md` | stub |
 | `os-connect-contact.md` | stub |
-| `osm-pedestrian-paths-vs-gtfs-pathways.md` | stub |
+| `osm-pedestrian-paths-vs-gtfs-pathways.md` | draft |
 | `partner-response-time.md` | stub |
 | `staff-email-antipatterns.md` | stub |
 | `tdei-contact.md` | stub |
-| `tdei-os-connect-osm-differences.md` | stub |
+| `tdei-os-connect-osm-differences.md` | draft |
 
 ### Workflows
 
@@ -753,10 +770,10 @@ Base: `assistant/support/workflow/`
 
 | File | Status |
 | :--- | :----- |
-| `check-gtfs-feed-pathways.md` | stub |
+| `check-gtfs-feed-pathways.md` | draft |
 | `choose-dataset-for-arcgis.md` | stub |
-| `choose-dataset-for-planning.md` | stub |
-| `choose-dataset-for-transit-stations.md` | stub |
+| `choose-dataset-for-planning.md` | draft |
+| `choose-dataset-for-transit-stations.md` | draft |
 | `communicate-uncertainty.md` | stub |
 | `frame-future-plans.md` | stub |
 | `handle-unknown-questions.md` | stub |
@@ -826,7 +843,7 @@ Base: `assistant/tdei/workflow/`
 | File | Status |
 | :--- | :----- |
 | `access-tdei-api.md` | draft |
-| `check-dataset-currency.md` | stub |
+| `check-dataset-currency.md` | draft |
 | `conflate-jurisdiction-datasets.md` | draft |
 | `convert-geodatabase-to-osw-data.md` | draft |
 | `convert-osm-pbf-to-osw.md` | draft |
@@ -850,13 +867,13 @@ Base: `assistant/walksheds/concept/`
 | File | Status |
 | :--- | :----- |
 | `accessibility-islands.md` | stub |
-| `accessibility-profile-inequity-analysis.md` | stub |
+| `accessibility-profile-inequity-analysis.md` | draft |
 | `accessibility-profiles.md` | draft |
 | `accuracy-vs-straight-line.md` | stub |
 | `ada-planning.md` | stub |
 | `barrier-incorporation.md` | stub |
 | `before-after-comparison.md` | stub |
-| `bus-stop-access-analysis.md` | stub |
+| `bus-stop-access-analysis.md` | draft |
 | `complete-streets-planning.md` | stub |
 | `crossing-effects.md` | stub |
 | `crossing-gap-identification.md` | stub |
@@ -867,17 +884,17 @@ Base: `assistant/walksheds/concept/`
 | `elevation-effects.md` | stub |
 | `emergency-resilience-planning.md` | stub |
 | `equity-analysis.md` | stub |
-| `external-dataset-joins.md` | stub |
+| `external-dataset-joins.md` | draft |
 | `grant-applications.md` | stub |
 | `hospital-access-analysis.md` | stub |
 | `infrastructure-scenario-comparison.md` | stub |
 | `max-cost.md` | stub |
 | `neighborhood-comparison.md` | stub |
 | `network-assumptions.md` | stub |
-| `os-connect-data-usage.md` | stub |
+| `os-connect-data-usage.md` | draft |
 | `park-access-analysis.md` | stub |
 | `pedestrian-bottleneck-identification.md` | stub |
-| `pedestrian-vs-wheelchair-walkshed.md` | stub |
+| `pedestrian-vs-wheelchair-walkshed.md` | draft |
 | `pedestrian-walkshed.md` | stub |
 | `planned-capabilities.md` | stub |
 | `planner-assumptions.md` | stub |
@@ -892,7 +909,7 @@ Base: `assistant/walksheds/concept/`
 | `senior-mobility-analysis.md` | stub |
 | `transit-planning.md` | stub |
 | `travel-limits.md` | stub |
-| `travel-profiles.md` | stub |
+| `travel-profiles.md` | draft |
 | `uncertainty-communication.md` | stub |
 | `underserved-area-identification.md` | stub |
 | `vision-zero.md` | stub |

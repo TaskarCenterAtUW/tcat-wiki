@@ -1,5 +1,5 @@
 ---
-title: "How should I choose a TDEI dataset version?"
+title: How should I choose a TDEI dataset version?
 slug: dataset-version-selection
 doc_type: concept
 questions:

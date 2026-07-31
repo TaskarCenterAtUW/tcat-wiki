@@ -1,5 +1,5 @@
 ---
-title: "What limitations can affect QA/QC reports for small datasets?"
+title: What limitations can affect QA/QC reports for small datasets?
 slug: small-dataset-limitations
 doc_type: concept
 questions:

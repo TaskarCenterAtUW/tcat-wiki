@@ -1,5 +1,5 @@
 ---
-title: "What limitations exist compared to OpenStreetMap?"
+title: What limitations exist compared to OpenStreetMap?
 slug: workspaces-osm-limitations
 doc_type: concept
 questions:

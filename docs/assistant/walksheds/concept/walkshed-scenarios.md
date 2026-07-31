@@ -1,5 +1,5 @@
 ---
-title: "What is a Walksheds scenario?"
+title: What is a Walksheds scenario?
 slug: walkshed-scenarios
 doc_type: concept
 questions:

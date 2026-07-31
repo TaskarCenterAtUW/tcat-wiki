@@ -1,5 +1,5 @@
 ---
-title: "How does AVIV ScoutRoute handle downloaded data and uploads?"
+title: How does AVIV ScoutRoute handle downloaded data and uploads?
 slug: offline-data-and-upload
 doc_type: concept
 questions:

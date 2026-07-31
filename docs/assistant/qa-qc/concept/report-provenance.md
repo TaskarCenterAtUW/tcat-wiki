@@ -1,5 +1,5 @@
 ---
-title: "What is QA/QC report provenance?"
+title: What is QA/QC report provenance?
 slug: report-provenance
 doc_type: concept
 questions:
@@ -15,6 +15,7 @@ topics:
     - os-connect
     - dataset-lineage
     - data-freshness
+    - releases
 risk_level: medium
 authority_level: provisional
 publication_status: draft
@@ -26,7 +27,8 @@ assistant_behavior:
     abstain_if_missing_context: true
     do_not_claim:
         - A report generation date is the same as the source data ingest date.
-related_pages: []
+related_pages:
+    - assistant/qa-qc/concept/report-purpose-and-limitations.md
 tags:
     - Assistant
 ---
@@ -45,15 +47,15 @@ It lets readers distinguish data changes from report presentation changes.
 
 ## What This Means
 
-Read dataset version, pipeline version, imagery or collection date, report generation date, and ingest date together.
+Read dataset version, pipeline version, imagery or collection date, report generation date, registry or ingest date, and source metadata together.
 
 ## What This Does Not Mean
 
-A newer report date does not necessarily mean newer source data.
+A newer report-generation date does not necessarily mean newer source data or imagery.
 
 ## How To Use This
 
-Record provenance when comparing or citing results.
+Record provenance when comparing or citing results, and note any source date that the report does not provide.
 
 ## Example
 

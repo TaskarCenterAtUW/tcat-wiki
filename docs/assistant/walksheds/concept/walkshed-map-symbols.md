@@ -1,5 +1,5 @@
 ---
-title: "What do Walksheds map symbols mean?"
+title: What do Walksheds map symbols mean?
 slug: walkshed-map-symbols
 doc_type: concept
 questions:

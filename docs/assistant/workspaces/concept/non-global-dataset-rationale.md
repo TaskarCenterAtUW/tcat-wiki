@@ -1,5 +1,5 @@
 ---
-title: "Why is the dataset not global like OSM?"
+title: Why is the dataset not global like OSM?
 slug: non-global-dataset-rationale
 doc_type: concept
 questions:

@@ -1,5 +1,5 @@
 ---
-title: "What access should workspace imagery sources have?"
+title: What access should workspace imagery sources have?
 slug: imagery-layer-access
 doc_type: concept
 questions:

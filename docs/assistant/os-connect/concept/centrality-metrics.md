@@ -1,5 +1,5 @@
 ---
-title: "What do OS-CONNECT centrality metrics mean?"
+title: What do OS-CONNECT centrality metrics mean?
 slug: centrality-metrics
 doc_type: concept
 questions:

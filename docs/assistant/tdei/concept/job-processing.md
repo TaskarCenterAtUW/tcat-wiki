@@ -1,5 +1,5 @@
 ---
-title: "How does TDEI job processing work?"
+title: How does TDEI job processing work?
 slug: job-processing
 doc_type: concept
 questions:

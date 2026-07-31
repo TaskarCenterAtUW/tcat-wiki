@@ -1,5 +1,5 @@
 ---
-title: "What metadata describes an OpenSidewalks dataset?"
+title: What metadata describes an OpenSidewalks dataset?
 slug: dataset-metadata-and-provenance
 doc_type: concept
 questions:

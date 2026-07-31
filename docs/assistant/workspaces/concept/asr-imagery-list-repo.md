@@ -1,5 +1,5 @@
 ---
-title: "What is the ASR imagery list repo?"
+title: What is the ASR imagery list repo?
 slug: asr-imagery-list-repo
 doc_type: concept
 questions:

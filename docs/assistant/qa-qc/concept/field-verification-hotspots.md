@@ -1,5 +1,5 @@
 ---
-title: "How are QA/QC field-verification hotspots used?"
+title: How are QA/QC field-verification hotspots used?
 slug: field-verification-hotspots
 doc_type: concept
 questions:

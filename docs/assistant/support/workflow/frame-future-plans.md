@@ -1,5 +1,5 @@
 ---
-title: "How should staff distinguish current functionality from future plans?"
+title: How should staff distinguish current functionality from future plans?
 slug: frame-future-plans
 doc_type: workflow
 questions:
@@ -24,7 +24,7 @@ topics:
 risk_level: medium
 authority_level: explanatory
 publication_status: stub
-last_reviewed: ""
+last_reviewed:
 retrieval_priority: high
 assistant_behavior:
     allow_inference: false

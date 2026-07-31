@@ -1,5 +1,5 @@
 ---
-title: "Are Sound Transit or other agencies publishing GTFS Pathways data?"
+title: Are Sound Transit or other agencies publishing GTFS Pathways data?
 slug: gtfs-pathways-agency-adoption
 doc_type: concept
 questions:
@@ -24,7 +24,7 @@ topics:
 risk_level: medium
 authority_level: explanatory
 publication_status: stub
-last_reviewed: ""
+last_reviewed:
 retrieval_priority: high
 assistant_behavior:
     allow_inference: false

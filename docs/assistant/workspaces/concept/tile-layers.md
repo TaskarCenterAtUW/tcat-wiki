@@ -1,5 +1,5 @@
 ---
-title: "What are tile layers?"
+title: What are tile layers?
 slug: tile-layers
 doc_type: concept
 questions:

@@ -1,5 +1,5 @@
 ---
-title: "What does private OSM mean?"
+title: What does private OSM mean?
 slug: private-osm-explained
 doc_type: concept
 questions:

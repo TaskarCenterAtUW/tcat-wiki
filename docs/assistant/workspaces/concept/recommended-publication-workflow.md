@@ -1,5 +1,5 @@
 ---
-title: "What is the recommended publication workflow?"
+title: What is the recommended publication workflow?
 slug: recommended-publication-workflow
 doc_type: concept
 questions:

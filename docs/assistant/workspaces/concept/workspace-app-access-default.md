@@ -1,5 +1,5 @@
 ---
-title: "Is app access enabled by default for a new workspace?"
+title: Is app access enabled by default for a new workspace?
 slug: workspace-app-access-default
 doc_type: concept
 questions:

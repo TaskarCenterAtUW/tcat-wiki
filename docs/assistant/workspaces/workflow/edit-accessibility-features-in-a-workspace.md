@@ -1,5 +1,5 @@
 ---
-title: "Edit accessibility features in a workspace"
+title: Edit accessibility features in a workspace
 slug: edit-accessibility-features-in-a-workspace
 doc_type: workflow
 questions:

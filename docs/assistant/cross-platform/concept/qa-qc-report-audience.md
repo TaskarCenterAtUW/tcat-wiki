@@ -1,5 +1,5 @@
 ---
-title: "Who are QA/QC reports intended for?"
+title: Who are QA/QC reports intended for?
 slug: qa-qc-report-audience
 doc_type: concept
 questions:

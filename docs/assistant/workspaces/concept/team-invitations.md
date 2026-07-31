@@ -1,5 +1,5 @@
 ---
-title: "How do team invitations work?"
+title: How do team invitations work?
 slug: team-invitations
 doc_type: concept
 questions:

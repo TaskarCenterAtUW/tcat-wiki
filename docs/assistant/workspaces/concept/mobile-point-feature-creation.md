@@ -1,5 +1,5 @@
 ---
-title: "What can AVIV ScoutRoute create on mobile?"
+title: What can AVIV ScoutRoute create on mobile?
 slug: mobile-point-feature-creation
 doc_type: concept
 questions:

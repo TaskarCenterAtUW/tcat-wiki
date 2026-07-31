@@ -1,5 +1,5 @@
 ---
-title: "Changesets (Workspaces)"
+title: Changesets (Workspaces)
 slug: changesets
 doc_type: concept
 questions:

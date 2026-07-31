@@ -1,5 +1,5 @@
 ---
-title: "How does Workspaces emulate OSM APIs?"
+title: How does Workspaces emulate OSM APIs?
 slug: osm-api-emulation
 doc_type: concept
 questions:

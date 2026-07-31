@@ -1,5 +1,5 @@
 ---
-title: "What happens after export to TDEI?"
+title: What happens after export to TDEI?
 slug: post-export-behavior
 doc_type: concept
 questions:

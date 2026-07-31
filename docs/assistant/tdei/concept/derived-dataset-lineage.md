@@ -1,5 +1,5 @@
 ---
-title: "What does a TDEI derived dataset ID show?"
+title: What does a TDEI derived dataset ID show?
 slug: derived-dataset-lineage
 doc_type: concept
 questions:

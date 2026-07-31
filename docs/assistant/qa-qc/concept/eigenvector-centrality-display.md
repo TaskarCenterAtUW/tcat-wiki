@@ -1,5 +1,5 @@
 ---
-title: "How are eigenvector centrality values displayed?"
+title: How are eigenvector centrality values displayed?
 slug: eigenvector-centrality-display
 doc_type: concept
 questions:

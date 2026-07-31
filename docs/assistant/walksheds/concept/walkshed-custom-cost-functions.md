@@ -1,5 +1,5 @@
 ---
-title: "What are custom Walksheds cost functions?"
+title: What are custom Walksheds cost functions?
 slug: walkshed-custom-cost-functions
 doc_type: concept
 questions:

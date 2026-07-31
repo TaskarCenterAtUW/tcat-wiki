@@ -1,5 +1,5 @@
 ---
-title: "How can users continue editing an existing feature?"
+title: How can users continue editing an existing feature?
 slug: continuing-feature-edits
 doc_type: concept
 questions:

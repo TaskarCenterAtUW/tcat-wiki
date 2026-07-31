@@ -1,5 +1,5 @@
 ---
-title: "Why is Workspaces compatible with OSM tools?"
+title: Why is Workspaces compatible with OSM tools?
 slug: osm-tool-compatibility-rationale
 doc_type: concept
 questions:

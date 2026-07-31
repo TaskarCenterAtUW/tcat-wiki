@@ -1,5 +1,5 @@
 ---
-title: "What do AVIV ScoutRoute quest contributions change?"
+title: What do AVIV ScoutRoute quest contributions change?
 slug: quest-contributions
 doc_type: concept
 questions:

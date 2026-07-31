@@ -1,5 +1,5 @@
 ---
-title: "How is the Walksheds interface organized?"
+title: How is the Walksheds interface organized?
 slug: walkshed-interface-organization
 doc_type: concept
 questions:

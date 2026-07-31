@@ -1,5 +1,5 @@
 ---
-title: "How do TDEI services relate to project groups?"
+title: How do TDEI services relate to project groups?
 slug: services-and-project-groups
 doc_type: concept
 questions:

@@ -1,5 +1,5 @@
 ---
-title: "What is the TDEI?"
+title: What is the TDEI?
 slug: tdei
 doc_type: concept
 questions:

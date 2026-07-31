@@ -1,5 +1,5 @@
 ---
-title: "How do I validate an OpenSidewalks dataset in TDEI?"
+title: How do I validate an OpenSidewalks dataset in TDEI?
 slug: validate-osw-dataset
 doc_type: workflow
 questions:

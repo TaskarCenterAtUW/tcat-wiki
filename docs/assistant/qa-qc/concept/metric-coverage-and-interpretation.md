@@ -1,5 +1,5 @@
 ---
-title: "How should QA/QC metric coverage be interpreted?"
+title: How should QA/QC metric coverage be interpreted?
 slug: metric-coverage-and-interpretation
 doc_type: concept
 questions:

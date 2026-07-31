@@ -1,5 +1,5 @@
 ---
-title: "Is project completeness the same as ADA compliance?"
+title: Is project completeness the same as ADA compliance?
 slug: project-completeness-vs-ada-compliance
 doc_type: concept
 questions:

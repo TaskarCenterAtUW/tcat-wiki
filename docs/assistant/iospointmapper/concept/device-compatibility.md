@@ -1,5 +1,5 @@
 ---
-title: "What devices are compatible with iOSPointMapper?"
+title: What devices are compatible with iOSPointMapper?
 slug: device-compatibility
 doc_type: concept
 questions:

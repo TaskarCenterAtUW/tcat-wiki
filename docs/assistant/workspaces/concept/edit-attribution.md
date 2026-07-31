@@ -1,5 +1,5 @@
 ---
-title: "How are edits attributed to users?"
+title: How are edits attributed to users?
 slug: edit-attribution
 doc_type: concept
 questions:

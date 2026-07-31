@@ -1,5 +1,5 @@
 ---
-title: "What is an app-enabled workspace?"
+title: What is an app-enabled workspace?
 slug: app-enabled-workspaces
 doc_type: concept
 questions:

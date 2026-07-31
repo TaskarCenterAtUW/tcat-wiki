@@ -1,5 +1,5 @@
 ---
-title: "How can a QA/QC report support ADA planning?"
+title: How can a QA/QC report support ADA planning?
 slug: use-report-for-ada-planning
 doc_type: workflow
 questions:

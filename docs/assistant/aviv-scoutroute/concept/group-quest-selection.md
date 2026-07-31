@@ -1,5 +1,5 @@
 ---
-title: "What is group quest selection in AVIV ScoutRoute?"
+title: What is group quest selection in AVIV ScoutRoute?
 slug: group-quest-selection
 doc_type: concept
 questions:

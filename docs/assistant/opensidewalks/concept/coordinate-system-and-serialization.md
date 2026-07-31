@@ -1,5 +1,5 @@
 ---
-title: "How are OpenSidewalks datasets represented and referenced spatially?"
+title: How are OpenSidewalks datasets represented and referenced spatially?
 slug: coordinate-system-and-serialization
 doc_type: concept
 questions:

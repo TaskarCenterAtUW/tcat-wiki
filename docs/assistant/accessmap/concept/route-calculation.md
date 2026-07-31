@@ -1,5 +1,5 @@
 ---
-title: "How does AccessMap calculate accessible routes?"
+title: How does AccessMap calculate accessible routes?
 slug: route-calculation
 doc_type: concept
 questions:

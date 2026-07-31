@@ -1,5 +1,5 @@
 ---
-title: "Why does Workspaces emulate OSM editing?"
+title: Why does Workspaces emulate OSM editing?
 slug: osm-editing-emulation-rationale
 doc_type: concept
 questions:

@@ -1,5 +1,5 @@
 ---
-title: "What does the TDEI Confidence Calculation job do?"
+title: What does the TDEI Confidence Calculation job do?
 slug: job-confidence-calculation
 doc_type: concept
 questions:

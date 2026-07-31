@@ -1,5 +1,5 @@
 ---
-title: "What geographic areas are covered?"
+title: What geographic areas are covered?
 slug: geographic-coverage
 doc_type: concept
 questions:

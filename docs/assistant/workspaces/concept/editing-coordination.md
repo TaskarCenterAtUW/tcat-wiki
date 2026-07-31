@@ -1,5 +1,5 @@
 ---
-title: "How can multiple people coordinate editing?"
+title: How can multiple people coordinate editing?
 slug: editing-coordination
 doc_type: concept
 questions:

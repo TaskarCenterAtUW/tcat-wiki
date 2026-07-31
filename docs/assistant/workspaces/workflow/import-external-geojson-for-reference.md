@@ -1,5 +1,5 @@
 ---
-title: "How can I load external GeoJSON for reference in Workspaces?"
+title: How can I load external GeoJSON for reference in Workspaces?
 slug: import-external-geojson-for-reference
 doc_type: workflow
 questions:

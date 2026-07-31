@@ -1,5 +1,5 @@
 ---
-title: "How does transit accessibility integrate with pedestrian routing?"
+title: How does transit accessibility integrate with pedestrian routing?
 slug: transit-pedestrian-routing-integration
 doc_type: concept
 questions:
@@ -18,7 +18,7 @@ topics:
 risk_level: medium
 authority_level: explanatory
 publication_status: stub
-last_reviewed: ""
+last_reviewed:
 retrieval_priority: high
 assistant_behavior:
     allow_inference: false

@@ -1,5 +1,5 @@
 ---
-title: "What versioning occurs during export?"
+title: What versioning occurs during export?
 slug: export-versioning
 doc_type: concept
 questions:

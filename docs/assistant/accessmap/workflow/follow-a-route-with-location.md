@@ -1,5 +1,5 @@
 ---
-title: "How do I follow an AccessMap route using my location?"
+title: How do I follow an AccessMap route using my location?
 slug: follow-a-route-with-location
 doc_type: workflow
 questions:

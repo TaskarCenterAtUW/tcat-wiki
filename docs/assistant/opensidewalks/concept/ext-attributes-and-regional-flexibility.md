@@ -1,5 +1,5 @@
 ---
-title: "How do ext attributes support regional flexibility?"
+title: How do ext attributes support regional flexibility?
 slug: ext-attributes-and-regional-flexibility
 doc_type: concept
 questions:

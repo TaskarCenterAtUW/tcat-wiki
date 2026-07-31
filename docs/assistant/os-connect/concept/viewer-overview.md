@@ -1,5 +1,5 @@
 ---
-title: "What am I looking at in this viewer?"
+title: What am I looking at in this viewer?
 slug: viewer-overview
 doc_type: concept
 questions:

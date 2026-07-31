@@ -1,5 +1,5 @@
 ---
-title: "How should a TCAT product issue be reported?"
+title: How should a TCAT product issue be reported?
 slug: report-product-issues
 doc_type: workflow
 questions:

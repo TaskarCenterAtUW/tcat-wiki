@@ -1,5 +1,5 @@
 ---
-title: "How is custom imagery configured in a workspace?"
+title: How is custom imagery configured in a workspace?
 slug: custom-imagery-configuration
 doc_type: concept
 questions:

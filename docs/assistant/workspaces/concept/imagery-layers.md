@@ -1,5 +1,5 @@
 ---
-title: "Imagery layers (Workspaces)"
+title: Imagery layers (Workspaces)
 slug: imagery-layers
 doc_type: concept
 questions:

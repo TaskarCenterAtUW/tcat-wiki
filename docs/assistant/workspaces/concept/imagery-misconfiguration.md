@@ -1,5 +1,5 @@
 ---
-title: "What happens if imagery is configured incorrectly?"
+title: What happens if imagery is configured incorrectly?
 slug: imagery-misconfiguration
 doc_type: concept
 questions:

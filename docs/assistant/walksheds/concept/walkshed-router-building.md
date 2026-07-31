@@ -1,5 +1,5 @@
 ---
-title: "What does building a Walksheds router do?"
+title: What does building a Walksheds router do?
 slug: walkshed-router-building
 doc_type: concept
 questions:

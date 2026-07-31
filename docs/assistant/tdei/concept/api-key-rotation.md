@@ -1,5 +1,5 @@
 ---
-title: "What happens when a TDEI API key is regenerated?"
+title: What happens when a TDEI API key is regenerated?
 slug: api-key-rotation
 doc_type: concept
 questions:

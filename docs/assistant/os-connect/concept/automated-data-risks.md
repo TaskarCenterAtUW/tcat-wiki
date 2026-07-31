@@ -1,5 +1,5 @@
 ---
-title: "What are the risks of relying solely on automated data?"
+title: What are the risks of relying solely on automated data?
 slug: automated-data-risks
 doc_type: concept
 questions:
@@ -18,7 +18,7 @@ topics:
 risk_level: high
 authority_level: explanatory
 publication_status: stub
-last_reviewed: ""
+last_reviewed:
 retrieval_priority: high
 assistant_behavior:
     allow_inference: false

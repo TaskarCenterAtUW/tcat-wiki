@@ -1,5 +1,5 @@
 ---
-title: "What does the TDEI OSW Validate job do?"
+title: What does the TDEI OSW Validate job do?
 slug: job-osw-validate
 doc_type: concept
 questions:

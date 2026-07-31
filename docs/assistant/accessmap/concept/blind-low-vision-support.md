@@ -1,5 +1,5 @@
 ---
-title: "Can AccessMap support blind or low-vision users?"
+title: Can AccessMap support blind or low-vision users?
 slug: blind-low-vision-support
 doc_type: concept
 questions:

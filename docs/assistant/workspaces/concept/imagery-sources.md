@@ -1,5 +1,5 @@
 ---
-title: "What imagery sources are available?"
+title: What imagery sources are available?
 slug: imagery-sources
 doc_type: concept
 questions:

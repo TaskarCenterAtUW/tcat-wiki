@@ -1,5 +1,5 @@
 ---
-title: "What is dataset lineage in TDEI?"
+title: What is dataset lineage in TDEI?
 slug: dataset-lineage-in-tdei
 doc_type: concept
 questions:

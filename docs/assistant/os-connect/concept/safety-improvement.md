@@ -1,5 +1,5 @@
 ---
-title: "How does this improve safety?"
+title: How does this improve safety?
 slug: safety-improvement
 doc_type: concept
 questions:
@@ -17,7 +17,7 @@ topics:
 risk_level: high
 authority_level: explanatory
 publication_status: stub
-last_reviewed: ""
+last_reviewed:
 retrieval_priority: high
 assistant_behavior:
     allow_inference: false

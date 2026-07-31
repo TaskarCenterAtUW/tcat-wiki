@@ -1,5 +1,5 @@
 ---
-title: "What do walkshed metrics represent?"
+title: What do walkshed metrics represent?
 slug: walkshed-metrics
 doc_type: concept
 questions:

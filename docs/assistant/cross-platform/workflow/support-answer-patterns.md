@@ -34,7 +34,6 @@ assistant_behavior:
 related_pages:
     - assistant/support/index.md
     - assistant/intents/support-intents.md
-    - assistant/support/helpline-faq-backlog.md
 tags:
     - Assistant
 ---

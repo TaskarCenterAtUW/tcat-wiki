@@ -1,5 +1,5 @@
 ---
-title: "How do I create a workspace from TDEI?"
+title: How do I create a workspace from TDEI?
 slug: create-workspace-from-tdei
 doc_type: workflow
 questions:

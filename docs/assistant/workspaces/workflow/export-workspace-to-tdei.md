@@ -1,5 +1,5 @@
 ---
-title: "How do I export a workspace to TDEI?"
+title: How do I export a workspace to TDEI?
 slug: export-workspace-to-tdei
 doc_type: workflow
 questions:

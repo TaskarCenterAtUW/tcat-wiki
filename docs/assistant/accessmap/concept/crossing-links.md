@@ -1,5 +1,5 @@
 ---
-title: "What are crossing links in pedestrian data?"
+title: What are crossing links in pedestrian data?
 slug: crossing-links
 doc_type: concept
 questions:

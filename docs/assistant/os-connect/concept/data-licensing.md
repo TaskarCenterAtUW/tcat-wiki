@@ -1,5 +1,5 @@
 ---
-title: "What licensing governs the data?"
+title: What licensing governs the data?
 slug: data-licensing
 doc_type: concept
 questions:
@@ -17,7 +17,7 @@ topics:
 risk_level: medium
 authority_level: explanatory
 publication_status: stub
-last_reviewed: ""
+last_reviewed:
 retrieval_priority: high
 assistant_behavior:
     allow_inference: false

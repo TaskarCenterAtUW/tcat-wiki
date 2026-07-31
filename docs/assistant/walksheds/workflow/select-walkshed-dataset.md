@@ -1,5 +1,5 @@
 ---
-title: "How do I select a Walksheds dataset?"
+title: How do I select a Walksheds dataset?
 slug: select-walkshed-dataset
 doc_type: workflow
 questions:

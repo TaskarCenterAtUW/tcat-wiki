@@ -1,5 +1,5 @@
 ---
-title: "What is the review interface?"
+title: What is the review interface?
 slug: review-interface
 doc_type: concept
 questions:

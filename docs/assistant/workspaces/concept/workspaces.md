@@ -1,5 +1,5 @@
 ---
-title: "What is Workspaces?"
+title: What is Workspaces?
 slug: workspaces
 doc_type: concept
 questions:

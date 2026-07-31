@@ -1,5 +1,5 @@
 ---
-title: "Which editor should I use?"
+title: Which editor should I use?
 slug: choose-editor
 doc_type: workflow
 questions:

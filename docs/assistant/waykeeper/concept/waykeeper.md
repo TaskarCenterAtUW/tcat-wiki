@@ -1,5 +1,5 @@
 ---
-title: "What is Waykeeper?"
+title: What is Waykeeper?
 slug: waykeeper
 doc_type: concept
 questions:

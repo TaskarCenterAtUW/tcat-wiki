@@ -1,5 +1,5 @@
 ---
-title: "What attributes are collected for intersections?"
+title: What attributes are collected for intersections?
 slug: intersection-attributes
 doc_type: concept
 questions:

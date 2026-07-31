@@ -1,5 +1,5 @@
 ---
-title: "What is OpenSidewalks?"
+title: What is OpenSidewalks?
 slug: opensidewalks
 doc_type: concept
 questions:

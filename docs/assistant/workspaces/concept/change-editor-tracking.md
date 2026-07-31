@@ -1,5 +1,5 @@
 ---
-title: "What editor created a change?"
+title: What editor created a change?
 slug: change-editor-tracking
 doc_type: concept
 questions:

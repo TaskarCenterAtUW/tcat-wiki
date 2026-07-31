@@ -1,5 +1,5 @@
 ---
-title: "How do I compare Walksheds profiles?"
+title: How do I compare Walksheds profiles?
 slug: compare-walkshed-profiles
 doc_type: workflow
 questions:

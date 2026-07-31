@@ -1,5 +1,5 @@
 ---
-title: "What is the relationship between pedestrian paths in OpenStreetMap and GTFS Pathways?"
+title: What is the relationship between pedestrian paths in OpenStreetMap and GTFS Pathways?
 slug: osm-pedestrian-paths-vs-gtfs-pathways
 doc_type: concept
 questions:
@@ -23,15 +23,17 @@ topics:
     - tdei
 risk_level: medium
 authority_level: explanatory
-publication_status: stub
-last_reviewed: ""
+publication_status: draft
+last_reviewed: 2026-07-30
 retrieval_priority: high
 assistant_behavior:
     allow_inference: false
     requires_citation: true
     abstain_if_missing_context: true
-    do_not_claim: []
-related_pages: []
+    do_not_claim:
+        - OSM pedestrian paths and GTFS Pathways are the same dataset or automatically synchronized.
+    related_pages:
+        - assistant/support/workflow/check-gtfs-feed-pathways.md
 tags:
     - Assistant
 ---
@@ -42,32 +44,32 @@ tags:
 
 ## Short Answer
 
-TODO
+OSM pedestrian paths describe mapped physical ways in a collaborative geographic database. GTFS Pathways describe transit-stop pathways and transfers in a publisher's transit feed.
 
 ## Significance
 
-TODO
+Both can inform walking or transit routing, but their scopes and stewardship differ.
 
 ## What This Means
 
-TODO
+Use OSM or OS-CONNECT for surrounding pedestrian context and GTFS Pathways for station-specific transit semantics. Verify identifiers and versions before joining them.
 
 ## What This Does Not Mean
 
-TODO
+An OSM path does not automatically become a GTFS pathway, and a GTFS pathway does not represent the full street network.
 
 ## How To Use This
 
-TODO
+Check the transit feed and local pedestrian dataset independently.
 
 ## Example
 
-TODO
+A station entrance is connected to a platform in GTFS Pathways while the sidewalk leading to the entrance is represented in pedestrian data.
 
 ## Assistant Guidance
 
-TODO
+Avoid claiming synchronization or completeness without source evidence.
 
 ## Related Concepts
 
-TODO
+- [Check GTFS feed pathways](../workflow/check-gtfs-feed-pathways.md)

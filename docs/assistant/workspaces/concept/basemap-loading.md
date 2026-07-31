@@ -1,5 +1,5 @@
 ---
-title: "How are basemaps loaded?"
+title: How are basemaps loaded?
 slug: basemap-loading
 doc_type: concept
 questions:

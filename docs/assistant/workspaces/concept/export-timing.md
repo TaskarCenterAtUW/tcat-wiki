@@ -1,5 +1,5 @@
 ---
-title: "When should edits be exported back to TDEI?"
+title: When should edits be exported back to TDEI?
 slug: export-timing
 doc_type: concept
 questions:

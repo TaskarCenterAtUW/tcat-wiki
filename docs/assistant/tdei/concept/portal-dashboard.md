@@ -1,5 +1,5 @@
 ---
-title: "What does the TDEI portal dashboard show?"
+title: What does the TDEI portal dashboard show?
 slug: portal-dashboard
 doc_type: concept
 questions:

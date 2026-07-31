@@ -1,9 +1,9 @@
 ---
-title: "Can Walksheds be joined with census, crash, or internal agency datasets?"
+title: Can Walksheds be joined with census, crash data, or internal agency datasets?
 slug: external-dataset-joins
 doc_type: concept
 questions:
-    - Can Walksheds be joined with census, crash, or internal agency datasets?
+    - Can Walksheds be joined with census, crash data, or internal agency datasets?
 audiences:
     - planner
     - jurisdiction
@@ -16,16 +16,18 @@ topics:
     - gis
     - graph-metrics
 risk_level: high
-authority_level: explanatory
-publication_status: stub
-last_reviewed: ""
+authority_level: provisional
+publication_status: draft
+last_reviewed: 2026-07-31
 retrieval_priority: high
 assistant_behavior:
     allow_inference: false
     requires_citation: true
     abstain_if_missing_context: true
-    do_not_claim: []
-related_pages: []
+    do_not_claim:
+        - External datasets can be joined correctly without checking their source, geography, time, and keys.
+    related_pages:
+        - assistant/walksheds/concept/os-connect-data-usage.md
 tags:
     - Assistant
 ---
@@ -36,32 +38,32 @@ tags:
 
 ## Short Answer
 
-TODO
+Yes. Walksheds can be joined with census, crash data, or internal agency layers when the geometries, identifiers, coordinate systems, and analysis units are compatible.
 
 ## Significance
 
-TODO
+Joins add demographic, safety, or operational context to modeled reachability.
 
 ## What This Means
 
-TODO
+Align projections and boundaries, document the join key or spatial relationship, and preserve the Walksheds dataset and profile metadata.
 
 ## What This Does Not Mean
 
-TODO
+The join does not make either source current, authoritative, or causally explanatory.
 
 ## How To Use This
 
-TODO
+Validate a sample and disclose missing, mismatched, or generalized geometries.
 
 ## Example
 
-TODO
+A planner intersects walkshed polygons with census blocks and summarizes reachable population by stop.
 
 ## Assistant Guidance
 
-TODO
+Ask for the source layers and intended join before giving implementation-specific advice.
 
 ## Related Concepts
 
-TODO
+- [OS-CONNECT data usage](os-connect-data-usage.md)

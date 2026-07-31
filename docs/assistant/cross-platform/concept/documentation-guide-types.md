@@ -1,5 +1,5 @@
 ---
-title: "What types of documentation guide TCAT users?"
+title: What types of documentation guide TCAT users?
 slug: documentation-guide-types
 doc_type: concept
 questions:

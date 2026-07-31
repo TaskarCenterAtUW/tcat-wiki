@@ -1,5 +1,5 @@
 ---
-title: "What is a workspace in technical terms?"
+title: What is a workspace in technical terms?
 slug: workspace-technical-definition
 doc_type: concept
 questions:

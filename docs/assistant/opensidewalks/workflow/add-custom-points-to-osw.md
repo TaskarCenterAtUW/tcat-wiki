@@ -1,5 +1,5 @@
 ---
-title: "How do I add Custom Points to an OpenSidewalks dataset?"
+title: How do I add Custom Points to an OpenSidewalks dataset?
 slug: add-custom-points-to-osw
 doc_type: workflow
 questions:
@@ -29,6 +29,7 @@ assistant_behavior:
         - An OpenSidewalks Custom Point is a routable network Edge.
         - A source point dataset can omit unique IDs or coordinate validation.
 related_pages:
+    - ../concept/custom-entities.md
     - ../concept/adjacent-and-custom-entities.md
     - ../concept/coordinate-system-and-serialization.md
     - ../../../opensidewalks/schema/custom-points-in-osw.md
@@ -70,5 +71,6 @@ Ask whether the point should be routable and what source format is being convert
 
 ## Related Concepts
 
-- [How are adjacent and custom entities used?](../concept/adjacent-and-custom-entities.md)
+- [What are Custom Entities in OpenSidewalks?](../concept/custom-entities.md)
+- [How do Adjacent and Custom Entities differ?](../concept/adjacent-vs-custom-entities.md)
 - [What entities does the OpenSidewalks Schema define?](../concept/network-entities.md)

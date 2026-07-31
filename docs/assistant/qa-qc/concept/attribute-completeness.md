@@ -1,5 +1,5 @@
 ---
-title: "What does attribute completeness mean in QA/QC reports?"
+title: What does attribute completeness mean in QA/QC reports?
 slug: attribute-completeness
 doc_type: concept
 questions:

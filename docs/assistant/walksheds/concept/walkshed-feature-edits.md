@@ -1,5 +1,5 @@
 ---
-title: "What can feature edits do in Walksheds?"
+title: What can feature edits do in Walksheds?
 slug: walkshed-feature-edits
 doc_type: concept
 questions:

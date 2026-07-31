@@ -1,5 +1,5 @@
 ---
-title: "How does Walksheds batch concurrency work?"
+title: How does Walksheds batch concurrency work?
 slug: walkshed-batch-concurrency
 doc_type: concept
 questions:

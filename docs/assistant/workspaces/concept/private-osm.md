@@ -1,5 +1,5 @@
 ---
-title: "Private OSM (Workspaces)"
+title: Private OSM (Workspaces)
 slug: private-osm
 doc_type: concept
 questions:

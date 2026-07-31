@@ -1,5 +1,5 @@
 ---
-title: "How are imagery permissions handled?"
+title: How are imagery permissions handled?
 slug: imagery-permissions
 doc_type: concept
 questions:

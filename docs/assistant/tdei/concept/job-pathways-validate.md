@@ -1,5 +1,5 @@
 ---
-title: "What does the TDEI Pathways Validate job do?"
+title: What does the TDEI Pathways Validate job do?
 slug: job-pathways-validate
 doc_type: concept
 questions:

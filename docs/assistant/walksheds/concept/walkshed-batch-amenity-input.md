@@ -1,5 +1,5 @@
 ---
-title: "What input does a Walksheds batch amenity request need?"
+title: What input does a Walksheds batch amenity request need?
 slug: walkshed-batch-amenity-input
 doc_type: concept
 questions:

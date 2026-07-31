@@ -1,5 +1,5 @@
 ---
-title: "How do I convert sidewalk centerlines to OpenSidewalks?"
+title: How do I convert sidewalk centerlines to OpenSidewalks?
 slug: convert-sidewalk-centerlines-to-osw
 doc_type: workflow
 questions:

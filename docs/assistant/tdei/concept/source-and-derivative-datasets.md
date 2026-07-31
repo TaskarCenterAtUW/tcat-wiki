@@ -1,5 +1,5 @@
 ---
-title: "What is the relationship between source and derivative datasets in TDEI?"
+title: What is the relationship between source and derivative datasets in TDEI?
 slug: source-and-derivative-datasets
 doc_type: concept
 questions:

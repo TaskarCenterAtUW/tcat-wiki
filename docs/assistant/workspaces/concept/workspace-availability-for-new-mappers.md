@@ -1,5 +1,5 @@
 ---
-title: "Why might a new mapper see no available workspace?"
+title: Why might a new mapper see no available workspace?
 slug: workspace-availability-for-new-mappers
 doc_type: concept
 questions:

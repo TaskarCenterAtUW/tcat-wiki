@@ -1,5 +1,5 @@
 ---
-title: "What are QA/QC task-grid overlays?"
+title: What are QA/QC task-grid overlays?
 slug: task-grid-overlays
 doc_type: concept
 questions:

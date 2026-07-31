@@ -1,5 +1,5 @@
 ---
-title: "What is a quest in AVIV ScoutRoute?"
+title: What is a quest in AVIV ScoutRoute?
 slug: quest
 doc_type: concept
 questions:

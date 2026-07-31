@@ -1,5 +1,5 @@
 ---
-title: "How are QA/QC centrality tiles generated?"
+title: How are QA/QC centrality tiles generated?
 slug: centrality-tile-generation
 doc_type: concept
 questions:

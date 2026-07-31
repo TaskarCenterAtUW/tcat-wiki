@@ -1,5 +1,5 @@
 ---
-title: "Who can review edits?"
+title: Who can review edits?
 slug: edit-reviewers
 doc_type: concept
 questions:

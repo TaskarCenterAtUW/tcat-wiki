@@ -1,5 +1,5 @@
 ---
-title: "How does the default Walksheds cost model work?"
+title: How does the default Walksheds cost model work?
 slug: walkshed-default-cost-model
 doc_type: concept
 questions:

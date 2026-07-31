@@ -1,5 +1,5 @@
 ---
-title: "What assumptions do QA/QC walkshed profiles use?"
+title: What assumptions do QA/QC walkshed profiles use?
 slug: walkshed-profile-assumptions
 doc_type: concept
 questions:

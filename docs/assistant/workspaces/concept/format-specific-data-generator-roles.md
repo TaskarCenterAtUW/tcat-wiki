@@ -1,5 +1,5 @@
 ---
-title: "What are format-specific data-generator roles?"
+title: What are format-specific data-generator roles?
 slug: format-specific-data-generator-roles
 doc_type: concept
 questions:

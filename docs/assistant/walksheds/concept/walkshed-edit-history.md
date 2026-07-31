@@ -1,5 +1,5 @@
 ---
-title: "What is the Walksheds edit history?"
+title: What is the Walksheds edit history?
 slug: walkshed-edit-history
 doc_type: concept
 questions:
