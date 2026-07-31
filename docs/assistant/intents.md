@@ -200,7 +200,7 @@ Support staff ask operational questions in the moment and may phrase similar que
 
 **Retrieve these pages:**
 
-- [street-name-vs-is-sidepath-of-name](os-connect/concept/street-name-vs-sidepath-name.md)
+- [street-name-vs-is-sidepath-of-name](os-connect/concept/street-name-vs-is-sidepath-of-name.md)
 
 ### `recommend-osm-tagging-practice`
 
