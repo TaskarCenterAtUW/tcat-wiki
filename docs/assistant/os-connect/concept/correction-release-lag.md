@@ -1,5 +1,5 @@
 ---
-title: "How long do corrections take to appear in a public release?"
+title: How long do corrections take to appear in a public release?
 slug: correction-release-lag
 doc_type: concept
 questions:
@@ -19,7 +19,7 @@ topics:
 risk_level: medium
 authority_level: explanatory
 publication_status: draft
-last_reviewed: 2026-07-22
+last_reviewed: 2026-07-30
 retrieval_priority: high
 assistant_behavior:
     allow_inference: false
@@ -28,7 +28,10 @@ assistant_behavior:
     do_not_claim:
         - A submitted correction appears in the public release immediately.
         - A correction request guarantees acceptance or a fixed release date.
-related_pages: []
+related_pages:
+    - assistant/os-connect/index.md
+    - assistant/os-connect/workflow/report-data-error.md
+    - assistant/os-connect/concept/viewer-vs-tdei-portal.md
 tags:
     - Assistant
 ---
@@ -39,31 +42,31 @@ tags:
 
 ## Short Answer
 
-Corrections reported through the viewer may require review, source-data changes, validation, and a later dataset release before they appear publicly.
+Corrections reported through the viewer require review, source-data updates, validation, and a later dataset release before they appear publicly.
 
 ## Significance
 
-The release process separates reporting an observation from changing and publishing a versioned dataset.
+Reporting an observation is separate from changing and publishing a versioned dataset.
 
 ## What This Means
 
-Track the report location, issue description, dataset ID, version, and follow-up. Check a later release rather than assuming the current viewer changes immediately.
+Record the report location, issue, dataset ID, and version. Check a later release instead of expecting the current viewer to change immediately.
 
 ## What This Does Not Mean
 
-A missing sidewalk is reported, reviewed by a steward, added to a source dataset, validated, and included in a later release.
+A submitted correction is not guaranteed to be accepted or included by a specific date.
 
 ## How To Use This
 
-Do not assume a correction will be accepted or provide a timeline unless the responsible release process states one.
+Follow the report workflow and do not promise a timeline unless the responsible release process provides one.
 
 ## Example
 
-Use the report workflow and cite the current dataset version when following up.
+When following up, cite the report details and current dataset version.
 
 ## Assistant Guidance
 
-Ask for the report details and current release version. Do not promise a correction date.
+Do not promise an acceptance or release date.
 
 ## Related Concepts
 
