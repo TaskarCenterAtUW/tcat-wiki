@@ -47,7 +47,7 @@ topics:
 risk_level: low
 authority_level: official
 publication_status: published
-last_reviewed: 2026-07-29
+last_reviewed: 2026-07-31
 retrieval_priority: high
 assistant_behavior:
     allow_inference: false
@@ -68,7 +68,7 @@ tags:
 
 ## Short Answer
 
-This page lists all 274 abbreviations, acronyms, and initialisms used across TCAT Wiki documentation and TCAT platforms and tools.
+This page lists all 327 abbreviations, acronyms, and initialisms used across TCAT Wiki documentation and TCAT platforms and tools.
 
 ## Significance
 
@@ -80,12 +80,15 @@ The table below maps each abbreviated form to its full expansion. Entries are so
 
 | Abbreviation | Expansion |
 | :----------- | :-------- |
+| 2D | Two-Dimensional |
 | 2FA | Two-Factor Authentication |
+| 3D | Three-Dimensional |
 | 3DEP | 3D Elevation Program |
 | A11y | Accessibility |
 | AADT | Annual Average Daily Traffic |
 | AASHTO | American Association of State Highway and Transportation Officials |
 | ABA | Architectural Barriers Act |
+| ACL | Association for Computational Linguistics |
 | ACM | Association for Computing Machinery |
 | ADA | Americans with Disabilities Act |
 | ADS | Aging and Disability Services |
@@ -107,6 +110,9 @@ The table below maps each abbreviated form to its full expansion. Entries are so
 | AVIV SR | AVIV ScoutRoute |
 | BART | Bay Area Rapid Transit |
 | BBox | Bounding Box |
+| BEV | Bird's-Eye View |
+| BFS | Breadth-First Search |
+| BLIP | Bootstrapping Language-Image Pre-training |
 | BLV | Blind and Low-Vision |
 | BRT | Bus Rapid Transit |
 | BSAC | Cooper Jones Bicyclist Safety Advisory Council |
@@ -123,20 +129,25 @@ The table below maps each abbreviated form to its full expansion. Entries are so
 | CMIST | Communications, Maintaining Health, Independence, Support, Safety, and Self-Determination, and Transportation |
 | CMP | Congestion Management Process |
 | CNG | Cloud-Native Geospatial Forum |
+| COCO | Common Objects in Context |
 | COE | College of Engineering |
 | COG | Cloud Optimized GeoTIFF |
+| CoT | Chain-of-Thought |
 | CRAB | Washington State County Road Administration Board |
 | CREATE | Center for Research and Education on Accessible Technology and Experiences |
 | CRS | Coordinate Reference System |
 | CSE | Computer Science and Engineering |
+| CSID | Complete Streets Infrastructure Division |
 | CSS | Cascading Style Sheets |
 | CSUN | California State University, Northridge |
 | CSV | Comma-Separated Values |
 | CTANW | Community Transportation Association of the Northwest |
 | CUGOS | Cascadia Users of Geospatial Open Source |
+| CVPR | Conference on Computer Vision and Pattern Recognition |
 | DE-9IM | Dimensionally Extended Nine-Intersection Model |
 | DEM | Digital Elevation Model |
 | DESA | Department of Economic and Social Affairs |
+| DFS | Depth-First Search |
 | DITA | Darwin Information Typing Architecture |
 | DOT | Department of Transportation |
 | DSB | Department of Services for the Blind |
@@ -144,7 +155,9 @@ The table below maps each abbreviated form to its full expansion. Entries are so
 | DTD | Document Type Definition |
 | DTM | Digital Terrain Model |
 | DXF | Drawing Exchange Format |
+| ECCV | European Conference on Computer Vision |
 | EFA | Equity Focus Area |
+| EMNLP | Empirical Methods in Natural Language Processing |
 | EPSG | European Petroleum Survey Group |
 | ETL | Extract, Transform, Load |
 | ETRS89 | European Terrestrial Reference System 1989 |
@@ -158,6 +171,7 @@ The table below maps each abbreviated form to its full expansion. Entries are so
 | G3ict | Global Initiative for Inclusive Information and Communication Technologies |
 | GAAD | Global Accessibility Awareness Day |
 | GATIS | General Active Transportation Infrastructure Specification |
+| GeoAI | Geospatial Artificial Intelligence |
 | GERS | Global Entity Reference System |
 | GIG | GoInfoGame |
 | GIS | Geographic Information System |
@@ -166,6 +180,7 @@ The table below maps each abbreviated form to its full expansion. Entries are so
 | GNSS | Global Navigation Satellite System |
 | GOFS | General On-Demand Transit Feed Specification |
 | GPS | Global Positioning System |
+| GPT | Generative Pre-trained Transformer |
 | GPX | GPS Exchange Format |
 | GS | Gaussian Solutions |
 | GTFS | General Transit Feed Specification |
@@ -182,29 +197,43 @@ The table below maps each abbreviated form to its full expansion. Entries are so
 | HTML | Hypertext Markup Language |
 | HuskyADAPT | Accessible Design And Play Technology |
 | HxGN | Hexagon (aerial imagery provider) |
+| ICCV | International Conference on Computer Vision |
+| ICLR | International Conference on Learning Representations |
+| ICML | International Conference on Machine Learning |
 | IDW | Inverse Distance Weighting |
+| IEEE | Institute of Electrical and Electronics Engineers |
 | IIiX | Information Interaction in Context |
+| IJCV | International Journal of Computer Vision |
 | IMCL | International Making Cities Livable |
 | IoU | Intersection over Union |
 | IRB | Internal Review Board |
 | ISB | Industrial Service Boundary |
+| ISPRS | International Society for Photogrammetry and Remote Sensing |
 | ISTEA | Intermodal Surface Transportation Efficiency Act of 1991 |
 | ITS | Intelligent Transportation System |
 | IXN | Intersection / Intersection Traversability Metric |
+| JASA | Journal of the American Statistical Association |
 | JCDL | Joint Conference on Digital Libraries |
 | JOSM | Java OpenStreetMap Editor |
+| JPRS | Journal of Photogrammetry and Remote Sensing |
 | JSON | JavaScript Object Notation |
 | JSX | JavaScript XML |
 | KML | Keyhole Markup Language |
 | KPI | Key Performance Indicator |
+| KV | Key-Value |
+| LAION | Large-scale Artificial Intelligence Open Network |
 | lat | Latitude |
 | LFQD | Long Form Quest Definition |
 | LiDAR | Light Detection and Ranging |
+| LLaVA | Large Language and Vision Assistant |
+| LLM | Large Language Model |
 | LoD | Level of Detail |
 | lon | Longitude |
+| LoRA | Low-Rank Adaptation |
 | LoS | Line of Sight |
 | LRS | Linear Referencing System |
 | LRTP | Long-Range Transportation Plan |
+| LVLM | Large Vision Language Model |
 | MBTA | Massachusetts Bay Transportation Authority |
 | MCP | Model Context Protocol |
 | MDIP | Mobility Data Interoperability Principles |
@@ -214,6 +243,7 @@ The table below maps each abbreviated form to its full expansion. Entries are so
 | MIC | Manufacturing Industrial Center |
 | MIRE | Model Inventory of Roadway Elements |
 | ML | Machine Learning |
+| MLLM | Multimodal Large Language Model |
 | MnDOT | Minnesota Department of Transportation |
 | MNY26 | Mappy New Year 2026 |
 | MOD | Mobility-on-Demand |
@@ -222,6 +252,7 @@ The table below maps each abbreviated form to its full expansion. Entries are so
 | MPO | Metropolitan Planning Organization |
 | MUTCD | Manual on Uniform Traffic Control Devices |
 | MVT | Mapbox Vector Tile |
+| NAACL | North American Chapter of the Association for Computational Linguistics |
 | NACTO | National Association of City Transportation Officials |
 | NAD27 | North American Datum 1927 |
 | NAD83 | North American Datum 1983 |
@@ -232,10 +263,14 @@ The table below maps each abbreviated form to its full expansion. Entries are so
 | NDVI | Normalized Difference Vegetation Index |
 | NEMT | Non-Emergency Medical Transportation |
 | NetCDF | Network Common Data Form |
+| NeurIPS | Neural Information Processing Systems |
 | NHS | National Highway System |
 | NHTSA | National Highway Traffic Safety Administration |
 | NIR | Near-Infrared |
+| NOTICE | Noise-free Text-Image Corruption and Evaluation |
 | NYPL | New York Public Library |
+| OakDOT | City of Oakland Department of Transportation |
+| OCR | Optical Character Recognition |
 | OD | Origin-Destination |
 | ODOT | Oregon Department of Transportation |
 | OGC | Open Geospatial Consortium |
@@ -264,6 +299,7 @@ The table below maps each abbreviated form to its full expansion. Entries are so
 | RCTO | Regional Concept for Transportation Operations |
 | RCW | Revised Code of Washington |
 | RGC | Regional Growth Center |
+| RL | Reinforcement Learning |
 | ROW | Right of Way |
 | RRFB | Rectangular Rapid Flashing Beacon |
 | RSO | Registered Student Organization |
@@ -277,14 +313,19 @@ The table below maps each abbreviated form to its full expansion. Entries are so
 | SCLIO | Specialized Community-Led Impact Opportunity |
 | SDI | Spatial Data Infrastructure |
 | SDOT | Seattle Department of Transportation |
+| SFT | Supervised Fine-Tuning |
 | SHSP | Strategic Highway Safety Plan |
 | SIGIR | Special Interest Group on Information Retrieval |
+| SIGKDD | Special Interest Group on Knowledge Discovery and Data Mining |
 | SLAM | Simultaneous Location and Mapping |
 | SLD | Styled Layer Descriptor |
 | SNAP | Supplemental Nutrition Assistance Program |
 | SNG | Seattle Neighborhood Greenways |
+| SOTA | State of the Art |
 | SOV | Single Occupancy Vehicle |
 | SOW | Statement of Work |
+| SPLICE | Sequential Processing for Learning and Inference in Chronological Events |
+| SPM | Semantic Minimal Pairs |
 | SPS | Seattle Public Schools |
 | SRID | Spatial Reference System Identifier |
 | SRTS | Safe Routes to School |
@@ -293,6 +334,7 @@ The table below maps each abbreviated form to its full expansion. Entries are so
 | STAC | SpatioTemporal Asset Catalog |
 | STAR | Smart Transportation Applications and Research |
 | STIP | State Transportation Improvement Program |
+| STR | Symmetric Token Replacement |
 | SUMC | Shared User Mobility Conference / Shared Use Mobility Center |
 | SVEA | Snoqualmie Valley Economic Alliance |
 | SVG | Scalable Vector Graphics |
@@ -330,11 +372,21 @@ The table below maps each abbreviated form to its full expansion. Entries are so
 | UTM | Universal Transverse Mercator |
 | UW | University of Washington |
 | UX | User Experience |
+| V-SEAM | Visual Semantic Editing and Attention Modulating |
 | V2X | Vehicle-to-Everything |
+| VFL | Vision Function Layer |
 | VGI | Volunteered Geographic Information |
+| VL | Vision-Language |
+| VLA | Vision–Language–Action Model |
+| VLM | Vision Language Model |
+| VLN | Vision-and-Language Navigation |
 | VMT | Vehicle Miles Traveled |
+| VQA | Visual Question Answering |
+| VSI | Visual-Spatial Intelligence |
+| VSR | Visual Spatial Reasoning |
 | W3C | World Wide Web Consortium |
 | WA | Washington (state) |
+| WACV | Winter Conference on Applications of Computer Vision |
 | WAGISA | Washington GIS Association |
 | WAI | Web Accessibility Initiative |
 | WAI-ARIA | Web Accessibility Initiative - Accessible Rich Internet Applications |
@@ -351,6 +403,7 @@ The table below maps each abbreviated form to its full expansion. Entries are so
 | WSP | Washington State Proviso |
 | WTSC | Washington Traffic Safety Commission |
 | WWWC | World Wide Web Consortium |
+| XAI | Explainable Artificial Intelligence |
 | XEE | XML External Entity |
 | XML | Extensible Markup Language |
 | XR | Extended Reality |
