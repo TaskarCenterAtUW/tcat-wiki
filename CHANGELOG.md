@@ -8,14 +8,12 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/),
 
 <!--
 
-## Unreleased: v14.5.0 (2026-07-30)
+## Unreleased: v0.0.0 (2026-00-00)
 
 ### Features
 
-- **Core**: 
-- **Docs**: Update Assistant Knowledge Base articles
-- **Docs**: Add authority level count table to dispatch generator
-- **Docs**: Update abbreviations list
+- **Core**:
+- **Docs**:
 
 ### Fixes
 
@@ -23,6 +21,20 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/),
 - **Docs**:
 
 -->
+
+## Unreleased: v14.5.0 (2026-07-31)
+
+### Features
+
+- **Core**: Bump Zensical to 0.0.52
+- **Docs**: Update Assistant Knowledge Base articles
+- **Docs**: Add authority level count table to dispatch generator
+- **Docs**: Update abbreviations list
+
+### Fixes
+
+- **Docs**: Remove outdated UI description in AccessMap User Manual
+- **Docs**: Fix miscellaneous minor issues in the Assistant Knowledge Base
 
 ## v14.4.0 (2026-07-27)
 
