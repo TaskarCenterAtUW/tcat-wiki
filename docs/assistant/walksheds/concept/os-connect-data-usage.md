@@ -1,5 +1,5 @@
 ---
-title: "How does Walksheds use OS-CONNECT data?"
+title: How does Walksheds use OS-CONNECT data?
 slug: os-connect-data-usage
 doc_type: concept
 questions:
@@ -16,15 +16,17 @@ topics:
     - os-connect
 risk_level: medium
 authority_level: explanatory
-publication_status: stub
-last_reviewed: ""
+publication_status: draft
+last_reviewed: 2026-07-31
 retrieval_priority: high
 assistant_behavior:
     allow_inference: false
     requires_citation: true
     abstain_if_missing_context: true
-    do_not_claim: []
-related_pages: []
+    do_not_claim:
+        - Every OS-CONNECT release or feature is available in every Walksheds workflow.
+    related_pages:
+        - assistant/walksheds/concept/external-dataset-joins.md
 tags:
     - Assistant
 ---
@@ -35,32 +37,32 @@ tags:
 
 ## Short Answer
 
-TODO
+Walksheds can use an appropriate OS-CONNECT pedestrian-network release as a routing or reachability input.
 
 ## Significance
 
-TODO
+OS-CONNECT supplies network features; Walksheds applies travel profiles and cost rules to model reachable areas.
 
 ## What This Means
 
-TODO
+Check the dataset boundary, version, connectivity, and attributes before generating a walkshed.
 
 ## What This Does Not Mean
 
-TODO
+Using OS-CONNECT does not make a walkshed a field survey, ADA certification, or guarantee of current access.
 
 ## How To Use This
 
-TODO
+Record dataset, profile, cost, and assumptions in outputs.
 
 ## Example
 
-TODO
+A city uses a versioned OS-CONNECT release to compare pedestrian and wheelchair-oriented access to clinics.
 
 ## Assistant Guidance
 
-TODO
+Do not claim that every OS-CONNECT release or feature is available in every Walksheds workflow without verification.
 
 ## Related Concepts
 
-TODO
+- [External dataset joins](external-dataset-joins.md)
