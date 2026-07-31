@@ -1,5 +1,5 @@
 ---
-title: "How can accessibility profiles reveal inequities?"
+title: How can accessibility profiles reveal inequities?
 slug: accessibility-profile-inequity-analysis
 doc_type: concept
 questions:
@@ -18,15 +18,17 @@ topics:
     - mobility-profiles
 risk_level: medium
 authority_level: explanatory
-publication_status: stub
-last_reviewed: ""
+publication_status: draft
+last_reviewed: 2026-07-31
 retrieval_priority: high
 assistant_behavior:
     allow_inference: false
     requires_citation: true
     abstain_if_missing_context: true
-    do_not_claim: []
-related_pages: []
+    do_not_claim:
+        - A modeled inequity finding is a causal, legal, or universal conclusion by itself.
+    related_pages:
+        - assistant/walksheds/concept/travel-profiles.md
 tags:
     - Assistant
 ---
@@ -37,32 +39,32 @@ tags:
 
 ## Short Answer
 
-TODO
+Comparing accessibility profiles can reveal places where modeled reachability differs for people facing different slopes, curb, crossing, or network constraints.
 
 ## Significance
 
-TODO
+Profile comparisons can make access gaps visible that a single generic pedestrian measure would hide.
 
 ## What This Means
 
-TODO
+Run comparable origins and cost limits across profiles, then compare reachable area or destination access with demographic and infrastructure context.
 
 ## What This Does Not Mean
 
-TODO
+Profile differences do not by themselves prove discrimination, causation, or a person's actual experience.
 
 ## How To Use This
 
-TODO
+Validate important gaps locally and include assumptions, data quality, and community knowledge in interpretation.
 
 ## Example
 
-TODO
+A wheelchair-oriented profile reaches fewer clinics than a general profile near steep crossings, prompting field review and community discussion.
 
 ## Assistant Guidance
 
-TODO
+Describe inequity findings as modeled differences and avoid causal or legal conclusions without additional evidence.
 
 ## Related Concepts
 
-TODO
+- [Travel profiles](travel-profiles.md)
