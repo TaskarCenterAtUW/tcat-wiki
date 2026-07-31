@@ -1,5 +1,5 @@
 ---
-title: "How do QA/QC walksheds compare mobility profiles?"
+title: How do QA/QC walksheds compare mobility profiles?
 slug: walkshed-profile-comparison
 doc_type: concept
 questions:
@@ -25,7 +25,8 @@ assistant_behavior:
     abstain_if_missing_context: true
     do_not_claim:
         - A pedestrian walkshed applies equally to every mobility profile.
-related_pages: []
+related_pages:
+    - assistant/walksheds/concept/pedestrian-vs-wheelchair-walkshed.md
 tags:
     - Assistant
 ---
@@ -36,7 +37,7 @@ tags:
 
 ## Short Answer
 
-Reports can compare reachable areas from profiles such as sidewalk-only pedestrians and manual wheelchair users.
+Reports can compare reachable areas from profiles such as sidewalk-only pedestrians and modeled manual wheelchair users.
 
 ## Significance
 
@@ -44,15 +45,15 @@ Differences can reveal how crossings, slopes, curb ramps, or other constraints a
 
 ## What This Means
 
-Interpret each walkshed with its profile, origin set, and fixed travel budget. Overlapping POI-origin walksheds are merged and shared features are not counted repeatedly.
+Interpret each walkshed with its profile, origin set, constraints, and fixed travel budget. When the report merges overlapping origin walksheds, shared features are not counted repeatedly.
 
 ## What This Does Not Mean
 
-A profile comparison does not represent every person's mobility needs.
+A profile comparison does not represent every person's mobility needs or prove that a person can travel safely.
 
 ## How To Use This
 
-Record the profiles, limits, and dataset version when comparing results.
+Record the profiles, slope and curb rules, travel budget, merge method, and dataset version when comparing results.
 
 ## Example
 
