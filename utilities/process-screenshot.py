@@ -2,12 +2,15 @@
 """
 process-screenshot.py
 
-Generate themed screenshot variants with borders and drop shadows for the
-TCAT Wiki. Produces two variants per input image for Zensical light/dark
-theme support:
+Convert source screenshots to AVIF and generate themed variants with borders
+and drop shadows for the TCAT Wiki. Produces two variants per input image for
+Zensical light/dark theme support:
 
-  {name}-light.png  ->  light theme pages (#only-light): dark border + shadow
-  {name}-dark.png   ->  dark theme pages  (#only-dark):  light border + glow
+    {name}-light.avif  ->  light theme pages (#only-light): dark border + shadow
+    {name}-dark.avif   ->  dark theme pages (#only-dark):  light border + glow
+
+Non-AVIF source files are replaced by lossless AVIF files after all requested
+outputs have been written successfully. Existing AVIF sources are preserved.
 
 Usage:
   python process-screenshot.py <input> [options]
@@ -104,8 +107,24 @@ DARK_PROFILE = {
 }
 
 # Supported image extensions for directory scanning.
-# Can be added: ".bmp", ".gif", ".tiff", ".tif", ".webp"
-IMAGE_EXTENSIONS = {".png", ".jpg", ".jpeg"}
+IMAGE_EXTENSIONS = {".png", ".jpg", ".jpeg", ".avif"}
+
+# AVIF encoder settings. Pillow's speed scale is 0 (slowest/best) through
+# 10 (fastest). Quality 100 round-trips the 8-bit screenshot pixels without
+# loss in the supported Pillow/libavif encoder; quality 90 is near-lossless.
+AVIF_EXTENSION = ".avif"
+AVIF_SUBSAMPLING = "4:4:4"
+AVIF_SPEED = 0
+AVIF_ORIGINAL_OPTIONS = {
+    "quality": 100,
+    "speed": AVIF_SPEED,
+    "subsampling": AVIF_SUBSAMPLING,
+}
+AVIF_VARIANT_OPTIONS = {
+    "quality": 90,
+    "speed": AVIF_SPEED,
+    "subsampling": AVIF_SUBSAMPLING,
+}
 
 # endregion
 
@@ -202,12 +221,32 @@ CUSTOM_PROFILES: dict[str, dict[str, Any]] = {
 def is_output_file(p: Path) -> bool:
     """Return True if a file matches the output naming pattern (-light/-dark).
 
-    Output files use a dash suffix: example-light.png, example-dark.png.
-    Source files use a dot suffix: example.light.png, example.dark.png.
+    Output files use a dash suffix: example-light.avif, example-dark.avif.
+    Source files use a dot suffix: example.light.avif, example.dark.avif.
     This prevents re-processing previously generated output files.
     """
     s = p.stem
     return s.endswith("-light") or s.endswith("-dark")
+
+
+def require_avif_support() -> None:
+    """Raise a helpful error when Pillow was installed without AVIF support."""
+    if Image.registered_extensions().get(AVIF_EXTENSION) != "AVIF":
+        raise RuntimeError(
+            "This Pillow installation does not support AVIF. "
+            "Install a Pillow build with AVIF support."
+        )
+
+
+def avif_source_image(img: Image.Image) -> Image.Image:
+    """Return an 8-bit RGB or RGBA image suitable for AVIF encoding."""
+    has_alpha = img.mode in {"LA", "RGBA", "PA"} or "transparency" in img.info
+    return img.convert("RGBA" if has_alpha else "RGB")
+
+
+def save_avif(img: Image.Image, path: Path, options: dict[str, Any]) -> None:
+    """Save an image as metadata-free AVIF with the supplied encoder options."""
+    img.save(path, "AVIF", **options)
 
 
 def create_shadow_layer(
@@ -422,14 +461,14 @@ def process_file(
     """Process a single image file and write output variant(s).
 
     Mode-tag detection:
-      If the source filename contains a `.light` or `.dark` segment before the
-      extension (e.g. `example.light.png`), only the matching variant is
+        If the source filename contains a `.light` or `.dark` segment before the
+            extension (e.g. `example.light.png`), only the matching variant is
       generated and the dot-tag is replaced with a dash-suffix in the output:
-        example.light.png  ->  example-light.png
-        example.dark.png   ->  example-dark.png
+        example.light.png  ->  example.light.avif + example-light.avif
+        example.dark.png   ->  example.dark.avif + example-dark.avif
 
       Untagged files (e.g. `example.png`) generate both variants as usual:
-        example.png  ->  example-light.png + example-dark.png
+        example.png  ->  example.avif + example-light.avif + example-dark.avif
 
     The --variants CLI flag further constrains output. For example, a
     `.light`-tagged file with --variants dark produces no output.
@@ -442,7 +481,8 @@ def process_file(
         shadow_padding: Shadow padding in pixels.
         light_profile: Resolved light-theme profile dict.
         dark_profile: Resolved dark-theme profile dict.
-        overwrite: If False, raise FileExistsError when output files exist.
+        overwrite: If False, raise FileExistsError when the converted source
+            or output files exist.
 
     Returns:
         List of output file paths written.
@@ -450,7 +490,9 @@ def process_file(
     Raises:
         FileExistsError: If an output file already exists and overwrite is False.
     """
+    require_avif_support()
     img = Image.open(input_path)
+    img.load()
     stem = input_path.stem
     out_dir = output_dir or input_path.parent
     out_dir.mkdir(parents=True, exist_ok=True)
@@ -485,25 +527,45 @@ def process_file(
         print(
             f"  Skipped: .{mode_tag} source excluded by --variants {variants}",
         )
+        return []
+
+    original_path = input_path.with_suffix(AVIF_EXTENSION)
+    replacing_source = original_path != input_path
+    if replacing_source and original_path.exists() and not overwrite:
+        raise FileExistsError(
+            f"Converted source already exists: {original_path}\n"
+            f"  Re-run with --overwrite to replace it."
+        )
 
     outputs = []
     for variant_name, profile in profiles.items():
         result = process_image(img, profile, border_width, shadow_padding)
-        out_path = out_dir / f"{stem}-{variant_name}.png"
+        out_path = out_dir / f"{stem}-{variant_name}{AVIF_EXTENSION}"
+        legacy_out_path = out_dir / f"{stem}-{variant_name}.png"
 
-        if out_path.exists() and not overwrite:
+        if (out_path.exists() or legacy_out_path.exists()) and not overwrite:
             raise FileExistsError(
-                f"Output file already exists: {out_path}\n"
+                f"Output file already exists: {out_path if out_path.exists() else legacy_out_path}\n"
                 f"  Re-run with --overwrite to replace existing files."
             )
 
-        # Save as maximally-compressed lossless PNG with no metadata.
-        # compress_level=9 applies maximum zlib deflate compression.
-        # Pillow writes no text chunks, no gamma, no ICC profile —
-        # only the mandatory IHDR, IDAT, and IEND chunks.
-        result.save(out_path, "PNG", compress_level=9)
+        # Save themed output as near-lossless AVIF using the slowest encoder
+        # setting for the smallest result. The generated shadow means these
+        # variants are intentionally not the lossless source representation.
+        save_avif(result, out_path, AVIF_VARIANT_OPTIONS)
+        if overwrite and legacy_out_path.exists():
+            legacy_out_path.unlink()
         outputs.append(out_path)
         print(f"  -> {out_path}")
+
+    # Convert the source only after every requested output has succeeded. This
+    # avoids deleting the original when an output collision or encoder error
+    # interrupts processing.
+    if replacing_source:
+        save_avif(avif_source_image(img), original_path, AVIF_ORIGINAL_OPTIONS)
+        img.close()
+        input_path.unlink()
+        print(f"  -> {original_path} (lossless source)")
 
     return outputs
 
@@ -515,22 +577,22 @@ def process_file(
 def main():
     parser = argparse.ArgumentParser(
         description=(
-            "Generate themed screenshot variants with borders and drop shadows "
-            "for Zensical light/dark theme support."
+            "Convert screenshots to AVIF and generate themed variants with "
+            "borders and drop shadows for Zensical light/dark support."
         ),
         formatter_class=argparse.RawDescriptionHelpFormatter,
         epilog="""\
 Output naming:
-  Untagged source (generates both variants):
-    input.png        ->  input-light.png  +  input-dark.png
+    Untagged source (generates both variants):
+        input.png        ->  input.avif + input-light.avif + input-dark.avif
 
-  Mode-tagged source (generates only the matching variant):
-    input.light.png  ->  input-light.png   (light only)
-    input.dark.png   ->  input-dark.png    (dark only)
+    Mode-tagged source (generates only the matching variant):
+        input.light.png  ->  input.light.avif + input-light.avif (light only)
+        input.dark.png   ->  input.dark.avif + input-dark.avif   (dark only)
 
-  The dot-separator (.light/.dark) marks the SOURCE file's intended theme.
-  The dash-separator (-light/-dark) marks the OUTPUT file for Zensical.
-  Source files are never overwritten.
+    The dot-separator (.light/.dark) marks the SOURCE file's intended theme.
+    The dash-separator (-light/-dark) marks the OUTPUT file for Zensical.
+    Non-AVIF sources are replaced by lossless AVIF files after successful output.
 
   Sibling detection:
     If img.dark.png and img.png coexist, img.png produces only -light.
@@ -538,8 +600,8 @@ Output naming:
     The --variants flag further constrains which outputs are generated.
 
 Markdown usage:
-  ![Alt text](path/to/image-light.png#only-light){{ width="300" }}
-  ![Alt text](path/to/image-dark.png#only-dark){{ width="300" }}
+    ![Alt text](path/to/image-light.avif#only-light){{ width="300" }}
+    ![Alt text](path/to/image-dark.avif#only-dark){{ width="300" }}
 
 Configuration:
   Edit the LIGHT_PROFILE, DARK_PROFILE, BORDER_WIDTH, and SHADOW_PADDING
