@@ -22,7 +22,13 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/),
 
 -->
 
-## Unreleased: v14.5.0 (2026-07-31)
+## v14.6.0 (2026-08-03)
+
+### Features
+
+- **Docs**: Update homepage 'User Journeys' section
+
+## v14.5.0 (2026-07-31)
 
 ### Features
 

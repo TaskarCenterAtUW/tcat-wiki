@@ -25,53 +25,33 @@ This site explains how to use the open-source transportation accessibility **too
 
 Choose your path: each one starts with the simplest document and then offers deeper options.
 
-??? abstract "I want to use AccessMap as a resident or advocate"
+??? abstract "I want to use AccessMap: find and share accessible, customized pedestrian routes"
 
-    Do you want to find accessible, customized pedestrian routing and share it with others?
+    **Get Started:** View the [AccessMap user manual](accessmap/user-manual/index.md).
 
-    **Get Started:** [Use AccessMap](accessmap/user-manual/index.md)
+??? abstract "I work for a jurisdiction or agency: view pedestrian infrastructure and decide what to do next"
 
-??? abstract "I work for a jurisdiction or agency"
+    **Get Started:** [View the data](os-connect/data-viewer/user-manual/index.md) and [read a Jurisdiction Snapshot](os-connect/qa-qc/user-manual/index.md).
 
-    Do you want to see what pedestrian infrastructure exists for your area, understand what the numbers mean, and decide what to do next?
+??? abstract "I want to import existing sidewalk, curb ramp, bus stop, or other data into the TDEI"
 
-    **Get Started:** [View the data](os-connect/data-viewer/user-manual/index.md) and get a [Jurisdiction Snapshot](os-connect/qa-qc/user-manual/index.md)
+    **Get Started:** Review the [Curb Points in TDEI tutorial](tdei/portal/tutorial/curb-points-in-tdei.md).
 
-??? abstract "I want to import my existing data into the TDEI"
+??? abstract "I want to contribute as a mapper: map sidewalks, crossings, and curbs"
 
-    Do you have existing datasets of sidewalks, curb ramps, bus stops, or other features that you want to get into the TDEI system?
+    **Get Started:** Follow the [Mapping for OSW in OSM tutorial](opensidewalks/tasking-manager/tutorial/osw-in-osmustm/index.md), and get started in your area or choose a [Tasking Manager project](opensidewalks/tasking-manager/project-list.md).
 
-    **Get Started:** Check out our tutorials, guides, and examples: [Curb Ramp Data into the TDEI](tdei/portal/tutorial/curb-points-in-tdei.md), [Core Edges in OSW](opensidewalks/schema/core-edges-in-osw.md), [Custom Points in OSW](opensidewalks/schema/custom-points-in-osw.md), and much more in our [Guides List](guides-list/index.md)!
+??? abstract "I want to improve the data: validate OS-CONNECT data and report issues"
 
-??? abstract "I want to contribute as a mapper"
+    **Get Started:** [Open the OS-CONNECT Data Viewer](os-connect/data-viewer/index.md), then [report an issue](os-connect/data-viewer/user-manual/feedback.md).
 
-    Do you want to help with mapping sidewalks, crossings, and curbs - directly in OpenStreetMap?
+??? abstract "I want to use OS-CONNECT data for planning, equity, and accessibility work"
 
-    **Get Started:** Check out our ["Mapping for OSW in OSM" tutorial](opensidewalks/tasking-manager/tutorial/osw-in-osmustm/index.md) and our [list of Tasking Manager projects](opensidewalks/tasking-manager/project-list.md)!
+    **Get Started:** [Read the OS-CONNECT QA/QC reports](os-connect/qa-qc/user-manual/index.md) and [use Walksheds](walksheds/index.md) for scenario planning and prioritization.
 
-<!-- ??? abstract "I'm a planner / analyst (no GIS required)"
+??? abstract "I want to develop or research with the data: download data, use APIs, and work with schemas"
 
-    Do you want to use outputs in planning (ADA transition plans, active transportation plans, equity work)?
-
-    **Get Started:** Reading a dashboard snapshot and following the Planning Playbook. _(Coming soon!)_
-
-??? abstract "I'm a legislator / funder / oversight"
-
-    Do you want to verify what was delivered, see statewide progress, and understand what comes next?
-
-    **Get Started:** Read "What we built" and view the statewide summary. _(Coming soon!)_
-
-??? abstract "I'm a developer / researcher"
-
-    Do you want data downloads, APIs, schemas, and examples?
-
-    **Get Started:** Use the Developer Quickstart Guide _(Coming soon!)_ and review the documentation on the [TDEI](tdei/index.md) and [OSW Schema](opensidewalks/index.md)
-
-??? abstract "I want to help improve the data"
-
-    Do you want to help a jurisdiction validate, report issues, or contribute edits?
-
-    **Get Started:** Learn how to report a problem _(Coming soon!)_ and about how updates happen through [Workspaces](workspaces/index.md) -->
+    **Get Started:** Follow the [OS-CONNECT download guide](tdei/portal/tutorial/download-os-connect.md) and review the [OpenSidewalks Schema documentation](opensidewalks/schema/index.md).
 
 ---
 
