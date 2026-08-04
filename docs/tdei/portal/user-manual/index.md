@@ -33,8 +33,8 @@ Through the portal, users can:
 
 ---
 
-![TDEI Portal dashboard](../../../resources/images/tdei/portal/user-manual/index/tdei-portal-light.avif#only-light)
-![TDEI Portal dashboard](../../../resources/images/tdei/portal/user-manual/index/tdei-portal-dark.avif#only-dark)
+![TDEI Portal dashboard](../../../resources/images/tdei/portal/user-manual/index/dashboard-light.avif#only-light)
+![TDEI Portal dashboard](../../../resources/images/tdei/portal/user-manual/index/dashboard-dark.avif#only-dark)
 
 ---
 
