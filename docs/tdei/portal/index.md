@@ -18,8 +18,8 @@ Through the TDEI Portal, users can register and manage their account, view and m
 
 ---
 
-![TDEI Portal dashboard](../../resources/images/tdei/portal/tdei-portal-light.png#only-light)
-![TDEI Portal dashboard](../../resources/images/tdei/portal/tdei-portal-dark.png#only-dark)
+![TDEI Portal dashboard](../../resources/images/tdei/portal/tdei-portal-light.avif#only-light)
+![TDEI Portal dashboard](../../resources/images/tdei/portal/tdei-portal-dark.avif#only-dark)
 
 ---
 

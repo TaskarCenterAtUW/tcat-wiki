@@ -22,6 +22,12 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/),
 
 -->
 
+## v15.0.0 (2026-08-03)
+
+### Features
+
+- **Core**: Reduce file size of screenshots by switching to AVIF
+
 ## v14.6.0 (2026-08-03)
 
 ### Features
