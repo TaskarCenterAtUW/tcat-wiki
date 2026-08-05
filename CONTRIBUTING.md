@@ -201,7 +201,7 @@ The full editor-facing guide lives in [.agents/instructions/content-style.instru
 
 Where possible, follow these guidelines for images:
 
-1. Format: 24-bit `.png`
+1. Format: `.avif` for screenshots and `.png` for other images
 
 2. Resizing: Scale images using `{ width="123" }`:
 
@@ -259,15 +259,16 @@ For creating screenshots with a consistent style, Firefox DevTools is to be used
     python .\utilities\process-screenshot.py screenshot.png --overwrite
     ```
 
-    The script produces two variants per input image, saved as maximally-compressed lossless PNGs:
-    - `{name}-light.png` — dark border + drop shadow for light theme pages
-    - `{name}-dark.png` — light border + glow for dark theme pages
+    The script converts non-AVIF sources to lossless `.avif` files and produces two near-lossless variants at quality `90`, using the slowest AVIF compression setting:
+    - `{name}.avif` — lossless source image
+    - `{name}-light.avif` — dark border + drop shadow for light theme pages
+    - `{name}-dark.avif` — light border + glow for dark theme pages
 
     Reference them in Markdown with Zensical's theme-switching fragments:
 
     ```markdown
-    ![Alt text](path/to/image-light.png#only-light)
-    ![Alt text](path/to/image-dark.png#only-dark)
+    ![Alt text](path/to/image-light.avif#only-light)
+    ![Alt text](path/to/image-dark.avif#only-dark)
     ```
 
     Mode-tagged source files (e.g., `image.light.png`, `image.dark.png`) generate only the matching variant. Run with `--help` for all options including per-variant color/shadow overrides.

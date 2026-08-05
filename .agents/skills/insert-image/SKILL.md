@@ -8,7 +8,7 @@ disable-model-invocation: true
 
 # Insert a Processed Screenshot
 
-Use this skill when the user supplies an absolute path to a source PNG and wants
+Use this skill when the user supplies an absolute path to a source screenshot and wants
 the processed image Markdown inserted into the active Markdown file.
 
 ## Input contract
@@ -17,12 +17,13 @@ the processed image Markdown inserted into the active Markdown file.
 - The active file is the Markdown document receiving the insertion.
 - Replace the active selection. If there is no selection, insert after the cursor
   line.
-- Do not modify the source image or unrelated document content.
+- The processor replaces non-AVIF source files with lossless AVIF after successful output.
+- Do not modify unrelated document content.
 
 ## Validate the source
 
 Inspect the filename only. If it matches
-`.*-(?:dark|light)\.png$`, stop and respond exactly:
+`.*-(?:dark|light)\.avif$`, stop and respond exactly:
 
 ```text
 Invalid input: provide the original source image, not an already-processed variant.
@@ -35,16 +36,16 @@ Otherwise, continue. Do not add rejection criteria.
 Let:
 
 - `dir` be the input directory.
-- `stem` be the filename without `.png` and without an optional `.dark` or
-  `.light` source-mode suffix.
+- `stem` be the filename without its extension and without an optional `.dark`
+  or `.light` source-mode suffix.
 
 Use `Test-Path` before relying on a companion source file.
 
-| Input              | Process            | Expected output                          |
-| ------------------ | ------------------ | ---------------------------------------- |
-| `{stem}.png`       | `{stem}.png`       | `{stem}-light.png` and `{stem}-dark.png` |
-| `{stem}.dark.png`  | `{stem}.dark.png`  | `{stem}-dark.png`                        |
-| `{stem}.light.png` | `{stem}.light.png` | `{stem}-light.png`                       |
+| Input              | Process            | Expected output                                            |
+| ------------------ | ------------------ | ---------------------------------------------------------- |
+| `{stem}.png`       | `{stem}.png`       | `{stem}.avif`, `{stem}-light.avif`, and `{stem}-dark.avif` |
+| `{stem}.dark.png`  | `{stem}.dark.png`  | `{stem}.dark.avif` and `{stem}-dark.avif`                  |
+| `{stem}.light.png` | `{stem}.light.png` | `{stem}.light.avif` and `{stem}-light.avif`                |
 
 For a mode-tagged input, find the source for the missing output mode in this
 order:
@@ -84,11 +85,11 @@ Compute each generated image path relative to the active file's directory.
 Use forward slashes in Markdown paths, including on Windows.
 
 For example, an image at
-`docs\resources\images\example\nested\data-viewer-light.png` inserted into
+`docs\resources\images\example\nested\data-viewer-light.avif` inserted into
 `docs\example\nested\test.md` uses:
 
 ```text
-../../resources/images/example/nested/data-viewer-light.png
+../../resources/images/example/nested/data-viewer-light.avif
 ```
 
 Replace the selection, or insert after the cursor line, with only the variants

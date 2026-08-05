@@ -1,3 +1,5 @@
+<!-- @format -->
+
 # TCAT Wiki Agent Guide
 
 TCAT Wiki is a Zensical documentation site for Taskar Center for Accessible Technology transportation-accessibility projects. Markdown under `docs/` is organized by topic; its directory hierarchy drives generated navigation. This is the repository-wide operational index. The detailed, task-specific sources below are authoritative for their scopes.
@@ -6,9 +8,9 @@ TCAT Wiki is a Zensical documentation site for Taskar Center for Accessible Tech
 
 - Activate the repository virtual environment before Python, Zensical, pip, or utility commands:
 
-  ```powershell
-  .\.venv\Scripts\Activate.ps1
-  ```
+    ```powershell
+    .\.venv\Scripts\Activate.ps1
+    ```
 
 - Change source files only. Never edit generated `site/`, `human-docs/`, `agent-docs/`, `zensical.build.toml`, or `docs/assistant/dispatch.md`; regenerate the latter with `python utilities/akb-generate-dispatch.py`.
 - Keep changes narrow. Use the smallest relevant existing validation; do not add tooling or fix unrelated issues.
@@ -17,7 +19,7 @@ TCAT Wiki is a Zensical documentation site for Taskar Center for Accessible Tech
 ## Route work to the canonical guidance
 
 | Work | Source of truth |
-| --- | --- |
+|------|-----------------|
 | Workspace and generated-file rules | [.agents/instructions/main.instructions.md](.agents/instructions/main.instructions.md) |
 | Markdown structure, tone, page types, links, and screenshots | [.agents/instructions/content-style.instructions.md](.agents/instructions/content-style.instructions.md) and [templates/content/README.md](templates/content/README.md) |
 | WCAG 2.2 AA authoring | [.agents/instructions/a11y.instructions.md](.agents/instructions/a11y.instructions.md) |
@@ -64,7 +66,7 @@ External-link results are cached for 12 hours; `-NoCache` bypasses the cache. `r
 
 ## Specialized workflows
 
-- **Screenshots:** `utilities/process-screenshot.py` creates `-light` and `-dark` PNG variants from generic sources. Use Windows paths in commands, forward slashes in Markdown, equivalent alt text, and `#only-light`/`#only-dark` fragments. See the insert-image skill and [CONTRIBUTING.md](CONTRIBUTING.md).
+- **Screenshots:** `utilities/process-screenshot.py` converts sources to lossless AVIF and creates near-lossless `-light.avif` and `-dark.avif` variants. Use Windows paths in commands, forward slashes in Markdown, equivalent alt text, and `#only-light`/`#only-dark` fragments. See the insert-image skill and [CONTRIBUTING.md](CONTRIBUTING.md).
 - **Event reports:** [utilities/generate-event-report.py](utilities/generate-event-report.py) orchestrates Tasking Manager and AVIV ScoutRoute reports. Required event frontmatter, generator options, templates, JSON, fragments, and `report.md` are documented in [CONTRIBUTING.md](CONTRIBUTING.md) and the utility help.
 - **AKB:** The schema governs paths, metadata, headings, status, links, and behavior. Transcript ingestion must propose evidence-grounded changes and receive explicit approval before edits. `dispatch.md` is generated inventory, never an authoring source.
 
