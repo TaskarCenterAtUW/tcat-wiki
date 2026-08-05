@@ -10,8 +10,8 @@ The [OS-CONNECT Data Viewer](https://osconnect-viewer.tdei.us/) facilitates insi
 
 ---
 
-![OS-CONNECT Data Viewer](../../resources/images/os-connect/data-viewer/data-viewer-light.png#only-light)
-![OS-CONNECT Data Viewer](../../resources/images/os-connect/data-viewer/data-viewer-dark.png#only-dark)
+![OS-CONNECT Data Viewer](../../resources/images/os-connect/data-viewer/data-viewer-light.avif#only-light)
+![OS-CONNECT Data Viewer](../../resources/images/os-connect/data-viewer/data-viewer-dark.avif#only-dark)
 
 ---
 
