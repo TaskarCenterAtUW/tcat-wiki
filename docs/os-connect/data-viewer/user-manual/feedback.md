@@ -25,8 +25,8 @@ You can right-click anywhere on the map at any zoom level to open an **Inspect**
 - **Latitude** and **Longitude** of the marker
 - A **Report Issue** button
 
-![Inspect popup showing coordinates and Report Issue button](../../../resources/images/os-connect/data-viewer/user-manual/feedback/inspect-light.png#only-light)
-![Inspect popup showing coordinates and Report Issue button](../../../resources/images/os-connect/data-viewer/user-manual/feedback/inspect-dark.png#only-dark)
+![Inspect popup showing coordinates and Report Issue button](../../../resources/images/os-connect/data-viewer/user-manual/feedback/01-inspect-light.avif#only-light)
+![Inspect popup showing coordinates and Report Issue button](../../../resources/images/os-connect/data-viewer/user-manual/feedback/01-inspect-dark.avif#only-dark)
 
 ---
 
@@ -63,7 +63,7 @@ If you notice a data issue — such as a missing sidewalk, incorrect curb type, 
 
 5.  Fill in the required fields and select **Submit Issue** (or select **Close** to cancel)
 
-![Report Issue popup showing coordinates and text entry boxes for Issue Description, Email ID, and Name](../../../resources/images/os-connect/data-viewer/user-manual/feedback/report-light.png#only-light)
-![Report Issue popup showing coordinates and text entry boxes for Issue Description, Email ID, and Name](../../../resources/images/os-connect/data-viewer/user-manual/feedback/report-dark.png#only-dark)
+![Report Issue popup showing coordinates and text entry boxes for Issue Description, Email ID, and Name](../../../resources/images/os-connect/data-viewer/user-manual/feedback/02-report-light.avif#only-light)
+![Report Issue popup showing coordinates and text entry boxes for Issue Description, Email ID, and Name](../../../resources/images/os-connect/data-viewer/user-manual/feedback/02-report-dark.avif#only-dark)
 
 !!! success "Success! An **Issue submitted successfully!** popup will appear at the bottom of the screen."

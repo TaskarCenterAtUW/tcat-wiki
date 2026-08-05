@@ -22,7 +22,8 @@ _For a list of all guides on the TCAT Wiki, refer to the [Guides List](../../../
 
 The OS-CONNECT Data Viewer displays an interactive map of the OS-CONNECT pedestrian network dataset for Washington State. When you first open the Data Viewer, the map is centered on Seattle, showcasing the extent and depth of available data.
 
-![Full map interface overview](../../../resources/images/os-connect/data-viewer/user-manual/interface/map-overview.png){ width="826" }
+![Full OS-CONNECT Data Viewer map interface](../../../resources/images/os-connect/data-viewer/user-manual/interface/01-map-overview-light.avif#only-light)
+![Full OS-CONNECT Data Viewer map interface](../../../resources/images/os-connect/data-viewer/user-manual/interface/01-map-overview-dark.avif#only-dark)
 
 The interface consists of the following key elements:
 
@@ -49,7 +50,8 @@ The Data Viewer offers two base map options, accessible via the toggle in the to
 | **Raster**  | A light CartoDB Positron street map (default). Best for clearly viewing the data features.        |
 | **Imagery** | Aerial/satellite imagery. Useful for comparing mapped features against real-world infrastructure. |
 
-![Aerial imagery background](../../../resources/images/os-connect/data-viewer/user-manual/interface/imagery.png){ width="826" }
+![Aerial imagery base map with pedestrian network features](../../../resources/images/os-connect/data-viewer/user-manual/interface/02-imagery-light.avif#only-light)
+![Aerial imagery base map with pedestrian network features](../../../resources/images/os-connect/data-viewer/user-manual/interface/02-imagery-dark.avif#only-dark)
 
 !!! tip
 
@@ -70,7 +72,8 @@ Two independent layer toggles are located in the top-left corner of the map:
 
 Both toggles operate independently — you can view data features with or without boundary polygons, or view boundaries alone without data features.
 
-![Layer toggles](../../../resources/images/os-connect/data-viewer/user-manual/interface/layer-toggles.png)
+![Data and Boundaries layer toggles and Raster and Imagery radio buttons](../../../resources/images/os-connect/data-viewer/user-manual/interface/03-layer-toggles-light.avif#only-light)
+![Data and Boundaries layer toggles and Raster and Imagery radio buttons](../../../resources/images/os-connect/data-viewer/user-manual/interface/03-layer-toggles-dark.avif#only-dark)
 
 !!! tip
 
@@ -82,18 +85,20 @@ Both toggles operate independently — you can view data features with or withou
 
 The legend is displayed in the bottom-left corner of the map and identifies the color used for each feature type:
 
-| Color      | Feature Type        |
-| :--------- | :------------------ |
-| Light blue | Sidewalk            |
-| Yellow     | Crossing (Marked)   |
-| Tan/orange | Crossing (Unmarked) |
-| Red-orange | Footway             |
-| Teal       | Kerb (Lowered)      |
-| Dark teal  | Kerb (Flushed)      |
-| Green      | Kerb (Raised)       |
-| Purple     | Traffic Island      |
+| Color       | Feature Type        | Color Hex |
+| :---------- | :------------------ | :-------- |
+| Light blue  | Sidewalk            | `#88CCEE` |
+| Yellow      | Crossing (Marked)   | `#DDCC77` |
+| Green       | Crossing (Unmarked) | `#44AA99` |
+| Dark green  | Footway             | `#117733` |
+| Pink        | Kerb (Lowered)      | `#CC6677` |
+| Dark blue   | Kerb (Flushed)      | `#332288` |
+| Purple      | Kerb (Raised)       | `#AA4499` |
+| Dark purple | Traffic Island      | `#882255` |
+| Gray        | Others              | `#777777` |
 
-![Map legend](../../../resources/images/os-connect/data-viewer/user-manual/interface/legend.png){ width="200" }
+![Map legend identifying feature types by color](../../../resources/images/os-connect/data-viewer/user-manual/interface/04-legend-light.avif#only-light)
+![Map legend identifying feature types by color](../../../resources/images/os-connect/data-viewer/user-manual/interface/04-legend-dark.avif#only-dark)
 
 For detailed descriptions of what each feature type represents, see [Data - Feature Types](data.md#feature-types).
 
@@ -123,7 +128,8 @@ For detailed descriptions of what each feature type represents, see [Data - Feat
 
 The search bar, located in the top-right corner of the map, allows you to find datasets by name. This is useful for quickly navigating to a specific jurisdiction's data.
 
-![Search bar](../../../resources/images/os-connect/data-viewer/user-manual/interface/search.png)
+![Search bar for finding datasets by name](../../../resources/images/os-connect/data-viewer/user-manual/interface/05-search-light.avif#only-light)
+![Search bar for finding datasets by name](../../../resources/images/os-connect/data-viewer/user-manual/interface/05-search-dark.avif#only-dark)
 
 #### How to Search
 

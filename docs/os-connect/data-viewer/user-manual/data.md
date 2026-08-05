@@ -22,7 +22,8 @@ _For a list of all guides on the TCAT Wiki, refer to the [Guides List](../../../
 
 To view pedestrian network features on the map, ensure the **Data** toggle is enabled in the [layer toggles](interface.md#layer-toggles).
 
-![Data toggled](../../../resources/images/os-connect/data-viewer/user-manual/data/toggled.png){ width="826" }
+![Pedestrian network feature data visible on the map](../../../resources/images/os-connect/data-viewer/user-manual/data/01-data-light.avif#only-light)
+![Pedestrian network feature data visible on the map](../../../resources/images/os-connect/data-viewer/user-manual/data/01-data-dark.avif#only-dark)
 
 The Data Viewer displays feature data as colored lines and points on the map. To view detailed attributes for individual features, zoom in to **zoom level 16 or higher**.
 
@@ -36,7 +37,8 @@ The Data Viewer displays feature data as colored lines and points on the map. To
 
 When you zoom in to **zoom level 16 or higher**, you can hover over (or tap on touch devices) any feature on the map to view a popup containing its attributes.
 
-![Feature hover popup showing attributes](../../../resources/images/os-connect/data-viewer/user-manual/data/popup.png){ width="826" }
+![Feature hover popup showing attributes](../../../resources/images/os-connect/data-viewer/user-manual/data/02-popup-light.avif#only-light)
+![Feature hover popup showing attributes](../../../resources/images/os-connect/data-viewer/user-manual/data/02-popup-dark.avif#only-dark)
 
 The popup displays the following attributes when available:
 
@@ -61,63 +63,69 @@ The popup displays the following attributes when available:
 
 ### Feature Types
 
-The OS-CONNECT Data Viewer displays eight types of pedestrian network features, each rendered in a distinct color on the map. These features follow the [OpenSidewalks schema](../../../opensidewalks/schema/index.md).
+The OS-CONNECT Data Viewer displays nine types of pedestrian network features, each rendered in a distinct color on the map. These features follow the [OpenSidewalks schema](../../../opensidewalks/schema/index.md).
 
 #### Sidewalk
 
 Sidewalks are pedestrian paths that run alongside a road. They are the most common feature type in the dataset and form the backbone of the pedestrian network.
 
-- **Color:** <span style="display: inline-block; width: 16px; height: 16px; background-color: #4cc9f0; vertical-align: middle;"></span> Light blue
+- **Color:** <span style="display: inline-block; width: 16px; height: 16px; background-color: #88CCEE; vertical-align: middle;"></span> Light blue
 - **Identified by:** `highway=footway` + `footway=sidewalk`
 
 #### Crossing (Marked)
 
 Marked crossings are designated pedestrian paths across a road that have visible pavement markings (e.g., painted lines, zebra stripes).
 
-- **Color:** <span style="display: inline-block; width: 16px; height: 16px; background-color: #ffd166; vertical-align: middle;"></span> Yellow
+- **Color:** <span style="display: inline-block; width: 16px; height: 16px; background-color: #DDCC77; vertical-align: middle;"></span> Yellow
 - **Identified by:** `footway=crossing` + `crossing:markings=yes`
 
 #### Crossing (Unmarked)
 
 Unmarked crossings are designated pedestrian paths across a road that do not have visible pavement markings.
 
-- **Color:** <span style="display: inline-block; width: 16px; height: 16px; background-color: #dda15e; vertical-align: middle;"></span> Tan/orange
+- **Color:** <span style="display: inline-block; width: 16px; height: 16px; background-color: #44AA99; vertical-align: middle;"></span> Green
 - **Identified by:** `footway=crossing` + `crossing:markings=no`
 
 #### Footway
 
 Footways are general pedestrian paths that are not categorized as sidewalks or crossings. These may include paths through parks, pedestrian plazas, or other dedicated walking areas.
 
-- **Color:** <span style="display: inline-block; width: 16px; height: 16px; background-color: #ee6c4d; vertical-align: middle;"></span> Red-orange
+- **Color:** <span style="display: inline-block; width: 16px; height: 16px; background-color: #117733; vertical-align: middle;"></span> Dark green
 - **Identified by:** `highway=footway` (without a `footway` sub-classification)
 
 #### Kerb (Lowered)
 
 Lowered kerbs ("curb ramps") are curb transitions where the curb height has been reduced to facilitate access, typically at crossings.
 
-- **Color:** <span style="display: inline-block; width: 16px; height: 16px; background-color: #06d6a0; vertical-align: middle;"></span> Teal
+- **Color:** <span style="display: inline-block; width: 16px; height: 16px; background-color: #CC6677; vertical-align: middle;"></span> Pink
 - **Identified by:** `barrier=kerb` + `kerb=lowered`
 
 #### Kerb (Flushed)
 
 Flushed kerbs ("flush curbs") are curb transitions where the curb is level with the road surface, providing a seamless transition between the sidewalk and the roadway.
 
-- **Color:** <span style="display: inline-block; width: 16px; height: 16px; background-color: #006d77; vertical-align: middle;"></span> Dark teal
+- **Color:** <span style="display: inline-block; width: 16px; height: 16px; background-color: #332288; vertical-align: middle;"></span> Dark blue
 - **Identified by:** `barrier=kerb` + `kerb=flush`
 
 #### Kerb (Raised)
 
 Raised kerbs are standard curbs that maintain their full height, which may present a barrier to wheelchair users.
 
-- **Color:** <span style="display: inline-block; width: 16px; height: 16px; background-color: #8cb369; vertical-align: middle;"></span> Green
+- **Color:** <span style="display: inline-block; width: 16px; height: 16px; background-color: #AA4499; vertical-align: middle;"></span> Purple
 - **Identified by:** `barrier=kerb` + `kerb=raised`
 
 #### Traffic Island
 
 Traffic islands are raised or protected areas within a roadway that provide a refuge for pedestrians crossing wide or multi-lane roads.
 
-- **Color:** <span style="display: inline-block; width: 16px; height: 16px; background-color: #8093f1; vertical-align: middle;"></span> Purple
+- **Color:** <span style="display: inline-block; width: 16px; height: 16px; background-color: #882255; vertical-align: middle;"></span> Dark purple
 - **Identified by:** `highway=footway` + `footway=traffic_island`
+
+#### Others
+
+Other features are displayed in the map when they do not match one of the specific feature types listed above.
+
+- **Color:** <span style="display: inline-block; width: 16px; height: 16px; background-color: #777777; vertical-align: middle;"></span> Gray
 
 ---
 
