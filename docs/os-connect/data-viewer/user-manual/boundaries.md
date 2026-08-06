@@ -24,7 +24,8 @@ Dataset boundaries are geographic polygons that outline the coverage area of eac
 
 To view dataset boundaries, ensure the **Boundaries** toggle is enabled in the [layer toggles](interface.md#layer-toggles).
 
-![Boundaries toggled](../../../resources/images/os-connect/data-viewer/user-manual/boundaries/toggled.png){ width="826" }
+![Dataset boundaries toggled on the map](../../../resources/images/os-connect/data-viewer/user-manual/boundaries/01-boundaries-light.avif#only-light)
+![Dataset boundaries toggled on the map](../../../resources/images/os-connect/data-viewer/user-manual/boundaries/01-boundaries-dark.avif#only-dark)
 
 ---
 
@@ -40,7 +41,8 @@ Left-click in a dataset boundary polygon to view a popup containing details abou
 | **ID**             | The unique TDEI Dataset ID (with a **Copy** button)                 |
 | **Quality Report** | A **View Report** link that opens the QA/QC Report for that dataset |
 
-![Boundary popup](../../../resources/images/os-connect/data-viewer/user-manual/boundaries/popup.png){ width="826" }
+![Boundary popup with dataset details and links to TDEI Portal download and QA/QC Quality Report](../../../resources/images/os-connect/data-viewer/user-manual/boundaries/02-popup-light.avif#only-light)
+![Boundary popup with dataset details and links to TDEI Portal download and QA/QC Quality Report](../../../resources/images/os-connect/data-viewer/user-manual/boundaries/02-popup-dark.avif#only-dark)
 
 !!! tip
 

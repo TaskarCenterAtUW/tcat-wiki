@@ -22,8 +22,8 @@ OS-CONNECT dataset names end with a suffix that indicates the type of area the d
 | `County` | An entire county          | WSP_Yakima_County   |
 | `CDP`    | A census-designated place | WSP_Trout_Lake_CDP  |
 
-![The TDEI portal's All Released Datasets list filtered to OSW type, showing five example datasets whose names use the suffixes City, UGA, UI, County, and CDP.](../resources/images/os-connect/suffixes-light.png#only-light)
-![The TDEI portal's All Released Datasets list filtered to OSW type, showing five example datasets whose names use the suffixes City, UGA, UI, County, and CDP.](../resources/images/os-connect/suffixes-dark.png#only-dark)
+![The TDEI portal's All Released Datasets list filtered to OSW type, showing five example datasets whose names use different suffixes.](../resources/images/os-connect/datasets-light.avif#only-light)
+![The TDEI portal's All Released Datasets list filtered to OSW type, showing five example datasets whose names use the suffixes.](../resources/images/os-connect/datasets-dark.avif#only-dark)
 
 !!! info
 

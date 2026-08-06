@@ -1,6 +1,6 @@
 ---
 title: Filter Dataset By BBox
-nav_order: 7
+nav_order: 8
 tags:
     - Guide
     - External
@@ -25,8 +25,8 @@ Returns a subgraph of a dataset that falls within a specified bounding box, defi
 
 ### Job Creation Form
 
-![Filter Dataset By BBox form](../../../../resources/images/tdei/portal/user-manual/jobs/filter-dataset-by-bbox-light.png#only-light)
-![Filter Dataset By BBox form](../../../../resources/images/tdei/portal/user-manual/jobs/filter-dataset-by-bbox-dark.png#only-dark)
+![Filter Dataset By BBox form](../../../../resources/images/tdei/portal/user-manual/jobs/08-filter-dataset-by-bbox-light.avif#only-light)
+![Filter Dataset By BBox form](../../../../resources/images/tdei/portal/user-manual/jobs/08-filter-dataset-by-bbox-dark.avif#only-dark)
 
 <div class="full-width" markdown>
 

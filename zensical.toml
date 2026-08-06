@@ -767,6 +767,7 @@ nav = [
             {"Workflow" = [
                 {"How do I access the TDEI API?" = "assistant/tdei/workflow/access-tdei-api.md"},
                 {"How do I know whether a dataset is current?" = "assistant/tdei/workflow/check-dataset-currency.md"},
+                {"Check project-group membership" = "assistant/tdei/workflow/check-project-group-membership.md"},
                 {"How do I conflate jurisdiction datasets in TDEI?" = "assistant/tdei/workflow/conflate-jurisdiction-datasets.md"},
                 {"How can a geodatabase be converted to OpenSidewalks-oriented data?" = "assistant/tdei/workflow/convert-geodatabase-to-osw-data.md"},
                 {"How do I convert an OSM PBF file to OpenSidewalks format?" = "assistant/tdei/workflow/convert-osm-pbf-to-osw.md"},
@@ -1167,16 +1168,17 @@ nav = [
                 {"Jobs" = [
                     "tdei/portal/user-manual/jobs/index.md",
                     {"OSW - Validate" = "tdei/portal/user-manual/jobs/osw-validate.md"},
+                    {"OSW - Sanitize" = "tdei/portal/user-manual/jobs/osw-sanitize.md"},
                     {"Flex - Validate" = "tdei/portal/user-manual/jobs/flex-validate.md"},
                     {"Pathways - Validate" = "tdei/portal/user-manual/jobs/pathways-validate.md"},
                     {"OSW - Convert" = "tdei/portal/user-manual/jobs/osw-convert.md"},
                     {"Confidence Calculation" = "tdei/portal/user-manual/jobs/confidence-calculation.md"},
                     {"Quality Metric IXN Calculation" = "tdei/portal/user-manual/jobs/quality-metric-ixn-calculation.md"},
                     {"Filter Dataset By BBox" = "tdei/portal/user-manual/jobs/filter-dataset-by-bbox.md"},
-                    {"Dataset Tag Road" = "tdei/portal/user-manual/jobs/dataset-tag-road.md"},
                     {"Quality Metric Tag" = "tdei/portal/user-manual/jobs/quality-metric-tag.md"},
                     {"Spatial Join" = "tdei/portal/user-manual/jobs/spatial-join.md"},
-                    {"Dataset Union" = "tdei/portal/user-manual/jobs/dataset-union.md"}
+                    {"Dataset Union" = "tdei/portal/user-manual/jobs/dataset-union.md"},
+                    {"Quality Report" = "tdei/portal/user-manual/jobs/quality-report.md"}
                 ]}
             ]},
             {"Tutorial" = [

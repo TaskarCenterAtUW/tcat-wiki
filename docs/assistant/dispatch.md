@@ -27,7 +27,7 @@ topics:
 risk_level: low
 authority_level: official
 publication_status: draft
-last_reviewed: 2026-07-31
+last_reviewed: 2026-08-05
 retrieval_priority: high
 assistant_behavior:
     allow_inference: false
@@ -101,7 +101,7 @@ This page should be fetched fresh rather than cached aggressively; its registry 
 | Status | Count | Meaning |
 | :----- | ----: | :------ |
 | `stub` | 434 | Frontmatter and heading scaffold exist; body is `TODO` |
-| `draft` | 343 | Content authored; awaiting TCAT editorial review |
+| `draft` | 344 | Content authored; awaiting TCAT editorial review |
 | `published` | 1 | Available in the human-facing site |
 | `archived` | 0 | Retained for agents but not published |
 
@@ -110,7 +110,7 @@ This page should be fetched fresh rather than cached aggressively; its registry 
 | Authority level | Count | Meaning |
 | :-------------- | ----: | :------ |
 | `provisional` | 414 | Early or limited-confidence guidance |
-| `explanatory` | 362 | Established explanation without formal policy authority |
+| `explanatory` | 363 | Established explanation without formal policy authority |
 | `official` | 2 | Formally endorsed organizational guidance |
 
 ## Registry
@@ -844,6 +844,7 @@ Base: `assistant/tdei/workflow/`
 | :--- | :----- |
 | `access-tdei-api.md` | draft |
 | `check-dataset-currency.md` | draft |
+| `check-project-group-membership.md` | draft |
 | `conflate-jurisdiction-datasets.md` | draft |
 | `convert-geodatabase-to-osw-data.md` | draft |
 | `convert-osm-pbf-to-osw.md` | draft |

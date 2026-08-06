@@ -22,6 +22,15 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/),
 
 -->
 
+## v15.1.0 (2026-08-05)
+
+### Features
+
+- **Docs**: Refresh docs\os-connect\data-viewer
+- **Docs**: Refresh docs\tdei\portal\user-manual\jobs
+- **Docs**: Update Assistant Knowledge Base articles
+- **Core**: Optimize avif encoding settings
+
 ## v15.0.0 (2026-08-03)
 
 ### Features

@@ -114,14 +114,14 @@ IMAGE_EXTENSIONS = {".png", ".jpg", ".jpeg", ".avif"}
 # loss in the supported Pillow/libavif encoder; quality 90 is near-lossless.
 AVIF_EXTENSION = ".avif"
 AVIF_SUBSAMPLING = "4:4:4"
-AVIF_SPEED = 0
+AVIF_SPEED = 2
 AVIF_ORIGINAL_OPTIONS = {
     "quality": 100,
     "speed": AVIF_SPEED,
     "subsampling": AVIF_SUBSAMPLING,
 }
 AVIF_VARIANT_OPTIONS = {
-    "quality": 90,
+    "quality": 70,
     "speed": AVIF_SPEED,
     "subsampling": AVIF_SUBSAMPLING,
 }
