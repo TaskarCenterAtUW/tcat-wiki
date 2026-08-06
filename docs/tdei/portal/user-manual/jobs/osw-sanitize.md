@@ -1,6 +1,6 @@
 ---
-title: OSW - Validate
-nav_order: 1
+title: OSW - Sanitize
+nav_order: 2
 tags:
     - Guide
     - External
@@ -11,34 +11,34 @@ tags:
 
 <!-- @format -->
 
-## OSW - Validate
+## OSW - Sanitize
 
-This page explains how to use the OSW - Validate job to validate an OSW dataset.
+This page explains how to use the OSW - Sanitize job to sanitize an OSW dataset.
 
 ---
 
 ### Function
 
-Validates an OSW dataset to check the correctness of data.
+Sanitizes an OSW dataset to remove invalid or unsupported values.
 
 ---
 
 ### Job Creation Form
 
-![OSW - Validate form](../../../../resources/images/tdei/portal/user-manual/jobs/01-osw-validate-light.avif#only-light)
-![OSW - Validate form](../../../../resources/images/tdei/portal/user-manual/jobs/01-osw-validate-dark.avif#only-dark)
+![OSW - Sanitize form](../../../../resources/images/tdei/portal/user-manual/jobs/02-osw-sanitize-light.avif#only-light)
+![OSW - Sanitize form](../../../../resources/images/tdei/portal/user-manual/jobs/02-osw-sanitize-dark.avif#only-dark)
 
 <div class="full-width" markdown>
 
 | Field                | Required | Description             | Format |
 | :------------------- | :------- | :---------------------- | :----- |
-| **Attach data file** | Yes      | OSW dataset to validate | `.zip` |
+| **Attach data file** | Yes      | OSW dataset to sanitize | `.zip` |
 
 </div>
 
 ??? quote "Full job description"
 
-    _Allows a user to validate osw dataset to check the correctness of data._
+    _Allows a user to sanitize an OSW dataset by correcting invalid or unsupported values.
 
     _The response includes a `job_id` for tracking the request._
 

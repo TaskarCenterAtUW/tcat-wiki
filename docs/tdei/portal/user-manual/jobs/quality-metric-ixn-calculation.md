@@ -1,6 +1,6 @@
 ---
 title: Quality Metric IXN Calculation
-nav_order: 6
+nav_order: 7
 tags:
     - Guide
     - External
@@ -25,8 +25,8 @@ Calculates the intersection quality metric for a dataset. An optional intersecti
 
 ### Job Creation Form
 
-![Quality Metric IXN Calculation form](../../../../resources/images/tdei/portal/user-manual/jobs/quality-metric-ixn-calculation-light.png#only-light)
-![Quality Metric IXN Calculation form](../../../../resources/images/tdei/portal/user-manual/jobs/quality-metric-ixn-calculation-dark.png#only-dark)
+![Quality Metric IXN Calculation form](../../../../resources/images/tdei/portal/user-manual/jobs/07-quality-metric-ixn-calculation-light.avif#only-light)
+![Quality Metric IXN Calculation form](../../../../resources/images/tdei/portal/user-manual/jobs/07-quality-metric-ixn-calculation-dark.avif#only-dark)
 
 <div class="full-width" markdown>
 

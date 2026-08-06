@@ -1,6 +1,6 @@
 ---
 title: Pathways - Validate
-nav_order: 3
+nav_order: 4
 tags:
     - Guide
     - External
@@ -25,8 +25,8 @@ Validates a GTFS-Pathways dataset to check the correctness of data.
 
 ### Job Creation Form
 
-![Pathways - Validate form](../../../../resources/images/tdei/portal/user-manual/jobs/pathways-validate-light.png#only-light)
-![Pathways - Validate form](../../../../resources/images/tdei/portal/user-manual/jobs/pathways-validate-dark.png#only-dark)
+![Pathways - Validate form](../../../../resources/images/tdei/portal/user-manual/jobs/04-pathways-validate-light.avif#only-light)
+![Pathways - Validate form](../../../../resources/images/tdei/portal/user-manual/jobs/04-pathways-validate-dark.avif#only-dark)
 
 <div class="full-width" markdown>
 

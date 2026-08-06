@@ -1,6 +1,6 @@
 ---
 title: Flex - Validate
-nav_order: 2
+nav_order: 3
 tags:
     - Guide
     - External
@@ -25,8 +25,8 @@ Validates a GTFS-Flex dataset to check the correctness of data.
 
 ### Job Creation Form
 
-![Flex - Validate form](../../../../resources/images/tdei/portal/user-manual/jobs/flex-validate-light.png#only-light)
-![Flex - Validate form](../../../../resources/images/tdei/portal/user-manual/jobs/flex-validate-dark.png#only-dark)
+![Flex - Validate form](../../../../resources/images/tdei/portal/user-manual/jobs/03-flex-validate-light.avif#only-light)
+![Flex - Validate form](../../../../resources/images/tdei/portal/user-manual/jobs/03-flex-validate-dark.avif#only-dark)
 
 <div class="full-width" markdown>
 

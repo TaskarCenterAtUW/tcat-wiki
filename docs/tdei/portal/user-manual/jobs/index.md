@@ -1,6 +1,5 @@
 ---
 title: Jobs
-nav_order: 9
 tags:
     - Guide
     - External
@@ -22,8 +21,8 @@ _For a list of all guides on the TCAT Wiki, refer to the [Guides List](../../../
 
 The **Jobs** section lists all processing jobs you have access to within the TDEI system. Jobs allow users to submit requests for data processing operations such as validation, format conversion, quality metric calculation, and more.
 
-![Jobs page](../../../../resources/images/tdei/portal/user-manual/jobs/jobs-light.png#only-light)
-![Jobs page](../../../../resources/images/tdei/portal/user-manual/jobs/jobs-dark.png#only-dark)
+![Jobs page](../../../../resources/images/tdei/portal/user-manual/jobs/13-jobs-page-light.avif#only-light)
+![Jobs page](../../../../resources/images/tdei/portal/user-manual/jobs/13-jobs-page-dark.avif#only-dark)
 
 Each job entry displays:
 
@@ -57,8 +56,8 @@ Select **Refresh (↻)** to refresh the job list.
 
 Select the **Create Job** button (top right) to open the **Create New Job** page.
 
-![Create New Job page](../../../../resources/images/tdei/portal/user-manual/jobs/create-light.png#only-light)
-![Create New Job page](../../../../resources/images/tdei/portal/user-manual/jobs/create-dark.png#only-dark)
+![Create New Job page](../../../../resources/images/tdei/portal/user-manual/jobs/14-create-job-light.avif#only-light)
+![Create New Job page](../../../../resources/images/tdei/portal/user-manual/jobs/14-create-job-dark.avif#only-dark)
 
 Select a **Job Type** from the dropdown. Once selected, the relevant input fields for that job type will appear. Fill in the required inputs and select **Create** to submit the job. Select **Cancel** to return to the Jobs list without submitting.
 
@@ -70,19 +69,20 @@ Once submitted, the job will appear in the Jobs list and can be tracked by its J
 
 The following job types are available in the **Create New Job** form. Select a job type below for details on its inputs.
 
-| Job Type                                                            | Description                                                  |
-| :------------------------------------------------------------------ | :----------------------------------------------------------- |
-| [OSW - Validate](osw-validate.md)                                   | Validate an OSW dataset                                      |
-| [Flex - Validate](flex-validate.md)                                 | Validate a GTFS-Flex dataset                                 |
-| [Pathways - Validate](pathways-validate.md)                         | Validate a GTFS-Pathways dataset                             |
-| [OSW - Convert](osw-convert.md)                                     | Convert an OSW dataset between OSW and OSM formats           |
-| [Confidence Calculation](confidence-calculation.md)                 | Calculate confidence scores for a dataset                    |
-| [Quality Metric IXN Calculation](quality-metric-ixn-calculation.md) | Calculate intersection quality metrics for a dataset         |
-| [Filter Dataset By BBox](filter-dataset-by-bbox.md)                 | Extract a subgraph of a dataset within a bounding box        |
-| [Dataset Tag Road](dataset-tag-road.md)                             | Associate sidewalks with the road network based on proximity |
-| [Quality Metric Tag](quality-metric-tag.md)                         | Calculate quality metrics on dataset element tags            |
-| [Spatial Join](spatial-join.md)                                     | Perform a spatial join between two datasets                  |
-| [Dataset Union](dataset-union.md)                                   | Merge spatial data from two datasets into one                |
+| Job Type                                                            | Description                                           |
+| :------------------------------------------------------------------ | :---------------------------------------------------- |
+| [OSW - Validate](osw-validate.md)                                   | Validate an OSW dataset                               |
+| [OSW - Sanitize](osw-sanitize.md)                                   | Sanitize an OSW dataset                               |
+| [Flex - Validate](flex-validate.md)                                 | Validate a GTFS-Flex dataset                          |
+| [Pathways - Validate](pathways-validate.md)                         | Validate a GTFS-Pathways dataset                      |
+| [OSW - Convert](osw-convert.md)                                     | Convert an OSW dataset between OSW and OSM formats    |
+| [Confidence Calculation](confidence-calculation.md)                 | Calculate confidence scores for a dataset             |
+| [Quality Metric IXN Calculation](quality-metric-ixn-calculation.md) | Calculate intersection quality metrics for a dataset  |
+| [Filter Dataset By BBox](filter-dataset-by-bbox.md)                 | Extract a subgraph of a dataset within a bounding box |
+| [Quality Metric Tag](quality-metric-tag.md)                         | Calculate quality metrics on dataset element tags     |
+| [Spatial Join](spatial-join.md)                                     | Perform a spatial join between two datasets           |
+| [Dataset Union](dataset-union.md)                                   | Merge spatial data from two datasets into one         |
+| [Quality Report](quality-report.md)                                 | Generate a quality report                             |
 
 ---
 
