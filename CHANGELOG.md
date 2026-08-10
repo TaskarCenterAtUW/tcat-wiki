@@ -22,6 +22,12 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/),
 
 -->
 
+## v15.4.0 (2026-08-10)
+
+### Features
+
+- **Core**: Bump Zensical to 0.0.53
+
 ## v15.3.0 (2026-08-10)
 
 ### Features
