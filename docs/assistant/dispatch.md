@@ -27,7 +27,7 @@ topics:
 risk_level: low
 authority_level: official
 publication_status: draft
-last_reviewed: 2026-08-05
+last_reviewed: 2026-08-10
 retrieval_priority: high
 assistant_behavior:
     allow_inference: false

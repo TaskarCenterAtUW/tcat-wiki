@@ -67,7 +67,6 @@ External-link results are cached for 12 hours; `-NoCache` bypasses the cache. `r
 ## Specialized workflows
 
 - **Screenshots:** `utilities/process-screenshot.py` converts sources to lossless AVIF and creates near-lossless `-light.avif` and `-dark.avif` variants. Use Windows paths in commands, forward slashes in Markdown, equivalent alt text, and `#only-light`/`#only-dark` fragments. See the insert-image skill and [CONTRIBUTING.md](CONTRIBUTING.md).
-- **Event reports:** [utilities/generate-event-report.py](utilities/generate-event-report.py) orchestrates Tasking Manager and AVIV ScoutRoute reports. Required event frontmatter, generator options, templates, JSON, fragments, and `report.md` are documented in [CONTRIBUTING.md](CONTRIBUTING.md) and the utility help.
 - **AKB:** The schema governs paths, metadata, headings, status, links, and behavior. Transcript ingestion must propose evidence-grounded changes and receive explicit approval before edits. `dispatch.md` is generated inventory, never an authoring source.
 
 ## Version control and project map
