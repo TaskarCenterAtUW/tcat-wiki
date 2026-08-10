@@ -3,7 +3,7 @@ title: How do I get involved with FleXR?
 slug: get-involved-with-flexr
 doc_type: workflow
 questions:
-    - How do I participate in the FleXR user study?
+    - Is there a FleXR user study I can participate in?
     - How do I integrate FleXR into my A-Frame application?
 audiences:
     - developer
@@ -19,14 +19,14 @@ topics:
 risk_level: low
 authority_level: explanatory
 publication_status: draft
-last_reviewed: 2026-07-02
+last_reviewed: 2026-08-10
 retrieval_priority: medium
 assistant_behavior:
     allow_inference: false
     requires_citation: true
     abstain_if_missing_context: true
     do_not_claim:
-        - Participating in the FleXR user study requires prior XR experience.
+        - TCAT is currently running a FleXR user study.
 related_pages:
     - assistant/flexr/index.md
     - assistant/flexr/concept/what-is-flexr.md
@@ -40,36 +40,34 @@ tags:
 
 ## Short Answer
 
-There are two ways to get involved with TCAT's FleXR project: join the user study as an individual with a motor disability, or integrate FleXR into an A-Frame application as a developer.
+Developers can get involved with TCAT's FleXR project by integrating FleXR into an A-Frame application. The [FleXR demo](https://focused-brattain-eecdaa.netlify.app/) is available to explore. TCAT is not currently running a FleXR user study.
 
 ## Significance
 
-FleXR's research depends on both participant feedback and real-world A-Frame integrations. Connecting interested individuals and developers to the right path speeds up TCAT's ability to evaluate and improve the plugin.
+Real-world A-Frame integrations help developers make use of FleXR and support TCAT's accessibility research.
 
 ## What This Means
 
-- **Individuals with motor disabilities** can join a user study evaluating the impact of FleXR when integrated into XR applications. No prior experience with XR devices is required.
 - **Application developers** with an existing A-Frame application — or an interest in building one — can try integrating the FleXR plugin into their work, following FleXR's published specification.
-- Both paths are coordinated directly through TCAT; see the [FleXR project page](https://tcat.cs.washington.edu/flexr/) for current contact details.
+- TCAT is not currently running a FleXR user study.
+- Developers can explore the [FleXR demo](https://focused-brattain-eecdaa.netlify.app/) and see the [FleXR project page](https://tcat.cs.washington.edu/flexr/) for project information.
 
 ## What This Does Not Mean
 
-- Joining the user study does not require owning XR hardware or having used XR devices before.
+- FleXR is not currently offering a user study for people with motor disabilities to participate in.
 - Integrating FleXR does not require rebuilding an application from scratch — it is added as a plugin to an existing or new A-Frame application.
 
 ## How To Use This
 
-**People with motor disabilities interested in participating**: Reach out to TCAT via the [FleXR project page](https://tcat.cs.washington.edu/flexr/) to join the user study. No prior XR experience is required.
-
-**Developers**: Review FleXR's published specification and integrate the plugin into an existing or new A-Frame application. Reach out to TCAT via the [FleXR project page](https://tcat.cs.washington.edu/flexr/) if you want to collaborate on an integration.
+**Developers**: Review FleXR's published specification, refer to the [FleXR project page](https://tcat.cs.washington.edu/flexr/), explore the [FleXR demo](https://focused-brattain-eecdaa.netlify.app/), and integrate the plugin into an existing or new A-Frame application.
 
 ## Example
 
-A developer maintaining an A-Frame-based XR training application wants to support users who cannot use standard hand controllers. They contact TCAT, review the FleXR specification, and add the plugin to their application to support a custom input system.
+A developer maintaining an A-Frame-based XR training application wants to support users who cannot use standard hand controllers. They review the FleXR specification and add the plugin to their application to support a custom input system.
 
 ## Assistant Guidance
 
-When asked how to try or participate in FleXR, direct users to TCAT rather than inventing a signup process or specific steps not confirmed by TCAT. Do not claim XR experience is a prerequisite for the user study.
+When asked how to try FleXR, direct developers to the [FleXR demo](https://focused-brattain-eecdaa.netlify.app/) and the TCAT project page rather than inventing integration steps not confirmed by TCAT. If asked about participating in a FleXR user study, state that TCAT is not currently running one. Do not claim that study participation is currently available.
 
 ## Related Concepts
 

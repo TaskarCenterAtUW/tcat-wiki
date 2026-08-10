@@ -35,6 +35,7 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/),
 - **Docs**: Clarify wording around TDEI datasets and Workspaces relationship
     - Details: _Updated docs\assistant\workspaces\workflow\create-a-workspace-from-tdei.md_
     - Details: _Updated docs\tdei\portal\user-manual\datasets.md_
+- **Docs**: Update Assistant Knowledge Base articles
 
 ## v15.3.0 (2026-08-10)
 
