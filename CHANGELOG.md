@@ -28,6 +28,10 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/),
 
 - **Core**: Bump Zensical to 0.0.53
 
+### Fixes
+
+- **Core**: Reorganize main zensical.toml config to match upstream structure
+
 ## v15.3.0 (2026-08-10)
 
 ### Features
