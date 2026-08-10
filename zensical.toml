@@ -253,6 +253,7 @@ nav = [
             ]},
             {"Workflow" = [
                 {"How do I follow an AccessMap route using my location?" = "assistant/accessmap/workflow/follow-a-route-with-location.md"},
+                {"How do I get AccessMap set up for my region?" = "assistant/accessmap/workflow/get-accessmap-set-up-for-your-region.md"},
                 {"How do I plan and share an AccessMap route?" = "assistant/accessmap/workflow/plan-and-share-a-route.md"},
                 {"How should planners prioritize pedestrian investments?" = "assistant/accessmap/workflow/prioritize-pedestrian-investments.md"},
                 {"How can users report routing problems?" = "assistant/accessmap/workflow/report-routing-problems.md"},

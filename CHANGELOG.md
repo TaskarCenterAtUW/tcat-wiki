@@ -27,6 +27,7 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/),
 ### Features
 
 - **Core**: Bump Zensical to 0.0.53
+- **Docs**: Update Assistant Knowledge Base articles
 
 ### Fixes
 
