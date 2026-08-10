@@ -22,6 +22,12 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/),
 
 -->
 
+## v15.2.0 (2026-08-10)
+
+### Features
+
+- **Core**: Sunset event report generation feature
+
 ## v15.1.0 (2026-08-05)
 
 ### Features

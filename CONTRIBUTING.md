@@ -317,29 +317,6 @@ The script `utilities/akb-compress-transcript.py` can also be run independently 
 python .\utilities\akb-compress-transcript.py local-storage\transcripts\<filename>.txt
 ```
 
-#### Event Statistics
-
-The event report system generates post-event summary reports.
-
-```powershell
-# Ensure venv is activated first!
-.\.venv\Scripts\Activate.ps1
-
-# Generate a complete event report:
-python .\utilities\generate-event-report.py --event olympia-connected
-
-# Re-generate using cached stats:
-python .\utilities\generate-event-report.py --event olympia-connected --skip-stats
-
-# Run TM stats generator directly:
-python .\utilities\event-reports\generate-tm-event-stats.py --event mny26
-
-# Run ASR stats generator directly:
-python .\utilities\event-reports\generate-asr-event-stats.py --event nda-vancouver
-```
-
-Run with `--help` for all available options.
-
 #### Deployment Checklist
 
 Before opening a pull request (or merging to `main`), run through this checklist to confirm the site is ready to deploy:
