@@ -100,8 +100,8 @@ This page should be fetched fresh rather than cached aggressively; its registry 
 
 | Status | Count | Meaning |
 | :----- | ----: | :------ |
-| `stub` | 434 | Frontmatter and heading scaffold exist; body is `TODO` |
-| `draft` | 345 | Content authored; awaiting TCAT editorial review |
+| `stub` | 433 | Frontmatter and heading scaffold exist; body is `TODO` |
+| `draft` | 346 | Content authored; awaiting TCAT editorial review |
 | `published` | 1 | Available in the human-facing site |
 | `archived` | 0 | Retained for agents but not published |
 
@@ -653,7 +653,7 @@ Base: `assistant/qa-qc/concept/`
 | `centrality-metric-selection.md` | draft |
 | `centrality-sampling-and-repeatability.md` | draft |
 | `centrality-tile-generation.md` | draft |
-| `centrality.md` | stub |
+| `centrality.md` | draft |
 | `completeness-vs-accessibility-gaps.md` | stub |
 | `completeness-vs-ada-compliance.md` | draft |
 | `completeness.md` | stub |
