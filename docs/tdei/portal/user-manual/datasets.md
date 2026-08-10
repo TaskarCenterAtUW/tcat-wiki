@@ -27,8 +27,8 @@ The **Datasets** section lists datasets available within the TDEI system. It has
 | **My Project Datasets**   | Datasets belonging to your currently active project group                   |
 | **All Released Datasets** | All datasets that have been publicly released across the entire TDEI system |
 
-![The TDEI portal's Datasets page showing the All Released Datasets tab with Type set to All and no filters applied. Three datasets are visible.](../../../resources/images/tdei/portal/user-manual/datasets/all-released-light.png#only-light)
-![The TDEI portal's Datasets page showing the All Released Datasets tab with Type set to All and no filters applied. Three datasets are visible.](../../../resources/images/tdei/portal/user-manual/datasets/all-released-dark.png#only-dark)
+![The TDEI portal's Datasets page showing the All Released Datasets tab with no filters applied. Three datasets are visible.](../../../resources/images/tdei/portal/user-manual/datasets/01-all-released-datasets-light.avif#only-light)
+![The TDEI portal's Datasets page showing the All Released Datasets tab with no filters applied. Three datasets are visible.](../../../resources/images/tdei/portal/user-manual/datasets/01-all-released-datasets-dark.avif#only-dark)
 
 Each dataset entry displays:
 
@@ -46,25 +46,24 @@ Each dataset entry displays:
 
 ### Filtering Datasets
 
-Use the **Type** dropdown to quickly filter the list by dataset type (`All`, `OSW`, `Flex`, or `Pathways`).
+Use the **Dataset** field to search by dataset name or the **Dataset ID** field to search by a specific dataset ID.
 
-For more specific filtering, select the **Filter** button to expand the filter panel:
+Select the **Filter** button to open the expandable filter section for additional filtering. The section includes the following fields:
 
-| Filter            | Description                                 |
-| :---------------- | :------------------------------------------ |
-| **Dataset**       | Search by dataset name                      |
-| **Project Group** | Filter by project group name                |
-| **Service**       | Filter by service name                      |
-| **Dataset ID**    | Search by a specific dataset ID             |
-| **Valid From**    | Filter to datasets valid from a given date  |
-| **Valid To**      | Filter to datasets valid up to a given date |
+| Filter            | Description                                                  |
+| :---------------- | :----------------------------------------------------------- |
+| **Type**          | Filter by dataset type (`All`, `OSW`, `Flex`, or `Pathways`) |
+| **Project Group** | Filter by project group name                                 |
+| **Service**       | Filter by service name                                       |
+| **Valid From**    | Filter to datasets valid from a given date                   |
+| **Valid To**      | Filter to datasets valid up to a given date                  |
 
-![The Datasets filter panel expanded with Type set to OSW and "TCAT_WSP_PG" entered in the Project Group field. One matching result is shown.](../../../resources/images/tdei/portal/tutorial/download-os-connect/filter-light.avif#only-light)
-![The Datasets filter panel expanded with Type set to OSW and "TCAT_WSP_PG" entered in the Project Group field. One matching result is shown.](../../../resources/images/tdei/portal/tutorial/download-os-connect/filter-dark.avif#only-dark)
+![The Datasets filter panel expanded with Type set to OSW and "TCAT_WSP_PG" entered in the Project Group field. One matching result is shown.](../../../resources/images/tdei/portal/user-manual/datasets/02-filter-light.avif#only-light)
+![The Datasets filter panel expanded with Type set to OSW and "TCAT_WSP_PG" entered in the Project Group field. One matching result is shown.](../../../resources/images/tdei/portal/user-manual/datasets/02-filter-dark.avif#only-dark)
 
 Select **Clear** next to any field to reset that filter, or use **Sort by** to change the sort order. Select the **Refresh (↻)** button to refresh the list.
 
-??? tip "Double-check the dataset name!"
+!!! tip "Double-check the dataset name!"
 
     The **Dataset** filter returns every dataset whose name contains the text you entered, not just exact matches.
 
@@ -74,24 +73,23 @@ Select **Clear** next to any field to reset that filter, or use **Sort by** to c
 
     For more information about OS-CONNECT dataset names, refer to [OS-CONNECT > Dataset Name Suffixes](../../../os-connect/index.md#dataset-name-suffixes).
 
-    ![The TDEI portal's Datasets page with the filter panel expanded, showing "Spokane" entered in the Dataset search field. Results show four matching datasets: WSP_Spokane_Valley_City, WSP_Spokane_UI, WSP_Spokane_City, and WSP_Spokane_County.](../../../resources/images/tdei/portal/user-manual/datasets/search-results-light.png#only-light)
-    ![The TDEI portal's Datasets page with the filter panel expanded, showing "Spokane" entered in the Dataset search field. Results show four matching datasets: WSP_Spokane_Valley_City, WSP_Spokane_UI, WSP_Spokane_City, and WSP_Spokane_County.](../../../resources/images/tdei/portal/user-manual/datasets/search-results-dark.png#only-dark)
-
 ---
 
 ### Action
 
 Select the **action menu** (⋮) on the right side of any dataset row to access the following actions:
 
-| Action                 | Description                                                                                                |
-| :--------------------- | :--------------------------------------------------------------------------------------------------------- |
-| **Open in Workspaces** | Opens the dataset in the [Workspaces](../../../workspaces/index.md) editing platform                       |
-| **Download Metadata**  | Downloads the metadata associated with the dataset                                                         |
-| **Clone Dataset**      | Creates a copy of the dataset, allowing you to make changes without affecting the original                 |
-| **Download**           | Downloads the dataset files in a chosen format (see [Downloading a Dataset](#downloading-a-dataset) below) |
+| Action                      | Description                                                                                                |
+| :-------------------------- | :--------------------------------------------------------------------------------------------------------- |
+| **Open in Workspaces**      | Opens the dataset in the [Workspaces](../../../workspaces/index.md) editing platform                       |
+| **Download Metadata**       | Downloads the metadata associated with the dataset                                                         |
+| **Clone Dataset**           | Creates a copy of the dataset, allowing you to make changes without affecting the original                 |
+| **Download**                | Downloads the dataset files in a chosen format (see [Downloading a Dataset](#downloading-a-dataset) below) |
+| **Share Link**              | Provides a link to share the dataset                                                                       |
+| **Generate Quality Report** | Generates a quality report for the dataset                                                                 |
 
-![The dataset action menu open on the WSP_Verlot_CDP row, showing four options: Open in Workspaces, Download Metadata, Clone Dataset, and Download.](../../../resources/images/tdei/portal/user-manual/datasets/action-light.png#only-light)
-![The dataset action menu open on the WSP_Verlot_CDP row, showing four options: Open in Workspaces, Download Metadata, Clone Dataset, and Download.](../../../resources/images/tdei/portal/user-manual/datasets/action-dark.png#only-dark)
+![The dataset action menu open on the first row, showing six options: Open in Workspaces, Download Metadata, Clone Dataset, Download, Share Link, and Generate Quality Report.](../../../resources/images/tdei/portal/user-manual/datasets/03-action-light.avif#only-light)
+![The dataset action menu open on the first row, showing six options: Open in Workspaces, Download Metadata, Clone Dataset, Download, Share Link, and Generate Quality Report.](../../../resources/images/tdei/portal/user-manual/datasets/03-action-dark.avif#only-dark)
 
 ---
 
@@ -105,8 +103,8 @@ Select the **action menu** (⋮) on the right side of any dataset row to access 
 
 4. In the download dialog, use the **Select Format** dropdown to choose your preferred file format, then select **Download**
 
-![The OSW Dataset Download dialog with a Select Format dropdown set to OSW, a note reading "File format to download. Defaults to OSW.", and Cancel and Download buttons.](../../../resources/images/tdei/portal/user-manual/datasets/format-light.png#only-light)
-![The OSW Dataset Download dialog with a Select Format dropdown set to OSW, a note reading "File format to download. Defaults to OSW.", and Cancel and Download buttons.](../../../resources/images/tdei/portal/user-manual/datasets/format-dark.png#only-dark)
+![The OSW Dataset Download dialog with a Select Format dropdown set to OSW, a note reading "File format to download. Defaults to OSW.", and Cancel and Download buttons.](../../../resources/images/tdei/portal/user-manual/datasets/04-format-light.avif#only-light)
+![The OSW Dataset Download dialog with a Select Format dropdown set to OSW, a note reading "File format to download. Defaults to OSW.", and Cancel and Download buttons.](../../../resources/images/tdei/portal/user-manual/datasets/04-format-dark.avif#only-dark)
 
 !!! info "Looking for OS-CONNECT datasets?"
 
