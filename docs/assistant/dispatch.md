@@ -100,8 +100,8 @@ This page should be fetched fresh rather than cached aggressively; its registry 
 
 | Status | Count | Meaning |
 | :----- | ----: | :------ |
-| `stub` | 433 | Frontmatter and heading scaffold exist; body is `TODO` |
-| `draft` | 346 | Content authored; awaiting TCAT editorial review |
+| `stub` | 432 | Frontmatter and heading scaffold exist; body is `TODO` |
+| `draft` | 347 | Content authored; awaiting TCAT editorial review |
 | `published` | 1 | Available in the human-facing site |
 | `archived` | 0 | Retained for agents but not published |
 
@@ -656,7 +656,7 @@ Base: `assistant/qa-qc/concept/`
 | `centrality.md` | draft |
 | `completeness-vs-accessibility-gaps.md` | stub |
 | `completeness-vs-ada-compliance.md` | draft |
-| `completeness.md` | stub |
+| `completeness.md` | draft |
 | `conditional-attribute-completeness.md` | draft |
 | `connected-pedestrian-graph.md` | stub |
 | `crossing-count.md` | draft |
