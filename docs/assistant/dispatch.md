@@ -100,8 +100,8 @@ This page should be fetched fresh rather than cached aggressively; its registry 
 
 | Status | Count | Meaning |
 | :----- | ----: | :------ |
-| `stub` | 434 | Frontmatter and heading scaffold exist; body is `TODO` |
-| `draft` | 344 | Content authored; awaiting TCAT editorial review |
+| `stub` | 432 | Frontmatter and heading scaffold exist; body is `TODO` |
+| `draft` | 347 | Content authored; awaiting TCAT editorial review |
 | `published` | 1 | Available in the human-facing site |
 | `archived` | 0 | Retained for agents but not published |
 
@@ -110,7 +110,7 @@ This page should be fetched fresh rather than cached aggressively; its registry 
 | Authority level | Count | Meaning |
 | :-------------- | ----: | :------ |
 | `provisional` | 414 | Early or limited-confidence guidance |
-| `explanatory` | 363 | Established explanation without formal policy authority |
+| `explanatory` | 364 | Established explanation without formal policy authority |
 | `official` | 2 | Formally endorsed organizational guidance |
 
 ## Registry
@@ -197,6 +197,7 @@ Base: `assistant/accessmap/workflow/`
 | File | Status |
 | :--- | :----- |
 | `follow-a-route-with-location.md` | draft |
+| `get-accessmap-set-up-for-your-region.md` | draft |
 | `plan-and-share-a-route.md` | draft |
 | `prioritize-pedestrian-investments.md` | stub |
 | `report-routing-problems.md` | draft |
@@ -652,10 +653,10 @@ Base: `assistant/qa-qc/concept/`
 | `centrality-metric-selection.md` | draft |
 | `centrality-sampling-and-repeatability.md` | draft |
 | `centrality-tile-generation.md` | draft |
-| `centrality.md` | stub |
+| `centrality.md` | draft |
 | `completeness-vs-accessibility-gaps.md` | stub |
 | `completeness-vs-ada-compliance.md` | draft |
-| `completeness.md` | stub |
+| `completeness.md` | draft |
 | `conditional-attribute-completeness.md` | draft |
 | `connected-pedestrian-graph.md` | stub |
 | `crossing-count.md` | draft |

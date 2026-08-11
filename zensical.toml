@@ -1,16 +1,16 @@
 #region Meta
 [project]
+site_url = "https://taskarcenteratuw.github.io/tcat-wiki/"
 site_name = "Taskar Center for Accessible Technology"
 site_description = "Information and guides related to the Taskar Center for Accessible Technology (TCAT) at the University of Washington."
 site_author = "Taskar Center for Accessible Technology"
-site_url = "https://taskarcenteratuw.github.io/tcat-wiki/"
-repo_name = "TCAT Wiki"
-repo_url = "https://github.com/taskarcenteratuw/tcat-wiki"
-edit_uri = "edit/main/docs/"
 copyright = """
   Copyright &copy; 2026 Taskar Center for Accessible Technology
   <a href="#__consent">Change cookie settings</a>
 """
+repo_url = "https://github.com/taskarcenteratuw/tcat-wiki"
+repo_name = "TCAT Wiki"
+edit_uri = "edit/main/docs/"
 extra_css = [
     "stylesheets/extra.css",
     "https://unpkg.com/katex@0/dist/katex.min.css",
@@ -24,12 +24,10 @@ extra_javascript = [
     "https://cdn.jsdelivr.net/npm/img-comparison-slider@8/dist/index.js"
 ]
 
-#region Theme
 [project.theme]
 custom_dir = "overrides"
 favicon = "resources/images/favicon/tcat/favicon.svg"
 language = "en"
-logo = "resources/images/logo/tcat/logo-light.png"
 features = [
     "announce.dismiss",
     "content.action.edit",
@@ -59,6 +57,15 @@ features = [
     #"toc.integrate"
 ]
 
+logo = "resources/images/logo/tcat/logo-light.png"
+
+[project.theme.icon]
+repo = "fontawesome/brands/github"
+
+[project.theme.font]
+text = "Atkinson Hyperlegible Next"
+code = "Atkinson Hyperlegible Mono"
+
 [[project.theme.palette]]
 scheme = "default"
 toggle.icon = "lucide/sun"
@@ -69,14 +76,22 @@ scheme = "slate"
 toggle.icon = "lucide/moon"
 toggle.name = "Switch to light mode"
 
-[project.theme.font]
-text = "Atkinson Hyperlegible Next"
-code = "Atkinson Hyperlegible Mono"
+[[project.extra.social]]
+icon = "fontawesome/brands/github"
+link = "https://github.com/TaskarCenterAtUW/"
+[[project.extra.social]]
+icon = "fontawesome/brands/linkedin"
+link = "https://www.linkedin.com/company/taskar-center-for-accessible-technology"
+[[project.extra.social]]
+icon = "fontawesome/brands/youtube"
+link = "https://www.youtube.com/@taskarcenterstransportatio734"
+[[project.extra.social]]
+icon = "fontawesome/brands/facebook"
+link = "https://www.facebook.com/TaskarCenter"
+[[project.extra.social]]
+icon = "fontawesome/brands/instagram"
+link = "https://www.instagram.com/TaskarCenter/"
 
-[project.theme.icon]
-repo = "fontawesome/brands/github"
-
-#region Extensions
 [project.markdown_extensions.abbr]
 [project.markdown_extensions.admonition]
 [project.markdown_extensions.attr_list]
@@ -122,24 +137,6 @@ skip_classes = [  ]
 auto_caption = true
 caption_position = "left"
 
-#region Extras
-[[project.extra.social]]
-icon = "fontawesome/brands/github"
-link = "https://github.com/TaskarCenterAtUW/"
-[[project.extra.social]]
-icon = "fontawesome/brands/linkedin"
-link = "https://www.linkedin.com/company/taskar-center-for-accessible-technology"
-[[project.extra.social]]
-icon = "fontawesome/brands/youtube"
-link = "https://www.youtube.com/@taskarcenterstransportatio734"
-[[project.extra.social]]
-icon = "fontawesome/brands/facebook"
-link = "https://www.facebook.com/TaskarCenter"
-[[project.extra.social]]
-icon = "fontawesome/brands/instagram"
-link = "https://www.instagram.com/TaskarCenter/"
-
-#region Analytics
 [project.extra.analytics]
 provider = "google"
 property = "G-6YXHR48VQC"
@@ -156,7 +153,6 @@ actions = [
     "reject"
 ]
 
-#region Validation
 [project.validation]
 unresolved_references = true
 unresolved_footnotes = true
@@ -257,6 +253,7 @@ nav = [
             ]},
             {"Workflow" = [
                 {"How do I follow an AccessMap route using my location?" = "assistant/accessmap/workflow/follow-a-route-with-location.md"},
+                {"How do I get AccessMap set up for my region?" = "assistant/accessmap/workflow/get-accessmap-set-up-for-your-region.md"},
                 {"How do I plan and share an AccessMap route?" = "assistant/accessmap/workflow/plan-and-share-a-route.md"},
                 {"How should planners prioritize pedestrian investments?" = "assistant/accessmap/workflow/prioritize-pedestrian-investments.md"},
                 {"How can users report routing problems?" = "assistant/accessmap/workflow/report-routing-problems.md"},
@@ -617,10 +614,10 @@ nav = [
                 {"How do QA/QC centrality metrics differ?" = "assistant/qa-qc/concept/centrality-metric-selection.md"},
                 {"How does centrality sampling affect repeatability?" = "assistant/qa-qc/concept/centrality-sampling-and-repeatability.md"},
                 {"How are QA/QC centrality tiles generated?" = "assistant/qa-qc/concept/centrality-tile-generation.md"},
-                {"What does \"centrality\" mean?" = "assistant/qa-qc/concept/centrality.md"},
+                {"What is centrality?" = "assistant/qa-qc/concept/centrality.md"},
                 {"Why can a city have high completeness but still accessibility gaps?" = "assistant/qa-qc/concept/completeness-vs-accessibility-gaps.md"},
                 {"Is completeness ADA compliance?" = "assistant/qa-qc/concept/completeness-vs-ada-compliance.md"},
-                {"What does \"completeness\" mean?" = "assistant/qa-qc/concept/completeness.md"},
+                {"What is completeness?" = "assistant/qa-qc/concept/completeness.md"},
                 {"Why can conditional attribute completeness be low?" = "assistant/qa-qc/concept/conditional-attribute-completeness.md"},
                 {"What does \"connected pedestrian graph\" mean?" = "assistant/qa-qc/concept/connected-pedestrian-graph.md"},
                 {"What does crossing count mean in QA/QC reports?" = "assistant/qa-qc/concept/crossing-count.md"},

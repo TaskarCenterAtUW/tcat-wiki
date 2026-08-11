@@ -52,7 +52,7 @@ tags:
 
 ## Short Answer
 
-To create a workspace from TDEI, open a dataset that is already stored in the [TDEI portal](https://portal.tdei.us/) and use **Open in Workspaces** (or the equivalent action on that dataset). Workspaces copies the **current TDEI dataset version** into a private editing sandbox. Edits happen in Workspaces first; they do not change the TDEI release until you export or upload through your jurisdiction's publication workflow.
+To create a workspace from TDEI, open a dataset that is already stored in the [TDEI portal](https://portal.tdei.us/) and use **Open in Workspaces** (or the equivalent action on that dataset). This option opens a **copy of that version of the TDEI dataset** in a private editing sandbox. Editing the copy in Workspaces does not update the dataset already stored in TDEI; changes remain in Workspaces until you export or upload through your jurisdiction's publication workflow.
 
 You can also start from the Workspaces dashboard (**Create Workspace** → **From TDEI**), pick a project group, and select the dataset — same outcome, different starting screen.
 
@@ -87,7 +87,7 @@ TDEI is built to manage **whole datasets** (inventory, metadata, jobs, releases)
 ## What This Does Not Mean
 
 - **Not live sync** — The workspace is a **copy**. If TDEI metadata or a newer dataset version is published later, the workspace does **not** automatically update to match.
-- **Not in-place editing of TDEI** — Changing features in the workspace does **not** change the TDEI stored dataset until an explicit export/upload and downstream release process.
+- **Not in-place editing of TDEI** — **Open in Workspaces** creates a copy. Changing features in that workspace does **not** update the dataset already stored in TDEI; an explicit export/upload and downstream release process is required.
 - **Not public OSM** — Workspaces data is separate from the global OpenStreetMap database unless your organization follows a distinct OSM contribution process.
 - **Not the only creation path** — Partners can also create workspaces from **blank**, **local OpenSidewalks/OSW files**, or pipelines that first register data in TDEI (for example OSM PBF → TDEI convert job → file upload into Workspaces). Those paths are different workflows.
 

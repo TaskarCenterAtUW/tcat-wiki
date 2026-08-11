@@ -19,7 +19,7 @@ topics:
 risk_level: low
 authority_level: explanatory
 publication_status: draft
-last_reviewed: 2026-07-02
+last_reviewed: 2026-08-10
 retrieval_priority: medium
 assistant_behavior:
     allow_inference: false
@@ -28,6 +28,8 @@ assistant_behavior:
     do_not_claim:
         - FleXR is a finished, publicly released consumer product.
         - FleXR requires prior experience with XR devices to use.
+        - TCAT is currently running a FleXR user study.
+        - People with motor disabilities can currently join a FleXR user study.
 related_pages:
     - assistant/flexr/index.md
     - assistant/flexr/workflow/get-involved-with-flexr.md
@@ -51,19 +53,18 @@ Most XR applications assume users can physically move a head-mounted display and
 
 - FleXR is a plugin for the A-Frame WebXR framework, not a full replacement for A-Frame or XR headset hardware.
 - It targets developers who already have (or plan to build) A-Frame applications and want to support alternative input systems.
-- TCAT is currently running a user study with individuals with motor disabilities to evaluate the impact of FleXR when integrated into XR applications.
+- The [FleXR demo](https://focused-brattain-eecdaa.netlify.app/) is available to explore.
+- Developers can still make use of FleXR, but TCAT is not currently running a user study.
 
 ## What This Does Not Mean
 
-- FleXR is not a finished, publicly released consumer product — it is a research prototype under active study.
-- Participating in the user study does not require prior experience with XR devices.
+- FleXR is not a finished, publicly released consumer product — it is a research prototype.
+- TCAT is not currently running any user studies related to FleXR.
 - FleXR does not replace the need for a compatible A-Frame application; it is integrated into one.
 
 ## How To Use This
 
 **Developers**: Review the FleXR specification and integrate the plugin into an existing or new A-Frame application. See [Get Involved with FleXR](../workflow/get-involved-with-flexr.md).
-
-**People with motor disabilities**: You can participate in TCAT's user study evaluating FleXR; no prior XR experience is required. See [Get Involved with FleXR](../workflow/get-involved-with-flexr.md).
 
 **Advocates and the public**: Use this page to understand what FleXR is when explaining TCAT's accessibility research to others.
 
@@ -73,7 +74,7 @@ A developer with an existing A-Frame application wants to make it usable by peop
 
 ## Assistant Guidance
 
-Do not describe FleXR as a shipped consumer product or as related to transit, trip planning, or flexible-route transportation services — it is an XR accessibility research project. Cite this page and link to the FleXR project page for anyone seeking to participate or integrate FleXR.
+Do not describe FleXR as a shipped consumer product or as related to transit, trip planning, or flexible-route transportation services — it is an XR accessibility research project. Cite this page and link to the [FleXR demo](https://focused-brattain-eecdaa.netlify.app/) for developers who want to try it.
 
 ## Related Concepts
 

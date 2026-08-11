@@ -81,12 +81,12 @@ Select the **action menu** (⋮) on the right side of any dataset row to access 
 
 | Action                      | Description                                                                                                |
 | :-------------------------- | :--------------------------------------------------------------------------------------------------------- |
-| **Open in Workspaces**      | Opens the dataset in the [Workspaces](../../../workspaces/index.md) editing platform                       |
+| **Open in Workspaces**      | Opens a copy of the dataset in the [Workspaces](../../../workspaces/index.md) editing platform             |
 | **Download Metadata**       | Downloads the metadata associated with the dataset                                                         |
-| **Clone Dataset**           | Creates a copy of the dataset, allowing you to make changes without affecting the original                 |
+| **Clone Dataset**           | Creates a copy of the dataset in the TDEI, allowing you to make changes without affecting the original     |
 | **Download**                | Downloads the dataset files in a chosen format (see [Downloading a Dataset](#downloading-a-dataset) below) |
 | **Share Link**              | Provides a link to share the dataset                                                                       |
-| **Generate Quality Report** | Generates a quality report for the dataset                                                                 |
+| **Generate Quality Report** | Generates a QA/QC quality report for the dataset                                                                 |
 
 ![The dataset action menu open on the first row, showing six options: Open in Workspaces, Download Metadata, Clone Dataset, Download, Share Link, and Generate Quality Report.](../../../resources/images/tdei/portal/user-manual/datasets/03-action-light.avif#only-light)
 ![The dataset action menu open on the first row, showing six options: Open in Workspaces, Download Metadata, Clone Dataset, Download, Share Link, and Generate Quality Report.](../../../resources/images/tdei/portal/user-manual/datasets/03-action-dark.avif#only-dark)

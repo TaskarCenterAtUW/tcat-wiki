@@ -22,6 +22,21 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/),
 
 -->
 
+## v15.4.0 (2026-08-10)
+
+### Features
+
+- **Core**: Bump Zensical to 0.0.53
+- **Docs**: Update Assistant Knowledge Base articles
+
+### Fixes
+
+- **Core**: Reorganize main zensical.toml config to match upstream structure
+- **Docs**: Clarify wording around TDEI datasets and Workspaces relationship
+    - Details: _Updated docs\assistant\workspaces\workflow\create-a-workspace-from-tdei.md_
+    - Details: _Updated docs\tdei\portal\user-manual\datasets.md_
+- **Docs**: Update Assistant Knowledge Base articles
+
 ## v15.3.0 (2026-08-10)
 
 ### Features
