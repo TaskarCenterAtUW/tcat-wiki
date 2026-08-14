@@ -109,8 +109,8 @@ This page should be fetched fresh rather than cached aggressively; its registry 
 
 | Authority level | Count | Meaning |
 | :-------------- | ----: | :------ |
-| `provisional` | 415 | Early or limited-confidence guidance |
-| `explanatory` | 364 | Established explanation without formal policy authority |
+| `provisional` | 412 | Early or limited-confidence guidance |
+| `explanatory` | 367 | Established explanation without formal policy authority |
 | `official` | 2 | Formally endorsed organizational guidance |
 
 ## Registry

@@ -279,6 +279,7 @@ nav = [
                 {"What syntax does an AVIV ScoutRoute quest query use?" = "assistant/aviv-scoutroute/concept/quest-definition-query-syntax.md"},
                 {"Can quest dependencies use numeric comparisons?" = "assistant/aviv-scoutroute/concept/quest-dependency-evaluators.md"},
                 {"What input types are available in AVIV ScoutRoute quests?" = "assistant/aviv-scoutroute/concept/quest-input-types.md"},
+                {"Can quests in AVIV ScoutRoute be marked as required or optional?" = "assistant/aviv-scoutroute/concept/quest-required-or-optional.md"},
                 {"Why can AVIV ScoutRoute quests be hidden or unavailable?" = "assistant/aviv-scoutroute/concept/quest-visibility-and-local-state.md"},
                 {"What is a quest in AVIV ScoutRoute?" = "assistant/aviv-scoutroute/concept/quest.md"}
             ]},
