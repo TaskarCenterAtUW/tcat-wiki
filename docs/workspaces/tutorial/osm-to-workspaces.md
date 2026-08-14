@@ -66,13 +66,13 @@ Use the [TDEI Portal](https://portal.tdei.us/jobs) to create and run a new **OSW
 
 3. The page will show **Converting dataset...** while the file is processed, followed by **Initializing workspace...** and then **Importing dataset to workspace...** before the process completes and the page automatically refreshes.
 
-!!! question "Taking a while? This process can take anywhere from a few seconds to several minutes, depending on the size of the area and the density of mapped features."
+    !!! question "Taking a while? This process can take anywhere from a few seconds to several minutes, depending on the size of the area and the density of mapped features."
 
 4. Once complete, you will be taken to the dashboard with the newly created workspace selected.
 
     ![TDEI Workspaces dashboard showing the Covington, WA, US OSW workspace selected, with a map preview of the Covington area and workspace metadata including creation date and project group ID](../../resources/images/workspaces/tutorial/osm-to-workspaces/07-workspaces-workspace-light.avif#only-light)
     ![TDEI Workspaces dashboard showing the Covington, WA, US OSW workspace selected, with a map preview of the Covington area and workspace metadata including creation date and project group ID](../../resources/images/workspaces/tutorial/osm-to-workspaces/07-workspaces-workspace-dark.avif#only-dark)
 
-!!! success "You have now successfully created a new workspace using the latest OSM data!"
+!!! success "You have now successfully created a new workspace using a copy of the latest OSM data!"
 
 For more information on using the Workspaces platform, refer to the [Workspaces User Manual](../user-manual/index.md).
