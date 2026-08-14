@@ -27,7 +27,7 @@ topics:
 risk_level: low
 authority_level: official
 publication_status: draft
-last_reviewed: 2026-08-10
+last_reviewed: 2026-08-14
 retrieval_priority: high
 assistant_behavior:
     allow_inference: false
@@ -101,7 +101,7 @@ This page should be fetched fresh rather than cached aggressively; its registry 
 | Status | Count | Meaning |
 | :----- | ----: | :------ |
 | `stub` | 432 | Frontmatter and heading scaffold exist; body is `TODO` |
-| `draft` | 347 | Content authored; awaiting TCAT editorial review |
+| `draft` | 348 | Content authored; awaiting TCAT editorial review |
 | `published` | 1 | Available in the human-facing site |
 | `archived` | 0 | Retained for agents but not published |
 
@@ -109,7 +109,7 @@ This page should be fetched fresh rather than cached aggressively; its registry 
 
 | Authority level | Count | Meaning |
 | :-------------- | ----: | :------ |
-| `provisional` | 414 | Early or limited-confidence guidance |
+| `provisional` | 415 | Early or limited-confidence guidance |
 | `explanatory` | 364 | Established explanation without formal policy authority |
 | `official` | 2 | Formally endorsed organizational guidance |
 
@@ -229,6 +229,7 @@ Base: `assistant/aviv-scoutroute/concept/`
 | `quest-definition-query-syntax.md` | draft |
 | `quest-dependency-evaluators.md` | draft |
 | `quest-input-types.md` | draft |
+| `quest-required-or-optional.md` | draft |
 | `quest-visibility-and-local-state.md` | draft |
 | `quest.md` | draft |
 
