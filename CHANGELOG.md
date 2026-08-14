@@ -22,12 +22,18 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/),
 
 -->
 
-## v15.5.0 (2026-08-12)
+## v15.6.0 (2026-08-14)
 
 ### Features
 
-- **Docs**: Update OSM-to-Workspaces tutorials
+- **Docs**: Refresh OSM-to-Workspaces tutorial
 - **Docs**: Update abbreviations list
+
+## v15.5.0 (2026-08-13)
+
+### Features
+
+- **Core**: Bump Zensical to 0.0.54
 
 ## v15.4.0 (2026-08-10)
 
