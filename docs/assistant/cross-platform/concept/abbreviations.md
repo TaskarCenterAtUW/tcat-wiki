@@ -47,7 +47,7 @@ topics:
 risk_level: low
 authority_level: official
 publication_status: published
-last_reviewed: 2026-08-10
+last_reviewed: 2026-08-14
 retrieval_priority: high
 assistant_behavior:
     allow_inference: false
@@ -68,7 +68,7 @@ tags:
 
 ## Short Answer
 
-This page lists all 327 abbreviations, acronyms, and initialisms used across TCAT Wiki documentation and TCAT platforms and tools.
+This page lists all 329 abbreviations, acronyms, and initialisms used across TCAT Wiki documentation and TCAT platforms and tools.
 
 ## Significance
 
@@ -150,6 +150,7 @@ The table below maps each abbreviated form to its full expansion. Entries are so
 | DFS | Depth-First Search |
 | DITA | Darwin Information Typing Architecture |
 | DOT | Department of Transportation |
+| DS | Data Science |
 | DSB | Department of Services for the Blind |
 | DSM | Digital Surface Model |
 | DTD | Document Type Definition |
@@ -202,6 +203,7 @@ The table below maps each abbreviated form to its full expansion. Entries are so
 | ICML | International Conference on Machine Learning |
 | IDW | Inverse Distance Weighting |
 | IEEE | Institute of Electrical and Electronics Engineers |
+| IFDS | Institute for Foundations of Data Science |
 | IIiX | Information Interaction in Context |
 | IJCV | International Journal of Computer Vision |
 | IMCL | International Making Cities Livable |
