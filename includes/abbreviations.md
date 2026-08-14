@@ -68,6 +68,7 @@
 *[DFS]: Depth-First Search
 *[DITA]: Darwin Information Typing Architecture
 *[DOT]: Department of Transportation
+*[DS]: Data Science
 *[DSB]: Department of Services for the Blind
 *[DSM]: Digital Surface Model
 *[DTD]: Document Type Definition
@@ -120,6 +121,7 @@
 *[ICML]: International Conference on Machine Learning
 *[IDW]: Inverse Distance Weighting
 *[IEEE]: Institute of Electrical and Electronics Engineers
+*[IFDS]: Institute for Foundations of Data Science
 *[IIiX]: Information Interaction in Context
 *[IJCV]: International Journal of Computer Vision
 *[IMCL]: International Making Cities Livable
