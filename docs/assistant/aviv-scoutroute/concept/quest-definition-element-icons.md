@@ -15,9 +15,9 @@ topics:
     - quests
     - configuration
 risk_level: low
-authority_level: provisional
+authority_level: explanatory
 publication_status: draft
-last_reviewed: 2026-07-22
+last_reviewed: 2026-08-14
 retrieval_priority: medium
 assistant_behavior:
     allow_inference: false
@@ -47,23 +47,23 @@ A suitable icon helps contributors recognize the feature represented by a quest 
 
 ## What This Means
 
-Choose an icon name from the current icon reference, add the exact name without a file extension, and test the definition. If the value is missing or unsupported, the app falls back to a default icon according to the current guide.
+Choose an icon name from the current icon reference list, add the exact name without a file extension, and test the definition. A feature-presets block can also associate a configured feature name with an icon for features contributors may add.
 
 ## What This Does Not Mean
 
-The field does not create a new icon, and an arbitrary filename or extension is not a supported icon value.
+The field does not create a new icon, and an arbitrary filename or extension is not a supported icon value. A feature preset does not make an arbitrary image file a supported app icon.
 
 ## How To Use This
 
-Search the icon reference for the target feature, copy the exact icon name, place it in `element_type_icon`, and verify the resulting map display.
+Search the icon reference for the target feature, copy the exact icon name, place it in `element_type_icon` or the applicable feature preset, and verify the resulting map display in the app.
 
 ## Example
 
-A sidewalk quest definition uses `"element_type_icon": "sidewalk"` so the app can display the corresponding sidewalk icon.
+A sidewalk quest definition uses `"element_type_icon": "sidewalk"` so the app can display the corresponding sidewalk icon. A feature preset can similarly give an addable feature a configured name and supported icon.
 
 ## Assistant Guidance
 
-Ask for the active definition and app version when an icon does not appear as expected. Do not assume that a visually similar name is supported.
+Explain the concept of element icons. Do not assume that a visually similar name or an arbitrary custom icon filename is supported. Provide a link to the [Element Type Icon Documentation](../../../aviv-scoutroute/quests/element-type-icon.md).
 
 ## Related Concepts
 
