@@ -100,8 +100,8 @@ This page should be fetched fresh rather than cached aggressively; its registry 
 
 | Status | Count | Meaning |
 | :----- | ----: | :------ |
-| `stub` | 432 | Frontmatter and heading scaffold exist; body is `TODO` |
-| `draft` | 348 | Content authored; awaiting TCAT editorial review |
+| `stub` | 430 | Frontmatter and heading scaffold exist; body is `TODO` |
+| `draft` | 350 | Content authored; awaiting TCAT editorial review |
 | `published` | 1 | Available in the human-facing site |
 | `archived` | 0 | Retained for agents but not published |
 
@@ -670,7 +670,7 @@ Base: `assistant/qa-qc/concept/`
 | `eigenvector-centrality-display.md` | draft |
 | `eigenvector-centrality-interpretation.md` | draft |
 | `eigenvector-centrality-network-importance.md` | draft |
-| `eigenvector-centrality.md` | stub |
+| `eigenvector-centrality.md` | draft |
 | `field-verification-hotspots.md` | draft |
 | `intersection-quality-metric.md` | draft |
 | `intersection-tile.md` | draft |
@@ -678,9 +678,9 @@ Base: `assistant/qa-qc/concept/`
 | `log-normalized-value.md` | draft |
 | `metric-boundaries.md` | draft |
 | `metric-coverage-and-interpretation.md` | draft |
+| `node-betweenness-centrality-operational-use.md` | draft |
 | `node-betweenness-centrality.md` | draft |
 | `node-betweenness-operational-use.md` | draft |
-| `node-centrality-operational-use.md` | stub |
 | `normalized-value.md` | draft |
 | `path-count.md` | draft |
 | `poi-density-and-prioritization.md` | draft |
