@@ -15,16 +15,16 @@ topics:
     - configuration
     - editing
 risk_level: medium
-authority_level: provisional
+authority_level: explanatory
 publication_status: draft
-last_reviewed: 2026-06-30
+last_reviewed: 2026-08-14
 retrieval_priority: high
 assistant_behavior:
     allow_inference: false
     requires_citation: true
     abstain_if_missing_context: true
     do_not_claim:
-        - A quest definition targets every feature without a matching element query.
+        - A quest definition targets a feature without a valid matching element query.
 related_pages:
     - assistant/aviv-scoutroute/index.md
     - assistant/aviv-scoutroute/concept/quest-definition-application.md
@@ -46,15 +46,15 @@ This connects a field form to the feature it is intended to describe.
 
 ## What This Means
 
-Define the matching query and the questions for the selected element. The documented syntax supports tag presence or absence, exact and regular-expression values, numeric or date comparisons, and `and`/`or` expressions with parentheses.
+Define the matching query and the questions for the selected element. The documented syntax supports tag presence or absence, exact and regular-expression values, numeric or date comparisons, and `and`/`or` expressions with parentheses. A feature-presets block can also define which new features a contributor may add. For example, a curb-ramp preset can use the OpenSidewalks tag `barrier=kerb` and target the resulting feature with an element query specified in the quest definition.
 
 ## What This Does Not Mean
 
-A quest does not appear on unrelated features automatically.
+A quest does not appear on unrelated features automatically, and defining a feature preset does not make every possible feature type available for addition.
 
 ## How To Use This
 
-Test the query against the workspace data and review the resulting change set.
+Test the query against the workspace data and review the resulting change set. If contributors should add new features from the app, define only the needed feature presets.
 
 ## Example
 
@@ -62,7 +62,7 @@ Examples include `ways`, `ways with (footway=sidewalk)`, `ways with (footway=sid
 
 ## Assistant Guidance
 
-Verify tag names and schema support before deploying the definition.
+Explain the element query concept and provide a link to the [Element Query Documentation](../../../aviv-scoutroute/quests/element-query.md).
 
 ## Related Concepts
 

@@ -27,7 +27,7 @@ topics:
 risk_level: low
 authority_level: official
 publication_status: draft
-last_reviewed: 2026-08-10
+last_reviewed: 2026-08-14
 retrieval_priority: high
 assistant_behavior:
     allow_inference: false
@@ -100,8 +100,8 @@ This page should be fetched fresh rather than cached aggressively; its registry 
 
 | Status | Count | Meaning |
 | :----- | ----: | :------ |
-| `stub` | 432 | Frontmatter and heading scaffold exist; body is `TODO` |
-| `draft` | 347 | Content authored; awaiting TCAT editorial review |
+| `stub` | 430 | Frontmatter and heading scaffold exist; body is `TODO` |
+| `draft` | 350 | Content authored; awaiting TCAT editorial review |
 | `published` | 1 | Available in the human-facing site |
 | `archived` | 0 | Retained for agents but not published |
 
@@ -109,8 +109,8 @@ This page should be fetched fresh rather than cached aggressively; its registry 
 
 | Authority level | Count | Meaning |
 | :-------------- | ----: | :------ |
-| `provisional` | 414 | Early or limited-confidence guidance |
-| `explanatory` | 364 | Established explanation without formal policy authority |
+| `provisional` | 412 | Early or limited-confidence guidance |
+| `explanatory` | 367 | Established explanation without formal policy authority |
 | `official` | 2 | Formally endorsed organizational guidance |
 
 ## Registry
@@ -229,6 +229,7 @@ Base: `assistant/aviv-scoutroute/concept/`
 | `quest-definition-query-syntax.md` | draft |
 | `quest-dependency-evaluators.md` | draft |
 | `quest-input-types.md` | draft |
+| `quest-required-or-optional.md` | draft |
 | `quest-visibility-and-local-state.md` | draft |
 | `quest.md` | draft |
 
@@ -669,7 +670,7 @@ Base: `assistant/qa-qc/concept/`
 | `eigenvector-centrality-display.md` | draft |
 | `eigenvector-centrality-interpretation.md` | draft |
 | `eigenvector-centrality-network-importance.md` | draft |
-| `eigenvector-centrality.md` | stub |
+| `eigenvector-centrality.md` | draft |
 | `field-verification-hotspots.md` | draft |
 | `intersection-quality-metric.md` | draft |
 | `intersection-tile.md` | draft |
@@ -677,9 +678,9 @@ Base: `assistant/qa-qc/concept/`
 | `log-normalized-value.md` | draft |
 | `metric-boundaries.md` | draft |
 | `metric-coverage-and-interpretation.md` | draft |
+| `node-betweenness-centrality-operational-use.md` | draft |
 | `node-betweenness-centrality.md` | draft |
 | `node-betweenness-operational-use.md` | draft |
-| `node-centrality-operational-use.md` | stub |
 | `normalized-value.md` | draft |
 | `path-count.md` | draft |
 | `poi-density-and-prioritization.md` | draft |

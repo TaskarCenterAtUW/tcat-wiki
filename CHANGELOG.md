@@ -22,6 +22,12 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/),
 
 -->
 
+## v15.7.0 (2026-08-14)
+
+### Features
+
+- **Docs**: Update Assistant Knowledge Base articles
+
 ## v15.6.0 (2026-08-14)
 
 ### Features
