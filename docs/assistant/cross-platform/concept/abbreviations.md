@@ -47,7 +47,7 @@ topics:
 risk_level: low
 authority_level: official
 publication_status: published
-last_reviewed: 2026-08-14
+last_reviewed: 2026-08-19
 retrieval_priority: high
 assistant_behavior:
     allow_inference: false
@@ -68,7 +68,7 @@ tags:
 
 ## Short Answer
 
-This page lists all 329 abbreviations, acronyms, and initialisms used across TCAT Wiki documentation and TCAT platforms and tools.
+This page lists all 330 abbreviations, acronyms, and initialisms used across TCAT Wiki documentation and TCAT platforms and tools.
 
 ## Significance
 
@@ -189,6 +189,7 @@ The table below maps each abbreviated form to its full expansion. Entries are so
 | GTFS-Pathways | General Transit Feed Specification, Pathways Extension |
 | GWF | Geospatial World Forum |
 | HAWK | High-Intensity Activated Crosswalk Beacon |
+| HCDE | Human Centered Design & Engineering |
 | HCI | Human-Computer Interaction |
 | HCIR | Human Computer Information Retrieval |
 | HCT | High-Capacity Transit |

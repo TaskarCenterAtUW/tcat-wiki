@@ -107,6 +107,7 @@
 *[GTFS]: General Transit Feed Specification
 *[GWF]: Geospatial World Forum
 *[HAWK]: High-Intensity Activated Crosswalk Beacon
+*[HCDE]: Human Centered Design & Engineering
 *[HCI]: Human-Computer Interaction
 *[HCIR]: Human Computer Information Retrieval
 *[HCT]: High-Capacity Transit
