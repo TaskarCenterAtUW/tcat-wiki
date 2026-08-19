@@ -126,4 +126,4 @@ Both types of feedback are valuable! Use AccessMap comments for general observat
 
 ### Contact
 
-If you encounter any issues or have questions, please contact the TCAT team at [uwtcat@uw.edu](mailto:uwtcat@uw.edu).
+If you encounter any issues or have questions, please contact the TCAT team at [helpdesk@tdei.us](mailto:helpdesk@tdei.us).

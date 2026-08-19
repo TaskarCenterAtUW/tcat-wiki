@@ -19,8 +19,7 @@ These meetings held regularly via Zoom with members of TCAT are open to all for 
 - **Meeting Location:** Zoom ([link to room](https://washington.zoom.us/j/98269654220))
 - **Meeting Notes:** [Google Docs: OSW Mappy Hours - Meeting Notes](https://docs.google.com/document/d/1SwfAW0a42_DFDgko22O-707dAoCvP3KafV47ixC5gLM/edit?tab=t.2nldj8jv044e)
 - **Additional Contact Channels:**
-    - Email: [Amy Bordenave](mailto:amykateb@uw.edu) / [uwtcat@uw.edu](mailto:uwtcat@uw.edu)
-    - [TCAT Office Hours channel](https://opensidewalks.slack.com/archives/C088VBPPLKT) in [OpenSidewalks Slack](https://join.slack.com/t/opensidewalks/shared_invite/zt-2yczm19ht-Rokn~Q2tyH_~EOloZO6Qvw) ([invite link](https://join.slack.com/t/opensidewalks/shared_invite/zt-2yczm19ht-Rokn~Q2tyH_~EOloZO6Qvw))
+    - Email: [helpdesk@tdei.us](mailto:helpdesk@tdei.us)
 
 ---
 
@@ -36,7 +35,7 @@ _\[On-call]_ **AccessMap Non-Visual Support:** Kunal M. ([kunalvm@uw.edu](mailto
 
 _\[On-call]_ **SCLIO Grant Support:** Anat C. ([caspian@cs.washington.edu](mailto:caspian@cs.washington.edu))
 
-_\[Drop-in]_ **Additional Members:** Amara S. ([ascherm@uw.edu](mailto:ascherm@uw.edu)), Tanisha S. ([tsepul@uw.edu](mailto:tsepul@uw.edu))
+_\[Drop-in]_ **Additional Members:** Tanisha S. ([tsepul@uw.edu](mailto:tsepul@uw.edu))
 
 ---
 
@@ -74,7 +73,7 @@ _\[Drop-in]_ **Additional Members:** Amara S. ([ascherm@uw.edu](mailto:ascherm@u
 
 ??? question "How can I reach out to TCAT about OpenSidewalks?"
 
-    Email: [OpenSidewalks Mailing List](mailto:OpenSidewalks@uw.edu)
+    Email: [helpdesk@tdei.us](mailto:helpdesk@tdei.us)
 
 #### OpenStreetMap
 
@@ -132,7 +131,7 @@ _\[Drop-in]_ **Additional Members:** Amara S. ([ascherm@uw.edu](mailto:ascherm@u
 
 ??? question "How can I reach out to TCAT about SCLIOs?"
 
-    Email: [uwtcat@uw.edu](mailto:uwtcat@uw.edu)
+    Email: [helpdesk@tdei.us](mailto:helpdesk@tdei.us)
 
 #### Walksheds
 
@@ -169,4 +168,4 @@ _\[Drop-in]_ **Additional Members:** Amara S. ([ascherm@uw.edu](mailto:ascherm@u
 
 ??? question "How can I reach out to TCAT about Walksheds?"
 
-    Email: [uwtcat@uw.edu](mailto:uwtcat@uw.edu)
+    Email: [helpdesk@tdei.us](mailto:helpdesk@tdei.us)

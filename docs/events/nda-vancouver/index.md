@@ -40,7 +40,7 @@ The **Vancouver Walk/Roll Event** was an in-person pedestrian accessibility audi
 
 - **Date**: January 20th, 2026
 - **Starting Location**: Gaiser Hall, Vancouver, WA
-- **Contact**: [uwtcat@uw.edu](mailto:uwtcat@uw.edu)
+- **Contact**: [helpdesk@tdei.us](mailto:helpdesk@tdei.us)
 
 ### Purpose
 

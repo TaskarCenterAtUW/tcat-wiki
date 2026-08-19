@@ -69,4 +69,4 @@ Visit the [Validation Guide](validation-guide.md) for directions on how to valid
 
 TCAT staff will be available throughout the event to answer questions.
 
-Alternatively, you may email [uwtcat@uw.edu](mailto:uwtcat@uw.edu) or [amykateb@uw.edu](mailto:amykateb@uw.edu).
+Alternatively, you may email [helpdesk@tdei.us](mailto:helpdesk@tdei.us).
