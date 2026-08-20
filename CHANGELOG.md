@@ -22,6 +22,18 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/),
 
 -->
 
+## v15.8.0 (2026-08-19)
+
+### Features
+
+- **Docs**: Expand abbreviations list
+- **Docs**: Update docs\assistant\tdei\concept\job-osw-convert.md
+- **Docs**: Update docs\tdei\portal\user-manual\jobs\osw-convert.md
+
+### Fixes
+
+- **Docs**: Update contact details
+
 ## v15.7.0 (2026-08-14)
 
 ### Features
