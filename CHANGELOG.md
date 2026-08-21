@@ -22,6 +22,16 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/),
 
 -->
 
+## v15.9.0 (2026-08-20)
+
+- **Docs**: Updated docs\assistant\qa-qc\concept\edge-betweenness.md
+- **Docs**: Updated docs\assistant\qa-qc\concept\path-count.md
+- **Docs**: Updated docs\assistant\workspaces\concept\qr-code-name-change.md
+- **Docs**: Updated docs\assistant\workspaces\workflow\invite-to-workspace-team.md
+- **Docs**: Updated docs\assistant\workspaces\workflow\set-up-tasking-manager-project.md
+- **Docs**: Updated docs\assistant\accessmap\workflow\plan-and-share-a-route.md
+- **Docs**: Updated docs\assistant\accessmap\concept\feature-feedback.md
+
 ## v15.8.0 (2026-08-19)
 
 ### Features
