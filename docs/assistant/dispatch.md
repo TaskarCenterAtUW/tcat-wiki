@@ -27,7 +27,7 @@ topics:
 risk_level: low
 authority_level: official
 publication_status: draft
-last_reviewed: 2026-08-14
+last_reviewed: 2026-08-20
 retrieval_priority: high
 assistant_behavior:
     allow_inference: false
@@ -100,8 +100,8 @@ This page should be fetched fresh rather than cached aggressively; its registry 
 
 | Status | Count | Meaning |
 | :----- | ----: | :------ |
-| `stub` | 430 | Frontmatter and heading scaffold exist; body is `TODO` |
-| `draft` | 350 | Content authored; awaiting TCAT editorial review |
+| `stub` | 428 | Frontmatter and heading scaffold exist; body is `TODO` |
+| `draft` | 353 | Content authored; awaiting TCAT editorial review |
 | `published` | 1 | Available in the human-facing site |
 | `archived` | 0 | Retained for agents but not published |
 
@@ -109,8 +109,8 @@ This page should be fetched fresh rather than cached aggressively; its registry 
 
 | Authority level | Count | Meaning |
 | :-------------- | ----: | :------ |
-| `provisional` | 412 | Early or limited-confidence guidance |
-| `explanatory` | 367 | Established explanation without formal policy authority |
+| `provisional` | 408 | Early or limited-confidence guidance |
+| `explanatory` | 372 | Established explanation without formal policy authority |
 | `official` | 2 | Formally endorsed organizational guidance |
 
 ## Registry
@@ -666,7 +666,7 @@ Base: `assistant/qa-qc/concept/`
 | `disconnected-poi.md` | draft |
 | `edge-betweenness-centrality.md` | draft |
 | `edge-betweenness-operational-use.md` | stub |
-| `edge-betweenness.md` | stub |
+| `edge-betweenness.md` | draft |
 | `eigenvector-centrality-display.md` | draft |
 | `eigenvector-centrality-interpretation.md` | draft |
 | `eigenvector-centrality-network-importance.md` | draft |
@@ -1075,7 +1075,7 @@ Base: `assistant/workspaces/concept/`
 | `project-groups.md` | stub |
 | `public-availability-of-quest-photos.md` | draft |
 | `qa-review-support.md` | stub |
-| `qr-code-invites.md` | stub |
+| `qr-code-name-change.md` | draft |
 | `quest-definition-url-requirements.md` | draft |
 | `rapid-imagery-integration.md` | draft |
 | `rapid-versions.md` | stub |
@@ -1156,12 +1156,13 @@ Base: `assistant/workspaces/workflow/`
 | `export-workspace.md` | draft |
 | `import-external-geojson-for-reference.md` | draft |
 | `import-osm-data-into-workspaces.md` | draft |
-| `invite-a-team-to-a-workspace.md` | draft |
+| `invite-to-workspace-team.md` | draft |
 | `open-dataset-for-inspection.md` | draft |
 | `pre-export-review.md` | stub |
 | `publish-jurisdiction-updates.md` | stub |
 | `review-quest-contributions.md` | draft |
 | `review-workspace-edits.md` | stub |
 | `search-project-groups.md` | stub |
+| `set-up-tasking-manager-project.md` | draft |
 | `use-workspaces-for-community-validation.md` | stub |
 | `use-workspaces-for-jurisdiction-stewardship.md` | stub |
