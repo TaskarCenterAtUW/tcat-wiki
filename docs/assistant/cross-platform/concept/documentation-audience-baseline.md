@@ -41,15 +41,15 @@ tags:
 
 ## Short Answer
 
-A useful baseline is a reader with general data familiarity but little or no prior mapping experience. Documentation should use accessible language and explain mapping-specific concepts without assuming expert knowledge.
+A useful minimum baseline is a high-school junior or senior with general data familiarity but little or no prior mapping experience. Documentation should use accessible language and explain mapping-specific concepts without assuming expert knowledge.
 
 ## Significance
 
-This baseline can make instructions more approachable for students, new volunteers, and partner staff. It also provides a practical lens for reviewing whether a page is understandable.
+This baseline can make instructions more approachable for students, new volunteers, and partner staff. It provides a practical lens for reviewing whether a page is understandable before documentation is used with new mappers or community participants.
 
 ## What This Means
 
-Explain unfamiliar terms, use plain language, and make prerequisites explicit. Keep technical detail available without requiring it to understand the main task.
+Explain unfamiliar terms, use plain language, and make prerequisites explicit. Introduce the task clearly before presenting detailed instructions. Keep technical detail available without requiring it to understand the main task.
 
 ## What This Does Not Mean
 
@@ -57,15 +57,15 @@ The baseline does not replace audience-specific guidance for developers, jurisdi
 
 ## How To Use This
 
-Review a page as someone who understands basic data concepts but not mapping workflows. Test instructions with learners and revise unclear terms or missing steps.
+Review a page as someone who understands basic data concepts but not mapping workflows. Check that the introduction is understandable, assess whether the language is appropriate for the baseline audience, and test instructions with learners. Revise unclear terms or missing steps based on that review.
 
 ## Example
 
-A tutorial can explain what a task, feature, and map layer are before asking a new mapper to edit pedestrian data. An advanced section can then link to schema or tooling details.
+A tutorial can explain what a task, feature, and map layer are before asking a new mapper to edit pedestrian data. A review with learners can reveal whether the introduction and instructions are clear. An advanced section can then link to schema or tooling details.
 
 ## Assistant Guidance
 
-Use this baseline when suggesting documentation improvements, but ask about the intended audience for specialized content. Do not assume that general data familiarity implies mapping expertise.
+Use this baseline when suggesting documentation improvements. Check introductions and instructions for plain-language clarity, and recommend testing them with learners when possible. Ask about the intended audience for specialized content; do not assume that general data familiarity implies mapping expertise or that this baseline represents every audience.
 
 ## Related Concepts
 

@@ -18,9 +18,9 @@ topics:
     - crossings
     - accessibility-data
 risk_level: medium
-authority_level: provisional
+authority_level: explanatory
 publication_status: draft
-last_reviewed: 2026-07-22
+last_reviewed: 2026-08-21
 retrieval_priority: high
 assistant_behavior:
     allow_inference: false
@@ -30,7 +30,7 @@ assistant_behavior:
         - AccessMap identifies which individual curb ramp is inaccessible in its route display.
 related_pages:
     - assistant/accessmap/index.md
-    - assistant/accessmap/concept/crossing-links.md
+    - assistant/cross-platform/concept/crossing-links.md
 tags:
     - Assistant
 ---
@@ -69,4 +69,4 @@ Explain the product-level difference before interpreting a crossing. Do not infe
 
 ## Related Concepts
 
-- [What are crossing links in pedestrian data?](crossing-links.md)
+- [How are crossing links represented across pedestrian data systems?](../../cross-platform/concept/crossing-links.md)

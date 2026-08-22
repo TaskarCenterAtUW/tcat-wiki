@@ -27,7 +27,7 @@ topics:
 risk_level: low
 authority_level: official
 publication_status: draft
-last_reviewed: 2026-08-20
+last_reviewed: 2026-08-21
 retrieval_priority: high
 assistant_behavior:
     allow_inference: false
@@ -100,8 +100,8 @@ This page should be fetched fresh rather than cached aggressively; its registry 
 
 | Status | Count | Meaning |
 | :----- | ----: | :------ |
-| `stub` | 428 | Frontmatter and heading scaffold exist; body is `TODO` |
-| `draft` | 353 | Content authored; awaiting TCAT editorial review |
+| `stub` | 427 | Frontmatter and heading scaffold exist; body is `TODO` |
+| `draft` | 361 | Content authored; awaiting TCAT editorial review |
 | `published` | 1 | Available in the human-facing site |
 | `archived` | 0 | Retained for agents but not published |
 
@@ -109,8 +109,8 @@ This page should be fetched fresh rather than cached aggressively; its registry 
 
 | Authority level | Count | Meaning |
 | :-------------- | ----: | :------ |
-| `provisional` | 408 | Early or limited-confidence guidance |
-| `explanatory` | 372 | Established explanation without formal policy authority |
+| `provisional` | 400 | Early or limited-confidence guidance |
+| `explanatory` | 387 | Established explanation without formal policy authority |
 | `official` | 2 | Formally endorsed organizational guidance |
 
 ## Registry
@@ -143,7 +143,6 @@ Base: `assistant/accessmap/concept/`
 | `construction-routing-effect.md` | stub |
 | `coverage-outside-washington.md` | draft |
 | `critical-pedestrian-corridors.md` | stub |
-| `crossing-links.md` | draft |
 | `curb-ramp-routing.md` | stub |
 | `data-sources.md` | draft |
 | `disconnected-sidewalks.md` | stub |
@@ -223,10 +222,14 @@ Base: `assistant/aviv-scoutroute/concept/`
 | `offline-data-and-upload.md` | draft |
 | `quest-contributions.md` | draft |
 | `quest-definition-application.md` | draft |
+| `quest-definition-creator.md` | draft |
+| `quest-definition-custom-icons.md` | draft |
 | `quest-definition-element-icons.md` | draft |
 | `quest-definition-element-targeting.md` | draft |
+| `quest-definition-feature-presets.md` | draft |
 | `quest-definition-picture-questions.md` | draft |
 | `quest-definition-query-syntax.md` | draft |
+| `quest-definition-resurvey-interval.md` | draft |
 | `quest-dependency-evaluators.md` | draft |
 | `quest-input-types.md` | draft |
 | `quest-required-or-optional.md` | draft |
@@ -245,8 +248,10 @@ Base: `assistant/aviv-scoutroute/workflow/`
 | `install-aviv-scoutroute.md` | draft |
 | `join-a-project-and-find-quests.md` | draft |
 | `manage-quest-visibility.md` | draft |
+| `renumber-quest-definition.md` | draft |
 | `undo-a-quest-submission.md` | draft |
 | `update-quest-definition-in-workspace.md` | draft |
+| `upgrade-quest-definition.md` | draft |
 
 ## Cross-Platform — Assistant Knowledge Base
 
@@ -266,6 +271,7 @@ Base: `assistant/cross-platform/concept/`
 | `assistant-abstention.md` | draft |
 | `completeness.md` | draft |
 | `connected-pedestrian-graph.md` | draft |
+| `crossing-links.md` | draft |
 | `data-freshness.md` | draft |
 | `data-viewer-portal-workspaces-relationship.md` | draft |
 | `documentation-audience-baseline.md` | draft |
@@ -833,6 +839,7 @@ Base: `assistant/tdei/concept/`
 | `services-and-project-groups.md` | draft |
 | `source-and-derivative-datasets.md` | draft |
 | `tdei-architecture.md` | draft |
+| `tdei-data-security.md` | draft |
 | `tdei-job-processing.md` | draft |
 | `tdei-services.md` | draft |
 | `tdei.md` | draft |
@@ -908,7 +915,7 @@ Base: `assistant/walksheds/concept/`
 | `reachable-area.md` | stub |
 | `rural-transportation-planning.md` | stub |
 | `safe-routes-to-school.md` | draft |
-| `school-accessibility-analysis.md` | stub |
+| `school-accessibility-analysis.md` | draft |
 | `senior-mobility-analysis.md` | stub |
 | `transit-planning.md` | stub |
 | `travel-limits.md` | stub |
