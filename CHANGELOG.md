@@ -22,7 +22,28 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/),
 
 -->
 
+## v15.10.0 (2026-08-21)
+
+### Features
+
+- **Docs**: Updated docs\assistant\aviv-scoutroute\concept\quest-definition-creator.md
+- **Docs**: Updated docs\assistant\aviv-scoutroute\concept\quest-definition-feature-presets.md
+- **Docs**: Updated docs\assistant\aviv-scoutroute\concept\quest-definition-custom-icons.md
+- **Docs**: Updated docs\assistant\aviv-scoutroute\workflow\upgrade-quest-definition.md
+- **Docs**: Updated docs\assistant\aviv-scoutroute\workflow\renumber-quest-definition.md
+- **Docs**: Updated docs\assistant\walksheds\concept\walkshed-batch-input.md
+- **Docs**: Updated docs\assistant\walksheds\concept\walkshed-map-symbols.md
+- **Docs**: Updated docs\assistant\walksheds\workflow\compare-walkshed-profiles.md
+- **Docs**: Updated docs\assistant\walksheds\concept\walkshed-batch-output.md
+- **Docs**: Updated docs\assistant\aviv-scoutroute\concept\quest-definition-resurvey-interval.md
+- **Docs**: Updated docs\assistant\tdei\concept\tdei-data-security.md
+- **Docs**: Updated docs\assistant\cross-platform\concept\documentation-audience-baseline.md
+- **Docs**: Updated docs\assistant\walksheds\concept\school-accessibility-analysis.md
+- **Docs**: Move and update docs\assistant\cross-platform\concept\crossing-links.md
+
 ## v15.9.0 (2026-08-20)
+
+### Features
 
 - **Docs**: Updated docs\assistant\qa-qc\concept\edge-betweenness.md
 - **Docs**: Updated docs\assistant\qa-qc\concept\path-count.md
