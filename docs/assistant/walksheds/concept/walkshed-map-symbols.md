@@ -4,6 +4,7 @@ slug: walkshed-map-symbols
 doc_type: concept
 questions:
     - What do Walksheds map symbols mean?
+    - What does the Walksheds map legend show?
 audiences:
     - planner
     - public
@@ -14,17 +15,21 @@ topics:
     - interpretation
     - accessibility-metrics
 risk_level: medium
-authority_level: provisional
+authority_level: explanatory
 publication_status: draft
-last_reviewed: 2026-07-22
+last_reviewed: 2026-08-21
 retrieval_priority: high
 assistant_behavior:
     allow_inference: false
     requires_citation: true
     abstain_if_missing_context: true
     do_not_claim:
-        - Walksheds map colors are self-explanatory without the current legend.
-related_pages: []
+        - Walksheds map has visual map features that are not documented in the legend.
+        - Display of an element as inaccessible is an ADA assessment of that feature.
+related_pages:
+    - walkshed-scenarios.md
+    - walkshed-travel-cost.md
+    - ../workflow/compare-walkshed-profiles.md
 tags:
     - Assistant
 ---
@@ -35,7 +40,7 @@ tags:
 
 ## Short Answer
 
-Walksheds maps can show reachable paths, slope colors, cost nodes, point features, and isochrone boundaries.
+The Walksheds map legend identifies symbols for movement speed, crossings, stairs, points, and walkshed results. The exact symbols and colors shown depend on the current map and selected settings.
 
 ## Significance
 
@@ -43,23 +48,31 @@ The legend connects visual symbols to modeled travel cost and reachability.
 
 ## What This Means
 
-Use the legend to interpret colors, nodes, points, and hulls under the selected profile.
+The visible legend is organized into these groups:
+
+- **Movement speed due to incline**: high speed for flat areas, medium speed for moderate inclines, low speed for steep areas, and inaccessible segments.
+- **Crossings**: unmarked crossings, marked crossings, and inaccessible crossings.
+- **Stairs**: accessible and inaccessible stairs.
+- **Points**: point features displayed on the map.
+- **Walkshed**: cost nodes and the convex hull.
+
+Use the legend to match each map symbol to its label under the selected profile and map settings.
 
 ## What This Does Not Mean
 
-A map color is not a universal accessibility or safety rating.
+A legend label describes how Walksheds is displaying or modeling a map feature for the current analysis; it is not a universal accessibility, safety, or legal rating. The label **Inaccessible** should be interpreted within the category where it appears, such as movement speed, crossings, or stairs.
 
 ## How To Use This
 
-Check the legend after changing profile or cost settings.
+Open the map legend after changing the mobility profile, cost settings, dataset, or other map settings. Compare the visible symbol with its label instead of relying on color alone.
 
 ## Example
 
-Red dotted segments indicate paths that exceed the selected slope limit.
+For example, the legend uses a dotted red line for an inaccessible item in the movement-speed and crossing groups, while the stairs group uses a red dashed symbol for inaccessible stairs. The legend also shows colored cost-node points and a nested colored outline for the convex hull.
 
 ## Assistant Guidance
 
-Ask which profile and legend version the user is using.
+Instruct the user to reference the legend on the right side of the Walksheds interface for help interpreting visual aspects of the map. Do not infer a symbol's meaning from color alone or transfer a label from one legend group to another.
 
 ## Related Concepts
 
