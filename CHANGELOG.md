@@ -22,6 +22,12 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/),
 
 -->
 
+## v15.11.1 (2026-08-24)
+
+### Fixes
+
+- **Docs**: Fixed whitespace in frontmatter of docs\walksheds\tutorial\add-extension-dataset.md
+
 ## v15.11.0 (2026-08-24)
 
 ### Features
