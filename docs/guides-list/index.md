@@ -124,6 +124,12 @@ This user manual explains how to use the TDEI Portal platform.
 
 ### [Walksheds](../walksheds/index.md)
 
+#### Tutorials
+
+##### [Add Points Extension Dataset in Walksheds](../walksheds/tutorial/add-extension-dataset.md)
+
+This tutorial explains how to convert a GTFS feed's bus stop points to OpenSidewalks (OSW) format, upload it to the TDEI Portal, and display it as an extension (overlay) dataset in Walksheds.
+
 #### [Walksheds User Manual](../walksheds/user-manual/index.md)
 
 This user manual explains how to use the TDEI Walksheds tool.
