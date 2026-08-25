@@ -24,6 +24,10 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/),
 
 ## v15.11.0 (2026-08-24)
 
+### Features
+
+- **Core**: Upgrade Zensical to 0.0.57
+
 ### Fixes
 
 - **Docs**: Update utility link on docs\opensidewalks\schema\custom-points-in-osw.md
