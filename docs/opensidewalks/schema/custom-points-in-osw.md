@@ -169,7 +169,7 @@ Include required OpenSidewalks metadata at the dataset level:
 
 #### Option 1: Purpose-built Scripts
 
-In the specific case of GTFS stops, a script such as this one created by TCAT, [gtfs-to-tdei-converter.ps1](https://github.com/TaskarCenterAtUW/tdei-tools/blob/main/utilities/gtfs-to-tdei-converter.ps1), can be used.
+In the specific case of GTFS stops, a script such as this one created by TCAT, [gtfs-to-tdei-converter.py](https://github.com/TaskarCenterAtUW/tdei-tools/blob/main/utilities/gtfs_to_tdei_converter.py), can be used.
 
 #### Option 2: Online JSON Tools
 

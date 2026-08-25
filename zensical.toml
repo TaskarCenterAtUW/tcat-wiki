@@ -1206,7 +1206,8 @@ nav = [
             {"Batches" = "walksheds/user-manual/batches.md"},
             {"Walkshed Information & Sidewalk Score" = "walksheds/user-manual/sidewalk-score.md"},
             {"Custom Cost Function" = "walksheds/user-manual/custom-cost-function.md"}
-        ]}
+        ]},
+        {"Tutorial" = [ {"Add Points Extension Dataset in Walksheds" = "walksheds/tutorial/add-extension-dataset.md"} ]}
     ]},
     {"Workspaces" = [
         "workspaces/index.md",
