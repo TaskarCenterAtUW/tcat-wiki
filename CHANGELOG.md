@@ -22,6 +22,13 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/),
 
 -->
 
+## v15.12.0 (2026-08-26)
+
+### Features
+
+- **Docs**: Created docs\aviv-scoutroute\quests\creator\
+- **Docs**: Updated docs\opensidewalks\tasking-manager\project-list.md
+
 ## v15.11.1 (2026-08-24)
 
 ### Fixes
