@@ -32,6 +32,14 @@ This guide explains how to format the element query selector for use in an AVIV 
 
 This guide explains how to assign the correct value for the `element_type_icon` key in the Long Form Quest Definition JSON file used by AVIV ScoutRoute.
 
+##### [Quest Definition Creator](../aviv-scoutroute/quests/creator/index.md) Guides
+
+The [Quest Definition Creator](https://taskarcenteratuw.github.io/asr-quests/) is a web application for creating and editing AVIV ScoutRoute Long Form Quest Definition JSON files. It provides starter templates, live validation, a JSON preview, and export tools.
+
+###### [Quest Definition Creator User Manual](../aviv-scoutroute/quests/creator/user-manual/index.md)
+
+This user manual explains how to use the [Quest Definition Creator](https://taskarcenteratuw.github.io/asr-quests/) to create, edit, validate, and export AVIV ScoutRoute Long Form Quest Definition JSON files.
+
 ### [JOSM](../josm/index.md)
 
 #### [JOSM User Manual](../josm/user-manual/index.md)

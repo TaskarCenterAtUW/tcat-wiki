@@ -1063,7 +1063,19 @@ nav = [
         {"Quests" = [
             "aviv-scoutroute/quests/index.md",
             {"Element Query Guide" = "aviv-scoutroute/quests/element-query.md"},
-            {"Element Type Icon Guide" = "aviv-scoutroute/quests/element-type-icon.md"}
+            {"Element Type Icon Guide" = "aviv-scoutroute/quests/element-type-icon.md"},
+            {"Creator" = [
+                "aviv-scoutroute/quests/creator/index.md",
+                {"User Manual" = [
+                    "aviv-scoutroute/quests/creator/user-manual/index.md",
+                    {"Getting Started" = "aviv-scoutroute/quests/creator/user-manual/getting-started.md"},
+                    {"Editor Overview" = "aviv-scoutroute/quests/creator/user-manual/editor-overview.md"},
+                    {"Elements" = "aviv-scoutroute/quests/creator/user-manual/elements.md"},
+                    {"Quests" = "aviv-scoutroute/quests/creator/user-manual/quests.md"},
+                    {"Presets and Custom Icons" = "aviv-scoutroute/quests/creator/user-manual/presets-and-icons.md"},
+                    {"Validation and Export" = "aviv-scoutroute/quests/creator/user-manual/validation-and-export.md"}
+                ]}
+            ]}
         ]},
         {"User Manual" = [
             "aviv-scoutroute/user-manual/index.md",
