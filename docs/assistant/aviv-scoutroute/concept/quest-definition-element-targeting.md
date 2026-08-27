@@ -17,7 +17,7 @@ topics:
 risk_level: medium
 authority_level: explanatory
 publication_status: draft
-last_reviewed: 2026-08-14
+last_reviewed: 2026-08-27
 retrieval_priority: high
 assistant_behavior:
     allow_inference: false
@@ -46,7 +46,7 @@ This connects a field form to the feature it is intended to describe.
 
 ## What This Means
 
-Define the matching query and the questions for the selected element. The documented syntax supports tag presence or absence, exact and regular-expression values, numeric or date comparisons, and `and`/`or` expressions with parentheses. A feature-presets block can also define which new features a contributor may add. For example, a curb-ramp preset can use the OpenSidewalks tag `barrier=kerb` and target the resulting feature with an element query specified in the quest definition.
+Define the matching query and the questions for the selected element. The documented syntax supports tag presence or absence, exact and regular-expression values, numeric or date comparisons, and `and`/`or` expressions with parentheses. Multiple element types can be targeted together by separating them with a comma, for example `nodes, ways`. A feature-presets block can also define which new features a contributor may add. For example, a curb-ramp preset can use the OpenSidewalks tag `barrier=kerb` and target the resulting feature with an element query specified in the quest definition.
 
 ## What This Does Not Mean
 
@@ -58,7 +58,7 @@ Test the query against the workspace data and review the resulting change set. I
 
 ## Example
 
-Examples include `ways`, `ways with (footway=sidewalk)`, `ways with (footway=sidewalk and !surface)`, and `nodes with (barrier=kerb and !tactile_paving)`.
+Examples include `ways`, `ways with (footway=sidewalk)`, `ways with (footway=sidewalk and !surface)`, `nodes with (barrier=kerb and !tactile_paving)`, and `ways, nodes with (footway=sidewalk or ext:new_sidewalk=yes)`.
 
 ## Assistant Guidance
 

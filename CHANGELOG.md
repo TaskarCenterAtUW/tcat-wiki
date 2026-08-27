@@ -22,6 +22,21 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/),
 
 -->
 
+## v15.12.0 (2026-08-26)
+
+### Features
+
+- **Docs**: Created docs\aviv-scoutroute\quests\creator\
+- **Docs**: Updated docs\opensidewalks\tasking-manager\project-list.md
+- **Docs**: Updated docs\assistant\aviv-scoutroute\concept\quest-definition-element-targeting.md
+- **Docs**: Updated docs\assistant\aviv-scoutroute\concept\quest-definition-query-syntax.md
+- **Docs**: Updated docs\aviv-scoutroute\quests\element-query.md
+- **Docs**: Updated docs\assistant\aviv-scoutroute\workflow\design-conditional-follow-up-quests.md
+- **Docs**: Updated docs\assistant\aviv-scoutroute\concept\quest-answer-dependency-logic.md
+- **Docs**: Updated docs\assistant\aviv-scoutroute\concept\quest-dependency-evaluators.md
+- **Docs**: Updated docs\accessmap\user-manual\profiles.md
+- **Docs**: Updated docs\accessmap\user-manual\navigation.md
+
 ## v15.11.1 (2026-08-24)
 
 ### Fixes

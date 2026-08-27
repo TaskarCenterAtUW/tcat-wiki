@@ -87,6 +87,12 @@ To receive alerts through your screen reader:
 | **Building alerts** | When the route passes nearby buildings                                                                |
 | **Landmark alerts** | When the route passes a landmark such as a bench or waste bin within the configured landmark distance |
 
+#### Exploring the Route
+
+Through the screen reader, you hear alerts related to the current segment you are traversing. You can, however, use regular gestures at any time to navigate the screen and explore the whole route. As you finish navigating each segment, its card disappears — in other words, the first directional card the screen reader is focused on is the one you're currently navigating.
+
+Different element types in a direction card are laid out at different HTML heading levels. This means screen reader users can use their configured shortcuts to navigate by heading level if they need only specific information. For example, to hear only the directions and skip other related information, navigate by heading level 2.
+
 ---
 
 ![Directions card with landmarks](../../resources/images/accessmap/user-manual/navigation/landmarks-light.png#only-light){ .img-right }

@@ -22,6 +22,8 @@ The `quest_query` attribute of an AVIV ScoutRoute long form quest definition is 
 
 For example, to get all ways, simply enter the query: `ways`
 
+Multiple element geometry types can be queried together by separating them with a comma, for example: `nodes, ways with (ext:example=yes)`
+
 | Expression                   | \[matches] returns `true` if element...                                                                                   |
 | :--------------------------- | :------------------------------------------------------------------------------------------------------------------------ |
 | `shop`                       | has a tag with key `shop`                                                                                                 |
@@ -67,8 +69,10 @@ The queries can be combined with parenthesis and can also be used for matching w
 
 ### Example queries:
 
-- Get all sidewalks: `ways with (footway=sidewalk)`
+- Get all sidewalk ways: `ways with (footway=sidewalk)`
 
-- Get all sidewalks without a surface tag: `ways with (footway=sidewalk and !surface)`
+- Get all sidewalk ways without a `surface` tag: `ways with (footway=sidewalk and !surface)`
 
-- Get all kerbs without a tactile_paving tag: `nodes with (barrier=kerb and !tactile_paving)`
+- Get all curb nodes without a `tactile_paving` tag: `nodes with (barrier=kerb and !tactile_paving)`
+
+- Get all sidewalk ways or new-sidewalk nodes: `ways, nodes with (footway=sidewalk or ext:new_sidewalk=yes)`

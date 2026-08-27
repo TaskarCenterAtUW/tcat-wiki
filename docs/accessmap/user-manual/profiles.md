@@ -22,7 +22,7 @@ _For a list of all guides on the TCAT Wiki, refer to the [Guides List](../../gui
 
 AccessMap includes several pre-defined **mobility profiles**, each designed to optimize routing for a specific set of needs. Profiles set recommended default values for routing preferences such as maximum steepness and barrier avoidance.
 
-The profile panel is located in the [sidebar](interface.md#sidebar). Select a profile to apply it to your route planning.
+The profile panel is located in the [sidebar](interface.md#sidebar). Select a profile to apply it to your route planning. Your profile selection is saved locally on your device and does not need to be reset each time you create a route.
 
 ![Profile selection panel](../../resources/images/accessmap/user-manual/profiles/profiles-light.png#only-light)
 ![Profile selection panel](../../resources/images/accessmap/user-manual/profiles/profiles-dark.png#only-dark)
@@ -68,7 +68,7 @@ Selecting the **Custom** profile unlocks individual preference controls. These l
 
 #### Screen Reader and Landmark Settings
 
-These settings are particularly relevant for blind and low-vision users using a screen reader:
+This section helps customize the alerts your screen reader calls out as you navigate. Even if you turn all alerts off, you can still explore the detailed directions, landmarks, surface changes, and steepness by scrolling through the screen with any screen reader.
 
 | Setting                | Description                                                                                                           |
 | :--------------------- | :-------------------------------------------------------------------------------------------------------------------- |

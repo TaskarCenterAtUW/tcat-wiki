@@ -16,9 +16,9 @@ topics:
     - formats
     - editing
 risk_level: medium
-authority_level: provisional
+authority_level: explanatory
 publication_status: draft
-last_reviewed: 2026-07-22
+last_reviewed: 2026-08-27
 retrieval_priority: high
 assistant_behavior:
     allow_inference: false
@@ -49,7 +49,7 @@ The query determines which mapped elements receive a quest, so an incorrect expr
 
 ## What This Means
 
-Examples include `ways`, `shop`, `!shop`, `shop = car`, `shop ~ car|boat`, numeric or date comparisons, `and`, `or`, and parentheses. Regexes match the whole string according to the current guide.
+Examples include `ways`, `shop`, `!shop`, `shop = car`, `shop ~ car|boat`, numeric or date comparisons, `and`, `or`, and parentheses. Multiple element types can be queried together by separating them with a comma, for example `nodes, ways`. Regexes match the whole string according to the current guide.
 
 ## What This Does Not Mean
 
@@ -61,7 +61,7 @@ Start with the element type and add the narrowest tag filters needed. Test expre
 
 ## Example
 
-`ways with (footway=sidewalk and !surface)` targets sidewalk ways without a `surface` tag.
+`ways with (footway=sidewalk and !surface)` targets sidewalk ways without a `surface` tag. `ways, nodes with (footway=sidewalk or ext:new_sidewalk=yes)` targets both nodes and ways matching either tag.
 
 ## Assistant Guidance
 
