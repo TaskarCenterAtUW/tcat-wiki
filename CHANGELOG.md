@@ -32,6 +32,7 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/),
 - **Docs**: Updated docs\assistant\aviv-scoutroute\concept\quest-definition-query-syntax.md
 - **Docs**: Updated docs\aviv-scoutroute\quests\element-query.md
 - **Docs**: Updated docs\assistant\aviv-scoutroute\workflow\design-conditional-follow-up-quests.md
+- **Docs**: Updated docs\assistant\aviv-scoutroute\concept\quest-answer-dependency-logic.md
 
 ## v15.11.1 (2026-08-24)
 
