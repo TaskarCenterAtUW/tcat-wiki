@@ -12,15 +12,19 @@ tags:
 
 ## Presets and Custom Icons
 
-This section explains how to use Feature Presets, Element Presets, Quest Presets, and custom icons in a quest definition. These preset types serve different purposes:
-
-- **Feature Presets** define the point features that contributors can create in AVIV ScoutRoute.
-- **Element Presets** help authors add common elements to a quest definition in the Creator.
-- **Quest Presets** help authors add common quests to an element in the Creator.
+This section explains how to use Feature Presets, Element Presets, Quest Presets, and custom icons in a quest definition.
 
 _For a list of all guides on the TCAT Wiki, refer to the [Guides List](../../../../guides-list/index.md)._{ .guides-list-ref }
 
 ---
+
+### Differentiation
+
+These preset types serve different purposes:
+
+- **Feature Presets** define the point features that contributors can create in AVIV ScoutRoute.
+- **Element Presets** help authors add common elements to a quest definition in the Creator.
+- **Quest Presets** help authors add common quests to an element in the Creator.
 
 ### Add a Feature Preset
 

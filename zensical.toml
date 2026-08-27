@@ -270,6 +270,7 @@ nav = [
                 {"What input limitations affect numeric quests?" = "assistant/aviv-scoutroute/concept/numeric-quest-input.md"},
                 {"How are numeric quest values validated?" = "assistant/aviv-scoutroute/concept/numeric-quest-validation.md"},
                 {"How does AVIV ScoutRoute handle downloaded data and uploads?" = "assistant/aviv-scoutroute/concept/offline-data-and-upload.md"},
+                {"How do multiple quest answer dependencies combine?" = "assistant/aviv-scoutroute/concept/quest-answer-dependency-logic.md"},
                 {"What do AVIV ScoutRoute quest contributions change?" = "assistant/aviv-scoutroute/concept/quest-contributions.md"},
                 {"How is a quest definition applied?" = "assistant/aviv-scoutroute/concept/quest-definition-application.md"},
                 {"What is the AVIV ScoutRoute Quest Definition Creator?" = "assistant/aviv-scoutroute/concept/quest-definition-creator.md"},

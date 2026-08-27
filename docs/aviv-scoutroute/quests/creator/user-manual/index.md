@@ -83,11 +83,7 @@ This section explains how to create and configure quest questions, answer choice
 
 #### [Presets and Custom Icons](presets-and-icons.md)
 
-This section explains how to use Feature Presets, Element Presets, Quest Presets, and custom icons in a quest definition. These preset types serve different purposes:
-
-- **Feature Presets** define the point features that contributors can create in AVIV ScoutRoute.
-- **Element Presets** help authors add common elements to a quest definition in the Creator.
-- **Quest Presets** help authors add common quests to an element in the Creator.
+This section explains how to use Feature Presets, Element Presets, Quest Presets, and custom icons in a quest definition.
 
 #### [Validation and Export](validation-and-export.md)
 
