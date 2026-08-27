@@ -112,6 +112,49 @@ Select **None** when the quest should not depend on another question. Use the st
 
 ---
 
+### Combine Answer Values in a Dependency
+
+Quest visibility is controlled by the `quest_answer_dependency` field, which the Creator populates from the **Dependency** settings. Within a single dependency condition, **Required Value** accepts either:
+
+- **A single value** - the dependent quest's answer must equal that value
+- **Multiple values** - the dependent quest's answer must equal **any one** of the listed values (an "OR" between the listed values)
+
+Enter each accepted value in **Required Value** for that condition to use the OR behavior. For example, to show a quest only when a previous quest is answered `example_1`, `example_2`, or `example_3`, enter all three values in the same condition:
+
+```json
+"required_value": ["example_1", "example_2", "example_3"]
+```
+
+---
+
+### Combine Multiple Dependency Conditions
+
+**Multiple (AND)** adds more than one condition to a single quest's `quest_answer_dependency`, each referencing its own **Dependent Question**. The quest shows only when **every** condition in the list is satisfied ("AND" between conditions). Combined with the OR behavior of multiple values within one condition, this lets a dependency list express `(condition 1) AND (condition 2)`, where each condition can itself be `(value A OR value B)`.
+
+For example, this dependency list shows the quest only when quest 101 is answered `value_a` **or** `value_b`, **and** quest 102 is answered `value_x`:
+
+```json
+"quest_answer_dependency": [
+    { "question_id": 101, "required_value": ["value_a", "value_b"] },
+    { "question_id": 102, "required_value": "value_x" }
+]
+```
+
+```text
+Visible only if: (Q101 == "value_a" OR Q101 == "value_b") AND (Q102 == "value_x")
+```
+
+| Q101 answer | Q102 answer   | Quest visible?                        |
+| :---------- | :------------ | :------------------------------------ |
+| `value_a`   | `value_x`     | Yes                                   |
+| `value_b`   | `value_x`     | Yes                                   |
+| `value_c`   | `value_x`     | No — fails Q101's OR condition        |
+| anything    | not `value_x` | No — fails the AND between conditions |
+
+Every condition in a **Multiple (AND)** dependency list must pass; no condition is evaluated as an "or" against another condition in the same list.
+
+---
+
 ### Reorder or Remove Quests
 
 - **Select** **Move quest up** or **Move quest down** to change the order of questions within an element
