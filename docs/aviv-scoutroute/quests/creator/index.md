@@ -10,7 +10,7 @@ The [Quest Definition Creator](https://taskarcenteratuw.github.io/asr-quests/) i
 
 ---
 
-![Quest Definition Creator screenshot showing a sidewalk definition, live validation status, and JSON preview](../../../resources/images/aviv-scoutroute/quests/creator/01-cwreator-light.avif#only-light)
+![Quest Definition Creator screenshot showing a sidewalk definition, live validation status, and JSON preview](../../../resources/images/aviv-scoutroute/quests/creator/01-creator-light.avif#only-light)
 ![Quest Definition Creator screenshot showing a sidewalk definition, live validation status, and JSON preview](../../../resources/images/aviv-scoutroute/quests/creator/01-creator-dark.avif#only-dark)
 
 ---
