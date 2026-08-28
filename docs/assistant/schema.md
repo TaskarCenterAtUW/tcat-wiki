@@ -83,7 +83,7 @@ Consequences for authors:
 - `publication_status` controls human-layer visibility: `stub`, `draft`, and `archived` pages are agent-only; a page appears as an HTML page only once it is `published`.
 - Because every page is served as raw `.md` at its docs-relative source path, stubs MUST still contain valid frontmatter and the required heading scaffold (with `TODO` placeholders) so the `.md` resolves to well-formed content.
 - A `published` human page MUST NOT link to a page that is not built to HTML (a `stub`, a `draft`, an `archived` page, or anything under `support/`). Such links are treated as authoring errors and fail the build.
-- `dispatch.md` is a generated registry of the agent layer, produced by `utilities/akb-generate-dispatch.py`. Do not manually edit it.
+- `dispatch.md` is a generated registry of the agent layer, produced by `utilities/akb_generate_dispatch.py`. Do not manually edit it.
 
 ## YAML frontmatter (required keys)
 

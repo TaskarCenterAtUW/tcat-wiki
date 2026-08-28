@@ -240,23 +240,23 @@ For creating screenshots with a consistent style, Firefox DevTools is to be used
 
 4. It is recommended to remove all embedded metadata, such as with the use of [ExifToolGUI](https://exiftool.org/gui/).
 
-5. Process screenshots with the `process-screenshot.py` utility to generate themed light/dark variants with borders and drop shadows:
+5. Process screenshots with the `process_screenshot.py` utility to generate themed light/dark variants with borders and drop shadows:
 
     ```powershell
     # Ensure venv is activated first!
     ..\.venv\Scripts\Activate.ps1
 
     # Process a single screenshot
-    python .\utilities\process-screenshot.py docs\resources\images\example\screenshot.png
+    python .\utilities\process_screenshot.py docs\resources\images\example\screenshot.png
 
     # Process all images in a directory
-    python .\utilities\process-screenshot.py docs\resources\images\example\
+    python .\utilities\process_screenshot.py docs\resources\images\example\
 
     # Process recursively with a custom profile
-    python .\utilities\process-screenshot.py docs\resources\images\ --recurse --profile uw-purple
+    python .\utilities\process_screenshot.py docs\resources\images\ --recurse --profile uw-purple
 
     # Regenerate existing output files
-    python .\utilities\process-screenshot.py screenshot.png --overwrite
+    python .\utilities\process_screenshot.py screenshot.png --overwrite
     ```
 
     The script converts non-AVIF sources to lossless `.avif` files and produces two near-lossless variants at quality `90`, using the slowest AVIF compression setting:
@@ -308,13 +308,13 @@ The AKB transcript ingestion pipeline extracts domain knowledge from meeting tra
 
 5. Review all proposed file edits using VS Code's standard agentic edit review flow before accepting.
 
-The script `utilities/akb-compress-transcript.py` can also be run independently to produce a clean `.compressed.txt` file alongside any transcript:
+The script `utilities/akb_compress_transcript.py` can also be run independently to produce a clean `.compressed.txt` file alongside any transcript:
 
 ```powershell
 # Ensure venv is activated first!
 .\.venv\Scripts\Activate.ps1
 
-python .\utilities\akb-compress-transcript.py local-storage\transcripts\<filename>.txt
+python .\utilities\akb_compress_transcript.py local-storage\transcripts\<filename>.txt
 ```
 
 #### Deployment Checklist

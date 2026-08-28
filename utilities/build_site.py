@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""build-site.py - Two-layer build orchestrator for the TCAT Wiki.
+"""build_site.py - Two-layer build orchestrator for the TCAT Wiki.
 
 Produces two parallel copies of docs/ used to build/serve the site:
 
@@ -22,9 +22,9 @@ never mutate docs/ or the committed zensical.toml.
 CLI usage (run from any working directory; paths resolve relative to this
 file's repo):
 
-    python utilities/build-site.py            # prep only (copy/filter/strip/config)
-    python utilities/build-site.py --build     # prep, then `zensical build -c`, then overlay
-    python utilities/build-site.py --serve     # prep, then `zensical serve` (blocking)
+    python utilities/build_site.py            # prep only (copy/filter/strip/config)
+    python utilities/build_site.py --build     # prep, then `zensical build -c`, then overlay
+    python utilities/build_site.py --serve     # prep, then `zensical serve` (blocking)
 
 Exits non-zero, with a list of offending pages, if a published human-docs page
 links to an assistant page that was filtered out of the human layer (a stub,
@@ -85,8 +85,8 @@ class HumanDocsValidationError(Exception):
 
 
 def _import_dispatch_generator():
-    """Import utilities/akb-generate-dispatch.py despite its hyphenated filename."""
-    module_path = SCRIPT_DIR / "akb-generate-dispatch.py"
+    """Import utilities/akb_generate_dispatch.py as a module."""
+    module_path = SCRIPT_DIR / "akb_generate_dispatch.py"
     spec = importlib.util.spec_from_file_location(
         "akb_generate_dispatch", module_path)
     if spec is None or spec.loader is None:

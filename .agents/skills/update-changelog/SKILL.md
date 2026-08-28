@@ -17,13 +17,14 @@ You are preparing a versioned TCAT Wiki changelog entry from recent git commit h
 
 ## Step 2 — Build the versioned update
 
-Create a versioned entry using the version and release date provided by the user. Use `### Features` and `### Fixes` headings only when they have entries.
+Create a versioned entry using the version and release date provided by the user. Use `### Added`, `### Fixed`, and `### Changed` headings (per [Keep a Changelog](https://keepachangelog.com/en/1.1.0/)) only when they have entries.
 
 **Inclusion rules:**
 
-- `feat(...):` → **Features**
-- `fix(...):` → **Fixes**
-- All other types (`chore`, `docs`, `style`, `refactor`, `ci`, version-bump commits, merge commits) → **omit**
+- `feat(...):` → **Added**
+- `fix(...):` → **Fixed**
+- All other types (`chore`, `docs`, `style`, `refactor`, `ci`, and similar non-feat/fix commits) → **Changed**
+- Version-bump commits and merge commits → **omit**
 
 **Writing rules:**
 
@@ -31,19 +32,26 @@ Create a versioned entry using the version and release date provided by the user
 - Keep the scope in parentheses if it adds useful context, e.g. `(docs-workspaces)`
 - Group closely related commits into a single bullet rather than listing each individually
 - Omit the section heading entirely if it would be empty
+- Keep each bullet's main line to a single line. If a commit needs more detail (e.g. specific file paths, multiple sub-changes), add one or more indented lines directly below it, each starting with `Details: ` followed by the detail in italics
 
 **Template:**
 
 ```markdown
 ## vX.Y.Z (YYYY-MM-DD)
 
-### Features
+### Added
 
 - Description of feature one
 
-### Fixes
+### Fixed
 
 - Description of fix one
+    - Details: _Additional detail one_
+    - Details: _Additional detail two_
+
+### Changed
+
+- Description of a chore/refactor/docs/style/ci change
 ```
 
 ## Step 3 — Update CHANGELOG.md

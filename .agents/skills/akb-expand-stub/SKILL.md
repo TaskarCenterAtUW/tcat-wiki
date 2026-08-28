@@ -130,7 +130,7 @@ Write the completed file to the path given by the user. Overwrite the stub entir
 Regenerate the registry instead of hand-editing it:
 
 ```powershell
-python utilities/akb-generate-dispatch.py
+python utilities/akb_generate_dispatch.py
 ```
 
 If the repository's generator requires a different documented invocation, follow its current usage. Never manually edit generated `docs/assistant/dispatch.md`.

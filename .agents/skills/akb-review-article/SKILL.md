@@ -89,4 +89,4 @@ Write exactly one of `Pass` or `Fail`. Use `Fail` when any Error is present; war
 
 ### Human follow-up
 
-State whether the article appears ready for human editorial sign-off. If a subsequent approved edit changes the article inventory or metadata used by the registry, regenerate `docs/assistant/dispatch.md` with `python utilities/akb-generate-dispatch.py`; never edit the generated file manually.
+State whether the article appears ready for human editorial sign-off. If a subsequent approved edit changes the article inventory or metadata used by the registry, regenerate `docs/assistant/dispatch.md` with `python utilities/akb_generate_dispatch.py`; never edit the generated file manually.

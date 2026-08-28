@@ -17,7 +17,7 @@ applyTo: "**"
 
 - When editing Markdown under `docs/`, follow [the content style guide](content-style.instructions.md) and the applicable accessibility instructions.
 - Preserve frontmatter titles and tags. For new or moved documentation pages, run the navigation and guide-list generators from `utilities/` before validating the build.
-- Do not hand-edit `docs/assistant/dispatch.md`; regenerate it with `utilities/akb-generate-dispatch.py`.
+- Do not hand-edit `docs/assistant/dispatch.md`; regenerate it with `utilities/akb_generate_dispatch.py`.
 
 ## Validation and changelog
 

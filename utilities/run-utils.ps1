@@ -15,7 +15,7 @@
     This script performs two phases:
 
     PHASE 1: Runs Pester tests for all utility scripts to ensure they are working correctly,
-    then regenerates docs/assistant/dispatch.md (akb-generate-dispatch.py) so it reflects the
+    then regenerates docs/assistant/dispatch.md (akb_generate_dispatch.py) so it reflects the
     current docs/assistant/ tree, then runs the Python pytest suites for the Python utilities
     (test_akb_content.py cross-validates docs/assistant/ against dispatch.md, so the registry
     must be regenerated before those checks run or they will fail against a stale registry).
@@ -28,11 +28,11 @@
     If any test fails, the script exits with an error code.
 
     PHASE 2: Runs the utility scripts in sequence:
-    1. akb-build-glossary.py - Generates the assistant abbreviations glossary
+    1. akb_build_glossary.py - Generates the assistant abbreviations glossary
     2. generate-guides-lists.ps1 - Generates guide sections in index.md files
     3. generate-nav.ps1 - Updates navigation in zensical.toml
     4. check-links.ps1 - Validates all links in documentation
-    5. build-site.py - Prepares the two-layer build (human-docs/, agent-docs/,
+    5. build_site.py - Prepares the two-layer build (human-docs/, agent-docs/,
        zensical.build.toml) for deploy-parity local validation. Prep only; does
        not run `zensical build` or `serve` (use utilities/serve.ps1 for that).
 
@@ -360,7 +360,7 @@ if (-not $SkipTests) {
     # against the committed dispatch.md registry, so a stale registry (one
     # that hasn't been re-run since articles were added/removed/re-statused)
     # would make those checks fail even when the content itself is correct.
-    $dispatchScript = Join-Path $utilPath "akb-generate-dispatch.py"
+    $dispatchScript = Join-Path $utilPath "akb_generate_dispatch.py"
     Write-Host "  Regenerating docs/assistant/dispatch.md" -ForegroundColor Cyan
     Write-Host ""
     & $pythonExe $dispatchScript
@@ -372,11 +372,11 @@ if (-not $SkipTests) {
         exit 1
     }
     Write-Host ""
-    Write-Host "  ✓ COMPLETED: akb-generate-dispatch.py" -ForegroundColor Green
+    Write-Host "  ✓ COMPLETED: akb_generate_dispatch.py" -ForegroundColor Green
     Write-Host ""
 
     # Also run the Python pytest suites for the Python utilities
-    # (akb-generate-dispatch.py, build-site.py).
+    # (akb_generate_dispatch.py, build_site.py).
     Write-Host "  Running Python pytest suites" -ForegroundColor Cyan
     Write-Host ""
 
@@ -404,7 +404,7 @@ if (-not $TestsOnly) {
     Write-Host ""
 
     # 1. Build assistant glossary
-    $glossaryScript = Join-Path $utilPath "akb-build-glossary.py"
+    $glossaryScript = Join-Path $utilPath "akb_build_glossary.py"
     $pythonExe = Join-Path $utilPath ".." ".venv" "Scripts" "python.exe"
     if (-not (Test-Path $pythonExe)) {
         $pythonExe = "python"  # fallback to system Python
@@ -419,7 +419,7 @@ if (-not $TestsOnly) {
         exit 1
     }
     Write-Host ""
-    Write-Host "  ✓ COMPLETED: akb-build-glossary.py" -ForegroundColor Green
+    Write-Host "  ✓ COMPLETED: akb_build_glossary.py" -ForegroundColor Green
 
     Write-Host ""
 
@@ -503,7 +503,7 @@ if (-not $TestsOnly) {
 
     # 5. Two-layer build prep (deploy-parity local build: human-docs/, agent-docs/,
     #    zensical.build.toml). Prep only - does not run `zensical build` or `serve`.
-    $buildSiteScript = Join-Path $utilPath "build-site.py"
+    $buildSiteScript = Join-Path $utilPath "build_site.py"
     Write-Host "  Step 5/5: Preparing two-layer build (human-docs/, agent-docs/)" -ForegroundColor Cyan
     Write-Host ""
     & $pythonExe $buildSiteScript
@@ -514,7 +514,7 @@ if (-not $TestsOnly) {
         exit 1
     }
     Write-Host ""
-    Write-Host "  ✓ COMPLETED: build-site.py" -ForegroundColor Green
+    Write-Host "  ✓ COMPLETED: build_site.py" -ForegroundColor Green
 
     Write-Host ""
     Write-Host "PHASE 2 COMPLETE: All utilities ran successfully" -ForegroundColor Green

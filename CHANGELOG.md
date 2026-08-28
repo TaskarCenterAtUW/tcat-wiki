@@ -10,21 +10,33 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/),
 
 ## Unreleased: v0.0.0 (2026-00-00)
 
-### Features
+### Added
 
 - **Core**:
 - **Docs**:
 
-### Fixes
+### Changed
+
+- **Core**:
+- **Docs**:
+
+### Fixed
 
 - **Core**:
 - **Docs**:
 
 -->
 
+## v15.12.1 (2026-08-28)
+
+### Changed
+
+- **Utilities**: Renamed scripts to follow Python's `snake_case` module-naming convention
+- **Core**: Updated changelog conventions
+
 ## v15.12.0 (2026-08-26)
 
-### Features
+### Added
 
 - **Docs**: Created docs\aviv-scoutroute\quests\creator\
 - **Docs**: Updated docs\opensidewalks\tasking-manager\project-list.md
@@ -39,25 +51,25 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/),
 
 ## v15.11.1 (2026-08-24)
 
-### Fixes
+### Fixed
 
 - **Docs**: Fixed whitespace in frontmatter of docs\walksheds\tutorial\add-extension-dataset.md
 
 ## v15.11.0 (2026-08-24)
 
-### Features
+### Added
 
 - **Core**: Upgraded Zensical to 0.0.57
 - **Docs**: Created docs\walksheds\tutorial\add-extension-dataset.md
 
-### Fixes
+### Fixed
 
 - **Docs**: Updated utility link on docs\opensidewalks\schema\custom-points-in-osw.md
 - **Core**: Standardized changelog verbiage
 
 ## v15.10.0 (2026-08-21)
 
-### Features
+### Added
 
 - **Docs**: Updated docs\assistant\aviv-scoutroute\concept\quest-definition-creator.md
 - **Docs**: Updated docs\assistant\aviv-scoutroute\concept\quest-definition-feature-presets.md
@@ -76,7 +88,7 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/),
 
 ## v15.9.0 (2026-08-20)
 
-### Features
+### Added
 
 - **Docs**: Updated docs\assistant\qa-qc\concept\edge-betweenness.md
 - **Docs**: Updated docs\assistant\qa-qc\concept\path-count.md
@@ -88,43 +100,43 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/),
 
 ## v15.8.0 (2026-08-19)
 
-### Features
+### Added
 
 - **Docs**: Expanded abbreviations list
 - **Docs**: Updated docs\assistant\tdei\concept\job-osw-convert.md
 - **Docs**: Updated docs\tdei\portal\user-manual\jobs\osw-convert.md
 
-### Fixes
+### Fixed
 
 - **Docs**: Updated contact details
 
 ## v15.7.0 (2026-08-14)
 
-### Features
+### Added
 
 - **Docs**: Updated Assistant Knowledge Base articles
 
 ## v15.6.0 (2026-08-14)
 
-### Features
+### Added
 
 - **Docs**: Refreshed OSM-to-Workspaces tutorial
 - **Docs**: Updated abbreviations list
 
 ## v15.5.0 (2026-08-13)
 
-### Features
+### Added
 
 - **Core**: Bumped Zensical to 0.0.54
 
 ## v15.4.0 (2026-08-10)
 
-### Features
+### Added
 
 - **Core**: Bumped Zensical to 0.0.53
 - **Docs**: Updated Assistant Knowledge Base articles
 
-### Fixes
+### Fixed
 
 - **Core**: Reorganized main zensical.toml config to match upstream structure
 - **Docs**: Clarify wording around TDEI datasets and Workspaces relationship
@@ -134,19 +146,19 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/),
 
 ## v15.3.0 (2026-08-10)
 
-### Features
+### Added
 
 - **Docs**: Refreshed docs\tdei\portal\user-manual\datasets
 
 ## v15.2.0 (2026-08-10)
 
-### Features
+### Added
 
 - **Core**: Sunset event report generation feature
 
 ## v15.1.0 (2026-08-05)
 
-### Features
+### Added
 
 - **Docs**: Refreshed docs\os-connect\data-viewer
 - **Docs**: Refreshed docs\tdei\portal\user-manual\jobs
@@ -155,33 +167,33 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/),
 
 ## v15.0.0 (2026-08-03)
 
-### Features
+### Added
 
 - **Core**: Reduced file size of screenshots by switching to AVIF
 
 ## v14.6.0 (2026-08-03)
 
-### Features
+### Added
 
 - **Docs**: Updated homepage 'User Journeys' section
 
 ## v14.5.0 (2026-07-31)
 
-### Features
+### Added
 
 - **Core**: Bumped Zensical to 0.0.52
 - **Docs**: Updated Assistant Knowledge Base articles
 - **Docs**: Added authority level count table to dispatch generator
 - **Docs**: Updated abbreviations list
 
-### Fixes
+### Fixed
 
 - **Docs**: Removed outdated UI description in AccessMap User Manual
 - **Docs**: Fixed miscellaneous minor issues in the Assistant Knowledge Base
 
 ## v14.4.0 (2026-07-27)
 
-### Features
+### Added
 
 - **Docs**: Updated Assistant Knowledge Base articles
 - **Docs**: Updated os-connect/#dataset-name-suffixes with info about dataset relationships
@@ -189,57 +201,57 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/),
 
 ## v14.3.0 (2026-07-24)
 
-### Features
+### Added
 
 - **Docs**: Updated Assistant Knowledge Base articles
 
-### Fixes
+### Fixed
 
 - **Core**: Fixed AKB dispatch generator to use CRLF line endings
 
 ## v14.2.0 (2026-07-22)
 
-### Features
+### Added
 
 - **Core**: Bumped Zensical to 0.0.51
 - **Docs**: Ingest TCAT Office Hours transcripts into Assistant Knowledge Base content
 - **Docs**: Ingest TCAT Wiki content into Assistant Knowledge Base content
 
-### Fixes
+### Fixed
 
 - **Core**: Improved transcript compression utility's filtering of filler speech patterns
 
 ## v14.1.0 (2026-07-16)
 
-### Features
+### Added
 
 - **Docs**: Added assistant guidance for TDEI dataset lineage, source and derivative datasets, external attributes, integration workflows, and Workspaces project group roles
 
 ## v14.0.0 (2026-07-16)
 
-### Features
+### Added
 
 - **Core**: Refreshed project-wide coding instructions with current build, generated-file, documentation, and validation guidance
 
 ## v13.4.1 (2026-07-15)
 
-### Fixes
+### Fixed
 
 - **Docs**: Fixed formatting error in OpenSidewalks schema table
 
 ## v13.4.0 (2026-07-15)
 
-### Features
+### Added
 
 - **Core**: Added OpenSidewalks logo
 
 ## v13.3.0 (2026-07-13)
 
-### Features
+### Added
 
 - **Core**: Validated that every Assistant Knowledge Base Markdown file has valid YAML frontmatter containing all schema-required keys in the correct order, and included the check in the utility test runner
 
-### Fixes
+### Fixed
 
 - **Core**: Updated Assistant Knowledge Base frontmatter enum tests to validate the current `publication_status` and `authority_level` schema fields
 
@@ -253,13 +265,13 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/),
 
 ## v13.2.0 (2026-07-10)
 
-### Features
+### Added
 
 - **Core**: Added per-status article counts to the generated Assistant Knowledge Base dispatch status legend
 
 ## v13.1.0 (2026-07-09)
 
-### Features
+### Added
 
 - **Core**: Upgrade Zensical to 0.0.50
 - **Docs**: Added to the abbreviations list
@@ -272,7 +284,7 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/),
 - **Core**: Added `test_akb_content.py` tests validating that every AKB article's `products` and `topics` frontmatter values exactly match the controlled vocabularies in `assistant/schema.md`
 - **Docs**: Added full frontmatter to AKB schema doc
 
-### Fixes
+### Fixed
 
 - **Core**: Documented and tested that agent-layer URLs preserve docs-relative source paths, including `index.md`, while human index pages retain directory URLs
 - **Core**: Handled interrupted site preparation and local preview serving without printing a Python traceback
@@ -286,65 +298,65 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/),
 
 ## v13.0.0 (2026-07-06)
 
-### Features
+### Added
 
 - **Core**: Refactored build system to publish two parallel layers: Zensical-built human-facing HTML docs + assistant-optimized Markdown
 
 ## v12.5.1 (2026-07-01)
 
-### Fixes
+### Fixed
 
 - **Docs**: Updated knowledge base article slugs and fixed broken links
 
 ## v12.5.0 (2026-07-01)
 
-### Features
+### Added
 
 - **Core**: Added AKB transcript ingestion pipeline
     - Details: _Added `utilities/akb-compress-transcript.py` to strip VTT headers, timestamps, and blank lines from WebVTT transcripts, producing a clean `.compressed.txt` file. Added `.github/prompts/akb-ingest-transcript.prompt.md` and `.github/agents/akb-transcript-ingester.agent.md` to power the `/akb-ingest-transcript` command, which compresses a transcript, analyzes it against the AKB `dispatch.md` and `schema.md`, proposes bucketed new-article and update changes in chat, and applies them after user approval._
 
 ## v12.4.1 (2026-06-30)
 
-### Fixes
+### Fixed
 
 - **Docs**: Fixed broken image comparison sliders
 
 ## v12.4.0 (2026-06-30)
 
-### Features
+### Added
 
 - **Docs**: Added abbreviations and acronyms glossary with automated build process integrated into utility runner script
 
-### Fixes
+### Fixed
 
 - **Docs**: Fixed links
 
 ## v12.3.0 (2026-06-29)
 
-### Features
+### Added
 
 - **Docs**: Restructured the assistant knowledge base, updated the schema, and reorganized sections
 
-### Fixes
+### Fixed
 
 - **Docs**: Fixed broken links, dash and apostrophe encoding issues, and author-facing link annotations across AKB pages
 - **Docs**: Fixed AKB page slugs; aligned instructions with the updated AKB schema; cleaned up stale files and paths
 
 ## v12.2.0 (2026-06-24)
 
-### Features
+### Added
 
 - **Core**: Updated `run-utils` utility to support skipping internal or external links
 
 ## v12.1.0 (2026-06-24)
 
-### Fixes
+### Fixed
 
 - **Docs**: Improved table formatting
 
 ## v12.0.0 (2026-06-23)
 
-### Features
+### Added
 
 - **Core**: Added assistant knowledge base
 - **Core**: Updated build and deployment workflow to publish Assistant Knowledge Base pages as both user-facing Zensical-built HTML and raw Markdown
@@ -352,56 +364,56 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/),
 
 ## v11.12.1 (2026-06-02)
 
-### Fixes
+### Fixed
 
 - **Core**: Removed extra colon in Dependabot commit message prefix
 
 ## v11.12.0 (2026-05-22)
 
-### Features
+### Added
 
 - **Core**: Configured Dependabot for root Python dependencies and GitHub Actions updates
 - **Docs**: Expanded the site-wide abbreviations list
 
-### Fixes
+### Fixed
 
 - **Core**: Pin `zensical` to `0.0.43` so framework upgrades remain manual
 
 ## v11.11.0 (2026-05-11)
 
-### Features
+### Added
 
 - **Core**: Improved AI-consumption support with `llms.txt` and `robots.txt` files
 - **Docs**: Added minimal NDA event pages and supporting stats
 
-### Fixes
+### Fixed
 
 - **Docs**: Repaired links and anchors and escaped non-link bracket text
 - **Core**: Prevented an unnecessary trailing comma in generated nav output
 
 ## v11.10.1 (2026-04-29)
 
-### Fixes
+### Fixed
 
 - **Docs**: Fixed embedded converter iframe on "Import Curb Ramp Data into the TDEI" tutorial
 
 ## v11.10.0 (2026-04-29)
 
-### Features
+### Added
 
 - **Core**: Added AccessMap sprites
     - Details: _Extracted individual sprites from https://www.accessmap.app/sprite.svg and saved each as a separate image._
 
 ## v11.9.0 (2026-04-24)
 
-### Features
+### Added
 
 - **Core**: Added content style guidance system
     - Details: _Added golden sample templates per page type and updated both user-focused and AI-targeted documentation guidance._
 
 ## v11.8.1 (2026-04-22)
 
-### Fixes
+### Fixed
 
 - **Core**: Fixed `nav_order` keyboard/screen-reader focus order.
     - Details: _The CSS `order` property was already correcting the visual sequence, but DOM order (which screen readers and keyboard tab navigation follow) remained alphabetical. A new `sortNavByOrder` function in `extra.js` reads each item's `style.order` value and reappends DOM nodes in sorted order after every navigation event, aligning reading/focus order with visual order (WCAG SC 1.3.2, SC 2.4.3)._
@@ -409,85 +421,85 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/),
 
 ## v11.8.0 (2026-04-21)
 
-### Features
+### Added
 
 - **Core**: Added insert-image prompt
 
 ## v11.7.0 (2026-04-20)
 
-### Features
+### Added
 
 - **Docs**: Updated image paths; replaced outdated screenshots
 
-### Fixes
+### Fixed
 
 - **Docs**: Reorganized TDEI Portal images into `images/tdei/portal/` subdirectory structure
 
 ## v11.6.0 (2026-04-17)
 
-### Features
+### Added
 
 - **Docs**: Refreshed the Workspaces section
 
 ## v11.5.1 (2026-04-16)
 
-### Fixes
+### Fixed
 
 - **(Core)**: Improved build-and-deploy workflow
 
 ## v11.5.0 (2026-04-16)
 
-### Features
+### Added
 
 - **Core**: Added Google Analytics with cookie consent dialog
 - **Core**: Added footer "Change cookie settings" link, relocated after the "Made with Zensical" credit
 
-### Fixes
+### Fixed
 
 - **Core**: Fixed vertical alignment of checkbox list item text
 
 ## v11.4.1 (2026-04-15)
 
-### Fixes
+### Fixed
 
 - **Core**: Fixed top-of-page padding
 - **Core**: Cleaned up `extra.css`
 
 ## v11.4.0 (2026-04-07)
 
-### Features
+### Added
 
 - **Docs**: Added WAGISA abbreviation
 
-### Fixes
+### Fixed
 
 - **Docs**: Removed misleading "(PDF)" label from the Jurisdiction Snapshot link on the home page
 - **Docs**: Removed TDEI architecture chart from the home page
 
 ## v11.3.0 (2026-04-03)
 
-### Features
+### Added
 
 - **Docs**: Added tip in the TDEI Portal Datasets page explaining that the Dataset filter returns all partial matches, not just exact matches, with a visual example
 
-### Fixes
+### Fixed
 
 - **Docs**: Improved alt text on TDEI Portal Datasets page images for better accessibility
 
 ## v11.2.0 (2026-04-03)
 
-### Features
+### Added
 
 - **Docs**: Added dataset name suffix reference with table, examples, and visual guide to OS-CONNECT documentation
 
 ## v11.1.0 (2026-04-02)
 
-### Features
+### Added
 
 - **Core**: Added GitHub repo link and view/edit page action buttons; repositioned them into the right sidebar "On this page" header to keep them accessible but visually unobtrusive
 
 ## v11.0.0 (2026-03-30)
 
-### Features
+### Added
 
 - **Core**: Added changelog

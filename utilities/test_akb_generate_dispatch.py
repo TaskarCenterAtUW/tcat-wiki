@@ -1,4 +1,4 @@
-"""Pytest suite for utilities/akb-generate-dispatch.py.
+"""Pytest suite for utilities/akb_generate_dispatch.py.
 
 Uses a temp fixture tree (never the real docs/assistant/) to validate the
 dispatch generator's structure, status reporting, and edge-case handling.
@@ -10,7 +10,7 @@ from pathlib import Path
 
 import pytest
 
-MODULE_PATH = Path(__file__).parent / "akb-generate-dispatch.py"
+MODULE_PATH = Path(__file__).parent / "akb_generate_dispatch.py"
 spec = importlib.util.spec_from_file_location(
     "akb_generate_dispatch", MODULE_PATH)
 if spec is None or spec.loader is None:

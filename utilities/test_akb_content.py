@@ -20,7 +20,7 @@ DISPATCH_PATH = ASSISTANT_DIR / "dispatch.md"
 SCHEMA_PATH = ASSISTANT_DIR / "schema.md"
 
 # Top-level files that live directly in the assistant root and are never
-# treated as topic directories (mirrors akb-generate-dispatch.py).
+# treated as topic directories (mirrors akb_generate_dispatch.py).
 TOP_LEVEL_PEERS = {"index.md", "dispatch.md", "schema.md", "intents.md"}
 
 DOC_TYPE_SUBDIRS = ("concept", "workflow")
@@ -56,7 +56,7 @@ BASE_RE = re.compile(r"^Base:\s*`([^`]+)`")
 def parse_frontmatter(text):
     """Parse simple top-level ``key: value`` YAML frontmatter into a dict.
 
-    Mirrors the parser in utilities/akb-generate-dispatch.py: only scalar
+    Mirrors the parser in utilities/akb_generate_dispatch.py: only scalar
     top-level keys are captured, not nested maps/lists.
     """
     match = FRONTMATTER_RE.match(text)
@@ -522,7 +522,7 @@ def test_dispatch_lists_every_topic_article_exactly_once(dispatch_rows):
 
     Topic index.md files (doc_type "policy") are intentionally excluded: the
     generator links them via a "See [topic/index.md]" prose line rather than
-    a table row, per akb-generate-dispatch.py's render_topic().
+    a table row, per akb_generate_dispatch.py's render_topic().
     """
     listed_counts = defaultdict(int)
     for _heading_stack, file_path, _status in dispatch_rows:
