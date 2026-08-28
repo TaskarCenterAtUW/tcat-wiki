@@ -23,7 +23,7 @@
 // capitalized display values. Keys with spaces automatically gain a dash
 // variant in the expanded titleMap (e.g., "user manual" → "user-manual").
 //
-// Keep this in sync with $script:titleMap in utilities/generate-nav.ps1.
+// Keep this in sync with the title map in utilities/generate_nav.py.
 
 const titleMapSource = {
     // --- Acronyms & Technical Terms ---

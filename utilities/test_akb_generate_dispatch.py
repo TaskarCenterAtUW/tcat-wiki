@@ -159,6 +159,30 @@ def test_write_dispatch_creates_file(assistant_dir):
     assert "GENERATED FILE" in text
 
 
+def test_write_dispatch_preserves_date_when_content_is_unchanged(assistant_dir):
+    output_path = gad.write_dispatch(assistant_dir, today="2026-07-06")
+    original = output_path.read_text(encoding="utf-8")
+
+    gad.write_dispatch(assistant_dir, today="2026-08-28")
+
+    assert output_path.read_text(encoding="utf-8") == original
+
+
+def test_write_dispatch_updates_date_with_substantive_changes(assistant_dir):
+    output_path = gad.write_dispatch(assistant_dir, today="2026-07-06")
+    (assistant_dir / "alpha" / "concept" / "new-article.md").write_text(
+        "---\ntitle: New Article\npublication_status: draft\n"
+        "authority_level: provisional\n---\n\n# New Article\n",
+        encoding="utf-8",
+    )
+
+    gad.write_dispatch(assistant_dir, today="2026-08-28")
+
+    content = output_path.read_text(encoding="utf-8")
+    assert "last_reviewed: 2026-08-28" in content
+    assert "`new-article.md`" in content
+
+
 def test_topics_sorted_alphabetically(assistant_dir):
     content = gad.build_dispatch(assistant_dir, today="2026-07-06")
     alpha_pos = content.index("## Alpha")

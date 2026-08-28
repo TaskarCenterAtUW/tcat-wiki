@@ -27,6 +27,13 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/),
 
 -->
 
+## v15.13.0 (2026-08-28)
+
+### Changed
+
+- **Utilities**: Rewrote PowerShell utilities in Python
+- **Utilities**: Updated AKB dispatch and glossary builders to not output date-only changes
+
 ## v15.12.1 (2026-08-28)
 
 ### Changed

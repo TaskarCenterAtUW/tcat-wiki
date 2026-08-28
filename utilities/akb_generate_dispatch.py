@@ -42,6 +42,7 @@ STATUS_ORDER = ("stub", "draft", "published", "archived")
 AUTHORITY_ORDER = ("provisional", "explanatory", "official")
 
 FRONTMATTER_RE = re.compile(r"^---\s*\n(.*?)\n---\s*\n", re.DOTALL)
+LAST_REVIEWED_RE = re.compile(r"last_reviewed:\s*\d{4}-\d{2}-\d{2}")
 
 # Static frontmatter for the generated file. `{last_reviewed}` is substituted
 # with today's date at generation time; every other field is fixed.
@@ -330,11 +331,35 @@ def build_dispatch(assistant_dir: Path, today: str | None = None) -> str:
 
 
 def write_dispatch(assistant_dir: Path, today: str | None = None) -> Path:
-    """Generate dispatch.md content and write it into assistant_dir. Return the path written."""
-    content = build_dispatch(assistant_dir, today=today)
+    """Generate dispatch.md content and write it into assistant_dir. Return the path written.
+
+    If dispatch.md already exists and the only difference from the freshly
+    generated content is the ``last_reviewed`` date, the existing file is
+    left untouched (preserving its prior date) instead of being rewritten,
+    to avoid noisy no-op diffs when nothing substantive changed.
+    """
     output_path = assistant_dir / "dispatch.md"
+    content = build_dispatch(assistant_dir, today=today)
+
+    if output_path.exists():
+        existing = output_path.read_text(encoding="utf-8")
+        if _only_last_reviewed_differs(existing, content):
+            return output_path
+
     output_path.write_text(content, encoding="utf-8", newline="\r\n")
     return output_path
+
+
+def _only_last_reviewed_differs(old_text: str, new_text: str) -> bool:
+    """Return True if old_text and new_text are identical apart from their
+    ``last_reviewed: YYYY-MM-DD`` frontmatter line."""
+    if old_text == new_text:
+        return True
+    old_without_date = LAST_REVIEWED_RE.sub(
+        "last_reviewed: ", old_text, count=1)
+    new_without_date = LAST_REVIEWED_RE.sub(
+        "last_reviewed: ", new_text, count=1)
+    return old_without_date == new_without_date
 
 
 def main(argv=None):

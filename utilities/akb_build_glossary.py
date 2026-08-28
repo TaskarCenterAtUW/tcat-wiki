@@ -27,6 +27,19 @@ OUTPUT_PATH = (
 
 # Regex matching Markdown abbreviation plugin entries: *[ABBR]: Expansion
 ABBR_RE = re.compile(r"^\*\[(.+?)\]:\s+(.+)$")
+LAST_REVIEWED_RE = re.compile(r"last_reviewed:\s*\d{4}-\d{2}-\d{2}")
+
+
+def _only_last_reviewed_differs(old_text: str, new_text: str) -> bool:
+    """Return True if old_text and new_text are identical apart from their
+    ``last_reviewed: YYYY-MM-DD`` frontmatter line."""
+    if old_text == new_text:
+        return True
+    old_without_date = LAST_REVIEWED_RE.sub(
+        "last_reviewed: ", old_text, count=1)
+    new_without_date = LAST_REVIEWED_RE.sub(
+        "last_reviewed: ", new_text, count=1)
+    return old_without_date == new_without_date
 
 
 def parse_abbreviations(text: str) -> list[tuple[str, str]]:
@@ -195,6 +208,14 @@ def main() -> int:
 
     OUTPUT_PATH.parent.mkdir(parents=True, exist_ok=True)
     output = build_output(entries)
+
+    if OUTPUT_PATH.exists():
+        existing = OUTPUT_PATH.read_text(encoding="utf-8")
+        if _only_last_reviewed_differs(existing, output):
+            print(f"No changes for {OUTPUT_PATH} ({len(entries)} entries); "
+                  "leaving last_reviewed date unchanged.")
+            return 0
+
     OUTPUT_PATH.write_text(output, encoding="utf-8")
     print(f"Generated {OUTPUT_PATH} ({len(entries)} entries).")
     return 0

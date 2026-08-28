@@ -238,16 +238,16 @@ Describe "Script Structure" {
         $scriptContent | Should -Match 'SkipExternalLinksCheck.*NoCache.*cannot be used together'
     }
 
-    It "Should reference generate-guides-lists.ps1" {
-        $scriptContent | Should -Match 'generate-guides-lists\.ps1'
+    It "Should reference generate_guides_lists.py" {
+        $scriptContent | Should -Match 'generate_guides_lists\.py'
     }
 
-    It "Should reference generate-nav.ps1" {
-        $scriptContent | Should -Match 'generate-nav\.ps1'
+    It "Should reference generate_nav.py" {
+        $scriptContent | Should -Match 'generate_nav\.py'
     }
 
-    It "Should reference check-links.ps1" {
-        $scriptContent | Should -Match 'check-links\.ps1'
+    It "Should reference check_links.py" {
+        $scriptContent | Should -Match 'check_links\.py'
     }
 
     It "Should reference akb_build_glossary.py" {
@@ -283,9 +283,9 @@ Describe "Integration Tests" -Tag "Integration" {
             $result[0].Name | Should -Be "run-utils.Tests.ps1"
         }
 
-        It "Should find at least 4 test files (run-utils, generate-guides-lists, generate-nav, check-links)" {
+        It "Should find only the run-utils self-check Pester test (generate_guides_lists, generate_nav, check_links are now pytest)" {
             $result = Get-TestFiles -UtilPath $PSScriptRoot
-            $result.Count | Should -BeGreaterOrEqual 4
+            $result.Count | Should -Be 1
         }
     }
 }

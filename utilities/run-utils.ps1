@@ -14,24 +14,20 @@
 .DESCRIPTION
     This script performs two phases:
 
-    PHASE 1: Runs Pester tests for all utility scripts to ensure they are working correctly,
+    PHASE 1: Runs the Pester self-check for this script (run-utils.Tests.ps1),
     then regenerates docs/assistant/dispatch.md (akb_generate_dispatch.py) so it reflects the
-    current docs/assistant/ tree, then runs the Python pytest suites for the Python utilities
+    current docs/assistant/ tree, then runs the Python pytest suites for all Python utilities,
+    including generate_guides_lists.py, generate_nav.py, and check_links.py
     (test_akb_content.py cross-validates docs/assistant/ against dispatch.md, so the registry
     must be regenerated before those checks run or they will fail against a stale registry).
-    The Pester tests are run in this order:
-    1. run-utils.Tests.ps1 (self-check)
-    2. generate-guides-lists.Tests.ps1
-    3. generate-nav.Tests.ps1
-    4. check-links.Tests.ps1
 
     If any test fails, the script exits with an error code.
 
     PHASE 2: Runs the utility scripts in sequence:
     1. akb_build_glossary.py - Generates the assistant abbreviations glossary
-    2. generate-guides-lists.ps1 - Generates guide sections in index.md files
-    3. generate-nav.ps1 - Updates navigation in zensical.toml
-    4. check-links.ps1 - Validates all links in documentation
+    2. generate_guides_lists.py - Generates guide sections in index.md files
+    3. generate_nav.py - Updates navigation in zensical.toml
+    4. check_links.py - Validates all links in documentation
     5. build_site.py - Prepares the two-layer build (human-docs/, agent-docs/,
        zensical.build.toml) for deploy-parity local validation. Prep only; does
        not run `zensical build` or `serve` (use utilities/serve.ps1 for that).
@@ -51,7 +47,7 @@
     Mutually exclusive with -NoCache.
 
 .PARAMETER NoCache
-    Force fresh external link checks by bypassing the cache. Passes -NoCache to check-links.ps1.
+    Force fresh external link checks by bypassing the cache. Passes --no-cache to check_links.py.
     Mutually exclusive with -SkipExternalLinksCheck.
 
 .EXAMPLE
@@ -227,7 +223,10 @@ function Invoke-UtilityScript {
     .SYNOPSIS
         Runs a utility script and checks for errors
     .DESCRIPTION
-        Executes a PowerShell script and returns $true if it succeeds.
+        Executes a script (PowerShell .ps1 or Python .py, dispatched by
+        extension) and returns $true if it succeeds. Python scripts are run
+        with the repo venv interpreter when available, falling back to the
+        system "python" on PATH.
     .OUTPUTS
         Boolean indicating whether the script succeeded
     #>
@@ -237,6 +236,9 @@ function Invoke-UtilityScript {
 
         [Parameter(Mandatory = $false)]
         [string]$Description = "",
+
+        [Parameter(Mandatory = $false)]
+        [string[]]$ScriptArgs = @(),
 
         [Parameter(Mandatory = $false)]
         [switch]$Silent
@@ -256,10 +258,26 @@ function Invoke-UtilityScript {
     $global:LASTEXITCODE = 0
 
     try {
+        $isPython = [System.IO.Path]::GetExtension($ScriptPath) -eq ".py"
+        if ($isPython) {
+            $pythonExe = Join-Path $PSScriptRoot ".." ".venv" "Scripts" "python.exe"
+            if (-not (Test-Path $pythonExe)) {
+                $pythonExe = "python"  # fallback to system Python
+            }
+        }
+
         if ($Silent) {
-            & $ScriptPath *> $null
+            if ($isPython) {
+                & $pythonExe $ScriptPath @ScriptArgs *> $null
+            } else {
+                & $ScriptPath @ScriptArgs *> $null
+            }
         } else {
-            & $ScriptPath
+            if ($isPython) {
+                & $pythonExe $ScriptPath @ScriptArgs
+            } else {
+                & $ScriptPath @ScriptArgs
+            }
         }
 
         if ($LASTEXITCODE -ne 0) {
@@ -302,7 +320,7 @@ if (-not $utilPath) {
 }
 
 # Verify we're in the right place
-if (-not (Test-Path (Join-Path $utilPath "generate-nav.ps1"))) {
+if (-not (Test-Path (Join-Path $utilPath "generate_nav.py"))) {
     Write-Error "Could not find utility scripts. Please run from the utilities directory."
     exit 1
 }
@@ -424,7 +442,7 @@ if (-not $TestsOnly) {
     Write-Host ""
 
     # 2. Generate guides lists
-    $guidesListScript = Join-Path $utilPath "generate-guides-lists.ps1"
+    $guidesListScript = Join-Path $utilPath "generate_guides_lists.py"
     if (-not (Invoke-UtilityScript -ScriptPath $guidesListScript -Description "Step 2/5: Generating guides lists")) {
         Write-Host ""
         Write-Host "==========================================="
@@ -435,7 +453,7 @@ if (-not $TestsOnly) {
     Write-Host ""
 
     # 3. Generate navigation
-    $navScript = Join-Path $utilPath "generate-nav.ps1"
+    $navScript = Join-Path $utilPath "generate_nav.py"
     if (-not (Invoke-UtilityScript -ScriptPath $navScript -Description "Step 3/5: Generating navigation")) {
         Write-Host ""
         Write-Host "==========================================="
@@ -446,7 +464,7 @@ if (-not $TestsOnly) {
     Write-Host ""
 
     # 4. Check links
-    $linkCheckScript = Join-Path $utilPath "check-links.ps1"
+    $linkCheckScript = Join-Path $utilPath "check_links.py"
     if ($SkipInternalLinksCheck -and $SkipExternalLinksCheck) {
         # Skip link checking entirely
         Write-Host "  Step 4/5: Skipping link check (-SkipInternalLinksCheck -SkipExternalLinksCheck)" -ForegroundColor Yellow
@@ -454,8 +472,7 @@ if (-not $TestsOnly) {
         # Only check internal links when -SkipExternalLinksCheck is used
         Write-Host "  Step 4/5: Checking internal links only (-SkipExternalLinksCheck)" -ForegroundColor Cyan
         Write-Host ""
-        & $linkCheckScript -internal
-        if ($LASTEXITCODE -ne 0) {
+        if (-not (Invoke-UtilityScript -ScriptPath $linkCheckScript -ScriptArgs @("--internal") -Silent:$false)) {
             Write-Host ""
             Write-Host "==========================================="
             Write-Host "PHASE 2 FAILED at Step 4" -ForegroundColor Red
@@ -466,13 +483,13 @@ if (-not $TestsOnly) {
         if ($NoCache) {
             Write-Host "  Step 4/5: Checking external links only (-SkipInternalLinksCheck -NoCache)" -ForegroundColor Cyan
             Write-Host ""
-            & $linkCheckScript -external -NoCache
+            $linkCheckOk = Invoke-UtilityScript -ScriptPath $linkCheckScript -ScriptArgs @("--external", "--no-cache") -Silent:$false
         } else {
             Write-Host "  Step 4/5: Checking external links only (-SkipInternalLinksCheck)" -ForegroundColor Cyan
             Write-Host ""
-            & $linkCheckScript -external
+            $linkCheckOk = Invoke-UtilityScript -ScriptPath $linkCheckScript -ScriptArgs @("--external") -Silent:$false
         }
-        if ($LASTEXITCODE -ne 0) {
+        if (-not $linkCheckOk) {
             Write-Host ""
             Write-Host "==========================================="
             Write-Host "PHASE 2 FAILED at Step 4" -ForegroundColor Red
@@ -482,8 +499,7 @@ if (-not $TestsOnly) {
         # Check all links with fresh cache
         Write-Host "  Step 4/5: Checking all links (-NoCache)" -ForegroundColor Cyan
         Write-Host ""
-        & $linkCheckScript -NoCache
-        if ($LASTEXITCODE -ne 0) {
+        if (-not (Invoke-UtilityScript -ScriptPath $linkCheckScript -ScriptArgs @("--no-cache") -Silent:$false)) {
             Write-Host ""
             Write-Host "==========================================="
             Write-Host "PHASE 2 FAILED at Step 4" -ForegroundColor Red

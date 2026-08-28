@@ -192,7 +192,7 @@ def find_broken_assistant_links(human_dir):
     Only internal links whose resolved target falls under human_dir/assistant/
     are checked (that is the only subtree this filter step removes files
     from); links elsewhere are assumed valid (validated separately by
-    utilities/check-links.ps1 against the source docs/ tree).
+    utilities/check_links.py against the source docs/ tree).
     """
     assistant_dir = (human_dir / ASSISTANT_SUBDIR).resolve()
     errors = []

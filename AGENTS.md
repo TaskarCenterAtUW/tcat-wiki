@@ -35,7 +35,7 @@ For substantive guides, preserve human subject-matter meaning. Improve only veri
 - Place content in the appropriate `docs/<topic>/` subtree. Guides live beside their topic overview, not in `guides/` subdirectories.
 - Guide pages need frontmatter `title:` and suitable `tags:`. Supported guide types are `Guide`, `User Manual`, and `Tutorial`; supported audience/product tags are listed in the content-style guidance.
 - Use relative links. Add abbreviations to `includes/abbreviations.md`; the snippets plugin inserts them site-wide.
-- For new or moved pages, run `utilities/generate-guides-lists.ps1` and `utilities/generate-nav.ps1` from `utilities/`.
+- For new or moved pages, run `python utilities/generate_guides_lists.py` and `python utilities/generate_nav.py` from `utilities/`.
 - Preserve both `nav-item.html`/`extra.css` visual ordering and `extra.js` (`sortNavByOrder`) semantic ordering when changing `nav_order` behavior.
 - The content-style guidance defines guide-list exclusions and the required opening wording and generated-list behavior for tutorials and user manuals.
 
@@ -56,13 +56,13 @@ Use `utilities/run-utils.ps1` for the complete established workflow, or targeted
 
 ```powershell
 cd utilities
-.\generate-guides-lists.ps1
-.\generate-nav.ps1
-.\check-links.ps1 -internal
-.\check-links.ps1 -external -NoCache
+python generate_guides_lists.py
+python generate_nav.py
+python check_links.py --internal
+python check_links.py --external --no-cache
 ```
 
-External-link results are cached for 12 hours; `-NoCache` bypasses the cache. `run-utils.ps1` supports `-TestsOnly`, `-SkipLinkCheck`, `-NoCache`, and `-SkipTests`; its last two options are mutually exclusive. Python utility tests run with `python -m pytest utilities -q`; PowerShell utility tests require Pester v5+.
+External-link results are cached for 12 hours; `--no-cache` bypasses the cache. `run-utils.ps1` supports `-TestsOnly`, `-SkipLinkCheck`, `-NoCache`, and `-SkipTests`; its last two options are mutually exclusive. Python utility tests (including for `generate_guides_lists.py`, `generate_nav.py`, and `check_links.py`) run with `python -m pytest utilities -q`; the `run-utils.Tests.ps1` self-check requires Pester v5+.
 
 ## Specialized workflows
 
