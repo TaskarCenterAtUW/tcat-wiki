@@ -1,4 +1,4 @@
-"""Tests for utilities/process-screenshot.py."""
+"""Tests for utilities/process_screenshot.py."""
 
 import importlib.util
 import sys
@@ -7,7 +7,7 @@ from pathlib import Path
 import pytest
 from PIL import Image
 
-MODULE_PATH = Path(__file__).parent / "process-screenshot.py"
+MODULE_PATH = Path(__file__).parent / "process_screenshot.py"
 spec = importlib.util.spec_from_file_location(
     "process_screenshot", MODULE_PATH)
 process_screenshot = importlib.util.module_from_spec(spec)

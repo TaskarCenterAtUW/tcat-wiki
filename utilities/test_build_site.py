@@ -1,4 +1,4 @@
-"""Pytest suite for utilities/build-site.py.
+"""Pytest suite for utilities/build_site.py.
 
 Uses temp fixture trees (never the real docs/) to validate each pipeline
 step independently, plus the end-to-end prepare() orchestration (excluding
@@ -12,7 +12,7 @@ from pathlib import Path
 
 import pytest
 
-MODULE_PATH = Path(__file__).parent / "build-site.py"
+MODULE_PATH = Path(__file__).parent / "build_site.py"
 spec = importlib.util.spec_from_file_location("build_site", MODULE_PATH)
 bs = importlib.util.module_from_spec(spec)
 sys.modules["build_site"] = bs

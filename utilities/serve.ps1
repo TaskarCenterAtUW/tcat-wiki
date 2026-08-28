@@ -12,7 +12,7 @@
     Serves a local preview of the site that matches the deployed build exactly.
 
 .DESCRIPTION
-    Wraps utilities/build-site.py: runs the two-layer build prep (copy, filter,
+    Wraps utilities/build_site.py: runs the two-layer build prep (copy, filter,
     dispatch generation, agent-doc stripping, and zensical.build.toml generation),
     then runs `zensical serve -f zensical.build.toml`.
 
@@ -36,7 +36,7 @@
 $repoRoot = Split-Path -Parent $PSScriptRoot
 Push-Location $repoRoot
 try {
-    python utilities/build-site.py --serve
+    python utilities/build_site.py --serve
 } finally {
     Pop-Location
 }

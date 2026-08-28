@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""akb-generate-dispatch.py - Generate the Assistant Knowledge Base dispatch registry.
+"""akb_generate_dispatch.py - Generate the Assistant Knowledge Base dispatch registry.
 
 Scans an assistant knowledge-base directory (default: docs/assistant/) for
 topic subdirectories, each containing an index.md plus concept/ and workflow/
@@ -8,11 +8,11 @@ every article on disk together with its `publication_status` and
 `authority_level` frontmatter values.
 
 dispatch.md is a GENERATED build artifact. It must never be hand-edited;
-re-run this script (directly, or via utilities/build-site.py) whenever a
+re-run this script (directly, or via utilities/build_site.py) whenever a
 page is added, removed, or re-statused under the assistant tree.
 
 Run from any working directory; paths are resolved relative to this file
-unless --assistant-dir is given explicitly (used by build-site.py to target
+unless --assistant-dir is given explicitly (used by build_site.py to target
 the agent-docs/ copy).
 """
 
@@ -96,8 +96,8 @@ BODY_PREFIX = """
 <!-- @format -->
 
 <!-- GENERATED FILE — DO NOT EDIT BY HAND.
-     Produced by utilities/akb-generate-dispatch.py. Re-run the script
-     (or utilities/build-site.py) to refresh this file after adding,
+     Produced by utilities/akb_generate_dispatch.py. Re-run the script
+     (or utilities/build_site.py) to refresh this file after adding,
      removing, or re-statusing pages under docs/assistant/. -->
 
 # Assistant Knowledge Base — Dispatch
@@ -129,9 +129,9 @@ A stable registry decouples retrieval pipelines from the filesystem. Authors use
 
 **Agents**: Fetch `dispatch.md`, parse the registry tables, filter by `Status` or topic heading, then retrieve individual pages by constructing their URL as `https://taskarcenteratuw.github.io/tcat-wiki/` + the `Base:` path shown under the relevant heading + the filename in the table.
 
-**Authors**: Write or edit files directly under `docs/assistant/`; do not hand-edit this file. Re-run `utilities/akb-generate-dispatch.py` (or the full `utilities/build-site.py` pipeline) to refresh the registry after adding a page or changing its `publication_status`.
+**Authors**: Write or edit files directly under `docs/assistant/`; do not hand-edit this file. Re-run `utilities/akb_generate_dispatch.py` (or the full `utilities/build_site.py` pipeline) to refresh the registry after adding a page or changing its `publication_status`.
 
-**Maintainers**: This file is a generated build artifact. To change its structure, edit `utilities/akb-generate-dispatch.py`.
+**Maintainers**: This file is a generated build artifact. To change its structure, edit `utilities/akb_generate_dispatch.py`.
 
 ## Example
 

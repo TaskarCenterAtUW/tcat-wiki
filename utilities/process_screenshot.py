@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 """
-process-screenshot.py
+process_screenshot.py
 
 Convert source screenshots to AVIF and generate themed variants with borders
 and drop shadows for the TCAT Wiki. Produces two variants per input image for
@@ -13,14 +13,14 @@ Non-AVIF source files are replaced by lossless AVIF files after all requested
 outputs have been written successfully. Existing AVIF sources are preserved.
 
 Usage:
-  python process-screenshot.py <input> [options]
+  python process_screenshot.py <input> [options]
 
 Examples:
-  python process-screenshot.py screenshot.png
-  python process-screenshot.py path/to/images/*.png --output-dir ./processed
-  python process-screenshot.py crop.png --variants light --border-width 3
-  python process-screenshot.py docs/resources/images/ --recurse
-  python process-screenshot.py screenshot.png --profile uw-purple
+  python process_screenshot.py screenshot.png
+  python process_screenshot.py path/to/images/*.png --output-dir ./processed
+  python process_screenshot.py crop.png --variants light --border-width 3
+  python process_screenshot.py docs/resources/images/ --recurse
+  python process_screenshot.py screenshot.png --profile uw-purple
 
 Run with --help for full options.
 """

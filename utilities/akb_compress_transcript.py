@@ -1,15 +1,15 @@
 """
-akb-compress-transcript.py
+akb_compress_transcript.py
 
 Strips VTT headers, entry count numbers, and timestamps from a WebVTT transcript
 file, leaving only speaker lines with abbreviated speaker names. Output is
 written alongside the original file with a .compressed.txt suffix.
 
 Usage:
-    python utilities/akb-compress-transcript.py <path-to-transcript.txt>
+    python utilities/akb_compress_transcript.py <path-to-transcript.txt>
 
 Example:
-    python utilities/akb-compress-transcript.py local-storage/transcripts/2026-06-23_TCAT_Office_Hours_Transcript.txt
+    python utilities/akb_compress_transcript.py local-storage/transcripts/2026-06-23_TCAT_Office_Hours_Transcript.txt
 """
 
 import re
@@ -78,7 +78,7 @@ def compress_transcript(input_path: Path) -> Path:
 
 def main() -> None:
     if len(sys.argv) != 2:
-        print("Usage: python utilities/akb-compress-transcript.py <path-to-transcript.txt>")
+        print("Usage: python utilities/akb_compress_transcript.py <path-to-transcript.txt>")
         sys.exit(1)
 
     input_path = Path(sys.argv[1]).resolve()

@@ -61,7 +61,7 @@ From the repository root, activate the project virtual environment and run the
 processor once per selected source:
 
 ```powershell
-.\.venv\Scripts\Activate.ps1; python utilities\process-screenshot.py "<source-image-path>" --overwrite
+.\.venv\Scripts\Activate.ps1; python utilities\process_screenshot.py "<source-image-path>" --overwrite
 ```
 
 Confirm every expected output file exists after processing. If processing fails

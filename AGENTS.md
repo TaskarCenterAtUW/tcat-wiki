@@ -12,7 +12,7 @@ TCAT Wiki is a Zensical documentation site for Taskar Center for Accessible Tech
     .\.venv\Scripts\Activate.ps1
     ```
 
-- Change source files only. Never edit generated `site/`, `human-docs/`, `agent-docs/`, `zensical.build.toml`, or `docs/assistant/dispatch.md`; regenerate the latter with `python utilities/akb-generate-dispatch.py`.
+- Change source files only. Never edit generated `site/`, `human-docs/`, `agent-docs/`, `zensical.build.toml`, or `docs/assistant/dispatch.md`; regenerate the latter with `python utilities/akb_generate_dispatch.py`.
 - Keep changes narrow. Use the smallest relevant existing validation; do not add tooling or fix unrelated issues.
 - `CHANGELOG.md` is the only update-tracking record. Leave its commented `## Unreleased` block untouched. Record versioned release entries only, and do not create or use Git tags or GitHub releases for update tracking. Use [.agents/skills/update-changelog/SKILL.md](.agents/skills/update-changelog/SKILL.md).
 
@@ -41,7 +41,7 @@ For substantive guides, preserve human subject-matter meaning. Improve only veri
 
 ## Build, preview, and validation
 
-The deploy uses a human Zensical layer and an agent raw-Markdown layer. [utilities/build-site.py](utilities/build-site.py) prepares both, filters non-published AKB pages from the human layer, checks filtered-page links, regenerates dispatch, strips agent-irrelevant syntax, and overlays agent Markdown. A published page must not link to a stub, draft, archived, or `assistant/support/` page.
+The deploy uses a human Zensical layer and an agent raw-Markdown layer. [utilities/build_site.py](utilities/build_site.py) prepares both, filters non-published AKB pages from the human layer, checks filtered-page links, regenerates dispatch, strips agent-irrelevant syntax, and overlays agent Markdown. A published page must not link to a stub, draft, archived, or `assistant/support/` page.
 
 Do not serve directly from committed `zensical.toml`; it exposes non-deployed AKB content. Use the deploy-parity wrapper:
 
@@ -50,7 +50,7 @@ Do not serve directly from committed `zensical.toml`; it exposes non-deployed AK
 .\utilities\serve.ps1
 ```
 
-Equivalent build commands are `python utilities/build-site.py`, `python utilities/build-site.py --build`, and `python utilities/build-site.py --serve`. The preview does not live-reload `docs/` changes; restart it. Generated artifacts are ignored and must not be committed.
+Equivalent build commands are `python utilities/build_site.py`, `python utilities/build_site.py --build`, and `python utilities/build_site.py --serve`. The preview does not live-reload `docs/` changes; restart it. Generated artifacts are ignored and must not be committed.
 
 Use `utilities/run-utils.ps1` for the complete established workflow, or targeted commands as needed:
 
@@ -66,7 +66,7 @@ External-link results are cached for 12 hours; `-NoCache` bypasses the cache. `r
 
 ## Specialized workflows
 
-- **Screenshots:** `utilities/process-screenshot.py` converts sources to lossless AVIF and creates near-lossless `-light.avif` and `-dark.avif` variants. Use Windows paths in commands, forward slashes in Markdown, equivalent alt text, and `#only-light`/`#only-dark` fragments. See the insert-image skill and [CONTRIBUTING.md](CONTRIBUTING.md).
+- **Screenshots:** `utilities/process_screenshot.py` converts sources to lossless AVIF and creates near-lossless `-light.avif` and `-dark.avif` variants. Use Windows paths in commands, forward slashes in Markdown, equivalent alt text, and `#only-light`/`#only-dark` fragments. See the insert-image skill and [CONTRIBUTING.md](CONTRIBUTING.md).
 - **AKB:** The schema governs paths, metadata, headings, status, links, and behavior. Transcript ingestion must propose evidence-grounded changes and receive explicit approval before edits. `dispatch.md` is generated inventory, never an authoring source.
 
 ## Version control and project map
