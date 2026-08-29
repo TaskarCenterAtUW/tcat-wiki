@@ -15,16 +15,19 @@ topics:
     - os-connect
     - mpo
 risk_level: medium
-authority_level: explanatory
-publication_status: stub
-last_reviewed:
+authority_level: provisional
+publication_status: draft
+last_reviewed: 2026-08-28
 retrieval_priority: high
 assistant_behavior:
     allow_inference: false
     requires_citation: true
     abstain_if_missing_context: true
     do_not_claim: []
-related_pages: []
+related_pages:
+    - assistant/os-connect/concept/mpo-contribution.md
+    - assistant/os-connect/concept/local-vs-statewide-coordination.md
+    - assistant/os-connect/concept/mobility-equity.md
 tags:
     - Assistant
 ---
@@ -35,32 +38,34 @@ tags:
 
 ## Short Answer
 
-TODO
+An MPO could play a coordination, analysis, convening, and planning role for connected pedestrian data across its member jurisdictions. It may help align regional priorities while respecting local authority and community knowledge.
 
 ## Significance
 
-TODO
+Regional coordination can reveal cross-boundary gaps and support consistent analysis of access to transit, jobs, services, and other destinations.
 
 ## What This Means
 
-TODO
+Possible activities include shared data standards, regional comparisons, technical assistance, funding coordination, community engagement, and review of projects or corridors. The specific role must be established by current agreements and authority.
 
 ## What This Does Not Mean
 
-TODO
+An MPO does not automatically own local data, determine agency obligations, or turn a modeled metric into a funding or compliance decision.
 
 ## How To Use This
 
-TODO
+Start with a documented regional purpose, identify local data stewards, preserve source and version metadata, validate important findings, and communicate limitations.
 
 ## Example
 
-TODO
+An MPO identifies a pedestrian connection that crosses several jurisdictions and convenes local reviewers to resolve the boundary data and planning question.
 
 ## Assistant Guidance
 
-TODO
+Describe this as a possible role unless a current program defines it. Do not invent responsibilities, cite governance evidence, and abstain when the regional context is unknown.
 
 ## Related Concepts
 
-TODO
+- [How should MPOs contribute?](mpo-contribution.md)
+- [Local ownership and statewide coordination](local-vs-statewide-coordination.md)
+- [How does this improve mobility equity?](mobility-equity.md)

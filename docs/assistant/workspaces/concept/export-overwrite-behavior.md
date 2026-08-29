@@ -18,15 +18,18 @@ topics:
     - dataset-lineage
 risk_level: high
 authority_level: provisional
-publication_status: stub
-last_reviewed:
+publication_status: draft
+last_reviewed: 2026-08-28
 retrieval_priority: medium
 assistant_behavior:
     allow_inference: false
     requires_citation: true
     abstain_if_missing_context: true
     do_not_claim: []
-related_pages: []
+related_pages:
+    - assistant/workspaces/concept/export-process.md
+    - assistant/workspaces/concept/export-versioning.md
+    - assistant/workspaces/concept/dataset-lineage-in-tdei.md
 tags:
     - Assistant
 ---
@@ -37,32 +40,34 @@ tags:
 
 ## Short Answer
 
-TODO
+Export should be treated as a separate publication or dataset-creation step, not assumed to overwrite the original TDEI dataset. The exact behavior depends on the current Workspaces and TDEI workflow and target.
 
 ## Significance
 
-TODO
+Knowing overwrite behavior protects source data and helps users preserve lineage and reversibility.
 
 ## What This Means
 
-TODO
+Confirm the target dataset, export mode, permissions, resulting identifier, validation status, and publication step in the current documentation before proceeding.
 
 ## What This Does Not Mean
 
-TODO
+An export is not automatically a destructive replacement, and the absence of overwrite does not mean that the result is published or reviewed.
 
 ## How To Use This
 
-TODO
+Use a reviewed workspace, record source and target identifiers, check the confirmation or job result, and verify where the exported data is available.
 
 ## Example
 
-TODO
+A manager exports reviewed edits and records a new dataset or release identifier while retaining the original source for comparison.
 
 ## Assistant Guidance
 
-TODO
+Do not promise overwrite behavior without current evidence. Ask for the target and environment, cite the workflow, and abstain when the operation is unclear.
 
 ## Related Concepts
 
-TODO
+- [What happens during export?](export-process.md)
+- [What versioning occurs during export?](export-versioning.md)
+- [What is dataset lineage in TDEI?](dataset-lineage-in-tdei.md)

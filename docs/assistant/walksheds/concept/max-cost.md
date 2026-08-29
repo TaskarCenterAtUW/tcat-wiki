@@ -15,9 +15,9 @@ topics:
     - walksheds
     - cost
 risk_level: medium
-authority_level: explanatory
-publication_status: stub
-last_reviewed:
+authority_level: provisional
+publication_status: draft
+last_reviewed: 2026-08-28
 retrieval_priority: high
 assistant_behavior:
     allow_inference: false
@@ -35,32 +35,32 @@ tags:
 
 ## Short Answer
 
-TODO
+`max_cost` is the maximum accumulated travel cost allowed in a walkshed analysis. The cost may combine distance, elevation, barriers, crossing conditions, or profile-specific penalties according to the current implementation.
 
 ## Significance
 
-TODO
+The value determines how far the model may travel under its cost rules and therefore affects the size and shape of the reachable area.
 
 ## What This Means
 
-TODO
+Check the units, cost function, profile, network, origin, and dataset version. Do not assume that the value is ordinary distance or that the same number means the same thing across profiles or releases.
 
 ## What This Does Not Mean
 
-TODO
+`max_cost` is not a universal measure of a person's endurance, a legal accessibility threshold, or a guarantee that every location inside the result is reachable in practice.
 
 ## How To Use This
 
-TODO
+Record the value and its definition with every result. Compare analyses only when their cost rules and other inputs are compatible.
 
 ## Example
 
-TODO
+A lower `max_cost` produces a smaller modeled area for the same profile and network. The analyst explains the change as a travel-budget effect rather than a change in physical accessibility.
 
 ## Assistant Guidance
 
-TODO
+State the implementation and units, cite current documentation, and abstain when the cost definition is unknown.
 
 ## Related Concepts
 
-TODO
+The meaning of `max_cost` is implementation- and profile-dependent.

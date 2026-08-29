@@ -18,15 +18,18 @@ topics:
     - configuration
 risk_level: low
 authority_level: provisional
-publication_status: stub
-last_reviewed:
+publication_status: draft
+last_reviewed: 2026-08-28
 retrieval_priority: medium
 assistant_behavior:
     allow_inference: false
     requires_citation: true
     abstain_if_missing_context: true
     do_not_claim: []
-related_pages: []
+related_pages:
+    - assistant/workspaces/concept/imagery-json-configuration.md
+    - assistant/workspaces/concept/imagery-sources.md
+    - assistant/workspaces/concept/imagery-raw-json-requirement.md
 tags:
     - Assistant
 ---
@@ -37,32 +40,34 @@ tags:
 
 ## Short Answer
 
-TODO
+The ASR imagery list repository is the documented source for the schema and examples used to describe custom imagery for AVIV ScoutRoute and related Workspaces configuration. Use the current repository version and examples rather than relying on an older copy.
 
 ## Significance
 
-TODO
+A shared schema helps configuration authors describe imagery consistently and validate JSON before it is used by an app or workspace.
 
 ## What This Means
 
-TODO
+Check the repository's current schema, examples, version or branch, and imagery-provider requirements. Confirm that URLs, attribution, permissions, and layer properties meet the consuming application's needs.
 
 ## What This Does Not Mean
 
-TODO
+The repository is not itself an imagery provider, does not guarantee that a source is available or licensed for a workspace, and does not make a configuration valid merely because it is JSON.
 
 ## How To Use This
 
-TODO
+Use the current raw schema and example links from the documentation, validate the definition, and test the resulting imagery in the intended workspace or app.
 
 ## Example
 
-TODO
+A workspace manager uses the current ASR imagery-list schema to prepare a custom imagery definition, validates it, and checks the source's access and attribution requirements before saving it.
 
 ## Assistant Guidance
 
-TODO
+Do not invent schema fields or claim that every imagery source is supported. Cite the repository and current workspace guidance, and abstain when version or permission details are missing.
 
 ## Related Concepts
 
-TODO
+- [What is the imagery JSON configuration?](imagery-json-configuration.md)
+- [What imagery sources are available?](imagery-sources.md)
+- [Why must imagery use raw JSON links?](imagery-raw-json-requirement.md)

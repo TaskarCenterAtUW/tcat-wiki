@@ -18,15 +18,18 @@ topics:
     - qa-qc
 risk_level: low
 authority_level: provisional
-publication_status: stub
-last_reviewed:
+publication_status: draft
+last_reviewed: 2026-08-28
 retrieval_priority: medium
 assistant_behavior:
     allow_inference: false
     requires_citation: true
     abstain_if_missing_context: true
     do_not_claim: []
-related_pages: []
+related_pages:
+    - assistant/workspaces/concept/changeset-tracking.md
+    - assistant/workspaces/concept/change-authorship.md
+    - assistant/workspaces/concept/workspace-review-interface.md
 tags:
     - Assistant
 ---
@@ -37,32 +40,34 @@ tags:
 
 ## Short Answer
 
-TODO
+Edit metadata may include the contributor, editor or platform, timestamp, changeset, comment, source, affected feature, and review status. The exact fields depend on the workspace, editor, and current product version.
 
 ## Significance
 
-TODO
+Metadata helps reviewers reconstruct what changed, who or what contributed it, when it was made, and what evidence was cited.
 
 ## What This Means
 
-TODO
+Inspect the edit or changeset record, preserve identifiers and timestamps, review source and comments, and compare before-and-after geometry or attributes where available.
 
 ## What This Does Not Mean
 
-TODO
+Metadata does not prove that an edit is accurate, current, accessible, approved, or legally authoritative. Missing metadata does not automatically make an edit false.
 
 ## How To Use This
 
-TODO
+Use the current review interface and workspace documentation, protect personal information, and ask the manager about records that are incomplete or ambiguous.
 
 ## Example
 
-TODO
+A reviewer records the contributor, editor, source imagery date, changeset comment, and affected feature before deciding whether an attribute edit is ready for further review.
 
 ## Assistant Guidance
 
-TODO
+Name only fields documented for the relevant version. Do not infer facts from absent metadata, and abstain when a specific edit record cannot be accessed.
 
 ## Related Concepts
 
-TODO
+- [How are changesets tracked?](changeset-tracking.md)
+- [How can users identify who made a change?](change-authorship.md)
+- [What can the Workspaces review interface show?](workspace-review-interface.md)

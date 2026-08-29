@@ -15,16 +15,21 @@ topics:
     - accessmap
     - prioritization
 risk_level: medium
-authority_level: explanatory
-publication_status: stub
-last_reviewed:
+authority_level: provisional
+publication_status: draft
+last_reviewed: 2026-08-28
 retrieval_priority: high
 assistant_behavior:
     allow_inference: false
     requires_citation: true
     abstain_if_missing_context: true
-    do_not_claim: []
-related_pages: []
+    do_not_claim:
+        - AccessMap alone determines which pedestrian investment should be funded.
+        - A route or metric proves a legal obligation or universal priority.
+related_pages:
+    - assistant/accessmap/concept/prioritization-metrics.md
+    - assistant/accessmap/concept/critical-pedestrian-corridors.md
+    - assistant/accessmap/workflow/validate-routing-results.md
 tags:
     - Assistant
 ---
@@ -35,32 +40,37 @@ tags:
 
 ## Short Answer
 
-TODO
+Use AccessMap to screen and compare candidate locations under documented profiles, accessibility metrics, and network conditions, then combine the results with cost, feasibility, equity, field evidence, and community priorities.
 
 ## Significance
 
-TODO
+Prioritization makes route analysis useful for planning while keeping investment decisions accountable to more than a model output.
 
 ## What This Means
 
-TODO
+- Define the decision, geography, profiles, destinations, and criteria.
+- Compare relevant route, reachability, connectivity, and data-quality indicators.
+- Validate high-priority locations and document the basis for the recommendation.
+- Revisit priorities when data or conditions change.
 
 ## What This Does Not Mean
 
-TODO
+AccessMap does not select a funded project, replace engineering or community review, or establish legal compliance. A low score does not prove that a location is unsafe or unimportant.
 
 ## How To Use This
 
-TODO
+Use a transparent method, preserve the dataset and profile versions, and invite affected communities and responsible agencies into review.
 
 ## Example
 
-TODO
+A city compares profile-specific access to schools and transit, then combines the results with field observations, project cost, and community input before selecting candidates.
 
 ## Assistant Guidance
 
-TODO
+Ask for the agency's criteria and current data. Cite the analysis, avoid ranking without context, and abstain from funding or safety conclusions based on AccessMap alone.
 
 ## Related Concepts
 
-TODO
+- [Prioritization metrics](../concept/prioritization-metrics.md)
+- [Critical pedestrian corridors](../concept/critical-pedestrian-corridors.md)
+- [Validate routing results](validate-routing-results.md)

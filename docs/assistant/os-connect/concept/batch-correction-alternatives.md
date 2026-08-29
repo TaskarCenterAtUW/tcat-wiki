@@ -16,16 +16,21 @@ topics:
     - feedback
     - agencies
 risk_level: medium
-authority_level: explanatory
-publication_status: stub
-last_reviewed:
+authority_level: provisional
+publication_status: draft
+last_reviewed: 2026-08-28
 retrieval_priority: high
 assistant_behavior:
     allow_inference: false
     requires_citation: true
     abstain_if_missing_context: true
-    do_not_claim: []
-related_pages: []
+    do_not_claim:
+        - A batch submission guarantees acceptance or publication of every correction.
+        - A batch submission bypasses validation or release controls.
+related_pages:
+    - assistant/os-connect/concept/bulk-correction-submission.md
+    - assistant/os-connect/concept/agency-data-integration.md
+    - assistant/os-connect/workflow/report-data-error.md
 tags:
     - Assistant
 ---
@@ -36,32 +41,38 @@ tags:
 
 ## Short Answer
 
-TODO
+An agency can ask whether several known corrections may be submitted together instead of reported one at a time. The appropriate method depends on the current OS-CONNECT intake process, the evidence, and the structure of the proposed changes.
 
 ## Significance
 
-TODO
+Batching can reduce repetitive reporting for a coordinated set of known issues while preserving review and traceability. It is different from asking that an entire priority area receive special attention.
 
 ## What This Means
 
-TODO
+- Group corrections with a clear theme, area, source, and affected feature or location.
+- Ask the current data steward which batch format or channel is supported.
+- Keep each proposed change identifiable so it can be reviewed separately.
 
 ## What This Does Not Mean
 
-TODO
+- A batch submission does not guarantee acceptance or publication of every correction.
+- Batch submission does not bypass validation, review, attribution, or release controls.
+- A batch does not automatically update OpenStreetMap, TDEI, or downstream products.
 
 ## How To Use This
 
-TODO
+Prepare a structured list of locations, proposed changes, evidence, and dataset version. Separate confirmed corrections from items needing verification, and use the ordinary issue workflow when a batch path is not documented.
 
 ## Example
 
-TODO
+An agency has ten verified curb-ramp corrections in one district. It groups the locations with field evidence and asks the steward whether they can be reviewed as one submission with individually traceable items.
 
 ## Assistant Guidance
 
-TODO
+Keep batch corrections distinct from priority-area requests. Do not invent an upload endpoint, file format, queue, or timeline; cite current guidance and abstain when the supported submission method is unknown.
 
 ## Related Concepts
 
-TODO
+- [Bulk correction submission](bulk-correction-submission.md)
+- [Agency data integration](agency-data-integration.md)
+- [Report an OS-CONNECT data error](../workflow/report-data-error.md)

@@ -15,16 +15,19 @@ topics:
     - os-connect
     - formats
 risk_level: medium
-authority_level: explanatory
-publication_status: stub
-last_reviewed:
+authority_level: provisional
+publication_status: draft
+last_reviewed: 2026-08-28
 retrieval_priority: high
 assistant_behavior:
     allow_inference: false
     requires_citation: true
     abstain_if_missing_context: true
     do_not_claim: []
-related_pages: []
+related_pages:
+    - assistant/os-connect/concept/pedestrian-feature-attributes.md
+    - assistant/os-connect/concept/opensidewalks-schema.md
+    - assistant/os-connect/concept/missing-attribute-values.md
 tags:
     - Assistant
 ---
@@ -35,32 +38,34 @@ tags:
 
 ## Short Answer
 
-TODO
+Required attributes are fields a schema, validator, or workflow needs for a feature or file to be valid. Recommended attributes provide useful additional context but may be optional. The exact distinction depends on the schema version and use.
 
 ## Significance
 
-TODO
+Knowing the distinction helps contributors validate data without treating an optional unknown as an error or assuming that required fields guarantee accessibility.
 
 ## What This Means
 
-TODO
+Check the exact schema and validator, feature type, version, and intended consumer. Preserve missing optional information, satisfy required structural fields, and document fields that a workflow cannot provide.
 
 ## What This Does Not Mean
 
-TODO
+Required does not mean accurate, current, complete, or sufficient for a planning or accessibility decision. Recommended does not mean irrelevant or safe to invent.
 
 ## How To Use This
 
-TODO
+Use the release-specific schema and validation results, do not fill unknown values by assumption, and supplement required fields with local evidence when the decision needs more detail.
 
 ## Example
 
-TODO
+A sidewalk file passes structural validation because required geometry fields are present, but its optional surface and condition fields remain unknown and require separate review.
 
 ## Assistant Guidance
 
-TODO
+Name the schema, version, feature, and validator. Do not provide a universal field list without evidence and abstain when the requirement is release-specific.
 
 ## Related Concepts
 
-TODO
+- [What attributes are included for pedestrian features?](pedestrian-feature-attributes.md)
+- [What is the OpenSidewalks schema?](opensidewalks-schema.md)
+- [Why do some features have missing values?](missing-attribute-values.md)

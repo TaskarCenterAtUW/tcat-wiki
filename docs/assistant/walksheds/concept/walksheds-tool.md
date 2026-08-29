@@ -15,16 +15,19 @@ topics:
     - walksheds
     - overview
 risk_level: medium
-authority_level: explanatory
-publication_status: stub
-last_reviewed:
+authority_level: provisional
+publication_status: draft
+last_reviewed: 2026-08-28
 retrieval_priority: high
 assistant_behavior:
     allow_inference: false
     requires_citation: true
     abstain_if_missing_context: true
     do_not_claim: []
-related_pages: []
+related_pages:
+    - assistant/walksheds/concept/walkshed.md
+    - assistant/walksheds/concept/walkshed-limitations.md
+    - assistant/walksheds/concept/accessibility-profiles.md
 tags:
     - Assistant
 ---
@@ -35,32 +38,34 @@ tags:
 
 ## Short Answer
 
-TODO
+Walksheds is a tool for calculating and visualizing modeled reachable areas on a pedestrian network under selected profiles, travel limits, barriers, and data assumptions.
 
 ## Significance
 
-TODO
+It helps users explore potential pedestrian access to destinations and compare network or profile scenarios.
 
 ## What This Means
 
-TODO
+Identify the origin, dataset, profile, maximum cost or travel limit, destinations, and scenario. Review assumptions and limitations before using the result.
 
 ## What This Does Not Mean
 
-TODO
+Walksheds does not provide live navigation, guarantee accessibility or safety, or replace field, agency, legal, or engineering review.
 
 ## How To Use This
 
-TODO
+Use it for screening, comparison, planning, and engagement with documented inputs and local validation where stakes are high.
 
 ## Example
 
-TODO
+A planner creates a walkshed from a transit stop using a wheelchair profile, then checks crossings and entrances before sharing the result.
 
 ## Assistant Guidance
 
-TODO
+Ask for the version, data, profile, and intended use. Cite current product guidance and abstain when a specific result cannot be reproduced.
 
 ## Related Concepts
 
-TODO
+- [What is a walkshed?](walkshed.md)
+- [What are the limitations of walkshed analysis?](walkshed-limitations.md)
+- [What accessibility profiles are supported?](accessibility-profiles.md)

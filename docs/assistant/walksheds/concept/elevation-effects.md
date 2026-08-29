@@ -15,16 +15,19 @@ topics:
     - walksheds
     - elevation
 risk_level: medium
-authority_level: explanatory
-publication_status: stub
-last_reviewed:
+authority_level: provisional
+publication_status: draft
+last_reviewed: 2026-08-28
 retrieval_priority: high
 assistant_behavior:
     allow_inference: false
     requires_citation: true
     abstain_if_missing_context: true
     do_not_claim: []
-related_pages: []
+related_pages:
+    - assistant/walksheds/concept/elevation-routing-effects.md
+    - assistant/walksheds/concept/network-assumptions.md
+    - assistant/walksheds/concept/walkshed-limitations.md
 tags:
     - Assistant
 ---
@@ -35,32 +38,34 @@ tags:
 
 ## Short Answer
 
-TODO
+Elevation can affect walksheds by changing segment cost, limiting permitted slopes, or making routes less preferred or unreachable under a selected profile. The effect depends on the elevation source, resolution, network geometry, and routing implementation.
 
 ## Significance
 
-TODO
+A slope can consume more of a travel budget and change the shape of the reachable area, especially for profiles with elevation or mobility constraints.
 
 ## What This Means
 
-TODO
+Check the elevation source, units, profile, slope treatment, maximum cost, and segment geometry. Compare profiles and validate important results locally.
 
 ## What This Does Not Mean
 
-TODO
+A wheelchair-oriented walkshed is smaller uphill than a general pedestrian walkshed under the same travel limit because the modeled elevation cost differs.
 
 ## How To Use This
 
-TODO
+Elevation modeling does not prove that a slope is physically inaccessible or safe. A threshold is not a medical or universal accessibility standard.
 
 ## Example
 
-TODO
+Document elevation and profile assumptions, compare scenarios carefully, retain versions, and state uncertainty in maps and decisions.
 
 ## Assistant Guidance
 
-TODO
+Name the elevation source and calculation rule. Do not infer a person's capability from a modeled slope, and abstain when provenance or profile behavior is unknown.
 
 ## Related Concepts
 
-TODO
+- [How do elevation constraints affect routing?](../../os-connect/concept/elevation-routing-effects.md)
+- [What network assumptions are used?](network-assumptions.md)
+- [What are the limitations of walkshed analysis?](walkshed-limitations.md)

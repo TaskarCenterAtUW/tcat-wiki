@@ -17,15 +17,18 @@ topics:
     - public-support
 risk_level: low
 authority_level: provisional
-publication_status: stub
-last_reviewed:
+publication_status: draft
+last_reviewed: 2026-08-28
 retrieval_priority: medium
 assistant_behavior:
     allow_inference: false
     requires_citation: true
     abstain_if_missing_context: true
     do_not_claim: []
-related_pages: []
+related_pages:
+    - assistant/workspaces/concept/osm-api-emulation.md
+    - assistant/workspaces/concept/osm-editor-benefits.md
+    - assistant/workspaces/concept/osm-connection.md
 tags:
     - Assistant
 ---
@@ -36,32 +39,34 @@ tags:
 
 ## Short Answer
 
-TODO
+Workspaces emulates OSM editing to reuse familiar map-editing concepts, tools, data structures, and contributor workflows for bounded project data without making the workspace the public OSM database.
 
 ## Significance
 
-TODO
+Familiar patterns can reduce training and implementation effort and let contributors use established editing practices.
 
 ## What This Means
 
-TODO
+The emulation may include nodes, ways, changesets, editor connections, and upload concepts. Check current documentation for which API operations and tools are supported.
 
 ## What This Does Not Mean
 
-TODO
+Emulation does not imply complete API parity, automatic synchronization, public OSM publication, or validation of accessibility conditions.
 
 ## How To Use This
 
-TODO
+Use documented editor and API workflows, preserve source and workspace context, review changes, and keep private project data separate until deliberate export or publication.
 
 ## Example
 
-TODO
+A contributor uses familiar OSM editor controls to modify a private workspace and submits a changeset for project review rather than publishing directly to OSM.
 
 ## Assistant Guidance
 
-TODO
+Do not infer unsupported behavior from visual similarity. Cite the current implementation and abstain when API or editor support is unknown.
 
 ## Related Concepts
 
-TODO
+- [How does Workspaces emulate OSM APIs?](osm-api-emulation.md)
+- [What is the benefit of using existing OSM editors?](osm-editor-benefits.md)
+- [Is Workspaces connected to the public OSM database?](osm-connection.md)

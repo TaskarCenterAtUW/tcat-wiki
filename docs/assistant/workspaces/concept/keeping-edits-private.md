@@ -18,15 +18,18 @@ topics:
     - dataset-lineage
 risk_level: high
 authority_level: provisional
-publication_status: stub
-last_reviewed:
+publication_status: draft
+last_reviewed: 2026-08-28
 retrieval_priority: medium
 assistant_behavior:
     allow_inference: false
     requires_citation: true
     abstain_if_missing_context: true
     do_not_claim: []
-related_pages: []
+related_pages:
+    - assistant/workspaces/concept/workspace-public-vs-private-data.md
+    - assistant/workspaces/concept/export-timing.md
+    - assistant/workspaces/concept/dataset-lineage-in-tdei.md
 tags:
     - Assistant
 ---
@@ -37,32 +40,34 @@ tags:
 
 ## Short Answer
 
-TODO
+Edits should remain private while they are unreviewed, disputed, sensitive, incomplete, outside the intended release, or not yet approved for export or publication. The exact visibility depends on workspace settings and user roles.
 
 ## Significance
 
-TODO
+Private review protects contributors, source data, and affected people while a team resolves quality, privacy, ownership, or publication questions.
 
 ## What This Means
 
-TODO
+Check workspace visibility, external-app settings, team access, source terms, review status, and export criteria. Keep sensitive observations and unverified changes within the appropriate audience.
 
 ## What This Does Not Mean
 
-TODO
+Private does not mean automatically secure, correct, or permanently unpublished. A workspace setting does not override source licenses, privacy obligations, or deliberate export steps.
 
 ## How To Use This
 
-TODO
+Use the least visibility needed, complete review before sharing, document the decision, and verify the destination and permissions before export.
 
 ## Example
 
-TODO
+A team keeps a field observation private until it removes sensitive personal details and confirms the feature and release workflow.
 
 ## Assistant Guidance
 
-TODO
+Do not promise confidentiality or infer access from a workspace name. Ask for settings and roles, cite current guidance, and abstain when visibility is unknown.
 
 ## Related Concepts
 
-TODO
+- [Workspaces public versus private data](workspace-public-vs-private-data.md)
+- [When should edits be exported back to TDEI?](export-timing.md)
+- [What is dataset lineage in TDEI?](dataset-lineage-in-tdei.md)

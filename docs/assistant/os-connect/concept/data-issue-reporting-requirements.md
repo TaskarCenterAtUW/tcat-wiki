@@ -16,9 +16,9 @@ topics:
     - feedback
     - agencies
 risk_level: medium
-authority_level: explanatory
-publication_status: stub
-last_reviewed:
+authority_level: provisional
+publication_status: draft
+last_reviewed: 2026-08-28
 retrieval_priority: high
 assistant_behavior:
     allow_inference: false
@@ -36,31 +36,31 @@ tags:
 
 ## Short Answer
 
-TODO
+An effective data-issue report identifies the location, feature or identifier, dataset and release, observed and expected condition, date, evidence, and requested follow-up. Include the source and contact information needed for clarification.
 
 ## Significance
 
-TODO
+Specific reports help reviewers reproduce an issue, distinguish physical change from data error, and track a correction across review and release steps.
 
 ## What This Means
 
-TODO
+Describe one clear issue when practical, include coordinates or geometry, screenshots or field evidence when appropriate, and protect personal or sensitive information. State whether the issue concerns OS-CONNECT, OpenStreetMap, TDEI, or a downstream product.
 
 ## What This Does Not Mean
 
-TODO
+A complete report does not guarantee acceptance, correction, publication, or a response time. It also does not make an observation authoritative without review.
 
 ## How To Use This
 
-TODO
+Use the current published reporting route, retain the submitted version and correspondence, and respond to clarification requests without changing the original observation silently.
 
 ## Example
 
-TODO
+A report identifies a missing crossing, gives its coordinates and release, attaches a dated observation, and explains the expected connection so reviewers can investigate it.
 
 ## Assistant Guidance
 
-TODO
+Do not invent required fields or submission routes. Cite current reporting guidance, ask for the dataset and version, and direct unresolved operational questions to the verified support email.
 
 ## Related Concepts
 

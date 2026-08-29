@@ -22,6 +22,7 @@ import sys
 from collections import Counter
 from datetime import date
 from pathlib import Path
+from typing import TypeAlias, TypedDict
 
 SCRIPT_DIR = Path(__file__).parent
 REPO_ROOT = SCRIPT_DIR.parent
@@ -160,8 +161,19 @@ This page should be fetched fresh rather than cached aggressively; its registry 
 
 """
 
+ArticleRow: TypeAlias = tuple[str, str, str]
 
-def parse_frontmatter(text):
+
+class Topic(TypedDict):
+    """Scanned metadata and article rows for one assistant topic."""
+
+    name: str
+    title: str
+    has_index: bool
+    sections: dict[str, list[ArticleRow]]
+
+
+def parse_frontmatter(text: str) -> dict[str, str]:
     """Parse YAML frontmatter into a flat dict of top-level scalar keys.
 
     Only extracts simple ``key: value`` pairs at zero indentation (not nested
@@ -171,7 +183,7 @@ def parse_frontmatter(text):
     match = FRONTMATTER_RE.match(text)
     if not match:
         return {}
-    props = {}
+    props: dict[str, str] = {}
     for line in match.group(1).split("\n"):
         if not line or line[0] in " \t#-":
             continue
@@ -187,12 +199,12 @@ def parse_frontmatter(text):
     return props
 
 
-def topic_title_fallback(dir_name):
+def topic_title_fallback(dir_name: str) -> str:
     """Return a human-readable title for a topic directory lacking an index.md title."""
     return dir_name.replace("-", " ").title()
 
 
-def scan_topic(topic_dir: Path):
+def scan_topic(topic_dir: Path) -> Topic:
     """Return a dict describing one topic directory's index title and article rows."""
     index_path = topic_dir / "index.md"
     title = None
@@ -203,15 +215,15 @@ def scan_topic(topic_dir: Path):
     if not title:
         title = topic_title_fallback(topic_dir.name)
 
-    sections = {}
+    sections: dict[str, list[ArticleRow]] = {}
     for doc_type, _label in DOC_TYPE_SECTIONS:
         doc_dir = topic_dir / doc_type
-        rows = []
+        rows: list[ArticleRow] = []
         if doc_dir.is_dir():
             for md_file in sorted(doc_dir.glob("*.md"), key=lambda p: p.name):
                 fm = parse_frontmatter(md_file.read_text(encoding="utf-8"))
-                status = fm.get("publication_status", "stub")
-                authority = fm.get("authority_level", "provisional")
+                status = fm.get("publication_status") or "stub"
+                authority = fm.get("authority_level") or "provisional"
                 rows.append((md_file.name, status, authority))
         sections[doc_type] = rows
 
@@ -223,9 +235,9 @@ def scan_topic(topic_dir: Path):
     }
 
 
-def scan_topics(assistant_dir: Path):
+def scan_topics(assistant_dir: Path) -> list[Topic]:
     """Return a list of topic dicts for every subdirectory of assistant_dir, alphabetical."""
-    topics = []
+    topics: list[Topic] = []
     if not assistant_dir.is_dir():
         return topics
     for entry in sorted(assistant_dir.iterdir(), key=lambda p: p.name):
@@ -234,9 +246,9 @@ def scan_topics(assistant_dir: Path):
     return topics
 
 
-def count_statuses(topics):
+def count_statuses(topics: list[Topic]) -> Counter[str]:
     """Return article counts grouped by publication status across all topic sections."""
-    counts = Counter()
+    counts: Counter[str] = Counter()
     for topic in topics:
         for doc_type, _label in DOC_TYPE_SECTIONS:
             counts.update(status for _filename, status, _authority
@@ -244,9 +256,9 @@ def count_statuses(topics):
     return counts
 
 
-def count_authority_levels(topics):
+def count_authority_levels(topics: list[Topic]) -> Counter[str]:
     """Return article counts grouped by authority level across all topic sections."""
-    counts = Counter()
+    counts: Counter[str] = Counter()
     for topic in topics:
         for doc_type, _label in DOC_TYPE_SECTIONS:
             counts.update(authority for _filename, _status, authority
@@ -254,7 +266,7 @@ def count_authority_levels(topics):
     return counts
 
 
-def render_status_legend(counts):
+def render_status_legend(counts: Counter[str]) -> str:
     """Return the status legend table, including live article counts."""
     meanings = {
         "stub": "Frontmatter and heading scaffold exist; body is `TODO`",
@@ -268,7 +280,7 @@ def render_status_legend(counts):
     return "\n".join(lines)
 
 
-def render_authority_legend(counts):
+def render_authority_legend(counts: Counter[str]) -> str:
     """Return the authority legend table, including live article counts."""
     meanings = {
         "provisional": "Early or limited-confidence guidance",
@@ -283,7 +295,7 @@ def render_authority_legend(counts):
     return "\n".join(lines)
 
 
-def render_topic(topic):
+def render_topic(topic: Topic) -> str:
     """Return the Markdown block (H2 + H3 sections) for a single topic dict."""
     lines = [f"## {topic['title']}", ""]
     if topic["has_index"]:
@@ -312,7 +324,7 @@ def render_topic(topic):
     return "\n".join(lines).rstrip("\n")
 
 
-def render_registry(topics):
+def render_registry(topics: list[Topic]) -> str:
     """Return the full Markdown for the Registry section body (no heading)."""
     blocks = [render_topic(topic) for topic in topics]
     return "\n\n".join(blocks) + "\n"
@@ -362,7 +374,7 @@ def _only_last_reviewed_differs(old_text: str, new_text: str) -> bool:
     return old_without_date == new_without_date
 
 
-def main(argv=None):
+def main(argv: list[str] | None = None) -> int:
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument(
         "--assistant-dir",

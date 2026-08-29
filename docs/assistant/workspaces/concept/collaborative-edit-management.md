@@ -18,15 +18,18 @@ topics:
     - roles
 risk_level: low
 authority_level: provisional
-publication_status: stub
-last_reviewed:
+publication_status: draft
+last_reviewed: 2026-08-28
 retrieval_priority: medium
 assistant_behavior:
     allow_inference: false
     requires_citation: true
     abstain_if_missing_context: true
     do_not_claim: []
-related_pages: []
+related_pages:
+    - assistant/workspaces/concept/collaborative-editing-support.md
+    - assistant/workspaces/concept/teams.md
+    - assistant/workspaces/concept/workspace-review-interface.md
 tags:
     - Assistant
 ---
@@ -37,32 +40,34 @@ tags:
 
 ## Short Answer
 
-TODO
+Collaborative edits in Workspaces are managed through workspace access, team or project roles, editor activity, changesets, review, and deliberate export. The exact permissions and review controls depend on the workspace configuration.
 
 ## Significance
 
-TODO
+Coordination helps multiple contributors work on the same dataset while preserving attribution, review boundaries, and a record of unresolved changes.
 
 ## What This Means
 
-TODO
+Define the work area and roles, coordinate overlapping edits, use clear changeset comments, review contributions, resolve conflicts, and export only after the responsible manager accepts the result.
 
 ## What This Does Not Mean
 
-TODO
+Collaboration does not mean every member can edit or approve every change, and concurrent editing does not guarantee conflict-free results. Workspace edits remain separate from public OpenStreetMap until an explicit workflow says otherwise.
 
 ## How To Use This
 
-TODO
+Use the workspace's current team and review documentation, agree on conventions, avoid duplicate work, and preserve source and version information.
 
 ## Example
 
-TODO
+A team divides a sidewalk corridor into areas, records edits in changesets, reviews boundary connections together, and flags uncertain features before export.
 
 ## Assistant Guidance
 
-TODO
+Do not invent roles or permissions. Ask for the workspace configuration and desired action, cite current guidance, and abstain when the review or conflict-resolution behavior is unknown.
 
 ## Related Concepts
 
-TODO
+- [How does Workspaces support collaborative accessibility editing?](collaborative-editing-support.md)
+- [What are teams in Workspaces?](teams.md)
+- [What can the Workspaces review interface show?](workspace-review-interface.md)

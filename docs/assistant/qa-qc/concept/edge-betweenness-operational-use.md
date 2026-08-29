@@ -17,16 +17,19 @@ topics:
     - graph-metrics
     - os-connect
 risk_level: medium
-authority_level: explanatory
-publication_status: stub
-last_reviewed:
+authority_level: provisional
+publication_status: draft
+last_reviewed: 2026-08-28
 retrieval_priority: medium
 assistant_behavior:
     allow_inference: false
     requires_citation: true
     abstain_if_missing_context: true
     do_not_claim: []
-related_pages: []
+related_pages:
+    - assistant/qa-qc/concept/edge-betweenness.md
+    - assistant/qa-qc/concept/connected-pedestrian-graph.md
+    - assistant/qa-qc/concept/bottleneck-hotspots.md
 tags:
     - Assistant
 ---
@@ -37,32 +40,34 @@ tags:
 
 ## Short Answer
 
-TODO
+Edge betweenness can reveal which modeled network segments occur on many shortest or permitted paths under the report's graph and routing assumptions. Operationally, high values may identify segments to examine for redundancy, bottlenecks, or disruption risk.
 
 ## Significance
 
-TODO
+The measure can help planners screen where a closure, missing connection, or improvement may affect modeled movement. It gives network context, not a complete priority ranking.
 
 ## What This Means
 
-TODO
+Check the graph, cost function, profile, threshold, geography, and normalization used. Compare high-value segments with connectivity, destinations, data quality, field evidence, and local priorities.
 
 ## What This Does Not Mean
 
-TODO
+High edge betweenness does not prove that a segment is unsafe, inaccessible, important to every traveler, or the correct investment. A low value does not mean a segment is unimportant.
 
 ## How To Use This
 
-TODO
+Use the metric to select locations for further review and scenario testing. Document assumptions, inspect the underlying map, and validate consequential findings locally.
 
 ## Example
 
-TODO
+A segment has high betweenness because many modeled routes use it as a connection between neighborhoods. Planners check redundancy and actual conditions before considering an improvement or contingency.
 
 ## Assistant Guidance
 
-TODO
+Name the report, graph, metric definition, and version. Avoid presenting the metric as an objective ranking, and abstain when its calculation or decision context is unknown.
 
 ## Related Concepts
 
-TODO
+- [What is edge betweenness?](edge-betweenness.md)
+- [What does "connected pedestrian graph" mean?](connected-pedestrian-graph.md)
+- [Bottleneck hotspots](bottleneck-hotspots.md)

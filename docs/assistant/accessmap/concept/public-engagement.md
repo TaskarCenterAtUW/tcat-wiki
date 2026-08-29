@@ -16,15 +16,20 @@ topics:
     - collaborative-editing
 risk_level: medium
 authority_level: provisional
-publication_status: stub
-last_reviewed:
+publication_status: draft
+last_reviewed: 2026-08-28
 retrieval_priority: high
 assistant_behavior:
     allow_inference: false
     requires_citation: true
     abstain_if_missing_context: true
-    do_not_claim: []
-related_pages: []
+    do_not_claim:
+        - An AccessMap demonstration predicts future infrastructure outcomes.
+        - A public route comparison proves universal safety or accessibility.
+related_pages:
+    - assistant/cross-platform/workflow/use-accessmap-for-public-engagement.md
+    - assistant/accessmap/concept/accessibility-needs.md
+    - assistant/accessmap/concept/explaining-metrics-publicly.md
 tags:
     - Assistant
 ---
@@ -35,32 +40,36 @@ tags:
 
 ## Short Answer
 
-TODO
+AccessMap can support public engagement by demonstrating how pedestrian routes change under different accessibility profiles or preferences and by giving participants a concrete way to discuss data gaps and barriers.
 
 ## Significance
 
-TODO
+Interactive, location-specific examples can make accessibility-aware planning easier to understand and can surface lived experience that the model does not contain.
 
 ## What This Means
 
-TODO
+- Choose meaningful local trips and explain the dataset and profile.
+- Compare a small number of scenarios and invite participants to discuss differences.
+- Record feedback, unresolved questions, and locations needing verification.
 
 ## What This Does Not Mean
 
-TODO
+An engagement demonstration is not a prediction of future infrastructure, a referendum result, a safety guarantee, or a substitute for community decision-making.
 
 ## How To Use This
 
-TODO
+Answer the product question first, use accessible explanations, and pair modeled routes with local knowledge and follow-up channels.
 
 ## Example
 
-TODO
+At a public meeting, staff compare a general route and a slope-sensitive profile for a trip to a transit stop, then record residents' observations about crossings.
 
 ## Assistant Guidance
 
-TODO
+Describe the model and limitations plainly, cite the dataset and profile, and avoid presenting the demonstration as a promise or verdict.
 
 ## Related Concepts
 
-TODO
+- [Use AccessMap for public engagement](../../cross-platform/workflow/use-accessmap-for-public-engagement.md)
+- [Accessibility needs](accessibility-needs.md)
+- [Explain metrics publicly](explaining-metrics-publicly.md)

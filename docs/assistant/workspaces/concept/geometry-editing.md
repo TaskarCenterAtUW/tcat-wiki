@@ -18,15 +18,18 @@ topics:
     - accessibility-data
 risk_level: low
 authority_level: provisional
-publication_status: stub
-last_reviewed:
+publication_status: draft
+last_reviewed: 2026-08-28
 retrieval_priority: medium
 assistant_behavior:
     allow_inference: false
     requires_citation: true
     abstain_if_missing_context: true
     do_not_claim: []
-related_pages: []
+related_pages:
+    - assistant/workspaces/concept/accessibility-feature-editing.md
+    - assistant/workspaces/concept/edit-types.md
+    - assistant/workspaces/concept/attribute-editing.md
 tags:
     - Assistant
 ---
@@ -37,32 +40,34 @@ tags:
 
 ## Short Answer
 
-TODO
+Geometry can be edited in Workspaces through a compatible editor when the user has the required permissions and the workspace supports the feature type. The exact controls depend on the workspace, schema, editor, and version.
 
 ## Significance
 
-TODO
+Geometry affects connectivity, routing, feature interpretation, and spatial analysis, so changes need evidence and review.
 
 ## What This Means
 
-TODO
+Select the feature, adjust supported geometry using current imagery or field evidence, inspect connections and nearby features, record the source, and upload the change in a reviewable changeset.
 
 ## What This Does Not Mean
 
-TODO
+Editing geometry does not prove a physical condition, certify accessibility, or automatically publish or synchronize the change to TDEI, OpenStreetMap, or downstream products.
 
 ## How To Use This
 
-TODO
+Use the current editor and schema guidance, preserve source and version metadata, avoid guessing, and ask for review when geometry or connections are ambiguous.
 
 ## Example
 
-TODO
+A contributor corrects the alignment of a separated sidewalk, checks its crossing connections, and leaves the change available for workspace review.
 
 ## Assistant Guidance
 
-TODO
+Ask for the workspace, feature, editor, source, and review state. Do not promise permissions or acceptance without current documentation.
 
 ## Related Concepts
 
-TODO
+- [How are accessibility features edited?](accessibility-feature-editing.md)
+- [What kinds of edits can be made in Workspaces?](edit-types.md)
+- [Can attribute data be edited?](attribute-editing.md)

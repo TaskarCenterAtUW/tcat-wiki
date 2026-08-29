@@ -18,15 +18,18 @@ topics:
     - roles
 risk_level: medium
 authority_level: provisional
-publication_status: stub
-last_reviewed:
+publication_status: draft
+last_reviewed: 2026-08-28
 retrieval_priority: medium
 assistant_behavior:
     allow_inference: false
     requires_citation: true
     abstain_if_missing_context: true
     do_not_claim: []
-related_pages: []
+related_pages:
+    - assistant/workspaces/concept/roles.md
+    - assistant/workspaces/concept/workspace-review-interface.md
+    - assistant/workspaces/concept/edit-auditing.md
 tags:
     - Assistant
 ---
@@ -37,32 +40,34 @@ tags:
 
 ## Short Answer
 
-TODO
+Edits can be reviewed by users who have the appropriate workspace role and permissions, such as a manager or designated reviewer. The exact reviewer set depends on the workspace's current team and project configuration.
 
 ## Significance
 
-TODO
+Review authority determines who can inspect changes, request clarification, approve work, and decide whether a workspace is ready for export.
 
 ## What This Means
 
-TODO
+Check the workspace roles and review interface, inspect changesets and sources, document decisions, and escalate conflicts or high-risk edits to the responsible manager.
 
 ## What This Does Not Mean
 
-TODO
+Being able to view an edit does not mean a user can approve or export it. Reviewer access does not prove that an edit or physical condition is correct.
 
 ## How To Use This
 
-TODO
+Use current workspace permissions and project policy, separate contributor and reviewer roles, and avoid assuming that a general role name has the same permissions everywhere.
 
 ## Example
 
-TODO
+A manager assigns a reviewer to inspect volunteer curb-ramp edits, while contributors can see their own work but do not approve the final export.
 
 ## Assistant Guidance
 
-TODO
+Do not name a reviewer or permission without current workspace evidence. Ask for the workspace and role, cite current documentation, and abstain when access settings are unknown.
 
 ## Related Concepts
 
-TODO
+- [What roles exist in Workspaces?](roles.md)
+- [What can the Workspaces review interface show?](workspace-review-interface.md)
+- [How can edits be audited?](edit-auditing.md)

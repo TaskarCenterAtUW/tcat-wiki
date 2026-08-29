@@ -23,15 +23,18 @@ topics:
     - tdei
 risk_level: high
 authority_level: explanatory
-publication_status: stub
-last_reviewed:
+publication_status: draft
+last_reviewed: 2026-08-28
 retrieval_priority: high
 assistant_behavior:
     allow_inference: false
     requires_citation: true
     abstain_if_missing_context: true
     do_not_claim: []
-related_pages: []
+related_pages:
+    - assistant/cross-platform/concept/what-are-the-risks-of-automated-accessibility-analysis.md
+    - assistant/os-connect/concept/human-review.md
+    - assistant/os-connect/concept/ai-data-risks.md
 tags:
     - Assistant
 ---
@@ -42,32 +45,34 @@ tags:
 
 ## Short Answer
 
-TODO
+Validate AI outputs against representative, current, and appropriately authoritative evidence before using them for accessibility, routing, planning, or release decisions. Document the source, model or process, version, test sample, errors, reviewer, and decision.
 
 ## Significance
 
-TODO
+AI outputs can contain false positives, false negatives, uneven performance, and hidden assumptions. Validation helps users understand whether an output is useful for a specific decision.
 
 ## What This Means
 
-TODO
+Define the intended use and acceptance criteria, sample different locations and conditions, compare outputs with field or trusted local evidence, inspect errors by context, and keep generated candidates separate from accepted records until reviewed.
 
 ## What This Does Not Mean
 
-TODO
+Validation does not prove that an AI system is universally accurate, unbiased, current, accessible, or legally sufficient. A confidence score is not field verification.
 
 ## How To Use This
 
-TODO
+Use risk-based review, preserve provenance and privacy, record disagreements, test for coverage gaps, and provide a correction or appeal path where outputs affect people or public decisions.
 
 ## Example
 
-TODO
+A model flags a possible curb ramp. Reviewers compare it with dated imagery and a local inspection record, document the result, and retain the model output as evidence rather than silently replacing the source data.
 
 ## Assistant Guidance
 
-TODO
+State what was tested and what was not. Cite the method and evidence, avoid claiming validation beyond the sample, and abstain when the output's source or review status is unknown.
 
 ## Related Concepts
 
-TODO
+- [What are the risks of automated accessibility analysis?](what-are-the-risks-of-automated-accessibility-analysis.md)
+- [How should human review be incorporated?](../../os-connect/concept/human-review.md)
+- [What risks exist in AI-generated accessibility data?](../../os-connect/concept/ai-data-risks.md)

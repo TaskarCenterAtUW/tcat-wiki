@@ -15,16 +15,19 @@ topics:
     - walksheds
     - communication
 risk_level: medium
-authority_level: explanatory
-publication_status: stub
-last_reviewed:
+authority_level: provisional
+publication_status: draft
+last_reviewed: 2026-08-28
 retrieval_priority: high
 assistant_behavior:
     allow_inference: false
     requires_citation: true
     abstain_if_missing_context: true
     do_not_claim: []
-related_pages: []
+related_pages:
+    - assistant/walksheds/concept/reachable-area.md
+    - assistant/walksheds/concept/uncertainty-communication.md
+    - assistant/walksheds/concept/walkshed-edit-limitations.md
 tags:
     - Assistant
 ---
@@ -35,32 +38,34 @@ tags:
 
 ## Short Answer
 
-TODO
+Explain a walkshed as the area a person could reach from a chosen starting point within a specified travel budget on a modeled network, under stated profile and data assumptions.
 
 ## Significance
 
-TODO
+Plain language helps the public understand what a result shows without mistaking it for a promise about actual travel.
 
 ## What This Means
 
-TODO
+State the origin, travel limit, profile, network, date, barriers, and destinations. Explain that roads, paths, crossings, and missing data shape the result, and show uncertainty next to the map.
 
 ## What This Does Not Mean
 
-TODO
+Do not call a walkshed a guarantee, service area, safety map, or legal assessment. Avoid language that labels a neighborhood or resident based only on a model.
 
 ## How To Use This
 
-TODO
+Use a short definition, a concrete example, a legend, assumptions, limitations, and a way to ask questions or report current conditions.
 
 ## Example
 
-TODO
+A walkshed map shows the destinations reachable under a wheelchair profile and selected cost. Staff explain that local conditions and the person's needs may differ.
 
 ## Assistant Guidance
 
-TODO
+Use inclusive, nontechnical language and cite the method. Abstain from explaining a specific output when its settings or release are unavailable.
 
 ## Related Concepts
 
-TODO
+- [What does "reachable area" mean?](reachable-area.md)
+- [How should uncertainty be communicated in walkshed outputs?](uncertainty-communication.md)
+- [Walkshed editing limitations](walkshed-edit-limitations.md)

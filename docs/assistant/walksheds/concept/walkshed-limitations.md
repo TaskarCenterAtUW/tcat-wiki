@@ -15,16 +15,19 @@ topics:
     - walksheds
     - limitations
 risk_level: medium
-authority_level: explanatory
-publication_status: stub
-last_reviewed:
+authority_level: provisional
+publication_status: draft
+last_reviewed: 2026-08-28
 retrieval_priority: high
 assistant_behavior:
     allow_inference: false
     requires_citation: true
     abstain_if_missing_context: true
     do_not_claim: []
-related_pages: []
+related_pages:
+    - assistant/walksheds/concept/network-assumptions.md
+    - assistant/walksheds/concept/uncertainty-communication.md
+    - assistant/walksheds/concept/walkshed-quality.md
 tags:
     - Assistant
 ---
@@ -35,32 +38,34 @@ tags:
 
 ## Short Answer
 
-TODO
+Walkshed limitations include incomplete or outdated data, simplified network and cost assumptions, missing lived conditions, uncertain barriers and crossings, destination or access errors, and differences between modeled and actual travel.
 
 ## Significance
 
-TODO
+Understanding limitations prevents users from treating a reachable-area map as a guarantee or a complete accessibility assessment.
 
 ## What This Means
 
-TODO
+Review the source, date, coverage, profile, travel limit, network construction, missing-data treatment, destination definitions, and validation evidence.
 
 ## What This Does Not Mean
 
-TODO
+A walkshed does not certify accessibility, safety, equity, ADA compliance, or current conditions. It does not represent every person's route or experience.
 
 ## How To Use This
 
-TODO
+Use results for bounded screening and comparison, state assumptions and uncertainty, validate important locations locally, and update analyses when data or conditions change.
 
 ## Example
 
-TODO
+An analysis shows a smaller wheelchair walkshed near a destination; reviewers check crossing data, slope assumptions, imagery date, and local conditions before drawing a conclusion.
 
 ## Assistant Guidance
 
-TODO
+Name the profile, cost, network, release, and known gaps. Avoid unsupported certainty and abstain when the result cannot be reproduced.
 
 ## Related Concepts
 
-TODO
+- [What network assumptions are used?](network-assumptions.md)
+- [How should uncertainty be communicated in walkshed outputs?](uncertainty-communication.md)
+- [What makes a walkshed "good" or "bad"?](walkshed-quality.md)

@@ -15,16 +15,19 @@ topics:
     - os-connect
     - public-vs-private-data
 risk_level: medium
-authority_level: explanatory
-publication_status: stub
-last_reviewed:
+authority_level: provisional
+publication_status: draft
+last_reviewed: 2026-08-28
 retrieval_priority: high
 assistant_behavior:
     allow_inference: false
     requires_citation: true
     abstain_if_missing_context: true
     do_not_claim: []
-related_pages: []
+related_pages:
+    - assistant/os-connect/concept/map-layers.md
+    - assistant/os-connect/concept/incomplete-coverage.md
+    - assistant/os-connect/concept/os-connect.md
 tags:
     - Assistant
 ---
@@ -35,32 +38,34 @@ tags:
 
 ## Short Answer
 
-TODO
+Urban maps can appear slow or dense because many pedestrian features, attributes, layers, labels, and overlapping geometries are displayed or requested at once. Performance also depends on the browser, network, service, zoom, and current configuration.
 
 ## Significance
 
-TODO
+Dense visualization can make it difficult to distinguish features and can affect interaction, but it does not by itself indicate a data-quality problem.
 
 ## What This Means
 
-TODO
+Check active layers, zoom level, feature count, browser and network conditions, and whether the issue affects display or the underlying data. Use filters or smaller areas when supported.
 
 ## What This Does Not Mean
 
-TODO
+A user hides nonessential layers and zooms into a smaller area to inspect crossings without concluding that the dense display means features are duplicated or inaccurate.
 
 ## How To Use This
 
-TODO
+Slow or dense display does not prove that the data are complete, wrong, or current. A missing visual feature may reflect scale, styling, layer state, or loading failure.
 
 ## Example
 
-TODO
+Identify the environment and active layer, capture the release and location, and report reproducible display or data issues through the current channel.
 
 ## Assistant Guidance
 
-TODO
+Distinguish performance from data interpretation. Do not diagnose a source from appearance alone and abstain when the layer or environment is unknown.
 
 ## Related Concepts
 
-TODO
+- [What are the different map layers?](map-layers.md)
+- [Why do some areas appear incomplete?](incomplete-coverage.md)
+- [What is OS-CONNECT?](os-connect.md)

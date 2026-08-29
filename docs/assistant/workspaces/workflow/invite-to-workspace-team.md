@@ -19,7 +19,7 @@ topics:
 risk_level: low
 authority_level: explanatory
 publication_status: draft
-last_reviewed: 2026-08-20
+last_reviewed: 2026-08-28
 retrieval_priority: medium
 assistant_behavior:
     allow_inference: false
@@ -47,7 +47,7 @@ tags:
 
 ## Short Answer
 
-To invite people to a team, create the team in a workspace and then open its QR/share dialog. The dialog displays a QR code, a shareable link, and controls to download the QR code or close the dialog.
+To invite people to a team, create the team in a workspace and then open its QR/share dialog. The dialog displays a QR code, a shareable link, and controls to download the QR code or close the dialog. Teams are attribution labels for edits, not an access-control or permission system.
 
 ## Significance
 
@@ -73,9 +73,12 @@ The procedure identifies the visible controls needed to create a team and share 
 9. Select the **QR code button** for the new team.
 10. In the **Join this Team** popup, use the displayed QR code or shareable link to provide the invitation information to the people you want to invite. The popup also includes **Download QR Code** and **Close** buttons.
 
+Contributors who use the displayed QR code or shareable link can associate their subsequent edits with the team for attribution.
+
 ## What This Does Not Mean
 
-Teams are not the same as TDEI Project Group membership.
+- **Not an access-control mechanism** — Teams are attribution labels for edits; they do not grant or revoke workspace permissions.
+- **Not the same as TDEI Project Groups** — Project groups are a TDEI-level organizational structure; workspace teams are workspace-scoped attribution labels.
 
 ## How To Use This
 

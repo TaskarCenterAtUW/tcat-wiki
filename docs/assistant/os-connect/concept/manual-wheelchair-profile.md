@@ -15,16 +15,19 @@ topics:
     - os-connect
     - mobility-profiles
 risk_level: medium
-authority_level: explanatory
-publication_status: stub
-last_reviewed:
+authority_level: provisional
+publication_status: draft
+last_reviewed: 2026-08-28
 retrieval_priority: high
 assistant_behavior:
     allow_inference: false
     requires_citation: true
     abstain_if_missing_context: true
     do_not_claim: []
-related_pages: []
+related_pages:
+    - assistant/accessmap/concept/manual-wheelchair-support.md
+    - assistant/accessmap/concept/mobility-profiles.md
+    - assistant/os-connect/concept/routing-assumptions.md
 tags:
     - Assistant
 ---
@@ -35,32 +38,34 @@ tags:
 
 ## Short Answer
 
-TODO
+The "manual wheelchair" profile is a documented routing or accessibility-analysis profile intended to model travel considerations associated with manual wheelchair use. Its exact settings and behavior depend on the product, dataset, and current implementation.
 
 ## Significance
 
-TODO
+The profile can help users compare route or reachability results under assumptions that may differ from a general pedestrian profile.
 
 ## What This Means
 
-TODO
+Check the current product documentation for profile controls, slope, surface, crossing, barrier, and cost treatment. Record the profile, data release, and settings when sharing a result.
 
 ## What This Does Not Mean
 
-TODO
+The profile is not a medical classification, universal representation of manual wheelchair users, accessibility certification, or guarantee that a route is usable now.
 
 ## How To Use This
 
-TODO
+Use it as a modeling aid, adjust supported preferences when appropriate, compare alternatives, and verify important conditions locally.
 
 ## Example
 
-TODO
+A user compares a general pedestrian result with the manual-wheelchair profile and investigates a reroute around a modeled slope or missing connection.
 
 ## Assistant Guidance
 
-TODO
+Do not infer personal ability or promise a route's usability. Cite the current product and profile guidance, ask for version and settings, and abstain when behavior is undocumented.
 
 ## Related Concepts
 
-TODO
+- [Manual wheelchair support in AccessMap](../../accessmap/concept/manual-wheelchair-support.md)
+- [How do mobility profiles work?](../../accessmap/concept/mobility-profiles.md)
+- [What routing assumptions are used?](routing-assumptions.md)

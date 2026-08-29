@@ -15,9 +15,9 @@ topics:
     - os-connect
     - routing
 risk_level: medium
-authority_level: explanatory
-publication_status: stub
-last_reviewed:
+authority_level: provisional
+publication_status: draft
+last_reviewed: 2026-08-28
 retrieval_priority: high
 assistant_behavior:
     allow_inference: false
@@ -35,31 +35,31 @@ tags:
 
 ## Short Answer
 
-TODO
+Context-aware routing uses available network, accessibility, location, and trip context to produce a modeled route or access result. The current implementation, inputs, and supported preferences must be verified for the product and release.
 
 ## Significance
 
-TODO
+Travel conditions and user needs vary by place and time. Context can make an analysis more relevant while also introducing additional assumptions and data-quality dependencies.
 
 ## What This Means
 
-TODO
+Identify the profile, network, barriers, time-sensitive conditions, destinations, data version, and routing rules. Explain which inputs are observed, inferred, or missing.
 
 ## What This Does Not Mean
 
-TODO
+Context-aware routing does not guarantee a safe or accessible trip, understand every personal need, or replace current local information and field validation.
 
 ## How To Use This
 
-TODO
+Use it for bounded analysis, document the context and source versions, compare results with alternatives, and verify important routes locally.
 
 ## Example
 
-TODO
+An analyst compares a route with and without a reported construction barrier and explains how the changed input affected the modeled result.
 
 ## Assistant Guidance
 
-TODO
+Do not claim that context is automatically complete or personalized. Cite the current routing documentation and abstain when the implementation or context is unknown.
 
 ## Related Concepts
 

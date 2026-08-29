@@ -15,16 +15,19 @@ topics:
     - walksheds
     - complete-streets
 risk_level: medium
-authority_level: explanatory
-publication_status: stub
-last_reviewed:
+authority_level: provisional
+publication_status: draft
+last_reviewed: 2026-08-28
 retrieval_priority: high
 assistant_behavior:
     allow_inference: false
     requires_citation: true
     abstain_if_missing_context: true
     do_not_claim: []
-related_pages: []
+related_pages:
+    - assistant/walksheds/concept/accessibility-profiles.md
+    - assistant/walksheds/concept/walkshed-limitations.md
+    - assistant/walksheds/concept/before-after-comparison.md
 tags:
     - Assistant
 ---
@@ -35,32 +38,34 @@ tags:
 
 ## Short Answer
 
-TODO
+Walksheds can support Complete Streets planning by showing how proposed pedestrian, crossing, or network changes may affect modeled reachability under selected profiles and travel limits.
 
 ## Significance
 
-TODO
+They provide a network-based view of access that can complement design review, public engagement, safety analysis, and other transportation measures.
 
 ## What This Means
 
-TODO
+Define the corridor, destinations, profiles, baseline, scenarios, data version, and decision criteria. Compare results with safety, transit, maintenance, cost, equity, and community evidence.
 
 ## What This Does Not Mean
 
-TODO
+A walkshed does not determine whether a project is a Complete Street, certify design compliance, or show that every traveler receives the same benefit.
 
 ## How To Use This
 
-TODO
+Use matched scenarios to screen potential effects, disclose assumptions, validate important locations, and combine modeled reachability with professional and community review.
 
 ## Example
 
-TODO
+A planner models a new crossing and compares the reachable area before and after the change, then checks whether the proposed design addresses the conditions identified locally.
 
 ## Assistant Guidance
 
-TODO
+Describe the result as modeled evidence. Cite the profile, network, and data version, avoid universal benefit claims, and abstain when the project or scenario is undefined.
 
 ## Related Concepts
 
-TODO
+- [What accessibility profiles are supported?](accessibility-profiles.md)
+- [What are the limitations of walkshed analysis?](walkshed-limitations.md)
+- [How can planners compare accessibility before and after improvements?](before-after-comparison.md)

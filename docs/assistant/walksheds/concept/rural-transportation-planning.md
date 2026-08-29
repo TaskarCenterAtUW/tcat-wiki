@@ -15,16 +15,19 @@ topics:
     - walksheds
     - rural
 risk_level: medium
-authority_level: explanatory
-publication_status: stub
-last_reviewed:
+authority_level: provisional
+publication_status: draft
+last_reviewed: 2026-08-28
 retrieval_priority: high
 assistant_behavior:
     allow_inference: false
     requires_citation: true
     abstain_if_missing_context: true
     do_not_claim: []
-related_pages: []
+related_pages:
+    - assistant/walksheds/concept/network-assumptions.md
+    - assistant/walksheds/concept/equity-analysis.md
+    - assistant/walksheds/concept/walkshed-limitations.md
 tags:
     - Assistant
 ---
@@ -35,32 +38,34 @@ tags:
 
 ## Short Answer
 
-TODO
+Walksheds can support rural transportation planning by showing modeled access to services, transit, schools, health facilities, and other destinations where pedestrian connections and long distances shape travel.
 
 ## Significance
 
-TODO
+Rural networks may have sparse coverage, long distances, limited crossings, private paths, and different data quality from urban areas. Network analysis can help make those conditions visible.
 
 ## What This Means
 
-TODO
+Define origins, destinations, profiles, travel limits, network, source date, and rural coverage. Combine results with transit, road safety, local knowledge, seasonal conditions, and field evidence.
 
 ## What This Does Not Mean
 
-TODO
+A planner compares reachability to a rural clinic from nearby communities and checks whether the modeled network reflects actual shoulders, crossings, transit, and seasonal access.
 
 ## How To Use This
 
-TODO
+A rural walkshed does not prove that a destination is accessible, safe, or reachable in an emergency. Sparse mapped data can make results uncertain and a network model does not replace local knowledge.
 
 ## Example
 
-TODO
+Use results for screening and scenario discussion, document coverage limitations, validate important routes locally, and avoid comparing rural and urban areas without accounting for source and context differences.
 
 ## Assistant Guidance
 
-TODO
+Name the geography, release, profile, and limits. Abstain from definitive access or equity claims when rural coverage and local conditions are unknown.
 
 ## Related Concepts
 
-TODO
+- [What network assumptions are used?](network-assumptions.md)
+- [How can walksheds support equity analysis?](equity-analysis.md)
+- [Walkshed editing limitations](walkshed-edit-limitations.md)

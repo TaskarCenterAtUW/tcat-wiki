@@ -15,16 +15,21 @@ topics:
     - accessmap
     - routing
 risk_level: medium
-authority_level: explanatory
-publication_status: stub
-last_reviewed:
+authority_level: provisional
+publication_status: draft
+last_reviewed: 2026-08-28
 retrieval_priority: high
 assistant_behavior:
     allow_inference: false
     requires_citation: true
     abstain_if_missing_context: true
-    do_not_claim: []
-related_pages: []
+    do_not_claim:
+        - One route is objectively best for every traveler.
+        - A shorter route is automatically more accessible.
+related_pages:
+    - assistant/cross-platform/concept/accessmap-routing.md
+    - assistant/accessmap/concept/accessibility-preference-routing.md
+    - assistant/accessmap/concept/accessible-routes-appear-longer.md
 tags:
     - Assistant
 ---
@@ -35,32 +40,36 @@ tags:
 
 ## Short Answer
 
-TODO
+Routing tradeoffs are the choices a model makes among distance, time, slope, curb-ramp information, connectivity, and other represented costs. A route can be longer or different because the selected profile gives greater weight to an accessibility consideration.
 
 ## Significance
 
-TODO
+Tradeoffs help users understand why no single route fits every person or purpose.
 
 ## What This Means
 
-TODO
+- Identify the profile, preferences, data, and costs used.
+- Compare route alternatives under the same conditions.
+- Validate important factors with local or field information.
 
 ## What This Does Not Mean
 
-TODO
+Tradeoffs do not establish that one route is universally accessible, safe, or preferable. The model cannot represent every personal need or physical condition.
 
 ## How To Use This
 
-TODO
+Explain which factors changed the route and state the limits of the data and model.
 
 ## Example
 
-TODO
+A profile accepts more distance to avoid a steep segment and missing curb-ramp information, producing a route that differs from the shortest path.
 
 ## Assistant Guidance
 
-TODO
+Do not rank routes without a stated objective. Cite the profile and routing documentation and abstain from usability claims without verification.
 
 ## Related Concepts
 
-TODO
+- [AccessMap routing](../../cross-platform/concept/accessmap-routing.md)
+- [Accessibility-preference routing](accessibility-preference-routing.md)
+- [Accessible routes can be longer](accessible-routes-appear-longer.md)

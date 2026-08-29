@@ -18,15 +18,18 @@ topics:
     - qa-qc
 risk_level: low
 authority_level: provisional
-publication_status: stub
-last_reviewed:
+publication_status: draft
+last_reviewed: 2026-08-28
 retrieval_priority: medium
 assistant_behavior:
     allow_inference: false
     requires_citation: true
     abstain_if_missing_context: true
     do_not_claim: []
-related_pages: []
+related_pages:
+    - assistant/workspaces/concept/changeset-tracking.md
+    - assistant/workspaces/concept/edit-metadata.md
+    - assistant/workspaces/concept/workspace-review-interface.md
 tags:
     - Assistant
 ---
@@ -37,32 +40,34 @@ tags:
 
 ## Short Answer
 
-TODO
+Users can identify change authorship from the editor or contributor metadata shown in the workspace review history, changesets, or feature details, when that information is recorded and visible to them.
 
 ## Significance
 
-TODO
+Authorship supports accountability, clarification, attribution, and review of changes before export.
 
 ## What This Means
 
-TODO
+Inspect the relevant changeset or edit record and note the recorded user, timestamp, comments, source, and affected feature. Use the workspace's current review interface for exact controls.
 
 ## What This Does Not Mean
 
-TODO
+Recorded authorship does not prove that the edit is correct, that the named person intended every result, or that the person has legal authority over the data.
 
 ## How To Use This
 
-TODO
+Use authorship as review context, protect personal information, and contact the workspace manager when attribution is missing or unclear.
 
 ## Example
 
-TODO
+A manager sees that a curb-ramp attribute was changed by a named contributor and checks the changeset comment and source before requesting clarification.
 
 ## Assistant Guidance
 
-TODO
+Do not infer identity from an incomplete label or assign blame from metadata alone. Cite the current review documentation and abstain when the record is unavailable.
 
 ## Related Concepts
 
-TODO
+- [How are changesets tracked?](changeset-tracking.md)
+- [What metadata is stored for edits?](edit-metadata.md)
+- [What can the Workspaces review interface show?](workspace-review-interface.md)
