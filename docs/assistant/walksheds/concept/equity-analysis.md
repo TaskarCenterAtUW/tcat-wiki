@@ -15,9 +15,9 @@ topics:
     - walksheds
     - equity
 risk_level: medium
-authority_level: explanatory
-publication_status: stub
-last_reviewed:
+authority_level: provisional
+publication_status: draft
+last_reviewed: 2026-08-28
 retrieval_priority: high
 assistant_behavior:
     allow_inference: false
@@ -35,32 +35,32 @@ tags:
 
 ## Short Answer
 
-TODO
+Walksheds can support equity analysis by comparing modeled reachability to destinations across places, profiles, or population groups, when the comparison data and assumptions are appropriate. They are evidence for analysis, not a complete measure of equity.
 
 ## Significance
 
-TODO
+Network access can reveal differences in modeled opportunity that straight-line distance or averages may hide. Interpretation still requires demographic, lived-experience, and local context.
 
 ## What This Means
 
-TODO
+Define the geography, destinations, origin points, profiles, travel limits, comparison groups, dataset version, and metric. Check coverage and missing data, involve affected communities, and validate important findings locally.
 
 ## What This Does Not Mean
 
-TODO
+A planner compares wheelchair-profile reachability to clinics across neighborhoods, then checks whether different source coverage or destination data could explain the observed difference.
 
 ## How To Use This
 
-TODO
+A difference in walkshed size does not prove inequity, discrimination, or community need. A similar result does not prove equitable access, and a model does not speak for residents.
 
 ## Example
 
-TODO
+Use multiple measures and explain assumptions, uncertainty, and comparison choices. Combine results with community knowledge and other evidence before making policy or investment decisions.
 
 ## Assistant Guidance
 
-TODO
+Name the profile, travel limit, network, geography, and data version. Avoid ranking communities from one map and abstain when the comparison basis is unclear.
 
 ## Related Concepts
 
-TODO
+Equity interpretation should distinguish modeled access, observed conditions, and community experience.

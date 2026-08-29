@@ -18,15 +18,18 @@ topics:
     - qa-qc
 risk_level: low
 authority_level: provisional
-publication_status: stub
-last_reviewed:
+publication_status: draft
+last_reviewed: 2026-08-28
 retrieval_priority: medium
 assistant_behavior:
     allow_inference: false
     requires_citation: true
     abstain_if_missing_context: true
     do_not_claim: []
-related_pages: []
+related_pages:
+    - assistant/workspaces/concept/change-authorship.md
+    - assistant/workspaces/concept/changeset-tracking.md
+    - assistant/workspaces/concept/edit-metadata.md
 tags:
     - Assistant
 ---
@@ -37,32 +40,34 @@ tags:
 
 ## Short Answer
 
-TODO
+The editor that created a change may be recorded in changeset or edit metadata when the workspace and source editor provide that information. Verify the current review interface and data fields rather than assuming every edit contains the same attribution.
 
 ## Significance
 
-TODO
+Editor provenance helps reviewers understand the workflow, available controls, and context in which a change was made.
 
 ## What This Means
 
-TODO
+Inspect the change record for its editor or platform field, timestamp, author, source, and affected features. Preserve the record when exporting or auditing changes.
 
 ## What This Does Not Mean
 
-TODO
+Editor metadata does not prove the edit is correct or that one editor is appropriate for every task. Missing metadata does not by itself prove that an edit is invalid.
 
 ## How To Use This
 
-TODO
+Use the exact workspace record and version, ask the manager when provenance is unclear, and review the edit itself rather than relying only on the editor label.
 
 ## Example
 
-TODO
+A reviewer sees that one changeset came from a mobile collection app and another from a desktop editor, then checks both against their stated source and the workspace review rules.
 
 ## Assistant Guidance
 
-TODO
+Do not infer editor provenance from visual style or a user's identity. Cite current Workspaces guidance and abstain when the record does not expose the editor.
 
 ## Related Concepts
 
-TODO
+- [How can users identify who made a change?](change-authorship.md)
+- [How are changesets tracked?](changeset-tracking.md)
+- [What metadata is stored for edits?](edit-metadata.md)

@@ -15,16 +15,19 @@ topics:
     - os-connect
     - public-vs-private-data
 risk_level: medium
-authority_level: explanatory
-publication_status: stub
-last_reviewed:
+authority_level: provisional
+publication_status: draft
+last_reviewed: 2026-08-28
 retrieval_priority: high
 assistant_behavior:
     allow_inference: false
     requires_citation: true
     abstain_if_missing_context: true
     do_not_claim: []
-related_pages: []
+related_pages:
+    - assistant/os-connect/concept/os-connect-problem-statement.md
+    - assistant/os-connect/concept/nondriver-mobility.md
+    - assistant/os-connect/concept/accessibility-equity.md
 tags:
     - Assistant
 ---
@@ -35,32 +38,34 @@ tags:
 
 ## Short Answer
 
-TODO
+The public can benefit from pedestrian data because shared information can make sidewalks, crossings, barriers, access gaps, and possible improvements more visible to residents, advocates, agencies, and planners.
 
 ## Significance
 
-TODO
+Pedestrian data supports informed participation and can help people ask specific questions about access to destinations and services.
 
 ## What This Means
 
-TODO
+Use it to understand mapped conditions, identify locations for review, report observations, compare planning scenarios, and participate in discussions. Check release dates and limitations.
 
 ## What This Does Not Mean
 
-TODO
+Public data does not guarantee accuracy, current access, privacy-free publication, agency action, or an accessible route. A map is not a legal or engineering determination.
 
 ## How To Use This
 
-TODO
+Explain sources and uncertainty, provide accessible ways to report issues, protect sensitive information, and distinguish a data gap from a physical barrier.
 
 ## Example
 
-TODO
+A resident uses a public map to identify a missing crossing near a bus stop, checks the release date, and submits a specific observation for review.
 
 ## Assistant Guidance
 
-TODO
+Avoid overstating benefits or treating public availability as authority. Cite the release and participation path, and abstain when the data scope or current condition is unknown.
 
 ## Related Concepts
 
-TODO
+- [What problem is OS-CONNECT trying to solve?](os-connect-problem-statement.md)
+- [How can this data support freedom of movement for nondrivers?](nondriver-mobility.md)
+- [How does OS-CONNECT support accessibility equity?](accessibility-equity.md)

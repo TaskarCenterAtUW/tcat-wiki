@@ -15,9 +15,9 @@ topics:
     - os-connect
     - licensing
 risk_level: medium
-authority_level: explanatory
-publication_status: stub
-last_reviewed:
+authority_level: provisional
+publication_status: draft
+last_reviewed: 2026-08-28
 retrieval_priority: high
 assistant_behavior:
     allow_inference: false
@@ -35,31 +35,31 @@ tags:
 
 ## Short Answer
 
-TODO
+The license for OS-CONNECT data depends on the published dataset, source data, and release terms. Check the current license, attribution, access, and reuse conditions for the exact file before using or redistributing it.
 
 ## Significance
 
-TODO
+Licensing affects whether agencies, vendors, researchers, and communities may copy, transform, publish, or combine the data.
 
 ## What This Means
 
-TODO
+Record the dataset identifier, release, license text, attribution requirements, source restrictions, and terms for derivative or combined data. Check each upstream source when data have been integrated.
 
 ## What This Does Not Mean
 
-TODO
+A public download is not automatically unrestricted, and a license does not guarantee accuracy, authority, or permission to disclose sensitive information.
 
 ## How To Use This
 
-TODO
+Use the current published terms and retain attribution in derived products. Ask the steward or qualified counsel about ambiguous reuse, privacy, or conflicting source terms.
 
 ## Example
 
-TODO
+A vendor checks the release license and upstream attribution requirements before including OS-CONNECT-derived geometry in a public planning application.
 
 ## Assistant Guidance
 
-TODO
+Do not name a license without verifying the exact release. Cite the published terms and abstain from legal conclusions when the source or intended use is unclear.
 
 ## Related Concepts
 

@@ -15,9 +15,9 @@ topics:
     - os-connect
     - maintenance
 risk_level: high
-authority_level: explanatory
-publication_status: stub
-last_reviewed:
+authority_level: provisional
+publication_status: draft
+last_reviewed: 2026-08-28
 retrieval_priority: high
 assistant_behavior:
     allow_inference: false
@@ -35,31 +35,31 @@ tags:
 
 ## Short Answer
 
-TODO
+Accessibility data are difficult to maintain because pedestrian conditions change, ownership is distributed, schemas and sources differ, field validation is costly, and lived conditions are not fully represented by static records.
 
 ## Significance
 
-TODO
+Without maintenance, releases can become stale, corrections can be lost, and users may mistake historical or incomplete information for current conditions.
 
 ## What This Means
 
-TODO
+Sustained maintenance needs assigned roles, update triggers, versioned releases, issue tracking, quality review, local participation, funding, and clear handoffs among data stewards and jurisdictions.
 
 ## What This Does Not Mean
 
-TODO
+No single collection or automated process keeps every feature current. A maintenance plan does not remove uncertainty or guarantee immediate synchronization across products.
 
 ## How To Use This
 
-TODO
+Define which changes matter, who reviews them, how evidence is recorded, how releases are compared, and how users report errors. Use local authoritative records for current operational decisions.
 
 ## Example
 
-TODO
+A county tracks construction changes and agency reports between releases, validates the most consequential locations, and records which issues remain unresolved.
 
 ## Assistant Guidance
 
-TODO
+Describe maintenance needs without assigning unsupported ownership or cadence. Cite the dataset and governance context, and abstain when responsibilities or update status are unknown.
 
 ## Related Concepts
 

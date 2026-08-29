@@ -15,16 +15,19 @@ topics:
     - os-connect
     - data-quality
 risk_level: medium
-authority_level: explanatory
-publication_status: stub
-last_reviewed:
+authority_level: provisional
+publication_status: draft
+last_reviewed: 2026-08-28
 retrieval_priority: high
 assistant_behavior:
     allow_inference: false
     requires_citation: true
     abstain_if_missing_context: true
     do_not_claim: []
-related_pages: []
+related_pages:
+    - assistant/os-connect/concept/field-validation.md
+    - assistant/os-connect/concept/data-accuracy.md
+    - assistant/os-connect/concept/community-validation-role.md
 tags:
     - Assistant
 ---
@@ -35,32 +38,34 @@ tags:
 
 ## Short Answer
 
-TODO
+Field validation provides direct or local evidence to check mapped pedestrian features, attributes, connectivity, and current conditions. In OS-CONNECT work, it can identify errors, clarify uncertainty, and help assess whether data fit a particular use.
 
 ## Significance
 
-TODO
+Imagery and automated methods cannot reliably capture every physical or lived condition. Field validation adds evidence where the consequence of an error or the uncertainty of the source is important.
 
 ## What This Means
 
-TODO
+Define the location, observation protocol, date, feature and attributes being checked, reviewer, evidence, and outcome. Compare the result with the exact dataset release and preserve unresolved discrepancies.
 
 ## What This Does Not Mean
 
-TODO
+Field validation is not automatically exhaustive, representative, or a legal inspection. One visit does not establish conditions for all times, travelers, or locations.
 
 ## How To Use This
 
-TODO
+Use risk-based sampling, prioritize complex or high-consequence locations, document limitations, and feed confirmed corrections into the appropriate review and release process.
 
 ## Example
 
-TODO
+A field team checks a sample of crossings flagged by a quality review and records which geometry and attributes match current conditions and which require correction.
 
 ## Assistant Guidance
 
-TODO
+Describe what was actually checked and when. Do not generalize beyond the sample, cite the protocol and release, and abstain when validation scope or evidence is missing.
 
 ## Related Concepts
 
-TODO
+- [How should field validation be incorporated?](field-validation.md)
+- [How accurate is the data?](data-accuracy.md)
+- [What role did community validation play?](community-validation-role.md)

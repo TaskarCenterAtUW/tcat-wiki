@@ -16,16 +16,21 @@ topics:
     - slope
     - routing
 risk_level: medium
-authority_level: explanatory
-publication_status: stub
-last_reviewed:
+authority_level: provisional
+publication_status: draft
+last_reviewed: 2026-08-28
 retrieval_priority: high
 assistant_behavior:
     allow_inference: false
     requires_citation: true
     abstain_if_missing_context: true
-    do_not_claim: []
-related_pages: []
+    do_not_claim:
+        - A modeled slope value proves that a route is usable for every traveler.
+        - AccessMap's slope treatment replaces field measurement or engineering review.
+related_pages:
+    - assistant/accessmap/concept/steep-slopes-effect.md
+    - assistant/accessmap/concept/avoid-steep-slopes.md
+    - assistant/accessmap/concept/route-calculation.md
 tags:
     - Assistant
 ---
@@ -36,32 +41,36 @@ tags:
 
 ## Short Answer
 
-TODO
+AccessMap can incorporate mapped or modeled slope information into route calculation and profile preferences. Steep segments may receive a higher cost or be avoided when the selected profile calls for that behavior.
 
 ## Significance
 
-TODO
+Slope can materially change route choice for people who use mobility devices or have limited endurance. Explaining its treatment makes route differences more understandable.
 
 ## What This Means
 
-TODO
+- Identify the profile and slope preference used.
+- Check whether slope data are available and current for the area.
+- Compare the modeled result with local conditions when the trip matters.
 
 ## What This Does Not Mean
 
-TODO
+Slope treatment is not a complete accessibility assessment. A route with a lower modeled slope can still have barriers, and a missing slope value does not prove that the segment is flat.
 
 ## How To Use This
 
-TODO
+State that slope is one route factor among several. Cite current AccessMap guidance and avoid presenting a route result as a field or engineering measurement.
 
 ## Example
 
-TODO
+A user selects a profile that avoids steep slopes, and AccessMap chooses a longer route with a lower modeled slope. The user verifies the route before relying on it.
 
 ## Assistant Guidance
 
-TODO
+Explain the profile-dependent model, cite the relevant documentation, and abstain when the slope source, threshold, or product version is unknown.
 
 ## Related Concepts
 
-TODO
+- [How steep slopes affect route selection](steep-slopes-effect.md)
+- [Avoid steep slopes](avoid-steep-slopes.md)
+- [How AccessMap calculates routes](route-calculation.md)

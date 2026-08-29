@@ -18,15 +18,18 @@ topics:
     - public-support
 risk_level: low
 authority_level: provisional
-publication_status: stub
-last_reviewed:
+publication_status: draft
+last_reviewed: 2026-08-28
 retrieval_priority: medium
 assistant_behavior:
     allow_inference: false
     requires_citation: true
     abstain_if_missing_context: true
     do_not_claim: []
-related_pages: []
+related_pages:
+    - assistant/workspaces/workflow/use-workspaces-for-community-validation.md
+    - assistant/workspaces/concept/collaborative-editing-support.md
+    - assistant/workspaces/concept/qa-review-support.md
 tags:
     - Assistant
 ---
@@ -37,32 +40,34 @@ tags:
 
 ## Short Answer
 
-TODO
+Workspaces can support community workflows that involve collecting observations, editing pedestrian features, reviewing contributions, and coordinating updates in a configured workspace. The exact tools, roles, and publication path depend on the workspace setup.
 
 ## Significance
 
-TODO
+Community workflows can combine local knowledge and structured editing while keeping contributions reviewable before export.
 
 ## What This Means
 
-TODO
+Define the project area, access roles, data source, task instructions, supported editor or app, review process, accessibility needs, and expected output. Keep observations and unreviewed edits distinct from accepted data.
 
 ## What This Does Not Mean
 
-TODO
+A community workflow does not guarantee access for every participant, correctness of every contribution, or automatic publication to TDEI or OpenStreetMap.
 
 ## How To Use This
 
-TODO
+Use current workspace guidance, provide accessible participation options, record sources and uncertainty, coordinate overlapping work, and communicate review and export boundaries.
 
 ## Example
 
-TODO
+A group collects field observations through a configured app, a reviewer checks the resulting changesets, and a manager decides whether a reviewed update is ready for export.
 
 ## Assistant Guidance
 
-TODO
+Do not promise a workflow, role, app, or outcome without checking the current configuration. Ask for the workspace and intended activity, and abstain when the setup is unknown.
 
 ## Related Concepts
 
-TODO
+- [Use Workspaces for community validation](../workflow/use-workspaces-for-community-validation.md)
+- [How does Workspaces support collaborative accessibility editing?](collaborative-editing-support.md)
+- [How does Workspaces support QA review?](qa-review-support.md)

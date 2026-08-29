@@ -15,16 +15,19 @@ topics:
     - walksheds
     - crossings
 risk_level: medium
-authority_level: explanatory
-publication_status: stub
-last_reviewed:
+authority_level: provisional
+publication_status: draft
+last_reviewed: 2026-08-28
 retrieval_priority: high
 assistant_behavior:
     allow_inference: false
     requires_citation: true
     abstain_if_missing_context: true
     do_not_claim: []
-related_pages: []
+related_pages:
+    - assistant/walksheds/concept/crossing-effects.md
+    - assistant/walksheds/concept/accessibility-islands.md
+    - assistant/walksheds/concept/walkshed-limitations.md
 tags:
     - Assistant
 ---
@@ -35,32 +38,34 @@ tags:
 
 ## Short Answer
 
-TODO
+Walksheds can identify possible crossing gaps when reachable areas stop at roadways, destinations fall outside a profile's cost limit, or network components remain disconnected near expected pedestrian movements.
 
 ## Significance
 
-TODO
+These patterns can focus field checks and data review on crossings that may limit modeled access.
 
 ## What This Means
 
-TODO
+Inspect the map, graph connections, crossing records, profile, travel limit, barriers, and source coverage. Compare candidate gaps with imagery, local records, field observations, and community reports.
 
 ## What This Does Not Mean
 
-TODO
+A walkshed stops near a wide roadway even though a destination is close by. Reviewers determine whether the issue is an absent crossing, a modeled restriction, or a real physical barrier.
 
 ## How To Use This
 
-TODO
+A modeled gap does not prove that a crossing is absent, unsafe, or inaccessible. It also does not identify the responsible agency automatically.
 
 ## Example
 
-TODO
+Record the release and assumptions, prioritize high-consequence locations, submit specific corrections, and communicate uncertainty in public-facing results.
 
 ## Assistant Guidance
 
-TODO
+State whether the finding is a network, data, or physical-condition issue. Cite the analysis and evidence, and abstain when the crossing or profile context is missing.
 
 ## Related Concepts
 
-TODO
+- [How do crossings affect walksheds?](crossing-effects.md)
+- [What are accessibility islands in walkshed analysis?](accessibility-islands.md)
+- [What are the limitations of walkshed analysis?](walkshed-limitations.md)

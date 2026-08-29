@@ -17,16 +17,19 @@ topics:
     - accessibility-data
     - os-connect
 risk_level: medium
-authority_level: explanatory
-publication_status: stub
-last_reviewed:
+authority_level: provisional
+publication_status: draft
+last_reviewed: 2026-08-28
 retrieval_priority: high
 assistant_behavior:
     allow_inference: false
     requires_citation: true
     abstain_if_missing_context: true
     do_not_claim: []
-related_pages: []
+related_pages:
+    - assistant/qa-qc/workflow/identify-accessibility-islands.md
+    - assistant/qa-qc/concept/connected-pedestrian-graph.md
+    - assistant/qa-qc/concept/completeness-vs-accessibility-gaps.md
 tags:
     - Assistant
 ---
@@ -37,32 +40,34 @@ tags:
 
 ## Short Answer
 
-TODO
+An accessibility island is a mapped area or network component that appears separated from other accessible or connected components under the selected dataset, profile, and analysis rules.
 
 ## Significance
 
-TODO
+Islands can reveal possible connectivity or data gaps that limit modeled reachability and warrant review.
 
 ## What This Means
 
-TODO
+Interpret the island using the report's graph, profile, threshold, coverage, and data-version assumptions. Inspect nearby crossings, barriers, endpoints, and missing attributes.
 
 ## What This Does Not Mean
 
-TODO
+An accessibility island is not proof that a real neighborhood is inaccessible, nor does its absence prove equitable access or compliance. It may reflect missing data or a modeling rule.
 
 ## How To Use This
 
-TODO
+Use islands as screening indicators, validate important locations locally, and compare results with field evidence and community knowledge before prioritizing action.
 
 ## Example
 
-TODO
+A report identifies a small connected component separated by a missing crossing edge. Reviewers inspect the intersection to determine whether the issue is mapped connectivity or a physical barrier.
 
 ## Assistant Guidance
 
-TODO
+Name the dataset, profile, metric, and report scope. Avoid treating an island as a judgment about residents or places, and abstain when the analysis assumptions are missing.
 
 ## Related Concepts
 
-TODO
+- [How do I use QA/QC Reports to identify accessibility islands?](../workflow/identify-accessibility-islands.md)
+- [What does "connected pedestrian graph" mean?](connected-pedestrian-graph.md)
+- [Why can a city have high completeness but still accessibility gaps?](completeness-vs-accessibility-gaps.md)

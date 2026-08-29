@@ -15,9 +15,9 @@ topics:
     - walksheds
     - grants
 risk_level: medium
-authority_level: explanatory
-publication_status: stub
-last_reviewed:
+authority_level: provisional
+publication_status: draft
+last_reviewed: 2026-08-28
 retrieval_priority: high
 assistant_behavior:
     allow_inference: false
@@ -35,32 +35,32 @@ tags:
 
 ## Short Answer
 
-TODO
+Walksheds can support grant applications by providing a documented picture of modeled pedestrian reachability, destinations served, possible network gaps, and expected scenario differences. The analysis should complement—not replace—the funder's required evidence.
 
 ## Significance
 
-TODO
+A clear network-based access measure can help explain the need, location, and potential benefit of a proposed project.
 
 ## What This Means
 
-TODO
+Describe the project area, baseline, proposed change, profiles, travel limits, destinations, data version, methods, and limitations. Pair results with field evidence, community input, costs, design, safety, and implementation information.
 
 ## What This Does Not Mean
 
-TODO
+A grant narrative compares modeled access before and after a proposed crossing improvement and explains which assumptions support the estimate and which conditions require validation.
 
 ## How To Use This
 
-TODO
+A walkshed does not guarantee grant eligibility, funding, construction, accessibility, or the claimed benefit. A modeled improvement is not evidence that a project has been built.
 
 ## Example
 
-TODO
+Follow the funder's instructions, preserve reproducible inputs, state uncertainty, and have responsible staff review the analysis before submission.
 
 ## Assistant Guidance
 
-TODO
+Identify the grant program, geography, scenario, profile, and release. Do not overstate impact or invent funder requirements, and abstain when the analysis cannot be reproduced.
 
 ## Related Concepts
 
-TODO
+Walksheds strengthen a grant application only when their assumptions and limits are transparent.

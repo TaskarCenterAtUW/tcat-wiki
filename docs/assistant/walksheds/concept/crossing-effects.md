@@ -15,16 +15,19 @@ topics:
     - walksheds
     - crossings
 risk_level: medium
-authority_level: explanatory
-publication_status: stub
-last_reviewed:
+authority_level: provisional
+publication_status: draft
+last_reviewed: 2026-08-28
 retrieval_priority: high
 assistant_behavior:
     allow_inference: false
     requires_citation: true
     abstain_if_missing_context: true
     do_not_claim: []
-related_pages: []
+related_pages:
+    - assistant/walksheds/concept/crossing-gap-identification.md
+    - assistant/walksheds/concept/barrier-incorporation.md
+    - assistant/walksheds/concept/network-assumptions.md
 tags:
     - Assistant
 ---
@@ -35,32 +38,34 @@ tags:
 
 ## Short Answer
 
-TODO
+Crossings affect walksheds by adding, limiting, or increasing the cost of movement between pedestrian-network segments. Their effect depends on crossing geometry, attributes, barriers, profiles, and routing rules.
 
 ## Significance
 
-TODO
+A missing, restricted, or costly crossing can shrink a reachable area or create an accessibility island. A modeled crossing can expand reachability when it connects otherwise separate paths.
 
 ## What This Means
 
-TODO
+Check crossing locations, connections, attributes, source date, profile behavior, and cost assumptions. Inspect important crossings against current local conditions.
 
 ## What This Does Not Mean
 
-TODO
+A walkshed excludes a nearby destination because the only modeled crossing exceeds the travel limit. Reviewers check whether the crossing is missing, restricted, or represented with the wrong cost.
 
 ## How To Use This
 
-TODO
+The walkshed result does not prove that a crossing is safe, accessible, or currently present. A missing crossing record does not prove that no physical crossing exists.
 
 ## Example
 
-TODO
+Use crossing effects to interpret scenario differences and identify review locations. Document the network and profile, and report specific data gaps through the current channel.
 
 ## Assistant Guidance
 
-TODO
+Distinguish a graph effect from a physical-condition finding. Cite the method and release, and abstain when crossing-processing rules are unknown.
 
 ## Related Concepts
 
-TODO
+- [How can walksheds identify crossing gaps?](crossing-gap-identification.md)
+- [How are barriers incorporated?](barrier-incorporation.md)
+- [What network assumptions are used?](network-assumptions.md)

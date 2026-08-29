@@ -15,16 +15,19 @@ topics:
     - os-connect
     - equity
 risk_level: medium
-authority_level: explanatory
-publication_status: stub
-last_reviewed:
+authority_level: provisional
+publication_status: draft
+last_reviewed: 2026-08-28
 retrieval_priority: high
 assistant_behavior:
     allow_inference: false
     requires_citation: true
     abstain_if_missing_context: true
     do_not_claim: []
-related_pages: []
+related_pages:
+    - assistant/os-connect/concept/accessibility-equity.md
+    - assistant/os-connect/concept/mobility-justice.md
+    - assistant/os-connect/concept/community-feedback-use.md
 tags:
     - Assistant
 ---
@@ -35,32 +38,34 @@ tags:
 
 ## Short Answer
 
-TODO
+Equitable pedestrian infrastructure provides meaningful, safe, and usable access to destinations for people with different mobility, sensory, economic, and travel needs, with attention to who benefits and who remains excluded.
 
 ## Significance
 
-TODO
+Equity involves outcomes and lived experience, not only the presence or count of mapped features.
 
 ## What This Means
 
-TODO
+Consider connectivity, crossings, surfaces, slopes, barriers, maintenance, destinations, transit, affordability, safety, community priorities, and distribution of investment. Use data as evidence alongside participation and local review.
 
 ## What This Does Not Mean
 
-TODO
+There is no single map metric that proves infrastructure is equitable. A complete dataset or project does not guarantee equal access or benefit.
 
 ## How To Use This
 
-TODO
+Define the equity question, involve affected communities, document comparison groups and assumptions, validate important findings, and report tradeoffs transparently.
 
 ## Example
 
-TODO
+A city compares modeled access to essential destinations and then asks residents with different mobility needs whether the identified gaps match their experience.
 
 ## Assistant Guidance
 
-TODO
+Do not infer equity from geometry or one score. Cite data and community evidence, distinguish analysis from policy decisions, and abstain when context is missing.
 
 ## Related Concepts
 
-TODO
+- [How does OS-CONNECT support accessibility equity?](accessibility-equity.md)
+- [How does OS-CONNECT support mobility justice?](mobility-justice.md)
+- [How can local governments use community feedback?](community-feedback-use.md)

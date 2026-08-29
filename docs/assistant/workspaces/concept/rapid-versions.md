@@ -18,15 +18,18 @@ topics:
     - accessibility-data
 risk_level: low
 authority_level: provisional
-publication_status: stub
-last_reviewed:
+publication_status: draft
+last_reviewed: 2026-08-28
 retrieval_priority: medium
 assistant_behavior:
     allow_inference: false
     requires_citation: true
     abstain_if_missing_context: true
     do_not_claim: []
-related_pages: []
+related_pages:
+    - assistant/workspaces/concept/rapid.md
+    - assistant/workspaces/concept/compatible-editors.md
+    - assistant/workspaces/concept/workspace-editing-boundary.md
 tags:
     - Assistant
 ---
@@ -37,32 +40,34 @@ tags:
 
 ## Short Answer
 
-TODO
+RAPID 2 and RAPID 3 are different versions or generations of the Rapid editor or integration. Their controls, API behavior, compatibility, and Workspaces support should be checked against current version-specific documentation.
 
 ## Significance
 
-TODO
+Version distinctions matter when following instructions or diagnosing an editor or workspace behavior.
 
 ## What This Means
 
-TODO
+Confirm the version, environment, editor build, connection, supported operations, and data format before applying guidance from another version.
 
 ## What This Does Not Mean
 
-TODO
+A feature documented for one Rapid version is not automatically available in the other, and neither version automatically validates accessibility or publishes to every downstream system.
 
 ## How To Use This
 
-TODO
+Use current version-specific instructions, test a small edit, preserve source and changeset context, and review results before export.
 
 ## Example
 
-TODO
+A mapper compares the supported workflow for Rapid 2 and Rapid 3 before choosing the version that matches the workspace and task.
 
 ## Assistant Guidance
 
-TODO
+Do not invent version differences. Cite current Rapid or Workspaces documentation and abstain when the version or environment is unknown.
 
 ## Related Concepts
 
-TODO
+- [What is Rapid?](rapid.md)
+- [What editors work with Workspaces?](compatible-editors.md)
+- [Where are TDEI datasets edited?](workspace-editing-boundary.md)

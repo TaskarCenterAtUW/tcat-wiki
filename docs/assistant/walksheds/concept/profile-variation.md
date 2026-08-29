@@ -17,16 +17,19 @@ topics:
     - mobility-profiles
     - os-connect
 risk_level: medium
-authority_level: explanatory
-publication_status: stub
-last_reviewed:
+authority_level: provisional
+publication_status: draft
+last_reviewed: 2026-08-28
 retrieval_priority: high
 assistant_behavior:
     allow_inference: false
     requires_citation: true
     abstain_if_missing_context: true
     do_not_claim: []
-related_pages: []
+related_pages:
+    - assistant/walksheds/concept/accessibility-profiles.md
+    - assistant/walksheds/concept/network-assumptions.md
+    - assistant/walksheds/concept/walkshed-edit-limitations.md
 tags:
     - Assistant
 ---
@@ -37,32 +40,34 @@ tags:
 
 ## Short Answer
 
-TODO
+Different profiles produce different walksheds because they apply different assumptions or costs to slopes, surfaces, barriers, crossings, distance, and other network conditions.
 
 ## Significance
 
-TODO
+Profile comparison can show how reachability changes under different mobility considerations and can identify locations for review.
 
 ## What This Means
 
-TODO
+Hold the origin, network, destinations, release, and travel limit constant when comparing profiles. Record each profile's settings and interpret differences through its documented cost rules.
 
 ## What This Does Not Mean
 
-TODO
+A profile is not a medical diagnosis, universal representation of a group, or guarantee that the result is usable for a particular person.
 
 ## How To Use This
 
-TODO
+Use profiles as modeling aids, compare results carefully, validate important routes locally, and ask affected users how the result relates to lived experience.
 
 ## Example
 
-TODO
+A wheelchair profile excludes or increases the cost of a steep segment that a general pedestrian profile includes, producing a smaller or differently shaped result.
 
 ## Assistant Guidance
 
-TODO
+Name the profiles, settings, network, and release. Avoid inferring a person's abilities from a profile result and abstain when definitions are unknown.
 
 ## Related Concepts
 
-TODO
+- [What accessibility profiles are supported?](accessibility-profiles.md)
+- [What network assumptions are used?](network-assumptions.md)
+- [Walkshed editing limitations](walkshed-edit-limitations.md)

@@ -16,16 +16,21 @@ topics:
     - feedback
     - releases
 risk_level: medium
-authority_level: explanatory
-publication_status: stub
-last_reviewed:
+authority_level: provisional
+publication_status: draft
+last_reviewed: 2026-08-28
 retrieval_priority: high
 assistant_behavior:
     allow_inference: false
     requires_citation: true
     abstain_if_missing_context: true
-    do_not_claim: []
-related_pages: []
+    do_not_claim:
+        - An urgent request guarantees an immediate correction or release.
+        - A local workaround updates the public OS-CONNECT dataset.
+related_pages:
+    - assistant/os-connect/workflow/report-data-error.md
+    - assistant/os-connect/concept/bulk-correction-submission.md
+    - assistant/os-connect/concept/correction-release-lag.md
 tags:
     - Assistant
 ---
@@ -36,32 +41,37 @@ tags:
 
 ## Short Answer
 
-TODO
+If an agency needs a correction before the next public release, it should document the location, evidence, impact, and urgency and contact the responsible OS-CONNECT steward through the current correction path. The agency may also need a clearly labeled local workaround for an immediate internal decision.
 
 ## Significance
 
-TODO
+Urgent needs can affect safety, planning, or public communication, but accelerated handling must not bypass validation or release controls.
 
 ## What This Means
 
-TODO
+- Report the issue with precise location, dataset version, evidence, and reason for urgency.
+- Ask whether an expedited review or interim agency workflow is currently available.
+- Keep any local correction or overlay separate and clearly labeled.
+- Confirm the released version before claiming the public data changed.
 
 ## What This Does Not Mean
 
-TODO
+Urgency does not guarantee acceptance, a special queue, or a release date. A local overlay is not the same as an update to OS-CONNECT, TDEI, OpenStreetMap, or downstream products.
 
 ## How To Use This
 
-TODO
+Use the current documented correction channel, explain the consequence of delay, and maintain an auditable record of interim assumptions and later verification.
 
 ## Example
 
-TODO
+An agency needs a crossing correction for an upcoming planning decision. It submits the evidence and urgency, asks about current review options, and uses a labeled internal note until a released version can be checked.
 
 ## Assistant Guidance
 
-TODO
+Do not promise expedited handling or public availability. Ask for the dataset, location, urgency, and evidence, cite current correction guidance, and distinguish emergency response from data maintenance.
 
 ## Related Concepts
 
-TODO
+- [Report an OS-CONNECT data error](../workflow/report-data-error.md)
+- [Bulk correction submission](bulk-correction-submission.md)
+- [Correction release lag](correction-release-lag.md)

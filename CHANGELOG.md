@@ -31,7 +31,7 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/),
 
 ### Changed
 
-- **Docs**: Updated docs\assistant\os-connect\concept\sidewalk-disconnection-causes.md
+- **Docs**: Updated Assistant Knowledge Base articles
 
 ### Fixed
 

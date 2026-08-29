@@ -15,16 +15,19 @@ topics:
     - walksheds
     - data-quality
 risk_level: high
-authority_level: explanatory
-publication_status: stub
-last_reviewed:
+authority_level: provisional
+publication_status: draft
+last_reviewed: 2026-08-28
 retrieval_priority: high
 assistant_behavior:
     allow_inference: false
     requires_citation: true
     abstain_if_missing_context: true
     do_not_claim: []
-related_pages: []
+related_pages:
+    - assistant/walksheds/concept/walkshed-limitations.md
+    - assistant/walksheds/concept/network-assumptions.md
+    - assistant/walksheds/concept/public-explanation.md
 tags:
     - Assistant
 ---
@@ -35,32 +38,34 @@ tags:
 
 ## Short Answer
 
-TODO
+Communicate uncertainty in walkshed outputs by stating what was modeled, which data and settings were used, what is missing or time-sensitive, how uncertainty affects interpretation, and what should be verified.
 
 ## Significance
 
-TODO
+Clear uncertainty helps readers decide whether an output is suitable for screening, planning, public communication, or a higher-consequence decision.
 
 ## What This Means
 
-TODO
+Name the origin, profile, travel limit, network, barriers, release, coverage, and validation status. Use terms such as "modeled," "possible," or "under these assumptions" where appropriate.
 
 ## What This Does Not Mean
 
-TODO
+A result showing limited reachability near a clinic is accompanied by the profile, release, missing crossing data, and recommendation for local verification.
 
 ## How To Use This
 
-TODO
+Uncertainty is not proof that no useful conclusion is possible, but a confident-looking map is not proof of current accessibility, safety, equity, or compliance.
 
 ## Example
 
-TODO
+Put limitations beside the result, report sensitivity or alternative scenarios, involve affected communities, and document follow-up evidence.
 
 ## Assistant Guidance
 
-TODO
+Do not hide uncertainty in technical language or imply precision beyond the data. Cite the method and abstain when the output's settings or source cannot be identified.
 
 ## Related Concepts
 
-TODO
+- [Walkshed editing limitations](walkshed-edit-limitations.md)
+- [What network assumptions are used?](network-assumptions.md)
+- [What are good public-facing ways to explain walksheds?](public-explanation.md)

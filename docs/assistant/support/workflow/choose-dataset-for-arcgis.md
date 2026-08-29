@@ -24,15 +24,20 @@ topics:
     - tdei
 risk_level: medium
 authority_level: provisional
-publication_status: stub
-last_reviewed:
+publication_status: draft
+last_reviewed: 2026-08-28
 retrieval_priority: high
 assistant_behavior:
     allow_inference: false
     requires_citation: true
     abstain_if_missing_context: true
-    do_not_claim: []
-related_pages: []
+    do_not_claim:
+        - The newest dataset is automatically the right dataset for every ArcGIS project.
+        - Successful import proves that the data are complete or authoritative.
+related_pages:
+    - assistant/support/workflow/choose-dataset-for-planning.md
+    - assistant/os-connect/concept/gis-software-compatibility.md
+    - assistant/tdei/concept/file-formats.md
 tags:
     - Assistant
 ---
@@ -43,32 +48,37 @@ tags:
 
 ## Short Answer
 
-TODO
+Choose a released pedestrian-network dataset whose geographic boundary, features, attributes, format, and release information match the ArcGIS task. This may be an OS-CONNECT or OpenSidewalks-compatible TDEI release; verify the current release and available download format before importing it.
 
 ## Significance
 
-TODO
+Dataset selection affects whether an agency can represent the pedestrian features and attributes needed for planning. Choosing by product name alone can produce a file with the wrong scope or format.
 
 ## What This Means
 
-TODO
+- Define the planning question and geographic extent.
+- Check the release, project group, feature coverage, attributes, and available format.
+- Test the import on a small sample and record the dataset version used.
 
 ## What This Does Not Mean
 
-TODO
+- The newest available file is not automatically the best dataset for every ArcGIS project.
+- Successful import does not prove that data are complete, current, or authoritative.
 
 ## How To Use This
 
-TODO
+Document the area, required features, and analysis before choosing a release. Compare those requirements with the release metadata, test the import, and retain the dataset identifier or version for reproducibility.
 
 ## Example
 
-TODO
+An agency needs sidewalk and crossing geometry for a citywide planning map. Staff select a released pedestrian-network dataset covering the city, test its available format in ArcGIS, and record the release details before analysis.
 
 ## Assistant Guidance
 
-TODO
+Ask for the geography, purpose, required features, and ArcGIS workflow. Cite the release documentation, do not invent dataset identifiers, and abstain when the current release, scope, or authority is unclear.
 
 ## Related Concepts
 
-TODO
+- [Choose a dataset for planning](choose-dataset-for-planning.md)
+- [Can OS-CONNECT work with GIS software?](../../os-connect/concept/gis-software-compatibility.md)
+- [TDEI file formats](../../tdei/concept/file-formats.md)

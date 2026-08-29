@@ -15,16 +15,19 @@ topics:
     - walksheds
     - prioritization
 risk_level: medium
-authority_level: explanatory
-publication_status: stub
-last_reviewed:
+authority_level: provisional
+publication_status: draft
+last_reviewed: 2026-08-28
 retrieval_priority: high
 assistant_behavior:
     allow_inference: false
     requires_citation: true
     abstain_if_missing_context: true
     do_not_claim: []
-related_pages: []
+related_pages:
+    - assistant/walksheds/concept/equity-analysis.md
+    - assistant/walksheds/concept/pedestrian-bottleneck-identification.md
+    - assistant/walksheds/concept/before-after-comparison.md
 tags:
     - Assistant
 ---
@@ -35,32 +38,34 @@ tags:
 
 ## Short Answer
 
-TODO
+Walksheds can support prioritization workflows by screening reachability, destinations served, gaps, barriers, profile differences, and scenario effects for locations that warrant further review.
 
 ## Significance
 
-TODO
+Network-based evidence can help structure a candidate list before field, community, design, cost, and policy review.
 
 ## What This Means
 
-TODO
+Define the decision, criteria, geography, profiles, destinations, cost limits, data version, equity considerations, and validation steps. Combine results with feasibility, cost, safety, maintenance, and community priorities.
 
 ## What This Does Not Mean
 
-TODO
+A walkshed does not automatically rank investments, prove need, or determine funding. One profile or metric cannot represent every traveler.
 
 ## How To Use This
 
-TODO
+Publish the method and limitations, validate candidates, review tradeoffs with affected communities, and document why priorities changed.
 
 ## Example
 
-TODO
+A city uses lower modeled access and important destinations to select corridors for field review, then applies local priorities and feasibility before deciding on projects.
 
 ## Assistant Guidance
 
-TODO
+Name the measures, profiles, thresholds, and release. Avoid unsupported rankings and abstain when decision criteria are not defined.
 
 ## Related Concepts
 
-TODO
+- [How can walksheds support equity analysis?](equity-analysis.md)
+- [How can walksheds identify pedestrian bottlenecks?](pedestrian-bottleneck-identification.md)
+- [How can planners compare accessibility before and after improvements?](before-after-comparison.md)

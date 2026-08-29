@@ -15,16 +15,19 @@ topics:
     - walksheds
     - accessibility-data
 risk_level: medium
-authority_level: explanatory
-publication_status: stub
-last_reviewed:
+authority_level: provisional
+publication_status: draft
+last_reviewed: 2026-08-28
 retrieval_priority: high
 assistant_behavior:
     allow_inference: false
     requires_citation: true
     abstain_if_missing_context: true
     do_not_claim: []
-related_pages: []
+related_pages:
+    - assistant/walksheds/concept/walkshed.md
+    - assistant/walksheds/concept/accessibility-profiles.md
+    - assistant/walksheds/concept/walkshed-limitations.md
 tags:
     - Assistant
 ---
@@ -35,32 +38,34 @@ tags:
 
 ## Short Answer
 
-TODO
+A pedestrian walkshed represents the area reachable from a selected origin within a specified travel limit on a modeled pedestrian network. Its shape depends on the network, profile, barriers, crossings, elevation, and cost rules.
 
 ## Significance
 
-TODO
+It provides a network-aware picture of potential pedestrian access that is more informative than a simple circular buffer for many planning questions.
 
 ## What This Means
 
-TODO
+Interpret the result using the origin, profile, maximum cost, dataset, release, destination and barrier rules, and network assumptions. Compare it with current local conditions.
 
 ## What This Does Not Mean
 
-TODO
+A pedestrian walkshed reaches destinations along connected sidewalks and crossings until the selected travel cost is exhausted.
 
 ## How To Use This
 
-TODO
+A pedestrian walkshed does not guarantee that every location inside it is accessible, safe, open, or usable for every traveler. It is not a legal or engineering determination.
 
 ## Example
 
-TODO
+Use it for screening and comparison, document inputs, validate important routes or destinations, and communicate uncertainty.
 
 ## Assistant Guidance
 
-TODO
+Name the profile and cost rule, cite the source and date, and abstain when the network or analysis settings are unknown.
 
 ## Related Concepts
 
-TODO
+- [What is a walkshed?](walkshed.md)
+- [What accessibility profiles are supported?](accessibility-profiles.md)
+- [What are the limitations of walkshed analysis?](walkshed-limitations.md)

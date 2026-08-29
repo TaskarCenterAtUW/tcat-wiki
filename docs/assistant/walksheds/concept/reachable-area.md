@@ -14,16 +14,19 @@ products:
 topics:
     - walksheds
 risk_level: medium
-authority_level: explanatory
-publication_status: stub
-last_reviewed:
+authority_level: provisional
+publication_status: draft
+last_reviewed: 2026-08-28
 retrieval_priority: high
 assistant_behavior:
     allow_inference: false
     requires_citation: true
     abstain_if_missing_context: true
     do_not_claim: []
-related_pages: []
+related_pages:
+    - assistant/walksheds/concept/walkshed.md
+    - assistant/walksheds/concept/travel-limits.md
+    - assistant/walksheds/concept/network-assumptions.md
 tags:
     - Assistant
 ---
@@ -34,32 +37,34 @@ tags:
 
 ## Short Answer
 
-TODO
+"Reachable area" is the portion of a modeled pedestrian network that can be reached from a selected origin within the chosen profile, travel limit, barriers, and network assumptions.
 
 ## Significance
 
-TODO
+It describes potential network-based access rather than only straight-line proximity.
 
 ## What This Means
 
-TODO
+Interpret the area using the origin, cost or distance limit, profile, dataset, release, network, and treatment of crossings and barriers.
 
 ## What This Does Not Mean
 
-TODO
+Reachable does not mean open, safe, accessible, current, or usable for every person. It is not a guarantee of travel or a legal finding.
 
 ## How To Use This
 
-TODO
+Record settings and versions, validate important routes or destinations, and explain uncertainty in public or planning uses.
 
 ## Example
 
-TODO
+A destination inside a reachable area falls within the model's travel budget, subject to the assumptions and data used.
 
 ## Assistant Guidance
 
-TODO
+Name the profile, maximum cost, network, and release. Avoid treating the area as a physical boundary and abstain when settings are unknown.
 
 ## Related Concepts
 
-TODO
+- [What is a walkshed?](walkshed.md)
+- [What travel limits are used?](travel-limits.md)
+- [What network assumptions are used?](network-assumptions.md)

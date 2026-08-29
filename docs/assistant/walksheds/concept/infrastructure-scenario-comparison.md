@@ -15,9 +15,9 @@ topics:
     - walksheds
     - scenarios
 risk_level: medium
-authority_level: explanatory
-publication_status: stub
-last_reviewed:
+authority_level: provisional
+publication_status: draft
+last_reviewed: 2026-08-28
 retrieval_priority: high
 assistant_behavior:
     allow_inference: false
@@ -35,32 +35,32 @@ tags:
 
 ## Short Answer
 
-TODO
+Walksheds can compare infrastructure scenarios by applying consistent origins, destinations, profiles, travel limits, networks, and analysis areas while changing the documented intervention.
 
 ## Significance
 
-TODO
+Scenario analysis can show how a proposed sidewalk, crossing, connection, barrier removal, or surface change may affect modeled reachability.
 
 ## What This Means
 
-TODO
+Record baseline and scenario inputs, dataset versions, assumptions, metrics, excluded features, and uncertainty. Check whether differences arise from the intervention or unrelated data or configuration changes.
 
 ## What This Does Not Mean
 
-TODO
+A planner compares a baseline with a proposed crossing and reports the change in reachable destinations under two profiles, while noting which results require field review.
 
 ## How To Use This
 
-TODO
+A scenario result does not predict actual behavior, prove causation, certify a design, or establish equal benefit for all travelers.
 
 ## Example
 
-TODO
+Use matched inputs, sensitivity checks, local validation, and community interpretation. Explain both improvements and tradeoffs rather than reporting only the most favorable result.
 
 ## Assistant Guidance
 
-TODO
+Name the scenario, profile, network, cost rule, and versions. Abstain when scenarios are not comparable or the intervention is not defined.
 
 ## Related Concepts
 
-TODO
+Scenario comparisons are modeled evidence for design and planning discussions.

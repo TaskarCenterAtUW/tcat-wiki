@@ -16,16 +16,21 @@ topics:
     - community
     - collaborative-editing
 risk_level: medium
-authority_level: explanatory
-publication_status: stub
-last_reviewed:
+authority_level: provisional
+publication_status: draft
+last_reviewed: 2026-08-28
 retrieval_priority: high
 assistant_behavior:
     allow_inference: false
     requires_citation: true
     abstain_if_missing_context: true
-    do_not_claim: []
-related_pages: []
+    do_not_claim:
+        - Participation by a local mapping group automatically creates a formal partnership.
+        - Community-group data are automatically authoritative for agency use.
+related_pages:
+    - assistant/os-connect/concept/participatory-mapping.md
+    - assistant/os-connect/concept/mapper-training-materials.md
+    - assistant/os-connect/concept/community-data-usability.md
 tags:
     - Assistant
 ---
@@ -36,32 +41,36 @@ tags:
 
 ## Short Answer
 
-TODO
+OpenSidewalks mapping efforts can work with local community mapping groups by sharing compatible mapping practices, local knowledge, and review responsibilities. The relationship should be defined for each project rather than assumed from a group's name or location.
 
 ## Significance
 
-TODO
+Local groups can add capacity and lived experience to pedestrian mapping. Clear conventions and stewardship roles help connect community work with agency or OpenSidewalks workflows.
 
 ## What This Means
 
-TODO
+- Define the project area, data standard, mapping instructions, and intended use.
+- Coordinate with the local group about training, attribution, review, and handoff.
+- Preserve source and contributor context when data move into another workflow.
 
 ## What This Does Not Mean
 
-TODO
+Participation by a local mapping group does not automatically make its data authoritative or accepted by an agency. OpenSidewalks, OSM, and a local group's project are not necessarily the same dataset.
 
 ## How To Use This
 
-TODO
+Before mapping, agree on scope, conventions, validation, licensing, and who maintains the result. Use current community or project documentation for group-specific details.
 
 ## Example
 
-TODO
+A local mapping group maps a neighborhood using the project's documented conventions, then an agency reviews the resulting features and records the provenance before using them in planning.
 
 ## Assistant Guidance
 
-TODO
+Do not infer a formal partnership, endorsement, or data handoff without evidence. Cite the project documentation, ask which group and workflow are involved, and abstain from naming responsibilities that are not documented.
 
 ## Related Concepts
 
-TODO
+- [Participatory mapping](participatory-mapping.md)
+- [Mapper training materials](mapper-training-materials.md)
+- [Community data usability](community-data-usability.md)

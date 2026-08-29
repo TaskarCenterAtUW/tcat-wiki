@@ -15,16 +15,19 @@ topics:
     - os-connect
     - stewardship
 risk_level: medium
-authority_level: explanatory
-publication_status: stub
-last_reviewed:
+authority_level: provisional
+publication_status: draft
+last_reviewed: 2026-08-28
 retrieval_priority: high
 assistant_behavior:
     allow_inference: false
     requires_citation: true
     abstain_if_missing_context: true
     do_not_claim: []
-related_pages: []
+related_pages:
+    - assistant/os-connect/concept/jurisdiction-participation-pathways.md
+    - assistant/os-connect/concept/jurisdiction-update-maintenance.md
+    - assistant/os-connect/concept/local-vs-statewide-coordination.md
 tags:
     - Assistant
 ---
@@ -35,32 +38,34 @@ tags:
 
 ## Short Answer
 
-TODO
+Jurisdictions should participate in stewardship by contributing local knowledge and records, reviewing coverage and errors, coordinating updates, identifying responsible owners, and communicating changes through the documented release process.
 
 ## Significance
 
-TODO
+Local stewardship helps keep shared pedestrian data interpretable and current while preserving the distinction between local authority and statewide coordination.
 
 ## What This Means
 
-TODO
+Assign roles for review, correction, maintenance, validation, and communication. Track source versions, boundaries, unresolved conflicts, and the status of accepted changes.
 
 ## What This Does Not Mean
 
-TODO
+Stewardship is not a guarantee that one jurisdiction maintains every feature or that local participation makes a shared dataset complete or authoritative for every use.
 
 ## How To Use This
 
-TODO
+Start with an area and use case, agree on definitions and handoffs, maintain an issue register, and verify changes before relying on them for high-consequence decisions.
 
 ## Example
 
-TODO
+A municipality reviews data near its boundary, reports a missing connection, and coordinates with the county and data steward so the issue can be validated and tracked across releases.
 
 ## Assistant Guidance
 
-TODO
+Describe stewardship as a role-dependent coordination practice. Do not assign ownership without evidence, cite current governance guidance, and abstain when the responsible party is unknown.
 
 ## Related Concepts
 
-TODO
+- [Jurisdiction participation pathways](jurisdiction-participation-pathways.md)
+- [How should jurisdictions maintain updates?](jurisdiction-update-maintenance.md)
+- [Local ownership and statewide coordination](local-vs-statewide-coordination.md)

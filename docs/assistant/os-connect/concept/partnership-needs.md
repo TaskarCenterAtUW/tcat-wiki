@@ -15,16 +15,19 @@ topics:
     - os-connect
     - partnerships
 risk_level: medium
-authority_level: explanatory
-publication_status: stub
-last_reviewed:
+authority_level: provisional
+publication_status: draft
+last_reviewed: 2026-08-28
 retrieval_priority: high
 assistant_behavior:
     allow_inference: false
     requires_citation: true
     abstain_if_missing_context: true
     do_not_claim: []
-related_pages: []
+related_pages:
+    - assistant/os-connect/concept/jurisdiction-stewardship.md
+    - assistant/os-connect/concept/disability-community-contribution.md
+    - assistant/os-connect/concept/long-term-stewardship-requirements.md
 tags:
     - Assistant
 ---
@@ -35,32 +38,34 @@ tags:
 
 ## Short Answer
 
-TODO
+Sustained pedestrian-data work may require partnerships among technical stewards, jurisdictions, transit agencies, MPOs, disability and advocacy groups, community organizations, researchers, and open-source contributors.
 
 ## Significance
 
-TODO
+Different partners provide authority, local knowledge, collection capacity, validation, technical expertise, funding, and pathways to action.
 
 ## What This Means
 
-TODO
+Define each partner's role, decision authority, data rights, review responsibilities, accessibility needs, privacy expectations, maintenance commitments, and communication path.
 
 ## What This Does Not Mean
 
-TODO
+Partnerships do not automatically resolve ownership, funding, data quality, or legal responsibility. Participation does not guarantee publication or project action.
 
 ## How To Use This
 
-TODO
+Start with a bounded shared objective, document handoffs and expectations, preserve provenance, and review whether the partnership remains useful over time.
 
 ## Example
 
-TODO
+A jurisdiction supplies local records, an advocacy group contributes lived experience, and a technical steward manages schema and release review.
 
 ## Assistant Guidance
 
-TODO
+Describe partnerships as context-dependent unless a current agreement is documented. Do not invent partners, commitments, or outcomes.
 
 ## Related Concepts
 
-TODO
+- [How should jurisdictions participate in stewardship?](jurisdiction-stewardship.md)
+- [How can disability communities contribute?](disability-community-contribution.md)
+- [What does long-term stewardship require operationally?](long-term-stewardship-requirements.md)

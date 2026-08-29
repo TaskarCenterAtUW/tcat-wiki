@@ -22,16 +22,21 @@ topics:
     - walksheds
     - tdei
 risk_level: medium
-authority_level: explanatory
-publication_status: stub
-last_reviewed:
+authority_level: provisional
+publication_status: draft
+last_reviewed: 2026-08-28
 retrieval_priority: high
 assistant_behavior:
     allow_inference: false
     requires_citation: true
     abstain_if_missing_context: true
-    do_not_claim: []
-related_pages: []
+    do_not_claim:
+        - A partner must coordinate every team involved in a cross-product question.
+        - The first team contacted automatically owns every follow-up action.
+related_pages:
+    - assistant/support/workflow/handle-unknown-questions.md
+    - assistant/support/workflow/mappy-hours-referral-decision.md
+    - assistant/support/concept/os-connect-contact.md
 tags:
     - Assistant
 ---
@@ -42,32 +47,36 @@ tags:
 
 ## Short Answer
 
-TODO
+The team or channel that receives a cross-product question should clarify the scope, identify the responsible product or data steward, and coordinate the handoff. Ownership should be confirmed for the next action rather than assumed from the first product mentioned.
 
 ## Significance
 
-TODO
+Clear ownership prevents partners from repeating the same question to multiple teams and reduces gaps between product, data, and support workflows.
 
 ## What This Means
 
-TODO
+- Classify each product, dataset, and requested outcome.
+- Name the next responsible owner and preserve the partner's context during handoff.
+- Tell the partner what is being verified and how follow-up will occur.
 
 ## What This Does Not Mean
 
-TODO
+Cross-team coordination does not guarantee a single response, shared systems, or a particular resolution. It does not authorize staff to expose internal contacts or information.
 
 ## How To Use This
 
-TODO
+Use the narrowest responsible owner for each action, maintain one clear external thread when possible, and document unresolved dependencies.
 
 ## Example
 
-TODO
+A question spans an OS-CONNECT release and an AccessMap route. Support identifies the dataset steward and routing-product owner, then coordinates the handoff while keeping the partner's original context intact.
 
 ## Assistant Guidance
 
-TODO
+Do not invent ownership or promise a response time. Ask which tools and versions are involved, cite available guidance, and state the next verified handoff.
 
 ## Related Concepts
 
-TODO
+- [Handle unknown questions](../workflow/handle-unknown-questions.md)
+- [Mappy Hours referral decision](../workflow/mappy-hours-referral-decision.md)
+- [OS-CONNECT support contact](os-connect-contact.md)

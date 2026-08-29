@@ -15,9 +15,9 @@ topics:
     - walksheds
     - emergency
 risk_level: medium
-authority_level: explanatory
-publication_status: stub
-last_reviewed:
+authority_level: provisional
+publication_status: draft
+last_reviewed: 2026-08-28
 retrieval_priority: high
 assistant_behavior:
     allow_inference: false
@@ -35,32 +35,32 @@ tags:
 
 ## Short Answer
 
-TODO
+Walksheds can support emergency-resilience planning by screening modeled pedestrian reachability to shelters, services, transit, or other destinations under selected network and accessibility assumptions. They are planning inputs, not emergency instructions.
 
 ## Significance
 
-TODO
+Emergencies can change barriers, routes, destination availability, and travel needs. A baseline walkshed can help identify dependencies and locations for contingency review.
 
 ## What This Means
 
-TODO
+Define the hazard, time frame, origins, destinations, profiles, barriers, travel limits, and data version. Compare scenarios and combine results with current emergency plans, local conditions, agency information, and community knowledge.
 
 ## What This Does Not Mean
 
-TODO
+An emergency walkshed does not provide live routing, guarantee a safe evacuation path, or replace emergency management, accessible communication, or current official instructions.
 
 ## How To Use This
 
-TODO
+Use the analysis before an event for screening and scenario planning. Recheck conditions during an event through current official sources and do not rely on a static map for urgent decisions.
 
 ## Example
 
-TODO
+A planner compares pedestrian access to cooling centers before and after a modeled closure, then coordinates with emergency managers and local partners to verify the assumptions.
 
 ## Assistant Guidance
 
-TODO
+State the analysis date, scenario, profile, and limitations. Direct urgent safety questions to appropriate local authorities and abstain from live emergency guidance.
 
 ## Related Concepts
 
-TODO
+Emergency planning uses local and current operational information in addition to modeled reachability.

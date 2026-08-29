@@ -17,16 +17,21 @@ topics:
     - formats
     - opensidewalks
 risk_level: medium
-authority_level: explanatory
-publication_status: stub
-last_reviewed:
+authority_level: provisional
+publication_status: draft
+last_reviewed: 2026-08-28
 retrieval_priority: high
 assistant_behavior:
     allow_inference: false
     requires_citation: true
     abstain_if_missing_context: true
-    do_not_claim: []
-related_pages: []
+    do_not_claim:
+        - Every OSW release contains exactly the same files.
+        - An OSW download is automatically an OpenStreetMap database export.
+related_pages:
+    - assistant/tdei/concept/osw-edges-and-nodes.md
+    - assistant/tdei/concept/osw-vs-osm-format.md
+    - assistant/opensidewalks/concept/opensidewalks-schema.md
 tags:
     - Assistant
 ---
@@ -37,32 +42,36 @@ tags:
 
 ## Short Answer
 
-TODO
+An OSW download contains the files and metadata defined by the applicable OpenSidewalks dataset release. It commonly represents pedestrian-network entities and their relationships, but the exact file set depends on the release and format documentation.
 
 ## Significance
 
-TODO
+Knowing the contents helps users choose the right file for GIS, routing, or validation and prevents assumptions based on a different OSW version.
 
 ## What This Means
 
-TODO
+- Check the archive and release metadata first.
+- Use the schema to identify network, attribute, and metadata files.
+- Preserve the original archive and version when extracting or converting it.
 
 ## What This Does Not Mean
 
-TODO
+Every OSW download does not necessarily contain the same files, and file presence does not prove that a layer is complete or populated. An OSW download is not automatically an OSM database export.
 
 ## How To Use This
 
-TODO
+List the files in the downloaded archive, compare them with the current schema, and document any conversion or filtering before analysis.
 
 ## Example
 
-TODO
+A GIS analyst receives an OSW archive, inspects its files and metadata, identifies the network entities needed for a map, and records the release before converting selected layers.
 
 ## Assistant Guidance
 
-TODO
+Cite the OSW release and schema version. Do not provide an exhaustive file list without a version, and ask for the archive metadata when the contents differ from expectations.
 
 ## Related Concepts
 
-TODO
+- [OSW edges and nodes](osw-edges-and-nodes.md)
+- [OSW versus OSM format](osw-vs-osm-format.md)
+- [OpenSidewalks schema](../../opensidewalks/concept/opensidewalks-schema.md)

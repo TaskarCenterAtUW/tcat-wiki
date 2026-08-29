@@ -22,16 +22,21 @@ topics:
     - walksheds
     - tdei
 risk_level: medium
-authority_level: explanatory
-publication_status: stub
-last_reviewed:
+authority_level: provisional
+publication_status: draft
+last_reviewed: 2026-08-28
 retrieval_priority: high
 assistant_behavior:
     allow_inference: false
     requires_citation: true
     abstain_if_missing_context: true
-    do_not_claim: []
-related_pages: []
+    do_not_claim:
+        - A planned capability is available in the current product.
+        - A roadmap item has a guaranteed delivery date.
+related_pages:
+    - assistant/cross-platform/concept/documentation-guide-types.md
+    - assistant/cross-platform/concept/knowledge-base-domain-review.md
+    - assistant/support/workflow/communicate-uncertainty.md
 tags:
     - Assistant
 ---
@@ -42,32 +47,36 @@ tags:
 
 ## Short Answer
 
-TODO
+Describe current, documented functionality as available now, and label proposed, planned, experimental, or unverified capabilities separately. Give a roadmap statement only when a current authoritative source supports it.
 
 ## Significance
 
-TODO
+This distinction prevents partners from planning around features that do not yet exist and keeps support answers accurate as products change.
 
 ## What This Means
 
-TODO
+- State what the current documentation confirms.
+- Label future plans as plans or possibilities, not commitments.
+- Include the source date or version and explain what remains unverified.
 
 ## What This Does Not Mean
 
-TODO
+Future plans are not current functionality, a promise, or a delivery schedule. A draft or discussion does not establish product support.
 
 ## How To Use This
 
-TODO
+Answer the current question first, then add a clearly labeled future-plan note only if it is relevant and sourced.
 
 ## Example
 
-TODO
+A partner asks whether a planned export feature can be used today. Staff explain the currently supported workflow and identify the export idea as future or unverified.
 
 ## Assistant Guidance
 
-TODO
+Use explicit labels such as current, documented, planned, or unverified. Cite the source and abstain from dates or commitments that are not published.
 
 ## Related Concepts
 
-TODO
+- [Communicate uncertainty](communicate-uncertainty.md)
+- [Documentation guide types](../../cross-platform/concept/documentation-guide-types.md)
+- [Knowledge-base domain review](../../cross-platform/concept/knowledge-base-domain-review.md)

@@ -3,6 +3,7 @@ title: ADA compliance boundaries for assistant answers
 slug: ada-compliance-boundaries
 doc_type: concept
 questions:
+    - Can AccessMap support ADA compliance workflows?
     - What are the ADA compliance boundaries for assistant answers?
 audiences:
     - planner

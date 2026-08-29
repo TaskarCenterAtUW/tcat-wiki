@@ -3,6 +3,7 @@ title: Why are sidewalks disconnected on the map?
 slug: sidewalk-disconnection-causes
 doc_type: concept
 questions:
+    - What happens when sidewalks are disconnected?
     - Why are sidewalks disconnected on the map?
 audiences:
     - public
