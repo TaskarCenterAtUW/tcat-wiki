@@ -1,0 +1,2 @@
+# Retired Assistant Knowledge Base UUIDs.
+# Add one canonical lowercase hyphenated UUIDv4 per deleted page.

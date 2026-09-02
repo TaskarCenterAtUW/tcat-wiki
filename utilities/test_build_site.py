@@ -21,7 +21,8 @@ spec.loader.exec_module(bs)
 
 def write_page(path: Path, publication_status: str | None = None, body: str = "# Title\n\nBody.\n"):
     path.parent.mkdir(parents=True, exist_ok=True)
-    frontmatter = "---\ntitle: Test\n"
+    uid = "00000000-0000-4000-8000-" + f"{abs(hash(str(path))) % 10**12:012d}"
+    frontmatter = f"---\ntitle: Test\nuid: {uid}\n"
     if publication_status is not None:
         frontmatter += f"publication_status: {publication_status}\n"
     frontmatter += "---\n\n"

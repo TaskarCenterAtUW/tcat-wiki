@@ -27,6 +27,7 @@ def write_article(path: Path, title: str, publication_status: str,
         f"""---
 title: {title}
 slug: {path.stem}
+uid: {"00000000-0000-4000-8000-000000000001" if path.stem == "what-is-alpha" else "00000000-0000-4000-8000-000000000002" if path.stem == "why-alpha" else "00000000-0000-4000-8000-000000000003"}
 doc_type: concept
 publication_status: {publication_status}
 authority_level: {authority_level}
@@ -47,20 +48,20 @@ def assistant_dir(tmp_path):
     root = tmp_path / "assistant"
     root.mkdir()
 
-    # Top-level peers - must never appear as topic dirs or registry rows.
+    # Top-level peers are registry rows but must never appear as topic dirs.
     (root / "index.md").write_text(
-        "---\ntitle: Assistant Knowledge Base\n---\n\n# Assistant Knowledge Base\n",
+        "---\ntitle: Assistant Knowledge Base\nuid: 00000000-0000-4000-8000-000000000004\n---\n\n# Assistant Knowledge Base\n",
         encoding="utf-8",
     )
     (root / "schema.md").write_text(
-        "---\ntitle: Schema\n---\n\n# Schema\n", encoding="utf-8")
+        "---\ntitle: Schema\nuid: 00000000-0000-4000-8000-000000000005\n---\n\n# Schema\n", encoding="utf-8")
     (root / "intents.md").write_text(
-        "---\ntitle: Intents\n---\n\n# Intents\n", encoding="utf-8")
+        "---\ntitle: Intents\nuid: 00000000-0000-4000-8000-000000000006\n---\n\n# Intents\n", encoding="utf-8")
 
     # Topic "alpha": has index, concept articles, no workflow articles.
     (root / "alpha" / "index.md").parent.mkdir(parents=True, exist_ok=True)
     (root / "alpha" / "index.md").write_text(
-        "---\ntitle: Alpha — Assistant Knowledge Base\n---\n\n# Alpha\n",
+        "---\ntitle: Alpha — Assistant Knowledge Base\nuid: 00000000-0000-4000-8000-000000000007\n---\n\n# Alpha\n",
         encoding="utf-8",
     )
     write_article(root / "alpha" / "concept" / "what-is-alpha.md",
@@ -78,11 +79,11 @@ def assistant_dir(tmp_path):
 def test_top_level_peers_excluded(assistant_dir):
     content = gad.build_dispatch(assistant_dir, today="2026-07-06")
     registry = content.split("## Registry", 1)[1]
-    assert "`schema.md`" not in registry
-    assert "`intents.md`" not in registry
-    assert "`index.md`" not in registry
-    # dispatch.md never lists itself
-    assert "`dispatch.md`" not in registry
+    assert "## Root Pages" in registry
+    assert "`schema.md`" in registry
+    assert "`intents.md`" in registry
+    assert "`index.md`" in registry
+    assert "`dispatch.md`" in registry
 
 
 def test_topic_headings_and_index_link(assistant_dir):
@@ -96,16 +97,21 @@ def test_topic_headings_and_index_link(assistant_dir):
 
 def test_status_reflects_frontmatter(assistant_dir):
     content = gad.build_dispatch(assistant_dir, today="2026-07-06")
-    assert "| `what-is-alpha.md` | published |" in content
-    assert "| `why-alpha.md` | stub |" in content
-    assert "| `do-a-thing.md` | draft |" in content
+    assert "| `00000000-0000-4000-8000-000000000001` | `what-is-alpha.md` | official | published |" in content
+    assert "| `00000000-0000-4000-8000-000000000002` | `why-alpha.md` | explanatory | stub |" in content
+    assert "| `00000000-0000-4000-8000-000000000003` | `do-a-thing.md` | provisional | draft |" in content
+
+
+def test_registry_table_columns_are_ordered(assistant_dir):
+    content = gad.build_dispatch(assistant_dir, today="2026-07-06")
+    assert content.count("| UID | File | Authority Level | Publication Status |") == 4
 
 
 def test_status_legend_includes_article_counts(assistant_dir):
     content = gad.build_dispatch(assistant_dir, today="2026-07-06")
     legend = content.split("## Status Legend", 1)[1].split("## Registry", 1)[0]
     assert "| Status | Count | Meaning |" in legend
-    assert "| `stub` | 1 |" in legend
+    assert "| `stub` | 2 |" in legend
     assert "| `draft` | 1 |" in legend
     assert "| `published` | 1 |" in legend
 
@@ -115,7 +121,7 @@ def test_authority_legend_includes_article_counts(assistant_dir):
     legend = content.split("## Authority Legend", 1)[
         1].split("## Registry", 1)[0]
     assert "| Authority level | Count | Meaning |" in legend
-    assert "| `provisional` | 1 |" in legend
+    assert "| `provisional` | 2 |" in legend
     assert "| `explanatory` | 1 |" in legend
     assert "| `official` | 1 |" in legend
 
@@ -172,7 +178,8 @@ def test_write_dispatch_updates_date_with_substantive_changes(assistant_dir):
     output_path = gad.write_dispatch(assistant_dir, today="2026-07-06")
     (assistant_dir / "alpha" / "concept" / "new-article.md").write_text(
         "---\ntitle: New Article\npublication_status: draft\n"
-        "authority_level: provisional\n---\n\n# New Article\n",
+        "authority_level: provisional\nuid: 00000000-0000-4000-8000-000000000008\n"
+        "---\n\n# New Article\n",
         encoding="utf-8",
     )
 
@@ -194,7 +201,8 @@ def test_no_topics_produces_empty_registry(tmp_path):
     root = tmp_path / "assistant"
     root.mkdir()
     (root / "index.md").write_text(
-        "---\ntitle: X\n---\n\n# X\n", encoding="utf-8")
+        "---\ntitle: X\nuid: 00000000-0000-4000-8000-000000000001\n---\n\n# X\n", encoding="utf-8")
     content = gad.build_dispatch(root, today="2026-07-06")
     registry = content.split("## Registry", 1)[1].strip()
-    assert registry == ""
+    assert "`index.md`" in registry
+    assert "`dispatch.md`" in registry
