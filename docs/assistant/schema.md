@@ -83,7 +83,7 @@ Consequences for authors:
 - `publication_status` controls human-layer visibility: `stub`, `draft`, and `archived` pages are agent-only; a page appears as an HTML page only once it is `published`.
 - Because every page is served as raw `.md` at its docs-relative source path, stubs MUST still contain valid frontmatter and the required heading scaffold (with `TODO` placeholders) so the `.md` resolves to well-formed content.
 - A `published` human page MUST NOT link to a page that is not built to HTML (a `stub`, a `draft`, an `archived` page, or anything under `support/`). Such links are treated as authoring errors and fail the build.
-- `dispatch.md` is a generated registry of the agent layer, produced by `utilities/akb_generate_dispatch.py`. Do not manually edit it.
+- `dispatch.md` is a generated registry of the agent layer, produced by `utilities/akb_generate_dispatch.py`. It is also assigned a stable `uid` and is included in the registry. Do not manually edit it.
 
 ## YAML frontmatter (required keys)
 
@@ -91,6 +91,7 @@ Every file under `docs/assistant/` MUST include all of the following keys. Use s
 
 | Field | Type | Details | Example |
 | :---- | :--- | :------ | :------ |
+| `uid` | string | Canonical lowercase, hyphenated Python UUIDv4; globally unique and immutable | `550e8400-e29b-41d4-a716-446655440000` |
 | `title` | string | Human-readable title | `What is a workspace?` |
 | `slug` | string | Matches the file's basename exactly | `workspace` |
 | `doc_type` | enum | `concept`, `workflow`, or `policy` — determined by path | `concept` |
@@ -105,6 +106,12 @@ Every file under `docs/assistant/` MUST include all of the following keys. Use s
 | `retrieval_priority` | enum | `low`, `medium`, or `high` — suggested ranking boost for retrieval | `high` |
 | `assistant_behavior` | map | See below | `allow_inference: false` `requires_citation: true` |
 | `related_pages` | list | Paths relative to `docs/` | `- assistant/workspaces/concept/dataset-lineage.md` |
+
+### Durable page identity
+
+`uid` is assigned once when a page is created and must never change when the page is edited, moved, renamed, or substantially rewritten. Generate new values with `utilities/akb_generate_uid.py`; do not derive them from paths, titles, or content.
+
+Values must be the canonical lowercase, hyphenated representation returned by Python's `str(uuid.uuid4())`. They must be unique across every Markdown page under `docs/assistant/`, including generated `dispatch.md`, and must never be reused. When a page is deleted, record its UID in `utilities/akb-retired-uuids.txt` before the change is merged. The validation utilities reject both duplicate live values and values present in that ledger.
 
 ### Directory structure
 
