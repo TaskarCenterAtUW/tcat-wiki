@@ -1,8 +1,10 @@
 ---
-name: changelog
+name: update-changelog
 description: Generate a versioned changelog entry from recent commits and insert it after the inactive Unreleased block
-disable-model-invocation: true
+user-invocable: true
+disable-model-invocation: false
 ---
+
 <!-- @format -->
 
 # Generate Changelog Entry

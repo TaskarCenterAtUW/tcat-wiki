@@ -1,8 +1,9 @@
 ---
 name: akb-ingest-transcript
 description: Ingest a TCAT meeting transcript and propose or apply evidence-grounded Assistant Knowledge Base article changes
-disable-model-invocation: true
 argument-hint: "Repo-relative path to a .txt WebVTT transcript under local-storage/transcripts/"
+user-invocable: true
+disable-model-invocation: false
 ---
 
 <!-- @format -->
@@ -35,6 +36,8 @@ Process the transcript at `$args`. This skill is for TCAT Office Hours and other
 3. Read these files fresh:
     - [`docs/assistant/schema.md`](../../../docs/assistant/schema.md) — authoritative metadata, directory, heading, vocabulary, and build rules.
     - [`docs/assistant/dispatch.md`](../../../docs/assistant/dispatch.md) — generated registry and current article inventory.
+
+When creating a new article, include a newly generated canonical UUIDv4 in its frontmatter. Existing article updates, moves, and renames must preserve their existing `uid`. If an article is deleted as part of an approved change, record its old UID in `utilities/akb-retired-uuids.txt`.
 
 ## Phase 2 — Extract and classify knowledge
 
@@ -90,6 +93,7 @@ If the user requests changes, revise the proposal and ask again. Only after expl
 2. For each new article, create a complete schema-compliant page:
     - Put `concept` pages in `docs/assistant/{topic}/concept/`, `workflow` pages in `docs/assistant/{topic}/workflow/`, and topic `policy` content only in `docs/assistant/{topic}/index.md`.
     - Include every required frontmatter key: `title`, `slug`, `doc_type`, `questions`, `products`, `audiences`, `topics`, `risk_level`, `authority_level`, `publication_status`, `last_reviewed`, `retrieval_priority`, `assistant_behavior`, and `related_pages`.
+    - Include a newly generated canonical lowercase hyphenated UUIDv4 `uid`; preserve existing UIDs on updates and moves.
     - Use the applicable controlled product/topic vocabulary from the schema.
     - Every newly authored article must use `authority_level: provisional` and `publication_status: draft`. Preserve uncertainty in the prose and assistant guidance. Set `last_reviewed` to the current date for new articles.
     - Include the nine headings, exactly once and in order: `# [Page Title]`, `## Short Answer`, `## Significance`, `## What This Means`, `## What This Does Not Mean`, `## How To Use This`, `## Example`, `## Assistant Guidance`, and `## Related Concepts`.
