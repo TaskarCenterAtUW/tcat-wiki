@@ -1,4 +1,5 @@
 ---
+uid: 83f1704e-8797-4199-8536-b5a5fac76254
 title: How do profiles work in Walksheds batch requests?
 slug: walkshed-batch-profiles
 doc_type: concept

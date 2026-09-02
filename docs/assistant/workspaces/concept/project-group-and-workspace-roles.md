@@ -1,4 +1,5 @@
 ---
+uid: 51f6b51d-3caf-4def-8352-a3ba9b033ddd
 title: How do TDEI project group roles differ from Workspaces roles?
 slug: project-group-and-workspace-roles
 doc_type: concept

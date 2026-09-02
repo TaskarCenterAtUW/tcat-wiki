@@ -1,4 +1,5 @@
 ---
+uid: 203f1f3a-11d5-4126-a846-c4a15396c076
 title: How can agencies identify critical pedestrian corridors?
 slug: critical-pedestrian-corridors
 doc_type: concept

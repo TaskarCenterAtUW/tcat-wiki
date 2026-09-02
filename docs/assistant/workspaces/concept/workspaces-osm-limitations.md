@@ -1,4 +1,5 @@
 ---
+uid: 365b14fc-1c9b-4aa4-987d-32301dd2e458
 title: What limitations exist compared to OpenStreetMap?
 slug: workspaces-osm-limitations
 doc_type: concept

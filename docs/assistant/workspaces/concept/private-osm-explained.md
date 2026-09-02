@@ -1,4 +1,5 @@
 ---
+uid: 624ad449-289a-414e-8580-0ad753b563c1
 title: What does private OSM mean?
 slug: private-osm-explained
 doc_type: concept

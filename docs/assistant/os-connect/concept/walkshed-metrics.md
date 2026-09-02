@@ -1,4 +1,5 @@
 ---
+uid: cffc1c3d-00dc-4c9f-bec9-7e076dfa2eb7
 title: What do walkshed metrics represent?
 slug: walkshed-metrics
 doc_type: concept

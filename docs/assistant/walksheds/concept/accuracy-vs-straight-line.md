@@ -1,4 +1,5 @@
 ---
+uid: 7d1b1fd4-e720-4f22-8445-9d8c7951c056
 title: Why are walksheds more accurate than straight-line distance?
 slug: accuracy-vs-straight-line
 doc_type: concept

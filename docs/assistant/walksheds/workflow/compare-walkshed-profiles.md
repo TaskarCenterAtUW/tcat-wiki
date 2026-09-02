@@ -1,4 +1,5 @@
 ---
+uid: a54cc935-f91e-4bd7-9003-8f0f3d7dfad8
 title: How do I compare Walksheds profiles?
 slug: compare-walkshed-profiles
 doc_type: workflow

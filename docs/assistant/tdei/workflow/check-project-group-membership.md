@@ -1,4 +1,5 @@
 ---
+uid: 7b4fada3-5e37-4f79-9d59-556c0c06e557
 title: Check project-group membership
 slug: check-project-group-membership
 doc_type: workflow

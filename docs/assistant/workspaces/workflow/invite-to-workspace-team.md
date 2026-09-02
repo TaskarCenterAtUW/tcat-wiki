@@ -1,4 +1,5 @@
 ---
+uid: 4c35b3d6-cbad-43e0-9cb5-6cc7b0a56540
 title: How do I invite people to a team in Workspaces?
 slug: invite-to-workspace-team
 doc_type: workflow

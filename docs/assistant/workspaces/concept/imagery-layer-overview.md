@@ -1,4 +1,5 @@
 ---
+uid: f5733eac-79a7-4ced-af6e-6a4439de5d17
 title: What are imagery layers?
 slug: imagery-layer-overview
 doc_type: concept

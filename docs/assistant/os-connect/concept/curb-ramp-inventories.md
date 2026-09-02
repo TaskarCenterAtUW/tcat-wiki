@@ -1,4 +1,5 @@
 ---
+uid: b019b1ac-bfa5-458c-b776-2c2d5bf20c35
 title: Can this data support curb ramp inventories?
 slug: curb-ramp-inventories
 doc_type: concept

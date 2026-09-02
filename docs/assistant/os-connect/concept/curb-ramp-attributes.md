@@ -1,4 +1,5 @@
 ---
+uid: ee52131e-e6a2-4a0c-98db-debef5c3ca8d
 title: What attributes are collected for curb ramps?
 slug: curb-ramp-attributes
 doc_type: concept

@@ -1,4 +1,5 @@
 ---
+uid: 6c3dbfbc-c161-4267-9b0e-4b2ca738d1da
 title: What kinds of partnerships are needed?
 slug: partnership-needs
 doc_type: concept

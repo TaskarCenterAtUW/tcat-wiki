@@ -1,4 +1,5 @@
 ---
+uid: 9a464d20-a02b-41b2-b1f3-080ee22ae68d
 title: What does a wheelchair walkshed represent?
 slug: wheelchair-walkshed
 doc_type: concept

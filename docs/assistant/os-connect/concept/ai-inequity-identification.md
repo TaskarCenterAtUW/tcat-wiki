@@ -1,4 +1,5 @@
 ---
+uid: 0ed1f849-f07c-442e-a7e6-26d2982e8f16
 title: Can AI help identify accessibility inequities?
 slug: ai-inequity-identification
 doc_type: concept

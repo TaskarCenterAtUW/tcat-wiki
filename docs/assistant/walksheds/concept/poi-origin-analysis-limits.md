@@ -1,4 +1,5 @@
 ---
+uid: b13df74b-d458-4f8a-bc93-34fe2a0f501b
 title: What are the limits of POI-origin walkshed analysis?
 slug: poi-origin-analysis-limits
 doc_type: concept

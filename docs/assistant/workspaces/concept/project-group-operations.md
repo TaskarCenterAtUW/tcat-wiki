@@ -1,4 +1,5 @@
 ---
+uid: bfe77757-e525-4299-8dad-fe0b25ee4f8f
 title: How do project groups work?
 slug: project-group-operations
 doc_type: concept

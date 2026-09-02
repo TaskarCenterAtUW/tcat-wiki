@@ -1,4 +1,5 @@
 ---
+uid: 18acaf54-0272-499e-8be4-a68cfd98a639
 title: How do project-group referrals provide workspace access?
 slug: project-group-referral-access
 doc_type: concept

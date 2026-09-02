@@ -1,4 +1,5 @@
 ---
+uid: 5107a4c5-ef03-449d-bb7a-107a873b1a4c
 title: How do Workspaces roles differ from project-group roles?
 slug: workspace-roles-and-project-roles
 doc_type: concept

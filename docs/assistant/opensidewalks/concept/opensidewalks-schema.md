@@ -1,4 +1,5 @@
 ---
+uid: 85c9e786-df58-40a6-af7c-8e5e680061a9
 title: What is the OpenSidewalks data schema?
 slug: opensidewalks-schema
 doc_type: concept

@@ -1,4 +1,5 @@
 ---
+uid: a1bed4a4-289b-41e0-a1a1-a5f1f967574c
 title: How are rural areas handled?
 slug: rural-area-handling
 doc_type: concept

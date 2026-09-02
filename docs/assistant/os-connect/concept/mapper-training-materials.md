@@ -1,4 +1,5 @@
 ---
+uid: 0281fc64-1dd1-4d4d-9e6e-26ee18965d56
 title: What training materials are available for new sidewalk mappers?
 slug: mapper-training-materials
 doc_type: concept

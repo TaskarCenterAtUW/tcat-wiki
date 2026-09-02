@@ -1,4 +1,5 @@
 ---
+uid: e0820a0e-84c0-4e38-99b6-bab0c16e2fa3
 title: Why can conditional attribute completeness be low?
 slug: conditional-attribute-completeness
 doc_type: concept

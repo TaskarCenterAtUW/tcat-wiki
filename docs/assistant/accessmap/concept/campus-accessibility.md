@@ -1,4 +1,5 @@
 ---
+uid: 8cb93608-585b-4da6-81ee-c95dc5c9a304
 title: Can AccessMap support campus accessibility?
 slug: campus-accessibility
 doc_type: concept

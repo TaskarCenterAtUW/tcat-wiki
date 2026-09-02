@@ -1,4 +1,5 @@
 ---
+uid: 0a1a84b6-b514-4aa8-855d-d51fe906df54
 title: Edit accessibility features in a workspace
 slug: edit-accessibility-features-in-a-workspace
 doc_type: workflow

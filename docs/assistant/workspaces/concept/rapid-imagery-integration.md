@@ -1,4 +1,5 @@
 ---
+uid: eff61780-6d79-46f0-be56-5a612d85a908
 title: How does imagery configuration differ between AVIV ScoutRoute and Rapid?
 slug: rapid-imagery-integration
 doc_type: concept

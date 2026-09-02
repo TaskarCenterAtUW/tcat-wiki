@@ -1,4 +1,5 @@
 ---
+uid: b08a02d6-e1a9-48af-8773-dedbb975e04a
 title: What additional data is needed for ADA transition plans?
 slug: ada-transition-data-requirements
 doc_type: concept

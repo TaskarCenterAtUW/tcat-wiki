@@ -1,4 +1,5 @@
 ---
+uid: bb08cf9c-20bf-4b06-8252-8bd791093584
 title: What is a workspace-per-project model?
 slug: workspace-per-project-model
 doc_type: concept

@@ -1,4 +1,5 @@
 ---
+uid: b93a2388-da98-4edb-a6c4-a064ab1b99fb
 title: How does AccessMap coverage outside Washington work?
 slug: coverage-outside-washington
 doc_type: concept

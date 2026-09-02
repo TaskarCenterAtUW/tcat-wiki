@@ -1,4 +1,5 @@
 ---
+uid: 60a4b58d-ce5d-41b3-8246-9a09fbd889fd
 title: How do I build a Walksheds router?
 slug: build-walkshed-router
 doc_type: workflow

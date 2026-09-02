@@ -1,4 +1,5 @@
 ---
+uid: 57acb4d0-6cad-4afe-b348-2fe0c3b2ea09
 title: What accessibility needs does AccessMap support?
 slug: accessibility-needs
 doc_type: concept

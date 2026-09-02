@@ -1,4 +1,5 @@
 ---
+uid: c1d960b6-ad07-4b10-a8c6-e5ce06b07c29
 title: What is a quest in AVIV ScoutRoute?
 slug: quest
 doc_type: concept

@@ -1,4 +1,5 @@
 ---
+uid: 58a260d4-f5ba-4f2c-84a6-62aa575d2eb5
 title: What lessons could other states adopt?
 slug: cross-state-lessons
 doc_type: concept

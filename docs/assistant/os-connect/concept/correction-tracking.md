@@ -1,4 +1,5 @@
 ---
+uid: 3aa38450-5138-4d14-a9be-bc214534017c
 title: "How are corrections tracked across releases?"
 slug: correction-tracking
 doc_type: concept

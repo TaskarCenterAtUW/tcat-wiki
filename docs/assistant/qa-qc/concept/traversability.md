@@ -1,4 +1,5 @@
 ---
+uid: 76f824a9-e59e-40fa-8f1b-26465b547a23
 title: What does traversability mean in a QA/QC report?
 slug: traversability
 doc_type: concept

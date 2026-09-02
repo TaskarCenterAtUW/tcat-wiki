@@ -1,4 +1,5 @@
 ---
+uid: 4d328378-d4be-418a-a4c0-22eff37413bf
 title: What attributes are collected for sidewalks?
 slug: sidewalk-attributes
 doc_type: concept

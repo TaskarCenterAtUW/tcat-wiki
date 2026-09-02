@@ -1,4 +1,5 @@
 ---
+uid: efb382c5-369d-45a0-984f-2b8bd0e66ce5
 title: What am I looking at in this viewer?
 slug: viewer-overview
 doc_type: concept

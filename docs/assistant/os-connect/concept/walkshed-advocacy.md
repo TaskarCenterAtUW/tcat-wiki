@@ -1,4 +1,5 @@
 ---
+uid: 76e2b202-4641-46ad-b829-3454ef49125e
 title: How can communities use walksheds to advocate for change?
 slug: walkshed-advocacy
 doc_type: concept

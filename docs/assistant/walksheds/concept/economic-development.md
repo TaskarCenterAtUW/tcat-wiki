@@ -1,4 +1,5 @@
 ---
+uid: a4c306f4-38a4-48ec-8e5f-9723c316cf15
 title: How can walksheds support economic development?
 slug: economic-development
 doc_type: concept

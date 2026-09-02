@@ -1,4 +1,5 @@
 ---
+uid: 64dc8b8a-f5d8-4b56-b04b-d01415ceb55e
 title: How should jurisdictions participate in stewardship?
 slug: jurisdiction-stewardship
 doc_type: concept

@@ -1,4 +1,5 @@
 ---
+uid: 4a879832-c6e6-48a8-81ac-f1065bf770b5
 title: How are edits uploaded back to TDEI?
 slug: edit-upload-to-tdei
 doc_type: concept

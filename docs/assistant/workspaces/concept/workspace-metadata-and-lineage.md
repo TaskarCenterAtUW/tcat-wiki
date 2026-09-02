@@ -1,4 +1,5 @@
 ---
+uid: 7bc49a18-d5ce-4c01-a99f-4561b8b49ddb
 title: What metadata identifies a workspace?
 slug: workspace-metadata-and-lineage
 doc_type: concept

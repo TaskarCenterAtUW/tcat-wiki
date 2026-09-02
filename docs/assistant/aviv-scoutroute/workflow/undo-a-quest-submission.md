@@ -1,4 +1,5 @@
 ---
+uid: 4618725f-61dc-4fef-8bab-ad5990c0db54
 title: How do I undo an AVIV ScoutRoute quest submission?
 slug: undo-a-quest-submission
 doc_type: workflow

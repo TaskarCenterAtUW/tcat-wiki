@@ -1,4 +1,5 @@
 ---
+uid: 56090dfc-f09d-445c-a3c1-f66a3dd2d564
 title: How should conflicting data sources be handled?
 slug: conflicting-data-sources
 doc_type: concept

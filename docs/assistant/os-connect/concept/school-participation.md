@@ -1,4 +1,5 @@
 ---
+uid: b20de641-6da6-4ded-b663-f5e67727cc1a
 title: How can schools participate?
 slug: school-participation
 doc_type: concept

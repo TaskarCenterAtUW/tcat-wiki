@@ -1,4 +1,5 @@
 ---
+uid: 4cd25d97-67f4-4402-9dd9-602439f2226b
 title: What does the TDEI Filter Dataset By BBox job do?
 slug: job-filter-dataset-by-bbox
 doc_type: concept

@@ -1,4 +1,5 @@
 ---
+uid: 7017334a-7513-4974-a8d4-37636a3cc266
 title: Workspaces abstention boundaries
 slug: workspace-abstention-boundaries
 doc_type: concept

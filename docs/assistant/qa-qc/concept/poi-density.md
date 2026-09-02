@@ -1,4 +1,5 @@
 ---
+uid: e67aabd4-96fb-441a-9e14-0c1eeb86503c
 title: What does POI density mean?
 slug: poi-density
 doc_type: concept

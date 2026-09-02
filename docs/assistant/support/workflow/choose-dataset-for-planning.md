@@ -1,4 +1,5 @@
 ---
+uid: 601d1ddd-d691-4920-be36-72edff5cf8d7
 title: Which dataset should I use if I need pedestrian walkway data for planning?
 slug: choose-dataset-for-planning
 doc_type: workflow

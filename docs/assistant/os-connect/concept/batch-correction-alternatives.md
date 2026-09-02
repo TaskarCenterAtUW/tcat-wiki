@@ -1,4 +1,5 @@
 ---
+uid: 090dc77d-f4ac-43f7-bb3c-24225857d960
 title: Can an agency submit a batch of known corrections instead of reporting one issue at a time?
 slug: batch-correction-alternatives
 doc_type: concept

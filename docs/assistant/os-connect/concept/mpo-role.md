@@ -1,4 +1,5 @@
 ---
+uid: 774d0238-f738-4664-8f1b-cadab006d4f1
 title: What role could MPOs play?
 slug: mpo-role
 doc_type: concept

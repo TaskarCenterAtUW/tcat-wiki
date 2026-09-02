@@ -1,4 +1,5 @@
 ---
+uid: 04eafa76-4fa7-4a3a-a493-fa4716d2d371
 title: What gaps still exist in accessibility data?
 slug: accessibility-data-gaps
 doc_type: concept

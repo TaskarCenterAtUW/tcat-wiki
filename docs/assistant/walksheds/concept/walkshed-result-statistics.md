@@ -1,4 +1,5 @@
 ---
+uid: 019c27d9-1acc-43e1-9728-4083a5085dc8
 title: What statistics does Walksheds provide?
 slug: walkshed-result-statistics
 doc_type: concept

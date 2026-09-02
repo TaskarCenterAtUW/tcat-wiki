@@ -1,4 +1,5 @@
 ---
+uid: 433d273a-a75d-42fd-a1f5-9bc1616ed4ce
 title: How could transit and pedestrian systems integrate more deeply?
 slug: transit-pedestrian-integration
 doc_type: concept

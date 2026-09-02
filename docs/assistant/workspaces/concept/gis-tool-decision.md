@@ -1,4 +1,5 @@
 ---
+uid: 743b7223-0946-4c8f-b823-98a6e70152ed
 title: When should a city use external GIS tools?
 slug: gis-tool-decision
 doc_type: concept

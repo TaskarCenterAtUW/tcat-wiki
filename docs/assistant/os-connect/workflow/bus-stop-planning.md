@@ -1,4 +1,5 @@
 ---
+uid: 8b10916c-8d15-40df-bb2a-78c07c2f2dd9
 title: Can OS-CONNECT support bus stop planning?
 slug: bus-stop-planning
 doc_type: workflow

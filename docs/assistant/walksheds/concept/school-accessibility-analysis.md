@@ -1,4 +1,5 @@
 ---
+uid: 3142cd7e-1d15-4bf9-b45d-8967e8a59cb3
 title: How can walksheds support school accessibility analysis?
 slug: school-accessibility-analysis
 doc_type: concept

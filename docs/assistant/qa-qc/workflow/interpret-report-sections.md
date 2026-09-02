@@ -1,4 +1,5 @@
 ---
+uid: 76d768a3-0d9d-40aa-adb2-715e6791971d
 title: How do I interpret QA/QC report sections?
 slug: interpret-report-sections
 doc_type: workflow

@@ -1,4 +1,5 @@
 ---
+uid: 01ed2c86-c164-45c2-aa45-f8ec8de639c1
 title: How does Workspaces team membership differ from project access?
 slug: workspace-team-membership
 doc_type: concept

@@ -1,4 +1,5 @@
 ---
+uid: 7bb47f06-a390-4389-8837-c4712bd76514
 title: How do I open a TDEI dataset for inspection?
 slug: open-dataset-for-inspection
 doc_type: workflow

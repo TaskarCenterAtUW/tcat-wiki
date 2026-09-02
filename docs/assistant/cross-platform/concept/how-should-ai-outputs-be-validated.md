@@ -1,4 +1,5 @@
 ---
+uid: 59cd6566-9f1a-4b01-8e9b-a06e6c174cd8
 title: How should AI outputs be validated?
 slug: how-should-ai-outputs-be-validated
 doc_type: concept

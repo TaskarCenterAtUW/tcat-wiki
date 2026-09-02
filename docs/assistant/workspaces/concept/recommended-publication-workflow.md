@@ -1,4 +1,5 @@
 ---
+uid: e7a65d6d-128e-4881-b3d9-22b12b7389d0
 title: What is the recommended publication workflow?
 slug: recommended-publication-workflow
 doc_type: concept

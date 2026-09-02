@@ -1,4 +1,5 @@
 ---
+uid: 830aed9e-1c4c-45d3-a8cd-38de1c43ad6c
 title: How can an agency confirm that a submitted correction was incorporated?
 slug: correction-confirmation
 doc_type: concept

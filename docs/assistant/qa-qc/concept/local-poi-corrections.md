@@ -1,4 +1,5 @@
 ---
+uid: 4e05661f-70ab-473d-a633-97a58bf74de5
 title: How can local POIs be added to QA/QC analysis?
 slug: local-poi-corrections
 doc_type: concept

@@ -1,4 +1,5 @@
 ---
+uid: e0ccd91a-63a4-40c5-bac3-ba603628e286
 title: What are the biggest barriers to adoption?
 slug: adoption-barriers
 doc_type: concept

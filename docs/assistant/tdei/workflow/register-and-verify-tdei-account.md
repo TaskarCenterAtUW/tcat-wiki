@@ -1,4 +1,5 @@
 ---
+uid: 7cd47b84-24f2-470a-85ac-00d0feccd8e7
 title: How do I register and verify a TDEI account?
 slug: register-and-verify-tdei-account
 doc_type: workflow

@@ -1,4 +1,5 @@
 ---
+uid: e31794c6-04da-4a09-8e70-d1548a535722
 title: What input does a Walksheds batch amenity request need?
 slug: walkshed-batch-amenity-input
 doc_type: concept

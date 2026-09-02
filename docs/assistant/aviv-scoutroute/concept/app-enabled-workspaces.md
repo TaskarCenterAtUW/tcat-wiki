@@ -1,4 +1,5 @@
 ---
+uid: b96f1524-81e2-49ad-aebe-96f65d155d87
 title: What is an app-enabled workspace?
 slug: app-enabled-workspaces
 doc_type: concept

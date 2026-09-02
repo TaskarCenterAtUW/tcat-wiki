@@ -1,4 +1,5 @@
 ---
+uid: 791b6ae8-46bb-4813-87b6-795097648c52
 title: What is a project group?
 slug: project-group-definition
 doc_type: concept

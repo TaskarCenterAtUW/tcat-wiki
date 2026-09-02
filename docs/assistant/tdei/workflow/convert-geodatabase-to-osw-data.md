@@ -1,4 +1,5 @@
 ---
+uid: db0d350e-7fb2-4f3d-a2b1-cfae0cd7fe24
 title: How can a geodatabase be converted to OpenSidewalks-oriented data?
 slug: convert-geodatabase-to-osw-data
 doc_type: workflow

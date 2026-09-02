@@ -1,4 +1,5 @@
 ---
+uid: 14e0aae1-0251-4666-aeb1-154f57468a1d
 title: Why are some destinations unreachable?
 slug: unreachable-destinations
 doc_type: concept

@@ -1,4 +1,5 @@
 ---
+uid: 1fffc62a-9d84-491d-bae5-1cc1a151bc84
 title: How are campuses handled?
 slug: campus-handling
 doc_type: concept

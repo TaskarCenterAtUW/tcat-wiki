@@ -1,4 +1,5 @@
 ---
+uid: a5858d1a-220b-488c-8630-b99bbb029749
 title: What metrics matter most for accessible mobility?
 slug: accessibility-mobility-metrics
 doc_type: concept

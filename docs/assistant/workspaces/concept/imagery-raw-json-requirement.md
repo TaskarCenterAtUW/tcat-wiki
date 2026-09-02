@@ -1,4 +1,5 @@
 ---
+uid: 92405620-7a42-40be-a7b2-32e501ea6635
 title: Why must imagery use raw JSON links?
 slug: imagery-raw-json-requirement
 doc_type: concept

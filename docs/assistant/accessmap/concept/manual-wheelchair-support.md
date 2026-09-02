@@ -1,4 +1,5 @@
 ---
+uid: 6034b0da-57ad-4588-a3c0-6ceb4cf6584d
 title: Can AccessMap support manual wheelchair users?
 slug: manual-wheelchair-support
 doc_type: concept

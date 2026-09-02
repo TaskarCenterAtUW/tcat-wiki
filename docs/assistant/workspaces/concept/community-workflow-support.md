@@ -1,4 +1,5 @@
 ---
+uid: fee88a64-1584-4bb6-9c63-d1db97cc3ddf
 title: What kinds of community workflows are supported?
 slug: community-workflow-support
 doc_type: concept

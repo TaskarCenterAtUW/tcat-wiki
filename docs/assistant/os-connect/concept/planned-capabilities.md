@@ -1,4 +1,5 @@
 ---
+uid: 0ad4d063-a9c4-4e0a-8b43-fcd5384d8294
 title: What future capabilities are planned for OS-CONNECT?
 slug: planned-capabilities
 doc_type: concept

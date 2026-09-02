@@ -1,4 +1,5 @@
 ---
+uid: 1c3114bf-e872-4583-9691-c301a71afe92
 title: What is participatory accessibility mapping?
 slug: participatory-accessibility-mapping
 doc_type: concept

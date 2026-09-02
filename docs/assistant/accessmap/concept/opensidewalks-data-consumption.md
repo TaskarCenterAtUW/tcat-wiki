@@ -1,4 +1,5 @@
 ---
+uid: 119cd40e-c089-40b6-9282-cc3017482ad4
 title: How does AccessMap consume OpenSidewalks or OS-CONNECT data?
 slug: opensidewalks-data-consumption
 doc_type: concept

@@ -1,4 +1,5 @@
 ---
+uid: 6f85f542-fd51-4dde-b838-82f44c4fcd42
 title: How do point and line feature workflows differ?
 slug: point-and-line-feature-workflows
 doc_type: concept

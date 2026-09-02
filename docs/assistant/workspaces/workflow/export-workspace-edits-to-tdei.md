@@ -1,4 +1,5 @@
 ---
+uid: e82a23a4-e888-4999-9454-3b870772536f
 title: Export workspace edits to TDEI
 slug: export-workspace-edits-to-tdei
 doc_type: workflow

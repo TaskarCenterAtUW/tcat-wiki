@@ -1,4 +1,5 @@
 ---
+uid: 55521d6a-09e0-4475-b657-c130d40e6a6d
 title: LivAbility — Assistant Knowledge Base
 slug: livability-index
 doc_type: policy

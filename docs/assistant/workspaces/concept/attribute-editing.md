@@ -1,4 +1,5 @@
 ---
+uid: 802d673c-d3a5-4e79-a39e-f2647e9bdc3d
 title: Can attribute data be edited?
 slug: attribute-editing
 doc_type: concept

@@ -1,4 +1,5 @@
 ---
+uid: c6d302c4-d775-476f-9fd9-9059e8dfb087
 title: What input limitations affect numeric quests?
 slug: numeric-quest-input
 doc_type: concept

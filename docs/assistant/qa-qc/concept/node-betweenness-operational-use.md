@@ -1,4 +1,5 @@
 ---
+uid: bda69ac6-291c-474e-a1d0-71baf313f541
 title: How can node betweenness support operations?
 slug: node-betweenness-operational-use
 doc_type: concept

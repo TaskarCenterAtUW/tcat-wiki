@@ -1,4 +1,5 @@
 ---
+uid: 004a0171-bb78-4b92-9f71-5a3fca439241
 title: What role could states play in stewardship?
 slug: state-stewardship-role
 doc_type: concept

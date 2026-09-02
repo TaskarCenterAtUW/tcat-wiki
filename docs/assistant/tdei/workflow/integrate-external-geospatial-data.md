@@ -1,4 +1,5 @@
 ---
+uid: d463bc73-51b5-44fe-8d69-526e6e30073e
 title: How do I integrate external geospatial data with TDEI?
 slug: integrate-external-geospatial-data
 doc_type: workflow

@@ -1,4 +1,5 @@
 ---
+uid: 2a8ae450-c65f-460e-bdb4-619453e3cdff
 title: "What happens after I submit an issue report?"
 slug: issue-report-follow-up
 doc_type: concept

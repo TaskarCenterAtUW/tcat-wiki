@@ -1,4 +1,5 @@
 ---
+uid: f9f0667d-f55e-49fd-bcde-002bb8fd5a7f
 title: What is the relationship between Workspaces and the TDEI portal?
 slug: workspaces-tdei-portal-relationship
 doc_type: concept

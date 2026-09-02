@@ -1,4 +1,5 @@
 ---
+uid: 620eb711-0340-4863-8500-be9721d59d5c
 title: How can community members contribute corrections?
 slug: community-correction-contribution
 doc_type: concept

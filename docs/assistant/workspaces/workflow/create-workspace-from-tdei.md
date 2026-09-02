@@ -1,4 +1,5 @@
 ---
+uid: 68dbba63-5f2c-4d43-bb91-39114a546e56
 title: How do I create a workspace from TDEI?
 slug: create-workspace-from-tdei
 doc_type: workflow

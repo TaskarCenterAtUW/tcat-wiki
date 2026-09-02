@@ -1,4 +1,5 @@
 ---
+uid: 6512f37c-6152-482b-bdbf-b5ae2cfc3aaa
 title: Do reported issues automatically update OS-CONNECT?
 slug: issue-report-auto-update
 doc_type: concept

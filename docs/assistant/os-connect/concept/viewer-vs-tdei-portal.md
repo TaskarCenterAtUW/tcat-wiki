@@ -1,4 +1,5 @@
 ---
+uid: 50988705-d705-4cf7-9d9b-3f42941e669b
 title: What is the difference between the viewer and the TDEI portal?
 slug: viewer-vs-tdei-portal
 doc_type: concept

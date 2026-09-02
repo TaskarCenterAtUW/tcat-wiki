@@ -1,4 +1,5 @@
 ---
+uid: 31b7e253-6d45-46da-b778-d5b58d0624a9
 title: How can walksheds support Vision Zero?
 slug: vision-zero
 doc_type: concept

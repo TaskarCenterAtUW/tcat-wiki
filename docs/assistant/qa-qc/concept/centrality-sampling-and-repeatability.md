@@ -1,4 +1,5 @@
 ---
+uid: 55cb2e2e-cb93-439c-8d4d-87d2addcfdc5
 title: How does centrality sampling affect repeatability?
 slug: centrality-sampling-and-repeatability
 doc_type: concept

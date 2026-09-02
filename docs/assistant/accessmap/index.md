@@ -1,4 +1,5 @@
 ---
+uid: 2eec4238-4c6a-42f3-9054-a9c475ff29a4
 title: AccessMap — Assistant Knowledge Base
 slug: accessmap-index
 doc_type: policy

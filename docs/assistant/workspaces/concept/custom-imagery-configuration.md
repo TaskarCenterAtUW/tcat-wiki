@@ -1,4 +1,5 @@
 ---
+uid: 8d0a47ab-0d23-46a5-a1c2-40dcf44cd79f
 title: How is custom imagery configured in a workspace?
 slug: custom-imagery-configuration
 doc_type: concept

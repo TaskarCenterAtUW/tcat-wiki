@@ -1,4 +1,5 @@
 ---
+uid: a4ad0bc0-677f-4e0e-ad70-b6b898cc22d8
 title: How can quest definitions request photographs?
 slug: quest-definition-picture-questions
 doc_type: concept

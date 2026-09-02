@@ -1,4 +1,5 @@
 ---
+uid: 3abda96c-8274-42e4-b3aa-fdcd1a1d7334
 title: What is an interoperable accessibility ecosystem?
 slug: interoperable-accessibility-ecosystem
 doc_type: concept

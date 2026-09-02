@@ -1,4 +1,5 @@
 ---
+uid: 51b46963-5a2c-4b1d-9e8d-21e76f34f5c2
 title: What does sandbox mean in Workspaces?
 slug: sandbox
 doc_type: concept

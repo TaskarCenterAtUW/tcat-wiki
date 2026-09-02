@@ -1,4 +1,5 @@
 ---
+uid: 15c65282-0552-4aac-a7ac-9957cac9db20
 title: TDEI — Assistant Knowledge Base
 slug: tdei-index
 doc_type: policy

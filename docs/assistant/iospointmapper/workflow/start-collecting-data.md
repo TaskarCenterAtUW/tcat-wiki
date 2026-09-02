@@ -1,4 +1,5 @@
 ---
+uid: b3b2312d-4a16-4ce5-99b2-694172106c79
 title: How do I start collecting data using iOSPointMapper?
 slug: start-collecting-data
 doc_type: workflow

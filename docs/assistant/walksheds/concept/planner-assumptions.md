@@ -1,4 +1,5 @@
 ---
+uid: 0afbcb3c-9cfa-4dd3-b6de-db92f3fc91b7
 title: What assumptions should planners understand?
 slug: planner-assumptions
 doc_type: concept

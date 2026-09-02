@@ -1,4 +1,5 @@
 ---
+uid: 9209b586-859c-43ff-b606-4b60ebfe9f0f
 title: How is TDEI organized?
 slug: tdei-architecture
 doc_type: concept

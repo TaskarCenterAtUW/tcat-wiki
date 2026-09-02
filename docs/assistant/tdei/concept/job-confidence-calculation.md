@@ -1,4 +1,5 @@
 ---
+uid: d2a3b103-8781-44ca-94e7-c3d1f94c77af
 title: What does the TDEI Confidence Calculation job do?
 slug: job-confidence-calculation
 doc_type: concept

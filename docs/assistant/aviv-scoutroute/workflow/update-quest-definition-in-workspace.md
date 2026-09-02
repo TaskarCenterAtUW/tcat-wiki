@@ -1,4 +1,5 @@
 ---
+uid: c93fc95f-c5c8-4a20-b217-fd49295ca9de
 title: How do I update a quest definition in a workspace?
 slug: update-quest-definition-in-workspace
 doc_type: workflow

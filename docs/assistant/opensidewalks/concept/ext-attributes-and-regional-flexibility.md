@@ -1,4 +1,5 @@
 ---
+uid: ab93942b-5c60-4aa3-a946-01b306d7cbb0
 title: How do ext attributes support regional flexibility?
 slug: ext-attributes-and-regional-flexibility
 doc_type: concept

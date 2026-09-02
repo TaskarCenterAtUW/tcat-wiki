@@ -1,4 +1,5 @@
 ---
+uid: 8c5ec0a1-be5b-4fd2-833c-213a4ffb7efe
 title: Cross-Platform — Assistant Knowledge Base
 slug: cross-platform-index
 doc_type: policy

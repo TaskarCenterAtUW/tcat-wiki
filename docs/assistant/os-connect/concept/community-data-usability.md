@@ -1,4 +1,5 @@
 ---
+uid: 1bd52b2e-4bb4-45e7-94d7-b4d5a7ac13ce
 title: What makes community-mapped sidewalk data usable for agency workflows?
 slug: community-data-usability
 doc_type: concept

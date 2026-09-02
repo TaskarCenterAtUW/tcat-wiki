@@ -1,4 +1,5 @@
 ---
+uid: d0f7f947-33ef-420c-9cc3-fc09156dcf9a
 title: "How should separately mapped sidewalks be associated with street names in OSM?"
 slug: sidewalk-street-name-association
 doc_type: concept

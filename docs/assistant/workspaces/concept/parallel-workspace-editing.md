@@ -1,4 +1,5 @@
 ---
+uid: 055ad2f1-86d6-48c8-89ba-edd1559cfbe5
 title: What happens if two groups edit separate copies?
 slug: parallel-workspace-editing
 doc_type: concept

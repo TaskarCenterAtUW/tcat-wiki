@@ -1,4 +1,5 @@
 ---
+uid: 55fed870-32ed-42cb-8600-dd833c559e4d
 title: How does Workspaces support collaborative accessibility editing?
 slug: collaborative-editing-support
 doc_type: concept

@@ -1,4 +1,5 @@
 ---
+uid: 8c844f20-7875-40e4-a212-efe0a43de9fc
 title: What does the TDEI portal dashboard show?
 slug: portal-dashboard
 doc_type: concept

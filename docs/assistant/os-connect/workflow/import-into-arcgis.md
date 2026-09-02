@@ -1,4 +1,5 @@
 ---
+uid: adeefd4e-94b5-4a1a-b82d-9e66e8b957ca
 title: How do I import OS-CONNECT / OSW GeoJSON into ArcGIS?
 slug: import-into-arcgis
 doc_type: workflow

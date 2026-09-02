@@ -1,4 +1,5 @@
 ---
+uid: 60301468-58c6-44f2-a4ae-03615b0b60af
 title: How can edits be audited?
 slug: edit-auditing
 doc_type: concept

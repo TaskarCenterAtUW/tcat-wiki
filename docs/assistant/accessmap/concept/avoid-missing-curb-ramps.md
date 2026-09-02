@@ -1,4 +1,5 @@
 ---
+uid: 37a2145d-2b6a-4299-aadf-99ee1886235f
 title: 'What does "avoid missing curb ramps" mean?'
 slug: avoid-missing-curb-ramps
 doc_type: concept

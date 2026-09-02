@@ -1,4 +1,5 @@
 ---
+uid: f1507e8d-76ef-497d-9074-075a36561d08
 title: What is Waykeeper?
 slug: waykeeper
 doc_type: concept

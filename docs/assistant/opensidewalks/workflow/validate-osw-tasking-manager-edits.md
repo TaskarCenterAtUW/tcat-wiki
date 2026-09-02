@@ -1,4 +1,5 @@
 ---
+uid: 57966c8d-2cbf-434c-820c-039ff63aca84
 title: How do I validate OpenSidewalks edits in the Tasking Manager?
 slug: validate-osw-tasking-manager-edits
 doc_type: workflow

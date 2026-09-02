@@ -1,4 +1,5 @@
 ---
+uid: b315586a-a18c-4266-9557-9e4ea65b6c03
 title: How should municipalities interpret completeness scores?
 slug: completeness-score-interpretation
 doc_type: concept

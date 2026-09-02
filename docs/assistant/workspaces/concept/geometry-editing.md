@@ -1,4 +1,5 @@
 ---
+uid: 7721e29a-50c8-4810-96eb-994b81f4bbe8
 title: Can geometry be edited?
 slug: geometry-editing
 doc_type: concept

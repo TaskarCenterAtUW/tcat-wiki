@@ -1,4 +1,5 @@
 ---
+uid: a5bcd628-3d58-416a-bc5a-cac2ccde9004
 title: How can users continue editing an existing feature?
 slug: continuing-feature-edits
 doc_type: concept

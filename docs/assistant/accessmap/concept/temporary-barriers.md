@@ -1,4 +1,5 @@
 ---
+uid: b1771e49-c109-42bf-b50a-c083da2efaea
 title: Can temporary barriers be represented?
 slug: temporary-barriers
 doc_type: concept

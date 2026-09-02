@@ -1,4 +1,5 @@
 ---
+uid: 9781d11f-5feb-4395-ad48-61a7f94d30de
 title: How can OSM data be imported into Workspaces?
 slug: import-osm-data-into-workspaces
 doc_type: workflow

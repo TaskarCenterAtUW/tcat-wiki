@@ -1,4 +1,5 @@
 ---
+uid: bec67c43-7e58-40ef-a719-bcc2f6615978
 title: What does eigenvector centrality say about network importance?
 slug: eigenvector-centrality-network-importance
 doc_type: concept

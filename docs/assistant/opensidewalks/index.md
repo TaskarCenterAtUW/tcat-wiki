@@ -1,4 +1,5 @@
 ---
+uid: 1df8e7aa-2bc6-4360-bb30-c1c69cc0e260
 title: OpenSidewalks — Assistant Knowledge Base
 slug: opensidewalks-index
 doc_type: policy

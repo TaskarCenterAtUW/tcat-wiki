@@ -1,4 +1,5 @@
 ---
+uid: 95ad30a0-0069-40c8-a452-23a4c03b3fcf
 title: What happens when sidewalks are disconnected?
 slug: disconnected-sidewalks
 doc_type: concept

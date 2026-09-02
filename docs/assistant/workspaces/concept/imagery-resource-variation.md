@@ -1,4 +1,5 @@
 ---
+uid: 451d0a99-8b85-47d0-b660-5bb37cd80b07
 title: Why do imagery resources differ between workspaces?
 slug: imagery-resource-variation
 doc_type: concept

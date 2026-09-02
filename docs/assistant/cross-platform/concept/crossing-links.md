@@ -1,4 +1,5 @@
 ---
+uid: 3d939b29-ea39-4f8b-a46d-697b90f2ef15
 title: How are crossing links represented across pedestrian data systems?
 slug: crossing-links
 doc_type: concept

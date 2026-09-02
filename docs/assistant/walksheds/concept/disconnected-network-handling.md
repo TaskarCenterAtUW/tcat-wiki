@@ -1,4 +1,5 @@
 ---
+uid: 796eaac8-2814-4ed0-81b8-a250829f5857
 title: How are disconnected networks handled?
 slug: disconnected-network-handling
 doc_type: concept

@@ -1,4 +1,5 @@
 ---
+uid: 97f238c3-ec39-4879-9b12-2d9720f1f51e
 title: Why does AccessMap differ from Apple Maps?
 slug: comparison-apple-maps
 doc_type: concept

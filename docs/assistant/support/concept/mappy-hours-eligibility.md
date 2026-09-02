@@ -1,4 +1,5 @@
 ---
+uid: 8a4df597-73e5-41af-ae42-36ba4c384462
 title: Can agencies or community groups attend Mappy Hours?
 slug: mappy-hours-eligibility
 doc_type: concept

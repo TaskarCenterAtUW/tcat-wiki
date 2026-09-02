@@ -1,4 +1,5 @@
 ---
+uid: d0ab91b6-e1a1-4cff-93e0-280a250ad81f
 title: Can OS-CONNECT support pedestrian access analysis around destinations?
 slug: support-pedestrian-access-analysis-around-destinations
 doc_type: workflow

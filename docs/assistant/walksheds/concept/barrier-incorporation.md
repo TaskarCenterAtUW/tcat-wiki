@@ -1,4 +1,5 @@
 ---
+uid: 5a78449e-ba9e-46a1-a7ba-e5669ebb7ebd
 title: How are barriers incorporated?
 slug: barrier-incorporation
 doc_type: concept

@@ -1,4 +1,5 @@
 ---
+uid: 53b4bb91-cc44-4ef5-b0b0-1b78b3c5a2eb
 title: How do I report an error in OS-CONNECT data?
 slug: report-data-error
 doc_type: workflow

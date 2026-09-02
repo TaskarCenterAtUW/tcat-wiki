@@ -1,4 +1,5 @@
 ---
+uid: 1540374b-e992-403b-9bbd-61d57b48a163
 title: What are teams in Workspaces?
 slug: teams
 doc_type: concept

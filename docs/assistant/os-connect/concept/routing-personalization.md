@@ -1,4 +1,5 @@
 ---
+uid: 342f1749-8884-4cbe-ae38-8eabbc15fec0
 title: Can routing systems personalize accessibility preferences?
 slug: routing-personalization
 doc_type: concept

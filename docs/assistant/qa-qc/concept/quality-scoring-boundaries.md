@@ -1,4 +1,5 @@
 ---
+uid: 049313cd-c906-4878-b495-56590c5fc81b
 title: What are the boundaries of QA/QC quality scoring?
 slug: quality-scoring-boundaries
 doc_type: concept

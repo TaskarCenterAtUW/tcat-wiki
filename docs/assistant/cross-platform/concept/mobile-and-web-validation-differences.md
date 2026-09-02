@@ -1,4 +1,5 @@
 ---
+uid: 1783d183-b377-4c17-a303-f83701312400
 title: How can validation differ between mobile apps and Workspaces?
 slug: mobile-and-web-validation-differences
 doc_type: concept

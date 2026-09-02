@@ -1,4 +1,5 @@
 ---
+uid: 18a7a7a8-e0b3-4b61-ba74-eb57506b261b
 title: Create a workspace from TDEI
 slug: create-a-workspace-from-tdei
 doc_type: workflow

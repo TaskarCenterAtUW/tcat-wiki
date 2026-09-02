@@ -1,4 +1,5 @@
 ---
+uid: abb42bac-60db-4565-b9b9-46959ca4e3ca
 title: What does it mean to route using accessibility preferences?
 slug: accessibility-preference-routing
 doc_type: concept

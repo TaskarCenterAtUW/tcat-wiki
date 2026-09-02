@@ -1,4 +1,5 @@
 ---
+uid: b0df384a-bf0c-4518-897f-e69a1e87ee0f
 title: How should Walksheds batch failures be interpreted?
 slug: walkshed-batch-failures
 doc_type: concept

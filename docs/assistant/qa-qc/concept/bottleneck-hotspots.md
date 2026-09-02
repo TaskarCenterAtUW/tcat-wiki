@@ -1,4 +1,5 @@
 ---
+uid: 2932c97d-2f41-488f-9054-1e864aeb1f97
 title: What are QA/QC bottleneck hotspots?
 slug: bottleneck-hotspots
 doc_type: concept

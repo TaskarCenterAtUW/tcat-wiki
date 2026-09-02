@@ -1,4 +1,5 @@
 ---
+uid: 2333602e-b43f-42b2-8fc6-45ae7ac6a406
 title: What geographic areas are covered?
 slug: geographic-coverage
 doc_type: concept

@@ -1,4 +1,5 @@
 ---
+uid: fcde475f-1f37-4396-9de9-c630a19af968
 title: What kinds of users are Workspaces designed for?
 slug: target-users
 doc_type: concept

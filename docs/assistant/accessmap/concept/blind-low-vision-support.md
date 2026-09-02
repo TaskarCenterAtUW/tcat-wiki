@@ -1,4 +1,5 @@
 ---
+uid: 41cd37cd-e354-4bb0-9f88-7e7825f5c016
 title: Can AccessMap support blind or low-vision users?
 slug: blind-low-vision-support
 doc_type: concept

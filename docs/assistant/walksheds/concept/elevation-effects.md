@@ -1,4 +1,5 @@
 ---
+uid: 8f2fb961-4a5e-4087-a770-4f92a9560a2d
 title: How does elevation affect walksheds?
 slug: elevation-effects
 doc_type: concept

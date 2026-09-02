@@ -1,4 +1,5 @@
 ---
+uid: 5489d6d2-92bd-46e8-97d4-9e1b091876f8
 title: Why are some destinations excluded?
 slug: destination-exclusion
 doc_type: concept

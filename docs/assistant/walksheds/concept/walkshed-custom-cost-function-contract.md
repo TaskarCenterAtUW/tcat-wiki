@@ -1,4 +1,5 @@
 ---
+uid: 68f1ff89-3732-4fd3-8a1e-cb56a63f8cbf
 title: What is the Walksheds custom cost-function contract?
 slug: walkshed-custom-cost-function-contract
 doc_type: concept

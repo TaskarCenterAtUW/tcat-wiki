@@ -1,4 +1,5 @@
 ---
+uid: af7c583d-5c7d-4b29-9849-a78661e61f1d
 title: Which dataset and format should an agency use for pedestrian walkway data in ArcGIS?
 slug: choose-dataset-for-arcgis
 doc_type: workflow

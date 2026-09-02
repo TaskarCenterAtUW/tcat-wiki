@@ -1,4 +1,5 @@
 ---
+uid: a18f0418-5032-46cb-a66e-8576e1f3ab5b
 title: What is the difference between street:name=* and is_sidepath:of:name=*?
 slug: street-name-vs-is-sidepath-of-name
 doc_type: concept

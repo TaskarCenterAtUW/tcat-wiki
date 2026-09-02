@@ -1,4 +1,5 @@
 ---
+uid: 92f378ce-2543-4b85-a08c-79f5e0f9e273
 title: What does it mean that OS-CONNECT uses the OpenSidewalks schema?
 slug: opensidewalks-schema-usage
 doc_type: concept

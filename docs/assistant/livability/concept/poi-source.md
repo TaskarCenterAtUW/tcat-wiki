@@ -1,4 +1,5 @@
 ---
+uid: f09e5084-ff52-4dd1-8cd1-abd4822c56f5
 title: What is the source for the POIs in LivAbility?
 slug: poi-source
 doc_type: concept

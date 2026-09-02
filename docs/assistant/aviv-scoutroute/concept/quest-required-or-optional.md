@@ -1,4 +1,5 @@
 ---
+uid: adafb96b-4eb2-4857-8aa4-2e876f2e5edd
 title: Can quests in AVIV ScoutRoute be marked as required or optional?
 slug: quest-required-or-optional
 doc_type: concept

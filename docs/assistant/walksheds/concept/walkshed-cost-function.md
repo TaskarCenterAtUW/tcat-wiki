@@ -1,4 +1,5 @@
 ---
+uid: e86233d6-a882-456e-8a8e-32208efb2ac3
 title: How does the Walksheds cost function work?
 slug: walkshed-cost-function
 doc_type: concept

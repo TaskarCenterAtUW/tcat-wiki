@@ -1,4 +1,5 @@
 ---
+uid: 34430d5c-010a-42e3-b3a7-f67b5c5462a5
 title: What are the different workspace creation methods?
 slug: workspace-creation-methods
 doc_type: concept

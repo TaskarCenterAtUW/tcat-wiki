@@ -1,4 +1,5 @@
 ---
+uid: 27b73b05-5428-4a61-9859-0cc2808ad148
 title: Why is Workspaces compatible with OSM tools?
 slug: osm-tool-compatibility-rationale
 doc_type: concept

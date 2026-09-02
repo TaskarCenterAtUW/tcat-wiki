@@ -1,4 +1,5 @@
 ---
+uid: 3a06837e-1c3a-4d0c-b259-41b93c38141b
 title: How are private facilities handled?
 slug: private-facilities
 doc_type: concept

@@ -1,4 +1,5 @@
 ---
+uid: a1595106-5792-4731-aa0e-36c461f221b9
 title: How is a quest definition applied?
 slug: quest-definition-application
 doc_type: concept

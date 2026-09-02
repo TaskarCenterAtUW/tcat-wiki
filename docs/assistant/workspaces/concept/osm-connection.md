@@ -1,4 +1,5 @@
 ---
+uid: 890f5e4b-ca48-4c8a-b49e-c2a3d9304ef0
 title: Is Workspaces connected to the public OSM database?
 slug: osm-connection
 doc_type: concept

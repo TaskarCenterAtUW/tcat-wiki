@@ -1,4 +1,5 @@
 ---
+uid: 47d7c127-dabc-453c-a941-24bf1dcac011
 title: How does OS-CONNECT support mobility justice?
 slug: mobility-justice
 doc_type: concept

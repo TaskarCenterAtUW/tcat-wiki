@@ -1,4 +1,5 @@
 ---
+uid: a0f287e5-c881-4126-a8c4-792858292bc3
 title: Can OS-CONNECT be used for ADA transition planning?
 slug: ada-transition-planning
 doc_type: concept

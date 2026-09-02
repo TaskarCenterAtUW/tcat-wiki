@@ -1,4 +1,5 @@
 ---
+uid: d99c51e4-adc0-44dc-9068-a7729475a2ed
 title: What is QA/QC report provenance?
 slug: report-provenance
 doc_type: concept

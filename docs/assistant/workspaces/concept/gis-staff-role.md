@@ -1,4 +1,5 @@
 ---
+uid: 11a74018-2359-4be9-87dd-278e35482312
 title: How do technical GIS staff interact with Workspaces?
 slug: gis-staff-role
 doc_type: concept

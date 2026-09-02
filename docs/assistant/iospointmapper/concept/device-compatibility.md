@@ -1,4 +1,5 @@
 ---
+uid: 6b474bd0-5310-451b-9a7c-2cd98ea08788
 title: What devices are compatible with iOSPointMapper?
 slug: device-compatibility
 doc_type: concept

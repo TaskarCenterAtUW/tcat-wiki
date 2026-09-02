@@ -1,4 +1,5 @@
 ---
+uid: 226a3de6-025b-4085-98e9-72462dcf86c4
 title: What syntax does an AVIV ScoutRoute quest query use?
 slug: quest-definition-query-syntax
 doc_type: concept

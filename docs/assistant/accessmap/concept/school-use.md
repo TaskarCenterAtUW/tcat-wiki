@@ -1,4 +1,5 @@
 ---
+uid: 92351d12-f4b5-4b88-b99c-67d4368a2f52
 title: How can schools use AccessMap?
 slug: school-use
 doc_type: concept

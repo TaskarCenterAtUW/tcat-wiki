@@ -1,4 +1,5 @@
 ---
+uid: ce5fc63e-f411-43e1-9de7-a7d808e727e7
 title: What is the AVIV ScoutRoute quest definition resurvey interval?
 slug: quest-definition-resurvey-interval
 doc_type: concept

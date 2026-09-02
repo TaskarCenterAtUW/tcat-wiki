@@ -1,4 +1,5 @@
 ---
+uid: 6d618115-a9d1-4ce0-9c72-ac4751cd4dc8
 title: "How does attribute presence differ from feature completeness?"
 slug: attribute-presence-vs-feature-completeness
 doc_type: concept

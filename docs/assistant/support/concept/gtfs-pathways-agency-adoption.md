@@ -1,4 +1,5 @@
 ---
+uid: 8df6683d-2df1-4a8f-9730-f7ecee12ac21
 title: Are Sound Transit or other agencies publishing GTFS Pathways data?
 slug: gtfs-pathways-agency-adoption
 doc_type: concept

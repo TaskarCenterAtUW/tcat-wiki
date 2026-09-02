@@ -1,4 +1,5 @@
 ---
+uid: 574b7c45-775c-464a-a31f-705057d9f6a9
 title: What does a pedestrian walkshed represent?
 slug: pedestrian-walkshed
 doc_type: concept

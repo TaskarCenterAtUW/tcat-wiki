@@ -1,4 +1,5 @@
 ---
+uid: 396d6ae7-2c4b-49b9-8f7a-3994d12419a5
 title: 'What is the "manual wheelchair" profile?'
 slug: manual-wheelchair-profile
 doc_type: concept

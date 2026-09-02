@@ -1,4 +1,5 @@
 ---
+uid: 74fe06aa-3fee-40b3-8cb2-42b47b759e1d
 title: How do I access the TDEI API?
 slug: access-tdei-api
 doc_type: workflow

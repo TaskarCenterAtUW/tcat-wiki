@@ -1,4 +1,5 @@
 ---
+uid: f2aee116-0fb5-4195-92e1-29f4d4db5676
 title: What accessibility information is missing from OS-CONNECT?
 slug: missing-accessibility-information
 doc_type: concept

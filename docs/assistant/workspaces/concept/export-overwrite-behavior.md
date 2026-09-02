@@ -1,4 +1,5 @@
 ---
+uid: 6e8d733d-2d88-487b-a459-540f8eb240d4
 title: Does export overwrite the original dataset?
 slug: export-overwrite-behavior
 doc_type: concept

@@ -1,4 +1,5 @@
 ---
+uid: 3ed3b5c7-4bec-4e82-8f0a-676f7393ce02
 title: What sources can create a workspace?
 slug: workspace-source-options
 doc_type: concept

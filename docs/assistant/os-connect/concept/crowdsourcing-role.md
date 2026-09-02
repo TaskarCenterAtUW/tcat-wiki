@@ -1,4 +1,5 @@
 ---
+uid: 179b2014-733c-4e95-81c3-1b09412180f1
 title: What role could crowdsourcing play?
 slug: crowdsourcing-role
 doc_type: concept

@@ -1,4 +1,5 @@
 ---
+uid: 9dff609a-ac96-4dcb-805c-0f08e85a97c3
 title: What curb metrics appear in QA/QC reports?
 slug: curb-completeness-metrics
 doc_type: concept

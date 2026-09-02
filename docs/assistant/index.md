@@ -1,4 +1,5 @@
 ---
+uid: e21aa637-e484-46d9-bc7d-57e929549f42
 title: Assistant Knowledge Base
 tags:
     - Assistant

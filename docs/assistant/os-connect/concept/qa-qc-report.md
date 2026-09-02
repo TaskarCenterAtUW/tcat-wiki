@@ -1,4 +1,5 @@
 ---
+uid: 9b05cee8-585e-401e-a8fe-c37b92c2ee26
 title: What is the QA/QC report?
 slug: qa-qc-report
 doc_type: concept

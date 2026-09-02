@@ -1,4 +1,5 @@
 ---
+uid: 7cebb5c5-439a-4990-8b96-e0fa7fc927a2
 title: What would a nationwide OS-CONNECT-like system require?
 slug: nationwide-system-requirements
 doc_type: concept

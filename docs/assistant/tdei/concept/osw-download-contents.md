@@ -1,4 +1,5 @@
 ---
+uid: a1109474-79ad-407c-a0dd-6e825b2ee77d
 title: What files are included in an OSW download?
 slug: osw-download-contents
 doc_type: concept

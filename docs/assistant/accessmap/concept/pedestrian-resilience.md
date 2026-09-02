@@ -1,4 +1,5 @@
 ---
+uid: 1008ba37-ec37-465a-8c5a-a85fc3b5321f
 title: What is pedestrian resilience?
 slug: pedestrian-resilience
 doc_type: concept

@@ -1,4 +1,5 @@
 ---
+uid: d9ddfe53-a279-4fea-a516-1dc44a5b2d29
 title: What does building a Walksheds router do?
 slug: walkshed-router-building
 doc_type: concept

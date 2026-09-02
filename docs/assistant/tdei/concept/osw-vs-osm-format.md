@@ -1,4 +1,5 @@
 ---
+uid: 9790a0aa-44c3-428f-9b63-725de5754178
 title: What is the difference between downloading OSW format and OSM format?
 slug: osw-vs-osm-format
 doc_type: concept

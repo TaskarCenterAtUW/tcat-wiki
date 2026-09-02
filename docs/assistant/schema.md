@@ -1,4 +1,5 @@
 ---
+uid: eb3ea5ca-9c11-4199-9614-8479d5eb7deb
 title: Assistant Knowledge Base article schema
 slug: schema
 doc_type: concept

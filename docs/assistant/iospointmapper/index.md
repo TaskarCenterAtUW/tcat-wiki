@@ -1,4 +1,5 @@
 ---
+uid: d78da859-7f3a-4dc2-9a85-f1e6e64d66e5
 title: iOSPointMapper — Assistant Knowledge Base
 slug: iospointmapper-index
 doc_type: policy

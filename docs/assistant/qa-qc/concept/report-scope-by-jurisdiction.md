@@ -1,4 +1,5 @@
 ---
+uid: 8f452b12-145a-488c-b92c-505992797c25
 title: What jurisdictions can have QA/QC reports?
 slug: report-scope-by-jurisdiction
 doc_type: concept

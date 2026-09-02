@@ -1,4 +1,5 @@
 ---
+uid: 5f372d9f-4ee7-489f-9c5c-98bd4a1c7c9a
 title: What attributes are collected for crossings?
 slug: crossing-attributes
 doc_type: concept

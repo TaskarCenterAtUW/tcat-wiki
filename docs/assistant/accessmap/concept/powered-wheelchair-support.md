@@ -1,4 +1,5 @@
 ---
+uid: a2db4fb9-af25-4e5c-9cc4-29285cf62d4f
 title: Can AccessMap support powered wheelchair users?
 slug: powered-wheelchair-support
 doc_type: concept

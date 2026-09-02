@@ -1,4 +1,5 @@
 ---
+uid: 9cfc6245-ea9e-42bb-844c-b5ce7c50a882
 title: How are OpenSidewalks datasets represented and referenced spatially?
 slug: coordinate-system-and-serialization
 doc_type: concept

@@ -1,4 +1,5 @@
 ---
+uid: 1d569bdc-4d8c-453d-8fde-a8f6ed33be30
 title: How does transit accessibility integrate with pedestrian routing?
 slug: transit-pedestrian-routing-integration
 doc_type: concept

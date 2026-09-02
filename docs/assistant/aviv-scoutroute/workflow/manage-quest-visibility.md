@@ -1,4 +1,5 @@
 ---
+uid: 5a33c504-7f5b-4426-8232-fcd088141f7c
 title: How do I manage AVIV ScoutRoute quest visibility?
 slug: manage-quest-visibility
 doc_type: workflow

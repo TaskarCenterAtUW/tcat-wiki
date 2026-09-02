@@ -1,4 +1,5 @@
 ---
+uid: 44ccb544-3622-467f-99ea-ac6b625431b1
 title: How can I tell whether a GTFS feed includes pathways.txt?
 slug: check-gtfs-feed-pathways
 doc_type: workflow

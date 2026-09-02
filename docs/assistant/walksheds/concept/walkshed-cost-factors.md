@@ -1,4 +1,5 @@
 ---
+uid: a4ab0eb4-b105-4eda-94a2-502d6dd5d459
 title: What factors affect Walksheds travel cost?
 slug: walkshed-cost-factors
 doc_type: concept

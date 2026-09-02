@@ -1,4 +1,5 @@
 ---
+uid: ff861a75-487d-4cc1-b2b4-b8b5299d21a3
 title: How can users inspect edit history?
 slug: edit-history
 doc_type: concept

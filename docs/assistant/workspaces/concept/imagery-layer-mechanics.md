@@ -1,4 +1,5 @@
 ---
+uid: 53210438-96ab-4a05-bf4a-65b1bbbc41b2
 title: How do imagery layers work in Workspaces?
 slug: imagery-layer-mechanics
 doc_type: concept

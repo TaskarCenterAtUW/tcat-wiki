@@ -1,4 +1,5 @@
 ---
+uid: 6f55f03d-8170-4c6e-998a-6142fe78dcf8
 title: What does a disconnected point of interest mean?
 slug: disconnected-poi
 doc_type: concept

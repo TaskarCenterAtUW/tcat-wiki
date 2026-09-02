@@ -1,4 +1,5 @@
 ---
+uid: 141cf8e7-ebbf-43db-8fd5-eed7cba54a94
 title: How does Workspaces support stewardship?
 slug: stewardship-support
 doc_type: concept

@@ -1,4 +1,5 @@
 ---
+uid: 2669c8bd-2d2f-4e33-8d73-5d94608c9c87
 title: What is the relationship between pedestrian paths in OpenStreetMap and GTFS Pathways?
 slug: osm-pedestrian-paths-vs-gtfs-pathways
 doc_type: concept

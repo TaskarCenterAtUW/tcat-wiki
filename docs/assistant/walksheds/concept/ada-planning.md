@@ -1,4 +1,5 @@
 ---
+uid: a59f0af7-b198-4b0b-929d-8a56f1bae778
 title: How can walksheds support ADA planning?
 slug: ada-planning
 doc_type: concept

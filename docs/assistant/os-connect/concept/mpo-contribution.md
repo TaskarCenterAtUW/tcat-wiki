@@ -1,4 +1,5 @@
 ---
+uid: 54fcc426-25e1-4a16-b945-c08d32ca047b
 title: How should MPOs contribute?
 slug: mpo-contribution
 doc_type: concept

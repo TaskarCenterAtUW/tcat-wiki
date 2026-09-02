@@ -1,4 +1,5 @@
 ---
+uid: a54d5d95-8077-44c1-a1b2-b785e8097dfc
 title: How can AI assist stewardship?
 slug: ai-stewardship-assistance
 doc_type: concept

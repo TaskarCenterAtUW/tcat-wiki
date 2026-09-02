@@ -1,4 +1,5 @@
 ---
+uid: 48cfa97a-8651-4f38-8155-dc35489bfd3d
 title: Can AI automatically detect curb ramps?
 slug: ai-curb-ramp-detection
 doc_type: concept

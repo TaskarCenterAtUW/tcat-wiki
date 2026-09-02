@@ -1,4 +1,5 @@
 ---
+uid: 6aef59c1-7136-4200-91cc-d42ce8b5f8b6
 title: Connected pedestrian graph
 slug: connected-pedestrian-graph
 doc_type: concept

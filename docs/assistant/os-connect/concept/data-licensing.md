@@ -1,4 +1,5 @@
 ---
+uid: 761bc51e-4fc5-4ced-952c-727fd64f604b
 title: What licensing governs the data?
 slug: data-licensing
 doc_type: concept

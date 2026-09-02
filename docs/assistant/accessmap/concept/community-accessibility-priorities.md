@@ -1,4 +1,5 @@
 ---
+uid: 9904029d-c72f-4f09-b0b9-0c1e04c3d132
 title: Can communities define accessibility priorities?
 slug: community-accessibility-priorities
 doc_type: concept

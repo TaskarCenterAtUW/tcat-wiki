@@ -1,4 +1,5 @@
 ---
+uid: d1d8d6ea-4aea-4b98-8179-1cbad29025b9
 title: What are the limitations of walkshed analysis?
 slug: walkshed-limitations
 doc_type: concept

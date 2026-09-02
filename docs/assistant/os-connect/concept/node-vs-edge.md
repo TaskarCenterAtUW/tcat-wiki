@@ -1,4 +1,5 @@
 ---
+uid: a24fe128-a93a-4e32-aa4c-8dd487ce10fc
 title: What is a node versus an edge?
 slug: node-vs-edge
 doc_type: concept

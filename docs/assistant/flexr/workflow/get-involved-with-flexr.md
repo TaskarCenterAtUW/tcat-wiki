@@ -1,4 +1,5 @@
 ---
+uid: 0d9d82f4-7cf4-4149-a398-3ba53dfda726
 title: How do I get involved with FleXR?
 slug: get-involved-with-flexr
 doc_type: workflow

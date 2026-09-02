@@ -1,4 +1,5 @@
 ---
+uid: 57386715-0bd4-4e6a-a200-d57f4c8941ae
 title: Where is a Walksheds router built?
 slug: walkshed-router-processing
 doc_type: concept

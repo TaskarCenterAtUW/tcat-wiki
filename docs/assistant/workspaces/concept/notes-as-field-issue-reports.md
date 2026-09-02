@@ -1,4 +1,5 @@
 ---
+uid: 045da848-bd0e-49e1-8364-6cd4b162ae68
 title: How can field notes report missing infrastructure?
 slug: notes-as-field-issue-reports
 doc_type: concept

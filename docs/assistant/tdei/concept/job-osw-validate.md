@@ -1,4 +1,5 @@
 ---
+uid: e9be970d-e4ec-46e2-b13d-b38d9be90cb8
 title: What does the TDEI OSW Validate job do?
 slug: job-osw-validate
 doc_type: concept

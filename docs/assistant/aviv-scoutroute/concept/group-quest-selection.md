@@ -1,4 +1,5 @@
 ---
+uid: ea76489b-a92b-4501-849c-74c57c4888fd
 title: What is group quest selection in AVIV ScoutRoute?
 slug: group-quest-selection
 doc_type: concept

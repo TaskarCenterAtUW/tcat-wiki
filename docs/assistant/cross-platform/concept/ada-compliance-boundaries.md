@@ -1,4 +1,5 @@
 ---
+uid: 652f8306-3709-433c-9e3e-a76d5968ab14
 title: ADA compliance boundaries for assistant answers
 slug: ada-compliance-boundaries
 doc_type: concept

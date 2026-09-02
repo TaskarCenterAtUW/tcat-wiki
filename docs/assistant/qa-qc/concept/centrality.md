@@ -1,4 +1,5 @@
 ---
+uid: c09dafa2-2267-4971-96ef-d2fbb0143512
 title: What is centrality?
 slug: centrality
 doc_type: concept

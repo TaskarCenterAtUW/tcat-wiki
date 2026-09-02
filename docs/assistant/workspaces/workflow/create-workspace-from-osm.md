@@ -1,4 +1,5 @@
 ---
+uid: 9e396bd0-b847-4f5a-9d77-48d8acc76153
 title: How do I create a workspace from existing OSM data?
 slug: create-workspace-from-osm
 doc_type: workflow

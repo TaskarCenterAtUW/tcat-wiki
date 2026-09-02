@@ -1,4 +1,5 @@
 ---
+uid: d86313df-89c4-4ebd-91b3-300e7ebca9dc
 title: What editors work with Workspaces?
 slug: compatible-editors
 doc_type: concept

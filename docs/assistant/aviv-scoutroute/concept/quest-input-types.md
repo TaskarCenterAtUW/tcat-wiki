@@ -1,4 +1,5 @@
 ---
+uid: 0770da33-ded7-4e13-aa5d-0a5b37efa775
 title: What input types are available in AVIV ScoutRoute quests?
 slug: quest-input-types
 doc_type: concept

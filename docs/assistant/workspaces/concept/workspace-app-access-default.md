@@ -1,4 +1,5 @@
 ---
+uid: 5cd6f50d-4bf8-49ec-a4a3-277c6bb468ea
 title: Is app access enabled by default for a new workspace?
 slug: workspace-app-access-default
 doc_type: concept

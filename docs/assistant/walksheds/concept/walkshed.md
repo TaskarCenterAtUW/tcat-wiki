@@ -1,4 +1,5 @@
 ---
+uid: 1219c51c-c6f9-4eb9-8957-0292f748f10f
 title: What is a walkshed?
 slug: walkshed
 doc_type: concept

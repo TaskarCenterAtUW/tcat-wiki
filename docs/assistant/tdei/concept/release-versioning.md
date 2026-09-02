@@ -1,4 +1,5 @@
 ---
+uid: 22bff919-f050-43c0-9437-934d1ead9b49
 title: How are releases versioned?
 slug: release-versioning
 doc_type: concept

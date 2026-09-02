@@ -1,4 +1,5 @@
 ---
+uid: 104ba052-d073-4edc-9e3c-b6f3077a4fc3
 title: How do I configure an app-enabled workspace?
 slug: configure-app-enabled-workspace
 doc_type: workflow

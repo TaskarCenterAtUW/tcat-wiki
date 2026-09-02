@@ -1,4 +1,5 @@
 ---
+uid: e1199eaf-c060-41f3-bed8-259828b12cd3
 title: What does crossing count mean in QA/QC reports?
 slug: crossing-count
 doc_type: concept

@@ -1,4 +1,5 @@
 ---
+uid: 20c7f4fc-1fcb-4d41-8c5a-57fbcc4683bf
 title: How are accessibility features edited?
 slug: accessibility-feature-editing
 doc_type: concept

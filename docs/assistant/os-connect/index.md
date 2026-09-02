@@ -1,4 +1,5 @@
 ---
+uid: eb972a50-0a11-44a8-8193-796ce9e7383c
 title: OS-CONNECT — Assistant Knowledge Base
 slug: os-connect-index
 doc_type: policy

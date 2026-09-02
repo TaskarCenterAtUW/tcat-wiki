@@ -1,4 +1,5 @@
 ---
+uid: fc8b8686-ebe5-4af3-9c9a-8fc0648a68b2
 title: What does a z-score mean?
 slug: z-score
 doc_type: concept

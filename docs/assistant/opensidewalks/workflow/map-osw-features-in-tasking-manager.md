@@ -1,4 +1,5 @@
 ---
+uid: 93bbc3a9-578b-4e3d-93aa-ac908baba833
 title: How do I map OpenSidewalks features in the Tasking Manager?
 slug: map-osw-features-in-tasking-manager
 doc_type: workflow

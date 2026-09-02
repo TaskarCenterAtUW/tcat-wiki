@@ -1,4 +1,5 @@
 ---
+uid: 9e051cf8-3725-4a62-bb5f-56a8ab4a54f1
 title: Can this data support transit accessibility analysis?
 slug: transit-accessibility-analysis
 doc_type: concept

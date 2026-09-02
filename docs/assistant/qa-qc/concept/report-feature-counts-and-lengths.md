@@ -1,4 +1,5 @@
 ---
+uid: 0f57f435-7da0-42f0-b876-fb32ffc6ff31
 title: Why do QA/QC reports show feature counts and lengths?
 slug: report-feature-counts-and-lengths
 doc_type: concept

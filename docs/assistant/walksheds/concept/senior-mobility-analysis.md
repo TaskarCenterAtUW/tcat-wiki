@@ -1,4 +1,5 @@
 ---
+uid: 9d95d98b-c8e6-4186-8495-0a28e570344d
 title: How can walksheds support senior mobility analysis?
 slug: senior-mobility-analysis
 doc_type: concept

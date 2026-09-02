@@ -1,4 +1,5 @@
 ---
+uid: aab84dd3-64ec-4ff0-8c17-7ada93d2e29b
 title: What does ADA Title II Part B require?
 slug: ada-title-ii-requirements
 doc_type: concept

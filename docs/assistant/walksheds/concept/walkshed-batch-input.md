@@ -1,4 +1,5 @@
 ---
+uid: efb8725e-04d5-4d40-8b05-bb818f512c8d
 title: What input does Walksheds batch processing use?
 slug: walkshed-batch-input
 doc_type: concept

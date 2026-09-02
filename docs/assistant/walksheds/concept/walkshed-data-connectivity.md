@@ -1,4 +1,5 @@
 ---
+uid: 4e478dc4-11b7-4287-a7b0-f8031c06edc7
 title: Why does network connectivity matter in Walksheds?
 slug: walkshed-data-connectivity
 doc_type: concept

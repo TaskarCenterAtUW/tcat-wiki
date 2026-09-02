@@ -1,4 +1,5 @@
 ---
+uid: ca15dde9-af31-45f6-9044-21d22c621ffe
 title: Can AccessMap integrate with GTFS?
 slug: gtfs-integration
 doc_type: concept

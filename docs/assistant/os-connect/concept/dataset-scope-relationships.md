@@ -1,4 +1,5 @@
 ---
+uid: 9ff9a145-1ee4-467f-8bcf-748eec5aa2d1
 title: How do OS-CONNECT dataset scopes relate?
 slug: dataset-scope-relationships
 doc_type: concept

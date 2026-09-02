@@ -1,4 +1,5 @@
 ---
+uid: 4e8fc1fe-a7d3-4130-a071-c37610271c65
 title: How can a workspace diverge from its source dataset?
 slug: workspace-copy-and-divergence
 doc_type: concept

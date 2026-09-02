@@ -1,4 +1,5 @@
 ---
+uid: 007890b5-c089-482e-a2bb-6b8e06992e3f
 title: What network assumptions are used?
 slug: network-assumptions
 doc_type: concept

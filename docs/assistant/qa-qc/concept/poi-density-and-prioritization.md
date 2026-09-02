@@ -1,4 +1,5 @@
 ---
+uid: d704d6df-2a85-464a-940a-a29189410d26
 title: How can POI density inform priorities?
 slug: poi-density-and-prioritization
 doc_type: concept

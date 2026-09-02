@@ -1,4 +1,5 @@
 ---
+uid: e6537f55-e706-4a85-bcfe-d3f11da10a17
 title: How can I export workspace data to a local file?
 slug: export-workspace-locally
 doc_type: workflow

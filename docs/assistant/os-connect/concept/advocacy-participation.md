@@ -1,4 +1,5 @@
 ---
+uid: 7e6a1b34-81a0-488c-a0ee-028098cdfcfe
 title: How can advocacy organizations participate?
 slug: advocacy-participation
 doc_type: concept

@@ -1,4 +1,5 @@
 ---
+uid: 090b5c65-73c9-4883-b7a7-b1aea5bd1d1b
 title: How is TDEI data protected?
 slug: tdei-data-security
 doc_type: concept

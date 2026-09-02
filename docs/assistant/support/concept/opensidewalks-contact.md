@@ -1,4 +1,5 @@
 ---
+uid: 1e14fcc7-d6db-46c4-9337-5e85f4e26877
 title: Who should external partners contact for OpenSidewalks mapping questions?
 slug: opensidewalks-contact
 doc_type: concept

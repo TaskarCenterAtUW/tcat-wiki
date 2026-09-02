@@ -1,4 +1,5 @@
 ---
+uid: bf8e1e70-e00c-4693-8e6c-714dd28bad26
 title: Use Workspaces for community validation
 slug: use-workspaces-for-community-validation
 doc_type: workflow

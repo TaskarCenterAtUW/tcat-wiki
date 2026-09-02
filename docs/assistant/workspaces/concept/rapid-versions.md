@@ -1,4 +1,5 @@
 ---
+uid: 03dd0763-74cb-4850-aefd-0ac01f4e4920
 title: What is RAPID 2 versus RAPID 3?
 slug: rapid-versions
 doc_type: concept

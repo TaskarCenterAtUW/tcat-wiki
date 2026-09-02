@@ -1,4 +1,5 @@
 ---
+uid: 303f0036-d892-4fb0-8dbb-d29773b9e96c
 title: What do AVIV ScoutRoute quest contributions change?
 slug: quest-contributions
 doc_type: concept

@@ -1,4 +1,5 @@
 ---
+uid: 3ef13a7d-44e9-4ebf-9c27-02a007db6795
 title: What are AVIV ScoutRoute quest feature presets?
 slug: quest-definition-feature-presets
 doc_type: concept

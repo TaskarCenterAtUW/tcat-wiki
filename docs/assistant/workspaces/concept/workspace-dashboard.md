@@ -1,4 +1,5 @@
 ---
+uid: 87222545-eb8a-4e8e-a918-d3462951eaca
 title: What does the workspace dashboard show?
 slug: workspace-dashboard
 doc_type: concept

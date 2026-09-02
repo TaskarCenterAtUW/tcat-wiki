@@ -1,4 +1,5 @@
 ---
+uid: 7673d5e9-a8da-4d70-b425-2f87263a592c
 title: What are tile layers?
 slug: tile-layers
 doc_type: concept

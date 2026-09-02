@@ -1,4 +1,5 @@
 ---
+uid: 6a494c93-24a2-4b28-93a3-3a4d00f271e3
 title: What is the difference between TDEI, OS-CONNECT, OpenSidewalks, OpenStreetMap, AccessMap, Walksheds, GTFS, GTFS Pathways, and GTFS-Flex?
 slug: ecosystem-overview
 doc_type: concept

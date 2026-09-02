@@ -1,4 +1,5 @@
 ---
+uid: 6942366e-b725-4850-8c19-f21eb4ee362a
 title: How does TDEI validate OpenSidewalks data?
 slug: tdei-schema-validation
 doc_type: concept

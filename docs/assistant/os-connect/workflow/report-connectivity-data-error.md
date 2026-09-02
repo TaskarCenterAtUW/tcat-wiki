@@ -1,4 +1,5 @@
 ---
+uid: 7260f5de-9bb2-4927-a5ea-9873bad6c3e9
 title: How do I report a connectivity error in OS-CONNECT?
 slug: report-connectivity-data-error
 doc_type: workflow

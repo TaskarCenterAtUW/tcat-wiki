@@ -1,4 +1,5 @@
 ---
+uid: be343515-c5ae-4a7c-8e51-bc5e872a5799
 title: How can walksheds identify pedestrian bottlenecks?
 slug: pedestrian-bottleneck-identification
 doc_type: concept

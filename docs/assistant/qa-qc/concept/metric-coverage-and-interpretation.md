@@ -1,4 +1,5 @@
 ---
+uid: dae21759-1cff-45bc-8522-ef8afafd0c30
 title: How should QA/QC metric coverage be interpreted?
 slug: metric-coverage-and-interpretation
 doc_type: concept

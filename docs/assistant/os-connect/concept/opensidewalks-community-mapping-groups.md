@@ -1,4 +1,5 @@
 ---
+uid: ce864ce8-26a4-454c-aa0c-6b563897d841
 title: How do OpenSidewalks mapping efforts relate to local community mapping groups such as Maptime LA?
 slug: opensidewalks-community-mapping-groups
 doc_type: concept

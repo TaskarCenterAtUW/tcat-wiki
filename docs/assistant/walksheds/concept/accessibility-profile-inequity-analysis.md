@@ -1,4 +1,5 @@
 ---
+uid: 9c530c4a-670b-46a5-bd2d-8504935e8164
 title: How can accessibility profiles reveal inequities?
 slug: accessibility-profile-inequity-analysis
 doc_type: concept

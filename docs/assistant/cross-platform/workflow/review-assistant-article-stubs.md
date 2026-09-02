@@ -1,4 +1,5 @@
 ---
+uid: 65b96e01-d1b5-4d61-8423-5a9e5c023a44
 title: How should Assistant Knowledge Base article stubs be reviewed?
 slug: review-assistant-article-stubs
 doc_type: workflow

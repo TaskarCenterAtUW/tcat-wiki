@@ -1,4 +1,5 @@
 ---
+uid: ea90f6c5-3f56-4df0-aef5-db433e5f5aa3
 title: Use Workspaces for jurisdiction stewardship
 slug: use-workspaces-for-jurisdiction-stewardship
 doc_type: workflow

@@ -1,4 +1,5 @@
 ---
+uid: 61e3d853-a1d8-42ff-9f71-04c3bd1fd6b0
 title: What attributes are collected for intersections?
 slug: intersection-attributes
 doc_type: concept

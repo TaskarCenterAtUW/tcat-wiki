@@ -1,4 +1,5 @@
 ---
+uid: 290a0246-bd5f-45f1-980f-071c1c531c65
 title: Why does Workspaces emulate OSM editing?
 slug: osm-editing-emulation-rationale
 doc_type: concept

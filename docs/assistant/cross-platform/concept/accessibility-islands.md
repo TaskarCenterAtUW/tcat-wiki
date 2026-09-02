@@ -1,4 +1,5 @@
 ---
+uid: fb975654-03fa-4c88-bf08-ee7ea5ff99d9
 title: Accessibility islands
 slug: accessibility-islands
 doc_type: concept

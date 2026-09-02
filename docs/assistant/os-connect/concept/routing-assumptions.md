@@ -1,4 +1,5 @@
 ---
+uid: 43bf6e40-901a-44e0-b14e-b9bd54cd4b5c
 title: What routing assumptions are used?
 slug: routing-assumptions
 doc_type: concept

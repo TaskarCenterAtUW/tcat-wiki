@@ -1,4 +1,5 @@
 ---
+uid: b0e449f3-b7bc-4c50-a3d1-4a887d6c8108
 title: What is the QA/QC report glossary for?
 slug: report-glossary
 doc_type: concept

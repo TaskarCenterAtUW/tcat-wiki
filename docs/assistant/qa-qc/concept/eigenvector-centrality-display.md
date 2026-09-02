@@ -1,4 +1,5 @@
 ---
+uid: a2a8ad51-f405-4ee8-8d59-bab4d0b2734f
 title: How are eigenvector centrality values displayed?
 slug: eigenvector-centrality-display
 doc_type: concept

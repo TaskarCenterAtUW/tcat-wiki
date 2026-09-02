@@ -1,4 +1,5 @@
 ---
+uid: 4b1d0b10-56ec-4b55-834f-463ac2f49df9
 title: Which help-desk questions belong in the Assistant Knowledge Base?
 slug: help-desk-questions-as-knowledge-sources
 doc_type: concept

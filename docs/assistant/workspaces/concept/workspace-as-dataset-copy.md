@@ -1,4 +1,5 @@
 ---
+uid: da46b16f-aab5-4136-bdc9-d8316b4fd5c0
 title: Is a workspace a copy or the original dataset?
 slug: workspace-as-dataset-copy
 doc_type: concept

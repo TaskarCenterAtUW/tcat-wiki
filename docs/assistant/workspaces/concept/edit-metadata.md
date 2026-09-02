@@ -1,4 +1,5 @@
 ---
+uid: 4eafe0ac-ae4a-4225-9e86-4c5fa1815d72
 title: What metadata is stored for edits?
 slug: edit-metadata
 doc_type: concept

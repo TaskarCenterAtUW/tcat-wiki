@@ -1,4 +1,5 @@
 ---
+uid: f3c427a3-f360-4bfe-a808-981bd74208f4
 title: How do I create a workspace from a TDEI dataset?
 slug: create-workspace-from-tdei-dataset
 doc_type: workflow

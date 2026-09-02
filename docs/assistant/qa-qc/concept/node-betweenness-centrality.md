@@ -1,4 +1,5 @@
 ---
+uid: 29e2f22b-4a69-417c-a0c5-29680ed3fe8f
 title: What does node betweenness centrality mean?
 slug: node-betweenness-centrality
 doc_type: concept

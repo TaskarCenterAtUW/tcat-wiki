@@ -1,4 +1,5 @@
 ---
+uid: e663d78b-e757-4151-a7fc-ce04854a6e33
 title: Public vs internal content
 slug: public-vs-internal-content
 doc_type: concept

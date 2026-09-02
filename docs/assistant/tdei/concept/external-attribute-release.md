@@ -1,4 +1,5 @@
 ---
+uid: 2fa3f991-fa78-4c2a-9ed1-0ffaf2d53496
 title: How are ext attributes handled at release?
 slug: external-attribute-release
 doc_type: concept

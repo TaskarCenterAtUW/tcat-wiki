@@ -1,4 +1,5 @@
 ---
+uid: 754c5070-24f7-411a-856b-b1e544509878
 title: What is the difference between a pedestrian walkshed and a wheelchair-user walkshed?
 slug: pedestrian-vs-wheelchair-walkshed
 doc_type: concept

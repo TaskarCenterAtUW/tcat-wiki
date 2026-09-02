@@ -1,4 +1,5 @@
 ---
+uid: 62d4ea5a-5198-46a8-9173-b73d957b2de9
 title: What confidence measures exist?
 slug: confidence-measures
 doc_type: concept

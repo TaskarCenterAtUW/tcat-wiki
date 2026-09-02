@@ -1,4 +1,5 @@
 ---
+uid: f828118b-1a41-4817-8eee-41b2d225021d
 title: Why does AKB content need domain-expert review?
 slug: knowledge-base-domain-review
 doc_type: concept

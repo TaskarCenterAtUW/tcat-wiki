@@ -1,4 +1,5 @@
 ---
+uid: e7dcb5dd-2c65-47b2-8860-2a1fb592b9cc
 title: What does a log-normalized value mean?
 slug: log-normalized-value
 doc_type: concept

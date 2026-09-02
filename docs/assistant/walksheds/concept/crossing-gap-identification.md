@@ -1,4 +1,5 @@
 ---
+uid: 75f20d9a-5236-41b7-a7f3-c0e72248efbe
 title: How can walksheds identify crossing gaps?
 slug: crossing-gap-identification
 doc_type: concept

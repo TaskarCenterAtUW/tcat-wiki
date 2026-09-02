@@ -1,4 +1,5 @@
 ---
+uid: 2e3b7419-f07a-4770-b232-1f10799c536e
 title: Does editing a workspace change the TDEI dataset?
 slug: workspace-tdei-isolation
 doc_type: concept

@@ -1,4 +1,5 @@
 ---
+uid: 5c940667-37be-43d2-b356-7d1b1600c00f
 title: What are Adjacent Entities in OpenSidewalks?
 slug: adjacent-entities
 doc_type: concept

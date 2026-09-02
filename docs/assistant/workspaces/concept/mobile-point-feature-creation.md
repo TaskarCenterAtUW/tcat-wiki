@@ -1,4 +1,5 @@
 ---
+uid: 95abcc37-194b-471d-9974-ba0f9b9a04fb
 title: What can AVIV ScoutRoute create on mobile?
 slug: mobile-point-feature-creation
 doc_type: concept

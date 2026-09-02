@@ -1,4 +1,5 @@
 ---
+uid: 7fe3f0e7-c8b0-4f4c-940b-9dd5a0bba0e1
 title: Why are lived experiences important?
 slug: lived-experience-importance
 doc_type: concept

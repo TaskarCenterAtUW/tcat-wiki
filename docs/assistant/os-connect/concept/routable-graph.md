@@ -1,4 +1,5 @@
 ---
+uid: c9b0897b-7cbf-4960-9d82-3718a746de3c
 title: What is a routable graph?
 slug: routable-graph
 doc_type: concept

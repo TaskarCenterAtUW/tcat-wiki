@@ -1,4 +1,5 @@
 ---
+uid: 38218e1c-5ab1-4817-971a-64240e1574fb
 title: 'What does "connected pedestrian graph" mean?'
 slug: connected-pedestrian-graph
 doc_type: concept

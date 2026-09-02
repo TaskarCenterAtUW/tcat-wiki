@@ -1,4 +1,5 @@
 ---
+uid: 55f541aa-0bca-4b21-88f1-4dbd5c4f543a
 title: How do quest definitions target element types?
 slug: quest-definition-element-targeting
 doc_type: concept

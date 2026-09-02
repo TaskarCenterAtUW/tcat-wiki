@@ -1,4 +1,5 @@
 ---
+uid: 53c458c4-656f-4996-9cb9-8840fb23a5eb
 title: 'What is "max_cost"?'
 slug: max-cost
 doc_type: concept

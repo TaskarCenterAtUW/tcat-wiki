@@ -1,4 +1,5 @@
 ---
+uid: b8b24c38-967e-4995-bb5e-6d9758bbe29f
 title: Is project completeness the same as ADA compliance?
 slug: project-completeness-vs-ada-compliance
 doc_type: concept

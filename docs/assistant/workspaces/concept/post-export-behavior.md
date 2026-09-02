@@ -1,4 +1,5 @@
 ---
+uid: 65d73d85-848b-449f-b803-b30fc9f9ba3a
 title: What happens after export to TDEI?
 slug: post-export-behavior
 doc_type: concept

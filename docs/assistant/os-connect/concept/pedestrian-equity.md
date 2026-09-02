@@ -1,4 +1,5 @@
 ---
+uid: caf1b4b5-8dd9-4d0d-bd93-fb85b4e6e197
 title: What makes pedestrian infrastructure equitable?
 slug: pedestrian-equity
 doc_type: concept

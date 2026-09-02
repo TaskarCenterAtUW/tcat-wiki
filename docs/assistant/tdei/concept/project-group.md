@@ -1,4 +1,5 @@
 ---
+uid: c3b02f8d-955d-4d16-9107-826eb20a5176
 title: What is a project group in TDEI?
 slug: project-group
 doc_type: concept

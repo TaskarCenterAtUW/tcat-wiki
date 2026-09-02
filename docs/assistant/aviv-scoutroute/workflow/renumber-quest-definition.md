@@ -1,4 +1,5 @@
 ---
+uid: 2e7b60cf-9c49-4e25-974c-ab4ce9d2105b
 title: How do I renumber an AVIV ScoutRoute quest definition?
 slug: renumber-quest-definition
 doc_type: workflow

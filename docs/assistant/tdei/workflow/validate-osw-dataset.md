@@ -1,4 +1,5 @@
 ---
+uid: ed28e643-f9d8-41a7-8ec8-a17e2e63f961
 title: How do I validate an OpenSidewalks dataset in TDEI?
 slug: validate-osw-dataset
 doc_type: workflow

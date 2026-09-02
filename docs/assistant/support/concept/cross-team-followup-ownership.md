@@ -1,4 +1,5 @@
 ---
+uid: 1c93065d-884d-497c-9094-f6c8cf04c05a
 title: Who owns follow-up when a partner asks a question that crosses tools or teams?
 slug: cross-team-followup-ownership
 doc_type: concept

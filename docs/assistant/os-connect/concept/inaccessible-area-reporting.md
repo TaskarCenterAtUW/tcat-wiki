@@ -1,4 +1,5 @@
 ---
+uid: d67eab03-63f0-4b9a-918e-423a4da9496e
 title: How can people report inaccessible areas?
 slug: inaccessible-area-reporting
 doc_type: concept

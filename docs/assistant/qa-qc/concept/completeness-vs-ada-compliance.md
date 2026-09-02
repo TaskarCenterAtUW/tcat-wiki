@@ -1,4 +1,5 @@
 ---
+uid: eb60de21-6057-4771-bb60-a7fad9347e70
 title: Is completeness ADA compliance?
 slug: completeness-vs-ada-compliance
 doc_type: concept

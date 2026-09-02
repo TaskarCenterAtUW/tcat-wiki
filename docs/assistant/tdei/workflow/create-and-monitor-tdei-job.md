@@ -1,4 +1,5 @@
 ---
+uid: bced88f8-c0e9-482b-b594-abf7a4c47568
 title: How do I create and monitor a TDEI job?
 slug: create-and-monitor-tdei-job
 doc_type: workflow

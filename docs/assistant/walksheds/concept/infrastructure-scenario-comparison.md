@@ -1,4 +1,5 @@
 ---
+uid: 83c7b25f-39a1-46bb-818d-08e036ba206b
 title: How can walksheds compare infrastructure scenarios?
 slug: infrastructure-scenario-comparison
 doc_type: concept

@@ -1,4 +1,5 @@
 ---
+uid: cd4672b1-8311-48a3-9e31-8ce1eb39d3c8
 title: How is AccessMap different from Walksheds?
 slug: accessmap-vs-walksheds
 doc_type: concept

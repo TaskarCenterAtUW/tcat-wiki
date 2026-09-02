@@ -1,4 +1,5 @@
 ---
+uid: 23fb35f9-dba9-47b9-a160-8057c18a334d
 title: What file formats are available?
 slug: file-formats
 doc_type: concept

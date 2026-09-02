@@ -1,4 +1,5 @@
 ---
+uid: 31408e6b-881f-4e5a-8891-90d5b7429981
 title: What future capabilities are planned for Walksheds?
 slug: planned-capabilities
 doc_type: concept

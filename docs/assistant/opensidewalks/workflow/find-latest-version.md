@@ -1,4 +1,5 @@
 ---
+uid: b11f1b08-2161-4eb2-b108-88e82df975e7
 title: Where do I find the latest version of the OpenSidewalks schema?
 slug: find-latest-version
 doc_type: workflow

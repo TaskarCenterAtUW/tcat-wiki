@@ -1,4 +1,5 @@
 ---
+uid: 622342dd-bb05-4814-95e5-75286b469b66
 title: Why does AccessMap differ from HERE routing?
 slug: here-routing-comparison
 doc_type: concept

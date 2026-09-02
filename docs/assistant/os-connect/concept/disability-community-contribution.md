@@ -1,4 +1,5 @@
 ---
+uid: 6df61b6e-68f3-45cd-926b-0bec041b0d55
 title: How can disability communities contribute?
 slug: disability-community-contribution
 doc_type: concept

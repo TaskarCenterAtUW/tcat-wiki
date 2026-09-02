@@ -1,4 +1,5 @@
 ---
+uid: 7fd81643-1365-4494-9909-5bbd70961c74
 title: How are AVIV ScoutRoute quest element icons selected?
 slug: quest-definition-element-icons
 doc_type: concept

@@ -1,4 +1,5 @@
 ---
+uid: 06eb2010-0a38-463f-9590-004878cdc7ed
 title: What are the risks of automated accessibility analysis?
 slug: what-are-the-risks-of-automated-accessibility-analysis
 doc_type: concept

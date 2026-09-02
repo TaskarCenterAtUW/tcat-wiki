@@ -1,4 +1,5 @@
 ---
+uid: 96c66875-cae9-4efd-994e-bac5b4f02c60
 title: What metadata describes an OpenSidewalks dataset?
 slug: dataset-metadata-and-provenance
 doc_type: concept

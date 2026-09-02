@@ -1,4 +1,5 @@
 ---
+uid: 62fbf213-1caf-4f95-bd72-6d71a01e398d
 title: What happened to the older OpenSidewalks / MapWith.ai Tasking Manager workflow?
 slug: mapwithai-workflow-history
 doc_type: concept

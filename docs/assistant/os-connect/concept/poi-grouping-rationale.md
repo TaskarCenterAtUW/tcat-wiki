@@ -1,4 +1,5 @@
 ---
+uid: 04eb0575-86dc-4025-baf1-0c695a68422b
 title: Why are POIs grouped together?
 slug: poi-grouping-rationale
 doc_type: concept

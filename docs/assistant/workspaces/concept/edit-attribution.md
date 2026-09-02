@@ -1,4 +1,5 @@
 ---
+uid: a68282e8-3baa-4acf-ac9d-11d688ae646d
 title: How are edits attributed to users?
 slug: edit-attribution
 doc_type: concept

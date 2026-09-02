@@ -1,4 +1,5 @@
 ---
+uid: 9f0b255e-efe7-4ec0-9b9a-1849737b6a32
 title: How can centrality reveal a need for network redundancy?
 slug: centrality-and-redundancy
 doc_type: concept

@@ -1,4 +1,5 @@
 ---
+uid: 9fa7a769-08d2-43c6-a40d-00f482049f09
 title: What is the imagery JSON configuration?
 slug: imagery-json-configuration
 doc_type: concept

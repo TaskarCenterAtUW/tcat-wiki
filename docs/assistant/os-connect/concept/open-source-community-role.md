@@ -1,4 +1,5 @@
 ---
+uid: c15212b0-af18-46b4-adac-5de6f1d69020
 title: What role could open-source communities play?
 slug: open-source-community-role
 doc_type: concept

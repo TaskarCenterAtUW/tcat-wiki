@@ -1,4 +1,5 @@
 ---
+uid: b1228a5d-f027-4e15-8aea-3d435be4909a
 title: How are curb ramps incorporated into routing?
 slug: curb-ramp-routing
 doc_type: concept

@@ -1,4 +1,5 @@
 ---
+uid: e6faef21-a235-4c53-8e66-3f744d6b44a4
 title: What is the benefit of using existing OSM editors?
 slug: osm-editor-benefits
 doc_type: concept

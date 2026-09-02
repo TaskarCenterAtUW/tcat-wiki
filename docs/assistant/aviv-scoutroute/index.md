@@ -1,4 +1,5 @@
 ---
+uid: d8895c9a-7a18-4506-a8b0-b4d014aacaaf
 title: AVIV ScoutRoute — Assistant Knowledge Base
 slug: aviv-scoutroute-index
 doc_type: policy

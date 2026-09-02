@@ -1,4 +1,5 @@
 ---
+uid: 440a81d4-ad61-4e04-932e-befaec565511
 title: What is the difference between raster and vector basemaps?
 slug: raster-and-vector-basemaps
 doc_type: concept

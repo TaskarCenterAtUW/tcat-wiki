@@ -1,4 +1,5 @@
 ---
+uid: e5dbbad8-03b9-4ff3-ad05-2f7f35e1f65e
 title: Use OS-CONNECT for ADA transition planning (workflow)
 slug: use-os-connect-for-ada-transition-planning
 doc_type: workflow

@@ -1,4 +1,5 @@
 ---
+uid: 4fdc6aaa-e1f6-4a51-9d44-f8fa1b8fa392
 title: What is a workspace extract?
 slug: workspace-extract
 doc_type: concept

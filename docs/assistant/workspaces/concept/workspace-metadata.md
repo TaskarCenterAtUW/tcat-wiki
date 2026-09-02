@@ -1,4 +1,5 @@
 ---
+uid: fa5ae824-1130-4515-96db-76a4fa2e5c61
 title: What metadata is stored with a workspace?
 slug: workspace-metadata
 doc_type: concept

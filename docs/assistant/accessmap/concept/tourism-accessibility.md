@@ -1,4 +1,5 @@
 ---
+uid: f22cac9e-0b04-4f91-80d7-d26f9c4e8119
 title: Can AccessMap support tourism accessibility?
 slug: tourism-accessibility
 doc_type: concept

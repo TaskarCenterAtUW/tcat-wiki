@@ -1,4 +1,5 @@
 ---
+uid: 924df6c9-7282-4e8b-9b3a-398ab6c69c41
 title: How was OS-CONNECT collected?
 slug: data-collection-history
 doc_type: concept

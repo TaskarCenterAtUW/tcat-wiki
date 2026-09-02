@@ -1,4 +1,5 @@
 ---
+uid: c987db37-06a8-4b20-8cf6-5b55d31ffcd0
 title: What are the risks of relying solely on automated data?
 slug: automated-data-risks
 doc_type: concept

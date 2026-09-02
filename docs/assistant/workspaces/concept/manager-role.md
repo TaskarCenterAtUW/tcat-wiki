@@ -1,4 +1,5 @@
 ---
+uid: 3afcf00a-fc90-48af-8f28-2761401c8c46
 title: How do managers interact with Workspaces?
 slug: manager-role
 doc_type: concept

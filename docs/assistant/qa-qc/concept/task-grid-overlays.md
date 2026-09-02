@@ -1,4 +1,5 @@
 ---
+uid: 23396803-7d80-4bc6-b902-66a8cc90c07e
 title: What are QA/QC task-grid overlays?
 slug: task-grid-overlays
 doc_type: concept

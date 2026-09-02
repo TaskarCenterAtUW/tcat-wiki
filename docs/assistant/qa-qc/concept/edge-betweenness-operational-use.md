@@ -1,4 +1,5 @@
 ---
+uid: ab66f715-c718-4395-807f-f10e49c59bc6
 title: 'What does "edge betweenness" reveal operationally?'
 slug: edge-betweenness-operational-use
 doc_type: concept

@@ -1,4 +1,5 @@
 ---
+uid: 6ec02d37-b8ef-4919-aa7b-b3e33e2b37ef
 title: What is the workspace ID used for?
 slug: workspace-id
 doc_type: concept

@@ -1,4 +1,5 @@
 ---
+uid: 27717844-0f20-413d-8182-5a88fc0e5e09
 title: What is the relationship between OS-CONNECT and local GIS?
 slug: os-connect-local-gis-relationship
 doc_type: concept

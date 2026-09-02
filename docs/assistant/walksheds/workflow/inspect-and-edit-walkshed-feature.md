@@ -1,4 +1,5 @@
 ---
+uid: aaad9521-c6a9-48ec-899c-b255096f14d2
 title: How do I inspect and edit a Walksheds feature?
 slug: inspect-and-edit-walkshed-feature
 doc_type: workflow
