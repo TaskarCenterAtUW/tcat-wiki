@@ -1,4 +1,5 @@
 ---
+uid: { generate with utilities/akb_generate_uid.py }
 title: { title }
 tags:
     - Assistant
@@ -13,8 +14,8 @@ audiences:
 topics:
     - { list of topic(s) }
 risk_level: { oneOf: (low|medium|high) }
-authority_level: draft
-review_status: stub
+authority_level: provisional
+publication_status: stub
 last_reviewed: { today }
 retrieval_priority: { oneOf: (low|medium|high) }
 assistant_behavior:
