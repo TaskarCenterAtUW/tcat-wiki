@@ -1,4 +1,5 @@
 ---
+uid: a0b706cf-bdc0-4fe7-85cd-49b79734cfe1
 title: What does maximum extent feasible mean in accessibility data?
 slug: maximum-extent-feasible
 doc_type: concept

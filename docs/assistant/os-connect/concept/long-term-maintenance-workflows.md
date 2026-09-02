@@ -1,4 +1,5 @@
 ---
+uid: eac8f05c-5246-4578-a110-0e13bf867315
 title: What workflows support long-term maintenance?
 slug: long-term-maintenance-workflows
 doc_type: concept

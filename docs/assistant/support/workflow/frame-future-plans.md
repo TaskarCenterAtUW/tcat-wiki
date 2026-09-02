@@ -1,4 +1,5 @@
 ---
+uid: c3df9637-60e9-4545-ae08-b0de0add9e9b
 title: How should staff distinguish current functionality from future plans?
 slug: frame-future-plans
 doc_type: workflow

@@ -1,4 +1,5 @@
 ---
+uid: 90aabacc-6e0d-4518-8596-cfb7a5eb4398
 title: How can walksheds support Safe Routes to School (SRTS)?
 slug: safe-routes-to-school
 doc_type: concept

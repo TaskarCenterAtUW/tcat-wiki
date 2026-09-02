@@ -1,4 +1,5 @@
 ---
+uid: 38c67b9c-867c-48e6-837e-fc37e7d801ba
 title: How can AccessMap support emergency planning?
 slug: emergency-planning
 doc_type: concept

@@ -1,4 +1,5 @@
 ---
+uid: cca616b4-1f0a-4e0f-9d0c-38a4ed5631ee
 title: Who should external partners contact for OS-CONNECT data questions?
 slug: os-connect-contact
 doc_type: concept

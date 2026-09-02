@@ -1,4 +1,5 @@
 ---
+uid: 9b24601c-e489-4d4a-9650-b06adb8324b6
 title: Workspaces editing authority
 slug: workspace-editing-authority
 doc_type: concept

@@ -1,4 +1,5 @@
 ---
+uid: 9ab89290-d73c-4a0c-a760-380199a8a642
 title: How do I join a project and find quests in AVIV ScoutRoute?
 slug: join-a-project-and-find-quests
 doc_type: workflow

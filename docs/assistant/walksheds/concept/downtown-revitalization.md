@@ -1,4 +1,5 @@
 ---
+uid: 2d2f6fea-8f98-4bc3-9c09-77f48c605997
 title: How can walksheds support downtown revitalization?
 slug: downtown-revitalization
 doc_type: concept

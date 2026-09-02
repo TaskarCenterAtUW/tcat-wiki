@@ -1,4 +1,5 @@
 ---
+uid: 75e18a1d-cc14-4c3d-b092-45e6b1b7e574
 title: How do I select a mobility profile in LivAbility?
 slug: select-mobility-profile
 doc_type: workflow

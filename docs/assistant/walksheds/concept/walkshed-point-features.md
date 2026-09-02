@@ -1,4 +1,5 @@
 ---
+uid: be403ad0-a549-4bbb-88c1-90d3c0d2786d
 title: What are point features in Walksheds?
 slug: walkshed-point-features
 doc_type: concept

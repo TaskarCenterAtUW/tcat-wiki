@@ -1,4 +1,5 @@
 ---
+uid: de077cd7-9a60-4a24-b7e8-9e0eedc51cab
 title: ADA, safety, and legal boundaries (policy)
 slug: ada-safety-legal-boundaries
 doc_type: concept

@@ -1,4 +1,5 @@
 ---
+uid: f255535a-83b8-4743-9dde-096b80f28b07
 title: How can residents participate?
 slug: resident-participation
 doc_type: concept

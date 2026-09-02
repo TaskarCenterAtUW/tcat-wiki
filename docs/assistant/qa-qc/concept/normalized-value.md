@@ -1,4 +1,5 @@
 ---
+uid: 6752b665-953f-4cd7-a757-21c171ab32fe
 title: What does a normalized value mean?
 slug: normalized-value
 doc_type: concept

@@ -1,4 +1,5 @@
 ---
+uid: 10a4708c-5ece-46ab-b511-c220de8c2a2b
 title: Can OS-CONNECT support service planning and reliability analysis?
 slug: service-planning
 doc_type: concept

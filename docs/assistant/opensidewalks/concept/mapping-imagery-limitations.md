@@ -1,4 +1,5 @@
 ---
+uid: 02534516-4b97-4c63-a62d-923077b6ea74
 title: How should imagery be used when mapping OpenSidewalks features?
 slug: mapping-imagery-limitations
 doc_type: concept

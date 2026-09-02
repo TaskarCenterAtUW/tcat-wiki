@@ -1,4 +1,5 @@
 ---
+uid: eee64e4c-0f3c-44c9-9f02-8b9ba3be65b7
 title: How can walksheds support transit planning?
 slug: transit-planning
 doc_type: concept

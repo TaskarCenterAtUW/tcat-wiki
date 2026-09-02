@@ -1,4 +1,5 @@
 ---
+uid: 5be36fff-c2b7-4fb6-b573-9a76834a83b7
 title: How do I get AccessMap set up for my region?
 slug: get-accessmap-set-up-for-your-region
 doc_type: workflow

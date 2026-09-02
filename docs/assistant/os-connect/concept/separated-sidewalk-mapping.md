@@ -1,4 +1,5 @@
 ---
+uid: da501179-baf0-4c40-a8be-6d50687de676
 title: What should mappers do when a sidewalk is separated from the road geometry?
 slug: separated-sidewalk-mapping
 doc_type: concept

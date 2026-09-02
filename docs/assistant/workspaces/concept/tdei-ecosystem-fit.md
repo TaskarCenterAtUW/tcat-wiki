@@ -1,4 +1,5 @@
 ---
+uid: 9dd8cfe2-9912-4127-882f-f31c0accfc61
 title: How does Workspaces fit into the TDEI ecosystem?
 slug: tdei-ecosystem-fit
 doc_type: concept

@@ -1,4 +1,5 @@
 ---
+uid: 7a8c3148-8701-4ea7-bc25-aacf538acd49
 title: 'What does "reachable area" mean?'
 slug: reachable-area
 doc_type: concept

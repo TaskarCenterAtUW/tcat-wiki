@@ -1,4 +1,5 @@
 ---
+uid: af1a8513-fb3c-4afd-841e-94dde1c99fed
 title: Workspaces — Assistant Knowledge Base
 slug: workspaces-index
 doc_type: policy

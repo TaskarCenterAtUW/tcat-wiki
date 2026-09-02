@@ -1,4 +1,5 @@
 ---
+uid: d1ecde27-33de-4b5b-9c5f-028e285625aa
 title: How are QA/QC centrality tiles generated?
 slug: centrality-tile-generation
 doc_type: concept

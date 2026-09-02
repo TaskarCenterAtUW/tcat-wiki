@@ -1,4 +1,5 @@
 ---
+uid: 07af8eac-2ec6-428b-963d-79b6aaffaa2d
 title: How should jurisdictions publish updates?
 slug: publish-jurisdiction-updates
 doc_type: workflow

@@ -1,4 +1,5 @@
 ---
+uid: 4c4c81b4-bf7b-42b8-a5de-c136c599b854
 title: How do teams differ from project groups?
 slug: teams-vs-project-groups
 doc_type: concept

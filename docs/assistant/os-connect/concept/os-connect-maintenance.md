@@ -1,4 +1,5 @@
 ---
+uid: f3b4a358-1bfd-4f6e-bb33-da9b6f33d439
 title: Who maintains OS-CONNECT?
 slug: os-connect-maintenance
 doc_type: concept

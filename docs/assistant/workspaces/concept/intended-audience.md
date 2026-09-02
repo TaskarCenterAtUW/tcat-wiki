@@ -1,4 +1,5 @@
 ---
+uid: 860e4c0a-e07e-47f0-a404-3e3aeec342d9
 title: Who is Workspaces intended for?
 slug: intended-audience
 doc_type: concept

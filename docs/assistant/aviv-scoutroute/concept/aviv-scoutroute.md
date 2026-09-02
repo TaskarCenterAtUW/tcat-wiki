@@ -1,4 +1,5 @@
 ---
+uid: 7a8e26e8-df9b-4b0d-8467-1073244761c5
 title: What is AVIV ScoutRoute?
 slug: aviv-scoutroute
 doc_type: concept

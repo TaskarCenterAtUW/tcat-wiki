@@ -1,4 +1,5 @@
 ---
+uid: e87309e2-9ce5-40ac-944d-5d2212d312da
 title: Can multiple workspaces exist from the same dataset?
 slug: multiple-workspaces-per-dataset
 doc_type: concept

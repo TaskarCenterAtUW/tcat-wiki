@@ -1,4 +1,5 @@
 ---
+uid: 4f085a5e-3697-406a-9843-c50d50cdbfff
 title: What are accessibility islands in walkshed analysis?
 slug: accessibility-islands
 doc_type: concept

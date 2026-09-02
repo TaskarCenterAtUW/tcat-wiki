@@ -1,4 +1,5 @@
 ---
+uid: 3e79fc81-e754-4e2c-8743-254c6b04d3f7
 title: What does travel cost mean in Walksheds?
 slug: walkshed-travel-cost
 doc_type: concept

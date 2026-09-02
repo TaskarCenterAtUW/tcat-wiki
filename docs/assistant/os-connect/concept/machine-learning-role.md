@@ -1,4 +1,5 @@
 ---
+uid: 4e468dc8-b2d6-48b9-be4b-1b6adbcdc8ab
 title: What role did machine learning play?
 slug: machine-learning-role
 doc_type: concept

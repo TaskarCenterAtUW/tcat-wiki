@@ -1,4 +1,5 @@
 ---
+uid: 50f1da42-8293-4090-ac28-d6aa9954c221
 title: How do I save and compare Walksheds scenarios?
 slug: save-and-compare-walkshed-scenarios
 doc_type: workflow

@@ -1,4 +1,5 @@
 ---
+uid: 1c093cb9-503d-4499-8295-3a12f55e23d6
 title: How can managers review edits?
 slug: manager-edit-review
 doc_type: concept

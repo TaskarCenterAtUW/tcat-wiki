@@ -1,4 +1,5 @@
 ---
+uid: dd6a067e-14b2-43f7-81e6-8719c2efcec0
 title: How does the default Walksheds cost model work?
 slug: walkshed-default-cost-model
 doc_type: concept

@@ -1,4 +1,5 @@
 ---
+uid: 9fdf0e6c-9938-4fd8-a609-c23febdb9169
 title: How is the Walksheds interface organized?
 slug: walkshed-interface-organization
 doc_type: concept

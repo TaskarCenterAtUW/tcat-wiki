@@ -1,4 +1,5 @@
 ---
+uid: 0378c9a8-2c4d-4c6c-a539-6f2d6695dcad
 title: How can walksheds support hospital access analysis?
 slug: hospital-access-analysis
 doc_type: concept

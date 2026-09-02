@@ -1,4 +1,5 @@
 ---
+uid: ae27712e-8a55-4971-b6b9-6e9ac7d8950e
 title: How can walksheds support grant applications?
 slug: grant-applications
 doc_type: concept

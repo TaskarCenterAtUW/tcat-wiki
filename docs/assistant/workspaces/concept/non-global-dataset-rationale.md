@@ -1,4 +1,5 @@
 ---
+uid: 88f5eb39-d1a0-4680-9157-3ecef8f34fce
 title: Why is the dataset not global like OSM?
 slug: non-global-dataset-rationale
 doc_type: concept

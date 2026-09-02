@@ -1,4 +1,5 @@
 ---
+uid: 05efc35b-8c38-4868-b0ef-6c2abe120dd9
 title: How does a workspace diverge from the original dataset?
 slug: workspace-dataset-divergence
 doc_type: concept

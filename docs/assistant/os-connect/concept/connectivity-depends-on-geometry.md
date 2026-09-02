@@ -1,4 +1,5 @@
 ---
+uid: f07eaa2e-fd6a-492b-b5b7-b887a6b7f969
 title: Why does OS-CONNECT connectivity depend on geometry?
 slug: connectivity-depends-on-geometry
 doc_type: concept

@@ -1,4 +1,5 @@
 ---
+uid: 7f013105-7dea-432b-b72a-59d1f96a7b5b
 title: How can planners compare accessibility before and after improvements?
 slug: before-after-comparison
 doc_type: concept

@@ -1,4 +1,5 @@
 ---
+uid: 43f6971e-3cf4-47fb-a478-dcfa3b48ac5c
 title: Why can a city have high completeness but still accessibility gaps?
 slug: completeness-vs-accessibility-gaps
 doc_type: concept

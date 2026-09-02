@@ -1,4 +1,5 @@
 ---
+uid: 01a52d4b-20dc-4828-b9be-b79b923b8e60
 title: How do team invitations work?
 slug: team-invitations
 doc_type: concept

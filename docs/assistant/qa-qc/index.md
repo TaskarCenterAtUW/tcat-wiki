@@ -1,4 +1,5 @@
 ---
+uid: 19b860bf-74a1-4b1e-8d99-c4e8bd164799
 title: QA/QC — Assistant Knowledge Base
 slug: qa-qc-index
 doc_type: policy

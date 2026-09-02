@@ -1,4 +1,5 @@
 ---
+uid: f88d9666-fa8a-4e10-a8ad-0d1c74b6875f
 title: Workspaces public vs private data
 slug: workspace-public-vs-private-data
 doc_type: concept

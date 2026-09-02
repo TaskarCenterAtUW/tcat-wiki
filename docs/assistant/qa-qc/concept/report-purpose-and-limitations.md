@@ -1,4 +1,5 @@
 ---
+uid: cb61e0fd-f44f-4549-8d2d-b392de487edc
 title: What is the purpose of a QA/QC report?
 slug: report-purpose-and-limitations
 doc_type: concept

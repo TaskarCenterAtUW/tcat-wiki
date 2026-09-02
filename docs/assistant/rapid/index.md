@@ -1,4 +1,5 @@
 ---
+uid: 26f6b603-638f-4077-a878-7fd44ae9bd3e
 title: Rapid — Assistant Knowledge Base
 slug: rapid-index
 doc_type: policy

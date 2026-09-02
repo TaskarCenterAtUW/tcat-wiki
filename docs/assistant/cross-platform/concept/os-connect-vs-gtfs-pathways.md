@@ -1,4 +1,5 @@
 ---
+uid: 9256ade4-dd52-4d0d-b74a-fb4e7d4ec200
 title: How is OS-CONNECT different from GTFS-Pathways?
 slug: os-connect-vs-gtfs-pathways
 doc_type: concept

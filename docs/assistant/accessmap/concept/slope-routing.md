@@ -1,4 +1,5 @@
 ---
+uid: 3d2b9770-ef79-4e85-91f8-1468def552d1
 title: How are slopes incorporated into routing?
 slug: slope-routing
 doc_type: concept

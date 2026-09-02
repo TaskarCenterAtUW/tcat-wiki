@@ -1,4 +1,5 @@
 ---
+uid: 90b52cda-ebcb-482f-bc5e-8aedb7af6b9b
 title: What is OS-CONNECT?
 slug: os-connect
 doc_type: concept

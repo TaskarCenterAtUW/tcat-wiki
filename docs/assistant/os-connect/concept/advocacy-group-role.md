@@ -1,4 +1,5 @@
 ---
+uid: 6e3886d7-1071-4ed9-92d2-41418bba1204
 title: What role could advocacy groups play?
 slug: advocacy-group-role
 doc_type: concept

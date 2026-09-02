@@ -1,4 +1,5 @@
 ---
+uid: ee58075d-863b-4684-b394-8b4951dbae4a
 title: What do Walksheds map symbols mean?
 slug: walkshed-map-symbols
 doc_type: concept

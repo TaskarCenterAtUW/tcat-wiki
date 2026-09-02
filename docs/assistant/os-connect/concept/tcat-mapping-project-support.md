@@ -1,4 +1,5 @@
 ---
+uid: 90764228-e2ec-41cb-86be-93453bee64bb
 title: Can TCAT help set up a sidewalk-mapping project in the OSM US Tasking Manager?
 slug: tcat-mapping-project-support
 doc_type: concept

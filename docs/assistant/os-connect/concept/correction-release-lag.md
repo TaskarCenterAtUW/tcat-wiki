@@ -1,4 +1,5 @@
 ---
+uid: 45bd57c2-2fd9-49f6-adf5-3dea7ea3c63f
 title: How long do corrections take to appear in a public release?
 slug: correction-release-lag
 doc_type: concept

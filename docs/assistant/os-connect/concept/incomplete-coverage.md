@@ -1,4 +1,5 @@
 ---
+uid: 68362541-2b15-49b3-a69e-b1269ee5624d
 title: Why do some areas appear incomplete?
 slug: incomplete-coverage
 doc_type: concept

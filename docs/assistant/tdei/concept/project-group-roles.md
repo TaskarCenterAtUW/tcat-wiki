@@ -1,4 +1,5 @@
 ---
+uid: d01ee31b-99ae-4050-91eb-ba27388433d7
 title: What roles can members have in a TDEI project group?
 slug: project-group-roles
 doc_type: concept

@@ -1,4 +1,5 @@
 ---
+uid: 4195411a-cf4f-4713-b93e-ff79201e1139
 title: How should interval survey points be represented?
 slug: interval-survey-points
 doc_type: concept

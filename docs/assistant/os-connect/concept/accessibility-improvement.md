@@ -1,4 +1,5 @@
 ---
+uid: e4c3ac31-f797-4d6f-aeff-1683a60a3e36
 title: How does this improve accessibility?
 slug: accessibility-improvement
 doc_type: concept

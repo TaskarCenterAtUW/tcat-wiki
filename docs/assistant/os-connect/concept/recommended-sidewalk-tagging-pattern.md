@@ -1,4 +1,5 @@
 ---
+uid: b06a1417-5d3a-4b23-95a5-77e23443700f
 title: Which sidewalk-to-street-name tagging pattern is currently recommended?
 slug: recommended-sidewalk-tagging-pattern
 doc_type: concept

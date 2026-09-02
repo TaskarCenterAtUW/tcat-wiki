@@ -1,4 +1,5 @@
 ---
+uid: 153153ae-ffc0-4cf0-aaa5-83204760f279
 title: How should uncertainty be communicated in walkshed outputs?
 slug: uncertainty-communication
 doc_type: concept

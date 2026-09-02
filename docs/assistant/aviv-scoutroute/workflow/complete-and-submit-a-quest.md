@@ -1,4 +1,5 @@
 ---
+uid: ce7a0d43-f792-472d-9c35-74ed27745081
 title: How do I complete and submit an AVIV ScoutRoute quest?
 slug: complete-and-submit-a-quest
 doc_type: workflow

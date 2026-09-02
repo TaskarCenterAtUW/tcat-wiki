@@ -1,4 +1,5 @@
 ---
+uid: 30f9a280-d113-4e12-aed0-81346a500dc7
 title: How can a QA/QC report support ADA planning?
 slug: use-report-for-ada-planning
 doc_type: workflow

@@ -1,4 +1,5 @@
 ---
+uid: 7ec7294c-49d5-4756-9eea-141270e02ce2
 title: FleXR — Assistant Knowledge Base
 slug: flexr-index
 doc_type: policy

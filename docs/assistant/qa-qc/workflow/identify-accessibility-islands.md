@@ -1,4 +1,5 @@
 ---
+uid: 649ba898-e1da-4865-bda0-58f75f14a185
 title: How do I use QA/QC Reports to identify accessibility islands?
 slug: identify-accessibility-islands
 doc_type: workflow

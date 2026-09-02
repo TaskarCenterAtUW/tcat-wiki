@@ -1,4 +1,5 @@
 ---
+uid: 2a273334-8212-440f-a6b2-9529b12c0c30
 title: How does Workspaces emulate OSM APIs?
 slug: osm-api-emulation
 doc_type: concept

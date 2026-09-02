@@ -1,4 +1,5 @@
 ---
+uid: 761bb617-3bdc-446c-913b-f6bd947c8e20
 title: How are trails handled?
 slug: trail-handling
 doc_type: concept

@@ -1,4 +1,5 @@
 ---
+uid: 01d76520-3c35-4baf-aedf-b2e77fcba439
 title: How are OS-CONNECT QA/QC reports generated?
 slug: qa-qc-report-infrastructure
 doc_type: concept

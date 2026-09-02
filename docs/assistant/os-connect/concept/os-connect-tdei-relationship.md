@@ -1,4 +1,5 @@
 ---
+uid: dac3f116-f11f-4219-8113-8b1bb774028b
 title: How is OS-CONNECT related to TDEI?
 slug: os-connect-tdei-relationship
 doc_type: concept

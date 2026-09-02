@@ -1,4 +1,5 @@
 ---
+uid: 139abb8e-9218-4513-973c-152117c20ac1
 title: What accessibility profiles are supported?
 slug: accessibility-profiles
 doc_type: concept

@@ -1,4 +1,5 @@
 ---
+uid: 5361e22e-1eff-41f7-aa38-1d7962b66303
 title: What does path count mean in QA/QC reports?
 slug: path-count
 doc_type: concept

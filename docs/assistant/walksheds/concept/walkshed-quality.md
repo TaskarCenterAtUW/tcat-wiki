@@ -1,4 +1,5 @@
 ---
+uid: 5cc4abe2-a970-4e03-b745-518b26b617d4
 title: 'What makes a walkshed "good" or "bad"?'
 slug: walkshed-quality
 doc_type: concept

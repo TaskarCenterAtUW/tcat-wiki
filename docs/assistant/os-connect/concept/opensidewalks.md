@@ -1,4 +1,5 @@
 ---
+uid: ee0868ad-458c-47df-8707-a53196198634
 title: What is OpenSidewalks?
 slug: opensidewalks
 doc_type: concept

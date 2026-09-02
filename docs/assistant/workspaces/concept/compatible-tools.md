@@ -1,4 +1,5 @@
 ---
+uid: 98ac75af-bea2-44ba-9c36-70ad84c8cf8e
 title: What tools work with Workspaces?
 slug: compatible-tools
 doc_type: concept

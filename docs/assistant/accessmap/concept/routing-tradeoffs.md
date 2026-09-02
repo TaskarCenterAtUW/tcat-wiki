@@ -1,4 +1,5 @@
 ---
+uid: 279d9e76-a0c3-43f2-99e3-f25e0a1247c5
 title: What are routing tradeoffs?
 slug: routing-tradeoffs
 doc_type: concept

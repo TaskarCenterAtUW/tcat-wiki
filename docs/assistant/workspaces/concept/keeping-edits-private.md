@@ -1,4 +1,5 @@
 ---
+uid: 6be91709-d64c-4d66-9cb2-01803475ddc3
 title: When should edits remain private?
 slug: keeping-edits-private
 doc_type: concept

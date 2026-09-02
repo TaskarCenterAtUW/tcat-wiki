@@ -1,4 +1,5 @@
 ---
+uid: 004f4eb1-1b05-40ff-b253-360b85ca3a55
 title: Why can standardized pedestrian data help small communities?
 slug: rural-pedestrian-data-value
 doc_type: concept

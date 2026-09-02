@@ -1,4 +1,5 @@
 ---
+uid: 6d3e83aa-520c-44aa-9631-5495d022df90
 title: What role did community validation play?
 slug: community-validation-role
 doc_type: concept

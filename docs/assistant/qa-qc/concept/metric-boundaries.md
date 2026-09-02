@@ -1,4 +1,5 @@
 ---
+uid: 80590023-aa2e-4493-8c2f-26d33f8523dc
 title: Why may QA/QC metric areas differ from jurisdiction boundaries?
 slug: metric-boundaries
 doc_type: concept

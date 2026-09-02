@@ -1,4 +1,5 @@
 ---
+uid: e9ed8f2b-8637-40ed-ace0-067f81a74215
 title: How do I answer a quest in AVIV ScoutRoute?
 slug: answer-quest
 doc_type: workflow

@@ -1,4 +1,5 @@
 ---
+uid: 86d1356e-dcdf-4bbf-bd0e-a5e40b791e4b
 title: Who can see a TDEI dataset?
 slug: dataset-visibility
 doc_type: concept

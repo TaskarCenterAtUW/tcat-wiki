@@ -1,4 +1,5 @@
 ---
+uid: 8405961e-1ad1-4bc6-98f5-2b90113583f2
 title: What makes OS-CONNECT different from traditional inventories?
 slug: os-connect-vs-traditional-inventories
 doc_type: concept

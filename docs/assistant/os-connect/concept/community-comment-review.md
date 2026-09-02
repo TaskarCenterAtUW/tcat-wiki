@@ -1,4 +1,5 @@
 ---
+uid: e9db4f57-4551-45b9-b3cb-0860768a1995
 title: How are community comments reviewed?
 slug: community-comment-review
 doc_type: concept

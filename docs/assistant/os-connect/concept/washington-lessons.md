@@ -1,4 +1,5 @@
 ---
+uid: 680def2a-5e3b-40f2-b33c-018a5c7010f4
 title: What lessons has Washington learned?
 slug: washington-lessons
 doc_type: concept
@@ -15,7 +16,7 @@ topics:
     - os-connect
     - washington
 risk_level: medium
-authority_level: explanatory
+authority_level: provisional
 publication_status: stub
 last_reviewed:
 retrieval_priority: high

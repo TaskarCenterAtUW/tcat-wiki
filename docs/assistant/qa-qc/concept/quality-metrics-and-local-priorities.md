@@ -1,4 +1,5 @@
 ---
+uid: d5f1ad9f-0a8b-4586-bcfe-980430abc088
 title: How should QA/QC metrics and local priorities be combined?
 slug: quality-metrics-and-local-priorities
 doc_type: concept

@@ -1,4 +1,5 @@
 ---
+uid: 8527c07f-7f16-4bac-aa6f-7f81808d026b
 title: Data freshness and versioning for assistants
 slug: data-freshness
 doc_type: concept

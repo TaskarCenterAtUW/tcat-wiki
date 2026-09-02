@@ -1,4 +1,5 @@
 ---
+uid: d39455d8-d275-417b-8d23-99869e2915e8
 title: How do vector maps differ from raster maps?
 slug: vector-vs-raster-maps
 doc_type: concept

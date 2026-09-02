@@ -48,7 +48,8 @@ VALID_AUTHORITY_LEVELS = {"provisional", "explanatory", "official"}
 VALID_RETRIEVAL_PRIORITIES = {"low", "medium", "high"}
 
 FRONTMATTER_RE = re.compile(r"^---\s*\n(.*?)\n---\s*\n", re.DOTALL)
-ROW_RE = re.compile(r"^\|\s*`([^`]+\.md)`\s*\|\s*(\S+)\s*\|")
+ROW_RE = re.compile(
+    r"^\|\s*`([^`]+)`\s*\|\s*`([^`]+\.md)`\s*\|\s*(\S+)\s*\|\s*(\S+)\s*\|")
 HEADING_RE = re.compile(r"^(#{2,4})\s+(.*)$")
 BASE_RE = re.compile(r"^Base:\s*`([^`]+)`")
 
@@ -263,6 +264,30 @@ def test_title_is_present(topic, doc_type, path):
     assert fm.get("title"), f"{rel(path)}: missing or empty title"
 
 
+UID_RE = re.compile(
+    r"^[0-9a-f]{8}-[0-9a-f]{4}-4[0-9a-f]{3}-[89ab][0-9a-f]{3}-[0-9a-f]{12}$"
+)
+
+
+@pytest.mark.parametrize("topic,doc_type,path", ARTICLES, ids=ARTICLE_IDS)
+def test_uid_is_canonical_uuidv4(topic, doc_type, path):
+    uid = parse_frontmatter(path.read_text(encoding="utf-8")).get("uid")
+    assert uid and UID_RE.fullmatch(uid), f"{rel(path)}: invalid uid {uid!r}"
+
+
+def test_uids_are_unique_and_not_retired():
+    values = []
+    for _topic, _doc_type, path in ARTICLES:
+        values.append(parse_frontmatter(path.read_text(encoding="utf-8")).get("uid"))
+    assert len(values) == len(set(values)), "Assistant page UIDs must be unique"
+    retired_path = REPO_ROOT / "utilities" / "akb-retired-uuids.txt"
+    retired = {
+        line.strip() for line in retired_path.read_text(encoding="utf-8").splitlines()
+        if line.strip() and not line.lstrip().startswith("#")
+    }
+    assert not retired.intersection(values), "Live pages must not use retired UIDs"
+
+
 # =============================================================================
 # products/topics controlled vocabulary (docs/assistant/schema.md)
 # =============================================================================
@@ -474,9 +499,10 @@ def parse_dispatch_rows(text):
             continue
         rm = ROW_RE.match(line)
         if rm:
-            fname = rm.group(1)
+            uid = rm.group(1)
+            fname = rm.group(2)
             file_path = f"{base}{fname}" if base else fname
-            rows.append((tuple(t for _, t in stack), file_path, rm.group(2)))
+            rows.append((tuple(t for _, t in stack), file_path, uid, rm.group(4)))
     return rows
 
 
@@ -500,7 +526,7 @@ def test_dispatch_frontmatter_is_valid(dispatch_text):
 
 def test_dispatch_has_no_rows_for_nonexistent_files(dispatch_rows):
     missing = []
-    for heading_stack, file_path, _status in dispatch_rows:
+    for heading_stack, file_path, _uid, _status in dispatch_rows:
         if not (ASSISTANT_DIR / file_path).exists():
             missing.append((file_path, heading_stack))
     assert not missing, (
@@ -511,7 +537,7 @@ def test_dispatch_has_no_rows_for_nonexistent_files(dispatch_rows):
 
 def test_dispatch_has_no_duplicate_rows(dispatch_rows):
     counts = defaultdict(int)
-    for _heading_stack, file_path, _status in dispatch_rows:
+    for _heading_stack, file_path, _uid, _status in dispatch_rows:
         counts[file_path] += 1
     dupes = {path: n for path, n in counts.items() if n > 1}
     assert not dupes, f"dispatch.md lists the same file more than once: {dupes}"
@@ -525,7 +551,7 @@ def test_dispatch_lists_every_topic_article_exactly_once(dispatch_rows):
     a table row, per akb_generate_dispatch.py's render_topic().
     """
     listed_counts = defaultdict(int)
-    for _heading_stack, file_path, _status in dispatch_rows:
+    for _heading_stack, file_path, _uid, _status in dispatch_rows:
         listed_counts[file_path] += 1
 
     absent_or_duplicated = []
@@ -545,7 +571,7 @@ def test_dispatch_lists_every_topic_article_exactly_once(dispatch_rows):
 
 def test_dispatch_publication_status_matches_frontmatter(dispatch_rows):
     row_status = {}
-    for _heading_stack, file_path, status in dispatch_rows:
+    for _heading_stack, file_path, _uid, status in dispatch_rows:
         row_status[file_path] = status
 
     mismatches = []
@@ -562,3 +588,17 @@ def test_dispatch_publication_status_matches_frontmatter(dispatch_rows):
         f"{len(mismatches)} file(s) (path, dispatch_status, actual_status). "
         f"First 20: {mismatches[:20]}"
     )
+
+
+def test_dispatch_uids_match_frontmatter(dispatch_rows):
+    row_uids = {file_path: uid for _heading, file_path, uid, _status in dispatch_rows}
+    mismatches = []
+    for _topic, _doc_type, path in ARTICLES:
+        key = rel(path)
+        if key in row_uids:
+            actual = parse_frontmatter(path.read_text(encoding="utf-8")).get("uid")
+            if row_uids[key] != actual:
+                mismatches.append((key, row_uids[key], actual))
+    dispatch_uid = parse_frontmatter(DISPATCH_PATH.read_text(encoding="utf-8")).get("uid")
+    assert row_uids.get("dispatch.md") == dispatch_uid
+    assert not mismatches, f"Dispatch UID mismatches: {mismatches[:20]}"

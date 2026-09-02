@@ -1,4 +1,5 @@
 ---
+uid: efac73e0-4296-40a3-b923-4b3c5fe998d2
 title: Can Walksheds be joined with census, crash data, or internal agency datasets?
 slug: external-dataset-joins
 doc_type: concept

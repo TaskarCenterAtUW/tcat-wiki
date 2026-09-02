@@ -1,4 +1,5 @@
 ---
+uid: 8602231a-7020-4aa2-9fed-dcd4725c953e
 title: Where are OpenSidewalks attribute definitions documented?
 slug: attribute-documentation-location
 doc_type: concept

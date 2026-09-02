@@ -1,4 +1,5 @@
 ---
+uid: b9a44155-7d53-45aa-ad62-b71503c9cb72
 title: What is the boundary between an external overlay and workspace data?
 slug: external-data-overlay-boundary
 doc_type: concept

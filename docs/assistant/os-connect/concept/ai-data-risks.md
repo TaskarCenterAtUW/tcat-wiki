@@ -1,4 +1,5 @@
 ---
+uid: 8ff15f9e-ed6e-42a1-9a0d-63eb33bf1aa0
 title: What risks exist in AI-generated accessibility data?
 slug: ai-data-risks
 doc_type: concept

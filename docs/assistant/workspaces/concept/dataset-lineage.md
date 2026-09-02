@@ -1,4 +1,5 @@
 ---
+uid: 3fa9ed5e-d219-4cfa-85c0-e05649f7b617
 title: Dataset lineage (Workspaces and TDEI)
 slug: dataset-lineage
 doc_type: concept

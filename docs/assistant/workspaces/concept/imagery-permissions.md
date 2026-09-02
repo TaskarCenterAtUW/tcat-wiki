@@ -1,4 +1,5 @@
 ---
+uid: 26bb7904-97eb-4059-9834-73d1ca82b317
 title: How are imagery permissions handled?
 slug: imagery-permissions
 doc_type: concept

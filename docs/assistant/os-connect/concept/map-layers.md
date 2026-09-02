@@ -1,4 +1,5 @@
 ---
+uid: 092fb787-d775-47de-8c42-4feed6a809e0
 title: What are the different map layers?
 slug: map-layers
 doc_type: concept

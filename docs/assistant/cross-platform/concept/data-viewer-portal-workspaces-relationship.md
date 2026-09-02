@@ -1,4 +1,5 @@
 ---
+uid: d1f34cff-a68b-4671-9f2a-3ef5f66c126e
 title: How do the TDEI portal, viewer, Workspaces, and AVIV ScoutRoute relate?
 slug: data-viewer-portal-workspaces-relationship
 doc_type: concept

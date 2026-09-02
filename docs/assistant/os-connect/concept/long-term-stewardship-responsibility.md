@@ -1,4 +1,5 @@
 ---
+uid: d1ee6b3e-f828-47d5-a425-aa90cb654571
 title: Who is responsible for long-term stewardship?
 slug: long-term-stewardship-responsibility
 doc_type: concept

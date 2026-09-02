@@ -1,4 +1,5 @@
 ---
+uid: ce7f789b-02b5-40ee-9bdd-3c7cf237f2d7
 title: What information should agencies include when reporting a data issue?
 slug: data-issue-reporting-requirements
 doc_type: concept

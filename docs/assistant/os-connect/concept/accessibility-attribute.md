@@ -1,4 +1,5 @@
 ---
+uid: c1f739ff-91bc-439f-b38a-a4c1a0ee587e
 title: What is an accessibility attribute?
 slug: accessibility-attribute
 doc_type: concept

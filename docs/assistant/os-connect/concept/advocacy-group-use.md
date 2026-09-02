@@ -1,4 +1,5 @@
 ---
+uid: a0653dc0-80d2-4d89-aa72-1a9e3aa74aa2
 title: How can advocacy groups use OS-CONNECT?
 slug: advocacy-group-use
 doc_type: concept

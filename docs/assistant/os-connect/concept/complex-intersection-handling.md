@@ -1,4 +1,5 @@
 ---
+uid: ffa7be70-70af-4c81-bbb8-492673feab7d
 title: How are complex intersections handled?
 slug: complex-intersection-handling
 doc_type: concept

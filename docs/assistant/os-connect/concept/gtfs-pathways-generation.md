@@ -1,4 +1,5 @@
 ---
+uid: b0db888e-9aaf-43fc-a061-7ed8e2d48925
 title: Can OS-CONNECT generate GTFS Pathways data?
 slug: gtfs-pathways-generation
 doc_type: concept

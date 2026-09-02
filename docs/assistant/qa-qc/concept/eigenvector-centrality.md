@@ -1,4 +1,5 @@
 ---
+uid: 9f5f6817-bd7b-40a5-a5b7-d25b92d659f9
 title: What is eigenvector centrality?
 slug: eigenvector-centrality
 doc_type: concept

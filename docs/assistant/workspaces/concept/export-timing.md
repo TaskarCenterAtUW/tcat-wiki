@@ -1,4 +1,5 @@
 ---
+uid: 49a58c6e-5226-47f2-958b-88e53fe57b8e
 title: When should edits be exported back to TDEI?
 slug: export-timing
 doc_type: concept

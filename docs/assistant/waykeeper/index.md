@@ -1,4 +1,5 @@
 ---
+uid: aa4e2d4c-c6ea-4f89-8e1c-40fa0ac692cb
 title: Waykeeper — Assistant Knowledge Base
 slug: waykeeper-index
 doc_type: policy

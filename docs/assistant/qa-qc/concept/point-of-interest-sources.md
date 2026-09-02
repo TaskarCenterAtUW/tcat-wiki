@@ -1,4 +1,5 @@
 ---
+uid: 6771e2e0-eff4-4ec8-b5a6-95a40053c950
 title: Where do QA/QC report points of interest come from?
 slug: point-of-interest-sources
 doc_type: concept

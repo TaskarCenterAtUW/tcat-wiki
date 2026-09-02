@@ -1,4 +1,5 @@
 ---
+uid: 27a4a8a0-700d-4391-aaa5-4b5c470065f3
 title: How can regional OS-CONNECT derivatives serve different uses?
 slug: regional-dataset-derivatives
 doc_type: concept

@@ -1,4 +1,5 @@
 ---
+uid: 065b5266-43c9-46a7-802e-d56f709ccf9f
 title: How do missing curb ramps affect route selection?
 slug: missing-curb-ramps-effect
 doc_type: concept

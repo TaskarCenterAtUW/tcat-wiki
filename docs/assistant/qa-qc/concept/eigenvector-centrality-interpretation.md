@@ -1,4 +1,5 @@
 ---
+uid: df77fa55-34b8-4c10-adc8-f3d60260e843
 title: How should eigenvector centrality be interpreted?
 slug: eigenvector-centrality-interpretation
 doc_type: concept

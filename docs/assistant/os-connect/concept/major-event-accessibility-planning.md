@@ -1,4 +1,5 @@
 ---
+uid: a94dd009-ca0d-4125-958f-7652a38ef00a
 title: Can OS-CONNECT support FIFA or major-event accessibility planning?
 slug: major-event-accessibility-planning
 doc_type: concept

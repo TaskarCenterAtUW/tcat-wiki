@@ -1,4 +1,5 @@
 ---
+uid: 92f3af12-0ecd-4ea0-8bba-b941b5384fc4
 title: How do I add a sidewalk using Rapid?
 slug: add-sidewalk-using-rapid
 doc_type: workflow

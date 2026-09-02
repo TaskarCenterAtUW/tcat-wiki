@@ -1,4 +1,5 @@
 ---
+uid: 77695777-82fd-4459-b59b-4d96392640e4
 title: What governance models are possible?
 slug: governance-models
 doc_type: concept

@@ -1,4 +1,5 @@
 ---
+uid: 9d0d1a13-e300-47a6-9713-3825d2596b0c
 title: 'What does "avoid steep slopes" mean?'
 slug: avoid-steep-slopes
 doc_type: concept

@@ -1,4 +1,5 @@
 ---
+uid: dc9750bb-08a1-4884-a6ed-329314c8d697
 title: How are Walksheds batch outputs handled?
 slug: walkshed-batch-output
 doc_type: concept

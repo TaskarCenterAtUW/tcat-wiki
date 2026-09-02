@@ -1,4 +1,5 @@
 ---
+uid: 66fd8c0f-6f4f-4894-8224-53ca7f1a2dbb
 title: What is RAPID?
 slug: rapid
 doc_type: concept

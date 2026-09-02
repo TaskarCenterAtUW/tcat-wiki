@@ -1,4 +1,5 @@
 ---
+uid: 1d16529c-80a9-4094-803f-1dcede0c8336
 title: Collaborative accessibility editing
 slug: collaborative-editing
 doc_type: concept

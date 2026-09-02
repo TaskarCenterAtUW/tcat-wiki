@@ -1,4 +1,5 @@
 ---
+uid: f1a0e5a3-6d32-44cb-8de3-d50ddefcfb56
 title: How can Walksheds help analyze access to bus stops?
 slug: bus-stop-access-analysis
 doc_type: concept

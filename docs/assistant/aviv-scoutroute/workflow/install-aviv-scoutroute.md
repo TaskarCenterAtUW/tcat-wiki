@@ -1,4 +1,5 @@
 ---
+uid: 1c219b5b-c233-41d3-a014-c5f94f6c5c28
 title: How do I install AVIV ScoutRoute?
 slug: install-aviv-scoutroute
 doc_type: workflow

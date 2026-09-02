@@ -1,4 +1,5 @@
 ---
+uid: 4d51a782-12a4-4dce-9b3e-5af77eddb58d
 title: Can OS-CONNECT support capital planning?
 slug: capital-planning
 doc_type: concept

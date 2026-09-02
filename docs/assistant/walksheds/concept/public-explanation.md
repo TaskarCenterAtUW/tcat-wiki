@@ -1,4 +1,5 @@
 ---
+uid: 9204edd8-26f0-4bdf-a5ea-1f5b0d9ccd5a
 title: What are good public-facing ways to explain walksheds?
 slug: public-explanation
 doc_type: concept

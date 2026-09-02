@@ -1,4 +1,5 @@
 ---
+uid: 85a46b26-1ffb-4488-9051-4e268a3f01a6
 title: How can users identify who made a change?
 slug: change-authorship
 doc_type: concept

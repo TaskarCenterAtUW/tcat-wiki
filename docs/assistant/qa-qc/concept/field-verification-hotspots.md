@@ -1,4 +1,5 @@
 ---
+uid: 5f380c2d-e4a1-4a33-8bcd-f2edcd9410ee
 title: How are QA/QC field-verification hotspots used?
 slug: field-verification-hotspots
 doc_type: concept

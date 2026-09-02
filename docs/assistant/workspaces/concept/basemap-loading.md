@@ -1,4 +1,5 @@
 ---
+uid: 935c9b0c-1305-42fb-9a5d-afec7201f5bd
 title: How are basemaps loaded?
 slug: basemap-loading
 doc_type: concept

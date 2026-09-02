@@ -1,4 +1,5 @@
 ---
+uid: 8c2210b2-c64b-467b-89b0-3f48368b41b0
 title: Can AI estimate sidewalk quality?
 slug: ai-sidewalk-quality-estimation
 doc_type: concept

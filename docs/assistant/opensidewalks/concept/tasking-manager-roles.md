@@ -1,4 +1,5 @@
 ---
+uid: d2ecc09b-5051-4aa1-959c-abce0f6efcc0
 title: What roles exist in the OSM US Tasking Manager?
 slug: tasking-manager-roles
 doc_type: concept

@@ -1,4 +1,5 @@
 ---
+uid: 2f476704-7c83-47e7-b994-c0a6e4eaa428
 title: How do I convert sidewalk centerlines to OpenSidewalks?
 slug: convert-sidewalk-centerlines-to-osw
 doc_type: workflow

@@ -1,4 +1,5 @@
 ---
+uid: 6e9e7a39-14fd-4a11-8fcb-cc9eed18ac9e
 title: How is a walkshed different from a buffer?
 slug: walkshed-vs-buffer
 doc_type: concept

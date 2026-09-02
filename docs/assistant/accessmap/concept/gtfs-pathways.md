@@ -1,4 +1,5 @@
 ---
+uid: adab452f-b9b6-4817-b49c-10e7e9ba2baf
 title: What is GTFS Pathways?
 slug: gtfs-pathways
 doc_type: concept

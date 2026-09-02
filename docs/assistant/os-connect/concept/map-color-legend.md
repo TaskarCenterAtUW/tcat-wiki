@@ -1,4 +1,5 @@
 ---
+uid: 242f493f-0fb0-404a-b58d-7690d537cc36
 title: What do the colors mean?
 slug: map-color-legend
 doc_type: concept

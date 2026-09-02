@@ -1,9 +1,11 @@
 ---
 name: akb-review-article
 description: Review one TCAT Assistant Knowledge Base article for schema compliance, retrieval quality, and assistant safety.
-disable-model-invocation: true
 argument-hint: "Path to docs/assistant/**/*.md to review, or leave blank to review the active file"
+user-invocable: true
+disable-model-invocation: false
 ---
+
 <!-- @format -->
 
 # AKB article review
@@ -25,6 +27,7 @@ Classify each finding as an **Error** (schema violation, missing required conten
 
 - Confirm the file is inside `docs/assistant/` and its path matches the schema layout: `{topic}/index.md` for `policy`, `{topic}/concept/*.md` for `concept`, or `{topic}/workflow/*.md` for `workflow`.
 - Check every required key: `title`, `slug`, `doc_type`, `questions`, `products`, `audiences`, `topics`, `risk_level`, `authority_level`, `publication_status`, `last_reviewed`, `retrieval_priority`, `assistant_behavior`, and `related_pages`.
+- Check the required `uid` key for a canonical lowercase hyphenated UUIDv4. Confirm it is not duplicated or retired; an existing article's UID must remain unchanged across edits and moves.
 - Check that `slug` exactly matches the file basename; `doc_type` matches both the path and the allowed values (`concept`, `workflow`, `policy`); and `publication_status` is one of `stub`, `draft`, `published`, or `archived`. Do not require `publication_status: draft`.
 - Check valid enum values for `risk_level` (`low`, `medium`, `high`), `authority_level` (`provisional`, `explanatory`, `official`), and `retrieval_priority` (`low`, `medium`, `high`).
 - Check that `questions`, `products`, `audiences`, `topics`, and `related_pages` are lists; `last_reviewed` is a plausible `YYYY-MM-DD` date; and metadata is specific and consistent with the article.

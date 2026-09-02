@@ -1,4 +1,5 @@
 ---
+uid: 07559100-b9f0-4a58-af67-e55e76e023bc
 title: What should agencies do if GTFS Pathways data are missing but pedestrian data exist in OSM or OS-CONNECT?
 slug: fallback-when-gtfs-pathways-missing
 doc_type: concept

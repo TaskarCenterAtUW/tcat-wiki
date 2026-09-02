@@ -1,4 +1,5 @@
 ---
+uid: f487edfc-238c-439e-85ad-17865ee31fc1
 title: What happens when imagery is outdated?
 slug: outdated-imagery
 doc_type: concept

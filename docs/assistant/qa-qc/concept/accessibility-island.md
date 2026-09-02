@@ -1,4 +1,5 @@
 ---
+uid: 48d0ded2-e1d3-4caa-ad78-40041fd7e4d9
 title: What is an accessibility island?
 slug: accessibility-island
 doc_type: concept

@@ -1,4 +1,5 @@
 ---
+uid: 29bd9af0-db16-4051-bbc2-46a422ce802b
 title: How do I know whether a dataset is authoritative?
 slug: dataset-authority
 doc_type: concept

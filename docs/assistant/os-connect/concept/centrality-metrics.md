@@ -1,4 +1,5 @@
 ---
+uid: 4d60cca7-839b-49e4-a16b-4a15b9fedd03
 title: What do OS-CONNECT centrality metrics mean?
 slug: centrality-metrics
 doc_type: concept

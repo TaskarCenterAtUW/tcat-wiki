@@ -1,4 +1,5 @@
 ---
+uid: 07b716b4-105a-4db8-ac21-63d4f938cb4c
 title: 'What does "width" mean in the dataset?'
 slug: width-attribute
 doc_type: concept
@@ -15,7 +16,7 @@ topics:
     - os-connect
     - editing
 risk_level: medium
-authority_level: explanatory
+authority_level: provisional
 publication_status: stub
 last_reviewed:
 retrieval_priority: high

@@ -1,4 +1,5 @@
 ---
+uid: 76ce1628-3c14-498b-aa1b-e52a895c9bc8
 title: What does degree centrality mean in pedestrian-network reports?
 slug: degree-centrality
 doc_type: concept

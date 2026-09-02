@@ -1,4 +1,5 @@
 ---
+uid: 5557b51a-9b2d-4dc4-b0cc-767a4c0d1419
 title: How do I set up a Tasking Manager project in Workspaces?
 slug: set-up-tasking-manager-project
 doc_type: workflow

@@ -1,4 +1,5 @@
 ---
+uid: bec3a581-558f-42f0-b34f-9ecc0f7a2554
 title: Why should AVIV ScoutRoute quests be answered from direct observation?
 slug: field-observation
 doc_type: concept

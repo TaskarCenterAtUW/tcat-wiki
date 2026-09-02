@@ -1,4 +1,5 @@
 ---
+uid: e5d9dbdc-d4e9-484e-a45a-0fe0593aedea
 title: What are the jurisdiction participation pathways?
 slug: jurisdiction-participation-pathways
 doc_type: concept

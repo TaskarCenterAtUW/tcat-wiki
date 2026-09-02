@@ -1,4 +1,5 @@
 ---
+uid: 8022c8f8-7019-4be9-8fdb-7489fe1fcd1d
 title: How can multiple people coordinate editing?
 slug: editing-coordination
 doc_type: concept

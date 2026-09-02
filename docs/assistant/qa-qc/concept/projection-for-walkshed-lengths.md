@@ -1,4 +1,5 @@
 ---
+uid: 00ad81f4-9bb8-472c-9e78-de21a7adc298
 title: Which projection supports regional walkshed length calculations?
 slug: projection-for-walkshed-lengths
 doc_type: concept

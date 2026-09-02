@@ -1,4 +1,5 @@
 ---
+uid: 8fc4f4a9-d207-4716-97b1-c809579bfb06
 title: Can this data support Vision Zero?
 slug: vision-zero
 doc_type: concept

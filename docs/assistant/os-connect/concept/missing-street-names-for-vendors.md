@@ -1,4 +1,5 @@
 ---
+uid: 5ad5f1fd-e04c-4630-bcdd-d2f4d7245c40
 title: What should trip-planning vendors do when OSM pedestrian paths do not include street names?
 slug: missing-street-names-for-vendors
 doc_type: concept

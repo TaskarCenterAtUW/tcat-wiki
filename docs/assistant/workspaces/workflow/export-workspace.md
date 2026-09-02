@@ -1,4 +1,5 @@
 ---
+uid: 9afa9a04-a794-4066-967f-6a67dc64286d
 title: How do I export a workspace?
 slug: export-workspace
 doc_type: workflow

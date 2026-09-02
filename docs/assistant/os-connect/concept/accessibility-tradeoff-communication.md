@@ -1,4 +1,5 @@
 ---
+uid: 639d2079-3d3f-4085-ba74-c742a73eaeb1
 title: How should accessibility tradeoffs be communicated?
 slug: accessibility-tradeoff-communication
 doc_type: concept

@@ -1,4 +1,5 @@
 ---
+uid: c7035d9d-8488-411c-a937-8c04c55a9db5
 title: How are numeric quest values validated?
 slug: numeric-quest-validation
 doc_type: concept

@@ -1,4 +1,5 @@
 ---
+uid: 05577303-7b19-4225-b785-5e9f32c7940a
 title: How are collaborative edits managed?
 slug: collaborative-edit-management
 doc_type: concept

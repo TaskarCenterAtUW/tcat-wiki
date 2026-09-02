@@ -1,4 +1,5 @@
 ---
+uid: 14375ffe-f7c5-453b-bc1d-71ad2537953a
 title: What is topic-based Assistant Knowledge Base content?
 slug: topic-based-assistant-content
 doc_type: concept

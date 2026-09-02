@@ -1,4 +1,5 @@
 ---
+uid: a3dcbade-e2fc-4bba-a848-2d55efe82c31
 title: How can this data support freedom of movement for nondrivers?
 slug: nondriver-mobility
 doc_type: concept

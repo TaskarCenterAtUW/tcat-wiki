@@ -1,7 +1,8 @@
 ---
 name: akb-expand-stub
 description: Expand a minimal human-provided answer into a schema-compliant assistant knowledge base page
-disable-model-invocation: true
+user-invocable: true
+disable-model-invocation: false
 ---
 
 <!-- @format -->
@@ -29,6 +30,7 @@ Then read the schema from `docs/assistant/schema.md`. Do not rely on your traini
 
 Using the stub's existing frontmatter as the starting point, fill in or confirm every required field. Rules:
 
+- `uid` — preserve an existing value. For a new page, generate one with `python utilities/akb_generate_uid.py`; never derive it from the path, title, or body.
 - `title` — derive from the file name if not set: convert the kebab-case stem to title case, e.g. `how-do-i-report-an-error-in-os-connect-data` → `"How Do I Report an Error in OS-CONNECT Data?"`.
 - `slug` — use the file stem (kebab-case), unchanged.
 - `doc_type` — infer from directory or filename:
@@ -111,13 +113,14 @@ Always link the section index. Add two to four additional links to adjacent page
 Before writing the file, check:
 
 1. All nine headings are present and in order.
-2. Every required frontmatter field is populated (no empty strings, no `null`).
-3. `publication_status` is schema-valid and matches the user's direction; it defaults to `draft` for a newly expanded stub.
-4. `last_reviewed` is preserved or supplied by the human editorial process; an agent edit did not create a false review date.
-5. `do_not_claim` items (if any) are complete declarative sentences.
-6. `related_pages` paths use the `docs/`-relative format, not file-system paths.
-7. The `## Short Answer` does not contradict the user's minimal answer.
-8. No section is omitted, even if its content is brief.
+2. Every required frontmatter field is populated (no empty strings, no empty arrays, no `null`).
+3. `uid` is a unique canonical lowercase hyphenated UUIDv4 and is preserved for an existing page.
+4. `publication_status` is schema-valid and matches the user's direction; it defaults to `draft` for a newly expanded stub.
+5. `last_reviewed` is preserved or supplied by the human editorial process; an agent edit did not create a false review date.
+6. `do_not_claim` items (if any) are complete declarative sentences.
+7. `related_pages` paths use the `docs/`-relative format, not file-system paths.
+8. The `## Short Answer` does not contradict the user's minimal answer.
+9. No section is omitted, even if its content is brief.
 
 If any check fails, fix it before proceeding.
 

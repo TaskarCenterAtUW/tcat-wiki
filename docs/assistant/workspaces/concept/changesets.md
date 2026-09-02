@@ -1,4 +1,5 @@
 ---
+uid: b8059826-25f7-4427-ae3f-fba72215ea92
 title: Changesets (Workspaces)
 slug: changesets
 doc_type: concept

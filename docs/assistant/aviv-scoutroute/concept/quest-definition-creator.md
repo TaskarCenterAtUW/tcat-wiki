@@ -1,4 +1,5 @@
 ---
+uid: 779b1905-fca1-4d28-a561-d849c6dcc66e
 title: What is the AVIV ScoutRoute Quest Definition Creator?
 slug: quest-definition-creator
 doc_type: concept

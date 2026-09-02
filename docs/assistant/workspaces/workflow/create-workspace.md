@@ -1,4 +1,5 @@
 ---
+uid: 299c33bf-9f17-4b43-a5e9-91cf8b24ff82
 title: How do I create a workspace?
 slug: create-workspace
 doc_type: workflow

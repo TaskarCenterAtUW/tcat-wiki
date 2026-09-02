@@ -1,4 +1,5 @@
 ---
+uid: 591cbbe1-5d04-4410-bda2-c5696924d1bd
 title: How does AccessMap represent crossing accessibility?
 slug: combined-crossing-accessibility
 doc_type: concept

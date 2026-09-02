@@ -1,4 +1,5 @@
 ---
+uid: 1f05899c-d9d0-4e75-928d-5f8697e65bcd
 title: How do I convert an OSM PBF file to OpenSidewalks format?
 slug: convert-osm-pbf-to-osw
 doc_type: workflow

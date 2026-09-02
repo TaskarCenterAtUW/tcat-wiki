@@ -1,4 +1,5 @@
 ---
+uid: dba68e63-4e82-41fe-96d9-167bf339fc15
 title: How do I know whether a dataset is current?
 slug: check-dataset-currency
 doc_type: workflow

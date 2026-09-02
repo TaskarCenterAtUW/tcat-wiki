@@ -1,4 +1,5 @@
 ---
+uid: cfc91197-0cc1-40be-aefb-2d17b8d14c1d
 title: Does a correction update OS-CONNECT or OpenStreetMap?
 slug: correction-propagation
 doc_type: concept

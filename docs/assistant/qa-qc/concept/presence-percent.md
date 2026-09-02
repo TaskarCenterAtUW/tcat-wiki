@@ -1,4 +1,5 @@
 ---
+uid: ef6ebe5e-10f0-4220-a545-cf10131491fb
 title: What does presence percent mean in QA/QC reports?
 slug: presence-percent
 doc_type: concept

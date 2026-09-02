@@ -1,4 +1,5 @@
 ---
+uid: 58e7cffe-f98d-43b3-be75-a6cbabb43df6
 title: "How could accessibility stewardship become sustainable?"
 slug: stewardship-sustainability
 doc_type: concept

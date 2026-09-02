@@ -1,4 +1,5 @@
 ---
+uid: 10fa8424-575f-4d06-b988-c879ba2fa47a
 title: What is a workspace in technical terms?
 slug: workspace-technical-definition
 doc_type: concept

@@ -1,4 +1,5 @@
 ---
+uid: b355ff6e-9002-4dd3-8e87-2ad1bc47f7d6
 title: How are curb ramps identified?
 slug: curb-ramp-identification
 doc_type: concept

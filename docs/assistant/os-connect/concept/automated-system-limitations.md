@@ -1,4 +1,5 @@
 ---
+uid: 64e03c3f-b20d-45f7-85a0-e7688e0a9edd
 title: Why can automated systems miss accessibility barriers?
 slug: automated-system-limitations
 doc_type: concept

@@ -1,4 +1,5 @@
 ---
+uid: 1ba10def-777c-47ee-961d-44be6dd77dfd
 title: What language should staff use when a question requires internal verification?
 slug: internal-verification-language
 doc_type: workflow

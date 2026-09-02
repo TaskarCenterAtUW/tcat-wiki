@@ -1,4 +1,5 @@
 ---
+uid: ec9d1602-8460-4f04-a4be-d7cf83efcace
 title: How should agencies report corrections?
 slug: agency-correction-reporting
 doc_type: concept

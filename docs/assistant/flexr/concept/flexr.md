@@ -1,4 +1,5 @@
 ---
+uid: 2a485ae0-ca36-41d6-93b8-bf57c964944b
 title: What is FleXR?
 slug: flexr
 doc_type: concept

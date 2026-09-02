@@ -1,4 +1,5 @@
 ---
+uid: b8f496f9-4435-45fb-89cc-13c8343a8ef2
 title: What kinds of errors should be reported through the OS-CONNECT Viewer?
 slug: reportable-errors
 doc_type: concept

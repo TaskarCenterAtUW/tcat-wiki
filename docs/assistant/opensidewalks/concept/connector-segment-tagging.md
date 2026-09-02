@@ -1,4 +1,5 @@
 ---
+uid: 34d58e62-1933-4601-8ea6-4390a5e693df
 title: How can connector segments be distinguished in OpenSidewalks mapping?
 slug: connector-segment-tagging
 doc_type: concept

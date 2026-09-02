@@ -1,4 +1,5 @@
 ---
+uid: 691f8f6e-c407-44c7-aea2-79c56537de65
 title: What happens during export?
 slug: export-process
 doc_type: concept

@@ -1,4 +1,5 @@
 ---
+uid: 35a02f4f-b1fc-49e3-a577-1043370a3f8f
 title: What types of documentation guide TCAT users?
 slug: documentation-guide-types
 doc_type: concept

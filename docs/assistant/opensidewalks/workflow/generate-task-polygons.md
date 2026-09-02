@@ -1,4 +1,5 @@
 ---
+uid: abe2a4dc-4b8a-4424-8de1-16258f1da4a2
 title: How do I generate OpenSidewalks Tasking Manager polygons?
 slug: generate-task-polygons
 doc_type: workflow

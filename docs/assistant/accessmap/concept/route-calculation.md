@@ -1,4 +1,5 @@
 ---
+uid: 2a6b1bee-9a93-4cc5-99fa-9f784f3a7dc9
 title: How does AccessMap calculate accessible routes?
 slug: route-calculation
 doc_type: concept

@@ -1,4 +1,5 @@
 ---
+uid: c17f4997-b289-43b3-a0ea-50329ed41f50
 title: Review workspace edits
 slug: review-workspace-edits
 doc_type: workflow

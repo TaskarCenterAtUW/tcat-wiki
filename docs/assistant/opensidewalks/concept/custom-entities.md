@@ -1,4 +1,5 @@
 ---
+uid: 30e8fc9c-9807-4698-903b-82ff2c572882
 title: What are Custom Entities in OpenSidewalks?
 slug: custom-entities
 doc_type: concept

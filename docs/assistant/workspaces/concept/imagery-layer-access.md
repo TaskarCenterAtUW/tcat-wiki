@@ -1,4 +1,5 @@
 ---
+uid: 590f6c48-93a0-436b-acdb-e1d11dcdbab9
 title: What access should workspace imagery sources have?
 slug: imagery-layer-access
 doc_type: concept

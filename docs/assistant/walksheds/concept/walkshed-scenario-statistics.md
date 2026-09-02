@@ -1,4 +1,5 @@
 ---
+uid: b5d237d8-b2da-40d7-b8ca-c805470d5cfb
 title: What statistics can Walksheds scenarios compare?
 slug: walkshed-scenario-statistics
 doc_type: concept

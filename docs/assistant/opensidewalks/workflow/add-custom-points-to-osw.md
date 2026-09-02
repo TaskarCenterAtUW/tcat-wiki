@@ -1,4 +1,5 @@
 ---
+uid: 35e258ba-6738-4c6e-a944-0003e6648342
 title: How do I add Custom Points to an OpenSidewalks dataset?
 slug: add-custom-points-to-osw
 doc_type: workflow

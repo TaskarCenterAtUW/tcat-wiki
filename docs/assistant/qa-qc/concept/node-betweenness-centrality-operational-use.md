@@ -1,4 +1,5 @@
 ---
+uid: c30bbc0d-7dc4-4fa9-82f6-84f15b0fd04b
 title: What does node betweenness centrality reveal operationally?
 slug: node-betweenness-centrality-operational-use
 doc_type: concept

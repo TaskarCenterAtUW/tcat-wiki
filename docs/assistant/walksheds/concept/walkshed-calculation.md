@@ -1,4 +1,5 @@
 ---
+uid: 470676f8-a54e-4209-bb84-57f189ad421a
 title: How are walksheds calculated?
 slug: walkshed-calculation
 doc_type: concept

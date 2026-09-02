@@ -1,4 +1,5 @@
 ---
+uid: e666abac-7806-4f58-a9b8-48a70cc8bdb6
 title: How do I upgrade an AVIV ScoutRoute quest definition?
 slug: upgrade-quest-definition
 doc_type: workflow

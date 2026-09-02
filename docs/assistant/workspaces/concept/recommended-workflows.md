@@ -1,4 +1,5 @@
 ---
+uid: ad8c6fcb-1da8-4839-8845-4c5af889faa3
 title: What workflows are best suited for Workspaces?
 slug: recommended-workflows
 doc_type: concept

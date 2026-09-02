@@ -1,4 +1,5 @@
 ---
+uid: 07877d70-ca81-4fce-a8bd-a428258b0f3e
 title: What happens when accessibility data is missing?
 slug: missing-accessibility-data
 doc_type: concept

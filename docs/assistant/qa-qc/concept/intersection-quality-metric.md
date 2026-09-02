@@ -1,4 +1,5 @@
 ---
+uid: 3ed1d499-4963-42c9-aa45-c4398c3d4b86
 title: What does the intersection quality metric measure?
 slug: intersection-quality-metric
 doc_type: concept

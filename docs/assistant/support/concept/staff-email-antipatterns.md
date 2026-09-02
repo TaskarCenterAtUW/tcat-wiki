@@ -1,4 +1,5 @@
 ---
+uid: a3b3c062-7cfd-463c-8fb4-938f676a1658
 title: What should staff avoid saying in external technical-support emails?
 slug: staff-email-antipatterns
 doc_type: concept

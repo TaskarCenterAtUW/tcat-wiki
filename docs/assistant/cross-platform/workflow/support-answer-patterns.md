@@ -1,4 +1,5 @@
 ---
+uid: d5a8cd56-f0c9-4fbd-9c39-41f21c69f7ce
 title: Support answer patterns
 slug: support-answer-patterns
 doc_type: workflow

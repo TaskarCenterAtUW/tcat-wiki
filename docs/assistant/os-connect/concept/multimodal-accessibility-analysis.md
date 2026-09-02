@@ -1,4 +1,5 @@
 ---
+uid: 943f4923-0113-4a90-8edf-8a3c3b86e9e2
 title: What is multimodal accessibility analysis?
 slug: multimodal-accessibility-analysis
 doc_type: concept

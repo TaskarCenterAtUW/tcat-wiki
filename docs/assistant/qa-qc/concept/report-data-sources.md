@@ -1,4 +1,5 @@
 ---
+uid: 609531ff-60a8-48ca-a3ba-3650998f038e
 title: What source information appears in a QA/QC report?
 slug: report-data-sources
 doc_type: concept

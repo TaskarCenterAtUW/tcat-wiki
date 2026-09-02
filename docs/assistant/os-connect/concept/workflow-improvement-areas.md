@@ -1,4 +1,5 @@
 ---
+uid: 7fb805f0-385d-49e0-8db2-26917817853f
 title: What operational workflows still need improvement?
 slug: workflow-improvement-areas
 doc_type: concept
@@ -15,7 +16,7 @@ topics:
     - os-connect
     - operational-workflows
 risk_level: medium
-authority_level: explanatory
+authority_level: provisional
 publication_status: stub
 last_reviewed:
 retrieval_priority: high

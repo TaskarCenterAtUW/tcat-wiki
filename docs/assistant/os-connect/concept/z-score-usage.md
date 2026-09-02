@@ -1,4 +1,5 @@
 ---
+uid: eee83492-a21e-4dd3-b964-e617211ac70a
 title: Why are z-scores used?
 slug: z-score-usage
 doc_type: concept
@@ -15,7 +16,7 @@ topics:
     - os-connect
     - graph-metrics
 risk_level: medium
-authority_level: explanatory
+authority_level: provisional
 publication_status: stub
 last_reviewed:
 retrieval_priority: medium

@@ -1,4 +1,5 @@
 ---
+uid: 2101da94-061a-4cfb-a3bd-022da2d0914a
 title: Workspaces data freshness
 slug: workspace-data-freshness
 doc_type: concept

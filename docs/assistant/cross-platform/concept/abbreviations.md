@@ -1,6 +1,7 @@
 ---
 title: Abbreviations and Acronyms Glossary
 slug: abbreviations
+uid: 676fc317-6f75-4faf-9e08-f2b2c413e74a
 doc_type: concept
 questions:
     - What does an abbreviation mean?
@@ -47,7 +48,7 @@ topics:
 risk_level: low
 authority_level: official
 publication_status: published
-last_reviewed: 2026-08-27
+last_reviewed: 2026-09-02
 retrieval_priority: high
 assistant_behavior:
     allow_inference: false

@@ -1,4 +1,5 @@
 ---
+uid: 66f21c66-0578-4289-8d1d-fc8bd2a9adc4
 title: How do I use Waykeeper?
 slug: use-waykeeper
 doc_type: workflow

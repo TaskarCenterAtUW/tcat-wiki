@@ -1,4 +1,5 @@
 ---
+uid: c079a4b4-c8a8-4bca-acfc-ccc144208c6c
 title: What are QA/QC report question sections?
 slug: report-question-sections
 doc_type: concept

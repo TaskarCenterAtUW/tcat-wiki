@@ -1,4 +1,5 @@
 ---
+uid: 0f78d245-6287-494c-b293-78534246ba30
 title: How do Adjacent and Custom Entities differ in OpenSidewalks?
 slug: adjacent-vs-custom-entities
 doc_type: concept

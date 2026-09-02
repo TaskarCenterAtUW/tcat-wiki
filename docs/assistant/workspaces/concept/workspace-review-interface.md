@@ -1,4 +1,5 @@
 ---
+uid: 5a0750a4-cf38-40e9-8eed-028db0af003c
 title: What can the Workspaces review interface show?
 slug: workspace-review-interface
 doc_type: concept

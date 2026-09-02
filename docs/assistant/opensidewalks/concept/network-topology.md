@@ -1,4 +1,5 @@
 ---
+uid: 29ffc0d9-3d14-43ae-98cc-6884872d5198
 title: What topology rules apply to the OpenSidewalks network?
 slug: network-topology
 doc_type: concept

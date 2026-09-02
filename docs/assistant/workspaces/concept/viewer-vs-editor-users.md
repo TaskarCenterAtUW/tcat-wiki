@@ -1,4 +1,5 @@
 ---
+uid: 8d5016d2-0794-455a-adad-c1d3ae21fbc0
 title: What is the difference between viewer users and editor users?
 slug: viewer-vs-editor-users
 doc_type: concept

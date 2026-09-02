@@ -1,4 +1,5 @@
 ---
+uid: 76b63ce5-e9c5-4210-91ed-6d4a882bbc90
 title: Can OS-CONNECT support pedestrian access analysis around schools, clinics, grocery stores, and other destinations?
 slug: destination-access-analysis
 doc_type: concept

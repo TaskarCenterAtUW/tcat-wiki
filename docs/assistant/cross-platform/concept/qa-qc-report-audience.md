@@ -1,4 +1,5 @@
 ---
+uid: a91711cd-6e9f-4932-bc2a-345663cde928
 title: Who are QA/QC reports intended for?
 slug: qa-qc-report-audience
 doc_type: concept

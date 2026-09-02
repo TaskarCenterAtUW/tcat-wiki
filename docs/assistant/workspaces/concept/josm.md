@@ -1,4 +1,5 @@
 ---
+uid: 1abcbb6b-66a2-4c23-a418-6a015ceab999
 title: What is JOSM?
 slug: josm
 doc_type: concept

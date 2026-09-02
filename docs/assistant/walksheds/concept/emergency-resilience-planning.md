@@ -1,4 +1,5 @@
 ---
+uid: 5c94d178-80a2-4ae2-a7e9-11913c8f269c
 title: How can walksheds support emergency resilience planning?
 slug: emergency-resilience-planning
 doc_type: concept

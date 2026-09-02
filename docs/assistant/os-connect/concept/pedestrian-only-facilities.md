@@ -1,4 +1,5 @@
 ---
+uid: 4f56673b-8bfa-4e62-8d11-639e032b9113
 title: How are pedestrian-only facilities handled?
 slug: pedestrian-only-facilities
 doc_type: concept

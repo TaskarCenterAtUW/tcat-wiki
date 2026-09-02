@@ -1,4 +1,5 @@
 ---
+uid: c32dabcf-84ae-4926-8d01-fe2906b4b51b
 title: What kinds of pedestrian infrastructure are included?
 slug: included-infrastructure-types
 doc_type: concept

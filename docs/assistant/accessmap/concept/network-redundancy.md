@@ -1,4 +1,5 @@
 ---
+uid: 5ce514fb-4e2c-4703-b2da-61f6236bd216
 title: What is network redundancy?
 slug: network-redundancy
 doc_type: concept

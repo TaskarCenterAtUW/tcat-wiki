@@ -1,4 +1,5 @@
 ---
+uid: 36cf37f4-27cb-40e1-83ae-9171587dc2ac
 title: Support intents (RAG routing)
 tags:
     - Assistant

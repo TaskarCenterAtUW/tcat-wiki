@@ -1,4 +1,5 @@
 ---
+uid: 15b469c9-2470-40fa-aa5c-fbeb441f07d9
 title: Why are sidewalks disconnected on the map?
 slug: sidewalk-disconnection-causes
 doc_type: concept

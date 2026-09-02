@@ -1,4 +1,5 @@
 ---
+uid: 79d46973-7732-4891-97e4-4610a44e206e
 title: How does OS-CONNECT support accessibility equity?
 slug: accessibility-equity
 doc_type: concept

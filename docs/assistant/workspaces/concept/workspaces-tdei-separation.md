@@ -1,4 +1,5 @@
 ---
+uid: 077fab37-97a4-494e-a5c4-0066948ca98d
 title: Why does Workspaces exist separately from TDEI?
 slug: workspaces-tdei-separation
 doc_type: concept

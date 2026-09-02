@@ -1,4 +1,5 @@
 ---
+uid: f8ef7e10-ce26-40ed-856f-a6b440e707c9
 title: Can AccessMap support hospitals or medical campuses?
 slug: hospital-campus-support
 doc_type: concept

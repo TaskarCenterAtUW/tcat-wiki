@@ -1,4 +1,5 @@
 ---
+uid: 89a3f9d6-6017-41fd-814f-ffcf49918c8d
 title: Which source attributes can Walksheds use?
 slug: walkshed-attribute-availability
 doc_type: concept

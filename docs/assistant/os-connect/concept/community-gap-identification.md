@@ -1,4 +1,5 @@
 ---
+uid: 5aed9756-7b80-48cb-bd1c-ece21a169164
 title: How can communities identify accessibility gaps?
 slug: community-gap-identification
 doc_type: concept

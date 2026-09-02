@@ -1,4 +1,5 @@
 ---
+uid: b8f25f3c-5640-4e76-9c60-00339a908f46
 title: Workspaces export and publication caveats
 slug: workspace-export-and-publication-caveats
 doc_type: concept

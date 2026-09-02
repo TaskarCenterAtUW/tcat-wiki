@@ -1,4 +1,5 @@
 ---
+uid: e4deaaf6-6462-48e0-ad4d-b038c2a39beb
 title: What accessibility assumptions are built into AccessMap?
 slug: accessibility-assumptions
 doc_type: concept

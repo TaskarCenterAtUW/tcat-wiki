@@ -1,4 +1,5 @@
 ---
+uid: a52bbd90-1aa8-4c84-a2ab-80dc44c78608
 title: 'What does "participatory mapping" mean?'
 slug: participatory-mapping
 doc_type: concept

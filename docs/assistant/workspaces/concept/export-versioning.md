@@ -1,4 +1,5 @@
 ---
+uid: b7314341-6758-4642-8d41-a259866a4f33
 title: What versioning occurs during export?
 slug: export-versioning
 doc_type: concept

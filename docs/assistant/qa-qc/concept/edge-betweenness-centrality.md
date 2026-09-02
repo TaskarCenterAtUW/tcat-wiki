@@ -1,4 +1,5 @@
 ---
+uid: ebf0cec2-a43f-4618-9d34-04b933aea3f5
 title: What does edge betweenness centrality mean?
 slug: edge-betweenness-centrality
 doc_type: concept

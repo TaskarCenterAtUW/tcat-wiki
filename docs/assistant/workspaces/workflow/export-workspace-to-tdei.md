@@ -1,4 +1,5 @@
 ---
+uid: 7693f966-2c3d-4712-b725-5484d75073fa
 title: How do I export a workspace to TDEI?
 slug: export-workspace-to-tdei
 doc_type: workflow

@@ -1,4 +1,5 @@
 ---
+uid: eb492625-d684-41d7-a7f7-c32c5cf57848
 title: What role did imagery play?
 slug: imagery-role
 doc_type: concept

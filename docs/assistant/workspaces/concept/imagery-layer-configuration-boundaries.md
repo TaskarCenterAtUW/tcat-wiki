@@ -1,4 +1,5 @@
 ---
+uid: 7588e129-1e1a-41a7-8734-0ae9c6866a39
 title: What are imagery-layer configuration boundaries?
 slug: imagery-layer-configuration-boundaries
 doc_type: concept

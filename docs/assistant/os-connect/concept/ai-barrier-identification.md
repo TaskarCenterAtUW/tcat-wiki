@@ -1,4 +1,5 @@
 ---
+uid: 27232a55-30f1-48f1-90af-2dc19b364e74
 title: Can AI automatically identify pedestrian barriers?
 slug: ai-barrier-identification
 doc_type: concept

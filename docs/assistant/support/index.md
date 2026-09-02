@@ -1,4 +1,5 @@
 ---
+uid: ad27a23d-1df1-40d3-9821-239e49b50fb1
 title: Support — Assistant Knowledge Base
 slug: support-index
 doc_type: policy

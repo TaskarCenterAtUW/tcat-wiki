@@ -1,4 +1,5 @@
 ---
+uid: 06ab05b6-7749-4446-ae1a-d3d619129a1d
 title: What is AccessMap?
 slug: accessmap
 doc_type: concept

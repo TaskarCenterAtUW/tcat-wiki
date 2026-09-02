@@ -1,4 +1,5 @@
 ---
+uid: 70f4fa39-5c72-4751-9eed-7c0ff2cc236b
 title: TDEI vs Workspaces
 slug: tdei-vs-workspaces
 doc_type: concept

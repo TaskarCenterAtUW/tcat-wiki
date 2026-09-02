@@ -1,4 +1,5 @@
 ---
+uid: a60d4275-cf02-4661-9cc1-40d36ecc539e
 title: What is the boundary between Workspaces and TDEI?
 slug: workspace-and-tdei-boundary
 doc_type: concept

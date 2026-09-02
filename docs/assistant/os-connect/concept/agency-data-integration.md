@@ -1,4 +1,5 @@
 ---
+uid: d67b4c7c-78a9-4b79-a054-dc922a255662
 title: Can agencies provide their own sidewalk or curb-ramp data for integration?
 slug: agency-data-integration
 doc_type: concept

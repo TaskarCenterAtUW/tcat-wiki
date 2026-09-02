@@ -1,4 +1,5 @@
 ---
+uid: da3560c8-ec34-4a42-97cc-127325c2ca14
 title: What kinds of pedestrian infrastructure are not included?
 slug: excluded-infrastructure-types
 doc_type: concept

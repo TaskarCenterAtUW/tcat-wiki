@@ -1,4 +1,5 @@
 ---
+uid: e7ddd218-8c36-41c2-a6dd-42dbb0ea0a10
 title: Why are disconnected pedestrian datasets a problem?
 slug: disconnected-dataset-problem
 doc_type: concept

@@ -1,4 +1,5 @@
 ---
+uid: 41864860-3ae8-43f2-b951-8829efd2dc32
 title: How can the OpenSidewalks schema support external attributes?
 slug: external-attributes
 doc_type: concept

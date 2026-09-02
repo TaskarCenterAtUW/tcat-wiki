@@ -1,4 +1,5 @@
 ---
+uid: 9624264b-fab7-4c59-a0fd-80faf87e9082
 title: How can walksheds support park access analysis?
 slug: park-access-analysis
 doc_type: concept

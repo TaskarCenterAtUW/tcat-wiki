@@ -1,4 +1,5 @@
 ---
+uid: 9ec9cef6-0635-4081-b519-f8dffe9a708a
 title: Where are TDEI datasets edited?
 slug: workspace-editing-boundary
 doc_type: concept

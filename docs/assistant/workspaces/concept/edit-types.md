@@ -1,4 +1,5 @@
 ---
+uid: 59967ba7-bc68-4412-89bb-541db0457fef
 title: What kinds of edits can be made in Workspaces?
 slug: edit-types
 doc_type: concept

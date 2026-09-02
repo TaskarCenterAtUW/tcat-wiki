@@ -1,4 +1,5 @@
 ---
+uid: 332fbe93-29f1-4bd2-aef9-66426766ed19
 title: How do I create and compare Walksheds scenarios?
 slug: create-walkshed-scenario
 doc_type: workflow

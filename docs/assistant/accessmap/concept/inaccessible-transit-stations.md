@@ -1,4 +1,5 @@
 ---
+uid: def5bb9e-356c-4676-9b3a-2ad468262d32
 title: How are inaccessible transit stations represented?
 slug: inaccessible-transit-stations
 doc_type: concept

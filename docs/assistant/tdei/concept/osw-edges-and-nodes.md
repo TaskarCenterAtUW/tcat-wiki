@@ -1,4 +1,5 @@
 ---
+uid: d585bbf0-0b3b-43b7-95cb-b0989c1a4adb
 title: What are edges and nodes in the OSW download?
 slug: osw-edges-and-nodes
 doc_type: concept

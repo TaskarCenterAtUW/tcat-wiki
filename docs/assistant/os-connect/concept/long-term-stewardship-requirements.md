@@ -1,4 +1,5 @@
 ---
+uid: 3fd751b9-78a3-41e7-a1e4-4893dd6b63b8
 title: What does long-term stewardship actually require operationally?
 slug: long-term-stewardship-requirements
 doc_type: concept

@@ -1,4 +1,5 @@
 ---
+uid: 035822ae-e931-4b1b-b96d-a6c68fefde72
 title: Project groups (Workspaces)
 slug: project-groups
 doc_type: concept

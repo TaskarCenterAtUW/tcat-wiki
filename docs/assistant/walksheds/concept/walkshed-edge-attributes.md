@@ -1,4 +1,5 @@
 ---
+uid: 3c4dae86-476e-4d51-9a6d-a119b09efa91
 title: What edge attributes can Walksheds cost functions use?
 slug: walkshed-edge-attributes
 doc_type: concept

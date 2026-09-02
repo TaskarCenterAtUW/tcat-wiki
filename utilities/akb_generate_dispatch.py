@@ -4,8 +4,8 @@
 Scans an assistant knowledge-base directory (default: docs/assistant/) for
 topic subdirectories, each containing an index.md plus concept/ and workflow/
 subdirectories of articles, and writes a dispatch.md registry file listing
-every article on disk together with its `publication_status` and
-`authority_level` frontmatter values.
+every article on disk together with its durable `uid`, `publication_status`,
+and `authority_level` frontmatter values.
 
 dispatch.md is a GENERATED build artifact. It must never be hand-edited;
 re-run this script (directly, or via utilities/build_site.py) whenever a
@@ -28,12 +28,14 @@ SCRIPT_DIR = Path(__file__).parent
 REPO_ROOT = SCRIPT_DIR.parent
 DEFAULT_ASSISTANT_DIR = REPO_ROOT / "docs" / "assistant"
 
-# Top-level files that live directly in the assistant root and are never
-# treated as topic directories or tabled as registry rows.
+# Top-level files that live directly in the assistant root and are tabled in
+# the registry's Root Pages section.
 TOP_LEVEL_PEERS = {"index.md", "dispatch.md", "schema.md", "intents.md"}
+ROOT_PAGE_ORDER = ("index.md", "schema.md", "intents.md", "dispatch.md")
 
-# doc_type subdirectories scanned within each topic directory, in emission order.
+# Page sections scanned within each topic directory, in emission order.
 DOC_TYPE_SECTIONS = [
+    ("policy", "Policies"),
     ("concept", "Concepts"),
     ("workflow", "Workflows"),
 ]
@@ -44,10 +46,19 @@ AUTHORITY_ORDER = ("provisional", "explanatory", "official")
 
 FRONTMATTER_RE = re.compile(r"^---\s*\n(.*?)\n---\s*\n", re.DOTALL)
 LAST_REVIEWED_RE = re.compile(r"last_reviewed:\s*\d{4}-\d{2}-\d{2}")
+UID_RE = re.compile(
+    r"^[0-9a-f]{8}-[0-9a-f]{4}-4[0-9a-f]{3}-[89ab][0-9a-f]{3}-[0-9a-f]{12}$"
+)
+UID_LINE_RE = re.compile(r"(?m)^uid:\s*(\S+)\s*$")
+
+# Used only when generating a dispatch file that does not exist yet. Once a
+# dispatch file exists, its frontmatter UID is preserved instead.
+DEFAULT_DISPATCH_UID = "7f4d2b1c-6a89-4e03-9c72-5b8d1f0a4e36"
 
 # Static frontmatter for the generated file. `{last_reviewed}` is substituted
 # with today's date at generation time; every other field is fixed.
 FRONTMATTER_TEMPLATE = """---
+uid: {uid}
 title: Assistant Knowledge Base — Dispatch
 slug: dispatch
 doc_type: workflow
@@ -129,7 +140,7 @@ A stable registry decouples retrieval pipelines from the filesystem. Authors use
 
 ## How To Use This
 
-**Agents**: Fetch `dispatch.md`, parse the registry tables, filter by `Status` or topic heading, then retrieve individual pages by constructing their URL as `https://taskarcenteratuw.github.io/tcat-wiki/` + the `Base:` path shown under the relevant heading + the filename in the table.
+**Agents**: Fetch `dispatch.md`, parse the registry tables, filter by `Publication Status`, `Authority Level`, or topic heading, then retrieve individual pages by constructing their URL as `https://taskarcenteratuw.github.io/tcat-wiki/` + the `Base:` path shown under the relevant heading + the filename in the table.
 
 **Authors**: Write or edit files directly under `docs/assistant/`; do not hand-edit this file. Re-run `utilities/akb_generate_dispatch.py` (or the full `utilities/build_site.py` pipeline) to refresh the registry after adding a page or changing its `publication_status`.
 
@@ -161,7 +172,7 @@ This page should be fetched fresh rather than cached aggressively; its registry 
 
 """
 
-ArticleRow: TypeAlias = tuple[str, str, str]
+ArticleRow: TypeAlias = tuple[str, str, str, str]
 
 
 class Topic(TypedDict):
@@ -177,8 +188,8 @@ def parse_frontmatter(text: str) -> dict[str, str]:
     """Parse YAML frontmatter into a flat dict of top-level scalar keys.
 
     Only extracts simple ``key: value`` pairs at zero indentation (not nested
-    maps or lists), which is sufficient for reading ``title`` and
-    ``publication_status`` and ``authority_level``.
+    maps or lists), which is sufficient for reading ``title``, ``uid``,
+    ``publication_status``, and ``authority_level``.
     """
     match = FRONTMATTER_RE.match(text)
     if not match:
@@ -217,14 +228,22 @@ def scan_topic(topic_dir: Path) -> Topic:
 
     sections: dict[str, list[ArticleRow]] = {}
     for doc_type, _label in DOC_TYPE_SECTIONS:
-        doc_dir = topic_dir / doc_type
+        doc_dir = topic_dir if doc_type == "policy" else topic_dir / doc_type
         rows: list[ArticleRow] = []
-        if doc_dir.is_dir():
-            for md_file in sorted(doc_dir.glob("*.md"), key=lambda p: p.name):
-                fm = parse_frontmatter(md_file.read_text(encoding="utf-8"))
-                status = fm.get("publication_status") or "stub"
-                authority = fm.get("authority_level") or "provisional"
-                rows.append((md_file.name, status, authority))
+        if doc_type == "policy":
+            candidates = [topic_dir / "index.md"]
+        elif doc_dir.is_dir():
+            candidates = sorted(doc_dir.glob("*.md"), key=lambda p: p.name)
+        else:
+            candidates = []
+        for md_file in candidates:
+            if not md_file.exists():
+                continue
+            fm = parse_frontmatter(md_file.read_text(encoding="utf-8"))
+            status = fm.get("publication_status") or "stub"
+            authority = fm.get("authority_level") or "provisional"
+            uid = fm.get("uid") or ""
+            rows.append((uid, md_file.name, authority, status))
         sections[doc_type] = rows
 
     return {
@@ -251,7 +270,7 @@ def count_statuses(topics: list[Topic]) -> Counter[str]:
     counts: Counter[str] = Counter()
     for topic in topics:
         for doc_type, _label in DOC_TYPE_SECTIONS:
-            counts.update(status for _filename, status, _authority
+            counts.update(status for _uid, _filename, _authority, status
                           in topic["sections"][doc_type])
     return counts
 
@@ -261,7 +280,7 @@ def count_authority_levels(topics: list[Topic]) -> Counter[str]:
     counts: Counter[str] = Counter()
     for topic in topics:
         for doc_type, _label in DOC_TYPE_SECTIONS:
-            counts.update(authority for _filename, _status, authority
+            counts.update(authority for _uid, _filename, authority, _status
                           in topic["sections"][doc_type])
     return counts
 
@@ -313,12 +332,13 @@ def render_topic(topic: Topic) -> str:
             continue
         lines.append(f"### {label}")
         lines.append("")
-        lines.append(f"Base: `assistant/{topic['name']}/{doc_type}/`")
+        base = f"assistant/{topic['name']}/" if doc_type == "policy" else f"assistant/{topic['name']}/{doc_type}/"
+        lines.append(f"Base: `{base}`")
         lines.append("")
-        lines.append("| File | Status |")
-        lines.append("| :--- | :----- |")
-        for fname, status, _authority in rows:
-            lines.append(f"| `{fname}` | {status} |")
+        lines.append("| UID | File | Authority Level | Publication Status |")
+        lines.append("| :-- | :--- | :-------------- | :----------------- |")
+        for uid, fname, authority, status in rows:
+            lines.append(f"| `{uid}` | `{fname}` | {authority} | {status} |")
         lines.append("")
 
     return "\n".join(lines).rstrip("\n")
@@ -330,16 +350,63 @@ def render_registry(topics: list[Topic]) -> str:
     return "\n\n".join(blocks) + "\n"
 
 
+def render_root_pages(assistant_dir: Path) -> str:
+    """Return the registry table for assistant-root Markdown pages."""
+    rows: list[tuple[str, str, str, str]] = []
+    for filename in ROOT_PAGE_ORDER:
+        path = assistant_dir / filename
+        if filename == "dispatch.md" and not path.exists():
+            rows.append((DEFAULT_DISPATCH_UID, filename, "official", "draft"))
+            continue
+        if not path.exists():
+            continue
+        fm = parse_frontmatter(path.read_text(encoding="utf-8"))
+        rows.append((fm.get("uid", ""), filename,
+                 fm.get("authority_level") or "provisional",
+                 fm.get("publication_status") or "stub"))
+    if not rows:
+        return ""
+    lines = ["## Root Pages", "", "Base: `assistant/`", "",
+             "| UID | File | Authority Level | Publication Status |",
+             "| :-- | :--- | :-------------- | :----------------- |"]
+    lines.extend(f"| `{uid}` | `{filename}` | {authority} | {status} |"
+                 for uid, filename, authority, status in rows)
+    return "\n".join(lines)
+
+
+def validate_uids(assistant_dir: Path) -> None:
+    """Raise ValueError when an assistant page has an invalid or duplicate UID."""
+    seen: dict[str, Path] = {}
+    for path in sorted(assistant_dir.rglob("*.md")):
+        fm = parse_frontmatter(path.read_text(encoding="utf-8"))
+        uid = fm.get("uid", "")
+        if not UID_RE.fullmatch(uid):
+            raise ValueError(f"{path}: missing or invalid canonical UUIDv4 uid")
+        if uid in seen:
+            raise ValueError(f"duplicate uid {uid}: {seen[uid]} and {path}")
+        seen[uid] = path
+
+
 def build_dispatch(assistant_dir: Path, today: str | None = None) -> str:
     """Return the complete generated dispatch.md content for assistant_dir."""
     if today is None:
         today = date.today().isoformat()
     topics = scan_topics(assistant_dir)
-    frontmatter = FRONTMATTER_TEMPLATE.format(last_reviewed=today)
+    validate_uids(assistant_dir)
+    dispatch_path = assistant_dir / "dispatch.md"
+    dispatch_uid = DEFAULT_DISPATCH_UID
+    if dispatch_path.exists():
+        dispatch_uid = parse_frontmatter(
+            dispatch_path.read_text(encoding="utf-8")).get("uid", dispatch_uid)
+    if not UID_RE.fullmatch(dispatch_uid):
+        raise ValueError(f"{dispatch_path}: missing or invalid canonical UUIDv4 uid")
+    frontmatter = FRONTMATTER_TEMPLATE.format(last_reviewed=today, uid=dispatch_uid)
     body_prefix = BODY_PREFIX.format(
         status_legend=render_status_legend(count_statuses(topics)),
         authority_legend=render_authority_legend(count_authority_levels(topics)))
-    return frontmatter + body_prefix + render_registry(topics)
+    registry = render_root_pages(assistant_dir)
+    topic_registry = render_registry(topics)
+    return frontmatter + body_prefix + registry + ("\n\n" if registry else "") + topic_registry
 
 
 def write_dispatch(assistant_dir: Path, today: str | None = None) -> Path:

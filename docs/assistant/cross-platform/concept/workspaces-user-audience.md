@@ -1,4 +1,5 @@
 ---
+uid: 448a1a98-673f-4710-b3f8-d962bcc3b32e
 title: Who uses Workspaces?
 slug: workspaces-user-audience
 doc_type: concept

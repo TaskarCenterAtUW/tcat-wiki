@@ -1,4 +1,5 @@
 ---
+uid: 1e371817-fb9f-4470-a899-949f5fae22bc
 title: What travel profiles are available in Walksheds?
 slug: travel-profiles
 doc_type: concept

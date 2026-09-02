@@ -1,4 +1,5 @@
 ---
+uid: a9e9e9ac-0052-4b0e-a82f-a6fe7367aea4
 title: How can cities use AccessMap operationally?
 slug: operational-use
 doc_type: concept

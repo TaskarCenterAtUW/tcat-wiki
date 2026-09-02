@@ -1,4 +1,5 @@
 ---
+uid: d3915d99-9fb3-4122-9379-dcbd03323570
 title: What quality checks are needed before community-mapped data can support planning or routing?
 slug: community-data-quality-checks
 doc_type: concept

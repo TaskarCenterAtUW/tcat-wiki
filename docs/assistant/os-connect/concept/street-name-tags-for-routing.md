@@ -1,4 +1,5 @@
 ---
+uid: f8e12f00-6b83-4cb2-bacc-35f019d8a973
 title: How can trip planners use sidewalk street-name tags to produce better walking instructions?
 slug: street-name-tags-for-routing
 doc_type: concept

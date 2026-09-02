@@ -1,4 +1,5 @@
 ---
+uid: 846c4905-d117-41b5-a6b0-51c3d3b23425
 title: What happens when data becomes outdated?
 slug: outdated-data-handling
 doc_type: concept

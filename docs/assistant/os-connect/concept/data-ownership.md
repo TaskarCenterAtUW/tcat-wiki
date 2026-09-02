@@ -1,4 +1,5 @@
 ---
+uid: 49fa9f5c-7a74-41d7-bab5-295888e49739
 title: Who owns OS-CONNECT data?
 slug: data-ownership
 doc_type: concept

@@ -1,4 +1,5 @@
 ---
+uid: 68b701b9-3be9-4bc9-b338-a7b508b18b44
 title: How are construction changes handled?
 slug: construction-changes
 doc_type: concept

@@ -1,4 +1,5 @@
 ---
+uid: c21a0c67-75a1-4663-9e65-3ca693961003
 title: What problem is OS-CONNECT trying to solve?
 slug: os-connect-problem-statement
 doc_type: concept

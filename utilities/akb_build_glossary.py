@@ -10,6 +10,7 @@ Run from any working directory; paths are resolved relative to this file.
 
 import re
 import sys
+import uuid
 from datetime import date
 from pathlib import Path
 
@@ -28,6 +29,8 @@ OUTPUT_PATH = (
 # Regex matching Markdown abbreviation plugin entries: *[ABBR]: Expansion
 ABBR_RE = re.compile(r"^\*\[(.+?)\]:\s+(.+)$")
 LAST_REVIEWED_RE = re.compile(r"last_reviewed:\s*\d{4}-\d{2}-\d{2}")
+UID_RE = re.compile(r"uid:\s*([0-9a-f-]{36})")
+DEFAULT_UID = "3d6f2a8b-1c44-4e90-9a72-5f0b8c6d1e23"
 
 
 def _only_last_reviewed_differs(old_text: str, new_text: str) -> bool:
@@ -59,7 +62,7 @@ def build_table(entries: list[tuple[str, str]]) -> str:
     return f"| Abbreviation | Expansion |\n| :----------- | :-------- |\n{rows}"
 
 
-def build_output(entries: list[tuple[str, str]]) -> str:
+def build_output(entries: list[tuple[str, str]], uid: str = DEFAULT_UID) -> str:
     """Return the complete content of the output file."""
     today = date.today().isoformat()
     table = build_table(entries)
@@ -69,6 +72,7 @@ def build_output(entries: list[tuple[str, str]]) -> str:
 ---
 title: Abbreviations and Acronyms Glossary
 slug: abbreviations
+uid: {uid}
 doc_type: concept
 questions:
     - What does an abbreviation mean?
@@ -211,6 +215,9 @@ def main() -> int:
 
     if OUTPUT_PATH.exists():
         existing = OUTPUT_PATH.read_text(encoding="utf-8")
+        uid_match = UID_RE.search(existing)
+        if uid_match:
+            output = build_output(entries, uid=uid_match.group(1))
         if _only_last_reviewed_differs(existing, output):
             print(f"No changes for {OUTPUT_PATH} ({len(entries)} entries); "
                   "leaving last_reviewed date unchanged.")

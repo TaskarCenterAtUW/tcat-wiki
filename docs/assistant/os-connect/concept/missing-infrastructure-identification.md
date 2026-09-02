@@ -1,4 +1,5 @@
 ---
+uid: 47cc35c9-6a27-4f47-9732-aa9b8b72d1bf
 title: How can communities identify missing infrastructure?
 slug: missing-infrastructure-identification
 doc_type: concept

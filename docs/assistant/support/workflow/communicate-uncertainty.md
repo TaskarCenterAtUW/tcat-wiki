@@ -1,4 +1,5 @@
 ---
+uid: 88c28d2e-8fc5-44fb-a3c5-5b3faf4df6f0
 title: How should staff explain uncertainty without sounding evasive?
 slug: communicate-uncertainty
 doc_type: workflow

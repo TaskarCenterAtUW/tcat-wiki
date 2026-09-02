@@ -1,4 +1,5 @@
 ---
+uid: 7b39a3d7-1193-4cb8-a205-92e6c717bb79
 title: Who is responsible for updates?
 slug: update-responsibility
 doc_type: concept

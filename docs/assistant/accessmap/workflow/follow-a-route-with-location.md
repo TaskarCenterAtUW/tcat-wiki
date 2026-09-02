@@ -1,4 +1,5 @@
 ---
+uid: 88fac7c3-3112-438e-9251-da4ac0c0dd17
 title: How do I follow an AccessMap route using my location?
 slug: follow-a-route-with-location
 doc_type: workflow

@@ -1,4 +1,5 @@
 ---
+uid: 5610997c-6889-4134-b293-d87169d52b1a
 title: What makes accessibility data difficult to maintain?
 slug: data-maintenance-challenges
 doc_type: concept

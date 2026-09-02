@@ -1,4 +1,5 @@
 ---
+uid: 1e703514-e4ab-40c9-b95b-f5e7cbb76422
 title: What should agencies do if they need a correction sooner than the next public release?
 slug: urgent-correction-process
 doc_type: concept

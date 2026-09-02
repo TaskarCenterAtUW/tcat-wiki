@@ -1,4 +1,5 @@
 ---
+uid: 47942f15-f256-49a9-a3f0-f2e70c9a8063
 title: Can quest dependencies use numeric comparisons?
 slug: quest-dependency-evaluators
 doc_type: concept

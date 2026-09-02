@@ -1,4 +1,5 @@
 ---
+uid: 9ceb3098-961a-4ff4-a1c3-dcef273e866b
 title: What entities does the OpenSidewalks Schema define?
 slug: network-entities
 doc_type: concept

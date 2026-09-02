@@ -1,4 +1,5 @@
 ---
+uid: 92f668fa-f944-4d03-b3fb-f74c47465fc7
 title: How should accessibility advocates contribute?
 slug: advocate-contribution
 doc_type: concept

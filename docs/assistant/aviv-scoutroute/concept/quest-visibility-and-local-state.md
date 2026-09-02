@@ -1,4 +1,5 @@
 ---
+uid: 557c7f7d-8153-4cda-8ad1-1511aad3c7a9
 title: Why can AVIV ScoutRoute quests be hidden or unavailable?
 slug: quest-visibility-and-local-state
 doc_type: concept

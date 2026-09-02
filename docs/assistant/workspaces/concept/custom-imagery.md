@@ -1,4 +1,5 @@
 ---
+uid: 1eddc192-2453-464d-bb99-207378a6f76b
 title: Can custom imagery be added?
 slug: custom-imagery
 doc_type: concept

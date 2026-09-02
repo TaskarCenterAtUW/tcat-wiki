@@ -1,4 +1,5 @@
 ---
+uid: 1919bc62-04b4-4b73-a87f-59eecd38b3ed
 title: How can walksheds support rural transportation planning?
 slug: rural-transportation-planning
 doc_type: concept

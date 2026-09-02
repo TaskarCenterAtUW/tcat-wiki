@@ -1,4 +1,5 @@
 ---
+uid: d8b89de0-a416-4f65-98d9-d01197a458eb
 title: Private OSM (Workspaces)
 slug: private-osm
 doc_type: concept

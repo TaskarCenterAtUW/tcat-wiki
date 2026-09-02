@@ -1,4 +1,5 @@
 ---
+uid: 9b68c707-1b57-4cb4-81b3-1cf4f4ec5981
 title: "Can I use this in ArcGIS or QGIS?"
 slug: gis-software-compatibility
 doc_type: concept

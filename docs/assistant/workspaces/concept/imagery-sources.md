@@ -1,4 +1,5 @@
 ---
+uid: f73da7f3-fcf0-4d20-ac4d-676b1b1564e3
 title: What imagery sources are available?
 slug: imagery-sources
 doc_type: concept

@@ -1,4 +1,5 @@
 ---
+uid: f521edbe-b906-43a4-8d1b-bafefdf07e87
 title: What should staff do when they do not know the answer to a partner's question?
 slug: handle-unknown-questions
 doc_type: workflow

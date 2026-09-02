@@ -1,4 +1,5 @@
 ---
+uid: f3682546-e029-4fc0-8ece-e7d566fd32dd
 title: Why should duplicate workspace copies be avoided?
 slug: workspace-duplicate-copy-risk
 doc_type: concept

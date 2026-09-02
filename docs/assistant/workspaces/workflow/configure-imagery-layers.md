@@ -1,4 +1,5 @@
 ---
+uid: bbdf5d6a-a9ee-4a83-a0e7-3a3c65d149a4
 title: Configure imagery layers in a workspace
 slug: configure-imagery-layers
 doc_type: workflow

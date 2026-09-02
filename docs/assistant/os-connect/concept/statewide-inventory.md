@@ -1,4 +1,5 @@
 ---
+uid: cced324f-5797-404d-b0bd-4fd6f2731804
 title: "Is this a statewide inventory?"
 slug: statewide-inventory
 doc_type: concept

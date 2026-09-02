@@ -1,4 +1,5 @@
 ---
+uid: ecdd0450-cd47-4f1d-9a24-48dcab926551
 title: What are AVIV ScoutRoute quest definition custom icons?
 slug: quest-definition-custom-icons
 doc_type: concept

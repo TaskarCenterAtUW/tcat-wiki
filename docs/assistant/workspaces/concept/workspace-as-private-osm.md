@@ -1,4 +1,5 @@
 ---
+uid: a2949a44-7dc4-4c66-9e77-22dcc4e07ad3
 title: What is Workspaces as a private OSM environment?
 slug: workspace-as-private-osm
 doc_type: concept

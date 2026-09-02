@@ -1,4 +1,5 @@
 ---
+uid: 649758af-178c-47be-9aed-32ba3c26f8ce
 title: How do I download data from the viewer?
 slug: download-data
 doc_type: workflow

@@ -1,4 +1,5 @@
 ---
+uid: 38a79ef1-99e7-4c10-bcce-8416abde198c
 title: How can roadside surface data support route preferences?
 slug: roadside-surface-preferences
 doc_type: concept

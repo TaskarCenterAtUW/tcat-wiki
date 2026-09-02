@@ -1,4 +1,5 @@
 ---
+uid: 8ef7fda7-b7bc-46ce-96c6-c2fe01eb0cc9
 title: How can I load external GeoJSON for reference in Workspaces?
 slug: import-external-geojson-for-reference
 doc_type: workflow

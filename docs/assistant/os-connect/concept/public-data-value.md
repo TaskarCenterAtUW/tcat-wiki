@@ -1,4 +1,5 @@
 ---
+uid: 45fa3b5b-e4a8-4328-9311-2162067353de
 title: Why should the public care about pedestrian data?
 slug: public-data-value
 doc_type: concept

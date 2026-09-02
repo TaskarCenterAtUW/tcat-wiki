@@ -1,4 +1,5 @@
 ---
+uid: 3a031f0e-9abd-466d-955d-ae93abf18662
 title: What operational roles are needed for stewardship?
 slug: stewardship-roles
 doc_type: concept

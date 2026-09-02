@@ -1,4 +1,5 @@
 ---
+uid: 54c23042-73cf-47f7-ad0e-61480547f66a
 title: How is OS-CONNECT different from OpenStreetMap?
 slug: os-connect-vs-openstreetmap
 doc_type: concept

@@ -1,4 +1,5 @@
 ---
+uid: e2be6bc3-de31-4d51-b9ab-862dfdcc2cb8
 title: What happens when I create a workspace from a TDEI dataset?
 slug: workspace-creation-mechanics
 doc_type: concept

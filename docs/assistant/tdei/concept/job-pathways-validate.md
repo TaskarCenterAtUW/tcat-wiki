@@ -1,4 +1,5 @@
 ---
+uid: ddce0105-39d5-4be4-989b-dcd61c15a764
 title: What does the TDEI Pathways Validate job do?
 slug: job-pathways-validate
 doc_type: concept

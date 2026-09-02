@@ -1,4 +1,5 @@
 ---
+uid: 72a3f427-34f6-40f1-866c-c618a29e28cd
 title: How should QA/QC report maps support visual accessibility?
 slug: qa-qc-visual-accessibility
 doc_type: concept

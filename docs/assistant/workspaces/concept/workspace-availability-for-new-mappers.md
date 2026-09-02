@@ -1,4 +1,5 @@
 ---
+uid: 7fede7be-e034-4c79-aca6-eb01f4716c2c
 title: Why might a new mapper see no available workspace?
 slug: workspace-availability-for-new-mappers
 doc_type: concept

@@ -1,4 +1,5 @@
 ---
+uid: 7622fde6-19c3-4a11-8e4a-850a32f66a51
 title: What URL can a workspace use for a quest definition?
 slug: quest-definition-url-requirements
 doc_type: concept

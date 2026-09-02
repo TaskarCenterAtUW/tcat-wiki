@@ -1,4 +1,5 @@
 ---
+uid: fe334631-ca62-41b1-b4f6-0684ddc62d02
 title: What roles exist in Workspaces?
 slug: roles
 doc_type: concept

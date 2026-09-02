@@ -1,4 +1,5 @@
 ---
+uid: 21312609-bb45-4d65-9492-6c37a6ac9cd4
 title: What is the QA/QC project completeness standard?
 slug: project-completeness-standard
 doc_type: concept

@@ -1,4 +1,5 @@
 ---
+uid: f03df76b-2445-4429-b3ca-79a67850adac
 title: What kinds of errors are most common?
 slug: common-errors
 doc_type: concept

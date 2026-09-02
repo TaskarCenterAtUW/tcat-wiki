@@ -1,4 +1,5 @@
 ---
+uid: 980e9eba-923f-40eb-be49-ab0af2d2ad68
 title: How can walksheds support equity analysis?
 slug: equity-analysis
 doc_type: concept

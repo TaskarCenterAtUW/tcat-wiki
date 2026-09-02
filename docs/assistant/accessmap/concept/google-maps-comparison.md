@@ -1,4 +1,5 @@
 ---
+uid: 459c7755-0c13-43ec-8503-4e767928c894
 title: How is AccessMap different from Google Maps?
 slug: google-maps-comparison
 doc_type: concept

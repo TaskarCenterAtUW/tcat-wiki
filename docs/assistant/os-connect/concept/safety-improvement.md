@@ -1,4 +1,5 @@
 ---
+uid: 51b2cfc9-56d3-427e-8e16-310070ed8484
 title: How does this improve safety?
 slug: safety-improvement
 doc_type: concept

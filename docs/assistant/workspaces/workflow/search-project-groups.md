@@ -1,4 +1,5 @@
 ---
+uid: 0789d812-e0dd-44bd-9b82-85c518e94c25
 title: How do I search for project groups?
 slug: search-project-groups
 doc_type: workflow

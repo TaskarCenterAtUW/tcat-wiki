@@ -1,4 +1,5 @@
 ---
+uid: 0051ed26-3fe9-4843-8b4c-f3d246a6697b
 title: What does an intersection tile mean?
 slug: intersection-tile
 doc_type: concept

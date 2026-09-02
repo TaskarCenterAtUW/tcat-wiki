@@ -1,4 +1,5 @@
 ---
+uid: 04fb07d2-c424-492d-9f70-f5f6fb4a4964
 title: What does a TDEI derived dataset ID show?
 slug: derived-dataset-lineage
 doc_type: concept

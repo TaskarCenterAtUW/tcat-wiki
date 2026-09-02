@@ -1,4 +1,5 @@
 ---
+uid: 2c24b2c8-2964-4425-a473-7edaff7e439b
 title: When should a city use Workspaces instead of GIS software?
 slug: workspaces-vs-gis-decision
 doc_type: concept

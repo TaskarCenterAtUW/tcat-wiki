@@ -1,4 +1,5 @@
 ---
+uid: cadb7b58-ce33-40aa-80d2-c52eef9984a5
 title: How are disconnected sidewalks identified?
 slug: disconnected-sidewalk-identification
 doc_type: concept

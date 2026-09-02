@@ -1,4 +1,5 @@
 ---
+uid: bb4dabc2-8f6b-4491-8360-923c0d614e1f
 title: Why does AccessMap differ from Google Maps?
 slug: google-maps-design-rationale
 doc_type: concept

@@ -1,4 +1,5 @@
 ---
+uid: 03b7c67c-e121-4633-a172-1f412bcbc06a
 title: What happens if imagery is configured incorrectly?
 slug: imagery-misconfiguration
 doc_type: concept

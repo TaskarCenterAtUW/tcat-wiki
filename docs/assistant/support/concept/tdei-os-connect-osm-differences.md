@@ -1,4 +1,5 @@
 ---
+uid: 38d55e6e-a248-4c4b-86bc-1b0dc6df5f5e
 title: What is the difference between TDEI, OS-CONNECT, OpenSidewalks, and OpenStreetMap?
 slug: tdei-os-connect-osm-differences
 doc_type: concept

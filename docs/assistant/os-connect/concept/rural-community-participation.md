@@ -1,4 +1,5 @@
 ---
+uid: 6ad1ab6f-e8a3-4a48-88af-e66326b423d4
 title: How can rural communities participate?
 slug: rural-community-participation
 doc_type: concept

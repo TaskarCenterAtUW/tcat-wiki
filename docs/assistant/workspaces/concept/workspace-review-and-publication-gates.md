@@ -1,4 +1,5 @@
 ---
+uid: 4cd21f12-6dd9-49e7-bb65-4350ae9de843
 title: What are workspace review and publication gates?
 slug: workspace-review-and-publication-gates
 doc_type: concept

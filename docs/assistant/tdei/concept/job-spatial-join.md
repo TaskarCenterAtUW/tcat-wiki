@@ -1,4 +1,5 @@
 ---
+uid: 00fa9841-8866-4e62-b655-11716bb0a426
 title: What does the TDEI Spatial Join job do?
 slug: job-spatial-join
 doc_type: concept

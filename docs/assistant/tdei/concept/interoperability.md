@@ -1,4 +1,5 @@
 ---
+uid: ad85460d-4e34-4025-9a31-754fa1b493e5
 title: How does TDEI support interoperability?
 slug: interoperability
 doc_type: concept

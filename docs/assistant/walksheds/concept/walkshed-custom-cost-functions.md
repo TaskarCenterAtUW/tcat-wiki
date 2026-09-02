@@ -1,4 +1,5 @@
 ---
+uid: eeeac131-76ac-4a1f-a9f7-77266d6219d9
 title: What are custom Walksheds cost functions?
 slug: walkshed-custom-cost-functions
 doc_type: concept

@@ -1,4 +1,5 @@
 ---
+uid: e338ea65-fb8c-46df-96c5-71f0065a1e2e
 title: How do I plan and share an AccessMap route?
 slug: plan-and-share-a-route
 doc_type: workflow

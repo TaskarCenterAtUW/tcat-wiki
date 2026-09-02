@@ -1,4 +1,5 @@
 ---
+uid: 0bfbd81a-502a-4851-a71b-06b18f0bd80a
 title: Imagery layers (Workspaces)
 slug: imagery-layers
 doc_type: concept

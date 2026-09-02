@@ -1,4 +1,5 @@
 ---
+uid: ef725be9-e85f-4cd3-af0c-dd005d722749
 title: What attributes are required vs recommended?
 slug: required-vs-recommended-attributes
 doc_type: concept

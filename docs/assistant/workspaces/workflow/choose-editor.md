@@ -1,4 +1,5 @@
 ---
+uid: 4a67f7be-0bcb-42bb-a559-414137cc6789
 title: Which editor should I use?
 slug: choose-editor
 doc_type: workflow

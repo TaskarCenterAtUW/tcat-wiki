@@ -1,4 +1,5 @@
 ---
+uid: adcb3345-4dae-4681-99c5-ddf262e0e7b7
 title: What happens when a TDEI API key is regenerated?
 slug: api-key-rotation
 doc_type: concept

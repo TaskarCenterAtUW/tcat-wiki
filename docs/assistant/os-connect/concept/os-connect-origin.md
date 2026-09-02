@@ -1,4 +1,5 @@
 ---
+uid: 88440307-f7af-4247-a8a7-7c71f3eb1458
 title: Why was OS-CONNECT created?
 slug: os-connect-origin
 doc_type: concept

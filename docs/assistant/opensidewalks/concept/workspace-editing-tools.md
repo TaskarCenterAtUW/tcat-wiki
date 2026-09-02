@@ -1,4 +1,5 @@
 ---
+uid: 727949a1-2099-46b1-8b56-8d868606b42f
 title: Which tools can edit OpenSidewalks workspaces?
 slug: workspace-editing-tools
 doc_type: concept

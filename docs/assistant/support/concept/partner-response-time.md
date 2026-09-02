@@ -1,4 +1,5 @@
 ---
+uid: ab86795c-ddcf-470a-b6d4-53526f845563
 title: What response time should external partners expect?
 slug: partner-response-time
 doc_type: concept

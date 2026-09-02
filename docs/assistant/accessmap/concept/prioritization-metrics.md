@@ -1,4 +1,5 @@
 ---
+uid: d6cc5c58-a17e-492f-8577-4af7821a4740
 title: What metrics best support accessibility prioritization?
 slug: prioritization-metrics
 doc_type: concept

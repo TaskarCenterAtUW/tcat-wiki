@@ -1,4 +1,5 @@
 ---
+uid: 9c5bf55e-0e36-4dc5-a060-35e73fe19d46
 title: What does this selected feature represent?
 slug: feature-selection-display
 doc_type: concept

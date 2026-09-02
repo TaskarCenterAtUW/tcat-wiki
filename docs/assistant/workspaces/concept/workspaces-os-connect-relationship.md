@@ -1,4 +1,5 @@
 ---
+uid: aec7bb23-e9b3-4ae8-bb73-551582902887
 title: What is the relationship between Workspaces and OS-CONNECT?
 slug: workspaces-os-connect-relationship
 doc_type: concept

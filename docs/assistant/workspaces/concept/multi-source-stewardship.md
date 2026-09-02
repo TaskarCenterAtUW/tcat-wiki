@@ -1,4 +1,5 @@
 ---
+uid: 1aa276b7-21a8-47f0-8e31-b357775d49d3
 title: Multi-Source Stewardship (Workspaces)
 slug: multi-source-stewardship
 doc_type: concept

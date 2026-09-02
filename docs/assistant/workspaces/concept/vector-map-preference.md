@@ -1,4 +1,5 @@
 ---
+uid: f8f17ead-342c-4ba6-9912-818688133b22
 title: Why are vector maps preferred for accessibility editing?
 slug: vector-map-preference
 doc_type: concept

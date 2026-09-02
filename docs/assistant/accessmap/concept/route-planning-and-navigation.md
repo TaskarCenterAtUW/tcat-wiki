@@ -1,4 +1,5 @@
 ---
+uid: 92e712b5-354b-421e-b1fe-13561b3aac82
 title: What is the difference between route planning and navigation in AccessMap?
 slug: route-planning-and-navigation
 doc_type: concept

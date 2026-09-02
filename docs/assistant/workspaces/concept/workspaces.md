@@ -1,4 +1,5 @@
 ---
+uid: 8de5fa11-c573-42d1-8dc8-5ab84d908bbd
 title: What is Workspaces?
 slug: workspaces
 doc_type: concept

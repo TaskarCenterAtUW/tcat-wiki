@@ -1,4 +1,5 @@
 ---
+uid: d0e0f3db-cd76-4b1f-83dd-ef86bdd4f2ca
 title: How should a TCAT product issue be reported?
 slug: report-product-issues
 doc_type: workflow

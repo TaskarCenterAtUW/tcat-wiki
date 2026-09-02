@@ -1,4 +1,5 @@
 ---
+uid: fec1b22c-f401-4b4a-855b-a5dc6c11e75f
 title: What future capabilities are planned for AccessMap?
 slug: planned-capabilities
 doc_type: concept

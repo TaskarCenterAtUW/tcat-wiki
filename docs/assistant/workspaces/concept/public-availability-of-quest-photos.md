@@ -1,4 +1,5 @@
 ---
+uid: 3745069a-5838-47a4-9d5a-92d8ac191cc6
 title: Who can access photos collected through quests?
 slug: public-availability-of-quest-photos
 doc_type: concept

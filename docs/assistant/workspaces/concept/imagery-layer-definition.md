@@ -1,4 +1,5 @@
 ---
+uid: 11cec0d3-3211-4e32-b0d4-08ce0b47a2cd
 title: What is a workspace imagery-layer definition?
 slug: imagery-layer-definition
 doc_type: concept

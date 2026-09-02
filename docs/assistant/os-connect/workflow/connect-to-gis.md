@@ -1,4 +1,5 @@
 ---
+uid: afb34589-73d9-43b8-9ba6-a9450856969f
 title: How do I connect this to GIS software?
 slug: connect-to-gis
 doc_type: workflow
@@ -15,7 +16,7 @@ topics:
     - os-connect
     - gis
 risk_level: medium
-authority_level: explanatory
+authority_level: provisional
 publication_status: stub
 last_reviewed:
 retrieval_priority: high
