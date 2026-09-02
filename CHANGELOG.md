@@ -27,6 +27,24 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/),
 
 -->
 
+## v15.16.0 (2026-09-02)
+
+### Changed
+
+- **Core**: Bumped Zensical to 0.0.58
+
+## v15.15.0 (2026-09-02)
+
+### Added
+
+- **Docs**: Added durable UIDs to Assistant Knowledge Base articles and updated the schema and article template to support them
+- **Skills**: Added an AKB new-article skill and updated the AKB workflow skills
+- **Utilities**: Added UID generation and retired-UUID tracking support; updated the AKB builders and tests
+
+### Fixed
+
+- **Docs**: Improved table formatting in the Assistant Knowledge Base schema file
+
 ## v15.14.0 (2026-08-28)
 
 ### Changed
