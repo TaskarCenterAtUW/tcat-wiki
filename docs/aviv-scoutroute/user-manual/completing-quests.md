@@ -20,7 +20,9 @@ _For a list of all guides on the TCAT Wiki, refer to the [Guides List](../../gui
 
 ### Viewing Available Quests
 
-When you open a workspace, the map displays available quests as icons on the map. Each icon represents a data collection task for a specific feature.
+When you open a workspace, the map displays available quests as icons on the map. Each icon represents a data collection task for a specific feature. A quest is available when at least one applicable question is unanswered or when the element's last-edited time is at least the configured `recency_period` in the past.
+
+The recency period controls visibility only. It does not expire, delete, or invalidate answers already saved on the element. When a quest becomes visible again, previously submitted answers are prefilled for review and revalidation.
 
 <!-- === "Android" -->
 
@@ -93,13 +95,17 @@ For detailed information about each quest type, see [Quest Types](quest-types.md
 
     You can tap a selected option again to deselect it before submitting.
 
+Answers that were submitted previously can appear prefilled when you reopen a quest. This is expected: the form uses the existing element data so you can review and revalidate it. A response selected during the current visit but not submitted is local form state and is discarded when you close the form.
+
+If an earlier answer makes a follow-up question inapplicable, the follow-up is hidden and does not block completion. If you clear or deselect a previously saved response and submit, the corresponding data is deleted. Changing an earlier answer also removes outdated follow-up answers that no longer apply.
+
 ---
 
 ### Submitting a Quest
 
 1. **Review your answer** - Double-check that your response is accurate
 
-2. **Tap "Submit"** - Your answer is saved to the workspace
+2. **Tap "Submit"** - Your answer is saved immediately to the workspace
 
 3. **Quest disappears** - Completed quests are removed from the map
 
@@ -115,7 +121,17 @@ For detailed information about each quest type, see [Quest Types](quest-types.md
 
 !!! success
 
-    Once submitted, your contribution is saved and helps improve pedestrian accessibility data!
+    Once submitted, your contribution is committed to the workspace. It is available for the project's review workflow; it is not held in a separate changeset queue waiting for approval.
+
+If a submitted answer conflicts with an existing answer, AVIV ScoutRoute opens a conflict-resolution flow before submission. Choose whether to overwrite the previous answer or restore it, then submit the resolved result.
+
+When you submit a previously answered quest again after the recency period, the app can save the confirmed answers in a new changeset and update the element's `timestampEdited` value. This prevents the same accurate data from being repeatedly requested during the recency period.
+
+### Reviewing Submitted Answers
+
+Workspace owners and validators can use the **Changeset Review** feature to inspect submitted changesets. When the workspace is configured to automatically flag changesets for review, flagged changesets receive distinct styling in the review view. A user with the workspace **validator** or **owner** role can select **Mark as Reviewed** after inspecting a flagged changeset; the changeset then returns to the normal styling.
+
+Review is performed after the changeset is committed to the workspace. Reviewers can inspect the submitted changes and make follow-up edits, which are also committed through changesets.
 
 ---
 
