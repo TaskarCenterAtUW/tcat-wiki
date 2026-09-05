@@ -352,8 +352,18 @@ nav = [
         ]},
         {"Livability" = [
             "assistant/livability/index.md",
-            {"Concept" = [ {"What is the source for the POIs in LivAbility?" = "assistant/livability/concept/poi-source.md"} ]},
-            {"Workflow" = [ {"How do I select a mobility profile in LivAbility?" = "assistant/livability/workflow/select-mobility-profile.md"} ]}
+            {"Concept" = [
+                {"What are amenity categories in LivAbility?" = "assistant/livability/concept/amenity-categories.md"},
+                {"What does LivAbility analyze?" = "assistant/livability/concept/livability-analysis.md"},
+                {"What is a mobility profile in LivAbility?" = "assistant/livability/concept/mobility-profiles.md"},
+                {"What is the source for the POIs in LivAbility?" = "assistant/livability/concept/poi-source.md"}
+            ]},
+            {"Workflow" = [
+                {"How do I analyze a location in LivAbility?" = "assistant/livability/workflow/analyze-location.md"},
+                {"How do I configure a mobility profile in LivAbility?" = "assistant/livability/workflow/configure-profile.md"},
+                {"How do I filter amenity categories in LivAbility?" = "assistant/livability/workflow/filter-amenities.md"},
+                {"How do I select a mobility profile in LivAbility?" = "assistant/livability/workflow/select-mobility-profile.md"}
+            ]}
         ]},
         {"OpenSidewalks" = [
             "assistant/opensidewalks/index.md",

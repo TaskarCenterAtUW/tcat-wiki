@@ -19,7 +19,7 @@ topics:
 risk_level: medium
 authority_level: explanatory
 publication_status: draft
-    last_reviewed: 2026-07-31
+last_reviewed: 2026-09-04
 retrieval_priority: high
 assistant_behavior:
     allow_inference: false
@@ -39,31 +39,31 @@ tags:
 
 ## Short Answer
 
-When working with OpenStreetMap (OSM) data, the name of the street parallel to a sidewalk may be represented as with either `street:name=StreetName` or `is_sidepath:of:name=StreetName`. These tags have the same meaning, and both tagging schemes are in use.
+When working with OpenStreetMap (OSM) data, a separately mapped sidewalk may be associated with a parallel street using `street:name=StreetName` or `is_sidepath:of:name=StreetName`. Both patterns are in use, but do not assume they have identical support in every project or consumer. Check the current tagging guidance for the intended dataset and use `street:name` where the current project guidance recommends it.
 
 ## Significance
 
-Recognizing both forms supports consistent interpretation of OSM data.
+Recognizing both forms helps editors and data consumers interpret older or locally varied OSM tagging without confusing a street-name relationship with a physical network connection.
 
 ## What This Means
 
-Treat either tag as the name of the street associated with the adjacent sidewalk.
+Treat either tag as a possible association between the adjacent sidewalk and street, then verify the intended convention and consumer support. Keep a separately mapped sidewalk as its own pedestrian geometry.
 
 ## What This Does Not Mean
 
-Neither tag proves accessibility, ownership, or connectivity.
+Neither tag proves accessibility, ownership, or connectivity. The two patterns should not be described as universally interchangeable without checking the relevant project and consumer.
 
 ## How To Use This
 
-When reading or transforming OSM data, recognize both tags. When editing, follow the tagging convention used by the relevant project or dataset.
+When reading or transforming OSM data, recognize both tags and preserve the source convention where appropriate. When editing, follow the current convention used by the relevant project, schema, and downstream consumer; current TCAT guidance increasingly uses `street:name` for this association.
 
 ## Example
 
-A sidewalk beside Cedar Avenue may use either `street:name=Cedar Avenue` or `is_sidepath:of:name=Cedar Avenue`.
+A sidewalk beside Cedar Avenue may contain `street:name=Cedar Avenue` in a project that follows current TCAT guidance, while an older or locally maintained dataset may contain `is_sidepath:of:name=Cedar Avenue`. An importer should recognize both and document any normalization.
 
 ## Assistant Guidance
 
-Explain that the two tags are equivalent in meaning and that both are in use. If the user asks about which one should be used, note that TCAT recommends `street:name`, while cautioning that `is_sidepath:of:name` is not wrong and that it is usually recommended to follow local best practices.
+Explain that both tags are used to associate a sidewalk with a street, but avoid claiming universal equivalence across consumers. If the user asks which one to use, cite the current project guidance, note TCAT's current preference for `street:name`, and advise checking local or downstream requirements before changing existing data.
 
 ## Related Concepts
 

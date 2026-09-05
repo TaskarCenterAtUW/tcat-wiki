@@ -51,13 +51,26 @@ Use **Move element up**, **Move element down**, **Move quest up**, and **Move qu
 
 ### Set the Resurvey Interval
 
-The **Resurvey Interval** field sets the global `recency_period` value in days. It controls how long a submitted element remains out of the available quest pool before it can be shown again.
+The **Resurvey Interval** field sets the global `recency_period` value in days. It controls quest visibility; it does not delete, invalidate, or clear answers already stored on an element.
 
 1. **Locate** **Resurvey Interval** under **Definition Settings**
-2. **Enter** the number of days for the project
+2. **Enter** a whole-number interval in days for the project
 3. **Review** the `recency_period` value in the JSON Preview
 
-New definitions currently show a default of `90` days. The schema requires a value of at least `1` day. The interval applies to the definition as a whole, not to an individual quest question.
+New definitions currently show a default of `90` days. Long Form Quest Definition schema version `3.2.0` requires a value of at least `1` whole day. The interval is measured as elapsed time, not as a calendar-date change. For example, an element surveyed at 11:59 PM becomes eligible again at 11:59 PM the following day when `recency_period` is `1`.
+
+The interval applies to the definition as a whole, not to an individual element or quest question. Schema version `3.2.0` does not support fractional days or intervals specified in hours.
+
+### How Resurvey Visibility Works
+
+An element's quest is visible when either condition is true:
+
+- At least one applicable question is unanswered.
+- The elapsed time since the element's `timestampEdited` is at least the configured `recency_period`.
+
+Conditional questions that do not apply based on earlier answers do not count as unanswered. Previous submitted answers remain on the element and are prefilled when the quest becomes visible again. Confirming those answers and submitting the quest creates a changeset and updates the element's last-edited timestamp.
+
+Creating a workspace sets the imported elements' `timestampEdited` values to the import time. The resurvey interval therefore starts from the workspace import time, even when the source data was edited earlier.
 
 ---
 

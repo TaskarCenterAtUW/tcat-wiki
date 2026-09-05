@@ -28,7 +28,7 @@ topics:
 risk_level: low
 authority_level: official
 publication_status: draft
-last_reviewed: 2026-09-02
+last_reviewed: 2026-09-04
 retrieval_priority: high
 assistant_behavior:
     allow_inference: false
@@ -101,8 +101,8 @@ This page should be fetched fresh rather than cached aggressively; its registry 
 
 | Status | Count | Meaning |
 | :----- | ----: | :------ |
-| `stub` | 63 | Frontmatter and heading scaffold exist; body is `TODO` |
-| `draft` | 741 | Content authored; awaiting TCAT editorial review |
+| `stub` | 61 | Frontmatter and heading scaffold exist; body is `TODO` |
+| `draft` | 749 | Content authored; awaiting TCAT editorial review |
 | `published` | 1 | Available in the human-facing site |
 | `archived` | 0 | Retained for agents but not published |
 
@@ -110,8 +110,8 @@ This page should be fetched fresh rather than cached aggressively; its registry 
 
 | Authority level | Count | Meaning |
 | :-------------- | ----: | :------ |
-| `provisional` | 671 | Early or limited-confidence guidance |
-| `explanatory` | 132 | Established explanation without formal policy authority |
+| `provisional` | 673 | Early or limited-confidence guidance |
+| `explanatory` | 136 | Established explanation without formal policy authority |
 | `official` | 2 | Formally endorsed organizational guidance |
 
 ## Registry
@@ -249,7 +249,7 @@ Base: `assistant/aviv-scoutroute/concept/`
 | `c7035d9d-8488-411c-a937-8c04c55a9db5` | `numeric-quest-validation.md` | explanatory | draft |
 | `9e865fd0-fe83-4ee2-be27-e8d0a179b590` | `offline-data-and-upload.md` | provisional | draft |
 | `e36b6ff3-3a56-4b65-9127-374d1a554f29` | `quest-answer-dependency-logic.md` | explanatory | draft |
-| `303f0036-d892-4fb0-8dbb-d29773b9e96c` | `quest-contributions.md` | provisional | draft |
+| `303f0036-d892-4fb0-8dbb-d29773b9e96c` | `quest-contributions.md` | explanatory | draft |
 | `a1595106-5792-4731-aa0e-36c461f221b9` | `quest-definition-application.md` | explanatory | draft |
 | `779b1905-fca1-4d28-a561-d849c6dcc66e` | `quest-definition-creator.md` | explanatory | draft |
 | `ecdd0450-cd47-4f1d-9a24-48dcab926551` | `quest-definition-custom-icons.md` | explanatory | draft |
@@ -262,7 +262,7 @@ Base: `assistant/aviv-scoutroute/concept/`
 | `47942f15-f256-49a9-a3f0-f2e70c9a8063` | `quest-dependency-evaluators.md` | explanatory | draft |
 | `0770da33-ded7-4e13-aa5d-0a5b37efa775` | `quest-input-types.md` | provisional | draft |
 | `adafb96b-4eb2-4857-8aa4-2e876f2e5edd` | `quest-required-or-optional.md` | explanatory | draft |
-| `557c7f7d-8153-4cda-8ad1-1511aad3c7a9` | `quest-visibility-and-local-state.md` | provisional | draft |
+| `557c7f7d-8153-4cda-8ad1-1511aad3c7a9` | `quest-visibility-and-local-state.md` | explanatory | draft |
 | `c1d960b6-ad07-4b10-a8c6-e5ce06b07c29` | `quest.md` | provisional | draft |
 
 ### Workflows
@@ -272,7 +272,7 @@ Base: `assistant/aviv-scoutroute/workflow/`
 | UID | File | Authority Level | Publication Status |
 | :-- | :--- | :-------------- | :----------------- |
 | `e9ed8f2b-8637-40ed-ace0-067f81a74215` | `answer-quest.md` | provisional | draft |
-| `ce7a0d43-f792-472d-9c35-74ed27745081` | `complete-and-submit-a-quest.md` | provisional | draft |
+| `ce7a0d43-f792-472d-9c35-74ed27745081` | `complete-and-submit-a-quest.md` | explanatory | draft |
 | `31b29431-397c-42c8-af6a-70dae0bbbff8` | `design-conditional-follow-up-quests.md` | explanatory | draft |
 | `1c219b5b-c233-41d3-a014-c5f94f6c5c28` | `install-aviv-scoutroute.md` | provisional | draft |
 | `9ab89290-d73c-4a0c-a760-380199a8a642` | `join-a-project-and-find-quests.md` | provisional | draft |
@@ -415,6 +415,9 @@ Base: `assistant/livability/concept/`
 
 | UID | File | Authority Level | Publication Status |
 | :-- | :--- | :-------------- | :----------------- |
+| `533fabeb-00a6-464e-884a-957fd220ff8d` | `amenity-categories.md` | provisional | draft |
+| `06e48701-4a6f-4c81-a77c-f3d277c64bb0` | `livability-analysis.md` | provisional | draft |
+| `ae864769-1e4c-4b2b-8169-7a690a84f4d3` | `mobility-profiles.md` | provisional | draft |
 | `f09e5084-ff52-4dd1-8cd1-abd4822c56f5` | `poi-source.md` | provisional | stub |
 
 ### Workflows
@@ -423,7 +426,10 @@ Base: `assistant/livability/workflow/`
 
 | UID | File | Authority Level | Publication Status |
 | :-- | :--- | :-------------- | :----------------- |
-| `75e18a1d-cc14-4c3d-b092-45e6b1b7e574` | `select-mobility-profile.md` | provisional | stub |
+| `bdf10e29-ec71-4d65-abfa-1ca11e2a8af4` | `analyze-location.md` | provisional | draft |
+| `1a48c315-7a74-43ce-8fd3-17850f22d886` | `configure-profile.md` | provisional | draft |
+| `a1101b60-cb9d-4108-88bd-4625000e3271` | `filter-amenities.md` | provisional | draft |
+| `75e18a1d-cc14-4c3d-b092-45e6b1b7e574` | `select-mobility-profile.md` | provisional | draft |
 
 ## OpenSidewalks — Assistant Knowledge Base
 
@@ -699,7 +705,7 @@ Base: `assistant/os-connect/concept/`
 | `76e2b202-4641-46ad-b829-3454ef49125e` | `walkshed-advocacy.md` | provisional | draft |
 | `cffc1c3d-00dc-4c9f-bec9-7e076dfa2eb7` | `walkshed-metrics.md` | explanatory | draft |
 | `680def2a-5e3b-40f2-b33c-018a5c7010f4` | `washington-lessons.md` | provisional | stub |
-| `07b716b4-105a-4db8-ac21-63d4f938cb4c` | `width-attribute.md` | provisional | stub |
+| `07b716b4-105a-4db8-ac21-63d4f938cb4c` | `width-attribute.md` | explanatory | draft |
 | `7fb805f0-385d-49e0-8db2-26917817853f` | `workflow-improvement-areas.md` | provisional | stub |
 | `eee83492-a21e-4dd3-b964-e617211ac70a` | `z-score-usage.md` | provisional | stub |
 
