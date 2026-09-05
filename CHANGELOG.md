@@ -27,6 +27,33 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/),
 
 -->
 
+## v15.17.0 (2026-09-04)
+
+### Added
+
+- **Core**: Added an AKB screenshot-capturing skill
+- **Docs**: Added docs\assistant\livability\concept\amenity-categories.md
+- **Docs**: Added docs\assistant\livability\concept\livability-analysis.md
+- **Docs**: Added docs\assistant\livability\concept\mobility-profiles.md
+- **Docs**: Added docs\assistant\livability\workflow\analyze-location.md
+- **Docs**: Added docs\assistant\livability\workflow\configure-profile.md
+- **Docs**: Added docs\assistant\livability\workflow\filter-amenities.md
+
+### Changed
+
+- **Docs**: Updated docs\aviv-scoutroute\quests\creator\user-manual\editor-overview.md
+- **Docs**: Updated docs\aviv-scoutroute\user-manual\completing-quests.md
+- **Docs**: Updated docs\assistant\aviv-scoutroute\concept\quest-contributions.md
+- **Docs**: Updated docs\assistant\aviv-scoutroute\concept\quest-definition-resurvey-interval.md
+- **Docs**: Updated docs\assistant\aviv-scoutroute\concept\quest-definition-resurvey-interval.md
+- **Docs**: Updated docs\assistant\aviv-scoutroute\concept\quest-visibility-and-local-state.md
+- **Docs**: Updated docs\assistant\aviv-scoutroute\workflow\complete-and-submit-a-quest.md
+- **Docs**: Updated docs\assistant\workspaces\workflow\review-quest-contributions.md
+- **Docs**: Updated docs\assistant\livability\workflow\select-mobility-profile.md
+- **Docs**: Updated docs\assistant\os-connect\concept\street-name-vs-is-sidepath-of-name.md
+- **Docs**: Updated docs\assistant\os-connect\concept\width-attribute.md
+- **Core**: Updated and compacted agent skills
+
 ## v15.16.0 (2026-09-02)
 
 ### Changed
@@ -38,7 +65,7 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/),
 ### Added
 
 - **Docs**: Added durable UIDs to Assistant Knowledge Base articles and updated the schema and article template to support them
-- **Skills**: Added an AKB new-article skill and updated the AKB workflow skills
+- **Core**: Added an AKB new-article skill and updated the AKB workflow skills
 - **Utilities**: Added UID generation and retired-UUID tracking support; updated the AKB builders and tests
 
 ### Fixed
