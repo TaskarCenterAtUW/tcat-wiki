@@ -64,4 +64,5 @@ Do not name a license without verifying the exact release. Cite the published te
 
 ## Related Concepts
 
-TODO
+- [Who owns OS-CONNECT data?](data-ownership.md)
+- [How are conflicting data sources handled?](conflicting-data-sources.md)

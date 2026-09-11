@@ -19,15 +19,20 @@ topics:
     - dataset-lineage
 risk_level: high
 authority_level: provisional
-publication_status: stub
-last_reviewed:
+publication_status: draft
+last_reviewed: 2026-09-11
 retrieval_priority: medium
 assistant_behavior:
     allow_inference: false
     requires_citation: true
     abstain_if_missing_context: true
-    do_not_claim: []
-related_pages: []
+    do_not_claim:
+        - Publishing a jurisdiction update automatically makes every workspace edit authoritative.
+        - An exported dataset is automatically current for every jurisdictional decision.
+related_pages:
+    - assistant/workspaces/index.md
+    - assistant/workspaces/workflow/export-workspace-edits-to-tdei.md
+    - assistant/workspaces/concept/recommended-publication-workflow.md
 tags:
     - Assistant
 ---
@@ -38,32 +43,33 @@ tags:
 
 ## Short Answer
 
-TODO
+To publish jurisdiction updates, establish the source and scope, review and validate workspace edits, export the approved result to the responsible TDEI destination, verify the resulting release, and communicate its version and limitations to users.
 
 ## Significance
 
-TODO
+Publication turns collaborative edits into a managed public or organizational record and therefore requires accountable review.
 
 ## What This Means
 
-TODO
+Name the steward, dataset, release, geography, review status, attribution, and update date. Keep the prior release and lineage available for comparison.
 
 ## What This Does Not Mean
 
-TODO
+Publication does not prove that every local condition is current, complete, or legally compliant.
 
 ## How To Use This
 
-TODO
+Follow jurisdictional approval rules and current TDEI release instructions. Do not promise viewer visibility until it has been verified.
 
 ## Example
 
-TODO
+A jurisdiction approves edits for a defined area, exports a new release, verifies the viewer or dataset record, and documents the release date.
 
 ## Assistant Guidance
 
-TODO
+Cite the specific release workflow and identify unresolved limitations.
 
 ## Related Concepts
 
-TODO
+ - [How do I export workspace edits to TDEI?](export-workspace-edits-to-tdei.md)
+ - [What workflows are best suited for Workspaces?](../concept/recommended-publication-workflow.md)

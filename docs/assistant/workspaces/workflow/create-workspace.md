@@ -19,15 +19,20 @@ topics:
     - workspace-management
 risk_level: low
 authority_level: provisional
-publication_status: stub
-last_reviewed:
+publication_status: draft
+last_reviewed: 2026-09-11
 retrieval_priority: medium
 assistant_behavior:
     allow_inference: false
     requires_citation: true
     abstain_if_missing_context: true
-    do_not_claim: []
-related_pages: []
+    do_not_claim:
+        - Every workspace creation path has the same steps and metadata.
+        - Creating a workspace makes its data publicly available.
+related_pages:
+    - assistant/workspaces/index.md
+    - assistant/workspaces/concept/workspace-creation-methods.md
+    - assistant/workspaces/concept/workspace-creation-mechanics.md
 tags:
     - Assistant
 ---
@@ -38,32 +43,33 @@ tags:
 
 ## Short Answer
 
-TODO
+Choose the appropriate creation path, provide a title and project group, supply the source dataset or file, submit the request, and verify initialization in the dashboard. Record source, version, environment, and workspace ID.
 
 ## Significance
 
-TODO
+A consistent creation preflight protects lineage and prevents teams from editing the wrong source or project.
 
 ## What This Means
 
-TODO
+Check permissions, source format, dataset scope, title, project group, and current environment before submitting.
 
 ## What This Does Not Mean
 
-TODO
+Creation does not guarantee successful conversion, current data, access for every collaborator, or publication.
 
 ## How To Use This
 
-TODO
+Use the TDEI or Workspaces workflow matching the source. Preserve any conversion errors and do not retry blindly if the source or destination is uncertain.
 
 ## Example
 
-TODO
+A team converts a prepared dataset, creates the workspace, waits for processing, and confirms the new workspace before inviting editors.
 
 ## Assistant Guidance
 
-TODO
+Cite the relevant creation method and abstain when the source or environment is unspecified.
 
 ## Related Concepts
 
-TODO
+ - [What are the workspace creation methods?](../concept/workspace-creation-methods.md)
+ - [What happens during creation?](../concept/workspace-creation-mechanics.md)

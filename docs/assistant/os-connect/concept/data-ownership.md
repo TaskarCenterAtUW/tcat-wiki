@@ -64,4 +64,5 @@ Do not name an owner without evidence. Distinguish publisher, steward, contribut
 
 ## Related Concepts
 
-TODO
+- [What licensing governs the data?](data-licensing.md)
+- [What makes accessibility data difficult to maintain?](data-maintenance-challenges.md)

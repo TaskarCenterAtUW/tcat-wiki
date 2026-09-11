@@ -19,15 +19,20 @@ topics:
     - public-support
 risk_level: low
 authority_level: provisional
-publication_status: stub
-last_reviewed:
+publication_status: draft
+last_reviewed: 2026-09-11
 retrieval_priority: medium
 assistant_behavior:
     allow_inference: false
     requires_citation: true
     abstain_if_missing_context: true
-    do_not_claim: []
-related_pages: []
+    do_not_claim:
+        - A viewer user can edit or publish every workspace.
+        - An editor user has authority to approve every change.
+related_pages:
+    - assistant/workspaces/index.md
+    - assistant/workspaces/concept/roles.md
+    - assistant/workspaces/concept/workspace-editing-authority.md
 tags:
     - Assistant
 ---
@@ -38,32 +43,33 @@ tags:
 
 ## Short Answer
 
-TODO
+Viewer users primarily inspect workspace data, while editor users can make changes within the permissions assigned to a workspace. Review and publication authority may be separate again.
 
 ## Significance
 
-TODO
+Separating viewing, editing, review, and publication responsibilities reduces accidental changes and clarifies accountability.
 
 ## What This Means
 
-TODO
+Check the user's workspace role and requested action. Grant or request additional authority only through the current access workflow.
 
 ## What This Does Not Mean
 
-TODO
+Being able to view does not imply editing, review, export, or publication authority; being able to edit does not imply approval authority.
 
 ## How To Use This
 
-TODO
+Ask which workspace, role, and action are involved when access fails or a user asks what they can do.
 
 ## Example
 
-TODO
+A community participant views a workspace and reports a missing feature, while an authorized editor makes the change and a reviewer checks it.
 
 ## Assistant Guidance
 
-TODO
+Cite role documentation and avoid assuming permissions from a user's organization or project membership.
 
 ## Related Concepts
 
-TODO
+ - [What roles exist in Workspaces?](roles.md)
+ - [Who has editing authority?](workspace-editing-authority.md)

@@ -27,6 +27,12 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/),
 
 -->
 
+## v15.18.0 (2026-09-11)
+
+### Changed
+
+- **Docs**: Updated remaining AKB stub articles to provisional drafts
+
 ## v15.17.0 (2026-09-04)
 
 ### Added
