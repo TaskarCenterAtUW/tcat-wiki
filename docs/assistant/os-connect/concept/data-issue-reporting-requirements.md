@@ -65,4 +65,5 @@ Do not invent required fields or submission routes. Cite current reporting guida
 
 ## Related Concepts
 
-TODO
+- [How are corrections tracked?](correction-tracking.md)
+- [What operational workflows still need improvement?](workflow-improvement-areas.md)

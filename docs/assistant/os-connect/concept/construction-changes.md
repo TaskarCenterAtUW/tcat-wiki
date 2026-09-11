@@ -44,7 +44,6 @@ Construction changes can make a released pedestrian dataset differ from current 
 ## Significance
 
 Construction can temporarily block, reroute, or remove a path and can change entrances, crossings, ramps, and surfaces. A static release may not reflect those changes immediately.
-TODO
 
 ## What This Means
 

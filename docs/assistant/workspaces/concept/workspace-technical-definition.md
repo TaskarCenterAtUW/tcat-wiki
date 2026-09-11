@@ -18,15 +18,20 @@ topics:
     - public-support
 risk_level: low
 authority_level: provisional
-publication_status: stub
-last_reviewed:
+publication_status: draft
+last_reviewed: 2026-09-11
 retrieval_priority: medium
 assistant_behavior:
     allow_inference: false
     requires_citation: true
     abstain_if_missing_context: true
-    do_not_claim: []
-related_pages: []
+    do_not_claim:
+        - A workspace is the same thing as a public OpenStreetMap dataset.
+        - A workspace is a live synchronized view of every source dataset.
+related_pages:
+    - assistant/workspaces/index.md
+    - assistant/workspaces/concept/workspace-as-dataset-copy.md
+    - assistant/workspaces/concept/private-osm.md
 tags:
     - Assistant
 ---
@@ -37,32 +42,33 @@ tags:
 
 ## Short Answer
 
-TODO
+A workspace is a web-based, controlled editing environment for a selected pedestrian or accessibility dataset. Technically, it combines a dataset copy, workspace identity and metadata, access controls, editing tools, and workflows for review and export.
 
 ## Significance
 
-TODO
+This definition distinguishes the collaborative working environment from a source dataset, a viewer, and a published release.
 
 ## What This Means
 
-TODO
+Use the workspace for bounded edits and review; use the documented interfaces and APIs for settings, exports, and downstream publication.
 
 ## What This Does Not Mean
 
-TODO
+A workspace is not automatically a public dataset, a GIS replacement, or a synchronized source database.
 
 ## How To Use This
 
-TODO
+Ask for the workspace environment, source, roles, and intended operation when technical behavior matters.
 
 ## Example
 
-TODO
+A developer uses the workspace's OSM-compatible API and editor to modify a controlled copy, then exports the reviewed result separately.
 
 ## Assistant Guidance
 
-TODO
+Cite the current Workspaces documentation and distinguish observed implementation behavior from the conceptual definition.
 
 ## Related Concepts
 
-TODO
+ - [Is a workspace a copy or the original dataset?](workspace-as-dataset-copy.md)
+ - [What does private OSM mean?](private-osm.md)

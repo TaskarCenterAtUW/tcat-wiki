@@ -64,4 +64,5 @@ Do not generalize one collection workflow to every release. Cite the documented 
 
 ## Related Concepts
 
-TODO
+- [How accurate is OS-CONNECT data?](data-accuracy.md)
+- [How are conflicting data sources handled?](conflicting-data-sources.md)

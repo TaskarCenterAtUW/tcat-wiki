@@ -19,15 +19,20 @@ topics:
     - public-support
 risk_level: low
 authority_level: provisional
-publication_status: stub
-last_reviewed:
+publication_status: draft
+last_reviewed: 2026-09-11
 retrieval_priority: medium
 assistant_behavior:
     allow_inference: false
     requires_citation: true
     abstain_if_missing_context: true
-    do_not_claim: []
-related_pages: []
+    do_not_claim:
+        - A workspace workflow can skip source, review, or publication checks.
+        - Every workspace is ready for immediate public release.
+related_pages:
+    - assistant/workspaces/index.md
+    - assistant/workspaces/concept/recommended-publication-workflow.md
+    - assistant/workspaces/workflow/pre-export-review.md
 tags:
     - Assistant
 ---
@@ -38,32 +43,33 @@ tags:
 
 ## Short Answer
 
-TODO
+Workspaces are best suited to a deliberate cycle: choose a source, create a bounded workspace, edit with appropriate roles and tools, review changes, and export or publish only after validation.
 
 ## Significance
 
-TODO
+This sequence preserves lineage and separates exploratory editing from authoritative release decisions.
 
 ## What This Means
 
-TODO
+Record source and scope, coordinate contributors, review changes, resolve issues, and document the export or publication result.
 
 ## What This Does Not Mean
 
-TODO
+A workspace is not a substitute for governance, field validation, or a release process.
 
 ## How To Use This
 
-TODO
+Adapt the workflow to the dataset, team roles, jurisdiction, and intended destination. Confirm current product steps before operational use.
 
 ## Example
 
-TODO
+A jurisdiction imports a source dataset, invites contributors, reviews changes, and exports a checked version only after unresolved issues are addressed.
 
 ## Assistant Guidance
 
-TODO
+Cite the current workflow pages and abstain when the source, roles, or publication destination are unknown.
 
 ## Related Concepts
 
-TODO
+ - [How should publication happen?](recommended-publication-workflow.md)
+ - [How should review happen before export?](../workflow/pre-export-review.md)

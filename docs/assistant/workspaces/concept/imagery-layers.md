@@ -18,15 +18,19 @@ topics:
     - basemaps
 risk_level: low
 authority_level: provisional
-publication_status: stub
-last_reviewed:
+publication_status: draft
+last_reviewed: 2026-09-11
 retrieval_priority: medium
 assistant_behavior:
     allow_inference: false
     requires_citation: true
     abstain_if_missing_context: true
-    do_not_claim: []
-related_pages: []
+    do_not_claim:
+        - Imagery layers are the editable workspace dataset.
+        - Imagery proves that a feature is current or accessible.
+related_pages:
+    - assistant/workspaces/index.md
+    - assistant/workspaces/concept/imagery-layer-overview.md
 tags:
     - Assistant
 ---
@@ -37,32 +41,32 @@ tags:
 
 ## Short Answer
 
-TODO
+Imagery layers are visual reference layers shown in Workspaces to provide context for editing and review. They are separate from the editable dataset and may be aerial imagery, map tiles, or another configured source.
 
 ## Significance
 
-TODO
+Imagery can help contributors align geometry and inspect visible conditions, but it can be dated, obscured, incomplete, or access-controlled.
 
 ## What This Means
 
-TODO
+Check the layer source, date, coverage, attribution, and active configuration. Use field or local evidence when imagery does not establish a condition.
 
 ## What This Does Not Mean
 
-TODO
+An imagery layer does not certify accessibility, prove ownership, or guarantee that a feature is visible or current.
 
 ## How To Use This
 
-TODO
+Use imagery as one reference while editing; record uncertainty when imagery is ambiguous.
 
 ## Example
 
-TODO
+A mapper uses aerial imagery to align a sidewalk and flags a crossing for field review because trees obscure it.
 
 ## Assistant Guidance
 
-TODO
+Ask which layer and date are involved. Cite configuration guidance and abstain from current-condition claims when imagery context is missing.
 
 ## Related Concepts
 
-TODO
+ - [What are imagery layers?](imagery-layer-overview.md)

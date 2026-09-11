@@ -28,7 +28,7 @@ topics:
 risk_level: low
 authority_level: official
 publication_status: draft
-last_reviewed: 2026-09-04
+last_reviewed: 2026-09-11
 retrieval_priority: high
 assistant_behavior:
     allow_inference: false
@@ -101,8 +101,8 @@ This page should be fetched fresh rather than cached aggressively; its registry 
 
 | Status | Count | Meaning |
 | :----- | ----: | :------ |
-| `stub` | 61 | Frontmatter and heading scaffold exist; body is `TODO` |
-| `draft` | 749 | Content authored; awaiting TCAT editorial review |
+| `stub` | 0 | Frontmatter and heading scaffold exist; body is `TODO` |
+| `draft` | 810 | Content authored; awaiting TCAT editorial review |
 | `published` | 1 | Available in the human-facing site |
 | `archived` | 0 | Retained for agents but not published |
 
@@ -351,7 +351,7 @@ Base: `assistant/flexr/`
 
 | UID | File | Authority Level | Publication Status |
 | :-- | :--- | :-------------- | :----------------- |
-| `7ec7294c-49d5-4756-9eea-141270e02ce2` | `index.md` | provisional | stub |
+| `7ec7294c-49d5-4756-9eea-141270e02ce2` | `index.md` | provisional | draft |
 
 ### Concepts
 
@@ -379,7 +379,7 @@ Base: `assistant/iospointmapper/`
 
 | UID | File | Authority Level | Publication Status |
 | :-- | :--- | :-------------- | :----------------- |
-| `d78da859-7f3a-4dc2-9a85-f1e6e64d66e5` | `index.md` | provisional | stub |
+| `d78da859-7f3a-4dc2-9a85-f1e6e64d66e5` | `index.md` | provisional | draft |
 
 ### Concepts
 
@@ -387,7 +387,7 @@ Base: `assistant/iospointmapper/concept/`
 
 | UID | File | Authority Level | Publication Status |
 | :-- | :--- | :-------------- | :----------------- |
-| `6b474bd0-5310-451b-9a7c-2cd98ea08788` | `device-compatibility.md` | provisional | stub |
+| `6b474bd0-5310-451b-9a7c-2cd98ea08788` | `device-compatibility.md` | provisional | draft |
 
 ### Workflows
 
@@ -395,7 +395,7 @@ Base: `assistant/iospointmapper/workflow/`
 
 | UID | File | Authority Level | Publication Status |
 | :-- | :--- | :-------------- | :----------------- |
-| `b3b2312d-4a16-4ce5-99b2-694172106c79` | `start-collecting-data.md` | provisional | stub |
+| `b3b2312d-4a16-4ce5-99b2-694172106c79` | `start-collecting-data.md` | provisional | draft |
 
 ## LivAbility — Assistant Knowledge Base
 
@@ -407,7 +407,7 @@ Base: `assistant/livability/`
 
 | UID | File | Authority Level | Publication Status |
 | :-- | :--- | :-------------- | :----------------- |
-| `55521d6a-09e0-4475-b657-c130d40e6a6d` | `index.md` | provisional | stub |
+| `55521d6a-09e0-4475-b657-c130d40e6a6d` | `index.md` | provisional | draft |
 
 ### Concepts
 
@@ -418,7 +418,7 @@ Base: `assistant/livability/concept/`
 | `533fabeb-00a6-464e-884a-957fd220ff8d` | `amenity-categories.md` | provisional | draft |
 | `06e48701-4a6f-4c81-a77c-f3d277c64bb0` | `livability-analysis.md` | provisional | draft |
 | `ae864769-1e4c-4b2b-8169-7a690a84f4d3` | `mobility-profiles.md` | provisional | draft |
-| `f09e5084-ff52-4dd1-8cd1-abd4822c56f5` | `poi-source.md` | provisional | stub |
+| `f09e5084-ff52-4dd1-8cd1-abd4822c56f5` | `poi-source.md` | provisional | draft |
 
 ### Workflows
 
@@ -704,10 +704,10 @@ Base: `assistant/os-connect/concept/`
 | `b44fe9ec-972c-4f09-b00d-add4fcb35b9f` | `volunteer-data-contribution.md` | provisional | draft |
 | `76e2b202-4641-46ad-b829-3454ef49125e` | `walkshed-advocacy.md` | provisional | draft |
 | `cffc1c3d-00dc-4c9f-bec9-7e076dfa2eb7` | `walkshed-metrics.md` | explanatory | draft |
-| `680def2a-5e3b-40f2-b33c-018a5c7010f4` | `washington-lessons.md` | provisional | stub |
+| `680def2a-5e3b-40f2-b33c-018a5c7010f4` | `washington-lessons.md` | provisional | draft |
 | `07b716b4-105a-4db8-ac21-63d4f938cb4c` | `width-attribute.md` | explanatory | draft |
-| `7fb805f0-385d-49e0-8db2-26917817853f` | `workflow-improvement-areas.md` | provisional | stub |
-| `eee83492-a21e-4dd3-b964-e617211ac70a` | `z-score-usage.md` | provisional | stub |
+| `7fb805f0-385d-49e0-8db2-26917817853f` | `workflow-improvement-areas.md` | provisional | draft |
+| `eee83492-a21e-4dd3-b964-e617211ac70a` | `z-score-usage.md` | provisional | draft |
 
 ### Workflows
 
@@ -716,7 +716,7 @@ Base: `assistant/os-connect/workflow/`
 | UID | File | Authority Level | Publication Status |
 | :-- | :--- | :-------------- | :----------------- |
 | `8b10916c-8d15-40df-bb2a-78c07c2f2dd9` | `bus-stop-planning.md` | explanatory | draft |
-| `afb34589-73d9-43b8-9ba6-a9450856969f` | `connect-to-gis.md` | provisional | stub |
+| `afb34589-73d9-43b8-9ba6-a9450856969f` | `connect-to-gis.md` | provisional | draft |
 | `649758af-178c-47be-9aed-32ba3c26f8ce` | `download-data.md` | explanatory | draft |
 | `adeefd4e-94b5-4a1a-b82d-9e66e8b957ca` | `import-into-arcgis.md` | provisional | draft |
 | `7260f5de-9bb2-4927-a5ea-9873bad6c3e9` | `report-connectivity-data-error.md` | provisional | draft |
@@ -734,7 +734,7 @@ Base: `assistant/qa-qc/`
 
 | UID | File | Authority Level | Publication Status |
 | :-- | :--- | :-------------- | :----------------- |
-| `19b860bf-74a1-4b1e-8d99-c4e8bd164799` | `index.md` | provisional | stub |
+| `19b860bf-74a1-4b1e-8d99-c4e8bd164799` | `index.md` | provisional | draft |
 
 ### Concepts
 
@@ -827,7 +827,7 @@ Base: `assistant/rapid/`
 
 | UID | File | Authority Level | Publication Status |
 | :-- | :--- | :-------------- | :----------------- |
-| `26f6b603-638f-4077-a878-7fd44ae9bd3e` | `index.md` | provisional | stub |
+| `26f6b603-638f-4077-a878-7fd44ae9bd3e` | `index.md` | provisional | draft |
 
 ### Concepts
 
@@ -1109,7 +1109,7 @@ Base: `assistant/waykeeper/`
 
 | UID | File | Authority Level | Publication Status |
 | :-- | :--- | :-------------- | :----------------- |
-| `aa4e2d4c-c6ea-4f89-8e1c-40fa0ac692cb` | `index.md` | provisional | stub |
+| `aa4e2d4c-c6ea-4f89-8e1c-40fa0ac692cb` | `index.md` | provisional | draft |
 
 ### Concepts
 
@@ -1117,7 +1117,7 @@ Base: `assistant/waykeeper/concept/`
 
 | UID | File | Authority Level | Publication Status |
 | :-- | :--- | :-------------- | :----------------- |
-| `f1507e8d-76ef-497d-9074-075a36561d08` | `waykeeper.md` | provisional | stub |
+| `f1507e8d-76ef-497d-9074-075a36561d08` | `waykeeper.md` | provisional | draft |
 
 ### Workflows
 
@@ -1125,7 +1125,7 @@ Base: `assistant/waykeeper/workflow/`
 
 | UID | File | Authority Level | Publication Status |
 | :-- | :--- | :-------------- | :----------------- |
-| `66f21c66-0578-4289-8d1d-fc8bd2a9adc4` | `use-waykeeper.md` | provisional | stub |
+| `66f21c66-0578-4289-8d1d-fc8bd2a9adc4` | `use-waykeeper.md` | provisional | draft |
 
 ## Workspaces — Assistant Knowledge Base
 
@@ -1164,7 +1164,7 @@ Base: `assistant/workspaces/concept/`
 | `8d0a47ab-0d23-46a5-a1c2-40dcf44cd79f` | `custom-imagery-configuration.md` | provisional | draft |
 | `1eddc192-2453-464d-bb99-207378a6f76b` | `custom-imagery.md` | provisional | draft |
 | `c3edf51c-147c-4bd9-88cc-4a88fc95d71a` | `dataset-lineage-in-tdei.md` | provisional | draft |
-| `3fa9ed5e-d219-4cfa-85c0-e05649f7b617` | `dataset-lineage.md` | provisional | stub |
+| `3fa9ed5e-d219-4cfa-85c0-e05649f7b617` | `dataset-lineage.md` | provisional | draft |
 | `a68282e8-3baa-4acf-ac9d-11d688ae646d` | `edit-attribution.md` | provisional | draft |
 | `60301468-58c6-44f2-a4ae-03615b0b60af` | `edit-auditing.md` | provisional | draft |
 | `ff861a75-487d-4cc1-b2b4-b8b5299d21a3` | `edit-history.md` | provisional | draft |
@@ -1188,7 +1188,7 @@ Base: `assistant/workspaces/concept/`
 | `11cec0d3-3211-4e32-b0d4-08ce0b47a2cd` | `imagery-layer-definition.md` | provisional | draft |
 | `53210438-96ab-4a05-bf4a-65b1bbbc41b2` | `imagery-layer-mechanics.md` | provisional | draft |
 | `f5733eac-79a7-4ced-af6e-6a4439de5d17` | `imagery-layer-overview.md` | provisional | draft |
-| `0bfbd81a-502a-4851-a71b-06b18f0bd80a` | `imagery-layers.md` | provisional | stub |
+| `0bfbd81a-502a-4851-a71b-06b18f0bd80a` | `imagery-layers.md` | provisional | draft |
 | `03b7c67c-e121-4633-a172-1f412bcbc06a` | `imagery-misconfiguration.md` | provisional | draft |
 | `26bb7904-97eb-4059-9834-73d1ca82b317` | `imagery-permissions.md` | provisional | draft |
 | `92405620-7a42-40be-a7b2-32e501ea6635` | `imagery-raw-json-requirement.md` | provisional | draft |
@@ -1213,72 +1213,72 @@ Base: `assistant/workspaces/concept/`
 | `055ad2f1-86d6-48c8-89ba-edd1559cfbe5` | `parallel-workspace-editing.md` | provisional | draft |
 | `65d73d85-848b-449f-b803-b30fc9f9ba3a` | `post-export-behavior.md` | provisional | draft |
 | `624ad449-289a-414e-8580-0ad753b563c1` | `private-osm-explained.md` | provisional | draft |
-| `d8b89de0-a416-4f65-98d9-d01197a458eb` | `private-osm.md` | provisional | stub |
+| `d8b89de0-a416-4f65-98d9-d01197a458eb` | `private-osm.md` | provisional | draft |
 | `51f6b51d-3caf-4def-8352-a3ba9b033ddd` | `project-group-and-workspace-roles.md` | provisional | draft |
 | `791b6ae8-46bb-4813-87b6-795097648c52` | `project-group-definition.md` | provisional | draft |
 | `bfe77757-e525-4299-8dad-fe0b25ee4f8f` | `project-group-operations.md` | provisional | draft |
 | `18acaf54-0272-499e-8be4-a68cfd98a639` | `project-group-referral-access.md` | provisional | draft |
-| `035822ae-e931-4b1b-b96d-a6c68fefde72` | `project-groups.md` | provisional | stub |
+| `035822ae-e931-4b1b-b96d-a6c68fefde72` | `project-groups.md` | provisional | draft |
 | `3745069a-5838-47a4-9d5a-92d8ac191cc6` | `public-availability-of-quest-photos.md` | provisional | draft |
 | `7b6349e8-cb29-405c-b6af-4e92d504192c` | `qa-review-support.md` | provisional | draft |
 | `ebab14b0-6d9c-462e-9655-58c888838778` | `qr-code-name-change.md` | explanatory | draft |
 | `7622fde6-19c3-4a11-8e4a-850a32f66a51` | `quest-definition-url-requirements.md` | provisional | draft |
 | `eff61780-6d79-46f0-be56-5a612d85a908` | `rapid-imagery-integration.md` | provisional | draft |
 | `03dd0763-74cb-4850-aefd-0ac01f4e4920` | `rapid-versions.md` | provisional | draft |
-| `66fd8c0f-6f4f-4894-8224-53ca7f1a2dbb` | `rapid.md` | provisional | stub |
+| `66fd8c0f-6f4f-4894-8224-53ca7f1a2dbb` | `rapid.md` | provisional | draft |
 | `440a81d4-ad61-4e04-932e-befaec565511` | `raster-and-vector-basemaps.md` | provisional | draft |
 | `e7a65d6d-128e-4881-b3d9-22b12b7389d0` | `recommended-publication-workflow.md` | provisional | draft |
-| `ad8c6fcb-1da8-4839-8845-4c5af889faa3` | `recommended-workflows.md` | provisional | stub |
-| `e57a35a2-0d42-47fd-abf7-69ab994ea041` | `review-interface.md` | provisional | stub |
-| `fe334631-ca62-41b1-b4f6-0684ddc62d02` | `roles.md` | provisional | stub |
-| `51b46963-5a2c-4b1d-9e8d-21e76f34f5c2` | `sandbox.md` | provisional | stub |
-| `74d0f041-51ba-4de5-af68-5906d73bb777` | `source-dataset-tracing.md` | provisional | stub |
-| `141cf8e7-ebbf-43db-8fd5-eed7cba54a94` | `stewardship-support.md` | provisional | stub |
-| `fcde475f-1f37-4396-9de9-c630a19af968` | `target-users.md` | provisional | stub |
-| `9dd8cfe2-9912-4127-882f-f31c0accfc61` | `tdei-ecosystem-fit.md` | provisional | stub |
-| `70f4fa39-5c72-4751-9eed-7c0ff2cc236b` | `tdei-vs-workspaces.md` | provisional | stub |
+| `ad8c6fcb-1da8-4839-8845-4c5af889faa3` | `recommended-workflows.md` | provisional | draft |
+| `e57a35a2-0d42-47fd-abf7-69ab994ea041` | `review-interface.md` | provisional | draft |
+| `fe334631-ca62-41b1-b4f6-0684ddc62d02` | `roles.md` | provisional | draft |
+| `51b46963-5a2c-4b1d-9e8d-21e76f34f5c2` | `sandbox.md` | provisional | draft |
+| `74d0f041-51ba-4de5-af68-5906d73bb777` | `source-dataset-tracing.md` | provisional | draft |
+| `141cf8e7-ebbf-43db-8fd5-eed7cba54a94` | `stewardship-support.md` | provisional | draft |
+| `fcde475f-1f37-4396-9de9-c630a19af968` | `target-users.md` | provisional | draft |
+| `9dd8cfe2-9912-4127-882f-f31c0accfc61` | `tdei-ecosystem-fit.md` | provisional | draft |
+| `70f4fa39-5c72-4751-9eed-7c0ff2cc236b` | `tdei-vs-workspaces.md` | provisional | draft |
 | `01a52d4b-20dc-4828-b9be-b79b923b8e60` | `team-invitations.md` | provisional | draft |
 | `4c4c81b4-bf7b-42b8-a5de-c136c599b854` | `teams-vs-project-groups.md` | provisional | draft |
 | `1540374b-e992-403b-9bbd-61d57b48a163` | `teams.md` | provisional | draft |
-| `7673d5e9-a8da-4d70-b425-2f87263a592c` | `tile-layers.md` | provisional | stub |
-| `f8f17ead-342c-4ba6-9912-818688133b22` | `vector-map-preference.md` | provisional | stub |
-| `d39455d8-d275-417b-8d23-99869e2915e8` | `vector-vs-raster-maps.md` | provisional | stub |
-| `8d5016d2-0794-455a-adad-c1d3ae21fbc0` | `viewer-vs-editor-users.md` | provisional | stub |
-| `7017334a-7513-4974-a8d4-37636a3cc266` | `workspace-abstention-boundaries.md` | provisional | stub |
+| `7673d5e9-a8da-4d70-b425-2f87263a592c` | `tile-layers.md` | provisional | draft |
+| `f8f17ead-342c-4ba6-9912-818688133b22` | `vector-map-preference.md` | provisional | draft |
+| `d39455d8-d275-417b-8d23-99869e2915e8` | `vector-vs-raster-maps.md` | provisional | draft |
+| `8d5016d2-0794-455a-adad-c1d3ae21fbc0` | `viewer-vs-editor-users.md` | provisional | draft |
+| `7017334a-7513-4974-a8d4-37636a3cc266` | `workspace-abstention-boundaries.md` | provisional | draft |
 | `a60d4275-cf02-4661-9cc1-40d36ecc539e` | `workspace-and-tdei-boundary.md` | provisional | draft |
 | `5cd6f50d-4bf8-49ec-a4a3-277c6bb468ea` | `workspace-app-access-default.md` | provisional | draft |
-| `da46b16f-aab5-4136-bdc9-d8316b4fd5c0` | `workspace-as-dataset-copy.md` | provisional | stub |
+| `da46b16f-aab5-4136-bdc9-d8316b4fd5c0` | `workspace-as-dataset-copy.md` | provisional | draft |
 | `a2949a44-7dc4-4c66-9e77-22dcc4e07ad3` | `workspace-as-private-osm.md` | provisional | draft |
 | `7fede7be-e034-4c79-aca6-eb01f4716c2c` | `workspace-availability-for-new-mappers.md` | provisional | draft |
 | `4e8fc1fe-a7d3-4130-a071-c37610271c65` | `workspace-copy-and-divergence.md` | provisional | draft |
-| `e2be6bc3-de31-4d51-b9ab-862dfdcc2cb8` | `workspace-creation-mechanics.md` | provisional | stub |
-| `34430d5c-010a-42e3-b3a7-f67b5c5462a5` | `workspace-creation-methods.md` | provisional | stub |
-| `87222545-eb8a-4e8e-a918-d3462951eaca` | `workspace-dashboard.md` | provisional | stub |
-| `2101da94-061a-4cfb-a3bd-022da2d0914a` | `workspace-data-freshness.md` | provisional | stub |
-| `05efc35b-8c38-4868-b0ef-6c2abe120dd9` | `workspace-dataset-divergence.md` | provisional | stub |
+| `e2be6bc3-de31-4d51-b9ab-862dfdcc2cb8` | `workspace-creation-mechanics.md` | provisional | draft |
+| `34430d5c-010a-42e3-b3a7-f67b5c5462a5` | `workspace-creation-methods.md` | provisional | draft |
+| `87222545-eb8a-4e8e-a918-d3462951eaca` | `workspace-dashboard.md` | provisional | draft |
+| `2101da94-061a-4cfb-a3bd-022da2d0914a` | `workspace-data-freshness.md` | provisional | draft |
+| `05efc35b-8c38-4868-b0ef-6c2abe120dd9` | `workspace-dataset-divergence.md` | provisional | draft |
 | `f3682546-e029-4fc0-8ece-e7d566fd32dd` | `workspace-duplicate-copy-risk.md` | provisional | draft |
-| `9b24601c-e489-4d4a-9650-b06adb8324b6` | `workspace-editing-authority.md` | provisional | stub |
+| `9b24601c-e489-4d4a-9650-b06adb8324b6` | `workspace-editing-authority.md` | provisional | draft |
 | `9ec9cef6-0635-4081-b519-f8dffe9a708a` | `workspace-editing-boundary.md` | provisional | draft |
-| `b8f25f3c-5640-4e76-9c60-00339a908f46` | `workspace-export-and-publication-caveats.md` | provisional | stub |
+| `b8f25f3c-5640-4e76-9c60-00339a908f46` | `workspace-export-and-publication-caveats.md` | provisional | draft |
 | `4fdc6aaa-e1f6-4a51-9d44-f8fa1b8fa392` | `workspace-extract.md` | provisional | draft |
-| `6ec02d37-b8ef-4919-aa7b-b3e33e2b37ef` | `workspace-id.md` | provisional | stub |
+| `6ec02d37-b8ef-4919-aa7b-b3e33e2b37ef` | `workspace-id.md` | provisional | draft |
 | `7bc49a18-d5ce-4c01-a99f-4561b8b49ddb` | `workspace-metadata-and-lineage.md` | provisional | draft |
-| `fa5ae824-1130-4515-96db-76a4fa2e5c61` | `workspace-metadata.md` | provisional | stub |
+| `fa5ae824-1130-4515-96db-76a4fa2e5c61` | `workspace-metadata.md` | provisional | draft |
 | `bb08cf9c-20bf-4b06-8252-8bd791093584` | `workspace-per-project-model.md` | provisional | draft |
 | `f88d9666-fa8a-4e10-a8ad-0d1c74b6875f` | `workspace-public-vs-private-data.md` | provisional | draft |
 | `4cd21f12-6dd9-49e7-bb65-4350ae9de843` | `workspace-review-and-publication-gates.md` | provisional | draft |
 | `5a0750a4-cf38-40e9-8eed-028db0af003c` | `workspace-review-interface.md` | provisional | draft |
 | `5107a4c5-ef03-449d-bb7a-107a873b1a4c` | `workspace-roles-and-project-roles.md` | provisional | draft |
 | `3ed3b5c7-4bec-4e82-8f0a-676f7393ce02` | `workspace-source-options.md` | provisional | draft |
-| `2e3b7419-f07a-4770-b232-1f10799c536e` | `workspace-tdei-isolation.md` | provisional | stub |
+| `2e3b7419-f07a-4770-b232-1f10799c536e` | `workspace-tdei-isolation.md` | provisional | draft |
 | `01ed2c86-c164-45c2-aa45-f8ec8de639c1` | `workspace-team-membership.md` | provisional | draft |
 | `298fc015-dc9c-41f6-a4ad-438c01f375ed` | `workspace-teams.md` | provisional | draft |
-| `10fa8424-575f-4d06-b988-c879ba2fa47a` | `workspace-technical-definition.md` | provisional | stub |
-| `aec7bb23-e9b3-4ae8-bb73-551582902887` | `workspaces-os-connect-relationship.md` | provisional | stub |
-| `365b14fc-1c9b-4aa4-987d-32301dd2e458` | `workspaces-osm-limitations.md` | provisional | stub |
-| `f9f0667d-f55e-49fd-bcde-002bb8fd5a7f` | `workspaces-tdei-portal-relationship.md` | provisional | stub |
-| `077fab37-97a4-494e-a5c4-0066948ca98d` | `workspaces-tdei-separation.md` | provisional | stub |
-| `2c24b2c8-2964-4425-a473-7edaff7e439b` | `workspaces-vs-gis-decision.md` | provisional | stub |
+| `10fa8424-575f-4d06-b988-c879ba2fa47a` | `workspace-technical-definition.md` | provisional | draft |
+| `aec7bb23-e9b3-4ae8-bb73-551582902887` | `workspaces-os-connect-relationship.md` | provisional | draft |
+| `365b14fc-1c9b-4aa4-987d-32301dd2e458` | `workspaces-osm-limitations.md` | provisional | draft |
+| `f9f0667d-f55e-49fd-bcde-002bb8fd5a7f` | `workspaces-tdei-portal-relationship.md` | provisional | draft |
+| `077fab37-97a4-494e-a5c4-0066948ca98d` | `workspaces-tdei-separation.md` | provisional | draft |
+| `2c24b2c8-2964-4425-a473-7edaff7e439b` | `workspaces-vs-gis-decision.md` | provisional | draft |
 | `8de5fa11-c573-42d1-8dc8-5ab84d908bbd` | `workspaces.md` | provisional | draft |
 
 ### Workflows
@@ -1287,16 +1287,16 @@ Base: `assistant/workspaces/workflow/`
 
 | UID | File | Authority Level | Publication Status |
 | :-- | :--- | :-------------- | :----------------- |
-| `4a67f7be-0bcb-42bb-a559-414137cc6789` | `choose-editor.md` | provisional | stub |
+| `4a67f7be-0bcb-42bb-a559-414137cc6789` | `choose-editor.md` | provisional | draft |
 | `104ba052-d073-4edc-9e3c-b6f3077a4fc3` | `configure-app-enabled-workspace.md` | provisional | draft |
 | `bbdf5d6a-a9ee-4a83-a0e7-3a3c65d149a4` | `configure-imagery-layers.md` | provisional | draft |
 | `18a7a7a8-e0b3-4b61-ba74-eb57506b261b` | `create-a-workspace-from-tdei.md` | provisional | draft |
 | `9e396bd0-b847-4f5a-9d77-48d8acc76153` | `create-workspace-from-osm.md` | provisional | draft |
 | `f3c427a3-f360-4bfe-a808-981bd74208f4` | `create-workspace-from-tdei-dataset.md` | provisional | draft |
-| `68dbba63-5f2c-4d43-bb91-39114a546e56` | `create-workspace-from-tdei.md` | provisional | stub |
-| `299c33bf-9f17-4b43-a5e9-91cf8b24ff82` | `create-workspace.md` | provisional | stub |
+| `68dbba63-5f2c-4d43-bb91-39114a546e56` | `create-workspace-from-tdei.md` | provisional | draft |
+| `299c33bf-9f17-4b43-a5e9-91cf8b24ff82` | `create-workspace.md` | provisional | draft |
 | `0a1a84b6-b514-4aa8-855d-d51fe906df54` | `edit-accessibility-features-in-a-workspace.md` | provisional | draft |
-| `e82a23a4-e888-4999-9454-3b870772536f` | `export-workspace-edits-to-tdei.md` | provisional | stub |
+| `e82a23a4-e888-4999-9454-3b870772536f` | `export-workspace-edits-to-tdei.md` | provisional | draft |
 | `e6537f55-e706-4a85-bcfe-d3f11da10a17` | `export-workspace-locally.md` | provisional | draft |
 | `7693f966-2c3d-4712-b725-5484d75073fa` | `export-workspace-to-tdei.md` | provisional | draft |
 | `9afa9a04-a794-4066-967f-6a67dc64286d` | `export-workspace.md` | provisional | draft |
@@ -1304,11 +1304,11 @@ Base: `assistant/workspaces/workflow/`
 | `9781d11f-5feb-4395-ad48-61a7f94d30de` | `import-osm-data-into-workspaces.md` | provisional | draft |
 | `4c35b3d6-cbad-43e0-9cb5-6cc7b0a56540` | `invite-to-workspace-team.md` | explanatory | draft |
 | `7bb47f06-a390-4389-8837-c4712bd76514` | `open-dataset-for-inspection.md` | provisional | draft |
-| `cb452c73-4317-40c1-82d2-5f2fe365b58f` | `pre-export-review.md` | provisional | stub |
-| `07af8eac-2ec6-428b-963d-79b6aaffaa2d` | `publish-jurisdiction-updates.md` | provisional | stub |
+| `cb452c73-4317-40c1-82d2-5f2fe365b58f` | `pre-export-review.md` | provisional | draft |
+| `07af8eac-2ec6-428b-963d-79b6aaffaa2d` | `publish-jurisdiction-updates.md` | provisional | draft |
 | `85d9b699-b1ce-4438-b4af-e859f36014c7` | `review-quest-contributions.md` | provisional | draft |
-| `c17f4997-b289-43b3-a0ea-50329ed41f50` | `review-workspace-edits.md` | provisional | stub |
-| `0789d812-e0dd-44bd-9b82-85c518e94c25` | `search-project-groups.md` | provisional | stub |
+| `c17f4997-b289-43b3-a0ea-50329ed41f50` | `review-workspace-edits.md` | provisional | draft |
+| `0789d812-e0dd-44bd-9b82-85c518e94c25` | `search-project-groups.md` | provisional | draft |
 | `5557b51a-9b2d-4dc4-b0cc-767a4c0d1419` | `set-up-tasking-manager-project.md` | explanatory | draft |
-| `bf8e1e70-e00c-4693-8e6c-714dd28bad26` | `use-workspaces-for-community-validation.md` | provisional | stub |
-| `ea90f6c5-3f56-4df0-aef5-db433e5f5aa3` | `use-workspaces-for-jurisdiction-stewardship.md` | provisional | stub |
+| `bf8e1e70-e00c-4693-8e6c-714dd28bad26` | `use-workspaces-for-community-validation.md` | provisional | draft |
+| `ea90f6c5-3f56-4df0-aef5-db433e5f5aa3` | `use-workspaces-for-jurisdiction-stewardship.md` | provisional | draft |

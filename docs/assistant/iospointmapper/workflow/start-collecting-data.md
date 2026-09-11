@@ -18,15 +18,18 @@ topics:
     - field-data-collection
 risk_level: low
 authority_level: provisional
-publication_status: stub
-last_reviewed: 2026-07-02
+publication_status: draft
+last_reviewed: 2026-09-11
 retrieval_priority: medium
 assistant_behavior:
     allow_inference: false
     requires_citation: true
     abstain_if_missing_context: true
-    do_not_claim: []
-related_pages: []
+    do_not_claim:
+        - Installing iOSPointMapper alone creates a valid survey dataset.
+        - Collected observations are automatically published to TDEI.
+related_pages:
+    - assistant/iospointmapper/index.md
 tags:
     - Assistant
 ---
@@ -37,32 +40,36 @@ tags:
 
 ## Short Answer
 
-TODO
+Start a collection by confirming the supported device and app version, opening the intended project or survey, checking permissions, and testing one observation before beginning the full field session. The exact controls and upload process must come from current iOSPointMapper instructions.
 
 ## Significance
 
-TODO
+A short preflight reduces lost observations and prevents a team from collecting data under the wrong project or device configuration.
 
 ## What This Means
 
-TODO
+ - Verify device compatibility, app version, storage, battery, and required permissions.
+ - Select the intended collection task and confirm its location or project context.
+ - Capture and review a test observation before the full survey.
+ - Follow the documented save, sync, or export procedure after collection.
 
 ## What This Does Not Mean
 
-TODO
+Beginning a collection does not prove that observations were saved, synchronized, validated, or published. It also does not establish that an unverified device is supported.
 
 ## How To Use This
 
-TODO
+Use the current product workflow and document the app version and collection context. If a control or upload result is missing, preserve the error details and seek product-specific support.
 
 ## Example
 
-TODO
+A field mapper tests one observation, confirms that its location and attributes are correct, and only then proceeds with the planned route.
 
 ## Assistant Guidance
 
-TODO
+The available repository evidence does not specify the current screen sequence. Ask for the device, app version, project, and failure point; cite current instructions or abstain.
 
 ## Related Concepts
 
-TODO
+ - [iOSPointMapper — Assistant Knowledge Base](../index.md)
+ - [What devices are compatible with iOSPointMapper?](../concept/device-compatibility.md)

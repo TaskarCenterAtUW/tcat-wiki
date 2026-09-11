@@ -19,15 +19,20 @@ topics:
     - publication-workflow
 risk_level: medium
 authority_level: provisional
-publication_status: stub
-last_reviewed:
+publication_status: draft
+last_reviewed: 2026-09-11
 retrieval_priority: medium
 assistant_behavior:
     allow_inference: false
     requires_citation: true
     abstain_if_missing_context: true
-    do_not_claim: []
-related_pages: []
+    do_not_claim:
+        - A workspace sandbox is automatically synchronized with its source.
+        - Sandbox edits are automatically public or authoritative.
+related_pages:
+    - assistant/workspaces/index.md
+    - assistant/workspaces/concept/workspace-as-dataset-copy.md
+    - assistant/workspaces/concept/workspace-public-vs-private-data.md
 tags:
     - Assistant
 ---
@@ -38,32 +43,33 @@ tags:
 
 ## Short Answer
 
-TODO
+In Workspaces, a sandbox is a controlled editing environment where a team can inspect and improve a dataset before an authorized export or publication decision.
 
 ## Significance
 
-TODO
+Sandboxing lets contributors work without treating every exploratory edit as an immediate public release. It also makes review and lineage important.
 
 ## What This Means
 
-TODO
+Use a sandbox to bound editing, assign roles, track source and changes, and establish review gates before release.
 
 ## What This Does Not Mean
 
-TODO
+A sandbox is not automatically private from every user, synchronized with its source, or suitable for unreviewed public claims.
 
 ## How To Use This
 
-TODO
+Confirm visibility, membership, source version, and export destination for the specific workspace.
 
 ## Example
 
-TODO
+A team tests a proposed sidewalk correction in a workspace, reviews it with local evidence, and exports only the approved result.
 
 ## Assistant Guidance
 
-TODO
+Cite workspace governance and abstain when visibility or publication state is unclear.
 
 ## Related Concepts
 
-TODO
+ - [Is a workspace a copy or the original dataset?](workspace-as-dataset-copy.md)
+ - [How does public and private data work?](workspace-public-vs-private-data.md)

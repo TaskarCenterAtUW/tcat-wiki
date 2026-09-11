@@ -18,15 +18,20 @@ topics:
     - operational-workflows
 risk_level: medium
 authority_level: provisional
-publication_status: stub
-last_reviewed:
+publication_status: draft
+last_reviewed: 2026-09-11
 retrieval_priority: medium
 assistant_behavior:
     allow_inference: false
     requires_citation: true
     abstain_if_missing_context: true
-    do_not_claim: []
-related_pages: []
+    do_not_claim:
+        - Workspaces replaces a jurisdiction's data governance or maintenance responsibilities.
+        - Workspace publication proves that all local accessibility data is complete.
+related_pages:
+    - assistant/workspaces/index.md
+    - assistant/workspaces/concept/stewardship-support.md
+    - assistant/workspaces/workflow/pre-export-review.md
 tags:
     - Assistant
 ---
@@ -37,32 +42,33 @@ tags:
 
 ## Short Answer
 
-TODO
+Use Workspaces for jurisdiction stewardship by defining the responsible team, selecting a source and scope, assigning editing and review roles, tracking changes and lineage, and exporting or publishing only through the jurisdiction's approved process.
 
 ## Significance
 
-TODO
+A repeatable stewardship workflow helps maintain accessibility data across contributors, releases, and changing local conditions.
 
 ## What This Means
 
-TODO
+Establish ownership, create or update the workspace, coordinate edits, review evidence and conflicts, document limitations, and verify the resulting release.
 
 ## What This Does Not Mean
 
-TODO
+Workspaces does not replace local authority, field validation, maintenance resources, or legal review.
 
 ## How To Use This
 
-TODO
+Tailor roles and gates to the jurisdiction's governance and dataset risk. Record the environment, source version, and release outcome.
 
 ## Example
 
-TODO
+A city assigns a data steward and reviewers, accepts verified community edits in a workspace, and documents the resulting TDEI release.
 
 ## Assistant Guidance
 
-TODO
+Cite current Workspaces and TDEI workflows; abstain when ownership, source, or publication rules are missing.
 
 ## Related Concepts
 
-TODO
+ - [How does Workspaces support stewardship?](../concept/stewardship-support.md)
+ - [How should review happen before export?](pre-export-review.md)

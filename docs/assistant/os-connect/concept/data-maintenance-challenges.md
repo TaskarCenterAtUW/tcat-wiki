@@ -64,4 +64,5 @@ Describe maintenance needs without assigning unsupported ownership or cadence. C
 
 ## Related Concepts
 
-TODO
+- [How are construction changes handled?](construction-changes.md)
+- [How are corrections tracked?](correction-tracking.md)

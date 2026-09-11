@@ -19,15 +19,20 @@ topics:
     - workspace-management
 risk_level: low
 authority_level: provisional
-publication_status: stub
-last_reviewed:
+publication_status: draft
+last_reviewed: 2026-09-11
 retrieval_priority: medium
 assistant_behavior:
     allow_inference: false
     requires_citation: true
     abstain_if_missing_context: true
-    do_not_claim: []
-related_pages: []
+    do_not_claim:
+        - Finding a project group grants membership or workspace access.
+        - Project-group names alone prove that a group is active or authoritative.
+related_pages:
+    - assistant/workspaces/index.md
+    - assistant/workspaces/concept/project-groups.md
+    - assistant/workspaces/concept/project-group-definition.md
 tags:
     - Assistant
 ---
@@ -38,32 +43,33 @@ tags:
 
 ## Short Answer
 
-TODO
+Search for a project group using the current Workspaces or TDEI interface, confirm the group name and identifier, and verify membership or invitation requirements before using it to create or manage a workspace.
 
 ## Significance
 
-TODO
+Selecting the wrong project group can place a workspace under the wrong stewardship or make it unavailable to the intended team.
 
 ## What This Means
 
-TODO
+Search by the documented name or identifier, confirm jurisdiction and purpose, and check the user's role before proceeding.
 
 ## What This Does Not Mean
 
-TODO
+Finding a project group does not grant access, prove its permissions, or identify the correct dataset automatically.
 
 ## How To Use This
 
-TODO
+Ask for the environment, group name, and intended workspace action when search results are ambiguous.
 
 ## Example
 
-TODO
+A coordinator confirms the matching jurisdictional project group before creating a workspace and inviting reviewers.
 
 ## Assistant Guidance
 
-TODO
+Cite current interface guidance and abstain from live membership claims without access context.
 
 ## Related Concepts
 
-TODO
+ - [What are project groups?](../concept/project-groups.md)
+ - [What is a project group?](../concept/project-group-definition.md)

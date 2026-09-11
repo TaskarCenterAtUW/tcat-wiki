@@ -64,4 +64,5 @@ Do not claim that context is automatically complete or personalized. Cite the cu
 
 ## Related Concepts
 
-TODO
+- [How accurate is OS-CONNECT data?](data-accuracy.md)
+- [What routing assumptions apply?](routing-assumptions.md)

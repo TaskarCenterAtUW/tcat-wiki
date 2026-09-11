@@ -64,4 +64,5 @@ Do not invent an accuracy rate. Cite release-specific evidence, describe the mea
 
 ## Related Concepts
 
-TODO
+- [How was OS-CONNECT collected?](data-collection-history.md)
+- [What makes accessibility data difficult to maintain?](data-maintenance-challenges.md)
