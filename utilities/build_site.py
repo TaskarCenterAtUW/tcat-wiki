@@ -313,8 +313,14 @@ def run_zensical_build(build_config=BUILD_CONFIG_PATH):
 
 
 def run_zensical_serve(build_config=BUILD_CONFIG_PATH):
+    # Zensical 0.0.62 resolves the serve configuration path inside its
+    # watcher. Passing an absolute Windows path makes the watcher fail with
+    # FileNotFoundError, even though the same config builds successfully.
+    # The preview wrapper runs from REPO_ROOT, so give Zensical a relative
+    # config path, matching the documented CLI invocation.
+    config_arg = Path(build_config).resolve().relative_to(REPO_ROOT)
     subprocess.run(
-        [sys.executable, "-m", "zensical", "serve", "-f", str(build_config)],
+        [sys.executable, "-m", "zensical", "serve", "-f", str(config_arg)],
         cwd=REPO_ROOT, check=True,
     )
 
