@@ -14,7 +14,8 @@ edit_uri = "edit/main/docs/"
 extra_css = [
     "stylesheets/extra.css",
     "https://unpkg.com/katex@0/dist/katex.min.css",
-    "https://cdn.jsdelivr.net/npm/img-comparison-slider@8/dist/styles.css"
+    "https://cdn.jsdelivr.net/npm/img-comparison-slider@8/dist/styles.css",
+    "https://unpkg.com/glightbox@3/dist/css/glightbox.min.css"
 ]
 extra_javascript = [
     "javascripts/extra.js",

@@ -283,3 +283,26 @@ def test_main_handles_keyboard_interrupt_during_serve(monkeypatch, capsys):
 
     assert bs.main(["--serve"]) == 130
     assert capsys.readouterr().err == "\nOperation canceled.\n"
+
+
+def test_run_zensical_serve_uses_repository_relative_config(monkeypatch, tmp_path):
+    repo_root = tmp_path / "repo"
+    repo_root.mkdir()
+    build_config = repo_root / "zensical.build.toml"
+    build_config.write_text("[project]\nsite_name = \"Test\"\n", encoding="utf-8")
+
+    monkeypatch.setattr(bs, "REPO_ROOT", repo_root)
+
+    calls = []
+
+    def fake_run(command, **kwargs):
+        calls.append((command, kwargs))
+
+    monkeypatch.setattr(bs.subprocess, "run", fake_run)
+
+    bs.run_zensical_serve(build_config)
+
+    assert calls == [(
+        [sys.executable, "-m", "zensical", "serve", "-f", "zensical.build.toml"],
+        {"cwd": repo_root, "check": True},
+    )]

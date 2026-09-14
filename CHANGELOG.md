@@ -27,6 +27,17 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/),
 
 -->
 
+## v15.19.0 (2026-09-14)
+
+### Changed
+
+- **Core**: Bumped Zensical to 0.0.62
+
+### Fixed
+
+- **Utilities**: Fixed the Windows preview wrapper's Zensical configuration path
+- **Core**: Kept GLightbox styles available across instant navigation
+
 ## v15.18.0 (2026-09-11)
 
 ### Changed
