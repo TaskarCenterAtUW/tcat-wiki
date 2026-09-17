@@ -161,7 +161,7 @@
 *[MDOT]: Michigan Department of Transportation
 *[MEF]: Maximum Extent Feasible
 *[MGRS]: Military Grid Reference System
-*[MIC]: Manufacturing Industrial Center
+*[MIC]: Manufacturing Industrial Center / Mobility Innovation Center
 *[MIRE]: Model Inventory of Roadway Elements
 *[ML]: Machine Learning
 *[MLLM]: Multimodal Large Language Model
