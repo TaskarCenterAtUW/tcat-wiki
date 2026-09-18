@@ -52,3 +52,7 @@ This tutorial explains how to directly export a dataset in `.osm` format from Wo
 #### [Workspaces User Manual](user-manual/index.md)
 
 This user manual explains how to use the TDEI Workspaces platform.
+
+#### [Workspaces JOSM Settings Guide](tutorial/connect-josm.md)
+
+This guide explains how to use the [Workspaces JOSM Settings Script](https://github.com/TaskarCenterAtUW/tdei-tools/blob/main/utilities/workspaces-josm.ps1) from [TDEI Tools](https://github.com/TaskarCenterAtUW/tdei-tools/) to set up JOSM to enable editing of Workspaces.
