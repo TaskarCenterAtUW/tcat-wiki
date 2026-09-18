@@ -27,6 +27,13 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/),
 
 -->
 
+## v16.0.0 (2026-09-18)
+
+### Changed
+
+- **Wiki**: Moved JOSM settings tutorial under Workspaces
+- **Wiki**: Removed top-level JOSM section
+
 ## v15.19.0 (2026-09-14)
 
 ### Changed

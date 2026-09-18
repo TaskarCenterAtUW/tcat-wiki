@@ -100,7 +100,7 @@ Examples include:
 
 - [Workspaces Overview](https://taskarcenteratuw.github.io/tcat-wiki/workspaces/): Collaborative editing environment supporting agencies, researchers, volunteers, and community members in maintaining pedestrian accessibility datasets
 - [Rapid Editor User Manual](https://taskarcenteratuw.github.io/tcat-wiki/rapid/user-manual/): Editing OpenSidewalks data using the integrated Rapid editor
-- [JOSM Settings Guide](https://taskarcenteratuw.github.io/tcat-wiki/josm/workspaces-josm-settings/): Configure JOSM for editing datasets within TDEI Workspaces
+- [Connecting JOSM to Workspaces Tutorial](https://taskarcenteratuw.github.io/tcat-wiki/workspaces/tutorial/connect-josm/): Configure JOSM for editing datasets within TDEI Workspaces
 - [AVIV ScoutRoute User Manual](https://taskarcenteratuw.github.io/tcat-wiki/aviv-scoutroute/user-manual/): Collect accessibility observations using the AVIV ScoutRoute mobile application
 - [AVIV ScoutRoute Quest Definition Guides](https://taskarcenteratuw.github.io/tcat-wiki/aviv-scoutroute/quests/): Create and configure structured community data collection workflows
 

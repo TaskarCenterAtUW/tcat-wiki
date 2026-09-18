@@ -25,8 +25,6 @@ Note: You must have a [TDEI Portal](https://portal.tdei.us/) account.
 1. Download the [Workspaces JOSM Settings Script](https://github.com/TaskarCenterAtUW/tdei-tools/blob/main/utilities/workspaces-josm.ps1) from [TDEI Tools](https://github.com/TaskarCenterAtUW/tdei-tools/).
 2. Run the script by right clicking and selecting "Run with PowerShell"
 
-![Screenshot of the downloaded Workspaces JOSM Settings Script, after right clicking to pop up a menu containing the "Run with PowerShell" option.](../../resources/images/workspaces-josm/run-script.png)
-
 Now, follow the script's instructions and enter the requested information:
 
 #### 2. Determine your environment
@@ -39,42 +37,28 @@ Now, follow the script's instructions and enter the requested information:
 
 #### 3. Enter your TDEI credentials
 
-1. Enter the credentials for the account you use to sign into both the [TDEI Portal](https://portal.tdei.us/) and [Workspaces](https://workspaces.sidewalks.washington.edu/).
+Enter the credentials for the account you use to sign into both the [TDEI Portal](https://portal.tdei.us/) and [Workspaces](https://workspaces.sidewalks.washington.edu/).
 
 #### 4. Find your Workspace ID
 
-1. Extract the ID from the Workspace link, in this case `125`:
+Extract the ID from the Workspace link, in this case `125`:
 
 `https://workspaces.sidewalks.washington.edu/workspace/125/settings`
 
 #### 5. Generate JOSM Settings
 
-1. After entering the Workspace ID, the script will authenticate you and output two strings:
-
-![Screenshot of the downloaded Workspaces JOSM Settings Script, after right clicking to pop up a menu containing the "Run with PowerShell" option.](../../resources/images/workspaces-josm/workspaces-josm.png)
+After entering the Workspace ID, the script will authenticate you and output two strings.
 
 #### 6. Apply JOSM Settings
 
 1. Open JOSM's "Preferences" Menu
-
-![Screenshot of the JOSM Preferences menu icon.](../../resources/images/workspaces-josm/josm-preferences.png)
-
-1. Navigate to the "OSM Server" menu
-
-![Screenshot of the "OSM Server" submenu in the JOSM Preferences menu.](../../resources/images/workspaces-josm/josm-osm-server.png)
-
-1. If present, click "Remove token"
-
-![Screenshot of the "Remove token" button in the JOSM Preferences menu.](../../resources/images/workspaces-josm/josm-remove-token.png)
-
-1. Uncheck _"Use the default OSM server URL"_
-2. Paste in the generated URL from the script
-3. Select _"Use Basic Authentication"_
-4. Paste in the generated Access Token in the _"OSM username"_ field
-5. Enter `none` in the _"OSM password"_ field
-
-![Screenshot of the "OSM server" submenu in the JOSM Preferences menu.](../../resources/images/workspaces-josm/josm-settings.png)
-
-1. Save your settings changes.
+2. Navigate to the "OSM Server" menu
+3. If present, click "Remove token"
+4. Uncheck _"Use the default OSM server URL"_
+5. Paste in the generated URL from the script
+6. Select _"Use Basic Authentication"_
+7. Paste in the generated Access Token in the _"OSM username"_ field
+8. Enter `none` in the _"OSM password"_ field
+9. Save your settings changes.
 
 You should now be able to use JOSM to edit the specified Workspace!

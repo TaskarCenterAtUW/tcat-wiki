@@ -136,6 +136,10 @@ This user manual explains how to use the TDEI Walksheds tool.
 
 #### Tutorials
 
+##### [Workspaces JOSM Settings Guide](../workspaces/tutorial/connect-josm.md)
+
+This guide explains how to use the [Workspaces JOSM Settings Script](https://github.com/TaskarCenterAtUW/tdei-tools/blob/main/utilities/workspaces-josm.ps1) from [TDEI Tools](https://github.com/TaskarCenterAtUW/tdei-tools/) to set up JOSM to enable editing of Workspaces.
+
 ##### [Import OSM Data into Workspaces](../workspaces/tutorial/osm-to-workspaces.md)
 
 This tutorial explains how to download an area of interest from OpenStreetMap, convert it to the OpenSidewalks format, and upload it to Workspaces.
@@ -147,7 +151,3 @@ This tutorial explains how to directly export a dataset in `.osm` format from Wo
 #### [Workspaces User Manual](../workspaces/user-manual/index.md)
 
 This user manual explains how to use the TDEI Workspaces platform.
-
-#### [Workspaces JOSM Settings Guide](../workspaces/tutorial/connect-josm.md)
-
-This guide explains how to use the [Workspaces JOSM Settings Script](https://github.com/TaskarCenterAtUW/tdei-tools/blob/main/utilities/workspaces-josm.ps1) from [TDEI Tools](https://github.com/TaskarCenterAtUW/tdei-tools/) to set up JOSM to enable editing of Workspaces.
