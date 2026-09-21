@@ -121,7 +121,7 @@ The table below maps each abbreviated form to its full expansion. Entries are so
 | CAD | Computer-Aided Design |
 | CADD | Computer-Aided Design and Drafting |
 | Cal-ITP | California Integrated Travel Project |
-| CALACT | California Association of Coordinated Transportation |
+| CALACT | California Association for Coordinated Transportation |
 | CC0 | Creative Commons Zero |
 | CCMS | Component Content Management System |
 | CDP | Census-Designated Place |
