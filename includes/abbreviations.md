@@ -234,6 +234,7 @@
 *[SCLIO]: Specialized Community-Led Impact Opportunity
 *[SDI]: Spatial Data Infrastructure
 *[SDOT]: Seattle Department of Transportation
+*[SEPTA]: Southeastern Pennsylvania Transportation Authority
 *[SFT]: Supervised Fine-Tuning
 *[SHSP]: Strategic Highway Safety Plan
 *[SIGIR]: Special Interest Group on Information Retrieval
