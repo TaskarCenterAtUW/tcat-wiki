@@ -68,7 +68,6 @@ Workspaces is where per-feature stewardship happens. TDEI handles whole-dataset 
 | Editor                                               | Typical use                      | Notes from workshop                                                                                      |
 | :--------------------------------------------------- | :------------------------------- | :------------------------------------------------------------------------------------------------------- |
 | [Rapid](../../../rapid/index.md)                     | Web-based editing in the browser | Workspaces supports **Rapid 2** and **Rapid 3**; Rapid 2 was used as the more stable option when demoing |
-| [JOSM](../../../josm/index.md)                       | Desktop editing                  | Works because Workspaces exposes modified OSM-style APIs                                                 |
 | [AVIV ScoutRoute](../../../aviv-scoutroute/index.md) | Mobile / field-style capture     | Often used for on-the-ground reporting; managers may follow up in Rapid for geometry                     |
 
 Open a workspace from the dashboard, then launch the editor (for example **Open in Rapid 2**). The map shows **only that workspace's data**, not the global OSM planet — otherwise the experience matches familiar OSM editing (zoom, select features, edit geometry, edit tags, add features).
