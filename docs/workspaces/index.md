@@ -10,8 +10,8 @@ title: Workspaces
 
 ---
 
-![TDEI Workspaces dashboard showing the Covington, WA, US OSW workspace selected, with a map preview of the Covington area and workspace metadata including creation date and project group ID](../resources/images/workspaces/workspaces-light.png#only-light)
-![TDEI Workspaces dashboard showing the Covington, WA, US OSW workspace selected, with a map preview of the Covington area and workspace metadata including creation date and project group ID](../resources/images/workspaces/workspaces-light.png#only-dark)
+![TDEI Workspaces landing page with the platform description and Sign In button](../resources/images/workspaces/01-landing-light.avif#only-light)
+![TDEI Workspaces landing page with the platform description and Sign In button](../resources/images/workspaces/01-landing-dark.avif#only-dark)
 
 ---
 

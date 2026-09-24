@@ -107,4 +107,4 @@ A project lead opens **Settings → Teams**, creates a team named **Downtown acc
 - [Configure imagery layers](configure-imagery-layers.md)
 - [Project groups (Workspaces)](../concept/project-groups.md)
 - [How do team invitations work?](../concept/team-invitations.md)
-- [Workspace Settings](../../../workspaces/user-manual/settings.md)
+- [Workspace Settings](../../../workspaces/user-manual/settings/index.md)

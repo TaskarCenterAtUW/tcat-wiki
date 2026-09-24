@@ -1233,14 +1233,24 @@ nav = [
         {"User Manual" = [
             "workspaces/user-manual/index.md",
             {"Getting Started" = "workspaces/user-manual/getting-started.md"},
-            {"Create a Workspace" = "workspaces/user-manual/create-workspace.md"},
+            {"Create a Workspace" = "workspaces/user-manual/create.md"},
             {"Dashboard" = "workspaces/user-manual/dashboard.md"},
-            {"Workspace Settings" = "workspaces/user-manual/workspace-settings.md"},
+            {"Workspace Review" = "workspaces/user-manual/review.md"},
             {"Export a Workspace" = "workspaces/user-manual/export.md"},
-            {"Workspace Settings — Members" = "workspaces/user-manual/workspace-members.md"},
-            {"Workspace Settings — Teams" = "workspaces/user-manual/workspace-teams.md"},
-            {"Workspace Review" = "workspaces/user-manual/workspace-review.md"},
-            {"Workspace Projects" = "workspaces/user-manual/projects.md"}
+            {"Settings" = [
+                "workspaces/user-manual/settings/index.md",
+                {"Workspace Settings — General" = "workspaces/user-manual/settings/general.md"},
+                {"Workspace Settings — Members" = "workspaces/user-manual/settings/members.md"},
+                {"Workspace Settings — Teams" = "workspaces/user-manual/settings/teams.md"}
+            ]},
+            {"Projects" = [
+                "workspaces/user-manual/projects/index.md",
+                {"Create a Project" = "workspaces/user-manual/projects/create.md"},
+                {"View a Project" = "workspaces/user-manual/projects/view.md"},
+                {"Edit a Project" = "workspaces/user-manual/projects/edit.md"},
+                {"Contribute to a Project" = "workspaces/user-manual/projects/contribute.md"},
+                {"Validate for a Project" = "workspaces/user-manual/projects/validate.md"}
+            ]}
         ]},
         {"Tutorial" = [
             {"Workspaces JOSM Settings Guide" = "workspaces/tutorial/connect-josm.md"},

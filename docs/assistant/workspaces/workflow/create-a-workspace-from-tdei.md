@@ -99,7 +99,7 @@ TDEI is built to manage **whole datasets** (inventory, metadata, jobs, releases)
 1. Confirm the correct **released dataset and version** in the TDEI portal (check project group, release status, and recency).
 2. **Open in Workspaces** from that dataset, or create from TDEI inside Workspaces as described above.
 3. On the workspace dashboard, note **from TDEI dataset ID** and **version** for audit trails and support questions.
-4. Configure workspace settings if needed (title, external app publish toggles, imagery JSON — see the [Workspaces user manual](../../../workspaces/user-manual/settings.md)).
+4. Configure workspace settings if needed (title, external app publish toggles, imagery JSON — see the [Workspaces user manual](../../../workspaces/user-manual/settings/index.md)).
 5. Edit in the chosen editor; coordinate teams so multiple groups do not assume they are editing the same live TDEI release without communication.
 6. Run review in Workspaces, then follow your jurisdiction's steps to **export to TDEI** and publish or download as required.
 

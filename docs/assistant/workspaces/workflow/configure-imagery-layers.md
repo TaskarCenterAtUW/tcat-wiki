@@ -64,7 +64,7 @@ Field teams need current, jurisdiction-specific backgrounds (aerials, local tile
 3. Either paste the full JSON or **drag-and-drop** a `.json` file (success toast: "JSON file loaded successfully.").
 4. Select **Save** ("Changes saved." below the button).
 
-Procedural detail and screenshots: [Workspace Settings](../../../workspaces/user-manual/settings.md).
+Procedural detail and screenshots: [Workspace Settings](../../../workspaces/user-manual/settings/index.md).
 
 **What the JSON does**
 
@@ -132,7 +132,7 @@ A city loads a workspace from the latest OS-CONNECT TDEI release. The project le
 
 ## Assistant Guidance
 
-- Direct users to [Workspace Settings](../../../workspaces/user-manual/settings.md) for UI labels and save steps.
+- Direct users to [Workspace Settings](../../../workspaces/user-manual/settings/index.md) for UI labels and save steps.
 - Emphasize **ScoutRoute** as the primary consumer of Imagery JSON unless product docs state otherwise for Rapid.
 - If asked for "imagery URL only," note the workshop gap (paste full JSON today; URL support may ship later — confirm with TCAT).
 - Warn against pasting GitHub **web** links instead of raw JSON content for any Settings JSON field.
@@ -144,5 +144,5 @@ A city loads a workspace from the latest OS-CONNECT TDEI release. The project le
 - [Create a workspace from TDEI](create-a-workspace-from-tdei.md)
 - [Edit accessibility features in a workspace](edit-accessibility-features-in-a-workspace.md)
 - [Imagery layers (Workspaces)](../concept/imagery-layers.md)
-- [Workspace Settings (guide)](../../../workspaces/user-manual/settings.md)
+- [Workspace Settings (guide)](../../../workspaces/user-manual/settings/index.md)
 - [AVIV ScoutRoute](../../../aviv-scoutroute/index.md)
