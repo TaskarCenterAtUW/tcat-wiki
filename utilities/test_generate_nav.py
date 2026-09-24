@@ -93,7 +93,6 @@ def test_protect_toml_string_escapes_quotes_and_backslashes():
 def test_convert_to_title_maps_known_names():
     assert generate_nav.convert_to_title("osw") == "OSW"
     assert generate_nav.convert_to_title("tdei") == "TDEI"
-    assert generate_nav.convert_to_title("josm") == "JOSM"
     assert generate_nav.convert_to_title("opensidewalks") == "OpenSidewalks"
     assert generate_nav.convert_to_title("accessmap") == "AccessMap"
     assert generate_nav.convert_to_title("aviv-scoutroute") == "AVIV ScoutRoute"

@@ -38,7 +38,7 @@
 *[CAD]: Computer-Aided Design
 *[CADD]: Computer-Aided Design and Drafting
 *[Cal-ITP]: California Integrated Travel Project
-*[CALACT]: California Association of Coordinated Transportation
+*[CALACT]: California Association for Coordinated Transportation
 *[CC0]: Creative Commons Zero
 *[CCMS]: Component Content Management System
 *[CDP]: Census-Designated Place
@@ -161,7 +161,7 @@
 *[MDOT]: Michigan Department of Transportation
 *[MEF]: Maximum Extent Feasible
 *[MGRS]: Military Grid Reference System
-*[MIC]: Manufacturing Industrial Center
+*[MIC]: Manufacturing Industrial Center / Mobility Innovation Center
 *[MIRE]: Model Inventory of Roadway Elements
 *[ML]: Machine Learning
 *[MLLM]: Multimodal Large Language Model
@@ -234,6 +234,7 @@
 *[SCLIO]: Specialized Community-Led Impact Opportunity
 *[SDI]: Spatial Data Infrastructure
 *[SDOT]: Seattle Department of Transportation
+*[SEPTA]: Southeastern Pennsylvania Transportation Authority
 *[SFT]: Supervised Fine-Tuning
 *[SHSP]: Strategic Highway Safety Plan
 *[SIGIR]: Special Interest Group on Information Retrieval

@@ -1,6 +1,6 @@
 ---
 description: Editorial style guide for TCAT Wiki Markdown content
-applyTo: "docs/{accessmap,aviv-scoutroute,events,josm,opensidewalks,os-connect,rapid,tdei,walksheds,workspaces}/**/*.md"
+applyTo: "docs/{accessmap,aviv-scoutroute,events,opensidewalks,os-connect,rapid,tdei,walksheds,workspaces}/**/*.md"
 ---
 
 <!-- @format -->

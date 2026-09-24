@@ -73,7 +73,7 @@ External-link results are cached for 12 hours; `--no-cache` bypasses the cache. 
 
 Use Semantic Versioning: major for breaking structure/navigation changes or major upgrades; minor for substantial new documentation or rework; patch for corrections and small updates. Use scoped Conventional Commits (for example, `feat(docs-accessmap): add user manual page`) and, when available, branches named `type/scope/<work-item-number>-short-description`. The normal flow is feature branch, conventional commit, and pull request to `main`.
 
-Primary content areas are `docs/accessmap/`, `docs/aviv-scoutroute/`, `docs/josm/`, `docs/opensidewalks/`, `docs/rapid/`, `docs/tdei/`, `docs/tdei-walkshed/`, and `docs/workspaces/`. `docs/resources/` holds assets; `local-storage/` is ignored temporary storage; `utilities/` holds generation, validation, and reporting tools. Key configuration and customization sources are `zensical.toml`, `includes/abbreviations.md`, `resources/stylesheets/extra.css`, and `overrides/main.html`.
+Primary content areas are `docs/accessmap/`, `docs/aviv-scoutroute/`, `docs/opensidewalks/`, `docs/rapid/`, `docs/tdei/`, `docs/tdei-walkshed/`, and `docs/workspaces/`. `docs/resources/` holds assets; `local-storage/` is ignored temporary storage; `utilities/` holds generation, validation, and reporting tools. Key configuration and customization sources are `zensical.toml`, `includes/abbreviations.md`, `resources/stylesheets/extra.css`, and `overrides/main.html`.
 
 For PDF, DOCX, PPTX, XLSX, HTML, CSV, JSON, XML, or ZIP input, use installed `markitdown`; write large temporary conversions under `local-storage/`:
 

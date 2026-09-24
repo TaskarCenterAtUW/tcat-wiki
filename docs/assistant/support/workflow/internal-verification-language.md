@@ -66,7 +66,7 @@ Verification language is not evidence that the answer will be confirmed or that 
 
 ## How To Use This
 
-Use a sentence such as: "I can confirm [known fact]. The current [version, ownership, or workflow] needs internal verification, so I do not want to guess."
+Use a sentence such as: "I can confirm (known fact). The current (version, ownership, or workflow) needs internal verification, so I do not want to guess."
 
 ## Example
 

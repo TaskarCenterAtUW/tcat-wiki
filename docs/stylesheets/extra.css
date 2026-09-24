@@ -32,7 +32,6 @@
 .md-tabs__item:has(a[href*="/CONTRIBUTING/"]),
 .md-tabs__item:has(a[href*="/includes/"]),
 .md-tabs__item:has(a[href*="/javascripts/"]),
-.md-tabs__item:has(a[href*="/josm/"]),
 .md-tabs__item:has(a[href*="/overrides/"]),
 .md-tabs__item:has(a[href*="/rapid/"]),
 .md-tabs__item:has(a[href*="/README/"]),

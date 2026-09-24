@@ -40,16 +40,6 @@ The [Quest Definition Creator](https://taskarcenteratuw.github.io/asr-quests/) i
 
 This user manual explains how to use the [Quest Definition Creator](https://taskarcenteratuw.github.io/asr-quests/) to create, edit, validate, and export AVIV ScoutRoute Long Form Quest Definition JSON files.
 
-### [JOSM](../josm/index.md)
-
-#### [JOSM User Manual](../josm/user-manual/index.md)
-
-This user manual explains how to use the JOSM editor.
-
-#### [Workspaces JOSM Settings Guide](../josm/workspaces-josm-settings.md)
-
-This guide explains how to use the [Workspaces JOSM Settings Script](https://github.com/TaskarCenterAtUW/tdei-tools/blob/main/utilities/workspaces-josm.ps1) from [TDEI Tools](https://github.com/TaskarCenterAtUW/tdei-tools/) to set up JOSM to enable editing of Workspaces.
-
 ### [OpenSidewalks](../opensidewalks/index.md)
 
 #### [OpenSidewalks Schema](../opensidewalks/schema/index.md) Guides
@@ -145,6 +135,10 @@ This user manual explains how to use the TDEI Walksheds tool.
 ### [Workspaces](../workspaces/index.md)
 
 #### Tutorials
+
+##### [Workspaces JOSM Settings Guide](../workspaces/tutorial/connect-josm.md)
+
+This guide explains how to use the [Workspaces JOSM Settings Script](https://github.com/TaskarCenterAtUW/tdei-tools/blob/main/utilities/workspaces-josm.ps1) from [TDEI Tools](https://github.com/TaskarCenterAtUW/tdei-tools/) to set up JOSM to enable editing of Workspaces.
 
 ##### [Import OSM Data into Workspaces](../workspaces/tutorial/osm-to-workspaces.md)
 

@@ -48,7 +48,7 @@ topics:
 risk_level: low
 authority_level: official
 publication_status: published
-last_reviewed: 2026-09-02
+last_reviewed: 2026-09-21
 retrieval_priority: high
 assistant_behavior:
     allow_inference: false
@@ -69,7 +69,7 @@ tags:
 
 ## Short Answer
 
-This page lists all 330 abbreviations, acronyms, and initialisms used across TCAT Wiki documentation and TCAT platforms and tools.
+This page lists all 331 abbreviations, acronyms, and initialisms used across TCAT Wiki documentation and TCAT platforms and tools.
 
 ## Significance
 
@@ -121,7 +121,7 @@ The table below maps each abbreviated form to its full expansion. Entries are so
 | CAD | Computer-Aided Design |
 | CADD | Computer-Aided Design and Drafting |
 | Cal-ITP | California Integrated Travel Project |
-| CALACT | California Association of Coordinated Transportation |
+| CALACT | California Association for Coordinated Transportation |
 | CC0 | Creative Commons Zero |
 | CCMS | Component Content Management System |
 | CDP | Census-Designated Place |
@@ -244,7 +244,7 @@ The table below maps each abbreviated form to its full expansion. Entries are so
 | MDOT | Michigan Department of Transportation |
 | MEF | Maximum Extent Feasible |
 | MGRS | Military Grid Reference System |
-| MIC | Manufacturing Industrial Center |
+| MIC | Manufacturing Industrial Center / Mobility Innovation Center |
 | MIRE | Model Inventory of Roadway Elements |
 | ML | Machine Learning |
 | MLLM | Multimodal Large Language Model |
@@ -317,6 +317,7 @@ The table below maps each abbreviated form to its full expansion. Entries are so
 | SCLIO | Specialized Community-Led Impact Opportunity |
 | SDI | Spatial Data Infrastructure |
 | SDOT | Seattle Department of Transportation |
+| SEPTA | Southeastern Pennsylvania Transportation Authority |
 | SFT | Supervised Fine-Tuning |
 | SHSP | Strategic Highway Safety Plan |
 | SIGIR | Special Interest Group on Information Retrieval |

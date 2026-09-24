@@ -146,10 +146,6 @@ Embedded in-browser web editor.
 
 Mobile applications for both Android and iOS.
 
-#### [JOSM](../josm/index.md)
-
-Desktop application for advanced editing.
-
 ---
 
 ### TDEI Data Consuming Applications

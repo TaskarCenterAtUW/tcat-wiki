@@ -10,8 +10,8 @@ title: Workspaces
 
 ---
 
-![TDEI Workspaces dashboard showing the Covington, WA, US OSW workspace selected, with a map preview of the Covington area and workspace metadata including creation date and project group ID](../resources/images/workspaces/workspaces-light.png#only-light)
-![TDEI Workspaces dashboard showing the Covington, WA, US OSW workspace selected, with a map preview of the Covington area and workspace metadata including creation date and project group ID](../resources/images/workspaces/workspaces-light.png#only-dark)
+![TDEI Workspaces landing page with the platform description and Sign In button](../resources/images/workspaces/01-landing-light.avif#only-light)
+![TDEI Workspaces landing page with the platform description and Sign In button](../resources/images/workspaces/01-landing-dark.avif#only-dark)
 
 ---
 
@@ -27,10 +27,6 @@ AVIV ScoutRoute (formerly called [GoInfoGame](https://tcat.cs.washington.edu/goi
 
 [Rapid](https://rapideditor.org/) is an extended version of the OpenStreetMap iD editor. A modified version of Rapid is embedded in Workspaces and can be used to edit data in open workspaces.
 
-#### [JOSM](../josm/index.md)
-
-The [Java OpenStreetMap Editor](https://josm.openstreetmap.de/) (JOSM) is a powerful, feature-rich desktop OpenStreetMap editor.
-
 ---
 
 ### Guides
@@ -40,6 +36,10 @@ Workspaces Guides
 _For a list of all guides on the TCAT Wiki, refer to the [Guides List](../guides-list/index.md)._{ .guides-list-ref }
 
 #### Tutorials
+
+##### [Workspaces JOSM Settings Guide](tutorial/connect-josm.md)
+
+This guide explains how to use the [Workspaces JOSM Settings Script](https://github.com/TaskarCenterAtUW/tdei-tools/blob/main/utilities/workspaces-josm.ps1) from [TDEI Tools](https://github.com/TaskarCenterAtUW/tdei-tools/) to set up JOSM to enable editing of Workspaces.
 
 ##### [Import OSM Data into Workspaces](tutorial/osm-to-workspaces.md)
 

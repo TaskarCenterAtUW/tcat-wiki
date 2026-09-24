@@ -1128,11 +1128,6 @@ nav = [
         ]},
         {"Oswmh" = [ "events/oswmh/index.md" ]}
     ]},
-    {"JOSM" = [
-        "josm/index.md",
-        {"Workspaces JOSM Settings Guide" = "josm/workspaces-josm-settings.md"},
-        {"User Manual" = [ "josm/user-manual/index.md" ]}
-    ]},
     {"OpenSidewalks" = [
         "opensidewalks/index.md",
         {"Schema" = [
@@ -1235,13 +1230,32 @@ nav = [
     ]},
     {"Workspaces" = [
         "workspaces/index.md",
-        {"Tutorial" = [
-            {"Import OSM Data into Workspaces" = "workspaces/tutorial/osm-to-workspaces.md"},
-            {"Workspace Export Guide" = "workspaces/tutorial/workspace-export.md"}
-        ]},
         {"User Manual" = [
             "workspaces/user-manual/index.md",
-            {"Workspace Settings" = "workspaces/user-manual/workspace-settings.md"}
+            {"Getting Started" = "workspaces/user-manual/getting-started.md"},
+            {"Create a Workspace" = "workspaces/user-manual/create.md"},
+            {"Dashboard" = "workspaces/user-manual/dashboard.md"},
+            {"Workspace Review" = "workspaces/user-manual/review.md"},
+            {"Export a Workspace" = "workspaces/user-manual/export.md"},
+            {"Settings" = [
+                "workspaces/user-manual/settings/index.md",
+                {"Workspace Settings — General" = "workspaces/user-manual/settings/general.md"},
+                {"Workspace Settings — Members" = "workspaces/user-manual/settings/members.md"},
+                {"Workspace Settings — Teams" = "workspaces/user-manual/settings/teams.md"}
+            ]},
+            {"Projects" = [
+                "workspaces/user-manual/projects/index.md",
+                {"Create a Project" = "workspaces/user-manual/projects/create.md"},
+                {"View a Project" = "workspaces/user-manual/projects/view.md"},
+                {"Edit a Project" = "workspaces/user-manual/projects/edit.md"},
+                {"Contribute to a Project" = "workspaces/user-manual/projects/contribute.md"},
+                {"Validate for a Project" = "workspaces/user-manual/projects/validate.md"}
+            ]}
+        ]},
+        {"Tutorial" = [
+            {"Workspaces JOSM Settings Guide" = "workspaces/tutorial/connect-josm.md"},
+            {"Import OSM Data into Workspaces" = "workspaces/tutorial/osm-to-workspaces.md"},
+            {"Workspace Export Guide" = "workspaces/tutorial/workspace-export.md"}
         ]}
     ]},
     {"Guides List" = "guides-list/index.md"}
