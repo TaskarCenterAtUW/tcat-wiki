@@ -1,6 +1,6 @@
 ---
 name: capture-screenshot
-description: Capture light and dark browser-page screenshots for TCAT Wiki documentation at the standard 1440x810 viewport, save *.light.png and *.dark.png sources, process them into themed AVIF variants, and insert the accessible Markdown image pair.
+description: Capture 1440x900 browser screenshots for TCAT Wiki, using light/dark pairs when supported or one as-is source otherwise, and process them into accessible AVIF links.
 argument-hint: "Optional: page title, basename, guide, or screenshot focus"
 user-invocable: true
 disable-model-invocation: false
@@ -10,7 +10,7 @@ disable-model-invocation: false
 
 # Capture themed screenshots
 
-Capture the intended shared browser page in both its light and dark page themes, save source images, generate themed AVIF variants, and insert accessible Markdown links.
+Capture the intended shared browser page, process its source image(s) into AVIF variants, and insert accessible Markdown links.
 
 ## Before capture
 
@@ -21,42 +21,47 @@ Capture the intended shared browser page in both its light and dark page themes,
 
 ## Capture standard and themes
 
-Use CSS viewport `1440` × `810`, DPR `1`, landscape, viewport-only capture. In Firefox use `F12`, `Ctrl`+`Shift`+`M`, and `[Screenshot] Web - Landscape`; keep DevTools out of the image. Automation must verify before saving:
+Use CSS viewport `1440` × `900`, DPR `1`, landscape, viewport-only capture. In Firefox use `F12`, `Ctrl`+`Shift`+`M`, and `[Screenshot] Web - Landscape`; keep DevTools out of the image. Automation must verify before saving:
 
 ```javascript
-await page.setViewportSize({ width: 1440, height: 810 });
+await page.setViewportSize({ width: 1440, height: 900 });
 const m = await page.evaluate(() => ({
     width: innerWidth,
     height: innerHeight,
     dpr: devicePixelRatio,
 }));
-if (m.width !== 1440 || m.height !== 810 || m.dpr !== 1)
+if (m.width !== 1440 || m.height !== 900 || m.dpr !== 1)
     throw new Error(
-        `Expected 1440x810 at DPR 1; received ${JSON.stringify(m)}.`
+        `Expected 1440x900 at DPR 1; received ${JSON.stringify(m)}.`
     );
 ```
 
 If the standard cannot be met, stop and ask for the correct responsive profile/capture. Inspect the source; reject browser chrome, clipping, tiling, unintended scrollbars, loading states, or other artifacts.
 
-Capture both themes while keeping the page state identical:
+- **Site has app-level light/dark controls:** capture both modes. Keep the route, data, layout, scroll position, and viewport identical; the app theme must be the only difference. Select **Light** (or its equivalent), verify the page—not only the browser—uses the light theme, and save `<basename>.light.png`. Then select **Dark**, verify the page theme changed and the content/state did not, and save `<basename>.dark.png`.
+- **Site has no app-level theme control:** capture it once as displayed to `<basename>.png`, without a light/dark suffix. The processing utility will derive both Wiki theme variants from that one screenshot.
+- **Theme controls exist but the selected mode cannot be confirmed:** stop and ask. Do not substitute browser or operating-system appearance.
 
-1. Find the page's visible theme control, if it exists. Select **Light** (or its equivalent), verify that the page—not only the browser—uses the light theme, and save `<basename>.light.png`.
-2. Select **Dark**, verify the page theme changed, and save `<basename>.dark.png`.
-3. If the page has no theme control, cannot confirm the selected theme, or changing theme changes the documented state, stop and ask the user. Do not substitute browser or operating-system appearance without confirmation.
-4. If an existing source or output would be replaced, stop unless the user explicitly authorized replacement.
+Follow the light/dark filename conventions in `CONTRIBUTING.md`. If an existing source or output would be replaced, stop unless the user explicitly authorized replacement.
 
-Use the same viewport and screenshot checks for both captures. Do not save a generic `<basename>.png` when capturing separate page themes.
+Do not use a generic source alongside a complete `.light.png`/`.dark.png` pair; the utility skips the generic source when both tagged siblings exist.
 
 ## Save and process
 
-1. Inspect neighboring files, create the destination directory, and save `<basename>.light.png` and `<basename>.dark.png` under `docs/resources/images/...`; never write to `site/`, `human-docs/`, or `agent-docs/`.
-2. From the repository root, activate the environment and process both mode-tagged sources:
+1. Inspect neighboring files, create the destination directory, and save the themed pair or single generic source under `docs/resources/images/...`; never write to `site/`, `human-docs/`, or `agent-docs/`.
+2. From the repository root, activate the environment and process the source image(s):
 
     ```powershell
-    .\.venv\Scripts\Activate.ps1; python utilities\process_screenshot.py "<basename>.light.png" "<basename>.dark.png"
+    .\.venv\Scripts\Activate.ps1
+
+    # Site has light/dark controls
+    python utilities\process_screenshot.py "<basename>.light.png" "<basename>.dark.png"
+
+    # Site has no theme control
+    python utilities\process_screenshot.py "<basename>.png"
     ```
 
-    With authorized replacement only, add `--overwrite`. Mode-tagged processing produces `<basename>.light.avif`, `<basename>-light.avif`, `<basename>.dark.avif`, and `<basename>-dark.avif`, then removes the PNG sources. Use only `<basename>-light.avif` and `<basename>-dark.avif` in page content. If processing/output validation fails, do not edit Markdown.
+    Add `--overwrite` only when replacement is authorized. A generic source produces `<basename>.avif` plus both `<basename>-light.avif` and `<basename>-dark.avif`; these variants share the original page appearance and differ in Wiki border/shadow treatment. A `.light.png`/`.dark.png` pair produces mode-specific AVIF variants. Non-AVIF sources are removed only after successful processing. Use only the dash-suffixed variants in Markdown, with `#only-light` and `#only-dark`. If processing/output validation fails, do not edit Markdown.
 
 ## Insert and verify
 

@@ -232,7 +232,7 @@ For creating screenshots with a consistent style, Firefox DevTools is to be used
         3. User Agent String: `Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:140.0) Gecko/20100101 Firefox/140.0`
 
     2. Name: `[Screenshot] Web - Landscape`
-        1. Size: `1440`x`810`
+        1. Size: `1440`x`900`
 
         2. Device Pixel Ratio: `1`
 
@@ -240,7 +240,11 @@ For creating screenshots with a consistent style, Firefox DevTools is to be used
 
 4. It is recommended to remove all embedded metadata, such as with the use of [ExifToolGUI](https://exiftool.org/gui/).
 
-5. Process screenshots with the `process_screenshot.py` utility to generate themed light/dark variants with borders and drop shadows:
+5. Capture the source screenshot(s):
+    - When the target site has an app-level light/dark control, capture matching screenshots in both app themes and name the sources `image.light.png` and `image.dark.png`.
+    - If the target has no app-level theme control, capture one source as `image.png`; do not simulate a theme with browser or operating-system settings.
+
+6. Process screenshots with the `process_screenshot.py` utility to generate Wiki light/dark variants with borders and drop shadows:
 
     ```powershell
     # Ensure venv is activated first!
@@ -248,6 +252,9 @@ For creating screenshots with a consistent style, Firefox DevTools is to be used
 
     # Process a single screenshot
     python .\utilities\process_screenshot.py docs\resources\images\example\screenshot.png
+
+    # Process matching app light/dark screenshots
+    python .\utilities\process_screenshot.py docs\resources\images\example\screenshot.light.png docs\resources\images\example\screenshot.dark.png
 
     # Process all images in a directory
     python .\utilities\process_screenshot.py docs\resources\images\example\
@@ -263,6 +270,8 @@ For creating screenshots with a consistent style, Firefox DevTools is to be used
     - `{name}.avif` — lossless source image
     - `{name}-light.avif` — dark border + drop shadow for light theme pages
     - `{name}-dark.avif` — light border + glow for dark theme pages
+
+    A generic source produces both Wiki variants from the same page appearance. A `.light.png`/`.dark.png` pair produces only its matching variant.
 
     Reference them in Markdown with Zensical's theme-switching fragments:
 
