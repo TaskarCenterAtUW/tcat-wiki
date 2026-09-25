@@ -27,6 +27,12 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/),
 
 -->
 
+## v16.2.0 (2026-09-25)
+
+### Added
+
+- **Wiki**: Added TDEI Data Viewer overview and user manual
+
 ## v16.1.0 (2026-09-24)
 
 ### Added

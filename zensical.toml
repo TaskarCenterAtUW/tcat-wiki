@@ -1178,6 +1178,15 @@ nav = [
     ]},
     {"TDEI" = [
         "tdei/index.md",
+        {"Data Viewer" = [
+            "tdei/data-viewer/index.md",
+            {"User Manual" = [
+                "tdei/data-viewer/user-manual/index.md",
+                {"Project Groups and Datasets" = "tdei/data-viewer/user-manual/project-groups.md"},
+                {"Maps and Dataset Features" = "tdei/data-viewer/user-manual/maps.md"},
+                {"Feature Inspection and Feedback" = "tdei/data-viewer/user-manual/feature-inspection-and-feedback.md"}
+            ]}
+        ]},
         {"Portal" = [
             "tdei/portal/index.md",
             {"User Manual" = [
