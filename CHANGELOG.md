@@ -27,6 +27,17 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/),
 
 -->
 
+## v16.1.0 (2026-09-24)
+
+### Added
+
+- **Wiki**: Added AutoCapture documentation to the LFQD Creator manual
+
+### Changed
+
+- **Wiki**: Updated LFQD Creator User Manual; refreshed screenshots
+- **Core**: Updated screenshot-capture guidance and contributor instructions
+
 ## v16.0.0 (2026-09-23)
 
 ### Added

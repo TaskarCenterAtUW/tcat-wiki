@@ -22,8 +22,8 @@ _For a list of all guides on the TCAT Wiki, refer to the [Guides List](../../../
 The Quest Definition Creator is a browser-based utility for building and maintaining the JSON files that define AVIV ScoutRoute quests. It can:
 
 - Start a definition from a blank supported schema version
-- Load an existing definition for editing
-- Resume a draft saved in the same browser on the same device
+- Load an existing definition from a JSON file or the clipboard
+- Resume a draft saved in the same browser and on the same device when one is available
 - Add elements and quests manually or from available presets
 - Configure answer choices, dependencies, numeric bounds, and icons
 - Show validation feedback and a live JSON preview
@@ -43,7 +43,7 @@ The footer displays the Creator version and the Long Form Quest Definition schem
 ### Quick Start
 
 1. **Open** the [Quest Definition Creator](https://taskarcenteratuw.github.io/asr-quests/)
-2. **Choose** **Create New Definition**, **Choose File...**, or **Resume Current Draft**
+2. **Choose** **Create New Definition**, **Choose File...**, or **From Clipboard**. Select **Resume Current Draft** if the **Resume Draft** card is available.
 3. **Add** and configure the elements and quests in the editor
 4. **Resolve** validation errors and review any warnings
 5. **Inspect** the JSON Preview, then select **Download** or **Copy to Clipboard**
@@ -67,7 +67,7 @@ Quest Definition Creator User Manual Table of Contents
 
 #### [Getting Started](getting-started.md)
 
-This section explains how to open the Quest Definition Creator, start a definition, load an existing file, resume a draft, and choose a color theme.
+This section explains how to open the Quest Definition Creator, start a definition, load JSON from a file or clipboard, resume an available draft, and choose a color theme.
 
 #### [Editor Overview](editor-overview.md)
 
@@ -79,7 +79,7 @@ This section explains how to define the map features that quests target.
 
 #### [Quests](quests.md)
 
-This section explains how to create and configure quest questions, answer choices, numeric validation, and dependencies.
+This section explains how to create and configure quest questions, answer choices, AutoCapture attributes, numeric validation, and dependencies.
 
 #### [Presets and Custom Icons](presets-and-icons.md)
 
