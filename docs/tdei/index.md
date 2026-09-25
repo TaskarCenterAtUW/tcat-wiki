@@ -160,6 +160,10 @@ Accessibility-forward customizable router.
 
 Tool for analyzing pedestrian infrastructure and access to amenities.
 
+#### [TDEI Data Viewer](data-viewer/index.md)
+
+Browser-based interface for exploring public project groups, released datasets, and mapped features.
+
 ---
 
 ### Guides
@@ -167,6 +171,14 @@ Tool for analyzing pedestrian infrastructure and access to amenities.
 TDEI Guides
 
 _For a list of all guides on the TCAT Wiki, refer to the [Guides List](../guides-list/index.md)._{ .guides-list-ref }
+
+#### [TDEI Data Viewer](data-viewer/index.md) Guides
+
+The [TDEI Data Viewer](https://dataviewer.tdei.us/) is a browser-based interface for browsing public TDEI project groups, released datasets, and mapped transportation features. It includes dataset search, interactive maps, feature inspection, and an issue-reporting form.
+
+##### [TDEI Data Viewer User Manual](data-viewer/user-manual/index.md)
+
+This user manual describes the TDEI Data Viewer interface for browsing public project groups, released datasets, mapped features, and issue-reporting controls.
 
 #### [TDEI Portal](portal/index.md) Guides
 

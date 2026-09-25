@@ -102,6 +102,14 @@ This user manual explains how to use the Rapid editor.
 
 ### [TDEI](../tdei/index.md)
 
+#### [TDEI Data Viewer](../tdei/data-viewer/index.md) Guides
+
+The [TDEI Data Viewer](https://dataviewer.tdei.us/) is a browser-based interface for browsing public TDEI project groups, released datasets, and mapped transportation features. It includes dataset search, interactive maps, feature inspection, and an issue-reporting form.
+
+##### [TDEI Data Viewer User Manual](../tdei/data-viewer/user-manual/index.md)
+
+This user manual describes the TDEI Data Viewer interface for browsing public project groups, released datasets, mapped features, and issue-reporting controls.
+
 #### [TDEI Portal](../tdei/portal/index.md) Guides
 
 The **[TDEI Portal](https://portal.tdei.us/)** is the web interface for the Transportation Data Exchange Initiative (TDEI).
