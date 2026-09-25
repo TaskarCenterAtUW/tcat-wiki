@@ -64,7 +64,7 @@ Do not replace an unavailable upgrade operation by changing only the version str
 
 ### Export the Definition
 
-1. **Enter** a filename ending in `.json` in **Filename**, or keep the default `quest-definition.json`
+1. **Enter** a filename ending in `.json` in **Filename**, or keep the suggested name; a new, empty definition defaults to `quest-definition.json`
 2. **Confirm** that the Validation panel reports no blocking errors
 3. **Select** **Download** to save the JSON file
 4. **Select** **Copy to Clipboard** when you need to paste the JSON into another tool

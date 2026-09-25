@@ -12,7 +12,7 @@ tags:
 
 ## Quests
 
-This section explains how to create and configure quest questions, answer choices, numeric validation, and dependencies.
+This section explains how to create and configure quest questions, answer choices, AutoCapture attributes, numeric validation, and dependencies.
 
 _For a list of all guides on the TCAT Wiki, refer to the [Guides List](../../../../guides-list/index.md)._{ .guides-list-ref }
 
@@ -41,7 +41,7 @@ _For a list of all guides on the TCAT Wiki, refer to the [Guides List](../../../
 | **Quest Title**     | Question shown to the contributor                                                                         |
 | **Description**     | Supporting instructions or context                                                                        |
 | **Quest Type**      | Determines the answer control used by AVIV ScoutRoute                                                     |
-| **Quest Tag**       | Tag associated with the answer for the supported answer types                                             |
+| **Quest Tag**       | Tag associated with the answer for quest types that use a single answer tag; AutoCapture uses attribute mappings instead |
 | **Quest Image URL** | Optional URL for an image shown with the question; the Creator displays PNG/JPEG size and dimension hints |
 
 ---
@@ -56,8 +56,9 @@ The current Creator interface exposes these quest types:
 | **MultipleChoice**  | A question where the contributor can select multiple answers |
 | **Numeric**         | A measurement or count entered as a number                   |
 | **TextEntry**       | A short free-form response                                   |
+| **AutoCapture**     | Automatically captures selected sidewalk measurements on supported iOS devices with LiDAR |
 
-Choose the type before configuring type-specific fields. The Creator removes fields that do not apply to the selected type from the JSON Preview.
+Choose the type before configuring type-specific fields. The Creator removes fields that do not apply to the selected type from the JSON Preview. AutoCapture is currently limited to sidewalks and iOS devices with LiDAR sensors.
 
 ---
 
@@ -91,6 +92,34 @@ For a **Numeric** quest, use **Numeric Validation** to limit accepted values:
 6. **Explain** the expected unit in **Quest Title** or **Description**
 
 Check the range against the intended measurement and unit before exporting.
+
+---
+
+### Configure AutoCapture Attributes
+
+An **AutoCapture** quest automatically captures selected measurements instead of asking the contributor to enter an answer. The Creator currently supports this quest type for sidewalks on iOS devices with LiDAR sensors.
+
+1. **Select** **AutoCapture** from **Quest Type**
+2. **Select** at least one measurement in **AutoCapture Attributes**
+3. **Review** the default export tag key for each selected measurement, or enter the tag key required by the project
+4. **Review** the `auto_capture_attributes` mapping in the JSON Preview
+
+The Creator uses these attribute keys:
+
+| Measurement         | Attribute key          | Default export tag key       |
+| :------------------ | :--------------------- | :--------------------------- |
+| Width               | `ac_width`             | `ext:ac:width`               |
+| Incline             | `ac_incline`           | `ext:ac:incline`              |
+| Cross slope         | `ac_cross_slope`       | `ext:ac:cross_slope`          |
+| Surface integrity   | `ac_surface_integrity` | `ext:ac:surface_integrity`    |
+| Surface disruption  | `ac_surface_disruption`| `ext:ac:surface_disruption`   |
+| Height from ground  | `ac_height_from_ground`| `ext:ac:height_from_ground`   |
+| LiDAR depth         | `ac_lidar_depth`       | `ext:ac:lidar_depth`          |
+
+An AutoCapture quest uses these mappings instead of **Quest Tag**. Select at least one attribute and keep each export tag key non-empty to pass validation.
+
+![Quest Definition Creator AutoCapture Attributes editor showing selected measurements and their export tag keys](../../../../resources/images/aviv-scoutroute/quests/creator/user-manual/quests/04-auto-capture-light.avif#only-light)
+![Quest Definition Creator AutoCapture Attributes editor showing selected measurements and their export tag keys](../../../../resources/images/aviv-scoutroute/quests/creator/user-manual/quests/04-auto-capture-dark.avif#only-dark)
 
 ---
 
