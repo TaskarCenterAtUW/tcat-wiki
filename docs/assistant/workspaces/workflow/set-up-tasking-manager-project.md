@@ -24,7 +24,7 @@ topics:
 risk_level: medium
 authority_level: explanatory
 publication_status: draft
-last_reviewed: 2026-08-20
+last_reviewed: 2026-09-29
 retrieval_priority: high
 assistant_behavior:
     allow_inference: false
@@ -46,7 +46,7 @@ tags:
 
 ## Short Answer
 
-Log in to [Workspaces](https://workspaces.sidewalks.washington.edu/), select a project group and workspace, open **Projects**, and select **New Project**. Complete the project details, area of interest, settings, and review sections. After creating the project, open its **Tasks** tab and define the task area size.
+Sign in to [Workspaces](https://workspaces.sidewalks.washington.edu/), select a project group and workspace, open **Projects**, and select **New Project**. Complete the project details, area of interest, settings, and review sections. After creating the project, open its **Tasks** tab and define the task area size.
 
 ## Significance
 
@@ -57,7 +57,7 @@ This workflow creates the project container and its initial configuration. The p
 ### Open the project creation form
 
 1. Open [Workspaces](https://workspaces.sidewalks.washington.edu/).
-2. Select **Sign In** or open the [Workspaces sign-in page](https://workspaces.sidewalks.washington.edu/signin), then log in.
+2. Select **Sign In** or open the [Workspaces sign-in page](https://workspaces.sidewalks.washington.edu/signin). Authenticate through the shared TDEI sign-in flow; it may redirect to the TDEI Portal and then return you to Workspaces.
 3. Open the [Workspaces dashboard](https://workspaces.sidewalks.washington.edu/dashboard).
 4. Select the relevant **Project Group**.
 5. Select the relevant **Workspace**.
@@ -110,6 +110,7 @@ A project manager selects a project group and workspace, opens **Projects → Ne
 
 - Distinguish creating the project from defining task areas and from publishing or opening the project to contributors.
 - Describe **Lock Timeout** as the period after which a task lock automatically expires.
+- Explain that Workspaces and the TDEI Portal use a shared sign-in flow; a redirect between them is part of authentication, not a separate project or workspace.
 
 ## Related Concepts
 
