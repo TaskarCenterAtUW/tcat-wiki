@@ -25,8 +25,12 @@ _For a list of all guides on the TCAT Wiki, refer to the [Guides List](../../gui
     - **Blank Workspace** creates an empty workspace with no data.
     - **From TDEI** creates a workspace by importing an asset stored in TDEI.
     - **From File** creates a workspace from an OpenSidewalks data file on your computer.
+3. Select the button for the method that matches your source data:
+    - **Create Blank Workspace**
+    - **Create From TDEI**
+    - **Create From File**
 
-3. **Select** **Start** on the method that matches your source data
+Each creation form checks whether the title is already in use in the selected project group. A duplicate-title warning does not prevent creation.
 
 ![Workspaces Create a Workspace page showing Blank Workspace, From TDEI, and From File options](../../resources/images/workspaces/user-manual/03-create/01-create-workspace-light.avif#only-light)
 ![Workspaces Create a Workspace page showing Blank Workspace, From TDEI, and From File options](../../resources/images/workspaces/user-manual/03-create/01-create-workspace-dark.avif#only-dark)
@@ -35,7 +39,7 @@ _For a list of all guides on the TCAT Wiki, refer to the [Guides List](../../gui
 
 ### Create a blank workspace
 
-1. **Select** **Start** under **Blank Workspace**
+1. Select **Create Blank Workspace**
 2. Enter a name in **Workspace Title**
 3. Select a **Project Group**
 4. Under **Dataset Type**, select **OpenSidewalks** or **GTFS Pathways**
@@ -44,11 +48,15 @@ _For a list of all guides on the TCAT Wiki, refer to the [Guides List](../../gui
 ![Create a Blank Workspace form with Workspace Title, Project Group, Dataset Type, and Create Workspace](../../resources/images/workspaces/user-manual/03-create/02-blank-light.avif#only-light)
 ![Create a Blank Workspace form with Workspace Title, Project Group, Dataset Type, and Create Workspace](../../resources/images/workspaces/user-manual/03-create/02-blank-dark.avif#only-dark)
 
+!!! note "Blank workspace data"
+
+    A new blank workspace contains no map data. Its map preview remains empty until data is added.
+
 ---
 
 ### Create a workspace from TDEI
 
-1. **Select** **Start** under **From TDEI**
+1. Select **Create From TDEI**
 2. Enter a name in **Workspace Title**
 3. Select a **Project Group**
 4. Select a **Dataset** from the available TDEI datasets
@@ -68,7 +76,7 @@ The dataset information panel can include the dataset name, description, dataset
 
 ### Create a workspace from a file
 
-1. **Select** **Start** under **From File**
+1. Select **Create From File**
 2. Enter a name in **Workspace Title**
 3. Select a **Project Group**
 4. Under **Dataset Type**, select **OpenSidewalks** or **GTFS Pathways**
