@@ -57,12 +57,14 @@ Use the [TDEI Portal](https://portal.tdei.us/jobs) to create and run a new **OSW
 
 ### Step 3: Upload to Workspaces
 
-1. Navigate to [Create Workspace from File](https://workspaces.sidewalks.washington.edu/workspace/create/file) and sign in. Alternatively, use the top navigation: **Create Workspace** \> **From File** \> **Start**.
+1. Navigate to [Create Workspace from File](https://workspaces.sidewalks.washington.edu/workspace/create/file) and sign in. Alternatively, use the top navigation: **Create Workspace** \> **From File** \> **Create From File**.
 
 2. Fill in the **Workspace Title** and **Project Group**, set **Dataset Type** to **OpenSidewalks**, and upload the `<JobId>.zip` from the previous step. Select **Create Workspace**.
 
     ![TDEI Workspaces Create Workspace from File form with title Covington, WA, US, Dataset Type OpenSidewalks selected, and the file 35241.zip attached](../../resources/images/workspaces/tutorial/osm-to-workspaces/06-workspaces-create-light.avif#only-light)
     ![TDEI Workspaces Create Workspace from File form with title Covington, WA, US, Dataset Type OpenSidewalks selected, and the file 35241.zip attached](../../resources/images/workspaces/tutorial/osm-to-workspaces/06-workspaces-create-dark.avif#only-dark)
+
+    Workspaces checks whether the title is already in use in the selected project group. A duplicate-title warning does not block creation; if the availability check fails, you can still submit the form.
 
 3. The page will show **Converting dataset...** while the file is processed, followed by **Initializing workspace...** and then **Importing dataset to workspace...** before the process completes and the page automatically refreshes.
 
