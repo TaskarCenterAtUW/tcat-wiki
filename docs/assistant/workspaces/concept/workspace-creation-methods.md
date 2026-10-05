@@ -20,7 +20,7 @@ topics:
 risk_level: low
 authority_level: provisional
 publication_status: draft
-last_reviewed: 2026-09-11
+last_reviewed: 2026-09-29
 retrieval_priority: medium
 assistant_behavior:
     allow_inference: false
@@ -29,6 +29,7 @@ assistant_behavior:
     do_not_claim:
         - Every workspace creation method produces the same source and metadata.
         - Creating a workspace automatically publishes its data.
+        - A title-availability check prevents users from creating duplicate workspace titles.
 related_pages:
     - assistant/workspaces/index.md
     - assistant/workspaces/workflow/create-workspace.md
@@ -43,7 +44,7 @@ tags:
 
 ## Short Answer
 
-Workspaces can be created from a TDEI dataset or an uploaded file, and the appropriate method depends on the source, format, project group, and intended workflow. Each method creates a workspace that must still be reviewed and managed.
+Workspaces can be created as a blank workspace, from a TDEI dataset, or from an uploaded OpenSidewalks data file. Choose based on the source, format, project group, and intended workflow; each method creates a workspace that must still be reviewed and managed.
 
 ## Significance
 
@@ -51,7 +52,7 @@ Choosing the method affects lineage, conversion, scope, and the steps required b
 
 ## What This Means
 
-Choose a TDEI source when using a managed dataset and a file workflow when starting from a prepared local package. Record the source and creation context.
+Choose a blank workspace when starting without map data, a TDEI source when using a managed dataset, or a file workflow when starting from a prepared local package. The title-availability check is scoped to the selected project group. A duplicate-title warning or a failed availability check does not prevent submission; use a distinct title when it will help identify the workspace.
 
 ## What This Does Not Mean
 
@@ -63,7 +64,7 @@ Ask where the data currently lives, its format, and the desired destination befo
 
 ## Example
 
-A team converts an OSM extract to OpenSidewalks format and creates a workspace from file, while another team creates a workspace from a selected TDEI dataset.
+A team creates a blank workspace before data is ready, while another converts an OSM extract to OpenSidewalks format and creates a workspace from file.
 
 ## Assistant Guidance
 

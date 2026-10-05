@@ -24,7 +24,7 @@ topics:
 risk_level: medium
 authority_level: explanatory
 publication_status: draft
-last_reviewed: 2026-08-20
+last_reviewed: 2026-09-29
 retrieval_priority: high
 assistant_behavior:
     allow_inference: false
@@ -57,7 +57,7 @@ This workflow creates the project container and its initial configuration. The p
 ### Open the project creation form
 
 1. Open [Workspaces](https://workspaces.sidewalks.washington.edu/).
-2. Select **Sign In** or open the [Workspaces sign-in page](https://workspaces.sidewalks.washington.edu/signin), then log in.
+2. Select **TDEI Login** on the Workspaces sign-in page and complete sign-in through TDEI.
 3. Open the [Workspaces dashboard](https://workspaces.sidewalks.washington.edu/dashboard).
 4. Select the relevant **Project Group**.
 5. Select the relevant **Workspace**.
