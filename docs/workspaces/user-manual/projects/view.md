@@ -31,9 +31,10 @@ The **Projects** page provides the following controls:
 - **Sort By** changes the order of the project cards.
 - **Grid view** and **List view** change the project layout.
 - **New Project** starts the project-creation workflow.
-- Pagination moves between pages when more projects are available.
 
 Each project card can show its name, status, completion state, completion percentage, creator, and creation date. Select a project card or its **Open project** link to open the project.
+
+The project list does not use pagination. If Workspaces cannot load projects, it displays an error with a **Try again** button.
 
 ![Workspace Projects page showing project search, status and sort controls, layout controls, New Project, a project card, and pagination](../../../resources/images/workspaces/user-manual/09-projects/11-view/01-projects-list-light.avif#only-light)
 ![Workspace Projects page showing project search, status and sort controls, layout controls, New Project, a project card, and pagination](../../../resources/images/workspaces/user-manual/09-projects/11-view/01-projects-list-dark.avif#only-dark)

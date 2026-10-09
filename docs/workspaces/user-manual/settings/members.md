@@ -44,6 +44,8 @@ The **Workspace Members** section identifies additional workspace privileges:
 
 The page lists workspace members with their assigned roles. When role management is available, a member's role control can show **Owner**, **Validator**, or **Member**.
 
+Member entries can also display the member's email address alongside their name.
+
 The page can display an informational message when no member has a particular role. A **Member** role does not provide the additional Owner or Validator privileges. Project Group Admins (POCs) have full control of the workspace and its settings, and Data Generators can export workspace data to the TDEI.
 
 ---
