@@ -27,6 +27,13 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/),
 
 -->
 
+## v16.4.0 (2026-10-09)
+
+### Changed
+
+- **Wiki**: Updated abbreviations list
+- **Wiki**: Updated Workspaces dashboard screenshot
+
 ## v16.3.0 (2026-09-29)
 
 ### Changed
