@@ -17,9 +17,9 @@ topics:
     - public-vs-private-data
     - releases
 risk_level: medium
-authority_level: provisional
+authority_level: explanatory
 publication_status: draft
-last_reviewed: 2026-07-22
+last_reviewed: 2026-09-29
 retrieval_priority: high
 assistant_behavior:
     allow_inference: false
@@ -27,7 +27,11 @@ assistant_behavior:
     abstain_if_missing_context: true
     do_not_claim:
         - Every TDEI project dataset is publicly downloadable.
-related_pages: []
+        - Deactivating a dataset is a reversible way to unrelease it.
+related_pages:
+    - assistant/tdei/concept/released-dataset.md
+    - assistant/tdei/concept/release-versioning.md
+    - assistant/workspaces/concept/keeping-edits-private.md
 tags:
     - Assistant
 ---
@@ -48,13 +52,15 @@ Visibility determines who can inspect, download, or use a dataset. It should be 
 
 Use the project-dataset view for group work and the released-dataset view for public data. A source or baseline dataset can remain private while completed or derived versions are prepared.
 
+Treat dataset deactivation as removal, not as a temporary visibility change: the interface warns that deactivation removes the dataset from the system. Confirm the dataset and version before deactivating it, and preserve any data that must be retained. Do not use deactivation as a substitute for controlling release status.
+
 ## What This Does Not Mean
 
-Being stored in TDEI does not make a dataset public. Membership and release settings still apply.
+Being stored in TDEI does not make a dataset public. Membership and release settings still apply. Deactivation is not an ordinary unrelease or hide action, and should be treated as irreversible.
 
 ## How To Use This
 
-Check the active project group and release status before troubleshooting missing data. Do not share private dataset contents without authorization.
+Check the active project group and release status before troubleshooting missing data. Before deactivation, verify the dataset identity and version and confirm that needed copies are preserved. Do not share private dataset contents without authorization, or deactivate a dataset merely to remove it from public view.
 
 ## Example
 
@@ -62,7 +68,7 @@ A draft dataset appears to project members but not in the all-released list unti
 
 ## Assistant Guidance
 
-Ask whether the user is looking for a private project dataset or a public release. Do not infer visibility from storage alone.
+Ask whether the user is looking for a private project dataset or a public release. Do not infer visibility from storage alone or suggest deactivation as a reversible release control. Treat deactivation as permanent removal.
 
 ## Related Concepts
 

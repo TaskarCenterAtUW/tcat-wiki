@@ -46,7 +46,7 @@ tags:
 
 ## Short Answer
 
-Log in to [Workspaces](https://workspaces.sidewalks.washington.edu/), select a project group and workspace, open **Projects**, and select **New Project**. Complete the project details, area of interest, settings, and review sections. After creating the project, open its **Tasks** tab and define the task area size.
+Sign in to [Workspaces](https://workspaces.sidewalks.washington.edu/), select a project group and workspace, open **Projects**, and select **New Project**. Complete the project details, area of interest, settings, and review sections. After creating the project, open its **Tasks** tab and define the task area size.
 
 ## Significance
 
@@ -110,6 +110,7 @@ A project manager selects a project group and workspace, opens **Projects → Ne
 
 - Distinguish creating the project from defining task areas and from publishing or opening the project to contributors.
 - Describe **Lock Timeout** as the period after which a task lock automatically expires.
+- Explain that Workspaces and the TDEI Portal use a shared sign-in flow; a redirect between them is part of authentication, not a separate project or workspace.
 
 ## Related Concepts
 

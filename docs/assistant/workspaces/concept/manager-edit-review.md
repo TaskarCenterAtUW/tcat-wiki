@@ -18,15 +18,16 @@ topics:
     - teams
     - roles
 risk_level: medium
-authority_level: provisional
+authority_level: explanatory
 publication_status: draft
-last_reviewed: 2026-08-28
+last_reviewed: 2026-09-29
 retrieval_priority: medium
 assistant_behavior:
     allow_inference: false
     requires_citation: true
     abstain_if_missing_context: true
-    do_not_claim: []
+    do_not_claim:
+        - Reviewing submitted features confirms that every planned feature was surveyed.
 related_pages:
     - assistant/workspaces/concept/edit-reviewers.md
     - assistant/workspaces/concept/workspace-review-interface.md
@@ -51,21 +52,23 @@ Manager review provides a gate between contribution and publication and helps pr
 
 Confirm the workspace and source release, inspect geometry and attributes, compare evidence, check contributors and history, record the decision, and request clarification or correction when needed.
 
+Treat survey-scope completeness as a separate review question from the quality of submitted edits. For a workflow that marks intended survey targets with an attribute such as `ext:status=planned`, compare that planned-feature inventory with the submitted and reviewed records; a queue containing completed submissions alone may not show which planned targets were missed. A possible check is to preserve the intended target set or its changeset and compare it with the final submissions. Verify that this comparison works with the project's actual tags, quests, and review process before relying on it.
+
 ## What This Does Not Mean
 
-Review does not prove that every physical condition is correct or that a manager's decision is a legal certification. Visibility of an edit does not mean it is approved.
+Review does not prove that every physical condition is correct or that a manager's decision is a legal certification. Visibility of an edit does not mean it is approved, and reviewing all submitted changes does not by itself prove that every intended feature was surveyed.
 
 ## How To Use This
 
-Use documented criteria and risk-based review, preserve the audit trail, protect private information, and export only after required checks are complete.
+Use documented criteria and risk-based review, preserve the audit trail, protect private information, and export only after required checks are complete. Where a survey has an explicit set of planned targets, check that set against the submissions and their final status in addition to reviewing the submitted data. Confirm any proposed completeness-check workflow locally; do not assume the review queue enforces survey scope.
 
 ## Example
 
-A manager reviews volunteer changesets, checks a curb-ramp source and geometry, flags an unresolved feature, and approves only the reviewed work for export.
+A manager reviews a curb-ramp submission, its source, and geometry, then flags an unresolved attribute. Separately, the manager compares features marked as planned for inspection with submitted records to check whether the survey appears complete; the comparison is verified against the project's configured tags and workflow.
 
 ## Assistant Guidance
 
-Ask for the workspace, role, source, and review status. Do not invent controls or criteria, and abstain when manager permissions or records cannot be verified.
+Ask for the workspace, role, source, review status, and intended survey scope. Distinguish review of submitted data from checking whether all planned targets were surveyed. Describe planned-target comparison as a check to validate in the actual project configuration, not as an automatic Workspaces-provided guarantee.
 
 ## Related Concepts
 

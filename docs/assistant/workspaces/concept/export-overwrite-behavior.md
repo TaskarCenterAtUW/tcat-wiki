@@ -18,15 +18,16 @@ topics:
     - publication-workflow
     - dataset-lineage
 risk_level: high
-authority_level: provisional
+authority_level: explanatory
 publication_status: draft
-last_reviewed: 2026-08-28
+last_reviewed: 2026-09-29
 retrieval_priority: medium
 assistant_behavior:
     allow_inference: false
     requires_citation: true
     abstain_if_missing_context: true
-    do_not_claim: []
+    do_not_claim:
+        - Uploading a Workspaces export to TDEI overwrites the source dataset.
 related_pages:
     - assistant/workspaces/concept/export-process.md
     - assistant/workspaces/concept/export-versioning.md
@@ -41,31 +42,31 @@ tags:
 
 ## Short Answer
 
-Export should be treated as a separate publication or dataset-creation step, not assumed to overwrite the original TDEI dataset. The exact behavior depends on the current Workspaces and TDEI workflow and target.
+In the Workspaces export flow, users can upload an export to TDEI or download it as a file. Uploading creates a new TDEI dataset; it does not modify the source dataset from which the workspace was created.
 
 ## Significance
 
-Knowing overwrite behavior protects source data and helps users preserve lineage and reversibility.
+Knowing whether an export creates a separate dataset helps users protect source data, preserve lineage, and distinguish an upload from publication of a release.
 
 ## What This Means
 
-Confirm the target dataset, export mode, permissions, resulting identifier, validation status, and publication step in the current documentation before proceeding.
+Choose the TDEI upload option to create a new dataset in the selected project group, or choose download to save an export file for processing or another upload workflow. Record the resulting dataset identifier and version, confirm its visibility and validation status, and check separately whether it has been released. The original source remains distinct from the new exported dataset.
 
 ## What This Does Not Mean
 
-An export is not automatically a destructive replacement, and the absence of overwrite does not mean that the result is published or reviewed.
+The TDEI upload is not a destructive replacement of the source. Creating a new dataset does not by itself mean that it is reviewed, released, or publicly visible.
 
 ## How To Use This
 
-Use a reviewed workspace, record source and target identifiers, check the confirmation or job result, and verify where the exported data is available.
+Before exporting, review the workspace and confirm the source, project group, intended target, and export mode. After an upload, record the new dataset identifier and version and check the project-dataset and release views rather than assuming that the source was overwritten or the export was published.
 
 ## Example
 
-A manager exports reviewed edits and records a new dataset or release identifier while retaining the original source for comparison.
+A manager uploads reviewed workspace edits to TDEI. The upload creates a separate dataset while leaving the original source unchanged; the manager checks the new dataset's version and release status before sharing it.
 
 ## Assistant Guidance
 
-Do not promise overwrite behavior without current evidence. Ask for the target and environment, cite the workflow, and abstain when the operation is unclear.
+Distinguish downloading an export from uploading it to TDEI, and distinguish creating a dataset from releasing it. Ask which source, project group, export mode, and target are involved. Do not claim that a new export replaced the source or became public without checking the resulting dataset.
 
 ## Related Concepts
 
