@@ -206,6 +206,7 @@
 *[OTP]: OpenThePaths / OpenTripPlanner
 *[OTP25]: OpenThePaths 2025
 *[OTP26]: OpenThePaths 2026
+*[PacTrans]: Pacific Northwest Transportation Consortium
 *[PED XING]: Pedestrian Crossing
 *[PII]: Personally Identifiable Information
 *[POI]: Point of Interest
@@ -284,6 +285,7 @@
 *[TTS]: Text to Speech
 *[TVM]: Ticket Vending Machine
 *[TxDOT]: Texas Department of Transportation
+*[UAA]: University of Alaska Anchorage
 *[UGA]: Urban Growth Area
 *[UI]: User Interface / Unincorporated
 *[UN]: United Nations

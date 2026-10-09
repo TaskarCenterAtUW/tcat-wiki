@@ -18,15 +18,17 @@ topics:
     - accessibility-data
     - os-connect
 risk_level: medium
-authority_level: provisional
+authority_level: explanatory
 publication_status: draft
-last_reviewed: 2026-08-28
+last_reviewed: 2026-09-29
 retrieval_priority: high
 assistant_behavior:
     allow_inference: false
     requires_citation: true
     abstain_if_missing_context: true
-    do_not_claim: []
+    do_not_claim:
+        - Separate QA/QC accessibility islands prove that residents cannot travel between the mapped areas.
+        - QA/QC accessibility islands are calculated from manual-wheelchair walksheds.
 related_pages:
     - assistant/qa-qc/workflow/identify-accessibility-islands.md
     - assistant/qa-qc/concept/connected-pedestrian-graph.md
@@ -41,31 +43,35 @@ tags:
 
 ## Short Answer
 
-An accessibility island is a mapped area or network component that appears separated from other accessible or connected components under the selected dataset, profile, and analysis rules.
+In QA/QC reports, an accessibility island represents a group of points of interest (POIs) connected under the report's sidewalk-only pedestrian analysis but not connected to other such groups. The analysis starts forward walksheds at selected POIs; it does not model every possible trip origin.
 
 ## Significance
 
-Islands can reveal possible connectivity or data gaps that limit modeled reachability and warrant review.
+Islands can help planners and engineers find possible gaps in mapped sidewalk connectivity between destinations. They are a screening view of the analyzed network and selected POIs, not a direct description of all pedestrian access in an area.
 
 ## What This Means
 
-Interpret the island using the report's graph, profile, threshold, coverage, and data-version assumptions. Inspect nearby crossings, barriers, endpoints, and missing attributes.
+The report uses the sidewalk-only pedestrian profile and normal, origin-based walksheds from POIs; it does not use reverse walksheds or the manual-wheelchair profile to form these islands. A POI that is reachable only with a road-inclusive profile is not used as an island origin, because the analysis assumes that it lacks sidewalk coverage.
+
+The islands describe connectivity among the included POI-origin results. A separate island does not establish that every location between the displayed shapes is disconnected, or that travel is possible in both directions. Read the map with its profile, POI coverage, network, cost threshold, and dataset version.
+
+The report also buffers displayed edges for visual clarity. Those displayed edges can extend beyond the bounds used to calculate an island, so the shapes may appear to overlap even when the analyzed network components are not connected.
 
 ## What This Does Not Mean
 
-An accessibility island is not proof that a real neighborhood is inaccessible, nor does its absence prove equitable access or compliance. It may reflect missing data or a modeling rule.
+An island is not proof that residents cannot travel between neighborhoods, that an individual can or cannot reach a destination, or that a route works in both directions. It does not prove a physical infrastructure gap: missing data, POI selection, profile rules, or thresholds can affect the result. Visible overlap between buffered shapes does not by itself prove network connectivity.
 
 ## How To Use This
 
-Use islands as screening indicators, validate important locations locally, and compare results with field evidence and community knowledge before prioritizing action.
+Use islands as screening indicators. Confirm the included POIs, profile, threshold, dataset, and display treatment; then inspect mapped paths, crossings, barriers, and endpoints. Validate important locations with local records, field observations, and community knowledge before describing a physical gap or prioritizing action.
 
 ## Example
 
-A report identifies a small connected component separated by a missing crossing edge. Reviewers inspect the intersection to determine whether the issue is mapped connectivity or a physical barrier.
+A report shows two POI groups as separate islands, although their buffered map shapes appear to touch. Reviewers inspect the sidewalk-only network and nearby crossings to determine whether the modeled components connect; the visual overlap alone does not answer that question.
 
 ## Assistant Guidance
 
-Name the dataset, profile, metric, and report scope. Avoid treating an island as a judgment about residents or places, and abstain when the analysis assumptions are missing.
+Name the report, dataset version, POI coverage, profile, threshold, and map-display assumptions. Explain that the result is based on forward walksheds from selected POIs and does not establish door-to-door or round-trip access. Avoid judging residents or places from an island map, and abstain when the analysis assumptions are missing.
 
 ## Related Concepts
 

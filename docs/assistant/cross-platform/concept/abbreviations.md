@@ -48,7 +48,7 @@ topics:
 risk_level: low
 authority_level: official
 publication_status: published
-last_reviewed: 2026-09-21
+last_reviewed: 2026-10-09
 retrieval_priority: high
 assistant_behavior:
     allow_inference: false
@@ -69,7 +69,7 @@ tags:
 
 ## Short Answer
 
-This page lists all 331 abbreviations, acronyms, and initialisms used across TCAT Wiki documentation and TCAT platforms and tools.
+This page lists all 333 abbreviations, acronyms, and initialisms used across TCAT Wiki documentation and TCAT platforms and tools.
 
 ## Significance
 
@@ -289,6 +289,7 @@ The table below maps each abbreviated form to its full expansion. Entries are so
 | OTP | OpenThePaths / OpenTripPlanner |
 | OTP25 | OpenThePaths 2025 |
 | OTP26 | OpenThePaths 2026 |
+| PacTrans | Pacific Northwest Transportation Consortium |
 | PED XING | Pedestrian Crossing |
 | PII | Personally Identifiable Information |
 | POI | Point of Interest |
@@ -366,6 +367,7 @@ The table below maps each abbreviated form to its full expansion. Entries are so
 | TTS | Text to Speech |
 | TVM | Ticket Vending Machine |
 | TxDOT | Texas Department of Transportation |
+| UAA | University of Alaska Anchorage |
 | UGA | Urban Growth Area |
 | UI | User Interface / Unincorporated |
 | UN | United Nations |

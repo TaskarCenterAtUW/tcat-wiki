@@ -18,9 +18,9 @@ topics:
     - dataset-lineage
     - publication-workflow
 risk_level: medium
-authority_level: provisional
+authority_level: explanatory
 publication_status: draft
-last_reviewed: 2026-09-11
+last_reviewed: 2026-09-29
 retrieval_priority: medium
 assistant_behavior:
     allow_inference: false
@@ -55,21 +55,21 @@ Record the source and version, edit within the workspace, and use the documented
 
 ## What This Does Not Mean
 
-Creating or editing a workspace does not automatically update the source or make the workspace public.
+Creating or editing a workspace does not automatically update the source or make the workspace public. Deleting a workspace is irreversible; the workspace and its contents cannot be recovered after deletion.
 
 ## How To Use This
 
-Ask which source, workspace, and export destination are involved.
+Before deleting a workspace, export its changes or download a copy and verify that the data needed for future work is preserved. Then confirm the source, workspace, and export destination; do not assume that a deleted workspace can be restored.
 
 ## Example
 
-A team creates a workspace from a TDEI dataset, adds accessibility features, and reviews the copy before exporting a new version.
+A team creates a workspace from a TDEI dataset, adds accessibility features, and reviews the copy before exporting a new version. Before deleting the workspace, the team verifies that the export or downloaded copy contains the changes it needs to retain.
 
 ## Assistant Guidance
 
-Cite lineage and export documentation; abstain when the source relationship is not recorded.
+Cite lineage and export documentation. Warn that deleting a workspace is irreversible and recommend preserving needed changes before deletion.
 
 ## Related Concepts
 
- - [How can a workspace diverge from its source dataset?](workspace-copy-and-divergence.md)
- - [What is dataset lineage?](dataset-lineage.md)
+- [How can a workspace diverge from its source dataset?](workspace-copy-and-divergence.md)
+- [What is dataset lineage?](dataset-lineage.md)
