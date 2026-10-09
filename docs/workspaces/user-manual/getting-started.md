@@ -21,11 +21,10 @@ _For a list of all guides on the TCAT Wiki, refer to the [Guides List](../../gui
 ### Open Workspaces
 
 1. **Open** [TDEI Workspaces](https://workspaces.sidewalks.washington.edu/)
-2. **Select** **Sign In** when the landing page appears
-3. **Enter** your **TDEI Username** and **Password**
-4. **Select** **Sign In**
+2. If the sign-in page appears, select **TDEI Login**
+3. Complete sign-in on the TDEI page that opens, using your TDEI account
 
-The landing page describes Workspaces as an integrated editing platform for TDEI datasets. After you sign in, the landing page button changes to **Go to Dashboard**.
+The Workspaces sign-in page may also show **Register Now** and **Forgot Password?** links. For a new account, follow the [TDEI Portal registration instructions](../../tdei/portal/user-manual/account-registration.md#registering-a-new-account); to reset a password, follow the [TDEI Portal password recovery instructions](../../tdei/portal/user-manual/account-registration.md#forgot-password). If either Workspaces link does not open the expected Portal page, use these instructions directly. After you sign in, the landing page button changes to **Go to Dashboard**.
 
 ![TDEI Workspaces landing page with the Sign In button and Learn more about the TDEI link](../../resources/images/workspaces/user-manual/02-getting-started/01-landing-light.avif#only-light)
 ![TDEI Workspaces landing page with the Sign In button and Learn more about the TDEI link](../../resources/images/workspaces/user-manual/02-getting-started/01-landing-dark.avif#only-dark)
@@ -45,6 +44,26 @@ The account control at the right side of the top navigation bar shows the signed
 
 ![TDEI Workspaces home page after sign-in, with the Home navigation item selected and the Go to Dashboard button](../../resources/images/workspaces/user-manual/02-getting-started/02-home-light.avif#only-light)
 ![TDEI Workspaces home page after sign-in, with the Home navigation item selected and the Go to Dashboard button](../../resources/images/workspaces/user-manual/02-getting-started/02-home-dark.avif#only-dark)
+
+---
+
+### Recover an expired session
+
+When your TDEI session expires while you are using Workspaces, the **Session Expired** dialog offers **TDEI Login** and **Logout**.
+
+1. Select **TDEI Login** to sign in again and return to the page you were using
+2. Select **Logout** if you do not want to sign in again
+
+Save or submit any in-progress edits before leaving the page; session recovery does not guarantee that unsaved changes are preserved. Signing in or out in one Workspaces tab synchronizes the session across other open tabs.
+
+---
+
+### Sign out
+
+1. Open the account menu in the navigation bar
+2. Select **Logout**
+
+Workspaces signs out of TDEI and returns to the sign-in page.
 
 ---
 

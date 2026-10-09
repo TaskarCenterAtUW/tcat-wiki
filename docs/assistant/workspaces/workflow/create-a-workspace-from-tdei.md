@@ -24,7 +24,7 @@ topics:
 risk_level: low
 authority_level: provisional
 publication_status: draft
-last_reviewed: 2026-05-22
+last_reviewed: 2026-09-29
 retrieval_priority: medium
 assistant_behavior:
     allow_inference: false
@@ -66,7 +66,7 @@ TDEI is built to manage **whole datasets** (inventory, metadata, jobs, releases)
 **Two equivalent entry points**
 
 1. **From TDEI portal** — Browse to the dataset (for example under a project group), use the dataset action menu, and choose **Open in Workspaces**. This copies that dataset **as it exists at that version** (for example "version 2") into a new workspace.
-2. **From Workspaces** — Sign in with the **same TDEI portal account**, use **Create Workspace** (dashboard or **New workspace**), choose **From TDEI**, select the **project group**, then select the dataset from the list.
+2. **From Workspaces** — Sign in through **TDEI Login** with the **same TDEI Portal account**, use **Create Workspace** (dashboard or **New workspace**), choose **From TDEI**, select the **project group**, then select the dataset from the list.
 
 **What gets copied**
 
@@ -76,7 +76,7 @@ TDEI is built to manage **whole datasets** (inventory, metadata, jobs, releases)
 
 **Accounts and access**
 
-- Workspaces uses **TDEI portal credentials** (same login as TDEI, Aviv ScoutRoute, and related tools).
+- Workspaces uses **TDEI Login** SSO with the same TDEI Portal account used for TDEI and related tools.
 - You must have access to the relevant **project group** and dataset in TDEI before you can open it in Workspaces.
 
 **After the workspace exists**

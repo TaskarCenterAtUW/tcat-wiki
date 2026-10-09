@@ -29,7 +29,7 @@ _For a list of all guides on the TCAT Wiki, refer to the [Guides List](../../gui
 ### Quick Start
 
 1. **Open** [TDEI Workspaces](https://workspaces.sidewalks.washington.edu/)
-2. **Sign in** with your TDEI credentials
+2. **Sign in** through TDEI with your TDEI account
 3. **Select** a project group on the [Dashboard](dashboard.md)
 4. **Select** an existing workspace, or [create a workspace](create.md)
 5. Use the workspace actions to edit, configure, or [export the workspace](export.md)

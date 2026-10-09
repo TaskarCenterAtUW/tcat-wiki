@@ -5,6 +5,8 @@ slug: workspaces
 doc_type: concept
 questions:
     - What is Workspaces?
+    - How do I sign in to Workspaces?
+    - What should I do when my Workspaces session expires?
 audiences:
     - planner
     - jurisdiction
@@ -19,7 +21,7 @@ topics:
 risk_level: low
 authority_level: provisional
 publication_status: draft
-last_reviewed: 2026-07-22
+last_reviewed: 2026-09-29
 retrieval_priority: medium
 assistant_behavior:
     allow_inference: false
@@ -28,6 +30,7 @@ assistant_behavior:
     do_not_claim:
         - Editing Workspaces directly edits the public OpenStreetMap database.
         - Editing a workspace automatically publishes changes to TDEI or OS-CONNECT.
+        - Reauthenticating after session expiry preserves unsaved edits.
 related_pages: []
 tags:
     - Assistant
@@ -47,7 +50,7 @@ The sandbox lets jurisdictions, advocates, GIS staff, and other contributors rev
 
 ## What This Means
 
-Workspaces can be created from OSM or TDEI data, edited with compatible tools such as Rapid, JOSM, and AVIV ScoutRoute, configured with imagery and external-app settings, reviewed, and exported to TDEI.
+Workspaces can be created from OSM or TDEI data, edited with compatible tools such as Rapid, JOSM, and AVIV ScoutRoute, configured with imagery and external-app settings, reviewed, and exported to TDEI. Web sign-in uses the **TDEI Login** SSO flow; when a session expires, users can authenticate again and return to the page they were using. Login and logout changes synchronize across open Workspaces tabs.
 
 ## What This Does Not Mean
 
@@ -55,7 +58,7 @@ A workspace is not the public OSM database, a released TDEI dataset, or an autom
 
 ## How To Use This
 
-Identify the workspace, project group, source dataset, editor, and publication state before interpreting an edit.
+Identify the workspace, project group, source dataset, editor, and publication state before interpreting an edit. Do not promise that unsaved work survives session expiry; save or submit edits before signing out or reauthenticating when possible.
 
 ## Example
 

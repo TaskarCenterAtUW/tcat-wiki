@@ -26,6 +26,14 @@ _For a list of all guides on the TCAT Wiki, refer to the [Guides List](../../gui
 
 The review view shows the workspace name, a list of review items, and a map. When no changes match the current filters, the panel displays **No items to review**.
 
+### Link to a changeset
+
+When you select a changeset, Workspaces adds its ID to the review URL. You can share or reopen that URL to select the same changeset in the same workspace. A link follows this pattern:
+
+`https://workspaces.sidewalks.washington.edu/workspace/{workspace-id}/review?changeset={changeset-id}`
+
+Replace `{workspace-id}` with the workspace's ID and `{changeset-id}` with the changeset number. Resolved changesets are included when opened through a changeset link. If the changeset is not found in that workspace, the review page reports that it was not found.
+
 ---
 
 ### Understand the review list
@@ -117,6 +125,8 @@ Only validators and owners can resolve changeset reviews. If the control is unav
 2. Review the updated item list
 
 Use refresh when another contributor may have added or changed review items.
+
+If the review map cannot display an item, select **Try again** in the map error notice to retry.
 
 ---
 

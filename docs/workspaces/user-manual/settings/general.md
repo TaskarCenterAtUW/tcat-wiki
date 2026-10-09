@@ -60,6 +60,15 @@ Choose one of the available quest-definition sources:
 
 Select **Save** after changing the quest-definition settings.
 
+#### Edit Conflict Handling
+
+Use **Edit Conflict Handling** to choose how Workspaces handles different values when two users edit the same feature:
+
+- **Resolve** compares the values and prompts you to choose which value to use for each field that differs.
+- **Override** saves all field values submitted by the latest editor; this is the “last edit wins” option.
+
+Select the option agreed for the workspace, then select **Save**. Confirm the workspace's conflict-handling choice with its owner or project lead before coordinating concurrent edits; neither option is a universal recommendation.
+
 #### Custom Imagery
 
 Enter a Custom Imagery Definition in **Imagery JSON Definition**, then select **Save**. The help text below the field links to the required **JSON Schema** and an **example**.

@@ -20,7 +20,7 @@ topics:
 risk_level: low
 authority_level: provisional
 publication_status: draft
-last_reviewed: 2026-09-11
+last_reviewed: 2026-09-29
 retrieval_priority: medium
 assistant_behavior:
     allow_inference: false
@@ -43,7 +43,7 @@ tags:
 
 ## Short Answer
 
-Choose the appropriate creation path, provide a title and project group, supply the source dataset or file, submit the request, and verify initialization in the dashboard. Record source, version, environment, and workspace ID.
+Choose **Blank Workspace**, **From TDEI**, or **From File**. Provide a title and project group, supply a source dataset or file when required, submit the request, and verify the result in the dashboard. Record the source, version, environment, and workspace ID.
 
 ## Significance
 
@@ -51,7 +51,7 @@ A consistent creation preflight protects lineage and prevents teams from editing
 
 ## What This Means
 
-Check permissions, source format, dataset scope, title, project group, and current environment before submitting.
+Check permissions, source format, dataset scope, title, project group, and current environment before submitting. The duplicate-title warning checks the selected project group but does not block creation; creation can continue if the availability check fails.
 
 ## What This Does Not Mean
 
@@ -59,11 +59,11 @@ Creation does not guarantee successful conversion, current data, access for ever
 
 ## How To Use This
 
-Use the TDEI or Workspaces workflow matching the source. Preserve any conversion errors and do not retry blindly if the source or destination is uncertain.
+Use the Workspaces creation option matching the source. A blank workspace starts with no map data. Preserve any conversion errors and do not retry blindly if the source or destination is uncertain.
 
 ## Example
 
-A team converts a prepared dataset, creates the workspace, waits for processing, and confirms the new workspace before inviting editors.
+A team chooses **From File** for a prepared dataset, creates the workspace, waits for processing, and confirms the new workspace before inviting editors.
 
 ## Assistant Guidance
 
