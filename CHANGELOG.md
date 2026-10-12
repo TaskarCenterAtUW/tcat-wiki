@@ -27,6 +27,19 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/),
 
 -->
 
+## v16.6.0 (2026-10-12)
+
+### Changed
+
+- **Wiki**: Updated documentation related to LFQD Schema v3.2.1 (support recency_period=0) and LFQD Creator v0.12.0 (support LFQD Schema v3.2.1)
+
+## v16.5.0 (2026-10-09)
+
+### Changed
+
+- **Wiki**: Updated Workspaces user manual pages
+- **Wiki**: Updated Workspaces Assistant Knowledge Base articles
+
 ## v16.4.0 (2026-10-09)
 
 ### Changed

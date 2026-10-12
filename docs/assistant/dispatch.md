@@ -28,7 +28,7 @@ topics:
 risk_level: low
 authority_level: official
 publication_status: draft
-last_reviewed: 2026-09-29
+last_reviewed: 2026-10-12
 retrieval_priority: high
 assistant_behavior:
     allow_inference: false
@@ -102,7 +102,7 @@ This page should be fetched fresh rather than cached aggressively; its registry 
 | Status | Count | Meaning |
 | :----- | ----: | :------ |
 | `stub` | 0 | Frontmatter and heading scaffold exist; body is `TODO` |
-| `draft` | 810 | Content authored; awaiting TCAT editorial review |
+| `draft` | 811 | Content authored; awaiting TCAT editorial review |
 | `published` | 1 | Available in the human-facing site |
 | `archived` | 0 | Retained for agents but not published |
 
@@ -110,7 +110,7 @@ This page should be fetched fresh rather than cached aggressively; its registry 
 
 | Authority level | Count | Meaning |
 | :-------------- | ----: | :------ |
-| `provisional` | 663 | Early or limited-confidence guidance |
+| `provisional` | 664 | Early or limited-confidence guidance |
 | `explanatory` | 146 | Established explanation without formal policy authority |
 | `official` | 2 | Formally endorsed organizational guidance |
 
@@ -1167,6 +1167,7 @@ Base: `assistant/workspaces/concept/`
 | `3fa9ed5e-d219-4cfa-85c0-e05649f7b617` | `dataset-lineage.md` | provisional | draft |
 | `a68282e8-3baa-4acf-ac9d-11d688ae646d` | `edit-attribution.md` | provisional | draft |
 | `60301468-58c6-44f2-a4ae-03615b0b60af` | `edit-auditing.md` | provisional | draft |
+| `3f594b9b-1fff-4ff4-9288-632b8658d6e8` | `edit-conflict-handling.md` | provisional | draft |
 | `ff861a75-487d-4cc1-b2b4-b8b5299d21a3` | `edit-history.md` | provisional | draft |
 | `4eafe0ac-ae4a-4225-9e86-4c5fa1815d72` | `edit-metadata.md` | provisional | draft |
 | `7a5c2a69-c837-46e5-9a07-de04bf4ef98f` | `edit-reviewers.md` | provisional | draft |
