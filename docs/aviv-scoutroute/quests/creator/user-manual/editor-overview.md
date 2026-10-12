@@ -57,9 +57,9 @@ The **Resurvey Interval** field sets the global `recency_period` value in days. 
 2. **Enter** a whole-number interval in days for the project
 3. **Review** the `recency_period` value in the JSON Preview
 
-New definitions currently show a default of `90` days. Long Form Quest Definition schema version `3.2.0` requires a value of at least `1` whole day. The interval is measured as elapsed time, not as a calendar-date change. For example, an element surveyed at 11:59 PM becomes eligible again at 11:59 PM the following day when `recency_period` is `1`.
+New definitions currently show a default of `90` days. Quest Definition Creator version `0.12.0` supports Long Form Quest Definition schema version `3.2.1`, which accepts a whole-number `recency_period` of `0` or greater; schema version `3.2.0` required at least `1` whole day. Setting `recency_period` to `0` makes quests immediately eligible for resurvey, even when all applicable questions have answers. Previously submitted answers remain on the element. The interval is measured as elapsed time in days, not as a calendar-date change. For example, an element surveyed at 11:59 PM becomes eligible again at 11:59 PM the following day when `recency_period` is `1`.
 
-The interval applies to the definition as a whole, not to an individual element or quest question. Schema version `3.2.0` does not support fractional days or intervals specified in hours.
+The interval applies to the definition as a whole, not to an individual element or quest question. Schema version `3.2.1` does not support fractional days or intervals specified in hours.
 
 ### How Resurvey Visibility Works
 

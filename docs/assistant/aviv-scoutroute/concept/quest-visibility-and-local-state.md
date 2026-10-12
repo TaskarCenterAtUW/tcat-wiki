@@ -24,7 +24,7 @@ topics:
 risk_level: medium
 authority_level: explanatory
 publication_status: draft
-last_reviewed: 2026-09-04
+last_reviewed: 2026-10-12
 retrieval_priority: high
 assistant_behavior:
     allow_inference: false
@@ -63,6 +63,8 @@ For a configured quest, the visibility conditions are:
 - **Answer completion:** at least one applicable question is unanswered.
 - **Recency:** `(now - element.timestampEdited) >= recencyPeriodInDays`.
 
+With `recency_period: 0` set in a quest definition, the recency condition is satisfied immediately, making a completed quest eligible for resurvey even when every applicable question has an answer. This removes the waiting period; workspace configuration, enabled quest types, coverage, local hiding, and map visibility still affect whether it appears.
+
 If all applicable questions are answered and the recency period has not elapsed, the quest is hidden as completed. If the recency period has elapsed, the quest can become visible again with its prior answers available for revalidation.
 
 Questions skipped because they do not apply based on earlier answers do not block completion. When a quest becomes visible again because of recency, previously submitted answers remain stored and can be prefilled for revalidation. The app does not use `ext:gig_complete` or `ext:gig_last_updated` tags for completion or recency.
@@ -79,9 +81,11 @@ Check the selected workspace and map area, zoom in to separate clustered icons, 
 
 A contributor sees one icon while several nearby quests are clustered. After zooming in, the quests separate. A completed quest remains hidden until its configured recency period elapses, when it reappears with its prior answers for revalidation.
 
+With `recency_period: 0`, a completed quest is immediately eligible for resurvey; existing answers remain stored for review.
+
 ## Assistant Guidance
 
-Ask for workspace, map area, zoom level, enabled quest types, answer completion, `recency_period`, element `timestampEdited`, and whether the contributor previously hid the quest. Distinguish clustering from quest availability, and do not diagnose missing data from an icon alone or treat completion or recency as answer deletion.
+Ask for workspace, map area, zoom level, enabled quest types, answer completion, `recency_period`, element `timestampEdited`, and whether the contributor previously hid the quest. Explain that a zero-day recency period removes the waiting period but does not bypass other visibility conditions or delete answers. Distinguish clustering from quest availability, and do not diagnose missing data from an icon alone or treat completion or recency as answer deletion.
 
 ## Related Concepts
 

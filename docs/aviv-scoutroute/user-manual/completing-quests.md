@@ -24,6 +24,8 @@ When you open a workspace, the map displays available quests as icons on the map
 
 The recency period controls visibility only. It does not expire, delete, or invalidate answers already saved on the element. When a quest becomes visible again, previously submitted answers are prefilled for review and revalidation.
 
+Long Form Quest Definition schema version `3.2.1` allows `recency_period: 0`, which makes an answered quest immediately eligible for resurvey without a waiting period. Other workspace, quest-type, and map visibility settings still apply.
+
 <!-- === "Android" -->
 
 <!-- IMAGE PLACEHOLDER: Map with quest icons visible | ../../resources/images/aviv-scoutroute/android/map-with-quests-dark.png#only-dark{ width="300" } -->

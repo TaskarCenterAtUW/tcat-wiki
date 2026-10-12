@@ -20,7 +20,7 @@ topics:
 risk_level: medium
 authority_level: explanatory
 publication_status: draft
-last_reviewed: 2026-09-29
+last_reviewed: 2026-10-12
 retrieval_priority: high
 assistant_behavior:
     allow_inference: false
@@ -85,7 +85,7 @@ A project manager copies a definition's raw JSON, loads it into the Creator, dup
 
 ## Assistant Guidance
 
-Treat Creator features and schema compatibility as version-dependent. Ask which definition version, Creator version, app, workspace, and configuration source are involved. Explain that a local resumed draft is browser- and device-specific. Do not promise that reordering preserves dependencies without checking the generated definition, and distinguish AutoCapture configuration from app and workspace support. Cite the current Quest Definition Creator documentation when available.
+Treat Creator features and schema compatibility as version-dependent. As of Creator version `0.12.0`, schema version `3.2.1` supports `recency_period: 0`; do not infer that the target app supports that setting without evidence. Ask which definition schema version, Creator version, app, workspace, and configuration source are involved. Explain that a local resumed draft is browser- and device-specific. Do not promise that reordering preserves dependencies without checking the generated definition, and distinguish Creator support from app and workspace support. Cite the current Quest Definition Creator documentation when available.
 
 ## Related Concepts
 
