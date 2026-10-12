@@ -927,6 +927,7 @@ nav = [
                 {"Dataset lineage (Workspaces and TDEI)" = "assistant/workspaces/concept/dataset-lineage.md"},
                 {"How are edits attributed to users?" = "assistant/workspaces/concept/edit-attribution.md"},
                 {"How can edits be audited?" = "assistant/workspaces/concept/edit-auditing.md"},
+                {"How does Workspaces handle edit conflicts?" = "assistant/workspaces/concept/edit-conflict-handling.md"},
                 {"How can users inspect edit history?" = "assistant/workspaces/concept/edit-history.md"},
                 {"What metadata is stored for edits?" = "assistant/workspaces/concept/edit-metadata.md"},
                 {"Who can review edits?" = "assistant/workspaces/concept/edit-reviewers.md"},
