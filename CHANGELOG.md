@@ -27,6 +27,12 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/),
 
 -->
 
+## v16.7.0 (2026-10-15)
+
+### Changed
+
+- **Wiki**: Standardized AccessMap region selector location wording as being a button at the top of the left sidebar.
+
 ## v16.6.0 (2026-10-12)
 
 ### Changed

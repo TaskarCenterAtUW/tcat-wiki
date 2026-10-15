@@ -37,7 +37,7 @@ AccessMap is powered by [OpenSidewalks](../../opensidewalks/index.md) and [OpenS
 ### Quick Start
 
 1. **Open** your web browser and navigate to [AccessMap.app](https://accessmap.app)
-2. **Select** a region from the region selector in the top bar
+2. **Select** a region using the button at the top of the left sidebar
 3. **Choose** a mobility profile that fits your needs, or customize your own!
 4. **Search** for or select a starting point and destination to plan your route
 
