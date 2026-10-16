@@ -122,7 +122,7 @@ If the planned route does not match your needs:
 
 ### Sharing a Route
 
-AccessMap routes can be shared by simply copying the URL in your browser's address bar after planning a route. The URL encodes the current map view, selected waypoints, and routing profile, so anyone who opens the link will see the same route.
+AccessMap routes can be shared by copying the URL in your browser's address bar after planning a route. The URL encodes the current map view, selected waypoints, region, and routing preferences. When the link is opened, AccessMap defaults to using the current date and time for the trip options.
 
 !!! example "Example"
 
@@ -130,7 +130,7 @@ AccessMap routes can be shared by simply copying the URL in your browser's addre
 
     `https://www.accessmap.app/dir?wp=-122.3493266_47.6204716%27-122.3372692_47.627025&region=wa.seattle&lon=-122.3467038&lat=47.621326&z=14.34&sa=1&mu=0.08&md=0.1&ab=1&aps=0`
 
-    The URL parameters encode the full route state:
+    The URL parameters encode the route and preference values listed below:
 
     | Parameter | Value                     | Meaning                                                      |
     |:----------|:--------------------------|:-------------------------------------------------------------|

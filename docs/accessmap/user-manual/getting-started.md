@@ -35,7 +35,7 @@ AccessMap is a web application, so **no download or installation is required**. 
 
 AccessMap is available in a number of regions across Washington State and beyond. When you first open AccessMap, the map will be centered on the default region. To switch to a different region:
 
-1. Select the **region name** displayed in a box at the top of the left sidebar (e.g., "Seattle, WA")
+1. Select the region name displayed on the button at the top of the left sidebar (e.g., "Seattle, WA")
 
 2. A **Regions** dialog will appear with a filterable list of all available regions
 

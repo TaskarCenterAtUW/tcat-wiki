@@ -27,6 +27,20 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/),
 
 -->
 
+## v16.7.0 (2026-10-15)
+
+### Changed
+
+- **Core**: Added OS-CONNECT Chatbot (prod) ingest signal automation
+- **Wiki**: Clarified AccessMap's rating popup appearance trigger
+- **Wiki**: Documented the minimum and maximum values for AccessMap sliders
+- **Wiki**: Documented whether AccessMap URLs preserve date and time selections
+
+### Fixed
+
+- **Wiki**: Fixed inconsistent AccessMap region selector location wording
+- **Wiki**: Fixed inconsistencies in AccessMap Assistant Knowledge Base articles
+
 ## v16.6.0 (2026-10-12)
 
 ### Changed

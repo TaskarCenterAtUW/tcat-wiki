@@ -108,7 +108,7 @@ The **Landmarks Distance** setting (in the Custom profile preferences) controls 
 
 ### Rating and Post-Trip Survey
 
-After you close the Directions panel, AccessMap may display a **rating popup** asking "Enjoying AccessMap?" You can:
+Each time you close the **Directions** sidebar using the **Close (X)** button at the top right, AccessMap displays a **rating popup** asking "Enjoying AccessMap?" You can:
 
 1. Select a **star rating** (1-5 stars)
 2. Select **Submit** to send your rating (or **Cancel** to dismiss)

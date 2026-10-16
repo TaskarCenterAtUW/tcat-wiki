@@ -31,12 +31,12 @@ The AccessMap interface consists of two main areas: the **sidebar** on the left,
 
 The left sidebar is the primary control panel for AccessMap. It contains:
 
-| Element             | Location      | Description                                                                       |
-| :------------------ | :------------ | :-------------------------------------------------------------------------------- |
-| **Main Menu**       | Top left      | Opens the main menu (☰ "hamburger" icon)                                         |
-| **Region Selector** | Top bar       | Displays the currently selected region (e.g., "Seattle, WA"); select to switch    |
-| **Search Bar**      | Below top bar | Search for an address or location to use as a waypoint in your route              |
-| **Profile Panel**   | Below search  | Select a pre-defined mobility profile or customize individual routing preferences |
+| Element             | Location                              | Description                                                                       |
+| :------------------ | :------------------------------------ | :-------------------------------------------------------------------------------- |
+| **Main Menu**       | Top left                              | Opens the main menu (☰ "hamburger" icon)                                         |
+| **Region Selector** | Button at the top of the left sidebar | Displays the currently selected region (e.g., "Seattle, WA"); select to switch    |
+| **Search Bar**      | Below top bar                         | Search for an address or location to use as a waypoint in your route              |
+| **Profile Panel**   | Below search                          | Select a pre-defined mobility profile or customize individual routing preferences |
 
 ---
 
