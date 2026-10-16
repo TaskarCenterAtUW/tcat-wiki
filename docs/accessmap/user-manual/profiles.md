@@ -52,8 +52,8 @@ Selecting the **Custom** profile unlocks individual preference controls. These l
 
 | Preference                     | Description                                                                                                                                         |
 | :----------------------------- | :-------------------------------------------------------------------------------------------------------------------------------------------------- |
-| **Maximum uphill steepness**   | The steepest uphill incline (as a percentage) AccessMap will include in a route. Lower values produce flatter routes.                               |
-| **Maximum downhill steepness** | The steepest downhill incline (as a percentage) AccessMap will include in a route. Lower values produce flatter routes.                             |
+| **Maximum uphill steepness**   | The steepest uphill incline (as a percentage) AccessMap will include in a route. Lower values produce flatter routes. Slider range: 4% to 20%.       |
+| **Maximum downhill steepness** | The steepest downhill incline (as a percentage) AccessMap will include in a route. Lower values produce flatter routes. Slider range: 4% to 20%.     |
 | **Street avoidance factor**    | Controls how strongly AccessMap avoids routing on streets without sidewalks. A value of `1` avoids streets; `0` treats streets like any other path. |
 | **Avoid barriers**             | When enabled, AccessMap avoids paths with raised curbs and stairs that may be impassable for some users.                                            |
 | **Avoid noise**                | When enabled, AccessMap avoids sidewalks and crossings adjacent to high-traffic primary streets.                                                    |
@@ -72,7 +72,7 @@ This section helps customize the alerts your screen reader calls out as you navi
 
 | Setting                | Description                                                                                                           |
 | :--------------------- | :-------------------------------------------------------------------------------------------------------------------- |
-| **Landmarks Distance** | The maximum distance (in meters) from the route within which nearby landmarks are included in step-by-step directions |
+| **Landmarks Distance** | The maximum distance (in meters) from the route within which nearby landmarks are included in step-by-step directions. Slider range: 0 to 10 meters. |
 | **Surface alerts**     | Alerts when the surface type changes along the route (e.g., from concrete to gravel)                                  |
 | **Incline alerts**     | Alerts when the route transitions to a notably uphill or downhill section                                             |
 | **Building alerts**    | Alerts when the route passes notable buildings                                                                        |
