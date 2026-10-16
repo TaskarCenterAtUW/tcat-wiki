@@ -36,7 +36,7 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/),
 ### Fixed
 
 - **Wiki**: Fixed inconsistent AccessMap region selector location wording
-- **Wiki**: Fixed AccessMap Assistant Knowledge Base article
+- **Wiki**: Fixed inconsistencies in AccessMap Assistant Knowledge Base articles
 
 ## v16.6.0 (2026-10-12)
 

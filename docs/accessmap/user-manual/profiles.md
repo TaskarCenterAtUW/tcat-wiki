@@ -76,7 +76,7 @@ This section helps customize the alerts your screen reader calls out as you navi
 | **Surface alerts**     | Alerts when the surface type changes along the route (e.g., from concrete to gravel)                                  |
 | **Incline alerts**     | Alerts when the route transitions to a notably uphill or downhill section                                             |
 | **Building alerts**    | Alerts when the route passes notable buildings                                                                        |
-| **Landmark alerts**    | Alerts when the route passes nearby landmarks (benches, bins, signals, etc.) within the configured landmark distance  |
+| **Landmark alerts**    | Alerts when the route passes nearby landmarks, such as benches or waste bins, within the configured landmark distance  |
 
 !!! tip
 
