@@ -32,6 +32,7 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/),
 ### Changed
 
 - **Core**: Added OS-CONNECT Chatbot (prod) ingest signal automation
+- **Wiki**: Clarified AccessMap's rating popup appearance trigger
 
 ### Fixed
 
