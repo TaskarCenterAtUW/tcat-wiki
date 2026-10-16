@@ -31,7 +31,12 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/),
 
 ### Changed
 
-- **Wiki**: Standardized AccessMap region selector location wording as being a button at the top of the left sidebar.
+- **Core**: Added OS-CONNECT Chatbot (prod) ingest signal automation
+
+### Fixed
+
+- **Wiki**: Fixed inconsistent AccessMap region selector location wording
+- **Wiki**: Fixed AccessMap Assistant Knowledge Base article
 
 ## v16.6.0 (2026-10-12)
 

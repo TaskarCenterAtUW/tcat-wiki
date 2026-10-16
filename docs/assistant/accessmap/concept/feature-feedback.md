@@ -50,7 +50,7 @@ Specific feedback helps maintain the data used for accessible routing. Reports c
 
 ## What This Means
 
-Select the affected feature or direction card, choose the applicable feedback category, and describe the issue. Visual and non-visual users can select **Share feedback** on a direction card to report the specific feature or route step. Feature categories include a feature being somewhere else, inaccurate information, or something missing. Direction-step categories include an inaccurate path or something missing. The report is a request for review, not an immediate data edit.
+Select the affected feature or direction card, choose the applicable feedback category, and describe the issue. Visual and non-visual users can select **Share feedback** on a direction card to report the specific feature or route step. Feature categories include a feature being somewhere else, inaccurate information, or something missing. Direction-step categories are **Inaccurate GPS**, **This part of the path is inaccurate**, and **Add something that's missing**. The report is a request for review, not an immediate data edit.
 
 This data or route feedback is different from the end-of-route product rating. The end-of-route rating asks users to rate their overall AccessMap experience, while **Share feedback** reports a specific feature or route problem.
 
