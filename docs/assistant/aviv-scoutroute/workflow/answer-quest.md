@@ -18,7 +18,7 @@ topics:
 risk_level: low
 authority_level: provisional
 publication_status: draft
-last_reviewed: 2026-07-22
+last_reviewed: 2026-10-21
 retrieval_priority: medium
 assistant_behavior:
     allow_inference: false
@@ -48,7 +48,7 @@ Accurate field observations improve the quality of the project data collected th
 
 ## What This Means
 
-Quest inputs may use single choice, numeric entry, multiple choice, or free-form text. Follow the requested units and character limits, and use Unknown or skip when available and appropriate.
+Quest questions may use single choice, numeric entry, multiple choice, free-form text, or a request to capture a location photo. Follow the requested units and character limits; use an uncertainty option or skip when available and appropriate. A photo is required only when the configured quest asks for one.
 
 ## What This Does Not Mean
 
@@ -56,7 +56,7 @@ A submitted answer is not a guarantee of correctness, an unrestricted edit, or i
 
 ## How To Use This
 
-Zoom in to reveal stacked icons, open a quest, inspect the highlighted feature, answer it, review the response, and submit. Undo a recent submission if necessary.
+Zoom in to reveal stacked icons, open a quest, inspect the highlighted feature, answer it, review the response, and submit. If the quest requests a photo, use its camera control to capture and confirm the image before submitting. Undo a recent submission if necessary.
 
 ## Example
 

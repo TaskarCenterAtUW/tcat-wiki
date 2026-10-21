@@ -19,7 +19,7 @@ topics:
 risk_level: medium
 authority_level: explanatory
 publication_status: draft
-last_reviewed: 2026-09-04
+last_reviewed: 2026-10-21
 retrieval_priority: high
 assistant_behavior:
     allow_inference: false
@@ -50,9 +50,9 @@ This workflow turns a direct field observation into a targeted project contribut
 
 ## What This Means
 
-Quest icons may stack when zoomed out. After opening a quest, read its instructions, inspect the real-world feature, and use the requested input type and units, if applicable. Previously submitted answers may be prefilled; unsaved answers from a form that is closed are discarded. Conditional questions that do not apply are hidden and do not block completion. Select **Submit** when the applicable answers are ready; the result is immediately committed to the workspace through a changeset and the completed quest then disappears from the map.
+Quest icons may stack when zoomed out. After opening a quest, read its instructions, inspect the real-world feature, and use the requested input type and units, if applicable. Some quests request a location photo; capture and confirm it before submitting. Previously submitted answers may be prefilled; unsaved answers from a form that is closed are discarded. Conditional questions that do not apply are hidden and do not block completion. Select **Submit** when the applicable answers are ready; the result is committed to the workspace through a changeset and the completed quest then disappears from the map.
 
-If a response is cleared or deselected and submitted, its data is deleted. Changing an earlier answer also purges follow-up answers that no longer apply. If the new response conflicts with an existing answer, resolve the conflict in the app before submitting by choosing whether to overwrite the previous answer or restore it.
+If a response is cleared or deselected and submitted, its data is deleted. Changing an earlier answer also purges follow-up answers that no longer apply. If another contributor changed the element while the quest was open, **Resolve Conflicts** appears and the answer has not yet been submitted. Choose which value to keep for each changed tag—**Your answer** or the **Existing value**—then select **Confirm** to submit the chosen values together. If the element was deleted, the app reports that the answer could not be saved; ask the project contact how to proceed rather than retrying the same deleted element.
 
 ## What This Does Not Mean
 
@@ -60,15 +60,15 @@ Submission does not prove that the answer is correct, remove the need for review
 
 ## How To Use This
 
-Review all selected and prefilled options before submitting, and use group selection only when every selected feature has the same characteristics. When revalidating an existing answer after the recency period, submit the confirmed answer if it remains accurate.
+Review all selected and prefilled options before submitting, complete any photo request, and use group selection only when every selected feature has the same characteristics. When revalidating an existing answer after the recency period, submit the confirmed answer if it remains accurate.
 
 ## Example
 
-A contributor reopens a crossing quest after its recency period. The prior markings and signal answers are prefilled. The contributor confirms that the feature is unchanged, submits the answers, and the app commits a new changeset that refreshes the element's edited timestamp.
+A contributor reopens a crossing quest after its recency period. The prior markings and signal answers are prefilled. The contributor confirms that the feature is unchanged, resolves any displayed tag conflicts, submits the answers, and the app commits a changeset that refreshes the element's edited timestamp.
 
 ## Assistant Guidance
 
-Ask which quest type, input control, workspace, and Quest Definition are involved. Explain whether the contributor is answering an unanswered question or revalidating a prior answer. Encourage direct observation, conflict resolution before submission, and review of the committed changeset; do not advise guessing.
+Ask which quest type, input control, workspace, platform, and app version are involved. Explain whether the contributor is answering an unanswered question or revalidating a prior answer. Encourage direct observation, careful photo capture when requested, conflict resolution before submission, and review of the committed changeset; do not advise guessing.
 
 ## Related Concepts
 

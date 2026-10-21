@@ -5,6 +5,7 @@ slug: quest-definition-picture-questions
 doc_type: concept
 questions:
     - How can quest definitions request photographs?
+    - How does a contributor take a photo for an AVIV ScoutRoute quest?
 audiences:
     - developer
     - jurisdiction
@@ -18,7 +19,7 @@ topics:
 risk_level: high
 authority_level: provisional
 publication_status: draft
-last_reviewed: 2026-06-30
+last_reviewed: 2026-10-21
 retrieval_priority: high
 assistant_behavior:
     allow_inference: false
@@ -29,6 +30,7 @@ assistant_behavior:
 related_pages:
     - assistant/aviv-scoutroute/index.md
     - assistant/workspaces/concept/public-availability-of-quest-photos.md
+    - aviv-scoutroute/user-manual/quest-types.md
 tags:
     - Assistant
 ---
@@ -47,7 +49,7 @@ Photos can capture conditions that existing imagery cannot show, especially afte
 
 ## What This Means
 
-Define the purpose and visibility of the photo before deploying the quest.
+When a quest requests a photo, the Android form presents a **Please take a photo of the location** control. The contributor opens the camera, captures and confirms an image, and returns to the quest; the form can show an upload confirmation. A previously attached image may offer options to retake or remove it. Exact labels and behavior are version-sensitive.
 
 ## What This Does Not Mean
 
@@ -55,16 +57,17 @@ A photo request does not replace geometry, attribute, or privacy review.
 
 ## How To Use This
 
-Ask contributors to capture only necessary, permitted images and explain visibility.
+Explain what the image should document and how it will be handled. Ask contributors to capture only necessary, permitted images, and check current privacy and publication rules before deployment.
 
 ## Example
 
-A contractor photographs a newly constructed curb ramp that is absent from older imagery.
+A curb-ramp quest asks the contributor for a location photo. The contributor selects the ramp answer, captures and confirms an image, checks the upload confirmation, and submits the quest responses.
 
 ## Assistant Guidance
 
-Confirm current privacy, licensing, and publication rules before recommending photo questions.
+Confirm current privacy, licensing, and publication rules before recommending photo questions. Do not infer access or retention from the fact that an image upload succeeded.
 
 ## Related Concepts
 
 - [Who can access photos collected through quests?](../../workspaces/concept/public-availability-of-quest-photos.md)
+- [AVIV ScoutRoute Quest Types user manual](../../../aviv-scoutroute/user-manual/quest-types.md)

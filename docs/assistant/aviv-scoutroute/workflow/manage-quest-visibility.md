@@ -19,7 +19,7 @@ topics:
 risk_level: low
 authority_level: provisional
 publication_status: draft
-last_reviewed: 2026-07-22
+last_reviewed: 2026-10-21
 retrieval_priority: high
 assistant_behavior:
     allow_inference: false
@@ -42,7 +42,7 @@ tags:
 
 ## Short Answer
 
-Zoom in to reveal stacked quest icons, enable the quest types you need in settings, and use the hide or restore controls to manage local quest visibility.
+Zoom in to separate clustered quest icons, use **Manage Quests** to enable or hide items or quest types, and use **Undo Edits** to restore an individually hidden quest.
 
 ## Significance
 
@@ -50,7 +50,7 @@ Visibility controls help contributors focus on a survey while avoiding the mista
 
 ## What This Means
 
-Use **Quest selection and display order** to enable or disable quest types and reorder them. Open a quest and choose **Hide** or **Hide this** to remove it locally. Use **Restore hidden quests**, **Unhide All**, or the relevant Undo control to restore hidden items according to the current platform UI.
+The current Android **Manage Quests** screen says it can show or hide elements by individual item or type and displays an **Enabled** checkbox for each quest type. To hide one quest, select **Hide this quest** from its action panel. To restore it, find the **You hid it** entry in **Undo Edits** and select **Undo**. The current screenshots do not show a control for reordering types or restoring all hidden quests at once.
 
 ## What This Does Not Mean
 
@@ -62,7 +62,7 @@ First select the correct workspace and map area, then zoom in. Review enabled qu
 
 ## Example
 
-A contributor enables only sidewalk quests for a mapping session, zooms in to reveal stacked icons, and restores a hidden quest when it becomes relevant.
+A contributor disables other types in **Manage Quests** to focus on sidewalks, zooms in to reveal stacked icons, and restores one previously hidden quest through **Undo Edits**.
 
 ## Assistant Guidance
 

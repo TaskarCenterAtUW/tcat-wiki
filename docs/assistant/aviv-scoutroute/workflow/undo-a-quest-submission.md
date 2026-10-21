@@ -19,7 +19,7 @@ topics:
 risk_level: medium
 authority_level: provisional
 publication_status: draft
-last_reviewed: 2026-07-22
+last_reviewed: 2026-10-21
 retrieval_priority: medium
 assistant_behavior:
     allow_inference: false
@@ -40,7 +40,7 @@ tags:
 
 ## Short Answer
 
-Open the **Undo** control, select a recent edit, and choose **Undo** or **Revert** according to the current app label. The quest can then reappear for correction.
+Open **Undo Edits**, select a recent change, review it, and confirm the revert using the label shown by the app, such as **Revert Changes** or **Undo**. A recently submitted quest may then reappear for correction.
 
 ## Significance
 
@@ -48,7 +48,7 @@ Undo supports correction of recent mistakes without treating an incorrect submis
 
 ## What This Means
 
-Review the list of recent edits, select the relevant quest answer, and confirm the undo action. The current user documentation describes recent-edit undo and restoration of the quest on the map.
+Review **Undo Edits**, select the relevant recent change, and check its details before confirming. A hidden quest can appear as **You hid it**; select that entry and choose **Undo** to restore it. Labels can vary by edit.
 
 ## What This Does Not Mean
 
@@ -56,11 +56,11 @@ Undo is not guaranteed to cover every historical change or every version of the 
 
 ## How To Use This
 
-Act promptly after identifying an error, verify that the quest reappears, and answer it again from direct observation.
+Act promptly after identifying an error, verify whether the quest reappears, and answer it again from direct observation.
 
 ## Example
 
-A contributor submits the wrong surface value, opens Undo, reverts the recent edit, and reopens the quest to enter the observed value.
+A contributor submits the wrong surface value, opens **Undo Edits**, reviews that entry, confirms the revert, and checks whether the quest reappears so they can enter the observed value.
 
 ## Assistant Guidance
 
