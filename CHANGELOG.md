@@ -27,6 +27,15 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/),
 
 -->
 
+## v16.8.0 (2026-10-21)
+
+### Changed
+
+- **Wiki**: Updated AVIV ScoutRoute user manual
+- **Wiki**: Updated AVIV ScoutRoute Assistant Knowledge Base articles
+- **Wiki**: Updated abbreviations list
+- **Core**: Upgraded Zensical to 0.0.71
+
 ## v16.7.0 (2026-10-15)
 
 ### Changed
