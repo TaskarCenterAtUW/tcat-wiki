@@ -23,7 +23,7 @@ topics:
 risk_level: medium
 authority_level: provisional
 publication_status: draft
-last_reviewed: 2026-07-22
+last_reviewed: 2026-10-21
 retrieval_priority: high
 assistant_behavior:
     allow_inference: false
@@ -53,7 +53,7 @@ New contributors need both an account path and an available workspace. Without t
 
 ## What This Means
 
-Register or sign in to TDEI, join the specified project group, then open AVIV ScoutRoute and select an available app-enabled workspace. A referral link or QR code can add a new account to the appropriate project group. The workspace must contain quests for the relevant area.
+Register or sign in to TDEI, join the specified project group, then open AVIV ScoutRoute and select an available app-enabled workspace. A referral link or QR code can add a new account to the appropriate project group. On Android, location must be enabled for the app to fetch nearby workspaces. In the workspace list, use **Filter by Project Group** and the search control to find an available workspace.
 
 ## What This Does Not Mean
 
@@ -61,7 +61,7 @@ AVIV ScoutRoute is not a global task list that automatically supplies quests eve
 
 ## How To Use This
 
-Use the current project referral link or QR code when provided. If no workspace appears, confirm project membership, app enablement, geographic coverage, and current account configuration. Installation and permission steps differ between platforms, but core app functionality is nearly identical.
+Use the current project referral link or QR code when provided. If no workspace appears, confirm location access on Android, project membership, the selected project-group filter, app enablement, geographic coverage, and current account configuration. Ask for the platform and app version before giving interface-specific steps.
 
 ## Example
 
@@ -69,7 +69,7 @@ A volunteer scans a project-group referral code for a Seattle campaign, register
 
 ## Assistant Guidance
 
-Ask which project group, workspace, and region are involved. Do not promise that a newly created account will immediately show quests without checking configuration.
+Ask which project group, workspace, region, platform, and app version are involved. Do not promise that a newly created account will immediately show quests without checking configuration or location access.
 
 ## Related Concepts
 

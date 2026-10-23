@@ -24,7 +24,7 @@ topics:
 risk_level: medium
 authority_level: explanatory
 publication_status: draft
-last_reviewed: 2026-10-12
+last_reviewed: 2026-10-21
 retrieval_priority: high
 assistant_behavior:
     allow_inference: false
@@ -56,7 +56,7 @@ Visibility problems can be mistaken for missing data, missing permissions, or an
 
 ## What This Means
 
-Zoom in to separate clustered icons. Quest settings can enable or disable types and control display order. A contributor can hide a quest locally and later restore hidden quests. Workspace availability also depends on project membership, app enablement, and coverage.
+Zoom in to separate clustered icons. The **Manage Quests** screen lets contributors show or hide individual items or quest types using the **Enabled** checkboxes. A hidden individual quest can be restored from **Undo Edits** by selecting its **You hid it** entry and choosing **Undo**. Workspace availability also depends on project membership, app enablement, and coverage.
 
 For a configured quest, the visibility conditions are:
 
@@ -75,7 +75,7 @@ A hidden or unseen icon does not prove that the underlying feature or task is ab
 
 ## How To Use This
 
-Check the selected workspace and map area, zoom in to separate clustered icons, review enabled quest types, and restore hidden quests when appropriate. If the quest remains unavailable, check whether all applicable questions are complete and whether the recency period has elapsed.
+Check the selected workspace and map area, zoom in to separate clustered icons, review enabled quest types in **Manage Quests**, and use **Undo Edits** to restore an individually hidden quest. If the quest remains unavailable, check whether all applicable questions are complete and whether the recency period has elapsed.
 
 ## Example
 

@@ -22,16 +22,6 @@ _For a list of all guides on the TCAT Wiki, refer to the [Guides List](../../gui
 
 The AVIV ScoutRoute map displays an overhead view of the workspace area. The app is designed for use in a variety of settings, from dense urban areas to smaller towns and rural communities, and quests often use a common vocabulary for pedestrian infrastructure components.
 
-<!-- === "Android" -->
-
-<!-- IMAGE PLACEHOLDER: Annotated map overview | ../../resources/images/aviv-scoutroute/android/map-overview-dark.png#only-dark{ width="300" } -->
-<!-- IMAGE PLACEHOLDER: Annotated map overview | ../../resources/images/aviv-scoutroute/android/map-overview-light.png#only-light{ width="300" } -->
-
-<!-- === "iOS (Apple)" -->
-
-<!-- IMAGE PLACEHOLDER: Annotated map overview | ../../resources/images/aviv-scoutroute/ios/map-overview-dark.png#only-dark{ width="300" } -->
-<!-- IMAGE PLACEHOLDER: Annotated map overview | ../../resources/images/aviv-scoutroute/ios/map-overview-light.png#only-light{ width="300" } -->
-
 ---
 
 ### Pedestrian Environment Terminology Basics
@@ -46,20 +36,21 @@ Understanding these terms will help you complete quests accurately:
 | **Island**               | A designated, protected space in the middle of a crossing that allows pedestrians to stand safely mid-street                   |
 | **Tactile Paving**       | Purpose-built textured ground surface indicators that provide navigation cues                                                  |
 
-<!-- IMAGE PLACEHOLDER: Annotated diagram showing intersection terminology | ../../resources/images/aviv-scoutroute/shared/intersection-terminology-dark.png#only-dark{ width="400" } -->
-<!-- IMAGE PLACEHOLDER: Annotated diagram showing intersection terminology | ../../resources/images/aviv-scoutroute/shared/intersection-terminology-light.png#only-light{ width="400" } -->
-
 ---
 
 ### Quest Icons
 
 Quests appear as icons on the map. Each icon type represents a different type of feature, such as:
 
-| Quest Type   | Appearance                                                           | Scope                                                                    | Example Questions                                        |
-| :----------- | :------------------------------------------------------------------- | :----------------------------------------------------------------------- | :------------------------------------------------------- |
-| **Sidewalk** | A path icon separating two differently colored areas (grey and blue) | A sidewalk segment along a road, often from one intersection to the next | Surface material, width, obstructions along the sidewalk |
-| **Crossing** | A white pedestrian figure in a crossing on a blue background         | A single crosswalk at an intersection or a mid-block crossing            | Crossing markings, pedestrian signals, audio cues        |
-| **Curb**     | A white wheelchair at a curb on a blue background                    | A specific curb point at the start of a crossing                         | Curb ramp presence, tactile paving, curb height          |
+| Quest type        | Icon cue                      | Example questions                                   |
+| :---------------- | :---------------------------- | :-------------------------------------------------- |
+| **Sidewalks**     | Walking-person icon on a path | Surface material, width, and obstructions           |
+| **Crossings**     | Pedestrian-crossing icon      | Crossing markings, signals, and audio cues          |
+| **Curbs**         | Wheelchair icon at a curb     | Curb ramp presence, tactile paving, and curb height |
+| **Bus Stops**     | Bus icon                      | Shelter, bench, and trash can presence              |
+| **Intersections** | Traffic-signal icon           | Signal types and safety observations                |
+| **Bench**         | Bench icon                    | Backrest and armrest presence                       |
+| **Bathroom**      | Restroom icon                 | Accessibility features and access rules             |
 
 ---
 
@@ -69,31 +60,52 @@ Quests appear as icons on the map. Each icon type represents a different type of
 
 - **Pinch to zoom:** Use two fingers to zoom in or out
 - **Double-tap:** Quickly zoom in on a specific location
-- **Icons:** Plus ++plus++ and minus ++minus++ icons at the bottom right
+- **Zoom buttons:** Use the **+** and **-** controls at the lower right when they are shown. You can also enable **Show map zoom buttons** in [App Settings](app-settings.md).
 
-!!! important
-
-    Quest icons stack up when zoomed out to reduce visual clutter on the map. You should **always zoom in** to see all available quests in an area.
-
-<!-- === "Android" -->
-
-<!-- IMAGE PLACEHOLDER: Comparison of zoomed out vs zoomed in view | ../../resources/images/aviv-scoutroute/android/zoom-comparison-dark.png#only-dark{ width="300" } -->
-<!-- IMAGE PLACEHOLDER: Comparison of zoomed out vs zoomed in view | ../../resources/images/aviv-scoutroute/android/zoom-comparison-light.png#only-light{ width="300" } -->
-
-<!-- === "iOS (Apple)" -->
-
-<!-- IMAGE PLACEHOLDER: Comparison of zoomed out vs zoomed in view | ../../resources/images/aviv-scoutroute/ios/zoom-comparison-dark.png#only-dark{ width="300" } -->
-<!-- IMAGE PLACEHOLDER: Comparison of zoomed out vs zoomed in view | ../../resources/images/aviv-scoutroute/ios/zoom-comparison-light.png#only-light{ width="300" } -->
+!!! important "Quest icons stack up when zoomed out to reduce visual clutter on the map. You should **always zoom in** to see all available quests in an area."
 
 #### Panning
 
 - **Drag:** Touch and drag the map to move to different areas
 - **Your location:** The app uses your device's GPS to show your current position
-- **Center on position:** Compass icon in the bottom right
+- **Current location:** Select the target-shaped control at the lower right to return to your device location
 
 #### Changing Imagery
 
-You can switch between different background map imagery sources (aerial imagery, street maps, etc.), if they are configured for that workspace, using the Layers button.
+You can switch between map imagery sources configured for the workspace by opening **Select Imagery Source** from the layers control.
+
+![AVIV ScoutRoute imagery selector with the default and a configured aerial source](../../resources/images/aviv-scoutroute/user-manual/04-map-interface/06-select-imagery-light.avif#only-light){ .img-contained .img-inline style="--img-width: 25%;" } ![AVIV ScoutRoute map with accessibility quests displayed over aerial imagery](../../resources/images/aviv-scoutroute/user-manual/04-map-interface/19-aerial-imagery-light.avif#only-light){ .img-contained .img-inline style="--img-width: 25%;" }
+![AVIV ScoutRoute imagery selector with the default and a configured aerial source](../../resources/images/aviv-scoutroute/user-manual/04-map-interface/06-select-imagery-dark.avif#only-dark){ .img-contained .img-inline style="--img-width: 25%;" } ![AVIV ScoutRoute map with accessibility quests displayed over aerial imagery](../../resources/images/aviv-scoutroute/user-manual/04-map-interface/19-aerial-imagery-dark.avif#only-dark){ .img-contained .img-inline style="--img-width: 25%;" }
+{: .img-row }
+
+!!! note "Available imagery sources depend on what has been configured for your workspace. Contact your project administrator if you need specific imagery options."
+
+---
+
+![Manage Quests list with enabled checkboxes for feature types](../../resources/images/aviv-scoutroute/user-manual/04-map-interface/01-manage-quests-light.avif#only-light){ .img-right style="--img-width: 33%;" }
+![Manage Quests list with enabled checkboxes for feature types](../../resources/images/aviv-scoutroute/user-manual/04-map-interface/01-manage-quests-dark.avif#only-dark){ .img-right style="--img-width: 33%;" }
+
+### Manage Quests
+
+Open **Manage Quests** from the map controls to show or hide individual items or entire quest types. Use the checkboxes in the **Enabled** column to change which features appear on the map.
+
+---
+
+### Screen Reader Mode
+
+Select **Screen Reader Mode** from the map controls to view nearby quests in a text list. Each item gives the quest type, distance, and direction. Select **Refresh list** to update the list.
+
+Select a quest to open its action panel. Choose **Start answering the questions**, **Hide this quest**, or **Not now**. The list also includes **Undo Edits** and **Go back to map view** controls.
+
+![Screen Reader Mode list of nearby quests with distances and directions](../../resources/images/aviv-scoutroute/user-manual/04-map-interface/02-screen-reader-mode-light.avif#only-light){ .img-contained .img-inline style="--img-width: 25%;" } ![Screen Reader Mode action panel for a selected sidewalk quest](../../resources/images/aviv-scoutroute/user-manual/04-map-interface/03-srm-quest-selected-light.avif#only-light){ .img-contained .img-inline style="--img-width: 25%;" }
+![Screen Reader Mode list of nearby quests with distances and directions](../../resources/images/aviv-scoutroute/user-manual/04-map-interface/02-screen-reader-mode-dark.avif#only-dark){ .img-contained .img-inline style="--img-width: 25%;" } ![Screen Reader Mode action panel for a selected sidewalk quest](../../resources/images/aviv-scoutroute/user-manual/04-map-interface/03-srm-quest-selected-dark.avif#only-dark){ .img-contained .img-inline style="--img-width: 25%;" }
+{: .img-row }
+
+---
+
+### Download Map Data
+
+Select the downward-arrow control on the map to download data for the visible area. Downloading data can help prepare for a survey with limited connectivity, but does not guarantee that every app operation will work offline.
 
 ---
 
@@ -103,26 +115,18 @@ If you submit the wrong answer by mistake, misidentify a feature, or accidentall
 
 #### Steps to Undo
 
-1. Tap the **Undo button** at the bottom left
-2. Review the list of recent edits
-3. Tap the edit you want to review
-4. Tap **Undo** to undo the submission
+1. Select **Undo Edits** from the map or Screen Reader Mode controls.
+2. Review the recent edits and select the entry you want to revert.
+3. Review the changes in the confirmation panel.
+4. Select **Revert Changes** or **Undo**, depending on the label shown for that edit.
 
-The quest should reappear on the map, allowing you to answer it again with the correct information.
+When an edit is reverted, check the map to see whether the quest is available again.
 
-<!-- === "Android" -->
+![Undo Edits list showing a recent quest change](../../resources/images/aviv-scoutroute/user-manual/04-map-interface/04-srm-undo-list-light.avif#only-light){ .img-contained .img-inline style="--img-width: 25%;" } ![Undo confirmation showing the changes to be reverted](../../resources/images/aviv-scoutroute/user-manual/04-map-interface/05-srm-undo-confirm-light.avif#only-light){ .img-contained .img-inline style="--img-width: 25%;" }
+![Undo Edits list showing a recent quest change](../../resources/images/aviv-scoutroute/user-manual/04-map-interface/04-srm-undo-list-dark.avif#only-dark){ .img-contained .img-inline style="--img-width: 25%;" } ![Undo confirmation showing the changes to be reverted](../../resources/images/aviv-scoutroute/user-manual/04-map-interface/05-srm-undo-confirm-dark.avif#only-dark){ .img-contained .img-inline style="--img-width: 25%;" }
+{: .img-row }
 
-<!-- IMAGE PLACEHOLDER: Undo panel with recent edits | ../../resources/images/aviv-scoutroute/android/undo-changes-dark.png#only-dark{ width="300" } -->
-<!-- IMAGE PLACEHOLDER: Undo panel with recent edits | ../../resources/images/aviv-scoutroute/android/undo-changes-light.png#only-light{ width="300" } -->
-
-<!-- === "iOS (Apple)" -->
-
-<!-- IMAGE PLACEHOLDER: Undo panel with recent edits | ../../resources/images/aviv-scoutroute/ios/undo-changes-dark.png#only-dark{ width="300" } -->
-<!-- IMAGE PLACEHOLDER: Undo panel with recent edits | ../../resources/images/aviv-scoutroute/ios/undo-changes-light.png#only-light{ width="300" } -->
-
-!!! note
-
-    If the Undo menu is not visible, the quest cannot be rolled back through the app - contact your project leader for help with undoing older changes.
+!!! note "If the Undo menu is not visible, the quest cannot be rolled back through the app - contact your project leader for help with undoing older changes."
 
 ---
 
@@ -132,59 +136,10 @@ The Hide Quest feature lets you temporarily remove specific quests from view. Th
 
 #### Hiding a Quest
 
-1. Tap on a quest icon to open its answer panel
-2. Tap **Hide** (eye icon)
-3. Answer **Yes** to the confirmation pop-up
-4. The quest disappears from the map
+1. Open a quest and select **Hide this quest**.
+2. To restore an individually hidden quest, open **Undo Edits**, select the entry that says **You hid it**, and select **Undo**.
 
-#### Restoring Hidden Quests
-
-To restore an **individual** hidden quest:
-
-1. Open the Undo menu
-2. Tap on the quest you want to unhide
-3. Select **Undo**
-
-To restore **all** hidden quests at once:
-
-1. Open the hamburger menu and tap **Settings**
-2. Navigate down to **Advanced**
-3. Tap **Restore hidden quests**
-4. Select **Restore** on the confirmation pop-up
-
-!!! info
-
-    Hidden quests are stored locally on your device. They remain hidden until you choose to restore them.
-
----
-
-### Imagery Layer Control
-
-The Imagery Layer control lets you switch between different map background sources, if they have been configured for your workspace.
-
-<!-- === "Android" -->
-
-<!-- IMAGE PLACEHOLDER: Imagery layer selector | ../../resources/images/aviv-scoutroute/android/imagery-layer-dark.png#only-dark{ width="300" } -->
-<!-- IMAGE PLACEHOLDER: Imagery layer selector | ../../resources/images/aviv-scoutroute/android/imagery-layer-light.png#only-light{ width="300" } -->
-
-<!-- === "iOS (Apple)" -->
-
-<!-- IMAGE PLACEHOLDER: Imagery layer selector | ../../resources/images/aviv-scoutroute/ios/imagery-layer-dark.png#only-dark{ width="300" } -->
-<!-- IMAGE PLACEHOLDER: Imagery layer selector | ../../resources/images/aviv-scoutroute/ios/imagery-layer-light.png#only-light{ width="300" } -->
-
-**How to access:**
-
-1. Tap the **Layers** icon in the top toolbar
-
-**Available imagery types may include:**
-
-- Satellite imagery
-- Street maps
-- Custom basemaps configured by your project
-
-!!! note
-
-    Available imagery sources depend on what has been configured for your workspace. Contact your project administrator if you need specific imagery options.
+Hidden quests are local to the app view; hiding a quest does not remove the feature from the workspace for other contributors.
 
 ---
 

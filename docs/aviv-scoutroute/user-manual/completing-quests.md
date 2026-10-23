@@ -26,16 +26,6 @@ The recency period controls visibility only. It does not expire, delete, or inva
 
 Long Form Quest Definition schema version `3.2.1` allows `recency_period: 0`, which makes an answered quest immediately eligible for resurvey without a waiting period. Other workspace, quest-type, and map visibility settings still apply.
 
-<!-- === "Android" -->
-
-<!-- IMAGE PLACEHOLDER: Map with quest icons visible | ../../resources/images/aviv-scoutroute/android/map-with-quests-dark.png#only-dark{ width="300" } -->
-<!-- IMAGE PLACEHOLDER: Map with quest icons visible | ../../resources/images/aviv-scoutroute/android/map-with-quests-light.png#only-light{ width="300" } -->
-
-<!-- === "iOS (Apple)" -->
-
-<!-- IMAGE PLACEHOLDER: Map with quest icons visible | ../../resources/images/aviv-scoutroute/ios/map-with-quests-dark.png#only-dark{ width="300" } -->
-<!-- IMAGE PLACEHOLDER: Map with quest icons visible | ../../resources/images/aviv-scoutroute/ios/map-with-quests-light.png#only-light{ width="300" } -->
-
 !!! tip
 
     Quest icons stack when you're zoomed out. **Zoom in** to see all available quests in a dense area.
@@ -54,15 +44,8 @@ Long Form Quest Definition schema version `3.2.1` allows `recency_period: 0`, wh
 
 3. The map highlights the feature the quest is asking about
 
-<!-- === "Android" -->
-
-<!-- IMAGE PLACEHOLDER: Quest detail panel open | ../../resources/images/aviv-scoutroute/android/quest-panel-open-dark.png#only-dark{ width="300" } -->
-<!-- IMAGE PLACEHOLDER: Quest detail panel open | ../../resources/images/aviv-scoutroute/android/quest-panel-open-light.png#only-light{ width="300" } -->
-
-<!-- === "iOS (Apple)" -->
-
-<!-- IMAGE PLACEHOLDER: Quest detail panel open | ../../resources/images/aviv-scoutroute/ios/quest-panel-open-dark.png#only-dark{ width="300" } -->
-<!-- IMAGE PLACEHOLDER: Quest detail panel open | ../../resources/images/aviv-scoutroute/ios/quest-panel-open-light.png#only-light{ width="300" } -->
+![AVIV ScoutRoute quest panel with the sidewalk feature highlighted on the map](../../resources/images/aviv-scoutroute/user-manual/05-completing-quests/01-quest-element-highlight-light.avif#only-light){ .img-contained style="--img-width: 33%;" }
+![AVIV ScoutRoute quest panel with the sidewalk feature highlighted on the map](../../resources/images/aviv-scoutroute/user-manual/05-completing-quests/01-quest-element-highlight-dark.avif#only-dark){ .img-contained style="--img-width: 33%;" }
 
 To close a quest without answering:
 
@@ -74,24 +57,15 @@ To close a quest without answering:
 
 The way you answer depends on the quest type. Common input methods include:
 
-| Input Type               | How to Answer                                             |
-| :----------------------- | :-------------------------------------------------------- |
-| **Single Choice**        | Tap one option; it will be highlighted with a pink border |
-| **Multiple Choice**      | Tap one or more options; selected items show pink borders |
-| **Numeric Entry**        | Use the on-screen keypad to enter a number                |
-| **Free-Form Text Entry** | Type your response (max 255 characters)                   |
+| Input Type               | How to Answer                                                   |
+| :----------------------- | :-------------------------------------------------------------- |
+| **Single Choice**        | Tap one option; it will be highlighted with a pink border       |
+| **Multiple Choice**      | Tap one or more options; selected items show pink borders       |
+| **Numeric Entry**        | Use the on-screen keypad to enter a number                      |
+| **Free-Form Text Entry** | Type your response (max 255 characters)                         |
+| **Photo request**        | Use the camera control when the quest asks for a location photo |
 
 For detailed information about each quest type, see [Quest Types](quest-types.md).
-
-<!-- === "Android" -->
-
-<!-- IMAGE PLACEHOLDER: Answering a quest | ../../resources/images/aviv-scoutroute/android/quest-answering-dark.png#only-dark{ width="300" } -->
-<!-- IMAGE PLACEHOLDER: Answering a quest | ../../resources/images/aviv-scoutroute/android/quest-answering-light.png#only-light{ width="300" } -->
-
-<!-- === "iOS (Apple)" -->
-
-<!-- IMAGE PLACEHOLDER: Answering a quest | ../../resources/images/aviv-scoutroute/ios/quest-answering-dark.png#only-dark{ width="300" } -->
-<!-- IMAGE PLACEHOLDER: Answering a quest | ../../resources/images/aviv-scoutroute/ios/quest-answering-light.png#only-light{ width="300" } -->
 
 !!! note
 
@@ -109,23 +83,18 @@ If an earlier answer makes a follow-up question inapplicable, the follow-up is h
 
 2. **Tap "Submit"** - Your answer is saved immediately to the workspace
 
-3. **Quest disappears** - Completed quests are removed from the map
-
-<!-- === "Android" -->
-
-<!-- IMAGE PLACEHOLDER: Submit button highlighted | ../../resources/images/aviv-scoutroute/android/quest-submit-dark.png#only-dark{ width="300" } -->
-<!-- IMAGE PLACEHOLDER: Submit button highlighted | ../../resources/images/aviv-scoutroute/android/quest-submit-light.png#only-light{ width="300" } -->
-
-<!-- === "iOS (Apple)" -->
-
-<!-- IMAGE PLACEHOLDER: Submit button highlighted | ../../resources/images/aviv-scoutroute/ios/quest-submit-dark.png#only-dark{ width="300" } -->
-<!-- IMAGE PLACEHOLDER: Submit button highlighted | ../../resources/images/aviv-scoutroute/ios/quest-submit-light.png#only-light{ width="300" } -->
+3. **Quest disappears** - Fully completed quests are removed from the map
 
 !!! success
 
     Once submitted, your contribution is committed to the workspace. It is available for the project's review workflow; it is not held in a separate changeset queue waiting for approval.
 
-If a submitted answer conflicts with an existing answer, AVIV ScoutRoute opens a conflict-resolution flow before submission. Choose whether to overwrite the previous answer or restore it, then submit the resolved result.
+If another contributor changes the feature while you are answering, AVIV ScoutRoute opens **Resolve Conflicts** and has not submitted your answer yet. For each changed tag, choose whether to keep **Your answer** or the **Existing value**, then select **Confirm** to submit the selected values together. Select **Cancel** to stop resolving the conflict.
+
+If the feature was deleted before the answer could be saved, the app displays an **Answer could not be saved** message with the reason. For example, the message may say **Element deleted**; ask the project contact how to proceed.
+
+![AVIV ScoutRoute conflict resolution panel showing the contributor's answer and existing value](../../resources/images/aviv-scoutroute/user-manual/05-completing-quests/02-conflict-resolve-dark.avif){ .img-contained .img-inline style="--img-width: 25%;" } ![AVIV ScoutRoute message explaining that an answer could not be saved because the element was deleted](../../resources/images/aviv-scoutroute/user-manual/05-completing-quests/03-conflict-deleted-dark.avif){ .img-contained .img-inline style="--img-width: 25%;" }
+{: .img-row }
 
 When you submit a previously answered quest again after the recency period, the app can save the confirmed answers in a new changeset and update the element's `timestampEdited` value. This prevents the same accurate data from being repeatedly requested during the recency period.
 
@@ -198,22 +167,12 @@ The quest multi-select feature makes it easier to apply the same answers to mult
 
 **How to use:**
 
-1. The map shows multiple selectable features of the same type
+1. Long-press on one of the quests
 2. Tap each feature you want to include - selected features show a **purple checkmark**
 3. Tap a selected feature again to deselect it
 4. Tap **"Answer Quests"** to proceed
-5. Answer the questions (your responses apply to all selected features)
+5. Answer the questions (your responses apply equally to all selected features)
 6. Tap **Submit** when ready
-
-<!-- === "Android" -->
-
-<!-- IMAGE PLACEHOLDER: Group quest selection example | ../../resources/images/aviv-scoutroute/android/quest-group-selection-dark.png#only-dark{ width="300" } -->
-<!-- IMAGE PLACEHOLDER: Group quest selection example | ../../resources/images/aviv-scoutroute/android/quest-group-selection-light.png#only-light{ width="300" } -->
-
-<!-- === "iOS (Apple)" -->
-
-<!-- IMAGE PLACEHOLDER: Group quest selection example | ../../resources/images/aviv-scoutroute/ios/quest-group-selection-dark.png#only-dark{ width="300" } -->
-<!-- IMAGE PLACEHOLDER: Group quest selection example | ../../resources/images/aviv-scoutroute/ios/quest-group-selection-light.png#only-light{ width="300" } -->
 
 **Example scenario:**
 

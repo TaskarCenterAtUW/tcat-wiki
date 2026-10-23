@@ -69,8 +69,8 @@ Controls are positioned around the edges of the map view in two groups.
       <td><strong>Take a tour</strong></td>
       <td>Opens a series of guided popups introducing the AccessMap interface</td>
       <td rowspan="2" style="vertical-align: top; border-left: 1px solid var(--md-typeset-table-color);">
-        <img src="../../../resources/images/accessmap/user-manual/interface/top-right-light.png#only-light" alt="Top right menu" />
-        <img src="../../../resources/images/accessmap/user-manual/interface/top-right-dark.png#only-dark" alt="Top right menu" />
+        <img src="../../resources/images/accessmap/user-manual/interface/top-right-light.png#only-light" alt="Top right menu" />
+        <img src="../../resources/images/accessmap/user-manual/interface/top-right-dark.png#only-dark" alt="Top right menu" />
       </td>
     </tr>
     <tr>
@@ -89,8 +89,8 @@ Controls are positioned around the edges of the map view in two groups.
       <td><strong>Start route from your location</strong></td>
       <td>Centers the map on your current location</td>
       <td rowspan="2" style="vertical-align: top; border-left: 1px solid var(--md-typeset-table-color);">
-        <img src="../../../resources/images/accessmap/user-manual/interface/bottom-right-light.png#only-light" alt="Bottom right menu" />
-        <img src="../../../resources/images/accessmap/user-manual/interface/bottom-right-dark.png#only-dark" alt="Bottom right menu" />
+        <img src="../../resources/images/accessmap/user-manual/interface/bottom-right-light.png#only-light" alt="Bottom right menu" />
+        <img src="../../resources/images/accessmap/user-manual/interface/bottom-right-dark.png#only-dark" alt="Bottom right menu" />
       </td>
     </tr>
     <tr>

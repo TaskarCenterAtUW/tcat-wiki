@@ -19,7 +19,7 @@ topics:
 risk_level: high
 authority_level: provisional
 publication_status: draft
-last_reviewed: 2026-07-22
+last_reviewed: 2026-10-21
 retrieval_priority: high
 assistant_behavior:
     allow_inference: false
@@ -32,6 +32,7 @@ assistant_behavior:
 related_pages:
     - assistant/index.md
     - assistant/dispatch.md
+    - aviv-scoutroute/user-manual/index.md
 tags:
     - Assistant
 ---
@@ -58,7 +59,7 @@ AVIV ScoutRoute is not a global task list, an unrestricted editor, or a guarante
 
 ## How To Use This
 
-Use the current project instructions and product documentation for installation and workspace access. Use direct observation for physical features and verify the active workspace and quest definition when troubleshooting.
+Use the current project instructions and product documentation for installation and workspace access. The [AVIV ScoutRoute User Manual](../../aviv-scoutroute/user-manual/index.md) includes current Android screenshots of the workspace list, map controls, quest forms, and profile preferences. Use direct observation for physical features and verify the active workspace and quest definition when troubleshooting.
 
 ## Example
 

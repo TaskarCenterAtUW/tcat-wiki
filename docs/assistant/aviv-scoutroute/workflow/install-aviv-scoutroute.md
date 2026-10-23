@@ -19,7 +19,7 @@ topics:
 risk_level: medium
 authority_level: provisional
 publication_status: draft
-last_reviewed: 2026-07-22
+last_reviewed: 2026-10-21
 retrieval_priority: high
 assistant_behavior:
     allow_inference: false
@@ -50,7 +50,7 @@ Installation is only one part of onboarding. Project membership and workspace co
 
 ## What This Means
 
-For Android, the Firebase distribution website can offer a direct APK download; installing the App Tester app is no longer the recommended path. For iOS, use the confirmed App Store listing: https://apps.apple.com/us/app/aviv-scoutroute/id6749523895. After installation, sign in with the TDEI account and grant location or notification permissions when needed.
+For Android, open the project-provided Firebase App Distribution invitation in a browser, sign in with the Google Account associated with the invitation, and follow the current download and install prompts. The page may ask you to share your email with the developer to get access. For iOS, use the confirmed App Store listing in the [Installation user manual](../../../aviv-scoutroute/user-manual/installation.md). After installation, sign in with the TDEI account and enable device location so the app can find nearby workspaces.
 
 ## What This Does Not Mean
 
@@ -58,15 +58,15 @@ The exact distribution screens, permission prompts, and store availability can c
 
 ## How To Use This
 
-Use the current project referral link or QR code when provided. On Android, follow the Firebase website's direct APK download option. On iOS, open the App Store listing and install the app. Then sign in and confirm that the assigned workspace appears.
+Use the current project invitation link or QR code when provided. On Android, complete the Firebase App Distribution flow shown by that invitation; the exact prompts can change. On iOS, open the App Store listing and install the app. Then sign in and confirm that the assigned workspace appears.
 
 ## Example
 
-A volunteer follows a project referral link, completes TDEI registration, downloads the Android APK directly from Firebase, grants location permission, and signs in to see the assigned workspace.
+A volunteer opens the Android Firebase invitation, follows its access and installation prompts, signs in to AVIV ScoutRoute with a TDEI account, and enables location to find an assigned workspace.
 
 ## Assistant Guidance
 
-Ask for platform, app version, distribution source, and project instructions. Do not recommend installing App Tester as the default Android path, and do not promise access based on installation alone.
+Ask for platform, app version, distribution source, and project instructions. Do not promise a specific Firebase screen or installation method across releases, or promise workspace access based on installation alone.
 
 ## Related Concepts
 

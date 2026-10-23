@@ -27,7 +27,7 @@ topics:
 risk_level: medium
 authority_level: explanatory
 publication_status: draft
-last_reviewed: 2026-09-04
+last_reviewed: 2026-10-21
 retrieval_priority: medium
 assistant_behavior:
     allow_inference: false
@@ -69,7 +69,7 @@ A contributor answers the configured questions for a feature, such as a curb ram
 
 Workspaces uses an OSM-like stack for each workspace. Depending on context, documentation may call a workspace an **OSM container**, **OSM sandbox**, **OSM instance**, or **private OSM**. These terms describe the workspace's isolated OSM-compatible editing environment, not the public OpenStreetMap database. The workspace can use familiar OSM concepts such as elements, tags, changesets, and compatible editor connections while remaining a separate data environment.
 
-If a new answer conflicts with a previously submitted answer in the workspace, the app may present conflict resolution before submission. Reviewers can later inspect the committed changeset and make follow-up edits, which are also committed through changesets.
+If another contributor changes an element while a user is answering, the app may present **Resolve Conflicts** before submission. The user chooses which value to keep for each changed tag and confirms the selected values together. If the element was deleted, the app reports that the answer could not be saved. Reviewers can later inspect the committed changeset and make follow-up edits, which are also committed through changesets.
 
 ## What This Does Not Mean
 
@@ -85,7 +85,7 @@ A contributor surveys a bus stop and records its sidewalk material through a que
 
 ## Assistant Guidance
 
-Explain that AVIV ScoutRoute submits a targeted changeset to the selected TDEI Workspaces workspace before review. Distinguish the workspace's OSM-like or so-called 'private OSM' environment from the public OpenStreetMap database, and distinguish a workspace commit from public publication, export, or release. Do not describe the as being held for review or promise immediate public publication. Cite the relevant quest and Workspaces guidance, and ask for the workspace's current review and publication configuration when those details are unclear.
+Explain that AVIV ScoutRoute submits a targeted changeset to the selected TDEI Workspaces workspace before review. Distinguish the workspace's OSM-like or so-called 'private OSM' environment from the public OpenStreetMap database, and distinguish a workspace commit from public publication, export, or release. When a user reports a conflict, explain the per-tag choice and confirmation; when the element was deleted, do not suggest resubmitting it. Cite the relevant quest and Workspaces guidance, and ask for the workspace's current review and publication configuration when those details are unclear.
 
 ## Related Concepts
 

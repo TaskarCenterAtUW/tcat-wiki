@@ -62,6 +62,8 @@
 *[CTANW]: Community Transportation Association of the Northwest
 *[CUGOS]: Cascadia Users of Geospatial Open Source
 *[CVPR]: Conference on Computer Vision and Pattern Recognition
+*[DB]: Design-Build / Database
+*[DBB]: Design-Bid-Build
 *[DE-9IM]: Dimensionally Extended Nine-Intersection Model
 *[DEM]: Digital Elevation Model
 *[DESA]: Department of Economic and Social Affairs
@@ -174,6 +176,7 @@
 *[MUTCD]: Manual on Uniform Traffic Control Devices
 *[MVT]: Mapbox Vector Tile
 *[NAACL]: North American Chapter of the Association for Computational Linguistics
+*[NACIS]: North American Cartographic Information Society
 *[NACTO]: National Association of City Transportation Officials
 *[NAD27]: North American Datum 1927
 *[NAD83]: North American Datum 1983
@@ -194,6 +197,7 @@
 *[OCR]: Optical Character Recognition
 *[OD]: Origin-Destination
 *[ODOT]: Oregon Department of Transportation
+*[OECR]: Office of Equity and Civil Rights
 *[OGC]: Open Geospatial Consortium
 *[OMF]: Open Mobility Foundation
 *[ORCA]: One Regional Card for All
@@ -207,8 +211,12 @@
 *[OTP25]: OpenThePaths 2025
 *[OTP26]: OpenThePaths 2026
 *[PacTrans]: Pacific Northwest Transportation Consortium
+*[PDF]: Portable Document Format
+*[PE]: Project Engineer
 *[PED XING]: Pedestrian Crossing
+*[PI]: Principal Investigator
 *[PII]: Personally Identifiable Information
+*[POC]: Point of Contact
 *[POI]: Point of Interest
 *[POIs]: Points of Interest
 *[PROWAG]: Public Right-of-Way Accessibility Guidelines
@@ -217,6 +225,7 @@
 *[PWG]: Pedestrian Working Group
 *[QA]: Quality Assurance
 *[QC]: Quality Control
+*[RACI]: Responsible, Accountable, Consulted, and Informed
 *[RAG]: Retrieval-Augmented Generation
 *[RCTO]: Regional Concept for Transportation Operations
 *[RCW]: Revised Code of Washington
@@ -242,8 +251,10 @@
 *[SIGKDD]: Special Interest Group on Knowledge Discovery and Data Mining
 *[SLAM]: Simultaneous Location and Mapping
 *[SLD]: Styled Layer Descriptor
+*[SME]: Subject Matter Expert
 *[SNAP]: Supplemental Nutrition Assistance Program
 *[SNG]: Seattle Neighborhood Greenways
+*[SOP]: Standard Operating Procedure
 *[SOTA]: State of the Art
 *[SOV]: Single Occupancy Vehicle
 *[SOW]: Statement of Work
@@ -280,6 +291,7 @@
 *[TOD]: Time of Day
 *[TRAILS]: Trail Routing, Analysis, and Information Linkage System
 *[TRB]: Transportation Research Board
+*[TRL]: Technology Readiness Level
 *[TSP]: Transportation Service Provider / Transportation Safety Planning
 *[TTL]: Time to Live
 *[TTS]: Text to Speech

@@ -203,7 +203,15 @@ Where possible, follow these guidelines for images:
 
 1. Format: `.avif` for screenshots and `.png` for other images
 
-2. Resizing: Scale images using `{ width="123" }`:
+2. Responsive floated images: Add `.img-right` to float an image at one-third of its content column, or set its width as a percentage of that column:
+
+    ```markdown
+    ![alt text](image.png){ .img-right style="--img-width: 50%;" }
+    ```
+
+    Use `.img-right-sm` or `.img-right-lg` for the 25% or 50% default. The `--img-width` value overrides the class default; the image keeps its aspect ratio. For non-floated screenshots, use `.img-contained` with the same `--img-width` setting to center an image at a percentage of its content column.
+
+3. Fixed-width images: Use `{ width="300" }` for a width in CSS pixels:
 
     ```markdown
     ![alt text](image.png){ width="300" }

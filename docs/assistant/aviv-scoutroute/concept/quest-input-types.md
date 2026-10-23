@@ -19,7 +19,7 @@ topics:
 risk_level: low
 authority_level: provisional
 publication_status: draft
-last_reviewed: 2026-07-22
+last_reviewed: 2026-10-21
 retrieval_priority: high
 assistant_behavior:
     allow_inference: false
@@ -42,7 +42,7 @@ tags:
 
 ## Short Answer
 
-AVIV ScoutRoute quests can use exclusive choice, numeric entry, multiple choice, and free-form text inputs. The available type and options depend on the configured quest.
+AVIV ScoutRoute quests can use exclusive choice, numeric entry, multiple choice, and free-form text inputs. Some quests also request a location photo. The available questions and options depend on the configured quest.
 
 ## Significance
 
@@ -50,7 +50,7 @@ Using the correct input method helps preserve accurate observations and measurem
 
 ## What This Means
 
-Exclusive choice selects one answer. Numeric entry records a measurement or count and requires attention to the requested unit. Multiple choice records all applicable options. Free-form text records a concise description; the user manual documents a maximum of 255 characters.
+Exclusive choice selects one answer. Numeric entry records a measurement or count and requires attention to the requested unit and any displayed limits. Multiple choice records all applicable options. Free-form text records a concise description; the user manual documents a maximum of 255 characters. A photo request presents a camera control for capturing an image of the location; it is not present in every quest.
 
 ## What This Does Not Mean
 
@@ -58,7 +58,7 @@ Not every quest provides every input type, and an input control does not determi
 
 ## How To Use This
 
-Read the complete question, check the requested unit, select all applicable options for multiple-choice questions, and keep text responses specific and concise.
+Read the complete question, check the requested unit, select all applicable options for multiple-choice questions, keep text responses specific and concise, and capture a photo only when the quest requests one. Correct values that trigger a numeric validation message.
 
 ## Example
 
