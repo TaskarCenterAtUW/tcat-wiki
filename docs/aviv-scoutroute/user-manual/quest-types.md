@@ -34,16 +34,6 @@ While completing quests in AVIV ScoutRoute, you'll encounter different types of 
 4. Tap a different option to change your selection
 5. Tap **Submit** when ready
 
-<!-- === "Android" -->
-
-<!-- IMAGE PLACEHOLDER: Single select quest example | ../../resources/images/aviv-scoutroute/android/quest-single-select-dark.png#only-dark{ width="300" } -->
-<!-- IMAGE PLACEHOLDER: Single select quest example | ../../resources/images/aviv-scoutroute/android/quest-single-select-light.png#only-light{ width="300" } -->
-
-<!-- === "iOS (Apple)" -->
-
-<!-- IMAGE PLACEHOLDER: Single select quest example | ../../resources/images/aviv-scoutroute/ios/quest-single-select-dark.png#only-dark{ width="300" } -->
-<!-- IMAGE PLACEHOLDER: Single select quest example | ../../resources/images/aviv-scoutroute/ios/quest-single-select-light.png#only-light{ width="300" } -->
-
 **Example questions:**
 
 - "What is this sidewalk's surface type?" (Concrete / Asphalt / Brick / Other)
@@ -67,15 +57,10 @@ While completing quests in AVIV ScoutRoute, you'll encounter different types of 
 3. Verify your entry matches the requested unit
 4. Tap **Submit** when ready
 
-<!-- === "Android" -->
+When a quest defines a minimum or maximum, an out-of-range value will result in the display of a validation message.
 
-<!-- IMAGE PLACEHOLDER: Numeric entry quest example | ../../resources/images/aviv-scoutroute/android/quest-numeric-entry-dark.png#only-dark{ width="300" } -->
-<!-- IMAGE PLACEHOLDER: Numeric entry quest example | ../../resources/images/aviv-scoutroute/android/quest-numeric-entry-light.png#only-light{ width="300" } -->
-
-<!-- === "iOS (Apple)" -->
-
-<!-- IMAGE PLACEHOLDER: Numeric entry quest example | ../../resources/images/aviv-scoutroute/ios/quest-numeric-entry-dark.png#only-dark{ width="300" } -->
-<!-- IMAGE PLACEHOLDER: Numeric entry quest example | ../../resources/images/aviv-scoutroute/ios/quest-numeric-entry-light.png#only-light{ width="300" } -->
+![Android numeric quest showing a value below the minimum and its validation message](../../resources/images/aviv-scoutroute/user-manual/06-quest-types/04-numeric-error-min-dark.avif){ .img-contained .img-inline style="--img-width: 25%;" } ![Android numeric quest showing a value above the maximum and its validation message](../../resources/images/aviv-scoutroute/user-manual/06-quest-types/05-numeric-error-max-dark.avif){ .img-contained .img-inline style="--img-width: 25%;" }
+{: .img-row }
 
 **Example questions:**
 
@@ -101,16 +86,6 @@ While completing quests in AVIV ScoutRoute, you'll encounter different types of 
 4. Select as many or as few options as applicable
 5. Tap **Submit** when ready
 
-<!-- === "Android" -->
-
-<!-- IMAGE PLACEHOLDER: Multi-select quest example | ../../resources/images/aviv-scoutroute/android/quest-multi-select-dark.png#only-dark{ width="300" } -->
-<!-- IMAGE PLACEHOLDER: Multi-select quest example | ../../resources/images/aviv-scoutroute/android/quest-multi-select-light.png#only-light{ width="300" } -->
-
-<!-- === "iOS (Apple)" -->
-
-<!-- IMAGE PLACEHOLDER: Multi-select quest example | ../../resources/images/aviv-scoutroute/ios/quest-multi-select-dark.png#only-dark{ width="300" } -->
-<!-- IMAGE PLACEHOLDER: Multi-select quest example | ../../resources/images/aviv-scoutroute/ios/quest-multi-select-light.png#only-light{ width="300" } -->
-
 **Example questions:**
 
 - "What types of obstructions are present along this sidewalk?" (Utility poles / Overgrown vegetation / Parked vehicles / Construction barriers / None)
@@ -133,16 +108,6 @@ While completing quests in AVIV ScoutRoute, you'll encounter different types of 
 3. Keep your response concise (maximum **255 characters**)
 4. Tap **Submit** when ready
 
-<!-- === "Android" -->
-
-<!-- IMAGE PLACEHOLDER: Free-form text quest example | ../../resources/images/aviv-scoutroute/android/quest-free-form-dark.png#only-dark{ width="300" } -->
-<!-- IMAGE PLACEHOLDER: Free-form text quest example | ../../resources/images/aviv-scoutroute/android/quest-free-form-light.png#only-light{ width="300" } -->
-
-<!-- === "iOS (Apple)" -->
-
-<!-- IMAGE PLACEHOLDER: Free-form text quest example | ../../resources/images/aviv-scoutroute/ios/quest-free-form-dark.png#only-dark{ width="300" } -->
-<!-- IMAGE PLACEHOLDER: Free-form text quest example | ../../resources/images/aviv-scoutroute/ios/quest-free-form-light.png#only-light{ width="300" } -->
-
 **When you may encounter this:**
 
 - After selecting "Other" for a choice question
@@ -161,14 +126,28 @@ While completing quests in AVIV ScoutRoute, you'll encounter different types of 
 
 ---
 
+### Photo Requests
+
+Some quests ask for a photo of the feature or location. Select **Please take a photo of the location**, use the camera screen to capture an image, and confirm it to return to the quest. The quest screen can show an upload confirmation; if a previous photo is present, the form may offer options to retake or remove it.
+
+![Curb question with a location photo request and the Submit button](../../resources/images/aviv-scoutroute/user-manual/06-quest-types/01-photo-quest-light.avif){ .img-contained .img-inline style="--img-width: 25%;" }
+![AVIV ScoutRoute camera screen ready to capture a location photo](../../resources/images/aviv-scoutroute/user-manual/06-quest-types/02-photo-capture-dark.avif){ .img-contained .img-inline style="--img-width: 25%;" }
+![Curb question after a photo was uploaded successfully](../../resources/images/aviv-scoutroute/user-manual/06-quest-types/03-photo-success-light.avif){ .img-contained .img-inline style="--img-width: 25%;" }
+{: .img-row }
+
+Photo requests depend on the quest definition; not every quest asks for a photo. Follow project instructions for what may be photographed.
+
+---
+
 ### Quest Type Summary
 
-| Quest Type           | Input Method         | When to Use                               |
-| :------------------- | :------------------- | :---------------------------------------- |
-| **Exclusive Choice** | Tap one option       | When only one answer can be correct       |
-| **Numeric Entry**    | Keypad input         | For measurements and counts               |
-| **Multi-Select**     | Tap multiple options | When multiple conditions may apply        |
-| **Free-Form Text**   | Keyboard input       | For descriptions and "Other" explanations |
+| Quest type           | Input method                             | When to use                                  |
+| :------------------- | :--------------------------------------- | :------------------------------------------- |
+| **Exclusive Choice** | Select one option                        | When one answer is requested                 |
+| **Numeric Entry**    | Enter a number with the on-screen keypad | For measurements and counts                  |
+| **Multi-Select**     | Select each applicable option            | When multiple conditions may apply           |
+| **Free-Form Text**   | Enter a short response                   | For descriptions and "Other" explanations    |
+| **Photo request**    | Capture or attach a location photo       | When the quest asks for visual documentation |
 
 ---
 
