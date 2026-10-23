@@ -42,59 +42,35 @@ Select your device type below for installation instructions:
 
 === "Android"
 
-    #### Step 1. Accept the Tester Invitation
+    ![Firebase App Distribution page for accessing AVIV ScoutRoute](../../resources/images/aviv-scoutroute/user-manual/02-installation/04-firebase-register-light.avif#only-light){ .img-right style="--img-width: 25%;" }
+    ![Firebase App Distribution page for accessing AVIV ScoutRoute](../../resources/images/aviv-scoutroute/user-manual/02-installation/04-firebase-register-dark.avif#only-dark){ .img-right style="--img-width: 25%;" }
 
-    If you have received an email invite or direct link from either your project's point of contact or the developer team, use that link.
+    #### Step 1: Open the Firebase invitation
 
-    Otherwise, external (non-TCAT) users should use this invite link:
-    [appdistribution.firebase.dev/i/63d3d906e42fb64d](https://appdistribution.firebase.dev/i/63d3d906e42fb64d)
+    Use the invitation link from your project contact or developer. If you do not have one, external users can open the [AVIV ScoutRoute Firebase invitation](https://appdistribution.firebase.dev/i/63d3d906e42fb64d).
 
-    <!-- Alternatively, scan the QR code: -->
+    1. **Open** the invitation link on your Android device.
+    2. **Sign in** with the Google Account associated with the invitation.
+    3. Follow the Firebase App Distribution prompts.
 
-    <!-- IMAGE PLACEHOLDER: QR Code Firebase AVIV ScoutRoute Invite | ../../resources/images/aviv-scoutroute/android/qr-firebase-asr-invite.png{ width="200" } -->
+    #### Step 2: Download and install AVIV ScoutRoute
 
-    1. On your mobile device, **open** the link in your browser
+    1. Find AVIV ScoutRoute in the Firebase App Distribution page.
+    2. Follow the current on-screen instructions to download and install the app. The distribution flow can vary by invitation.
 
-    2. **Sign in** with your Google Account (must match the invite email)
+    #### Step 3: Review Android permissions
 
-    3. Select **Accept Invitation** to join the tester group
+    Android may ask for location and notification permissions the first time you open the app. Location must be enabled for AVIV ScoutRoute to find nearby workspaces. Review each Android prompt and choose the access that fits your use.
 
-    <!-- IMAGE PLACEHOLDER: Firebase sign up | ../../resources/images/aviv-scoutroute/android/firebase-sign-up-dark.png#only-dark{ width="300" } -->
-    <!-- IMAGE PLACEHOLDER: Firebase sign up | ../../resources/images/aviv-scoutroute/android/firebase-sign-up-light.png#only-light{ width="300" } -->
-    <!-- IMAGE PLACEHOLDER: Firebase accept invitation | ../../resources/images/aviv-scoutroute/android/firebase-accept-dark.png#only-dark{ width="300" } -->
-    <!-- IMAGE PLACEHOLDER: Firebase accept invitation | ../../resources/images/aviv-scoutroute/android/firebase-accept-light.png#only-light{ width="300" } -->
+    ![Android location permission prompt for AVIV ScoutRoute](../../resources/images/aviv-scoutroute/user-manual/02-installation/01-permissions-location-light.avif#only-light){ .img-contained .img-inline style="--img-width: 25%;" } ![Android notification permission prompt for AVIV ScoutRoute](../../resources/images/aviv-scoutroute/user-manual/02-installation/02-permissions-notifications-light.avif#only-light){ .img-contained .img-inline style="--img-width: 25%;" }
+    ![Android location permission prompt for AVIV ScoutRoute](../../resources/images/aviv-scoutroute/user-manual/02-installation/01-permissions-location-dark.avif#only-dark){ .img-contained .img-inline style="--img-width: 25%;" } ![Android notification permission prompt for AVIV ScoutRoute](../../resources/images/aviv-scoutroute/user-manual/02-installation/02-permissions-notifications-dark.avif#only-dark){ .img-contained .img-inline style="--img-width: 25%;" }
+    {: .img-row }
 
-    #### Step 2. Install Firebase App Tester
+    If location is disabled, the app displays a prompt to enable it before fetching nearby workspaces.
 
-    1. **Download** the Firebase App Tester application from the email sent after accepting the invite, or navigate to [appdistribution.firebase.google.com](https://appdistribution.firebase.google.com)
+    #### Step 4: Sign in
 
-    2. **Install** Firebase App Tester
-
-    3. **Open** the app
-
-    4. **Sign in** with the same Google Account used above
-
-    5. A list of available apps will be displayed
-
-    #### Step 3. Download AVIV ScoutRoute
-
-    1. In the App Tester app, find AVIV ScoutRoute under "My Apps"
-
-    2. Select **Download** to install
-
-    3. Follow any on-screen instructions and grant the necessary permissions
-
-    <!-- IMAGE PLACEHOLDER: Permission location dialog | ../../resources/images/aviv-scoutroute/android/permission-location-dark.png#only-dark{ width="300" } -->
-    <!-- IMAGE PLACEHOLDER: Permission location dialog | ../../resources/images/aviv-scoutroute/android/permission-location-light.png#only-light{ width="300" } -->
-    <!-- IMAGE PLACEHOLDER: Permission notifications dialog | ../../resources/images/aviv-scoutroute/android/permission-notifications-dark.png#only-dark{ width="300" } -->
-    <!-- IMAGE PLACEHOLDER: Permission notifications dialog | ../../resources/images/aviv-scoutroute/android/permission-notifications-light.png#only-light{ width="300" } -->
-
-    #### Step 4. Login
-
-    Login to the AVIV ScoutRoute mobile application using your TDEI Account.
-
-    <!-- IMAGE PLACEHOLDER: Login screen | ../../resources/images/aviv-scoutroute/android/login-dark.png#only-dark{ width="300" } -->
-    <!-- IMAGE PLACEHOLDER: Login screen | ../../resources/images/aviv-scoutroute/android/login-light.png#only-light{ width="300" } -->
+    Open AVIV ScoutRoute and sign in with your TDEI account. Continue to [Getting Started](getting-started.md) to select a workspace.
 
     #### Step 5. Join Your Project Group
 
@@ -112,29 +88,15 @@ Select your device type below for installation instructions:
 
     1. Open [AVIV ScoutRoute on the Apple App Store](https://apps.apple.com/us/app/aviv-scoutroute/id6749523895)
 
-        <!-- Alternatively, scan this QR code: -->
-
-        <!-- IMAGE PLACEHOLDER: QR Code Apple App Store AVIV ScoutRoute | ../../resources/images/aviv-scoutroute/ios/qr-app-store.png{ width="200" } -->
-
     2. Select **Get**
 
     3. Select **Install**
 
     4. Select **Open**
 
-    <!-- IMAGE PLACEHOLDER: App Store listing | ../../resources/images/aviv-scoutroute/ios/app-store-get-dark.png#only-dark{ width="300" } -->
-    <!-- IMAGE PLACEHOLDER: App Store listing | ../../resources/images/aviv-scoutroute/ios/app-store-get-light.png#only-light{ width="300" } -->
-    <!-- IMAGE PLACEHOLDER: App Store install | ../../resources/images/aviv-scoutroute/ios/app-store-install-dark.png#only-dark{ width="300" } -->
-    <!-- IMAGE PLACEHOLDER: App Store install | ../../resources/images/aviv-scoutroute/ios/app-store-install-light.png#only-light{ width="300" } -->
-
     #### Step 3: Login
 
     Login to the AVIV ScoutRoute mobile application using your TDEI Account.
-
-    <!-- IMAGE PLACEHOLDER: App Store open button | ../../resources/images/aviv-scoutroute/ios/app-store-open-dark.png#only-dark{ width="300" } -->
-    <!-- IMAGE PLACEHOLDER: App Store open button | ../../resources/images/aviv-scoutroute/ios/app-store-open-light.png#only-light{ width="300" } -->
-    <!-- IMAGE PLACEHOLDER: Login screen | ../../resources/images/aviv-scoutroute/ios/login-dark.png#only-dark{ width="300" } -->
-    <!-- IMAGE PLACEHOLDER: Login screen | ../../resources/images/aviv-scoutroute/ios/login-light.png#only-light{ width="300" } -->
 
     #### Step 4: Join Your Project Group
 

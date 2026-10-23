@@ -16,11 +16,22 @@ _For a list of all guides on the TCAT Wiki, refer to the [Guides List](../../gui
 
 ---
 
+<div class="img-right-container" markdown>
+
+![AVIV ScoutRoute map with sidewalk, crossing, and curb quest markers and map controls](../../resources/images/aviv-scoutroute/user-manual/01-index/01-downloaded-light.avif#only-light){ .img-right style="--img-width: 33%;" }
+![AVIV ScoutRoute map with sidewalk, crossing, and curb quest markers and map controls](../../resources/images/aviv-scoutroute/user-manual/01-index/01-downloaded-dark.avif#only-dark){ .img-right style="--img-width: 33%;" }
+
 ### About AVIV ScoutRoute
 
 [AVIV ScoutRoute](../index.md) is a mobile application developed by the Taskar Center for Accessible Technology at the University of Washington. It empowers communities to collect and contribute data about pedestrian access and sidewalk conditions.
 
 AVIV ScoutRoute is based on [StreetComplete](https://github.com/westnordost/StreetComplete). Users see an overhead map view with icons representing "quests" - simple surveys for missing pedestrian infrastructure data.
+
+!!! note "Platform differences"
+
+    Examples in this manual use the Android app. Labels and layouts may differ slightly on iOS.
+
+</div>
 
 ---
 
