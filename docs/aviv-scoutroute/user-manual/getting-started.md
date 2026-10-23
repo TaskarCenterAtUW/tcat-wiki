@@ -28,7 +28,9 @@ Before getting started, make sure you have:
 
 !!! info "Joined via Referral Code?"
 
-    If you registered using a referral code (e.g., `portal.tdei.us/register?code=AA-BBB-CCCC-DD`) or a QR code, you've already been automatically added to the appropriate project group. The relevant workspace should open automatically or appear in the workspace list after logging in.
+    If you registered using a referral code or QR code, you should already be included in the associated project group. Select that group when you choose a workspace.
+
+Enable device location so the app can find nearby workspaces.
 
 ---
 
@@ -40,41 +42,26 @@ Before getting started, make sure you have:
 
 3. Select **Login**
 
-<!-- === "Android" -->
+AVIV ScoutRoute will offer to save your credentials using your device's security services.
 
-<!-- IMAGE PLACEHOLDER: Login screen | ../../resources/images/aviv-scoutroute/android/login-dark.png#only-dark{ width="300" } -->
-<!-- IMAGE PLACEHOLDER: Login screen | ../../resources/images/aviv-scoutroute/android/login-light.png#only-light{ width="300" } -->
-
-<!-- === "iOS (Apple)" -->
-
-<!-- IMAGE PLACEHOLDER: Login screen | ../../resources/images/aviv-scoutroute/ios/login-dark.png#only-dark{ width="300" } -->
-<!-- IMAGE PLACEHOLDER: Login screen | ../../resources/images/aviv-scoutroute/ios/login-light.png#only-light{ width="300" } -->
-
-!!! tip
-
-    If available on your device, you can choose to use biometric authentication for faster login after your first sign-in.
+![AVIV ScoutRoute sign-in screen](../../resources/images/aviv-scoutroute/user-manual/03-getting-started/01-login-light.avif#only-light){ .img-contained .img-inline style="--img-width: 25%;" } ![AVIV ScoutRoute prompt to save credentials on the device](../../resources/images/aviv-scoutroute/user-manual/03-getting-started/02-save-credentials-light.avif#only-light){ .img-contained .img-inline style="--img-width: 25%;" }
+![AVIV ScoutRoute sign-in screen](../../resources/images/aviv-scoutroute/user-manual/03-getting-started/01-login-dark.avif#only-dark){ .img-contained .img-inline style="--img-width: 25%;" } ![AVIV ScoutRoute prompt to save credentials on the device](../../resources/images/aviv-scoutroute/user-manual/03-getting-started/02-save-credentials-dark.avif#only-dark){ .img-contained .img-inline style="--img-width: 25%;" }
+{: .img-row }
 
 ---
 
+![AVIV ScoutRoute workspace list with project-group filter and search](../../resources/images/aviv-scoutroute/user-manual/03-getting-started/03-select-workspace-light.avif#only-light){ .img-right style="--img-width: 33%;" }
+![AVIV ScoutRoute workspace list with project-group filter and search](../../resources/images/aviv-scoutroute/user-manual/03-getting-started/03-select-workspace-dark.avif#only-dark){ .img-right style="--img-width: 33%;" }
+
 ### Selecting a Workspace
 
-After logging in, you'll see a list of available workspaces. A **workspace** is a geographic area with data that your project team is collecting information about.
+After logging in, select an available workspace. A **workspace** is a geographic area with data that your project team is collecting information about.
 
-1. Review the list of available workspaces
+1. Use **Filter by Project Group** to select the project group for your work, if needed.
 
-2. Select the workspace you want to work in
+2. Review the available workspaces. Select the search icon to find a workspace by name.
 
-3. The map will load, centered on your location
-
-<!-- === "Android" -->
-
-<!-- IMAGE PLACEHOLDER: Workspace selection screen | ../../resources/images/aviv-scoutroute/android/workspace-selection-dark.png#only-dark{ width="300" } -->
-<!-- IMAGE PLACEHOLDER: Workspace selection screen | ../../resources/images/aviv-scoutroute/android/workspace-selection-light.png#only-light{ width="300" } -->
-
-<!-- === "iOS (Apple)" -->
-
-<!-- IMAGE PLACEHOLDER: Workspace selection screen | ../../resources/images/aviv-scoutroute/ios/workspace-selection-dark.png#only-dark{ width="300" } -->
-<!-- IMAGE PLACEHOLDER: Workspace selection screen | ../../resources/images/aviv-scoutroute/ios/workspace-selection-light.png#only-light{ width="300" } -->
+3. Select the workspace you want to work in. The map opens for that workspace.
 
 !!! note
 
@@ -84,24 +71,15 @@ After logging in, you'll see a list of available workspaces. A **workspace** is 
 
 ### Understanding the Interface
 
-Once you've selected a workspace, you'll see the main map interface:
+Once you've selected a workspace, the map opens with the available quest features and map controls. See [Map Interface](map-interface.md) for details.
 
-<!-- === "Android" -->
-
-<!-- IMAGE PLACEHOLDER: Main map interface | ../../resources/images/aviv-scoutroute/android/map-interface-dark.png#only-dark{ width="300" } -->
-<!-- IMAGE PLACEHOLDER: Main map interface | ../../resources/images/aviv-scoutroute/android/map-interface-light.png#only-light{ width="300" } -->
-
-<!-- === "iOS (Apple)" -->
-
-<!-- IMAGE PLACEHOLDER: Main map interface | ../../resources/images/aviv-scoutroute/ios/map-interface-dark.png#only-dark{ width="300" } -->
-<!-- IMAGE PLACEHOLDER: Main map interface | ../../resources/images/aviv-scoutroute/ios/map-interface-light.png#only-light{ width="300" } -->
-
-| Element                | Description                                                            |
-| :--------------------- | :--------------------------------------------------------------------- |
-| **Map View**           | The central area showing the workspace and background                  |
-| **Quest Icons**        | Icons on the map representing available quests (data collection tasks) |
-| **Screen Reader Mode** | List-based quest view instead of map                                   |
-| **Interface**          | Additional buttons and menus                                           |
+| Element                | Description                                                              |
+| :--------------------- | :----------------------------------------------------------------------- |
+| **Map View**           | The workspace area with map imagery and feature icons                    |
+| **Quest Icons**        | Icons for available data-collection tasks; nearby icons may be clustered |
+| **Screen Reader Mode** | A list of nearby quests with distance and direction                      |
+| **Manage Quests**      | Controls whether individual items or quest types appear on the map       |
+| **Map Controls**       | Imagery, data download, zoom, and current-location controls              |
 
 For detailed information on each interface feature, refer to the [Map Interface](map-interface.md) page.
 
@@ -113,11 +91,11 @@ A **quest** is a small data collection task prompting you to provide information
 
 Common examples of types of features you'll be asked about include:
 
-| Quest Type   | Icon                                             | Description                          |
-| :----------- | :----------------------------------------------- | :----------------------------------- |
-| **Sidewalk** | Path icon with grey/blue areas                   | Questions about sidewalk segments    |
-| **Crossing** | White pedestrian in crosswalk on blue background | Questions about pedestrian crossings |
-| **Curb**     | White wheelchair at curb on blue background      | Questions about curbs and ramps      |
+| Quest Type   | Icon                                      | Description                          |
+| :----------- | :---------------------------------------- | :----------------------------------- |
+| **Sidewalk** | Walking-person icon on a sidewalk segment | Questions about sidewalk segments    |
+| **Crossing** | Pedestrian-crossing icon                  | Questions about pedestrian crossings |
+| **Curb**     | Wheelchair icon at a curb                 | Questions about curbs and ramps      |
 
 ---
 
@@ -129,29 +107,9 @@ Now that you have a basic understanding of the interface, let's complete your fi
 
 Navigate to your location on the map and **zoom in** to see all available quest icons - note that the icons may cluster and stack together when zoomed out.
 
-<!-- === "Android" -->
-
-<!-- IMAGE PLACEHOLDER: Map zoomed in showing quests | ../../resources/images/aviv-scoutroute/android/map-zoomed-quests-dark.png#only-dark{ width="300" } -->
-<!-- IMAGE PLACEHOLDER: Map zoomed in showing quests | ../../resources/images/aviv-scoutroute/android/map-zoomed-quests-light.png#only-light{ width="300" } -->
-
-<!-- === "iOS (Apple)" -->
-
-<!-- IMAGE PLACEHOLDER: Map zoomed in showing quests | ../../resources/images/aviv-scoutroute/ios/map-zoomed-quests-dark.png#only-dark{ width="300" } -->
-<!-- IMAGE PLACEHOLDER: Map zoomed in showing quests | ../../resources/images/aviv-scoutroute/ios/map-zoomed-quests-light.png#only-light{ width="300" } -->
-
 #### 2. Select a Quest
 
 Tap a quest icon near your physical location to open it.
-
-<!-- === "Android" -->
-
-<!-- IMAGE PLACEHOLDER: Quest panel open | ../../resources/images/aviv-scoutroute/android/quest-panel-open-dark.png#only-dark{ width="300" } -->
-<!-- IMAGE PLACEHOLDER: Quest panel open | ../../resources/images/aviv-scoutroute/android/quest-panel-open-light.png#only-light{ width="300" } -->
-
-<!-- === "iOS (Apple)" -->
-
-<!-- IMAGE PLACEHOLDER: Quest panel open | ../../resources/images/aviv-scoutroute/ios/quest-panel-open-dark.png#only-dark{ width="300" } -->
-<!-- IMAGE PLACEHOLDER: Quest panel open | ../../resources/images/aviv-scoutroute/ios/quest-panel-open-light.png#only-light{ width="300" } -->
 
 #### 3. Observe the Feature
 
@@ -161,34 +119,14 @@ Go to the feature highlighted on the map and observe it in person.
 
 Answer the quest by selecting the appropriate option(s). See [Completing Quests](completing-quests.md) for details on answering different question types.
 
-<!-- === "Android" -->
-
-<!-- IMAGE PLACEHOLDER: Answering a quest | ../../resources/images/aviv-scoutroute/android/quest-answering-dark.png#only-dark{ width="300" } -->
-<!-- IMAGE PLACEHOLDER: Answering a quest | ../../resources/images/aviv-scoutroute/android/quest-answering-light.png#only-light{ width="300" } -->
-
-<!-- === "iOS (Apple)" -->
-
-<!-- IMAGE PLACEHOLDER: Answering a quest | ../../resources/images/aviv-scoutroute/ios/quest-answering-dark.png#only-dark{ width="300" } -->
-<!-- IMAGE PLACEHOLDER: Answering a quest | ../../resources/images/aviv-scoutroute/ios/quest-answering-light.png#only-light{ width="300" } -->
-
 #### 5. Submit
 
-Tap **"Submit"** - the quest disappears and your contribution is saved!
-
-<!-- === "Android" -->
-
-<!-- IMAGE PLACEHOLDER: Submit button | ../../resources/images/aviv-scoutroute/android/quest-submit-dark.png#only-dark{ width="300" } -->
-<!-- IMAGE PLACEHOLDER: Submit button | ../../resources/images/aviv-scoutroute/android/quest-submit-light.png#only-light{ width="300" } -->
-
-<!-- === "iOS (Apple)" -->
-
-<!-- IMAGE PLACEHOLDER: Submit button | ../../resources/images/aviv-scoutroute/ios/quest-submit-dark.png#only-dark{ width="300" } -->
-<!-- IMAGE PLACEHOLDER: Submit button | ../../resources/images/aviv-scoutroute/ios/quest-submit-light.png#only-light{ width="300" } -->
+Select **Submit** when you have answered the applicable questions. See [Completing Quests](completing-quests.md) for photo questions, validation messages, conflict resolution, and undo steps.
 
 !!! tip
 
-    - If unsure about an answer, select "Unknown" or skip answering that question rather than guessing
-    - Made a mistake? See [Undo Changes](map-interface.md#undo-changes) to revert a submitted answer
+    - If unsure about an answer, select "Unknown" or skip answering that question rather than guessing!
+    - Made a mistake? See [Undo Changes](map-interface.md#undo-changes) to revert a submitted answer.
 
 ---
 
