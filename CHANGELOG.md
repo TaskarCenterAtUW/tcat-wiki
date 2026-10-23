@@ -31,6 +31,7 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/),
 
 ### Added
 
+- **Core**: Added a skill for capturing and assembling labeled collages of built documentation pages
 - **Core**: Added control for making floated image widths configurable as percentages of their content column
 
 ### Changed
