@@ -48,7 +48,7 @@ topics:
 risk_level: low
 authority_level: official
 publication_status: published
-last_reviewed: 2026-10-21
+last_reviewed: 2026-10-22
 retrieval_priority: high
 assistant_behavior:
     allow_inference: false
@@ -69,7 +69,7 @@ tags:
 
 ## Short Answer
 
-This page lists all 343 abbreviations, acronyms, and initialisms used across TCAT Wiki documentation and TCAT platforms and tools.
+This page lists all 345 abbreviations, acronyms, and initialisms used across TCAT Wiki documentation and TCAT platforms and tools.
 
 ## Significance
 
@@ -259,6 +259,7 @@ The table below maps each abbreviated form to its full expansion. Entries are so
 | MUTCD | Manual on Uniform Traffic Control Devices |
 | MVT | Mapbox Vector Tile |
 | NAACL | North American Chapter of the Association for Computational Linguistics |
+| NACIS | North American Cartographic Information Society |
 | NACTO | National Association of City Transportation Officials |
 | NAD27 | North American Datum 1927 |
 | NAD83 | North American Datum 1983 |
@@ -372,6 +373,7 @@ The table below maps each abbreviated form to its full expansion. Entries are so
 | TOD | Time of Day |
 | TRAILS | Trail Routing, Analysis, and Information Linkage System |
 | TRB | Transportation Research Board |
+| TRL | Technology Readiness Level |
 | TSP | Transportation Service Provider / Transportation Safety Planning |
 | TTL | Time to Live |
 | TTS | Text to Speech |

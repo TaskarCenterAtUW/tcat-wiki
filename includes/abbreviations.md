@@ -176,6 +176,7 @@
 *[MUTCD]: Manual on Uniform Traffic Control Devices
 *[MVT]: Mapbox Vector Tile
 *[NAACL]: North American Chapter of the Association for Computational Linguistics
+*[NACIS]: North American Cartographic Information Society
 *[NACTO]: National Association of City Transportation Officials
 *[NAD27]: North American Datum 1927
 *[NAD83]: North American Datum 1983
@@ -290,6 +291,7 @@
 *[TOD]: Time of Day
 *[TRAILS]: Trail Routing, Analysis, and Information Linkage System
 *[TRB]: Transportation Research Board
+*[TRL]: Technology Readiness Level
 *[TSP]: Transportation Service Provider / Transportation Safety Planning
 *[TTL]: Time to Live
 *[TTS]: Text to Speech
