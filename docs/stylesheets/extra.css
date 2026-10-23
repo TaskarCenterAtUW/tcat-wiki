@@ -145,24 +145,78 @@ abbr[title],
    ============================================================================= */
 
 /* Responsive right-floated section images (place image just above its section header) */
+.md-typeset .img-right-container {
+    display: flow-root;
+}
 .md-typeset img.img-right,
 .md-typeset img.img-right-sm,
 .md-typeset img.img-right-lg {
     float: right;
+    width: var(--img-width, 33%);
+    max-width: 100%;
     height: auto;
     margin: 0 0 0.1em 0.1em;
 }
-.md-typeset img.img-right {
-    width: 33%;
-    min-width: 158px;
-}
 .md-typeset img.img-right-sm {
-    width: 25%;
-    min-width: 120px;
+    --img-width: 25%;
 }
 .md-typeset img.img-right-lg {
-    width: 50%;
-    min-width: 240px;
+    --img-width: 50%;
+}
+.md-typeset img.img-contained {
+    display: block;
+    width: var(--img-width, 75%);
+    max-width: 100%;
+    height: auto;
+    margin: 1em auto;
+}
+.md-typeset img.img-inline {
+    display: inline-block;
+    margin: 1em 0;
+    vertical-align: top;
+}
+.md-typeset p.img-row {
+    text-align: center;
+}
+.md-typeset img.img-right[src$="#only-dark"],
+.md-typeset img.img-right-sm[src$="#only-dark"],
+.md-typeset img.img-right-lg[src$="#only-dark"],
+.md-typeset img.img-contained[src$="#only-dark"] {
+    display: none;
+}
+[data-md-color-scheme="slate"] .md-typeset img.img-right[src$="#only-light"],
+[data-md-color-scheme="slate"] .md-typeset img.img-right-sm[src$="#only-light"],
+[data-md-color-scheme="slate"] .md-typeset img.img-right-lg[src$="#only-light"],
+[data-md-color-scheme="slate"]
+    .md-typeset
+    img.img-contained[src$="#only-light"] {
+    display: none;
+}
+[data-md-color-scheme="slate"] .md-typeset img.img-right[src$="#only-dark"],
+[data-md-color-scheme="slate"] .md-typeset img.img-right-sm[src$="#only-dark"],
+[data-md-color-scheme="slate"] .md-typeset img.img-right-lg[src$="#only-dark"],
+[data-md-color-scheme="slate"]
+    .md-typeset
+    img.img-contained[src$="#only-dark"] {
+    display: block;
+}
+[data-md-color-scheme="slate"]
+    .md-typeset
+    img.img-contained.img-inline[src$="#only-dark"] {
+    display: inline-block;
+}
+@media screen and (max-width: 44rem) {
+    .md-typeset img.img-right,
+    .md-typeset img.img-right-sm,
+    .md-typeset img.img-right-lg {
+        float: none;
+        display: block;
+        width: 100%;
+        margin: 1em auto;
+    }
+    .md-typeset img.img-contained {
+        width: 100%;
+    }
 }
 
 /* Horizontal rules always clear floating images; remove vertical padding */

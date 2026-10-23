@@ -27,7 +27,11 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/),
 
 -->
 
-## v16.8.0 (2026-10-21)
+## v16.8.0 (2026-10-22)
+
+### Added
+
+- **Core**: Added control for making floated image widths configurable as percentages of their content column
 
 ### Changed
 
