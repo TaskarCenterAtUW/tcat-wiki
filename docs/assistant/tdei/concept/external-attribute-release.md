@@ -19,7 +19,7 @@ topics:
 risk_level: high
 authority_level: explanatory
 publication_status: draft
-last_reviewed: 2026-09-29
+last_reviewed: 2026-10-26
 retrieval_priority: high
 assistant_behavior:
     allow_inference: false
@@ -27,6 +27,7 @@ assistant_behavior:
     abstain_if_missing_context: true
     do_not_claim:
         - Every external attribute in a source dataset must be released publicly.
+        - The OpenSidewalks `ext:` prefix is a TDEI privacy or release control.
 related_pages:
     - assistant/opensidewalks/concept/external-attributes.md
     - assistant/tdei/concept/dataset-visibility.md
@@ -42,44 +43,43 @@ tags:
 
 ## Short Answer
 
-A release of a dataset on the TDEI may retain all `ext:` fields, remove them all, or manually filter selected fields before publishing.
+OpenSidewalks uses the `ext:` prefix for partner-specific fields outside its core schema. The prefix does not make a field private or determine whether TDEI retains it during processing or includes it in a public release. The checked Portal upload and dataset guides do not document a general retention or filtering rule for `ext:` fields.
 
 ## Significance
 
-This lets a steward preserve a complete private source while sharing only appropriate attributes.
+Stewards need to distinguish schema naming from privacy and release controls. Assuming that an external field is automatically hidden or removed could expose information that was not intended for public distribution.
 
 ## What This Means
 
-Review extension names, sensitivity, usefulness, and intended audience before release. When internal attributes must be retained for project work but excluded from a public release, keep a complete version in the private project dataset and prepare a filtered derivative:
+- Review each `ext:` field for its purpose, sensitivity, permissions, and intended audience.
+- If some fields should not be distributed, prepare and inspect a filtered copy before using the current TDEI upload and publishing workflow.
+- Validate the intended dataset version and confirm its visibility and contents before sharing it.
+- Preserve the source separately when project work requires fields that are not approved for public release.
 
-1. Upload the complete workspace export to TDEI without releasing it, so it remains available to the relevant project group.
-2. Download that project dataset and remove the attributes that should not appear in the public version, using an appropriate script or data-editing tool.
-3. Review the filtered result, then upload it to TDEI as a new dataset version.
-4. Verify the dataset identity, version, contents, and visibility before releasing the filtered version.
-
-Keep the complete project dataset private if it contains attributes that are not intended for external distribution. Check current project-group permissions and release controls before sharing either dataset.
+The [OpenSidewalks schema](../../../opensidewalks/schema/index.md) defines the `ext:` naming convention. The [Portal dataset guide](../../../tdei/portal/user-manual/datasets.md) and [member-role guide](../../../tdei/portal/user-manual/members.md) describe dataset and role workflows but do not specify automatic treatment of `ext:` fields.
 
 ## What This Does Not Mean
 
-The `ext:` prefix itself does not decide whether an attribute is public.
-
-Uploading a complete dataset to the TDEI platform does not make it suitable for public release. Filtering selected attributes creates a separate derivative; it does not remove the internal attributes from the preserved private copy.
+A source dataset's `ext:` fields do not all have to be released publicly. The `ext:` prefix is not a privacy label or release control, and TDEI should not be assumed to hide, remove, or filter external fields automatically. Uploading a dataset also does not by itself make it public; project access and public release are separate.
 
 ## How To Use This
 
-Decide which attributes the intended audience may receive before release. Preserve the complete project version where needed, create a filtered derivative, inspect the derivative for excluded fields, and confirm its version and release state. Do not assume that an upload is public or that TDEI will automatically remove selected fields during export.
+Identify the exact dataset version and intended audience. Inspect the actual fields, prepare a filtered copy if needed, and verify the output before following the current Portal workflow to publish or share it. Use the current manuals or ask the project group's Point of Contact when the upload or release behavior is unclear.
 
 ## Example
 
-A project team keeps the complete survey dataset unreleased in its project group, removes internal-only attributes from a downloaded copy, uploads the cleaned copy as a later dataset version, and releases only that filtered version.
+A project dataset contains an `ext:condition` field with local maintenance information. The steward checks whether it is appropriate for the intended audience, creates and validates a filtered copy if necessary, then verifies the released dataset rather than assuming the field was automatically hidden.
 
 ## Assistant Guidance
 
-Ask which audience, project group, dataset version, and release state are involved before recommending filtering. Distinguish the retained private dataset from the filtered derivative. Do not claim a filtered dataset is safe to release until its contents and visibility have been reviewed.
+Ask which dataset version, fields, audience, and release state are involved. Cite the OpenSidewalks schema for the `ext:` convention. Do not claim that TDEI retains, removes, or filters these fields without current documentation, and do not say a dataset is safe to release without reviewing its actual contents.
 
 ## Related Concepts
 
 - [How can the OpenSidewalks schema support external attributes?](../../opensidewalks/concept/external-attributes.md)
+- [OpenSidewalks schema: external attributes](../../../opensidewalks/schema/index.md)
 - [Who can see a TDEI dataset?](dataset-visibility.md)
 - [How are releases versioned?](release-versioning.md)
 - [How are edits uploaded back to TDEI?](../../workspaces/concept/edit-upload-to-tdei.md)
+- [TDEI Portal datasets](../../../tdei/portal/user-manual/datasets.md)
+- [TDEI Portal members and publishing roles](../../../tdei/portal/user-manual/members.md)

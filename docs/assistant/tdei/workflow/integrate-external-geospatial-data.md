@@ -25,7 +25,7 @@ topics:
 risk_level: medium
 authority_level: explanatory
 publication_status: draft
-last_reviewed: 2026-07-16
+last_reviewed: 2026-10-26
 retrieval_priority: high
 assistant_behavior:
     allow_inference: true
@@ -52,7 +52,7 @@ tags:
 
 A typical integration workflow is to prepare the partner data in a supported geospatial format, identify the OpenSidewalks edges and nodes when applicable, validate and upload the result to TDEI, run the required TDEI processing job, and inspect the output before using or releasing it.
 
-The exact job names, fields, permissions, and interface may change. Use the current TDEI manual and dataset requirements for operational instructions.
+The exact job names, fields, permissions, and interface may change. Use the current TDEI manual and dataset requirements for operational instructions. The current Portal upload tutorial verifies an OSW upload job as **Completed** before treating the uploaded dataset as ready.
 
 ## Significance
 
@@ -60,10 +60,10 @@ This workflow gives a jurisdiction a controlled path from an existing geodatabas
 
 ## What This Means
 
-1. Prepare or convert the source data into the format required by the target workflow, commonly GeoJSON for OpenSidewalks data. Treat conversion, validation, and review as separate steps.
+1. Prepare the source in the format required by the target workflow. For example, the Portal's curb-ramp tutorial converts GeoJSON point data into an OSW `.zip` archive, and the OSW validation and conversion jobs accept `.zip` files. Treat conversion, validation, and review as separate steps.
 2. Clearly distinguish edge and node files or layers when the OpenSidewalks workflow requires both.
 3. Preserve partner-specific fields with the `ext:` convention where appropriate, then validate the complete dataset.
-4. Upload the prepared dataset to TDEI with the required account and project-group permissions.
+4. Upload the prepared dataset to TDEI with the required account and project-group permissions. The Portal Members guide identifies the `osw_data_generator` role as able to publish OSW datasets for a project group; confirm the current role requirement for the specific operation.
 5. Create the applicable TDEI job, such as a union or join, using the relevant dataset identifiers.
 6. Review, download, and inspect the job output in suitable GIS tooling before further processing.
 7. Re-upload a reviewed output or open it in Workspaces when collaborative editing is needed.
@@ -71,11 +71,11 @@ This workflow gives a jurisdiction a controlled path from an existing geodatabas
 
 ## What This Does Not Mean
 
-A successful upload or processing job does not prove that the data is complete, correctly attributed, routable for every use case, or ready for public release.
+A successful upload, validation, or processing job does not prove that the data is complete, correctly attributed, routable for every use case, or ready for public release. A union or join job is not a substitute for reviewing the resulting dataset.
 
 ## How To Use This
 
-Start with a copy of the source data and retain the original. Record the source and output dataset identifiers, validation results, processing parameters, and fields intentionally removed or retained. Use the TDEI user manual for current screens and permission requirements, and use Workspaces only after the dataset is suitable for that workflow.
+Start with a copy of the source data and retain the original. Record the source and output dataset identifiers, validation results, processing parameters, and fields intentionally removed or retained. The [Portal upload tutorial](../../../tdei/portal/tutorial/curb-points-in-tdei.md) recommends validating an OSW archive before upload and monitoring the upload job to completion. Use the current TDEI user manual for screens and permission requirements, and use Workspaces only after the dataset is suitable for that workflow.
 
 ## Example
 
@@ -91,3 +91,6 @@ Ask which source format, target schema, TDEI project group, and intended output 
 - [Source and derivative datasets](../concept/source-and-derivative-datasets.md)
 - [OpenSidewalks edges and nodes](../concept/osw-edges-and-nodes.md)
 - [Test a dataset in the portal](../concept/test-dataset-in-portal.md)
+- [Convert curb-ramp GeoJSON to OSW and upload to TDEI](../../../tdei/portal/tutorial/curb-points-in-tdei.md)
+- [OSW - Validate inputs](../../../tdei/portal/user-manual/jobs/osw-validate.md)
+- [TDEI Portal member roles](../../../tdei/portal/user-manual/members.md)

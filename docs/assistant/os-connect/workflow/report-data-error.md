@@ -19,7 +19,7 @@ topics:
 risk_level: medium
 authority_level: explanatory
 publication_status: draft
-last_reviewed: 2026-07-27
+last_reviewed: 2026-10-26
 retrieval_priority: high
 assistant_behavior:
     allow_inference: false
@@ -43,23 +43,23 @@ Use the OS-CONNECT Data Viewer **Inspect** and **Report Issue** controls to repo
 
 ## Significance
 
-Location-specific reports give data stewards coordinates and a description that can be reviewed against the source data and support corrections through the current release process.
+The viewer manual documents how to submit a location-specific report and confirms successful submission. It does not describe how reports are reviewed or whether they lead to a data change.
 
 ## What This Means
 
-Right-click the map at the location of the issue, select **Report Issue**, describe the issue, enter the required email, optionally provide a name, and select **Submit Issue**. Examples include a missing sidewalk, incorrect curb type, incorrect crossing marking, or significantly misaligned feature.
+Right-click the map at the issue location, select **Report Issue**, describe the issue, enter the required email, optionally provide a name, and select **Submit Issue**. The manual says an **Issue submitted successfully!** popup appears. Examples include a missing sidewalk, incorrect curb type, incorrect crossing marking, or significantly misaligned feature.
 
 ## What This Does Not Mean
 
-A report is a correction request, not an immediate edit, validation result, or guaranteed release trigger.
+Submission sends a report and produces a success popup; the manual does not describe subsequent review, data changes, or release behavior.
 
 ## How To Use This
 
-Report the precise location, feature, observed condition, and expected correction. Keep the description concise and factual.
+Right-click the map to place a marker and open the issue form. Its coordinates are captured automatically and cannot be edited; describe the issue at that location, enter a follow-up email, optionally add your name, and submit. Keep the description specific and concise.
 
 ## Example
 
-A user reports a newly built sidewalk missing from the viewer and includes the marker location and a follow-up email.
+A user right-clicks the map where a newly built sidewalk is missing, describes the issue in the form, enters an email for follow-up, and selects **Submit Issue**. The success popup confirms submission.
 
 ## Assistant Guidance
 

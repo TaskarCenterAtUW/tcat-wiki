@@ -18,7 +18,7 @@ topics:
 risk_level: medium
 authority_level: explanatory
 publication_status: draft
-last_reviewed: 2026-07-22
+last_reviewed: 2026-10-26
 retrieval_priority: high
 assistant_behavior:
     allow_inference: false
@@ -27,9 +27,8 @@ assistant_behavior:
     do_not_claim:
         - Searching for a jurisdiction proves that its dataset is complete or current.
 related_pages:
-    - ../concept/viewer-overview.md
-    - ../concept/data-freshness.md
-related_pages: []
+    - assistant/os-connect/concept/viewer-overview.md
+    - assistant/cross-platform/concept/data-freshness.md
 tags:
     - Assistant
 ---

@@ -25,7 +25,7 @@ topics:
 risk_level: medium
 authority_level: explanatory
 publication_status: draft
-last_reviewed: 2026-06-22
+last_reviewed: 2026-10-26
 retrieval_priority: high
 assistant_behavior:
     allow_inference: false
@@ -37,12 +37,12 @@ assistant_behavior:
         - walkshed results are equivalent to ADA compliance
         - straight-line distance is sufficient for pedestrian access analysis
 related_pages:
-    - walksheds
-    - accessmap-routing
-    - accessibility-islands
-    - connected-pedestrian-graph
-    - data-freshness
-    - ada-compliance-boundaries
+    - assistant/walksheds/concept/walkshed.md
+    - assistant/cross-platform/concept/accessmap-routing.md
+    - assistant/cross-platform/concept/accessibility-islands.md
+    - assistant/cross-platform/concept/connected-pedestrian-graph.md
+    - assistant/cross-platform/concept/data-freshness.md
+    - assistant/cross-platform/concept/ada-compliance-boundaries.md
 tags:
     - Assistant
 ---

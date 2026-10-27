@@ -19,7 +19,7 @@ topics:
 risk_level: medium
 authority_level: explanatory
 publication_status: draft
-last_reviewed: 2026-07-22
+last_reviewed: 2026-10-26
 retrieval_priority: high
 assistant_behavior:
     allow_inference: false
@@ -50,7 +50,7 @@ Reachability comparisons help identify possible barriers, missing curb ramps, st
 
 ## What This Means
 
-The analysis generates network-based walksheds around POIs such as schools, libraries, community centers, and transit stops. Reports can include reachable path length, counts of crossings and curbs, marked and lowered curbs, maps, and disconnected accessibility islands.
+The 2026 OS-CONNECT QA/QC manual describes walksheds around points of interest retrieved from OpenStreetMap and Overture. It reports reachable path length, counts of crossings and curbs (including marked and lowered curbs), maps, and convex hulls around disconnected accessibility islands. The manual does not identify the POI examples by name.
 
 ## What This Does Not Mean
 

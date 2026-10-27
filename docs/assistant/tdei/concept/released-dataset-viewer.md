@@ -21,7 +21,7 @@ topics:
 risk_level: medium
 authority_level: provisional
 publication_status: draft
-last_reviewed: 2026-07-22
+last_reviewed: 2026-10-26
 retrieval_priority: high
 assistant_behavior:
     allow_inference: false
@@ -48,11 +48,11 @@ A viewer makes a released dataset easier to inspect and share. It is distinct fr
 
 ## What This Means
 
-Project datasets may remain private to project-group members while they are prepared. After release, use the viewer or public released-dataset listings to inspect and download them; use the TDEI portal for account-based management and processing tasks.
+Project datasets appear under **My Project Datasets** for their active project group, subject to the user's membership and permissions. Released datasets appear under **All Released Datasets** and in the Data Viewer. Use the Portal for account-based management and processing tasks.
 
 ## What This Does Not Mean
 
-The viewer does not make private or unreleased datasets public. A dataset's release and visibility settings still control whether it appears.
+The viewer does not expose unreleased or private project-group datasets. Project datasets and released public datasets appear in different Portal views, subject to group membership and permissions.
 
 ## How To Use This
 

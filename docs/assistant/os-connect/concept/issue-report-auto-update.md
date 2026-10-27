@@ -20,7 +20,7 @@ topics:
 risk_level: high
 authority_level: explanatory
 publication_status: draft
-last_reviewed: 2026-07-24
+last_reviewed: 2026-10-26
 retrieval_priority: high
 assistant_behavior:
     allow_inference: false
@@ -30,7 +30,7 @@ assistant_behavior:
         - When an issue is reported, updates happen automatically.
         - All feedback will result in an update to the OS-CONNECT dataset.
 related_pages:
-    - os-connect.md
+    - assistant/os-connect/concept/os-connect.md
 tags:
     - Assistant
 ---
@@ -41,15 +41,15 @@ tags:
 
 ## Short Answer
 
-No, reporting an OS-CONNECT data issue does not automatically update the OS-CONNECT dataset, OpenStreetMap, or any dataset in the TDEI, released or unreleased.
+The viewer manual documents how to submit an issue but does not say that submission automatically changes OS-CONNECT, OpenStreetMap, or a TDEI dataset.
 
 ## Significance
 
-The separation protects published data from unreviewed edits.
+The distinction matters because the manual's success message confirms submission, not a change to the published data. The manual does not describe subsequent review or processing.
 
 ## What This Means
 
-Reports are reviewed, validated, and routed through the appropriate source-data review and release workflow. Different systems may have different stewards and update timing.
+The [viewer feedback manual](../../../os-connect/data-viewer/user-manual/feedback.md) confirms that users can submit an issue, but it does not document how submitted reports are reviewed, whether they lead to an update, or when any update could be released.
 
 ## What This Does Not Mean
 
@@ -57,11 +57,11 @@ Submitting a report does not guarantee acceptance, propagation to every system, 
 
 ## How To Use This
 
-Take note of when a data issue is reported compare a later versioned release when following up.
+Record the issue location and description. The manual does not describe status tracking or follow-up; if checking for a data change, compare the relevant dataset in a later release.
 
 ## Example
 
-When a user reports that OS-CONNECT is missing a sidewalk, a data steward receives that report and then validates the issue through a defined workflow.
+A user submits a report about a missing sidewalk and sees the success message. This confirms submission; the manual does not describe what happens next.
 
 ## Assistant Guidance
 

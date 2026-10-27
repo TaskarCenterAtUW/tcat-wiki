@@ -19,7 +19,7 @@ topics:
 risk_level: medium
 authority_level: explanatory
 publication_status: draft
-last_reviewed: 2026-08-05
+last_reviewed: 2026-10-26
 retrieval_priority: high
 assistant_behavior:
     allow_inference: false
@@ -29,8 +29,8 @@ assistant_behavior:
         - A user belongs to every TDEI project group because they belong to one project group.
         - A displayed project-group role grants permissions outside that role's documented scope.
 related_pages:
-    - tdei/portal/user-manual/project-groups.md
-    - tdei/portal/user-manual/members.md
+    - assistant/tdei/concept/project-group.md
+    - assistant/tdei/concept/project-group-roles.md
 tags:
     - Assistant
 ---
@@ -60,6 +60,8 @@ The **Members** page lists users in the active project group. A matching account
 - Membership does not automatically grant every dataset, service, workspace, or publishing permission. Review the displayed role and the relevant product workflow.
 
 ## How To Use This
+
+Follow the Portal's [Project Groups](../../../tdei/portal/user-manual/project-groups.md) and [Members](../../../tdei/portal/user-manual/members.md) guides. The documented Members page requires the `poc` role to view and manage a group's member list.
 
 1. Open the [TDEI Portal](https://portal.tdei.us/) and sign in.
 2. Select the project group picker in the header or choose **Project Groups** in the left sidebar.

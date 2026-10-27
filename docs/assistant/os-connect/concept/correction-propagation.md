@@ -23,7 +23,7 @@ topics:
 risk_level: medium
 authority_level: explanatory
 publication_status: draft
-last_reviewed: 2026-08-28
+last_reviewed: 2026-10-26
 retrieval_priority: high
 assistant_behavior:
     allow_inference: false
@@ -31,10 +31,10 @@ assistant_behavior:
     abstain_if_missing_context: true
     do_not_claim:
         - A correction automatically propagates to every related dataset or product.
-    related_pages:
-        - assistant/os-connect/concept/correction-release-lag.md
-        - assistant/os-connect/concept/issue-report-follow-up.md
-        - assistant/tdei/concept/released-dataset.md
+related_pages:
+    - assistant/os-connect/concept/correction-release-lag.md
+    - assistant/os-connect/concept/issue-report-follow-up.md
+    - assistant/tdei/concept/released-dataset.md
 tags:
     - Assistant
 ---
@@ -45,7 +45,7 @@ tags:
 
 ## Short Answer
 
-An update to an OS-CONNECT dataset does not directly update OpenStreetMap (OSM), TDEI, or every downstream product. A correction report, source-data edit, TDEI dataset update, released version, and downstream display are separate stages that require the applicable workflow and verification.
+An update to an OS-CONNECT dataset does not directly update OpenStreetMap (OSM), TDEI, or every downstream product. The [viewer feedback manual](../../../os-connect/data-viewer/user-manual/feedback.md) explains how to submit an issue but does not document how reports are reviewed, how changes are incorporated into source data or a release, or when downstream products refresh.
 
 ## Significance
 
@@ -53,7 +53,7 @@ Clear lineage and propagation understanding prevents users from treating a repor
 
 ## What This Means
 
-OS-CONNECT and OpenStreetMap are separate datasets. TDEI manages datasets and releases, while OS-CONNECT can present a released dataset; a correction must be reviewed and incorporated through the relevant source and release process.
+OS-CONNECT and OpenStreetMap are separate datasets. TDEI manages datasets and releases, while the OS-CONNECT viewer presents pedestrian network data; the available viewer manual does not explain how a submitted report leads to an update in either system.
 
 ## What This Does Not Mean
 

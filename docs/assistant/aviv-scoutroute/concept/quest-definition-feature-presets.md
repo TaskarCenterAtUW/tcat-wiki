@@ -20,7 +20,7 @@ topics:
 risk_level: medium
 authority_level: explanatory
 publication_status: draft
-last_reviewed: 2026-08-21
+last_reviewed: 2026-10-26
 retrieval_priority: high
 assistant_behavior:
     allow_inference: false
@@ -60,7 +60,7 @@ Feature presets currently apply to point or node geometry only. The available pr
 
 ## What This Does Not Mean
 
-A feature preset does not let the mobile user customize the preset's tags, and creating a point does imply the ability to create a line or area feature. A preset also does not replace the separate quest configuration needed to ask follow-up questions.
+A feature preset does not let the mobile user customize the preset's tags, and creating a point does not imply the ability to create a line or area feature. A preset also does not replace the separate quest configuration needed to ask follow-up questions.
 
 ## How To Use This
 

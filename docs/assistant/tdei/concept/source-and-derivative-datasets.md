@@ -25,7 +25,7 @@ topics:
 risk_level: medium
 authority_level: explanatory
 publication_status: draft
-last_reviewed: 2026-07-16
+last_reviewed: 2026-10-26
 retrieval_priority: medium
 assistant_behavior:
     allow_inference: true
@@ -53,7 +53,7 @@ tags:
 
 A **source dataset** is the stewarded input. A **derivative dataset** is an output created by transforming, filtering, joining, editing, or validating that source.
 
-A source may remain restricted while a reviewed derivative is released. TDEI storage or processing does not automatically make either dataset public.
+A source may remain within its project group while a derivative is reviewed for release. TDEI storage or processing does not automatically make either dataset public.
 
 ## Significance
 
@@ -65,7 +65,7 @@ This distinction preserves detailed source data while allowing purpose-specific 
 - Define each derivative's purpose, audience, format, and fields.
 - Document transformations, retained or removed fields, validation, and review.
 - Review `ext:` fields separately.
-- Check current TDEI permissions and release controls.
+- Check current TDEI permissions and release controls. The Portal's [dataset guide](../../../tdei/portal/user-manual/datasets.md) documents a **Derived Dataset Id** field. It does not describe whether this field records every transformation or provides a complete lineage graph.
 
 ## What This Does Not Mean
 
@@ -77,7 +77,7 @@ Preserve the source, create a scoped derivative, save the input and output ident
 
 ## Example
 
-A jurisdiction keeps pedestrian geometry and maintenance attributes in a restricted source. A routing derivative retains required fields; a public derivative omits sensitive or unnecessary fields. Each output has documented lineage and review status.
+A jurisdiction uses a project-group dataset as the input for a routing derivative. It records the source and output dataset IDs and documents the transformation, rather than assuming the **Derived Dataset Id** field provides a complete history.
 
 ## Assistant Guidance
 
@@ -89,3 +89,4 @@ For operational answers, request the dataset identifier, project group, intended
 - [Integrate external geospatial data](../workflow/integrate-external-geospatial-data.md)
 - [Release versioning](release-versioning.md)
 - [Dataset lineage in TDEI](../../workspaces/concept/dataset-lineage-in-tdei.md)
+- [TDEI Portal datasets](../../../tdei/portal/user-manual/datasets.md)

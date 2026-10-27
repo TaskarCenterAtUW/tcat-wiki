@@ -19,7 +19,7 @@ topics:
 risk_level: high
 authority_level: explanatory
 publication_status: draft
-last_reviewed: 2026-07-28
+last_reviewed: 2026-10-26
 retrieval_priority: medium
 assistant_behavior:
     allow_inference: false
@@ -30,7 +30,7 @@ assistant_behavior:
         - OS-CONNECT data certifies accessibility or current field conditions.
 related_pages:
     - assistant/cross-platform/concept/ada-compliance-boundaries.md
-    - assistant/os-connect/qa-qc/user-manual/index.md
+    - assistant/os-connect/concept/qa-qc-report.md
 tags:
     - Assistant
 ---
@@ -41,7 +41,7 @@ tags:
 
 ## Short Answer
 
-Yes. OS-CONNECT can support ADA transition planning as a screening or inventory input. It is not a transition plan and does not establish compliance.
+Yes. OS-CONNECT can support early screening or planning by identifying mapped pedestrian-network features for further investigation. It is not by itself an ADA inventory or transition plan, and it does not establish compliance.
 
 ## Significance
 
@@ -49,7 +49,7 @@ Transition planning requires documented barriers, priorities, responsibilities, 
 
 ## What This Means
 
-Use OS-CONNECT to identify possible gaps, then combine its results with agency ownership, legal scope, curb-ramp and sidewalk inventories, field observations, and prioritization criteria.
+Use OS-CONNECT to identify possible network gaps for further investigation. Combine those observations with the applicable ADA transition-planning requirements, agency inventory and ownership information, and field verification; consult qualified agency staff for the required planning process.
 
 ## What This Does Not Mean
 

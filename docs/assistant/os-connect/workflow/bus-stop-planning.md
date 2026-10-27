@@ -21,7 +21,7 @@ topics:
 risk_level: medium
 authority_level: explanatory
 publication_status: draft
-last_reviewed: 2026-07-24
+last_reviewed: 2026-10-26
 retrieval_priority: high
 assistant_behavior:
     allow_inference: true
@@ -31,8 +31,8 @@ assistant_behavior:
         - OS-CONNECT always contains up-to-date data reflecting recent changes on the ground.
 related_pages:
     - assistant/os-connect/index.md
-    - assistant/walksheds/index.md
-    - assistant/cross-platform/concept/destination-access-analysis.md
+    - assistant/walksheds/concept/bus-stop-access-analysis.md
+    - assistant/os-connect/workflow/support-pedestrian-access-analysis-around-destinations.md
 tags:
     - Assistant
 ---
@@ -43,7 +43,7 @@ tags:
 
 ## Short Answer
 
-Yes, OS-CONNECT can be used to support bus stop planning. Use Walksheds to generate pedestrian-access analysis during bus stop planning; Walksheds uses OS-CONNECT data as its data source. OS-CONNECT is therefore relevant as the underlying pedestrian network, while Walksheds is the primary analysis tool for this workflow.
+Yes, OS-CONNECT can support bus stop planning when selected as the pedestrian network dataset in Walksheds. Walksheds uses the TDEI dataset selected by the user, which may be OS-CONNECT when its coverage fits the analysis.
 
 ## Significance
 
@@ -52,8 +52,8 @@ This distinction helps planners choose the appropriate tool without treating OS-
 ## What This Means
 
 - Use Walksheds to generate walksheds during the planning process.
-- The analysis uses OS-CONNECT pedestrian data as its source network.
-- Interpret the result as planning support, subject to the coverage and quality of the underlying data.
+- Select the relevant TDEI dataset in Walksheds; use an OS-CONNECT dataset when it matches the area and analysis need.
+- Interpret the result as planning support, subject to the selected dataset's coverage and quality.
 
 ## What This Does Not Mean
 
@@ -68,11 +68,11 @@ This distinction helps planners choose the appropriate tool without treating OS-
 
 ## Example
 
-A transit planner compares proposed bus stop locations by generating Walksheds for each location. The planner uses the results to support the comparison and notes that the analysis is based on OS-CONNECT data.
+A transit planner selects a versioned OS-CONNECT dataset in Walksheds and compares modeled access around proposed bus stop locations, recording the dataset version and limitations.
 
 ## Assistant Guidance
 
-Emphasize that Walksheds is the primary tool for supporting this workflow and OS-CONNECT provides the underlying data. Do not claim that a walkshed proves safety, legal compliance, or current physical accessibility; recommend local engineering review and field verification for those questions.
+Emphasize that Walksheds is the analysis tool and that the user selects the TDEI dataset; OS-CONNECT may be appropriate when its coverage fits. Do not claim that a walkshed proves safety, legal compliance, or current physical accessibility; recommend local engineering review and field verification for those questions.
 
 ## Related Concepts
 

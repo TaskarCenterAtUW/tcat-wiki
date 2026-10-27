@@ -18,7 +18,7 @@ topics:
 risk_level: medium
 authority_level: explanatory
 publication_status: draft
-last_reviewed: 2026-09-04
+last_reviewed: 2026-10-26
 retrieval_priority: high
 assistant_behavior:
     allow_inference: false
@@ -41,7 +41,7 @@ tags:
 
 ## Short Answer
 
-In the OS-CONNECT Data Viewer, `width` describes the width of the selected feature in meters when that attribute is present. It is a dataset value for that feature, not a universal measurement for every nearby path or location.
+The OS-CONNECT Data Viewer describes `width` as the width of the selected feature in meters when that attribute is present. This explains the viewer popup field; it does not by itself establish the OpenSidewalks schema definition for every dataset or version.
 
 ## Significance
 
@@ -49,7 +49,7 @@ Width can affect how planners, analysts, and routing or accessibility tools inte
 
 ## What This Means
 
-The Data Viewer documents `width` as the width of the selected feature, expressed in meters; an example value is `1.5`. The popup shows the field only when it is present in the dataset for that feature.
+The Data Viewer presents `width` in meters and gives `1.5` as an example. Its popup shows the field only when it is present for that feature. Check the relevant schema and dataset version for authoritative field semantics.
 
 ## What This Does Not Mean
 

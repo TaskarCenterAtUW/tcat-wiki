@@ -19,7 +19,7 @@ topics:
 risk_level: medium
 authority_level: explanatory
 publication_status: draft
-last_reviewed: 2026-07-22
+last_reviewed: 2026-10-26
 retrieval_priority: high
 assistant_behavior:
     allow_inference: false
@@ -40,11 +40,11 @@ tags:
 
 ## Short Answer
 
-Report missing sidewalks, incorrect kerb or crossing attributes, significantly misaligned features, and other location-specific discrepancies through the OS-CONNECT Viewer.
+Report missing sidewalks, incorrect curb or crossing attributes, significantly misaligned features, and other location-specific discrepancies through the OS-CONNECT Viewer. The manual's examples include a missing sidewalk, a crossing marked incorrectly, and a raised curb not shown in the data.
 
 ## Significance
 
-Specific reports help data stewards prioritize review and improve future releases.
+The viewer manual recommends concise descriptions of location-specific discrepancies, such as a missing sidewalk, incorrect crossing markings, or a raised curb not shown in the data. It does not describe how reports are triaged or handled.
 
 ## What This Means
 
@@ -52,7 +52,7 @@ Useful reports include a newly built sidewalk missing from the data, a crossing 
 
 ## What This Does Not Mean
 
-A report requests review; it does not immediately edit the viewer or guarantee a release.
+The manual confirms successful submission but does not document subsequent review or data changes. Submission alone does not confirm that the viewer or a release has changed.
 
 ## How To Use This
 

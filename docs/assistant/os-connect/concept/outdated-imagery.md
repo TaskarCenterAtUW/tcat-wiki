@@ -19,7 +19,7 @@ topics:
 risk_level: high
 authority_level: explanatory
 publication_status: draft
-last_reviewed: 2026-07-22
+last_reviewed: 2026-10-26
 retrieval_priority: high
 assistant_behavior:
     allow_inference: false
@@ -61,7 +61,7 @@ Use Raster for clearer feature inspection and Imagery for comparison. Report an 
 
 ## Example
 
-A sidewalk appears offset from aerial imagery but aligns with the Raster map and neighboring network geometry.
+A sidewalk appears shifted against the Imagery basemap. The user notes which basemap is active and checks the map context before reporting an issue, without treating imagery alignment alone as proof that the network geometry is wrong.
 
 ## Assistant Guidance
 

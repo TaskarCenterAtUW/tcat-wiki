@@ -21,7 +21,7 @@ topics:
 risk_level: high
 authority_level: explanatory
 publication_status: draft
-last_reviewed: 2026-06-09
+last_reviewed: 2026-10-26
 retrieval_priority: high
 assistant_behavior:
     allow_inference: false
@@ -50,30 +50,30 @@ This section contains question pages for OS-CONNECT, the public pedestrian netwo
 
 ## Significance
 
-OS-CONNECT is TCAT's most frequently queried public-facing product. Planners, jurisdictions, advocates, and the public ask about data accuracy, correction workflows, ADA transition planning, equity analysis, GIS interoperability, and stewardship. This section provides stable, grounded answers for assistant retrieval.
+Planners, jurisdictions, advocates, and the public ask about OS-CONNECT data accuracy, correction reports, ADA transition planning, equity analysis, GIS interoperability, and stewardship. This section organizes assistant-facing answers about those topics and their evidence limits.
 
 ## What This Means
 
 - Pages in `os-connect/` address specific questions about the OS-CONNECT viewer, the underlying dataset, correction reporting, data attributes, and use cases.
-- Over 200 question stubs cover viewer UI, data attributes, correction workflows, community engagement, AI-assisted stewardship, equity analysis, and long-term maintenance.
+- More than 200 draft pages cover viewer UI, data attributes, correction workflows, community engagement, AI-assisted stewardship, equity analysis, and long-term maintenance.
 - Several questions overlap with [Walksheds](../walksheds/index.md), [AccessMap](../accessmap/index.md), and [TDEI](../tdei/index.md) — cross-product support questions are in [support/](../support/index.md).
 
 ## What This Does Not Mean
 
-- OS-CONNECT completeness scores are not ADA compliance determinations. Pages addressing ADA questions carry `risk_level: medium` and `abstain_if_missing_context: true`.
+- OS-CONNECT completeness scores are not ADA compliance determinations. ADA-related pages can have different risk levels; check each page's `risk_level` and `abstain_if_missing_context` metadata.
 - Not a substitute for the [OS-CONNECT data documentation](../../os-connect/index.md) for authoritative attribute definitions.
 
 ## How To Use This
 
-**Agents**: For viewer UI questions (colors, layers, features), prefer `what-am-i-looking-at-in-this-viewer.md`, `what-are-the-different-map-layers.md`, and `what-does-this-selected-feature-represent.md`. For error reporting, start with `how-do-i-report-an-error-in-os-connect-data.md`. For ADA questions, check `risk_level` before answering.
+**Agents**: For viewer UI questions (colors, layers, features), prefer [viewer overview](concept/viewer-overview.md), [map layers](concept/map-layers.md), and [feature selection](concept/feature-selection-display.md). For error reporting, start with [report an error](workflow/report-data-error.md). For ADA questions, check `risk_level` before answering.
 
 ## Example
 
-A transit planner asks: _"Can I use OS-CONNECT for an ADA transition plan?"_ Retrieve `os-connect/can-os-connect-be-used-for-ada-transition-planning.md`, note `risk_level: medium`, and include a citation with a note that the data does not constitute a legal ADA inventory.
+A transit planner asks: _"Can I use OS-CONNECT for an ADA transition plan?"_ Retrieve [Can OS-CONNECT be used for ADA transition planning?](concept/ada-transition-planning.md), note its `risk_level: high`, and cite the limitations on using data for legal determinations.
 
 ## Assistant Guidance
 
-For questions about whether OS-CONNECT data satisfies a legal requirement, always abstain from a direct yes/no and refer to the policy guidance in `cross-platform/index.md`. For correction-workflow questions, note the asynchronous nature of corrections and the release cadence.
+For questions about whether OS-CONNECT data satisfies a legal requirement, follow the policy guidance in [Cross-Platform](../cross-platform/index.md). For correction reports, distinguish successful submission from a verified data change; the [viewer feedback manual](../../os-connect/data-viewer/user-manual/feedback.md) does not specify issue review or release timing.
 
 ## Related Concepts
 

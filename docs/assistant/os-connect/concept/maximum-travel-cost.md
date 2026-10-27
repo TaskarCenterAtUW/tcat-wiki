@@ -18,7 +18,7 @@ topics:
 risk_level: medium
 authority_level: provisional
 publication_status: draft
-last_reviewed: 2026-08-28
+last_reviewed: 2026-10-26
 retrieval_priority: high
 assistant_behavior:
     allow_inference: false
@@ -26,7 +26,7 @@ assistant_behavior:
     abstain_if_missing_context: true
     do_not_claim: []
 related_pages:
-    - assistant/os-connect/concept/max-cost.md
+    - assistant/walksheds/concept/max-cost.md
     - assistant/os-connect/concept/routable-graph.md
     - assistant/os-connect/concept/maximum-travel-cost.md
 tags:

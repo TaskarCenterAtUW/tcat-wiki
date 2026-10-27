@@ -20,7 +20,7 @@ topics:
 risk_level: low
 authority_level: explanatory
 publication_status: draft
-last_reviewed: 2026-08-28
+last_reviewed: 2026-10-26
 retrieval_priority: medium
 assistant_behavior:
     allow_inference: false
@@ -29,7 +29,7 @@ assistant_behavior:
     do_not_claim:
         - Teams control access permissions or RBAC roles within a workspace
         - Teams are the same as TDEI Project Group membership
-        - QR codes or invitation links automatically expire or can be revoked from the UI
+        - A Workspaces team invitation link or QR code is guaranteed to remain usable indefinitely.
         - Creating a team is required before editing or viewing a workspace
 related_pages:
     - assistant/workspaces/workflow/create-workspace-from-tdei-dataset.md
@@ -80,6 +80,7 @@ Contributors who use the displayed QR code or shareable link can associate their
 
 - **Not an access-control mechanism** — Teams are attribution labels for edits; they do not grant or revoke workspace permissions.
 - **Not the same as TDEI Project Groups** — Project groups are a TDEI-level organizational structure; workspace teams are workspace-scoped attribution labels.
+- The current user manual explains how to share a team link or QR code, but does not specify how long an invitation remains valid or whether it can be revoked. Do not promise that an invitation remains usable indefinitely or infer expiry and revocation behavior without current product guidance.
 
 ## How To Use This
 
@@ -108,3 +109,4 @@ A project lead opens **Settings → Teams**, creates a team named **Downtown acc
 - [Project groups (Workspaces)](../concept/project-groups.md)
 - [How do team invitations work?](../concept/team-invitations.md)
 - [Workspace Settings](../../../workspaces/user-manual/settings/index.md)
+- [Workspace Settings — Teams](../../../workspaces/user-manual/settings/teams.md)

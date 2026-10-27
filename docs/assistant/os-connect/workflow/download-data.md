@@ -18,7 +18,7 @@ topics:
 risk_level: medium
 authority_level: explanatory
 publication_status: draft
-last_reviewed: 2026-07-22
+last_reviewed: 2026-10-26
 retrieval_priority: high
 assistant_behavior:
     allow_inference: false
@@ -40,7 +40,7 @@ tags:
 
 ## Short Answer
 
-Use the **About this Viewer** information and the dataset boundary details to access the viewer's documented download path for the selected dataset.
+Use the selected dataset's boundary popup to open the TDEI Portal download page. The viewer manual also says **About this Viewer** provides download instructions.
 
 ## Significance
 
@@ -48,7 +48,7 @@ Downloads provide a dataset artifact for further inspection or use beyond the re
 
 ## What This Means
 
-Select or search for a dataset, inspect its boundary popup and TDEI ID, and use the viewer's download instructions. Record the dataset version and upload date with the downloaded file.
+Search for the dataset and left-click its boundary to open details. Use the displayed **ID** and **Copy** control if needed, then follow the Portal download link. The popup displays the dataset name, upload date, version, ID, and a **Quality Report** link. Record the dataset version and upload date with the downloaded file.
 
 ## What This Does Not Mean
 

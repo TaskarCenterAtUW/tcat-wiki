@@ -18,7 +18,7 @@ topics:
 risk_level: medium
 authority_level: explanatory
 publication_status: draft
-last_reviewed: 2026-07-24
+last_reviewed: 2026-10-26
 retrieval_priority: high
 assistant_behavior:
     allow_inference: false
@@ -28,8 +28,8 @@ assistant_behavior:
         - OS-CONNECT is an official ADA compliance inventory.
         - An OS-CONNECT dataset is complete or current everywhere.
 related_pages:
-    - ../index.md
-    - viewer-overview.md
+    - assistant/os-connect/index.md
+    - assistant/os-connect/concept/viewer-overview.md
 tags:
     - Assistant
 ---

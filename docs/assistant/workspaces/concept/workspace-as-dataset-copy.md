@@ -20,7 +20,7 @@ topics:
 risk_level: medium
 authority_level: explanatory
 publication_status: draft
-last_reviewed: 2026-09-29
+last_reviewed: 2026-10-26
 retrieval_priority: medium
 assistant_behavior:
     allow_inference: false
@@ -55,11 +55,11 @@ Record the source and version, edit within the workspace, and use the documented
 
 ## What This Does Not Mean
 
-Creating or editing a workspace does not automatically update the source or make the workspace public. Deleting a workspace is irreversible; the workspace and its contents cannot be recovered after deletion.
+Creating or editing a workspace does not automatically update the source or make the workspace public. Deleting a workspace is permanent, but do not infer additional recovery behavior beyond the current Workspace Settings guidance.
 
 ## How To Use This
 
-Before deleting a workspace, export its changes or download a copy and verify that the data needed for future work is preserved. Then confirm the source, workspace, and export destination; do not assume that a deleted workspace can be restored.
+Before deleting a workspace, export its changes or download a copy and verify that the data needed for future work is preserved. Then confirm the source, workspace, and export destination. The current manual describes deletion as permanent; follow its confirmation steps and do not assume that the action modifies a TDEI dataset outside Workspaces.
 
 ## Example
 
@@ -67,9 +67,10 @@ A team creates a workspace from a TDEI dataset, adds accessibility features, and
 
 ## Assistant Guidance
 
-Cite lineage and export documentation. Warn that deleting a workspace is irreversible and recommend preserving needed changes before deletion.
+Cite lineage and export documentation. Warn that deleting a workspace is permanent and recommend preserving needed changes before deletion; do not make additional recovery claims that the current manual does not establish.
 
 ## Related Concepts
 
 - [How can a workspace diverge from its source dataset?](workspace-copy-and-divergence.md)
 - [What is dataset lineage?](dataset-lineage.md)
+- [Workspace Settings: Delete Workspace](../../../workspaces/user-manual/settings/general.md)

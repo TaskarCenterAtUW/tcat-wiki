@@ -16,17 +16,18 @@ topics:
 risk_level: low
 authority_level: explanatory
 publication_status: draft
-last_reviewed: 2026-05-11
+last_reviewed: 2026-10-26
 retrieval_priority: high
 assistant_behavior:
     allow_inference: false
     requires_citation: true
     abstain_if_missing_context: true
     do_not_claim:
-        - Step-by-step UI details without naming the manual version.
+        - The TDEI Portal allows anonymous users to upload every dataset type without an account or project-group permissions.
+        - This overview provides exact, versioned directions for every Portal workflow.
 related_pages:
     - assistant/tdei/workflow/download-os-connect-data.md
-    - tdei/portal/user-manual/index.md
+    - assistant/tdei/concept/portal-dashboard.md
 tags:
     - Assistant
 ---
@@ -45,20 +46,21 @@ Many OS-CONNECT and workflow questions are actually portal navigation questions.
 
 ## What This Means
 
-Permissions are group- and role-based. Some actions require administrators or service owners to approve access.
+Portal access depends on the active project group and assigned role. The current manual documents role requirements for specific actions; for example, a `poc` role is required to view and manage a group's member list. See the [Members guide](../../../tdei/portal/user-manual/members.md) for that permission detail.
 
 ## What This Does Not Mean
 
-- Not a public anonymous upload endpoint for all data types by default.
-- Not identical to raw API documentation if the user means programmatic access — clarify intent.
+- The Portal is not an anonymous upload endpoint for every data type; upload and management actions require an account and the applicable project-group permissions.
+- This overview does not provide exact, version-specific instructions for every screen. Use the current manual for click-by-click guidance.
+- Portal guidance is not a substitute for raw API documentation when the user means programmatic access.
 
 ## How To Use This
 
-Link to the [TDEI Portal user manual index](../../../tdei/portal/user-manual/index.md) for authoritative screen-by-screen guidance.
+Link to the [TDEI Portal user manual index](../../../tdei/portal/user-manual/index.md) for authoritative screen-by-screen guidance, and use the relevant section for role-specific permissions.
 
 ## Example
 
-A new staff member creates an account, joins a municipal project group, then runs a validation job on a staged dataset before publication.
+A new staff member registers, confirms the relevant project group and assigned role, then consults the current job guide before submitting a validation job.
 
 ## Assistant Guidance
 

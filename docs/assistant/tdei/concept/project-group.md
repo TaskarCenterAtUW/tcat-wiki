@@ -18,7 +18,7 @@ topics:
 risk_level: medium
 authority_level: explanatory
 publication_status: draft
-last_reviewed:
+last_reviewed: 2026-10-26
 retrieval_priority: high
 assistant_behavior:
     allow_inference: false
@@ -45,15 +45,15 @@ The active project group determines which portal resources and permissions the u
 
 ## What This Means
 
-Users can belong to multiple groups, switch the active group, and copy its unique Project Group ID. Group members and Points of Contact have different permissions.
+Users can belong to multiple groups, switch the active group, and copy its unique Project Group ID. Group members and Points of Contact have different permissions. The Portal's [Members guide](../../../tdei/portal/user-manual/members.md) specifies that a `poc` can view and manage the member list and that data-generator roles can publish datasets for their format.
 
 ## What This Does Not Mean
 
-A project group does not automatically make its datasets public or grant every member publishing rights.
+Belonging to one project group does not imply membership in every other group. A project group does not automatically make its datasets public or grant every member publishing rights.
 
 ## How To Use This
 
-Confirm the active group before managing members, services, datasets, or jobs.
+Confirm the active group before managing members, services, datasets, or jobs. The Portal's [Project Groups guide](../../../tdei/portal/user-manual/project-groups.md) documents group switching and the current-group indicator.
 
 ## Example
 
@@ -67,3 +67,4 @@ Ask for group name, ID, active context, and role when diagnosing access.
 
 - [What roles can members have?](project-group-roles.md)
 - [How do services relate to project groups?](tdei-services.md)
+- [TDEI Portal Project Groups](../../../tdei/portal/user-manual/project-groups.md)

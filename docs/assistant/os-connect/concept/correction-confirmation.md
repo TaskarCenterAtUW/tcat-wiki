@@ -19,7 +19,7 @@ topics:
 risk_level: medium
 authority_level: explanatory
 publication_status: draft
-last_reviewed: 2026-07-29
+last_reviewed: 2026-10-26
 retrieval_priority: high
 assistant_behavior:
     allow_inference: false
@@ -27,8 +27,8 @@ assistant_behavior:
     abstain_if_missing_context: true
     do_not_claim:
         - A submitted report or acknowledgement of one proves that a correction was incorporated.
-    related_pages:
-        - assistant/os-connect/concept/correction-tracking.md
+related_pages:
+    - assistant/os-connect/concept/correction-tracking.md
 tags:
     - Assistant
 ---
@@ -43,11 +43,11 @@ Confirm incorporation by checking the later dataset release, its version, the fe
 
 ## Significance
 
-Versioned comparison provides evidence about what was published.
+Versioned comparison can provide evidence about what was published. The [viewer feedback manual](../../../os-connect/data-viewer/user-manual/feedback.md) documents submission but not issue-status tracking.
 
 ## What This Means
 
-Keep the issue location and description, then compare the next relevant release and its metadata.
+Keep the issue location and description, then check a later relevant release and its metadata for evidence of the change. The viewer manual does not document an issue-status or review workflow.
 
 ## What This Does Not Mean
 
@@ -63,7 +63,7 @@ An agency staffer finds the reported feature in the next versioned release with 
 
 ## Assistant Guidance
 
-Do not claim change incorporation without release evidence or an authoritative status response.
+Do not claim change incorporation without release evidence or an authoritative, case-specific status update if one is available.
 
 ## Related Concepts
 

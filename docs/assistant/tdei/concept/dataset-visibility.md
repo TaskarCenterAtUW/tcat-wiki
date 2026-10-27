@@ -19,7 +19,7 @@ topics:
 risk_level: medium
 authority_level: explanatory
 publication_status: draft
-last_reviewed: 2026-09-29
+last_reviewed: 2026-10-26
 retrieval_priority: high
 assistant_behavior:
     allow_inference: false
@@ -27,7 +27,7 @@ assistant_behavior:
     abstain_if_missing_context: true
     do_not_claim:
         - Every TDEI project dataset is publicly downloadable.
-        - Deactivating a dataset is a reversible way to unrelease it.
+        - A TDEI project dataset is visible to every project-group member regardless of that user's permissions.
 related_pages:
     - assistant/tdei/concept/released-dataset.md
     - assistant/tdei/concept/release-versioning.md
@@ -42,7 +42,7 @@ tags:
 
 ## Short Answer
 
-Project datasets are available to the relevant project-group members, while released datasets are available through the public released-dataset listings. Release status controls the boundary.
+Project datasets appear in the Portal's **My Project Datasets** view for the active project group, subject to the user's membership and permissions. Released datasets appear in the public **All Released Datasets** listing.
 
 ## Significance
 
@@ -50,26 +50,25 @@ Visibility determines who can inspect, download, or use a dataset. It should be 
 
 ## What This Means
 
-Use the project-dataset view for group work and the released-dataset view for public data. A source or baseline dataset can remain private while completed or derived versions are prepared.
-
-Treat dataset deactivation as removal, not as a temporary visibility change: the interface warns that deactivation removes the dataset from the system. Confirm the dataset and version before deactivating it, and preserve any data that must be retained. Do not use deactivation as a substitute for controlling release status.
+Use **My Project Datasets** for data within the active project group and **All Released Datasets** for public releases. A source or baseline dataset can remain within the project group while completed or derived versions are prepared. The Portal manual describes the first view as datasets belonging to the active project group and the second as public releases across TDEI.
 
 ## What This Does Not Mean
 
-Being stored in TDEI does not make a dataset public. Membership and release settings still apply. Deactivation is not an ordinary unrelease or hide action, and should be treated as irreversible.
+Being stored in TDEI does not make a dataset public. Access to project datasets is also subject to the user's membership and permissions in the active project group.
 
 ## How To Use This
 
-Check the active project group and release status before troubleshooting missing data. Before deactivation, verify the dataset identity and version and confirm that needed copies are preserved. Do not share private dataset contents without authorization, or deactivate a dataset merely to remove it from public view.
+Check the active project group and release status before troubleshooting missing data. Do not share private dataset contents without authorization.
 
 ## Example
 
-A draft dataset appears to project members but not in the all-released list until a point of contact publishes it.
+A user opens **My Project Datasets** while their project group is active to find a project dataset. They use **All Released Datasets** to browse public releases.
 
 ## Assistant Guidance
 
-Ask whether the user is looking for a private project dataset or a public release. Do not infer visibility from storage alone or suggest deactivation as a reversible release control. Treat deactivation as permanent removal.
+Ask whether the user is looking for a private project dataset or a public release. Do not infer visibility from storage alone. For current Portal labels and dataset-list behavior, refer to the [TDEI Portal dataset guide](../../../tdei/portal/user-manual/datasets.md).
 
 ## Related Concepts
 
 - [What is the TDEI released-dataset viewer?](released-dataset-viewer.md)
+- [TDEI Portal datasets](../../../tdei/portal/user-manual/datasets.md)
