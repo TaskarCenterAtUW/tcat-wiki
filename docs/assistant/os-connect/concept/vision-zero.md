@@ -19,7 +19,7 @@ topics:
 risk_level: medium
 authority_level: provisional
 publication_status: draft
-last_reviewed: 2026-08-28
+last_reviewed: 2026-10-26
 retrieval_priority: high
 assistant_behavior:
     allow_inference: false
@@ -28,7 +28,7 @@ assistant_behavior:
     do_not_claim: []
 related_pages:
     - assistant/os-connect/concept/safety-improvement.md
-    - assistant/os-connect/concept/crossing-gap-identification.md
+    - assistant/walksheds/concept/crossing-gap-identification.md
     - assistant/os-connect/concept/field-validation.md
 tags:
     - Assistant

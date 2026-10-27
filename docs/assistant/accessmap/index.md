@@ -44,7 +44,7 @@ tags:
 
 ## Short Answer
 
-This section contains question pages for AccessMap, TCAT's accessibility-aware pedestrian routing application. AccessMap calculates routes optimized for specific mobility profiles — manual wheelchair users, powered wheelchair users, cane users, blind and low-vision users, and people with other accessibility needs — using OS-CONNECT and OpenSidewalks data as its underlying pedestrian network.
+This section contains question pages for AccessMap, TCAT's accessibility-aware pedestrian routing application. AccessMap calculates routes optimized for specific mobility profiles — manual wheelchair users, powered wheelchair users, cane users, blind and low-vision users, and people with other accessibility needs — using OpenSidewalks and OpenStreetMap data as its underlying pedestrian network.
 
 ## Significance
 

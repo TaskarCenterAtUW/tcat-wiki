@@ -18,7 +18,7 @@ topics:
 risk_level: medium
 authority_level: explanatory
 publication_status: draft
-last_reviewed: 2026-07-22
+last_reviewed: 2026-10-26
 retrieval_priority: high
 assistant_behavior:
     allow_inference: false
@@ -47,7 +47,7 @@ Independent layers let users focus on network features, jurisdiction coverage, o
 
 ## What This Means
 
-Use **Data** to show or hide sidewalks, crossings, footways, curbs, and traffic islands. Use **Boundaries** to show or hide dataset polygons. Use **Raster** for map contrast or **Imagery** to compare mapped features with visible infrastructure.
+Use **Data** to show or hide pedestrian features and **Boundaries** to show or hide dataset polygons. The manual names **Raster** (the default street basemap) and **Imagery** (the aerial/satellite basemap) as mutually exclusive basemap choices.
 
 ## What This Does Not Mean
 

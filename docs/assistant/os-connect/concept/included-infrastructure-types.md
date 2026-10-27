@@ -18,7 +18,7 @@ topics:
 risk_level: medium
 authority_level: explanatory
 publication_status: draft
-last_reviewed: 2026-07-22
+last_reviewed: 2026-10-26
 retrieval_priority: high
 assistant_behavior:
     allow_inference: false
@@ -39,7 +39,7 @@ tags:
 
 ## Short Answer
 
-The viewer documents eight main pedestrian feature categories: sidewalks, marked crossings, unmarked crossings, footways, lowered kerbs, flush kerbs, raised kerbs, and traffic islands. An **Others** category may also appear in the legend.
+The viewer manual documents nine displayed categories: sidewalks, marked crossings, unmarked crossings, footways, lowered kerbs, flush kerbs, raised kerbs, traffic islands, and **Others**. Its tag descriptions identify sidewalks, crossings, footways, curbs, and traffic islands using `highway`, `footway`, `crossing:markings`, `barrier`, and `kerb` values.
 
 ## Significance
 
@@ -47,7 +47,7 @@ Feature categories help users interpret the rendered network and select the attr
 
 ## What This Means
 
-Sidewalks use `highway=footway` and `footway=sidewalk`; crossings use `footway=crossing` with marking values; footways are general pedestrian paths; kerbs use `barrier=kerb` with `kerb=lowered`, `flush`, or `raised`; traffic islands use the documented traffic-island classification.
+Sidewalks use `highway=footway` and `footway=sidewalk`; crossings use `footway=crossing` with `crossing:markings=yes` or `no`; general footways use `highway=footway` without a footway subclass; kerbs use `barrier=kerb` with `kerb=lowered`, `flush`, or `raised`; traffic islands use `highway=footway` and `footway=traffic_island`.
 
 ## What This Does Not Mean
 

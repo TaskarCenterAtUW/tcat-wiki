@@ -18,7 +18,7 @@ topics:
 risk_level: medium
 authority_level: explanatory
 publication_status: draft
-last_reviewed: 2026-07-22
+last_reviewed: 2026-10-26
 retrieval_priority: high
 assistant_behavior:
     allow_inference: false
@@ -49,7 +49,7 @@ Complete metadata supports more consistent routing, accessibility analysis, and 
 
 ## What This Means
 
-QA/QC reports can summarize completeness for sidewalks, crossings, and footways and show tag-level presence for fields such as length, surface, incline, width, IDs, and node references. Use low completeness to identify data-collection priorities.
+The QA/QC manual describes summary and tag-level completeness for pedestrian features, including fields such as length, surface, incline, width, IDs, and node references. Interpret the report's stated feature types and tags; completeness is about tag presence, not whether values are accurate.
 
 ## What This Does Not Mean
 

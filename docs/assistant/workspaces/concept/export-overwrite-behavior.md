@@ -20,7 +20,7 @@ topics:
 risk_level: high
 authority_level: explanatory
 publication_status: draft
-last_reviewed: 2026-09-29
+last_reviewed: 2026-10-26
 retrieval_priority: medium
 assistant_behavior:
     allow_inference: false
@@ -73,3 +73,4 @@ Distinguish downloading an export from uploading it to TDEI, and distinguish cre
 - [What happens during export?](export-process.md)
 - [What versioning occurs during export?](export-versioning.md)
 - [What is dataset lineage in TDEI?](dataset-lineage-in-tdei.md)
+- [Export a Workspace](../../../workspaces/user-manual/export.md)

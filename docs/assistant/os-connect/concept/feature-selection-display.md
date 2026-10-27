@@ -18,7 +18,7 @@ topics:
 risk_level: medium
 authority_level: explanatory
 publication_status: draft
-last_reviewed: 2026-07-22
+last_reviewed: 2026-10-26
 retrieval_priority: high
 assistant_behavior:
     allow_inference: false
@@ -44,11 +44,11 @@ The Data Viewer displays a feature popup when users hover over or tap a mapped f
 
 ## Significance
 
-Detailed selection helps users inspect the attributes behind a line or point instead of relying only on its color or shape.
+Detailed selection lets users inspect attributes after enabling the **Data** layer and zooming to the documented feature-interaction level.
 
 ## What This Means
 
-The popup may show `highway`, `footway`, `kerb`, `barrier`, `incline`, `width`, `length`, `foot`, `surface`, and `tactile_paving`. Only attributes present on that feature are shown.
+At zoom level 16 or higher, hover over a feature or tap it on a touch device to view a popup. The manual lists `highway`, `footway`, `kerb`, `barrier`, `incline`, `width`, `length`, `foot`, `surface`, and `tactile_paving` as possible attributes. Only attributes present for that feature are shown.
 
 ## What This Does Not Mean
 

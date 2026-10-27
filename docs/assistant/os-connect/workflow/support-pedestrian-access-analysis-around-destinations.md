@@ -27,11 +27,11 @@ topics:
 risk_level: medium
 authority_level: explanatory
 publication_status: draft
-last_reviewed: 2026-07-24
+last_reviewed: 2026-10-26
 retrieval_priority: high
 assistant_behavior:
     allow_inference: true
-    requires_citation: false
+    requires_citation: true
     abstain_if_missing_context: false
     do_not_claim:
         - OS-CONNECT proves that a destination is accessible.
@@ -42,7 +42,7 @@ related_pages:
     - assistant/os-connect/index.md
     - assistant/walksheds/index.md
     - assistant/accessmap/index.md
-    - assistant/cross-platform/concept/destination-access-analysis.md
+    - assistant/os-connect/concept/destination-access-analysis.md
     - assistant/cross-platform/concept/ada-compliance-boundaries.md
 tags:
     - Assistant
@@ -54,7 +54,7 @@ tags:
 
 ## Short Answer
 
-Yes. Use OS-CONNECT as the pedestrian network dataset and Walksheds to estimate areas reachable from destinations such as schools, clinics, grocery stores, parks, and transit stops.
+Yes. Select an appropriate TDEI pedestrian-network dataset in Walksheds; use OS-CONNECT when its geographic scope and data are suitable for the question. Walksheds estimates areas reachable from destinations such as schools, clinics, grocery stores, parks, and transit stops.
 
 ## Significance
 
@@ -62,15 +62,15 @@ Straight-line buffers show proximity, not whether a connected pedestrian route e
 
 ## What This Means
 
-The Walksheds tool calculates the area reachable from an origin or destination within a selected travel-time or cost budget, using OS-CONNECT as the underlying source dataset.
+The Walksheds tool calculates the area reachable from an origin or destination within a selected travel-time or cost budget, using the TDEI dataset selected in the tool.
 
 ## What This Does Not Mean
 
-An analysis based on OS-CONNECT data does not establish that a destination or route is necessarily accessible, safe, ADA compliant, or current. Missing attributes do not prove that barriers are absent. Construction, surface conditions, weather, debris, signal timing, lighting, and other local conditions may not be represented. Use field verification, engineering review, local inventories, and community input before making operational or legal conclusions.
+An analysis based on a TDEI dataset does not establish that a destination or route is necessarily accessible, safe, ADA compliant, or current. A straight-line buffer represents proximity, not whether a connected pedestrian route exists. Missing attributes do not prove that barriers are absent. Construction, surface conditions, weather, debris, signal timing, lighting, and other local conditions may not be represented. Use field verification, engineering review, local inventories, and community input before making operational or legal conclusions.
 
 ## How To Use This
 
-1. Identify destinations and select the relevant OS-CONNECT subset dataset from the TDEI.
+1. Identify destinations and select a relevant TDEI pedestrian-network dataset; use OS-CONNECT if its coverage fits the analysis area.
 2. Generate Walksheds for each destination or origin using appropriate travel budgets and mobility profiles.
 3. Compare destinations, neighborhoods, or populations and note possible gaps in connectivity or mapped accessibility features.
 4. Inspect priority routes with AccessMap.
@@ -78,11 +78,11 @@ An analysis based on OS-CONNECT data does not establish that a destination or ro
 
 ## Example
 
-A jurisdiction uses OS-CONNECT data to compare access to clinics and grocery stores for walking and wheelchair profiles. Walksheds show that some nearby neighborhoods have limited network reach because of gaps in the pedestrian network, such as missing sidewalks and crossings. The team uses AccessMap to inspect priority routes, then validates the findings in the field before proposing improvements. The analysis informs planning; it does not certify ADA compliance.
+A jurisdiction selects an OS-CONNECT dataset that covers its analysis area and compares modeled access to clinics and grocery stores for different profiles. The team uses AccessMap to inspect priority routes, then validates findings in the field before proposing improvements. The analysis informs planning; it does not certify ADA compliance.
 
 ## Assistant Guidance
 
-Say that OS-CONNECT can provide the network dataset for destination-based analysis, with the Walksheds tool for reachability and AccessMap for route inspection. Explain that results depend on the dataset, update date, destination choices, mobility profile, and field validation. Cite this article when used, qualify answers when that context is missing, and avoid definitive claims about accessibility, safety, compliance, completeness, or currency.
+Say that a suitable TDEI pedestrian-network dataset, including OS-CONNECT when appropriate, can support destination-based analysis, with Walksheds for reachability and AccessMap for route inspection. Explain that results depend on the selected dataset, update date, destinations, profile, and field validation. Cite this article when used, qualify answers when context is missing, and avoid definitive claims about accessibility, safety, compliance, completeness, or currency.
 
 ## Related Concepts
 

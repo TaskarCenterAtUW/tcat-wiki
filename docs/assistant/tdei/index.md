@@ -20,7 +20,7 @@ topics:
 risk_level: low
 authority_level: explanatory
 publication_status: draft
-last_reviewed: 2026-07-06
+last_reviewed: 2026-10-26
 retrieval_priority: high
 assistant_behavior:
     allow_inference: false
@@ -28,7 +28,8 @@ assistant_behavior:
     abstain_if_missing_context: false
     do_not_claim:
         - TDEI and OS-CONNECT are the same platform.
-        - Downloading data from TDEI gives access to unreleased or private datasets.
+        - The public released-dataset listings expose unreleased or private project-group datasets.
+        - Accessing project datasets under **My Project Datasets** makes them public.
 related_pages:
     - assistant/index.md
     - assistant/dispatch.md
@@ -44,7 +45,7 @@ tags:
 
 ## Short Answer
 
-This section contains question pages for the Transportation Data Exchange Initiative (TDEI), the data portal and API that publishes released pedestrian datasets — including OS-CONNECT — and manages dataset versioning, project groups, and data downloads. TDEI is the publication layer that connects Workspaces (editing) to OS-CONNECT (public viewer).
+This section contains question pages for the Transportation Data Exchange Initiative (TDEI), its data portal and API, project groups, services, datasets, and processing jobs. The Portal supports OSW, Flex, and Pathways dataset types; OS-CONNECT is a public viewer for released pedestrian data, and Workspaces is a separate editing platform that can connect to TDEI. See the [Portal dataset guide](../../tdei/portal/user-manual/datasets.md) for the documented dataset types.
 
 ## Significance
 
@@ -58,18 +59,19 @@ TDEI is frequently misunderstood as synonymous with OS-CONNECT or with the Works
 
 ## What This Does Not Mean
 
-- Not a substitute for official TDEI API documentation for developers integrating directly with TDEI endpoints.
-- TDEI does not publicly host private or pre-release data; only `released` datasets are publicly accessible.
+- This knowledge base is not a substitute for official TDEI API documentation for developers integrating directly with TDEI endpoints.
+- The public **All Released Datasets** listing does not expose unreleased or private project-group datasets; access to a project dataset through **My Project Datasets** does not make it public.
+- TDEI, OS-CONNECT, and Workspaces have distinct roles and are not the same platform or application.
 
 ## How To Use This
 
-**Agents**: For ecosystem-positioning questions, start with `tdei/what-is-tdei.md`. For download questions, use `tdei/where-can-i-download-the-data.md` and `tdei/what-file-formats-are-available.md`. For dataset versioning, use `tdei/how-are-releases-versioned.md`.
+**Agents**: For ecosystem-positioning questions, start with [What is TDEI?](concept/tdei.md). For download questions, use [Where can I download the data?](workflow/download-data.md) and [What file formats are available?](concept/file-formats.md). For dataset versioning, use [How are releases versioned?](concept/release-versioning.md).
 
-**Authors**: Key pages to author first: `what-is-tdei.md`, `what-is-a-project-group-in-tdei.md`, `where-can-i-download-the-data.md`, and `what-file-formats-are-available.md`. These answer the most common onboarding questions.
+**Authors**: Key onboarding pages include [What is TDEI?](concept/tdei.md), [What is a project group in TDEI?](concept/project-group.md), [Where can I download the data?](workflow/download-data.md), and [What file formats are available?](concept/file-formats.md).
 
 ## Example
 
-A GIS analyst asks: _"What is the difference between downloading OSW format and OSM format from TDEI?"_ Retrieve `tdei/what-is-the-difference-between-downloading-osw-format-and-osm-format.md`.
+A GIS analyst asks: _"What is the difference between downloading OSW format and OSM format from TDEI?"_ Retrieve [What is the difference between downloading OSW and OSM format?](concept/osw-vs-osm-format.md).
 
 ## Assistant Guidance
 

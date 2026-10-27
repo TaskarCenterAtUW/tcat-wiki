@@ -23,7 +23,7 @@ topics:
 risk_level: high
 authority_level: provisional
 publication_status: draft
-last_reviewed: 2026-07-22
+last_reviewed: 2026-10-26
 retrieval_priority: medium
 assistant_behavior:
     allow_inference: false
@@ -33,9 +33,9 @@ assistant_behavior:
         - The current QA/QC report-generation architecture is permanent.
         - Every report uses identical external data and routing providers.
 related_pages:
-    - qa-qc-report.md
-    - ../../tdei/index.md
-    - ../../walksheds/index.md
+    - assistant/os-connect/concept/qa-qc-report.md
+    - assistant/tdei/index.md
+    - assistant/walksheds/index.md
 tags:
     - Assistant
 ---

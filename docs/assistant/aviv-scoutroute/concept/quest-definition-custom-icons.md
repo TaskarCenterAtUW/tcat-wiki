@@ -20,7 +20,7 @@ topics:
 risk_level: medium
 authority_level: explanatory
 publication_status: draft
-last_reviewed: 2026-08-21
+last_reviewed: 2026-10-26
 retrieval_priority: high
 assistant_behavior:
     allow_inference: false
@@ -44,7 +44,7 @@ tags:
 
 ## Short Answer
 
-Custom quest definition icons are URL-referenced icons that can be used in two quest-definition contexts: as the map icon for a quest, or as the icon for a feature preset that users can add from the mobile app. They are distinct from URLs for quest images and answer-choice images.
+Custom quest-definition icons are URL-referenced icons that can be enabled in two contexts: **Quest**, where they can be selected as an element or quest icon, or **Feature preset**, where they can identify a feature users can add from the mobile app. They are distinct from URLs for quest images and answer-choice images.
 
 ## Significance
 
@@ -54,12 +54,12 @@ The distinction prevents image assets intended for survey questions from being c
 
 A Quest Definition can declare a custom icon by giving it a name and URL, then enabling it for the appropriate context:
 
-- **Quest icon**: identifies the quest on the map, such as on the pin marking a surveyable feature.
+- **Quest icon**: can be selected as an element icon or as a quest icon in the definition.
 - **Feature-preset icon**: identifies an addable feature in the list shown after a user chooses to create a new feature in a workspace.
 
 If the same icon should be usable in both contexts, the Quest Definition author must add the custom icon twice: once configured for quest icons and once configured for feature-preset icons. The author then selects the corresponding copy in each definition entry. The Quest Definition Creator validates whether each selected icon is enabled for the context where it is used.
 
-The Quest Definition Creator provides file-type, file-size, and image-dimension hints in the custom-icon interface. The documented format guidance distinguishes these icons from quest and answer-choice images. Element-type and feature-preset icons use SVG files. Element-type icons are described as ideally `96 px x 96 px`, while feature-preset icons have an ideal size of `28 px x 28 px`. The reported maximum file size is `0.5 MB` for each custom icon. Verify the current interface before publishing a definition.
+The current Quest Definition Creator interface lists the same custom-icon hints for both contexts: use an SVG file under `0.5 MB`, square, and approximately `96 px x 96 px`. This replaces older guidance that gave feature-preset icons a separate `28 px x 28 px` target. Verify the current interface before publishing a definition.
 
 ## What This Does Not Mean
 
@@ -82,3 +82,4 @@ First determine whether the user means a map or feature-preset icon, a quest ima
 - [How are AVIV ScoutRoute quest element icons selected?](quest-definition-element-icons.md)
 - [What are AVIV ScoutRoute quest feature presets?](quest-definition-feature-presets.md)
 - [What is the AVIV ScoutRoute Quest Definition Creator?](quest-definition-creator.md)
+- [Quest Definition Creator manual: Presets and Custom Icons](../../../aviv-scoutroute/quests/creator/user-manual/presets-and-icons.md)

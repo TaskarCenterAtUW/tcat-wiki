@@ -18,7 +18,7 @@ topics:
 risk_level: high
 authority_level: explanatory
 publication_status: draft
-last_reviewed: 2026-06-19
+last_reviewed: 2026-10-26
 retrieval_priority: high
 assistant_behavior:
     allow_inference: false
@@ -49,7 +49,7 @@ This is one of the highest-risk public confusions. Clear denial language protect
 
 ## What This Means
 
-Completeness can inform where to invest in better data, which indirectly supports better planning for accessibility — but it does not adjudicate legal compliance. It also does not measure whether the recorded attributes are correct.
+Completeness is about presence of required tags, not accuracy of their recorded values. It does not adjudicate legal compliance.
 
 ## What This Does Not Mean
 

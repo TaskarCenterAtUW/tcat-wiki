@@ -20,7 +20,7 @@ topics:
 risk_level: high
 authority_level: provisional
 publication_status: draft
-last_reviewed: 2026-07-22
+last_reviewed: 2026-10-26
 retrieval_priority: high
 assistant_behavior:
     allow_inference: false
@@ -30,9 +30,9 @@ assistant_behavior:
         - A high centrality value proves high real-world pedestrian use.
         - A low centrality value proves that a location is unimportant to residents.
 related_pages:
-    - connectivity-depends-on-geometry.md
-    - qa-qc-report.md
-    - ../../qa-qc/concept/what-is-edge-betweenness.md
+    - assistant/os-connect/concept/connectivity-depends-on-geometry.md
+    - assistant/os-connect/concept/qa-qc-report.md
+    - assistant/qa-qc/concept/edge-betweenness-centrality.md
 tags:
     - Assistant
 ---

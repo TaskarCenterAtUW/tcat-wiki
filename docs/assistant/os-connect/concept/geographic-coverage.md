@@ -18,7 +18,7 @@ topics:
 risk_level: medium
 authority_level: explanatory
 publication_status: draft
-last_reviewed: 2026-07-22
+last_reviewed: 2026-10-26
 retrieval_priority: high
 assistant_behavior:
     allow_inference: false
@@ -48,7 +48,7 @@ Coverage boundaries help users identify which dataset and jurisdiction they are 
 
 ## What This Means
 
-Use the boundary layer and dataset naming suffixes to distinguish coverage. The source documentation describes coverage across more than 320 cities and counties, but current availability should be checked in the viewer.
+Use the boundary layer and dataset naming suffixes to distinguish coverage. The OS-CONNECT overview and QA/QC manual describe coverage across more than 320 cities and counties. Check the viewer for currently displayed boundaries rather than treating that broad figure as a complete current inventory.
 
 ## What This Does Not Mean
 

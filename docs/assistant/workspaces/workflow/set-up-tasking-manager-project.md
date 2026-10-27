@@ -24,7 +24,7 @@ topics:
 risk_level: medium
 authority_level: explanatory
 publication_status: draft
-last_reviewed: 2026-09-29
+last_reviewed: 2026-10-26
 retrieval_priority: high
 assistant_behavior:
     allow_inference: false
@@ -46,11 +46,11 @@ tags:
 
 ## Short Answer
 
-Sign in to [Workspaces](https://workspaces.sidewalks.washington.edu/), select a project group and workspace, open **Projects**, and select **New Project**. Complete the project details, area of interest, settings, and review sections. After creating the project, open its **Tasks** tab and define the task area size.
+Sign in to [Workspaces](https://workspaces.sidewalks.washington.edu/), select a project group and workspace, open **Projects**, and select **New Project**. Complete the project details, area of interest, settings, and review sections. After creating the project, set the task area size, generate and save tasks, then activate the project when it is ready.
 
 ## Significance
 
-This workflow creates the project container and its initial configuration. The project is created in **Draft** status, and task areas still need to be generated or defined from the **Tasks** tab before the project is ready for task-based work.
+This workflow creates the project container and its initial configuration. The project starts in **Draft** status. Generate and save its task areas from the **Tasks** tab, then activate the project when it is ready for contributors.
 
 ## What This Means
 
@@ -82,7 +82,7 @@ In **Section 02 - Area of Interest**, define the project area by drawing it on t
 
 In **Section 03 - Settings**, configure the project settings:
 
-- **Lock Timeout** — sets the number of hours before a task lock automatically expires.
+- **Lock Timeout** — sets when a task lock automatically expires.
 - **Review Required** — requires validator review before tasks can be completed.
 - **Assign Validators** — assigns validators to the project when available.
 - **Instructions** — provides instructions for project participants.
@@ -90,13 +90,16 @@ In **Section 03 - Settings**, configure the project settings:
 ### Review and create the project
 
 1. In **Section 04 - Review**, review the project details and select the control to create the project.
-2. Confirm the success message. A newly created example project reports that it was created successfully, that tasks can be generated and saved from the **Tasks** tab, and that the project is in **Draft** status.
+2. Confirm the success message; the project starts in **Draft** status.
 3. Open the project and select the **Tasks** tab.
-4. Define the task area size.
+4. Set the task area size between `0.25 km²` and `1 km²`.
+5. Select **Generate Tasks** and review the generated task grid.
+6. Select **Save Tasks** and confirm that tasks are saved.
+7. Select **Continue**, then select **Activate Project** when the project is ready to leave **Draft** status.
 
 ## What This Does Not Mean
 
-Creating the project does not by itself mean that task areas have been generated, that the project is published, or that contributors can begin work. Confirm the task configuration and project status separately.
+Creating the project does not by itself mean that task areas have been generated and saved or that the project has been activated for contributors. Confirm the task configuration and project status separately.
 
 ## How To Use This
 
@@ -104,12 +107,13 @@ Use this workflow when a project group and workspace already exist and a project
 
 ## Example
 
-A project manager selects a project group and workspace, opens **Projects → New Project**, enters **Downtown sidewalk survey prep**, imports a `.geojson` area, sets a lock timeout, requires validator review, adds instructions, and creates the project. The manager then opens **Tasks**, defines the task area size, and keeps the project in **Draft** until its configuration is ready.
+A project manager selects a project group and workspace, opens **Projects → New Project**, enters **Downtown sidewalk survey prep**, imports a `.geojson` area, sets a lock timeout, requires validator review, adds instructions, and creates the project. The manager then opens **Tasks**, sets the task area size, generates and saves the tasks, and selects **Activate Project** once the project is ready for contributors.
 
 ## Assistant Guidance
 
-- Distinguish creating the project from defining task areas and from publishing or opening the project to contributors.
-- Describe **Lock Timeout** as the period after which a task lock automatically expires.
+- Distinguish creating the project from generating and saving task areas and from activating the project for contributors.
+- Describe **Lock Timeout** as controlling when a task lock automatically expires; do not assume a time unit that the current project guide does not specify.
+- Cite the [Workspaces project-creation manual](../../../workspaces/user-manual/projects/create.md) for current task-generation and activation steps.
 - Explain that Workspaces and the TDEI Portal use a shared sign-in flow; a redirect between them is part of authentication, not a separate project or workspace.
 
 ## Related Concepts
@@ -117,3 +121,4 @@ A project manager selects a project group and workspace, opens **Projects → Ne
 - [Project groups (Workspaces)](../concept/project-groups.md)
 - [How do I create a workspace?](create-workspace.md)
 - [How do I create a workspace from TDEI?](create-workspace-from-tdei.md)
+- [Workspaces project creation manual](../../../workspaces/user-manual/projects/create.md)

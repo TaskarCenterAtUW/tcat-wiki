@@ -18,7 +18,7 @@ topics:
 risk_level: medium
 authority_level: explanatory
 publication_status: draft
-last_reviewed:
+last_reviewed: 2026-10-26
 retrieval_priority: high
 assistant_behavior:
     allow_inference: false
@@ -37,19 +37,19 @@ tags:
 
 ## Short Answer
 
-Browse the TDEI dataset catalog, select a dataset, choose its action menu, select **Download**, choose an available format, and save the file with its ID and version metadata.
+Browse the TDEI dataset catalog, select the intended dataset and version, choose its action menu, select **Download**, and choose an available format. Record the dataset ID and version alongside the downloaded file.
 
 ## Significance
 
-The workflow lets consumers obtain a versioned dataset representation for analysis, editing, or exchange.
+The workflow lets consumers obtain a dataset representation for analysis, editing, or exchange. The Portal lists version and upload-time metadata, but the download itself does not establish that the file is the latest or most complete dataset.
 
 ## What This Means
 
-Use **My Project Datasets** for the active project group or **All Released Datasets** for public releases. Filter by type, name, project group, service, ID, or validity dates, then select the desired version.
+Use **My Project Datasets** for the active project group or **All Released Datasets** for public releases. Filter by type, name, project group, service, ID, or validity dates, then select the entry whose name and displayed version match the dataset you intend to use.
 
 ## What This Does Not Mean
 
-Downloading does not alter the source dataset, create a release, or make private data public.
+Downloading does not alter the source dataset, create a release, or make private data public. A downloaded file is not necessarily the latest or most complete dataset; check its version, upload timestamp, geographic scope, and validity metadata.
 
 ## How To Use This
 
@@ -67,3 +67,4 @@ Ask which dataset, project group, release state, and format are intended. Do not
 
 - [Which formats can a TDEI dataset download use?](../concept/dataset-download-formats.md)
 - [How do I download OS-CONNECT data?](download-os-connect-data.md)
+- [TDEI Portal datasets](../../../tdei/portal/user-manual/datasets.md)

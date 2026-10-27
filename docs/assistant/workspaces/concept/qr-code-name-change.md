@@ -22,7 +22,7 @@ topics:
 risk_level: medium
 authority_level: explanatory
 publication_status: draft
-last_reviewed: 2026-08-20
+last_reviewed: 2026-10-26
 retrieval_priority: medium
 assistant_behavior:
     allow_inference: false
@@ -75,3 +75,4 @@ An organizer changes the name of a referral code from **Summer Mapping Event** t
 ## Related Concepts
 
 - [How do project-group referrals provide workspace access?](project-group-referral-access.md)
+- [TDEI Portal Project Groups](../../../tdei/portal/user-manual/project-groups.md)

@@ -20,7 +20,7 @@ topics:
 risk_level: medium
 authority_level: explanatory
 publication_status: draft
-last_reviewed: 2026-07-30
+last_reviewed: 2026-10-26
 retrieval_priority: high
 assistant_behavior:
     allow_inference: false
@@ -43,7 +43,7 @@ tags:
 
 ## Short Answer
 
-Corrections reported through the viewer require review, source-data updates, validation, and a later dataset release before they appear publicly.
+The [viewer feedback manual](../../../os-connect/data-viewer/user-manual/feedback.md) explains how to submit an issue but does not specify what happens after submission or when any resulting change might appear in a public release.
 
 ## Significance
 
@@ -51,7 +51,7 @@ Reporting an observation is separate from changing and publishing a versioned da
 
 ## What This Means
 
-Record the report location, issue, dataset ID, and version. Check a later release instead of expecting the current viewer to change immediately.
+Record the report location and issue. If investigating whether a change was made, compare the relevant dataset ID and version in a later release; do not assume a report will change the current viewer.
 
 ## What This Does Not Mean
 

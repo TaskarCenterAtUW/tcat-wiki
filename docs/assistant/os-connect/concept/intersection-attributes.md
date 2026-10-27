@@ -19,7 +19,7 @@ topics:
 risk_level: medium
 authority_level: explanatory
 publication_status: draft
-last_reviewed: 2026-07-22
+last_reviewed: 2026-10-26
 retrieval_priority: high
 assistant_behavior:
     allow_inference: false
@@ -49,7 +49,7 @@ Intersection metrics help identify possible network gaps and data-quality proble
 
 ## What This Means
 
-The documented IXN score ranges from 0 to 1. A score of 0 indicates no modeled traversable direction, intermediate values indicate some feasible approaches or exits, and 1 indicates all evaluated directions meet the model's criteria.
+The QA/QC manual describes IXN scores as modeled indicators of intersection traversability. It gives 0 as no traversable direction and 1 as all evaluated directions traversable; intermediate values represent some traversable approaches or exits. These scores do not report field-verified safety or condition.
 
 ## What This Does Not Mean
 
@@ -61,7 +61,7 @@ Review the score with the map, tags, geometry, and local knowledge. Investigate 
 
 ## Example
 
-A zero score in a busy intersection may indicate missing curb ramps, a disconnected crossing, or a misclassified feature that needs QA.
+A zero score flags an intersection with no traversable direction in the model; review the underlying features and rules before diagnosing why.
 
 ## Assistant Guidance
 

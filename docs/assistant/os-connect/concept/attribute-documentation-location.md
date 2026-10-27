@@ -20,7 +20,7 @@ topics:
 risk_level: medium
 authority_level: explanatory
 publication_status: draft
-last_reviewed: 2026-07-22
+last_reviewed: 2026-10-26
 retrieval_priority: high
 assistant_behavior:
     allow_inference: false
@@ -40,7 +40,7 @@ tags:
 
 ## Short Answer
 
-Feature attributes are documented in the OpenSidewalks schema and shown by the Data Viewer when present on a selected feature.
+The OpenSidewalks schema documents field definitions; the OS-CONNECT Data Viewer manual describes attributes shown in feature popups. Consult the applicable schema and dataset version for authoritative meanings.
 
 ## Significance
 

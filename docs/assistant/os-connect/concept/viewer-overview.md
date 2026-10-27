@@ -18,7 +18,7 @@ topics:
 risk_level: medium
 authority_level: explanatory
 publication_status: draft
-last_reviewed: 2026-07-22
+last_reviewed: 2026-10-26
 retrieval_priority: high
 assistant_behavior:
     allow_inference: false
@@ -28,9 +28,9 @@ assistant_behavior:
         - The viewer displays every pedestrian feature or every current condition.
         - A viewer color is a universal accessibility rating.
 related_pages:
-    - ../index.md
-    - map-layers.md
-    - feature-selection-display.md
+    - assistant/os-connect/index.md
+    - assistant/os-connect/concept/map-layers.md
+    - assistant/os-connect/concept/feature-selection-display.md
 tags:
     - Assistant
 ---
@@ -49,7 +49,7 @@ The viewer makes a large jurisdictional dataset inspectable to planners, transpo
 
 ## What This Means
 
-Use the Raster or Imagery basemap, toggle data and boundaries, search for datasets, zoom in to inspect features, open boundary details, and follow links to QA/QC reports or issue forms.
+Use the Raster or Imagery basemap, toggle Data and Boundaries, search for datasets, zoom to level 16 or higher to inspect feature attributes, open boundary details, and follow links to QA/QC reports or issue forms.
 
 ## What This Does Not Mean
 

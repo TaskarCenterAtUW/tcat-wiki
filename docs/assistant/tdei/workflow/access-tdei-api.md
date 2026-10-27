@@ -18,7 +18,7 @@ topics:
 risk_level: medium
 authority_level: explanatory
 publication_status: draft
-last_reviewed:
+last_reviewed: 2026-10-26
 retrieval_priority: high
 assistant_behavior:
     allow_inference: false
@@ -38,7 +38,7 @@ tags:
 
 ## Short Answer
 
-Register for TDEI, obtain the personal API key shown in the portal, and use it in an authorized programmatic request. Keep portal credentials and API keys separate and secret.
+Register for TDEI and obtain the personal API key shown in the Portal dashboard. The Portal guide describes this key as authenticating programmatic access to TDEI data. Keep it secret, and use official API documentation for current endpoints and request requirements.
 
 ## Significance
 
@@ -46,15 +46,15 @@ API access supports automated retrieval and integration without confusing it wit
 
 ## What This Means
 
-Portal credentials authenticate the user interface, while the API key authenticates programmatic TDEI data access. Store the key in approved secret management and update integrations after rotation.
+The [Portal dashboard guide](../../../tdei/portal/user-manual/dashboard.md) distinguishes account sign-in from the personal API key, which it describes as authenticating programmatic access to TDEI data. It documents that regenerating the key invalidates the previous one, but does not specify API endpoints, request formats, or the exact authorization scope of a key. Store the key in approved secret management and update integrations after rotation.
 
 ## What This Does Not Mean
 
-An API key does not grant permissions beyond the account and project-group context, and refreshing it invalidates the previous key.
+Portal login credentials and API keys serve different purposes and are not interchangeable; neither should be shared in chat or source control. A visible API key does not establish that every endpoint or dataset is accessible to that account, and the dashboard does not specify endpoint requirements or permission scope.
 
 ## How To Use This
 
-Check the active project group, use the current key in a secure environment, avoid logging it, and update integrations after rotation.
+Use current official API documentation for endpoint, request, and permission details. Keep the key in a secure environment, avoid logging it, and update integrations after rotation.
 
 ## Example
 
@@ -68,3 +68,5 @@ Never request a key, password, or token from the user. Ask for the endpoint, sta
 
 - [What happens when an API key is regenerated?](../concept/api-key-rotation.md)
 - [What does the dashboard show?](../concept/portal-dashboard.md)
+- [TDEI Portal dashboard and API key](../../../tdei/portal/user-manual/dashboard.md)
+- [TDEI Portal overview](../../../tdei/portal/index.md)
