@@ -1,6 +1,6 @@
 ---
 name: update-changelog
-description: Generate a versioned changelog entry from recent commits and insert it after the inactive Unreleased block
+description: Generate a versioned changelog entry from recent commits and insert it into the changelog
 user-invocable: true
 disable-model-invocation: false
 ---
@@ -9,7 +9,7 @@ disable-model-invocation: false
 
 # Update the changelog
 
-`CHANGELOG.md` is the sole update-tracking record. Its commented `## Unreleased` block must remain untouched; do not create/use tags, releases, or another version source.
+`CHANGELOG.md` is the sole update-tracking record. Do not create or use tags, releases, or another version source.
 
 ## Collect and classify
 
@@ -39,4 +39,4 @@ Use this shape:
 
 ## Edit and report
 
-Insert the entry immediately after the commented Unreleased block and before the newest existing version. Preserve all other content. Report the entry added, commits omitted by the rules, and any apparent type/description miscategorizations.
+Insert the entry immediately before the newest existing version. Preserve all other content. Report the entry added, commits omitted by the rules, and any apparent type/description miscategorizations.

@@ -22,5 +22,5 @@ applyTo: "**"
 ## Validation and changelog
 
 - Validate changes with the narrowest relevant existing checks. For documentation changes, prefer the repository utility tests and the deploy-parity build workflow.
-- Record only versioned release updates in `CHANGELOG.md`; its commented-out `## Unreleased` section is not tracked. Do not create or use Git tags or GitHub releases for update tracking. Follow `.agents/skills/update-changelog/SKILL.md` when preparing a versioned entry.
+- Record only versioned release updates in `CHANGELOG.md`. Do not create or use Git tags or GitHub releases for update tracking. Follow `.agents/skills/update-changelog/SKILL.md` when preparing a versioned entry.
 - Search excludes `site/`, `human-docs/`, and `agent-docs/`; include ignored files only when investigating generated output.
