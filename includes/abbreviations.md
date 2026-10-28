@@ -365,7 +365,7 @@
 *[VGI]: Volunteered Geographic Information
 *[VHR]: Very High Resolution
 *[VL]: Vision-Language
-*[VLA]: Vision–Language–Action Model
+*[VLA]: Vision-Language-Action Model
 *[VLM]: Vision Language Model
 *[VLN]: Vision-and-Language Navigation
 *[VLOS]: Visual Line of Sight

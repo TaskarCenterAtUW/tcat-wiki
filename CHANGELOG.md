@@ -14,6 +14,10 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/),
 - **AKB**: Removed `do_not_claim` from AKB schema and articles
 - **Wiki**: Updated abbreviations list
 
+### Fixed
+
+- **Wiki**: Fixed uncommon characters in Wiki pages
+
 ## v16.8.0 (2026-10-22)
 
 ### Added
