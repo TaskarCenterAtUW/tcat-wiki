@@ -12,6 +12,7 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/),
 
 - **Core**: Upgraded Zensical to 0.0.73
 - **AKB**: Removed `do_not_claim` from AKB schema and articles
+- **Wiki**: Updated abbreviations list
 
 ## v16.8.0 (2026-10-22)
 
