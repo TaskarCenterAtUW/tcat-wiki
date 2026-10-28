@@ -110,17 +110,20 @@ async def main() -> None:
         f"{name}.{theme}.png" for name in names for theme in themes}
     base_url = None
     allowed_origin = None
-    if args.base_url:
-        parsed_base_url = urlsplit(args.base_url)
+    base_url_value: object = args.base_url
+    if base_url_value:
+        if not isinstance(base_url_value, str):
+            parser.error("--base-url must be a string")
+        parsed_base_url = urlsplit(base_url_value)
         if parsed_base_url.scheme not in {"http", "https"} or not parsed_base_url.netloc:
             parser.error("--base-url must be an absolute HTTP or HTTPS URL")
         if parsed_base_url.query or parsed_base_url.fragment:
             parser.error("--base-url must not include a query or fragment")
         try:
-            allowed_origin = url_origin(args.base_url)
+            allowed_origin = url_origin(base_url_value)
         except ValueError as exc:
             parser.error(f"Invalid --base-url: {exc}")
-        base_url = f"{args.base_url.rstrip('/')}/"
+        base_url = f"{base_url_value.rstrip('/')}/"
 
     output_dir = (args.output_dir if args.output_dir.is_absolute()
                   else root / args.output_dir).resolve()
@@ -252,12 +255,14 @@ async def main() -> None:
     gutter = 18
     label_height = 40
     thumb_width = args.tile_width
-    tiles = []
+    tiles: list[Image.Image] = []
     page_sizes: dict[str, dict[str, tuple[int, int]]] = {}
     try:
         font = ImageFont.truetype("C:/Windows/Fonts/arial.ttf", 14)
     except OSError:
         font = ImageFont.load_default()
+    font_bbox = font.getbbox("Ag")
+    font_height = round(font_bbox[3] - font_bbox[1])
     for label, theme, screenshot in records:
         with Image.open(screenshot) as screenshot_image:
             image = screenshot_image.convert("RGB")
@@ -267,13 +272,13 @@ async def main() -> None:
                              Image.Resampling.LANCZOS)
         label_lines = wrap_label(f"{label} [{theme}]", thumb_width)
         actual_label_height = max(
-            label_height, 8 + len(label_lines) * (font.size + 3))
+            label_height, 8 + len(label_lines) * (font_height + 3))
         tile = Image.new("RGB", (thumb_width, thumb_height +
                          actual_label_height), "white")
         tile.paste(image, (0, actual_label_height))
         draw = ImageDraw.Draw(tile)
         for line_number, line in enumerate(label_lines):
-            draw.text((6, 4 + line_number * (font.size + 3)),
+            draw.text((6, 4 + line_number * (font_height + 3)),
                       line, font=font, fill="black")
         tiles.append(tile)
     if args.theme == "both":
