@@ -36,7 +36,7 @@ from dataclasses import dataclass
 from datetime import datetime, timedelta
 from fnmatch import fnmatch
 from pathlib import Path
-from typing import Any, TextIO
+from typing import Any, TextIO, cast
 
 SCRIPT_DIR = Path(__file__).resolve().parent
 REPO_ROOT = SCRIPT_DIR.parent.resolve()
@@ -55,8 +55,10 @@ HTML_COMMENT_RE = re.compile(r"<!--.*?-->", re.DOTALL)
 FENCED_CODE_RE = re.compile(r"```[\s\S]*?```")
 INLINE_CODE_RE = re.compile(r"`[^`]*`")
 LINK_RE = re.compile(r"(?<!!)\[([^\]]*)\]\(([^)]+)\)")
-SPECIAL_SCHEME_RE = re.compile(r"^(mailto|tel|javascript|ftp|file):", re.IGNORECASE)
-TIMEOUT_RE = re.compile(r"Timeout|timed out|HttpClient\.Timeout", re.IGNORECASE)
+SPECIAL_SCHEME_RE = re.compile(
+    r"^(mailto|tel|javascript|ftp|file):", re.IGNORECASE)
+TIMEOUT_RE = re.compile(
+    r"Timeout|timed out|HttpClient\.Timeout", re.IGNORECASE)
 SKIP_DOMAINS = (
     "*visualstudio.com*",
     "*docs.google.com*",
@@ -156,7 +158,9 @@ def load_link_cache(cache_path: Path = CACHE_FILE_PATH, no_cache: bool = False) 
     except (OSError, json.JSONDecodeError):
         print("  Warning: Could not read cache file, starting fresh")
         return {}
-    return data if isinstance(data, dict) else {}
+    if isinstance(data, dict):
+        return cast(dict[str, Any], data)
+    return {}
 
 
 def save_link_cache(cache: dict[str, Any], cache_path: Path = CACHE_FILE_PATH) -> None:
@@ -301,7 +305,7 @@ def validate_docs(
 
     _emit(stream, "TCAT Wiki Link Validation")
     _emit(stream, "=========================")
-    modes = []
+    modes: list[str] = []
     if check_internal:
         modes.append("Internal")
     if check_external:
@@ -344,14 +348,17 @@ def validate_docs(
             if check_internal:
                 internal_links_checked += 1
                 if not is_internal_link_valid(file_path, link.url):
-                    broken = BrokenInternalLink(relative_path, link.text, link.url)
+                    broken = BrokenInternalLink(
+                        relative_path, link.text, link.url)
                     broken_internal_links.append(broken)
-                    _emit(stream, f"  [X] Broken internal link: [{link.text}]({link.url})")
+                    _emit(
+                        stream, f"  [X] Broken internal link: [{link.text}]({link.url})")
 
     cache_hits = 0
     if check_external:
         _emit(stream)
-        _emit(stream, f"Validating {len(external_urls)} unique external URLs...")
+        _emit(
+            stream, f"Validating {len(external_urls)} unique external URLs...")
 
         link_cache = load_link_cache(cache_path, no_cache=no_cache)
         urls_to_check: list[str] = []
@@ -359,14 +366,16 @@ def validate_docs(
 
         for url in sorted(external_urls):
             entry = link_cache.get(url)
+            cache_entry = cast(dict[str, Any], entry) if isinstance(
+                entry, dict) else None
             if (
                 not no_cache
-                and isinstance(entry, dict)
-                and is_cache_entry_valid(entry)
-                and not entry.get("isTimeout", False)
+                and cache_entry is not None
+                and is_cache_entry_valid(cache_entry)
+                and not cache_entry.get("isTimeout", False)
             ):
                 cache_hits += 1
-                cached_results[url] = entry
+                cached_results[url] = cache_entry
             else:
                 urls_to_check.append(url)
 
@@ -442,13 +451,15 @@ def validate_docs(
         _emit(stream, f"External URLs checked: {len(external_urls)}")
         _emit(stream, f"Broken external links: {len(broken_external_links)}")
         if cache_hits > 0:
-            _emit(stream, f"Cache hits: {cache_hits} (skipped network requests)")
+            _emit(
+                stream, f"Cache hits: {cache_hits} (skipped network requests)")
         if timeout_warnings:
             _emit(stream, f"Timeout warnings: {len(timeout_warnings)}")
 
     if check_internal and broken_internal_links:
         _emit(stream)
-        _emit(stream, f"[X] BROKEN INTERNAL LINKS ({len(broken_internal_links)}):")
+        _emit(
+            stream, f"[X] BROKEN INTERNAL LINKS ({len(broken_internal_links)}):")
         for item in broken_internal_links:
             _emit(stream, f"  File: {item.file}")
             _emit(stream, f"  Link: [{item.text}]({item.url})")
@@ -456,7 +467,8 @@ def validate_docs(
 
     if check_external and broken_external_links:
         _emit(stream)
-        _emit(stream, f"[X] BROKEN EXTERNAL LINKS ({len(broken_external_links)}):")
+        _emit(
+            stream, f"[X] BROKEN EXTERNAL LINKS ({len(broken_external_links)}):")
         for item in broken_external_links:
             _emit(stream, f"  URL: {item.url}")
             _emit(stream, f"  Issue: {item.status}")

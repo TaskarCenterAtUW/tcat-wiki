@@ -21,7 +21,7 @@ spec.loader.exec_module(gad)
 
 
 def write_article(path: Path, title: str, publication_status: str,
-                  authority_level: str = "provisional", body: str = "TODO"):
+                  authority_level: str = "provisional", body: str = "TODO") -> None:
     path.parent.mkdir(parents=True, exist_ok=True)
     path.write_text(
         f"""---
@@ -44,7 +44,7 @@ authority_level: {authority_level}
 
 
 @pytest.fixture
-def assistant_dir(tmp_path):
+def assistant_dir(tmp_path: Path) -> Path:
     root = tmp_path / "assistant"
     root.mkdir()
 
@@ -76,7 +76,7 @@ def assistant_dir(tmp_path):
     return root
 
 
-def test_top_level_peers_excluded(assistant_dir):
+def test_top_level_peers_excluded(assistant_dir: Path) -> None:
     content = gad.build_dispatch(assistant_dir, today="2026-07-06")
     registry = content.split("## Registry", 1)[1]
     assert "## Root Pages" in registry
@@ -86,7 +86,7 @@ def test_top_level_peers_excluded(assistant_dir):
     assert "`dispatch.md`" in registry
 
 
-def test_topic_headings_and_index_link(assistant_dir):
+def test_topic_headings_and_index_link(assistant_dir: Path) -> None:
     content = gad.build_dispatch(assistant_dir, today="2026-07-06")
     assert "## Alpha — Assistant Knowledge Base" in content
     assert "[alpha/index.md](alpha/index.md)" in content
@@ -95,19 +95,20 @@ def test_topic_headings_and_index_link(assistant_dir):
     assert "beta/index.md" not in content
 
 
-def test_status_reflects_frontmatter(assistant_dir):
+def test_status_reflects_frontmatter(assistant_dir: Path) -> None:
     content = gad.build_dispatch(assistant_dir, today="2026-07-06")
     assert "| `00000000-0000-4000-8000-000000000001` | `what-is-alpha.md` | official | published |" in content
     assert "| `00000000-0000-4000-8000-000000000002` | `why-alpha.md` | explanatory | stub |" in content
     assert "| `00000000-0000-4000-8000-000000000003` | `do-a-thing.md` | provisional | draft |" in content
 
 
-def test_registry_table_columns_are_ordered(assistant_dir):
+def test_registry_table_columns_are_ordered(assistant_dir: Path) -> None:
     content = gad.build_dispatch(assistant_dir, today="2026-07-06")
-    assert content.count("| UID | File | Authority Level | Publication Status |") == 4
+    assert content.count(
+        "| UID | File | Authority Level | Publication Status |") == 4
 
 
-def test_status_legend_includes_article_counts(assistant_dir):
+def test_status_legend_includes_article_counts(assistant_dir: Path) -> None:
     content = gad.build_dispatch(assistant_dir, today="2026-07-06")
     legend = content.split("## Status Legend", 1)[1].split("## Registry", 1)[0]
     assert "| Status | Count | Meaning |" in legend
@@ -116,7 +117,7 @@ def test_status_legend_includes_article_counts(assistant_dir):
     assert "| `published` | 1 |" in legend
 
 
-def test_authority_legend_includes_article_counts(assistant_dir):
+def test_authority_legend_includes_article_counts(assistant_dir: Path) -> None:
     content = gad.build_dispatch(assistant_dir, today="2026-07-06")
     legend = content.split("## Authority Legend", 1)[
         1].split("## Registry", 1)[0]
@@ -126,7 +127,7 @@ def test_authority_legend_includes_article_counts(assistant_dir):
     assert "| `official` | 1 |" in legend
 
 
-def test_empty_subdir_section_omitted(assistant_dir):
+def test_empty_subdir_section_omitted(assistant_dir: Path) -> None:
     content = gad.build_dispatch(assistant_dir, today="2026-07-06")
     # alpha has no workflow/ articles -> no "### Workflows" under Alpha section
     alpha_block = content.split("## Alpha", 1)[1].split("## Beta", 1)[0]
@@ -139,24 +140,24 @@ def test_empty_subdir_section_omitted(assistant_dir):
     assert "### Workflows" in beta_block
 
 
-def test_base_path_lines_correct(assistant_dir):
+def test_base_path_lines_correct(assistant_dir: Path) -> None:
     content = gad.build_dispatch(assistant_dir, today="2026-07-06")
     assert "Base: `assistant/alpha/concept/`" in content
     assert "Base: `assistant/beta/workflow/`" in content
 
 
-def test_last_reviewed_is_today(assistant_dir):
+def test_last_reviewed_is_today(assistant_dir: Path) -> None:
     content = gad.build_dispatch(assistant_dir, today="2026-07-06")
     assert "last_reviewed: 2026-07-06" in content
 
 
-def test_filenames_are_bare_in_table_cells(assistant_dir):
+def test_filenames_are_bare_in_table_cells(assistant_dir: Path) -> None:
     content = gad.build_dispatch(assistant_dir, today="2026-07-06")
     assert "`what-is-alpha.md`" in content
     assert "alpha/concept/what-is-alpha.md" not in content
 
 
-def test_write_dispatch_creates_file(assistant_dir):
+def test_write_dispatch_creates_file(assistant_dir: Path) -> None:
     output_path = gad.write_dispatch(assistant_dir, today="2026-07-06")
     assert output_path == assistant_dir / "dispatch.md"
     assert output_path.exists()
@@ -165,7 +166,9 @@ def test_write_dispatch_creates_file(assistant_dir):
     assert "GENERATED FILE" in text
 
 
-def test_write_dispatch_preserves_date_when_content_is_unchanged(assistant_dir):
+def test_write_dispatch_preserves_date_when_content_is_unchanged(
+    assistant_dir: Path,
+) -> None:
     output_path = gad.write_dispatch(assistant_dir, today="2026-07-06")
     original = output_path.read_text(encoding="utf-8")
 
@@ -174,7 +177,9 @@ def test_write_dispatch_preserves_date_when_content_is_unchanged(assistant_dir):
     assert output_path.read_text(encoding="utf-8") == original
 
 
-def test_write_dispatch_updates_date_with_substantive_changes(assistant_dir):
+def test_write_dispatch_updates_date_with_substantive_changes(
+    assistant_dir: Path,
+) -> None:
     output_path = gad.write_dispatch(assistant_dir, today="2026-07-06")
     (assistant_dir / "alpha" / "concept" / "new-article.md").write_text(
         "---\ntitle: New Article\npublication_status: draft\n"
@@ -190,14 +195,14 @@ def test_write_dispatch_updates_date_with_substantive_changes(assistant_dir):
     assert "`new-article.md`" in content
 
 
-def test_topics_sorted_alphabetically(assistant_dir):
+def test_topics_sorted_alphabetically(assistant_dir: Path) -> None:
     content = gad.build_dispatch(assistant_dir, today="2026-07-06")
     alpha_pos = content.index("## Alpha")
     beta_pos = content.index("## Beta")
     assert alpha_pos < beta_pos
 
 
-def test_no_topics_produces_empty_registry(tmp_path):
+def test_no_topics_produces_empty_registry(tmp_path: Path) -> None:
     root = tmp_path / "assistant"
     root.mkdir()
     (root / "index.md").write_text(

@@ -39,7 +39,9 @@ import re
 import shutil
 import subprocess
 import sys
+from collections.abc import Iterator
 from pathlib import Path
+from types import ModuleType
 
 import tomlkit
 
@@ -77,14 +79,16 @@ class HumanDocsValidationError(Exception):
     as paths relative to the human-docs root, suitable for direct printing.
     """
 
-    def __init__(self, errors):
+    errors: list[tuple[str, str]]
+
+    def __init__(self, errors: list[tuple[str, str]]) -> None:
         self.errors = errors
         super().__init__(
             f"{len(errors)} human-docs page(s) link to unbuilt assistant page(s)"
         )
 
 
-def _import_dispatch_generator():
+def _import_dispatch_generator() -> ModuleType:
     """Import utilities/akb_generate_dispatch.py as a module."""
     module_path = SCRIPT_DIR / "akb_generate_dispatch.py"
     spec = importlib.util.spec_from_file_location(
@@ -96,12 +100,12 @@ def _import_dispatch_generator():
     return module
 
 
-def parse_frontmatter(text):
+def parse_frontmatter(text: str) -> dict[str, str]:
     """Parse simple top-level ``key: value`` YAML frontmatter into a dict."""
     match = FRONTMATTER_RE.match(text)
     if not match:
         return {}
-    props = {}
+    props: dict[str, str] = {}
     for line in match.group(1).split("\n"):
         if not line or line[0] in " \t#-":
             continue
@@ -121,8 +125,9 @@ def parse_frontmatter(text):
 # Step 1: clean + copy
 # =============================================================================
 
-def clean_generated(human_dir=HUMAN_DOCS_DIR, agent_dir=AGENT_DOCS_DIR,
-                    build_config=BUILD_CONFIG_PATH):
+def clean_generated(human_dir: Path = HUMAN_DOCS_DIR,
+                    agent_dir: Path = AGENT_DOCS_DIR,
+                    build_config: Path = BUILD_CONFIG_PATH) -> None:
     """Remove previously generated human-docs/, agent-docs/, and zensical.build.toml."""
     for path in (human_dir, agent_dir):
         if path.exists():
@@ -131,7 +136,8 @@ def clean_generated(human_dir=HUMAN_DOCS_DIR, agent_dir=AGENT_DOCS_DIR,
         build_config.unlink()
 
 
-def copy_layers(docs_dir=DOCS_DIR, human_dir=HUMAN_DOCS_DIR, agent_dir=AGENT_DOCS_DIR):
+def copy_layers(docs_dir: Path = DOCS_DIR, human_dir: Path = HUMAN_DOCS_DIR,
+                agent_dir: Path = AGENT_DOCS_DIR) -> None:
     """Copy docs_dir into human_dir and agent_dir. Never mutates docs_dir."""
     shutil.copytree(docs_dir, human_dir)
     shutil.copytree(docs_dir, agent_dir)
@@ -141,7 +147,8 @@ def copy_layers(docs_dir=DOCS_DIR, human_dir=HUMAN_DOCS_DIR, agent_dir=AGENT_DOC
 # Step 2: filter human-docs
 # =============================================================================
 
-def delete_non_published_assistant_pages(human_dir):
+def delete_non_published_assistant_pages(
+        human_dir: Path = HUMAN_DOCS_DIR) -> dict[str, list[str]]:
     """Remove assistant/support/ and any non-published assistant page from human_dir.
 
     Returns a dict with keys:
@@ -151,8 +158,8 @@ def delete_non_published_assistant_pages(human_dir):
         (these topics will have no human-facing landing page)
     """
     assistant_dir = human_dir / ASSISTANT_SUBDIR
-    removed = []
-    non_published_index_topics = []
+    removed: list[str] = []
+    non_published_index_topics: list[str] = []
 
     support_dir = assistant_dir / SUPPORT_SUBDIR
     if support_dir.is_dir():
@@ -180,13 +187,14 @@ def delete_non_published_assistant_pages(human_dir):
     }
 
 
-def _iter_markdown_link_targets(text):
+def _iter_markdown_link_targets(text: str) -> Iterator[str]:
     """Yield raw link target strings from Markdown inline links `[text](target)`."""
     for match in re.finditer(r"\[[^\]]*\]\(([^)]+)\)", text):
         yield match.group(1).strip()
 
 
-def find_broken_assistant_links(human_dir):
+def find_broken_assistant_links(
+        human_dir: Path = HUMAN_DOCS_DIR) -> list[tuple[str, str]]:
     """Return a list of (offending_page, link_target) for links into a missing assistant page.
 
     Only internal links whose resolved target falls under human_dir/assistant/
@@ -195,7 +203,7 @@ def find_broken_assistant_links(human_dir):
     utilities/check_links.py against the source docs/ tree).
     """
     assistant_dir = (human_dir / ASSISTANT_SUBDIR).resolve()
-    errors = []
+    errors: list[tuple[str, str]] = []
     for md_file in sorted(human_dir.rglob("*.md")):
         text = md_file.read_text(encoding="utf-8")
         for target in _iter_markdown_link_targets(text):
@@ -220,7 +228,8 @@ def find_broken_assistant_links(human_dir):
     return errors
 
 
-def filter_human_docs(human_dir=HUMAN_DOCS_DIR):
+def filter_human_docs(
+        human_dir: Path = HUMAN_DOCS_DIR) -> dict[str, list[str]]:
     """Filter human_dir in place; raise HumanDocsValidationError on broken links.
 
     Returns the same info dict as delete_non_published_assistant_pages() on
@@ -244,7 +253,7 @@ def filter_human_docs(human_dir=HUMAN_DOCS_DIR):
 # Step 3: generate dispatch (agent-docs only)
 # =============================================================================
 
-def generate_dispatch(agent_dir=AGENT_DOCS_DIR):
+def generate_dispatch(agent_dir: Path = AGENT_DOCS_DIR) -> Path:
     """Regenerate assistant/dispatch.md inside agent_dir."""
     module = _import_dispatch_generator()
     return module.write_dispatch(agent_dir / ASSISTANT_SUBDIR)
@@ -254,7 +263,7 @@ def generate_dispatch(agent_dir=AGENT_DOCS_DIR):
 # Step 4: strip agent-docs
 # =============================================================================
 
-def strip_markdown_text(text):
+def strip_markdown_text(text: str) -> str:
     """Return text with images, the @format pragma, and slider blocks removed."""
     text = _SLIDER_BLOCK_RE.sub("", text)
     text = _IMAGE_LINE_RE.sub("", text)
@@ -264,7 +273,7 @@ def strip_markdown_text(text):
     return text
 
 
-def strip_agent_docs(agent_dir=AGENT_DOCS_DIR):
+def strip_agent_docs(agent_dir: Path = AGENT_DOCS_DIR) -> None:
     """Apply strip_markdown_text() to every Markdown file under agent_dir, in place."""
     for md_file in agent_dir.rglob("*.md"):
         original = md_file.read_text(encoding="utf-8")
@@ -277,9 +286,9 @@ def strip_agent_docs(agent_dir=AGENT_DOCS_DIR):
 # Step 5: generate zensical.build.toml
 # =============================================================================
 
-def write_build_config(source_config=SOURCE_CONFIG_PATH,
-                       build_config=BUILD_CONFIG_PATH,
-                       docs_dir_name="human-docs"):
+def write_build_config(source_config: Path = SOURCE_CONFIG_PATH,
+                       build_config: Path = BUILD_CONFIG_PATH,
+                       docs_dir_name: str = "human-docs") -> Path:
     """Write build_config as a copy of source_config with docs_dir overridden."""
     text = source_config.read_text(encoding="utf-8")
     doc = tomlkit.parse(text)
@@ -292,9 +301,10 @@ def write_build_config(source_config=SOURCE_CONFIG_PATH,
 # Step 6: build + overlay
 # =============================================================================
 
-def overlay_agent_layer(agent_dir=AGENT_DOCS_DIR, site_dir=SITE_DIR):
+def overlay_agent_layer(agent_dir: Path = AGENT_DOCS_DIR,
+                        site_dir: Path = SITE_DIR) -> list[str]:
     """Copy every agent_dir/**/*.md onto site_dir/** at the same relative path."""
-    copied = []
+    copied: list[str] = []
     for md_file in agent_dir.rglob("*.md"):
         rel = md_file.relative_to(agent_dir)
         dest = site_dir / rel
@@ -304,7 +314,7 @@ def overlay_agent_layer(agent_dir=AGENT_DOCS_DIR, site_dir=SITE_DIR):
     return sorted(copied)
 
 
-def run_zensical_build(build_config=BUILD_CONFIG_PATH):
+def run_zensical_build(build_config: Path = BUILD_CONFIG_PATH) -> None:
     subprocess.run(
         [sys.executable, "-m", "zensical", "build",
          "-f", str(build_config), "-c"],
@@ -312,7 +322,7 @@ def run_zensical_build(build_config=BUILD_CONFIG_PATH):
     )
 
 
-def run_zensical_serve(build_config=BUILD_CONFIG_PATH):
+def run_zensical_serve(build_config: Path = BUILD_CONFIG_PATH) -> None:
     # Zensical 0.0.62 resolves the serve configuration path inside its
     # watcher. Passing an absolute Windows path makes the watcher fail with
     # FileNotFoundError, even though the same config builds successfully.
@@ -329,8 +339,10 @@ def run_zensical_serve(build_config=BUILD_CONFIG_PATH):
 # Orchestration
 # =============================================================================
 
-def prepare(docs_dir=DOCS_DIR, human_dir=HUMAN_DOCS_DIR, agent_dir=AGENT_DOCS_DIR,
-            source_config=SOURCE_CONFIG_PATH, build_config=BUILD_CONFIG_PATH):
+def prepare(docs_dir: Path = DOCS_DIR, human_dir: Path = HUMAN_DOCS_DIR,
+            agent_dir: Path = AGENT_DOCS_DIR,
+            source_config: Path = SOURCE_CONFIG_PATH,
+            build_config: Path = BUILD_CONFIG_PATH) -> None:
     """Run the full prep pipeline: clean, copy, filter, dispatch, strip, config.
 
     Raises HumanDocsValidationError if a published human page links to an
@@ -344,7 +356,7 @@ def prepare(docs_dir=DOCS_DIR, human_dir=HUMAN_DOCS_DIR, agent_dir=AGENT_DOCS_DI
     write_build_config(source_config, build_config)
 
 
-def main(argv=None):
+def main(argv: list[str] | None = None) -> int:
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument(
         "--build", action="store_true",

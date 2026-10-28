@@ -226,7 +226,7 @@ def scan_topic(topic_dir: Path) -> Topic:
         title = topic_title_fallback(topic_dir.name)
 
     sections: dict[str, list[ArticleRow]] = {}
-    for doc_type, _label in DOC_TYPE_SECTIONS:
+    for doc_type, _ in DOC_TYPE_SECTIONS:
         doc_dir = topic_dir if doc_type == "policy" else topic_dir / doc_type
         rows: list[ArticleRow] = []
         if doc_type == "policy":
@@ -268,8 +268,8 @@ def count_statuses(topics: list[Topic]) -> Counter[str]:
     """Return article counts grouped by publication status across all topic sections."""
     counts: Counter[str] = Counter()
     for topic in topics:
-        for doc_type, _label in DOC_TYPE_SECTIONS:
-            counts.update(status for _uid, _filename, _authority, status
+        for doc_type, _ in DOC_TYPE_SECTIONS:
+            counts.update(status for _, _, _, status
                           in topic["sections"][doc_type])
     return counts
 
@@ -278,8 +278,8 @@ def count_authority_levels(topics: list[Topic]) -> Counter[str]:
     """Return article counts grouped by authority level across all topic sections."""
     counts: Counter[str] = Counter()
     for topic in topics:
-        for doc_type, _label in DOC_TYPE_SECTIONS:
-            counts.update(authority for _uid, _filename, authority, _status
+        for doc_type, _ in DOC_TYPE_SECTIONS:
+            counts.update(authority for _, _, authority, _
                           in topic["sections"][doc_type])
     return counts
 

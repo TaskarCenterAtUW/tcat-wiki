@@ -34,7 +34,7 @@ import copy
 import glob
 import sys
 from pathlib import Path
-from typing import Any
+from typing import Literal, TypedDict
 
 try:
     from PIL import Image, ImageDraw, ImageFilter
@@ -50,12 +50,61 @@ except ImportError:
 
 # region Configuration
 
+RGBAColor = tuple[int, int, int, int]
+Offset = tuple[int, int]
+_ProfileLayerName = Literal["ambient", "key"]
+_ProfileLayerOption = Literal["color", "blur", "offset"]
+_PROFILE_LAYER_NAMES: tuple[_ProfileLayerName, ...] = ("ambient", "key")
+_PROFILE_LAYER_OPTIONS: tuple[_ProfileLayerOption, ...] = (
+    "color",
+    "blur",
+    "offset",
+)
+
+
+class ShadowLayerProfile(TypedDict):
+    color: RGBAColor
+    blur: int
+    offset: Offset
+
+
+class ThemeProfile(TypedDict):
+    border_color: RGBAColor
+    ambient: ShadowLayerProfile
+    key: ShadowLayerProfile
+
+
+class ShadowLayerOverride(TypedDict, total=False):
+    color: RGBAColor
+    blur: int
+    offset: Offset
+
+
+class ThemeProfileOverride(TypedDict, total=False):
+    border_color: RGBAColor
+    ambient: ShadowLayerOverride
+    key: ShadowLayerOverride
+
+
+class CustomProfile(TypedDict, total=False):
+    light: ThemeProfileOverride
+    dark: ThemeProfileOverride
+    border_width: int
+    shadow_padding: int
+
+
+class AvifOptions(TypedDict):
+    quality: int
+    speed: int
+    subsampling: str
+
 # =============================================================================
 # Configuration
 # =============================================================================
 # Adjust these values to change the visual appearance of generated images.
 # All sizes are in pixels. Colors are RGBA tuples (0-255).
 # After editing, re-run the script to regenerate images with the new settings.
+
 
 # Border width around the screenshot content.
 BORDER_WIDTH = 2
@@ -69,7 +118,7 @@ SHADOW_PADDING = 32
 # -----------------------------------------------------------------------------
 # Displayed on light pages via #only-light.
 # Uses a dark border and dark drop shadow to stand out against light backgrounds
-LIGHT_PROFILE = {
+LIGHT_PROFILE: ThemeProfile = {
     "border_color": (34, 34, 34, 255),  # #222222 - very dark gray
     # Ambient shadow: large, soft, centered - creates overall depth
     "ambient": {
@@ -90,7 +139,7 @@ LIGHT_PROFILE = {
 # -----------------------------------------------------------------------------
 # Displayed on dark pages via #only-dark.
 # Uses a light border and subtle glow to stand out against dark backgrounds
-DARK_PROFILE = {
+DARK_PROFILE: ThemeProfile = {
     "border_color": (85, 85, 85, 255),  # #555555 - light gray
     # Ambient glow: large, soft, centered - creates subtle edge definition
     "ambient": {
@@ -115,12 +164,12 @@ IMAGE_EXTENSIONS = {".png", ".jpg", ".jpeg", ".avif"}
 AVIF_EXTENSION = ".avif"
 AVIF_SUBSAMPLING = "4:4:4"
 AVIF_SPEED = 2
-AVIF_ORIGINAL_OPTIONS = {
+AVIF_ORIGINAL_OPTIONS: AvifOptions = {
     "quality": 100,
     "speed": AVIF_SPEED,
     "subsampling": AVIF_SUBSAMPLING,
 }
-AVIF_VARIANT_OPTIONS = {
+AVIF_VARIANT_OPTIONS: AvifOptions = {
     "quality": 70,
     "speed": AVIF_SPEED,
     "subsampling": AVIF_SUBSAMPLING,
@@ -152,7 +201,7 @@ AVIF_VARIANT_OPTIONS = {
 #
 # =============================================================================
 
-CUSTOM_PROFILES: dict[str, dict[str, Any]] = {
+CUSTOM_PROFILES: dict[str, CustomProfile] = {
     # Spirit Purple borders and purple-tinted shadows for both themes.
     "uw-purple": {
         "light": {
@@ -244,7 +293,7 @@ def avif_source_image(img: Image.Image) -> Image.Image:
     return img.convert("RGBA" if has_alpha else "RGB")
 
 
-def save_avif(img: Image.Image, path: Path, options: dict[str, Any]) -> None:
+def save_avif(img: Image.Image, path: Path, options: AvifOptions) -> None:
     """Save an image as metadata-free AVIF with the supplied encoder options."""
     img.save(path, "AVIF", **options)
 
@@ -286,7 +335,7 @@ def create_shadow_layer(
 
 def process_image(
     img: Image.Image,
-    profile: dict,
+    profile: ThemeProfile,
     border_width: int,
     shadow_padding: int,
 ) -> Image.Image:
@@ -398,11 +447,11 @@ def parse_offset(value: str) -> tuple[int, int]:
 
 
 def resolve_profile(
-    base: dict,
-    custom: dict | None,
+    base: ThemeProfile,
+    custom: ThemeProfileOverride | None,
     prefix: str,
     args: argparse.Namespace,
-) -> dict:
+) -> ThemeProfile:
     """Build a resolved theme profile by layering: base → custom → CLI overrides.
 
     Args:
@@ -421,18 +470,19 @@ def resolve_profile(
     if custom is not None:
         if "border_color" in custom:
             p["border_color"] = custom["border_color"]
-        for layer in ("ambient", "key"):
-            if layer in custom:
-                for key in ("color", "blur", "offset"):
-                    if key in custom[layer]:
-                        p[layer][key] = custom[layer][key]
+        for layer in _PROFILE_LAYER_NAMES:
+            layer_overrides = custom.get(layer)
+            if layer_overrides is not None:
+                for key in _PROFILE_LAYER_OPTIONS:
+                    if key in layer_overrides:
+                        p[layer][key] = layer_overrides[key]
 
     # Layer CLI overrides on top (highest priority)
     border = getattr(args, f"{prefix}_border_color", None)
     if border is not None:
         p["border_color"] = border
 
-    for layer in ("ambient", "key"):
+    for layer in _PROFILE_LAYER_NAMES:
         color = getattr(args, f"{prefix}_{layer}_color", None)
         if color is not None:
             p[layer]["color"] = color
@@ -454,8 +504,8 @@ def process_file(
     variants: str,
     border_width: int,
     shadow_padding: int,
-    light_profile: dict,
-    dark_profile: dict,
+    light_profile: ThemeProfile,
+    dark_profile: ThemeProfile,
     overwrite: bool = False,
 ) -> list[Path]:
     """Process a single image file and write output variant(s).
@@ -507,7 +557,7 @@ def process_file(
         stem = stem[: -len(".dark")]
 
     # Build the set of variants to generate
-    requested = set()
+    requested: set[str] = set()
     if variants in ("both", "light"):
         requested.add("light")
     if variants in ("both", "dark"):
@@ -517,7 +567,7 @@ def process_file(
     if mode_tag is not None:
         requested &= {mode_tag}
 
-    profiles = {}
+    profiles: dict[str, ThemeProfile] = {}
     if "light" in requested:
         profiles["light"] = light_profile
     if "dark" in requested:
@@ -537,7 +587,7 @@ def process_file(
             f"  Re-run with --overwrite to replace it."
         )
 
-    outputs = []
+    outputs: list[Path] = []
     for variant_name, profile in profiles.items():
         result = process_image(img, profile, border_width, shadow_padding)
         out_path = out_dir / f"{stem}-{variant_name}{AVIF_EXTENSION}"

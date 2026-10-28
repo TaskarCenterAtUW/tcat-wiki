@@ -3,15 +3,19 @@
 from __future__ import annotations
 
 import importlib.util
+import http.client
 import io
 import sys
 from datetime import datetime, timedelta, timezone
 from pathlib import Path
+from typing import Any
 
 import pytest
 
 MODULE_PATH = Path(__file__).parent / "check_links.py"
 spec = importlib.util.spec_from_file_location("check_links", MODULE_PATH)
+if spec is None or spec.loader is None:
+    raise ImportError(f"could not load module spec from {MODULE_PATH}")
 cl = importlib.util.module_from_spec(spec)
 sys.modules["check_links"] = cl
 spec.loader.exec_module(cl)
@@ -120,6 +124,7 @@ def test_check_external_url_valid_falls_back_from_head_to_get(monkeypatch: pytes
     calls: list[str] = []
 
     def fake_request_status(url: str, method: str) -> int:
+        assert url == "https://example.com"
         calls.append(method)
         if method == "HEAD":
             raise RuntimeError("HEAD blocked")
@@ -132,12 +137,17 @@ def test_check_external_url_valid_falls_back_from_head_to_get(monkeypatch: pytes
 
 
 def test_check_external_url_valid_formats_http_errors(monkeypatch: pytest.MonkeyPatch):
+    calls: list[tuple[str, str]] = []
+
     def fake_request_status(url: str, method: str) -> int:
+        calls.append((url, method))
+        if method == "HEAD":
+            raise RuntimeError("HEAD blocked")
         raise urllib.error.HTTPError(
             url=url,
             code=404,
             msg="Not Found",
-            hdrs=None,
+            hdrs=http.client.HTTPMessage(),
             fp=None,
         )
 
@@ -148,16 +158,27 @@ def test_check_external_url_valid_formats_http_errors(monkeypatch: pytest.Monkey
     assert result["valid"] is False
     assert result["status"] == "HTTP 404: Not Found"
     assert result["isTimeout"] is False
+    assert calls == [
+        ("https://example.com/missing", "HEAD"),
+        ("https://example.com/missing", "GET"),
+    ]
 
 
 def test_check_external_url_valid_detects_timeouts(monkeypatch: pytest.MonkeyPatch):
+    calls: list[tuple[str, str]] = []
+
     def fake_request_status(url: str, method: str) -> int:
+        calls.append((url, method))
         raise TimeoutError("timed out")
 
     monkeypatch.setattr(cl, "_request_status", fake_request_status)
     result = cl.check_external_url_valid("https://example.com/slow")
     assert result["valid"] is False
     assert result["isTimeout"] is True
+    assert calls == [
+        ("https://example.com/slow", "HEAD"),
+        ("https://example.com/slow", "GET"),
+    ]
 
 
 @pytest.mark.parametrize(
@@ -175,17 +196,17 @@ def test_get_url_domain(url: str, expected: str):
 
 
 def test_is_cache_entry_valid_within_and_outside_ttl():
-    fresh = {
+    fresh: dict[str, Any] = {
         "timestamp": (datetime.now(timezone.utc) - timedelta(hours=1)).isoformat(),
         "valid": True,
         "status": 200,
     }
-    stale = {
+    stale: dict[str, Any] = {
         "timestamp": (datetime.now(timezone.utc) - timedelta(hours=13)).isoformat(),
         "valid": True,
         "status": 200,
     }
-    timeout_entry = {
+    timeout_entry: dict[str, Any] = {
         "timestamp": (datetime.now(timezone.utc) - timedelta(hours=1)).isoformat(),
         "valid": False,
         "status": "timed out",
@@ -200,7 +221,7 @@ def test_is_cache_entry_valid_within_and_outside_ttl():
 
 def test_load_and_save_link_cache_round_trip(tmp_path: Path):
     cache_path = tmp_path / ".link-cache.json"
-    payload = {
+    payload: dict[str, dict[str, Any]] = {
         "https://example.com": {
             "valid": True,
             "status": 200,
@@ -214,7 +235,8 @@ def test_load_and_save_link_cache_round_trip(tmp_path: Path):
 
 def test_validate_docs_internal_only_reports_broken_links(tmp_path: Path):
     docs = tmp_path / "docs"
-    write_text(docs / "index.md", "See [Good](good.md) and [Bad](missing.md).\n")
+    write_text(docs / "index.md",
+               "See [Good](good.md) and [Bad](missing.md).\n")
     write_text(docs / "good.md", "# Good\n")
     output = io.StringIO()
 
@@ -239,7 +261,8 @@ def test_validate_docs_uses_fresh_cache_and_rechecks_timeouts(
     docs_tree: Path, tmp_path: Path
 ):
     cache_path = tmp_path / ".link-cache.json"
-    fresh_timestamp = (datetime.now(timezone.utc) - timedelta(hours=1)).isoformat()
+    fresh_timestamp = (datetime.now(timezone.utc) -
+                       timedelta(hours=1)).isoformat()
     cl.save_link_cache(
         {
             "https://cached.example.com": {
@@ -307,7 +330,8 @@ def test_validate_docs_no_cache_bypasses_cache(docs_tree: Path, tmp_path: Path):
         },
         cache_path,
     )
-    write_text(docs_tree / "external.md", "[Cached](https://cached.example.com)\n")
+    write_text(docs_tree / "external.md",
+               "[Cached](https://cached.example.com)\n")
     checked: list[str] = []
 
     def fake_checker(url: str) -> dict[str, object]:
@@ -333,7 +357,7 @@ def test_validate_docs_no_cache_bypasses_cache(docs_tree: Path, tmp_path: Path):
 def test_main_defaults_to_internal_and_external(monkeypatch: pytest.MonkeyPatch):
     captured: dict[str, object] = {}
 
-    def fake_validate_docs(**kwargs):
+    def fake_validate_docs(**kwargs: Any) -> Any:
         captured.update(kwargs)
         return cl.ValidationSummary(0, 0, [], 0, [], [], 0, 0)
 
@@ -347,7 +371,7 @@ def test_main_defaults_to_internal_and_external(monkeypatch: pytest.MonkeyPatch)
 def test_main_forwards_cli_flags(monkeypatch: pytest.MonkeyPatch):
     captured: dict[str, object] = {}
 
-    def fake_validate_docs(**kwargs):
+    def fake_validate_docs(**kwargs: Any) -> Any:
         captured.update(kwargs)
         return cl.ValidationSummary(0, 0, [], 0, [], [], 0, 0)
 

@@ -14,12 +14,18 @@ import pytest
 
 MODULE_PATH = Path(__file__).parent / "build_site.py"
 spec = importlib.util.spec_from_file_location("build_site", MODULE_PATH)
+if spec is None or spec.loader is None:
+    raise ImportError(f"could not load module spec from {MODULE_PATH}")
 bs = importlib.util.module_from_spec(spec)
 sys.modules["build_site"] = bs
 spec.loader.exec_module(bs)
 
 
-def write_page(path: Path, publication_status: str | None = None, body: str = "# Title\n\nBody.\n"):
+def write_page(
+    path: Path,
+    publication_status: str | None = None,
+    body: str = "# Title\n\nBody.\n",
+) -> None:
     path.parent.mkdir(parents=True, exist_ok=True)
     uid = "00000000-0000-4000-8000-" + f"{abs(hash(str(path))) % 10**12:012d}"
     frontmatter = f"---\ntitle: Test\nuid: {uid}\n"
@@ -30,7 +36,7 @@ def write_page(path: Path, publication_status: str | None = None, body: str = "#
 
 
 @pytest.fixture
-def fixture_docs(tmp_path):
+def fixture_docs(tmp_path: Path) -> Path:
     """Build a small docs/ tree mirroring the real repo's relevant shape."""
     docs = tmp_path / "docs"
 
@@ -64,7 +70,9 @@ def fixture_docs(tmp_path):
     return docs
 
 
-def test_copy_layers_does_not_mutate_source(tmp_path, fixture_docs):
+def test_copy_layers_does_not_mutate_source(
+    tmp_path: Path, fixture_docs: Path
+) -> None:
     human_dir = tmp_path / "human-docs"
     agent_dir = tmp_path / "agent-docs"
     original_files = sorted(p.relative_to(fixture_docs)
@@ -79,7 +87,9 @@ def test_copy_layers_does_not_mutate_source(tmp_path, fixture_docs):
     assert (agent_dir / "assistant" / "support" / "index.md").exists()
 
 
-def test_filter_removes_support_and_non_published(tmp_path, fixture_docs):
+def test_filter_removes_support_and_non_published(
+    tmp_path: Path, fixture_docs: Path
+) -> None:
     human_dir = tmp_path / "human-docs"
     bs.copy_layers(fixture_docs, human_dir, tmp_path / "agent-docs")
 
@@ -96,7 +106,9 @@ def test_filter_removes_support_and_non_published(tmp_path, fixture_docs):
     assert "assistant/dispatch.md" in info["removed"]
 
 
-def test_filter_fails_when_published_page_links_to_removed_page(tmp_path, fixture_docs):
+def test_filter_fails_when_published_page_links_to_removed_page(
+    tmp_path: Path, fixture_docs: Path
+) -> None:
     # Make the alpha index link to the stub page (which will be removed).
     write_page(
         fixture_docs / "assistant" / "alpha" / "index.md",
@@ -115,14 +127,18 @@ def test_filter_fails_when_published_page_links_to_removed_page(tmp_path, fixtur
     assert link_target == "concept/stub-page.md"
 
 
-def test_filter_passes_when_links_only_target_published_pages(tmp_path, fixture_docs):
+def test_filter_passes_when_links_only_target_published_pages(
+    tmp_path: Path, fixture_docs: Path
+) -> None:
     human_dir = tmp_path / "human-docs"
     bs.copy_layers(fixture_docs, human_dir, tmp_path / "agent-docs")
     # Should not raise: alpha/index.md only links to published-page.md.
     bs.filter_human_docs(human_dir)
 
 
-def test_agent_docs_retains_all_statuses_and_dispatch(tmp_path, fixture_docs):
+def test_agent_docs_retains_all_statuses_and_dispatch(
+    tmp_path: Path, fixture_docs: Path
+) -> None:
     agent_dir = tmp_path / "agent-docs"
     bs.copy_layers(fixture_docs, tmp_path / "human-docs", agent_dir)
 
@@ -138,7 +154,7 @@ def test_agent_docs_retains_all_statuses_and_dispatch(tmp_path, fixture_docs):
     assert "`published-page.md`" in content
 
 
-def test_strip_removes_images_pragma_and_slider(tmp_path):
+def test_strip_removes_images_pragma_and_slider() -> None:
     text = (
         "# Title\n\n"
         "<!-- @format -->\n\n"
@@ -160,7 +176,9 @@ def test_strip_removes_images_pragma_and_slider(tmp_path):
     assert "This should remain untouched." in stripped
 
 
-def test_strip_agent_docs_applies_to_all_files(tmp_path, fixture_docs):
+def test_strip_agent_docs_applies_to_all_files(
+    tmp_path: Path, fixture_docs: Path
+) -> None:
     agent_dir = tmp_path / "agent-docs"
     bs.copy_layers(fixture_docs, tmp_path / "human-docs", agent_dir)
 
@@ -174,7 +192,7 @@ def test_strip_agent_docs_applies_to_all_files(tmp_path, fixture_docs):
     assert "![Logo]" not in root_index
 
 
-def test_write_build_config_overrides_docs_dir_only(tmp_path):
+def test_write_build_config_overrides_docs_dir_only(tmp_path: Path) -> None:
     source_config = tmp_path / "zensical.toml"
     source_config.write_text(
         '[project]\nsite_name = "Test Site"\nsite_url = "https://example.com/"\n',
@@ -192,7 +210,9 @@ def test_write_build_config_overrides_docs_dir_only(tmp_path):
     assert doc["project"]["site_url"] == "https://example.com/"
 
 
-def test_overlay_agent_layer_places_files_at_expected_paths(tmp_path, fixture_docs):
+def test_overlay_agent_layer_places_files_at_expected_paths(
+    tmp_path: Path, fixture_docs: Path
+) -> None:
     agent_dir = tmp_path / "agent-docs"
     site_dir = tmp_path / "site"
     bs.copy_layers(fixture_docs, tmp_path / "human-docs", agent_dir)
@@ -210,7 +230,7 @@ def test_overlay_agent_layer_places_files_at_expected_paths(tmp_path, fixture_do
     assert (site_dir / "accessmap" / "index.md").exists()
 
 
-def test_clean_generated_removes_existing_artifacts(tmp_path):
+def test_clean_generated_removes_existing_artifacts(tmp_path: Path) -> None:
     human_dir = tmp_path / "human-docs"
     agent_dir = tmp_path / "agent-docs"
     build_config = tmp_path / "zensical.build.toml"
@@ -225,7 +245,7 @@ def test_clean_generated_removes_existing_artifacts(tmp_path):
     assert not build_config.exists()
 
 
-def test_prepare_end_to_end(tmp_path, fixture_docs):
+def test_prepare_end_to_end(tmp_path: Path, fixture_docs: Path) -> None:
     human_dir = tmp_path / "human-docs"
     agent_dir = tmp_path / "agent-docs"
     source_config = tmp_path / "zensical.toml"
@@ -244,7 +264,9 @@ def test_prepare_end_to_end(tmp_path, fixture_docs):
     assert doc["project"]["docs_dir"] == "human-docs"
 
 
-def test_prepare_raises_on_broken_link(tmp_path, fixture_docs):
+def test_prepare_raises_on_broken_link(
+    tmp_path: Path, fixture_docs: Path
+) -> None:
     write_page(
         fixture_docs / "assistant" / "alpha" / "index.md",
         publication_status="published",
@@ -264,7 +286,10 @@ def test_prepare_raises_on_broken_link(tmp_path, fixture_docs):
         )
 
 
-def test_main_handles_keyboard_interrupt_during_prepare(monkeypatch, capsys):
+def test_main_handles_keyboard_interrupt_during_prepare(
+    monkeypatch: pytest.MonkeyPatch,
+    capsys: pytest.CaptureFixture[str],
+) -> None:
     def interrupt():
         raise KeyboardInterrupt
 
@@ -274,7 +299,10 @@ def test_main_handles_keyboard_interrupt_during_prepare(monkeypatch, capsys):
     assert capsys.readouterr().err == "\nOperation canceled.\n"
 
 
-def test_main_handles_keyboard_interrupt_during_serve(monkeypatch, capsys):
+def test_main_handles_keyboard_interrupt_during_serve(
+    monkeypatch: pytest.MonkeyPatch,
+    capsys: pytest.CaptureFixture[str],
+) -> None:
     def interrupt():
         raise KeyboardInterrupt
 
@@ -285,17 +313,21 @@ def test_main_handles_keyboard_interrupt_during_serve(monkeypatch, capsys):
     assert capsys.readouterr().err == "\nOperation canceled.\n"
 
 
-def test_run_zensical_serve_uses_repository_relative_config(monkeypatch, tmp_path):
+def test_run_zensical_serve_uses_repository_relative_config(
+    monkeypatch: pytest.MonkeyPatch,
+    tmp_path: Path,
+) -> None:
     repo_root = tmp_path / "repo"
     repo_root.mkdir()
     build_config = repo_root / "zensical.build.toml"
-    build_config.write_text("[project]\nsite_name = \"Test\"\n", encoding="utf-8")
+    build_config.write_text(
+        "[project]\nsite_name = \"Test\"\n", encoding="utf-8")
 
     monkeypatch.setattr(bs, "REPO_ROOT", repo_root)
 
-    calls = []
+    calls: list[tuple[list[str], dict[str, object]]] = []
 
-    def fake_run(command, **kwargs):
+    def fake_run(command: list[str], **kwargs: object) -> None:
         calls.append((command, kwargs))
 
     monkeypatch.setattr(bs.subprocess, "run", fake_run)

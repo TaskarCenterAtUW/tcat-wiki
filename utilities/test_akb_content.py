@@ -9,10 +9,10 @@ docs/assistant/dispatch.md registry.
 
 import re
 from collections import defaultdict
+from collections.abc import Iterator
 from pathlib import Path
 
 import pytest
-import yaml
 
 REPO_ROOT = Path(__file__).parent.parent
 ASSISTANT_DIR = REPO_ROOT / "docs" / "assistant"
@@ -53,8 +53,11 @@ ROW_RE = re.compile(
 HEADING_RE = re.compile(r"^(#{2,4})\s+(.*)$")
 BASE_RE = re.compile(r"^Base:\s*`([^`]+)`")
 
+Article = tuple[str, str, Path]
+DispatchRow = tuple[tuple[str, ...], str, str, str]
 
-def parse_frontmatter(text):
+
+def parse_frontmatter(text: str) -> dict[str, str]:
     """Parse simple top-level ``key: value`` YAML frontmatter into a dict.
 
     Mirrors the parser in utilities/akb_generate_dispatch.py: only scalar
@@ -63,7 +66,7 @@ def parse_frontmatter(text):
     match = FRONTMATTER_RE.match(text)
     if not match:
         return {}
-    props = {}
+    props: dict[str, str] = {}
     for line in match.group(1).split("\n"):
         if not line or line[0] in " \t#-":
             continue
@@ -82,7 +85,7 @@ def parse_frontmatter(text):
 LIST_ITEM_RE = re.compile(r"^\s*-\s*(.+)$")
 
 
-def parse_frontmatter_list(text, key):
+def parse_frontmatter_list(text: str, key: str) -> list[str]:
     """Parse a top-level ``key:``-introduced YAML block list into a list of strings.
 
     Only handles the simple block-list style used throughout docs/assistant/
@@ -94,7 +97,7 @@ def parse_frontmatter_list(text, key):
     if not match:
         return []
     lines = match.group(1).split("\n")
-    items = []
+    items: list[str] = []
     in_list = False
     for line in lines:
         stripped = line.strip()
@@ -118,7 +121,11 @@ def parse_frontmatter_list(text, key):
 CODE_TABLE_CELL_RE = re.compile(r"^\|\s*`([^`]+)`\s*\|", re.MULTILINE)
 
 
-def extract_schema_vocab(schema_text, start_heading, end_heading):
+def extract_schema_vocab(
+    schema_text: str,
+    start_heading: str,
+    end_heading: str,
+) -> set[str]:
     """Return the set of backtick-quoted values in table rows between two headings."""
     start_idx = schema_text.index(start_heading) + len(start_heading)
     end_idx = schema_text.index(end_heading, start_idx)
@@ -126,14 +133,14 @@ def extract_schema_vocab(schema_text, start_heading, end_heading):
     return set(CODE_TABLE_CELL_RE.findall(section))
 
 
-def topic_dirs():
+def topic_dirs() -> list[Path]:
     """Every subdirectory of docs/assistant/ (each is a topic)."""
     if not ASSISTANT_DIR.is_dir():
         return []
     return sorted(p for p in ASSISTANT_DIR.iterdir() if p.is_dir())
 
 
-def all_topic_articles():
+def all_topic_articles() -> Iterator[Article]:
     """Yield (topic_name, doc_type, path) for every index.md/concept/workflow file.
 
     doc_type is "policy" for a topic's own index.md, else "concept"/"workflow"
@@ -150,8 +157,8 @@ def all_topic_articles():
                     yield topic.name, sub, f
 
 
-ARTICLES = list(all_topic_articles())
-ARTICLE_IDS = [
+ARTICLES: list[Article] = list(all_topic_articles())
+ARTICLE_IDS: list[str] = [
     f"{topic}/{doc_type}/{path.name}" for topic, doc_type, path in ARTICLES
 ]
 
@@ -171,7 +178,7 @@ def test_topics_exist():
 
 def test_topic_dirs_have_only_expected_children():
     expected = {"index.md", "concept", "workflow"}
-    bad = []
+    bad: list[tuple[str, list[str]]] = []
     for topic in topic_dirs():
         children = {p.name for p in topic.iterdir()}
         if children != expected:
@@ -185,7 +192,7 @@ def test_every_topic_has_index_md():
 
 
 def test_no_index_md_inside_concept_or_workflow():
-    stray = []
+    stray: list[str] = []
     for topic in topic_dirs():
         for sub in DOC_TYPE_SUBDIRS:
             subdir = topic / sub
@@ -196,7 +203,7 @@ def test_no_index_md_inside_concept_or_workflow():
 
 def test_no_stray_files_at_assistant_root():
     """Every file directly under docs/assistant/ must be a known top-level peer."""
-    stray = []
+    stray: list[str] = []
     for entry in ASSISTANT_DIR.iterdir():
         if entry.is_file() and entry.name not in TOP_LEVEL_PEERS:
             stray.append(entry.name)
@@ -208,7 +215,9 @@ def test_no_stray_files_at_assistant_root():
 # =============================================================================
 
 @pytest.mark.parametrize("topic,doc_type,path", ARTICLES, ids=ARTICLE_IDS)
-def test_slug_matches_filename_or_topic_index(topic, doc_type, path):
+def test_slug_matches_filename_or_topic_index(
+    topic: str, doc_type: str, path: Path
+) -> None:
     fm = parse_frontmatter(path.read_text(encoding="utf-8"))
     slug = fm.get("slug")
     if doc_type == "policy":
@@ -218,8 +227,12 @@ def test_slug_matches_filename_or_topic_index(topic, doc_type, path):
         assert slug == path.stem, f"{rel(path)}: slug '{slug}' != filename '{path.stem}'"
 
 
-@pytest.mark.parametrize("topic,doc_type,path", ARTICLES, ids=ARTICLE_IDS)
-def test_doc_type_matches_location(topic, doc_type, path):
+@pytest.mark.parametrize(
+    "doc_type,path",
+    [(doc_type, path) for _, doc_type, path in ARTICLES],
+    ids=ARTICLE_IDS,
+)
+def test_doc_type_matches_location(doc_type: str, path: Path) -> None:
     fm = parse_frontmatter(path.read_text(encoding="utf-8"))
     assert fm.get("doc_type") == doc_type, (
         f"{rel(path)}: doc_type '{fm.get('doc_type')}' != expected '{doc_type}' "
@@ -227,12 +240,14 @@ def test_doc_type_matches_location(topic, doc_type, path):
     )
 
 
-@pytest.mark.parametrize("topic,doc_type,path", ARTICLES, ids=ARTICLE_IDS)
-def test_required_sections_present_and_ordered(topic, doc_type, path):
+@pytest.mark.parametrize(
+    "path", [path for _, _, path in ARTICLES], ids=ARTICLE_IDS
+)
+def test_required_sections_present_and_ordered(path: Path) -> None:
     text = path.read_text(encoding="utf-8")
     body = FRONTMATTER_RE.sub("", text, count=1)
     assert re.search(r"(?m)^# ", body), f"{rel(path)}: missing an H1 title"
-    positions = []
+    positions: list[int] = []
     for section in REQUIRED_SECTIONS:
         idx = body.find(section)
         assert idx != -1, f"{rel(path)}: missing required section '{section}'"
@@ -241,8 +256,10 @@ def test_required_sections_present_and_ordered(topic, doc_type, path):
         positions), f"{rel(path)}: required sections are out of order"
 
 
-@pytest.mark.parametrize("topic,doc_type,path", ARTICLES, ids=ARTICLE_IDS)
-def test_frontmatter_enum_values_valid(topic, doc_type, path):
+@pytest.mark.parametrize(
+    "path", [path for _, _, path in ARTICLES], ids=ARTICLE_IDS
+)
+def test_frontmatter_enum_values_valid(path: Path) -> None:
     fm = parse_frontmatter(path.read_text(encoding="utf-8"))
     assert fm.get("publication_status") in VALID_PUBLICATION_STATUSES, (
         f"{rel(path)}: invalid publication_status {fm.get('publication_status')!r}"
@@ -258,8 +275,10 @@ def test_frontmatter_enum_values_valid(topic, doc_type, path):
     )
 
 
-@pytest.mark.parametrize("topic,doc_type,path", ARTICLES, ids=ARTICLE_IDS)
-def test_title_is_present(topic, doc_type, path):
+@pytest.mark.parametrize(
+    "path", [path for _, _, path in ARTICLES], ids=ARTICLE_IDS
+)
+def test_title_is_present(path: Path) -> None:
     fm = parse_frontmatter(path.read_text(encoding="utf-8"))
     assert fm.get("title"), f"{rel(path)}: missing or empty title"
 
@@ -269,23 +288,28 @@ UID_RE = re.compile(
 )
 
 
-@pytest.mark.parametrize("topic,doc_type,path", ARTICLES, ids=ARTICLE_IDS)
-def test_uid_is_canonical_uuidv4(topic, doc_type, path):
+@pytest.mark.parametrize(
+    "path", [path for _, _, path in ARTICLES], ids=ARTICLE_IDS
+)
+def test_uid_is_canonical_uuidv4(path: Path) -> None:
     uid = parse_frontmatter(path.read_text(encoding="utf-8")).get("uid")
     assert uid and UID_RE.fullmatch(uid), f"{rel(path)}: invalid uid {uid!r}"
 
 
-def test_uids_are_unique_and_not_retired():
-    values = []
-    for _topic, _doc_type, path in ARTICLES:
-        values.append(parse_frontmatter(path.read_text(encoding="utf-8")).get("uid"))
-    assert len(values) == len(set(values)), "Assistant page UIDs must be unique"
+def test_uids_are_unique_and_not_retired() -> None:
+    values: list[str | None] = []
+    for _, _, path in ARTICLES:
+        values.append(parse_frontmatter(
+            path.read_text(encoding="utf-8")).get("uid"))
+    assert len(values) == len(
+        set(values)), "Assistant page UIDs must be unique"
     retired_path = REPO_ROOT / "utilities" / "akb-retired-uuids.txt"
     retired = {
         line.strip() for line in retired_path.read_text(encoding="utf-8").splitlines()
         if line.strip() and not line.lstrip().startswith("#")
     }
-    assert not retired.intersection(values), "Live pages must not use retired UIDs"
+    assert not retired.intersection(
+        values), "Live pages must not use retired UIDs"
 
 
 # =============================================================================
@@ -293,13 +317,13 @@ def test_uids_are_unique_and_not_retired():
 # =============================================================================
 
 @pytest.fixture(scope="module")
-def schema_products():
+def schema_products() -> set[str]:
     schema_text = SCHEMA_PATH.read_text(encoding="utf-8")
     return extract_schema_vocab(schema_text, "## Product tags", "## Topic tags")
 
 
 @pytest.fixture(scope="module")
-def schema_topics():
+def schema_topics() -> set[str]:
     schema_text = SCHEMA_PATH.read_text(encoding="utf-8")
     return extract_schema_vocab(
         schema_text, "## Topic tags (`topics`)", "## Related Concepts"
@@ -307,7 +331,7 @@ def schema_topics():
 
 
 @pytest.fixture(scope="module")
-def schema_product_slugs():
+def schema_product_slugs() -> dict[str, str]:
     """Return a dict mapping each schema Product name to its Slug column value.
 
     Parses the ``## Product tags`` table's ``Product`` and ``Slug`` columns
@@ -322,8 +346,13 @@ def schema_product_slugs():
     return dict(row_re.findall(section))
 
 
-@pytest.mark.parametrize("topic,doc_type,path", ARTICLES, ids=ARTICLE_IDS)
-def test_products_match_schema_vocabulary(topic, doc_type, path, schema_products):
+@pytest.mark.parametrize(
+    "path", [path for _, _, path in ARTICLES], ids=ARTICLE_IDS
+)
+def test_products_match_schema_vocabulary(
+    path: Path,
+    schema_products: set[str],
+) -> None:
     text = path.read_text(encoding="utf-8")
     products = parse_frontmatter_list(text, "products")
     assert products, f"{rel(path)}: missing or empty products list"
@@ -334,8 +363,13 @@ def test_products_match_schema_vocabulary(topic, doc_type, path, schema_products
     )
 
 
-@pytest.mark.parametrize("topic,doc_type,path", ARTICLES, ids=ARTICLE_IDS)
-def test_topics_match_schema_vocabulary(topic, doc_type, path, schema_topics):
+@pytest.mark.parametrize(
+    "path", [path for _, _, path in ARTICLES], ids=ARTICLE_IDS
+)
+def test_topics_match_schema_vocabulary(
+    path: Path,
+    schema_topics: set[str],
+) -> None:
     text = path.read_text(encoding="utf-8")
     topics = parse_frontmatter_list(text, "topics")
     assert topics, f"{rel(path)}: missing or empty topics list"
@@ -347,12 +381,16 @@ def test_topics_match_schema_vocabulary(topic, doc_type, path, schema_topics):
 
 
 @pytest.mark.parametrize(
-    "topic,doc_type,path",
-    [(t, d, p) for t, d, p in ARTICLES if t not in EXEMPT_TOPIC_DIRS],
+    "topic,path",
+    [(t, p) for t, _, p in ARTICLES if t not in EXEMPT_TOPIC_DIRS],
     ids=[i for (t, _, _), i in zip(ARTICLES, ARTICLE_IDS)
          if t not in EXEMPT_TOPIC_DIRS],
 )
-def test_first_product_matches_parent_topic_folder(topic, doc_type, path, schema_product_slugs):
+def test_first_product_matches_parent_topic_folder(
+    topic: str,
+    path: Path,
+    schema_product_slugs: dict[str, str],
+) -> None:
     """The first ``products`` entry must be the product owning this topic folder.
 
     Every article lives under ``docs/assistant/{topic}/``, and every
@@ -380,12 +418,14 @@ def test_first_product_matches_parent_topic_folder(topic, doc_type, path, schema
 
 
 @pytest.mark.parametrize(
-    "topic,doc_type,path",
-    [(t, d, p) for t, d, p in ARTICLES if t not in EXEMPT_TOPIC_DIRS],
+    "topic,path",
+    [(t, p) for t, _, p in ARTICLES if t not in EXEMPT_TOPIC_DIRS],
     ids=[i for (t, _, _), i in zip(ARTICLES, ARTICLE_IDS)
          if t not in EXEMPT_TOPIC_DIRS],
 )
-def test_first_topic_matches_parent_topic_folder(topic, doc_type, path):
+def test_first_topic_matches_parent_topic_folder(
+    topic: str, path: Path
+) -> None:
     """The first ``topics`` entry must be the parent topic folder's own slug.
 
     Checked purely against in-file frontmatter (no schema lookup needed):
@@ -404,8 +444,13 @@ def test_first_topic_matches_parent_topic_folder(topic, doc_type, path):
     )
 
 
-@pytest.mark.parametrize("topic,doc_type,path", ARTICLES, ids=ARTICLE_IDS)
-def test_all_products_have_matching_topic_slug(topic, doc_type, path, schema_product_slugs):
+@pytest.mark.parametrize(
+    "path", [path for _, _, path in ARTICLES], ids=ARTICLE_IDS
+)
+def test_all_products_have_matching_topic_slug(
+    path: Path,
+    schema_product_slugs: dict[str, str],
+) -> None:
     """Every ``products`` entry must have its slug equivalent present in ``topics``.
 
     Applies to all articles, including cross-platform/ and support/: for each
@@ -419,7 +464,7 @@ def test_all_products_have_matching_topic_slug(topic, doc_type, path, schema_pro
     topics = parse_frontmatter_list(text, "topics")
     assert products, f"{rel(path)}: missing or empty products list"
     assert topics, f"{rel(path)}: missing or empty topics list"
-    missing = []
+    missing: list[tuple[str, str]] = []
     for product in products:
         slug = schema_product_slugs.get(product)
         if slug is None:
@@ -437,7 +482,7 @@ def test_all_products_have_matching_topic_slug(topic, doc_type, path, schema_pro
 # Slug collisions
 # =============================================================================
 
-def test_slug_collisions_within_and_across_topics():
+def test_slug_collisions_within_and_across_topics() -> None:
     """Flag slug collisions between two articles of the *same* doc_type in the
     *same* topic.
 
@@ -449,7 +494,9 @@ def test_slug_collisions_within_and_across_topics():
     collision indicates two files that would be ambiguous to each other
     within their own directory (e.g. duplicate filenames), which is flagged.
     """
-    by_topic_type_slug = defaultdict(list)
+    by_topic_type_slug: defaultdict[
+        tuple[str, str, str | None], list[Path]
+    ] = defaultdict(list)
     for topic, doc_type, path in ARTICLES:
         if doc_type == "policy":
             continue
@@ -471,7 +518,7 @@ def test_slug_collisions_within_and_across_topics():
 # dispatch.md cross-validation
 # =============================================================================
 
-def parse_dispatch_rows(text):
+def parse_dispatch_rows(text: str) -> list[DispatchRow]:
     """Return a list of (heading_stack, file_path, status) for each table row.
 
     heading_stack is a tuple of enclosing heading texts (H2-H4), most recent
@@ -482,9 +529,9 @@ def parse_dispatch_rows(text):
     how a consuming agent would actually resolve each row: Base + filename).
     A bare filename with no preceding Base line is left unresolved (as-is).
     """
-    stack = []
-    base = None
-    rows = []
+    stack: list[tuple[int, str]] = []
+    base: str | None = None
+    rows: list[DispatchRow] = []
     for line in text.splitlines():
         hm = HEADING_RE.match(line)
         if hm:
@@ -502,31 +549,34 @@ def parse_dispatch_rows(text):
             uid = rm.group(1)
             fname = rm.group(2)
             file_path = f"{base}{fname}" if base else fname
-            rows.append((tuple(t for _, t in stack), file_path, uid, rm.group(4)))
+            rows.append((tuple(t for _, t in stack),
+                        file_path, uid, rm.group(4)))
     return rows
 
 
 @pytest.fixture(scope="module")
-def dispatch_text():
+def dispatch_text() -> str:
     assert DISPATCH_PATH.exists(), "docs/assistant/dispatch.md not found"
     return DISPATCH_PATH.read_text(encoding="utf-8")
 
 
 @pytest.fixture(scope="module")
-def dispatch_rows(dispatch_text):
+def dispatch_rows(dispatch_text: str) -> list[DispatchRow]:
     registry = dispatch_text.split("## Registry", 1)[-1]
     return parse_dispatch_rows(registry)
 
 
-def test_dispatch_frontmatter_is_valid(dispatch_text):
+def test_dispatch_frontmatter_is_valid(dispatch_text: str) -> None:
     fm = parse_frontmatter(dispatch_text)
     assert fm.get("slug") == "dispatch"
     assert fm.get("publication_status") in VALID_PUBLICATION_STATUSES
 
 
-def test_dispatch_has_no_rows_for_nonexistent_files(dispatch_rows):
-    missing = []
-    for heading_stack, file_path, _uid, _status in dispatch_rows:
+def test_dispatch_has_no_rows_for_nonexistent_files(
+    dispatch_rows: list[DispatchRow],
+) -> None:
+    missing: list[tuple[str, tuple[str, ...]]] = []
+    for heading_stack, file_path, _, _ in dispatch_rows:
         if not (ASSISTANT_DIR / file_path).exists():
             missing.append((file_path, heading_stack))
     assert not missing, (
@@ -535,27 +585,31 @@ def test_dispatch_has_no_rows_for_nonexistent_files(dispatch_rows):
     )
 
 
-def test_dispatch_has_no_duplicate_rows(dispatch_rows):
-    counts = defaultdict(int)
-    for _heading_stack, file_path, _uid, _status in dispatch_rows:
+def test_dispatch_has_no_duplicate_rows(
+    dispatch_rows: list[DispatchRow],
+) -> None:
+    counts: defaultdict[str, int] = defaultdict(int)
+    for _, file_path, _, _ in dispatch_rows:
         counts[file_path] += 1
     dupes = {path: n for path, n in counts.items() if n > 1}
     assert not dupes, f"dispatch.md lists the same file more than once: {dupes}"
 
 
-def test_dispatch_lists_every_topic_article_exactly_once(dispatch_rows):
+def test_dispatch_lists_every_topic_article_exactly_once(
+    dispatch_rows: list[DispatchRow],
+) -> None:
     """Every concept/workflow article has exactly one registry table row.
 
     Topic index.md files (doc_type "policy") are intentionally excluded: the
     generator links them via a "See [topic/index.md]" prose line rather than
     a table row, per akb_generate_dispatch.py's render_topic().
     """
-    listed_counts = defaultdict(int)
-    for _heading_stack, file_path, _uid, _status in dispatch_rows:
+    listed_counts: defaultdict[str, int] = defaultdict(int)
+    for _, file_path, _, _ in dispatch_rows:
         listed_counts[file_path] += 1
 
-    absent_or_duplicated = []
-    for topic, doc_type, path in ARTICLES:
+    absent_or_duplicated: list[tuple[str, int]] = []
+    for _, doc_type, path in ARTICLES:
         if doc_type == "policy":
             continue
         path_key = rel(path)
@@ -569,13 +623,15 @@ def test_dispatch_lists_every_topic_article_exactly_once(dispatch_rows):
     )
 
 
-def test_dispatch_publication_status_matches_frontmatter(dispatch_rows):
-    row_status = {}
-    for _heading_stack, file_path, _uid, status in dispatch_rows:
+def test_dispatch_publication_status_matches_frontmatter(
+    dispatch_rows: list[DispatchRow],
+) -> None:
+    row_status: dict[str, str] = {}
+    for _, file_path, _, status in dispatch_rows:
         row_status[file_path] = status
 
-    mismatches = []
-    for topic, doc_type, path in ARTICLES:
+    mismatches: list[tuple[str, str, str]] = []
+    for _, _, path in ARTICLES:
         path_key = rel(path)
         if path_key not in row_status:
             continue  # already reported by test_dispatch_lists_every_topic_article_exactly_once
@@ -590,15 +646,19 @@ def test_dispatch_publication_status_matches_frontmatter(dispatch_rows):
     )
 
 
-def test_dispatch_uids_match_frontmatter(dispatch_rows):
-    row_uids = {file_path: uid for _heading, file_path, uid, _status in dispatch_rows}
-    mismatches = []
-    for _topic, _doc_type, path in ARTICLES:
+def test_dispatch_uids_match_frontmatter(
+    dispatch_rows: list[DispatchRow],
+) -> None:
+    row_uids = {file_path: uid for _, file_path, uid, _ in dispatch_rows}
+    mismatches: list[tuple[str, str, str | None]] = []
+    for _, _, path in ARTICLES:
         key = rel(path)
         if key in row_uids:
-            actual = parse_frontmatter(path.read_text(encoding="utf-8")).get("uid")
+            actual = parse_frontmatter(
+                path.read_text(encoding="utf-8")).get("uid")
             if row_uids[key] != actual:
                 mismatches.append((key, row_uids[key], actual))
-    dispatch_uid = parse_frontmatter(DISPATCH_PATH.read_text(encoding="utf-8")).get("uid")
+    dispatch_uid = parse_frontmatter(
+        DISPATCH_PATH.read_text(encoding="utf-8")).get("uid")
     assert row_uids.get("dispatch.md") == dispatch_uid
     assert not mismatches, f"Dispatch UID mismatches: {mismatches[:20]}"

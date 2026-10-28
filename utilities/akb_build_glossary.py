@@ -10,7 +10,6 @@ Run from any working directory; paths are resolved relative to this file.
 
 import re
 import sys
-import uuid
 from datetime import date
 from pathlib import Path
 

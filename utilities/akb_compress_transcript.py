@@ -27,11 +27,12 @@ def compress_transcript(input_path: Path) -> Path:
     webvtt_header = re.compile(r"^WEBVTT")
     entry_number = re.compile(r"^\d+$")
     timestamp = re.compile(
-        r"^\d{2}:\d{2}:\d{2}\.\d{3}\s*-->\s*\d{2}:\d{2}:\d{2}\.\d{3}")
+        r"^(?:\d{2,}:)?\d{2}:\d{2}\.\d{3}\s*-->\s*"
+        r"(?:\d{2,}:)?\d{2}:\d{2}\.\d{3}")
     blank = re.compile(r"^\s*$")
     filler_speech = re.compile(
         r"(?:,\s*)?"
-        r"(?:\b(?:um+|uh+|hmm+)\b|\b(?:uh[- ]huh|mm[- ]hmm)\b)"
+        r"(?:\b(?:uh[- ]huh|mm[- ]hmm)\b|\b(?:um+|uh+|hmm+)\b)"
         r"(?:\s*(?:,|…|\.{3}|[.!?;:]))*\s*",
         re.IGNORECASE,
     )
