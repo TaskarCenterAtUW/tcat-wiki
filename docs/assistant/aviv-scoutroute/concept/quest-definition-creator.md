@@ -26,10 +26,6 @@ assistant_behavior:
     allow_inference: false
     requires_citation: true
     abstain_if_missing_context: true
-    do_not_claim:
-        - The Quest Definition Creator automatically deploys changes to a workspace.
-        - The Quest Definition Creator supports every version of the Long Form Quest Definition schema.
-        - A locally resumed draft is stored outside the user's device.
 related_pages:
     - assistant/aviv-scoutroute/concept/quest-definition-application.md
     - assistant/aviv-scoutroute/concept/quest-definition-element-icons.md

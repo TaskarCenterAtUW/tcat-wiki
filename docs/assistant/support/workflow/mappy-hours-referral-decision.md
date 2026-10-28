@@ -32,9 +32,6 @@ assistant_behavior:
     allow_inference: false
     requires_citation: true
     abstain_if_missing_context: true
-    do_not_claim:
-        - Mappy Hours is required for every support question.
-        - Direct support guarantees an immediate answer or resolution.
 related_pages:
     - assistant/support/index.md
     - assistant/support/concept/mappy-hours-eligibility.md

@@ -30,10 +30,6 @@ assistant_behavior:
     allow_inference: false
     requires_citation: true
     abstain_if_missing_context: true
-    do_not_claim:
-        - A missing AVIV ScoutRoute quest icon proves that no quest exists.
-        - Hiding a quest removes it from the workspace for every contributor.
-        - A quest hidden by completion or recency has been deleted from the workspace.
 related_pages:
     - app-enabled-workspaces.md
     - ../workflow/manage-quest-visibility.md

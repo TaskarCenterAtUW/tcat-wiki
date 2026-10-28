@@ -24,9 +24,6 @@ assistant_behavior:
     allow_inference: false
     requires_citation: true
     abstain_if_missing_context: true
-    do_not_claim:
-        - AccessMap data are real-time everywhere.
-        - A known update cadence guarantees that local conditions are current.
 related_pages:
     - assistant/accessmap/concept/data-sources.md
     - assistant/accessmap/concept/local-datasets-routing-quality.md

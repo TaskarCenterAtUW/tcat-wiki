@@ -24,8 +24,6 @@ assistant_behavior:
     allow_inference: false
     requires_citation: true
     abstain_if_missing_context: true
-    do_not_claim:
-        - A feature is absent because its details do not appear at a low zoom level.
 related_pages:
     - assistant/os-connect/index.md
     - assistant/os-connect/concept/map-layers.md

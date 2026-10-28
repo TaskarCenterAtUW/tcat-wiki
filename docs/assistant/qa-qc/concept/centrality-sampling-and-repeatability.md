@@ -26,8 +26,6 @@ assistant_behavior:
     allow_inference: false
     requires_citation: true
     abstain_if_missing_context: true
-    do_not_claim:
-        - Centrality results from different dataset IDs are automatically identical.
 related_pages: []
 tags:
     - Assistant

@@ -24,8 +24,6 @@ assistant_behavior:
     allow_inference: false
     requires_citation: true
     abstain_if_missing_context: false
-    do_not_claim:
-        - Data is available without portal registration if policy requires it.
 related_pages:
     - assistant/tdei/workflow/use-tdei-portal.md
     - tdei/portal/tutorial/download-os-connect.md

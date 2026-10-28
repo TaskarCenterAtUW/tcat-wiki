@@ -25,9 +25,6 @@ assistant_behavior:
     allow_inference: false
     requires_citation: true
     abstain_if_missing_context: true
-    do_not_claim:
-        - A user belongs to every TDEI project group because they belong to one project group.
-        - A displayed project-group role grants permissions outside that role's documented scope.
 related_pages:
     - assistant/tdei/concept/project-group.md
     - assistant/tdei/concept/project-group-roles.md

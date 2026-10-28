@@ -25,9 +25,6 @@ assistant_behavior:
     allow_inference: false
     requires_citation: true
     abstain_if_missing_context: true
-    do_not_claim:
-        - A project group and a workspace are the same object.
-        - Project-group membership grants every workspace permission.
 related_pages:
     - assistant/workspaces/index.md
     - assistant/workspaces/concept/project-group-definition.md

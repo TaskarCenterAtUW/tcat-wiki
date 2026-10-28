@@ -25,9 +25,6 @@ assistant_behavior:
     allow_inference: false
     requires_citation: true
     abstain_if_missing_context: true
-    do_not_claim:
-        - OS-CONNECT automatically generates an agency's GTFS Pathways feed.
-        - OS-CONNECT and GTFS Pathways are interchangeable datasets.
 related_pages:
     - assistant/accessmap/concept/gtfs-pathways.md
     - assistant/cross-platform/concept/os-connect-vs-gtfs-pathways.md

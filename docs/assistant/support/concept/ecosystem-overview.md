@@ -31,9 +31,6 @@ assistant_behavior:
     allow_inference: false
     requires_citation: true
     abstain_if_missing_context: true
-    do_not_claim:
-        - TDEI, OS-CONNECT, OpenSidewalks, OpenStreetMap, AccessMap, Walksheds, GTFS, GTFS Pathways, and GTFS-Flex are interchangeable products or datasets.
-        - A dataset or tool in this ecosystem automatically updates every other one.
 related_pages:
     - assistant/support/concept/tdei-os-connect-osm-differences.md
     - assistant/cross-platform/concept/os-connect-vs-gtfs-pathways.md

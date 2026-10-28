@@ -25,8 +25,6 @@ assistant_behavior:
     allow_inference: false
     requires_citation: true
     abstain_if_missing_context: true
-    do_not_claim:
-        - The OSW Convert job in TDEI will process invalid OSW datasets without failing.
 related_pages:
     - job-processing.md
     - ../concept/osw-vs-osm-format.md

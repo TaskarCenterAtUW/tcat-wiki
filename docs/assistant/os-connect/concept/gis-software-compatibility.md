@@ -25,9 +25,6 @@ assistant_behavior:
     allow_inference: false
     requires_citation: true
     abstain_if_missing_context: true
-    do_not_claim:
-        - Opening OS-CONNECT data in GIS software proves that the data are complete.
-        - Every OS-CONNECT file has identical import behavior in every GIS application.
 related_pages:
     - assistant/os-connect/workflow/import-into-arcgis.md
     - assistant/support/workflow/choose-dataset-for-arcgis.md

@@ -25,9 +25,6 @@ assistant_behavior:
     allow_inference: false
     requires_citation: true
     abstain_if_missing_context: true
-    do_not_claim:
-        - OpenSidewalks data is an unconnected collection of map features.
-        - A schema version label alone proves that a dataset is valid for every consumer.
 related_pages:
     - ../index.md
     - network-entities.md

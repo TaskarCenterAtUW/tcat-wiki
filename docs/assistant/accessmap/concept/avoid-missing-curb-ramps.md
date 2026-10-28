@@ -24,9 +24,6 @@ assistant_behavior:
     allow_inference: false
     requires_citation: true
     abstain_if_missing_context: true
-    do_not_claim:
-        - Avoiding missing curb ramps proves that every selected crossing has a usable ramp.
-        - Missing curb-ramp data proves that no curb ramp exists.
 related_pages:
     - assistant/accessmap/concept/curb-ramp-routing.md
     - assistant/accessmap/concept/missing-curb-ramps-effect.md

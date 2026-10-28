@@ -46,14 +46,12 @@ topics:
 risk_level: low
 authority_level: explanatory
 publication_status: draft
-last_reviewed: 2026-07-08
+last_reviewed: 2026-10-27
 retrieval_priority: high
 assistant_behavior:
     allow_inference: false
     requires_citation: true
     abstain_if_missing_context: true
-    do_not_claim:
-        - This layer replaces official product manuals or legal advice.
 related_pages:
     - assistant/schema.md
     - assistant/dispatch.md
@@ -91,7 +89,7 @@ Public assistants need concise answers, explicit limits on claims, and pointers 
 
 **Content authors**: Follow the [schema](schema.md) and refer to the [dispatch](dispatch.md) file. Use `publication_status: draft` until another human TCAT editor has approved the page.
 
-**Integrators**: All pages are valid Markdown with YAML frontmatter. The `assistant_behavior` map encodes per-page guardrails. `retrieval_priority` suggests ranking adjustments. `do_not_claim` provides hard-negative strings for evaluation and prompt grounding.
+**Integrators**: All pages are valid Markdown with YAML frontmatter. The `assistant_behavior` map encodes per-page guardrails, and `retrieval_priority` suggests ranking adjustments.
 
 ## Example
 

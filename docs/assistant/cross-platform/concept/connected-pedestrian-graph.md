@@ -31,9 +31,6 @@ assistant_behavior:
     allow_inference: true
     requires_citation: false
     abstain_if_missing_context: false
-    do_not_claim:
-        - Connectedness means that paths are physically connected in real life.
-        - Spatially overlapping features are necessarily connected in the data.
 related_pages:
     - assistant/cross-platform/concept/accessibility-islands.md
     - assistant/cross-platform/concept/walksheds.md

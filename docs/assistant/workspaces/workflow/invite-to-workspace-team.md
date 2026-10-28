@@ -26,11 +26,6 @@ assistant_behavior:
     allow_inference: false
     requires_citation: true
     abstain_if_missing_context: true
-    do_not_claim:
-        - Teams control access permissions or RBAC roles within a workspace
-        - Teams are the same as TDEI Project Group membership
-        - A Workspaces team invitation link or QR code is guaranteed to remain usable indefinitely.
-        - Creating a team is required before editing or viewing a workspace
 related_pages:
     - assistant/workspaces/workflow/create-workspace-from-tdei-dataset.md
     - assistant/workspaces/workflow/edit-accessibility-features-in-a-workspace.md

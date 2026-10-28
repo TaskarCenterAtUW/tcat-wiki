@@ -24,9 +24,6 @@ assistant_behavior:
     allow_inference: false
     requires_citation: true
     abstain_if_missing_context: true
-    do_not_claim:
-        - A resilient pedestrian network guarantees access during every disruption.
-        - A resilience metric replaces emergency or infrastructure planning.
 related_pages:
     - assistant/accessmap/concept/network-redundancy.md
     - assistant/accessmap/concept/critical-pedestrian-corridors.md

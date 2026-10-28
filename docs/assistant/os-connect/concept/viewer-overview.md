@@ -24,9 +24,6 @@ assistant_behavior:
     allow_inference: false
     requires_citation: true
     abstain_if_missing_context: true
-    do_not_claim:
-        - The viewer displays every pedestrian feature or every current condition.
-        - A viewer color is a universal accessibility rating.
 related_pages:
     - assistant/os-connect/index.md
     - assistant/os-connect/concept/map-layers.md

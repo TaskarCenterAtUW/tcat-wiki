@@ -25,10 +25,6 @@ assistant_behavior:
     allow_inference: false
     requires_citation: true
     abstain_if_missing_context: true
-    do_not_claim:
-        - Every adjacent entity is a traversable part of an OpenSidewalks-formatted dataset's graph.
-        - Custom entities are routable graph elements merely because they use OpenSidewalks geometry types.
-        - Additional fields have valid standard schema semantics without an 'ext:' prefix.
 related_pages:
     - adjacent-entities.md
     - custom-entities.md

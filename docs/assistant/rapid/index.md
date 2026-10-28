@@ -25,9 +25,6 @@ assistant_behavior:
     allow_inference: false
     requires_citation: true
     abstain_if_missing_context: false
-    do_not_claim:
-        - Rapid is a full GIS replacement for every editing task.
-        - A Rapid edit is automatically reviewed or published by TCAT.
 related_pages:
     - assistant/index.md
     - assistant/dispatch.md

@@ -23,8 +23,6 @@ assistant_behavior:
     allow_inference: false
     requires_citation: true
     abstain_if_missing_context: true
-    do_not_claim:
-        - A walkshed guarantees safety or optimal school placement.
 related_pages:
     - assistant/walksheds/concept/walkshed.md
     - assistant/walksheds/concept/walkshed-application-architecture.md

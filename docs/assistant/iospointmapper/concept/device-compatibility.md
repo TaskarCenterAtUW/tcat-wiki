@@ -24,9 +24,6 @@ assistant_behavior:
     allow_inference: false
     requires_citation: true
     abstain_if_missing_context: true
-    do_not_claim:
-        - iOSPointMapper works on every iPhone or iPad.
-        - A compatible device guarantees that every collection feature will work.
 related_pages:
     - assistant/iospointmapper/index.md
 tags:

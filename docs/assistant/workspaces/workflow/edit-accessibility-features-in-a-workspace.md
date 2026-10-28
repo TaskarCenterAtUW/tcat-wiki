@@ -27,12 +27,6 @@ assistant_behavior:
     allow_inference: false
     requires_citation: true
     abstain_if_missing_context: true
-    do_not_claim:
-        - Every edit in Workspaces is automatically correct or field-validated
-        - Reference GeoJSON layers automatically become part of the official network without review
-        - Bulk import of a full external dataset into a workspace replaces TDEI-level ingest
-        - Edits in Workspaces immediately update OS-CONNECT, TDEI releases, or public OpenStreetMap
-        - Using Rapid 3 is always more stable than Rapid 2 in every environment
 related_pages:
     - assistant/workspaces/workflow/create-workspace-from-tdei-dataset.md
     - assistant/workspaces/workflow/review-workspace-edits.md

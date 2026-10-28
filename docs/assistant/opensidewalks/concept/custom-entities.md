@@ -26,10 +26,6 @@ assistant_behavior:
     allow_inference: false
     requires_citation: true
     abstain_if_missing_context: true
-    do_not_claim:
-        - A Custom Entity is a routable graph element merely because it uses an OpenSidewalks geometry type.
-        - A Custom Entity has the semantics of a predefined schema entity without matching that entity's identifying fields.
-        - Additional fields have standard schema semantics without an 'ext:' prefix.
 related_pages:
     - adjacent-entities.md
     - adjacent-and-custom-entities.md

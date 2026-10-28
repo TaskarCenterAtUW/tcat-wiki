@@ -31,9 +31,6 @@ assistant_behavior:
     allow_inference: false
     requires_citation: true
     abstain_if_missing_context: true
-    do_not_claim:
-        - OSM or OS-CONNECT data automatically replace missing GTFS Pathways data.
-        - Surrounding pedestrian data provide all station-internal pathway semantics.
 related_pages:
     - assistant/accessmap/concept/gtfs-pathways.md
     - assistant/support/concept/osm-pedestrian-paths-vs-gtfs-pathways.md

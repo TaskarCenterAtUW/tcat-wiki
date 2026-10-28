@@ -24,8 +24,6 @@ assistant_behavior:
     allow_inference: false
     requires_citation: true
     abstain_if_missing_context: true
-    do_not_claim:
-        - An intersection tile is the same as a legal or administrative boundary.
 related_pages:
     - assistant/qa-qc/concept/intersection-quality-metric.md
 tags:

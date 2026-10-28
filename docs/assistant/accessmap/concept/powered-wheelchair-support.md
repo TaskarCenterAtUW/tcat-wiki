@@ -24,9 +24,6 @@ assistant_behavior:
     allow_inference: false
     requires_citation: true
     abstain_if_missing_context: true
-    do_not_claim:
-        - A powered-wheelchair profile guarantees that every route is usable.
-        - AccessMap's powered-wheelchair modeling captures every device or access need.
 related_pages:
     - assistant/accessmap/concept/mobility-profiles.md
     - assistant/accessmap/concept/accessibility-needs.md

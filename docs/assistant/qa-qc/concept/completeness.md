@@ -28,11 +28,6 @@ assistant_behavior:
     allow_inference: false
     requires_citation: true
     abstain_if_missing_context: true
-    do_not_claim:
-        - Completeness measures how many real-world features have a given attribute.
-        - Completeness measures the accuracy or correctness of an attribute.
-        - A high completeness value proves that the mapped features meet accessibility standards or ADA requirements.
-        - A low completeness value proves that the corresponding real-world features are absent or deficient.
 related_pages:
     - assistant/qa-qc/concept/attribute-completeness.md
     - assistant/qa-qc/concept/attribute-presence-vs-feature-completeness.md

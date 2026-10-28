@@ -24,8 +24,6 @@ assistant_behavior:
     allow_inference: false
     requires_citation: true
     abstain_if_missing_context: true
-    do_not_claim:
-        - A scenario comparison proves that a proposed project will produce the exact modeled outcome.
 related_pages:
     - ../concept/walkshed-scenarios.md
     - ../concept/walkshed-scenario-statistics.md

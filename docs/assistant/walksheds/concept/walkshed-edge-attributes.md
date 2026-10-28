@@ -23,8 +23,6 @@ assistant_behavior:
     allow_inference: false
     requires_citation: true
     abstain_if_missing_context: true
-    do_not_claim:
-        - Every source dataset attribute is available to a Walksheds custom cost function.
 related_pages:
     - walkshed-custom-cost-function-contract.md
     - walkshed-custom-cost-functions.md

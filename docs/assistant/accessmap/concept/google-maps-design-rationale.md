@@ -24,9 +24,6 @@ assistant_behavior:
     allow_inference: false
     requires_citation: true
     abstain_if_missing_context: true
-    do_not_claim:
-        - AccessMap and Google Maps have the same routing purpose and assumptions.
-        - AccessMap is universally more accurate than Google Maps.
 related_pages:
     - assistant/accessmap/concept/google-maps-comparison.md
     - assistant/accessmap/concept/routing-profiles.md

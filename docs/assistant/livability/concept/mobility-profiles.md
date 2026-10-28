@@ -27,10 +27,6 @@ assistant_behavior:
     allow_inference: false
     requires_citation: true
     abstain_if_missing_context: true
-    do_not_claim:
-        - A LivAbility mobility profile represents every person in the named mobility group.
-        - LivAbility mobility profiles are identical to profiles in AccessMap or Walksheds.
-        - Selecting a LivAbility profile proves that a route is safe or accessible for an individual.
 related_pages:
     - assistant/livability/index.md
     - assistant/livability/concept/livability-analysis.md

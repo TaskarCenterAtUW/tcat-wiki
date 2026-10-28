@@ -25,9 +25,6 @@ assistant_behavior:
     allow_inference: false
     requires_citation: true
     abstain_if_missing_context: true
-    do_not_claim:
-        - Workspaces and OS-CONNECT are the same interface.
-        - Editing a workspace automatically changes the OS-CONNECT release.
 related_pages:
     - assistant/workspaces/index.md
     - assistant/os-connect/index.md

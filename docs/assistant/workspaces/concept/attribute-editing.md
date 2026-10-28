@@ -26,7 +26,6 @@ assistant_behavior:
     allow_inference: false
     requires_citation: true
     abstain_if_missing_context: true
-    do_not_claim: []
 related_pages:
     - assistant/workspaces/concept/accessibility-feature-editing.md
     - assistant/workspaces/concept/edit-types.md

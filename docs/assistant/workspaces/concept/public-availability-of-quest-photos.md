@@ -25,8 +25,6 @@ assistant_behavior:
     allow_inference: false
     requires_citation: true
     abstain_if_missing_context: true
-    do_not_claim:
-        - Quest photos are private to the contributor team by default.
 related_pages: []
 tags:
     - Assistant

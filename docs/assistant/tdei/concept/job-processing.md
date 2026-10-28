@@ -25,8 +25,6 @@ assistant_behavior:
     allow_inference: false
     requires_citation: true
     abstain_if_missing_context: true
-    do_not_claim:
-        - Creating a TDEI job means processing has completed successfully.
 related_pages:
     - ../workflow/create-and-monitor-tdei-job.md
     - ../../../tdei/portal/user-manual/jobs/index.md

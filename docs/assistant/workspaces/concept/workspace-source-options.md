@@ -23,8 +23,6 @@ assistant_behavior:
     allow_inference: false
     requires_citation: true
     abstain_if_missing_context: true
-    do_not_claim:
-        - Every workspace source option is available in every environment.
 related_pages: []
 tags:
     - Assistant

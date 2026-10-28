@@ -26,8 +26,6 @@ assistant_behavior:
     allow_inference: false
     requires_citation: true
     abstain_if_missing_context: true
-    do_not_claim:
-        - AVIV ScoutRoute mobile creation supports arbitrary new line geometry.
 related_pages: []
 tags:
     - Assistant

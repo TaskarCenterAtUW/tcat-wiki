@@ -24,8 +24,6 @@ assistant_behavior:
     allow_inference: false
     requires_citation: true
     abstain_if_missing_context: true
-    do_not_claim:
-        - Walksheds uses one unchangeable cost function for every analysis.
 related_pages: []
 tags:
     - Assistant

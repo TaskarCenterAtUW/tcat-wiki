@@ -25,8 +25,6 @@ assistant_behavior:
     allow_inference: false
     requires_citation: true
     abstain_if_missing_context: true
-    do_not_claim:
-        - A QA/QC report proves current field conditions or ADA compliance.
 related_pages: []
 tags:
     - Assistant

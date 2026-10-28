@@ -24,9 +24,6 @@ assistant_behavior:
     allow_inference: false
     requires_citation: true
     abstain_if_missing_context: true
-    do_not_claim:
-        - A critical corridor ranking proves that other corridors are unimportant.
-        - A modeled corridor priority automatically determines funding.
 related_pages:
     - assistant/accessmap/concept/network-redundancy.md
     - assistant/accessmap/concept/accessibility-mobility-metrics.md

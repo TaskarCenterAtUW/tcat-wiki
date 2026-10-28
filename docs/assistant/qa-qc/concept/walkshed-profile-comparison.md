@@ -24,8 +24,6 @@ assistant_behavior:
     allow_inference: false
     requires_citation: true
     abstain_if_missing_context: true
-    do_not_claim:
-        - A pedestrian walkshed applies equally to every mobility profile.
 related_pages:
     - assistant/walksheds/concept/pedestrian-vs-wheelchair-walkshed.md
 tags:

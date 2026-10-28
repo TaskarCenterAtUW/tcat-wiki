@@ -25,8 +25,6 @@ assistant_behavior:
     allow_inference: false
     requires_citation: true
     abstain_if_missing_context: true
-    do_not_claim:
-        - Every centrality tile is centered on one intersection and clipped exactly to a jurisdiction boundary.
 related_pages: []
 tags:
     - Assistant

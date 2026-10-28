@@ -22,8 +22,6 @@ assistant_behavior:
     allow_inference: false
     requires_citation: true
     abstain_if_missing_context: false
-    do_not_claim:
-        - A walkshed is a government-approved school boundary.
 related_pages:
     - assistant/cross-platform/concept/walksheds.md
     - walksheds/index.md

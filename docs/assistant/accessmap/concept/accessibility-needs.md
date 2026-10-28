@@ -24,9 +24,6 @@ assistant_behavior:
     allow_inference: false
     requires_citation: true
     abstain_if_missing_context: true
-    do_not_claim:
-        - AccessMap represents every person's accessibility needs completely.
-        - A supported accessibility need guarantees that every route is usable.
 related_pages:
     - assistant/accessmap/concept/mobility-profiles.md
     - assistant/accessmap/concept/accessibility-assumptions.md

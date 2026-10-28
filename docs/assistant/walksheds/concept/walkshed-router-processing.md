@@ -23,8 +23,6 @@ assistant_behavior:
     allow_inference: false
     requires_citation: true
     abstain_if_missing_context: true
-    do_not_claim:
-        - Router-building time depends only on the user's device.
 related_pages: []
 tags:
     - Assistant

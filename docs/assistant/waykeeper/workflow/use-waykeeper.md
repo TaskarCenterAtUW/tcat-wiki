@@ -23,9 +23,6 @@ assistant_behavior:
     allow_inference: false
     requires_citation: true
     abstain_if_missing_context: true
-    do_not_claim:
-        - WayKeeper usage steps are known without a current product guide.
-        - Following an inferred WayKeeper workflow guarantees a correct result.
 related_pages:
     - assistant/waykeeper/index.md
     - assistant/waykeeper/concept/waykeeper.md

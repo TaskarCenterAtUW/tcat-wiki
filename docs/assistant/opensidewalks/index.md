@@ -25,10 +25,6 @@ assistant_behavior:
     allow_inference: false
     requires_citation: true
     abstain_if_missing_context: false
-    do_not_claim:
-        - OpenSidewalks is only a sidewalk layer.
-        - OpenStreetMap compatibility means every OpenSidewalks dataset has identical semantics to OSM.
-        - Schema validation proves that a dataset is current everywhere.
 related_pages:
     - assistant/index.md
     - assistant/dispatch.md

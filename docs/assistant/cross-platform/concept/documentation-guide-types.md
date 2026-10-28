@@ -25,8 +25,6 @@ assistant_behavior:
     allow_inference: false
     requires_citation: true
     abstain_if_missing_context: false
-    do_not_claim:
-        - A user manual and a goal-oriented tutorial serve the same purpose.
 related_pages:
     - assistant/cross-platform/index.md
     - assistant/cross-platform/concept/documentation-audience-baseline.md

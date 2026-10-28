@@ -26,9 +26,6 @@ assistant_behavior:
     allow_inference: false
     requires_citation: true
     abstain_if_missing_context: true
-    do_not_claim:
-        - A submitted correction appears in the public release immediately.
-        - A correction request guarantees acceptance or a fixed release date.
 related_pages:
     - assistant/os-connect/index.md
     - assistant/os-connect/workflow/report-data-error.md

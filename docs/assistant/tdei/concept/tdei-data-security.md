@@ -27,9 +27,6 @@ assistant_behavior:
     allow_inference: false
     requires_citation: true
     abstain_if_missing_context: true
-    do_not_claim:
-        - Sidewalk data is encrypted in transit.
-        - TDEI servers or all related services are hosted outside Microsoft Azure US-East.
 related_pages:
     - ../../../tdei/tdei-core/index.md
     - tdei-architecture.md

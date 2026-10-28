@@ -26,12 +26,6 @@ assistant_behavior:
     allow_inference: false
     requires_citation: true
     abstain_if_missing_context: true
-    do_not_claim:
-        - Imagery JSON automatically imports aerial photos into the pedestrian network
-        - Custom basemaps in workspace settings control every editor (Rapid, JOSM) the same way as AVIV ScoutRoute
-        - Raster basemap pixels become sidewalk or crossing features without manual mapping
-        - Any tile URL works regardless of authentication, CORS, or licensing
-        - Custom imagery by URL is available when only paste-in JSON is documented
 related_pages:
     - assistant/workspaces/workflow/create-workspace-from-tdei-dataset.md
     - assistant/workspaces/workflow/edit-accessibility-features-in-a-workspace.md

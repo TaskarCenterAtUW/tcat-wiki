@@ -31,7 +31,6 @@ assistant_behavior:
     allow_inference: false
     requires_citation: true
     abstain_if_missing_context: true
-    do_not_claim: []
 related_pages:
     - assistant/cross-platform/concept/what-are-the-risks-of-automated-accessibility-analysis.md
     - assistant/os-connect/concept/human-review.md

@@ -25,9 +25,6 @@ assistant_behavior:
     allow_inference: false
     requires_citation: true
     abstain_if_missing_context: false
-    do_not_claim:
-        - LivAbility scores prove that a place is accessible for every person.
-        - A point of interest is necessarily current, complete, or verified by TCAT.
 related_pages:
     - assistant/index.md
     - assistant/dispatch.md

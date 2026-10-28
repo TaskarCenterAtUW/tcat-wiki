@@ -31,9 +31,6 @@ assistant_behavior:
     allow_inference: false
     requires_citation: true
     abstain_if_missing_context: true
-    do_not_claim:
-        - A related tool is required for every user's question.
-        - Mentioning a related tool proves that it solves the user's problem.
 related_pages:
     - assistant/cross-platform/workflow/support-answer-patterns.md
     - assistant/accessmap/concept/accessmap.md

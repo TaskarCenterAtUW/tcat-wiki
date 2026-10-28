@@ -26,9 +26,6 @@ assistant_behavior:
     allow_inference: false
     requires_citation: true
     abstain_if_missing_context: true
-    do_not_claim:
-        - A high centrality value proves high real-world pedestrian use.
-        - A low centrality value proves that a location is unimportant to residents.
 related_pages:
     - assistant/os-connect/concept/connectivity-depends-on-geometry.md
     - assistant/os-connect/concept/qa-qc-report.md

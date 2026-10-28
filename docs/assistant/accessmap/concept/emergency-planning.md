@@ -24,9 +24,6 @@ assistant_behavior:
     allow_inference: false
     requires_citation: true
     abstain_if_missing_context: true
-    do_not_claim:
-        - AccessMap is an emergency dispatch or evacuation system.
-        - An AccessMap route guarantees safe passage during an emergency.
 related_pages:
     - assistant/accessmap/concept/operational-use.md
     - assistant/accessmap/concept/routing-limitations.md

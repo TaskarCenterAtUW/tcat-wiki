@@ -25,9 +25,6 @@ assistant_behavior:
     allow_inference: false
     requires_citation: true
     abstain_if_missing_context: true
-    do_not_claim:
-        - Every TDEI project dataset is publicly downloadable.
-        - A TDEI project dataset is visible to every project-group member regardless of that user's permissions.
 related_pages:
     - assistant/tdei/concept/released-dataset.md
     - assistant/tdei/concept/release-versioning.md

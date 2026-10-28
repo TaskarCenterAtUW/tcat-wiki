@@ -24,9 +24,6 @@ assistant_behavior:
     allow_inference: false
     requires_citation: true
     abstain_if_missing_context: true
-    do_not_claim:
-        - Missing accessibility data proves that a feature is inaccessible.
-        - AccessMap fills every missing accessibility value automatically.
 related_pages:
     - assistant/accessmap/concept/routing-limitations.md
     - assistant/accessmap/concept/accessibility-assumptions.md

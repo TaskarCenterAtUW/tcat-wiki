@@ -24,9 +24,6 @@ assistant_behavior:
     allow_inference: false
     requires_citation: true
     abstain_if_missing_context: true
-    do_not_claim:
-        - LivAbility uses the same mobility profiles or controls as AccessMap or Walksheds.
-        - Selecting a mobility profile proves that a location is accessible.
 related_pages:
     - assistant/livability/index.md
     - assistant/livability/concept/poi-source.md

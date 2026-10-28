@@ -25,9 +25,6 @@ assistant_behavior:
     allow_inference: false
     requires_citation: true
     abstain_if_missing_context: true
-    do_not_claim:
-        - OS-CONNECT measures transit on-time performance or service reliability by itself.
-        - Pedestrian connectivity proves transit demand or service quality.
 related_pages:
     - assistant/os-connect/concept/transit-accessibility-analysis.md
     - assistant/os-connect/concept/transit-pedestrian-integration.md

@@ -25,9 +25,6 @@ assistant_behavior:
     allow_inference: false
     requires_citation: true
     abstain_if_missing_context: true
-    do_not_claim:
-        - Known errors make every use of OS-CONNECT data invalid.
-        - A planning workaround automatically updates OS-CONNECT source data.
 related_pages:
     - assistant/os-connect/concept/qa-qc-report.md
     - assistant/os-connect/concept/correction-validation.md

@@ -26,8 +26,6 @@ assistant_behavior:
     allow_inference: false
     requires_citation: true
     abstain_if_missing_context: true
-    do_not_claim:
-        - Every regional derivative must contain exactly the same attributes as the baseline dataset.
 related_pages:
     - assistant/opensidewalks/index.md
     - assistant/tdei/concept/external-attribute-release.md

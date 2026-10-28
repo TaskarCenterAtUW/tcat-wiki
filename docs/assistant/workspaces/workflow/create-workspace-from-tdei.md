@@ -26,9 +26,6 @@ assistant_behavior:
     allow_inference: false
     requires_citation: true
     abstain_if_missing_context: true
-    do_not_claim:
-        - Creating a workspace from TDEI edits or publishes the source dataset.
-        - A newly created workspace is automatically synchronized with TDEI.
 related_pages:
     - assistant/workspaces/index.md
     - assistant/workspaces/concept/workspace-creation-mechanics.md

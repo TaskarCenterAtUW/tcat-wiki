@@ -25,9 +25,6 @@ assistant_behavior:
     allow_inference: false
     requires_citation: true
     abstain_if_missing_context: true
-    do_not_claim:
-        - AVIV ScoutRoute quest_query syntax is identical to every Overpass query feature.
-        - A query matches an element when its tags do not satisfy the query.
 related_pages:
     - quest-definition-element-targeting.md
     - ../workflow/update-quest-definition-in-workspace.md

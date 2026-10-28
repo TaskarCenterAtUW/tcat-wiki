@@ -26,10 +26,6 @@ assistant_behavior:
     allow_inference: false
     requires_citation: true
     abstain_if_missing_context: true
-    do_not_claim:
-        - Edge betweenness measures the number of observed trips using a segment.
-        - High edge betweenness proves that a segment is unsafe or inaccessible.
-        - High edge betweenness alone establishes a maintenance or investment priority.
 related_pages:
     - assistant/qa-qc/concept/node-betweenness-centrality.md
     - assistant/qa-qc/concept/edge-betweenness-centrality.md

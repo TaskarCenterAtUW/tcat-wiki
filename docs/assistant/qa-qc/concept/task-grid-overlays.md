@@ -26,8 +26,6 @@ assistant_behavior:
     allow_inference: false
     requires_citation: true
     abstain_if_missing_context: true
-    do_not_claim:
-        - QA/QC task cells are arbitrary map tiles unrelated to the analyzed intersections.
 related_pages: []
 tags:
     - Assistant

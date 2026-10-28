@@ -24,9 +24,6 @@ assistant_behavior:
     allow_inference: false
     requires_citation: true
     abstain_if_missing_context: true
-    do_not_claim:
-        - AccessMap plans or determines paratransit eligibility by itself.
-        - A pedestrian route result replaces paratransit operations or policy.
 related_pages:
     - assistant/accessmap/concept/transit-pedestrian-routing-integration.md
     - assistant/accessmap/concept/accessibility-needs.md

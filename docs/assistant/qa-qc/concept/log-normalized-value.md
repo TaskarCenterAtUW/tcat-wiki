@@ -23,8 +23,6 @@ assistant_behavior:
     allow_inference: false
     requires_citation: true
     abstain_if_missing_context: true
-    do_not_claim:
-        - A log-normalized value of 0.5 means half the original network importance.
 related_pages:
     - assistant/qa-qc/concept/normalized-value.md
     - assistant/qa-qc/concept/metric-boundaries.md

@@ -26,10 +26,6 @@ assistant_behavior:
     allow_inference: false
     requires_citation: true
     abstain_if_missing_context: true
-    do_not_claim:
-        - Team invitations grant workspace access or RBAC permissions.
-        - Team invitations are managed through the production Workspaces site.
-        - QR codes or invitation links automatically expire or can be revoked from the UI.
 related_pages:
     - assistant/workspaces/index.md
     - assistant/workspaces/concept/teams.md

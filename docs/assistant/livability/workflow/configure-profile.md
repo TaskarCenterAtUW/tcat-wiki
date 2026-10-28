@@ -27,10 +27,6 @@ assistant_behavior:
     allow_inference: false
     requires_citation: true
     abstain_if_missing_context: true
-    do_not_claim:
-        - LivAbility's preset values apply to every person represented by a profile name.
-        - Changing a LivAbility setting changes the underlying sidewalk data.
-        - A configured profile guarantees that a route is usable by a specific person.
 related_pages:
     - assistant/livability/index.md
     - assistant/livability/concept/mobility-profiles.md

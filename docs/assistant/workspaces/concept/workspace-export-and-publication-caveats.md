@@ -25,9 +25,6 @@ assistant_behavior:
     allow_inference: false
     requires_citation: true
     abstain_if_missing_context: true
-    do_not_claim:
-        - Exporting a workspace automatically makes the data public.
-        - Export success proves that the dataset is complete or approved.
 related_pages:
     - assistant/workspaces/index.md
     - assistant/workspaces/workflow/export-workspace-edits-to-tdei.md

@@ -29,8 +29,6 @@ assistant_behavior:
     allow_inference: false
     requires_citation: true
     abstain_if_missing_context: true
-    do_not_claim:
-        - Any map view is real-time without checking product documentation for latency.
 related_pages:
     - assistant/cross-platform/concept/assistant-abstention.md
     - assistant/cross-platform/workflow/update-jurisdiction-data.md

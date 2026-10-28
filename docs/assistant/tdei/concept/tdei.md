@@ -24,9 +24,6 @@ assistant_behavior:
     allow_inference: false
     requires_citation: true
     abstain_if_missing_context: true
-    do_not_claim:
-        - TDEI is the same product as OS-CONNECT or Workspaces.
-        - TDEI publication proves that transportation data is complete or current.
 related_pages: []
 tags:
     - Assistant

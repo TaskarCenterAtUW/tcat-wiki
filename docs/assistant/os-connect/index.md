@@ -27,9 +27,6 @@ assistant_behavior:
     allow_inference: false
     requires_citation: true
     abstain_if_missing_context: false
-    do_not_claim:
-        - OS-CONNECT data constitutes an official ADA compliance inventory.
-        - Completeness scores indicate regulatory compliance status.
 related_pages:
     - assistant/index.md
     - assistant/dispatch.md

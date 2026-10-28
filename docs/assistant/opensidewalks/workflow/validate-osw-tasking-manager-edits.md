@@ -28,9 +28,6 @@ assistant_behavior:
     allow_inference: false
     requires_citation: true
     abstain_if_missing_context: true
-    do_not_claim:
-        - A Tasking Manager task is well mapped because it has the expected tags alone.
-        - Validation guarantees complete or current pedestrian data.
 related_pages:
     - ../concept/tasking-manager-roles.md
     - ../concept/network-topology.md

@@ -23,8 +23,6 @@ assistant_behavior:
     allow_inference: false
     requires_citation: true
     abstain_if_missing_context: true
-    do_not_claim:
-        - Distinct colors alone make a QA/QC map accessible.
 related_pages: []
 tags:
     - Assistant

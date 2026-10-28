@@ -26,8 +26,6 @@ assistant_behavior:
     allow_inference: false
     requires_citation: true
     abstain_if_missing_context: false
-    do_not_claim:
-        - Workspaces serves only one type of user.
 related_pages:
     - assistant/cross-platform/index.md
     - assistant/cross-platform/concept/documentation-guide-types.md

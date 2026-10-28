@@ -24,9 +24,6 @@ assistant_behavior:
     allow_inference: false
     requires_citation: true
     abstain_if_missing_context: true
-    do_not_claim:
-        - Submitting AccessMap feedback immediately changes the underlying data.
-        - AccessMap feedback guarantees that a reported problem will be corrected.
 related_pages:
     - ../concept/feature-feedback.md
     - ../../../accessmap/user-manual/feedback.md

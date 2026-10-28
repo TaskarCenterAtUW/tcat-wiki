@@ -31,9 +31,6 @@ assistant_behavior:
     allow_inference: false
     requires_citation: true
     abstain_if_missing_context: true
-    do_not_claim:
-        - A planned capability is available in the current product.
-        - A roadmap item has a guaranteed delivery date.
 related_pages:
     - assistant/cross-platform/concept/documentation-guide-types.md
     - assistant/cross-platform/concept/knowledge-base-domain-review.md

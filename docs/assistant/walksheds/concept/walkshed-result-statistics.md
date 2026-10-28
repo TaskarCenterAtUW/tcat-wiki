@@ -24,8 +24,6 @@ assistant_behavior:
     allow_inference: false
     requires_citation: true
     abstain_if_missing_context: true
-    do_not_claim:
-        - Walkshed statistics are direct measurements of real-world accessibility.
 related_pages:
     - walkshed.md
     - ../workflow/generate-walkshed.md

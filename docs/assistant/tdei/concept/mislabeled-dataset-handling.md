@@ -25,9 +25,6 @@ assistant_behavior:
     allow_inference: false
     requires_citation: true
     abstain_if_missing_context: true
-    do_not_claim:
-        - A mislabeled download is safe to use without checking its contents.
-        - Reporting a mislabeled dataset immediately replaces the incorrect file.
 related_pages:
     - assistant/tdei/workflow/check-dataset-currency.md
     - assistant/tdei/concept/released-dataset.md

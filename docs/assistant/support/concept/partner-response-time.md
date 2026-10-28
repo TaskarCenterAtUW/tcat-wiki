@@ -31,9 +31,6 @@ assistant_behavior:
     allow_inference: false
     requires_citation: true
     abstain_if_missing_context: true
-    do_not_claim:
-        - External partners have a guaranteed response time without a published service commitment.
-        - A support request guarantees a correction or product change.
 related_pages:
     - assistant/support/workflow/handle-unknown-questions.md
     - assistant/support/workflow/communicate-uncertainty.md

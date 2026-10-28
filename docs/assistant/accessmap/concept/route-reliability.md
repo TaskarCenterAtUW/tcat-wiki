@@ -24,9 +24,6 @@ assistant_behavior:
     allow_inference: false
     requires_citation: true
     abstain_if_missing_context: true
-    do_not_claim:
-        - A route shown by AccessMap is reliably usable every time.
-        - Route reliability is determined by route length alone.
 related_pages:
     - assistant/accessmap/concept/routing-limitations.md
     - assistant/accessmap/concept/field-validation.md

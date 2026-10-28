@@ -25,8 +25,6 @@ assistant_behavior:
     allow_inference: false
     requires_citation: true
     abstain_if_missing_context: true
-    do_not_claim:
-        - Snapping interval survey points to a sidewalk automatically makes them useful for routing.
 related_pages: []
 tags:
     - Assistant

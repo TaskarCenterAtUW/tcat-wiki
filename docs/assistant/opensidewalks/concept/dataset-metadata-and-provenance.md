@@ -28,9 +28,6 @@ assistant_behavior:
     allow_inference: false
     requires_citation: true
     abstain_if_missing_context: true
-    do_not_claim:
-        - An OpenSidewalks dataset without a current timestamp is necessarily current.
-        - Dataset validation removes the need to inspect source and provenance metadata.
 related_pages:
     - opensidewalks-schema.md
     - regional-dataset-derivatives.md

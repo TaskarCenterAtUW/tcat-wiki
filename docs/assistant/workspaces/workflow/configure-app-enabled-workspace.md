@@ -25,8 +25,6 @@ assistant_behavior:
     allow_inference: false
     requires_citation: true
     abstain_if_missing_context: true
-    do_not_claim:
-        - Saving a quest definition alone makes a workspace available in AVIV ScoutRoute.
 related_pages: []
 tags:
     - Assistant

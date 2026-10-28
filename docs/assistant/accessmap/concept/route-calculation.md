@@ -24,9 +24,6 @@ assistant_behavior:
     allow_inference: false
     requires_citation: true
     abstain_if_missing_context: true
-    do_not_claim:
-        - AccessMap's estimated time is a guaranteed travel time.
-        - AccessMap route calculations prove that every mapped segment is usable now.
 related_pages:
     - mobility-profiles.md
     - profile-responsive-map.md

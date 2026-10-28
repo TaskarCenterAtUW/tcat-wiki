@@ -31,9 +31,6 @@ assistant_behavior:
     allow_inference: false
     requires_citation: true
     abstain_if_missing_context: true
-    do_not_claim:
-        - One contact handles every OpenSidewalks mapping question.
-        - Contacting support guarantees acceptance or publication of a mapping contribution.
 related_pages:
     - assistant/opensidewalks/index.md
     - assistant/os-connect/concept/opensidewalks-community-mapping-groups.md

@@ -25,9 +25,6 @@ assistant_behavior:
     allow_inference: false
     requires_citation: true
     abstain_if_missing_context: true
-    do_not_claim:
-        - One sidewalk-to-street tag is permanently correct for every dataset and consumer.
-        - A street-name tag creates a physical pedestrian connection.
 related_pages:
     - assistant/os-connect/concept/sidewalk-street-name-association.md
     - assistant/os-connect/concept/street-name-vs-is-sidepath-of-name.md

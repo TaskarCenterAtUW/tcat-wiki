@@ -27,9 +27,6 @@ assistant_behavior:
     allow_inference: false
     requires_citation: true
     abstain_if_missing_context: true
-    do_not_claim:
-        - Passing schema validation proves that a dataset is complete, current, or physically accessible.
-        - The validation library and TDEI job always have identical version and configuration behavior.
 related_pages:
     - opensidewalks-schema.md
     - dataset-metadata-and-provenance.md

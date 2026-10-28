@@ -24,9 +24,6 @@ assistant_behavior:
     allow_inference: false
     requires_citation: true
     abstain_if_missing_context: true
-    do_not_claim:
-        - OS-CONNECT has fully automated correction, review, and release workflows.
-        - Reporting an issue immediately changes the published dataset.
 related_pages:
     - assistant/os-connect/index.md
     - assistant/os-connect/concept/data-maintenance-challenges.md

@@ -24,9 +24,6 @@ assistant_behavior:
     allow_inference: false
     requires_citation: true
     abstain_if_missing_context: true
-    do_not_claim:
-        - An accessibility preference guarantees that a route is usable.
-        - A route selected with accessibility preferences is an ADA determination.
 related_pages:
     - assistant/accessmap/concept/mobility-profiles.md
     - assistant/accessmap/concept/routing-profiles.md

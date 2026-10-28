@@ -24,9 +24,6 @@ assistant_behavior:
     allow_inference: false
     requires_citation: true
     abstain_if_missing_context: true
-    do_not_claim:
-        - A planned AccessMap capability is available now.
-        - A roadmap item has a guaranteed delivery date or scope.
 related_pages:
     - assistant/accessmap/concept/accessmap.md
     - assistant/accessmap/concept/routing-limitations.md

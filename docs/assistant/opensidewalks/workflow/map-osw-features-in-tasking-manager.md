@@ -28,9 +28,6 @@ assistant_behavior:
     allow_inference: false
     requires_citation: true
     abstain_if_missing_context: true
-    do_not_claim:
-        - Mapping a task without validation produces a complete pedestrian network.
-        - Imagery is sufficient evidence for every pedestrian feature.
 related_pages:
     - ../concept/tasking-manager-roles.md
     - ../concept/mapping-imagery-limitations.md

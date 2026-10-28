@@ -23,8 +23,6 @@ assistant_behavior:
     allow_inference: false
     requires_citation: true
     abstain_if_missing_context: true
-    do_not_claim:
-        - A union automatically resolves conflicting features or provenance.
 related_pages:
     - job-processing.md
     - ../../../tdei/portal/user-manual/jobs/dataset-union.md

@@ -30,10 +30,6 @@ assistant_behavior:
     allow_inference: false
     requires_citation: true
     abstain_if_missing_context: true
-    do_not_claim:
-        - A Workspaces team is an access-control mechanism.
-        - Every per-workspace owner can export data to TDEI.
-        - A project group member can be removed from editing a workspace by changing only the workspace member list.
 related_pages:
     - assistant/workspaces/concept/roles.md
     - assistant/workspaces/concept/teams.md

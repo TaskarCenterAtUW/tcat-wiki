@@ -23,9 +23,6 @@ assistant_behavior:
     allow_inference: false
     requires_citation: true
     abstain_if_missing_context: true
-    do_not_claim:
-        - The dashboard displays every project group or dataset available in TDEI.
-        - Refreshing an API key leaves the previous key usable.
 related_pages: []
 tags:
     - Assistant

@@ -24,9 +24,6 @@ assistant_behavior:
     allow_inference: false
     requires_citation: true
     abstain_if_missing_context: true
-    do_not_claim:
-        - A station shown as inaccessible has no possible accessible path.
-        - A station not flagged as inaccessible is guaranteed to be accessible.
 related_pages:
     - assistant/accessmap/concept/transit-wayfinding.md
     - assistant/accessmap/concept/transit-pedestrian-routing-integration.md

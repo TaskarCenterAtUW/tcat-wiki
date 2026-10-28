@@ -22,9 +22,6 @@ assistant_behavior:
     allow_inference: false
     requires_citation: true
     abstain_if_missing_context: true
-    do_not_claim:
-        - The TDEI Portal allows anonymous users to upload every dataset type without an account or project-group permissions.
-        - This overview provides exact, versioned directions for every Portal workflow.
 related_pages:
     - assistant/tdei/workflow/download-os-connect-data.md
     - assistant/tdei/concept/portal-dashboard.md

@@ -29,8 +29,6 @@ assistant_behavior:
     allow_inference: false
     requires_citation: true
     abstain_if_missing_context: true
-    do_not_claim:
-        - A correction automatically propagates to every related dataset or product.
 related_pages:
     - assistant/os-connect/concept/correction-release-lag.md
     - assistant/os-connect/concept/issue-report-follow-up.md

@@ -25,9 +25,6 @@ assistant_behavior:
     allow_inference: false
     requires_citation: true
     abstain_if_missing_context: true
-    do_not_claim:
-        - A report map's color or tile boundary is self-explanatory without its legend and method.
-        - Close-zoom offsets between profile lines necessarily represent different underlying networks.
 related_pages:
     - assistant/qa-qc/concept/accessibility-island.md
     - assistant/qa-qc/concept/walkshed-profile-comparison.md

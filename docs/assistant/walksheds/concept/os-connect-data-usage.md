@@ -24,8 +24,6 @@ assistant_behavior:
     allow_inference: false
     requires_citation: true
     abstain_if_missing_context: true
-    do_not_claim:
-        - Every OS-CONNECT release or feature is available in every Walksheds workflow.
     related_pages:
         - assistant/walksheds/concept/external-dataset-joins.md
 tags:

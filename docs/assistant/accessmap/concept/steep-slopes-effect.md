@@ -25,9 +25,6 @@ assistant_behavior:
     allow_inference: false
     requires_citation: true
     abstain_if_missing_context: true
-    do_not_claim:
-        - A steep-slope result proves that a route is unusable.
-        - A lower-slope route is automatically safer or accessible.
 related_pages:
     - assistant/accessmap/concept/slope-routing.md
     - assistant/accessmap/concept/avoid-steep-slopes.md

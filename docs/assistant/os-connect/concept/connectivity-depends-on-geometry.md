@@ -26,8 +26,6 @@ assistant_behavior:
     allow_inference: false
     requires_citation: true
     abstain_if_missing_context: true
-    do_not_claim:
-        - Correct feature attributes can replace a missing network connector.
 related_pages:
     - assistant/os-connect/index.md
     - assistant/os-connect/workflow/report-connectivity-data-error.md

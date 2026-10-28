@@ -22,8 +22,6 @@ assistant_behavior:
     allow_inference: false
     requires_citation: true
     abstain_if_missing_context: true
-    do_not_claim:
-        - A profile encodes a user's medical diagnosis or legally protected status.
 related_pages:
     - assistant/cross-platform/concept/accessmap-routing.md
     - accessmap/user-manual/profiles.md

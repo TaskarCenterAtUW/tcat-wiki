@@ -24,9 +24,6 @@ assistant_behavior:
     allow_inference: false
     requires_citation: true
     abstain_if_missing_context: true
-    do_not_claim:
-        - Network redundancy guarantees that a route remains available.
-        - A redundant network is automatically accessible or resilient for every traveler.
 related_pages:
     - assistant/accessmap/concept/pedestrian-resilience.md
     - assistant/accessmap/concept/critical-pedestrian-corridors.md

@@ -27,9 +27,6 @@ assistant_behavior:
     allow_inference: false
     requires_citation: true
     abstain_if_missing_context: true
-    do_not_claim:
-        - Every OS-CONNECT dataset supports every QA/QC metric.
-        - A missing routing or points-of-interest result proves that the dataset is invalid.
 related_pages: []
 tags:
     - Assistant

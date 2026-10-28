@@ -24,9 +24,6 @@ assistant_behavior:
     allow_inference: false
     requires_citation: true
     abstain_if_missing_context: true
-    do_not_claim:
-        - AccessMap always knows about temporary barriers.
-        - A route without a mapped barrier is currently unobstructed.
 related_pages:
     - data-sources.md
     - feature-feedback.md

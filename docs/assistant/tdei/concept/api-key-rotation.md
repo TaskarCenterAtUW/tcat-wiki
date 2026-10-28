@@ -22,8 +22,6 @@ assistant_behavior:
     allow_inference: false
     requires_citation: true
     abstain_if_missing_context: true
-    do_not_claim:
-        - A regenerated TDEI API key leaves the previous key usable.
 related_pages: []
 tags:
     - Assistant

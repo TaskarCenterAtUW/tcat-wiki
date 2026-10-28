@@ -26,8 +26,6 @@ assistant_behavior:
     allow_inference: false
     requires_citation: true
     abstain_if_missing_context: true
-    do_not_claim:
-        - Every OSM-compatible editor supports every Workspaces feature.
 related_pages:
     - assistant/opensidewalks/index.md
     - assistant/workspaces/concept/workspace-as-private-osm.md

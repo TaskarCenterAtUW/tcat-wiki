@@ -25,9 +25,6 @@ assistant_behavior:
     allow_inference: false
     requires_citation: true
     abstain_if_missing_context: true
-    do_not_claim:
-        - Workspaces is intended only for GIS specialists.
-        - Every target user has the same permissions or responsibilities.
 related_pages:
     - assistant/workspaces/index.md
     - assistant/workspaces/concept/intended-audience.md

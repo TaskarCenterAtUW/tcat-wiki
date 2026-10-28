@@ -27,11 +27,6 @@ assistant_behavior:
     allow_inference: false
     requires_citation: true
     abstain_if_missing_context: true
-    do_not_claim:
-        - imported layers are automatically authoritative
-        - imported data is automatically published
-        - Workspaces automatically resolves conflicting sources
-        - all workspace edits must be made manually feature by feature
 related_pages:
     - private-osm
     - workspace-sandbox

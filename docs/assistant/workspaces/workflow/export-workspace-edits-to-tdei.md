@@ -25,9 +25,6 @@ assistant_behavior:
     allow_inference: false
     requires_citation: true
     abstain_if_missing_context: true
-    do_not_claim:
-        - Exporting workspace edits automatically publishes a public dataset.
-        - Export success proves that every edit is correct.
 related_pages:
     - assistant/workspaces/index.md
     - assistant/workspaces/concept/workspace-export-and-publication-caveats.md

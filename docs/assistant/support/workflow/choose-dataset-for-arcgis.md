@@ -32,9 +32,6 @@ assistant_behavior:
     allow_inference: false
     requires_citation: true
     abstain_if_missing_context: true
-    do_not_claim:
-        - The newest dataset is automatically the right dataset for every ArcGIS project.
-        - Successful import proves that the data are complete or authoritative.
 related_pages:
     - assistant/support/workflow/choose-dataset-for-planning.md
     - assistant/os-connect/concept/gis-software-compatibility.md

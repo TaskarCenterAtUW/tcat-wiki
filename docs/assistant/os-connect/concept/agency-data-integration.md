@@ -25,9 +25,6 @@ assistant_behavior:
     allow_inference: false
     requires_citation: true
     abstain_if_missing_context: true
-    do_not_claim:
-        - Providing agency data guarantees acceptance or publication.
-        - Agency data automatically replaces other sources or updates OpenStreetMap.
 related_pages:
     - assistant/os-connect/concept/bulk-correction-submission.md
     - assistant/os-connect/concept/community-data-usability.md

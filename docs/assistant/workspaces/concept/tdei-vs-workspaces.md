@@ -24,9 +24,6 @@ assistant_behavior:
     allow_inference: false
     requires_citation: true
     abstain_if_missing_context: true
-    do_not_claim:
-        - TDEI and Workspaces are interchangeable names for one interface.
-        - Editing in Workspaces automatically releases data through TDEI.
 related_pages:
     - assistant/workspaces/index.md
     - assistant/workspaces/concept/tdei-ecosystem-fit.md

@@ -25,9 +25,6 @@ assistant_behavior:
     allow_inference: false
     requires_citation: true
     abstain_if_missing_context: true
-    do_not_claim:
-        - Submitting a report guarantees that the released dataset will change.
-        - A submitted report immediately updates every related dataset or product.
 related_pages:
     - assistant/os-connect/workflow/report-data-error.md
     - assistant/os-connect/concept/issue-report-reviewers.md

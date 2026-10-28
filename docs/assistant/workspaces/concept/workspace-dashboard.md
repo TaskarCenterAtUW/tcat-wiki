@@ -26,10 +26,6 @@ assistant_behavior:
     allow_inference: false
     requires_citation: true
     abstain_if_missing_context: true
-    do_not_claim:
-        - The workspace dashboard is the dataset editor itself.
-        - Dashboard metadata proves that the data is current or published.
-        - Workspace pins are shared project-group settings.
 related_pages:
     - assistant/workspaces/index.md
     - assistant/workspaces/concept/workspace-metadata.md

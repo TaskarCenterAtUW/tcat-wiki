@@ -24,8 +24,6 @@ assistant_behavior:
     allow_inference: false
     requires_citation: true
     abstain_if_missing_context: true
-    do_not_claim:
-        - Walksheds can create missing network geometry or report source-data issues directly.
 related_pages: []
 tags:
     - Assistant

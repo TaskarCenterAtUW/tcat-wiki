@@ -26,10 +26,6 @@ assistant_behavior:
     allow_inference: false
     requires_citation: true
     abstain_if_missing_context: true
-    do_not_claim:
-        - Node betweenness centrality proves the real-world condition of an intersection or segment.
-        - A high node betweenness centrality value by itself determines a maintenance or investment priority.
-        - Node betweenness centrality measures observed trips or travel demand.
 related_pages:
     - assistant/qa-qc/concept/node-betweenness-centrality.md
     - assistant/qa-qc/concept/edge-betweenness-centrality.md

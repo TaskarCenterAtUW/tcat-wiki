@@ -25,9 +25,6 @@ assistant_behavior:
     allow_inference: false
     requires_citation: true
     abstain_if_missing_context: true
-    do_not_claim:
-        - One prioritization metric provides a complete investment ranking.
-        - A model score automatically determines an agency's funding decision.
 related_pages:
     - assistant/accessmap/concept/accessibility-mobility-metrics.md
     - assistant/accessmap/concept/critical-pedestrian-corridors.md

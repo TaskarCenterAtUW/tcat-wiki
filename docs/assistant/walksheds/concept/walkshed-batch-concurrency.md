@@ -24,8 +24,6 @@ assistant_behavior:
     allow_inference: false
     requires_citation: true
     abstain_if_missing_context: true
-    do_not_claim:
-        - Every row in a Walksheds batch succeeds merely because processing started.
 related_pages:
     - walkshed-batch-input.md
     - walkshed-batch-output.md

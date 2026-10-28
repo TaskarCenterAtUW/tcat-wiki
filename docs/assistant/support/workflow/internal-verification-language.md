@@ -31,9 +31,6 @@ assistant_behavior:
     allow_inference: false
     requires_citation: true
     abstain_if_missing_context: true
-    do_not_claim:
-        - Internal verification is unnecessary when an answer sounds plausible.
-        - Staff should hide uncertainty while verification is pending.
 related_pages:
     - assistant/support/workflow/communicate-uncertainty.md
     - assistant/cross-platform/concept/assistant-abstention.md

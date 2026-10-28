@@ -26,9 +26,6 @@ assistant_behavior:
     allow_inference: false
     requires_citation: true
     abstain_if_missing_context: true
-    do_not_claim:
-        - Successful ArcGIS import proves that the dataset is complete or authoritative.
-        - Every OSW or OS-CONNECT file imports identically in every ArcGIS version.
 related_pages:
     - assistant/support/workflow/choose-dataset-for-arcgis.md
     - assistant/os-connect/concept/gis-software-compatibility.md

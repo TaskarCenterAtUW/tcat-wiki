@@ -24,9 +24,6 @@ assistant_behavior:
     allow_inference: false
     requires_citation: true
     abstain_if_missing_context: true
-    do_not_claim:
-        - Avoiding steep slopes guarantees a route is comfortable or usable.
-        - The setting uses a universally correct slope threshold.
 related_pages:
     - assistant/accessmap/concept/slope-routing.md
     - assistant/accessmap/concept/steep-slopes-effect.md

@@ -24,9 +24,6 @@ assistant_behavior:
     allow_inference: false
     requires_citation: true
     abstain_if_missing_context: true
-    do_not_claim:
-        - A feature count alone describes the operational extent of a pedestrian network.
-        - A higher total walkshed length guarantees higher crossing or curb counts.
 related_pages:
     - assistant/qa-qc/concept/report-data-sources.md
     - assistant/qa-qc/concept/walkshed-profile-comparison.md

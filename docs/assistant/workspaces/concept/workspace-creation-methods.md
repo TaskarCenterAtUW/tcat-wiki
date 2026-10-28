@@ -26,10 +26,6 @@ assistant_behavior:
     allow_inference: false
     requires_citation: true
     abstain_if_missing_context: true
-    do_not_claim:
-        - Every workspace creation method produces the same source and metadata.
-        - Creating a workspace automatically publishes its data.
-        - A title-availability check prevents users from creating duplicate workspace titles.
 related_pages:
     - assistant/workspaces/index.md
     - assistant/workspaces/workflow/create-workspace.md

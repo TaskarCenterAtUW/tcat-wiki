@@ -26,8 +26,6 @@ assistant_behavior:
     allow_inference: false
     requires_citation: true
     abstain_if_missing_context: true
-    do_not_claim:
-        - Searching TDEI by a place name selects the correct dataset automatically.
 related_pages: []
 tags:
     - Assistant

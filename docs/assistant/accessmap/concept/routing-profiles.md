@@ -24,9 +24,6 @@ assistant_behavior:
     allow_inference: false
     requires_citation: true
     abstain_if_missing_context: true
-    do_not_claim:
-        - A routing profile guarantees that a route is accessible for every user.
-        - The available profiles are identical across every AccessMap version.
 related_pages:
     - assistant/accessmap/concept/mobility-profiles.md
     - assistant/accessmap/concept/accessibility-preference-routing.md

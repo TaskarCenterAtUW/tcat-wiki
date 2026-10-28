@@ -24,9 +24,6 @@ assistant_behavior:
     allow_inference: false
     requires_citation: true
     abstain_if_missing_context: true
-    do_not_claim:
-        - AccessMap alone determines which pedestrian investment should be funded.
-        - A route or metric proves a legal obligation or universal priority.
 related_pages:
     - assistant/accessmap/concept/prioritization-metrics.md
     - assistant/accessmap/concept/critical-pedestrian-corridors.md

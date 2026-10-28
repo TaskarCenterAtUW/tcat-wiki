@@ -24,9 +24,6 @@ assistant_behavior:
     allow_inference: false
     requires_citation: true
     abstain_if_missing_context: true
-    do_not_claim:
-        - A disconnected sidewalk on the map proves that walking is impossible.
-        - A disconnected map segment is definitely a data error without verification.
 related_pages:
     - assistant/os-connect/concept/sidewalk-disconnection-causes.md
     - assistant/accessmap/concept/routing-limitations.md

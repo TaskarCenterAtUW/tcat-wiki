@@ -27,9 +27,6 @@ assistant_behavior:
     allow_inference: false
     requires_citation: true
     abstain_if_missing_context: true
-    do_not_claim:
-        - A field mapping example is universal for every source sidewalk dataset.
-        - Reprojection and tagging alone prove that the resulting dataset is valid.
 related_pages:
     - ../concept/opensidewalks-schema.md
     - ../concept/coordinate-system-and-serialization.md

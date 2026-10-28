@@ -23,8 +23,6 @@ assistant_behavior:
     allow_inference: false
     requires_citation: true
     abstain_if_missing_context: true
-    do_not_claim:
-        - Building a Walksheds router changes the source dataset.
 related_pages: []
 tags:
     - Assistant

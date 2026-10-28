@@ -25,9 +25,6 @@ assistant_behavior:
     allow_inference: false
     requires_citation: true
     abstain_if_missing_context: true
-    do_not_claim:
-        - Participation by a local mapping group automatically creates a formal partnership.
-        - Community-group data are automatically authoritative for agency use.
 related_pages:
     - assistant/os-connect/concept/participatory-mapping.md
     - assistant/os-connect/concept/mapper-training-materials.md

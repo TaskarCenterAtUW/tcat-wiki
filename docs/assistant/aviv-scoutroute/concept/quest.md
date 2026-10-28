@@ -25,9 +25,6 @@ assistant_behavior:
     allow_inference: false
     requires_citation: true
     abstain_if_missing_context: true
-    do_not_claim:
-        - Every AVIV ScoutRoute quest is available in every workspace.
-        - A quest is unrestricted editing of the entire dataset.
 related_pages:
     - ../index.md
     - quest-contributions.md

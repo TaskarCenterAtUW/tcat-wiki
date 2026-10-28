@@ -26,7 +26,6 @@ assistant_behavior:
     allow_inference: false
     requires_citation: true
     abstain_if_missing_context: true
-    do_not_claim: []
 related_pages:
     - assistant/workspaces/workflow/use-workspaces-for-community-validation.md
     - assistant/workspaces/concept/collaborative-editing-support.md

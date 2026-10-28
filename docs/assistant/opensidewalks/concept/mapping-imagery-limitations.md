@@ -27,9 +27,6 @@ assistant_behavior:
     allow_inference: false
     requires_citation: true
     abstain_if_missing_context: true
-    do_not_claim:
-        - Aerial imagery always shows current pedestrian conditions.
-        - A feature should be added when imagery does not provide enough evidence.
 related_pages:
     - ../workflow/map-osw-features-in-tasking-manager.md
     - ../workflow/validate-osw-tasking-manager-edits.md

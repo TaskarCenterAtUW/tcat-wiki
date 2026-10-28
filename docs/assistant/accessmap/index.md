@@ -26,9 +26,6 @@ assistant_behavior:
     allow_inference: false
     requires_citation: true
     abstain_if_missing_context: false
-    do_not_claim:
-        - AccessMap routes are guaranteed to be barrier-free for all users.
-        - AccessMap constitutes an official accessibility audit of any route.
 related_pages:
     - assistant/index.md
     - assistant/dispatch.md

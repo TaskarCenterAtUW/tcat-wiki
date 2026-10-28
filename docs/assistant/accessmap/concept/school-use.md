@@ -24,9 +24,6 @@ assistant_behavior:
     allow_inference: false
     requires_citation: true
     abstain_if_missing_context: true
-    do_not_claim:
-        - AccessMap determines that a school route is safe for every student.
-        - An AccessMap result replaces school travel planning or family engagement.
 related_pages:
     - assistant/accessmap/concept/public-engagement.md
     - assistant/accessmap/concept/operational-use.md

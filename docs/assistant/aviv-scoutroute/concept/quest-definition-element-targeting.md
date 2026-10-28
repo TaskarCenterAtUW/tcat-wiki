@@ -24,8 +24,6 @@ assistant_behavior:
     allow_inference: false
     requires_citation: true
     abstain_if_missing_context: true
-    do_not_claim:
-        - A quest definition targets a feature without a valid matching element query.
 related_pages:
     - assistant/aviv-scoutroute/index.md
     - assistant/aviv-scoutroute/concept/quest-definition-application.md

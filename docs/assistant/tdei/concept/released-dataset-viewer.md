@@ -27,8 +27,6 @@ assistant_behavior:
     allow_inference: false
     requires_citation: true
     abstain_if_missing_context: true
-    do_not_claim:
-        - The released-dataset viewer exposes unreleased or private project-group data.
 related_pages: []
 tags:
     - Assistant

@@ -25,8 +25,6 @@ assistant_behavior:
     allow_inference: false
     requires_citation: true
     abstain_if_missing_context: true
-    do_not_claim:
-        - Editing a quest definition changes an app without saving and refreshing the workspace configuration.
 related_pages:
     - assistant/aviv-scoutroute/index.md
     - assistant/aviv-scoutroute/concept/quest-definition-application.md

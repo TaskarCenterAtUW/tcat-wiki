@@ -26,9 +26,6 @@ assistant_behavior:
     allow_inference: false
     requires_citation: true
     abstain_if_missing_context: true
-    do_not_claim:
-        - A viewer user can edit or publish every workspace.
-        - An editor user has authority to approve every change.
 related_pages:
     - assistant/workspaces/index.md
     - assistant/workspaces/concept/roles.md

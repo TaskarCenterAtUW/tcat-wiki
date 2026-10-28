@@ -26,9 +26,6 @@ assistant_behavior:
     allow_inference: false
     requires_citation: true
     abstain_if_missing_context: true
-    do_not_claim:
-        - Rapid is a full GIS replacement for every editing task.
-        - A Rapid edit is automatically reviewed or published.
 related_pages:
     - assistant/workspaces/index.md
     - assistant/rapid/concept/rapid.md

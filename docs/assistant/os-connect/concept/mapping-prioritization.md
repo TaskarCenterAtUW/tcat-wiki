@@ -25,9 +25,6 @@ assistant_behavior:
     allow_inference: false
     requires_citation: true
     abstain_if_missing_context: true
-    do_not_claim:
-        - An unmapped area lacks pedestrian infrastructure.
-        - A priority list proves that other areas are safe or complete.
 related_pages:
     - assistant/os-connect/concept/community-gap-identification.md
     - assistant/os-connect/concept/accessibility-equity.md

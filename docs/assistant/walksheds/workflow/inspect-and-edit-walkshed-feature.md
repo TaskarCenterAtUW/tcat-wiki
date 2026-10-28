@@ -25,8 +25,6 @@ assistant_behavior:
     allow_inference: false
     requires_citation: true
     abstain_if_missing_context: true
-    do_not_claim:
-        - A Walksheds feature edit automatically changes the source TDEI dataset.
 related_pages:
     - ../concept/walkshed-edit-limitations.md
     - ../concept/walkshed-edit-history.md

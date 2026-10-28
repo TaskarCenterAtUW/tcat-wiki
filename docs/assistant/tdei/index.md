@@ -26,10 +26,6 @@ assistant_behavior:
     allow_inference: false
     requires_citation: true
     abstain_if_missing_context: false
-    do_not_claim:
-        - TDEI and OS-CONNECT are the same platform.
-        - The public released-dataset listings expose unreleased or private project-group datasets.
-        - Accessing project datasets under **My Project Datasets** makes them public.
 related_pages:
     - assistant/index.md
     - assistant/dispatch.md

@@ -27,9 +27,6 @@ assistant_behavior:
     allow_inference: false
     requires_citation: true
     abstain_if_missing_context: true
-    do_not_claim:
-        - A school-centered walkshed represents the access experience of every person or mobility profile.
-        - A modeled school walkshed proves that every reachable route is safe or accessible in the real world.
 related_pages:
     - assistant/walksheds/index.md
     - assistant/walksheds/concept/accessibility-profiles.md

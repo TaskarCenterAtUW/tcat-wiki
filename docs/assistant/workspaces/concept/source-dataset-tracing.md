@@ -26,9 +26,6 @@ assistant_behavior:
     allow_inference: false
     requires_citation: true
     abstain_if_missing_context: true
-    do_not_claim:
-        - A workspace's source dataset can always be inferred from its title.
-        - Workspace edits automatically update the source dataset.
 related_pages:
     - assistant/workspaces/index.md
     - assistant/workspaces/concept/dataset-lineage.md

@@ -23,8 +23,6 @@ assistant_behavior:
     allow_inference: false
     requires_citation: true
     abstain_if_missing_context: true
-    do_not_claim:
-        - A high z-score proves that a location is unsafe or deficient.
 related_pages:
     - assistant/qa-qc/concept/bottleneck-hotspots.md
     - assistant/qa-qc/concept/metric-boundaries.md

@@ -25,9 +25,6 @@ assistant_behavior:
     allow_inference: false
     requires_citation: true
     abstain_if_missing_context: true
-    do_not_claim:
-        - Workspaces changesets are published to the public OpenStreetMap database.
-        - Changeset metadata is sufficient to determine the legal authority of an edit.
 related_pages:
     - assistant/workspaces/index.md
     - assistant/workspaces/how-are-changesets-tracked.md

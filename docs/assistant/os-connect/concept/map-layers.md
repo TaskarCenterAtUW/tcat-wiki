@@ -24,8 +24,6 @@ assistant_behavior:
     allow_inference: false
     requires_citation: true
     abstain_if_missing_context: true
-    do_not_claim:
-        - Turning off a viewer layer changes the underlying dataset.
 related_pages:
     - assistant/os-connect/index.md
     - assistant/os-connect/concept/viewer-overview.md

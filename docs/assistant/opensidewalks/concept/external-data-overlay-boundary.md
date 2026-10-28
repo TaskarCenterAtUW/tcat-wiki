@@ -25,8 +25,6 @@ assistant_behavior:
     allow_inference: false
     requires_citation: true
     abstain_if_missing_context: true
-    do_not_claim:
-        - Viewing external data as an overlay validates it or adds it to the official dataset.
 related_pages:
     - assistant/opensidewalks/index.md
     - assistant/workspaces/workflow/import-external-geojson-for-reference.md

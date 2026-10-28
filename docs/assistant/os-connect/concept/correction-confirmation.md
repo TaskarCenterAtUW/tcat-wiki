@@ -25,8 +25,6 @@ assistant_behavior:
     allow_inference: false
     requires_citation: true
     abstain_if_missing_context: true
-    do_not_claim:
-        - A submitted report or acknowledgement of one proves that a correction was incorporated.
 related_pages:
     - assistant/os-connect/concept/correction-tracking.md
 tags:

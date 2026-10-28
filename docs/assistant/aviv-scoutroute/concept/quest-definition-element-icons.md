@@ -24,8 +24,6 @@ assistant_behavior:
     allow_inference: false
     requires_citation: true
     abstain_if_missing_context: true
-    do_not_claim:
-        - Any arbitrary string in element_type_icon displays a matching custom icon in the app.
 related_pages:
     - quest-definition-element-targeting.md
     - ../workflow/update-quest-definition-in-workspace.md

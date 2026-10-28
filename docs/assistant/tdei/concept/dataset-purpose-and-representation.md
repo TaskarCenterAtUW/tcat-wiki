@@ -24,8 +24,6 @@ assistant_behavior:
     allow_inference: false
     requires_citation: true
     abstain_if_missing_context: true
-    do_not_claim:
-        - One dataset must serve every routing, inventory, analysis, and maintenance use case.
 related_pages: []
 tags:
     - Assistant

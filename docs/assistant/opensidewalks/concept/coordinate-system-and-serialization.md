@@ -24,9 +24,6 @@ assistant_behavior:
     allow_inference: false
     requires_citation: true
     abstain_if_missing_context: true
-    do_not_claim:
-        - OpenSidewalks coordinates can be interpreted in any coordinate reference system without conversion.
-        - Removing a GeoJSON crs member makes any source coordinates WGS-84.
 related_pages:
     - opensidewalks-schema.md
     - ../workflow/convert-sidewalk-centerlines-to-osw.md

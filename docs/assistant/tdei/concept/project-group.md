@@ -24,8 +24,6 @@ assistant_behavior:
     allow_inference: false
     requires_citation: true
     abstain_if_missing_context: true
-    do_not_claim:
-        - Belonging to one TDEI project group grants access to every project group.
 related_pages: []
 tags:
     - Assistant

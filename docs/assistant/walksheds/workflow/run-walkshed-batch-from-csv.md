@@ -24,8 +24,6 @@ assistant_behavior:
     allow_inference: false
     requires_citation: true
     abstain_if_missing_context: true
-    do_not_claim:
-        - A batch run guarantees that every CSV row produces a valid scenario.
 related_pages:
     - ../concept/walkshed-batch-input.md
     - ../concept/walkshed-batch-output.md

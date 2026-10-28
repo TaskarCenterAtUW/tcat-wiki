@@ -25,8 +25,6 @@ assistant_behavior:
     allow_inference: false
     requires_citation: true
     abstain_if_missing_context: true
-    do_not_claim:
-        - A QA/QC report describes data without identifying its dataset context.
 related_pages: []
 tags:
     - Assistant

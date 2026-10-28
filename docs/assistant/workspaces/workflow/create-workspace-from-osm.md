@@ -26,8 +26,6 @@ assistant_behavior:
     allow_inference: false
     requires_citation: true
     abstain_if_missing_context: true
-    do_not_claim:
-        - Importing OSM data into a workspace changes the public OSM database.
 related_pages: []
 tags:
     - Assistant

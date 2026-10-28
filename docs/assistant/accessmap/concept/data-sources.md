@@ -24,9 +24,6 @@ assistant_behavior:
     allow_inference: false
     requires_citation: true
     abstain_if_missing_context: true
-    do_not_claim:
-        - AccessMap has complete pedestrian network data everywhere.
-        - A feature missing from AccessMap is absent from the real world.
 related_pages:
     - ../index.md
     - ../../os-connect/index.md

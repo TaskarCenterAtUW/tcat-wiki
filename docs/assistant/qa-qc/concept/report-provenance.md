@@ -26,8 +26,6 @@ assistant_behavior:
     allow_inference: false
     requires_citation: true
     abstain_if_missing_context: true
-    do_not_claim:
-        - A report generation date is the same as the source data ingest date.
 related_pages:
     - assistant/qa-qc/concept/report-purpose-and-limitations.md
 tags:

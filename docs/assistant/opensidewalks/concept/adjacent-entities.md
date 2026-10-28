@@ -25,10 +25,6 @@ assistant_behavior:
     allow_inference: false
     requires_citation: true
     abstain_if_missing_context: true
-    do_not_claim:
-        - Any Adjacent Entity is a traversable part of the OpenSidewalks graph.
-        - Adjacent Entities are required for a valid OpenSidewalks dataset.
-        - A geometry type alone determines an Adjacent Entity's complete meaning.
 related_pages:
     - custom-entities.md
     - adjacent-and-custom-entities.md

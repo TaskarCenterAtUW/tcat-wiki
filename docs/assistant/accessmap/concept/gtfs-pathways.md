@@ -27,10 +27,6 @@ assistant_behavior:
     allow_inference: false
     requires_citation: true
     abstain_if_missing_context: true
-    do_not_claim:
-        - GTFS Pathways is a complete sidewalk inventory outside transit facilities.
-        - A GTFS feed contains station pathways unless its published files and records show them.
-        - Wheelchair accessibility information in GTFS guarantees current physical accessibility.
 related_pages:
     - assistant/accessmap/index.md
     - assistant/support/concept/os-connect-vs-gtfs-pathways.md

@@ -25,9 +25,6 @@ assistant_behavior:
     allow_inference: false
     requires_citation: true
     abstain_if_missing_context: true
-    do_not_claim:
-        - Any single training resource prepares every mapper for every project.
-        - Training completion proves that mapped data are accurate.
 related_pages:
     - assistant/os-connect/concept/opensidewalks-community-mapping-groups.md
     - assistant/os-connect/concept/separated-sidewalk-mapping.md

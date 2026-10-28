@@ -25,10 +25,6 @@ assistant_behavior:
     allow_inference: false
     requires_citation: true
     abstain_if_missing_context: true
-    do_not_claim:
-        - QA/QC walkshed profiles represent every pedestrian or wheelchair user's needs.
-        - A 600-cost budget represents exactly ten minutes of travel for every profile.
-        - A street-avoidance value guarantees a particular increase in walkshed size.
 related_pages:
     - assistant/qa-qc/concept/walkshed-profile-comparison.md
     - assistant/qa-qc/concept/report-purpose-and-limitations.md

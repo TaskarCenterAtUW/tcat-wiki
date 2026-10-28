@@ -25,9 +25,6 @@ assistant_behavior:
     allow_inference: false
     requires_citation: true
     abstain_if_missing_context: true
-    do_not_claim:
-        - An OS-CONNECT gap automatically identifies a capital project.
-        - An OS-CONNECT map replaces engineering or community review.
 related_pages:
     - assistant/os-connect/concept/mapping-prioritization.md
     - assistant/os-connect/concept/planning-with-known-errors.md

@@ -24,9 +24,6 @@ assistant_behavior:
     allow_inference: false
     requires_citation: true
     abstain_if_missing_context: true
-    do_not_claim:
-        - AccessMap determines ADA compliance.
-        - An AccessMap route or score replaces a qualified ADA review.
 related_pages:
     - assistant/cross-platform/concept/ada-compliance-boundaries.md
     - assistant/accessmap/concept/routing-limitations.md

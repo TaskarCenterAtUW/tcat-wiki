@@ -25,8 +25,6 @@ assistant_behavior:
     allow_inference: false
     requires_citation: true
     abstain_if_missing_context: true
-    do_not_claim:
-        - A 100 percent attribute-completeness value proves attribute accuracy.
 related_pages: []
 tags:
     - Assistant

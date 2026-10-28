@@ -25,9 +25,6 @@ assistant_behavior:
     allow_inference: false
     requires_citation: true
     abstain_if_missing_context: true
-    do_not_claim:
-        - A street name alone guarantees clear or correct walking directions.
-        - A named pedestrian path is necessarily connected or accessible.
 related_pages:
     - assistant/os-connect/concept/sidewalk-street-name-association.md
     - assistant/os-connect/concept/street-name-tags-for-routing.md

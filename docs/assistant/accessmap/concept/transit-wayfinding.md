@@ -24,9 +24,6 @@ assistant_behavior:
     allow_inference: false
     requires_citation: true
     abstain_if_missing_context: true
-    do_not_claim:
-        - AccessMap replaces transit-agency wayfinding or station information.
-        - An accessible route guarantees that all transit transfer conditions are usable.
 related_pages:
     - assistant/accessmap/concept/transit-pedestrian-routing-integration.md
     - assistant/accessmap/concept/inaccessible-transit-stations.md

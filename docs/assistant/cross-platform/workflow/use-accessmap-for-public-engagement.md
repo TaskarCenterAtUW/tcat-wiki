@@ -25,8 +25,6 @@ assistant_behavior:
     allow_inference: true
     requires_citation: true
     abstain_if_missing_context: false
-    do_not_claim:
-        - Live demos prove future infrastructure performance.
 related_pages:
     - assistant/accessmap/what-is-accessmap.md
     - accessmap/user-manual/route-planning.md

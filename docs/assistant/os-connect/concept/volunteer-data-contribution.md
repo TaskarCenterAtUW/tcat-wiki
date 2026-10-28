@@ -25,9 +25,6 @@ assistant_behavior:
     allow_inference: false
     requires_citation: true
     abstain_if_missing_context: true
-    do_not_claim:
-        - Volunteer contributions are automatically authoritative for agency use.
-        - Volunteer data are accepted into a released dataset without review.
 related_pages:
     - assistant/os-connect/concept/community-data-usability.md
     - assistant/os-connect/concept/community-validation-role.md

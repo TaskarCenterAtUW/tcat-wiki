@@ -26,8 +26,6 @@ assistant_behavior:
     allow_inference: false
     requires_citation: true
     abstain_if_missing_context: true
-    do_not_claim:
-        - TCAT is currently running a FleXR user study.
 related_pages:
     - assistant/flexr/index.md
     - assistant/flexr/concept/what-is-flexr.md

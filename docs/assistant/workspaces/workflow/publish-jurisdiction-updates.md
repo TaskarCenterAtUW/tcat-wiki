@@ -26,9 +26,6 @@ assistant_behavior:
     allow_inference: false
     requires_citation: true
     abstain_if_missing_context: true
-    do_not_claim:
-        - Publishing a jurisdiction update automatically makes every workspace edit authoritative.
-        - An exported dataset is automatically current for every jurisdictional decision.
 related_pages:
     - assistant/workspaces/index.md
     - assistant/workspaces/workflow/export-workspace-edits-to-tdei.md

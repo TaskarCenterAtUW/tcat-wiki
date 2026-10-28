@@ -24,9 +24,6 @@ assistant_behavior:
     allow_inference: false
     requires_citation: true
     abstain_if_missing_context: true
-    do_not_claim:
-        - AccessMap fully represents hospital or medical-campus access.
-        - An AccessMap route guarantees access to medical services.
 related_pages:
     - assistant/accessmap/concept/campus-accessibility.md
     - assistant/accessmap/concept/accessibility-needs.md

@@ -26,9 +26,6 @@ assistant_behavior:
     allow_inference: false
     requires_citation: true
     abstain_if_missing_context: true
-    do_not_claim:
-        - Street-name tags guarantee identical walking instructions in every trip planner.
-        - A street name proves that a pedestrian path is connected or accessible.
 related_pages:
     - assistant/os-connect/concept/sidewalk-street-name-association.md
     - assistant/os-connect/concept/recommended-sidewalk-tagging-pattern.md

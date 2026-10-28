@@ -28,8 +28,6 @@ assistant_behavior:
     allow_inference: false
     requires_citation: true
     abstain_if_missing_context: true
-    do_not_claim:
-        - Installing AVIV ScoutRoute automatically provides a local workspace to edit.
 related_pages: []
 tags:
     - Assistant

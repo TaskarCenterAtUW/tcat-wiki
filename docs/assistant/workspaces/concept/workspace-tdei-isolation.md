@@ -26,9 +26,6 @@ assistant_behavior:
     allow_inference: false
     requires_citation: true
     abstain_if_missing_context: true
-    do_not_claim:
-        - Editing a workspace automatically changes the TDEI source dataset.
-        - A workspace edit is public immediately.
 related_pages:
     - assistant/workspaces/index.md
     - assistant/workspaces/concept/workspace-and-tdei-boundary.md

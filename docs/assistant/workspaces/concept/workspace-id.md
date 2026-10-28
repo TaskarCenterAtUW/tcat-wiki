@@ -26,9 +26,6 @@ assistant_behavior:
     allow_inference: false
     requires_citation: true
     abstain_if_missing_context: true
-    do_not_claim:
-        - A workspace ID identifies a dataset version independently of its environment.
-        - Knowing a workspace ID grants access to the workspace.
 related_pages:
     - assistant/workspaces/index.md
     - assistant/workspaces/concept/workspace-dashboard.md

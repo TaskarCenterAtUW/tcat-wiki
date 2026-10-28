@@ -30,9 +30,6 @@ assistant_behavior:
     allow_inference: false
     requires_citation: true
     abstain_if_missing_context: true
-    do_not_claim:
-        - A single public contact handles every OS-CONNECT question.
-        - A support contact can guarantee a data correction or release date.
 related_pages:
     - assistant/os-connect/index.md
     - assistant/os-connect/workflow/report-data-error.md

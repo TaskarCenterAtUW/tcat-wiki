@@ -27,8 +27,6 @@ assistant_behavior:
     allow_inference: true
     requires_citation: false
     abstain_if_missing_context: false
-    do_not_claim:
-        - OS-CONNECT always contains up-to-date data reflecting recent changes on the ground.
 related_pages:
     - assistant/os-connect/index.md
     - assistant/walksheds/concept/bus-stop-access-analysis.md

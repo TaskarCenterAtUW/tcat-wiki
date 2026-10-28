@@ -25,8 +25,6 @@ assistant_behavior:
     allow_inference: false
     requires_citation: true
     abstain_if_missing_context: true
-    do_not_claim:
-        - A QA/QC hotspot is confirmed to be a real-world defect without field verification.
 related_pages: []
 tags:
     - Assistant

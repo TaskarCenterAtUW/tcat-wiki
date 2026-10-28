@@ -28,9 +28,6 @@ assistant_behavior:
     allow_inference: false
     requires_citation: true
     abstain_if_missing_context: true
-    do_not_claim:
-        - Changing the name of an existing TDEI Portal referral code changes the referral code itself.
-        - Changing the name of an existing TDEI Portal referral code invalidates its invite URL or QR code.
 related_pages:
     - assistant/workspaces/concept/project-group-referral-access.md
 tags:

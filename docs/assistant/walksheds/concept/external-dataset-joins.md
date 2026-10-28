@@ -25,8 +25,6 @@ assistant_behavior:
     allow_inference: false
     requires_citation: true
     abstain_if_missing_context: true
-    do_not_claim:
-        - External datasets can be joined correctly without checking their source, geography, time, and keys.
     related_pages:
         - assistant/walksheds/concept/os-connect-data-usage.md
 tags:

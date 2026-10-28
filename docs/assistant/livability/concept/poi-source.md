@@ -24,9 +24,6 @@ assistant_behavior:
     allow_inference: false
     requires_citation: true
     abstain_if_missing_context: true
-    do_not_claim:
-        - Every LivAbility POI is field-verified by TCAT.
-        - LivAbility POIs are guaranteed to be complete and current.
 related_pages:
     - assistant/livability/index.md
     - assistant/livability/concept/amenity-categories.md

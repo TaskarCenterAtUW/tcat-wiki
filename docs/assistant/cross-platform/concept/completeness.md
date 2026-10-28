@@ -23,8 +23,6 @@ assistant_behavior:
     allow_inference: false
     requires_citation: true
     abstain_if_missing_context: true
-    do_not_claim:
-        - Completeness equals ADA compliance or legal sufficiency.
 related_pages:
     - assistant/cross-platform/concept/ada-compliance-boundaries.md
     - assistant/cross-platform/concept/completeness.md

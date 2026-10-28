@@ -24,8 +24,6 @@ assistant_behavior:
     allow_inference: false
     requires_citation: true
     abstain_if_missing_context: true
-    do_not_claim:
-        - Searching for a jurisdiction proves that its dataset is complete or current.
 related_pages:
     - assistant/os-connect/concept/viewer-overview.md
     - assistant/cross-platform/concept/data-freshness.md

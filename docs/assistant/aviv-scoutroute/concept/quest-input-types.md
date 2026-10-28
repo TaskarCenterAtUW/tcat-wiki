@@ -25,9 +25,6 @@ assistant_behavior:
     allow_inference: false
     requires_citation: true
     abstain_if_missing_context: true
-    do_not_claim:
-        - Every quest uses the same input type or answer options.
-        - A numeric answer is valid when entered in the wrong unit.
 related_pages:
     - quest.md
     - ../workflow/answer-quest.md

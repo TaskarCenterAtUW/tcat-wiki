@@ -27,10 +27,6 @@ assistant_behavior:
     allow_inference: false
     requires_citation: true
     abstain_if_missing_context: true
-    do_not_claim:
-        - LivAbility measures every real-world accessibility condition at a location.
-        - A LivAbility result is a legal, engineering, or ADA compliance determination.
-        - A location is accessible simply because LivAbility returns reachable amenities.
 related_pages:
     - assistant/livability/index.md
     - assistant/livability/concept/mobility-profiles.md

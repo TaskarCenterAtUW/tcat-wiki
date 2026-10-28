@@ -32,8 +32,6 @@ assistant_behavior:
     allow_inference: false
     requires_citation: true
     abstain_if_missing_context: true
-    do_not_claim:
-        - TDEI, OS-CONNECT, and OpenStreetMap are interchangeable systems or automatically synchronized.
     related_pages:
         - assistant/tdei/concept/released-dataset.md
 tags:

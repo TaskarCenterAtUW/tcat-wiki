@@ -51,8 +51,6 @@ assistant_behavior:
     allow_inference: false
     requires_citation: true
     abstain_if_missing_context: false
-    do_not_claim:
-        - These policies replace jurisdiction-specific legal counsel.
 related_pages:
     - assistant/index.md
     - assistant/dispatch.md
@@ -84,13 +82,13 @@ Without explicit policy pages, assistants may over-claim — stating that OS-CON
 
 ## How To Use This
 
-**Agents**: Before answering any question touching ADA compliance, legal authority, data accuracy, or internal information, retrieve the relevant policy page. Draft or explanatory policy pages provide provisional retrieval guidance and must not override published official content. If a `do_not_claim` item matches what you would otherwise say, abstain or reframe; when guidance conflicts, prefer the published page with the higher authority level and cite the source. For definitional questions ("what is X?"), retrieve the matching page from `concept/`; supplement with product-specific pages when the question has an operational context. For "how do I do X?" questions spanning multiple tools, match to the closest page in `workflow/`.
+**Agents**: Before answering any question touching ADA compliance, legal authority, data accuracy, or internal information, retrieve the relevant policy page. Draft or explanatory policy pages provide provisional retrieval guidance and must not override published official content. Do not claim more than the retrieved material supports; abstain or reframe when the question lacks required context. When guidance conflicts, prefer the published page with the higher authority level and cite the source. For definitional questions ("what is X?"), retrieve the matching page from `concept/`; supplement with product-specific pages when the question has an operational context. For "how do I do X?" questions spanning multiple tools, match to the closest page in `workflow/`.
 
 **Authors**: Policy pages intended as official constraints require TCAT editorial review and `authority_level: official`. Until approved, keep them marked `publication_status: draft` and describe their guidance as provisional rather than authoritative. Use `risk_level: high` for pages touching legal or safety content.
 
 ## Example
 
-An agent is about to answer: _"Is this data ADA-compliant?"_ It retrieves `concept/ada-safety-legal-boundaries.md`, finds `do_not_claim: ["OS-CONNECT data constitutes an official ADA compliance inventory"]`, and reformulates the answer to explain what the data does and does not represent.
+An agent is about to answer: _"Is this data ADA-compliant?"_ It retrieves `concept/ada-safety-legal-boundaries.md`, checks the page's stated ADA-compliance limits, and explains that the data is not an official ADA compliance inventory.
 
 ## Assistant Guidance
 

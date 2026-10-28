@@ -24,9 +24,6 @@ assistant_behavior:
     allow_inference: false
     requires_citation: true
     abstain_if_missing_context: true
-    do_not_claim:
-        - One routing system is universally best for every walking or accessibility use.
-        - A route comparison proves which system is correct without a defined test.
 related_pages:
     - assistant/accessmap/concept/routing-profiles.md
     - assistant/accessmap/concept/routing-limitations.md

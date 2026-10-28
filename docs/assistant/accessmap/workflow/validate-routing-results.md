@@ -24,9 +24,6 @@ assistant_behavior:
     allow_inference: false
     requires_citation: true
     abstain_if_missing_context: true
-    do_not_claim:
-        - A small routing test proves that all AccessMap routes are accurate.
-        - A route validation result is an accessibility or ADA certification.
 related_pages:
     - assistant/accessmap/concept/field-validation.md
     - assistant/accessmap/concept/routing-limitations.md

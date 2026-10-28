@@ -25,8 +25,6 @@ assistant_behavior:
     allow_inference: false
     requires_citation: true
     abstain_if_missing_context: true
-    do_not_claim:
-        - A quest_answer_dependency list evaluates any condition as an "or" against another condition in the same list.
 related_pages:
     - assistant/aviv-scoutroute/index.md
     - assistant/aviv-scoutroute/concept/quest-dependency-evaluators.md
