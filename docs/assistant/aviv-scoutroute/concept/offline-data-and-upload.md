@@ -26,9 +26,6 @@ assistant_behavior:
     allow_inference: false
     requires_citation: true
     abstain_if_missing_context: true
-    do_not_claim:
-        - Downloading map data guarantees that all field submissions can be completed without connectivity.
-        - Downloaded data is necessarily current after it is stored on the device.
 related_pages:
     - ../workflow/manage-quest-visibility.md
     - quest-contributions.md

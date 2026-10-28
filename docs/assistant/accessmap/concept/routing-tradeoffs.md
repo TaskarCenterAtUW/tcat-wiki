@@ -24,9 +24,6 @@ assistant_behavior:
     allow_inference: false
     requires_citation: true
     abstain_if_missing_context: true
-    do_not_claim:
-        - One route is objectively best for every traveler.
-        - A shorter route is automatically more accessible.
 related_pages:
     - assistant/cross-platform/concept/accessmap-routing.md
     - assistant/accessmap/concept/accessibility-preference-routing.md

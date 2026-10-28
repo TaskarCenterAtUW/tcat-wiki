@@ -30,11 +30,6 @@ assistant_behavior:
     allow_inference: false
     requires_citation: true
     abstain_if_missing_context: true
-    do_not_claim:
-        - QA/QC analysis is based on current or real-time data.
-        - The completeness report certifies ADA compliance or legal conformance.
-        - Walkshed metrics in the QA/QC report cover all possible origin points, not just POIs.
-        - The QA/QC report reflects the current real-world state of pedestrian infrastructure.
 related_pages:
     - assistant/qa-qc/index.md
     - assistant/os-connect/index.md

@@ -25,9 +25,6 @@ assistant_behavior:
     allow_inference: false
     requires_citation: true
     abstain_if_missing_context: true
-    do_not_claim:
-        - A workspace is the same thing as a public OpenStreetMap dataset.
-        - A workspace is a live synchronized view of every source dataset.
 related_pages:
     - assistant/workspaces/index.md
     - assistant/workspaces/concept/workspace-as-dataset-copy.md

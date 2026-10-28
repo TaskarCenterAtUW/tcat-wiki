@@ -27,9 +27,6 @@ assistant_behavior:
     allow_inference: false
     requires_citation: true
     abstain_if_missing_context: true
-    do_not_claim:
-        - AVIV ScoutRoute currently enforces required or optional question status in the app.
-        - Adding the words required or optional to a quest title enforces completion behavior.
 related_pages:
     - quest.md
     - quest-definition-application.md

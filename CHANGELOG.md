@@ -6,26 +6,20 @@ All notable changes to this project will be documented in this file.
 
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/), and this project adheres to [Semantic Versioning](https://semver.org/) and [Conventional Commits](https://www.conventionalcommits.org/).
 
-<!--
-
-## Unreleased: v0.0.0 (2026-00-00)
-
-### Added
-
-- **Core**:
-- **Wiki**:
+## v16.9.0 (2026-10-27)
 
 ### Changed
 
-- **Core**:
-- **Wiki**:
+- **Core**: Upgraded Zensical to 0.0.73
+- **AKB**: Removed `do_not_claim` from AKB schema and articles
+- **Wiki**: Updated abbreviations list
+- **Core**: Removed unnecessary hidden section in changelog
 
 ### Fixed
 
-- **Core**:
-- **Wiki**:
-
--->
+- **Wiki**: Fixed uncommon characters in Wiki pages
+- **Core**: Fixed miscellaneous issues in Python scripts
+- **Core**: Cleaned up unused templates\images\screenshots
 
 ## v16.8.0 (2026-10-22)
 

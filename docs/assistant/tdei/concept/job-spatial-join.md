@@ -23,8 +23,6 @@ assistant_behavior:
     allow_inference: false
     requires_citation: true
     abstain_if_missing_context: true
-    do_not_claim:
-        - A spatial join proves that joined features have the same real-world meaning.
 related_pages:
     - job-processing.md
     - ../../../tdei/portal/user-manual/jobs/spatial-join.md

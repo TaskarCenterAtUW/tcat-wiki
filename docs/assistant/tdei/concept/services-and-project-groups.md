@@ -25,8 +25,6 @@ assistant_behavior:
     allow_inference: false
     requires_citation: true
     abstain_if_missing_context: true
-    do_not_claim:
-        - A TDEI project group can define only one service.
 related_pages: []
 tags:
     - Assistant

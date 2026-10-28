@@ -25,9 +25,6 @@ assistant_behavior:
     allow_inference: false
     requires_citation: true
     abstain_if_missing_context: true
-    do_not_claim:
-        - Downloading one format automatically creates or updates the other.
-        - Converting between OSW and OSM is always lossless.
 related_pages:
     - assistant/tdei/concept/osw-download-contents.md
     - assistant/tdei/concept/osw-edges-and-nodes.md

@@ -25,9 +25,6 @@ assistant_behavior:
     allow_inference: false
     requires_citation: true
     abstain_if_missing_context: true
-    do_not_claim:
-        - A modeled slope value proves that a route is usable for every traveler.
-        - AccessMap's slope treatment replaces field measurement or engineering review.
 related_pages:
     - assistant/accessmap/concept/steep-slopes-effect.md
     - assistant/accessmap/concept/avoid-steep-slopes.md

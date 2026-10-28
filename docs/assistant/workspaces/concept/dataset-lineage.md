@@ -25,9 +25,6 @@ assistant_behavior:
     allow_inference: false
     requires_citation: true
     abstain_if_missing_context: true
-    do_not_claim:
-        - A workspace has no relationship to its source dataset.
-        - Exporting a workspace automatically publishes every edit.
 related_pages:
     - assistant/workspaces/index.md
     - assistant/workspaces/concept/workspace-metadata-and-lineage.md

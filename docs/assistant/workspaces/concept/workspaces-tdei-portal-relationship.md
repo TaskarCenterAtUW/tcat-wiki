@@ -25,9 +25,6 @@ assistant_behavior:
     allow_inference: false
     requires_citation: true
     abstain_if_missing_context: true
-    do_not_claim:
-        - The TDEI portal and Workspaces are the same application.
-        - Creating a workspace in the portal automatically publishes it.
 related_pages:
     - assistant/workspaces/index.md
     - assistant/workspaces/concept/tdei-ecosystem-fit.md

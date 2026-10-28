@@ -31,9 +31,6 @@ assistant_behavior:
     allow_inference: false
     requires_citation: true
     abstain_if_missing_context: true
-    do_not_claim:
-        - Public availability automatically makes a dataset authoritative.
-        - Authority for one attribute or jurisdiction applies to every use of the dataset.
 related_pages:
     - assistant/support/workflow/choose-dataset-for-planning.md
     - assistant/cross-platform/concept/data-freshness.md

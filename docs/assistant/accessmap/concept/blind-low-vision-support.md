@@ -24,9 +24,6 @@ assistant_behavior:
     allow_inference: false
     requires_citation: true
     abstain_if_missing_context: true
-    do_not_claim:
-        - AccessMap's BLV profile replaces a person's own orientation and mobility judgment.
-        - Screen-reader alerts guarantee complete non-visual navigation.
 related_pages:
     - mobility-profiles.md
     - ../../../accessmap/user-manual/navigation.md

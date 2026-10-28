@@ -25,9 +25,6 @@ assistant_behavior:
     allow_inference: false
     requires_citation: true
     abstain_if_missing_context: true
-    do_not_claim:
-        - The presence of an attribute proves that its value is accurate or complete.
-        - One feature type has the same fields and meanings as every other feature type.
 related_pages:
     - assistant/os-connect/concept/sidewalk-attributes.md
     - assistant/os-connect/concept/crossing-attributes.md

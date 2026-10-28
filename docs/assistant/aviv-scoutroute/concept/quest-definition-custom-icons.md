@@ -26,10 +26,6 @@ assistant_behavior:
     allow_inference: false
     requires_citation: true
     abstain_if_missing_context: true
-    do_not_claim:
-        - Quest image URLs and answer-choice image URLs are the same as custom quest definition icons.
-        - Any arbitrary image URL is a valid custom icon for every quest definition context.
-        - A custom quest definition icon automatically changes the images attached to quest questions or answer choices.
 related_pages:
     - quest-definition-element-icons.md
     - quest-definition-feature-presets.md

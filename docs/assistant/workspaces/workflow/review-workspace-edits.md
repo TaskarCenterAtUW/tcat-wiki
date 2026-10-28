@@ -25,9 +25,6 @@ assistant_behavior:
     allow_inference: false
     requires_citation: true
     abstain_if_missing_context: true
-    do_not_claim:
-        - Workspace review proves that all accessibility conditions are correct.
-        - Every reviewer can approve or publish every edit.
 related_pages:
     - assistant/workspaces/index.md
     - assistant/workspaces/concept/review-interface.md

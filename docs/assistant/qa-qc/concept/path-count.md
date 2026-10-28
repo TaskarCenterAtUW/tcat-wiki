@@ -28,10 +28,6 @@ assistant_behavior:
     allow_inference: false
     requires_citation: true
     abstain_if_missing_context: true
-    do_not_claim:
-        - Path count is the total number of paths in the dataset
-        - Path count is the number of paths reachable from each POI separately
-        - Path count is the number of trips that use the paths
 related_pages:
     - assistant/qa-qc/concept/crossing-count.md
     - assistant/walksheds/concept/poi-origin-analysis-limits.md

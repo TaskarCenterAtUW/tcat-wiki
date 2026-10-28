@@ -28,8 +28,6 @@ assistant_behavior:
     allow_inference: true
     requires_citation: true
     abstain_if_missing_context: false
-    do_not_claim:
-        - A specific neighborhood is an island without checking current local graph connectivity.
 related_pages:
     - assistant/cross-platform/concept/connected-pedestrian-graph.md
     - assistant/os-connect/concept/sidewalk-disconnection-causes.md

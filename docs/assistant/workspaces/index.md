@@ -26,9 +26,6 @@ assistant_behavior:
     allow_inference: false
     requires_citation: true
     abstain_if_missing_context: false
-    do_not_claim:
-        - Workspaces is the same as the public OpenStreetMap database.
-        - Editing a workspace modifies the underlying TDEI dataset directly.
 related_pages:
     - assistant/index.md
     - assistant/dispatch.md

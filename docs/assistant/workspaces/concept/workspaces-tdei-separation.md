@@ -25,9 +25,6 @@ assistant_behavior:
     allow_inference: false
     requires_citation: true
     abstain_if_missing_context: true
-    do_not_claim:
-        - Separating Workspaces from TDEI means the products cannot exchange data.
-        - Editing in Workspaces automatically changes TDEI's source record.
 related_pages:
     - assistant/workspaces/index.md
     - assistant/workspaces/concept/tdei-ecosystem-fit.md

@@ -24,9 +24,6 @@ assistant_behavior:
     allow_inference: false
     requires_citation: true
     abstain_if_missing_context: true
-    do_not_claim:
-        - One AccessMap profile represents all community accessibility priorities.
-        - A community preference automatically changes the underlying dataset.
 related_pages:
     - assistant/accessmap/concept/accessibility-needs.md
     - assistant/accessmap/concept/public-engagement.md

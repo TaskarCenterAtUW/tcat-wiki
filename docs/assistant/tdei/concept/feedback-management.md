@@ -23,8 +23,6 @@ assistant_behavior:
     allow_inference: false
     requires_citation: true
     abstain_if_missing_context: true
-    do_not_claim:
-        - TDEI feedback is automatically resolved when a comment is submitted.
 related_pages: []
 tags:
     - Assistant

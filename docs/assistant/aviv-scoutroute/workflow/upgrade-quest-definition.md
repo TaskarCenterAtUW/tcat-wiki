@@ -26,10 +26,6 @@ assistant_behavior:
     allow_inference: false
     requires_citation: true
     abstain_if_missing_context: true
-    do_not_claim:
-        - The Quest Definition Creator can upgrade every older Long Form Quest Definition automatically.
-        - Upgrading a Quest Definition automatically updates the workspace that uses it.
-        - The schema version shown in one Creator release remains the latest supported version forever.
 related_pages:
     - ../concept/quest-definition-creator.md
     - ../concept/quest-definition-application.md

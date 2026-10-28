@@ -24,8 +24,6 @@ assistant_behavior:
     allow_inference: false
     requires_citation: true
     abstain_if_missing_context: true
-    do_not_claim:
-        - Every project-group member can create or edit TDEI services.
 related_pages:
     - project-group.md
     - project-group-roles.md

@@ -26,9 +26,6 @@ assistant_behavior:
     allow_inference: false
     requires_citation: true
     abstain_if_missing_context: true
-    do_not_claim:
-        - A priority-area request guarantees that the area will be corrected first.
-        - Bulk submission bypasses validation or release controls.
 related_pages:
     - assistant/os-connect/concept/batch-correction-alternatives.md
     - assistant/os-connect/concept/agency-data-integration.md

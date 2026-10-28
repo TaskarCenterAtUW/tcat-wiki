@@ -28,8 +28,6 @@ assistant_behavior:
     allow_inference: true
     requires_citation: true
     abstain_if_missing_context: true
-    do_not_claim:
-        - A specific local gap is definitely a data error without verification.
 related_pages:
     - assistant/cross-platform/concept/accessibility-islands.md
     - assistant/cross-platform/concept/connected-pedestrian-graph.md

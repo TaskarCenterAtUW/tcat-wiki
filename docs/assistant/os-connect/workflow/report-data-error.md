@@ -25,9 +25,6 @@ assistant_behavior:
     allow_inference: false
     requires_citation: true
     abstain_if_missing_context: true
-    do_not_claim:
-        - Submitting an OS-CONNECT issue immediately changes the released dataset.
-        - A reported issue guarantees a correction or release date.
 related_pages: []
 tags:
     - Assistant

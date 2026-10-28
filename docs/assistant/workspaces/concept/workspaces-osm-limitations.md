@@ -26,9 +26,6 @@ assistant_behavior:
     allow_inference: false
     requires_citation: true
     abstain_if_missing_context: true
-    do_not_claim:
-        - Workspaces has every feature and guarantee of public OpenStreetMap.
-        - Workspaces edits automatically enter the public OpenStreetMap database.
 related_pages:
     - assistant/workspaces/index.md
     - assistant/workspaces/concept/private-osm.md

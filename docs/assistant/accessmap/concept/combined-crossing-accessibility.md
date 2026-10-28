@@ -27,8 +27,6 @@ assistant_behavior:
     allow_inference: false
     requires_citation: true
     abstain_if_missing_context: true
-    do_not_claim:
-        - AccessMap identifies which individual curb ramp is inaccessible in its route display.
 related_pages:
     - assistant/accessmap/index.md
     - assistant/cross-platform/concept/crossing-links.md

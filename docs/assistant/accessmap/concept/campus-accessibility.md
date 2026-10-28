@@ -24,9 +24,6 @@ assistant_behavior:
     allow_inference: false
     requires_citation: true
     abstain_if_missing_context: true
-    do_not_claim:
-        - AccessMap's public network data fully represents a campus.
-        - An AccessMap route proves that a campus path is accessible.
 related_pages:
     - assistant/accessmap/concept/hospital-campus-support.md
     - assistant/accessmap/concept/local-datasets-routing-quality.md

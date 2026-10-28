@@ -24,8 +24,6 @@ assistant_behavior:
     allow_inference: false
     requires_citation: true
     abstain_if_missing_context: true
-    do_not_claim:
-        - OS-CONNECT map colors are universal accessibility ratings.
 related_pages:
     - assistant/os-connect/concept/map-layers.md
     - assistant/os-connect/concept/included-infrastructure-types.md

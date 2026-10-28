@@ -25,9 +25,6 @@ assistant_behavior:
     allow_inference: false
     requires_citation: true
     abstain_if_missing_context: true
-    do_not_claim:
-        - A batch submission guarantees acceptance or publication of every correction.
-        - A batch submission bypasses validation or release controls.
 related_pages:
     - assistant/os-connect/concept/bulk-correction-submission.md
     - assistant/os-connect/concept/agency-data-integration.md

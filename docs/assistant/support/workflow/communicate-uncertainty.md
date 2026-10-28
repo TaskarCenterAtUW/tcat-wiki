@@ -31,9 +31,6 @@ assistant_behavior:
     allow_inference: false
     requires_citation: true
     abstain_if_missing_context: true
-    do_not_claim:
-        - Uncertainty means that no useful answer can be provided.
-        - A qualified statement is an evasive answer.
 related_pages:
     - assistant/cross-platform/concept/assistant-abstention.md
     - assistant/support/workflow/internal-verification-language.md

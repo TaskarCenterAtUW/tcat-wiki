@@ -25,9 +25,6 @@ assistant_behavior:
     allow_inference: false
     requires_citation: true
     abstain_if_missing_context: true
-    do_not_claim:
-        - Hiding an AVIV ScoutRoute quest removes it for every contributor.
-        - A quest not visible at one zoom level is unavailable in the workspace.
 related_pages:
     - ../concept/quest-visibility-and-local-state.md
     - ../concept/app-enabled-workspaces.md

@@ -27,8 +27,6 @@ assistant_behavior:
     allow_inference: false
     requires_citation: true
     abstain_if_missing_context: true
-    do_not_claim:
-        - Opening a dataset for inspection commits an edit.
 related_pages: []
 tags:
     - Assistant

@@ -25,10 +25,6 @@ assistant_behavior:
     allow_inference: false
     requires_citation: true
     abstain_if_missing_context: true
-    do_not_claim:
-        - The Quest Definition Creator automatically renumbers every unchanged quest in a definition.
-        - Moving an element changes question IDs without updating their dependencies.
-        - Automatic renumbering of a quest definition removes its dependencies.
 related_pages:
     - ../concept/quest-definition-creator.md
     - ../concept/quest-definition-element-targeting.md

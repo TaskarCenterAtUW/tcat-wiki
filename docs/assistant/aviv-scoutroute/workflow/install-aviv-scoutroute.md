@@ -25,9 +25,6 @@ assistant_behavior:
     allow_inference: false
     requires_citation: true
     abstain_if_missing_context: true
-    do_not_claim:
-        - The Android or iOS installation path is permanent across app releases.
-        - Installing AVIV ScoutRoute automatically grants access to a project workspace.
 related_pages:
     - ../workflow/join-a-project-and-find-quests.md
     - ../concept/aviv-scoutroute.md

@@ -60,7 +60,7 @@ The `osw-data-generator` role allows a user to upload OpenSidewalks data.
 
 ### Architecture
 
-A multi‑tenant data sharing and exchange platform that supports the full lifecycle of transportation datasets, from collection and updates to publication and consumption.
+A multi-tenant data sharing and exchange platform that supports the full lifecycle of transportation datasets, from collection and updates to publication and consumption.
 
 TCAT architecture has three layers: data generation tools (such as AVIV ScoutRoute, Rapid, and Prophet) which feed into the TDEI Core, which handles ingestion, validation, metadata, quality checks, access control, publishing, APIs, and more. Data then flows to consumer apps (such as AccessMap, Walksheds, Audiom, and Conveyal).
 
@@ -85,7 +85,7 @@ flowchart LR
         Publishing & Catalog
         APIs & SDKs"]
         TEN["Tenants:
-        OS‑CONNECT
+        OS-CONNECT
         Multnomah, OR
         Columbia, OR
         Montgomery, MD

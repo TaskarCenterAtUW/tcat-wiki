@@ -24,9 +24,6 @@ assistant_behavior:
     allow_inference: false
     requires_citation: true
     abstain_if_missing_context: true
-    do_not_claim:
-        - An OS-CONNECT QA/QC report certifies ADA compliance or real-world accessibility.
-        - A single metric fully describes pedestrian network quality.
 related_pages:
     - assistant/os-connect/index.md
     - assistant/os-connect/concept/completeness-score-interpretation.md

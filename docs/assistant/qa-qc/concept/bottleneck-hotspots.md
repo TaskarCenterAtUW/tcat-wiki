@@ -27,8 +27,6 @@ assistant_behavior:
     allow_inference: false
     requires_citation: true
     abstain_if_missing_context: true
-    do_not_claim:
-        - A QA/QC bottleneck hotspot is automatically a recommended project.
 related_pages:
     - assistant/qa-qc/concept/poi-density-and-prioritization.md
 tags:

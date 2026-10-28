@@ -24,8 +24,6 @@ assistant_behavior:
     allow_inference: false
     requires_citation: true
     abstain_if_missing_context: true
-    do_not_claim:
-        - Washington State coverage means every jurisdiction has the same completeness or current data.
 related_pages:
     - assistant/os-connect/index.md
     - assistant/os-connect/concept/os-connect.md

@@ -31,8 +31,6 @@ assistant_behavior:
     allow_inference: false
     requires_citation: true
     abstain_if_missing_context: true
-    do_not_claim:
-        - OSM pedestrian paths and GTFS Pathways are the same dataset or automatically synchronized.
     related_pages:
         - assistant/support/workflow/check-gtfs-feed-pathways.md
 tags:

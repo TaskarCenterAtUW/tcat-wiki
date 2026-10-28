@@ -24,9 +24,6 @@ assistant_behavior:
     allow_inference: false
     requires_citation: true
     abstain_if_missing_context: true
-    do_not_claim:
-        - A page labeled OSW 0.3 is necessarily the latest OpenSidewalks schema.
-        - A schema is suitable for a consumer without checking its version and requirements.
 related_pages:
     - assistant/opensidewalks/index.md
     - assistant/opensidewalks/concept/opensidewalks-schema.md

@@ -24,9 +24,6 @@ assistant_behavior:
     allow_inference: false
     requires_citation: true
     abstain_if_missing_context: true
-    do_not_claim:
-        - A public metric is self-explanatory without definitions or limitations.
-        - A map score proves that a community or route is safe or compliant.
 related_pages:
     - assistant/accessmap/concept/accessibility-mobility-metrics.md
     - assistant/accessmap/concept/prioritization-metrics.md

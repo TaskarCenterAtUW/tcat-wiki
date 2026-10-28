@@ -25,9 +25,6 @@ assistant_behavior:
     allow_inference: false
     requires_citation: true
     abstain_if_missing_context: true
-    do_not_claim:
-        - Group quest selection is safe when selected features have different characteristics.
-        - Group quest selection edits unrelated features.
 related_pages:
     - quest.md
     - quest-contributions.md

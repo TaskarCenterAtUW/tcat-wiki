@@ -24,8 +24,6 @@ assistant_behavior:
     allow_inference: false
     requires_citation: true
     abstain_if_missing_context: true
-    do_not_claim:
-        - Every help-desk ticket is suitable for public Assistant Knowledge Base content.
 related_pages:
     - assistant/cross-platform/index.md
     - assistant/cross-platform/workflow/review-assistant-article-stubs.md

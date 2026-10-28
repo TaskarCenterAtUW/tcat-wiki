@@ -31,8 +31,6 @@ assistant_behavior:
     allow_inference: false
     requires_citation: true
     abstain_if_missing_context: true
-    do_not_claim:
-        - Draft policy text is enforceable organizational policy until formally adopted.
 related_pages:
     - assistant/cross-platform/concept/public-vs-internal-content.md
     - assistant/cross-platform/concept/ada-safety-legal-boundaries.md
@@ -71,7 +69,7 @@ User: "Does OS-CONNECT prove our ADA plan is complete?" Assistant: "No — compl
 
 ## Assistant Guidance
 
-When `abstain_if_missing_context` is true in frontmatter, mirror that behavior in consumer systems. Surface `do_not_claim` bullets as hard negatives.
+When `abstain_if_missing_context` is true in frontmatter, mirror that behavior in consumer systems. Use the relevant page's stated limitations and context requirements when deciding whether to abstain or reframe.
 
 ## Related Concepts
 

@@ -23,9 +23,6 @@ assistant_behavior:
     allow_inference: false
     requires_citation: true
     abstain_if_missing_context: true
-    do_not_claim:
-        - WayKeeper's purpose or capabilities are established by its name alone.
-        - WayKeeper is currently available to every user or device.
 related_pages:
     - assistant/waykeeper/index.md
 tags:

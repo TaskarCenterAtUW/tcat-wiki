@@ -26,8 +26,6 @@ assistant_behavior:
     allow_inference: false
     requires_citation: true
     abstain_if_missing_context: true
-    do_not_claim:
-        - Uploading a Workspaces export to TDEI overwrites the source dataset.
 related_pages:
     - assistant/workspaces/concept/export-process.md
     - assistant/workspaces/concept/export-versioning.md

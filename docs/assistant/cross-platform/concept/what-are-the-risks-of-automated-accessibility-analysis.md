@@ -31,7 +31,6 @@ assistant_behavior:
     allow_inference: false
     requires_citation: true
     abstain_if_missing_context: true
-    do_not_claim: []
 related_pages:
     - assistant/cross-platform/concept/how-should-ai-outputs-be-validated.md
     - assistant/cross-platform/concept/ada-compliance-boundaries.md

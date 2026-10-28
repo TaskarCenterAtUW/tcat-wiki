@@ -24,9 +24,6 @@ assistant_behavior:
     allow_inference: false
     requires_citation: true
     abstain_if_missing_context: true
-    do_not_claim:
-        - AccessMap is universally more accurate than Apple Maps.
-        - A route difference proves that either product is wrong.
 related_pages:
     - assistant/accessmap/concept/routing-system-comparison.md
     - assistant/accessmap/concept/routing-profiles.md

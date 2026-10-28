@@ -24,9 +24,6 @@ assistant_behavior:
     allow_inference: false
     requires_citation: true
     abstain_if_missing_context: true
-    do_not_claim:
-        - AccessMap consumes every OpenSidewalks attribute in every release.
-        - A route based on OpenSidewalks data is physically verified.
 related_pages:
     - assistant/accessmap/concept/accessmap.md
     - assistant/os-connect/concept/os-connect.md

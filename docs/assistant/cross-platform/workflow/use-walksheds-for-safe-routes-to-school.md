@@ -23,8 +23,6 @@ assistant_behavior:
     allow_inference: false
     requires_citation: true
     abstain_if_missing_context: true
-    do_not_claim:
-        - Walkshed polygons alone determine which students may walk to school.
 related_pages:
     - assistant/walksheds/how-can-walksheds-support-srts.md
     - walksheds/user-manual/scenarios.md

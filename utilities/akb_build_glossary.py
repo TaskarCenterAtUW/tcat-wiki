@@ -10,7 +10,6 @@ Run from any working directory; paths are resolved relative to this file.
 
 import re
 import sys
-import uuid
 from datetime import date
 from pathlib import Path
 
@@ -125,10 +124,6 @@ assistant_behavior:
     allow_inference: false
     requires_citation: false
     abstain_if_missing_context: false
-    do_not_claim:
-        - This list is exhaustive of all possible abbreviations in the domain.
-        - No other meanings are possible for these abbreviations.
-        - Abbreviations not listed here have no accepted expansion.
 related_pages: []
 tags:
     - Assistant

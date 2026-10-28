@@ -27,9 +27,6 @@ assistant_behavior:
     allow_inference: false
     requires_citation: true
     abstain_if_missing_context: true
-    do_not_claim:
-        - Override preserves the other editor's conflicting field values.
-        - Resolve automatically determines which conflicting value is correct.
 related_pages:
     - assistant/workspaces/concept/collaborative-edit-management.md
     - assistant/workspaces/concept/changesets.md

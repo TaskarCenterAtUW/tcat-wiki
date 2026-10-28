@@ -24,9 +24,6 @@ assistant_behavior:
     allow_inference: false
     requires_citation: true
     abstain_if_missing_context: true
-    do_not_claim:
-        - AccessMap's assumptions represent every traveler's needs.
-        - A route based on AccessMap assumptions is an accessibility certification.
 related_pages:
     - assistant/accessmap/concept/accessibility-needs.md
     - assistant/accessmap/concept/mobility-profiles.md

@@ -26,9 +26,6 @@ assistant_behavior:
     allow_inference: false
     requires_citation: true
     abstain_if_missing_context: true
-    do_not_claim:
-        - Raster maps are always less useful than vector maps.
-        - A map's display type proves the accuracy of its data.
 related_pages:
     - assistant/workspaces/index.md
     - assistant/workspaces/concept/vector-map-preference.md

@@ -36,7 +36,7 @@ def read_retired(path: Path = RETIRED_PATH) -> set[str]:
 
 def live_uids(assistant_dir: Path = ASSISTANT_DIR) -> set[str]:
     """Return UUID values already assigned to assistant Markdown files."""
-    values = set()
+    values: set[str] = set()
     if not assistant_dir.is_dir():
         return values
     for path in assistant_dir.rglob("*.md"):
@@ -67,9 +67,11 @@ def assign_uid(path: Path, value: str, replace: bool = False) -> None:
         raise ValueError(f"file has no YAML frontmatter: {path}")
     existing = UID_LINE_RE.search(match.group(1))
     if existing and not replace:
-        raise ValueError(f"file already has a uid; refusing to overwrite: {path}")
+        raise ValueError(
+            f"file already has a uid; refusing to overwrite: {path}")
     if existing:
-        updated_frontmatter = UID_LINE_RE.sub(f"uid: {value}", match.group(1), count=1)
+        updated_frontmatter = UID_LINE_RE.sub(
+            f"uid: {value}", match.group(1), count=1)
     else:
         updated_frontmatter = f"uid: {value}\n{match.group(1)}"
     updated = f"---\n{updated_frontmatter}\n---\n" + text[match.end():]
@@ -78,7 +80,8 @@ def assign_uid(path: Path, value: str, replace: bool = False) -> None:
 
 def main(argv: list[str] | None = None) -> int:
     parser = argparse.ArgumentParser(description=__doc__)
-    parser.add_argument("--file", type=Path, help="Markdown file to assign a UID")
+    parser.add_argument("--file", type=Path,
+                        help="Markdown file to assign a UID")
     parser.add_argument("--replace", action="store_true",
                         help="Explicitly replace an existing file UID")
     args = parser.parse_args(argv)

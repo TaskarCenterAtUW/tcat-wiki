@@ -25,8 +25,6 @@ assistant_behavior:
     allow_inference: false
     requires_citation: true
     abstain_if_missing_context: true
-    do_not_claim:
-        - A high POI density proves that an area has the greatest accessibility need.
 related_pages:
     - assistant/qa-qc/concept/poi-density-and-prioritization.md
     - assistant/qa-qc/concept/disconnected-poi.md

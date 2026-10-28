@@ -23,8 +23,6 @@ assistant_behavior:
     allow_inference: false
     requires_citation: true
     abstain_if_missing_context: true
-    do_not_claim:
-        - A normalized value of 0.5 means 50 percent.
 related_pages:
     - assistant/qa-qc/concept/metric-boundaries.md
     - assistant/qa-qc/concept/report-map-interpretation.md

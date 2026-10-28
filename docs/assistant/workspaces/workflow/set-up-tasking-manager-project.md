@@ -30,9 +30,6 @@ assistant_behavior:
     allow_inference: false
     requires_citation: true
     abstain_if_missing_context: true
-    do_not_claim:
-        - Creating a project automatically generates task areas.
-        - A project in Draft status is ready for contributors to use.
 related_pages:
     - assistant/workspaces/concept/project-groups.md
     - assistant/workspaces/workflow/create-workspace.md

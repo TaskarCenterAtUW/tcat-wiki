@@ -25,9 +25,6 @@ assistant_behavior:
     allow_inference: false
     requires_citation: true
     abstain_if_missing_context: true
-    do_not_claim:
-        - Installing iOSPointMapper alone creates a valid survey dataset.
-        - Collected observations are automatically published to TDEI.
 related_pages:
     - assistant/iospointmapper/index.md
 tags:

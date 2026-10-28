@@ -27,7 +27,6 @@ assistant_behavior:
     allow_inference: false
     requires_citation: true
     abstain_if_missing_context: true
-    do_not_claim: []
 related_pages:
     - assistant/qa-qc/concept/completeness.md
     - assistant/qa-qc/concept/accessibility-island.md

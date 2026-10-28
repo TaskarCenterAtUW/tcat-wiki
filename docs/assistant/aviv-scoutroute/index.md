@@ -25,10 +25,6 @@ assistant_behavior:
     allow_inference: false
     requires_citation: true
     abstain_if_missing_context: false
-    do_not_claim:
-        - AVIV ScoutRoute provides quests everywhere without project configuration.
-        - A submitted quest answer is automatically a final published dataset edit.
-        - Android and iOS have materially different AVIV ScoutRoute functionality.
 related_pages:
     - assistant/index.md
     - assistant/dispatch.md

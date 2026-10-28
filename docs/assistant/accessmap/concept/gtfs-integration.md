@@ -24,9 +24,6 @@ assistant_behavior:
     allow_inference: false
     requires_citation: true
     abstain_if_missing_context: true
-    do_not_claim:
-        - AccessMap automatically consumes every GTFS feed or file.
-        - GTFS data alone provide complete pedestrian accessibility information.
 related_pages:
     - assistant/accessmap/concept/transit-pedestrian-routing-integration.md
     - assistant/accessmap/concept/gtfs-pathways.md

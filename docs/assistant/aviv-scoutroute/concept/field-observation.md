@@ -25,9 +25,6 @@ assistant_behavior:
     allow_inference: false
     requires_citation: true
     abstain_if_missing_context: true
-    do_not_claim:
-        - Map imagery alone is sufficient evidence for every AVIV ScoutRoute answer.
-        - Guessing an answer improves the dataset.
 related_pages:
     - quest.md
     - quest-contributions.md

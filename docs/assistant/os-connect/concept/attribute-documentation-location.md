@@ -26,8 +26,6 @@ assistant_behavior:
     allow_inference: false
     requires_citation: true
     abstain_if_missing_context: true
-    do_not_claim:
-        - Every OS-CONNECT feature has every documented attribute.
 related_pages:
     - assistant/os-connect/index.md
 tags:

@@ -26,8 +26,6 @@ assistant_behavior:
     allow_inference: false
     requires_citation: true
     abstain_if_missing_context: true
-    do_not_claim:
-        - A modeled inequity finding is a causal, legal, or universal conclusion by itself.
     related_pages:
         - assistant/walksheds/concept/travel-profiles.md
 tags:

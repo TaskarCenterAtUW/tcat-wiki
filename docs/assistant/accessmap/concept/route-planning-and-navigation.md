@@ -24,8 +24,6 @@ assistant_behavior:
     allow_inference: false
     requires_citation: true
     abstain_if_missing_context: true
-    do_not_claim:
-        - Route planning and route following are the same interaction mode.
 related_pages:
     - assistant/accessmap/index.md
     - assistant/accessmap/workflow/plan-and-share-a-route.md

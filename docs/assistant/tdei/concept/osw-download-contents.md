@@ -26,9 +26,6 @@ assistant_behavior:
     allow_inference: false
     requires_citation: true
     abstain_if_missing_context: true
-    do_not_claim:
-        - Every OSW release contains exactly the same files.
-        - An OSW download is automatically an OpenStreetMap database export.
 related_pages:
     - assistant/tdei/concept/osw-edges-and-nodes.md
     - assistant/tdei/concept/osw-vs-osm-format.md

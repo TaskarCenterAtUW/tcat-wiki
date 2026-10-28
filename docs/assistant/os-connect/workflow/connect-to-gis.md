@@ -24,9 +24,6 @@ assistant_behavior:
     allow_inference: false
     requires_citation: true
     abstain_if_missing_context: true
-    do_not_claim:
-        - Connecting OS-CONNECT to GIS automatically refreshes the data.
-        - Every GIS application supports every OS-CONNECT download format and field.
 related_pages:
     - assistant/os-connect/index.md
     - assistant/os-connect/workflow/import-into-arcgis.md

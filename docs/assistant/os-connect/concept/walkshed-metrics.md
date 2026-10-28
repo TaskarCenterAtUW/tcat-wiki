@@ -25,9 +25,6 @@ assistant_behavior:
     allow_inference: false
     requires_citation: true
     abstain_if_missing_context: true
-    do_not_claim:
-        - A smaller modeled walkshed proves that a person cannot travel in the jurisdiction.
-        - A walkshed result measures physical accessibility independently of the dataset.
 related_pages:
     - assistant/os-connect/index.md
     - assistant/os-connect/concept/completeness-score-interpretation.md

@@ -25,8 +25,6 @@ assistant_behavior:
     allow_inference: false
     requires_citation: true
     abstain_if_missing_context: true
-    do_not_claim:
-        - Typing a dataset name selects it automatically in Walksheds.
 related_pages: []
 tags:
     - Assistant

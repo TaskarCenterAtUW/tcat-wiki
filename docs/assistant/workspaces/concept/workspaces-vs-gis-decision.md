@@ -26,9 +26,6 @@ assistant_behavior:
     allow_inference: false
     requires_citation: true
     abstain_if_missing_context: true
-    do_not_claim:
-        - Workspaces makes GIS software unnecessary for every city.
-        - GIS software provides the same collaborative workflow as Workspaces by default.
 related_pages:
     - assistant/workspaces/index.md
     - assistant/workspaces/concept/gis-tool-decision.md

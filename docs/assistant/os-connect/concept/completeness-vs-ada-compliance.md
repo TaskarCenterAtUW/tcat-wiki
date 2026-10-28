@@ -24,9 +24,6 @@ assistant_behavior:
     allow_inference: false
     requires_citation: true
     abstain_if_missing_context: true
-    do_not_claim:
-        - High completeness implies ADA compliance.
-        - Low completeness implies automatic ADA violations.
 related_pages:
     - assistant/cross-platform/concept/completeness.md
     - assistant/cross-platform/concept/ada-compliance-boundaries.md

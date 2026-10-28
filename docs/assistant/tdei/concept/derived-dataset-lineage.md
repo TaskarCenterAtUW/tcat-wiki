@@ -24,8 +24,6 @@ assistant_behavior:
     allow_inference: false
     requires_citation: true
     abstain_if_missing_context: true
-    do_not_claim:
-        - A derived dataset is identical to its source dataset.
 related_pages: []
 tags:
     - Assistant

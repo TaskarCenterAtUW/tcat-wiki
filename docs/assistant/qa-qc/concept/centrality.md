@@ -29,12 +29,6 @@ assistant_behavior:
     allow_inference: false
     requires_citation: true
     abstain_if_missing_context: true
-    do_not_claim:
-        - Centrality directly measures safety, demand, or physical condition.
-        - A high centrality value by itself proves that a location should be a project priority.
-        - All centrality metrics measure the same kind of importance.
-        - A centrality value is a direct observation of real-world travel or conditions.
-        - An intersection-centered tile is the same as a parcel, service area, or exact field-survey boundary.
 related_pages:
     - assistant/qa-qc/concept/centrality-metric-selection.md
     - assistant/qa-qc/concept/intersection-tile.md

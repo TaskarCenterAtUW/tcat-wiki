@@ -26,10 +26,6 @@ assistant_behavior:
     allow_inference: false
     requires_citation: true
     abstain_if_missing_context: true
-    do_not_claim:
-        - Eigenvector centrality measures the number of direction choices at an intersection.
-        - A high eigenvector centrality value by itself identifies the most important location for investment.
-        - Eigenvector centrality identifies real-world travel demand or the destinations people want to reach.
 related_pages:
     - assistant/qa-qc/concept/degree-centrality.md
     - assistant/qa-qc/concept/eigenvector-centrality-interpretation.md

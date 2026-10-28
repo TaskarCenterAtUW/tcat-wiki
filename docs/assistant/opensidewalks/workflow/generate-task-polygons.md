@@ -24,9 +24,6 @@ assistant_behavior:
     allow_inference: false
     requires_citation: true
     abstain_if_missing_context: true
-    do_not_claim:
-        - The task-polygon command syntax is unchanged across OSW tool versions.
-        - Generated polygons are ready for publication without inspection.
 related_pages:
     - ../concept/tasking-manager-roles.md
     - ../../../opensidewalks/tasking-manager/task-polygon-automation.md

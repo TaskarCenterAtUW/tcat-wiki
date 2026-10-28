@@ -31,8 +31,6 @@ assistant_behavior:
     allow_inference: false
     requires_citation: true
     abstain_if_missing_context: true
-    do_not_claim:
-        - One dataset is appropriate for every planning purpose or jurisdiction.
     related_pages:
         - assistant/support/workflow/choose-dataset-for-arcgis.md
 tags:

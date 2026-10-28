@@ -22,13 +22,13 @@ Expand the user's minimal answer into one complete page under `docs/assistant/`.
     - Use schema-controlled `products`, `audiences`, and `topics` (no more than five topics); infer only when supported by the content.
     - Default `risk_level: medium`, `authority_level: provisional`, `publication_status: draft`, `allow_inference: false`, and `requires_citation: true`. Raise risk only for legal, accuracy, correction, safety, or ADA implications; use `abstain_if_missing_context: true` when jurisdiction, dataset version, or other missing context changes the answer.
     - Preserve `last_reviewed`; do not create a human review date. Set `retrieval_priority` to `high`, `medium`, or `low` based on importance.
-    - `do_not_claim` contains one to five complete false/overreaching claims matching the boundaries below. `related_pages` uses existing `docs/`-relative `assistant/...` paths and includes the section index plus one to four related pages when available; check `dispatch.md`.
+    - `related_pages` uses existing `docs/`-relative `assistant/...` paths and includes the section index plus one to four related pages when available; check `dispatch.md`.
 3. Replace the stub with these headings, exactly once and in order:
    `# [Page Title]`, `## Short Answer`, `## Significance`, `## What This Means`, `## What This Does Not Mean`, `## How To Use This`, `## Example`, `## Assistant Guidance`, `## Related Concepts`.
     - `Short Answer`: self-contained, direct, one short paragraph, under about 200 words, incorporating the seed.
     - `Significance`: one to four sentences on operational or civic importance.
     - `What This Means`: practical definition or answer in bullets/short prose.
-    - `What This Does Not Mean`: two to four explicit boundaries and plausible misinterpretations; align `do_not_claim`.
+    - `What This Does Not Mean`: two to four explicit boundaries and plausible misinterpretations.
     - `How To Use This`: only applicable audience-specific actions; not instructions for agents.
     - `Example`: one concrete scenario with a plausible actor and resolution.
     - `Assistant Guidance`: one to five sentences covering citations, missing context, boundaries, and advice.

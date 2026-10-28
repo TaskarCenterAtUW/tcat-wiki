@@ -31,9 +31,6 @@ assistant_behavior:
     allow_inference: false
     requires_citation: true
     abstain_if_missing_context: true
-    do_not_claim:
-        - Mappy Hours guarantees resolution of every participant's question.
-        - Mappy Hours is an emergency or account-support channel.
 related_pages:
     - assistant/support/workflow/mappy-hours-referral-decision.md
     - assistant/cross-platform/concept/topic-based-assistant-content.md

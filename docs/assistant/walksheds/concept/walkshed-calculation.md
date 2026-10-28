@@ -26,10 +26,6 @@ assistant_behavior:
     allow_inference: false
     requires_citation: true
     abstain_if_missing_context: true
-    do_not_claim:
-        - A walkshed is a field survey or a guarantee that every person can travel throughout the displayed area.
-        - A larger walkshed always means better real-world accessibility.
-        - A nearby feature is reachable when it is not connected to the pedestrian network.
 related_pages:
     - assistant/walksheds/concept/walkshed-cost-factors.md
     - assistant/walksheds/concept/walkshed-default-cost-model.md

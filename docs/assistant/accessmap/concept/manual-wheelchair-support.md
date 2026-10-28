@@ -24,9 +24,6 @@ assistant_behavior:
     allow_inference: false
     requires_citation: true
     abstain_if_missing_context: true
-    do_not_claim:
-        - A manual-wheelchair profile guarantees that every route is usable.
-        - AccessMap's model replaces the traveler's judgment or local verification.
 related_pages:
     - assistant/accessmap/concept/mobility-profiles.md
     - assistant/accessmap/concept/accessibility-needs.md

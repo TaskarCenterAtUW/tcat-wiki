@@ -25,9 +25,6 @@ assistant_behavior:
     allow_inference: false
     requires_citation: true
     abstain_if_missing_context: true
-    do_not_claim:
-        - Transit data automatically provide complete pedestrian accessibility information.
-        - A connected transit and pedestrian route guarantees an accessible transfer.
 related_pages:
     - assistant/accessmap/concept/gtfs-integration.md
     - assistant/accessmap/concept/gtfs-pathways.md

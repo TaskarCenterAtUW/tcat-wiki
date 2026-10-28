@@ -22,7 +22,6 @@ assistant_behavior:
     allow_inference: { oneOf: (true|false) }
     requires_citation: { oneOf: (true|false) }
     abstain_if_missing_context: { oneOf: (true|false) }
-    do_not_claim: { list of untrue claims }
 related_pages: { list of paths relative to docs/ }
 ---
 

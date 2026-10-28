@@ -29,9 +29,6 @@ assistant_behavior:
     allow_inference: false
     requires_citation: true
     abstain_if_missing_context: true
-    do_not_claim:
-        - A crossing link is an ordinary sidewalk segment in every analysis.
-        - There is no way to differentiate between primary blockface-scale sidewalks and small connectors.
 related_pages:
     - assistant/accessmap/index.md
     - assistant/opensidewalks/concept/opensidewalks-schema.md

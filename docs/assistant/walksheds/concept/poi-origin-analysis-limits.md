@@ -25,8 +25,6 @@ assistant_behavior:
     allow_inference: false
     requires_citation: true
     abstain_if_missing_context: true
-    do_not_claim:
-        - POI-origin walksheds analyze every sidewalk equally.
 related_pages: []
 tags:
     - Assistant

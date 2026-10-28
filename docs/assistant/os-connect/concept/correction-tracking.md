@@ -25,9 +25,6 @@ assistant_behavior:
     allow_inference: false
     requires_citation: true
     abstain_if_missing_context: true
-    do_not_claim:
-        - A submitted correction can be tracked across releases without a dataset or report reference.
-        - Appearance in one release proves that every downstream product has incorporated the correction.
 related_pages:
     - assistant/os-connect/concept/correction-confirmation.md
     - assistant/os-connect/concept/correction-release-lag.md

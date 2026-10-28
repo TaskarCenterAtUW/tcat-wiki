@@ -27,9 +27,6 @@ assistant_behavior:
     allow_inference: false
     requires_citation: true
     abstain_if_missing_context: true
-    do_not_claim:
-        - A sidewalk should be merged into road geometry solely to provide a street name.
-        - A street-name relationship proves that a sidewalk is physically connected or accessible.
 related_pages:
     - assistant/os-connect/concept/recommended-sidewalk-tagging-pattern.md
     - assistant/os-connect/concept/street-name-vs-is-sidepath-of-name.md

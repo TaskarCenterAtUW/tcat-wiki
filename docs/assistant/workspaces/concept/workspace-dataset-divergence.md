@@ -26,9 +26,6 @@ assistant_behavior:
     allow_inference: false
     requires_citation: true
     abstain_if_missing_context: true
-    do_not_claim:
-        - Workspace edits are automatically merged into the original dataset.
-        - A workspace remains synchronized with later source changes.
 related_pages:
     - assistant/workspaces/index.md
     - assistant/workspaces/concept/workspace-copy-and-divergence.md

@@ -25,9 +25,6 @@ assistant_behavior:
     allow_inference: false
     requires_citation: true
     abstain_if_missing_context: true
-    do_not_claim:
-        - A separated sidewalk should be merged into the road geometry.
-        - Geometric separation proves that a sidewalk is disconnected or inaccessible.
 related_pages:
     - assistant/os-connect/concept/sidewalk-street-name-association.md
     - assistant/os-connect/concept/recommended-sidewalk-tagging-pattern.md

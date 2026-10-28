@@ -24,9 +24,6 @@ assistant_behavior:
     allow_inference: false
     requires_citation: true
     abstain_if_missing_context: true
-    do_not_claim:
-        - One metric captures accessible mobility completely.
-        - A high or low metric is an ADA compliance or safety determination.
 related_pages:
     - assistant/accessmap/concept/prioritization-metrics.md
     - assistant/accessmap/concept/explaining-metrics-publicly.md

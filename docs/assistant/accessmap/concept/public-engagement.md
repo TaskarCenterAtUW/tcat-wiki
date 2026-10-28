@@ -24,9 +24,6 @@ assistant_behavior:
     allow_inference: false
     requires_citation: true
     abstain_if_missing_context: true
-    do_not_claim:
-        - An AccessMap demonstration predicts future infrastructure outcomes.
-        - A public route comparison proves universal safety or accessibility.
 related_pages:
     - assistant/cross-platform/workflow/use-accessmap-for-public-engagement.md
     - assistant/accessmap/concept/accessibility-needs.md

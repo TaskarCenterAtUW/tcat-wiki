@@ -24,9 +24,6 @@ assistant_behavior:
     allow_inference: false
     requires_citation: true
     abstain_if_missing_context: true
-    do_not_claim:
-        - Portal login credentials and API keys are interchangeable.
-        - An API key can be safely shared in chat or source control.
 related_pages: []
 tags:
     - Assistant

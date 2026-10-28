@@ -201,9 +201,12 @@ def get_guides_in_directory(directory: Path, exclude_own_index: bool, exclude_fl
             if sub_index.is_file():
                 maybe_add(sub_index)
 
-    sorted_tutorials = [path for path, _ in sorted(tutorials, key=lambda item: sort_nav_then_path(item[1], item[0]))]
-    sorted_user_manuals = [path for path, _ in sorted(user_manuals, key=lambda item: sort_nav_then_path(item[1], item[0]))]
-    sorted_regular_guides = [path for path, _ in sorted(regular_guides, key=lambda item: sort_nav_then_path(item[1], item[0]))]
+    sorted_tutorials = [path for path, _ in sorted(
+        tutorials, key=lambda item: sort_nav_then_path(item[1], item[0]))]
+    sorted_user_manuals = [path for path, _ in sorted(
+        user_manuals, key=lambda item: sort_nav_then_path(item[1], item[0]))]
+    sorted_regular_guides = [path for path, _ in sorted(
+        regular_guides, key=lambda item: sort_nav_then_path(item[1], item[0]))]
     return sorted_tutorials + sorted_user_manuals + sorted_regular_guides
 
 
@@ -228,9 +231,12 @@ def get_subdirectories(directory: Path) -> list[Path]:
         else:
             regular_dirs.append(target)
 
-    sorted_tutorials = [path for path, _ in sorted(tutorial_dirs, key=lambda item: sort_nav_then_path(item[1], item[0]))]
-    sorted_user_manuals = [path for path, _ in sorted(user_manual_dirs, key=lambda item: sort_nav_then_path(item[1], item[0]))]
-    sorted_regular_dirs = [path for path, _ in sorted(regular_dirs, key=lambda item: sort_nav_then_path(item[1], item[0]))]
+    sorted_tutorials = [path for path, _ in sorted(
+        tutorial_dirs, key=lambda item: sort_nav_then_path(item[1], item[0]))]
+    sorted_user_manuals = [path for path, _ in sorted(
+        user_manual_dirs, key=lambda item: sort_nav_then_path(item[1], item[0]))]
+    sorted_regular_dirs = [path for path, _ in sorted(
+        regular_dirs, key=lambda item: sort_nav_then_path(item[1], item[0]))]
     return sorted_tutorials + sorted_user_manuals + sorted_regular_dirs
 
 
@@ -322,9 +328,12 @@ def get_all_guides_at_level(
                 )
             )
 
-    tutorial_entries.sort(key=lambda entry: sort_nav_then_path(entry.nav_order, entry.path))
-    user_manual_entries.sort(key=lambda entry: sort_nav_then_path(entry.nav_order, entry.path))
-    regular_entries.sort(key=lambda entry: sort_nav_then_path(entry.nav_order, entry.path))
+    tutorial_entries.sort(key=lambda entry: sort_nav_then_path(
+        entry.nav_order, entry.path))
+    user_manual_entries.sort(
+        key=lambda entry: sort_nav_then_path(entry.nav_order, entry.path))
+    regular_entries.sort(key=lambda entry: sort_nav_then_path(
+        entry.nav_order, entry.path))
     return tutorial_entries + user_manual_entries + regular_entries
 
 
@@ -333,7 +342,8 @@ def update_parent_guides_section(directory: Path, docs_path: Path) -> bool:
     index_path = directory / "index.md"
     parent_dir = directory
     subdirs = get_subdirectories(parent_dir)
-    all_entries = get_all_guides_at_level(parent_dir, EXCLUDE_PARENT_FLAG, subdirs)
+    all_entries = get_all_guides_at_level(
+        parent_dir, EXCLUDE_PARENT_FLAG, subdirs)
 
     has_subdir_content = False
     for subdir in subdirs:
@@ -359,7 +369,8 @@ def update_parent_guides_section(directory: Path, docs_path: Path) -> bool:
 
     is_user_manual = is_user_manual_directory(parent_dir)
     is_tutorial = is_tutorial_directory(parent_dir)
-    section_title = "Table of Contents" if (is_user_manual or is_tutorial) else "Guides"
+    section_title = "Table of Contents" if (
+        is_user_manual or is_tutorial) else "Guides"
 
     page_title = get_directory_title(index_path)
     relative_parts = index_path.relative_to(docs_path).parts
@@ -376,8 +387,10 @@ def update_parent_guides_section(directory: Path, docs_path: Path) -> bool:
             f"{CRLF}{CRLF}"
         )
 
-    tutorial_entries = [entry for entry in all_entries if entry.type == "Tutorial"]
-    user_manual_entries = [entry for entry in all_entries if entry.type == "UserManual"]
+    tutorial_entries = [
+        entry for entry in all_entries if entry.type == "Tutorial"]
+    user_manual_entries = [
+        entry for entry in all_entries if entry.type == "UserManual"]
     regular_entries = [entry for entry in all_entries if entry.type == "Guide"]
 
     if tutorial_entries:
@@ -385,7 +398,8 @@ def update_parent_guides_section(directory: Path, docs_path: Path) -> bool:
         for entry in tutorial_entries:
             if entry.file is None:
                 continue
-            guides_section += build_guide_entry(entry.file, parent_dir, "#####")
+            guides_section += build_guide_entry(entry.file,
+                                                parent_dir, "#####")
             guides_section += CRLF
 
     for entry in user_manual_entries:
@@ -411,7 +425,8 @@ def update_parent_guides_section(directory: Path, docs_path: Path) -> bool:
         if not subdir_entries:
             info = get_guide_info(subdir_index)
             if info.is_guide and not info.exclude_from_parent:
-                guides_section += build_guide_entry(subdir_index, parent_dir, "####")
+                guides_section += build_guide_entry(
+                    subdir_index, parent_dir, "####")
                 guides_section += CRLF
             continue
 
@@ -423,26 +438,32 @@ def update_parent_guides_section(directory: Path, docs_path: Path) -> bool:
             False,
         )
 
-        sub_tutorials = [entry for entry in subdir_entries if entry.type == "Tutorial"]
-        sub_user_manuals = [entry for entry in subdir_entries if entry.type == "UserManual"]
-        sub_regular = [entry for entry in subdir_entries if entry.type == "Guide"]
+        sub_tutorials = [
+            entry for entry in subdir_entries if entry.type == "Tutorial"]
+        sub_user_manuals = [
+            entry for entry in subdir_entries if entry.type == "UserManual"]
+        sub_regular = [
+            entry for entry in subdir_entries if entry.type == "Guide"]
 
         if sub_tutorials:
             guides_section += f"##### Tutorials{CRLF}{CRLF}"
             for entry in sub_tutorials:
                 if entry.file is None:
                     continue
-                guides_section += build_guide_entry(entry.file, parent_dir, "######")
+                guides_section += build_guide_entry(
+                    entry.file, parent_dir, "######")
                 guides_section += CRLF
 
         for entry in sub_user_manuals:
-            guides_section += build_guide_entry(entry.path, parent_dir, "#####")
+            guides_section += build_guide_entry(entry.path,
+                                                parent_dir, "#####")
             guides_section += CRLF
 
         for entry in sub_regular:
             if entry.file is None:
                 continue
-            guides_section += build_guide_entry(entry.file, parent_dir, "#####")
+            guides_section += build_guide_entry(entry.file,
+                                                parent_dir, "#####")
             guides_section += CRLF
 
     original_content = read_text(index_path)
@@ -476,7 +497,8 @@ def build_main_guides_list(all_directories: list[Path], docs_path: Path) -> str:
 
     for topic in sorted(topic_groups):
         directories = topic_groups[topic]
-        topic_dir = next((d for d in directories if len(d.relative_to(docs_path).parts) == 1), None)
+        topic_dir = next((d for d in directories if len(
+            d.relative_to(docs_path).parts) == 1), None)
         if topic_dir is None:
             continue
 
@@ -499,7 +521,8 @@ def build_main_guides_list(all_directories: list[Path], docs_path: Path) -> str:
         if not has_guides:
             continue
 
-        topic_relative_path = get_relative_markdown_path(guides_list_path, topic_index_path)
+        topic_relative_path = get_relative_markdown_path(
+            guides_list_path, topic_index_path)
         content += f"### [{topic_title}]({topic_relative_path}){CRLF}{CRLF}"
 
         dirs_by_parent: dict[Path, list[Path]] = {}
@@ -519,7 +542,8 @@ def build_main_guides_list(all_directories: list[Path], docs_path: Path) -> str:
 
             for child in dirs_by_parent[parent_path]:
                 index_path = child / "index.md"
-                nav_order = get_guide_info(index_path).nav_order if index_path.is_file() else None
+                nav_order = get_guide_info(
+                    index_path).nav_order if index_path.is_file() else None
                 target = (child, nav_order)
                 if is_tutorial_directory(child):
                     if depth > 1:
@@ -530,28 +554,31 @@ def build_main_guides_list(all_directories: list[Path], docs_path: Path) -> str:
                 else:
                     regular_dirs.append(target)
 
-            for directory, _nav_order in sorted(tutorial_dirs, key=lambda item: sort_nav_then_path(item[1], item[0])):
+            for directory, _ in sorted(tutorial_dirs, key=lambda item: sort_nav_then_path(item[1], item[0])):
                 index_path = directory / "index.md"
                 info = get_guide_info(index_path)
                 if not info.is_guide or info.exclude_from_main:
                     continue
                 header_level = "#" * (directory_depth_in_topic(directory) + 3)
-                text += build_guide_entry(index_path, guides_list_path, header_level) + CRLF
+                text += build_guide_entry(index_path,
+                                          guides_list_path, header_level) + CRLF
 
-            for directory, _nav_order in sorted(user_manual_dirs, key=lambda item: sort_nav_then_path(item[1], item[0])):
+            for directory, _ in sorted(user_manual_dirs, key=lambda item: sort_nav_then_path(item[1], item[0])):
                 index_path = directory / "index.md"
                 info = get_guide_info(index_path)
                 if not info.is_guide or info.exclude_from_main:
                     continue
                 header_level = "#" * (directory_depth_in_topic(directory) + 3)
-                text += build_guide_entry(index_path, guides_list_path, header_level) + CRLF
+                text += build_guide_entry(index_path,
+                                          guides_list_path, header_level) + CRLF
 
-            for directory, _nav_order in sorted(regular_dirs, key=lambda item: sort_nav_then_path(item[1], item[0])):
+            for directory, _ in sorted(regular_dirs, key=lambda item: sort_nav_then_path(item[1], item[0])):
                 index_path = directory / "index.md"
-                guides = get_guides_in_directory(directory, True, EXCLUDE_MAIN_FLAG)
+                guides = get_guides_in_directory(
+                    directory, True, EXCLUDE_MAIN_FLAG)
                 has_children = directory in dirs_by_parent
-                child_tutorials = []
-                child_user_manuals = []
+                child_tutorials: list[Path] = []
+                child_user_manuals: list[Path] = []
                 if has_children:
                     child_tutorials = [
                         child for child in dirs_by_parent[directory] if is_tutorial_directory(child)
@@ -575,8 +602,8 @@ def build_main_guides_list(all_directories: list[Path], docs_path: Path) -> str:
                         False,
                     )
 
-                tutorial_guides = []
-                non_tutorial_guides = []
+                tutorial_guides: list[Path] = []
+                non_tutorial_guides: list[Path] = []
                 for guide in guides:
                     if get_guide_info(guide).is_tutorial:
                         tutorial_guides.append(guide)
@@ -597,14 +624,16 @@ def build_main_guides_list(all_directories: list[Path], docs_path: Path) -> str:
                     tutorial_guide_level = "#" * (depth_in_topic + 5)
                     text += f"{tutorial_header_level} Tutorials{CRLF}{CRLF}"
                     for guide in tutorial_guides:
-                        text += build_guide_entry(guide, guides_list_path, tutorial_guide_level) + CRLF
+                        text += build_guide_entry(guide, guides_list_path,
+                                                  tutorial_guide_level) + CRLF
                     for tut_dir, nav_order, info in sorted(
                         child_tut_entries,
                         key=lambda item: sort_nav_then_path(item[1], item[0]),
                     ):
                         if not info.is_guide or info.exclude_from_main:
                             continue
-                        text += build_guide_entry(tut_dir / "index.md", guides_list_path, tutorial_guide_level) + CRLF
+                        text += build_guide_entry(tut_dir / "index.md",
+                                                  guides_list_path, tutorial_guide_level) + CRLF
 
                 child_um_entries = [
                     (
@@ -621,11 +650,13 @@ def build_main_guides_list(all_directories: list[Path], docs_path: Path) -> str:
                     if not info.is_guide or info.exclude_from_main:
                         continue
                     guide_header_level = "#" * (depth_in_topic + 4)
-                    text += build_guide_entry(um_dir / "index.md", guides_list_path, guide_header_level) + CRLF
+                    text += build_guide_entry(um_dir / "index.md",
+                                              guides_list_path, guide_header_level) + CRLF
 
                 for guide in non_tutorial_guides:
                     guide_header_level = "#" * (depth_in_topic + 4)
-                    text += build_guide_entry(guide, guides_list_path, guide_header_level) + CRLF
+                    text += build_guide_entry(guide, guides_list_path,
+                                              guide_header_level) + CRLF
 
                 if has_children:
                     non_special_children = [
@@ -635,13 +666,17 @@ def build_main_guides_list(all_directories: list[Path], docs_path: Path) -> str:
                         and not is_tutorial_directory(child)
                     ]
                     if non_special_children:
-                        text = append_directory_hierarchy(directory, depth + 1, text)
+                        text = append_directory_hierarchy(
+                            directory, depth + 1, text)
 
             return text
 
-        topic_guides = get_guides_in_directory(topic_dir, True, EXCLUDE_MAIN_FLAG)
-        topic_tutorials = [guide for guide in topic_guides if get_guide_info(guide).is_tutorial]
-        topic_regular_guides = [guide for guide in topic_guides if not get_guide_info(guide).is_tutorial]
+        topic_guides = get_guides_in_directory(
+            topic_dir, True, EXCLUDE_MAIN_FLAG)
+        topic_tutorials = [
+            guide for guide in topic_guides if get_guide_info(guide).is_tutorial]
+        topic_regular_guides = [
+            guide for guide in topic_guides if not get_guide_info(guide).is_tutorial]
 
         topic_tutorial_dirs: list[Path] = []
         for child in dirs_by_parent.get(topic_dir, []):
@@ -658,22 +693,25 @@ def build_main_guides_list(all_directories: list[Path], docs_path: Path) -> str:
                 content += build_guide_entry(guide, guides_list_path, "#####")
                 content += CRLF
             for tut_dir_index in topic_tutorial_dirs:
-                content += build_guide_entry(tut_dir_index, guides_list_path, "#####")
+                content += build_guide_entry(tut_dir_index,
+                                             guides_list_path, "#####")
                 content += CRLF
 
-        child_entries = []
+        child_entries: list[tuple[Path, int | None]] = []
         for child in dirs_by_parent.get(topic_dir, []):
             index_path = child / "index.md"
-            nav_order = get_guide_info(index_path).nav_order if index_path.is_file() else None
+            nav_order = get_guide_info(
+                index_path).nav_order if index_path.is_file() else None
             child_entries.append((child, nav_order))
-        for child, _nav_order in sorted(child_entries, key=lambda item: sort_nav_then_path(item[1], item[0])):
+        for child, _ in sorted(child_entries, key=lambda item: sort_nav_then_path(item[1], item[0])):
             if is_tutorial_directory(child):
                 continue
             if is_user_manual_directory(child):
                 um_index_path = child / "index.md"
                 um_info = get_guide_info(um_index_path)
                 if um_info.is_guide and not um_info.exclude_from_main:
-                    content += build_guide_entry(um_index_path, guides_list_path, "####")
+                    content += build_guide_entry(um_index_path,
+                                                 guides_list_path, "####")
                     content += CRLF
 
         for guide in topic_regular_guides:
@@ -694,7 +732,7 @@ def find_docs_path() -> Path:
 
 
 def find_directories_with_index(docs_path: Path) -> list[Path]:
-    directories = []
+    directories: list[Path] = []
     for directory in sorted((path for path in docs_path.rglob("*") if path.is_dir()), key=lambda path: str(path)):
         if directory.name == "resources":
             continue
@@ -714,7 +752,8 @@ def run(docs_path: Path | None = None) -> dict[str, int | Path]:
 
     main_content = build_main_guides_list(all_directories, docs_path)
     guides_list_path = docs_path / "guides-list" / "index.md"
-    existing_guides_list = read_text(guides_list_path) if guides_list_path.exists() else ""
+    existing_guides_list = read_text(
+        guides_list_path) if guides_list_path.exists() else ""
     if normalize_for_compare(existing_guides_list) != normalize_for_compare(main_content):
         write_text(guides_list_path, main_content)
     return {
@@ -751,6 +790,7 @@ def main(argv: list[str] | None = None) -> int:
     print("---------------------------------------------------")
     print()
     updated = 0
+    directory = docs_path
     try:
         for directory in all_directories:
             if update_parent_guides_section(directory, docs_path):
@@ -767,7 +807,8 @@ def main(argv: list[str] | None = None) -> int:
     try:
         main_content = build_main_guides_list(all_directories, docs_path)
         guides_list_path = docs_path / "guides-list" / "index.md"
-        existing_guides_list = read_text(guides_list_path) if guides_list_path.exists() else ""
+        existing_guides_list = read_text(
+            guides_list_path) if guides_list_path.exists() else ""
         if normalize_for_compare(existing_guides_list) != normalize_for_compare(main_content):
             write_text(guides_list_path, main_content)
         print("[OK] Generated main guides list")

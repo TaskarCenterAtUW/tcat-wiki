@@ -26,9 +26,6 @@ assistant_behavior:
     allow_inference: false
     requires_citation: true
     abstain_if_missing_context: true
-    do_not_claim:
-        - Finding a project group grants membership or workspace access.
-        - Project-group names alone prove that a group is active or authoritative.
 related_pages:
     - assistant/workspaces/index.md
     - assistant/workspaces/concept/project-groups.md

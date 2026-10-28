@@ -25,8 +25,6 @@ assistant_behavior:
     allow_inference: false
     requires_citation: true
     abstain_if_missing_context: true
-    do_not_claim:
-        - Registering a TDEI account automatically grants project-group or publishing permissions.
 related_pages:
     - ../concept/portal-dashboard.md
     - ../../../tdei/portal/user-manual/account-registration.md

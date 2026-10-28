@@ -26,9 +26,6 @@ assistant_behavior:
     allow_inference: false
     requires_citation: true
     abstain_if_missing_context: true
-    do_not_claim:
-        - A tile layer is the editable workspace dataset.
-        - Every tile layer is current, complete, or available at every zoom.
 related_pages:
     - assistant/workspaces/index.md
     - assistant/workspaces/concept/imagery-layers.md

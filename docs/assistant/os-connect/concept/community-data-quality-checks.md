@@ -25,9 +25,6 @@ assistant_behavior:
     allow_inference: false
     requires_citation: true
     abstain_if_missing_context: true
-    do_not_claim:
-        - Passing quality checks proves that every community-mapped feature is accurate.
-        - Quality checks automatically authorize publication or routing use.
 related_pages:
     - assistant/os-connect/concept/community-data-usability.md
     - assistant/os-connect/concept/correction-validation.md

@@ -24,10 +24,6 @@ assistant_behavior:
     allow_inference: false
     requires_citation: true
     abstain_if_missing_context: true
-    do_not_claim:
-        - Attending Office Hours guarantees that TCAT will enable AccessMap support for a region.
-        - AccessMap support can be enabled without suitable pedestrian network data.
-        - Existing OpenStreetMap or local pedestrian network data is automatically ready for AccessMap.
 related_pages:
     - ../concept/data-sources.md
     - ../../opensidewalks/index.md

@@ -31,9 +31,6 @@ assistant_behavior:
     allow_inference: false
     requires_citation: true
     abstain_if_missing_context: true
-    do_not_claim:
-        - A partner must coordinate every team involved in a cross-product question.
-        - The first team contacted automatically owns every follow-up action.
 related_pages:
     - assistant/support/workflow/handle-unknown-questions.md
     - assistant/support/workflow/mappy-hours-referral-decision.md

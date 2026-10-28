@@ -25,9 +25,6 @@ assistant_behavior:
     allow_inference: false
     requires_citation: true
     abstain_if_missing_context: true
-    do_not_claim:
-        - A mapped curb ramp guarantees that the crossing is usable.
-        - A missing curb-ramp attribute proves that no curb ramp exists.
 related_pages:
     - assistant/accessmap/concept/missing-curb-ramps-effect.md
     - assistant/accessmap/concept/avoid-missing-curb-ramps.md

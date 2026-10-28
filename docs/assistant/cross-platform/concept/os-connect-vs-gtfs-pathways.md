@@ -30,10 +30,6 @@ assistant_behavior:
     allow_inference: true
     requires_citation: false
     abstain_if_missing_context: false
-    do_not_claim:
-        - OS-CONNECT and GTFS-Pathways describe the same geographic scope.
-        - OS-CONNECT automatically includes a transit agency's station-internal pathways.
-        - GTFS-Pathways is a complete connected pedestrian network for Washington State.
 related_pages:
     - assistant/cross-platform/index.md
     - assistant/os-connect/index.md

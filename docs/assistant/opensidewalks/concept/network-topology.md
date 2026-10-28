@@ -27,9 +27,6 @@ assistant_behavior:
     allow_inference: false
     requires_citation: true
     abstain_if_missing_context: true
-    do_not_claim:
-        - Crossing line intersections alone create OpenSidewalks network connectivity.
-        - A sidewalk can connect directly to a crossing without the documented connecting footway structure.
 related_pages:
     - opensidewalks-schema.md
     - connector-segment-tagging.md

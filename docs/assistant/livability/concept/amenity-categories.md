@@ -27,10 +27,6 @@ assistant_behavior:
     allow_inference: false
     requires_citation: true
     abstain_if_missing_context: true
-    do_not_claim:
-        - LivAbility's amenity categories contain every destination in the selected area.
-        - A displayed amenity is open, available, or accessible to every user.
-        - An empty category proves that no amenity of that type exists nearby.
 related_pages:
     - assistant/livability/index.md
     - assistant/livability/concept/livability-analysis.md

@@ -24,9 +24,6 @@ assistant_behavior:
     allow_inference: false
     requires_citation: true
     abstain_if_missing_context: true
-    do_not_claim:
-        - A missing width value means the feature has no usable width.
-        - A recorded width proves ADA compliance or usability for every traveler.
 related_pages:
     - assistant/os-connect/index.md
     - assistant/os-connect/concept/attribute-documentation-location.md

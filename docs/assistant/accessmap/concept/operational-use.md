@@ -24,9 +24,6 @@ assistant_behavior:
     allow_inference: false
     requires_citation: true
     abstain_if_missing_context: true
-    do_not_claim:
-        - AccessMap replaces an agency's operational or engineering judgment.
-        - A route result is a guarantee of current access or safety.
 related_pages:
     - assistant/accessmap/concept/public-engagement.md
     - assistant/accessmap/workflow/validate-routing-results.md

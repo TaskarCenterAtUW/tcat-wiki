@@ -23,8 +23,6 @@ assistant_behavior:
     allow_inference: false
     requires_citation: true
     abstain_if_missing_context: true
-    do_not_claim:
-        - Any CSV with coordinates is valid for every Walksheds batch request.
 related_pages:
     - ../workflow/run-batch-walksheds.md
     - walkshed-batch-output.md

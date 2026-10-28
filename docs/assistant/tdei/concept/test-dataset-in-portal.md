@@ -25,9 +25,6 @@ assistant_behavior:
     allow_inference: false
     requires_citation: true
     abstain_if_missing_context: true
-    do_not_claim:
-        - A dataset labeled as test is suitable for public planning or production use.
-        - A test dataset is automatically an error or a released dataset.
 related_pages:
     - assistant/tdei/concept/dataset-visibility.md
     - assistant/tdei/concept/released-dataset.md

@@ -24,9 +24,6 @@ assistant_behavior:
     allow_inference: false
     requires_citation: true
     abstain_if_missing_context: true
-    do_not_claim:
-        - AccessMap guarantees that a route is physically accessible for every traveler.
-        - AccessMap provides complete and current pedestrian data in every region.
 related_pages:
     - accessmap/index.md
     - ../../accessmap/user-manual/index.md

@@ -25,9 +25,6 @@ assistant_behavior:
     allow_inference: false
     requires_citation: true
     abstain_if_missing_context: true
-    do_not_claim:
-        - Every external attribute in a source dataset must be released publicly.
-        - The OpenSidewalks `ext:` prefix is a TDEI privacy or release control.
 related_pages:
     - assistant/opensidewalks/concept/external-attributes.md
     - assistant/tdei/concept/dataset-visibility.md

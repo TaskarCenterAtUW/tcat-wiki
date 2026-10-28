@@ -30,11 +30,6 @@ assistant_behavior:
     allow_inference: false
     requires_citation: true
     abstain_if_missing_context: true
-    do_not_claim:
-        - Creating a workspace automatically updates the TDEI dataset
-        - A workspace stays synchronized when TDEI publishes a newer dataset version
-        - Opening a workspace edits the public OpenStreetMap database
-        - Every partner has permission to open every TDEI dataset in Workspaces
 related_pages:
     - assistant/workspaces/concept/workspace-as-private-osm.md
     - assistant/workspaces/concept/workspaces.md

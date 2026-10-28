@@ -25,10 +25,6 @@ assistant_behavior:
     allow_inference: false
     requires_citation: true
     abstain_if_missing_context: true
-    do_not_claim:
-        - A QA/QC report proves current field conditions.
-        - A QA/QC report establishes ADA compliance without field and professional review.
-        - A QA/QC report confirms that an individual can reach a point-of-interest entrance.
 related_pages:
     - assistant/qa-qc/concept/report-provenance.md
 tags:

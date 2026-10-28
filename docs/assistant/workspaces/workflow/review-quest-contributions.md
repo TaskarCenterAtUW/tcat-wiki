@@ -25,8 +25,6 @@ assistant_behavior:
     allow_inference: false
     requires_citation: true
     abstain_if_missing_context: true
-    do_not_claim:
-        - A submitted quest answer is automatically approved or published.
 related_pages:
     - assistant/workspaces/concept/workspace-review-interface.md
     - assistant/workspaces/concept/workspace-review-and-publication-gates.md

@@ -25,9 +25,6 @@ assistant_behavior:
     allow_inference: false
     requires_citation: true
     abstain_if_missing_context: true
-    do_not_claim:
-        - A private OSM workspace is part of the public OpenStreetMap database.
-        - Workspace edits automatically reach OpenStreetMap.
 related_pages:
     - assistant/workspaces/index.md
     - assistant/workspaces/concept/private-osm-explained.md

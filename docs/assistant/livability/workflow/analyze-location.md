@@ -27,10 +27,6 @@ assistant_behavior:
     allow_inference: false
     requires_citation: true
     abstain_if_missing_context: true
-    do_not_claim:
-        - Running a LivAbility analysis certifies that the selected location or route is accessible.
-        - A failed LivAbility analysis proves that no accessible sidewalk or amenity exists.
-        - LivAbility results remain valid when the location, settings, or source data changes.
 related_pages:
     - assistant/livability/index.md
     - assistant/livability/concept/livability-analysis.md

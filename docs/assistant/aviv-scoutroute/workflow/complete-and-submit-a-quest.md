@@ -25,8 +25,6 @@ assistant_behavior:
     allow_inference: false
     requires_citation: true
     abstain_if_missing_context: true
-    do_not_claim:
-        - Submitting a quest guarantees that the recorded observation is correct or immediately published.
 related_pages:
     - ../concept/quest.md
     - ../concept/field-observation.md

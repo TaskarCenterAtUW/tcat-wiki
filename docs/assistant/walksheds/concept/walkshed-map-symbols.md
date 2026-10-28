@@ -24,9 +24,6 @@ assistant_behavior:
     allow_inference: false
     requires_citation: true
     abstain_if_missing_context: true
-    do_not_claim:
-        - Walksheds map has visual map features that are not documented in the legend.
-        - Display of an element as inaccessible is an ADA assessment of that feature.
 related_pages:
     - walkshed-scenarios.md
     - walkshed-travel-cost.md

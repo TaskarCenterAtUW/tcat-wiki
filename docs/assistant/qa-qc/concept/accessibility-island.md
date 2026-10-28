@@ -26,9 +26,6 @@ assistant_behavior:
     allow_inference: false
     requires_citation: true
     abstain_if_missing_context: true
-    do_not_claim:
-        - Separate QA/QC accessibility islands prove that residents cannot travel between the mapped areas.
-        - QA/QC accessibility islands are calculated from manual-wheelchair walksheds.
 related_pages:
     - assistant/qa-qc/workflow/identify-accessibility-islands.md
     - assistant/qa-qc/concept/connected-pedestrian-graph.md

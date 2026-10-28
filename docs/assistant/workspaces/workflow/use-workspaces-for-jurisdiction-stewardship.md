@@ -25,9 +25,6 @@ assistant_behavior:
     allow_inference: false
     requires_citation: true
     abstain_if_missing_context: true
-    do_not_claim:
-        - Workspaces replaces a jurisdiction's data governance or maintenance responsibilities.
-        - Workspace publication proves that all local accessibility data is complete.
 related_pages:
     - assistant/workspaces/index.md
     - assistant/workspaces/concept/stewardship-support.md

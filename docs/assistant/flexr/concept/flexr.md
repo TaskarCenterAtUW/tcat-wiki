@@ -26,11 +26,6 @@ assistant_behavior:
     allow_inference: false
     requires_citation: true
     abstain_if_missing_context: true
-    do_not_claim:
-        - FleXR is a finished, publicly released consumer product.
-        - FleXR requires prior experience with XR devices to use.
-        - TCAT is currently running a FleXR user study.
-        - People with motor disabilities can currently join a FleXR user study.
 related_pages:
     - assistant/flexr/index.md
     - assistant/flexr/workflow/get-involved-with-flexr.md

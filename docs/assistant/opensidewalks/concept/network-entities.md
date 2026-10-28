@@ -26,9 +26,6 @@ assistant_behavior:
     allow_inference: false
     requires_citation: true
     abstain_if_missing_context: true
-    do_not_claim:
-        - Every OpenSidewalks Point, Line, or Polygon is part of the traversable network.
-        - An OpenSidewalks Edge can be interpreted without its endpoint references.
 related_pages:
     - opensidewalks-schema.md
     - network-topology.md

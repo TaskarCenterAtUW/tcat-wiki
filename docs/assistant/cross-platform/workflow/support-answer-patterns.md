@@ -30,8 +30,6 @@ assistant_behavior:
     allow_inference: false
     requires_citation: true
     abstain_if_missing_context: true
-    do_not_claim:
-        - These patterns authorize legal conclusions or guaranteed timelines without verification.
 related_pages:
     - assistant/support/index.md
     - assistant/intents/support-intents.md

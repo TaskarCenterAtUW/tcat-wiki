@@ -33,11 +33,6 @@ assistant_behavior:
     allow_inference: false
     requires_citation: true
     abstain_if_missing_context: true
-    do_not_claim:
-        - Answering a quest replaces the entire source dataset.
-        - A submitted AVIV ScoutRoute quest answer is automatically published publicly.
-        - A submitted AVIV ScoutRoute quest answer waits in a separate uncommitted review queue.
-        - AVIV ScoutRoute submits quest answers directly to the public OpenStreetMap database.
 related_pages:
     - assistant/aviv-scoutroute/index.md
     - assistant/aviv-scoutroute/workflow/join-a-project-and-find-quests.md

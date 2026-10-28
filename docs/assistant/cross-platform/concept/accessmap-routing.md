@@ -24,8 +24,6 @@ assistant_behavior:
     allow_inference: true
     requires_citation: true
     abstain_if_missing_context: false
-    do_not_claim:
-        - AccessMap always picks the objectively best route for every user in the real world.
 related_pages:
     - assistant/accessmap/concept/accessible-routes-appear-longer.md
     - assistant/accessmap/concept/mobility-profiles.md

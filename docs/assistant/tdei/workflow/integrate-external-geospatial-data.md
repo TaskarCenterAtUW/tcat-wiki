@@ -31,9 +31,6 @@ assistant_behavior:
     allow_inference: true
     requires_citation: true
     abstain_if_missing_context: true
-    do_not_claim:
-        - Any external geospatial file will pass TDEI validation without conversion or cleanup.
-        - A TDEI union or join job is a substitute for reviewing the output dataset.
 related_pages:
     - assistant/opensidewalks/concept/external-attributes.md
     - assistant/tdei/concept/source-and-derivative-datasets.md

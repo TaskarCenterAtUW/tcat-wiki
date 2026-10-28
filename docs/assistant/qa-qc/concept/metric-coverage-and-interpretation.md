@@ -26,8 +26,6 @@ assistant_behavior:
     allow_inference: false
     requires_citation: true
     abstain_if_missing_context: true
-    do_not_claim:
-        - A report average fully describes the distribution of pedestrian-network conditions.
 related_pages: []
 tags:
     - Assistant

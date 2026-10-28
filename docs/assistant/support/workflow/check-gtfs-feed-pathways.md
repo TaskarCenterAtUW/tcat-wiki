@@ -31,8 +31,6 @@ assistant_behavior:
     allow_inference: false
     requires_citation: true
     abstain_if_missing_context: true
-    do_not_claim:
-        - An agency publishes GTFS Pathways without checking its current official feed.
     related_pages:
         - assistant/support/concept/osm-pedestrian-paths-vs-gtfs-pathways.md
 tags:

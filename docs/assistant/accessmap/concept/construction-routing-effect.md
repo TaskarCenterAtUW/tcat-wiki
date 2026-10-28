@@ -25,9 +25,6 @@ assistant_behavior:
     allow_inference: false
     requires_citation: true
     abstain_if_missing_context: true
-    do_not_claim:
-        - AccessMap always reflects current construction conditions.
-        - A route unaffected in the model is guaranteed to be open.
 related_pages:
     - assistant/accessmap/concept/temporary-barriers.md
     - assistant/accessmap/concept/update-cadence.md

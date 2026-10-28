@@ -27,8 +27,6 @@ assistant_behavior:
     allow_inference: false
     requires_citation: true
     abstain_if_missing_context: true
-    do_not_claim:
-        - Overlapping dataset boundaries by themselves prove source lineage or version relationships.
 related_pages:
     - assistant/os-connect/concept/geographic-coverage.md
     - assistant/os-connect/workflow/search-for-jurisdiction.md

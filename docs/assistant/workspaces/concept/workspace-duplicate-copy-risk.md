@@ -25,8 +25,6 @@ assistant_behavior:
     allow_inference: false
     requires_citation: true
     abstain_if_missing_context: true
-    do_not_claim:
-        - Opening a dataset always reuses an existing workspace copy.
 related_pages: []
 tags:
     - Assistant

@@ -31,11 +31,6 @@ assistant_behavior:
     allow_inference: false
     requires_citation: true
     abstain_if_missing_context: true
-    do_not_claim:
-        - OS-CONNECT proves that a destination is accessible
-        - OS-CONNECT guarantees current field conditions
-        - walkshed results are equivalent to ADA compliance
-        - straight-line distance is sufficient for pedestrian access analysis
 related_pages:
     - assistant/walksheds/concept/walkshed.md
     - assistant/cross-platform/concept/accessmap-routing.md

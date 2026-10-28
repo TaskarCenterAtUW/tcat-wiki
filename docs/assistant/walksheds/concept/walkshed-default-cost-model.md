@@ -24,8 +24,6 @@ assistant_behavior:
     allow_inference: false
     requires_citation: true
     abstain_if_missing_context: true
-    do_not_claim:
-        - Walksheds estimated cost is a guaranteed travel time for a person.
 related_pages:
     - walkshed-cost-function.md
     - walkshed-cost-factors.md

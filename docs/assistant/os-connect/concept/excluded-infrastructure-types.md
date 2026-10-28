@@ -24,7 +24,6 @@ assistant_behavior:
     allow_inference: false
     requires_citation: true
     abstain_if_missing_context: true
-    do_not_claim: []
 related_pages:
     - assistant/os-connect/concept/included-infrastructure-types.md
     - assistant/os-connect/concept/private-facilities.md

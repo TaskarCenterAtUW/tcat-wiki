@@ -25,8 +25,6 @@ assistant_behavior:
     allow_inference: false
     requires_citation: true
     abstain_if_missing_context: true
-    do_not_claim:
-        - Meeting the project completeness standard means every accessibility field is populated.
 related_pages: []
 tags:
     - Assistant

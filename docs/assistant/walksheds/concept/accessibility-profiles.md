@@ -24,8 +24,6 @@ assistant_behavior:
     allow_inference: false
     requires_citation: true
     abstain_if_missing_context: true
-    do_not_claim:
-        - A Walksheds profile represents every person using that mobility aid.
 related_pages: []
 tags:
     - Assistant

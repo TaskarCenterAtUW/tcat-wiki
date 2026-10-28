@@ -23,8 +23,6 @@ assistant_behavior:
     allow_inference: false
     requires_citation: true
     abstain_if_missing_context: true
-    do_not_claim:
-        - A custom cost function can safely execute arbitrary code without review.
 related_pages:
     - walkshed-custom-cost-functions.md
     - walkshed-edge-attributes.md

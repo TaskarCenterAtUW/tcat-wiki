@@ -24,9 +24,6 @@ assistant_behavior:
     allow_inference: false
     requires_citation: true
     abstain_if_missing_context: true
-    do_not_claim:
-        - A workspace answer can be accurate without the workspace, source version, or user role.
-        - Workspaces behavior is identical across all environments and releases.
 related_pages:
     - assistant/workspaces/index.md
     - assistant/cross-platform/concept/assistant-abstention.md

@@ -24,9 +24,6 @@ assistant_behavior:
     allow_inference: false
     requires_citation: true
     abstain_if_missing_context: true
-    do_not_claim:
-        - A local dataset automatically improves every AccessMap route.
-        - Local data are automatically authoritative or error-free.
 related_pages:
     - assistant/accessmap/concept/data-sources.md
     - assistant/accessmap/concept/missing-accessibility-data.md

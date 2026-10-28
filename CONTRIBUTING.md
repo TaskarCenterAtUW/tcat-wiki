@@ -75,7 +75,7 @@ fix/docs-walksheds/2048-fix-typo
 
 #### Changelog
 
-[CHANGELOG.md](CHANGELOG.md) is the sole update-tracking record. Its `## Unreleased` section is commented out and is not tracked. Record only versioned release updates; do not create or use Git tags or GitHub releases for update tracking.
+[CHANGELOG.md](CHANGELOG.md) is the sole update-tracking record. Record only versioned release updates; do not create or use Git tags or GitHub releases for update tracking.
 
 1. Use the repository's [changelog skill](.agents/skills/update-changelog/SKILL.md) when preparing a versioned release entry from the relevant unrecorded commits.
 

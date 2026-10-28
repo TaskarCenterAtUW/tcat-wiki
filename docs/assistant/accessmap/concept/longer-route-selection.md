@@ -23,8 +23,6 @@ assistant_behavior:
     allow_inference: true
     requires_citation: true
     abstain_if_missing_context: true
-    do_not_claim:
-        - A longer AccessMap route is always correct because it avoids steep inclines.
 related_pages:
     - assistant/cross-platform/concept/accessmap-routing.md
     - assistant/accessmap/concept/mobility-profiles.md

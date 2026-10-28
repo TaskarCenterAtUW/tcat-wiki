@@ -27,8 +27,6 @@ assistant_behavior:
     allow_inference: false
     requires_citation: true
     abstain_if_missing_context: false
-    do_not_claim:
-        - All TCAT documentation is written for one fixed level of prior knowledge.
 related_pages:
     - assistant/cross-platform/index.md
     - assistant/schema.md

@@ -26,9 +26,6 @@ assistant_behavior:
     allow_inference: false
     requires_citation: true
     abstain_if_missing_context: true
-    do_not_claim:
-        - Workspace metadata is a complete record of every source and edit.
-        - Workspace metadata proves that the data is current or approved.
 related_pages:
     - assistant/workspaces/index.md
     - assistant/workspaces/concept/workspace-metadata-and-lineage.md

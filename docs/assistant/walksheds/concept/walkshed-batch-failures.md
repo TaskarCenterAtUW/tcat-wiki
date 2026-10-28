@@ -23,8 +23,6 @@ assistant_behavior:
     allow_inference: false
     requires_citation: true
     abstain_if_missing_context: true
-    do_not_claim:
-        - A failed batch item always indicates a calculation defect.
 related_pages: []
 tags:
     - Assistant

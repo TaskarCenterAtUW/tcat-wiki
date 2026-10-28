@@ -25,8 +25,6 @@ assistant_behavior:
     allow_inference: false
     requires_citation: true
     abstain_if_missing_context: true
-    do_not_claim:
-        - Eigenvector centrality identifies the places people most want to reach.
 related_pages: []
 tags:
     - Assistant

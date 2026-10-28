@@ -26,9 +26,6 @@ assistant_behavior:
     allow_inference: false
     requires_citation: true
     abstain_if_missing_context: true
-    do_not_claim:
-        - Passing a pre-export review proves that the dataset is legally compliant.
-        - A reviewer must approve every edit without checking its context.
 related_pages:
     - assistant/workspaces/index.md
     - assistant/workspaces/concept/workspace-review-and-publication-gates.md

@@ -30,9 +30,6 @@ assistant_behavior:
     allow_inference: false
     requires_citation: true
     abstain_if_missing_context: true
-    do_not_claim:
-        - One public contact handles every TDEI question.
-        - Contacting support guarantees access, publication, or a release date.
 related_pages:
     - assistant/tdei/index.md
     - assistant/tdei/workflow/use-tdei-portal.md

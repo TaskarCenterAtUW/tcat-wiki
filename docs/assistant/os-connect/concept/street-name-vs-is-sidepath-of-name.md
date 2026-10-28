@@ -25,8 +25,6 @@ assistant_behavior:
     allow_inference: false
     requires_citation: true
     abstain_if_missing_context: true
-    do_not_claim:
-        - Either tag proves accessibility, ownership, or connectivity.
     related_pages:
         - assistant/os-connect/concept/sidewalk-street-name-association.md
 tags:

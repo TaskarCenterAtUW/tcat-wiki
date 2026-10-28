@@ -26,8 +26,6 @@ assistant_behavior:
     allow_inference: false
     requires_citation: true
     abstain_if_missing_context: true
-    do_not_claim:
-        - The intersection quality metric is a complete safety rating.
 related_pages: []
 tags:
     - Assistant

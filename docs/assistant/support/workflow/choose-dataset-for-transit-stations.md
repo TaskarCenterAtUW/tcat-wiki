@@ -31,8 +31,6 @@ assistant_behavior:
     allow_inference: false
     requires_citation: true
     abstain_if_missing_context: true
-    do_not_claim:
-        - The existence of pedestrian data proves that transit-station pathways are published.
     related_pages:
         - assistant/support/workflow/check-gtfs-feed-pathways.md
 tags:

@@ -108,7 +108,7 @@ Select **Create** to submit the job. Select **Cancel** to return to the Jobs lis
 
 ---
 
-### OSW Spatial Join – Guide
+### OSW Spatial Join - Guide
 
 This section explains how to use `/api/v1/osw/spatial-join` from an API or UI perspective, with concrete OSW sidewalk and pedestrian data examples that show how to pick the right `assignment_method` (`default`, `exclusive`, `shared`) and how to structure JSON requests for common real-world scenarios like curb ramps, light poles, and intersections.
 
@@ -137,9 +137,9 @@ This section explains how to use `/api/v1/osw/spatial-join` from an API or UI pe
 "assignment_method": "default" | "exclusive" | "shared"
 ```
 
-- **`default`**: **many-to-many** – each target keeps **all** matching source features.
-- **`exclusive`**: **one-to-one** – each target gets at most one source, and each source is assigned to at most one target (competitive closest assignment).
-- **`shared`**: **one-to-many** – each target gets its best (closest) source, but a source may be shared by many targets.
+- **`default`**: **many-to-many** - each target keeps **all** matching source features.
+- **`exclusive`**: **one-to-one** - each target gets at most one source, and each source is assigned to at most one target (competitive closest assignment).
+- **`shared`**: **one-to-many** - each target gets its best (closest) source, but a source may be shared by many targets.
 
 Choose the method based on the **real-world relationship** between the two datasets, not just what is technically possible.
 
@@ -147,7 +147,7 @@ Choose the method based on the **real-world relationship** between the two datas
 
 #### When to use which method
 
-##### `default` – exploration and statistics (many-to-many)
+##### `default` - exploration and statistics (many-to-many)
 
 **Use when**
 
@@ -155,9 +155,9 @@ Choose the method based on the **real-world relationship** between the two datas
 - It is fine for one physical object (power pole, street lamp, intersection etc) to be attached to **many** sidewalk features.
 - You are doing **exploratory analysis**, QA, or generating statistics.
 
-**Typical OSW example – all light poles near sidewalks**
+**Typical OSW example - all light poles near sidewalks**
 
-> For each sidewalk edge, list **all** light poles that lie within 4 m of the edge, and only along the “middle” of the edge (between 20% and 90% of its length), then attach detailed pole attributes.
+> For each sidewalk edge, list **all** light poles that lie within 4 m of the edge, and only along the "middle" of the edge (between 20% and 90% of its length), then attach detailed pole attributes.
 
 ```json
 {
@@ -181,25 +181,25 @@ Choose the method based on the **real-world relationship** between the two datas
 
 **How to interpret**
 
-- Each sidewalk edge will have arrays listing **all** poles that are close to that edge and fall along the interior (20–90%) of the edge geometry.
+- Each sidewalk edge will have arrays listing **all** poles that are close to that edge and fall along the interior (20-90%) of the edge geometry.
 - The same physical pole may appear under multiple edges if it is close enough to more than one edge.
 
-Use `default` when your question is roughly: **“What exists around each feature?”**
+Use `default` when your question is roughly: **"What exists around each feature?"**
 
 ---
 
-##### `exclusive` – strict one-to-one assignments
+##### `exclusive` - strict one-to-one assignments
 
 **Use when**
 
-- You need a **clean 1–1 mapping** between datasets:
+- You need a **clean 1-1 mapping** between datasets:
     - Each curb ramp must belong to **one** sidewalk edge or crossing.
     - Each target should not share a source that another target also owns.
 - You are building a **routing or network model** and want to avoid double-counting sources.
 
-**Typical OSW example – assign each curb ramp to a single best sidewalk node**
+**Typical OSW example - assign each curb ramp to a single best sidewalk node**
 
-> For each curb ramp node, choose exactly one “host” sidewalk node with `barrier='kerb'` within 4 m; avoid assigning the same ramp to multiple nodes.
+> For each curb ramp node, choose exactly one "host" sidewalk node with `barrier='kerb'` within 4 m; avoid assigning the same ramp to multiple nodes.
 
 ```json
 {
@@ -224,11 +224,11 @@ Use `default` when your question is roughly: **“What exists around each featur
 - Each sidewalk node with `barrier='kerb'` will have attributes derived from **at most one** ramp node.
 - Each ramp node is assigned to **at most one** sidewalk node.
 
-Use `exclusive` when your question is roughly: **“Who is the single owner/host of this feature?”**
+Use `exclusive` when your question is roughly: **"Who is the single owner/host of this feature?"**
 
 ---
 
-##### `shared` – shared infrastructure (one-to-many)
+##### `shared` - shared infrastructure (one-to-many)
 
 **Use when**
 
@@ -237,7 +237,7 @@ Use `exclusive` when your question is roughly: **“Who is the single owner/host
     - One curb ramp provides access to several nearby edges.
 - You want just **one chosen source per target**, but allow reuse of that source.
 
-**Typical OSW example – each intersection node gets its nearest intersection record, intersections can be shared**
+**Typical OSW example - each intersection node gets its nearest intersection record, intersections can be shared**
 
 > For each node in the sidewalk network representing an intersection, attach information from the nearest intersection record (within 20 m). The same intersection record may serve multiple sidewalks.
 
@@ -263,7 +263,7 @@ Use `exclusive` when your question is roughly: **“Who is the single owner/host
 - Each target sidewalk is linked to the **closest** intersection record (if any).
 - The same intersection record can be the chosen record for many different sidewalks.
 
-Use `shared` when your question is roughly: **“What is the main facility or record serving this location, even if it serves others too?”**
+Use `shared` when your question is roughly: **"What is the main facility or record serving this location, even if it serves others too?"**
 
 ---
 
@@ -277,8 +277,8 @@ When building a new request, think in three steps:
 
 - **Define spatial relationship and filters**
     - `join_condition` examples:
-        - `"ST_DWithin(geometry_target, geometry_source, 5)"` – within 5 m.
-        - `"ST_Intersects(ST_Buffer(geometry_target, 2), geometry_source)"` – within a corridor around an edge.
+        - `"ST_DWithin(geometry_target, geometry_source, 5)"` - within 5 m.
+        - `"ST_Intersects(ST_Buffer(geometry_target, 2), geometry_source)"` - within a corridor around an edge.
     - `join_filter_target` / `join_filter_source` examples:
         - `"highway='footway' AND footway='sidewalk'"`, `"barrier='kerb'"`, `"highway='street_lamp'"`, `"amenity='bench'"`.
 
@@ -288,9 +288,9 @@ When building a new request, think in three steps:
         - `"min(ramp_width_mt) as min_ramp_width"`,
         - `"count(*) as ramp_count"`.
     - `assignment_method`:
-        - **`default`** – keep **all** matching sources (exploration, statistics, QA).
-        - **`exclusive`** – enforce **one-to-one** relationships (strict network models).
-        - **`shared`** – pick **one best source per target** but allow sources to be reused (shared facilities).
+        - **`default`** - keep **all** matching sources (exploration, statistics, QA).
+        - **`exclusive`** - enforce **one-to-one** relationships (strict network models).
+        - **`shared`** - pick **one best source per target** but allow sources to be reused (shared facilities).
 
 By combining above these input parts, you can compose your own spatial joins tailored to OSW sidewalk and pedestrian accessibility use cases.
 

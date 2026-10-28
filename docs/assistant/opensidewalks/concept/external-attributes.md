@@ -29,9 +29,6 @@ assistant_behavior:
     allow_inference: true
     requires_citation: true
     abstain_if_missing_context: false
-    do_not_claim:
-        - Any external attribute is part of the OpenSidewalks core schema.
-        - External attributes cannot be saved as part of OpenSidewalks-formatted datasets.
 related_pages:
     - assistant/tdei/concept/source-and-derivative-datasets.md
     - assistant/tdei/workflow/integrate-external-geospatial-data.md

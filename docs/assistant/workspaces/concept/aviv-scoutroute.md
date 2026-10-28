@@ -26,7 +26,6 @@ assistant_behavior:
     allow_inference: false
     requires_citation: true
     abstain_if_missing_context: true
-    do_not_claim: []
 related_pages:
     - assistant/workspaces/concept/workspace-app-access-default.md
     - assistant/workspaces/concept/mobile-point-feature-creation.md

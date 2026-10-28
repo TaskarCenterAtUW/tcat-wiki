@@ -26,9 +26,6 @@ assistant_behavior:
     allow_inference: false
     requires_citation: true
     abstain_if_missing_context: true
-    do_not_claim:
-        - One editor is best for every Workspaces task.
-        - Choosing an editor grants editing authority.
 related_pages:
     - assistant/workspaces/index.md
     - assistant/workspaces/concept/rapid.md

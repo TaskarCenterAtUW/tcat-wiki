@@ -27,10 +27,6 @@ assistant_behavior:
     allow_inference: false
     requires_citation: true
     abstain_if_missing_context: true
-    do_not_claim:
-        - A filtered LivAbility result is a complete inventory of the selected amenity type.
-        - A zero category count proves that no amenity of that type exists.
-        - A displayed amenity is necessarily open or accessible to the user.
 related_pages:
     - assistant/livability/index.md
     - assistant/livability/concept/amenity-categories.md

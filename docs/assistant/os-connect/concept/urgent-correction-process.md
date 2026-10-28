@@ -25,9 +25,6 @@ assistant_behavior:
     allow_inference: false
     requires_citation: true
     abstain_if_missing_context: true
-    do_not_claim:
-        - An urgent request guarantees an immediate correction or release.
-        - A local workaround updates the public OS-CONNECT dataset.
 related_pages:
     - assistant/os-connect/workflow/report-data-error.md
     - assistant/os-connect/concept/bulk-correction-submission.md

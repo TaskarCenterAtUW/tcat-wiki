@@ -17,6 +17,7 @@ import argparse
 import re
 import sys
 from pathlib import Path
+from typing import Literal, TypedDict
 
 SCRIPT_DIR = Path(__file__).parent
 REPO_ROOT = SCRIPT_DIR.parent.resolve()
@@ -51,7 +52,40 @@ NAV_COMMENT_RE = re.compile(r"(?ms)(#.*nav.*\r?\n(?:#.*\r?\n)*)")
 THEME_SECTION_RE = re.compile(r"(?m)^\[project\.theme\]")
 
 
-def get_markdown_title(file_path):
+class _NavSortEntry(TypedDict):
+    path: Path
+    name: str
+    nav_order: int | None
+
+
+class _SimpleDirectorySubitem(TypedDict):
+    type: Literal["simple"]
+    content: str
+    indent: str
+
+
+class _NestedDirectorySubitem(TypedDict):
+    type: Literal["nested"]
+    lines: list[str]
+
+
+_DirectorySubitem = _SimpleDirectorySubitem | _NestedDirectorySubitem
+
+
+class _SimpleNavigationItem(TypedDict):
+    type: Literal["simple"]
+    content: str
+
+
+class _BlockNavigationItem(TypedDict):
+    type: Literal["block"]
+    lines: list[str]
+
+
+_NavigationItem = _SimpleNavigationItem | _BlockNavigationItem
+
+
+def get_markdown_title(file_path: Path | str) -> str | None:
     """Return a Markdown title from frontmatter or the first top-level heading."""
     try:
         content = Path(file_path).read_text(encoding="utf-8")
@@ -71,14 +105,14 @@ def get_markdown_title(file_path):
     return None
 
 
-def protect_toml_string(text):
+def protect_toml_string(text: str) -> str:
     """Return text wrapped as a TOML basic string with quotes and backslashes escaped."""
     escaped = text.replace("\\", "\\\\")
     escaped = escaped.replace('"', '\\"')
     return f'"{escaped}"'
 
 
-def convert_to_title(name):
+def convert_to_title(name: str) -> str | None:
     """Convert a file or directory name to a display title."""
     base_name = Path(name).stem
     mapped = TITLE_MAP.get(base_name.lower())
@@ -88,7 +122,7 @@ def convert_to_title(name):
     return result
 
 
-def get_nav_order(file_path):
+def get_nav_order(file_path: Path | str) -> int | None:
     """Return nav_order from Markdown frontmatter, or None if absent."""
     try:
         content = Path(file_path).read_text(encoding="utf-8")
@@ -105,7 +139,7 @@ def get_nav_order(file_path):
     return int(nav_order_match.group(1))
 
 
-def get_preferred_title(file_path, base_name):
+def get_preferred_title(file_path: Path | str, base_name: str) -> str | None:
     """Return mapped title first, then frontmatter title, then a derived title."""
     mapped = TITLE_MAP.get(base_name.lower())
     if mapped:
@@ -118,14 +152,14 @@ def get_preferred_title(file_path, base_name):
     return convert_to_title(base_name)
 
 
-def _relative_docs_path(path, docs_base_path):
+def _relative_docs_path(path: Path | str, docs_base_path: Path | str) -> str:
     """Return a docs-relative path using forward slashes."""
     docs_root = Path(docs_base_path).resolve()
     target = Path(path).resolve()
     return str(target)[len(str(docs_root)) + 1:].replace("\\", "/")
 
 
-def _sort_nav_entries(entries):
+def _sort_nav_entries(entries: list[_NavSortEntry]) -> list[_NavSortEntry]:
     """Sort PowerShell-style by nav_order (missing last), then by name."""
     return sorted(
         entries,
@@ -136,11 +170,16 @@ def _sort_nav_entries(entries):
     )
 
 
-def build_directory_nav(dir_path, indent_level=1, docs_base_path=None):
+def build_directory_nav(
+    dir_path: Path | str,
+    indent_level: int = 1,
+    docs_base_path: Path | str | None = None,
+) -> list[str]:
     """Return TOML navigation lines for one directory subtree."""
     dir_path = Path(dir_path)
-    docs_base_path = Path(docs_base_path)
-    items = []
+    docs_base_path = Path(
+        docs_base_path) if docs_base_path is not None else dir_path
+    items: list[str] = []
     indent = "    " * indent_level
     child_indent = "    " * (indent_level + 1)
 
@@ -151,43 +190,46 @@ def build_directory_nav(dir_path, indent_level=1, docs_base_path=None):
     index_file = dir_path / "index.md"
     has_index = index_file.exists()
 
-    subdirs = []
+    subdir_entries: list[_NavSortEntry] = []
     for subdir in sorted((child for child in dir_path.iterdir() if child.is_dir()), key=lambda p: p.name):
         if subdir.name == "resources":
             continue
         index_path = subdir / "index.md"
-        subdirs.append(
+        subdir_entries.append(
             {
-                "directory": subdir,
+                "path": subdir,
                 "name": subdir.name,
                 "nav_order": get_nav_order(index_path) if index_path.exists() else None,
             }
         )
-    subdirs = [entry["directory"] for entry in _sort_nav_entries(subdirs)]
+    subdirs = [entry["path"] for entry in _sort_nav_entries(subdir_entries)]
 
-    markdown_files = []
+    markdown_entries: list[_NavSortEntry] = []
     for md_file in sorted(dir_path.glob("*.md"), key=lambda p: p.name):
         if md_file.name == "index.md":
             continue
-        markdown_files.append(
+        markdown_entries.append(
             {
-                "file": md_file,
+                "path": md_file,
                 "name": md_file.name,
                 "nav_order": get_nav_order(md_file),
             }
         )
-    markdown_files = [entry["file"] for entry in _sort_nav_entries(markdown_files)]
+    markdown_files = [
+        entry["path"] for entry in _sort_nav_entries(markdown_entries)
+    ]
 
-    subitems = []
+    subitems: list[_DirectorySubitem] = []
 
     if has_index:
         subitems.append(
-            {"type": "simple", "content": f'"{relative_path}/index.md"', "indent": child_indent}
+            {"type": "simple", "content": f'"{relative_path}/index.md"',
+                "indent": child_indent}
         )
 
     for md_file in markdown_files:
         file_relative_path = _relative_docs_path(md_file, docs_base_path)
-        file_title = get_preferred_title(md_file, md_file.stem)
+        file_title = get_preferred_title(md_file, md_file.stem) or md_file.stem
         escaped_title = protect_toml_string(file_title)
         subitems.append(
             {
@@ -210,34 +252,38 @@ def build_directory_nav(dir_path, indent_level=1, docs_base_path=None):
         subitems.append({"type": "nested", "lines": cleaned_lines})
 
     if subitems:
-        escaped_dir_title = protect_toml_string(dir_title)
+        escaped_dir_title = protect_toml_string(dir_title or dir_name)
         if len(subitems) == 1 and subitems[0]["type"] == "simple":
             single_item = subitems[0]
-            items.append(f"{indent}{{{escaped_dir_title} = [ {single_item['content']} ]}},")
+            items.append(
+                f"{indent}{{{escaped_dir_title} = [ {single_item['content']} ]}},")
         else:
             items.append(f"{indent}{{{escaped_dir_title} = [")
             for index, subitem in enumerate(subitems):
                 comma = "" if index == len(subitems) - 1 else ","
                 if subitem["type"] == "simple":
-                    items.append(f"{subitem['indent']}{subitem['content']}{comma}")
+                    items.append(
+                        f"{subitem['indent']}{subitem['content']}{comma}")
                 else:
                     for nested_index, line in enumerate(subitem["lines"]):
-                        items.append(f"{line}{comma}" if nested_index == len(subitem["lines"]) - 1 else line)
+                        items.append(f"{line}{comma}" if nested_index == len(
+                            subitem["lines"]) - 1 else line)
             items.append(f"{indent}]}},")
 
     return items
 
 
-def build_navigation_toml(docs_base_path):
+def build_navigation_toml(docs_base_path: Path | str) -> str:
     """Return the complete nav = [...] TOML block for a docs tree."""
     docs_base_path = Path(docs_base_path)
-    nav_items_list = []
+    nav_items_list: list[_NavigationItem] = []
 
     root_index = docs_base_path / "index.md"
     if root_index.exists():
         home_title = get_preferred_title(root_index, "index") or "Home"
         escaped_title = protect_toml_string(home_title)
-        nav_items_list.append({"type": "simple", "content": f"    {{{escaped_title} = \"index.md\"}}"})
+        nav_items_list.append(
+            {"type": "simple", "content": f"    {{{escaped_title} = \"index.md\"}}"})
 
     excluded_dirs = {"resources", "guides-list", "local-storage"}
     root_directories = sorted(
@@ -249,7 +295,8 @@ def build_navigation_toml(docs_base_path):
         key=lambda path: path.name,
     )
     for directory in root_directories:
-        sub_nav = build_directory_nav(directory, indent_level=1, docs_base_path=docs_base_path)
+        sub_nav = build_directory_nav(
+            directory, indent_level=1, docs_base_path=docs_base_path)
         cleaned_lines = [
             line.rstrip(",") if index == len(sub_nav) - 1 else line
             for index, line in enumerate(sub_nav)
@@ -259,10 +306,12 @@ def build_navigation_toml(docs_base_path):
     guides_list_path = docs_base_path / "guides-list"
     guides_index = guides_list_path / "index.md"
     if guides_index.exists():
-        guides_title = get_preferred_title(guides_index, "guides-list") or "Guides List"
+        guides_title = get_preferred_title(
+            guides_index, "guides-list") or "Guides List"
         escaped_title = protect_toml_string(guides_title)
         nav_items_list.append(
-            {"type": "simple", "content": f"    {{{escaped_title} = \"guides-list/index.md\"}}"}
+            {"type": "simple",
+                "content": f"    {{{escaped_title} = \"guides-list/index.md\"}}"}
         )
 
     root_files = sorted(
@@ -274,23 +323,28 @@ def build_navigation_toml(docs_base_path):
         key=lambda path: path.name,
     )
     for md_file in root_files:
-        file_title = get_preferred_title(md_file, md_file.stem)
+        file_title = get_preferred_title(md_file, md_file.stem) or md_file.stem
         escaped_title = protect_toml_string(file_title)
-        nav_items_list.append({"type": "simple", "content": f"    {{{escaped_title} = \"{md_file.name}\"}}"})
+        nav_items_list.append(
+            {"type": "simple", "content": f"    {{{escaped_title} = \"{md_file.name}\"}}"})
 
-    nav_items = ["nav = ["]
+    nav_items: list[str] = ["nav = ["]
     for index, item in enumerate(nav_items_list):
         comma = "" if index == len(nav_items_list) - 1 else ","
         if item["type"] == "simple":
             nav_items.append(f"{item['content']}{comma}")
         else:
             for line_index, line in enumerate(item["lines"]):
-                nav_items.append(f"{line}{comma}" if line_index == len(item["lines"]) - 1 else line)
+                nav_items.append(f"{line}{comma}" if line_index == len(
+                    item["lines"]) - 1 else line)
     nav_items.append("]")
     return OUTPUT_NEWLINE.join(nav_items)
 
 
-def update_zensical_nav(zensical_file_path, new_nav_content):
+def update_zensical_nav(
+    zensical_file_path: Path | str,
+    new_nav_content: str,
+) -> bool:
     """Replace or insert the nav section in zensical.toml. Return True if changed."""
     zensical_file_path = Path(zensical_file_path)
     with zensical_file_path.open("r", encoding="utf-8", newline="") as handle:
@@ -310,7 +364,8 @@ def update_zensical_nav(zensical_file_path, new_nav_content):
 
     nav_comment_match = NAV_COMMENT_RE.search(content)
     if nav_comment_match:
-        insert_point = nav_comment_match.start(0) + len(nav_comment_match.group(0))
+        insert_point = nav_comment_match.start(
+            0) + len(nav_comment_match.group(0))
         new_content = (
             content[:insert_point]
             + new_nav_content
@@ -330,14 +385,15 @@ def update_zensical_nav(zensical_file_path, new_nav_content):
                 + content[insert_point:]
             )
         else:
-            new_content = content.rstrip() + OUTPUT_NEWLINE + OUTPUT_NEWLINE + new_nav_content + OUTPUT_NEWLINE
+            new_content = content.rstrip() + OUTPUT_NEWLINE + OUTPUT_NEWLINE + \
+                new_nav_content + OUTPUT_NEWLINE
 
     with zensical_file_path.open("w", encoding="utf-8", newline="") as handle:
         handle.write(new_content)
     return True
 
 
-def main(argv=None):
+def main(argv: list[str] | None = None) -> int:
     """Run the nav generator CLI."""
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument(
@@ -356,7 +412,8 @@ def main(argv=None):
 
     current_dir = Path.cwd()
     if current_dir.name != "utilities":
-        print("Error: This script must be run from the utilities/ directory", file=sys.stderr)
+        print(
+            "Error: This script must be run from the utilities/ directory", file=sys.stderr)
         print(f"Current location: {current_dir}", file=sys.stderr)
         return 1
 
@@ -364,11 +421,13 @@ def main(argv=None):
     zensical_path = args.zensical_file or Path("..\\zensical.toml")
 
     if not docs_path.exists():
-        print(f"Error: docs directory not found at {docs_path}", file=sys.stderr)
+        print(
+            f"Error: docs directory not found at {docs_path}", file=sys.stderr)
         return 1
 
     if not zensical_path.exists():
-        print(f"Error: zensical.toml not found at {zensical_path}", file=sys.stderr)
+        print(
+            f"Error: zensical.toml not found at {zensical_path}", file=sys.stderr)
         return 1
 
     print(f"Generating Zensical navigation from '{docs_path}'...")

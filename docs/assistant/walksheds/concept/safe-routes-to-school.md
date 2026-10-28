@@ -23,8 +23,6 @@ assistant_behavior:
     allow_inference: false
     requires_citation: true
     abstain_if_missing_context: true
-    do_not_claim:
-        - Walksheds alone satisfies SRTS requirements.
 related_pages:
     - assistant/cross-platform/workflow/use-walksheds-for-safe-routes-to-school.md
     - assistant/walksheds/concept/walkshed.md

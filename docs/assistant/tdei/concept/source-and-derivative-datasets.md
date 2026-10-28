@@ -31,10 +31,6 @@ assistant_behavior:
     allow_inference: true
     requires_citation: false
     abstain_if_missing_context: true
-    do_not_claim:
-        - A dataset stored in TDEI is automatically public.
-        - A released derivative must contain every field in its source dataset.
-        - TDEI automatically provides a complete source-to-derivative lineage graph.
 related_pages:
     - assistant/opensidewalks/concept/external-attributes.md
     - assistant/tdei/workflow/integrate-external-geospatial-data.md

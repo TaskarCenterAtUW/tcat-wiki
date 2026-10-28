@@ -25,9 +25,6 @@ assistant_behavior:
     allow_inference: false
     requires_citation: true
     abstain_if_missing_context: true
-    do_not_claim:
-        - Vendors should infer a street name without documented geometry or tagging.
-        - Adding a street name guarantees correct walking instructions.
 related_pages:
     - assistant/os-connect/concept/street-name-tags-for-routing.md
     - assistant/os-connect/concept/sidewalk-street-name-association.md

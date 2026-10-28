@@ -31,9 +31,6 @@ assistant_behavior:
     allow_inference: false
     requires_citation: true
     abstain_if_missing_context: true
-    do_not_claim:
-        - A citation proves that the data are complete or authoritative for every use.
-        - OS-CONNECT, TDEI, and OpenStreetMap necessarily contain the same version.
 related_pages:
     - assistant/cross-platform/concept/data-freshness.md
     - assistant/tdei/concept/released-dataset.md

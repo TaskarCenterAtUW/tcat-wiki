@@ -27,10 +27,6 @@ assistant_behavior:
     allow_inference: false
     requires_citation: true
     abstain_if_missing_context: true
-    do_not_claim:
-        - The recency_period field defines a separate resurvey interval for each quest question.
-        - The resurvey interval is specific to the device or contributor that submitted a quest.
-        - A zero-day interval deletes saved answers or overrides other workspace and app visibility settings.
 related_pages:
     - quest-definition-creator.md
     - quest-visibility-and-local-state.md

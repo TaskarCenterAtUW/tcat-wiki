@@ -25,8 +25,6 @@ assistant_behavior:
     allow_inference: false
     requires_citation: true
     abstain_if_missing_context: true
-    do_not_claim:
-        - A field note automatically creates or corrects missing geometry.
 related_pages: []
 tags:
     - Assistant

@@ -43,14 +43,12 @@ topics:
 risk_level: high
 authority_level: official
 publication_status: draft
-last_reviewed: 2026-07-13
+last_reviewed: 2026-10-27
 retrieval_priority: high
 assistant_behavior:
     allow_inference: false
     requires_citation: false
     abstain_if_missing_context: true
-    do_not_claim:
-        -
 related_pages:
     - assistant/index.md
     - assistant/dispatch.md
@@ -159,11 +157,6 @@ Top-level sections:
 | `allow_inference` | bool | If `false`, consumer systems should stick closely to retrieved text. |
 | `requires_citation` | bool | If `true`, answers should cite this wiki (or exported source) when used. |
 | `abstain_if_missing_context` | bool | If `true`, abstain when user lacks jurisdiction, version, or other critical context. |
-| `do_not_claim` | list of strings | Affirmative sentences stating the **false or misleading claim** the assistant must not make. |
-
-For `do_not_claim`, each entry reads in context as a complete false statement. Example: `do_not_claim` (that) `"Completeness is the same as ADA compliance"` (not `do_not_claim` (that) `"Completeness is not the same as ADA compliance"`). Used for evaluation guardrails and prompt grounding.
-
-Every entry should correspond to a boundary stated or implied in the page's `## What This Does Not Mean` section — `do_not_claim` is the machine-readable distillation of that section, not a substitute for it. Used for evaluation guardrails and prompt grounding.
 
 ## Required Markdown sections (in order)
 
@@ -173,7 +166,7 @@ Body content after frontmatter MUST use this heading scaffold so chunks stay str
 2. `## Short Answer` — one to three short paragraphs; optimized for direct assistant replies.
 3. `## Significance` — operational, institutional, or public-education importance (**do not** use "Why This Matters" as the heading text).
 4. `## What This Means` — practical definition or resolution of the question.
-5. `## What This Does Not Mean` — boundaries, non-claims, and common misinterpretations, written as human-readable prose with explanation. The main boundaries here should also appear as entries in the `do_not_claim` frontmatter — that field is the machine-readable distillation of this section.
+5. `## What This Does Not Mean` — boundaries, non-claims, and common misinterpretations, written as human-readable prose with explanation.
 6. `## How To Use This` — planners, jurisdictions, advocates, public users, or integrators.
 7. `## Example` — one concrete scenario.
 8. `## Assistant Guidance` — explicit behavior for chatbots: caveats, abstention, citation needs.

@@ -26,9 +26,6 @@ assistant_behavior:
     allow_inference: false
     requires_citation: true
     abstain_if_missing_context: true
-    do_not_claim:
-        - OpenSidewalks is limited to sidewalk centerlines.
-        - OpenSidewalks data is necessarily derived from OpenStreetMap.
 related_pages:
     - ../index.md
     - opensidewalks-schema.md

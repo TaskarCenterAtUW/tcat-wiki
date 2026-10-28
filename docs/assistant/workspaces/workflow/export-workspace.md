@@ -26,8 +26,6 @@ assistant_behavior:
     allow_inference: false
     requires_citation: true
     abstain_if_missing_context: true
-    do_not_claim:
-        - Exporting a workspace automatically publishes it as a public TDEI release.
 related_pages: []
 tags:
     - Assistant

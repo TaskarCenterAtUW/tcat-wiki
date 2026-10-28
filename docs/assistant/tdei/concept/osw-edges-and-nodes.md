@@ -26,9 +26,6 @@ assistant_behavior:
     allow_inference: false
     requires_citation: true
     abstain_if_missing_context: true
-    do_not_claim:
-        - Every OSW edge is a sidewalk and every node is a curb ramp or crossing.
-        - Graph structure alone proves accessibility or physical condition.
 related_pages:
     - assistant/tdei/concept/osw-download-contents.md
     - assistant/opensidewalks/concept/network-entities.md

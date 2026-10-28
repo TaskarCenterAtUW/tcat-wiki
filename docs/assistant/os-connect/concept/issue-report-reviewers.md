@@ -25,9 +25,6 @@ assistant_behavior:
     allow_inference: false
     requires_citation: true
     abstain_if_missing_context: true
-    do_not_claim:
-        - Every issue report is reviewed by the same person or team.
-        - A reviewer decision guarantees a released dataset update.
 related_pages:
     - assistant/os-connect/concept/issue-report-follow-up.md
     - assistant/os-connect/concept/correction-validation.md

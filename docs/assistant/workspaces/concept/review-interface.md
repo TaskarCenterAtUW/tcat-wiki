@@ -26,9 +26,6 @@ assistant_behavior:
     allow_inference: false
     requires_citation: true
     abstain_if_missing_context: true
-    do_not_claim:
-        - The review interface proves that an edit is correct.
-        - Every workspace user can approve or publish changes.
 related_pages:
     - assistant/workspaces/index.md
     - assistant/workspaces/concept/workspace-review-interface.md

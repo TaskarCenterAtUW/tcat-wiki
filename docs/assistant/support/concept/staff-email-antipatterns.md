@@ -31,9 +31,6 @@ assistant_behavior:
     allow_inference: false
     requires_citation: true
     abstain_if_missing_context: true
-    do_not_claim:
-        - Staff should promise unsupported functionality, fixes, or timelines in external email.
-        - A confident tone makes an unverified claim safe to send.
 related_pages:
     - assistant/support/workflow/communicate-uncertainty.md
     - assistant/support/workflow/internal-verification-language.md

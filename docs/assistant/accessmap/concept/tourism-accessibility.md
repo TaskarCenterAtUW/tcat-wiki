@@ -24,9 +24,6 @@ assistant_behavior:
     allow_inference: false
     requires_citation: true
     abstain_if_missing_context: true
-    do_not_claim:
-        - An AccessMap route guarantees an attraction is accessible to every visitor.
-        - Tourism accessibility can be determined from map data alone.
 related_pages:
     - assistant/accessmap/concept/public-engagement.md
     - assistant/accessmap/concept/accessibility-needs.md

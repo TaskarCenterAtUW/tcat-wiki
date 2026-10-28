@@ -24,9 +24,6 @@ assistant_behavior:
     allow_inference: false
     requires_citation: true
     abstain_if_missing_context: true
-    do_not_claim:
-        - A modeled route eliminates the need for field validation.
-        - A small field sample proves that every mapped route is accurate.
 related_pages:
     - assistant/accessmap/workflow/validate-routing-results.md
     - assistant/accessmap/concept/routing-limitations.md

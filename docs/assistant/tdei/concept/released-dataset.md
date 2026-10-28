@@ -24,9 +24,6 @@ assistant_behavior:
     allow_inference: false
     requires_citation: true
     abstain_if_missing_context: true
-    do_not_claim:
-        - A released dataset is complete and error-free.
-        - A released dataset is authoritative for every decision or feature.
 related_pages:
     - assistant/tdei/concept/dataset-visibility.md
     - assistant/tdei/concept/released-dataset-viewer.md

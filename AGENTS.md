@@ -14,7 +14,7 @@ TCAT Wiki is a Zensical documentation site for Taskar Center for Accessible Tech
 
 - Change source files only. Never edit generated `site/`, `human-docs/`, `agent-docs/`, `zensical.build.toml`, or `docs/assistant/dispatch.md`; regenerate the latter with `python utilities/akb_generate_dispatch.py`.
 - Keep changes narrow. Use the smallest relevant existing validation; do not add tooling or fix unrelated issues.
-- `CHANGELOG.md` is the only update-tracking record. Leave its commented `## Unreleased` block untouched. Record versioned release entries only, and do not create or use Git tags or GitHub releases for update tracking. Use [.agents/skills/update-changelog/SKILL.md](.agents/skills/update-changelog/SKILL.md).
+- `CHANGELOG.md` is the only update-tracking record. Record versioned release entries only, and do not create or use Git tags or GitHub releases for update tracking. Use [.agents/skills/update-changelog/SKILL.md](.agents/skills/update-changelog/SKILL.md).
 
 ## Route work to the canonical guidance
 

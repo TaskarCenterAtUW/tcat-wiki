@@ -25,9 +25,6 @@ assistant_behavior:
     allow_inference: false
     requires_citation: true
     abstain_if_missing_context: true
-    do_not_claim:
-        - An agency-submitted correction is accepted without validation.
-        - Validation proves that every related dataset is correct.
 related_pages:
     - assistant/os-connect/concept/issue-report-follow-up.md
     - assistant/os-connect/concept/correction-tracking.md

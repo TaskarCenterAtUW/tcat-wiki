@@ -26,11 +26,6 @@ assistant_behavior:
     allow_inference: false
     requires_citation: true
     abstain_if_missing_context: true
-    do_not_claim:
-        - Teams control access permissions or RBAC roles within a workspace.
-        - Teams are the same as TDEI Project Group membership.
-        - Creating a team is required before editing or viewing a workspace.
-        - Workspaces Teams are available on the production site.
 related_pages:
     - assistant/workspaces/index.md
     - assistant/workspaces/concept/team-invitations.md

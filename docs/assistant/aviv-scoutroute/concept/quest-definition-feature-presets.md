@@ -26,10 +26,6 @@ assistant_behavior:
     allow_inference: false
     requires_citation: true
     abstain_if_missing_context: true
-    do_not_claim:
-        - A feature preset can create arbitrary line or area geometry from the mobile app.
-        - A feature preset lets the mobile user customize its configured tags.
-        - A feature preset automatically creates a complete survey workflow without a matching quest definition.
 related_pages:
     - quest-definition-element-targeting.md
     - quest-definition-creator.md

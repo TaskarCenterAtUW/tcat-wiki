@@ -25,8 +25,6 @@ assistant_behavior:
     allow_inference: false
     requires_citation: true
     abstain_if_missing_context: true
-    do_not_claim:
-        - Custom imagery configuration imports imagery files into the workspace.
 related_pages: []
 tags:
     - Assistant

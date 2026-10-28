@@ -4,21 +4,28 @@
 *[3DEP]: 3D Elevation Program
 *[A11y]: Accessibility
 *[AADT]: Annual Average Daily Traffic
+*[AASHO]: American Association of State Highway Officials
 *[AASHTO]: American Association of State Highway and Transportation Officials
 *[ABA]: Architectural Barriers Act
 *[ACL]: Association for Computational Linguistics
 *[ACM]: Association for Computing Machinery
 *[ADA]: Americans with Disabilities Act
 *[ADS]: Aging and Disability Services
+*[AFDC]: Aid to Families with Dependent Children
 *[AFN]: Access and Functional Needs
 *[AI]: Artificial Intelligence
 *[AKB]: Assistant Knowledge Base
+*[AOI]: Area of Interest
 *[API]: Application Programming Interface
 *[APS]: Accessible Pedestrian Signal
+*[APTA]: American Public Transit Association
 *[ARIA]: Accessible Rich Internet Applications
 *[ARNOLD]: All Road Network of Linear Referenced Data
+*[ASCE]: American Society of Civil Engineers
+*[ASME]: American Society of Mechanical Engineers
 *[ASR]: AVIV ScoutRoute
 *[AST]: Abstract Syntax Tree
+*[ASTM]: American Society for Testing and Materials
 *[AT-DaWG]: Active Transportation Data Working Group
 *[ATP]: Active Transportation Plan
 *[ATSAC]: Cooper Jones Active Transportation Safety Advisory Council
@@ -28,6 +35,9 @@
 *[AVIV]: Accessibility Verification, Improved Validation
 *[BART]: Bay Area Rapid Transit
 *[BBox]: Bounding Box
+*[BC]: Betweenness Centrality
+*[BCA]: Benefit-Cost Analysis
+*[BCR]: Benefit-Cost Ratio
 *[BEV]: Bird's-Eye View
 *[BFS]: Breadth-First Search
 *[BLIP]: Bootstrapping Language-Image Pre-training
@@ -35,15 +45,18 @@
 *[BRT]: Bus Rapid Transit
 *[BSAC]: Cooper Jones Bicyclist Safety Advisory Council
 *[BTS]: Bureau of Transportation Statistics
+*[BVLOS]: Beyond Visual Line of Sight
 *[CAD]: Computer-Aided Design
 *[CADD]: Computer-Aided Design and Drafting
 *[Cal-ITP]: California Integrated Travel Project
 *[CALACT]: California Association for Coordinated Transportation
 *[CC0]: Creative Commons Zero
 *[CCMS]: Component Content Management System
+*[CCR]: Community Comparison Ratio
 *[CDP]: Census-Designated Place
 *[CHIIR]: Conference on Human Information Interaction and Retrieval
 *[CIEP]: Coalition on Inclusive Emergency Planning
+*[CMF]: Crash Modification Factor
 *[CMIST]: Communications, Maintaining Health, Independence, Support, Safety, and Self-Determination, and Transportation
 *[CMP]: Congestion Management Process
 *[CNG]: Cloud-Native Geospatial Forum
@@ -62,7 +75,9 @@
 *[CTANW]: Community Transportation Association of the Northwest
 *[CUGOS]: Cascadia Users of Geospatial Open Source
 *[CVPR]: Conference on Computer Vision and Pattern Recognition
+*[DARTS]: Delta Area Rural Transportation System
 *[DB]: Design-Build / Database
+*[dBA]: Decibels Adjusted
 *[DBB]: Design-Bid-Build
 *[DE-9IM]: Dimensionally Extended Nine-Intersection Model
 *[DEM]: Digital Elevation Model
@@ -79,19 +94,27 @@
 *[ECCV]: European Conference on Computer Vision
 *[EFA]: Equity Focus Area
 *[EMNLP]: Empirical Methods in Natural Language Processing
+*[EPA]: Environmental Protection Agency
 *[EPSG]: European Petroleum Survey Group
+*[EPV]: Events Per Variable
 *[ETL]: Extract, Transform, Load
 *[ETRS89]: European Terrestrial Reference System 1989
+*[EVLOS]: Extended Visual Line of Sight
+*[FAA]: Federal Aviation Administration
+*[FARS]: Fatality Analysis Reporting System
 *[FDE]: Fundamental Data Elements
+*[FEMA]: Federal Emergency Management Agency
 *[FGTS]: Freight & Goods Transportation System
 *[FHWA]: Federal Highway Administration
 *[FIFA]: Fédération Internationale de Football Association
 *[FNS]: Food and Nutrition Service
 *[FQHC]: Federally Qualified Health Center
+*[FRA]: Federal Railroad Administration
 *[FTA]: Federal Transit Administration
 *[G3ict]: Global Initiative for Inclusive Information and Communication Technologies
 *[GAAD]: Global Accessibility Awareness Day
 *[GATIS]: General Active Transportation Infrastructure Specification
+*[GDP]: Gross Domestic Product
 *[GeoAI]: Geospatial Artificial Intelligence
 *[GERS]: Global Entity Reference System
 *[GIG]: GoInfoGame
@@ -108,14 +131,17 @@
 *[GTFS-Pathways]: General Transit Feed Specification, Pathways Extension
 *[GTFS]: General Transit Feed Specification
 *[GWF]: Geospatial World Forum
+*[GXAPS]: Grade Crossing Accident Prediction System
 *[HAWK]: High-Intensity Activated Crosswalk Beacon
 *[HCDE]: Human Centered Design & Engineering
 *[HCI]: Human-Computer Interaction
 *[HCIR]: Human Computer Information Retrieval
 *[HCT]: High-Capacity Transit
+*[HEAT]: Health Economic Assessment Tool
 *[HIN]: High Injury Network
 *[HOT]: Humanitarian OpenStreetMap Team
 *[HOV]: High Occupancy Vehicle
+*[HTH]: Health Through Housing
 *[HTML]: Hypertext Markup Language
 *[HuskyADAPT]: Accessible Design And Play Technology
 *[HxGN]: Hexagon (aerial imagery provider)
@@ -125,6 +151,7 @@
 *[IDW]: Inverse Distance Weighting
 *[IEEE]: Institute of Electrical and Electronics Engineers
 *[IFDS]: Institute for Foundations of Data Science
+*[IHSDM]: Interactive Highway Safety Design Model
 *[IIiX]: Information Interaction in Context
 *[IJCV]: International Journal of Computer Vision
 *[IMCL]: International Making Cities Livable
@@ -133,6 +160,7 @@
 *[ISB]: Industrial Service Boundary
 *[ISPRS]: International Society for Photogrammetry and Remote Sensing
 *[ISTEA]: Intermodal Surface Transportation Efficiency Act of 1991
+*[ITE]: Institute of Transportation Engineers
 *[ITS]: Intelligent Transportation System
 *[IXN]: Intersection / Intersection Traversability Metric
 *[JASA]: Journal of the American Statistical Association
@@ -157,6 +185,7 @@
 *[LRS]: Linear Referencing System
 *[LRTP]: Long-Range Transportation Plan
 *[LVLM]: Large Vision Language Model
+*[MAIS]: Maximum Abbreviated Injury Scale
 *[MBTA]: Massachusetts Bay Transportation Authority
 *[MCP]: Model Context Protocol
 *[MDIP]: Mobility Data Interoperability Principles
@@ -183,22 +212,31 @@
 *[NC-BPAID]: National Collaboration on Bicycle, Pedestrian, and Accessibility Infrastructure Data
 *[NCDOT]: North Carolina Department of Transportation
 *[NCHRP]: National Cooperative Highway Research Program
+*[NCST]: National Center for Sustainable Transportation
+*[NCTRP]: National Cooperative Transit Research and Development Program
 *[NDA]: Nondrivers Alliance
 *[NDVI]: Normalized Difference Vegetation Index
 *[NEMT]: Non-Emergency Medical Transportation
 *[NetCDF]: Network Common Data Form
 *[NeurIPS]: Neural Information Processing Systems
 *[NHS]: National Highway System
+*[NHTS]: National Household Travel Survey
 *[NHTSA]: National Highway Traffic Safety Administration
 *[NIR]: Near-Infrared
+*[NOAA]: National Oceanic and Atmospheric Administration
 *[NOTICE]: Noise-free Text-Image Corruption and Evaluation
+*[NOx]: Nitrogen Oxides
+*[NPV]: Net Present Value
+*[NSR]: Normalized Sidewalk Reach
 *[NYPL]: New York Public Library
+*[O&M]: Operating and Maintenance
 *[OakDOT]: City of Oakland Department of Transportation
 *[OCR]: Optical Character Recognition
 *[OD]: Origin-Destination
 *[ODOT]: Oregon Department of Transportation
 *[OECR]: Office of Equity and Civil Rights
 *[OGC]: Open Geospatial Consortium
+*[OMB]: Office of Management and Budget
 *[OMF]: Open Mobility Foundation
 *[ORCA]: One Regional Card for All
 *[OS-CONNECT]: OpenSidewalks COnsistent Network for accessible Navigation and Equitable Connectivity through Transit
@@ -212,16 +250,22 @@
 *[OTP26]: OpenThePaths 2026
 *[PacTrans]: Pacific Northwest Transportation Consortium
 *[PDF]: Portable Document Format
+*[PDO]: Property Damage Only
 *[PE]: Project Engineer
 *[PED XING]: Pedestrian Crossing
 *[PI]: Principal Investigator
 *[PII]: Personally Identifiable Information
+*[PM]: Particulate Matter
+*[PMP]: Pedestrian Mobility Profile
 *[POC]: Point of Contact
 *[POI]: Point of Interest
 *[POIs]: Points of Interest
+*[PPNA]: Personalized Pedestrian Network Analysis
 *[PROWAG]: Public Right-of-Way Accessibility Guidelines
 *[PSAC]: Pedestrian Safety Advisory Council
 *[PSRC]: Puget Sound Regional Council
+*[PUMA]: Public Use Microdata Area
+*[PUMS]: Public Use Microdata Sample
 *[PWG]: Pedestrian Working Group
 *[QA]: Quality Assurance
 *[QC]: Quality Control
@@ -238,6 +282,7 @@
 *[RTD]: Denver Regional Transportation District
 *[RTOR]: Right Turn on Red
 *[RTPO]: Regional Transportation Planning Organization
+*[SAE]: Society of Automotive Engineers
 *[SAFETEA-LU]: Safe, Accountable, Flexible, Efficient Transportation Equity Act: A Legacy for Users
 *[SAM-Road]: Segment Anything Model for Road Network Graph Extraction
 *[SAM]: Segment Anything Model
@@ -246,6 +291,7 @@
 *[SDOT]: Seattle Department of Transportation
 *[SEPTA]: Southeastern Pennsylvania Transportation Authority
 *[SFT]: Supervised Fine-Tuning
+*[SGR]: State of Good Repair
 *[SHSP]: Strategic Highway Safety Plan
 *[SIGIR]: Special Interest Group on Information Retrieval
 *[SIGKDD]: Special Interest Group on Knowledge Discovery and Data Mining
@@ -258,10 +304,13 @@
 *[SOTA]: State of the Art
 *[SOV]: Single Occupancy Vehicle
 *[SOW]: Statement of Work
+*[SOx]: Sulfur Oxides
 *[SPLICE]: Sequential Processing for Learning and Inference in Chronological Events
 *[SPM]: Semantic Minimal Pairs
 *[SPS]: Seattle Public Schools
+*[SPSA]: Simultaneous Perturbation Stochastic Approximation
 *[SRID]: Spatial Reference System Identifier
+*[SRQ]: Sidewalk Reach Quotient
 *[SRTS]: Safe Routes to School
 *[SS4A]: Safe Streets and Roads for All
 *[SSA]: Seattle Streets Alliance
@@ -289,6 +338,7 @@
 *[TMA]: Transportation Management Areas
 *[TMS]: Tile Map Service
 *[TOD]: Time of Day
+*[TOPS]: TCRP Oversight and Project Selection Committee
 *[TRAILS]: Trail Routing, Analysis, and Information Linkage System
 *[TRB]: Transportation Research Board
 *[TRL]: Technology Readiness Level
@@ -313,14 +363,18 @@
 *[V2X]: Vehicle-to-Everything
 *[VFL]: Vision Function Layer
 *[VGI]: Volunteered Geographic Information
+*[VHR]: Very High Resolution
 *[VL]: Vision-Language
-*[VLA]: Vision–Language–Action Model
+*[VLA]: Vision-Language-Action Model
 *[VLM]: Vision Language Model
 *[VLN]: Vision-and-Language Navigation
+*[VLOS]: Visual Line of Sight
 *[VMT]: Vehicle Miles Traveled
 *[VQA]: Visual Question Answering
 *[VSI]: Visual-Spatial Intelligence
+*[VSL]: Value of a Statistical Life
 *[VSR]: Visual Spatial Reasoning
+*[VTTS]: Value of Travel Time Savings
 *[W3C]: World Wide Web Consortium
 *[WA]: Washington (state)
 *[WACV]: Winter Conference on Applications of Computer Vision
@@ -344,3 +398,4 @@
 *[XEE]: XML External Entity
 *[XML]: Extensible Markup Language
 *[XR]: Extended Reality
+*[YOE]: Year of Expenditure

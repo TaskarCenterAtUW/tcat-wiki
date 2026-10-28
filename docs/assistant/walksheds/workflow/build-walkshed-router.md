@@ -25,8 +25,6 @@ assistant_behavior:
     allow_inference: false
     requires_citation: true
     abstain_if_missing_context: true
-    do_not_claim:
-        - Changing the selected dataset changes the active router without rebuilding and reloading.
 related_pages:
     - select-walkshed-dataset.md
     - ../concept/walkshed-application-architecture.md

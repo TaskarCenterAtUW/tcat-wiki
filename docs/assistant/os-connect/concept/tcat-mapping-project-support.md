@@ -25,9 +25,6 @@ assistant_behavior:
     allow_inference: false
     requires_citation: true
     abstain_if_missing_context: true
-    do_not_claim:
-        - TCAT automatically creates or maintains every Tasking Manager project.
-        - A Tasking Manager project makes volunteer edits authoritative automatically.
 related_pages:
     - assistant/os-connect/concept/opensidewalks-community-mapping-groups.md
     - assistant/os-connect/concept/mapper-training-materials.md

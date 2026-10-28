@@ -28,8 +28,6 @@ assistant_behavior:
     allow_inference: false
     requires_citation: true
     abstain_if_missing_context: true
-    do_not_claim:
-        - Internal runbooks or credentials are part of the public assistant corpus.
 related_pages:
     - assistant/cross-platform/concept/assistant-abstention.md
     - assistant/index.md

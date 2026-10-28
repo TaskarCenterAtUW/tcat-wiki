@@ -26,8 +26,6 @@ assistant_behavior:
     allow_inference: false
     requires_citation: true
     abstain_if_missing_context: true
-    do_not_claim:
-        - An IXN quality score is a legal accessibility determination.
 related_pages:
     - job-processing.md
     - ../../../tdei/portal/user-manual/jobs/quality-metric-ixn-calculation.md

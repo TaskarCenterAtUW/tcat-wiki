@@ -27,8 +27,6 @@ assistant_behavior:
     allow_inference: false
     requires_citation: true
     abstain_if_missing_context: true
-    do_not_claim:
-        - A shared AccessMap route remains valid when its data or settings change.
 related_pages:
     - assistant/accessmap/index.md
     - assistant/accessmap/concept/profile-responsive-map.md

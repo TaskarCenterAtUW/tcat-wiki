@@ -25,8 +25,6 @@ assistant_behavior:
     allow_inference: false
     requires_citation: true
     abstain_if_missing_context: true
-    do_not_claim:
-        - Every QA/QC report uses identical sections, metrics, or methods.
 related_pages:
     - assistant/qa-qc/concept/report-purpose-and-limitations.md
     - assistant/qa-qc/workflow/interpret-report-sections.md

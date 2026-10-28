@@ -25,9 +25,6 @@ assistant_behavior:
     allow_inference: false
     requires_citation: true
     abstain_if_missing_context: true
-    do_not_claim:
-        - Google Maps and AccessMap optimize the same routing objective.
-        - A route difference proves that either product is incorrect.
 related_pages:
     - assistant/accessmap/concept/accessmap.md
     - assistant/accessmap/concept/routing-profiles.md

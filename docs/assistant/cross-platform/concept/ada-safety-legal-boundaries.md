@@ -30,8 +30,6 @@ assistant_behavior:
     allow_inference: false
     requires_citation: true
     abstain_if_missing_context: true
-    do_not_claim:
-        - Tools or datasets provide binding ADA determinations.
 related_pages:
     - assistant/cross-platform/concept/ada-compliance-boundaries.md
     - assistant/cross-platform/concept/assistant-abstention.md
@@ -70,7 +68,7 @@ Benchmark: queries containing "ADA," "DOJ," "liable," or "sue" should retrieve t
 
 ## Assistant Guidance
 
-Hard gate: first sentence must reinforce limits before helpful information. Use `do_not_claim` entries as verbatim negatives in evaluation rubrics.
+Hard gate: first sentence must reinforce limits before helpful information. Evaluate answers against the explicit limits in this page and linked policy content; reject claims that exceed those limits.
 
 ## Related Concepts
 

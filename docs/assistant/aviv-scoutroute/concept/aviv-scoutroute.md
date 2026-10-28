@@ -26,9 +26,6 @@ assistant_behavior:
     allow_inference: false
     requires_citation: true
     abstain_if_missing_context: true
-    do_not_claim:
-        - AVIV ScoutRoute is a global task list that provides quests everywhere.
-        - AVIV ScoutRoute is an unrestricted editor for the entire dataset.
 related_pages:
     - ../index.md
     - quest.md

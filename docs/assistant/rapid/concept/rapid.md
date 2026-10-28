@@ -24,7 +24,6 @@ assistant_behavior:
     allow_inference: false
     requires_citation: true
     abstain_if_missing_context: true
-    do_not_claim: []
 related_pages:
     - assistant/rapid/workflow/add-sidewalk-using-rapid.md
     - assistant/workspaces/concept/compatible-editors.md

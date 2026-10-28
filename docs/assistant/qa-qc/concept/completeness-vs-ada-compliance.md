@@ -29,9 +29,6 @@ assistant_behavior:
     allow_inference: false
     requires_citation: true
     abstain_if_missing_context: true
-    do_not_claim:
-        - High completeness proves ADA compliance.
-        - Low completeness by itself proves an ADA violation.
 related_pages:
     - assistant/qa-qc/concept/completeness.md
     - assistant/qa-qc/concept/completeness-vs-accessibility-gaps.md

@@ -24,8 +24,6 @@ assistant_behavior:
     allow_inference: true
     requires_citation: false
     abstain_if_missing_context: false
-    do_not_claim:
-        - Every mobile numeric keyboard supports negative values.
 related_pages:
     - assistant/aviv-scoutroute/index.md
     - assistant/aviv-scoutroute/concept/quest.md

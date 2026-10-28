@@ -45,13 +45,12 @@ topics:
 risk_level: low
 authority_level: provisional
 publication_status: draft
-last_reviewed: 2026-05-18
+last_reviewed: 2026-10-27
 retrieval_priority: high
 assistant_behavior:
     allow_inference: false
     requires_citation: true
     abstain_if_missing_context: true
-    do_not_claim: []
 related_pages:
     - assistant/support/workflow/support-answer-patterns.md
     - assistant/index.md

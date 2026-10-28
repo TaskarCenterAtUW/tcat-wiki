@@ -25,9 +25,6 @@ assistant_behavior:
     allow_inference: false
     requires_citation: true
     abstain_if_missing_context: true
-    do_not_claim:
-        - The older MapWith.ai workflow is the current required workflow.
-        - Historical workflow documentation proves that current tools or links still work.
 related_pages:
     - assistant/os-connect/concept/opensidewalks-community-mapping-groups.md
     - assistant/os-connect/concept/tcat-mapping-project-support.md

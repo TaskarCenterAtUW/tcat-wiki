@@ -27,10 +27,6 @@ assistant_behavior:
     allow_inference: false
     requires_citation: true
     abstain_if_missing_context: true
-    do_not_claim:
-        - Editing Workspaces directly edits the public OpenStreetMap database.
-        - Editing a workspace automatically publishes changes to TDEI or OS-CONNECT.
-        - Reauthenticating after session expiry preserves unsaved edits.
 related_pages: []
 tags:
     - Assistant

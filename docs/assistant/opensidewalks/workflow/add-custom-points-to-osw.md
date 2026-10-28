@@ -26,9 +26,6 @@ assistant_behavior:
     allow_inference: false
     requires_citation: true
     abstain_if_missing_context: true
-    do_not_claim:
-        - An OpenSidewalks Custom Point is a routable network Edge.
-        - A source point dataset can omit unique IDs or coordinate validation.
 related_pages:
     - ../concept/custom-entities.md
     - ../concept/adjacent-and-custom-entities.md

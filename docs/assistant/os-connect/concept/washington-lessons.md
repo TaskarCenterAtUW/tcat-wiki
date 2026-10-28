@@ -24,9 +24,6 @@ assistant_behavior:
     allow_inference: false
     requires_citation: true
     abstain_if_missing_context: true
-    do_not_claim:
-        - Washington's OS-CONNECT experience proves that every jurisdiction has the same data conditions.
-        - OS-CONNECT data alone resolves every pedestrian-accessibility problem.
 related_pages:
     - assistant/os-connect/index.md
     - assistant/os-connect/concept/cross-state-lessons.md
