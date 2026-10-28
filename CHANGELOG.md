@@ -19,6 +19,7 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/),
 
 - **Wiki**: Fixed uncommon characters in Wiki pages
 - **Core**: Fixed miscellaneous issues in Python scripts
+- **Core**: Cleaned up unused templates\images\screenshots
 
 ## v16.8.0 (2026-10-22)
 
