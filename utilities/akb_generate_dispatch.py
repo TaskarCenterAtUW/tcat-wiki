@@ -93,7 +93,6 @@ assistant_behavior:
     allow_inference: false
     requires_citation: false
     abstain_if_missing_context: false
-    do_not_claim: []
 related_pages:
     - assistant/index.md
     - assistant/schema.md

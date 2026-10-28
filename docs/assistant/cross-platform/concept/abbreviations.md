@@ -54,10 +54,6 @@ assistant_behavior:
     allow_inference: false
     requires_citation: false
     abstain_if_missing_context: false
-    do_not_claim:
-        - This list is exhaustive of all possible abbreviations in the domain.
-        - No other meanings are possible for these abbreviations.
-        - Abbreviations not listed here have no accepted expansion.
 related_pages: []
 tags:
     - Assistant
@@ -447,7 +443,7 @@ The table below maps each abbreviated form to its full expansion. Entries are so
 | VGI | Volunteered Geographic Information |
 | VHR | Very High Resolution |
 | VL | Vision-Language |
-| VLA | Vision–Language–Action Model |
+| VLA | Vision-Language-Action Model |
 | VLM | Vision Language Model |
 | VLN | Vision-and-Language Navigation |
 | VLOS | Visual Line of Sight |

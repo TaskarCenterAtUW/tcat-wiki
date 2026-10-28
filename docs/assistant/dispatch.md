@@ -28,13 +28,12 @@ topics:
 risk_level: low
 authority_level: official
 publication_status: draft
-last_reviewed: 2026-10-12
+last_reviewed: 2026-10-27
 retrieval_priority: high
 assistant_behavior:
     allow_inference: false
     requires_citation: false
     abstain_if_missing_context: false
-    do_not_claim: []
 related_pages:
     - assistant/index.md
     - assistant/schema.md
