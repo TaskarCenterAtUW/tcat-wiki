@@ -219,6 +219,7 @@
 *[NEMT]: Non-Emergency Medical Transportation
 *[NetCDF]: Network Common Data Form
 *[NeurIPS]: Neural Information Processing Systems
+*[NHERI]: Natural Hazards Engineering Research Infrastructure
 *[NHS]: National Highway System
 *[NHTS]: National Household Travel Survey
 *[NHTSA]: National Highway Traffic Safety Administration
@@ -227,6 +228,7 @@
 *[NOTICE]: Noise-free Text-Image Corruption and Evaluation
 *[NOx]: Nitrogen Oxides
 *[NPV]: Net Present Value
+*[NSF]: National Science Foundation
 *[NSR]: Normalized Sidewalk Reach
 *[NYPL]: New York Public Library
 *[O&M]: Operating and Maintenance
