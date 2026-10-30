@@ -21,7 +21,7 @@ topics:
 risk_level: medium
 authority_level: explanatory
 publication_status: draft
-last_reviewed: 2026-07-22
+last_reviewed: 2026-10-29
 retrieval_priority: high
 assistant_behavior:
     allow_inference: false
@@ -49,6 +49,8 @@ This separation can explain why a seemingly correct quest edit has no effect in 
 ## What This Means
 
 When troubleshooting, inspect the definition source currently configured for the workspace. If using a URL, confirm it directly returns the raw JSON file. Then verify that the mobile app has received or loaded that configuration.
+
+Question sets and answer tags are tailored to each project and study. Previous definitions can provide examples, but there is no single universal list and older files may not be drop-in compatible. Check that the question wording, answer choices, and output tags fit the current project goals.
 
 ## What This Does Not Mean
 

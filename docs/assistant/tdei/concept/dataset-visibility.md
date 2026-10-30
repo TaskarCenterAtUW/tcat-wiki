@@ -19,7 +19,7 @@ topics:
 risk_level: medium
 authority_level: explanatory
 publication_status: draft
-last_reviewed: 2026-10-26
+last_reviewed: 2026-10-30
 retrieval_priority: high
 assistant_behavior:
     allow_inference: false
@@ -52,6 +52,8 @@ Use **My Project Datasets** for data within the active project group and **All R
 ## What This Does Not Mean
 
 Being stored in TDEI does not make a dataset public. Access to project datasets is also subject to the user's membership and permissions in the active project group.
+
+Release is not a reversible visibility toggle. There is no un-release action; **Deactivate** removes the dataset rather than returning it to project-only status. Release is role-gated, so project-group membership alone does not give every member permission to release.
 
 ## How To Use This
 

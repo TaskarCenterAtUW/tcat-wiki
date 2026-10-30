@@ -18,7 +18,7 @@ topics:
 risk_level: medium
 authority_level: provisional
 publication_status: draft
-last_reviewed: 2026-08-28
+last_reviewed: 2026-10-29
 retrieval_priority: high
 assistant_behavior:
     allow_inference: false
@@ -49,6 +49,8 @@ Freshness affects route interpretation, especially when construction, new infras
 - Check the dataset and product version or date.
 - Compare the release information with the date of the observed condition.
 - Report stale or incorrect data through the current feedback path.
+
+OS-CONNECT source-data changes and AccessMap updates are separate steps. An OS-CONNECT dataset may be re-released after a reported issue is corrected or jurisdictional data is incorporated, but AccessMap may need a separate update to use that version. No guaranteed propagation time is defined.
 
 ## What This Does Not Mean
 

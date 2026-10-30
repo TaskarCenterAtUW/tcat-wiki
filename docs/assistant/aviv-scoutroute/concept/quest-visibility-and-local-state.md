@@ -24,7 +24,7 @@ topics:
 risk_level: medium
 authority_level: explanatory
 publication_status: draft
-last_reviewed: 2026-10-21
+last_reviewed: 2026-10-29
 retrieval_priority: high
 assistant_behavior:
     allow_inference: false
@@ -53,6 +53,8 @@ Visibility problems can be mistaken for missing data, missing permissions, or an
 ## What This Means
 
 Zoom in to separate clustered icons. The **Manage Quests** screen lets contributors show or hide individual items or quest types using the **Enabled** checkboxes. A hidden individual quest can be restored from **Undo Edits** by selecting its **You hid it** entry and choosing **Undo**. Workspace availability also depends on project membership, app enablement, and coverage.
+
+In screen-reader mode, the app presents up to five nearby quests at a time. The list refreshes as they move; the limit is intended to avoid overwhelming users with many nearby quests.
 
 For a configured quest, the visibility conditions are:
 

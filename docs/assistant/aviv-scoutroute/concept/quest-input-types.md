@@ -19,7 +19,7 @@ topics:
 risk_level: low
 authority_level: provisional
 publication_status: draft
-last_reviewed: 2026-10-21
+last_reviewed: 2026-10-29
 retrieval_priority: high
 assistant_behavior:
     allow_inference: false
@@ -55,7 +55,7 @@ Not every quest provides every input type, and an input control does not determi
 
 ## How To Use This
 
-Read the complete question, check the requested unit, select all applicable options for multiple-choice questions, keep text responses specific and concise, and capture a photo only when the quest requests one. Correct values that trigger a numeric validation message.
+Read the complete question, check the requested unit, select all applicable options for multiple-choice questions, keep text responses specific and concise, and capture a photo only when the quest requests one. On devices with speech-to-text dictation support available, contributors can speak text into a text field. If a study requires the audio itself, plan to use a separate recording device or app. Correct values that trigger a numeric validation message.
 
 ## Example
 

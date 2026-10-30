@@ -20,7 +20,7 @@ topics:
 risk_level: medium
 authority_level: provisional
 publication_status: draft
-last_reviewed: 2026-07-22
+last_reviewed: 2026-10-29
 retrieval_priority: high
 assistant_behavior:
     allow_inference: false
@@ -53,6 +53,8 @@ Users join a configured project, select an app-enabled workspace, inspect featur
 ## What This Does Not Mean
 
 Availability depends on project-group membership, workspace configuration, geographic coverage, and quest definitions. A submitted contribution is not automatically a final published dataset edit.
+
+AVIV ScoutRoute is for collecting observations, not for providing wayfinding, detecting obstacles, or warning contributors about hazards.
 
 ## How To Use This
 

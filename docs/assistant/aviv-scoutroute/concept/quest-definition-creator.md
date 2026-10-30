@@ -20,7 +20,7 @@ topics:
 risk_level: medium
 authority_level: explanatory
 publication_status: draft
-last_reviewed: 2026-10-12
+last_reviewed: 2026-10-29
 retrieval_priority: high
 assistant_behavior:
     allow_inference: false
@@ -62,6 +62,8 @@ The Creator also supports several editing operations in the interface:
 - Reorder quests in a multi-quest list and reorder elements with drag handles.
 - Duplicate quests, elements, and icons to use as starting points for related items.
 - Create AutoCapture quest configurations, including a sidewalk preset for capturing sidewalk attributes.
+
+The output view's minify option produces a smaller JSON file, which may help with large definitions. Minified JSON is harder to compare in a diff; use an expanded copy for review, then minify the final output if needed.
 
 The Creator is intended to preserve dependencies when quests or elements are reordered. Check the resulting definition and validation output after structural edits, and test it in the intended app and workspace.
 

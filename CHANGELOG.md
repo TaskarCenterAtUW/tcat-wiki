@@ -11,6 +11,8 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/),
 ### Changed
 
 - **Wiki**: Updated abbreviations list
+- **AKB**: Updated AKB articles based on Office Hours transcripts
+
 ## v16.9.0 (2026-10-27)
 
 ### Changed
