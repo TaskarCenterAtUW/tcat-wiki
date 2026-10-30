@@ -48,7 +48,7 @@ topics:
 risk_level: low
 authority_level: official
 publication_status: published
-last_reviewed: 2026-10-29
+last_reviewed: 2026-10-30
 retrieval_priority: high
 assistant_behavior:
     allow_inference: false
@@ -65,7 +65,7 @@ tags:
 
 ## Short Answer
 
-This page lists all 402 abbreviations, acronyms, and initialisms used across TCAT Wiki documentation and TCAT platforms and tools.
+This page lists all 403 abbreviations, acronyms, and initialisms used across TCAT Wiki documentation and TCAT platforms and tools.
 
 ## Significance
 
@@ -371,6 +371,7 @@ The table below maps each abbreviated form to its full expansion. Entries are so
 | SDI | Spatial Data Infrastructure |
 | SDOT | Seattle Department of Transportation |
 | SEPTA | Southeastern Pennsylvania Transportation Authority |
+| SfM | Structure from Motion |
 | SFT | Supervised Fine-Tuning |
 | SGR | State of Good Repair |
 | SHSP | Strategic Highway Safety Plan |

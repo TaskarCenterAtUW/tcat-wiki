@@ -292,6 +292,7 @@
 *[SDI]: Spatial Data Infrastructure
 *[SDOT]: Seattle Department of Transportation
 *[SEPTA]: Southeastern Pennsylvania Transportation Authority
+*[SfM]: Structure from Motion
 *[SFT]: Supervised Fine-Tuning
 *[SGR]: State of Good Repair
 *[SHSP]: Strategic Highway Safety Plan
