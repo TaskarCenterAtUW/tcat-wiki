@@ -19,7 +19,7 @@ topics:
 risk_level: medium
 authority_level: provisional
 publication_status: draft
-last_reviewed: 2026-06-16
+last_reviewed: 2026-10-30
 retrieval_priority: medium
 assistant_behavior:
     allow_inference: false
@@ -30,6 +30,8 @@ related_pages:
     - assistant/workspaces/how-are-changesets-tracked.md
     - assistant/workspaces/how-can-edits-be-audited.md
     - assistant/workspaces/what-metadata-is-stored-for-edits.md
+    - assistant/workspaces/concept/tasking-projects-and-tasks.md
+    - assistant/workspaces/concept/workspaces-api.md
     - assistant/workspaces/how-can-users-inspect-edit-history.md
 tags:
     - Assistant
@@ -54,6 +56,7 @@ Changesets provide the audit trail for every modification made inside a Workspac
 - Changeset metadata typically includes the editor's identity, a timestamp, a user-supplied comment describing the purpose of the edits, and references to the imagery or data sources used.
 - Changesets are visible to workspace members through the review interface and editor history panels, where reviewers can inspect individual edit details. Android-originated changesets with an open or invalid closed date may require current-version troubleshooting.
 - Changesets are the unit of review: a manager or reviewer can open a changeset, examine each edit within it, and accept or flag issues before the workspace is exported to TDEI.
+- The API specification documents a changeset augmented-diff `GET` route whose response contains actions with a type and `new` and `old` elements. It also documents a separate changeset `PUT` resolve operation. The specification does not define review states or the business effect of resolving a changeset.
 
 ## What This Does Not Mean
 
@@ -76,7 +79,7 @@ A city transportation planner opens the review interface for a Workspaces sandbo
 
 ## Assistant Guidance
 
-Cite this page whenever a user asks what a changeset is in the context of Workspaces, or how edits are grouped and tracked. If the user's question involves inspecting a specific changeset (for example, "show me changeset #473"), abstain unless you have access to the relevant Workspaces API or review interface. Do not claim that Workspaces changesets are visible to the public or that they automatically sync with OpenStreetMap. Remind users that changeset comments are editorial notes, not legal certifications, when they ask about data authority or liability.
+Cite this page whenever a user asks what a changeset is in the context of Workspaces, or how edits are grouped and tracked. The [Workspaces API specification](https://api.workspaces.sidewalks.washington.edu/openapi.json) documents the augmented-diff and resolve operations, but not all review semantics or one-to-one upload assumptions. If the user's question involves inspecting a specific changeset (for example, "show me changeset #473"), abstain unless you have access to the relevant Workspaces API or review interface. Do not claim that Workspaces changesets are visible to the public or that they automatically sync with OpenStreetMap. Remind users that changeset comments are editorial notes, not legal certifications, when they ask about data authority or liability.
 
 ## Related Concepts
 
@@ -84,3 +87,4 @@ Cite this page whenever a user asks what a changeset is in the context of Worksp
 - [How can edits be audited?](edit-auditing.md)
 - [What metadata is stored for edits?](edit-metadata.md)
 - [How can users inspect edit history?](edit-history.md)
+- [What APIs does Workspaces provide?](workspaces-api.md)

@@ -24,7 +24,7 @@ topics:
 risk_level: medium
 authority_level: explanatory
 publication_status: draft
-last_reviewed: 2026-10-26
+last_reviewed: 2026-10-30
 retrieval_priority: high
 assistant_behavior:
     allow_inference: false
@@ -32,6 +32,8 @@ assistant_behavior:
     abstain_if_missing_context: true
 related_pages:
     - assistant/workspaces/concept/project-groups.md
+    - assistant/workspaces/concept/tasking-projects-and-tasks.md
+    - assistant/workspaces/concept/workspaces-api.md
     - assistant/workspaces/workflow/create-workspace.md
 tags:
     - Assistant
@@ -116,6 +118,8 @@ A project manager selects a project group and workspace, opens **Projects → Ne
 ## Related Concepts
 
 - [Project groups (Workspaces)](../concept/project-groups.md)
+- [How do Tasking projects and tasks work in Workspaces?](../concept/tasking-projects-and-tasks.md)
+- [What APIs does Workspaces provide?](../concept/workspaces-api.md)
 - [How do I create a workspace?](create-workspace.md)
 - [How do I create a workspace from TDEI?](create-workspace-from-tdei.md)
 - [Workspaces project creation manual](../../../workspaces/user-manual/projects/create.md)

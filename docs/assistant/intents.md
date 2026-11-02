@@ -45,7 +45,7 @@ topics:
 risk_level: low
 authority_level: provisional
 publication_status: draft
-last_reviewed: 2026-10-27
+last_reviewed: 2026-10-30
 retrieval_priority: high
 assistant_behavior:
     allow_inference: false
@@ -56,6 +56,8 @@ related_pages:
     - assistant/index.md
     - assistant/schema.md
     - assistant/dispatch.md
+    - assistant/workspaces/concept/workspaces-api.md
+    - assistant/workspaces/concept/tasking-projects-and-tasks.md
 ---
 
 <!-- @format -->
@@ -274,6 +276,17 @@ Support staff ask operational questions in the moment and may phrase similar que
 **Retrieve these pages:**
 
 - [mapwithai-workflow-history](os-connect/concept/mapwithai-workflow-history.md)
+
+### `explain-workspaces-api`
+
+**Example query:** Which Workspaces API endpoints create a workspace, manage teams and roles, or work with Tasking projects and tasks?
+
+**Retrieve these pages:**
+
+- [workspaces-api](workspaces/concept/workspaces-api.md)
+- [tasking-projects-and-tasks](workspaces/concept/tasking-projects-and-tasks.md)
+- [roles](workspaces/concept/roles.md)
+- [changesets](workspaces/concept/changesets.md)
 
 ### `onboard-new-mappers`
 

@@ -18,13 +18,16 @@ topics:
 risk_level: medium
 authority_level: provisional
 publication_status: draft
-last_reviewed: 2026-06-30
+last_reviewed: 2026-10-30
 retrieval_priority: medium
 assistant_behavior:
     allow_inference: false
     requires_citation: true
     abstain_if_missing_context: true
-related_pages: []
+related_pages:
+    - assistant/workspaces/concept/teams.md
+    - assistant/workspaces/concept/workspace-roles-and-project-roles.md
+    - assistant/workspaces/concept/workspaces-api.md
 tags:
     - Assistant
 ---
@@ -43,7 +46,7 @@ Teams can separate contractor groups or regional contributors without creating s
 
 ## What This Means
 
-Use team membership for organization and workspace-level participation.
+Use team membership for organization and workspace-level participation. The API documents team-member routes separately from workspace-role routes; that separation does not define a complete access or permission matrix.
 
 ## What This Does Not Mean
 
@@ -59,7 +62,7 @@ A regional coordinator creates one team for each contractor group within a share
 
 ## Assistant Guidance
 
-Ask which access layer the user needs.
+Ask whether the user needs team membership, a workspace role, or TDEI Project Group access. The [Workspaces API documentation](https://api.workspaces.sidewalks.washington.edu/docs) distinguishes the team-member and workspace-user routes but does not specify all permission effects.
 
 ## Related Concepts
 
