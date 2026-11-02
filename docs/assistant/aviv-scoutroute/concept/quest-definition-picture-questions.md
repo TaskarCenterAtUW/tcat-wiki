@@ -19,7 +19,7 @@ topics:
 risk_level: high
 authority_level: provisional
 publication_status: draft
-last_reviewed: 2026-10-21
+last_reviewed: 2026-10-29
 retrieval_priority: high
 assistant_behavior:
     allow_inference: false
@@ -48,6 +48,8 @@ Photos can capture conditions that existing imagery cannot show, especially afte
 ## What This Means
 
 When a quest requests a photo, the Android form presents a **Please take a photo of the location** control. The contributor opens the camera, captures and confirms an image, and returns to the quest; the form can show an upload confirmation. A previously attached image may offer options to retake or remove it. Exact labels and behavior are version-sensitive.
+
+Quest definitions currently have no support for a separate alt-text field for each prompt or answer image. Put the information users need in the quest description or answer-choice text; do not rely on an image alone to explain an option.
 
 ## What This Does Not Mean
 

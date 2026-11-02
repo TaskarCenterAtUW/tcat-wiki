@@ -17,13 +17,14 @@ topics:
 risk_level: medium
 authority_level: provisional
 publication_status: draft
-last_reviewed: 2026-06-30
+last_reviewed: 2026-10-30
 retrieval_priority: medium
 assistant_behavior:
     allow_inference: false
     requires_citation: true
     abstain_if_missing_context: true
-related_pages: []
+related_pages:
+    - assistant/workspaces/concept/tasking-projects-and-tasks.md
 tags:
     - Assistant
 ---
@@ -46,7 +47,7 @@ Create, configure, review, and publish the workspace as one project lifecycle.
 
 ## What This Does Not Mean
 
-It is not the only valid organizational model.
+It is not the only valid organizational model. A Tasking project is a separate API resource nested inside a workspace; it is not the same as creating one workspace for each program or project.
 
 ## How To Use This
 
@@ -63,3 +64,4 @@ Ask about regional autonomy and project volume before recommending this model.
 ## Related Concepts
 
 - [What is a workspace extract?](workspace-extract.md)
+- [How do Tasking projects and tasks work in Workspaces?](tasking-projects-and-tasks.md)

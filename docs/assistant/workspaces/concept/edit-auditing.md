@@ -20,7 +20,7 @@ topics:
 risk_level: medium
 authority_level: provisional
 publication_status: draft
-last_reviewed: 2026-08-28
+last_reviewed: 2026-10-30
 retrieval_priority: medium
 assistant_behavior:
     allow_inference: false
@@ -30,6 +30,8 @@ related_pages:
     - assistant/workspaces/concept/edit-history.md
     - assistant/workspaces/concept/changeset-tracking.md
     - assistant/workspaces/concept/edit-metadata.md
+    - assistant/workspaces/concept/tasking-projects-and-tasks.md
+    - assistant/workspaces/concept/workspaces-api.md
 tags:
     - Assistant
 ---
@@ -48,11 +50,11 @@ An audit trail helps managers verify process compliance, investigate discrepanci
 
 ## What This Means
 
-Define the audit scope, identify the workspace and source release, inspect the relevant records, compare before and after states, document findings, and preserve unresolved questions.
+Define the audit scope, identify the workspace and source release, inspect the relevant records, compare before and after states, document findings, and preserve unresolved questions. The API reference also documents project- and task-level Tasking audit endpoints with paginated events, including event type, actor, time, and details.
 
 ## What This Does Not Mean
 
-An audit does not prove that the physical condition is correct or that every edit was observed. Metadata and review records are evidence, not legal certification.
+An audit does not prove that the physical condition is correct or that every edit was observed. The Tasking audit endpoints describe project and task events; the API schema does not define them as a complete record of every feature-level edit. Metadata and review records are evidence, not legal certification.
 
 ## How To Use This
 
@@ -64,10 +66,11 @@ A manager audits a changeset by checking its contributors, sources, affected cur
 
 ## Assistant Guidance
 
-Do not claim an audit was complete without defining its scope. Cite the records and criteria, and abstain when history or workspace access is unavailable.
+Do not claim an audit was complete without defining its scope. Cite the records and criteria, distinguish Tasking audit events from changeset history, and abstain when history or workspace access is unavailable. See the [Workspaces API documentation](https://api.workspaces.sidewalks.washington.edu/docs) for the documented audit routes.
 
 ## Related Concepts
 
 - [How can users inspect edit history?](edit-history.md)
+- [What APIs does Workspaces provide?](workspaces-api.md)
 - [How are changesets tracked?](changeset-tracking.md)
 - [What metadata is stored for edits?](edit-metadata.md)

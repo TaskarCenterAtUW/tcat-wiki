@@ -219,6 +219,7 @@
 *[NEMT]: Non-Emergency Medical Transportation
 *[NetCDF]: Network Common Data Form
 *[NeurIPS]: Neural Information Processing Systems
+*[NHERI]: Natural Hazards Engineering Research Infrastructure
 *[NHS]: National Highway System
 *[NHTS]: National Household Travel Survey
 *[NHTSA]: National Highway Traffic Safety Administration
@@ -227,6 +228,7 @@
 *[NOTICE]: Noise-free Text-Image Corruption and Evaluation
 *[NOx]: Nitrogen Oxides
 *[NPV]: Net Present Value
+*[NSF]: National Science Foundation
 *[NSR]: Normalized Sidewalk Reach
 *[NYPL]: New York Public Library
 *[O&M]: Operating and Maintenance
@@ -290,6 +292,7 @@
 *[SDI]: Spatial Data Infrastructure
 *[SDOT]: Seattle Department of Transportation
 *[SEPTA]: Southeastern Pennsylvania Transportation Authority
+*[SfM]: Structure from Motion
 *[SFT]: Supervised Fine-Tuning
 *[SGR]: State of Good Repair
 *[SHSP]: Strategic Highway Safety Plan

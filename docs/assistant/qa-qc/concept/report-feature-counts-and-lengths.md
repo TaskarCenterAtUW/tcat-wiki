@@ -18,7 +18,7 @@ topics:
 risk_level: medium
 authority_level: explanatory
 publication_status: draft
-last_reviewed: 2026-09-29
+last_reviewed: 2026-10-30
 retrieval_priority: medium
 assistant_behavior:
     allow_inference: false
@@ -47,6 +47,8 @@ Separating length by network type helps planners and engineers compare profile r
 ## What This Means
 
 Read each count and length with its feature type, dataset scope, profile, and units. A road-inclusive profile can have greater total length while showing fewer mapped crossings or curbs: road data may contribute segments without carrying the crossing and curb details present in sidewalk or OpenSidewalks data. The report can combine these different source layers, so the metrics do not necessarily increase together.
+
+Crossing counts deduplicate crossing pieces split at road intersections when they share an ID.
 
 ## What This Does Not Mean
 

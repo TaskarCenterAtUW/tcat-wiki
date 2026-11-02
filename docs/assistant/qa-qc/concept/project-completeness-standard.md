@@ -19,7 +19,7 @@ topics:
 risk_level: medium
 authority_level: provisional
 publication_status: draft
-last_reviewed: 2026-07-22
+last_reviewed: 2026-10-30
 retrieval_priority: high
 assistant_behavior:
     allow_inference: false
@@ -45,6 +45,8 @@ It separates graph readiness from optional accessibility detail.
 ## What This Means
 
 A feature can meet the standard while additional reported fields remain absent.
+
+In the QA/QC report, required fields may be labeled **Required for OS Connect**. This label refers to the project's baseline for feature completeness, not every useful accessibility or local field. Additional fields can support accessibility analysis, QA/QC, or local interpretation without determining whether a feature meets the project standard.
 
 ## What This Does Not Mean
 

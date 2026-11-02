@@ -20,7 +20,7 @@ topics:
 risk_level: low
 authority_level: provisional
 publication_status: draft
-last_reviewed: 2026-08-28
+last_reviewed: 2026-10-30
 retrieval_priority: medium
 assistant_behavior:
     allow_inference: false
@@ -31,6 +31,7 @@ related_pages:
     - assistant/workspaces/concept/team-invitations.md
     - assistant/workspaces/concept/teams-vs-project-groups.md
     - assistant/workspaces/concept/workspace-teams.md
+    - assistant/workspaces/concept/workspaces-api.md
 tags:
     - Assistant
 ---
@@ -41,7 +42,7 @@ tags:
 
 ## Short Answer
 
-Workspaces Teams are attribution labels for tracking which group of collaborators made edits. They help managers distinguish activity, but they are not an access-control or permissions system. The supplied workflow describes the feature as available on the stage environment, so current deployment status should be confirmed before directing users to it.
+Workspaces Teams group collaborators within a workspace and are described in existing workflow material as a way to distinguish contributions. The API reference documents team and membership operations, but does not define permission effects or confirm user-interface availability in a particular environment.
 
 ## Significance
 
@@ -49,21 +50,20 @@ Teams can help managers separate contributions when different groups work on dif
 
 ## What This Means
 
-- A workspace can use separate teams to label different groups or workstreams, such as curb-ramp and sidewalk-connectivity mapping.
-- Contributors can associate themselves with a team through a QR code or shareable link made available for that team.
-- Team labels distinguish edits; they do not grant or revoke workspace permissions.
-- Teams are separate from TDEI Project Groups and their roles.
+- The API schema represents a team with an ID, name, and member count. It documents routes to list, create, retrieve, update, and delete workspace teams, and to list, join, add, or remove members.
+- Existing workflow material describes teams as a way to distinguish contributor groups, including through QR codes or shareable links.
+- Teams are separate from TDEI Project Groups and workspace roles. The API schema does not describe whether team membership changes edit attribution or access permissions.
 
 ## What This Does Not Mean
 
-- A team does not control workspace access, permissions, or RBAC roles.
+- Do not infer workspace access or RBAC permissions from team membership; the API schema does not define those effects.
 - A team is not the same as TDEI Project Group membership.
 - A team is not required for editing or viewing a workspace.
-- The feature is not confirmed as available on the production Workspaces site; the supplied workflow identifies the stage environment only.
+- The API reference at `api.workspaces.sidewalks.washington.edu` documents team routes, but that does not confirm which user-interface features are available in a particular environment.
 
 ## How To Use This
 
-Use Teams when a workspace manager needs to distinguish contributions by group, task, or area. First confirm that contributors have the necessary Workspaces and project-group access; then provide the appropriate team QR code or shareable link if attribution grouping is needed. Confirm the current environment and deployment status before giving UI-specific directions.
+Use Teams when a workspace manager needs to distinguish contributions by group, task, or area. First confirm that contributors have the necessary Workspaces and project-group access; then use the current environment's team workflow if attribution grouping is needed. Verify UI availability before giving interface-specific directions.
 
 ## Example
 
@@ -71,10 +71,12 @@ A project manager creates separate workspace teams for a curb-ramp survey and a 
 
 ## Assistant Guidance
 
-Explain that Teams label contributions and do not replace permissions or TDEI Project Groups. Cite this article when describing the concept. Because the supplied workflow identifies stage-only availability, verify the current deployment environment before giving exact instructions, and abstain when the user's access or current product version is unclear.
+Explain that Teams do not replace workspace roles or TDEI Project Groups. Cite the [Workspaces API documentation](https://api.workspaces.sidewalks.washington.edu/docs) for documented endpoints and current product documentation for attribution and UI behavior. Do not infer availability or permissions from the API schema alone.
 
 ## Related Concepts
 
 - [How do team invitations work?](team-invitations.md)
 - [How do teams differ from project groups?](teams-vs-project-groups.md)
 - [What are Workspaces teams?](workspace-teams.md)
+- [What APIs does Workspaces provide?](workspaces-api.md)
+- [Workspaces API Swagger documentation](https://api.workspaces.sidewalks.washington.edu/docs)

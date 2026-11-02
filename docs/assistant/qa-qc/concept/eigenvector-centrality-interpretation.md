@@ -19,7 +19,7 @@ topics:
 risk_level: medium
 authority_level: provisional
 publication_status: draft
-last_reviewed: 2026-07-22
+last_reviewed: 2026-10-30
 retrieval_priority: medium
 assistant_behavior:
     allow_inference: false
@@ -44,11 +44,11 @@ It helps identify locations near the core of network structure.
 
 ## What This Means
 
-Interpret high values as importance for routing through the network under the report's graph assumptions, not as a measure of direct connection choices or a destination people want to reach.
+Interpret high values as structural prominence within the pedestrian subnetwork under the report's graph assumptions, not as a measure of direct connection choices or a destination people want to reach. Unlike POI-related betweenness, this measure does not depend on modeled trips to destinations; an intersection may be prominent within its subnetwork even when it is not near a POI. Such locations may warrant review.
 
 ## What This Does Not Mean
 
-It does not establish demand, safety, or a final investment priority.
+It does not establish demand, safety, or a final investment priority. A skewed distribution is not by itself evidence that values are wrong or should be made uniform.
 
 ## How To Use This
 

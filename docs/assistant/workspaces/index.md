@@ -50,7 +50,7 @@ Workspaces is the primary way external contributors interact with TCAT's pedestr
 ## What This Means
 
 - **Questions** (`workspaces/*.md`) address specific user queries about Workspaces features, roles, workflows, and relationships with other products.
-- **Concepts** explain core mechanisms such as sandbox governance, dataset lineage, and imagery layers.
+- **Concepts** explain core mechanisms such as sandbox governance, dataset lineage, imagery layers, and the [Workspaces API resource model](concept/workspaces-api.md).
 - **Policies** (this page's frontmatter) define what assistants should and should not claim about Workspaces data authority and editing scope.
 - **Workflows** (`workspaces/workflow/`) provide step-level guidance for common Workspaces tasks: creating workspaces from TDEI data or OSM, editing accessibility features, configuring imagery layers, inviting a team, reviewing edits, and exporting to TDEI.
 

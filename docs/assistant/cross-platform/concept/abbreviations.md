@@ -48,7 +48,7 @@ topics:
 risk_level: low
 authority_level: official
 publication_status: published
-last_reviewed: 2026-10-27
+last_reviewed: 2026-10-30
 retrieval_priority: high
 assistant_behavior:
     allow_inference: false
@@ -65,7 +65,7 @@ tags:
 
 ## Short Answer
 
-This page lists all 400 abbreviations, acronyms, and initialisms used across TCAT Wiki documentation and TCAT platforms and tools.
+This page lists all 403 abbreviations, acronyms, and initialisms used across TCAT Wiki documentation and TCAT platforms and tools.
 
 ## Significance
 
@@ -298,6 +298,7 @@ The table below maps each abbreviated form to its full expansion. Entries are so
 | NEMT | Non-Emergency Medical Transportation |
 | NetCDF | Network Common Data Form |
 | NeurIPS | Neural Information Processing Systems |
+| NHERI | Natural Hazards Engineering Research Infrastructure |
 | NHS | National Highway System |
 | NHTS | National Household Travel Survey |
 | NHTSA | National Highway Traffic Safety Administration |
@@ -306,6 +307,7 @@ The table below maps each abbreviated form to its full expansion. Entries are so
 | NOTICE | Noise-free Text-Image Corruption and Evaluation |
 | NOx | Nitrogen Oxides |
 | NPV | Net Present Value |
+| NSF | National Science Foundation |
 | NSR | Normalized Sidewalk Reach |
 | NYPL | New York Public Library |
 | O&M | Operating and Maintenance |
@@ -369,6 +371,7 @@ The table below maps each abbreviated form to its full expansion. Entries are so
 | SDI | Spatial Data Infrastructure |
 | SDOT | Seattle Department of Transportation |
 | SEPTA | Southeastern Pennsylvania Transportation Authority |
+| SfM | Structure from Motion |
 | SFT | Supervised Fine-Tuning |
 | SGR | State of Good Repair |
 | SHSP | Strategic Highway Safety Plan |

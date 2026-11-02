@@ -22,7 +22,7 @@ topics:
 risk_level: high
 authority_level: provisional
 publication_status: draft
-last_reviewed: 2026-07-22
+last_reviewed: 2026-10-29
 retrieval_priority: high
 assistant_behavior:
     allow_inference: false
@@ -57,9 +57,13 @@ Use Team `27` for OpenSidewalks mappers. Select an available task, choose Rapid 
 
 Completing a task does not guarantee that every feature is mapped or correctly connected. Follow current OSM and OpenSidewalks guidance and submit uncertain details for later verification rather than guessing.
 
+Mapping can be done remotely when suitable imagery is available; contributors do not inherently need to be physically present in the mapped area. Imagery coverage, date, and quality limit what can be confirmed, so leave details that imagery cannot resolve for later verification.
+
 ## How To Use This
 
 Map crossings first, add curb types at endpoints, connect sidewalks and driveways, use street-level imagery when useful, save with the project changeset information, and submit the task as complete only when the task area is covered.
+
+Use aerial imagery and available street-level imagery for remote mapping, and do not infer features that the imagery cannot resolve.
 
 ## Example
 

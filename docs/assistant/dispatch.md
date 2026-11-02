@@ -28,7 +28,7 @@ topics:
 risk_level: low
 authority_level: official
 publication_status: draft
-last_reviewed: 2026-10-27
+last_reviewed: 2026-10-30
 retrieval_priority: high
 assistant_behavior:
     allow_inference: false
@@ -101,7 +101,7 @@ This page should be fetched fresh rather than cached aggressively; its registry 
 | Status | Count | Meaning |
 | :----- | ----: | :------ |
 | `stub` | 0 | Frontmatter and heading scaffold exist; body is `TODO` |
-| `draft` | 811 | Content authored; awaiting TCAT editorial review |
+| `draft` | 813 | Content authored; awaiting TCAT editorial review |
 | `published` | 1 | Available in the human-facing site |
 | `archived` | 0 | Retained for agents but not published |
 
@@ -109,7 +109,7 @@ This page should be fetched fresh rather than cached aggressively; its registry 
 
 | Authority level | Count | Meaning |
 | :-------------- | ----: | :------ |
-| `provisional` | 664 | Early or limited-confidence guidance |
+| `provisional` | 666 | Early or limited-confidence guidance |
 | `explanatory` | 146 | Established explanation without formal policy authority |
 | `official` | 2 | Formally endorsed organizational guidance |
 
@@ -1235,6 +1235,7 @@ Base: `assistant/workspaces/concept/`
 | `74d0f041-51ba-4de5-af68-5906d73bb777` | `source-dataset-tracing.md` | provisional | draft |
 | `141cf8e7-ebbf-43db-8fd5-eed7cba54a94` | `stewardship-support.md` | provisional | draft |
 | `fcde475f-1f37-4396-9de9-c630a19af968` | `target-users.md` | provisional | draft |
+| `4510d7a9-e300-48ac-a109-4675da390913` | `tasking-projects-and-tasks.md` | provisional | draft |
 | `9dd8cfe2-9912-4127-882f-f31c0accfc61` | `tdei-ecosystem-fit.md` | provisional | draft |
 | `70f4fa39-5c72-4751-9eed-7c0ff2cc236b` | `tdei-vs-workspaces.md` | provisional | draft |
 | `01a52d4b-20dc-4828-b9be-b79b923b8e60` | `team-invitations.md` | provisional | draft |
@@ -1274,6 +1275,7 @@ Base: `assistant/workspaces/concept/`
 | `01ed2c86-c164-45c2-aa45-f8ec8de639c1` | `workspace-team-membership.md` | provisional | draft |
 | `298fc015-dc9c-41f6-a4ad-438c01f375ed` | `workspace-teams.md` | provisional | draft |
 | `10fa8424-575f-4d06-b988-c879ba2fa47a` | `workspace-technical-definition.md` | provisional | draft |
+| `9c2001fd-2f7e-4b17-b9c9-42b17a7adc86` | `workspaces-api.md` | provisional | draft |
 | `aec7bb23-e9b3-4ae8-bb73-551582902887` | `workspaces-os-connect-relationship.md` | provisional | draft |
 | `365b14fc-1c9b-4aa4-987d-32301dd2e458` | `workspaces-osm-limitations.md` | provisional | draft |
 | `f9f0667d-f55e-49fd-bcde-002bb8fd5a7f` | `workspaces-tdei-portal-relationship.md` | provisional | draft |

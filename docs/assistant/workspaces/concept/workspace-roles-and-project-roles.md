@@ -19,13 +19,16 @@ topics:
 risk_level: high
 authority_level: provisional
 publication_status: draft
-last_reviewed: 2026-06-30
+last_reviewed: 2026-10-30
 retrieval_priority: high
 assistant_behavior:
     allow_inference: false
     requires_citation: true
     abstain_if_missing_context: true
-related_pages: []
+related_pages:
+    - assistant/workspaces/concept/roles.md
+    - assistant/workspaces/concept/tasking-projects-and-tasks.md
+    - assistant/workspaces/concept/workspaces-api.md
 tags:
     - Assistant
 ---
@@ -36,7 +39,7 @@ tags:
 
 ## Short Answer
 
-TDEI project-group roles govern broader membership and publishing access; Workspaces roles govern more granular editing and review access.
+TDEI Project Group roles, workspace roles, and Tasking project roles are separate scopes. The Workspaces API uses `lead`, `validator`, and `contributor` for both workspace and Tasking project roles, but does not define a permission mapping between those roles or TDEI Project Group roles.
 
 ## Significance
 
@@ -44,24 +47,25 @@ The layers must be coordinated when setting up contractors or regional contribut
 
 ## What This Means
 
-Assign project-group roles for overall data responsibilities and workspace roles for the editing workflow.
+The API exposes workspace-role assignment under `/api/v1/workspaces/{workspace_id}/users/{user_id}/role` and Tasking project-role assignment under `/api/v1/workspaces/{workspace_id}/tasking/projects/{project_id}/roles/{user_id}`. Its self-role response includes a workspace role and a list of Tasking project roles. These scopes are distinct from TDEI Project Group membership and roles.
 
 ## What This Does Not Mean
 
-A member's project role automatically grants every workspace privilege.
+A TDEI Project Group role or Tasking project role automatically grants every workspace privilege.
 
 ## How To Use This
 
-Check both role systems before troubleshooting access.
+Identify the relevant scope and action before troubleshooting access. The [Workspaces API specification](https://api.workspaces.sidewalks.washington.edu/openapi.json) lists the role values but does not define their full permission sets.
 
 ## Example
 
-A user receives project-group member access and a workspace-specific reviewer role.
+A user has TDEI Project Group membership and a workspace role; check separately whether the user also has a Tasking project role before drawing conclusions about task access.
 
 ## Assistant Guidance
 
-Ask which product and action the user is addressing.
+Ask whether the user means a TDEI Project Group, a Workspaces workspace, or a Tasking project, and which action they need. Do not infer permissions from similarly named role values.
 
 ## Related Concepts
 
+- [What APIs does Workspaces provide?](workspaces-api.md)
 - [What roles can members have in a TDEI project group?](../../tdei/concept/project-group-roles.md)
