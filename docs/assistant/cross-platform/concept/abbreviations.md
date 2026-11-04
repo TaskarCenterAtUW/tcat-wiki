@@ -48,7 +48,7 @@ topics:
 risk_level: low
 authority_level: official
 publication_status: published
-last_reviewed: 2026-10-30
+last_reviewed: 2026-11-04
 retrieval_priority: high
 assistant_behavior:
     allow_inference: false
@@ -65,7 +65,7 @@ tags:
 
 ## Short Answer
 
-This page lists all 403 abbreviations, acronyms, and initialisms used across TCAT Wiki documentation and TCAT platforms and tools.
+This page lists all 404 abbreviations, acronyms, and initialisms used across TCAT Wiki documentation and TCAT platforms and tools.
 
 ## Significance
 
@@ -342,6 +342,7 @@ The table below maps each abbreviated form to its full expansion. Entries are so
 | POI | Point of Interest |
 | POIs | Points of Interest |
 | PPNA | Personalized Pedestrian Network Analysis |
+| PROST | Parks, Recreation, Open Space, and Trails |
 | PROWAG | Public Right-of-Way Accessibility Guidelines |
 | PSAC | Pedestrian Safety Advisory Council |
 | PSRC | Puget Sound Regional Council |

@@ -263,6 +263,7 @@
 *[POI]: Point of Interest
 *[POIs]: Points of Interest
 *[PPNA]: Personalized Pedestrian Network Analysis
+*[PROST]: Parks, Recreation, Open Space, and Trails
 *[PROWAG]: Public Right-of-Way Accessibility Guidelines
 *[PSAC]: Pedestrian Safety Advisory Council
 *[PSRC]: Puget Sound Regional Council
