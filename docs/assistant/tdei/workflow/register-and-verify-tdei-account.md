@@ -6,6 +6,7 @@ doc_type: workflow
 questions:
     - How do I register and verify a TDEI account?
     - How do I reset a TDEI password?
+    - How do I sign in to the TDEI Portal with the shared SSO session?
 audiences:
     - public
     - advocate
@@ -19,15 +20,16 @@ topics:
 risk_level: medium
 authority_level: provisional
 publication_status: draft
-last_reviewed: 2026-07-22
+last_reviewed: 2026-11-04
 retrieval_priority: high
 assistant_behavior:
     allow_inference: false
     requires_citation: true
     abstain_if_missing_context: true
 related_pages:
-    - ../concept/portal-dashboard.md
-    - ../../../tdei/portal/user-manual/account-registration.md
+    - assistant/tdei/concept/portal-dashboard.md
+    - assistant/cross-platform/concept/data-viewer-portal-workspaces-relationship.md
+    - tdei/portal/user-manual/account-registration.md
 tags:
     - Assistant
 ---
@@ -38,7 +40,7 @@ tags:
 
 ## Short Answer
 
-Open the TDEI Portal, choose **Register Now**, complete the account form, verify the email, and sign in. Use **Forgot Password** for password recovery.
+Open the TDEI Portal, choose **Register Now**, complete the account form, and verify the email. To sign in, select **TDEI Login** and authenticate with your TDEI account. Use **Forgot Password** for password recovery.
 
 ## Significance
 
@@ -46,11 +48,11 @@ Account verification establishes access to the portal, while project-group membe
 
 ## What This Means
 
-Provide the requested name, email, optional phone, and password, agree to the terms, and create the account. Open the verification email from `admin@tdei.us`; the documented link expires after 12 hours. Resend it if needed.
+Provide the requested name, email, optional phone, and password, agree to the terms, and create the account. Open the verification email from `admin@tdei.us`; the documented link expires after 12 hours. Resend it if needed. In production, the Portal and Workspaces share an SSO session, so signing in to one normally avoids another credential prompt when you select **TDEI Login** in the other. Each application still creates its own local session.
 
 ## What This Does Not Mean
 
-An account alone does not grant access to private project data, services, members, or publishing functions.
+An account alone does not grant access to private project data, services, members, or publishing functions. A shared SSO session does not transfer roles or permissions between applications.
 
 ## How To Use This
 
@@ -62,7 +64,7 @@ A new user registers, verifies the email within the validity period, signs in, a
 
 ## Assistant Guidance
 
-Do not request credentials. Ask which step failed and recommend the portal's current recovery or resend controls.
+Do not request credentials. Ask which step failed and recommend the Portal's current recovery or resend controls. For questions about the shared production sign-in session, use the cross-platform relationship guidance.
 
 ## Related Concepts
 

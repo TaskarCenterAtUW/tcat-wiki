@@ -10,6 +10,7 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/),
 
 ### Changed
 
+- **Wiki**: Documented TDEI SSO login for the TDEI Portal and Workspaces
 - **Wiki**: Updated abbreviations list
 
 ## v16.10.0 (2026-11-02)

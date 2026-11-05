@@ -90,7 +90,7 @@ Select **Join With Referral Code** to join a project group using a referral code
 
 #### Logout
 
-Select **Logout** to sign out of the TDEI Portal and return to the [login screen](account-registration.md#logging-in).
+Select **Logout** to sign out of the TDEI Portal. The Portal redirects you to the shared TDEI SSO logout service, ends the central session, and returns you to the [Portal login page](account-registration.md#logging-in). An already-open Workspaces tab may remain active briefly until it refreshes or validates its token. Refresh the open Workspaces tabs for an immediate logout in both applications.
 
 ---
 

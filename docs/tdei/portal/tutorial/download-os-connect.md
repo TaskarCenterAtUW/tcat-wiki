@@ -26,12 +26,17 @@ Before you begin, you will need a TDEI Portal account. If you don't have one yet
 
 1. Visit [https://portal.tdei.us/](https://portal.tdei.us/)
 
-2. Enter your **Email Id** and **Password**
+2. Select **TDEI Login**
 
-3. Select **Sign In**
+    ![TDEI Portal sign-in page with the TDEI Login button](../../../resources/images/tdei/portal/user-manual/account/tdei-portal-login-light.avif#only-light)
+    ![TDEI Portal sign-in page with the TDEI Login button](../../../resources/images/tdei/portal/user-manual/account/tdei-portal-login-dark.avif#only-dark)
 
-![TDEI Portal login page](../../../resources/images/tdei/portal/tutorial/download-os-connect/login-light.avif#only-light)
-![TDEI Portal login page](../../../resources/images/tdei/portal/tutorial/download-os-connect/login-dark.avif#only-dark)
+3. On the shared TDEI accounts page, sign in with your TDEI account.
+
+    ![TDEI accounts sign-in page with username and password fields](../../../resources/images/tdei/portal/user-manual/account/tdei-sso-login-light.avif#only-light)
+    ![TDEI accounts sign-in page with username and password fields](../../../resources/images/tdei/portal/user-manual/account/tdei-sso-login-dark.avif#only-dark)
+
+4. After authentication, you return to the Portal Dashboard.
 
 ---
 
