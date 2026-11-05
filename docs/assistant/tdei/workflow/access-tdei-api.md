@@ -5,6 +5,7 @@ slug: access-tdei-api
 doc_type: workflow
 questions:
     - How do I access the TDEI API?
+    - Does the production SSO update change existing TDEI login APIs used by scripts?
 audiences:
     - planner
     - jurisdiction
@@ -18,7 +19,7 @@ topics:
 risk_level: medium
 authority_level: explanatory
 publication_status: draft
-last_reviewed: 2026-10-26
+last_reviewed: 2026-11-04
 retrieval_priority: high
 assistant_behavior:
     allow_inference: false
@@ -35,7 +36,7 @@ tags:
 
 ## Short Answer
 
-Register for TDEI and obtain the personal API key shown in the Portal dashboard. The Portal guide describes this key as authenticating programmatic access to TDEI data. Keep it secret, and use official API documentation for current endpoints and request requirements.
+Register for TDEI and obtain the personal API key shown in the Portal dashboard. The Portal guide describes this key as authenticating programmatic access to TDEI data. The production single sign-on (SSO) update changes interactive Portal and Workspaces sign-in; existing login APIs used by scripts remain unchanged. Keep your API key secret, and use official API documentation for current endpoints and request requirements.
 
 ## Significance
 
@@ -43,7 +44,7 @@ API access supports automated retrieval and integration without confusing it wit
 
 ## What This Means
 
-The [Portal dashboard guide](../../../tdei/portal/user-manual/dashboard.md) distinguishes account sign-in from the personal API key, which it describes as authenticating programmatic access to TDEI data. It documents that regenerating the key invalidates the previous one, but does not specify API endpoints, request formats, or the exact authorization scope of a key. Store the key in approved secret management and update integrations after rotation.
+The [Portal dashboard guide](../../../tdei/portal/user-manual/dashboard.md) distinguishes account sign-in from the personal API key, which it describes as authenticating programmatic access to TDEI data. The production SSO rollout changes interactive sign-in in the Portal and Workspaces, not existing login APIs used by scripts. The dashboard documents that regenerating the key invalidates the previous one, but does not specify API endpoints, request formats, or the exact authorization scope of a key. Store the key in approved secret management and update integrations after rotation.
 
 ## What This Does Not Mean
 
@@ -59,7 +60,7 @@ A script reads the API key from a secret store to retrieve an authorized dataset
 
 ## Assistant Guidance
 
-Never request a key, password, or token from the user. Ask for the endpoint, status code, and non-secret request details when troubleshooting.
+Never request a key, password, or token from the user. Do not infer endpoint authentication requirements from the SSO flow. Ask for the endpoint, status code, and non-secret request details when troubleshooting.
 
 ## Related Concepts
 

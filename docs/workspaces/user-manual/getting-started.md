@@ -22,7 +22,18 @@ _For a list of all guides on the TCAT Wiki, refer to the [Guides List](../../gui
 
 1. **Open** [TDEI Workspaces](https://workspaces.sidewalks.washington.edu/)
 2. If the sign-in page appears, select **TDEI Login**
-3. Complete sign-in on the TDEI page that opens, using your TDEI account
+
+    ![TDEI Workspaces sign-in page with the TDEI Login button](../../resources/images/workspaces/user-manual/02-getting-started/workspaces-login-light.avif#only-light)
+    ![TDEI Workspaces sign-in page with the TDEI Login button](../../resources/images/workspaces/user-manual/02-getting-started/workspaces-login-dark.avif#only-dark)
+
+3. On the shared TDEI accounts page, sign in with your TDEI account.
+
+    ![TDEI accounts sign-in page with username and password fields](../../resources/images/tdei/portal/user-manual/account/tdei-sso-login-light.avif#only-light)
+    ![TDEI accounts sign-in page with username and password fields](../../resources/images/tdei/portal/user-manual/account/tdei-sso-login-dark.avif#only-dark)
+
+4. After authentication, you return to Workspaces.
+
+The [TDEI Portal](https://portal.tdei.us/) and Workspaces share a single sign-on (SSO) session. If you are already signed in to either application, selecting **TDEI Login** in the other normally returns you without another credential prompt. Each application still creates its own local session; SSO returns you to the application where you started and does not change its roles or permissions.
 
 The Workspaces sign-in page may also show **Register Now** and **Forgot Password?** links. For a new account, follow the [TDEI Portal registration instructions](../../tdei/portal/user-manual/account-registration.md#registering-a-new-account); to reset a password, follow the [TDEI Portal password recovery instructions](../../tdei/portal/user-manual/account-registration.md#forgot-password). If either Workspaces link does not open the expected Portal page, use these instructions directly. After you sign in, the landing page button changes to **Go to Dashboard**.
 
@@ -54,7 +65,7 @@ When your TDEI session expires while you are using Workspaces, the **Session Exp
 1. Select **TDEI Login** to sign in again and return to the page you were using
 2. Select **Logout** if you do not want to sign in again
 
-Save or submit any in-progress edits before leaving the page; session recovery does not guarantee that unsaved changes are preserved. Signing in or out in one Workspaces tab synchronizes the session across other open tabs.
+Save or submit any in-progress edits before leaving the page; session recovery does not guarantee that unsaved changes are preserved. Within Workspaces, signing in or out in one tab synchronizes the session across other open Workspaces tabs.
 
 ---
 
@@ -63,7 +74,7 @@ Save or submit any in-progress edits before leaving the page; session recovery d
 1. Open the account menu in the navigation bar
 2. Select **Logout**
 
-Workspaces signs out of TDEI and returns to the sign-in page.
+Workspaces redirects you to the shared TDEI SSO logout service, ends the central session, and returns to its sign-in page. An already-open Portal tab may remain active briefly until it refreshes or validates its token. For an immediate logout in both applications, refresh the open Portal tabs.
 
 ---
 

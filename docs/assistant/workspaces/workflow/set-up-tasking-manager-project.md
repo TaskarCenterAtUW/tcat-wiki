@@ -24,7 +24,7 @@ topics:
 risk_level: medium
 authority_level: explanatory
 publication_status: draft
-last_reviewed: 2026-10-30
+last_reviewed: 2026-11-04
 retrieval_priority: high
 assistant_behavior:
     allow_inference: false
@@ -35,6 +35,7 @@ related_pages:
     - assistant/workspaces/concept/tasking-projects-and-tasks.md
     - assistant/workspaces/concept/workspaces-api.md
     - assistant/workspaces/workflow/create-workspace.md
+    - assistant/cross-platform/concept/data-viewer-portal-workspaces-relationship.md
 tags:
     - Assistant
 ---
@@ -113,7 +114,7 @@ A project manager selects a project group and workspace, opens **Projects → Ne
 - Distinguish creating the project from generating and saving task areas and from activating the project for contributors.
 - Describe **Lock Timeout** as controlling when a task lock automatically expires; do not assume a time unit that the current project guide does not specify.
 - Cite the [Workspaces project-creation manual](../../../workspaces/user-manual/projects/create.md) for current task-generation and activation steps.
-- Explain that Workspaces and the TDEI Portal use a shared sign-in flow; a redirect between them is part of authentication, not a separate project or workspace.
+- Explain that production Workspaces and the TDEI Portal share an SSO session, but each application creates its own local session and applies its own roles and permissions. A redirect during sign-in returns the user to the application they started from; it does not open the other application.
 
 ## Related Concepts
 

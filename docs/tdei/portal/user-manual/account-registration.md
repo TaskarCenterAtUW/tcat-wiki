@@ -12,7 +12,7 @@ tags:
 
 ## Account Registration
 
-This section explains how to register for a TDEI account, verify your email, and log in to the TDEI Portal, or reset your password.
+This section explains how to register for a TDEI account, verify your email, sign in to the TDEI Portal, or reset your password.
 
 _For a list of all guides on the TCAT Wiki, refer to the [Guides List](../../../guides-list/index.md)._{ .guides-list-ref }
 
@@ -20,12 +20,21 @@ _For a list of all guides on the TCAT Wiki, refer to the [Guides List](../../../
 
 ### Logging In
 
-To access the TDEI Portal, navigate to [https://portal.tdei.us/](https://portal.tdei.us/). If you already have an account, enter your email and password and select **Sign In**.
+1. Navigate to the [TDEI Portal](https://portal.tdei.us/) and select **TDEI Login**.
 
-![TDEI Portal login page](../../../resources/images/tdei/portal/user-manual/account/login-light.avif#only-light)
-![TDEI Portal login page](../../../resources/images/tdei/portal/user-manual/account/login-dark.avif#only-dark)
+    ![TDEI Portal sign-in page with the TDEI Login button](../../../resources/images/tdei/portal/user-manual/account/tdei-portal-login-light.avif#only-light)
+    ![TDEI Portal sign-in page with the TDEI Login button](../../../resources/images/tdei/portal/user-manual/account/tdei-portal-login-dark.avif#only-dark)
 
-After signing in successfully, you will be redirected to the [Dashboard](dashboard.md#dashboard).
+2. On the shared TDEI accounts page, sign in with your TDEI account.
+
+    ![TDEI accounts sign-in page with username and password fields](../../../resources/images/tdei/portal/user-manual/account/tdei-sso-login-light.avif#only-light)
+    ![TDEI accounts sign-in page with username and password fields](../../../resources/images/tdei/portal/user-manual/account/tdei-sso-login-dark.avif#only-dark)
+
+3. After authentication, you return to the [Dashboard](dashboard.md#dashboard).
+
+The TDEI Portal and Workspaces share a single sign-on (SSO) session. See the [Workspaces Getting Started guide](../../../workspaces/user-manual/getting-started.md) for its sign-in steps. If you are already signed in to either application, selecting **TDEI Login** in the other normally returns you without another credential prompt. Each application still creates its own local session; SSO does not open the other application automatically or change its roles and permissions.
+
+This change affects interactive Portal and Workspaces sign-in. Existing login APIs used by scripts remain unchanged.
 
 ---
 
