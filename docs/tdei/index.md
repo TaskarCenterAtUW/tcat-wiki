@@ -18,6 +18,8 @@ With the support of the **Transportation Data Exchange Initiative** (TDEI), the 
 
 _TDEI is a project sponsored by the [ITS4US Deployment Program](https://www.its.dot.gov/its4us/index.htm), focused on improving frameworks for transportation services and infrastructure. By developing open-source data collection tools, digital infrastructure, and governance models, TDEI enables seamless public-private data exchange and interoperability._
 
+Public TDEI components include [TDEI Tools](https://github.com/TaskarCenterAtUW/tdei-tools), the [Workspaces frontend](https://github.com/TaskarCenterAtUW/workspaces-frontend), and the [Workspaces backend](https://github.com/TaskarCenterAtUW/workspaces-backend). These repositories use repository-specific branches, including `main` and `develop`, with feature and deployment branches; external contributors can submit issues and pull requests for maintainer review.
+
 ---
 
 ### User Registration and Access

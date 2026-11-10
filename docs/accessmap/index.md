@@ -8,6 +8,8 @@ title: AccessMap
 
 AccessMap ([accessmap.app](https://accessmap.app)) is a web app that provides detailed information in select cities on pedestrian paths, transit stations, elevation changes, curb ramps, and more to enable accessibility-focused multimodal routing.
 
+[Source code](https://github.com/TaskarCenterAtUW/AccessMap) is publicly available on GitHub. The repository uses `main` as its default branch; external contributors can propose changes through issues and pull requests for maintainer review.
+
 ![AccessMap](../resources/images/accessmap/accessmap-light.png#only-light)
 ![AccessMap](../resources/images/accessmap/accessmap-dark.png#only-dark)
 

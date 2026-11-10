@@ -69,21 +69,29 @@ If you remember only three things, remember these:
 
 ### Projects
 
-**[OS-CONNECT](os-connect/index.md)** — Washington State connected pedestrian network dataset.
+**[OS-CONNECT](os-connect/index.md)** — Washington State connected pedestrian network dataset. No standalone public source repository is currently listed for the dataset.
 
-**[TDEI](tdei/index.md)** — Platform infrastructure for storing, serving, and integrating transportation accessibility data.
+**[TDEI](tdei/index.md)** — Platform infrastructure for storing, serving, and integrating transportation accessibility data. Public components include [TDEI Tools](https://github.com/TaskarCenterAtUW/tdei-tools), [Workspaces frontend](https://github.com/TaskarCenterAtUW/workspaces-frontend), and [Workspaces backend](https://github.com/TaskarCenterAtUW/workspaces-backend).
 
-**[OpenSidewalks](opensidewalks/index.md)** — The data standard/schema used to represent pedestrian networks as a connected graph.
+**[OpenSidewalks](opensidewalks/index.md)** — The data standard/schema used to represent pedestrian networks as a connected graph. The public [OpenSidewalks Schema repository](https://github.com/OpenSidewalks/OpenSidewalks-Schema) contains the schema source.
 
-**[Workspaces](workspaces/index.md)** — Tools for creating and maintaining OSW datasets (via editors like [Rapid](rapid/index.md) and [AVIV ScoutRoute](aviv-scoutroute/index.md)).
+**[Workspaces](workspaces/index.md)** — Tools for creating and maintaining OSW datasets (via editors like [Rapid](rapid/index.md) and [AVIV ScoutRoute](aviv-scoutroute/index.md)). Public components include the [frontend](https://github.com/TaskarCenterAtUW/workspaces-frontend), [backend](https://github.com/TaskarCenterAtUW/workspaces-backend), and [deployment stack](https://github.com/TaskarCenterAtUW/workspaces-stack).
 
-**[AccessMap](accessmap/index.md)** — Accessible multimodal routing and trip planning.
+**[AccessMap](accessmap/index.md)** — Accessible multimodal routing and trip planning. See the public [AccessMap repository](https://github.com/TaskarCenterAtUW/AccessMap).
 
-**[Walksheds](walksheds/index.md)** — Analysis of access to destinations using the pedestrian network.
+**[Walksheds](walksheds/index.md)** — Analysis of access to destinations using the pedestrian network. No standalone public source repository is currently listed for the tool.
 
-**[AVIV ScoutRoute](aviv-scoutroute/index.md)** — Mobile app for adding data into the existing pedestrian map. AVIV ScoutRoute enables everyone to make structured, clear, and direct contributions of surveyed data to enhance it or keep it up to date.
+**[AVIV ScoutRoute](aviv-scoutroute/index.md)** — Mobile app for adding data into the existing pedestrian map. AVIV ScoutRoute enables everyone to make structured, clear, and direct contributions of surveyed data to enhance it or keep it up to date. See the public [GoInfoGame repository](https://github.com/OpenSidewalks/GoInfoGame) and [iOS repository](https://github.com/TaskarCenterAtUW/GoInfoGame-iOS).
+
+**[Rapid](rapid/index.md)** — OpenStreetMap-based editor used by Workspaces. See the public [Rapid repository](https://github.com/meta/Rapid) and [Workspaces Rapid integration repository](https://github.com/TaskarCenterAtUW/workspaces-rapid).
 
 _Additional TCAT projects are listed on the [TCAT website](https://tcat.cs.washington.edu/current-projects/)._
+
+### Source Code, Branches, and Contributions
+
+The public repositories linked above use repository-specific branch structures. Most use `main` as the default branch; the Workspaces frontend uses `develop`, and other repositories may retain release, staging, or feature branches. Check each repository's branch list and contribution guidance before opening a change.
+
+External contributions are accepted through issues and pull requests in public repositories, subject to each project's maintainer review and contribution guidance. The TCAT Wiki itself welcomes minor external contributions; see the [contribution guide](../CONTRIBUTING.md).
 
 ---
 

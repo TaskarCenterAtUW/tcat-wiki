@@ -8,6 +8,8 @@ title: OS-CONNECT
 
 OS-CONNECT is a comprehensive, high-resolution, and connected pedestrian network dataset for Washington State. Created under the directive of the Washington State Legislature using innovative methods developed by the Taskar Center for Accessible Technology at the University of Washington, OS-CONNECT supports Washington's broader goals around transportation equity, safety, and accessibility by providing detailed sidewalk infrastructure data across 320+ cities and counties.
 
+No standalone public source repository is currently listed for OS-CONNECT. Its public data and schema integrations are documented through [TDEI](../tdei/index.md) and [OpenSidewalks](../opensidewalks/index.md); external contributions to those public components can be proposed through GitHub issues and pull requests.
+
 ---
 
 ### Dataset Name Suffixes

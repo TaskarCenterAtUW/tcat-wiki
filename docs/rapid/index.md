@@ -8,6 +8,8 @@ title: Rapid Editor
 
 Rapid is an extended version of the OpenStreetMap iD editor. A modified version of Rapid is embedded in [Workspaces](../workspaces/index.md) and can be used to edit data in open Workspaces.
 
+The upstream [Rapid repository](https://github.com/meta/Rapid) and the [Workspaces Rapid integration repository](https://github.com/TaskarCenterAtUW/workspaces-rapid) are public. Rapid uses `main` as its default branch and maintains release and feature branches; external contributors can submit issues and pull requests for maintainer review.
+
 ---
 
 ### Guides
