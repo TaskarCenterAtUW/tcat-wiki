@@ -10,6 +10,7 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/),
 
 ### Changed
 
+- **Wiki**: Updated abbreviations list
 - **Core**: Upgraded Zensical to v0.1.1
 
 ## v17.0.0 (2026-11-05)
