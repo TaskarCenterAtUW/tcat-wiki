@@ -2,6 +2,7 @@
 *[2FA]: Two-Factor Authentication
 *[3D]: Three-Dimensional
 *[3DEP]: 3D Elevation Program
+*[3Rs]: Replacement, Reduction, and Refinement
 *[A11y]: Accessibility
 *[AADT]: Annual Average Daily Traffic
 *[AASHO]: American Association of State Highway Officials
@@ -39,6 +40,7 @@
 *[BCA]: Benefit-Cost Analysis
 *[BCR]: Benefit-Cost Ratio
 *[BEV]: Bird's-Eye View
+*[BFCoG]: Benton-Franklin Council of Governments
 *[BFS]: Breadth-First Search
 *[BLIP]: Bootstrapping Language-Image Pre-training
 *[BLV]: Blind and Low-Vision
@@ -54,6 +56,7 @@
 *[CCMS]: Component Content Management System
 *[CCR]: Community Comparison Ratio
 *[CDP]: Census-Designated Place
+*[CDTC]: Chelan-Douglas Transportation Council
 *[CHIIR]: Conference on Human Information Interaction and Retrieval
 *[CIEP]: Coalition on Inclusive Emergency Planning
 *[CMF]: Crash Modification Factor
@@ -75,6 +78,7 @@
 *[CTANW]: Community Transportation Association of the Northwest
 *[CUGOS]: Cascadia Users of Geospatial Open Source
 *[CVPR]: Conference on Computer Vision and Pattern Recognition
+*[CWCoG]: Cowlitz-Wahkiakum Council of Governments
 *[DARTS]: Delta Area Rural Transportation System
 *[DB]: Design-Build / Database
 *[dBA]: Decibels Adjusted
@@ -100,6 +104,8 @@
 *[ETL]: Extract, Transform, Load
 *[ETRS89]: European Terrestrial Reference System 1989
 *[EVLOS]: Extended Visual Line of Sight
+*[EWG]: East-West Gateway Council of Governments
+*[EWGCOG]: East-West Gateway Council of Governments
 *[FAA]: Federal Aviation Administration
 *[FARS]: Fatality Analysis Reporting System
 *[FDE]: Fundamental Data Elements
@@ -174,6 +180,7 @@
 *[KV]: Key-Value
 *[LAION]: Large-scale Artificial Intelligence Open Network
 *[lat]: Latitude
+*[LCV]: Lewis Clark Valley
 *[LFQD]: Long Form Quest Definition
 *[LiDAR]: Light Detection and Ranging
 *[LLaVA]: Large Language and Vision Assistant
@@ -209,6 +216,7 @@
 *[NACTO]: National Association of City Transportation Officials
 *[NAD27]: North American Datum 1927
 *[NAD83]: North American Datum 1983
+*[NAMs]: New Approach Methodologies
 *[NC-BPAID]: National Collaboration on Bicycle, Pedestrian, and Accessibility Infrastructure Data
 *[NCDOT]: North Carolina Department of Transportation
 *[NCHRP]: National Cooperative Highway Research Program
@@ -290,6 +298,7 @@
 *[SAM-Road]: Segment Anything Model for Road Network Graph Extraction
 *[SAM]: Segment Anything Model
 *[SCLIO]: Specialized Community-Led Impact Opportunity
+*[SCoG]: Skagit Council of Governments
 *[SDI]: Spatial Data Infrastructure
 *[SDOT]: Seattle Department of Transportation
 *[SEPTA]: Southeastern Pennsylvania Transportation Authority
@@ -315,13 +324,14 @@
 *[SPSA]: Simultaneous Perturbation Stochastic Approximation
 *[SRID]: Spatial Reference System Identifier
 *[SRQ]: Sidewalk Reach Quotient
+*[SRTC]: Spokane Regional Transportation Council
 *[SRTS]: Safe Routes to School
 *[SS4A]: Safe Streets and Roads for All
 *[SSA]: Seattle Streets Alliance
 *[SSO]: Single Sign-On
 *[STAC]: SpatioTemporal Asset Catalog
 *[STAR]: Smart Transportation Applications and Research
-*[STIP]: State Transportation Improvement Program
+*[STIP]: Statewide Transportation Improvement Program
 *[STR]: Symmetric Token Replacement
 *[SUMC]: Shared User Mobility Conference / Shared Use Mobility Center
 *[SVEA]: Snoqualmie Valley Economic Alliance
@@ -347,6 +357,7 @@
 *[TRAILS]: Trail Routing, Analysis, and Information Linkage System
 *[TRB]: Transportation Research Board
 *[TRL]: Technology Readiness Level
+*[TRPC]: Thurston Regional Planning Council
 *[TSP]: Transportation Service Provider / Transportation Safety Planning
 *[TTL]: Time to Live
 *[TTS]: Text to Speech
@@ -388,6 +399,7 @@
 *[WAI]: Web Accessibility Initiative
 *[WASILC]: Washington Statewide Independent Living Council
 *[WCAG]: Web Content Accessibility Guidelines
+*[WCoG]: Whatcom Council of Governments
 *[WFS]: Web Feature Service
 *[WGS]: World Geodetic System
 *[WIC]: Special Supplemental Nutrition Program for Women, Infants, and Children
@@ -398,9 +410,11 @@
 *[WSDOT]: Washington State Department of Transportation
 *[WSP]: Washington State Proviso
 *[WTSC]: Washington Traffic Safety Commission
+*[WWV]: Walla Walla Valley
 *[WWWC]: World Wide Web Consortium
 *[XAI]: Explainable Artificial Intelligence
 *[XEE]: XML External Entity
 *[XML]: Extensible Markup Language
 *[XR]: Extended Reality
 *[YOE]: Year of Expenditure
+*[YVCoG]: Yakima Valley Conference of Governments
