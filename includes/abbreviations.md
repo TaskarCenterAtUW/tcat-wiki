@@ -209,6 +209,7 @@
 *[MOU]: Memorandum of Understanding
 *[MP]: MultiPolygon
 *[MPO]: Metropolitan Planning Organization
+*[MSF]: Médecins Sans Frontières (Doctors Without Borders)
 *[MUTCD]: Manual on Uniform Traffic Control Devices
 *[MVT]: Mapbox Vector Tile
 *[NAACL]: North American Chapter of the Association for Computational Linguistics

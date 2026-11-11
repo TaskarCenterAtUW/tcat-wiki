@@ -10,6 +10,8 @@ OpenSidewalks ([OSW](https://sidewalks.washington.edu/)) is an initiative led by
 
 OpenSidewalks seeks to provide a specification that is not only compatible with OpenStreetMap but is a comprehensive and accessibility-forward specification for mapping sidewalks and related pedestrian infrastructure features.
 
+The public [OpenSidewalks Schema repository](https://github.com/OpenSidewalks/OpenSidewalks-Schema) contains the schema source. Its protected `main` branch is supported by release and feature branches; external contributors can submit issues and pull requests for maintainer review.
+
 ---
 
 ### [OpenSidewalks Schema](schema/index.md)

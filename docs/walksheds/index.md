@@ -8,6 +8,8 @@ title: Walksheds
 
 [Walksheds](https://walkshed.tdei.us/) (officially, "TDEI Walksheds") is a web tool developed by TCAT for analyzing pedestrian infrastructure and access to amenities.
 
+No standalone public source repository is currently listed for Walksheds. External contributions to related public TDEI components can be proposed through their GitHub repositories; branch structures and contribution guidance vary by repository.
+
 ---
 
 ![Walksheds](../resources/images/walksheds/walksheds-light.png#only-light)
