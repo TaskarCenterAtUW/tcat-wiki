@@ -127,11 +127,12 @@ Polygons describe 2-dimensional areas which are adjacent to pedestrian paths. Th
 
 ##### 3. Custom Entities
 
-Custom Entities are user-defined features that extend the OpenSidewalks Schema beyond the predefined Core and Adjacent categories. They enable incorporation of bespoke data layers while maintaining schema consistency. Custom Entities can take one of three geometry types:
+Custom Entities are user-defined features that extend the OpenSidewalks Schema beyond the predefined Core and Adjacent categories. They enable incorporation of bespoke data layers while maintaining schema consistency. The custom entity models fall into two groups:
 
-- [Points](#custom-point)
-- [Lines](#custom-line)
-- [Polygons](#custom-polygon)
+- Custom Nodes, Edges, and Zones extend the Core Entity models and participate in the pedestrian graph.
+- Custom Points, Lines, and Polygons extend the Adjacent Entity models and are spatial features, not graph elements.
+
+All Custom Entities can include additional fields prefixed with `ext:`.
 
 #### Entity Attributes
 
@@ -529,7 +530,7 @@ Edges are Lines (their serializable geometries are representable by LineStrings)
         <tr><td>Optional Fields</td><td>All <a href="#primary-street">optional fields of a primary street</a>.</td></tr>
         </table>
 
-#### Zones
+##### Zones
 
 Zones are features that are geometrically defined by a Polygon (a closed ring of coordinates). They are also defined as a part of a pedestrian network: each Zone must define an `_id` string field, a unique identifier, and a list (`_w_id`) of Node `_id`s that define the Zone's boundary.
 
@@ -649,7 +650,7 @@ Points are features that are geometrically defined by a single latitude-longitud
     <tr><td>Optional Fields</td><td><a href="#leaf-cycle">leaf_cycle</a><br><a href="#leaf-type">leaf_type</a></td></tr>
     </table>
 
-##### Lines
+#### Lines
 
 Lines are features that are geometrically defined by a series of coordinates forming a LineString. They are explicitly **not** elements of the pedestrian network definition (i.e. the graph structure described by Nodes, Edges and Zones), but they are still highly relevant to the physical pedestrian network. All Lines must have a unique `_id` field.
 
@@ -707,12 +708,53 @@ Polygons describe 2-dimensional areas which are adjacent to pedestrian paths. Th
 
 #### List of Custom Entities
 
+Custom Nodes, Edges, and Zones extend the corresponding Core Entity models. Custom Points, Lines, and Polygons are non-network Adjacent Entity models.
+
+##### Custom Node
+
+??? abstract "Custom Node"
+
+    <table class="schema-table">
+    <tr><td>Description</td><td>A user-defined Point feature that is part of the traversable graph.</td></tr>
+    <tr><td>Subtype of</td><td><em>None</em></td></tr>
+    <tr><td>Geometry</td><td>Point</td></tr>
+    <tr><td>Identifying Fields</td><td><em>None</em></td></tr>
+    <tr><td>Required Fields</td><td><code>_id</code></td></tr>
+    <tr><td>Optional Fields</td><td>Additional fields (ext: prefixed)</td></tr>
+    </table>
+
+##### Custom Edge
+
+??? abstract "Custom Edge"
+
+    <table class="schema-table">
+    <tr><td>Description</td><td>A user-defined, traversable LineString feature that is part of the pedestrian graph.</td></tr>
+    <tr><td>Subtype of</td><td><em>None</em></td></tr>
+    <tr><td>Geometry</td><td>LineString</td></tr>
+    <tr><td>Identifying Fields</td><td><em>None</em></td></tr>
+    <tr><td>Required Fields</td><td><code>_id</code>, <code>_u_id</code>, <code>_v_id</code></td></tr>
+    <tr><td>Optional Fields</td><td><a href="#foot">foot</a><br>Additional fields (ext: prefixed)</td></tr>
+    </table>
+
+##### Custom Zone
+
+??? abstract "Custom Zone"
+
+    <table class="schema-table">
+    <tr><td>Description</td><td>A user-defined traversable Polygon feature that is part of the pedestrian graph.</td></tr>
+    <tr><td>Subtype of</td><td><em>None</em></td></tr>
+    <tr><td>Geometry</td><td>Polygon</td></tr>
+    <tr><td>Identifying Fields</td><td><em>None</em></td></tr>
+    <tr><td>Required Fields</td><td><code>_id</code>, <code>_w_id</code> (list of Node <code>_id</code> references)</td></tr>
+    <tr><td>Optional Fields</td><td><a href="#foot">foot</a><br>Additional fields (ext: prefixed)</td></tr>
+    </table>
+
 ##### Custom Point
 
 ??? abstract "Custom Point"
 
     <table class="schema-table">
-    <tr><td>Description</td><td>A custom point is a user-defined Point feature. It can represent any custom-location marker (e.g., a survey marker).</td></tr>
+    <tr><td>Description</td><td>A user-defined Point feature that is not part of the traversable graph. It can represent any custom-location marker (e.g., a survey marker).</td></tr>
     <tr><td>Subtype of</td><td><em>None</em></td></tr>
     <tr><td>Geometry</td><td>Point</td></tr>
     <tr><td>Identifying Fields</td><td><em>None</em></td></tr>
@@ -724,7 +766,7 @@ Polygons describe 2-dimensional areas which are adjacent to pedestrian paths. Th
 ??? abstract "Custom Line"
 
     <table class="schema-table">
-    <tr><td>Description</td><td>A custom line is a user-defined LineString feature. It can represent any custom path or linear infrastructure (e.g., temporary detour route).</td></tr>
+    <tr><td>Description</td><td>A user-defined LineString feature that is not part of the traversable graph. It can represent custom linear infrastructure (e.g., a wall).</td></tr>
     <tr><td>Subtype of</td><td><em>None</em></td></tr>
     <tr><td>Geometry</td><td>LineString</td></tr>
     <tr><td>Identifying Fields</td><td><em>None</em></td></tr>
@@ -736,7 +778,7 @@ Polygons describe 2-dimensional areas which are adjacent to pedestrian paths. Th
 ??? abstract "Custom Polygon"
 
     <table class="schema-table">
-    <tr><td>Description</td><td>A custom polygon is a user-defined Polygon feature. It can represent any custom area or zone (e.g., event footprint).</td></tr>
+    <tr><td>Description</td><td>A user-defined Polygon feature that is not part of the traversable graph. It can represent any custom area (e.g., event footprint).</td></tr>
     <tr><td>Subtype of</td><td><em>None</em></td></tr>
     <tr><td>Geometry</td><td>Polygon</td></tr>
     <tr><td>Identifying Fields</td><td><em>None</em></td></tr>
@@ -1059,7 +1101,7 @@ OpenSidewalks Schema fields are typed key-value pairs. Keys are always strings a
 | :------ | :----------- | :--------------------------------------------------------------------------- | :------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
 | 0.1     | 2023-08-11   | [GitHub](https://github.com/OpenSidewalks/OpenSidewalks-Schema/tree/32dad18) | - Minimal initial beta release of schema to unblock development of schema consuming applications                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            |
 | 0.2     | 2024-01-30   | [GitHub](https://github.com/OpenSidewalks/OpenSidewalks-Schema/tree/9338af)  | - Add required `_id` Field to [Edges](#edges)<br>- Update the documentation with regards to the [coordinate reference system](#coordinate-reference-system)<br>- Introduce the concept of [Core Entities](#1-core-entities) and [Adjacent Entities](#2-adjacent-entities) (formerly called "Extensions")<br>- Add [Zones](#zones) to [Core Entities](#1-core-entities)<br>- Add [Lines](#lines) and [Polygons](#polygons) to [Adjacent Entities](#2-adjacent-entities)<br>- Add [Schema Versions](#schema-versions) and [OpenSidewalks Dataset Metadata](#opensidewalks-dataset-metadata)<br>- Add [Pedestrian Zone](#pedestrian-zone) to [Zones](#zones_1)<br>- Add [Fence](#fence) to [Lines](#lines_1)<br>- Add [Building](#building) to [Polygons](#polygons_1)<br>- Add _additional fields_ to [Entity Attributes](#entity-attributes)<br>- Add [Motor Vehicle Roads](#motor-vehicle-roads) to [Edges](#edges_1) with justification<br>- Add [Climb](#climb) Field to [Steps](#steps) Edge in addition to the existing [Incline](#incline) Field<br>- Add [Opening Hours](#opening-hours) Field and include it to the existing [Building](#building-field) Fields<br>- Add [Generic Curb](#generic-curb) entity to [Nodes](#nodes)<br>- Add [Foot](#foot) Field to all [Edges](#edges) and [Zones](#zones)<br>- Change [Entity Type Inference](#entity-type-inference) to include the _geometry type_<br>- Fix lossiness of [Tactile Paving](#tactile-paving) Field<br>- Remove _crossing_ Field in favor of [crossing:markings](#crossing-markings) Field<br>- Add [Living Street](#living-street) to [Edges](#edges)<br>- Add [Unclassified Road](#unclassified-road) to [Motor Vehicle Roads](#motor-vehicle-roads)<br>- Add [Trunk Road](#trunk-road) to [Motor Vehicle Roads](#motor-vehicle-roads)<br>- Require that the `_id` Field for all entities has at least one character |
-| 0.3     | 2026-01-27   | [GitHub](https://github.com/OpenSidewalks/OpenSidewalks-Schema)              | - Add [Custom Points](#custom-point)<br>- Add [Custom Lines](#custom-line)<br>- Add [Custom Polygons](#custom-polygon)<br>- Add [Tree](#tree) to [Points](#points)<br>- Add [Tree Row](#tree-row) to [Lines](#lines)<br>- Add [Wood](#wood) to [Polygons](#polygons)<br>- Add [Leaf Type](#leaf-type) Field<br>- Add [Leaf Cycle](#leaf-cycle) Field<br>- Update documentation to improve clarity with regards to [Adjacent Entities](#2-adjacent-entities) (formerly called "Extensions")                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                  |
+| 0.3     | 2026-01-27   | [GitHub](https://github.com/OpenSidewalks/OpenSidewalks-Schema)              | - Add [Custom Nodes](#custom-node), [Custom Edges](#custom-edge), and [Custom Zones](#custom-zone)<br>- Add [Custom Points](#custom-point)<br>- Add [Custom Lines](#custom-line)<br>- Add [Custom Polygons](#custom-polygon)<br>- Add [Tree](#tree) to [Points](#points)<br>- Add [Tree Row](#tree-row) to [Lines](#lines)<br>- Add [Wood](#wood) to [Polygons](#polygons)<br>- Add [Leaf Type](#leaf-type) Field<br>- Add [Leaf Cycle](#leaf-cycle) Field<br>- Update documentation to improve clarity with regards to [Adjacent Entities](#2-adjacent-entities) (formerly called "Extensions")                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                  |
 
 ---
 

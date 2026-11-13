@@ -48,7 +48,7 @@ The graph model allows routing and analysis tools to construct network relations
 
 ## What This Means
 
-Core entities include Nodes, Edges, and Zones. Adjacent and Custom Entities describe relevant features that are not necessarily part of the traversable graph. Edges reference endpoint Nodes with `_u_id` and `_v_id`; Zones reference Nodes with `_w_id`. Data is intended to be largely compatible with OpenStreetMap but may come from other sources.
+Core entities include Nodes, Edges, and Zones. Custom Nodes, Edges, and Zones extend those graph models; Custom Points, Lines, and Polygons extend the non-network Adjacent models. Edges reference endpoint Nodes with `_u_id` and `_v_id`; Zones reference Nodes with `_w_id`. Data is intended to be largely compatible with OpenStreetMap but may come from other sources.
 
 ## What This Does Not Mean
 
