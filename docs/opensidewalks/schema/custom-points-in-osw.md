@@ -19,7 +19,7 @@ _For a list of all guides on the TCAT Wiki, refer to the [Guides List](../../gui
 
 ### What are Custom Points?
 
-Custom Points in OpenSidewalks are user-defined non-routable point features that extend the schema beyond the predefined Core Entities and Adjacent Entities point types. While OpenSidewalks includes many built-in point types like fire hydrants, benches, and street lamps, Custom Points let you add any custom feature!
+Custom Points in OpenSidewalks are user-defined, non-routable point features for location markers that do not match a predefined Core or Adjacent point type. A Custom Point is spatial context, not a graph vertex. If a point must participate in the pedestrian graph, use a predefined Node or, when no predefined Node type fits, a [Custom Node](index.md#custom-node).
 
 Doing so is simple - just prefix `ext:` before the tags that are not in the OSW schema.
 

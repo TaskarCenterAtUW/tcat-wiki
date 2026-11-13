@@ -40,7 +40,7 @@ tags:
 
 ## Short Answer
 
-Custom Entities are user-defined Point, LineString, or Polygon features that extend the OpenSidewalks Schema beyond its predefined Core and Adjacent categories. They allow a dataset to preserve a relevant feature when no predefined entity type fits.
+Custom Entities are user-defined schema types for features that do not fit predefined entity types. In OpenSidewalks 0.3, Custom Nodes, Edges, and Zones extend the traversable Core Entity models, while Custom Points, Lines, and Polygons extend the non-network Adjacent Entity models.
 
 ## Significance
 
@@ -48,17 +48,17 @@ Custom Entities support local and specialized data while keeping the feature's g
 
 ## What This Means
 
-The schema defines Custom Points, Custom Lines, and Custom Polygons. A Custom Entity has no predefined identifying fields that classify it as a standard Core or Adjacent entity. Each entity needs a unique `_id`. Additional fields that are not defined by the schema must use the `ext:` prefix, and their meaning should be documented for intended consumers.
+Custom Nodes are Points with a unique `_id`. Custom Edges are directional LineStrings with a unique `_id` and endpoint references `_u_id` and `_v_id`. Custom Zones are Polygons with a unique `_id` and `_w_id`, a list of Node references. These three custom types are graph entities. Custom Points, Lines, and Polygons each need a unique `_id` but are not graph entities. Additional fields not defined by the schema must use the `ext:` prefix, and their meaning should be documented for intended consumers.
 
-Custom Entities are not substitutes for Core Entities. If a feature is meant to participate in the traversable graph, determine whether it should be modeled using the applicable Core Entity rather than using a Custom Entity.
+Use a predefined Core Entity when its semantics fit the feature. When no predefined Core type fits but the feature belongs in the traversable graph, use the matching Custom Node, Edge, or Zone and provide its required topology.
 
 ## What This Does Not Mean
 
-A Custom Entity does not automatically create network connectivity or acquire the semantics of a standard schema entity. An `ext:` field is not automatically interoperable or meaningful to every consumer, and a Custom Point does not become an on-graph Node merely because it has valid coordinates.
+A Custom Point, Line, or Polygon does not create network connectivity. A Custom Node, Edge, or Zone uses the relevant graph structure but does not acquire the semantics of a predefined entity type. An `ext:` field is not automatically interoperable or meaningful to every consumer, and a Custom Point does not become an on-graph Node merely because it has valid coordinates.
 
 ## How To Use This
 
-Confirm that no predefined Core or Adjacent entity fits. Choose Point, LineString, or Polygon geometry, assign a unique `_id`, prefix nonstandard fields with `ext:`, document the source and intended interpretation, and validate the dataset against the applicable schema version.
+Confirm that no predefined Core or Adjacent entity fits, then choose the custom model that matches the feature: Node, Edge, or Zone when it belongs in the traversable graph; Point, Line, or Polygon when it is spatial context only. Supply the model's required identifier and topology fields, prefix nonstandard fields with `ext:`, document their meaning, and validate against the applicable schema version.
 
 ## Example
 
