@@ -91,7 +91,7 @@ _Additional TCAT projects are listed on the [TCAT website](https://tcat.cs.washi
 
 The public repositories linked above use repository-specific branch structures. Most use `main` as the default branch; the Workspaces frontend uses `develop`, and other repositories may retain release, staging, or feature branches. Check each repository's branch list and contribution guidance before opening a change.
 
-External contributions are accepted through issues and pull requests in public repositories, subject to each project's maintainer review and contribution guidance. The TCAT Wiki itself welcomes minor external contributions; see the [contribution guide](../CONTRIBUTING.md).
+External contributions are accepted through issues and pull requests in public repositories, subject to each project's maintainer review and contribution guidance. The TCAT Wiki itself welcomes minor external contributions; see the [contribution guide](https://github.com/TaskarCenterAtUW/tcat-wiki/blob/main/CONTRIBUTING.md).
 
 ---
 
