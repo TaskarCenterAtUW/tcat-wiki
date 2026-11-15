@@ -6,9 +6,9 @@ title: AVIV ScoutRoute
 
 ## AVIV ScoutRoute
 
-AVIV ScoutRoute ([GitHub](https://github.com/OpenSidewalks/GoInfoGame)), formerly "[GoInfoGame](https://tcat.cs.washington.edu/goinfogame-app/)" is a volunteerism app based on [StreetComplete](https://github.com/streetcomplete/StreetComplete) that leverages the power of crowdsourcing to gather critical pedestrian and accessibility information.
+AVIV ScoutRoute, formerly named [GoInfoGame](https://tcat.cs.washington.edu/goinfogame-app/), is a volunteerism app based on [StreetComplete](https://github.com/streetcomplete/StreetComplete) that uses crowdsourcing to gather pedestrian and accessibility information.
 
-The public source also includes the [iOS app repository](https://github.com/TaskarCenterAtUW/GoInfoGame-iOS). The repositories retain a `master` or `main` default branch alongside release and feature branches; external contributors can submit issues and pull requests for maintainer review.
+Public repositories are available for both the [AVIV ScoutRoute Android app](https://github.com/TaskarCenterAtUW/GoInfoGame-Android) and the [AVIV ScoutRoute iOS app](https://github.com/TaskarCenterAtUW/GoInfoGame-iOS).
 
 ---
 
