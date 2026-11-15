@@ -286,7 +286,8 @@ nav = [
                 {"What input types are available in AVIV ScoutRoute quests?" = "assistant/aviv-scoutroute/concept/quest-input-types.md"},
                 {"Can quests in AVIV ScoutRoute be marked as required or optional?" = "assistant/aviv-scoutroute/concept/quest-required-or-optional.md"},
                 {"Why can AVIV ScoutRoute quests be hidden or unavailable?" = "assistant/aviv-scoutroute/concept/quest-visibility-and-local-state.md"},
-                {"What is a quest in AVIV ScoutRoute?" = "assistant/aviv-scoutroute/concept/quest.md"}
+                {"What is a quest in AVIV ScoutRoute?" = "assistant/aviv-scoutroute/concept/quest.md"},
+                {"Is the source code for AVIV ScoutRoute publicly available on GitHub?" = "assistant/aviv-scoutroute/concept/source-code-availability.md"}
             ]},
             {"Workflow" = [
                 {"How do I answer a quest in AVIV ScoutRoute?" = "assistant/aviv-scoutroute/workflow/answer-quest.md"},
@@ -387,6 +388,7 @@ nav = [
                 {"How do point and line feature workflows differ?" = "assistant/opensidewalks/concept/point-and-line-feature-workflows.md"},
                 {"How can regional OS-CONNECT derivatives serve different uses?" = "assistant/opensidewalks/concept/regional-dataset-derivatives.md"},
                 {"How can roadside surface data support route preferences?" = "assistant/opensidewalks/concept/roadside-surface-preferences.md"},
+                {"Is the source code for OpenSidewalks publicly available on GitHub?" = "assistant/opensidewalks/concept/source-code-availability.md"},
                 {"What roles exist in the OSM US Tasking Manager?" = "assistant/opensidewalks/concept/tasking-manager-roles.md"},
                 {"How does TDEI validate OpenSidewalks data?" = "assistant/opensidewalks/concept/tdei-schema-validation.md"},
                 {"Which tools can edit OpenSidewalks workspaces?" = "assistant/opensidewalks/concept/workspace-editing-tools.md"}
@@ -579,6 +581,7 @@ nav = [
                 {"What attributes are collected for sidewalks?" = "assistant/os-connect/concept/sidewalk-attributes.md"},
                 {"Why are sidewalks disconnected on the map?" = "assistant/os-connect/concept/sidewalk-disconnection-causes.md"},
                 {"How should separately mapped sidewalks be associated with street names in OSM?" = "assistant/os-connect/concept/sidewalk-street-name-association.md"},
+                {"Is the source code for OS-CONNECT publicly available on GitHub?" = "assistant/os-connect/concept/source-code-availability.md"},
                 {"What role could states play in stewardship?" = "assistant/os-connect/concept/state-stewardship-role.md"},
                 {"Why does pedestrian data matter statewide?" = "assistant/os-connect/concept/statewide-data-importance.md"},
                 {"Is this a statewide inventory?" = "assistant/os-connect/concept/statewide-inventory.md"},
@@ -697,7 +700,10 @@ nav = [
         ]},
         {"Rapid" = [
             "assistant/rapid/index.md",
-            {"Concept" = [ {"Rapid" = "assistant/rapid/concept/rapid.md"} ]},
+            {"Concept" = [
+                {"Rapid" = "assistant/rapid/concept/rapid.md"},
+                {"Is the source code for Rapid publicly available on GitHub?" = "assistant/rapid/concept/source-code-availability.md"}
+            ]},
             {"Workflow" = [ {"How do I add a sidewalk using Rapid?" = "assistant/rapid/workflow/add-sidewalk-using-rapid.md"} ]}
         ]},
         {"Support" = [
@@ -774,6 +780,7 @@ nav = [
                 {"What is a released dataset in TDEI?" = "assistant/tdei/concept/released-dataset.md"},
                 {"How do TDEI services relate to project groups?" = "assistant/tdei/concept/services-and-project-groups.md"},
                 {"What is the relationship between source and derivative datasets in TDEI?" = "assistant/tdei/concept/source-and-derivative-datasets.md"},
+                {"Is the source code for TDEI publicly available on GitHub?" = "assistant/tdei/concept/source-code-availability.md"},
                 {"How is TDEI organized?" = "assistant/tdei/concept/tdei-architecture.md"},
                 {"How is TDEI data protected?" = "assistant/tdei/concept/tdei-data-security.md"},
                 {"What are TDEI processing jobs?" = "assistant/tdei/concept/tdei-job-processing.md"},
@@ -842,6 +849,7 @@ nav = [
                 {"How can walksheds support Safe Routes to School (SRTS)?" = "assistant/walksheds/concept/safe-routes-to-school.md"},
                 {"How can walksheds support school accessibility analysis?" = "assistant/walksheds/concept/school-accessibility-analysis.md"},
                 {"How can walksheds support senior mobility analysis?" = "assistant/walksheds/concept/senior-mobility-analysis.md"},
+                {"Is the source code for Walksheds publicly available on GitHub?" = "assistant/walksheds/concept/source-code-availability.md"},
                 {"How can walksheds support transit planning?" = "assistant/walksheds/concept/transit-planning.md"},
                 {"What travel limits are used?" = "assistant/walksheds/concept/travel-limits.md"},
                 {"What travel profiles are available in Walksheds?" = "assistant/walksheds/concept/travel-profiles.md"},
@@ -993,6 +1001,7 @@ nav = [
                 {"What is the review interface?" = "assistant/workspaces/concept/review-interface.md"},
                 {"What roles exist in Workspaces?" = "assistant/workspaces/concept/roles.md"},
                 {"What does sandbox mean in Workspaces?" = "assistant/workspaces/concept/sandbox.md"},
+                {"Is the source code for Workspaces publicly available on GitHub?" = "assistant/workspaces/concept/source-code-availability.md"},
                 {"How can users trace the source dataset?" = "assistant/workspaces/concept/source-dataset-tracing.md"},
                 {"How does Workspaces support stewardship?" = "assistant/workspaces/concept/stewardship-support.md"},
                 {"What kinds of users are Workspaces designed for?" = "assistant/workspaces/concept/target-users.md"},

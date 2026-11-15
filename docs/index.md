@@ -81,7 +81,9 @@ If you remember only three things, remember these:
 
 **[Walksheds](walksheds/index.md)** — Analysis of access to destinations using the pedestrian network.
 
-**[AVIV ScoutRoute](aviv-scoutroute/index.md)** — Mobile app for adding data into the existing pedestrian map. AVIV ScoutRoute enables everyone to make structured, clear, and direct contributions of surveyed data to enhance it or keep it up to date.
+**[AVIV ScoutRoute](aviv-scoutroute/index.md)** — Mobile app for adding data into the existing pedestrian map.
+
+**[Rapid](rapid/index.md)** — OpenStreetMap-based editor used by Workspaces.
 
 _Additional TCAT projects are listed on the [TCAT website](https://tcat.cs.washington.edu/current-projects/)._
 

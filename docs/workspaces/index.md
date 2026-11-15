@@ -8,6 +8,8 @@ title: Workspaces
 
 [Workspaces](https://workspaces.sidewalks.washington.edu/) (officially, "TDEI Workspaces") is a web platform for editing TDEI datasets.
 
+Public repositories are available on GitHub for the [frontend](https://github.com/TaskarCenterAtUW/workspaces-frontend), [backend](https://github.com/TaskarCenterAtUW/workspaces-backend), [deployment stack](https://github.com/TaskarCenterAtUW/workspaces-stack), and [Rapid integration](https://github.com/TaskarCenterAtUW/workspaces-rapid).
+
 ---
 
 ![TDEI Workspaces landing page with the platform description and Sign In button](../resources/images/workspaces/01-landing-light.avif#only-light)

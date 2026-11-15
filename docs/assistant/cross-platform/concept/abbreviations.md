@@ -48,7 +48,7 @@ topics:
 risk_level: low
 authority_level: official
 publication_status: published
-last_reviewed: 2026-11-09
+last_reviewed: 2026-11-11
 retrieval_priority: high
 assistant_behavior:
     allow_inference: false
@@ -65,7 +65,7 @@ tags:
 
 ## Short Answer
 
-This page lists all 419 abbreviations, acronyms, and initialisms used across TCAT Wiki documentation and TCAT platforms and tools.
+This page lists all 420 abbreviations, acronyms, and initialisms used across TCAT Wiki documentation and TCAT platforms and tools.
 
 ## Significance
 
@@ -288,6 +288,7 @@ The table below maps each abbreviated form to its full expansion. Entries are so
 | MOU | Memorandum of Understanding |
 | MP | MultiPolygon |
 | MPO | Metropolitan Planning Organization |
+| MSF | Médecins Sans Frontières (Doctors Without Borders) |
 | MUTCD | Manual on Uniform Traffic Control Devices |
 | MVT | Mapbox Vector Tile |
 | NAACL | North American Chapter of the Association for Computational Linguistics |

@@ -28,7 +28,7 @@ topics:
 risk_level: low
 authority_level: official
 publication_status: draft
-last_reviewed: 2026-10-30
+last_reviewed: 2026-11-15
 retrieval_priority: high
 assistant_behavior:
     allow_inference: false
@@ -101,7 +101,7 @@ This page should be fetched fresh rather than cached aggressively; its registry 
 | Status | Count | Meaning |
 | :----- | ----: | :------ |
 | `stub` | 0 | Frontmatter and heading scaffold exist; body is `TODO` |
-| `draft` | 813 | Content authored; awaiting TCAT editorial review |
+| `draft` | 820 | Content authored; awaiting TCAT editorial review |
 | `published` | 1 | Available in the human-facing site |
 | `archived` | 0 | Retained for agents but not published |
 
@@ -110,7 +110,7 @@ This page should be fetched fresh rather than cached aggressively; its registry 
 | Authority level | Count | Meaning |
 | :-------------- | ----: | :------ |
 | `provisional` | 666 | Early or limited-confidence guidance |
-| `explanatory` | 146 | Established explanation without formal policy authority |
+| `explanatory` | 153 | Established explanation without formal policy authority |
 | `official` | 2 | Formally endorsed organizational guidance |
 
 ## Registry
@@ -263,6 +263,7 @@ Base: `assistant/aviv-scoutroute/concept/`
 | `adafb96b-4eb2-4857-8aa4-2e876f2e5edd` | `quest-required-or-optional.md` | explanatory | draft |
 | `557c7f7d-8153-4cda-8ad1-1511aad3c7a9` | `quest-visibility-and-local-state.md` | explanatory | draft |
 | `c1d960b6-ad07-4b10-a8c6-e5ce06b07c29` | `quest.md` | provisional | draft |
+| `54b6e1cc-b287-49d2-bf20-a6f6590dd709` | `source-code-availability.md` | explanatory | draft |
 
 ### Workflows
 
@@ -466,6 +467,7 @@ Base: `assistant/opensidewalks/concept/`
 | `6f85f542-fd51-4dde-b838-82f44c4fcd42` | `point-and-line-feature-workflows.md` | provisional | draft |
 | `27a4a8a0-700d-4391-aaa5-4b5c470065f3` | `regional-dataset-derivatives.md` | provisional | draft |
 | `38a79ef1-99e7-4c10-bcce-8416abde198c` | `roadside-surface-preferences.md` | provisional | draft |
+| `b38538c6-9ae2-4395-b189-67eea47ea5e9` | `source-code-availability.md` | explanatory | draft |
 | `d2ecc09b-5051-4aa1-959c-abce0f6efcc0` | `tasking-manager-roles.md` | provisional | draft |
 | `6942366e-b725-4850-8c19-f21eb4ee362a` | `tdei-schema-validation.md` | provisional | draft |
 | `727949a1-2099-46b1-8b56-8d868606b42f` | `workspace-editing-tools.md` | provisional | draft |
@@ -677,6 +679,7 @@ Base: `assistant/os-connect/concept/`
 | `4d328378-d4be-418a-a4c0-22eff37413bf` | `sidewalk-attributes.md` | provisional | draft |
 | `15b469c9-2470-40fa-aa5c-fbeb441f07d9` | `sidewalk-disconnection-causes.md` | explanatory | draft |
 | `d0f7f947-33ef-420c-9cc3-fc09156dcf9a` | `sidewalk-street-name-association.md` | provisional | draft |
+| `c4f2c92b-3284-4dd3-9ad5-1a432f624eb2` | `source-code-availability.md` | explanatory | draft |
 | `004a0171-bb78-4b92-9f71-5a3fca439241` | `state-stewardship-role.md` | provisional | draft |
 | `3d4cb083-1340-41cd-8957-faaccc0c42ff` | `statewide-data-importance.md` | provisional | draft |
 | `cced324f-5797-404d-b0bd-4fd6f2731804` | `statewide-inventory.md` | explanatory | draft |
@@ -835,6 +838,7 @@ Base: `assistant/rapid/concept/`
 | UID | File | Authority Level | Publication Status |
 | :-- | :--- | :-------------- | :----------------- |
 | `17911acf-f9c0-489c-99e5-612a869e2ec1` | `rapid.md` | provisional | draft |
+| `920ad5af-7956-4f71-906d-0af465e98bfd` | `source-code-availability.md` | explanatory | draft |
 
 ### Workflows
 
@@ -952,6 +956,7 @@ Base: `assistant/tdei/concept/`
 | `c1c7fc8a-5511-43c8-a443-9716fa0878fe` | `released-dataset.md` | provisional | draft |
 | `9255d973-6c1f-4557-8fc2-5e08b596dbd1` | `services-and-project-groups.md` | provisional | draft |
 | `c0eb0525-d8cd-46c7-b935-2e354d07d171` | `source-and-derivative-datasets.md` | explanatory | draft |
+| `daacdf1c-571a-4475-89a1-78cb5dde4fee` | `source-code-availability.md` | explanatory | draft |
 | `9209b586-859c-43ff-b606-4b60ebfe9f0f` | `tdei-architecture.md` | provisional | draft |
 | `090b5c65-73c9-4883-b7a7-b1aea5bd1d1b` | `tdei-data-security.md` | explanatory | draft |
 | `819491bf-e7a8-478f-a6f0-53dc22ddd70b` | `tdei-job-processing.md` | provisional | draft |
@@ -1039,6 +1044,7 @@ Base: `assistant/walksheds/concept/`
 | `90aabacc-6e0d-4518-8596-cfb7a5eb4398` | `safe-routes-to-school.md` | explanatory | draft |
 | `3142cd7e-1d15-4bf9-b45d-8967e8a59cb3` | `school-accessibility-analysis.md` | explanatory | draft |
 | `9d95d98b-c8e6-4186-8495-0a28e570344d` | `senior-mobility-analysis.md` | provisional | draft |
+| `a6aff4c6-a04f-4b04-85e5-9deeccb61362` | `source-code-availability.md` | explanatory | draft |
 | `eee64e4c-0f3c-44c9-9f02-8b9ba3be65b7` | `transit-planning.md` | provisional | draft |
 | `2269d2e6-d81f-46f3-bc54-d6176e8e165d` | `travel-limits.md` | provisional | draft |
 | `1e371817-fb9f-4470-a899-949f5fae22bc` | `travel-profiles.md` | explanatory | draft |
@@ -1232,6 +1238,7 @@ Base: `assistant/workspaces/concept/`
 | `e57a35a2-0d42-47fd-abf7-69ab994ea041` | `review-interface.md` | provisional | draft |
 | `fe334631-ca62-41b1-b4f6-0684ddc62d02` | `roles.md` | provisional | draft |
 | `51b46963-5a2c-4b1d-9e8d-21e76f34f5c2` | `sandbox.md` | provisional | draft |
+| `95419778-f9cc-45ab-9bdf-d41ee0363844` | `source-code-availability.md` | explanatory | draft |
 | `74d0f041-51ba-4de5-af68-5906d73bb777` | `source-dataset-tracing.md` | provisional | draft |
 | `141cf8e7-ebbf-43db-8fd5-eed7cba54a94` | `stewardship-support.md` | provisional | draft |
 | `fcde475f-1f37-4396-9de9-c630a19af968` | `target-users.md` | provisional | draft |
