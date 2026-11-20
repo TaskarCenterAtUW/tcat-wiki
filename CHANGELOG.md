@@ -6,6 +6,13 @@ All notable changes to this project will be documented in this file.
 
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/), and this project adheres to [Semantic Versioning](https://semver.org/) and [Conventional Commits](https://www.conventionalcommits.org/).
 
+## v17.4.0 (2026-11-20)
+
+### Changed
+
+- **Wiki**: Updated OpenSidewalks Schema documentation of Custom Entities
+- **Core**: Upgraded Zensical to v0.1.3
+
 ## v17.3.0 (2026-11-15)
 
 ### Changed

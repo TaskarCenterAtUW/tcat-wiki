@@ -45,7 +45,7 @@ Create GeoJSON Point features with unique `_id` values, WGS-84 coordinates, and 
 
 ## Significance
 
-Custom Points allow useful non-routable features such as bus stops, entrances, kiosks, and accessibility facilities to travel with a pedestrian dataset.
+Custom Points allow useful non-routable features such as bus stops and kiosks to travel with a pedestrian dataset. If a point must be a graph vertex, use a predefined Node or a Custom Node instead.
 
 ## What This Means
 
@@ -65,7 +65,7 @@ A GTFS stop becomes `bus_stop_1001` with `ext:stop_id`, `ext:stop_name`, and a P
 
 ## Assistant Guidance
 
-Ask whether the point should be routable and what source format is being converted. Do not treat Custom Points as substitutes for network entities.
+Ask whether the point should be a graph vertex and what source format is being converted. Do not treat Custom Points as substitutes for Nodes or Custom Nodes.
 
 ## Related Concepts
 

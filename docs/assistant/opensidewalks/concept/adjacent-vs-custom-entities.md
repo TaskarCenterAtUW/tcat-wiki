@@ -41,7 +41,7 @@ tags:
 
 ## Short Answer
 
-Adjacent Entities are predefined non-network features that describe the environment around a pedestrian network. Custom Entities are user-defined Point, LineString, or Polygon features for data that does not fit a predefined Core or Adjacent entity. Additional fields that are not defined by the schema use the `ext:` prefix.
+Adjacent Entities are predefined non-network features that describe the environment around a pedestrian network. Custom Entities are user-defined types for data that does not fit a predefined Core or Adjacent entity: Custom Nodes, Edges, and Zones extend graph models, while Custom Points, Lines, and Polygons extend non-network models. Additional fields that are not defined by the schema use the `ext:` prefix.
 
 ## Significance
 
@@ -49,15 +49,15 @@ The distinction helps data producers preserve the difference between features wi
 
 ## What This Means
 
-Use an Adjacent Entity when the feature matches a predefined OpenSidewalks type, such as an adjacent Point, Line, or Polygon. Use a Custom Entity when the feature is relevant to the dataset but does not match a predefined Core or Adjacent type. Both are spatial features rather than graph primitives. Each entity needs a unique `_id`, and fields not defined by the schema must use the `ext:` prefix.
+Use an Adjacent Entity when the feature matches a predefined OpenSidewalks type, such as an adjacent Point, Line, or Polygon. Use a Custom Entity when the feature is relevant to the dataset but does not match a predefined Core or Adjacent type. Custom Nodes, Edges, and Zones participate in the graph and require the corresponding topology fields; Custom Points, Lines, and Polygons are spatial features rather than graph primitives. Each entity needs a unique `_id`, and fields not defined by the schema must use the `ext:` prefix.
 
 ## What This Does Not Mean
 
-Neither category automatically creates network connectivity or becomes part of a traversable graph. A geometry type alone does not determine the complete entity meaning, and an `ext:` field is not automatically a standardized OpenSidewalks field.
+Adjacent Entities and Custom Points, Lines, and Polygons do not create network connectivity. Custom Nodes, Edges, and Zones are graph entities, but custom type alone does not supply valid topology or give the feature the semantics of a predefined entity. A geometry type alone does not determine the complete entity meaning, and an `ext:` field is not automatically a standardized OpenSidewalks field.
 
 ## How To Use This
 
-First decide whether the feature belongs in the Core network. If it does not, check whether a predefined Adjacent Entity fits. Use a Custom Entity only when no predefined type fits. Assign a unique `_id`, use the geometry model that matches the source feature, preserve nonstandard source attributes with `ext:`, and document the source and intended interpretation. Check the applicable schema version and validate the resulting dataset.
+First decide whether the feature belongs in the Core network. If it does not, check whether a predefined Adjacent Entity fits. Use a Custom Entity only when no predefined type fits, choosing Node, Edge, or Zone for a graph feature and Point, Line, or Polygon for spatial context. Supply the required identifiers and topology fields, preserve nonstandard source attributes with `ext:`, and document their intended interpretation. Check the applicable schema version and validate the resulting dataset.
 
 ## Example
 

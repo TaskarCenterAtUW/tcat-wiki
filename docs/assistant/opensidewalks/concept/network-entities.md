@@ -50,11 +50,11 @@ Separating network structure from nearby context lets routing and analysis tools
 
 ## What This Means
 
-Core entities are Nodes, Edges, and Zones. Nodes are Point vertices with unique `_id` values. Edges are directional LineStrings with unique `_id`, `_u_id`, and `_v_id` references. Zones are Polygon features whose `_w_id` list defines connected nodes. Adjacent Points, Lines, and Polygons have spatial relationships but are not graph primitives. Custom entities extend the schema with user-defined geometry and fields.
+Core entities are Nodes, Edges, and Zones. Nodes are Point vertices with unique `_id` values. Edges are directional LineStrings with unique `_id`, `_u_id`, and `_v_id` references. Zones are Polygon features whose `_w_id` list defines connected nodes. Custom Nodes, Edges, and Zones extend these graph models; Custom Edges require `_u_id` and `_v_id`, and Custom Zones require `_w_id`. Adjacent Points, Lines, and Polygons have spatial relationships but are not graph primitives. Custom Points, Lines, and Polygons extend those non-network models.
 
 ## What This Does Not Mean
 
-A nearby Point, Line, or Polygon is not automatically a routable graph element. A geometry type alone does not determine the complete entity meaning.
+A nearby Point, Line, or Polygon is not automatically a routable graph element. A Custom Point, Line, or Polygon is also not a graph element; Custom Nodes, Edges, and Zones are graph models with their own required topology fields. A geometry type alone does not determine the complete entity meaning.
 
 ## How To Use This
 
