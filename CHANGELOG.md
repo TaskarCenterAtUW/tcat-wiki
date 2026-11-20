@@ -10,6 +10,7 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/),
 
 ### Changed
 
+- **Wiki**: Updated OpenSidewalks Schema documentation of Custom Entities
 - **Core**: Upgraded Zensical to v0.1.3
 
 ## v17.1.0 (2026-11-10)
