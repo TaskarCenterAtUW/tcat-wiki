@@ -5,6 +5,7 @@ slug: choose-editor
 doc_type: workflow
 questions:
     - Which editor should I use?
+    - Should I use Rapid, iD, the GTFS-Pathways editor, or AVIV ScoutRoute?
 audiences:
     - planner
     - jurisdiction
@@ -20,7 +21,7 @@ topics:
 risk_level: low
 authority_level: provisional
 publication_status: draft
-last_reviewed: 2026-09-11
+last_reviewed: 2026-11-24
 retrieval_priority: medium
 assistant_behavior:
     allow_inference: false
@@ -40,7 +41,7 @@ tags:
 
 ## Short Answer
 
-Choose the editor based on the task, user experience, workspace compatibility, required feature detail, and whether editing is in a browser or desktop workflow. Workspaces documentation identifies Rapid, AVIV ScoutRoute, and JOSM as available editing paths for different uses.
+Choose the editor by dataset type and task. Workspaces uses a modified Rapid editor for OSW datasets and a different modified Rapid editor for GTFS-Pathways datasets. Rapid is an extended version of iD; standalone iD is not a separate documented Workspaces option. AVIV ScoutRoute is for configured mobile quest contributions, and JOSM is a supported desktop workflow when set up as documented.
 
 ## Significance
 
@@ -48,19 +49,19 @@ The editor choice affects onboarding, precision, field collection, and collabora
 
 ## What This Means
 
-Use Rapid for supported browser editing, AVIV ScoutRoute for configured field quests, and JOSM for feature-rich desktop editing when the workspace workflow supports it. Verify current compatibility first.
+Use the OSW Rapid editor for supported browser-based OSW feature edits and the Pathways-specific Rapid editor for GTFS-Pathways data. Workspaces opens the Pathways editor with a route containing `datatype=pathways&editor=rapid3`; select the editor from the workspace rather than substituting the main OSW editor. Use AVIV ScoutRoute for configured field questions and JOSM only with the documented desktop connection.
 
 ## What This Does Not Mean
 
-An editor does not guarantee correct tags, review, permissions, or publication.
+An editor does not guarantee correct data, review, permissions, or publication. The OSW and GTFS-Pathways Rapid editors are distinct Workspaces editing paths, even though both are modified versions of Rapid.
 
 ## How To Use This
 
-Ask whether the task is field collection, targeted web editing, or advanced desktop editing, and identify the workspace environment.
+Ask whether the task is field collection or map editing, identify the dataset type and workspace environment, and route the user to the corresponding editor launched by Workspaces. Do not direct a GTFS-Pathways dataset to the main OSW editor.
 
 ## Example
 
-A new mapper uses Rapid for a simple sidewalk edit, while an experienced contributor uses JOSM for a more complex geometry task.
+A contributor uses the OSW Rapid editor for sidewalk feature edits, the Pathways-specific Rapid editor for a GTFS-Pathways workspace, and AVIV ScoutRoute to answer a configured field quest.
 
 ## Assistant Guidance
 
@@ -68,5 +69,5 @@ Cite current editor compatibility and workspace role guidance; abstain when the 
 
 ## Related Concepts
 
- - [What is Rapid in Workspaces?](../concept/rapid.md)
- - [What are compatible editors?](../concept/compatible-editors.md)
+- [What is Rapid in Workspaces?](../concept/rapid.md)
+- [What are compatible editors?](../concept/compatible-editors.md)

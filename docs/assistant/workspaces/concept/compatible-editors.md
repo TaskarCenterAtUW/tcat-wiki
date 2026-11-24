@@ -5,6 +5,7 @@ slug: compatible-editors
 doc_type: concept
 questions:
     - What editors work with Workspaces?
+    - What is the difference between editing in Rapid/iD and editing in AVIV ScoutRoute?
 audiences:
     - planner
     - jurisdiction
@@ -20,7 +21,7 @@ topics:
 risk_level: low
 authority_level: provisional
 publication_status: draft
-last_reviewed: 2026-08-28
+last_reviewed: 2026-11-24
 retrieval_priority: medium
 assistant_behavior:
     allow_inference: false
@@ -40,7 +41,7 @@ tags:
 
 ## Short Answer
 
-Workspaces can work with the editors documented for the current product and workspace configuration. The repository's human documentation identifies embedded Rapid and support for tools such as JOSM; AVIV ScoutRoute provides a mobile contribution path when external-app access is configured.
+Workspaces provides a modified Rapid editor for OSW datasets and a different modified Rapid editor for GTFS-Pathways datasets. Rapid is an extended version of the OpenStreetMap iD editor, but standalone iD is not a separate documented Workspaces connection. Workspaces also supports a documented JOSM desktop workflow and AVIV ScoutRoute for configured mobile quest contributions.
 
 ## Significance
 
@@ -48,19 +49,19 @@ Editor compatibility determines which users can edit, which fields and workflows
 
 ## What This Means
 
-Check the current Workspaces documentation, workspace permissions, editor version, API or connection settings, and dataset schema before choosing a tool.
+Rapid and iD are related: Rapid extends iD, and Workspaces embeds modified Rapid editors. Use the OSW editor for OSW data; the Pathways editor is a separate modified Rapid experience, and Workspaces routes it with `datatype=pathways&editor=rapid3`. AVIV ScoutRoute presents configured questions about selected features and commits submitted answers to the workspace through changesets. AVIV access and quest definitions must be configured for the workspace.
 
 ## What This Does Not Mean
 
-An editor named in general documentation is not guaranteed to support every workspace or field. Compatibility does not mean that edits are published automatically or that the editor validates accessibility.
+The presence of iD in Rapid's lineage does not establish that standalone iD can connect to Workspaces. Do not send GTFS-Pathways data to the main OSW Rapid editor, assume that every editor supports every dataset type or field, or treat edits as automatically published or validated.
 
 ## How To Use This
 
-Choose an editor based on the task, platform, user role, and required fields. Test a small change, review its metadata, and confirm the upload and review path before scaling work.
+Choose the Rapid editor that Workspaces launches for the selected dataset type; the GTFS-Pathways editor is distinct from the main OSW Rapid editor. Use AVIV ScoutRoute for configured field questions and JOSM only with its documented connection setup. Do not recommend standalone iD as a separate Workspaces integration.
 
 ## Example
 
-A manager uses embedded Rapid for map editing, JOSM for a supported desktop workflow, and AVIV ScoutRoute for configured mobile observations, then reviews the resulting changes in Workspaces.
+A manager edits OSW geometry in the main Workspaces Rapid editor and opens a GTFS-Pathways workspace in its separate Rapid-based editor. Field contributors use AVIV ScoutRoute to answer configured questions about selected features; those submissions can be reviewed in Workspaces.
 
 ## Assistant Guidance
 

@@ -20,7 +20,7 @@ topics:
 risk_level: low
 authority_level: provisional
 publication_status: draft
-last_reviewed: 2026-09-29
+last_reviewed: 2026-11-24
 retrieval_priority: medium
 assistant_behavior:
     allow_inference: false
@@ -40,7 +40,7 @@ tags:
 
 ## Short Answer
 
-Workspaces can be created as a blank workspace, from a TDEI dataset, or from an uploaded OpenSidewalks data file. Choose based on the source, format, project group, and intended workflow; each method creates a workspace that must still be reviewed and managed.
+Workspaces can be created as a blank workspace, from a TDEI dataset, or from a supported uploaded data file. The current user manual lists OpenSidewalks and GTFS Pathways for blank and file-based creation; TDEI datasets also include Flex, but the manual does not document Flex as a blank or file-upload option.
 
 ## Significance
 
@@ -48,7 +48,7 @@ Choosing the method affects lineage, conversion, scope, and the steps required b
 
 ## What This Means
 
-Choose a blank workspace when starting without map data, a TDEI source when using a managed dataset, or a file workflow when starting from a prepared local package. The title-availability check is scoped to the selected project group. A duplicate-title warning or a failed availability check does not prevent submission; use a distinct title when it will help identify the workspace.
+Choose a blank workspace when starting without map data, a TDEI source when using a managed dataset, or a file workflow when starting from a supported local package. The title-availability check is scoped to the selected project group. A duplicate-title warning or a failed availability check does not prevent submission; use a distinct title when it will help identify the workspace.
 
 ## What This Does Not Mean
 
@@ -68,5 +68,6 @@ Cite the current creation workflow and abstain if the source format or environme
 
 ## Related Concepts
 
- - [How do I create a workspace?](../workflow/create-workspace.md)
- - [How do I create a workspace from TDEI?](../workflow/create-workspace-from-tdei.md)
+- [How do I create a workspace?](../workflow/create-workspace.md)
+- [How do I create a workspace from TDEI?](../workflow/create-workspace-from-tdei.md)
+- [What sources and dataset types can create a workspace?](workspace-source-options.md)

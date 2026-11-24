@@ -5,6 +5,7 @@ slug: tdei-vs-workspaces
 doc_type: concept
 questions:
     - How do TDEI and Workspaces differ?
+    - What is the difference between TDEI and Workspaces?
 audiences:
     - planner
     - jurisdiction
@@ -18,7 +19,7 @@ topics:
 risk_level: medium
 authority_level: provisional
 publication_status: draft
-last_reviewed: 2026-09-11
+last_reviewed: 2026-11-24
 retrieval_priority: medium
 assistant_behavior:
     allow_inference: false
@@ -38,7 +39,7 @@ tags:
 
 ## Short Answer
 
-TDEI is the broader data ecosystem and service layer; Workspaces is a collaborative editing environment that works with selected datasets. Workspaces can feed later TDEI processing or publication steps, but the products have different purposes.
+TDEI is the broader data ecosystem for managing datasets, services, processing, and releases. Workspaces is a collaborative editing environment for working on selected data in a separate workspace before an explicit export to TDEI.
 
 ## Significance
 
@@ -46,7 +47,11 @@ The distinction helps users choose the right interface and understand why editin
 
 ## What This Means
 
-Use Workspaces for controlled edits and collaboration; use the relevant TDEI service for portal, processing, storage, or release tasks.
+| Task                                                                            | Use                                                                           |
+| ------------------------------------------------------------------------------- | ----------------------------------------------------------------------------- |
+| Find or manage datasets, run a supported dataset-level job, or manage a release | TDEI                                                                          |
+| Edit individual features, coordinate contributors, or review workspace changes  | Workspaces                                                                    |
+| Make reviewed workspace data available as a TDEI dataset                        | Follow the documented Workspaces export workflow, then verify the TDEI result |
 
 ## What This Does Not Mean
 
@@ -58,7 +63,7 @@ Ask whether the task is editing, processing, dataset management, or viewing a re
 
 ## Example
 
-A planner edits a TDEI-derived copy in Workspaces and later uses a documented export path to create a new managed dataset version.
+A planner opens a TDEI dataset in Workspaces, edits and reviews individual features in the separate workspace, then uses the documented export path to upload the result as a new TDEI dataset.
 
 ## Assistant Guidance
 
@@ -66,5 +71,5 @@ Cite current product documentation and do not promise synchronization or publica
 
 ## Related Concepts
 
- - [How does Workspaces fit into TDEI?](tdei-ecosystem-fit.md)
- - [Is a workspace a copy or the original dataset?](workspace-as-dataset-copy.md)
+- [How does Workspaces fit into TDEI?](tdei-ecosystem-fit.md)
+- [Is a workspace a copy or the original dataset?](workspace-as-dataset-copy.md)

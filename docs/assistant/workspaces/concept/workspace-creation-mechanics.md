@@ -5,6 +5,7 @@ slug: workspace-creation-mechanics
 doc_type: concept
 questions:
     - What happens when I create a workspace from a TDEI dataset?
+    - What does it mean to check out a TDEI dataset into a Workspace?
 audiences:
     - planner
     - jurisdiction
@@ -20,7 +21,7 @@ topics:
 risk_level: medium
 authority_level: provisional
 publication_status: draft
-last_reviewed: 2026-09-11
+last_reviewed: 2026-11-24
 retrieval_priority: medium
 assistant_behavior:
     allow_inference: false
@@ -40,7 +41,7 @@ tags:
 
 ## Short Answer
 
-Creating a workspace from a TDEI dataset selects a source and version, creates a separate workspace copy, and initializes it for editing. The exact processing and status messages depend on the creation method and current environment.
+In Workspaces, creating a workspace from TDEI selects a dataset and creates a separate copy for editing. Calling this a “check out” describes the copy-and-edit step; the documented workflow is not a lock or an automatic check-in to the source.
 
 ## Significance
 
@@ -48,11 +49,11 @@ Understanding the copy step clarifies why later source releases do not automatic
 
 ## What This Means
 
-Confirm the source dataset, version, scope, workspace title, project group, and creation result before editing.
+Confirm the source dataset and available version information, workspace title, project group, and creation result before editing. Record the source dataset ID and version shown for the workspace so its lineage is clear.
 
 ## What This Does Not Mean
 
-Creation does not mean that the source was changed, the workspace is public, or all source metadata and later updates are synchronized.
+Creation does not change the source dataset, make the workspace public, or create a live link that automatically synchronizes later source updates.
 
 ## How To Use This
 
@@ -60,7 +61,7 @@ Use the current creation workflow and retain the resulting workspace identifier 
 
 ## Example
 
-A user chooses a TDEI dataset, creates a workspace, waits for initialization, and verifies the selected workspace before inviting contributors.
+A user selects a TDEI dataset, creates a workspace copy in the appropriate project group, waits for initialization, and verifies the source ID and version before editing.
 
 ## Assistant Guidance
 
@@ -68,5 +69,5 @@ Cite the creation workflow and abstain when the source version or environment is
 
 ## Related Concepts
 
- - [How do I create a workspace from TDEI?](../workflow/create-workspace-from-tdei.md)
- - [Is a workspace a copy or the original dataset?](workspace-as-dataset-copy.md)
+- [How do I create a workspace from TDEI?](../workflow/create-workspace-from-tdei.md)
+- [Is a workspace a copy or the original dataset?](workspace-as-dataset-copy.md)

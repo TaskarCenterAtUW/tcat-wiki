@@ -5,6 +5,7 @@ slug: project-groups
 doc_type: concept
 questions:
     - What are project groups in Workspaces?
+    - What are project groups, and how are Workspaces organized within them?
 audiences:
     - planner
     - jurisdiction
@@ -19,7 +20,7 @@ topics:
 risk_level: low
 authority_level: provisional
 publication_status: draft
-last_reviewed: 2026-09-11
+last_reviewed: 2026-11-24
 retrieval_priority: medium
 assistant_behavior:
     allow_inference: false
@@ -29,6 +30,8 @@ related_pages:
     - assistant/workspaces/index.md
     - assistant/workspaces/concept/project-group-definition.md
     - assistant/workspaces/concept/teams-vs-project-groups.md
+    - workspaces/user-manual/dashboard.md
+    - tdei/portal/user-manual/project-groups.md
 tags:
     - Assistant
 ---
@@ -39,7 +42,7 @@ tags:
 
 ## Short Answer
 
-A project group is a TDEI organizational unit used to coordinate people, datasets, and broader project access around Workspaces and related services.
+A TDEI project group is an organizational unit that associates people and datasets with project work. A workspace is created within a project group; the Workspaces Dashboard lets a user select a group and shows the workspaces associated with that group.
 
 ## Significance
 
@@ -47,19 +50,19 @@ Project groups provide an organizational layer for stewardship and access. Separ
 
 ## What This Means
 
-Use project-group membership for broad project access and workspace roles for dataset-specific editing or review. Confirm both when troubleshooting access.
+Select the relevant project group on the Workspaces Dashboard to find its workspaces. When creating a workspace, choose the intended project group. Project-group membership and roles operate at the TDEI organizational level, while workspace roles control additional actions within a specific workspace.
 
 ## What This Does Not Mean
 
-A project group is not a dataset, workspace, or guarantee of access to every feature.
+A project group is not itself a workspace or dataset, and selecting a group does not guarantee access to every workspace action. Workspace teams are separate from TDEI project groups.
 
 ## How To Use This
 
-Identify the project group, workspace, user role, and requested action before giving permission advice.
+Identify the active project group, workspace, user's TDEI group role, workspace role, and requested action before giving access advice.
 
 ## Example
 
-A coordinator adds a reviewer to a project group and then grants the workspace-specific role needed to inspect edits.
+A user selects a project group on the Dashboard and sees that group's workspaces; a workspace owner then checks the user's workspace role before granting review access.
 
 ## Assistant Guidance
 
@@ -67,5 +70,5 @@ Do not infer effective permissions from group membership alone. Cite current rol
 
 ## Related Concepts
 
- - [What is a project group?](project-group-definition.md)
- - [How do teams differ from project groups?](teams-vs-project-groups.md)
+- [What is a project group?](project-group-definition.md)
+- [How do teams differ from project groups?](teams-vs-project-groups.md)

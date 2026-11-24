@@ -5,6 +5,7 @@ slug: import-external-geojson-for-reference
 doc_type: workflow
 questions:
     - How can I load external GeoJSON for reference in Workspaces?
+    - Can I bring additional data or reference layers into a Workspace to help with editing?
 audiences:
     - developer
     - jurisdiction
@@ -19,13 +20,14 @@ topics:
 risk_level: medium
 authority_level: provisional
 publication_status: draft
-last_reviewed: 2026-07-22
+last_reviewed: 2026-11-24
 retrieval_priority: high
 assistant_behavior:
     allow_inference: false
     requires_citation: true
     abstain_if_missing_context: true
-related_pages: []
+related_pages:
+    - assistant/workspaces/concept/workspace-and-tdei-boundary.md
 tags:
     - Assistant
 ---
@@ -36,7 +38,7 @@ tags:
 
 ## Short Answer
 
-Download the external GeoJSON, open the workspace in Rapid, and load it through Custom Map Data as a local file or supported URL.
+Yes. In Rapid within Workspaces, load supported GeoJSON through **Custom Map Data** as a local file or supported URL to view it as a reference layer. Workspace imagery or basemaps are configured separately and provide visual context rather than imported feature data.
 
 ## Significance
 
@@ -44,15 +46,15 @@ This lets editors compare external data with the workspace before deciding wheth
 
 ## What This Means
 
-The layer appears as reference data and may expose its source attributes.
+The overlay helps compare external information with the editable workspace. Its presence does not add those features to the workspace dataset; an editor must make and review any intended changes separately.
 
 ## What This Does Not Mean
 
-A reference overlay is not automatically incorporated into the workspace.
+A reference overlay is not automatically incorporated into the workspace, and the documented workflow does not establish support for arbitrary formats or automatic merging.
 
 ## How To Use This
 
-Document the source and avoid saving unintended changes.
+Record the reference source, confirm that it is displayed as an overlay, and avoid treating it as authoritative workspace data. Use the workspace's separate imagery settings for basemap configuration.
 
 ## Example
 

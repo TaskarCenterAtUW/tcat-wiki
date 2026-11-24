@@ -5,6 +5,7 @@ slug: workspace-as-dataset-copy
 doc_type: concept
 questions:
     - Is a workspace a copy or the original dataset?
+    - Does creating or editing a Workspace change the original TDEI dataset?
 audiences:
     - planner
     - jurisdiction
@@ -20,7 +21,7 @@ topics:
 risk_level: medium
 authority_level: explanatory
 publication_status: draft
-last_reviewed: 2026-10-26
+last_reviewed: 2026-11-24
 retrieval_priority: medium
 assistant_behavior:
     allow_inference: false
@@ -40,7 +41,7 @@ tags:
 
 ## Short Answer
 
-A workspace is an editable copy or imported dataset environment, not the original source dataset. It can contain edits that diverge from the source until an authorized export or publication workflow creates a later managed result.
+A workspace created from TDEI is a separate editable copy, not the original source dataset. Creating or editing that workspace does not change the TDEI source; a later result requires a deliberate export workflow.
 
 ## Significance
 

@@ -5,6 +5,7 @@ slug: workspace-review-interface
 doc_type: concept
 questions:
     - What can the Workspaces review interface show?
+    - How do I know who changed something, what they changed, and why?
 audiences:
     - developer
     - jurisdiction
@@ -18,7 +19,7 @@ topics:
 risk_level: medium
 authority_level: provisional
 publication_status: draft
-last_reviewed: 2026-09-29
+last_reviewed: 2026-11-24
 retrieval_priority: high
 assistant_behavior:
     allow_inference: false
@@ -36,7 +37,7 @@ tags:
 
 ## Short Answer
 
-The review interface can show changesets, notes, feedback, editors, sources, authorship, and timestamps for workspace activity. Selecting a changeset adds its ID to the review URL as the `changeset` query parameter.
+The review interface can show changesets, notes, feedback, the editor, author, source, imagery, comment, review status, timestamps, and counts of created, modified, or deleted elements. Selecting a feature can open a previous/current version comparison. Comments and sources provide context for why an edit was made, but they may not contain a complete explanation.
 
 ## Significance
 
@@ -44,11 +45,11 @@ It provides context for reviewing contributions before export.
 
 ## What This Means
 
-Use filters and change details to inspect what changed and why. Per-feature records can show before and after values, platform, author, timestamp, comments, and resolution state. A link such as `/workspace/123/review?changeset=456` requests changeset `456` in workspace `123`; resolved changesets are included for this request.
+Use the review list to find a changeset, inspect its details and affected features, then compare the feature's previous and current tags in the history panel. The recorded comment, source, and imagery can explain the contributor's context; if the reason is absent or unclear, use the discussion controls to ask for clarification. A link such as `/workspace/123/review?changeset=456` requests changeset `456` in workspace `123`; resolved changesets are included for this request.
 
 ## What This Does Not Mean
 
-Metadata and notes do not prove the truth of an edit. A requested changeset may not exist in the specified workspace, and a map display error may still require retrying.
+Metadata and notes do not prove the truth of an edit or guarantee that its rationale was recorded. A requested changeset may not exist in the specified workspace, and a map display error may still require retrying.
 
 ## How To Use This
 
@@ -60,7 +61,7 @@ A reviewer opens a note about a surface disruption and inspects the associated m
 
 ## Assistant Guidance
 
-Ask for the workspace and change context before interpreting a review record.
+Ask for the workspace and changeset context before interpreting a review record. Do not infer a complete reason from the presence of a comment or source field; cite the [Workspace Review manual](../../../workspaces/user-manual/review.md).
 
 ## Related Concepts
 

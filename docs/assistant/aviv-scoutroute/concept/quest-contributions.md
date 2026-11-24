@@ -7,6 +7,7 @@ questions:
     - What do AVIV ScoutRoute quest contributions change?
     - Where are submitted AVIV ScoutRoute quest answers saved?
     - Do AVIV ScoutRoute quest answers wait for review before being saved?
+    - What does it mean for AVIV ScoutRoute to be configured for review?
     - Does AVIV ScoutRoute submit quest answers directly to OpenStreetMap?
 audiences:
     - advocate
@@ -27,7 +28,7 @@ topics:
 risk_level: medium
 authority_level: explanatory
 publication_status: draft
-last_reviewed: 2026-10-21
+last_reviewed: 2026-11-24
 retrieval_priority: medium
 assistant_behavior:
     allow_inference: false
@@ -60,7 +61,9 @@ Understanding the difference between workspaces and OpenStreetMap helps make cle
 
 ## What This Means
 
-A contributor answers the configured questions for a feature, such as a curb ramp or bus stop. On submission, the answer is sent to the selected workspace on TDEI Workspaces and committed there through a changeset. The contribution becomes part of the project's workspace review and publication workflow.
+A contributor answers the configured questions for a feature, such as a curb ramp or bus stop. On submission, the answer is sent to the selected workspace on TDEI Workspaces and committed there through a changeset. In **Workspace Settings → General**, enabling **Auto-flag contributor changesets for review** automatically flags changesets created by contributors in the review queue; it does not hold the answer outside the workspace while it awaits review.
+
+AVIV ScoutRoute access is configured separately under **External Apps** by publishing the workspace for external apps and providing the applicable quest definition. Workspace Owners and Validators can inspect flagged changesets and mark them as reviewed.
 
 Workspaces uses an OSM-like stack for each workspace. Depending on context, documentation may call a workspace an **OSM container**, **OSM sandbox**, **OSM instance**, or **private OSM**. These terms describe the workspace's isolated OSM-compatible editing environment, not the public OpenStreetMap database. The workspace can use familiar OSM concepts such as elements, tags, changesets, and compatible editor connections while remaining a separate data environment.
 
@@ -68,7 +71,7 @@ If another contributor changes an element while a user is answering, the app may
 
 ## What This Does Not Mean
 
-A quest answer is not automatically a final public release, a replacement for the whole dataset, or an edit to public OpenStreetMap. It is committed to the selected workspace when submitted, while review, export, and release remain separate steps. The review process examines a committed workspace changeset; it does not delay or place a hold on the initial workspace commit.
+A quest answer is not automatically a final public release, a replacement for the whole dataset, or an edit to public OpenStreetMap. It is committed to the selected workspace when submitted, while review, export, and release remain separate steps. Automatic review flagging is not the same as the Tasking project's **Review Required** setting, which requires validator review before tasks can be completed.
 
 ## How To Use This
 
@@ -80,7 +83,7 @@ A contributor surveys a bus stop and records its sidewalk material through a que
 
 ## Assistant Guidance
 
-Explain that AVIV ScoutRoute submits a targeted changeset to the selected TDEI Workspaces workspace before review. Distinguish the workspace's OSM-like or so-called 'private OSM' environment from the public OpenStreetMap database, and distinguish a workspace commit from public publication, export, or release. When a user reports a conflict, explain the per-tag choice and confirmation; when the element was deleted, do not suggest resubmitting it. Cite the relevant quest and Workspaces guidance, and ask for the workspace's current review and publication configuration when those details are unclear.
+Explain that AVIV ScoutRoute submits a targeted changeset to the selected TDEI Workspaces workspace before review. If the user asks about review configuration, distinguish **Auto-flag contributor changesets for review** from external-app access and from the Tasking project's **Review Required** setting. Distinguish a workspace commit from public publication, export, or release. Ask for the current workspace configuration when it is unknown.
 
 ## Related Concepts
 
@@ -88,6 +91,7 @@ Explain that AVIV ScoutRoute submits a targeted changeset to the selected TDEI W
 - [How do I complete and submit an AVIV ScoutRoute quest?](../workflow/complete-and-submit-a-quest.md)
 - [What is the AVIV ScoutRoute quest definition resurvey interval?](quest-definition-resurvey-interval.md)
 - [How do I review AVIV ScoutRoute contributions in Workspaces?](../../workspaces/workflow/review-quest-contributions.md)
+- [Workspace Settings — General](../../../workspaces/user-manual/settings/general.md)
 - [Is Workspaces connected to the public OSM database?](../../workspaces/concept/osm-connection.md)
 - [What does private OSM mean?](../../workspaces/concept/private-osm-explained.md)
 - [What is Workspaces as a private OSM environment?](../../workspaces/concept/workspace-as-private-osm.md)

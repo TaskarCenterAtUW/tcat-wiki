@@ -5,6 +5,7 @@ slug: project-group-and-workspace-roles
 doc_type: concept
 questions:
     - How do TDEI project group roles differ from Workspaces roles?
+    - What are the POC and member roles, and what can each role do?
     - What access does a TDEI project group member have in Workspaces?
     - Do Workspaces teams control access?
     - Can a Workspaces role grant TDEI export permission?
@@ -24,7 +25,7 @@ topics:
 risk_level: high
 authority_level: provisional
 publication_status: draft
-last_reviewed: 2026-07-16
+last_reviewed: 2026-11-24
 retrieval_priority: high
 assistant_behavior:
     allow_inference: false
@@ -36,6 +37,7 @@ related_pages:
     - assistant/workspaces/concept/teams-vs-project-groups.md
     - assistant/tdei/concept/project-group.md
     - assistant/workspaces/index.md
+    - workspaces/user-manual/settings/members.md
 tags:
     - Assistant
 ---
@@ -46,7 +48,7 @@ tags:
 
 ## Short Answer
 
-TDEI **project group membership** and Workspaces **workspace roles** are separate permission layers. Project group membership may provide baseline access to associated Workspaces data; workspace roles add permissions within a specific workspace.
+TDEI Project Group **POCs** (admins) have full control of the workspace and its settings. Project Group members can access and modify workspace data; within that workspace, **Owner** and **Validator** roles add review and settings privileges, while **Member** does not include those additional privileges.
 
 Workspaces **teams** are separate from both. Teams organize contributors and metrics; they do not grant or revoke access.
 
@@ -56,23 +58,26 @@ The layers affect different actions: workspace editing, workspace settings, revi
 
 ## What This Means
 
-- Check TDEI project group membership first for baseline access.
-- Check the per-workspace role for workspace-specific privileges.
-- Workspace role changes do not necessarily change project group membership.
-- Team membership does not change permissions.
-- TDEI roles or dataset checks may still be required for export.
+- **POC / Project Group Admin** — the Workspaces manual describes POCs as having full control of the workspace and its settings; they can manage member roles when the controls are available.
+- **Project Group member** — can access and modify data in the workspace.
+- **Workspace Owner** — can review changesets and modify workspace settings.
+- **Workspace Validator** — can review changesets.
+- **Workspace Member** — can work with workspace data but does not have the additional Owner or Validator privileges.
+- **TDEI `osw_data_generator`** — can export workspace data to TDEI; this is a separate TDEI role, not the workspace Member role.
+
+Project Group membership and workspace roles are separate permission layers. Team membership is attribution, not permission.
 
 ## What This Does Not Mean
 
-A workspace member list does not replace TDEI project group administration. A Team is not an access-control boundary. Identical role labels do not guarantee identical privileges, and a workspace owner is not automatically authorized to export.
+A workspace member list does not replace TDEI Project Group administration. A Team is not an access-control boundary. A workspace Owner is not automatically authorized to export to TDEI; verify the required TDEI role.
 
 ## How To Use This
 
-For any access question, identify the project group, workspace, role, and requested action. For export, verify current TDEI authorization and dataset requirements. Use Teams for contribution tracking, not permission changes.
+For any access question, identify the project group, workspace, role, and requested action. For export, verify that the user has a POC or `osw_data_generator` role in at least one TDEI Project Group. Use Teams for contribution tracking, not permission changes.
 
 ## Example
 
-A project group member edits a workspace with baseline access. A workspace role may permit review or settings management, but TDEI authorization may still be required for export. Joining a Team changes reporting, not access.
+A Project Group member edits workspace data. A Validator can review changesets and an Owner can also modify workspace settings, while a POC has full workspace control. Export still requires the separate TDEI role documented for that action.
 
 ## Assistant Guidance
 

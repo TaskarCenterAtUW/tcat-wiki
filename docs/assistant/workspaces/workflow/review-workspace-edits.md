@@ -5,6 +5,7 @@ slug: review-workspace-edits
 doc_type: workflow
 questions:
     - How do I review workspace edits?
+    - How does review work, and when can reviewers provide feedback on changesets?
 audiences:
     - planner
     - jurisdiction
@@ -19,7 +20,7 @@ topics:
 risk_level: medium
 authority_level: provisional
 publication_status: draft
-last_reviewed: 2026-09-11
+last_reviewed: 2026-11-24
 retrieval_priority: medium
 assistant_behavior:
     allow_inference: false
@@ -39,7 +40,7 @@ tags:
 
 ## Short Answer
 
-Review workspace edits by selecting the relevant changes, checking geometry and attributes against available evidence, resolving or escalating issues, recording the decision, and confirming the required reviewer role before export.
+Review happens after edits have been committed to the workspace. Open the workspace's **Review** view, inspect the relevant changeset and feature history, and use its discussion to provide feedback or request clarification. Workspace Owners and Validators can mark flagged changesets as reviewed.
 
 ## Significance
 
@@ -47,25 +48,30 @@ Review is the control point that separates collaborative editing from a trusted 
 
 ## What This Means
 
-Check the change scope, source context, tags, imagery or field evidence, conflicts, and unresolved comments. Keep a record of accepted, rejected, and deferred work.
+1. Open the workspace from the Dashboard and select **Review** from its actions.
+2. Choose whether to show **Changesets**, **Feedback**, or **Notes**; use **Needs Review Only** or **Show Resolved** when appropriate.
+3. Select a changeset and inspect its map location, details, editor, source, imagery, comment, affected-element counts, and review status.
+4. Select a feature to compare its previous and current versions. Use the discussion control to add a comment or request clarification once the changeset is visible.
+5. If you are a workspace Owner or Validator and have completed the review, select **Mark as Reviewed** for a flagged changeset.
 
 ## What This Does Not Mean
 
-Review does not guarantee complete or legally compliant data and does not grant publication authority automatically.
+Review does not delay the original edit submission, guarantee complete or legally compliant data, or publish the workspace to TDEI. A comment or discussion entry is feedback, not by itself a review decision.
 
 ## How To Use This
 
-Use the current review interface and escalate disputed or high-impact edits to the responsible steward.
+Use project instructions and available evidence to review edits. Escalate disputed or high-impact changes to the responsible steward; ask a workspace Owner or Validator to perform the review action if your role does not allow it.
 
 ## Example
 
-A reviewer rejects an unsupported curb-ramp attribute, requests evidence, and leaves the change out of export until resolved.
+A reviewer opens a committed changeset, compares a curb-ramp feature's previous and current tags, and posts a discussion comment requesting evidence. An authorized Owner or Validator later marks the changeset as reviewed after the project criteria are met.
 
 ## Assistant Guidance
 
-Cite review and role guidance; abstain when the workspace, release, or approval rules are unknown.
+Cite the [Workspace Review manual](../../../workspaces/user-manual/review.md) and current role guidance. Distinguish discussion feedback from **Mark as Reviewed**, and abstain when the workspace or review configuration is unknown.
 
 ## Related Concepts
 
- - [What is the review interface?](../concept/review-interface.md)
- - [How should review happen before export?](pre-export-review.md)
+- [What is the review interface?](../concept/review-interface.md)
+- [How should review happen before export?](pre-export-review.md)
+- [How do I review AVIV ScoutRoute contributions in Workspaces?](review-quest-contributions.md)

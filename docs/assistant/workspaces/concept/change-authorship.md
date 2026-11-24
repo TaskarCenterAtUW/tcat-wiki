@@ -5,6 +5,7 @@ slug: change-authorship
 doc_type: concept
 questions:
     - How can users identify who made a change?
+    - How do I know who changed something, what they changed, and why?
 audiences:
     - planner
     - jurisdiction
@@ -20,7 +21,7 @@ topics:
 risk_level: low
 authority_level: provisional
 publication_status: draft
-last_reviewed: 2026-08-28
+last_reviewed: 2026-11-24
 retrieval_priority: medium
 assistant_behavior:
     allow_inference: false
@@ -48,15 +49,15 @@ Authorship supports accountability, clarification, attribution, and review of ch
 
 ## What This Means
 
-Inspect the relevant changeset or edit record and note the recorded user, timestamp, comments, source, and affected feature. Use the workspace's current review interface for exact controls.
+In the Workspace Review view, inspect the changeset details for the editor, **Created By**, user ID, timestamp, comment, source, and imagery. Select an affected feature to compare its previous and current versions and tags. A comment or source can explain the contributor's context, but the reason may be missing; use the changeset discussion to ask for clarification.
 
 ## What This Does Not Mean
 
-Recorded authorship does not prove that the edit is correct, that the named person intended every result, or that the person has legal authority over the data.
+Recorded authorship does not prove that the edit is correct, that the named person intended every result, or that a comment fully explains why the edit was made. It does not establish legal authority over the data.
 
 ## How To Use This
 
-Use authorship as review context, protect personal information, and contact the workspace manager when attribution is missing or unclear.
+Use authorship and change history as review context, protect personal information, and use discussion or contact the workspace manager when attribution or rationale is missing or unclear.
 
 ## Example
 

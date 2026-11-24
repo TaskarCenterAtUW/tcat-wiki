@@ -5,6 +5,7 @@ slug: tdei-ecosystem-fit
 doc_type: concept
 questions:
     - How does Workspaces fit into the TDEI ecosystem?
+    - What is Workspaces, and how does it fit into the TDEI ecosystem?
 audiences:
     - planner
     - jurisdiction
@@ -19,7 +20,7 @@ topics:
 risk_level: low
 authority_level: provisional
 publication_status: draft
-last_reviewed: 2026-09-11
+last_reviewed: 2026-11-24
 retrieval_priority: medium
 assistant_behavior:
     allow_inference: false
@@ -39,7 +40,7 @@ tags:
 
 ## Short Answer
 
-Workspaces is the editing and collaboration environment within the broader TDEI ecosystem. TDEI services provide datasets, processing, storage, or publication paths; Workspaces provides a controlled place to edit selected data before those later steps.
+Workspaces is a collaborative editing and review environment in the TDEI ecosystem. TDEI manages datasets and provides dataset-level processing and release services; Workspaces provides an isolated place to edit selected data before an explicit export to TDEI.
 
 ## Significance
 
@@ -47,7 +48,7 @@ The separation makes editing, review, lineage, and publication checkpoints expli
 
 ## What This Means
 
-Identify whether the user needs to create or edit a workspace, process a dataset in TDEI, or view a released product. Do not collapse those stages into one action.
+Use Workspaces to collaborate on feature-level edits and review them. Use TDEI to manage datasets, run supported dataset-level jobs, and manage releases. Treat creating a workspace, editing it, exporting it, and releasing a dataset as separate stages.
 
 ## What This Does Not Mean
 
@@ -59,7 +60,7 @@ Use the product-specific workflow and confirm source, destination, permissions, 
 
 ## Example
 
-A team creates a workspace from a TDEI dataset, reviews edits there, and separately exports or publishes a validated result.
+A team creates a workspace from a TDEI dataset, reviews feature edits there, and separately exports the result to TDEI before any release or downstream use.
 
 ## Assistant Guidance
 
@@ -67,5 +68,5 @@ Cite the relevant Workspaces or TDEI page and abstain when the intended ecosyste
 
 ## Related Concepts
 
- - [What is the relationship between Workspaces and the TDEI portal?](workspaces-tdei-portal-relationship.md)
- - [What is the relationship between Workspaces and OS-CONNECT?](workspaces-os-connect-relationship.md)
+- [What is the relationship between Workspaces and the TDEI portal?](workspaces-tdei-portal-relationship.md)
+- [What is the relationship between Workspaces and OS-CONNECT?](workspaces-os-connect-relationship.md)
