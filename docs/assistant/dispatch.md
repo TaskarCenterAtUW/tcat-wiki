@@ -28,7 +28,7 @@ topics:
 risk_level: low
 authority_level: official
 publication_status: draft
-last_reviewed: 2026-11-15
+last_reviewed: 2026-11-24
 retrieval_priority: high
 assistant_behavior:
     allow_inference: false
@@ -101,7 +101,7 @@ This page should be fetched fresh rather than cached aggressively; its registry 
 | Status | Count | Meaning |
 | :----- | ----: | :------ |
 | `stub` | 0 | Frontmatter and heading scaffold exist; body is `TODO` |
-| `draft` | 820 | Content authored; awaiting TCAT editorial review |
+| `draft` | 822 | Content authored; awaiting TCAT editorial review |
 | `published` | 1 | Available in the human-facing site |
 | `archived` | 0 | Retained for agents but not published |
 
@@ -110,7 +110,7 @@ This page should be fetched fresh rather than cached aggressively; its registry 
 | Authority level | Count | Meaning |
 | :-------------- | ----: | :------ |
 | `provisional` | 666 | Early or limited-confidence guidance |
-| `explanatory` | 153 | Established explanation without formal policy authority |
+| `explanatory` | 155 | Established explanation without formal policy authority |
 | `official` | 2 | Formally endorsed organizational guidance |
 
 ## Registry
@@ -636,6 +636,8 @@ Base: `assistant/os-connect/concept/`
 | `eaf1c9f6-5412-4b89-b882-f0e30fd55bc9` | `opensidewalks-schema.md` | provisional | draft |
 | `ee0868ad-458c-47df-8707-a53196198634` | `opensidewalks.md` | provisional | draft |
 | `52a781fe-94d4-42af-b01a-4503f683722d` | `operational-agency-use.md` | provisional | draft |
+| `61db513d-3c76-4860-baf7-a8d5c17b5a48` | `os-connect-data-extensions.md` | explanatory | draft |
+| `86053952-7794-44d1-b4b8-8c6c24d8ac94` | `os-connect-entities-and-attributes.md` | explanatory | draft |
 | `27717844-0f20-413d-8182-5a88fc0e5e09` | `os-connect-local-gis-relationship.md` | provisional | draft |
 | `f3b4a358-1bfd-4f6e-bb33-da9b6f33d439` | `os-connect-maintenance.md` | provisional | draft |
 | `88440307-f7af-4247-a8a7-7c71f3eb1458` | `os-connect-origin.md` | provisional | draft |

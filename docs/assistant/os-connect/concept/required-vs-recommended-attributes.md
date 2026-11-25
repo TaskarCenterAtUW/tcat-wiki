@@ -18,7 +18,7 @@ topics:
 risk_level: medium
 authority_level: provisional
 publication_status: draft
-last_reviewed: 2026-08-28
+last_reviewed: 2026-11-24
 retrieval_priority: high
 assistant_behavior:
     allow_inference: false
@@ -26,6 +26,7 @@ assistant_behavior:
     abstain_if_missing_context: true
 related_pages:
     - assistant/os-connect/concept/pedestrian-feature-attributes.md
+    - assistant/os-connect/concept/os-connect-entities-and-attributes.md
     - assistant/os-connect/concept/opensidewalks-schema.md
     - assistant/os-connect/concept/missing-attribute-values.md
 tags:
@@ -67,5 +68,6 @@ Name the schema, version, feature, and validator. Do not provide a universal fie
 ## Related Concepts
 
 - [What attributes are included for pedestrian features?](pedestrian-feature-attributes.md)
+- [What entities and attributes does OS-CONNECT collect?](os-connect-entities-and-attributes.md)
 - [What is the OpenSidewalks schema?](opensidewalks-schema.md)
 - [Why do some features have missing values?](missing-attribute-values.md)

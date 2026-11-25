@@ -19,7 +19,7 @@ topics:
 risk_level: medium
 authority_level: provisional
 publication_status: draft
-last_reviewed: 2026-08-28
+last_reviewed: 2026-11-24
 retrieval_priority: high
 assistant_behavior:
     allow_inference: false
@@ -29,6 +29,7 @@ related_pages:
     - assistant/os-connect/concept/pedestrian-feature-attributes.md
     - assistant/os-connect/concept/required-vs-recommended-attributes.md
     - assistant/os-connect/concept/sidewalk-street-name-association.md
+    - assistant/os-connect/concept/os-connect-entities-and-attributes.md
 tags:
     - Assistant
 ---
@@ -69,4 +70,5 @@ Name the field, schema, source, and version. Do not infer meaning from labels al
 
 - [Pedestrian feature attributes](pedestrian-feature-attributes.md)
 - [Required versus recommended attributes](required-vs-recommended-attributes.md)
+- [OS-CONNECT entities and collected attributes](os-connect-entities-and-attributes.md)
 - [Sidewalk street-name association](sidewalk-street-name-association.md)

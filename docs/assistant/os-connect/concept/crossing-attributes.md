@@ -19,7 +19,7 @@ topics:
 risk_level: medium
 authority_level: provisional
 publication_status: draft
-last_reviewed: 2026-08-28
+last_reviewed: 2026-11-24
 retrieval_priority: high
 assistant_behavior:
     allow_inference: false
@@ -29,6 +29,7 @@ related_pages:
     - assistant/os-connect/concept/pedestrian-feature-attributes.md
     - assistant/os-connect/concept/curb-ramp-attributes.md
     - assistant/os-connect/concept/intersection-attributes.md
+    - assistant/os-connect/concept/os-connect-entities-and-attributes.md
 tags:
     - Assistant
 ---
@@ -70,3 +71,4 @@ Name the attribute and its definition rather than inferring meaning from a field
 - [What attributes are included for pedestrian features?](pedestrian-feature-attributes.md)
 - [What attributes are collected for curb ramps?](curb-ramp-attributes.md)
 - [What attributes are collected for intersections?](intersection-attributes.md)
+- [OS-CONNECT entities and collected attributes](os-connect-entities-and-attributes.md)

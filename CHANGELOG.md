@@ -12,6 +12,7 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/),
 
 - **Wiki**: Updated Workspaces AKB articles
 - **Wiki**: Updated QA/QC AKB articles
+- **Wiki**: Added OS-CONNECT attribute AKB articles
 
 ## v17.4.0 (2026-11-20)
 

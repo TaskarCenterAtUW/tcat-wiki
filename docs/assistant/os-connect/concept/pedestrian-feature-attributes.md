@@ -19,7 +19,7 @@ topics:
 risk_level: medium
 authority_level: provisional
 publication_status: draft
-last_reviewed: 2026-08-28
+last_reviewed: 2026-11-24
 retrieval_priority: high
 assistant_behavior:
     allow_inference: false
@@ -30,6 +30,7 @@ related_pages:
     - assistant/os-connect/concept/crossing-attributes.md
     - assistant/os-connect/concept/curb-ramp-attributes.md
     - assistant/os-connect/concept/required-vs-recommended-attributes.md
+    - assistant/os-connect/concept/os-connect-entities-and-attributes.md
 tags:
     - Assistant
 ---
@@ -74,3 +75,4 @@ Cite the current schema and dataset release. Do not provide an exhaustive field 
 - [Crossing attributes](crossing-attributes.md)
 - [Curb-ramp attributes](curb-ramp-attributes.md)
 - [Required and recommended attributes](required-vs-recommended-attributes.md)
+- [OS-CONNECT entities and collected attributes](os-connect-entities-and-attributes.md)
