@@ -11,6 +11,7 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/),
 ### Added
 
 - **Wiki**: Added OS-CONNECT production process AKB article
+- **Wiki**: Added fallback project information contact AKB article
 
 ## v17.4.0 (2026-11-24)
 

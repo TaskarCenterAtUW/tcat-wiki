@@ -724,6 +724,7 @@ nav = [
                 {"Who should external partners contact for OS-CONNECT data questions?" = "assistant/support/concept/os-connect-contact.md"},
                 {"What is the relationship between pedestrian paths in OpenStreetMap and GTFS Pathways?" = "assistant/support/concept/osm-pedestrian-paths-vs-gtfs-pathways.md"},
                 {"What response time should external partners expect?" = "assistant/support/concept/partner-response-time.md"},
+                {"Who can I contact for more information about this project?" = "assistant/support/concept/project-information-contact.md"},
                 {"What should staff avoid saying in external technical-support emails?" = "assistant/support/concept/staff-email-antipatterns.md"},
                 {"Who should external partners contact for TDEI support?" = "assistant/support/concept/tdei-contact.md"},
                 {"What is the difference between TDEI, OS-CONNECT, OpenSidewalks, and OpenStreetMap?" = "assistant/support/concept/tdei-os-connect-osm-differences.md"}

@@ -101,7 +101,7 @@ This page should be fetched fresh rather than cached aggressively; its registry 
 | Status | Count | Meaning |
 | :----- | ----: | :------ |
 | `stub` | 0 | Frontmatter and heading scaffold exist; body is `TODO` |
-| `draft` | 823 | Content authored; awaiting TCAT editorial review |
+| `draft` | 824 | Content authored; awaiting TCAT editorial review |
 | `published` | 1 | Available in the human-facing site |
 | `archived` | 0 | Retained for agents but not published |
 
@@ -109,7 +109,7 @@ This page should be fetched fresh rather than cached aggressively; its registry 
 
 | Authority level | Count | Meaning |
 | :-------------- | ----: | :------ |
-| `provisional` | 666 | Early or limited-confidence guidance |
+| `provisional` | 667 | Early or limited-confidence guidance |
 | `explanatory` | 156 | Established explanation without formal policy authority |
 | `official` | 2 | Formally endorsed organizational guidance |
 
@@ -881,6 +881,7 @@ Base: `assistant/support/concept/`
 | `cca616b4-1f0a-4e0f-9d0c-38a4ed5631ee` | `os-connect-contact.md` | provisional | draft |
 | `2669c8bd-2d2f-4e33-8d73-5d94608c9c87` | `osm-pedestrian-paths-vs-gtfs-pathways.md` | explanatory | draft |
 | `ab86795c-ddcf-470a-b6d4-53526f845563` | `partner-response-time.md` | provisional | draft |
+| `780377e1-f700-4ed8-ab73-8cdcfc986d58` | `project-information-contact.md` | provisional | draft |
 | `a3b3c062-7cfd-463c-8fb4-938f676a1658` | `staff-email-antipatterns.md` | provisional | draft |
 | `09b1b059-d611-493e-a190-028c10c19f39` | `tdei-contact.md` | provisional | draft |
 | `38d55e6e-a248-4c4b-86bc-1b0dc6df5f5e` | `tdei-os-connect-osm-differences.md` | explanatory | draft |
