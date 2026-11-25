@@ -6,6 +6,14 @@ All notable changes to this project will be documented in this file.
 
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/), and this project adheres to [Semantic Versioning](https://semver.org/) and [Conventional Commits](https://www.conventionalcommits.org/).
 
+## v17.4.0 (2026-11-24)
+
+### Changed
+
+- **Wiki**: Updated Workspaces AKB articles
+- **Wiki**: Updated QA/QC AKB articles
+- **Wiki**: Added OS-CONNECT attribute AKB articles
+
 ## v17.4.0 (2026-11-20)
 
 ### Changed

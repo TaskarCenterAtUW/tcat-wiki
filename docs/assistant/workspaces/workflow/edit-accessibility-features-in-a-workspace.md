@@ -5,6 +5,7 @@ slug: edit-accessibility-features-in-a-workspace
 doc_type: workflow
 questions:
     - How do I edit accessibility features in a workspace?
+    - How do I open my Workspace data in RapiD?
 audiences:
     - planner
     - jurisdiction
@@ -21,7 +22,7 @@ topics:
 risk_level: medium
 authority_level: provisional
 publication_status: draft
-last_reviewed: 2026-05-22
+last_reviewed: 2026-11-24
 retrieval_priority: medium
 assistant_behavior:
     allow_inference: false
@@ -64,7 +65,7 @@ Workspaces is where per-feature stewardship happens. TDEI handles whole-dataset 
 | [Rapid](../../../rapid/index.md)                     | Web-based editing in the browser | Workspaces supports **Rapid 2** and **Rapid 3**; Rapid 2 was used as the more stable option when demoing |
 | [AVIV ScoutRoute](../../../aviv-scoutroute/index.md) | Mobile / field-style capture     | Often used for on-the-ground reporting; managers may follow up in Rapid for geometry                     |
 
-Open a workspace from the dashboard, then launch the editor (for example **Open in Rapid 2**). The map shows **only that workspace's data**, not the global OSM planet — otherwise the experience matches familiar OSM editing (zoom, select features, edit geometry, edit tags, add features).
+Open the workspace from the Dashboard and select **Rapid Editor**. Workspaces launches the editor for that dataset type: the GTFS-Pathways editor is a modified Rapid experience distinct from the main OSW Rapid editor. The map shows the selected workspace's data, not the global OSM planet. If you are working through a Tasking project, select a task and choose **Map a Task** instead. Verify the selected workspace before editing.
 
 **What you can edit**
 
@@ -100,7 +101,7 @@ Open a workspace from the dashboard, then launch the editor (for example **Open 
 
 **Recommended flow**
 
-1. [Create or open a workspace](create-a-workspace-from-tdei.md) with the correct TDEI dataset version and project group.
+1. [Create or open a workspace](create-a-workspace-from-tdei.md) in the correct project group and verify its source dataset.
 2. Confirm **imagery** and optional **ScoutRoute** settings if field teams are involved.
 3. Choose an editor:
     - **Field / volunteer capture** → Aviv ScoutRoute (published workspaces only, per settings).

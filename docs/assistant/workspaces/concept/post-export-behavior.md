@@ -5,6 +5,7 @@ slug: post-export-behavior
 doc_type: concept
 questions:
     - What happens after export to TDEI?
+    - What happens to the Workspace after the edited data is returned to TDEI?
 audiences:
     - planner
     - jurisdiction
@@ -20,7 +21,7 @@ topics:
 risk_level: high
 authority_level: provisional
 publication_status: draft
-last_reviewed: 2026-08-28
+last_reviewed: 2026-11-24
 retrieval_priority: medium
 assistant_behavior:
     allow_inference: false
@@ -40,7 +41,7 @@ tags:
 
 ## Short Answer
 
-After export to TDEI, the result follows the target workflow's validation, dataset, release, permissions, and publication behavior. The workspace, source dataset, and exported result remain separate records unless the current workflow explicitly relates them.
+Uploading a workspace through **Upload to TDEI** creates a new TDEI dataset. The workspace remains open for editing and is unchanged by the export; it remains a separate record from both the source dataset and the uploaded result.
 
 ## Significance
 
@@ -48,23 +49,23 @@ Post-export handling determines where users find the result, which identifier an
 
 ## What This Means
 
-Check export or job status, validation results, target dataset and release metadata, visibility, lineage, and whether downstream products need a separate update.
+After upload, check the TDEI dataset record, identifier, available version metadata, validation and release status, and visibility. The workspace remains available for further editing; a later workspace edit does not itself update the already-uploaded TDEI dataset.
 
 ## What This Does Not Mean
 
-Export does not guarantee immediate public availability, overwrite of the source, synchronization with other products, or correctness of every edit.
+Export does not close, reset, or delete the workspace, overwrite the source dataset, synchronize other products, or make the new dataset public.
 
 ## How To Use This
 
-Retain the workspace and source history, record the resulting identifier, verify access and release status, and communicate limitations to downstream users.
+Retain the workspace and source history, record the resulting TDEI identifier, and verify the new dataset's validation and release status separately.
 
 ## Example
 
-A manager records the new TDEI dataset identifier after export, checks validation status, and tells users which release contains the reviewed changes.
+A manager records the new TDEI dataset identifier after upload, continues editing the still-open workspace, and tells users whether the uploaded dataset has also been validated or released.
 
 ## Assistant Guidance
 
-Do not invent post-export states or promise downstream updates. Ask for the environment and target, cite current workflow documentation, and abstain when status is unknown.
+Explain that export leaves the workspace open and unchanged while creating a separate TDEI dataset. Do not promise that later workspace edits update the exported dataset or that the upload is a public release; cite the current export documentation and verify the dataset's status.
 
 ## Related Concepts
 

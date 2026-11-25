@@ -19,7 +19,7 @@ topics:
 risk_level: medium
 authority_level: explanatory
 publication_status: draft
-last_reviewed: 2026-09-29
+last_reviewed: 2026-11-24
 retrieval_priority: high
 assistant_behavior:
     allow_inference: false
@@ -29,6 +29,9 @@ related_pages:
     - assistant/qa-qc/concept/accessibility-island.md
     - assistant/qa-qc/concept/walkshed-profile-comparison.md
     - assistant/qa-qc/concept/report-feature-counts-and-lengths.md
+    - assistant/qa-qc/concept/normalized-value.md
+    - assistant/qa-qc/concept/log-normalized-value.md
+    - assistant/qa-qc/concept/z-score.md
 tags:
     - Assistant
 ---
@@ -51,17 +54,19 @@ Read the legend and profile labels before comparing shapes. In the QA/QC report,
 
 The report reduces coordinate precision when preparing some geometry to control data size. At very close zoom, this can make lines that represent the same underlying network appear slightly offset. Treat such offsets as a display effect unless the network data show a real difference. Use available map links to inspect the underlying network and imagery.
 
+The report lists raw summary statistics separately from maps and histograms; headings and legends identify whether displayed values are raw, log-normalized, or z-scores of log-scaled tile averages. Eigenvector centrality uses a log-normalized 0–1 display, betweenness uses z-scores, and traversability and degree remain raw in the plots. Read each map heading and legend rather than assuming displayed values match the raw summary table. Interpret clickable tile values using the report's tile-aggregation method.
+
 ## What This Does Not Mean
 
-A map color alone is not a complete diagnosis. Overlay order does not indicate a profile's importance, and small offsets at close zoom do not necessarily mean that profiles use different network geometry.
+A map color alone is not a complete diagnosis. A transformed display value is not the raw metric or a percentage unless the report explicitly says so. Overlay order does not indicate a profile's importance, and small offsets at close zoom do not necessarily mean that profiles use different network geometry.
 
 ## How To Use This
 
-Check the legend, profile label, metric definition, dataset version, and map scale before comparing areas or values. Toggle the profiles you need to see, then account for the report's smaller-over-larger overlay order. Inspect linked network details when an apparent gap or offset affects an interpretation.
+Check the legend, profile label, metric definition, value scale, dataset version, and map scale before comparing areas or values. Distinguish raw summary values from transformed map displays, and account for tile aggregation where it applies. Toggle the profiles you need to see, then account for the report's smaller-over-larger overlay order. Inspect linked network details when an apparent gap or offset affects an interpretation.
 
 ## Example
 
-A manual-wheelchair walkshed appears offset from a pedestrian walkshed at high zoom. Before concluding that the profiles use different paths, inspect the source network and consider that coordinate precision reduction can shift displayed lines.
+A betweenness tile is shown with a z-score while the summary table lists a raw average. A reader checks the map heading and report method before interpreting the tile as a raw route share or comparing it with another dataset.
 
 ## Assistant Guidance
 

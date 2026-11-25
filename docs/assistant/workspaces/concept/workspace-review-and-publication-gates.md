@@ -5,6 +5,7 @@ slug: workspace-review-and-publication-gates
 doc_type: concept
 questions:
     - What are workspace review and publication gates?
+    - Describe the changeset review process, the AVIV ScoutRoute review process and how they are different?
 audiences:
     - jurisdiction
     - planner
@@ -19,13 +20,17 @@ topics:
 risk_level: high
 authority_level: provisional
 publication_status: draft
-last_reviewed: 2026-06-30
+last_reviewed: 2026-11-24
 retrieval_priority: high
 assistant_behavior:
     allow_inference: false
     requires_citation: true
     abstain_if_missing_context: true
-related_pages: []
+related_pages:
+    - assistant/workspaces/concept/workspace-review-interface.md
+    - assistant/workspaces/workflow/review-workspace-edits.md
+    - assistant/workspaces/workflow/review-quest-contributions.md
+    - assistant/workspaces/workflow/set-up-tasking-manager-project.md
 tags:
     - Assistant
 ---
@@ -36,7 +41,7 @@ tags:
 
 ## Short Answer
 
-A project can require workspace review, sign-off, export, and publication before edits become part of a released dataset.
+Workspaces changeset review examines edits already committed to a workspace. AVIV ScoutRoute submissions use that same changeset review workflow; automatic flagging can mark contributor changesets for attention but does not delay submission. The separate Tasking-project **Review Required** setting gates task completion on validator review. Export to TDEI is a further, separate step.
 
 ## Significance
 
@@ -44,24 +49,35 @@ Gates preserve accountability between collection and public or authoritative dat
 
 ## What This Means
 
-Define who reviews, what is approved, how the result is archived, and when it is released.
+There are two distinct review mechanisms:
+
+- **Workspace changeset review** — editors submit changes to the workspace, where they are recorded as changesets. Reviewers inspect the changed features, discuss questions, and, if they are Owners or Validators, can mark flagged changesets as reviewed.
+- **AVIV ScoutRoute contributions** — the app submits quest answers directly to the selected workspace through a changeset. The **Auto-flag contributor changesets for review** setting in **Workspace Settings → General** flags contributors' changesets in the review queue. It does not create a separate AVIV holding area or prevent the answer from being saved.
+- **Tasking project review** — when a Tasking project's **Review Required** option is enabled, validator review is required before tasks can be completed. This is a task-level gate, not the changeset auto-flag setting.
+
+After review, use the documented export process to upload workspace data to TDEI. Review or export alone does not establish that a dataset is publicly released.
 
 ## What This Does Not Mean
 
-An answer, note, or edit is not automatically a publication.
+AVIV review flagging and Tasking-project validation are not interchangeable. An AVIV answer is committed before changeset review; the Tasking-project setting instead requires task validation before the task is completed. Neither action automatically exports or releases a TDEI dataset.
 
 ## How To Use This
 
-Document the gate owners and evidence required at project setup.
+Identify whether the work uses AVIV quest submissions, Tasking-project tasks, or general workspace editing. Configure the relevant review control, identify Owners or Validators, define project evidence criteria, and keep export and release steps separate.
 
 ## Example
 
-A contractor submits changes, a reviewer checks them, and a data generator exports the approved version.
+A volunteer submits an AVIV ScoutRoute answer, which is committed as a workspace changeset and automatically flagged for a Validator or Owner to inspect. In a separate Tasking project, the **Review Required** option requires validation before a task can be completed.
 
 ## Assistant Guidance
 
-Ask where the edit is in the review and release lifecycle.
+Ask whether the user means a workspace changeset, an AVIV ScoutRoute submission, or a Tasking-project task. Do not describe the Tasking-project **Review Required** gate as a hold on AVIV answers. Cite the current Workspaces review and settings manuals.
 
 ## Related Concepts
 
 - [What can the Workspaces review interface show?](workspace-review-interface.md)
+- [How do I review workspace edits?](../workflow/review-workspace-edits.md)
+- [How do I review AVIV ScoutRoute contributions?](../workflow/review-quest-contributions.md)
+- [How do I set up a Tasking Manager project in Workspaces?](../workflow/set-up-tasking-manager-project.md)
+- [Workspace Settings — General](../../../workspaces/user-manual/settings/general.md)
+- [Validate for a Project](../../../workspaces/user-manual/projects/validate.md)

@@ -20,7 +20,7 @@ topics:
 risk_level: medium
 authority_level: provisional
 publication_status: draft
-last_reviewed: 2026-07-22
+last_reviewed: 2026-11-24
 retrieval_priority: high
 assistant_behavior:
     allow_inference: false
@@ -28,6 +28,7 @@ assistant_behavior:
     abstain_if_missing_context: true
 related_pages:
     - assistant/qa-qc/concept/report-purpose-and-limitations.md
+    - assistant/qa-qc/concept/report-data-sources.md
 tags:
     - Assistant
 ---
@@ -38,7 +39,7 @@ tags:
 
 ## Short Answer
 
-Provenance identifies the dataset, pipeline, source context, and dates used to produce a report.
+Provenance identifies the dataset and source context, the processing versions, and the distinct dates associated with a QA/QC report.
 
 ## Significance
 
@@ -46,23 +47,23 @@ It lets readers distinguish data changes from report presentation changes.
 
 ## What This Means
 
-Read dataset version, pipeline version, imagery or collection date, report generation date, registry or ingest date, and source metadata together.
+Read each provenance field separately: dataset name and version, collection date, imagery reference year, registry-ingest timestamp, report-generation timestamp, QA/QC pipeline version, report-code release tag or commit, and POI sources or snapshot date. Record only fields the report provides; label an absent value “Not provided” rather than filling the gap from another date.
 
 ## What This Does Not Mean
 
-A newer report-generation date does not necessarily mean newer source data or imagery.
+A newer report-generation date does not necessarily mean newer source data or imagery. The dataset collection date, imagery vintage, registry-ingest time, and POI snapshot date are also different from one another.
 
 ## How To Use This
 
-Record provenance when comparing or citing results, and note any source date that the report does not provide.
+Record the dataset and pipeline versions and each relevant source or processing date when comparing or citing results. Note explicitly when the report does not provide an imagery date, POI snapshot date, or other needed provenance field.
 
 ## Example
 
-A report is regenerated after a layout change while its registry ingest date remains unchanged.
+A planner compares dataset and pipeline versions, an imagery reference, a registry-ingest timestamp, and a report-generation timestamp. The POI extraction date is not listed, so the planner records it as “Not provided” instead of substituting the report-generation date.
 
 ## Assistant Guidance
 
-Ask which date or version the user means before comparing reports.
+Ask which dataset, pipeline, imagery, ingest, report-generation, or POI date the user means before comparing reports. Do not infer a missing date from the report's other timestamps.
 
 ## Related Concepts
 

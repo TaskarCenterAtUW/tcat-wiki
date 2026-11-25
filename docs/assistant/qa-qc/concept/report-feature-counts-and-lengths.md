@@ -18,7 +18,7 @@ topics:
 risk_level: medium
 authority_level: explanatory
 publication_status: draft
-last_reviewed: 2026-10-30
+last_reviewed: 2026-11-24
 retrieval_priority: medium
 assistant_behavior:
     allow_inference: false
@@ -38,7 +38,7 @@ tags:
 
 ## Short Answer
 
-Counts show how many mapped features exist; length metrics show linear extent. QA/QC reports can present road length, footpath length, and total length for each walkshed profile, alongside feature counts such as crossings and curbs.
+Counts show how many mapped features occur; lengths show linear extent. Walkshed tables report feature counts and lengths inside each modeled profile's reachable network, not jurisdiction-wide inventory totals. The report separates road, footpath, and total lengths from feature counts such as crossings and curbs.
 
 ## Significance
 
@@ -46,7 +46,7 @@ Separating length by network type helps planners and engineers compare profile r
 
 ## What This Means
 
-Read each count and length with its feature type, dataset scope, profile, and units. A road-inclusive profile can have greater total length while showing fewer mapped crossings or curbs: road data may contribute segments without carrying the crossing and curb details present in sidewalk or OpenSidewalks data. The report can combine these different source layers, so the metrics do not necessarily increase together.
+Read each count and length with its feature type, dataset scope, profile, and units. Keep the report's basic-inventory counts separate from its per-profile walkshed counts and lengths. A greater road-inclusive length does not imply more mapped crossings or curbs: road segments contribute to length, while crossing and curb counts represent mapped pedestrian features. Metrics from these source layers do not necessarily increase together.
 
 Crossing counts deduplicate crossing pieces split at road intersections when they share an ID.
 
@@ -60,7 +60,7 @@ Use the metric that matches the question: counts for the number of mapped featur
 
 ## Example
 
-A road-inclusive profile has a larger total length than a sidewalk-only profile but fewer crossing and curb records. The length includes road segments, while those segments may not carry the same mapped crossing and curb details as the pedestrian-network data.
+A road-inclusive profile has a larger total length than a sidewalk-only profile but fewer crossing and curb records. The length includes road segments, while crossing and curb counts represent mapped pedestrian features.
 
 ## Assistant Guidance
 

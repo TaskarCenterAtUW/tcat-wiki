@@ -5,6 +5,7 @@ slug: invite-to-workspace-team
 doc_type: workflow
 questions:
     - How do I invite people to a team in Workspaces?
+    - How do I invite people to collaborate on a Workspace?
 audiences:
     - planner
     - jurisdiction
@@ -20,7 +21,7 @@ topics:
 risk_level: low
 authority_level: explanatory
 publication_status: draft
-last_reviewed: 2026-10-26
+last_reviewed: 2026-11-24
 retrieval_priority: medium
 assistant_behavior:
     allow_inference: false
