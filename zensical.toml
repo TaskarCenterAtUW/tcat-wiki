@@ -804,6 +804,7 @@ nav = [
                 {"Where do I download OS-CONNECT data?" = "assistant/tdei/workflow/download-os-connect-data.md"},
                 {"How do I download an OS-CONNECT dataset from TDEI?" = "assistant/tdei/workflow/download-os-connect-dataset.md"},
                 {"How do I integrate external geospatial data with TDEI?" = "assistant/tdei/workflow/integrate-external-geospatial-data.md"},
+                {"How do I un-release a dataset in the TDEI Portal without deleting it?" = "assistant/tdei/workflow/preserve-data-before-deactivating-release.md"},
                 {"How do I register and verify a TDEI account?" = "assistant/tdei/workflow/register-and-verify-tdei-account.md"},
                 {"How do I use the TDEI portal?" = "assistant/tdei/workflow/use-tdei-portal.md"},
                 {"How do I validate an OpenSidewalks dataset in TDEI?" = "assistant/tdei/workflow/validate-osw-dataset.md"}

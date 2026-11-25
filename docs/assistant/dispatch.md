@@ -101,7 +101,7 @@ This page should be fetched fresh rather than cached aggressively; its registry 
 | Status | Count | Meaning |
 | :----- | ----: | :------ |
 | `stub` | 0 | Frontmatter and heading scaffold exist; body is `TODO` |
-| `draft` | 824 | Content authored; awaiting TCAT editorial review |
+| `draft` | 825 | Content authored; awaiting TCAT editorial review |
 | `published` | 1 | Available in the human-facing site |
 | `archived` | 0 | Retained for agents but not published |
 
@@ -109,7 +109,7 @@ This page should be fetched fresh rather than cached aggressively; its registry 
 
 | Authority level | Count | Meaning |
 | :-------------- | ----: | :------ |
-| `provisional` | 667 | Early or limited-confidence guidance |
+| `provisional` | 668 | Early or limited-confidence guidance |
 | `explanatory` | 156 | Established explanation without formal policy authority |
 | `official` | 2 | Formally endorsed organizational guidance |
 
@@ -985,6 +985,7 @@ Base: `assistant/tdei/workflow/`
 | `49d10064-29ce-4bd2-9646-90f345a493d6` | `download-os-connect-data.md` | official | draft |
 | `f58de4ae-f2bf-4127-965b-e87a722304fb` | `download-os-connect-dataset.md` | provisional | draft |
 | `d463bc73-51b5-44fe-8d69-526e6e30073e` | `integrate-external-geospatial-data.md` | explanatory | draft |
+| `ab874880-87cd-4c2b-9d34-b4a2be28fd2b` | `preserve-data-before-deactivating-release.md` | provisional | draft |
 | `7cd47b84-24f2-470a-85ac-00d0feccd8e7` | `register-and-verify-tdei-account.md` | provisional | draft |
 | `2f5db433-6544-4136-96a5-fa942974071e` | `use-tdei-portal.md` | explanatory | draft |
 | `ed28e643-f9d8-41a7-8ec8-a17e2e63f961` | `validate-osw-dataset.md` | provisional | draft |

@@ -12,6 +12,7 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/),
 
 - **Wiki**: Added OS-CONNECT production process AKB article
 - **Wiki**: Added fallback project information contact AKB article
+- **Wiki**: Added workflow AKB article for deactivating released datasets without data loss
 
 ## v17.4.0 (2026-11-24)
 
