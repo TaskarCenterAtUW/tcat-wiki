@@ -19,7 +19,7 @@ topics:
 risk_level: medium
 authority_level: explanatory
 publication_status: draft
-last_reviewed: 2026-09-29
+last_reviewed: 2026-11-24
 retrieval_priority: high
 assistant_behavior:
     allow_inference: false
@@ -28,6 +28,8 @@ assistant_behavior:
 related_pages:
     - assistant/qa-qc/concept/walkshed-profile-comparison.md
     - assistant/qa-qc/concept/report-purpose-and-limitations.md
+    - assistant/qa-qc/concept/accessibility-island.md
+    - assistant/qa-qc/concept/report-data-sources.md
 tags:
     - Assistant
 ---
@@ -51,9 +53,9 @@ The report's profiles differ in which network edges they can use and how those e
 - **Sidewalk-only pedestrian** uses mapped sidewalks and crossings, with 100% street avoidance.
 - **Pedestrian using sidewalks whenever possible** prefers sidewalks and crossings but can use street segments where sidewalks are missing. It ignores curbs as barriers and has a 0.9 (90%) street-avoidance setting in the report interface.
 - **Fan-out** applies the pedestrian walkshed costing to road segments rather than the higher road-segment costing used without fan-out. It is a separate parameter, not another street-avoidance value.
-- The modeled manual-wheelchair profile uses more restrictive assumptions, including tighter grade limits than the pedestrian profiles.
+- The modeled manual-wheelchair profile uses more restrictive assumptions, including tighter grade limits than pedestrian profiles. Check the report's profile table for the specific grade thresholds.
 
-Reports use the same 600-cost budget across profiles. That value should not automatically be read as 600 seconds or ten minutes for a profile that includes road segments: edge types and profile settings affect the accumulated cost. Lowering street avoidance generally permits more street use and can increase modeled reach, but the value does not specify an exact increase.
+Use the profile table to identify the travel budget, its units, and each profile's settings. Do not carry values across reports. Profile and edge-cost settings determine which network features fall within modeled reach, so a shared budget does not guarantee identical reach or describe every traveler's real-world travel time.
 
 ## What This Does Not Mean
 
@@ -61,15 +63,15 @@ These profiles do not represent every person's mobility or guarantee that a rout
 
 ## How To Use This
 
-When comparing walksheds, record the profile names, street-avoidance settings, road/fan-out treatment, slope and curb assumptions, travel-cost budget, and dataset version. Use the profile descriptions and map together; do not infer an exact travel time or reach difference from the street-avoidance number alone.
+When comparing walksheds, record the profile names, street-avoidance settings, road/fan-out treatment, slope and curb assumptions, travel-cost budget and units, and dataset version. Use the target report's profile table and map together; do not carry a budget or thresholds from one report over to another, or infer an exact reach difference from the street-avoidance number alone.
 
 ## Example
 
-At a site with a large parking lot and missing sidewalk connections, pedestrian using sidewalks whenever possible may reach across parking-lot or street segments that sidewalk-only pedestrian excludes. Fan-out may extend farther because road segments receive the pedestrian walkshed costing. These are modeled differences, not confirmation that a particular traveler can enter a building or safely use every segment.
+At a site with a large parking lot and missing sidewalk connections, pedestrian using sidewalks whenever possible includes road segments in its modeled reach when the configured cost permits. Fan Out applies the pedestrian costing to road segments, extending modeled road reach under the same budget. These are modeled differences, not confirmation that a particular traveler can enter a building or safely use every segment.
 
 ## Assistant Guidance
 
-Ask which report profiles, cost budget, and dataset version are being compared. Explain that the 0.9 setting expresses street avoidance in the report configuration, not a percentage chance of choosing a sidewalk. Do not convert the 600-cost budget to elapsed time for road-inclusive profiles without a documented conversion.
+Ask which report profiles, cost budget and units, and dataset version are being compared. Explain that the 0.9 setting expresses street avoidance in the report configuration, not a percentage chance of choosing a sidewalk. Use a time conversion only when the report explicitly defines the budget in time units; otherwise, do not convert a raw cost budget to elapsed time.
 
 ## Related Concepts
 

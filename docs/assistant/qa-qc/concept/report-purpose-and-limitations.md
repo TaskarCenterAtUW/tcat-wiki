@@ -19,7 +19,7 @@ topics:
 risk_level: medium
 authority_level: explanatory
 publication_status: draft
-last_reviewed: 2026-09-29
+last_reviewed: 2026-11-24
 retrieval_priority: high
 assistant_behavior:
     allow_inference: false
@@ -27,6 +27,7 @@ assistant_behavior:
     abstain_if_missing_context: true
 related_pages:
     - assistant/qa-qc/concept/report-provenance.md
+    - assistant/qa-qc/concept/report-data-sources.md
 tags:
     - Assistant
 ---
@@ -41,13 +42,15 @@ A QA/QC report helps planners and engineers assess mapped pedestrian-network con
 
 ## Significance
 
-City and county planners, engineers, and engineering consultants can use the report to examine modeled walking and rolling access to POIs and identify possible disconnected areas for follow-up. The analysis can help reveal patterns in the mapped network without asserting how a particular person would travel.
+City and county planners, engineers, and engineering consultants use the report to examine modeled walking and rolling access to POIs and identify possible disconnected areas for follow-up. The analysis highlights patterns in the mapped network; it does not describe how a particular person would travel.
 
 ## What This Means
 
-Use the report as decision support about mapped data, not as a substitute for field verification, professional accessibility review, or regulatory analysis. POIs are snapped to nearby routable network edges for analysis. This can approximate network reach near a destination, but the report does not verify a pedestrian connection from that edge to a building entrance, bus-stop boarding point, or other exact destination access point.
+Use the report as decision support about mapped data, not as a substitute for field verification, professional accessibility review, or regulatory analysis. POIs are snapped to nearby routable network edges for analysis. This approximates network reach near a destination, but the report does not verify a pedestrian connection from that edge to a building entrance, bus-stop boarding point, or other exact destination access point.
 
 Use an origin-to-destination routing tool such as AccessMap when the question is whether a particular trip can be made; the QA/QC report summarizes network conditions and modeled reach across its analysis area.
+
+Read the report's stated imagery vintage and whether imputed features received manual review. These details describe that report's source context; they do not prove current field conditions or apply to other reports.
 
 ## What This Does Not Mean
 
@@ -59,11 +62,11 @@ Check the dataset version, imagery or collection context, POI sources, metrics, 
 
 ## Example
 
-A planner uses a report to identify a group of POIs with limited modeled sidewalk connectivity, then checks the network and field conditions before prioritizing a project. The result does not confirm that a specific visitor can reach a business entrance.
+A planner uses documented hotspot outputs to prioritize on-the-ground checks. Imagery vintage and manual review of imputed sidewalks provide source context, but a hotspot is not a confirmed accessibility or compliance finding.
 
 ## Assistant Guidance
 
-Ask which dataset, report version, profile, and POI are being interpreted. Distinguish area-level planning analysis from individual routing and from entrance-level accessibility. Do not overstate report certainty or infer an unmodeled connection from a nearby snapped edge.
+Ask which dataset, report version, profile, imagery vintage, and POI are being interpreted. Distinguish area-level planning analysis from individual routing and from entrance-level accessibility. Do not overstate report certainty, generalize a report's imagery or manual review to another dataset, or infer an unmodeled connection from a nearby snapped edge.
 
 ## Related Concepts
 
