@@ -474,6 +474,7 @@ nav = [
                 {"What licensing governs the data?" = "assistant/os-connect/concept/data-licensing.md"},
                 {"What makes accessibility data difficult to maintain?" = "assistant/os-connect/concept/data-maintenance-challenges.md"},
                 {"Who owns OS-CONNECT data?" = "assistant/os-connect/concept/data-ownership.md"},
+                {"How was OS-CONNECT data produced?" = "assistant/os-connect/concept/data-production-process.md"},
                 {"How do OS-CONNECT dataset scopes relate?" = "assistant/os-connect/concept/dataset-scope-relationships.md"},
                 {"Can OS-CONNECT support pedestrian access analysis around schools, clinics, grocery stores, and other destinations?" = "assistant/os-connect/concept/destination-access-analysis.md"},
                 {"How can disability communities contribute?" = "assistant/os-connect/concept/disability-community-contribution.md"},
