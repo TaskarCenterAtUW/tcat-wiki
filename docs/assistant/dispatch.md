@@ -28,7 +28,7 @@ topics:
 risk_level: low
 authority_level: official
 publication_status: draft
-last_reviewed: 2026-11-24
+last_reviewed: 2026-11-25
 retrieval_priority: high
 assistant_behavior:
     allow_inference: false
@@ -101,7 +101,7 @@ This page should be fetched fresh rather than cached aggressively; its registry 
 | Status | Count | Meaning |
 | :----- | ----: | :------ |
 | `stub` | 0 | Frontmatter and heading scaffold exist; body is `TODO` |
-| `draft` | 822 | Content authored; awaiting TCAT editorial review |
+| `draft` | 825 | Content authored; awaiting TCAT editorial review |
 | `published` | 1 | Available in the human-facing site |
 | `archived` | 0 | Retained for agents but not published |
 
@@ -109,8 +109,8 @@ This page should be fetched fresh rather than cached aggressively; its registry 
 
 | Authority level | Count | Meaning |
 | :-------------- | ----: | :------ |
-| `provisional` | 666 | Early or limited-confidence guidance |
-| `explanatory` | 155 | Established explanation without formal policy authority |
+| `provisional` | 668 | Early or limited-confidence guidance |
+| `explanatory` | 156 | Established explanation without formal policy authority |
 | `official` | 2 | Formally endorsed organizational guidance |
 
 ## Registry
@@ -572,6 +572,7 @@ Base: `assistant/os-connect/concept/`
 | `761bc51e-4fc5-4ced-952c-727fd64f604b` | `data-licensing.md` | provisional | draft |
 | `5610997c-6889-4134-b293-d87169d52b1a` | `data-maintenance-challenges.md` | provisional | draft |
 | `49fa9f5c-7a74-41d7-bab5-295888e49739` | `data-ownership.md` | provisional | draft |
+| `d372c83e-127f-4cfb-a919-c07448fff350` | `data-production-process.md` | explanatory | draft |
 | `9ff9a145-1ee4-467f-8bcf-748eec5aa2d1` | `dataset-scope-relationships.md` | explanatory | draft |
 | `76b63ce5-e9c5-4210-91ed-6d4a882bbc90` | `destination-access-analysis.md` | explanatory | draft |
 | `6df61b6e-68f3-45cd-926b-0bec041b0d55` | `disability-community-contribution.md` | provisional | draft |
@@ -880,6 +881,7 @@ Base: `assistant/support/concept/`
 | `cca616b4-1f0a-4e0f-9d0c-38a4ed5631ee` | `os-connect-contact.md` | provisional | draft |
 | `2669c8bd-2d2f-4e33-8d73-5d94608c9c87` | `osm-pedestrian-paths-vs-gtfs-pathways.md` | explanatory | draft |
 | `ab86795c-ddcf-470a-b6d4-53526f845563` | `partner-response-time.md` | provisional | draft |
+| `780377e1-f700-4ed8-ab73-8cdcfc986d58` | `project-information-contact.md` | provisional | draft |
 | `a3b3c062-7cfd-463c-8fb4-938f676a1658` | `staff-email-antipatterns.md` | provisional | draft |
 | `09b1b059-d611-493e-a190-028c10c19f39` | `tdei-contact.md` | provisional | draft |
 | `38d55e6e-a248-4c4b-86bc-1b0dc6df5f5e` | `tdei-os-connect-osm-differences.md` | explanatory | draft |
@@ -983,6 +985,7 @@ Base: `assistant/tdei/workflow/`
 | `49d10064-29ce-4bd2-9646-90f345a493d6` | `download-os-connect-data.md` | official | draft |
 | `f58de4ae-f2bf-4127-965b-e87a722304fb` | `download-os-connect-dataset.md` | provisional | draft |
 | `d463bc73-51b5-44fe-8d69-526e6e30073e` | `integrate-external-geospatial-data.md` | explanatory | draft |
+| `ab874880-87cd-4c2b-9d34-b4a2be28fd2b` | `preserve-data-before-deactivating-release.md` | provisional | draft |
 | `7cd47b84-24f2-470a-85ac-00d0feccd8e7` | `register-and-verify-tdei-account.md` | provisional | draft |
 | `2f5db433-6544-4136-96a5-fa942974071e` | `use-tdei-portal.md` | explanatory | draft |
 | `ed28e643-f9d8-41a7-8ec8-a17e2e63f961` | `validate-osw-dataset.md` | provisional | draft |

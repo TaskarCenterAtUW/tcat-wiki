@@ -6,6 +6,14 @@ All notable changes to this project will be documented in this file.
 
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/), and this project adheres to [Semantic Versioning](https://semver.org/) and [Conventional Commits](https://www.conventionalcommits.org/).
 
+## v17.5.0 (2026-11-25)
+
+### Added
+
+- **Wiki**: Added OS-CONNECT production process AKB article
+- **Wiki**: Added fallback project information contact AKB article
+- **Wiki**: Added workflow AKB article for deactivating released datasets without data loss
+
 ## v17.4.0 (2026-11-24)
 
 ### Changed
